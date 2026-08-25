@@ -12,4 +12,4 @@ This repository is meant to be automatically pulled by nbgitpuller in our server
 
 ## Environments
 
-The root of this repository contains the diffrerent requirements.txt file to re-create the environments for the presentations and courses.(list to be updated)
+The root of this repository contains the diffrerent .yml file to re-create the environments (one for each course/presentation) for the presentations and courses.
