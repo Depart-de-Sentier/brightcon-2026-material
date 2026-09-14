@@ -1,0 +1,22 @@
+# display-name: jacobi-gmres
+# Matches the base dependencies of the TOML file in Brightcon materials PR #6.
+name: f1-1-jacobi-gmres
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - "python>=3.14,<3.15"
+  - "numpy==2.5.1"
+  - "scipy==1.18.0"
+  - "scikit-umfpack==0.4.2"
+  - "ipykernel>=6.29,<8"
+  - "jupyterlab>=4.2,<5"
+  - "matplotlib>=3.9,<4"
+  - "nbformat>=5.10,<6"
+  - "pandas>=3.0.5,<4"
+  - "psutil>=6,<8"
+  - pip
+  - pip:
+      - "bw2calc>=2.5.0"
+      - "bw2data==4.7"
+      - "pypardiso>=0.4,<1"
