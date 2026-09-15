@@ -2,11 +2,7 @@
 
 This folder contains the materials for the BrightCon 2026 intermediate course on time-explicit life cycle assessment with `bw_timex`.
 
-The Python kernel is already installed on the course server. To reproduce the environment locally, install [`uv`](https://docs.astral.sh/uv/getting-started/installation/) with the installer from the uv website:
-
-```sh
-curl -LsSf https://astral.sh/uv/install.sh | sh
-```
+The Python kernel is already installed on the course server. To reproduce the environment locally, first [install `uv`](https://docs.astral.sh/uv/getting-started/installation/).
 
 Then clone this repository to a folder of your liking, navigate there in your terminal, and run:
 

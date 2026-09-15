@@ -2,8 +2,12 @@ version = 1
 revision = 3
 requires-python = ">=3.12"
 resolution-markers = [
-    "python_full_version >= '3.13'",
-    "python_full_version < '3.13'",
+    "python_full_version >= '3.13' and platform_machine == 'x86_64' and sys_platform == 'linux'",
+    "python_full_version >= '3.13' and platform_machine == 'AMD64' and sys_platform == 'win32'",
+    "(python_full_version >= '3.13' and platform_machine != 'x86_64' and sys_platform == 'linux') or (python_full_version >= '3.13' and platform_machine != 'AMD64' and sys_platform == 'win32') or (python_full_version >= '3.13' and sys_platform != 'linux' and sys_platform != 'win32')",
+    "python_full_version < '3.13' and platform_machine == 'x86_64' and sys_platform == 'linux'",
+    "python_full_version < '3.13' and platform_machine == 'AMD64' and sys_platform == 'win32'",
+    "(python_full_version < '3.13' and platform_machine != 'x86_64' and sys_platform == 'linux') or (python_full_version < '3.13' and platform_machine != 'AMD64' and sys_platform == 'win32') or (python_full_version < '3.13' and sys_platform != 'linux' and sys_platform != 'win32')",
 ]
 
 [[package]]
@@ -312,7 +316,7 @@ wheels = [
 
 [[package]]
 name = "bw-timex"
-version = "1.3.1"
+version = "1.3.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "bw-graph-tools" },
@@ -327,12 +331,13 @@ dependencies = [
     { name = "numpy" },
     { name = "pandas" },
     { name = "pydantic" },
+    { name = "pypardiso", marker = "(platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
     { name = "seaborn" },
     { name = "tqdm" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/37/60/80496ad7df7dd9ff562a76dde9385cb637d5e96f9bde648a531655ca7b7f/bw_timex-1.3.1.tar.gz", hash = "sha256:306ba60ebf78d9c9fe8aa9f5a539715082f1099127e4bbcf91334725225b392e", size = 1098894, upload-time = "2026-08-26T07:41:05.628Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/74/5f/67ff5ff649af741f02b1a045052a367fc8098c7d0bce96dfa488816c7e81/bw_timex-1.3.2.tar.gz", hash = "sha256:b33d79cd2ad6c14a263dfbb5ec8fcce9aaca37c1fac048ec2a05a2cecae5b826", size = 1118996, upload-time = "2026-09-15T12:26:41.147Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c9/51/efb25e0d0def1003a94de27b068def95ccb8a94f5d4bab4b609646bea729/bw_timex-1.3.1-py3-none-any.whl", hash = "sha256:b53beba6ace37e80d6aff3b483f7ae54f263f7b255d7788e1ed819ee43599e8b", size = 1046070, upload-time = "2026-08-26T07:41:03.866Z" },
+    { url = "https://files.pythonhosted.org/packages/61/20/dffabb370060172ec67639d23712f36a5b667ccb7c4a590bfa59b1812f71/bw_timex-1.3.2-py3-none-any.whl", hash = "sha256:ec86a0401f5ef021a74a23b8ca4aaa80f5baeb090e972b19c972eafed1650bd3", size = 1054777, upload-time = "2026-09-15T12:26:39.562Z" },
 ]
 
 [[package]]
@@ -1938,7 +1943,7 @@ name = "pexpect"
 version = "4.9.0"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "ptyprocess" },
+    { name = "ptyprocess", marker = "platform_machine != 'AMD64' or sys_platform != 'win32'" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/42/92/cc564bf6381ff43ce1f4d06852fc19a2f11d180f23dc32d9588bee2f149d/pexpect-4.9.0.tar.gz", hash = "sha256:ee7d41123f3c9911050ea2c2dac107568dc43b2d3b0c7557a33212c398ead30f", size = 166450, upload-time = "2023-11-25T09:07:26.339Z" }
 wheels = [
@@ -2051,7 +2056,7 @@ wheels = [
 
 [[package]]
 name = "premise"
-version = "2.5.2"
+version = "2.5.1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "bottleneck" },
@@ -2082,9 +2087,9 @@ dependencies = [
     { name = "wurst" },
     { name = "xarray" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/f6/c4/743085e41bb08c4bda2d7aae8e4ff69dad6665ffb617757cd1e91cf031e1/premise-2.5.2.tar.gz", hash = "sha256:bd2c93a443da9420cada96768bba9a58d89f64c3d121b6f22c4561f14e4f7714", size = 28801173, upload-time = "2026-09-11T13:04:10.963Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/2a/98/6927d4e8e6fbab79c0af5ee5fde37dae88fd354a0fd12e6d77277ba3adee/premise-2.5.1.tar.gz", hash = "sha256:e17fd79541455d114b013a9e2c929b7257bb2dae3905f4fe55b5ab6409a8df0d", size = 28776312, upload-time = "2026-09-09T12:36:09.613Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/24/86/53a68f38571e8d8caba997cf463c0e0ac330c10beeae2bcea0a1ab891be5/premise-2.5.2-py3-none-any.whl", hash = "sha256:f751c3a93d2f5774371fe01dbb2d0eba793cb6c540f64dcfe808730c6b226978", size = 23056413, upload-time = "2026-09-11T13:04:08.506Z" },
+    { url = "https://files.pythonhosted.org/packages/21/87/13d0130e9a56e16ab4cd6b51ebe98075cf324b10fd68a168d9d71da18d76/premise-2.5.1-py3-none-any.whl", hash = "sha256:eb98a336e7eddee24e13d08238292c6a090b9aaa774c4dcc21c5fede1bdd3a97", size = 23038728, upload-time = "2026-09-09T12:36:05.332Z" },
 ]
 
 [[package]]
@@ -2451,16 +2456,16 @@ wheels = [
 
 [[package]]
 name = "pypardiso"
-version = "0.4.7"
+version = "0.4.6"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "mkl" },
     { name = "numpy" },
     { name = "scipy" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/0a/f8/38f3c9983ffc789fa7ddda88cf2ce388a489698ba73edb9e5355a564966e/pypardiso-0.4.7.tar.gz", hash = "sha256:0f307c749ace576d9de5c63ce39af0e850d8f772697260454f3deb0202a7a92d", size = 13851, upload-time = "2025-11-02T23:11:32.229Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/01/8b/a88f8ee0b4a98d15737b728d6306682a1c8aaa588600a906ccde35965361/pypardiso-0.4.6.tar.gz", hash = "sha256:ff13eff486a2246d9c5bc9cec9f5bc8009f1b8831b2d10767787d768d98afa06", size = 15545, upload-time = "2024-03-28T21:32:54.668Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/d9/11/80f3b55f77309b1993e68776778510f46195252b5393b967f67d28dbb6b6/pypardiso-0.4.7-py3-none-any.whl", hash = "sha256:157b2d188d884b4bf2cd90a0cb3efae513b8b6215c29ebb4659e9cc38610c839", size = 10070, upload-time = "2025-11-02T23:11:31.127Z" },
+    { url = "https://files.pythonhosted.org/packages/1d/e8/29b96e539ff24c3425e90003e69a24296009ac8c6280665ea1a08bdd61f6/pypardiso-0.4.6-py3-none-any.whl", hash = "sha256:43d370a91ab97062bce1862e76387def1732ad944c5882024c5c3be2c6e9e77c", size = 10744, upload-time = "2024-03-28T21:32:48.311Z" },
 ]
 
 [[package]]
@@ -2931,8 +2936,8 @@ name = "scikit-umfpack"
 version = "0.4.2"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
-    { name = "numpy" },
-    { name = "scipy" },
+    { name = "numpy", marker = "(platform_machine != 'x86_64' and sys_platform == 'linux') or (platform_machine != 'AMD64' and sys_platform == 'win32') or (sys_platform != 'linux' and sys_platform != 'win32')" },
+    { name = "scipy", marker = "(platform_machine != 'x86_64' and sys_platform == 'linux') or (platform_machine != 'AMD64' and sys_platform == 'win32') or (sys_platform != 'linux' and sys_platform != 'win32')" },
 ]
 sdist = { url = "https://files.pythonhosted.org/packages/c9/87/e9837fbc60271bcbc569911814f3e63cb40c75aa4904a3d1d82cf8f5e079/scikit_umfpack-0.4.2.tar.gz", hash = "sha256:7cd652e6559804a52379f4ff367cfad54d6f7a6fc65a5e0bd26d26a1282c3f64", size = 33827, upload-time = "2025-07-08T08:52:41.643Z" }
 
@@ -3139,15 +3144,15 @@ source = { virtual = "." }
 dependencies = [
     { name = "bw-timex" },
     { name = "premise" },
-    { name = "pypardiso", marker = "platform_machine != 'arm64' or sys_platform != 'darwin'" },
+    { name = "pypardiso", marker = "sys_platform != 'darwin'" },
     { name = "scikit-umfpack", marker = "platform_machine == 'arm64' and sys_platform == 'darwin'" },
 ]
 
 [package.metadata]
 requires-dist = [
-    { name = "bw-timex", specifier = "==1.3.1" },
-    { name = "premise", specifier = ">=2.5.2" },
-    { name = "pypardiso", marker = "platform_machine != 'arm64' or sys_platform != 'darwin'" },
+    { name = "bw-timex", specifier = "==1.3.2" },
+    { name = "premise", specifier = "==2.5.1" },
+    { name = "pypardiso", marker = "sys_platform != 'darwin'", specifier = "==0.4.6" },
     { name = "scikit-umfpack", marker = "platform_machine == 'arm64' and sys_platform == 'darwin'" },
 ]
 
