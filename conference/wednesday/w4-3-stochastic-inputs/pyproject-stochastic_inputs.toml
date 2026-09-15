@@ -1,0 +1,30 @@
+[project]
+name = "stochastic_inputs"          # ignored for naming; filename decides
+
+# Python version
+requires-python = "==3.11.4" 
+
+dependencies = [
+"brightway2==2.4.7",
+"pandas==2.0.0",
+"scipy==1.11.2",
+"git",
+
+# Databse-wide-monte-carlo (forked version)
+"requests @ git+https://github.com/xtanguay/database_wide_monte_carlo.git",
+
+# bw2agg (forked version)
+"requests @ git+https://github.com/xtanguay/bw2agg.git",
+
+# presamples (forked version)
+"requests @ git+https://github.com/xtanguay/presamples.git",
+
+# pelicun (forked version)
+"requests @ git+https://github.com/xtanguay/pelicun.git",
+
+# pelicun_2_bw2 
+"requests @ git+https://github.com/xtanguay/pelicun_2_brightway2.git",
+
+
+[tool.environ]
+display-name = "stochastic_inputs"
