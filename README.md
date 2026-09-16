@@ -13,7 +13,8 @@ This repository holds the material used during brightcon 2026.
 ├── courses/                # Material for pre-conference courses
 │   ├── beginners/
 │   └── intermediate/
-└── hackathon:input-data/  # Input data for the hackathon
+├── hackathon/
+│   ├──input-data/          # Input data for the hackathon
 ```
 
 `conference/` and `courses/` are organized by day / level respectively — add a new subfolder for your own session
