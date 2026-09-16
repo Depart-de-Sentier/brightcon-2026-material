@@ -1,0 +1,91 @@
+{
+  "name": "Example Production System",
+  "unit": "unit",
+  "location": "GLO",
+  "categories": [
+    "technosphere",
+    "example production"
+  ],
+  "type": "process",
+  "exchanges": [
+    {
+      "name": "Example Production System",
+      "amount": 1.0,
+      "unit": "unit",
+      "type": "production",
+      "input": [
+        "Example_System_DB",
+        "Example_1unit"
+      ]
+    },
+    {
+      "name": "Steel",
+      "unit": "kg",
+      "type": "technosphere",
+      "life_cycle_stage": "Production",
+      "amount": "100.0 * n_units",
+      "location": "Global",
+      "input": [
+        "ecoinvent-3.12-cutoff",
+        "d7d67742ca4d244d707fdf9d4ee5ac5e"
+      ]
+    },
+    {
+      "name": "Transport",
+      "unit": "pkm",
+      "type": "technosphere",
+      "life_cycle_stage": "Use",
+      "amount": "50.0 * n_units",
+      "location": "Europe",
+      "input": [
+        "ecoinvent-3.12-cutoff",
+        "f42a5657858790d35dc1438b91892b2a"
+      ]
+    },
+    {
+      "name": "Electricity",
+      "unit": "kWh",
+      "type": "technosphere",
+      "life_cycle_stage": "Production",
+      "amount_ref": "energy_metadata.primary_input.value",
+      "location": "US",
+      "input": [
+        "ecoinvent-3.12-cutoff",
+        "0fccfcf29a4a39921f7438aaeedef528"
+      ],
+      "amount": "n_units"
+    }
+  ],
+  "parameters": {
+    "n_units": {
+      "name": "n_units",
+      "description": "Number of units in the system",
+      "default": 1.0
+    }
+  },
+  "life_cycle_stages": {
+    "Production": {
+      "description": "Production stage processes",
+      "exchanges": [
+        "Steel",
+        "Electricity"
+      ]
+    },
+    "Use": {
+      "description": "Use stage processes",
+      "exchanges": [
+        "Transport"
+      ]
+    }
+  },
+  "energy_metadata": {
+    "energy_processes": 1,
+    "primary_input": {
+      "name": "energy_input",
+      "unit": "kWh",
+      "description": "Energy input to the system",
+      "value": 25.0
+    }
+  },
+  "unlinked_exchanges": []
+}
