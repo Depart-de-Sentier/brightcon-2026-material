@@ -6,7 +6,7 @@ You can find the material:
 
 ![Locating the data directory in the Hub](sd_data_in_hub.png)
 
-+ The slides are here
++ The slides are [here in the repository](Slides/Training_for_openLCA_system dynamics_vBrightcon.pdf)
 
 
 If nothing works, or the internet is broken (but you're still here reading this)
