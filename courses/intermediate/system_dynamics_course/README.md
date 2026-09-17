@@ -6,7 +6,7 @@ You can find the material:
 
 ![Locating the data directory in the Hub](sd_data_in_hub.png)
 
-+ The slides are [here in the repository](./Slides/Training_for_openLCA_system dynamics_vBrightcon.pdf)
++ The slides are [here in the repository](./Slides/Training_for_openLCA_system_dynamics_vBrightcon.pdf)
 
 
 
