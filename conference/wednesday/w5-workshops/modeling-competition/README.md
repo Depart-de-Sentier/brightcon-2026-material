@@ -4,7 +4,6 @@
 > Ms Kíra LANCZ (Aalborg University)
 > Massimo PIZZOL (Aalborg University)
 
-￼
 This hands-on workshop introduces a Python-based modelling framework to support consequential life cycle assessment of biobased products using openly available bioeconomy data. Participants will actively work with Jupyter notebooks and an open-source repository to install, set up, and run the model.
 Through guided exercises, attendees will learn how to construct a bioeconomy matrix from publicly available datasets (e.g., JRC data), map biomass flows across sectors, and apply optimization algorithms to identify marginal suppliers under biomass constraints. The workshop will also demonstrate how these outputs can be directly used to build life cycle inventories for biobased product systems.
 The session is designed for participants interested in LCA modeling of emerging biobased products. It builds on existing Python-based tools and introduces how these can be extended for consequential modelling of biomass competition.
