@@ -86,10 +86,12 @@ the formal merge.
 
 ### Step 4 — Test it yourself
 
-Once your PR is merged, log in to [https://summer.brightcon.link](https://summer.brightcon.link) (default password
-`"2026bc"`; credentials from past years are no longer valid), click "Get the materials" to pull the latest version of
-the repository, and check that your kernel appears in the launcher with the display name you set. If it doesn't
-show up right away, try restarting your server from the JupyterHub control panel.
+Once your PR is merged, log in to [https://summer.brightcon.link](https://summer.brightcon.link), click "Get the
+materials" to pull the latest version of the repository, and check that your kernel appears in the launcher with the
+display name you set. If it doesn't show up right away, try restarting your server from the JupyterHub control panel.
+
+> [!IMPORTANT]
+> The default password is **`"2026bc"`** — the **quotation marks are part of the password**. Type them too: `"2026bc"`, not `2026bc`. Credentials from past years are no longer valid.
 
 If anything goes wrong, or the automated check turns red and you're not sure why, send an email or ping us with
 your PR link.
