@@ -1,9 +1,9 @@
 """Execute a notebook's code cells in one namespace. Exit non-zero on the first error.
 
 Usage:
-    python .course/run_notebook.py solutions/2_sommerhus_SOLVED.ipynb
-    python .course/run_notebook.py 2_sommerhus.ipynb --as-student
-    python .course/run_notebook.py 4_sommerhus_dynamic.ipynb --after 2_sommerhus.ipynb
+    python .course/run_notebook.py solutions/3_sommerhus_SOLVED.ipynb
+    python .course/run_notebook.py 3_sommerhus.ipynb --as-student
+    python .course/run_notebook.py 5_sommerhus_dynamic.ipynb --after 3_sommerhus.ipynb
 
 `--as-student` replaces every `# %load solutions/x.py` escape hatch with that file's
 contents, i.e. simulates a student who solved nothing and used every hatch.

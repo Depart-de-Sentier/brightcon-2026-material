@@ -1,8 +1,8 @@
 """Split the dynamic-characterization notebook into a student and a solved version.
 
-    .course/sources/3_dynamic_characterization.ipynb     - the authored master, edit this one
-    3_dynamic_characterization.ipynb                                          - what the students open
-    solutions/3_dynamic_characterization/3_dynamic_characterization_SOLVED.ipynb  - filled in
+    .course/sources/4_dynamic_characterization.ipynb     - the authored master, edit this one
+    4_dynamic_characterization.ipynb                                          - what the students open
+    solutions/4_dynamic_characterization/4_dynamic_characterization_SOLVED.ipynb  - filled in
 
 The master marks its exercises the way it always has: an empty (or skeleton) code cell for
 the student, followed by a cell starting with `#SOLUTION`. Here the two are separated - the
@@ -19,8 +19,8 @@ sys.path.insert(0, str(Path(__file__).parent))
 from nbtools import code, for_solutions_dir, load, save, strip_outputs  # noqa: E402
 
 HERE = Path(__file__).resolve().parent.parent
-SOURCE = HERE / ".course" / "sources" / "3_dynamic_characterization.ipynb"
-SOLUTIONS = HERE / "solutions" / "3_dynamic_characterization"
+SOURCE = HERE / ".course" / "sources" / "4_dynamic_characterization.ipynb"
+SOLUTIONS = HERE / "solutions" / "4_dynamic_characterization"
 
 HATCH = (
     "# Stuck, or out of time? Uncomment the line below, run this cell twice,\n"
@@ -124,14 +124,14 @@ def split(nb):
         if i in owner:  # a placeholder
             exercise = EXERCISES[owner[i]]
             student.append(code(exercise["todo"]) if exercise["todo"] else cell)
-            pending_hatch = code(HATCH.format(file=f"solutions/3_dynamic_characterization/{exercise['file']}"))
+            pending_hatch = code(HATCH.format(file=f"solutions/4_dynamic_characterization/{exercise['file']}"))
             continue  # the solved notebook shows the solution instead
 
         if is_solution(cell):
             source = strip_marker(cell)
             name = EXERCISES[solutions.index(i)]["file"]
             (SOLUTIONS / name).write_text(source.rstrip() + "\n")
-            print(f"wrote solutions/3_dynamic_characterization/{name}")
+            print(f"wrote solutions/4_dynamic_characterization/{name}")
             solved.append(code(source))
             continue
 
@@ -153,9 +153,9 @@ def notebook(nb, cells):
 master = load(SOURCE)
 solved_cells, student_cells = split(master)
 
-save(notebook(master, student_cells), HERE / "3_dynamic_characterization.ipynb")
-print(f"wrote 3_dynamic_characterization.ipynb with {len(student_cells)} cells (student version)")
+save(notebook(master, student_cells), HERE / "4_dynamic_characterization.ipynb")
+print(f"wrote 4_dynamic_characterization.ipynb with {len(student_cells)} cells (student version)")
 
 solved_cells = for_solutions_dir(solved_cells)
-save(notebook(master, solved_cells), SOLUTIONS / "3_dynamic_characterization_SOLVED.ipynb")
-print(f"wrote solutions/3_dynamic_characterization/3_dynamic_characterization_SOLVED.ipynb with {len(solved_cells)} cells")
+save(notebook(master, solved_cells), SOLUTIONS / "4_dynamic_characterization_SOLVED.ipynb")
+print(f"wrote solutions/4_dynamic_characterization/4_dynamic_characterization_SOLVED.ipynb with {len(solved_cells)} cells")

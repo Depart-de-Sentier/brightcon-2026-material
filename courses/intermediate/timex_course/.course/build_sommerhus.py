@@ -1,13 +1,13 @@
 """Build the sommerhus notebooks.
 
-    2_sommerhus.ipynb          - what the students open (exercise cells blank)
-    4_sommerhus_dynamic.ipynb  - after the dynamic characterization notebook
+    3_sommerhus.ipynb          - what the students open (exercise cells blank)
+    5_sommerhus_dynamic.ipynb  - after the dynamic characterization notebook
 
 plus, in `solutions/<notebook>/`, the solved version of each and one escape-hatch script per
 exercise.
 
 The product system lives in `sommerhus_system.py`, its temporal information in
-`sommerhus_temporal.py`; each solved notebook gets a generated copy of what it imports. Notebook 2 writes the temporal part out by hand; notebook 4
+`sommerhus_temporal.py`; each solved notebook gets a generated copy of what it imports. Notebook 3 writes the temporal part out by hand; notebook 5
 imports it. Cells tagged `role="solution"` are blanked (and their source written to
 `solutions/`) for the student version, `role="answer"` cells are dropped from it.
 
@@ -22,8 +22,8 @@ from nbtools import code, for_solutions_dir, md, save  # noqa: E402
 
 HERE = Path(__file__).resolve().parent.parent
 SOLUTIONS = HERE / "solutions"
-NB1 = SOLUTIONS / "2_sommerhus"
-NB3 = SOLUTIONS / "4_sommerhus_dynamic"
+NB1 = SOLUTIONS / "3_sommerhus"
+NB3 = SOLUTIONS / "5_sommerhus_dynamic"
 
 FLOWCHART = """```mermaid
 flowchart LR
@@ -68,7 +68,7 @@ def notebook(cells):
 
 
 # ======================================================================================
-# Notebook 2 - the case study
+# Notebook 3 - the case study
 # ======================================================================================
 part1 = [
     md(f"""# Time-explicit LCA of a Danish *sommerhus*
@@ -450,21 +450,21 @@ def student_version(cells, solutions_dir):
 
 
 students = student_version(part1, NB1)
-save(notebook(students), HERE / "2_sommerhus.ipynb")
-print(f"wrote 2_sommerhus.ipynb with {len(students)} cells (student version)")
+save(notebook(students), HERE / "3_sommerhus.ipynb")
+print(f"wrote 3_sommerhus.ipynb with {len(students)} cells (student version)")
 
-save(notebook(for_solutions_dir(part1)), NB1 / "2_sommerhus_SOLVED.ipynb")
-print(f"wrote solutions/2_sommerhus/2_sommerhus_SOLVED.ipynb with {len(part1)} cells")
+save(notebook(for_solutions_dir(part1)), NB1 / "3_sommerhus_SOLVED.ipynb")
+print(f"wrote solutions/3_sommerhus/3_sommerhus_SOLVED.ipynb with {len(part1)} cells")
 copy_modules(["sommerhus_system.py"], NB1)
 
 
 # ======================================================================================
-# Notebook 4 - dynamic characterization of the same house
+# Notebook 5 - dynamic characterization of the same house
 # ======================================================================================
 part3 = [
     md(f"""# The *sommerhus*, characterized dynamically
 
-Notebook 2 gave the house a **timeline**. This notebook asks what the timing of its emissions
+Notebook 3 gave the house a **timeline**. This notebook asks what the timing of its emissions
 does to the **impact**, with the dynamic characterization from the previous session - now on a
 real inventory instead of a handful of dummy rows.
 
@@ -473,7 +473,7 @@ Two things are yours to work out: how the **time horizon** is counted (section 3
 
 {FLOWCHART}
 """),
-    md("""## 0 | The model from notebook 2
+    md("""## 0 | The model from notebook 3
 
 System and temporal information are imported rather than retyped -
 [`sommerhus_system.py`](sommerhus_system.py) and
@@ -698,7 +698,7 @@ comparison.summary.pivot(
 #       time_horizon 20 / 50 / 100 / 500, each with fixed_time_horizon False and True.
 #       Start from one base TimexLCASettings (demand={living: 1}, method=METHOD,
 #       starting_datetime="2025-01-01", temporal_grouping="month", metric="GWP") and
-#       dataclasses.replace() it per run. See also the last part of the 2_sommerhus.ipynb notebook.
+#       dataclasses.replace() it per run. See also the last part of the 3_sommerhus.ipynb notebook.
 '''),
     md("""Read the `fixed_time_horizon=True` column downwards and watch the warning `bw_timex`
 printed: with a fixed horizon of 20 years, everything after 2045 lies **outside** the window
@@ -782,7 +782,7 @@ tlca.lci()
 #       temporal_grouping="month") -> lci()
 '''),
     md("""**(b) Characterize it.** You already wrote this function: `characterize_water_scarcity`
-from [`3_dynamic_characterization.ipynb`](3_dynamic_characterization.ipynb), with
+from [`4_dynamic_characterization.ipynb`](4_dynamic_characterization.ipynb), with
 `water_stress_index_by_month`. Copy both across - nothing about them changes here. The only new part is what you point it at.
 
 > Call `characterize()` on `tlca.dynamic_inventory_df` directly, with
@@ -819,7 +819,7 @@ water_scarcity = characterize(
 print(f"withdrawn:  {water_rows['amount'].sum():,.0f} m3 over {len(water_rows)} withdrawals")
 print(f"weighted:   {water_scarcity['amount'].sum():,.0f} stress-m3")
 ''', section="student_water_cf", file="4_water_characterization.py", role="solution", todo='''# TODO: bring `characterize_water_scarcity` and `water_stress_index_by_month` over from the
-#       3_dynamic_characterization.ipynb - they work here unchanged - and apply them to
+#       4_dynamic_characterization.ipynb - they work here unchanged - and apply them to
 #       tlca.dynamic_inventory_df.
 '''),
     md("""The season sits on the high half of the index: weighted by the withdrawal curve it
@@ -851,7 +851,7 @@ by 60% between 2025 and 2075 and is held flat outside that range - then characte
 inventory with it and compare.
 
 > `np.interp(year, [2025, 2075], [1.0, 1.6])` gives you the trend and clamps outside the
-> range, exactly like the temporal evolution factors in notebook 2. The month must survive:
+> range, exactly like the temporal evolution factors in notebook 3. The month must survive:
 > `series.date` still carries it, so keep reading `series.date.month` and do **not** route
 > this through `dynamic_lcia()`.
 >
@@ -923,9 +923,9 @@ a house built in 2045 would draw all of its water on the expensive part of that 
 ]
 
 students3 = student_version(part3, NB3)
-save(notebook(students3), HERE / "4_sommerhus_dynamic.ipynb")
-print(f"wrote 4_sommerhus_dynamic.ipynb with {len(students3)} cells (student version)")
+save(notebook(students3), HERE / "5_sommerhus_dynamic.ipynb")
+print(f"wrote 5_sommerhus_dynamic.ipynb with {len(students3)} cells (student version)")
 
-save(notebook(for_solutions_dir(part3)), NB3 / "4_sommerhus_dynamic_SOLVED.ipynb")
-print(f"wrote solutions/4_sommerhus_dynamic/4_sommerhus_dynamic_SOLVED.ipynb with {len(part3)} cells")
+save(notebook(for_solutions_dir(part3)), NB3 / "5_sommerhus_dynamic_SOLVED.ipynb")
+print(f"wrote solutions/5_sommerhus_dynamic/5_sommerhus_dynamic_SOLVED.ipynb with {len(part3)} cells")
 copy_modules(["sommerhus_system.py", "sommerhus_temporal.py"], NB3)

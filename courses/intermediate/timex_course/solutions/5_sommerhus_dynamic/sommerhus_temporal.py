@@ -11,7 +11,7 @@ as a function of calendar time).
     build_system(...)
     add_temporal_information(lifetime=50, background_database=...)
 
-Notebook 2 writes this out by hand; the later notebooks import it.
+Notebook 3 writes this out by hand; the later notebooks import it.
 """
 
 from datetime import datetime
