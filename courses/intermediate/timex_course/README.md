@@ -2,7 +2,13 @@
 
 This folder contains the materials for the BrightCon 2026 intermediate course on time-explicit life cycle assessment with `bw_timex`.
 
-The Python kernel is already installed on the course server. To reproduce the environment locally, first [install `uv`](https://docs.astral.sh/uv/getting-started/installation/).
+## On the Brightcon hub
+
+The `timex` kernel is already installed on the course server, and the Brightway project used in the course (`timex_brightcon`: ecoinvent 3.12 cutoff and four premise REMIND-EU SSP2-NDC scenario databases) is available as a backup in the `data` folder of your hub home. The first code cell of `Basic/ev_walkthrough_premise.ipynb` restores it into your own projects; run it once (about one minute, about 7 GB). `Basic/1_getting_started.ipynb` builds its own small example and needs no restore.
+
+## Working locally
+
+To reproduce the environment locally, first [install `uv`](https://docs.astral.sh/uv/getting-started/installation/).
 
 Then clone this repository to a folder of your liking, navigate there in your terminal, and run:
 
