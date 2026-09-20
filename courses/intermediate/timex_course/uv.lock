@@ -317,7 +317,7 @@ wheels = [
 [[package]]
 name = "bw-timex"
 version = "1.3.2"
-source = { registry = "https://pypi.org/simple" }
+source = { git = "https://github.com/brightway-lca/bw_timex.git?rev=main#349690b307790c262a850f41e94efe46e31e0601" }
 dependencies = [
     { name = "bw-graph-tools" },
     { name = "bw-temporalis" },
@@ -334,10 +334,6 @@ dependencies = [
     { name = "pypardiso", marker = "(platform_machine == 'x86_64' and sys_platform == 'linux') or (platform_machine == 'AMD64' and sys_platform == 'win32')" },
     { name = "seaborn" },
     { name = "tqdm" },
-]
-sdist = { url = "https://files.pythonhosted.org/packages/74/5f/67ff5ff649af741f02b1a045052a367fc8098c7d0bce96dfa488816c7e81/bw_timex-1.3.2.tar.gz", hash = "sha256:b33d79cd2ad6c14a263dfbb5ec8fcce9aaca37c1fac048ec2a05a2cecae5b826", size = 1118996, upload-time = "2026-09-15T12:26:41.147Z" }
-wheels = [
-    { url = "https://files.pythonhosted.org/packages/61/20/dffabb370060172ec67639d23712f36a5b667ccb7c4a590bfa59b1812f71/bw_timex-1.3.2-py3-none-any.whl", hash = "sha256:ec86a0401f5ef021a74a23b8ca4aaa80f5baeb090e972b19c972eafed1650bd3", size = 1054777, upload-time = "2026-09-15T12:26:39.562Z" },
 ]
 
 [[package]]
@@ -3150,7 +3146,7 @@ dependencies = [
 
 [package.metadata]
 requires-dist = [
-    { name = "bw-timex", specifier = "==1.3.2" },
+    { name = "bw-timex", git = "https://github.com/brightway-lca/bw_timex.git?rev=main" },
     { name = "premise", specifier = "==2.5.1" },
     { name = "pypardiso", marker = "sys_platform != 'darwin'", specifier = "==0.4.6" },
     { name = "scikit-umfpack", marker = "platform_machine == 'arm64' and sys_platform == 'darwin'" },
