@@ -4,6 +4,7 @@ Three hours, hands-on: how to put a product system in time, and what changes onc
 The running example is a Danish *sommerhus* — built of wood, heated with a heat pump, lived in
 for 50 years, then demolished.
 
+<<<<<<< HEAD
 ## The material
 
 | | | what it covers |
@@ -50,6 +51,13 @@ Papers:
 The Python kernel is already installed on the course server, and the `timex_brightcon` project is
 restored from a backup in [`0_start_here.ipynb`](0_start_here.ipynb) — that is all you need during
 the course. To build the project from scratch instead:
+=======
+## On the Brightcon hub
+
+The `timex` kernel is already installed on the course server, and the Brightway project used in the course (`timex_brightcon`: ecoinvent 3.12 cutoff and four premise REMIND-EU SSP2-NDC scenario databases) is available as a backup in the `data` folder of your hub home. The first code cell of `Basic/ev_walkthrough_premise.ipynb` restores it into your own projects; run it once (about one minute, about 7 GB). `Basic/1_getting_started.ipynb` builds its own small example and needs no restore.
+
+## Working locally
+>>>>>>> upstream/main
 
 To reproduce the environment locally, first [install `uv`](https://docs.astral.sh/uv/getting-started/installation/).
 
