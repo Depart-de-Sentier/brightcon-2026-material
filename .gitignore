@@ -1,0 +1,35 @@
+# Local inputs and generated data; keep only folder documentation.
+/data/**
+!/data/**/
+!/data/**/README.md
+
+# Generated artifacts belong in local output folders.
+/outputs/
+/artifacts/
+/reports/generated/
+
+# Credentials and local settings.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python and notebooks.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Editors and operating systems.
+.DS_Store
+.idea/
+.vscode/
+*.swp
