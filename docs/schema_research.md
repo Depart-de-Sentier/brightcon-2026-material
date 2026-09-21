@@ -27,6 +27,7 @@
   - https://openlineage.io/
   - https://docs.open-metadata.org/v2.0.x/connectors/database/s3-datalake
   - https://specs.frictionlessdata.io/data-package/
+  - https://datapackage.org/standard/data-package/#sources
 
 # the structure of ecospold2
 - used for ecoinvent v3
