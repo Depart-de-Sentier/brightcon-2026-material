@@ -22,6 +22,12 @@ The runner applies all eight repair steps to `data/raw/ecoSpold files/`, then va
 
 Raw files remain unchanged. Reruns accept identical existing copies, refuse conflicting copies, and refresh the reports. This command repairs and validates XML; the Brightway import is a separate step described in the [script instructions](scripts/ecospold%20importer/README.md). See the [repair report](docs/bafu-2026-ecospold-repair-report.md) for each defect and its exact fix.
 
+## Import and review links in Brightway
+
+Run [the import notebook](scripts/import_fixed_ecospold.ipynb) with the `bw` kernel. It imports the repaired files against biosphere 3.10 and applies the [documented technosphere and biosphere migrations](schemas/mappings/README.md). Rerun extraction and the migration cells after editing a mapping.
+
+The latest full check links all technosphere exchanges and 290,220 of 293,747 biosphere exchanges. The remaining 3,527 biosphere occurrences are listed in `reports/generated/biosphere-unlinked.json`. Flows without a supported target remain unresolved. A notebook guard stops Run All before the existing drop/write/LCA cells while any exchange remains unlinked. See the [remaining review work](docs/bafu-2026-biosphere-unresolved-review.md).
+
 ## Repository structure
 
 | Folder | Purpose |
