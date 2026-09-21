@@ -1,11 +1,21 @@
 # notes
 - context: Sentier.dev uses parquet and geoparquet, so its metadata requirements are also important to consider; in hackathon 2025 group 1 datapackage.json was referenced as a possible useable/adaptable standard.
+- three primitives according to open metadata
+  - context: Schemas, tables, columns, dashboards, pipelines, ML models, owners, lineage, and classifications — captured in one open metadata graph.
+  - ontology: Glossary terms, metric definitions, semantics, and W3C-standard relationships (RDF, OWL, DCAT, Schema.org) that give your data shared business meaning.
+  - memory: Corrections, decisions, approvals, feedback loops, and an auditable record of every change — across humans and AI.
+
+# context
+- sentier.dev
+- OpenMetadata
+- Sentier-mappings
 
 # glossary
 - provenance
 - lineage
 - metadata
 - phylogeny ? same as lineage
+- schema
 
 # links
 - last years projects repos:
@@ -18,7 +28,7 @@
   - https://docs.open-metadata.org/v2.0.x/connectors/database/s3-datalake
   - https://specs.frictionlessdata.io/data-package/
 
-# the structure of ecospold
+# the structure of ecospold2
 - used for ecoinvent v3
 - created based on hearing may 2009
 - designed to represent all three stages of LCA: UPR (unit process raw), LCI and LCIA
