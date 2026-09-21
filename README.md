@@ -6,6 +6,22 @@ The hackathon will explore a proposed traceability standard, establish data line
 
 Project context: [Brightcon 2026 hackathon issue #42](https://github.com/Depart-de-Sentier/brightcon-2026-material/issues/42).
 
+## Repair the raw EcoSpold files
+
+From the repository root, run this single command using the existing `bw` conda environment (with `lxml` and `pyecospold` installed):
+
+```bash
+conda run --no-capture-output -n bw python "scripts/ecospold importer/repair_all.py"
+```
+
+The runner applies all eight repair steps to `data/raw/ecoSpold files/`, then validates the final XML against the EcoSpold 1 schema and checks inventory preservation. It uses the documented fallback values in [schema_overrides.json](scripts/ecospold%20importer/schema_overrides.json) and stops if any step fails.
+
+- **Repaired files:** `data/processed/ecospold1-schema-fixed/`
+- **Intermediate copies:** separate directories under `data/processed/`
+- **Repair and validation reports:** `reports/generated/`
+
+Raw files remain unchanged. Reruns accept identical existing copies, refuse conflicting copies, and refresh the reports. This command repairs and validates XML; the Brightway import is a separate step described in the [script instructions](scripts/ecospold%20importer/README.md). See the [repair report](docs/bafu-2026-ecospold-repair-report.md) for each defect and its exact fix.
+
 ## Repository structure
 
 | Folder | Purpose |
