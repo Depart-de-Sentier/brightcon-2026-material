@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="295560" timestamp="2023-08-28T15:03:22.850+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity by fuel" datasetRelatesToProduct="true" generalComment="The dataset describes the electricity production at an average hard coal power plant at busbar in this region of the North American Electricity Reliability Corporation (NERC), modelled separately from the other regions. The datasets includes as only input the fuel use. The corresponding dataset describing the combustion of the fuel contains the following data, assumptions, and extrapolations: The plant is assumed to operate 150000 hours during its lifetime. For the assessment of some of the main characteristics (efficiency and capacity of the plant, capacity factor) and criteria emissions (SOx, NOx, mercury, and CO2) a bottom-up approach has been used, based upon the complete set of these factors for every US hard coal power stations in 2004. The limited number of combined heat and power plants has not been included in the analysis. All other emission data are based on US EPA (1998) and US DOE (1998) reports. The size distribution of particles has been derived from German data, assumed as well representative for European hard coal power plants. The amounts of retained SOx (due to use of FGD) and retained NOx (due to use of SCR) have been calculated as the difference between uncontrolled average US SOx and NOx emissions in year 1998 and actual region specific SOx and NOx emissions in year 2004 assuming that the characteristics of the coals have not changed in the meanwhile. The waste heat releases to air and water have been allocated on the basis of the assumed share of cooling tower vs. river cooled power plants and assumptions on the direct losses to air, along with the corresponding European datasets. The share of the recycled ash is the average US. For the disposal of the remaining ash, the German disposal dataset has been used, roughly representing average European environmental impacts due to hard coal ash disposal.;&#10;UUID: 398d29df-8aea-37c1-8c3f-3e2c74de39df" includedProcesses="Conversion of hard coal into electricity: electricity output at busbar. The module uses the average net efficiency of ERCOT hard coal power plants (31.1%) in 2004." infrastructureProcess="false" localCategory="electricity by fuel" localName="Electricity, hard coal, at power plant" localSubCategory="coal" name="Electricity, hard coal, at power plant" subCategory="coal" unit="kWh"/>
+        <geography location="WECC" text="WECC = Western Electricity Coordinating Council. Region-specific, US average, and European data, see ReferenceFunction/GeneralComment and ReferenceFunction/IncludedProcesses."/>
+        <technology text="Average installed technology."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2004-01</startDate>
+          <endDate>2004-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-08-31T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography/Text" productionVolume="na" samplingProcedure="literature and statistics " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bauer C., Roeder A." firstAuthor="Dones R." nameOfEditors="Dones R." number="158397" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI" sourceNumber="0" sourceType="4" text="Röder, A., Ch. Bauer, R. Dones (2007) Kohle. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0. Editors: Dones R.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Röder, A.\nOther authors: Ch. Bauer, R. Dones\nYear: 2007\nName of editors: Dones R.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2007 - Coal - Dones" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0" volumeNo="6" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="137340"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136750"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136750" referenceToPublishedSource="158397"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity by fuel" generalComment="&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="coal" location="WECC" meanValue="1.0" name="Electricity, hard coal, at power plant" number="295560" subCategory="coal" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="US NERC statistics; uncertainty own estimate&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="coal\power plant" location="WECC" meanValue="11.6" name="Hard coal, burned in power plant" number="189960" standardDeviation95="1.0500000000000003" subCategory="coal\power plant" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

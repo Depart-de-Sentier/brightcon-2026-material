@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="329846" timestamp="2023-08-28T15:03:03.686+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="building components" datasetRelatesToProduct="true" generalComment="Data are based on a door leaf of 1m x 2m and scaled to 1m2 door. The frame is 0.015m wide. The aluminium sheet for panelling is 0.002m thick. 1m2 of panelling weighs 8.4kg. The material use is calculated based on the door and frame measures.;&#10;UUID: 231d7d2b-5e2b-37ac-a144-fcc234048bf3" includedProcesses="Included are the materials used for the panelling of the door leaf (1 side) and the door frame (1-side and interior). Transport of the materials is included. Prodction losses are not included." infrastructureProcess="false" localCategory="building components" localName="Panelling, aluminium, outer door, at plant" localSubCategory="doors" name="Panelling, aluminium, outer door, at plant" subCategory="doors" unit="m2"/>
+        <geography location="CH" text="Data apply to the supply in Switzerland."/>
+        <technology text="Industry data."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2018-01</startDate>
+          <endDate>2019-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2021-06-16T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Some generic datasets from ecoinvent have been used." productionVolume="na" samplingProcedure="The materials used were calculated based on the door measures. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Stolz P., Frischknecht R." firstAuthor="Ramseier L." nameOfEditors="-" number="156025" placeOfPublications="Uster, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="3" text="Ramseier L., Stolz P., Frischknecht R. (2020) Ökobilanz von Holzfenstern und Holztüren. Project report. Volume: 634. treeze Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: Ramseier L.\nOther authors: Stolz P., Frischknecht R.\nYear: 2020\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: treeze Ltd.\nVolume No: 634\n" title="2020 - LCA wooden windows and doors - Ramseier" titleOfAnthology="Project report" volumeNo="634" year="2020"/>
+        <validation proofReadingDetails="Proof reading validation: 16.06.2021; Other validation: G:\Projekte laufend\634 Holzfenster u.-türen, energieSchweiz\EcoSpold\UVEK2021\[634_EcoSpold_Türen_v1.5_UVEK2021_v0.1.xlsx]X-Process;" proofReadingValidator="138233"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="156024"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="156024" referenceToPublishedSource="156025"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Philippe Stolz" number="138233" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Livia Ramseier" number="156024" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="building components" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="building components" localSubCategory="doors" location="CH" meanValue="1.0" name="Panelling, aluminium, outer door, at plant" number="329846" subCategory="doors" uncertaintyType="0" unit="m2">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,1,1,1,5,BU:2); Transportation to production site; Frischknecht 2007 et al.&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="1.6786" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.1419" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,1,1,1,5,BU:2); Transportation to production site; Frischknecht 2007 et al.&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.41964" name="Transport, freight, lorry, fleet average" number="228841" standardDeviation95="2.1419" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,5,1,1,1,5,BU:1.05); Powder coating of aluminium; Calculated based on door measures&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="coating" location="RER" meanValue="1.56" name="Powder coating, aluminium sheet" number="299933" standardDeviation95="1.3765000000000003" subCategory="coating" uncertaintyType="1" unit="m2">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction materials" generalComment="(4,5,1,1,1,5,BU:1.05); Aluminium for door panelling; Calculated based on door measures&#10;" infrastructureProcess="false" localCategory="construction materials" localSubCategory="others" location="CH" meanValue="8.3928" name="Aluminium profile, uncoated, SZFF 2014, recycling share 52%, at plant" number="291990" standardDeviation95="1.3765000000000003" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

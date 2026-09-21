@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="607019" timestamp="2023-08-28T15:03:30.298+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="construction waste" datasetRelatesToProduct="true" generalComment="The waste contains 0.97kg inert material (GSD=100.1%) and 0.03kg steel (GSD=107.9%).  Waste density is 2300 kg/m3. ;&#10;UUID: bba7588b-bb78-47c5-99cd-238224d16679" includedProcesses="energy for dismantling, particulate matter emissions from dismantling and handling, machines for handling in sorting plant, electricity demand for sorting plant, transport to dismantling facilities, final disposal of waste material, " infrastructureProcess="false" localCategory="construction waste" localName="Disposal, building, reinforced concrete, to sorting plant" localSubCategory="unspecified" name="Disposal, building, reinforced concrete, to sorting plant" subCategory="unspecified" unit="kg"/>
+        <geography location="CH" text="Specific to the technology mix encountered in Switzerland in late 1990ies"/>
+        <technology text="Building demolition with skid-steer loaders. Dry sorting plant for building wastes with pre-sorting of mixed waste, crushing and manual sorting."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-05-22T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="waste-specific calculation based on literature data " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Doka G." nameOfEditors="-" number="136700" placeOfPublications="Duebendorf and St. Gallen, CH" publisher="Swiss Centre for LCI, Doka LCA" sourceNumber="0" sourceType="3" text="Doka G. (2007) Life Cycle Inventories of Waste Treatment Services. Final report ecoinvent data v2.0. Volume: 13. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Separate publication\nSource: CD-ROM\nFirst author: Doka G.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 13\n" title="2009 - LCI waste treatment services - Doka" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="13" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: Passed. Calculation for standard deviation 95 of transport services differs from standard Pedigree approach in this project and figure obtained by this procedure (2.09). Uncertainty for estimation of distance is not included.; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136699"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136698" referenceToPublishedSource="136700"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Gabor Doka" number="136698" telephone="anonymised"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="construction waste" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="1.0" name="Disposal, building, reinforced concrete, to sorting plant" number="607019" subCategory="unspecified" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="emission from dismantling and handling. (2,3,3,3,1,5) &amp; basic uncertainty of 1.5; from one extrapolated PM10 emission factor and generic PM fractions from measurements&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="8.35E-5" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="1.6" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="emission in sorting plant. Uncertainty from range in literature&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.0133" name="Heat, waste" number="46930" standardDeviation95="1.1999999999999997" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="waste" generalComment="Uncertainty heeded in exchanges, 1kg = 1kg&#10;" infrastructureProcess="true" localCategory="waste" localSubCategory="infrastructure" location="CH" meanValue="1.0E-10" name="Sorting plant for construction waste" number="260786" standardDeviation95="1.0" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="emission from dismantling and handling. (2,3,3,3,1,5) &amp; basic uncertainty of 2; from one extrapolated PM10 emission factor and generic PM fractions from measurements&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.34E-5" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="2.1" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="transport to disposal facilities. Uncertainty calculated from uncertainty in transported masses and the uncertainty in generic transportation distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.0217" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="1.1" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="disposed masses. Uncertainty calculated from uncertainty in transfer coefficients and uncertainty of waste fractions&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="0.388" name="Disposal, inert material, 0% water, to sanitary landfill" number="208503" standardDeviation95="1.4999999999999998" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="handling in sorting plant. Uncertainty from range in literature&#10;" infrastructureProcess="false" localCategory="construction processes" localSubCategory="civil engineering" location="CH" meanValue="4.83E-4" name="Excavation, hydraulic digger, average" number="432664" standardDeviation95="1.1999999999999997" subCategory="civil engineering" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="energy for demolition. Uncertainty from range in (DAFSTB 1996)&#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="0.0612" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="1.7" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="demand in sorting plant. Uncertainty from range in literature&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.0037" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.1999999999999997" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="emission from dismantling and handling. (2,3,3,3,1,5) &amp; basic uncertainty of 3; from one extrapolated PM10 emission factor and generic PM fractions from measurements&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.66E-5" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="3.1" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

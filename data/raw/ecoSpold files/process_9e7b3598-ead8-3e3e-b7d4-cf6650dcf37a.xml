@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="559646" timestamp="2023-08-28T15:03:01.546+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="The process describes the production of methanol derived from syngas and refers to a full-methanol steam reforming process to obtain a 2.2:1 H2:CO ratio of the syngas for the sole production of methanol. No CO2 use, no Hydrogen production (assumed to be burned in the furnace).;&#10;CAS number: 000067-56-1; &#10;Formula: CH3OH; &#10;Synonyms: methyl alcohol, methyl hydroxide, monohydroxymethane; &#10;UUID: 9e7b3598-ead8-3e3e-b7d4-cf6650dcf37a" includedProcesses="Raw materials including syngas, processing energy, estimate on catalyst use based on &quot;methanol from natural gas&quot;, emissions to air and water from process, plant infrastructure." infrastructureProcess="false" localCategory="fuels" localName="Methanol, from synthetic gas, at plant" localSubCategory="biofuels" name="Methanol, from synthetic gas, at plant" subCategory="biofuels" unit="kg"/>
+        <geography location="CH" text="Data from few literature sources, largely based on methanol from natural gas."/>
+        <technology text="Data refers to full-methanol steam reforming (as opposed to autothermal reforming) of syngas derived from biomass gasification."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Data from 1995 to 2004, pilot scale, future technology">
+          <startDate>2000-01</startDate>
+          <endDate>2004-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2006-07-12T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="0" productionVolume="No commercial plant of methanol-from-biomass. Laboratory-to-pilot scale." samplingProcedure="Production assessed with mixed data from literature and the ecoinvent 'methanol from natural gas' process. Data is considered relatively weak, as there is no commercial experience of methanol from bio-syngas. Representativity of the data seems difficult to assess. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J." firstAuthor="Jungbluth N." nameOfEditors="-" number="136872" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth N., Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J. (2007) Life Cycle Inventories of Bioenergy. Final report ecoinvent data v2.0. Volume: 17. Swiss Centre for LCI, ESU. Duebendorf and Uster, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth N.\nOther authors: Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Duebendorf and Uster, CH\nPublisher: Swiss Centre for LCI, ESU\nVolume No: 17\n" title="2007 - LCI bioenergy - Jungbluth" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="17" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="159099"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="159098" referenceToPublishedSource="136872"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Edgard Gnansounou" number="159098" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Arnaud Dauriat" number="159099" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="biofuels" location="CH" meanValue="1.0" name="Methanol, from synthetic gas, at plant" number="559646" subCategory="biofuels" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,5,3,3,5,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="3.0E-5" name="Zinc, primary, at regional storage" number="236764" standardDeviation95="2.1586000000000003" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="(3,5,2,3,4,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="4.9E-4" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.8906" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000050-00-0" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.1008E-7" name="Formaldehyde" number="650" standardDeviation95="1.7975999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-98-6" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.2016E-7" name="Propane" number="661" standardDeviation95="1.7975999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,1,3,3,5); Calculation&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="GLO" meanValue="3.7037E-11" name="Methanol plant" number="451585" standardDeviation95="3.0980000000000003" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="130498-29-2" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.1008E-8" name="PAH, polycyclic aromatic hydrocarbons" number="658" standardDeviation95="3.2462" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.0E-6" name="Chloride" number="34061" standardDeviation95="3.3314000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="3.0E-5" name="Methanol" number="30529" standardDeviation95="3.3314000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(3,3,2,3,4,3); Data dependent on technology&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="industry water" location="CH" meanValue="0.85" name="Water, deionised, at plant" number="617689" standardDeviation95="1.5318999999999998" subCategory="industry water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.4E-4" name="TOC, Total Organic Carbon" number="2278" standardDeviation95="1.8906" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.0E-4" name="Formaldehyde" number="51960" standardDeviation95="3.3314000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(3,2,1,2,4,2); Data derived from literature survey (&gt;20 sources) 2000-2005&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="biofuels\biogas" location="CH" meanValue="7.1255" name="Synthetic gas, production mix, at plant" number="332516" standardDeviation95="1.5226000000000004" subCategory="biofuels\biogas" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007723-14-0" category="emissions to water" generalComment="(3,5,2,3,4,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.0E-5" name="Phosphorus" number="67972" standardDeviation95="1.8906" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000067-56-1" category="emissions to air" generalComment="(2,4,1,3,1,3); Based on ecoinvent Guidelines&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="5.3E-4" name="Methanol" number="28623" standardDeviation95="1.526" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.5117E-6" name="Carbon monoxide, biogenic" number="81433" standardDeviation95="5.2818" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="001746-01-6" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="9.3E-17" name="Dioxin, 2,3,7,8 Tetrachlorodibenzo-p-" number="29923" standardDeviation95="3.2462" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,3,3,5,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganics" location="RER" meanValue="2.4E-4" name="Aluminium oxide, at plant" number="423671" standardDeviation95="2.1586000000000003" subCategory="inorganics" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(5,5,na,na,na,na); Estimated, to close mass balance&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="0.0053176" name="Treatment, sewage, from residence, to wastewater treatment, class 2" number="538378" standardDeviation95="1.5639999999999998" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.0E-5" name="Phenol" number="2976" standardDeviation95="3.3314000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.8E-4" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.8906" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Based on ecoinvent Guidelines, standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="1.38E-4" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="010024-97-2" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.1008E-7" name="Dinitrogen monoxide" number="646" standardDeviation95="1.7975999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,5,3,3,5,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="1.0E-5" name="Molybdenum, at regional storage" number="175491" standardDeviation95="2.1586000000000003" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.0551E-4" name="Nitrogen oxides" number="79243" standardDeviation95="1.7975999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to water" generalComment="(3,5,2,3,4,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.0E-6" name="AOX, Adsorbable Organic Halogen as Cl" number="81549" standardDeviation95="1.8906" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Based on ecoinvent Guidelines, standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.0195" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,5,3,3,5,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="2.0E-5" name="Nickel, 99.5%, at plant" number="509334" standardDeviation95="2.1586000000000003" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, to close carbon balance&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.7642" name="Carbon dioxide, biogenic" number="80535" standardDeviation95="1.5318999999999998" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000064-19-7" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="4.6512E-7" name="Acetic acid" number="27393" standardDeviation95="1.7975999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000050-32-8" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.1008E-11" name="Benzo(a)pyrene" number="29927" standardDeviation95="3.2462" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.0E-5" name="Suspended solids, unspecified" number="157731" standardDeviation95="1.8906" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.2016E-7" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="3.2462" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.2016E-6" name="Methane, biogenic" number="155267" standardDeviation95="1.7975999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(4,4,3,2,4,5); Data strongly dependent on technology, data from one source&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.27675" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.6512" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000075-07-0" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.1008E-9" name="Acetaldehyde" number="632" standardDeviation95="1.7975999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000079-09-4" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.2016E-8" name="Propionic acid" number="63131" standardDeviation95="1.7975999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.4E-4" name="DOC, Dissolved Organic Carbon" number="4408" standardDeviation95="1.8906" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000108-88-3" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.2016E-7" name="Toluene" number="665" standardDeviation95="1.7975999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000106-97-8" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.1706E-6" name="Butane" number="639" standardDeviation95="1.7975999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000109-66-0" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.7209E-6" name="Pentane" number="660" standardDeviation95="1.7975999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,3,3,5,5); Adapted from 'methanol (from natural gas), at plant'&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="9.0E-5" name="Copper oxide, at plant" number="601476" standardDeviation95="2.1586000000000003" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(2,3,3,3,4,5); Data dependent on technology, average used&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.00816" name="Water, cooling, unspecified natural origin/m3" number="29019" standardDeviation95="1.5886" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="007446-09-5" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.7054E-6" name="Sulfur dioxide" number="26215" standardDeviation95="1.5318999999999998" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000071-43-2" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.2403E-6" name="Benzene" number="638" standardDeviation95="1.7975999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-97-6" category="emissions to air" generalComment="(3,3,2,3,4,3); Calculation, from syngas composition and natural gas combustion&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="9.3024E-11" name="Mercury" number="89723" standardDeviation95="5.2818" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,1,2,3,5); Based on ecoinvent Guidelines and energy balance closure&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="16.062" name="Heat, waste" number="46930" standardDeviation95="1.3003" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="7.752" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

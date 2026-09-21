@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="219410" timestamp="2024-12-13T11:21:40.876+01:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="The dataset supplies 1 kilogram of hydrated lime, produced with quicklime that has been produce with carbon capture and storage. This dataset accounts for the energy and water input for hydration. The low-grade heat that is generated during CaO hydration is typically not recovered and therefore excluded from the system boundaries, (around 1.2 GJ per ton CaO (EuLA, 2014). The infrastructure for quicklime hydration is assumed to be shared with the one for quicklime production, i.e., the LCI data for a cement factory cover both stages. Source: Foteinis, S., Andresen, J., Campo, F., Caserini, S., &amp; Renforth, P. (2022). Life cycle assessment of ocean liming for carbon dioxide removal from the atmosphere. Journal of Cleaner Production, 370, 133309. https://doi.org/10.1016/J.JCLEPRO.2022.133309&#10;UUID: c6c9adf3-8958-3fce-98b4-363e59681669" infrastructureProcess="false" localCategory="chemicals" localName="Hydrated lime production, from quicklime with carbon capture and storage" localSubCategory="gases\transformation" name="Hydrated lime production, from quicklime with carbon capture and storage" subCategory="gases\transformation" unit="kg"/>
+        <geography location="CH"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024</startDate>
+          <endDate>2024</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2024-12-13T10:30:29.691+01:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Pierryves Padey, Telephone: +41 58 462 93 11, E-mail: pierryves.padey@bafu.admin.ch, Company: Federal Office for the Environment, Country: CH" proofReadingValidator="168876"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="FOEN" countryCode="CH" email="anonymised" name="Pierryves Padey" number="168876" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="not defined" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases\transformation" location="CH" meanValue="1.0" name="Hydrated lime production, from quicklime with carbon capture and storage" number="219410" subCategory="gases\transformation" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,2,1,1,1,1); For hydrators and conveying equipment" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.0058" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.1" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="" infrastructureProcess="false" localCategory="resource" localSubCategory="in water" meanValue="2.43E-4" name="Water, well" number="160727" subCategory="in water" uncertaintyType="0" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,5)" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CH" meanValue="0.757" name="Quicklime, in pieces, loose, at plant, with carbon capture and storage" number="744388" standardDeviation95="2.0483000000000002" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="0.2187" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

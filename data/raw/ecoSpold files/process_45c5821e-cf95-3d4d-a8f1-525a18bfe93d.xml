@@ -1,0 +1,159 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="518783" timestamp="2023-08-28T15:02:49.664+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity by fuel" datasetRelatesToProduct="true" generalComment="The dataset has been developed on the basis of the operation of the FR PRW (without MOX and without reprocessing of spent fuel) with average burnup of 42.5 MWd/kg heavy metal assumed representative for the lifetime of the modeled plant. The average burnup corresponds to an average enrichment of 3.8% U235 for fresh uranium fuel elements. The utilisation factor for the infrastructure is the inverse of the total net electricity delivered in 40 years lifetime, calculated assuming an average Load Factor = 80% (1998-2003 it spanned 70-88%). Same thermal efficiency as for PWR CH. Material requirements have been extrapolated from the Swiss PWR by the ratio of the capacity factors. The transport requirements are calculated either using ecoinvent standard distances for Europe (e.g. for chemicals) or given average distances by train from Chinese 2004 statistics or own assumptions. Radioactive emission species to air and water are those calculated for UCTE PWRs around year 2000. The radioactive waste streams are modeled as such: all spent fuel to conditioning;&#10;UUID: 45c5821e-cf95-3d4d-a8f1-525a18bfe93d" includedProcesses="The module includes fuel elements, chemicals, and diesel requirements as well as the relevant transport requirements. Water use (fresh from sea and decarbonized) for cooling is included. Considered radioactive waste streams are: spent fuel to conditioning (no reprocessing); operational low active waste for conditioning in the intermediate repository; and, contaminated waste from dismantling. Non-radioactive wastes are accounted for." infrastructureProcess="false" localCategory="electricity by fuel" localName="Electricity, nuclear, at power plant pressure water reactor" localSubCategory="waste\nuclear\pwr" name="Electricity, nuclear, at power plant pressure water reactor" subCategory="waste\nuclear\pwr" unit="kWh"/>
+        <geography location="CN" text="Swiss data of one specific plant for requirements and UCTE PWRs for radioactive emissions."/>
+        <technology text="Standard technology for commercial operation."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-09-05T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Literature and statistics of radioactive emissions. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bauer C., Doka G." firstAuthor="Dones R." nameOfEditors="Bauer C." number="137748" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI, Doka LCA" sourceNumber="0" sourceType="4" text="Dones, R., Doka G. (2009) Kernenergie. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1. Editors: Bauer C.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Dones, R.\nOther authors: Doka G.\nYear: 2009\nName of editors: Bauer C.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2009 - Nuclear energy - Dones" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1" volumeNo="6" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137747"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137747" referenceToPublishedSource="137748"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity by fuel" generalComment="CHINA&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste\nuclear\pwr" location="CN" meanValue="1.0" name="Electricity, nuclear, at power plant pressure water reactor" number="518783" subCategory="waste\nuclear\pwr" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.00575" name="Water, salt, ocean" number="7" standardDeviation95="1.3000000000000003" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="6.84E-5" name="Nitrogen, liquid, at plant" number="267576" standardDeviation95="1.3000000000000003" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="5.21E-7" name="Reinforcing steel, at plant" number="545988" standardDeviation95="1.3000000000000003" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="industry water" location="RER" meanValue="2.68" name="Water, decarbonised, at plant" number="605508" standardDeviation95="1.1999999999999997" subCategory="industry water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="nuclear waste" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="nuclear waste" localSubCategory="unspecified" location="CH" meanValue="4.32E-11" name="Radioactive waste, in interim storage conditioning" number="184323" standardDeviation95="1.1999999999999997" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="glass" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="glass" localSubCategory="construction" location="RER" meanValue="4.85E-6" name="Flat glass, coated, at plant" number="584842" standardDeviation95="1.3000000000000003" subCategory="construction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="2.89E-5" name="Argon, liquid, at plant" number="211514" standardDeviation95="1.3000000000000003" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="1.85E-7" name="Carbon dioxide liquid, at plant" number="450573" standardDeviation95="1.3000000000000003" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="own assumption after UNSCEAR (2000) data (1.4 for European plants, after uncertainty declared in reports for radioactive releases)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.4500000000000004" name="Noble gases, radioactive, unspecified" number="79673" standardDeviation95="2.0000000000000004" subCategory="low. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="CH" meanValue="3.99E-8" name="Acetylene, at regional storehouse" number="514337" standardDeviation95="1.2500000000000002" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="mechanical" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="mechanical" localSubCategory="other energy" location="GLO" meanValue="4.1E-4" name="Diesel, burned in diesel-electric generating set" number="316704" standardDeviation95="1.3000000000000003" subCategory="other energy" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="1.8E-6" name="Disposal, used mineral oil, 10% water, to hazardous waste incineration" number="504085" standardDeviation95="1.3000000000000003" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="010028-17-8" category="emissions to water" generalComment="own assumption after UNSCEAR (2000) data (1.4 for European plants, after uncertainty declared in reports for radioactive releases)&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.67" name="Hydrogen-3, Tritium" number="53130" standardDeviation95="2.0000000000000004" subCategory="ocean" uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="GLO" meanValue="2.59E-6" name="Chemicals inorganic, at plant" number="499008" standardDeviation95="1.2500000000000002" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="1.8E-6" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.3000000000000003" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="own estimation on data from utility&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="7.13E-8" name="Boric acid, anhydrous, powder, at plant" number="361542" standardDeviation95="1.1500000000000001" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="CH" meanValue="7.13E-8" name="Cationic resin, at plant" number="427019" standardDeviation95="1.1500000000000001" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="1.91E-5" name="Sodium hypochlorite, 15% in H2O, at plant" number="398007" standardDeviation95="1.3000000000000003" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="fuels" location="CH" meanValue="8.55E-7" name="Bitumen, at refinery" number="526801" standardDeviation95="1.3000000000000003" subCategory="fuels" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="own estimation (1.05 for European datasets)&#10;" infrastructureProcess="true" localCategory="electricity by fuel" localSubCategory="waste\nuclear\pwr\infrastructure" location="CN" meanValue="3.57E-12" name="Nuclear power plant, pressure water reactor 1000MW" number="465343" standardDeviation95="1.1" subCategory="waste\nuclear\pwr\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="own estimation (standard is 2.1 but higher uncertainty for Chinese average transport is not fully assessed)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train\unspecified" location="CN" meanValue="7.94E-5" name="Transport, coal freight, rail" number="178158" standardDeviation95="2.9999999999999996" subCategory="train\unspecified" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="own estimation (standard is 2.1 but higher uncertainty for Chinese average transport is not fully assessed)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.0000168" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.9999999999999996" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="1.77E-6" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.6" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="binders" location="CH" meanValue="1.02E-6" name="Cement, unspecified, at plant" number="330147" standardDeviation95="1.3000000000000003" subCategory="binders" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="own assumption after UNSCEAR (2000) data (1.4 for European plants, after uncertainty declared in reports for radioactive releases)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="4.36E-7" name="Aerosols, radioactive, unspecified" number="157225" standardDeviation95="2.0000000000000004" subCategory="low. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="uncertainty on efficiency&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="7.65" name="Heat, waste" number="46930" standardDeviation95="1.03" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="CH" meanValue="7.13E-8" name="Anionic resin, at plant" number="601994" standardDeviation95="1.1500000000000001" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="1.08E-8" name="Concrete, normal, at plant" number="367058" standardDeviation95="1.3000000000000003" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="1.14E-5" name="Hydrogen, liquid, at plant" number="542147" standardDeviation95="1.3000000000000003" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="estimated variation over lifetime&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="uranium\enriched" location="CN" meanValue="2.95E-6" name="U enriched 3.8%, in fuel element for LWR, at nuclear fuel fabrication plant" number="594932" standardDeviation95="1.1500000000000001" subCategory="uranium\enriched" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to water" generalComment="own assumption after UNSCEAR (2000) data (1.4 for European plants, after uncertainty declared in reports for radioactive releases)&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="0.00123" name="Radioactive species, Nuclides, unspecified" number="53150" standardDeviation95="2.0000000000000004" subCategory="ocean" uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="nuclear waste" generalComment="" infrastructureProcess="false" localCategory="nuclear waste" localSubCategory="unspecified" location="CN" meanValue="2.95E-6" name="Nuclear spent fuel, in conditioning, at plant" number="409334" standardDeviation95="1.0" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="010043-66-0" category="emissions to air" generalComment="own assumption after UNSCEAR (2000) data (1.4 for European plants, after uncertainty declared in reports for radioactive releases)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.18E-5" name="Iodine-131" number="59593" standardDeviation95="2.0000000000000004" subCategory="low. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="1.08E-6" name="Disposal, hazardous waste, 25% water, to hazardous waste incineration" number="165198" standardDeviation95="1.3000000000000003" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="extrapolation from another plant type&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="1.43E-7" name="Cast iron, at plant" number="506433" standardDeviation95="1.1999999999999997" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="2.42E-6" name="Disposal, separator sludge, 90% water, to hazardous waste incineration" number="203157" standardDeviation95="1.3000000000000003" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="nuclear waste" generalComment="own estimation (1.4 assumed for European plants)&#10;" infrastructureProcess="false" localCategory="nuclear waste" localSubCategory="unspecified" location="CH" meanValue="3.15E-8" name="Radioactive waste, in final repository for nuclear waste LLW" number="438301" standardDeviation95="2.0000000000000004" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="nuclear waste" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="nuclear waste" localSubCategory="unspecified" location="CH" meanValue="1.76E-9" name="Radioactive waste, in interim storage, for final repository LLW" number="195881" standardDeviation95="1.1999999999999997" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="1.85E-5" name="Oxygen, liquid, at plant" number="403281" standardDeviation95="1.3000000000000003" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="paper+ board" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="paper+ board" localSubCategory="graphic paper" location="RER" meanValue="7.13E-7" name="Paper, woodfree, coated, at integrated mill" number="320598" standardDeviation95="1.3000000000000003" subCategory="graphic paper" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="1.53E-6" name="Chemicals organic, at plant" number="497739" standardDeviation95="1.1999999999999997" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="010028-17-8" category="emissions to air" generalComment="own assumption after UNSCEAR (2000) data (1.4 for European plants, after uncertainty declared in reports for radioactive releases)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.385" name="Hydrogen-3, Tritium" number="59589" standardDeviation95="2.0000000000000004" subCategory="low. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

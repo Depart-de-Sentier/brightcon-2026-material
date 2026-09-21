@@ -22,6 +22,6 @@ Project context: [Brightcon 2026 hackathon issue #42](https://github.com/Depart-
 | [docs/decisions/](docs/decisions/) | Agreed scope and design decisions |
 | [reports/](reports/) | Hackathon reports and presentations |
 
-This repository contains only the initial structure and READMEs. Participants will add the schemas, code, assessment criteria, and database themselves.
+This repository contains the initial project structure and the BAFU 2026 raw dataset: 11,947 EcoSpold XML files and 114 PDF inventory reports. Participants will add the schemas, code, and assessment criteria.
 
-Data files under `data/` are ignored by Git by default; the folder READMEs are tracked.
+Raw files under `data/raw/` are tracked in Git. Other data payloads, including derived files under `data/processed/`, are ignored by default; folder READMEs are tracked.

@@ -1,0 +1,261 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="311763" timestamp="2023-07-27T15:50:28">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electricity by fuel" datasetRelatesToProduct="true" generalComment="The module describes the operation of an average plant in the region. The plant is used for middle load with 4000 hours of operation at full capacity per year. The plant is assumed to operate 150000 hours during its lifetime. For the assessment of main characteristics (LHV, sulphur and ash content of coal, efficiency of the plant) and criteria emissions (SOx, NOx, particles, mercury) a bottom-up approach has been used and supplemented by typical emission factors in cases of data gaps (based on EEA/EPA). CO2, CH4 and N2O emissions have been derived from fuel types (from IEA data) and IPCC emission factors. Airborne emission data has been updated for 2019, whereas other inputs and outputs come from the original dataset. The dataset consists on the collection of information about single plants. Base data on all major power plants in 2019 have been integrated, to the extent possible. The size distribution of particles has been derived from non-linear calculations based on typical ratios for different total emission amounts based on CEPMEIP. Emissions of trace substances (except for mercury) were derived from emission factors in the literature (EEA/EPA). The waste heat releases to air and water have been allocated on the basis of the assumed share of river cooled power plants and assumptions on the direct losses to air. The share of the recycled ash is country-specific. For the disposal of the remaining ash, typical country-specific compositions are taken into account in appropriate disposal modules. NA; UUID: 35436e11-58df-3402-b2fe-91b0fdc63e4f" includedProcesses="Energy conversion for energy supply. Use of fuel oil for startup is accounted for. Particle removal is included in this module. DeSOx and DeNOx are described in different modules; they are applied here according to a simplified estimate assuming an average unabated emission and the specific abated regional emission rates; SOx and NOx emissions are the reduced ones. It is assumed that 25 % of the plants are river cooled, 75 % use cooling tower (average UCTE). The water treatment is described in separate modules. The disposal of non-recycled ashes is modelled separately." infrastructureIncluded="true" infrastructureProcess="false" localCategory="electricity by fuel" localName="Hard coal, burned in power plant" localSubCategory="coal\power plant" name="Hard coal, burned in power plant" subCategory="coal\power plant" unit="MJ"/>
+        <geography location="ES" text="ES in 2019"/>
+        <technology text="Average installed technology."/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2018-01</startDate>
+          <endDate>2020-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2023-07-27T15:50:28" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Extrapolations for some exchanges applied where not all plants in the region reported complete data. See exchange comments for details." percent="95.0" productionVolume="130 PJ" samplingProcedure="Databases/ literature data based on regional statistics." uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Oberschelp C., Kroehnert H., Stucki M." firstAuthor="Itten R." number="138123" placeOfPublications="Waedenswil, CH" publisher="ZHAW" sourceType="3" text="Report" title="2023 - LCI solid fossil fuel - Itten" titleOfAnthology="Project report" year="2023"/>
+        <validation proofReadingDetails="27.07.2023" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137485" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="2" person="137484" referenceToPublishedSource="138123"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="René Itten" number="137485" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ETH" countryCode="CH" email="anonymised" name="Christopher Oberschelp" number="137484" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="Hanna Kroehnert" number="138122" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="Matthias Stucki" number="137832" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity by fuel" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="coal\power plant" location="ES" meanValue="1" name="Hard coal, burned in power plant" number="311763" subCategory="coal\power plant" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(3,3,2,3,1,3);" infrastructureProcess="true" localCategory="electricity by fuel" localSubCategory="coal\power plant\infrastructure" location="RER" meanValue="1.3E-12" name="Hard coal power plant" number="525479" standardDeviation95="3.02" subCategory="coal\power plant\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="own assumption, based on uncertainty on power plant data base and coal quality (mismatch between regional supply mix and input coal)" infrastructureProcess="false" localCategory="fuels" localSubCategory="coal\coal by country" location="ES" meanValue="0.0423" name="Hard coal supply mix" number="483104" standardDeviation95="1.12" subCategory="coal\coal by country" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,4,3,2,3,5); rough guess" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="1E-5" name="Chlorine, liquid, production mix, at plant" number="141071" standardDeviation95="1.65" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(3,4,3,3,1,3); typical value for hard coal plant in DE" infrastructureProcess="false" localCategory="oil" localSubCategory="distribution" location="RER" meanValue="1.7E-5" name="Light fuel oil, at regional storage" number="574047" standardDeviation95="1.2" subCategory="distribution" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(4,5,3,2,3,3); estimate based on literature" infrastructureProcess="false" localCategory="water" localSubCategory="industry water" location="RER" meanValue="0.006" name="Water, completely softened, at plant" number="302599" standardDeviation95="1.4" subCategory="industry water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(4,5,3,2,3,3); estimate based on literature" infrastructureProcess="false" localCategory="water" localSubCategory="industry water" location="RER" meanValue="0.15" name="Water, decarbonised, at plant" number="605508" standardDeviation95="1.4" subCategory="industry water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="power plants" generalComment="(5,5,5,5,5,5,BU:1.05)based on difference of a generic average unabated emission intensities (EMEP/EEA air pollutant emission inventory guidebook) and the local abated emission intensity" infrastructureProcess="false" localCategory="power plants" localSubCategory="unspecified" location="RER" meanValue="0.000698" name="SOx retained, in hard coal flue gas desulphurisation" number="212581" standardDeviation95="2.5649" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="power plants" generalComment="(5,5,5,5,5,5,BU:1.05)based on difference of a generic average unabated emission intensities (EMEP/EEA air pollutant emission inventory guidebook) and the local abated emission intensity" infrastructureProcess="false" localCategory="power plants" localSubCategory="unspecified" location="GLO" meanValue="0.000115" name="NOx retained, in SCR" number="272430" standardDeviation95="2.5649" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,2,2,3,1,5); average distance is guesstimate" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.000351" name="Transport, freight, rail" number="149864" standardDeviation95="2.1" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,2,2,3,1,5); average distance is guesstimate" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.00013" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.1" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(5,1,1,5,3,1); calculated from mass balance" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="ES" meanValue="0.00651" name="Disposal, hard coal ash, 0% water, to residual material landfill" number="429417" standardDeviation95="1.58" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(5,1,1,1,1,1); calculated from mass balance" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="5E-6" name="Disposal, residue from cooling tower, 30% water, to sanitary landfill" number="227807" standardDeviation95="1.5" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(4,5,3,2,1,5); estimate based on literature" meanValue="0.0035" name="Water, cooling, unspecified natural origin/m3" number="29019" standardDeviation95="1.4" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,1,1,1,1,1); calculated from energy balance" meanValue="0.144" name="Heat, waste" number="45460" standardDeviation95="1.07" subCategory="river" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,1); calculated from energy balance" meanValue="0.548" name="Heat, waste" number="46930" standardDeviation95="1.07" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="5.36E-10" name="Antimony" number="9302" standardDeviation95="5.31" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,5,3,1,1,BU:5)based on available emission factors (EMEP/EEA air pollutant emission inventory guidebook)" meanValue="7.1E-9" name="Arsenic" number="636" standardDeviation95="5.2623" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="5.1E-8" name="Barium" number="73394" standardDeviation95="5.31" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,3,2,1,5); based on available literature" meanValue="2.17E-7" name="Benzene" number="638" standardDeviation95="1.65" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,3,2,1,5); based on available literature" meanValue="2E-13" name="Benzo(a)pyrene" number="29927" standardDeviation95="1.65" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="6.51E-7" name="Boron" number="65827" standardDeviation95="5.31" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="2.94E-7" name="Bromine" number="21412" standardDeviation95="2.28" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,3,2,1,5); based on available literature" meanValue="1.9E-8" name="Butane" number="639" standardDeviation95="1.65" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,5,3,1,1,BU:5)based on available emission factors (EMEP/EEA air pollutant emission inventory guidebook)" meanValue="9E-10" name="Cadmium" number="640" standardDeviation95="5.2623" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,1,BU:1.05)calculated from fuel composition and emission factors (based on International Energy Agency data and IPCC guidelines)" meanValue="0.094721" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.0714" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,5,3,1,1,BU:5)based on available emission factors (EMEP/EEA air pollutant emission inventory guidebook)" meanValue="8.7E-6" name="Carbon monoxide, fossil" number="641" standardDeviation95="5.2585" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,5,3,1,1,BU:5)based on available emission factors (EMEP/EEA air pollutant emission inventory guidebook)" meanValue="4.5E-9" name="Chromium" number="642" standardDeviation95="5.2623" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="based on range of data" meanValue="5.23E-10" name="Chromium VI" number="643" standardDeviation95="4" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="2.18E-9" name="Cobalt" number="34087" standardDeviation95="5.31" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,5,3,1,1,BU:5)based on available emission factors (EMEP/EEA air pollutant emission inventory guidebook)" meanValue="7.8E-9" name="Copper" number="644" standardDeviation95="5.2623" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,1,BU:1.5)calculated from fuel composition and emission factors (based on International Energy Agency data and IPCC guidelines)" meanValue="1.5E-6" name="Dinitrogen monoxide" number="646" standardDeviation95="1.5044" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,3,2,1,5); based on available literature" meanValue="4.1E-8" name="Ethane" number="647" standardDeviation95="1.65" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,3,2,1,5); based on available literature" meanValue="5.8E-8" name="Formaldehyde" number="650" standardDeviation95="1.65" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,3,2,1,5); based on available literature" meanValue="2.19E-7" name="Hydrocarbons, aliphatic, alkanes, unspecified" number="29171" standardDeviation95="1.65" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,3,2,1,5); based on available literature" meanValue="2.16E-7" name="Hydrocarbons, aliphatic, unsaturated" number="25853" standardDeviation95="1.65" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="1.31E-5" name="Hydrogen chloride" number="25789" standardDeviation95="2.28" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="4.23E-6" name="Hydrogen fluoride" number="46232" standardDeviation95="2.28" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="1.35E-7" name="Iodine" number="53672" standardDeviation95="2.28" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,5,3,1,1,BU:5)based on available emission factors (EMEP/EEA air pollutant emission inventory guidebook)" meanValue="7.3E-9" name="Lead" number="36341" standardDeviation95="5.2623" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="7.29E-5" name="Lead-210" number="85643" standardDeviation95="3.27" subCategory="high. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="1.33E-8" name="Manganese" number="31635" standardDeviation95="5.31" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,1,1,1,1,BU:5)calculated from reported emissions (European Environmental Agency)" meanValue="6.9E-10" name="Mercury" number="89723" standardDeviation95="5.2623" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,1,BU:1.5)calculated from fuel composition and emission factors (based on International Energy Agency data and IPCC guidelines)" meanValue="1E-5" name="Methane, fossil" number="90787" standardDeviation95="1.5044" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="8.72E-10" name="Molybdenum" number="32971" standardDeviation95="5.31" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,5,3,1,1,BU:5)based on available emission factors (EMEP/EEA air pollutant emission inventory guidebook)" meanValue="4.9E-9" name="Nickel" number="656" standardDeviation95="5.2623" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,1,1,1,1,BU:1.5)calculated from reported emissions (European Environmental Agency)" meanValue="9.44E-5" name="Nitrogen oxides" number="79243" standardDeviation95="1.5" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,5,3,1,1,BU:3)based on available emission factors (EMEP/EEA air pollutant emission inventory guidebook)" meanValue="6.78E-11" name="PAH, polycyclic aromatic hydrocarbons" number="658" standardDeviation95="3.2292" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,1,1,1,1,BU:3)calculated from reported emissions (European Environmental Agency)" meanValue="6E-7" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="3" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,1,1,1,1,BU:1.5)calculated from reported emissions (European Environmental Agency)" meanValue="8.5E-7" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="1.5" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,1,1,1,1,BU:2)calculated from reported emissions (European Environmental Agency)" meanValue="3.2E-6" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="2" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,3,2,1,5); based on available literature" meanValue="1.47E-7" name="Pentane" number="660" standardDeviation95="1.65" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="0.000133" name="Polonium-210" number="80081" standardDeviation95="3.27" subCategory="high. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="1.43E-5" name="Potassium-40" number="44027" standardDeviation95="3.27" subCategory="high. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,3,2,1,5); based on available literature" meanValue="3.5E-8" name="Propane" number="661" standardDeviation95="1.65" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,3,2,1,5); based on available literature" meanValue="1.6E-8" name="Propene" number="662" standardDeviation95="1.65" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="1.88E-5" name="Radium-226" number="155493" standardDeviation95="3.27" subCategory="high. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="5.76E-6" name="Radium-228" number="33503" standardDeviation95="3.27" subCategory="high. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="0.000327" name="Radon-220" number="37723" standardDeviation95="3.27" subCategory="high. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="0.000582" name="Radon-222" number="85707" standardDeviation95="3.27" subCategory="high. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,5,3,1,1,BU:5)based on available emission factors (EMEP/EEA air pollutant emission inventory guidebook)" meanValue="2.3E-8" name="Selenium" number="663" standardDeviation95="5.2623" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="7.04E-8" name="Strontium" number="74896" standardDeviation95="5.31" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,1,1,1,1,BU:1.05)calculated from reported emissions (European Environmental Agency)" meanValue="0.0001218" name="Sulfur dioxide" number="26215" standardDeviation95="1.05" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="3.1E-6" name="Thorium-228" number="28803" standardDeviation95="3.27" subCategory="high. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="4.87E-6" name="Thorium-232" number="31071" standardDeviation95="3.27" subCategory="high. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,3,2,1,5); based on available literature" meanValue="1.09E-7" name="Toluene" number="665" standardDeviation95="1.65" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="1.57E-5" name="Uranium-238" number="86277" standardDeviation95="3.27" subCategory="high. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,1,1,1,1,5); calculated from trace element balance, input uncertain" meanValue="1.24E-8" name="Vanadium" number="9460" standardDeviation95="5.31" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,3,2,1,5); based on available literature" meanValue="9.22E-7" name="Xylene" number="26329" standardDeviation95="1.65" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,5,3,1,1,BU:5)based on available emission factors (EMEP/EEA air pollutant emission inventory guidebook)" meanValue="1.9E-8" name="Zinc" number="666" standardDeviation95="5.2623" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,2,5,3,1,1,BU:1.5)based on available emission factors (EMEP/EEA air pollutant emission inventory guidebook)" meanValue="1E-6" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.7755" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,5,3,1,1,BU:3)based on available emission factors (EMEP/EEA air pollutant emission inventory guidebook)" meanValue="3.3E-15" name="Polychlorinated biphenyls" number="28697" standardDeviation95="3.2292" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,5,3,1,1,BU:3)based on available emission factors (EMEP/EEA air pollutant emission inventory guidebook)" meanValue="6.7E-12" name="Benzene, hexachloro-" number="32557" standardDeviation95="3.2292" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,5,3,1,1,BU:5)based on available emission factors (EMEP/EEA air pollutant emission inventory guidebook)" meanValue="6.4E-8" name="Carbon black" number="161212" standardDeviation95="5.2623" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,5,3,1,1,BU:3)based on available emission factors (EMEP/EEA air pollutant emission inventory guidebook)" meanValue="1E-14" name="Dioxin, 2,3,7,8 Tetrachlorodibenzo-p-" number="29923" standardDeviation95="3.2292" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="3.325" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

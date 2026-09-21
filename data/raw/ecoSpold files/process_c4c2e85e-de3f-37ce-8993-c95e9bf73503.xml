@@ -1,0 +1,303 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="611004" timestamp="2023-08-28T15:03:04.082+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="agricultural" datasetRelatesToProduct="true" generalComment="The inventory for the cultivation of corn in the USA is modelled with data from literature. Transports are modelled with standard distances. The functional unit is 1 kg corn grains (fresh mass with a water content of 14 %). Carbon content: 0.375 kg/kg fresh mass. Biomass energy content: 15.9 MJ/kg fresh mass. Yield: 9315 kg/ha. The emissions of N2O and NH3 to air are calculated with emission factors from NREL 2006. The emission of nitrate to water is calculated with a nitrogen loss factor of 32%.;&#10;Synonyms: Körnermais, grain maize; &#10;UUID: c4c2e85e-de3f-37ce-8993-c95e9bf73503" includedProcesses="Cultivation of corn in the USA including use of diesel, machines, fertilizers, and pesticides." infrastructureProcess="false" localCategory="agricultural" localName="Corn, at farm" localSubCategory="plant production" name="Corn, at farm" subCategory="plant production" unit="kg"/>
+        <geography location="US" text="The inventory is modelled for the USA"/>
+        <technology text="Cultivation of corn."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2006-10-17T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Transports are modelled with standard distances. Machine usage is modelled with US diesel consumptions, German field works and Swiss machines. Emissions are calculated with standard methods." percent="100" productionVolume="Total production in the USA is around 280 Million tons." samplingProcedure="Literature data " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J." firstAuthor="Jungbluth N." nameOfEditors="-" number="136872" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth N., Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J. (2007) Life Cycle Inventories of Bioenergy. Final report ecoinvent data v2.0. Volume: 17. Swiss Centre for LCI, ESU. Duebendorf and Uster, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth N.\nOther authors: Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Duebendorf and Uster, CH\nPublisher: Swiss Centre for LCI, ESU\nVolume No: 17\n" title="2007 - LCI bioenergy - Jungbluth" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="17" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138642"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138642" referenceToPublishedSource="136872"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Juergen Sutter" number="138642" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="agricultural" generalComment="UNITED STATES&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant production" location="US" meanValue="1.0" name="Corn, at farm" number="611004" subCategory="plant production" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="096182-53-5" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="1.0108E-6" name="Tebupirimphos" number="154377" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NREL 2006&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="fertilisers (inorganic)" location="RER" meanValue="0.0048927" name="Ammonium nitrate, as N, at regional storehouse" number="464712" standardDeviation95="1.0541" subCategory="fertilisers (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="4.2885E-5" name="Metolachlor, at regional storehouse" number="395831" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(4,3,1,1,1,4); calculated from the energy balance&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="biotic" meanValue="15.91" name="Energy, gross calorific value, in biomass" number="81693" standardDeviation95="1.2423" subCategory="biotic" uncertaintyType="1" unit="MJ">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="082657-04-3" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="2.1659E-7" name="Bifenthrin" number="154357" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="002921-88-2" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="4.8131E-6" name="Chlorpyrifos" number="154711" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="051218-45-2" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="4.2885E-5" name="Metolachlor" number="154023" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="010024-97-2" category="emissions to air" generalComment="(4,3,1,1,1,4); Calculated with standard method&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="5.2632E-4" name="Dinitrogen monoxide" number="646" standardDeviation95="1.5798000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,2,1,1,3,1); NREL 2006, KTBL 2004&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="unspecified" location="CH" meanValue="5.4916E-5" name="Fertilising, by broadcaster" number="542820" standardDeviation95="1.2090000000000003" subCategory="unspecified" uncertaintyType="1" unit="ha">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-43-9" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the fertilizer application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="-1.8835E-8" name="Cadmium" number="91781" standardDeviation95="1.5798000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="173159-57-4" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="3.6098E-8" name="Foramsulfuron" number="154573" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="014797-55-8" category="emissions to water" generalComment="(4,3,1,1,1,4); Calculated with standard method&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater" meanValue="0.023909" name="Nitrate" number="49870" standardDeviation95="1.5798000000000003" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="141112-29-0" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="5.7757E-7" name="Isoxaflutole" number="154397" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="(4,3,1,1,1,4); Calculated with standard method&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="2.9825E-4" name="Nitrogen oxides" number="79243" standardDeviation95="1.5798000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(4,3,1,1,1,4); calculated from the carbon balance&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in air" meanValue="1.3465" name="Carbon dioxide, in air" number="66828" standardDeviation95="1.2423" subCategory="in air" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard Distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.0028578" name="Transport, freight, lorry, fleet average" number="228841" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="001912-24-9" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="9.246E-5" name="Atrazine" number="153903" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="6.0404E-6" name="Acetamide-anillide-compounds, at regional storehouse" number="557092" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="104206-82-8" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="1.5643E-6" name="Mesotrione" number="154609" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="052315-07-8" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="3.6098E-8" name="Cypermethrin" number="154081" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-02-0" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the fertilizer application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="-3.2894E-7" name="Nickel" number="91777" standardDeviation95="1.5798000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="052645-53-1" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="1.0829E-7" name="Permethrin" number="154507" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,2,1,1,3,1); NREL 2006, KTBL 2004&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="unspecified" location="CH" meanValue="9.5933E-6" name="Combine harvesting" number="543505" standardDeviation95="1.2090000000000003" subCategory="unspecified" uncertaintyType="1" unit="ha">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="001071-83-6" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="1.9662E-5" name="Glyphosate" number="154415" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the fertilizer application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="-5.9001E-6" name="Zinc" number="91717" standardDeviation95="1.5798000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000094-75-7" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="3.0443E-6" name="2,4-D" number="154199" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="1.9662E-5" name="Glyphosate, at regional storehouse" number="224507" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="2.4787E-6" name="Dinitroaniline-compounds, at regional storehouse" number="600009" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-50-8" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the fertilizer application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="-1.5041E-6" name="Copper" number="91771" standardDeviation95="1.5798000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NREL 2006&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="fertilisers (inorganic)" location="RER" meanValue="0.003543" name="Urea, as N, at regional storehouse" number="310912" standardDeviation95="1.0541" subCategory="fertilisers (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="122931-48-0" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="1.2033E-7" name="Rimsulfuron" number="154643" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="2.4667E-6" name="2,4-D, at regional storehouse" number="369200" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="015972-60-8" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="4.1393E-6" name="Alachlor" number="154737" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,2,1,1,3,1); NREL 2006, KTBL 2004&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="unspecified" location="CH" meanValue="3.8024E-5" name="Sowing" number="371446" standardDeviation95="1.2090000000000003" subCategory="unspecified" uncertaintyType="1" unit="ha">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,2,1,1,3,1); NREL 2006, KTBL 2004&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="unspecified" location="CH" meanValue="1.9972E-4" name="Tillage, currying, by weeder" number="214395" standardDeviation95="1.2090000000000003" subCategory="unspecified" uncertaintyType="1" unit="ha">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007664-41-7" category="emissions to air" generalComment="(4,3,1,1,1,4); Calculated with standard method&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.0010965" name="Ammonia" number="635" standardDeviation95="1.3221000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,2,1,1,1,1); NREL 2006&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="unspecified" location="CH" meanValue="3.6554E-6" name="Irrigating" number="605335" standardDeviation95="1.0541" subCategory="unspecified" uncertaintyType="1" unit="ha">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="034256-82-1" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="5.9442E-5" name="Acetochlor" number="154653" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,2,1,1,1,1); NREL 2006&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant production\seeds" location="CH" meanValue="0.021471" name="Maize seed IP, at regional storehouse" number="149958" standardDeviation95="1.0541" subCategory="plant production\seeds" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="051276-47-2" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="1.1912E-6" name="Glufosinate" number="153931" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="091465-08-6" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="2.4065E-8" name="Lambda-cyhalothrin" number="154549" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="013071-79-9" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="2.6953E-6" name="Terbufos" number="154153" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NREL 2006&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="0.0084357" name="Ammonia, liquid, at regional storehouse" number="366825" standardDeviation95="1.0541" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="111991-09-4" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="2.6472E-7" name="Nicosulfuron" number="154661" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="079538-32-2" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="7.9416E-7" name="Tefluthrin" number="154103" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007723-14-0" category="emissions to water" generalComment="(4,3,1,1,1,4); Calculated with standard method&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="9.7542E-5" name="Phosphorus" number="67972" standardDeviation95="1.5798000000000003" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="081335-77-5" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="1.6846E-8" name="Imazethapyr" number="154159" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(1,1,1,1,1,1); NASS 2005&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="0.62623" name="Occupation, annual crop" number="138663" standardDeviation95="1.4999999999999998" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="081334-34-1" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="4.8131E-9" name="Imazapyr" number="154383" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="6.2763E-5" name="Pesticide unspecified, at regional storehouse" number="285276" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="1.7327E-6" name="Dicamba, at regional storehouse" number="324390" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="2.4306E-6" name="Triazine-compounds, at regional storehouse" number="209379" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="098967-40-9" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="3.3692E-7" name="Flumetsulam" number="154207" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="004685-14-7" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="6.1367E-7" name="Paraquat" number="153989" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="001918-00-9" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="1.7327E-6" name="Dicamba" number="154513" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="068359-37-5" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="5.0538E-8" name="Cyfluthrin" number="154097" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="6.1367E-7" name="Bipyridylium-compounds, at regional storehouse" number="439027" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,2,1,1,3,1); NREL 2006, KTBL 2004&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="unspecified" location="CH" meanValue="8.253E-5" name="Application of plant protection products, by field sprayer" number="402243" standardDeviation95="1.2090000000000003" subCategory="unspecified" uncertaintyType="1" unit="ha">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="109293-98-3" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="1.9252E-7" name="Diflufenzopyr-sodium" number="154529" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,1,3,3,1,1); Nemecek 2004&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="unspecified" location="CH" meanValue="0.40984" name="Maize drying" number="578040" standardDeviation95="1.1149999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="9.3855E-7" name="Nitrile-compounds, at regional storehouse" number="138698" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="2.1659E-8" name="Phenoxy-compounds, at regional storehouse" number="177176" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="CH" meanValue="1.2297E-6" name="Pyretroid-compounds, at regional storehouse" number="617230" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="4.1393E-6" name="Alachlor, at regional storehouse" number="495897" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="1.2033E-7" name="Primisulfuron" number="33743" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="9.246E-5" name="Atrazine, at regional storehouse" number="543232" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NREL 2006&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="fertilisers (inorganic)" location="RER" meanValue="0.007193" name="Potassium chloride, as K2O, at regional storehouse" number="513752" standardDeviation95="1.0541" subCategory="fertilisers (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NREL 2006&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="fertilisers (inorganic)" location="RER" meanValue="0.005848" name="Diammonium phosphate, as P2O5, at regional storehouse" number="151354" standardDeviation95="1.0541" subCategory="fertilisers (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="5.7757E-7" name="Cyclic N-compounds, at regional storehouse" number="210861" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000060-35-5" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="1.0108E-6" name="Acetamide" number="154599" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard Distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.015775" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="001689-84-5" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="6.4977E-7" name="Bromoxynil" number="153975" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,2,1,1,3,1); NREL 2006, KTBL 2004&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="unspecified" location="CH" meanValue="8.6042E-5" name="Tillage, ploughing" number="472509" standardDeviation95="1.2090000000000003" subCategory="unspecified" uncertaintyType="1" unit="ha">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,2,1,1,3,1); NREL 2006, KTBL 2004&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="unspecified" location="CH" meanValue="1.2603E-4" name="Tillage, cultivating, chiselling" number="477091" standardDeviation95="1.2090000000000003" subCategory="unspecified" uncertaintyType="1" unit="ha">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="1.9252E-7" name="Diphenylether-compounds, at regional storehouse" number="610866" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="040487-42-1" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="2.4787E-6" name="Pendimethalin" number="154195" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="087674-68-8" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="5.0297E-6" name="Dimethenamid" number="154235" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="094125-34-5" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="2.1659E-8" name="Prosulfuron" number="154247" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(1,1,1,1,1,1); NASS 2005&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="1.0735000000000001" name="Transformation, from annual crop" number="78336" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,2,1,1,3,1); NREL 2006, KTBL 2004&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="unspecified" location="CH" meanValue="2.4863E-4" name="Tillage, harrowing, by spring tine harrow" number="291334" standardDeviation95="1.2090000000000003" subCategory="unspecified" uncertaintyType="1" unit="ha">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard Distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.004386" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="5.6313E-7" name="[sulfonyl]urea-compounds, at regional storehouse" number="158625" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007439-92-1" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the fertilizer application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="2.6437E-7" name="Lead" number="91759" standardDeviation95="1.5798000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000122-34-9" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="2.4306E-6" name="Simazine" number="154191" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NASS 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="9.7104E-6" name="Organophosphorus-compounds, at regional storehouse" number="538098" standardDeviation95="1.0541" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="120068-37-3" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="2.8879E-7" name="Fipronil" number="154551" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(1,1,1,1,1,1); NASS 2005&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="1.0735000000000001" name="Transformation, to annual crop" number="14044" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); NREL 2006&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="fertilisers (inorganic)" location="CH" meanValue="0.030409" name="Lime, from carbonation, at regional storehouse" number="302200" standardDeviation95="1.0541" subCategory="fertilisers (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007723-14-0" category="emissions to water" generalComment="(4,3,1,1,1,4); Calculated with standard method&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater" meanValue="7.5148E-6" name="Phosphorus" number="67972" standardDeviation95="1.5798000000000003" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the fertilizer application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="4.4455E-8" name="Chromium" number="20664" standardDeviation95="1.5798000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

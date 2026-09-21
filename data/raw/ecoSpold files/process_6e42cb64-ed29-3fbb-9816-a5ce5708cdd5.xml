@@ -1,0 +1,77 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="RStudio" number="435340" timestamp="2025-03-31T15:02:08">
+    <metaInformation>
+      <processInformation>
+        <timePeriod dataValidForEntirePeriod="True" text="Base technology year of 2020">
+          <startDate>2021-01</startDate>
+          <endDate>2021-12</endDate>
+        </timePeriod>
+        <referenceFunction amount="1" category="transport systems" datasetRelatesToProduct="True" generalComment=" Electric motor power: 78 [kW]. Km over lifetime: 200000 [km]. Yearly mileage: 12000 [km/year]. Autonomy on a full tank/battery: 467 [km]. Tank-to-wheel efficiency: 38 [%]. Tank-to-wheel energy consumption: 1078 [kj/km]. Fuel cell system efficiency: 50 [%]. Fuel tank capacity: 140 [kWh]. Curb mass (excl. driver and cargo): 1203 [kg]. Driving mass (incl. driver and cargo): 1343 [kg].. UUID: 6e42cb64-ed29-3fbb-9816-a5ce5708cdd5" infrastructureIncluded="True" infrastructureProcess="True" localCategory="transport systems" localName="Transport, passenger car, fuel cell electric, SMR of natural gas, Compact, 2021" localSubCategory="road\Transformation" name="Transport, passenger car, fuel cell electric, SMR of natural gas, Compact, 2021" subCategory="road\Transformation" unit="km"/>
+        <geography location="CH" text="Unspecified"/>
+        <technology text="Electric motor power: 78 [kW]. Km over lifetime: 200000 [km]. Yearly mileage: 12000 [km/year]. Autonomy on a full tank/battery: 467 [km]. Tank-to-wheel efficiency: 38 [%]. Tank-to-wheel energy consumption: 1078 [kj/km]. Fuel cell system efficiency: 50 [%]. Fuel tank capacity: 140 [kWh]. Curb mass (excl. driver and cargo): 1203 [kg]. Driving mass (incl. driver and cargo): 1343 [kg]."/>
+        <dataSetInformation energyValues="0" impactAssessmentResult="False" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2025-03-31T15:02:08" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Unspecified" productionVolume="Unspecified" samplingProcedure="Unspecified" uncertaintyAdjustments="Unspecified"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="136752" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="doi: 10.5281/ZENODO.5156043" title="2023 - LCI on-road vehicles - Sacchi" year="2023"/>
+        <validation proofReadingDetails="Unspecified" proofReadingValidator="136748"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136751"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="False" dataPublishedIn="2" person="136749" referenceToPublishedSource="136752"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Brian Cox" number="136748" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Julien McTighe" number="136751" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="1.0" name="Transport, passenger car, fuel cell electric, SMR of natural gas, Compact, 2021" number="435340" subCategory="road\Transformation" uncertaintyType="0" unit="km">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="RER" meanValue="6.47e-06" name="Maintenance, passenger car" number="287489" standardDeviation95="1.128986925796466" subCategory="road\operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (4, 5, 2, 3, 4, 3)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="6.39e-06" name="Brake wear emissions, passenger car" number="451198" standardDeviation95="1.623011859459048" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="Uncertainty from pedigree matrix: (3, 5, 2, 1, 3, 5)" infrastructureProcess="False" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="8.02e-06" name="Carbon dioxide liquid, at plant" number="450573" standardDeviation95="1.3926125652074983" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (4, 5, 2, 5, 3, 5)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="4.81e-06" name="Transport, freight, rail" number="149864" standardDeviation95="1.4594369763013963" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (4, 5, 2, 5, 3, 5)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.000000802" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="1.4594369763013963" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 1, 5, 2, 1, 1)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="CH" meanValue="0.000721" name="Road" number="506930" standardDeviation95="1.5168492538102136" subCategory="road\operations\infrastructure" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 1, 5, 2, 1, 1)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="CH" meanValue="0.00129" name="Operation, maintenance, road" number="349679" standardDeviation95="1.5168492538102136" subCategory="road\operations\infrastructure" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (4, 5, 2, 3, 4, 3)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="1.41e-05" name="Road wear emissions, passenger car" number="289953" standardDeviation95="1.623011859459048" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (4, 5, 2, 3, 4, 3)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="1.72e-05" name="Tyre wear emissions, passenger car" number="236383" standardDeviation95="1.623011859459048" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="Uncertainty from pedigree matrix: (1, 1, 2, 2, 1, 1)" infrastructureProcess="True" localCategory="fuels" localSubCategory="hydrogen\Transformation" location="CH" meanValue="0.00899" name="Hydrogen, gaseous, 700 bar, from SMR of NG, at fuelling station" number="527265" standardDeviation95="1.0316801117382066" subCategory="hydrogen\Transformation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Transformation\Infrastructure" location="RER" meanValue="5e-06" name="Passenger car, fuel cell electric, Compact, 2021" number="224540" standardDeviation95="1.128986925796466" subCategory="road\Transformation\Infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (4, 5, 2, 1, 1, 5)" meanValue="4.63e-06" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.3732367904279215" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="non material emissions" generalComment="Uncertainty from pedigree matrix: (5, 5, 2, 1, 4, 5)" meanValue="0.5" name="Noise, road, passenger car, average" number="59935" standardDeviation95="1.876507561897662" subCategory="unspecified" uncertaintyType="1" unit="km">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport waste" generalComment="Uncertainty from pedigree matrix: (3, 1, 5, 2, 1, 1)" infrastructureProcess="True" localCategory="transport waste" localSubCategory="unspecified" location="RER" meanValue="0.000765" name="Disposal, road" number="561882" standardDeviation95="1.5168492538102136" subCategory="unspecified" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="365739" timestamp="2024-10-14T10:45:09.545+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="The CO2 flow is compressed through a compressor to 11 MPa and then transported through a pipeline to the storage site. The length of the transport pipeline is assumed to be 50 km. At the storage site, the CO2 will be further compressed to 15 MPa and injected into a geological reservoir through wells with a depth of 3 km each. &#10;&#10;Source: Koornneef, J., van Keulen, T., Faaij, A. &amp; Turkenburg, W. Life cycle assessment of a pulverized coal&#10;UUID: df1d4e3c-8c25-4b6d-8d2b-52d9abd4ab13" infrastructureProcess="false" localCategory="chemicals" localName="Carbon dioxide compression, transport and storage" localSubCategory="gases\transformation" name="Carbon dioxide compression, transport and storage" subCategory="gases\transformation" unit="kg"/>
+        <geography location="CH"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024</startDate>
+          <endDate>2024</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2024-10-14T10:38:41.320+02:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Pierryves Padey, Telephone: +41 58 462 93 11, E-mail: pierryves.padey@bafu.admin.ch, Company: Federal Office for the Environment, Country: CH" proofReadingValidator="168876"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="FOEN" countryCode="CH" email="anonymised" name="Pierryves Padey" number="168876" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="not defined" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases\transformation" location="CH" meanValue="1.0" name="Carbon dioxide compression, transport and storage" number="365739" subCategory="gases\transformation" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="mechanical" generalComment="diesel burned at pipeline transport {4;5;3;3;3;5;1.05;}" infrastructureProcess="false" localCategory="mechanical" localSubCategory="other energy" location="GLO" meanValue="0.0018" name="Diesel, burned in diesel-electric generating set" number="316704" standardDeviation95="1.2077" subCategory="other energy" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="mechanical" generalComment="diesel burned at compressionf acility {4;5;3;3;3;5;1.05;}" infrastructureProcess="false" localCategory="mechanical" localSubCategory="other energy" location="GLO" meanValue="3.2E-5" name="Diesel, burned in diesel-electric generating set" number="316704" standardDeviation95="1.2077" subCategory="other energy" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="electricity used for compression {1;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.118" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.377" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="electricity used at compression facility {1;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="1.0E-6" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.377" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="Compression facility foundation {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="1.0E-9" name="Concrete, normal, at plant" number="367058" standardDeviation95="1.3289999999999997" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Copper for compression facility {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="1.0E-7" name="Copper, primary, at refinery" number="398149" standardDeviation95="1.3289999999999997" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Container with pipes and fittings for compressor {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="1.0E-6" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="1.3289999999999997" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="Polyethylene for compression facility {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="3.0E-7" name="Polyethylene, LDPE, granulate, at plant" number="476483" standardDeviation95="1.3289999999999997" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="sand for transport by pipeline {5;5;5;5;5;3;3;}" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="0.00104" name="Sand, at mine" number="213208" standardDeviation95="4.201999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="reinforcing steel for transport by pipeline {5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="1.3E-4" name="Reinforcing steel, at plant" number="545988" standardDeviation95="2.565" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="steel pipe drawing for transport by pipeline {4;5;3;3;3;5;2;}" infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="1.3E-4" name="Drawing of pipes, steel" number="174038" standardDeviation95="2.202" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(1,1,2,1,1,4,BU:1.05); Bitumen for transport by pipeline {4;5;3;3;3;5;2;}" infrastructureProcess="false" localCategory="plastics" localSubCategory="rubbers" location="RER" meanValue="1.2E-6" name="Bitumen sealing, at plant" number="285157" standardDeviation95="1.1175000000000002" subCategory="rubbers" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="polyethylene for transport by pipeline {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="2.5E-6" name="Polyethylene, LDPE, granulate, at plant" number="476483" standardDeviation95="1.3289999999999997" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report." infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.00012" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.208" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="Well for geological storage {2,3,3,1,3,na};" infrastructureProcess="false" localCategory="oil" localSubCategory="production" location="GLO" meanValue="8.2E-11" name="Well for exploration and production, onshore" number="281529" standardDeviation95="3.0676" subCategory="production" uncertaintyType="1" unit="m">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="sand for geological storage {5;5;5;5;5;3;3;}" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="0.0033" name="Sand, at mine" number="213208" standardDeviation95="4.201999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Unalloyed steel for geological storage {1;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="1.7E-5" name="Steel, converter, unalloyed, at plant" number="203953" standardDeviation95="1.377" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Low-alloyed steel for geological storage {1;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="3.7E-5" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.377" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="Concrete for geological storage {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="4.8E-8" name="Concrete, normal, at plant" number="367058" standardDeviation95="1.3289999999999997" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Copper for geological storage {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="1.9E-6" name="Copper, primary, at refinery" number="398149" standardDeviation95="1.3289999999999997" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report." infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.00034" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.208" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="Waste concrete End-of-life {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="0.0044" name="Disposal, building, concrete, not reinforced, to sorting plant" number="535857" standardDeviation95="1.3289999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="Waste reinforcement steel End-of-life {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="2.6E-4" name="Disposal, building, reinforcement steel, to sorting plant" number="151246" standardDeviation95="1.3289999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="Scrap copper {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="2.0E-6" name="Disposal, copper, 0% water, to municipal incineration" number="277776" standardDeviation95="1.3289999999999997" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="Waste polyethylene {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="2.8E-6" name="Disposal, building, polyethylene/polypropylene products, to final disposal" number="527316" standardDeviation95="1.3289999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="Waste bitumen {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="waste management" localSubCategory="building demolition" location="CH" meanValue="1.2E-6" name="Disposal, bitumen sheet, as building waste" number="290755" standardDeviation95="1.3289999999999997" subCategory="building demolition" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

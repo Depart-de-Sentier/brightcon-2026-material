@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="195754" timestamp="2023-08-28T15:03:30.204+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="agricultural" datasetRelatesToProduct="true" generalComment="Refers to 1 kg of tallow at rendering plant. Since the process of meat and bone meal production is nearly the same as the production of tallow (all steps are common except the milling of the meal), a physical allocation of the processes has been applied. The inventory can therefore also be used as an approximation for meat and bone meal.;&#10;Synonyms: animal fat, Talg; &#10;UUID: f6655fa7-785d-3dcf-8640-017969ab9db2" includedProcesses="The inventory includes the transport from the slaughterhouse to the rendering plant and  further processing of slaughterhouse wastes to tallow. It includes  the energy demand for operating a rendering plant, in form of electricity and natural gas, the use of tap water, the output of wastewater and the building infrastructure. The animal husbandry and the process of slaughtering are not included, since the raw material is considered as waste. " infrastructureProcess="false" localCategory="agricultural" localName="Tallow, at plant" localSubCategory="animal production" name="Tallow, at plant" subCategory="animal production" unit="kg"/>
+        <geography location="CH" text="&lt;null&gt;"/>
+        <technology text="Refers to a typical technology for tallow processing in Switzerland."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Based on data from the year 1999.">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-06-03T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="50" productionVolume="20'000 tons/year in Switzerland." samplingProcedure="Data come from one rendering plant in Switzerland. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Kaegi T." firstAuthor="Nemecek T." nameOfEditors="0" number="138643" placeOfPublications="Duebendorf and Zuerich, CH" publisher="Swiss Centre for LCI, ART" sourceNumber="0" sourceType="4" text="Nemecek, T., Kägi, T., Blaser, S. (2007) Life Cycle Inventories of Agricultural Production Systems. Ecoinvent report version 2.0. Editors: 0. Volume: 15. Swiss Centre for LCI, ART. Duebendorf and Zurich, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Nemecek, T.\nOther authors: Kägi, T., Blaser, S.\nYear: 2007\nName of editors: 0\nTitle of anthology: Ecoinvent report version 2.0\nPlace of publication: Duebendorf and Zurich, CH\nPublisher: Swiss Centre for LCI, ART\nVolume No: 15\n" title="2007 - LCI agricultural prod. systems - Nemecek" titleOfAnthology="Ecoinvent report version 2.0" volumeNo="15" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="151347"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="151348"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138641" referenceToPublishedSource="138643"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Maggie Osses" number="151347" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Thomas Nemecek" number="138641" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Angelika Heil" number="151348" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="agricultural" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="animal production" location="CH" meanValue="1.0" name="Tallow, at plant" number="195754" subCategory="animal production" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(3,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="8.39" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.1" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.175" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.1" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(3,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="5.34" name="Tap water, at user" number="227940" standardDeviation95="1.1" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(3,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="6.98E-6" name="Transformation, from unknown" number="54270" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(3,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="0.0073" name="Treatment, sewage, to wastewater treatment, class 2" number="383344" standardDeviation95="1.1" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.631" name="Heat, waste" number="46930" standardDeviation95="1.1" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.15" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.0000000000000004" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(3,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="6.98E-6" name="Transformation, to industrial area, built up" number="86253" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(3,2,1,1,1,3)&#10;" infrastructureProcess="true" localCategory="construction" localSubCategory="others\infrastructure" location="RER" meanValue="1.9E-5" name="Building, multi-storey" number="498869" standardDeviation95="1.1" subCategory="others\infrastructure" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(3,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="3.49E-4" name="Occupation, industrial area, built up" number="116809" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(3,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="1.4E-5" name="Occupation, construction site" number="110833" standardDeviation95="1.4999999999999998" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

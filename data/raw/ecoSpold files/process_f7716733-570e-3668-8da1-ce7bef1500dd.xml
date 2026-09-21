@@ -1,0 +1,422 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="RStudio" number="593297" timestamp="2025-03-31T15:02:08">
+    <metaInformation>
+      <processInformation>
+        <timePeriod dataValidForEntirePeriod="True" text="EURO-5 emissions standards apply to car registrations from 2011-01 until 2014-12. Vehicle lightweighting factors match manufacture year of 2013">
+          <startDate>2013-01</startDate>
+          <endDate>2013-12</endDate>
+        </timePeriod>
+        <referenceFunction amount="1" category="transport systems" datasetRelatesToProduct="True" generalComment=" Driving cycle: WLTC. Combustion engine power: 92 [kW]. Electric motor power: 81 [kW]. Power share from combustion engine: 54 [%]. Km over lifetime: 200000 [km]. Yearly mileage: 12000 [km/year]. Autonomy on a full tank/battery: 665 [km]. Tank-to-wheel efficiency: 40 [%]. Tank-to-wheel energy consumption: 2186 [kj/km]. Battery capacity: 6 [kWh]. Fuel tank capacity: 546 [kWh]. Mass of battery: 136 [kg]. Curb mass (excl. driver and cargo): 2329 [kg]. Driving mass (incl. driver and cargo): 2469 [kg]. Electric utility factor: 47 [%].. UUID: f7716733-570e-3668-8da1-ce7bef1500dd" infrastructureIncluded="True" infrastructureProcess="True" localCategory="transport systems" localName="Transport, passenger car, plugin diesel hybrid, Large SUV, 2013, EURO-5" localSubCategory="road\Transformation" name="Transport, passenger car, plugin diesel hybrid, Large SUV, 2013, EURO-5" subCategory="road\Transformation" unit="km"/>
+        <geography location="CH" text="Unspecified"/>
+        <technology text="Driving cycle: WLTC. Combustion engine power: 92 [kW]. Electric motor power: 81 [kW]. Power share from combustion engine: 54 [%]. Km over lifetime: 200000 [km]. Yearly mileage: 12000 [km/year]. Autonomy on a full tank/battery: 665 [km]. Tank-to-wheel efficiency: 40 [%]. Tank-to-wheel energy consumption: 2186 [kj/km]. Battery capacity: 6 [kWh]. Fuel tank capacity: 546 [kWh]. Mass of battery: 136 [kg]. Curb mass (excl. driver and cargo): 2329 [kg]. Driving mass (incl. driver and cargo): 2469 [kg]. Electric utility factor: 47 [%]."/>
+        <dataSetInformation energyValues="0" impactAssessmentResult="False" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2025-03-31T15:02:08" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Unspecified" productionVolume="Unspecified" samplingProcedure="Unspecified" uncertaintyAdjustments="Unspecified"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="136752" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="doi: 10.5281/ZENODO.5156043" title="2023 - LCI on-road vehicles - Sacchi" year="2023"/>
+        <validation proofReadingDetails="Unspecified" proofReadingValidator="136748"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136751"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="False" dataPublishedIn="2" person="136749" referenceToPublishedSource="136752"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Brian Cox" number="136748" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Julien McTighe" number="136751" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="1.0" name="Transport, passenger car, plugin diesel hybrid, Large SUV, 2013, EURO-5" number="593297" subCategory="road\Transformation" uncertaintyType="0" unit="km">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="RER" meanValue="1.25e-05" name="Maintenance, passenger car" number="287489" standardDeviation95="1.128986925796466" subCategory="road\operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (4, 5, 2, 3, 4, 3)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="1.17e-05" name="Brake wear emissions, passenger car" number="451198" standardDeviation95="1.623011859459048" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="Uncertainty from pedigree matrix: (5, 5, 2, 1, 1, 3)" infrastructureProcess="False" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="8.02e-06" name="Refrigerant R134a, at plant" number="191385" standardDeviation95="1.5655163291458247" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (4, 5, 2, 5, 3, 5)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="4.81e-06" name="Transport, freight, rail" number="149864" standardDeviation95="1.4594369763013963" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (4, 5, 2, 5, 3, 5)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.000000802" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="1.4594369763013963" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 1, 5, 2, 1, 1)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="CH" meanValue="0.00133" name="Road" number="506930" standardDeviation95="1.5168492538102136" subCategory="road\operations\infrastructure" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 1, 5, 2, 1, 1)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="CH" meanValue="0.00129" name="Operation, maintenance, road" number="349679" standardDeviation95="1.5168492538102136" subCategory="road\operations\infrastructure" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (4, 5, 2, 3, 4, 3)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="2.22e-05" name="Road wear emissions, passenger car" number="289953" standardDeviation95="1.623011859459048" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (4, 5, 2, 3, 4, 3)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="2.43e-05" name="Tyre wear emissions, passenger car" number="236383" standardDeviation95="1.623011859459048" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (1, 1, 2, 2, 1, 1)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Transformation\Infrastructure" location="CH" meanValue="0.0442" name="Fuel supply for diesel vehicles" number="210994" standardDeviation95="1.0316801117382066" subCategory="road\Transformation\Infrastructure" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="Uncertainty from pedigree matrix: (2, 1, 2, 2, 1, 3)" infrastructureProcess="False" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.1506" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.0786617442263404" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Transformation\Infrastructure" location="RER" meanValue="5e-06" name="Passenger car, plugin diesel hybrid, Large SUV, 2013, EURO-5" number="270679" standardDeviation95="1.128986925796466" subCategory="road\Transformation\Infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="8.03e-08" name="Acetaldehyde" number="632" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.46e-08" name="Acetaldehyde" number="632" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.49e-08" name="Acetaldehyde" number="632" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="3.65e-08" name="Acetone" number="633" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.12e-08" name="Acetone" number="633" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.13e-08" name="Acetone" number="633" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.45e-08" name="Acrolein" number="634" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.36e-08" name="Acrolein" number="634" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.38e-08" name="Acrolein" number="634" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="5.74e-08" name="Ammonia" number="635" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.76e-08" name="Ammonia" number="635" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.11e-08" name="Ammonia" number="635" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.58e-12" name="Arsenic" number="636" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="7.9e-13" name="Arsenic" number="636" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.97e-13" name="Arsenic" number="636" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.07e-08" name="Benzaldehyde" number="637" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="3.27e-09" name="Benzaldehyde" number="637" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="3.31e-09" name="Benzaldehyde" number="637" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.48e-08" name="Benzene" number="638" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="7.6e-09" name="Benzene" number="638" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="6.53e-09" name="Benzene" number="638" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.37e-09" name="Butane" number="639" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.18e-10" name="Butane" number="639" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.23e-10" name="Butane" number="639" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.24e-10" name="Cadmium" number="640" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="6.85e-11" name="Cadmium" number="640" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.31e-11" name="Cadmium" number="640" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="0.13101543" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.075162126880563" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="0.007275762" name="Carbon dioxide, biogenic" number="80535" standardDeviation95="1.075162126880563" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.08e-05" name="Carbon monoxide, fossil" number="641" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="3.3e-06" name="Carbon monoxide, fossil" number="641" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="3.69e-06" name="Carbon monoxide, fossil" number="641" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="7.74e-10" name="Chromium" number="642" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.37e-10" name="Chromium" number="642" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.49e-10" name="Chromium" number="642" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.55e-12" name="Chromium VI" number="643" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.75e-13" name="Chromium VI" number="643" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.99e-13" name="Chromium VI" number="643" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="5.46e-10" name="Copper" number="644" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.67e-10" name="Copper" number="644" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.05e-10" name="Copper" number="644" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="8.07e-09" name="Cyclohexane" number="645" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.47e-09" name="Cyclohexane" number="645" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.5e-09" name="Cyclohexane" number="645" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="3.25e-06" name="Dinitrogen monoxide" number="646" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="9.96e-07" name="Dinitrogen monoxide" number="646" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="6.27e-07" name="Dinitrogen monoxide" number="646" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.1e-09" name="Ethane" number="647" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.25e-09" name="Ethane" number="647" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.27e-09" name="Ethane" number="647" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.63e-06" name="Ethane, 1,1,1,2-tetrafluoro-, HFC-134a" number="648" standardDeviation95="1.075162126880563" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.36e-07" name="Ethene" number="649" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.17e-08" name="Ethene" number="649" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.22e-08" name="Ethene" number="649" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.49e-07" name="Formaldehyde" number="650" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.56e-08" name="Formaldehyde" number="650" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.61e-08" name="Formaldehyde" number="650" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.48e-09" name="Heptane" number="651" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="7.6e-10" name="Heptane" number="651" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="7.69e-10" name="Heptane" number="651" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="3.48e-06" name="Hydrocarbons, chlorinated" number="653" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.07e-06" name="Hydrocarbons, chlorinated" number="653" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="8.19e-07" name="Hydrocarbons, chlorinated" number="653" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.36e-10" name="Mercury" number="89723" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.17e-11" name="Mercury" number="89723" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.62e-11" name="Mercury" number="89723" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.86e-06" name="Methane, fossil" number="90787" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="5.7e-07" name="Methane, fossil" number="90787" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="3.62e-07" name="Methane, fossil" number="90787" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.49e-08" name="Methyl ethyl ketone" number="654" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.56e-09" name="Methyl ethyl ketone" number="654" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.61e-09" name="Methyl ethyl ketone" number="654" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="6.83e-07" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.09e-07" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.12e-07" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.27e-10" name="Nickel" number="656" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="6.95e-11" name="Nickel" number="656" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.37e-11" name="Nickel" number="656" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="0.000446" name="Nitrogen oxides" number="79243" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="0.000136" name="Nitrogen oxides" number="79243" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="8.65e-05" name="Nitrogen oxides" number="79243" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.46e-09" name="PAH, polycyclic aromatic hydrocarbons" number="658" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.48e-10" name="PAH, polycyclic aromatic hydrocarbons" number="658" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.82e-10" name="PAH, polycyclic aromatic hydrocarbons" number="658" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="9.41e-07" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.88e-07" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.88e-07" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.97e-10" name="Pentane" number="660" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.52e-10" name="Pentane" number="660" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.54e-10" name="Pentane" number="660" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.37e-09" name="Propane" number="661" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.18e-10" name="Propane" number="661" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.23e-10" name="Propane" number="661" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.47e-08" name="Propene" number="662" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.37e-08" name="Propene" number="662" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.38e-08" name="Propene" number="662" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.58e-12" name="Selenium" number="663" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="7.9e-13" name="Selenium" number="663" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.97e-13" name="Selenium" number="663" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.59e-09" name="Styrene" number="664" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.41e-09" name="Styrene" number="664" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.42e-09" name="Styrene" number="664" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="7.77e-07" name="Sulfur dioxide" number="26215" standardDeviation95="1.075162126880563" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="8.57e-09" name="Toluene" number="665" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.62e-09" name="Toluene" number="665" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.65e-09" name="Toluene" number="665" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="4.49e-08" name="Zinc" number="666" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.37e-08" name="Zinc" number="666" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="8.64e-09" name="Zinc" number="666" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="7.57e-09" name="m-Xylene" number="655" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.32e-09" name="m-Xylene" number="655" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="2.35e-09" name="m-Xylene" number="655" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="3.35e-09" name="o-Xylene" number="657" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.03e-09" name="o-Xylene" number="657" standardDeviation95="1.075162126880563" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (2, 2, 1, 2, 1, 3)" meanValue="1.04e-09" name="o-Xylene" number="657" standardDeviation95="1.075162126880563" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="non material emissions" generalComment="Uncertainty from pedigree matrix: (5, 5, 2, 1, 4, 5)" meanValue="0.725" name="Noise, road, passenger car, average" number="59935" standardDeviation95="1.876507561897662" subCategory="unspecified" uncertaintyType="1" unit="km">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport waste" generalComment="Uncertainty from pedigree matrix: (3, 1, 5, 2, 1, 1)" infrastructureProcess="True" localCategory="transport waste" localSubCategory="unspecified" location="RER" meanValue="0.00126" name="Disposal, road" number="561882" standardDeviation95="1.5168492538102136" subCategory="unspecified" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="577749" timestamp="2023-08-28T15:02:47.990+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="material, obsolete" datasetRelatesToProduct="true" generalComment="Refers to 1 kg N, resp. 3.13 kg urea ammonium nitrate with a N-content of 32.0%;&#10;CAS number: 015978-77-5; &#10;Formula: NH4NO3+CO(NH2)2; &#10;Synonyms: UAN; &#10;UUID: 7f1a3747-6490-392e-9d6f-fae1dfd9db0e" includedProcesses="The unit process inventory takes into account the production of urea ammonium nitrate from ammonia and nitric acid. Transports of raw materials and intermediate products were included as well as the transport of the fertiliser product from the factory to the regional storehouse. Production and waste treatment of catalysts, coating and packaging of the final fertiliser products were not included. CO2-consumption (733 kg CO2/ton of urea) during production of urea was not included, since CO2 arises as a by-product during the production of ammonia. Infrastructure was included by means of a proxy module." infrastructureProcess="false" localCategory="material, obsolete" localName="xx Urea ammonium nitrate, as N, at regional storehouse" localSubCategory="chemicals, obsolete\fertilisers (inorganic), obsolete" name="xx Urea ammonium nitrate, as N, at regional storehouse" subCategory="chemicals, obsolete\fertilisers (inorganic), obsolete" unit="kg"/>
+        <geography location="RER" text="&lt;null&gt;"/>
+        <technology text="Production inventory was derived from detailed literature studies and specifications from the manufacturer, relevant for the European production. Transport specifications of the fertiliser product to the regional department store, which were not included in the reference used for this inventory, were complemented by data given in Patyk &amp; Reinhardt (1997)."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Year when the principal reference used for this inventory was published.">
+          <startDate>1999-01</startDate>
+          <endDate>1999-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-03-29T18:04:18.405+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="No extrapolations done for inputs, emissions partly extrapolated from emission factors originating from  plants in selected European countries. " productionVolume="na" samplingProcedure="Values given in the reference originate from manufacturers and/or other data sources which in turn refer to the real situation and hence are largely secured. However, the emissions factors may be somewhat uncertain. When no information on the speciation of N - emissions was given in the reference, the most likely speciation was assessed by an expert. For particulate emissions factors into the air specified only as the total particle mass in the reference, particle size distribution was assessed based on an expert's guess. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Kaegi T." firstAuthor="Nemecek T." nameOfEditors="0" number="138643" placeOfPublications="Duebendorf and Zuerich, CH" publisher="Swiss Centre for LCI, ART" sourceNumber="0" sourceType="4" text="Nemecek, T., Kägi, T., Blaser, S. (2007) Life Cycle Inventories of Agricultural Production Systems. Ecoinvent report version 2.0. Editors: 0. Volume: 15. Swiss Centre for LCI, ART. Duebendorf and Zurich, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Nemecek, T.\nOther authors: Kägi, T., Blaser, S.\nYear: 2007\nName of editors: 0\nTitle of anthology: Ecoinvent report version 2.0\nPlace of publication: Duebendorf and Zurich, CH\nPublisher: Swiss Centre for LCI, ART\nVolume No: 15\n" title="2007 - LCI agricultural prod. systems - Nemecek" titleOfAnthology="Ecoinvent report version 2.0" volumeNo="15" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="151347"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="151348"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="151348" referenceToPublishedSource="138643"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Maggie Osses" number="151347" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Angelika Heil" number="151348" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="material, obsolete" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="chemicals, obsolete\fertilisers (inorganic), obsolete" location="RER" meanValue="1.0" name="xx Urea ammonium nitrate, as N, at regional storehouse" number="577749" subCategory="chemicals, obsolete\fertilisers (inorganic), obsolete" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="1.88" name="Transport, freight, rail" number="149864" standardDeviation95="2.0900000000000003" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,2,3,3,5)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="-2.58" name="Heat, waste" number="46930" standardDeviation95="1.31" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,2,3,3,5)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.9E-4" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="1.63" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,1,1,2,1,3)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="0.921" name="Ammonia, steam reforming, liquid, at plant" number="370933" standardDeviation95="1.09" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(2,3,2,3,3,5)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.9E-4" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="3.1" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(2,3,2,3,3,5)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.45E-4" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="2.1" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,1,1,2,1,3)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="1.79" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.09" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="014798-03-9" category="emissions to water" generalComment="(2,3,2,3,3,5)&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="5.5E-4" name="Ammonium, ion" number="89863" standardDeviation95="1.63" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(2,3,2,3,3,5)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.91E-4" name="Methane, fossil" number="90787" standardDeviation95="1.63" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.312" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.0900000000000003" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007664-41-7" category="emissions to air" generalComment="(2,3,2,3,3,5)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.86E-4" name="Ammonia" number="635" standardDeviation95="1.63" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,1,1,2,1,3)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.157" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.09" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,1,1,2,1,3)&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="1.25E-9" name="Chemical plant, organics" number="447244" standardDeviation95="3.01" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,1,1,2,1,3)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="1.1300000000000001" name="Nitric acid, 50% in H2O, at plant" number="276300" standardDeviation95="1.09" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000630-08-0" category="emissions to air" generalComment="(2,3,2,3,3,5)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.00144" name="Carbon monoxide, fossil" number="641" standardDeviation95="5.110000000000001" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

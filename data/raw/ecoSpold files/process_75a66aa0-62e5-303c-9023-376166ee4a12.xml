@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="542577" timestamp="2023-08-28T15:02:58.178+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="agricultural" datasetRelatesToProduct="true" generalComment="Inventory refers to the production of 1 kg soybean oil, respectively soybean meal (incl. hulls). The multioutput-process 'soybeans, in oil mill' delivers the co-products 'soybean oil, at oil mill' and 'soybean meal, at oil mill'. Economic allocation with allocation factor of 40.7% to oil and 59.3 to meal. Allocation is done according to carbon balance for CO2 emissions.;&#10;UUID: 75a66aa0-62e5-303c-9023-376166ee4a12" includedProcesses="This process includes the transport of soybeans to the mill, and the processing of soybeans to soybean oil and meal. System boundary is at the oil mill." infrastructureProcess="false" localCategory="agricultural" localName="Soybean oil, at oil mill" localSubCategory="plant oils" name="Soybean oil, at oil mill" subCategory="plant oils" unit="kg"/>
+        <geography location="BR" text="&lt;null&gt;"/>
+        <technology text="Typical oil mill designed for soybean oil solvent extraction (incl. pre-cracking of soybeans, dehulling, oil extraction, meal processing and oil purification), US context."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Data from 1998 to 2005, current technology for soybean oil extraction">
+          <startDate>2004-01</startDate>
+          <endDate>2006-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2006-08-15T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="0" productionVolume="Approx. 50 Mt of soybeans were processed to oil and meal in 2005 in BR" samplingProcedure="Data from US study, cross-checking with various literature sources, industrial data. Sources of energy supply from national statistics. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J." firstAuthor="Jungbluth N." nameOfEditors="-" number="136872" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth N., Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J. (2007) Life Cycle Inventories of Bioenergy. Final report ecoinvent data v2.0. Volume: 17. Swiss Centre for LCI, ESU. Duebendorf and Uster, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth N.\nOther authors: Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Duebendorf and Uster, CH\nPublisher: Swiss Centre for LCI, ESU\nVolume No: 17\n" title="2007 - LCI bioenergy - Jungbluth" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="17" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="159099"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="159098" referenceToPublishedSource="136872"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Edgard Gnansounou" number="159098" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Arnaud Dauriat" number="159099" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="agricultural" generalComment="BRAZIL&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant oils" location="BR" meanValue="1.0" name="Soybean oil, at oil mill" number="542577" subCategory="plant oils" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="000110-54-3" category="emissions to air" generalComment="(1,1,1,2,1,3); Emissions are taken to be equal to input of gas&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.0047811" name="Hexane" number="652" standardDeviation95="1.5046000000000002" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Based on ecoinvent Guidelines, standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.00025733" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,4,2,1,1,4); Based on US study, cross-checking with various literature references, industrial data&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="BR" meanValue="0.089637" name="Electricity, medium voltage, at grid" number="235155" standardDeviation95="1.1667999999999998" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,4,2,1,1,4); Based on US study, cross-checking with various literature references, industrial data&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="0.19167" name="Tap water, at user" number="227940" standardDeviation95="1.1667999999999998" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,1,1,1,1,4); Based on US study, cross-checking with various literature references, industrial data&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant production" location="BR" meanValue="2.2339620572431187" name="Soybeans, at farm" number="490468" standardDeviation95="1.1130000000000002" subCategory="plant production" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,1,1,1,na); Correction to close carbon balance of individual outputs&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.36547" name="Carbon dioxide, biogenic" number="80535" standardDeviation95="1.0500000000000003" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Based on ecoinvent Guidelines, standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.2234" name="Transport, freight, lorry, 7.5t-16t gross weight, fleet average" number="608734" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Based on ecoinvent Guidelines, standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.003088" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(5,5,2,1,1,na); Calculation to close mass balance of process&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="2.0068E-4" name="Treatment, sewage, from residence, to wastewater treatment, class 2" number="538378" standardDeviation95="1.5655" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,2,1,1,4); Based on US study, cross-checking with various literature references, industrial data&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="0.0047811" name="Hexane, at plant" number="603586" standardDeviation95="1.1667999999999998" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,4,1,3,4,5); Calculation, according to production capacity and lifetime of the plant&#10;" infrastructureProcess="true" localCategory="agricultural" localSubCategory="plant oils\infrastructure" location="CH" meanValue="3.7039E-10" name="Oil mill" number="530843" standardDeviation95="3.2843" subCategory="plant oils\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,1,3,1,3); ecoinvent guidelines, calculation from electricity consumption and energy balance&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="9.00755841100998" name="Heat, waste" number="46930" standardDeviation95="1.1376" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,2,1,3); Literature data &amp; biodiesel producers&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="3.6534E-4" name="Phosphoric acid, industrial grade, 85% in H2O, at plant" number="502220" standardDeviation95="1.0752000000000002" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,4,2,1,1,4); Based on US study, cross-checking with various literature references, industrial data&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="0.075756" name="Heat, light fuel oil, at industrial furnace 1MW" number="339773" standardDeviation95="1.1667999999999998" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,4,2,1,1,4); Based on US study, cross-checking with various literature references, industrial data&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="1.148958185656322" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.1667999999999998" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,4,2,1,1,4); Based on US study, cross-checking with various literature references, industrial data&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="coal" location="RER" meanValue="0.17817" name="Heat, at hard coal industrial furnace 1-10MW" number="592780" standardDeviation95="1.1667999999999998" subCategory="coal" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

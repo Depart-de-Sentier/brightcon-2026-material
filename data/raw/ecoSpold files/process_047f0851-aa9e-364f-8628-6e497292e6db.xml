@@ -1,0 +1,164 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="EcoInvent Excel2EcoSpold 1.9.17" number="222729" timestamp="2025-07-16T13:52:41">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="fuels" datasetRelatesToProduct="true" generalComment="Infrastructure requirements are based on estimated standard capacity. The net calorific value of natural gas is 36.0 MJ/Nm³. UUID=047f0851-aa9e-364f-8628-6e497292e6db" includedProcesses="This dataset describes the structure of the 0 gas mix with regard to the countries of origin and the energy requirements and the emissions of the high pressure distribution network." infrastructureIncluded="true" infrastructureProcess="false" localCategory="fuels" localName="Natural gas, high pressure, at consumer" localSubCategory="natural gas\gas to user" name="Natural gas, high pressure, at consumer" subCategory="natural gas\gas to user" unit="MJ"/>
+        <geography location="RoW" text="Energy requirements and emissions are based on Swiss data. Calculations include production and transport of natural gas from 34 countries."/>
+        <technology text="The quantity of gas delivered in the high pressure network is estimated. Industry, power plants and half of commercial and of other sectors are assumed to consume high pressure gas."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Energy requirements are from 2019 and leakage data are from 2018. Trade movements investigated for 2023.">
+          <startYear>2023</startYear>
+          <endYear>2024</endYear>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2025-07-16T13:52:41" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="not known" samplingProcedure="Literature. Online calculators for distances.The consumption mix is calculated based on international trade statistics for 2023." uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Jungbluth N., Bussa M., Stefanel A." firstAuthor="Meili C." number="136354" placeOfPublications="Schaffhausen, CH" publisher="ESU-services Ltd." sourceType="3" text="Report" title="2025 - LCI long-distance transport crude oil - Meili" titleOfAnthology="Project report" volumeNo="234" year="2025"/>
+        <source additionalAuthors="Jungbluth N., Meili C." firstAuthor="Bussa M." number="136355" placeOfPublications="Schaffhausen, CH" publisher="ESU-services Ltd." sourceType="3" text="Report" title="2025 - LCI long-dist. transp. and distrib. natural gas - Bussa" titleOfAnthology="Project report" volumeNo="234" year="2025"/>
+        <validation otherDetails="https://esuservices-my.sharepoint.com/personal/jungbluth_esu-services_ch/Documents/ESU-intern/565 Beratung BAFU/EcoSpoldDataXML/[565-EcoSpold-gas-transport-2025-v2.0.xlsb]X-Process" proofReadingDetails="Passed." proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136353" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="2" person="136351" referenceToPublishedSource="136355"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Christoph Meili" number="136352" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Maresa Bussa" number="136353" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\gas to user" location="RoW" meanValue="1" name="Natural gas, high pressure, at consumer" number="222729" subCategory="natural gas\gas to user" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(4,3,5,3,1,BU:1.05); including leakage " infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\gas to user" location="RoW" meanValue="0.0010457" name="Natural gas, high pressure, at consumer" number="222729" standardDeviation95="1.5688" subCategory="natural gas\gas to user" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(4,2,2,3,3,BU:1.05); Qualified estimates from different gas companies" infrastructureProcess="false" localCategory="natural gas" localSubCategory="power plants" location="RoW" meanValue="0.0049022" name="Natural gas, burned in gas turbine" number="415895" standardDeviation95="1.3042" subCategory="power plants" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="pipeline" generalComment="(4,3,5,3,3,BU:3); based on estimated standard capacity" infrastructureProcess="true" localCategory="pipeline" localSubCategory="infrastructure" location="CH" meanValue="1.0666E-9" name="Pipeline, natural gas, high pressure distribution network" number="502401" standardDeviation95="3.321" subCategory="infrastructure" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.015928" name="Natural gas, production AE, at long-distance pipeline" number="313741" standardDeviation95="1.596" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.00058701" name="Natural gas, production AO, at long-distance pipeline" number="448847" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.011939" name="Natural gas, production AR, at long-distance pipeline" number="365658" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.043565" name="Natural gas, production AU, at long-distance pipeline" number="202154" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.0067809" name="Natural gas, production AZ, at long-distance pipeline" number="571069" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.0034287" name="Natural gas, production BO, at long-distance pipeline" number="325321" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.006725" name="Natural gas, production BR, at long-distance pipeline" number="408968" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.054623" name="Natural gas, production CA, at long-distance pipeline" number="567698" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(4,3,5,3,1,BU:1.05); natural gas input" infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\gas to user" location="CN" meanValue="0.067259" name="Natural gas, high pressure, at consumer" number="352677" standardDeviation95="1.5688" subCategory="natural gas\gas to user" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.0034629" name="Natural gas, production CO, at long-distance pipeline" number="570105" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.024207" name="Natural gas, production DZ, at long-distance pipeline" number="605521" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.015488" name="Natural gas, production EG, at long-distance pipeline" number="176140" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.0019832" name="Natural gas, production GQ, at long-distance pipeline" number="498207" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.018425" name="Natural gas, production ID, at long-distance pipeline" number="207741" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.0090686" name="Natural gas, production IN, at long-distance pipeline" number="193733" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.0028511" name="Natural gas, production IQ, at long-distance pipeline" number="552883" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.070767" name="Natural gas, production IR, at long-distance pipeline" number="441243" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(4,3,5,3,1,BU:1.05); natural gas input" infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\gas to user" location="KW" meanValue="0.0038844" name="Natural gas, high pressure, at consumer" number="265637" standardDeviation95="1.5688" subCategory="natural gas\gas to user" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.0088497" name="Natural gas, production KZ, at long-distance pipeline" number="406729" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.0046822" name="Natural gas, production LY, at long-distance pipeline" number="288012" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.010218" name="Natural gas, production MX, at long-distance pipeline" number="231380" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.023277" name="Natural gas, production MY, at long-distance pipeline" number="369651" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.0098671" name="Natural gas, production NG, at long-distance pipeline" number="472658" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.012172" name="Natural gas, production OM, at long-distance pipeline" number="289680" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.0035259" name="Natural gas, production PE, at long-distance pipeline" number="295260" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.04598" name="Natural gas, production QA, at long-distance pipeline" number="339657" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.15587" name="Natural gas, production RU, at long-distance pipeline" number="557838" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.032767" name="Natural gas, production SA, at long-distance pipeline" number="531762" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.0073677" name="Natural gas, production TH, at long-distance pipeline" number="534197" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.021906" name="Natural gas, production TM, at long-distance pipeline" number="308959" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.0059674" name="Natural gas, production TT, at long-distance pipeline" number="233903" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.27537" name="Natural gas, production US, at long-distance pipeline" number="181033" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.012692" name="Natural gas, production UZ, at long-distance pipeline" number="576262" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,BU:1.05); Eurostat 2024 for European countries, EI 2024 for other countries and regions" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RoW" meanValue="0.0085225" name="Natural gas, production VE, at long-distance pipeline" number="272700" standardDeviation95="1.2077" subCategory="transport" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition" meanValue="1.9255E-5" name="Methane, fossil" number="90787" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition" meanValue="1.5948E-6" name="Ethane" number="647" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition" meanValue="3.5882E-7" name="Propane" number="661" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition" meanValue="1.8451E-7" name="Butane" number="639" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition" meanValue="1.3286E-8" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.05); Calculated based on leakage and average gas composition" meanValue="6.6606E-7" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.2226" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

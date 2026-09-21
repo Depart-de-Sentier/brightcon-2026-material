@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="361322" timestamp="2024-07-09T13:23:19.320+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="1 kg H2 produced using a PEM electrolyzer, produced in a hybrid solar PV/wind plant in Central Morocco (Latitude: 28.7, Longitude: -9.54). The hybrid plant has a lifetime of 30 years and produces 2.35 kilotons of hydrogen annually. 0.24 percent of the hydrogen mass produced is lost. 26.21 MW electrolyzer installation, with a capacity factor of 57%. 13 2-MW turbines are considered, for a total capacity of 26,272 kW, with a lifetime of 20 years and a 50% load factor and a curtailment factor of 2.3%. 28 570-kWp ground mounted PV units are considered, with a lifetime of 30 years, and a 22% load factor and a curtailment factor of 13.8%. A NMC stationary battery of 862 kWh of capacity is required, with a lifetime of 13 years. A water requirement of 24 liters per kg H2 is assumed, considering losses due to cleaning, cooling, but also significant evaporation -- see Tonelli et al., 2023. Stack lifetime [hours] 45'000 IndWEDe Stack lifetime [years] 5.5 IndWEDe, based on the lower estimate of 8,000 hours per year, from manufacturers' data.  Balance of Plant lifetime [years]: Same as system. System lifetime [years]: 20 IndWEDe. Stack replacement over system's lifetime, excluding initial unit [unit] 3 Calculated. Water demand [kg water/kg H2] 8.9, corrected to 124 to represent extreme climatic consitions. Electricity demand [kWh/kg H2]:  54 IndWEDe. Electrical Efficiency [%, based on H2 LHV]: 61.7%:  Productivity [kg H2/hour]: 18.52: From row above. Operating temperature [Â°C] 50-80 Manufacturers' data. Operating pressure [bar]: ~30 IndWEDe Produced amount over system's lifetime years [kg H2] 70.5 million tons.&#10;&#10; UUID: 96a6a42f-a9b8-38d0-9148-bf1bab6687ec" infrastructureProcess="false" localCategory="fuels" localName="Hydrogen production, gaseous, 30 bar, from PEM electrolysis, from autonomous hybrid plant" localSubCategory="synthetic\transformation" name="Hydrogen production, gaseous, 30 bar, from PEM electrolysis, from autonomous hybrid plant" subCategory="synthetic\transformation" unit="kg"/>
+        <geography location="MA"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024-01</startDate>
+          <endDate>2024-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2023-10-28T00:00:00.000+02:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Rolf Frischknecht, Telephone: 0041 44 940 61 91, E-mail: frischknecht@treeze.ch, Company: treeze, Country: CH" proofReadingValidator="136749"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="not defined" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\transformation" location="MA" meanValue="1.0" name="Hydrogen production, gaseous, 30 bar, from PEM electrolysis, from autonomous hybrid plant" number="361322" subCategory="synthetic\transformation" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="001333-74-0" category="emissions to air" formula="H2" generalComment="Hydrogen loss. {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="air" localSubCategory="unspecified" meanValue="0.0024" name="Hydrogen" number="73124" standardDeviation95="1.3289999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="Using 24,596 kW onshore wind system with lifetime of 20 years." infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic\infrastructure" location="ES" meanValue="4.293E-7" name="570 kWp open ground installation, multi-Si, on open ground" number="435688" standardDeviation95="0.06069" subCategory="photovoltaic\infrastructure" uncertaintyType="2" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\infrastructure" location="RER" meanValue="5.568E-7" name="Electrolyzer production, 1MWe, PEM, Balance of Plant" number="377220" standardDeviation95="0.06069" subCategory="synthetic\infrastructure" uncertaintyType="2" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="Using 862 kWh of storage capacity, with lifetime of 13 years. System-level energy density of 0.14 kWh/kg." infrastructureProcess="false" localCategory="electronics" localSubCategory="module" location="NO" meanValue="1.895E-4" name="Battery, rechargeable, prismatic, LiNCM, at plant" number="546484" standardDeviation95="0.06069" subCategory="module" uncertaintyType="2" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wind power" generalComment="Using 24,596 kW onshore wind system with lifetime of 20 years." infrastructureProcess="false" localCategory="wind power" localSubCategory="production of components" location="RER" meanValue="8.71E-8" name="Wind turbine 5MW, offshore, moving parts" number="198105" standardDeviation95="0.06069" subCategory="production of components" uncertaintyType="2" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="{2;4;1;3;3;5;1.5;}" infrastructureProcess="false" localCategory="resource" localSubCategory="land" meanValue="3.83E-5" name="Occupation, unspecified, natural (non-use)" number="140225" standardDeviation95="1.6369999999999998" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="{2;4;1;3;3;5;1.5;}" infrastructureProcess="false" localCategory="resource" localSubCategory="land" meanValue="1.277E-6" name="Transformation, from unspecified, natural (non-use)" number="60409" standardDeviation95="1.6369999999999998" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="Others" generalComment="{2;4;1;3;3;5;1.5;}" infrastructureProcess="false" localCategory="Others" localSubCategory="unspecified" location="RER" meanValue="1.591E-6" name="Treatment of fuel cell stack, 1MWe, PEM" number="247481" standardDeviation95="1.6369999999999998" subCategory="unspecified" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="Others" generalComment="{2;4;1;3;3;5;1.5;}" infrastructureProcess="false" localCategory="Others" localSubCategory="unspecified" location="RER" meanValue="5.568E-7" name="Treatment of fuel cell balance of plant, 1MWe, PEM" number="456599" standardDeviation95="1.6369999999999998" subCategory="unspecified" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" formula="CORINE 121b" generalComment="{2;4;1;3;3;5;1.5;}" infrastructureProcess="false" localCategory="Resource" localSubCategory="land" meanValue="1.277E-6" name="Transformation, to industrial area, vegetation" number="85687" standardDeviation95="1.6369999999999998" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" formula="" generalComment="{2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="Resource" localSubCategory="in air" meanValue="42.95" name="Energy, solar, converted" number="82305" standardDeviation95="1.3289999999999997" subCategory="in air" uncertaintyType="1" unit="MJ">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="{2;4;1;3;3;5;1.5;}" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\infrastructure" location="RER" meanValue="1.591E-6" name="Electrolyzer production, 1MWe, PEM, Stack" number="204753" standardDeviation95="1.6369999999999998" subCategory="synthetic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" formula="" generalComment="{2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="Resource" localSubCategory="in air" meanValue="165.8" name="Energy, kinetic (in wind), converted" number="82055" standardDeviation95="1.3289999999999997" subCategory="in air" uncertaintyType="1" unit="MJ">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="wind power" generalComment="Using 26,272 kW onshore wind system with lifetime of 20 years." infrastructureProcess="false" localCategory="wind power" localSubCategory="production of components" location="RER" meanValue="8.71E-8" name="Wind turbine 5MW, offshore, tower" number="615507" standardDeviation95="0.06069" subCategory="production of components" uncertaintyType="2" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wind power" generalComment="Using 26,272 kW onshore wind system with lifetime of 20 years." infrastructureProcess="false" localCategory="wind power" localSubCategory="production of components" location="RER" meanValue="8.71E-8" name="Wind turbine 5MW, offshore, jacket substructure" number="609279" standardDeviation95="0.06069" subCategory="production of components" uncertaintyType="2" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="A perfect reaction of H2O results in 1 kg H2 and 8 kg O2, and needs 9 kg H2O, however, considering some losses we assume 24 kg H2O (Tonelli et al., 2023, preprint). {2;4;1;3;3;5;1.5;}" infrastructureProcess="false" localCategory="water" localSubCategory="industry water" location="CH" meanValue="24.0" name="Water, deionised, at plant" number="617689" standardDeviation95="1.6369999999999998" subCategory="industry water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

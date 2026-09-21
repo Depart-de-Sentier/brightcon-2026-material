@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="210142" timestamp="2023-08-28T15:03:02.676+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="glass" datasetRelatesToProduct="true" generalComment="Inventory based on a state of the art report for the European glass manufacturing industry. Data had to be estimated from ranges given for different parameters.;&#10;CAS number: 065997-17-3; &#10;Synonyms: fibreglass, fiberglass, fibrous glass filter media; &#10;UUID: e7c90a94-cb2d-34a0-bd20-1d755ba5f0a5" includedProcesses="Gate to gate inventory for the production of glass fibre." infrastructureProcess="false" localCategory="glass" localName="Glass fibre, at plant" localSubCategory="construction" name="Glass fibre, at plant" subCategory="construction" unit="kg"/>
+        <geography location="RER" text="26 furnaces operating at 12 sites in Europe"/>
+        <technology text="Recuperative or oxy-fuel fired furnaces."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publication">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-07-23T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="From ranges to mean values." percent="100" productionVolume="475000 tonnes." samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Jungbluth N., Kuenniger T., Lehmann M., Thalmann P." firstAuthor="Kellenberger D." nameOfEditors="-" number="137820" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ESU-services Ltd., Bau- und Umweltchimie" sourceNumber="0" sourceType="4" text="Kellenberger D., Althaus H.-J., Jungbluth N., Künniger T. (2007) Life Cycle Inventories of Building Products. Final report ecoinvent data v2.0. Volume: 7. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Kellenberger D.\nOther authors: Althaus H.-J., Jungbluth N., Künniger T.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 7\n" title="2007 - LCI building products - Kellenberger" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="7" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="137819"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136351"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136351" referenceToPublishedSource="137820"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Daniel Kellenberger" number="137819" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="glass" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="glass" localSubCategory="construction" location="RER" meanValue="1.0" name="Glass fibre, at plant" number="210142" subCategory="construction" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="For polymers&#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="0.0283" name="Nylon 6, at plant" number="399817" standardDeviation95="1.41" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007647-01-0" category="emissions to air" generalComment="IPPC 2000&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.0E-5" name="Hydrogen chloride" number="25789" standardDeviation95="2.0000000000000004" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="Fibre glas production waste&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="construction waste landfill" location="CH" meanValue="0.122" name="Disposal, mineral wool, 0% water, to construction waste landfill" number="556756" standardDeviation95="2.04" subCategory="construction waste landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-43-9" category="emissions to air" generalComment="(1,4,na,3,1,na); Emission limit in Belgium&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="7.0E-6" name="Cadmium" number="640" standardDeviation95="1.52" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="glass" generalComment="(2,2,1,3,1,5); Estimation&#10;" infrastructureProcess="true" localCategory="glass" localSubCategory="construction\infrastructure" location="RER" meanValue="4.0E-10" name="Flat glass plant" number="282527" standardDeviation95="3.05" subCategory="construction\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="Silane&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="0.00141" name="Silicone product, at plant" number="566430" standardDeviation95="1.41" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,4,1,1,1,2); Calculation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="5.8" name="Heat, waste" number="46930" standardDeviation95="1.12" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Berdowski 2002, waste gas purification&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.93E-6" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="3.46" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,4,na,3,1,na); Emission limit in Belgium&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.5E-5" name="Antimony" number="9302" standardDeviation95="1.52" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="Binder&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="0.00224" name="Lubricating oil, at plant" number="557555" standardDeviation95="2.24" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="Estimation for colemanite CaB3O4(OH)3-H2O, Hydrated Calcium Borate Hydroxide&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="0.188" name="Boric acid, anhydrous, powder, at plant" number="361542" standardDeviation95="1.33" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,4,1,1,1,2); Forming, utilities and processes&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="1.61" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.12" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="For other raw materials&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganics" location="RER" meanValue="0.0214" name="Aluminium oxide, at plant" number="423671" standardDeviation95="7.14" subCategory="inorganics" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="Berdowski 2002, waste gas purification&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="4.85E-5" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="3.46" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="IPPC 2000&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="8.94" name="Tap water, at user" number="227940" standardDeviation95="2.24" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="Melting&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="16.0" name="Natural gas, burned in industrial furnace 1MW" number="293151" standardDeviation95="1.4300000000000002" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="Calcium carbonate&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CH" meanValue="0.351" name="Limestone, milled, loose, at plant" number="210651" standardDeviation95="1.1699999999999997" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,4,na,3,1,na); Emission limit in Belgium&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.1E-5" name="Arsenic" number="636" standardDeviation95="1.52" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distance materials 600km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.149" name="Transport, freight, rail" number="149864" standardDeviation95="2.1" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="IPPC 2000&#10;" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="0.464" name="Clay, at mine" number="402453" standardDeviation95="1.1699999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007664-39-3" category="emissions to air" generalComment="IPPC 2000&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.46E-5" name="Hydrogen fluoride" number="46232" standardDeviation95="2.0000000000000004" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007446-09-5" category="emissions to air" generalComment="IPPC 2000&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.00283" name="Sulfur dioxide" number="26215" standardDeviation95="2.8299999999999996" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="Berdowski 2002, waste gas purification&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.39E-5" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="3.46" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="Sewage&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="0.003" name="Treatment, glass production effluent, to wastewater treatment, class 2" number="245168" standardDeviation95="2.0000000000000004" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="Other binders&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="0.00316" name="Chemicals organic, at plant" number="497739" standardDeviation95="3.16" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distance sand and lime 50km, other materials 100km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.102" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.1" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="From raw material decomposition&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.155" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.2899999999999998" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="IPPC 2000&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganics" location="GLO" meanValue="0.00447" name="Fluorspar, 97%, at plant" number="339524" standardDeviation95="4.470000000000001" subCategory="inorganics" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="IPPC 2000&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.00417" name="Nitrogen oxides" number="79243" standardDeviation95="1.6100000000000003" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="IPPC 2000&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="DE" meanValue="0.37" name="Silica sand, at plant" number="137826" standardDeviation95="1.2299999999999998" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="Binder wastes&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.00361" name="Disposal, paint, 0% water, to municipal incineration" number="164053" standardDeviation95="3.61" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="IPPC 2000&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.24E-4" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="2.24" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="For other raw materials&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="0.00224" name="Disposal, used mineral oil, 10% water, to hazardous waste incineration" number="504085" standardDeviation95="7.14" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

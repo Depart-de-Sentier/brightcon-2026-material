@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="329989" timestamp="2023-08-28T15:03:11.763+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="metals" datasetRelatesToProduct="true" generalComment="This datasets describes the production of high-grade cadmium chloride (99.999%) from cadmium and hydrochloric acid. This purity of cadmium chloride can be used in the production of thin film solar cells. ;&#10;CAS number: 010108-64-2; &#10;Formula: CdCl2; &#10;UUID: d418a8bd-bc54-334f-9174-b0449955754e" includedProcesses="The energy consumption, emissions and transports are estimated." infrastructureProcess="false" localCategory="metals" localName="Cadmium chloride, semiconductor-grade, at plant" localSubCategory="non ferro" name="Cadmium chloride, semiconductor-grade, at plant" subCategory="non ferro" unit="kg"/>
+        <geography location="US" text="Production in US"/>
+        <technology text="Production of cadmium chloride by reaction of cadmium with hydrogen chloride"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2005-01</startDate>
+          <endDate>2005-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2009-01-29T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Cadmium emissions are extrapolated from cadmium purification." percent="0" productionVolume="na" samplingProcedure="literature and own estimations " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Blaser S., Scharnhorst W., Tuchschmid M., Jungbluth N., Faist Emmenegger M." firstAuthor="Classen M." nameOfEditors="-" number="148415" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Classen M., Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M. (2008) Life Cycle Inventories of Metals. Final report ecoinvent data v2.1. Volume: 10. Issue: 0. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Classen M.\nOther authors: Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M.\nYear: 2008\nTitle of anthology: Final report ecoinvent data v2.1\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 10\nIssue No: 0\n" title="2009 - LCI metals - Classen" titleOfAnthology="Final report ecoinvent data v2.1" volumeNo="10" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: automatic validation in Excel; Other validation: none;" proofReadingValidator="139614"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="139145"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="139145" referenceToPublishedSource="148415"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Matthias Tuchschmid" number="139145" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="metals" generalComment="UNITED STATES&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="US" meanValue="1.0" name="Cadmium chloride, semiconductor-grade, at plant" number="329989" subCategory="non ferro" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,2,1,5,5); assumption&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="4.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.8082000000000003" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(5,4,2,1,5,5); calculated based on formula&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="US" meanValue="0.64597" name="Cadmium, semiconductor-grade, at plant" number="267037" standardDeviation95="2.2954000000000003" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,5,2,1,5,5); estimation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.15331" name="Heat, waste" number="46930" standardDeviation95="2.3288" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,4,2,1,5,5); calculated based on formula&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="0.41908" name="Hydrochloric acid, 30% in H2O, at plant" number="308041" standardDeviation95="2.2954000000000003" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(5,4,2,1,5,5); assumption,&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="US" meanValue="0.042586" name="Electricity, medium voltage, at grid" number="395204" standardDeviation95="2.2954000000000003" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-43-9" category="emissions to air" generalComment="(5,5,2,1,5,5); estimation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.8758E-6" name="Cadmium" number="640" standardDeviation95="6.155100000000001" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); standard distances in Europe and USA (each 100km) &#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.1065" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); standard distances in Europe and USA (each 200km) &#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.21301" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,5,2,1,5,5); estimation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.011465" name="Hydrogen" number="73124" standardDeviation95="2.5505" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

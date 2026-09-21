@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="512830" timestamp="2023-08-28T15:02:53.124+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="biomass" datasetRelatesToProduct="true" generalComment="Inventory refers to 1 m3 of methane. Electricity consumption and emissions represent the raw gas compression, H2S removal, gas conditioning and methane enrichment of biogas.  Infrastructure expenditures are included employing generic data for facilities of a chemical plant as approximation.;&#10;UUID: 3b436c80-d1b8-3deb-a396-3db92c790de5" includedProcesses="Emissions due to leakage and purification of biogas. Input of energy and auxiliary materials. Biogas input excluded from the dataset." infrastructureProcess="false" localCategory="biomass" localName="Biogas purification, to methane, 96 vol-%, pressure swing adsorption" localSubCategory="fuels" name="Biogas purification, to methane, 96 vol-%, pressure swing adsorption" subCategory="fuels" unit="m3"/>
+        <geography location="CH" text="Data apply to the supply in Switzerland. Production occurs at Viessmann in Berlin (DE)."/>
+        <technology text="Industry data."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2010-01</startDate>
+          <endDate>2010-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2021-04-12T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Data provided by factories " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Zschokke M., Dinkel F." firstAuthor="Kaegi T." nameOfEditors="-" number="199337" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceNumber="0" sourceType="0" text="Kägi T, Zschokke M, Dinkel F (2021) Life Cycle Inventories of Biogas and Biomethane Processes. On behaltf of FOEN, 2021\n" title="2022 - LCI biogas and biomethane processes - Kaegi" titleOfAnthology="-" year="2022"/>
+        <validation proofReadingDetails="Proof reading validation: 12.04.2021; Other validation: Z:\Schreibtisch\WinShare\BAFU Heizsysteme\A_zum konvertieren\[EcoSpold_biogas_aufbereitung.xlsx]X-Process;" proofReadingValidator="250837"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137340"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137340" referenceToPublishedSource="199337"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Norbert Egli" number="250837" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="biomass" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="biomass" localSubCategory="fuels" location="CH" meanValue="1.0" name="Biogas purification, to methane, 96 vol-%, pressure swing adsorption" number="512830" subCategory="fuels" uncertaintyType="0" unit="m3">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="007446-09-5" category="emissions to air" generalComment="(1,4,1,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.5993E-6" name="Sulfur dioxide" number="26215" standardDeviation95="1.2355" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,4,1,3,3,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="1.5E-4" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.3229999999999997" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,3,2,3,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.186" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.2264" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(1,1,1,1,1,5,BU:1.5); ;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.0101" name="Methane, biogenic" number="155267" standardDeviation95="1.5597999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(4,3,1,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.46896" name="Carbon dioxide, biogenic" number="80535" standardDeviation95="1.3059" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,4,1,3,3,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="GLO" meanValue="2.08E-4" name="Charcoal, at plant" number="479589" standardDeviation95="1.3229999999999997" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,1,5,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="3.9753E-6" name="Potassium hydroxide, at regional storage" number="619822" standardDeviation95="1.3958" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,1,5,1,5,BU:2); ;&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="2.1719E-4" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.1547" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,4,3,3,4,5,BU:3); ;&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="5.4E-11" name="Chemical plant, organics" number="447244" standardDeviation95="3.3094000000000006" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007783-06-4" category="emissions to air" generalComment="(4,3,1,1,1,5,BU:1.5); ;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.3107E-6" name="Hydrogen sulfide" number="27907" standardDeviation95="1.6209" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,2,3,1,4,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.2775" name="Heat, waste" number="46930" standardDeviation95="1.1413999999999997" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,1,5,1,5,BU:2); ;&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.000018099" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.1547" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

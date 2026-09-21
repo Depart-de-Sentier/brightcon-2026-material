@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="RStudio" number="562515" timestamp="2025-03-31T15:02:08">
+    <metaInformation>
+      <processInformation>
+        <timePeriod dataValidForEntirePeriod="True" text="Base technology year of 2020">
+          <startDate>2020-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <referenceFunction amount="1" category="transport systems" datasetRelatesToProduct="True" generalComment=" This is the inventory for 1 kg of aluminium-made fuel tank, empty. Scaling formula: 17.159*ln(volume fuel)-54.98. Original source: Wolff et al. 2020, Sustainability, DOI: 10.3390/su12135396. UUID: 02d34621-e606-3ecc-83a0-d527b2bb4288" infrastructureIncluded="True" infrastructureProcess="True" localCategory="transport systems" localName="Fuel tank, for diesel vehicle" localSubCategory="road\Vehicle components" name="Fuel tank, for diesel vehicle" subCategory="road\Vehicle components" unit="kg"/>
+        <geography location="RER" text="Unspecified"/>
+        <technology text="This is the inventory for 1 kg of aluminium-made fuel tank, empty. Scaling formula: 17.159*ln(volume fuel)-54.98. Original source: Wolff et al. 2020, Sustainability, DOI: 10.3390/su12135396"/>
+        <dataSetInformation energyValues="0" impactAssessmentResult="False" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2025-03-31T15:02:08" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Unspecified" productionVolume="Unspecified" samplingProcedure="Unspecified" uncertaintyAdjustments="Unspecified"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="136752" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="doi: 10.5281/ZENODO.5156043" title="2023 - LCI on-road vehicles - Sacchi" year="2023"/>
+        <validation proofReadingDetails="Unspecified" proofReadingValidator="136748"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136751"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="False" dataPublishedIn="2" person="136749" referenceToPublishedSource="136752"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Brian Cox" number="136748" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Julien McTighe" number="136751" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Vehicle components" location="RER" meanValue="1.0" name="Fuel tank, for diesel vehicle" number="562515" subCategory="road\Vehicle components" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" infrastructureProcess="False" localCategory="metals" localSubCategory="general manufacturing" location="RER" meanValue="1.0" name="Aluminium product manufacturing, average metal working" number="548129" standardDeviation95="1.2451093276686365" subCategory="general manufacturing" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" infrastructureProcess="False" localCategory="electricity" localSubCategory="notMaintained" location="ENTSO-E" meanValue="6.25" name="xxx Electricity, low voltage, production ENTSO, at grid" number="612214" standardDeviation95="1.2451093276686365" subCategory="notMaintained" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" infrastructureProcess="False" localCategory="metals" localSubCategory="alloys" location="RER" meanValue="1.0" name="Aluminium alloy, AlMg3, at plant" number="199563" standardDeviation95="1.2451093276686365" subCategory="alloys" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" infrastructureProcess="False" localCategory="metals" localSubCategory="welding" location="RER" meanValue="5.0" name="Welding, arc, aluminium" number="371867" standardDeviation95="1.2451093276686365" subCategory="welding" uncertaintyType="1" unit="m">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.2" name="Transport, freight, rail" number="149864" standardDeviation95="1.2451093276686365" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.1" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="1.2451093276686365" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

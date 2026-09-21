@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="397296" timestamp="2023-08-28T15:03:33.165+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="transport systems" datasetRelatesToProduct="true" generalComment="The maintenance of the battery electric vehicle is derived from the maintenance of a conventional passenger car. Additionally, the battery replacement is included (312kg). Life expectancy of battery pack: 100'000 km.;&#10;UUID: 2b8c1181-95d8-3a0b-9d28-a0b17d907a71" includedProcesses="The inventory includes materials used for alteration parts and energy consumption of garages. Rail and road transport of materials is accounted for. Battery pack replacement and disposal included" infrastructureProcess="true" localCategory="transport systems" localName="Maintenance, electric vehicle, LiMn2O4" localSubCategory="road\operations\infrastructure" name="Maintenance, electric vehicle, LiMn2O4" subCategory="road\operations\infrastructure" unit="p"/>
+        <geography location="RER" text="Data represent Swiss conditions, but are also valid for other European countries"/>
+        <technology text="Middle class passsenger car using a LiMn2O4 battery pack, 100Wh/kg, 312 kg"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2009-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2010-02-08T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Data  for Germany is used as an estimate for Europe" productionVolume="na" samplingProcedure="Data is derived from LCI of a Golf A4. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bauer C., Dones R., Tuchschmid M." firstAuthor="Spielmann M." nameOfEditors="-" number="149188" placeOfPublications="Duebendorf, Villigen and Uster, CH" publisher="Swiss Centre for LCI, PSI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Spielmann M., Dones R; Bauer C. (2007) Life Cycle Inventories of Transport Services. Final report ecoinvent Data v2.0. Volume: 14. Issue: 0. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Spielmann M.\nOther authors: Dones R; Bauer C.\nYear: 2007\nTitle of anthology: Final report ecoinvent Data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 14\nIssue No: 0\n" title="2007 - Transport services - Spielmann" titleOfAnthology="Final report ecoinvent Data v2.0" volumeNo="14" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: 29.01.2010; Other validation: C:\Dokumente und Einstellungen\Marianne\Eigene Dateien\Projekte\277_Mobitool\Ecoinvent\Review\Upload 1\[Ecospold_Maintenance_BEV_v1.1.xls]X-Process;" proofReadingValidator="136750"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="149187"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="149187" referenceToPublishedSource="149188"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Marianne Leuenberger" number="149187" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" generalComment="Europe&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="RER" meanValue="1.0" name="Maintenance, electric vehicle, LiMn2O4" number="397296" subCategory="road\operations\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,3,1,3,3); Identical to ecoinvent data set of passenger car (Spielmann et al. 2007), No.14 Transport&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="2098.8" name="Heat, waste" number="46930" standardDeviation95="1.2738" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,3,1,3,3); Identical to ecoinvent data set of passenger car (Spielmann et al. 2007), No.14 Transport&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="0.3" name="Copper, at regional storage" number="328058" standardDeviation95="1.2738" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,4,3,1,3,3); Identical to ecoinvent data set of passenger car (Spielmann et al. 2007), No.14 Transport&#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="rubbers" location="RER" meanValue="116.0" name="Synthetic rubber, at plant" number="460936" standardDeviation95="1.2738" subCategory="rubbers" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics waste" generalComment="(4,3,1,1,3,4); assumption: battery life 100000km --&gt;312 kg batteries disposed&#10;" infrastructureProcess="false" localCategory="electronics waste" localSubCategory="unspecified" location="GLO" meanValue="312.0" name="Disposal, Li-ions batteries, mixed technology" number="523176" standardDeviation95="1.3277" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(4,3,1,1,3,4); assumption: battery life 100000km --&gt; one replacement per lifetime&#10;" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices\module" location="GLO" meanValue="312.0" name="Battery, LiIo, rechargeable, prismatic, at plant" number="528528" standardDeviation95="1.3277" subCategory="devices\module" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Identical to ecoinvent data set of passenger car (Spielmann et al. 2007), No.14 Transport&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="59.3" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,3,1,3,3); Identical to ecoinvent data set of passenger car (Spielmann et al. 2007), No.14 Transport&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="2.0" name="Ethylene glycol, at plant" number="186477" standardDeviation95="1.2738" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,3,1,3,3); Identical to ecoinvent data set of passenger car (Spielmann et al. 2007), No.14 Transport&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="11.0" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.2738" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,4,3,1,3,3); Identical to ecoinvent data set of passenger car (Spielmann et al. 2007), No.14 Transport&#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="5.0" name="Polyethylene, HDPE, granulate, at plant" number="599376" standardDeviation95="1.2738" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,4,3,1,3,3); Identical to ecoinvent data set of passenger car (Spielmann et al. 2007), No.14 Transport&#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="6.0" name="Polypropylene, granulate, at plant" number="431726" standardDeviation95="1.2738" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,4,3,1,3,3); Identical to ecoinvent data set of passenger car (Spielmann et al. 2007), No.14 Transport&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="583.0" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.2738" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,3,1,3,3); Identical to ecoinvent data set of passenger car (Spielmann et al. 2007), No.14 Transport&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="38.0" name="Ethylene, average, at plant" number="371493" standardDeviation95="1.2738" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Identical to ecoinvent data set of passenger car (Spielmann et al. 2007), No.14 Transport&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="29.6" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

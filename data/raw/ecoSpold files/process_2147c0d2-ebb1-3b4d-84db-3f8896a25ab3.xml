@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="416082" timestamp="2024-07-09T13:23:18.778+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="This dataset represents the supply of 1 kilowatt hour of electricity in a residence, by hydrogen conversion in a fuel cell, SOFC. The hydrogen is produced by  Electrolysis, SOEC, with electricity from grid as feedstock. Electricity conversion efficiency [% LHV input]: 47%. LHV [kWh/kg]: 33.33. Market price [Euro/MJ]: 0.03. Synthesis efficiency [% LHV input]: 0%. Total cap. Input-related [kW]: 268.75. CO2 biogenic share [%]: 0%. Power [kW]: 90. Lifetime [years]: 19.51. Annual operation [hours]: 4100. Allocation factor: 0.92. On-site storage loss [%]: 0. Use loss [%]: 0.56. For more information, refer to: Sacchi, R. and Bauer, C. LCA of Power-to-X processes and applications in the residential sector. Paul Scherrer Institut, 2023. Source: Sacchi, R. and Bauer, C. LCA of Power-to-X processes and applications in the residential sector. Paul Scherrer Institut, 2023.&#10;&#10; UUID: 2147c0d2-ebb1-3b4d-84db-3f8896a25ab3" infrastructureProcess="false" localCategory="heat" localName="Electricity, residential, by conversion of hydrogen using fuel cell, SOFC, allocated by exergy, distributed by pipeline, produced by Electrolysis, SOEC using electricity from grid" localSubCategory="synthetic\transformation" name="Electricity, residential, by conversion of hydrogen using fuel cell, SOFC, allocated by exergy, distributed by pipeline, produced by Electrolysis, SOEC using electricity from grid" subCategory="synthetic\transformation" unit="kWh"/>
+        <geography location="CH"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024-01</startDate>
+          <endDate>2024-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2023-10-28T00:00:00.000+02:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Rolf Frischknecht, Telephone: 0041 44 940 61 91, E-mail: frischknecht@treeze.ch, Company: treeze, Country: CH" proofReadingValidator="136749"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="not defined" infrastructureProcess="false" localCategory="heat" localSubCategory="synthetic\transformation" location="CH" meanValue="1.0" name="Electricity, residential, by conversion of hydrogen using fuel cell, SOFC, allocated by exergy, distributed by pipeline, produced by Electrolysis, SOEC using electricity from grid" number="416082" subCategory="synthetic\transformation" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="emissions to air" formula="H2O" generalComment="9kg of water produced per kg of H2 combusted. {2;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="air" localSubCategory="lower stratosphere + upper troposphere" meanValue="0.5276000000000001" name="Water" number="61571" standardDeviation95="1.3820000000000001" subCategory="stratosphere + troposphere" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="((1+storage loss)*(1+use loss)-1)*hydrogen input {2;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\transformation" location="CH" meanValue="3.283E-4" name="Hydrogen supply, distributed by pipeline, produced by Electrolysis, SOEC using electricity from grid" number="329047" standardDeviation95="1.3820000000000001" subCategory="synthetic\transformation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="{1;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="CH" meanValue="2.204E-5" name="Tap water, at user" number="422494" standardDeviation95="1.377" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="Assumes 80000 hours of lifetime. Life Cycle Inventories of new CHP systems. Data v2.0 (2007). Alex Primas, Basler &amp; Hofmann, Zurich. 1/(Total cap. (input-related) [kW] * lifetime [y] * annual operation [h] * 1 or 3.6 [MJ/kWh])*allocation factor {2;5;1;2;3;5;3;}" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\cogeneration\power unit\infrastructure" location="CH" meanValue="4.271E-8" name="SOFC fuel cell 125kWe, future" number="512599" standardDeviation95="3.1370000000000005" subCategory="natural gas\cogeneration\power unit\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="Hydrogen input. 1 [MJ H2]/120 [MJ/kg H2]/ eff.(th) {2;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\transformation" location="CH" meanValue="0.05862" name="Hydrogen supply, distributed by pipeline, produced by Electrolysis, SOEC using electricity from grid" number="329047" standardDeviation95="1.3820000000000001" subCategory="synthetic\transformation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="001333-74-0" category="emissions to air" formula="H2" generalComment="Hydrogen leakage." infrastructureProcess="false" localCategory="air" localSubCategory="unspecified" meanValue="3.283E-4" name="Hydrogen" number="73124" subCategory="unspecified" uncertaintyType="0" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="Assumes 80000 hours of lifetime. Life Cycle Inventories of new CHP systems. Data v2.0 (2007). Alex Primas, Basler &amp; Hofmann, Zurich. 1/(Total cap. (input-related) [kW] * lifetime [y] * annual operation [h] * 1 or 3.6 [MJ/kWh])*allocation factor {2;5;1;2;3;5;3;}" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\cogeneration\power unit" location="CH" meanValue="4.271E-8" name="Maintenance SOFC fuel cell 125kWe, future" number="227526" standardDeviation95="3.1370000000000005" subCategory="natural gas\cogeneration\power unit" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

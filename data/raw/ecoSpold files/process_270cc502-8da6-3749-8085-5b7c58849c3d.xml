@@ -1,0 +1,121 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="EcoInvent Excel2EcoSpold 1.9.17" number="555936" timestamp="2025-07-08T12:04:13">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="natural gas" datasetRelatesToProduct="true" generalComment="The offshore natural gas production delivers the product natural gas. The values are derived from a multioutput-process &quot;combined offshore gas and oil production&quot; by allocation based on heating values for crude oil and natural gas UUID=270cc502-8da6-3749-8085-5b7c58849c3d" includedProcesses="Production of natural gas including energy use, infrastructure and emissions." infrastructureIncluded="true" infrastructureProcess="false" localCategory="natural gas" localName="Natural gas, at production offshore" localSubCategory="production" name="Natural gas, at production offshore" subCategory="production" unit="Nm3"/>
+        <geography location="PE" text="Data valid for PE."/>
+        <technology text="10 % offshore and  90 % onshore production"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of most relevant publications and statistics. Other generic data, e.g. for infrastructure are based on older publications.">
+          <startYear>2023</startYear>
+          <endYear>2025</endYear>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2025-07-08T12:04:13" type="1" version="2025"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="A part of the data has been estimated with generic assumptions for offshore production." percent="100.0" productionVolume="2 billion Nm3 natural gas per year in 2023." samplingProcedure="Statistics and use of generic data" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Jungbluth N., Bussa M." firstAuthor="Meili C." number="139198" placeOfPublications="Schaffhausen, CH" publisher="ESU-services Ltd." sourceType="3" title="2025 - LCI crude oil and natural gas extraction - Meili" titleOfAnthology="Project report" volumeNo="614" year="2025"/>
+        <validation otherDetails="https://esuservices-my.sharepoint.com/personal/jungbluth_esu-services_ch/Documents/ESU-intern/565 Beratung BAFU/EcoSpoldDataXML/[EcoSpold-crude-gas exploration and extraction-2025-v1.0.xlsb]X-Process" proofReadingDetails="08.07.2025" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136352" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="2" person="136353" referenceToPublishedSource="139198"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Christoph Meili" number="136352" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Maresa Bussa" number="136353" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="natural gas" infrastructureProcess="false" localCategory="natural gas" localSubCategory="production" location="PE" meanValue="1" name="Natural gas, at production offshore" number="555936" subCategory="production" uncertaintyType="0" unit="Nm3">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(1,1,1,1,1,BU:1.05); EI Statistical Review of World Energy 2024" meanValue="1" name="Gas, natural/m3" number="77378" standardDeviation95="1.05" subCategory="in ground" uncertaintyType="1" unit="Nm3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(4,3,1,3,3,BU:1.05); Average 2021 to 2023, IOGP 2024" infrastructureProcess="false" localCategory="oil" localSubCategory="production" location="OCE" meanValue="0.29557" name="Discharge, produced water, offshore" number="267703" standardDeviation95="1.3069" subCategory="production" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,4,1,3,3,BU:1.05); Generic estimate according to Meili et al. 2018" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="GLO" meanValue="0.0004756" name="Chemicals inorganic, at plant" number="499008" standardDeviation95="1.323" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,4,1,3,3,BU:1.05); Generic estimate according to Meili et al. 2018" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="0.0003628" name="Chemicals organic, at plant" number="497739" standardDeviation95="1.323" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,4,1,3,3,BU:2); Standard distance for chemical transport 100km" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="8.384E-5" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.0742" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,4,1,3,3,BU:2); Standard distance for chemical transport 600km" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.00050304" name="Transport, freight, rail" number="149864" standardDeviation95="2.0742" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="Regional estimate for 2023" infrastructureProcess="true" localCategory="oil" localSubCategory="production" location="OCE" meanValue="2.2751E-7" name="Well for exploration and production, offshore" number="301447" standardDeviation95="3.0708" subCategory="production" uncertaintyType="1" unit="m">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(3,4,1,3,3,BU:3); Average 2021 to 2023, IOGP 2024" infrastructureProcess="true" localCategory="fuels" localSubCategory="natural gas\produced gas\raw natural gas\infrastructure" location="OCE" meanValue="1.9346E-11" name="Plant offshore, natural gas, production" number="579772" standardDeviation95="3.0708" subCategory="natural gas\produced gas\raw natural gas\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="pipeline" generalComment="(3,4,1,3,3,BU:3); Estimation based on values for crude oil pipeline" infrastructureProcess="true" localCategory="pipeline" localSubCategory="infrastructure" location="GLO" meanValue="7.576E-9" name="Pipeline, natural gas, long distance, high capacity, offshore" number="149378" standardDeviation95="3.0708" subCategory="infrastructure" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,2,2,3,3,BU:1.05); Purchased energy according to IOGP 2024." infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="PE" meanValue="0.0036326" name="Electricity, medium voltage, at grid" number="237863" standardDeviation95="1.2403" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="mechanical" generalComment="(3,2,2,3,3,BU:1.05); Calculation based on data from IOGP 2024, assuming a generic share of 11.7% of onsite combustion + unspecified. Average 2021 to 2023" infrastructureProcess="false" localCategory="mechanical" localSubCategory="other energy" location="GLO" meanValue="0.13082" name="Diesel, burned in diesel-electric generating set, at extraction site" number="174888" standardDeviation95="1.2403" subCategory="other energy" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(3,2,2,3,3,BU:1.05); Calculation based on data from IOGP 2024, assuming a generic share of 2.2% of onsite combustion + unspecified. Average 2021 to 2023" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="0.024452" name="Heavy fuel oil, burned in industrial furnace 1MW, non-modulating" number="496305" standardDeviation95="1.2403" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(3,2,2,3,3,BU:1.05); Calculation based on data from IOGP 2024, assuming a generic share of 85.7% of onsite combustion + unspecified. Average 2021 to 2023, SOx content of sour gas assessed separately in overall emissions." infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\power plants" location="GLO" meanValue="0.9585" name="Sweet gas, burned in gas turbine, production" number="203648" standardDeviation95="1.2403" subCategory="natural gas\power plants" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(2,1,1,1,3,BU:1.05); Country specific methane emissions according to IEA 2024, includes all methane emissions from upstream production, recalculated using a share of 0.88 Nm3 methane per Nm3 natural gas. Allocation based on country specific emissions for oil and gas." infrastructureProcess="false" localCategory="oil" localSubCategory="production" location="GLO" meanValue="0.0088867" name="Natural gas, vented" number="519120" standardDeviation95="1.2152" subCategory="production" uncertaintyType="1" unit="Nm3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(3,2,1,1,3,BU:1.05); Total amount of flared gas per kg OE according to Worldbank 2024, SOx emissions from flared sour gas assessed separately in overall emissions." infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\produced gas\processes" location="GLO" meanValue="0.0031244" name="Natural gas, sweet, burned in production flare" number="590978" standardDeviation95="1.2366" subCategory="natural gas\produced gas\processes" uncertaintyType="1" unit="Nm3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="underground deposit" generalComment="(3,4,1,3,3,BU:1.05); Generic estimate according to Meili et al. 2018" infrastructureProcess="false" localCategory="underground deposit" localSubCategory="unspecified" location="DE" meanValue="0.00017197" name="Disposal, hazardous waste, 0% water, to underground deposit" number="438312" standardDeviation95="1.2621" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(3,4,1,3,3,BU:1.05); Generic estimate according to Meili et al. 2018" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="8.5985E-5" name="Disposal, municipal solid waste, 22.9% water, to municipal incineration" number="360318" standardDeviation95="1.2621" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,1,1,3,3,BU:1.5); Average 2021 to 2023, IOGP 2024" meanValue="7.0102E-6" name="Oils, unspecified" number="17550" standardDeviation95="1.5647" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,1,1,3,3,BU:1.5); Extrapolation for sum parameter" meanValue="2.2085E-5" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.5647" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,1,1,3,3,BU:1.5); Extrapolation for sum parameter" meanValue="2.2085E-5" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.5647" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,1,1,3,3,BU:1.5); Extrapolation for sum parameter" meanValue="6.0653E-6" name="DOC, Dissolved Organic Carbon" number="4408" standardDeviation95="1.5647" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,1,1,3,3,BU:1.5); Extrapolation for sum parameter" meanValue="6.0653E-6" name="TOC, Total Organic Carbon" number="2278" standardDeviation95="1.5647" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,1,1,3,3,BU:1.5); Extrapolation for sum parameter" meanValue="7.2206E-11" name="AOX, Adsorbable Organic Halogen as Cl" number="81549" standardDeviation95="1.5647" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,1,1,3,3,BU:1.5); Extrapolation for sum parameter" meanValue="5.4154E-9" name="Nitrogen" number="78458" standardDeviation95="1.5647" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,1,1,3,3,BU:1.5); Extrapolation for sum parameter" meanValue="1.8774E-8" name="Sulfur" number="42603" standardDeviation95="1.5647" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,3,3,BU:1.5); Weighted average 2021 to 2023, IOGP 2024" meanValue="3.1589E-5" name="Sulfur dioxide" number="26215" standardDeviation95="1.5647" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,3,3,BU:1.5); Weighted average 2021 to 2023, IOGP 2024" meanValue="0.00038083" name="Nitrogen oxides" number="79243" standardDeviation95="1.5647" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,3,1,3,3,BU:1.5); assuming 20% halon compared to Jungbluth 2007" meanValue="9.9742E-9" name="Methane, bromotrifluoro-, Halon 1301" number="72206" standardDeviation95="1.5805" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,3,1,3,3,BU:1.5); Assuming 80% replacement of halon 1301 with HFC-23 (amount according to Jungbluth 2007)" meanValue="4.0069E-8" name="Methane, trifluoro-, HFC-23" number="238" standardDeviation95="1.5805" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

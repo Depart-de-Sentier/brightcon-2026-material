@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="527659" timestamp="2023-08-28T15:03:36.233+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="Data represent about 80% of the production in Switzerland. The highest uncertainties exist for the emission data due to variations of the source materials. Also the data for energy use contains uncertainties because no complete energy balance of the plants was available. In general the infrastructure data has a high uncertainty because of missing specific data an approximation with an average chemical production plant was used.;&#10;CAS number: 007705-08-0; &#10;Formula: FeCl3; &#10;Synonyms: iron chloride, iron trichloride; &#10;UUID: 5f0851c6-b2f2-3e4d-b5a0-ab2dd7124638" includedProcesses="Production of aquaous iron(III) chloride solution from scrap iron, spent pickling acids, hydrogen chloride and chlorine. Average process for Switzerland. Process electricity demand included. No fuel for process heat included due to exothermal process. No credits given for possible heat export. Land use and infrastructure of plant only roughly included." infrastructureProcess="false" localCategory="chemicals" localName="Iron (III) chloride, 40% in H2O, at plant" localSubCategory="inorganic" name="Iron (III) chloride, 40% in H2O, at plant" subCategory="inorganic" unit="kg"/>
+        <geography location="CH" text="Data valid for production processes used in Switzerland. Various processes with location RER used."/>
+        <technology text="Inventory refers to technology used for production in Switzerland. Excess chlorine can be used in NaOCl production and therfor no chlorine emissions to air occur."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-08-26T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Investigated share on consumtion in Switzerland estimated to about 80%." percent="80" productionVolume="estimated to 8'000-10'000 t as 100% FeCl3 or 20'000-25'000 t as 40% solution" samplingProcedure="Data for resources, energy, water use, wastes and water emissions based on producer in Switzerland. Further data from literature used for energy demand. Infrastructure only rougly estimated with a proxy-process. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Hellweg S., Hischier R., Jungbluth N., Osses M., Primas A." firstAuthor="Althaus H.-J." nameOfEditors="-" number="137407" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ETH, ESU-services Ltd., Chudacoff Oekoscience" sourceNumber="0" sourceType="4" text="Althaus H.-J., Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A. (2007) Life Cycle Inventories of Chemicals. Final report ecoinvent data v2.0. Volume: 8. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Althaus H.-J.\nOther authors: Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 8\n" title="2007 - LCI chemicals - Althaus" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="8" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136699"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137674"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137674" referenceToPublishedSource="137407"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+        <person address="anonymised" companyCode="HSLU" countryCode="CH" email="anonymised" name="Alex Primas" number="137674" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CH" meanValue="1.0" name="Iron (III) chloride, 40% in H2O, at plant" number="527659" subCategory="inorganic" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,2,1,3,4,5); Value calculated from stochiometry. Location RER&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="0.022" name="Hydrochloric acid, 30% in H2O, at plant" number="308041" standardDeviation95="1.6199999999999999" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,2,1,1,1,5); Calculated from Electricity demand&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.067" name="Heat, waste" number="46930" standardDeviation95="1.2400000000000002" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(3,2,1,1,3,5); Calculated average from data of producer&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.00577" name="Water, cooling, unspecified natural origin/m3" number="29019" standardDeviation95="1.3199999999999998" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,2,1,3,1,5); Calculated from data of producer. Location RER&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="0.492" name="Chlorine, gaseous, mercury cell, at plant" number="456991" standardDeviation95="1.2400000000000002" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="3,2,1,3,1,5; Calculated from data of producer. Location RER&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="0.106" name="Chlorine, gaseous, membrane cell, at plant" number="381556" standardDeviation95="1.2400000000000002" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="underground deposit" generalComment="(3,2,1,1,3,5); Data from  from 1 major producer&#10;" infrastructureProcess="false" localCategory="underground deposit" localSubCategory="unspecified" location="DE" meanValue="0.006" name="Disposal, sludge from FeCl3 production, 30% water, to underground deposit" number="543697" standardDeviation95="1.3199999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007439-89-6" category="emissions to water" generalComment="(3,2,1,1,3,5); Data of 1 mayor producer, unknown sample size&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.0E-4" name="Iron" number="91273" standardDeviation95="1.63" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,2,1,1,3,5); Value calculated with assumed distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.022" name="Transport, freight, lorry, 7.5t-16t gross weight, fleet average" number="405764" standardDeviation95="2.1400000000000006" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,5,1,3,4,5); Estimated value. Proxy process used&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="1.0E-9" name="Chemical plant, organics" number="447244" standardDeviation95="3.55" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(3,2,1,3,3,5); Calculated from data of producer, assumptions&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="1.23" name="Tap water, at user" number="227940" standardDeviation95="1.3199999999999998" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,4,1,3,1,5); Calculated average from mixed data&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.0186" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.26" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(3,2,1,1,1,5); Calculated average from data of producer&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="waste metals" location="RER" meanValue="0.328" name="Iron scrap, at plant" number="275624" standardDeviation95="1.2400000000000002" subCategory="waste metals" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,2,1,1,3,5); Data of 1 mayor producer, unknown sample size&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.0E-4" name="Chloride" number="34061" standardDeviation95="1.63" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="5.4815" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

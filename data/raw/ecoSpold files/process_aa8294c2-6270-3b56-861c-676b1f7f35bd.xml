@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="279648" timestamp="2023-08-28T15:03:31.096+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="The process &quot;dimethylamine, at plant, RER&quot; is modelled for the production of dimethylamine from methanol in Europe. Raw materials are modelled with a stoechiometric calculation.  Energy consumptions are modelled with literature data. The emissions are estimated. Infrastructure and transports are calculated with standard values.;&#10;Formula: C2H7N; &#10;UUID: aa8294c2-6270-3b56-861c-676b1f7f35bd" includedProcesses="Production of dimethylamine including materials, energy uses, infrastructure and emissions." infrastructureProcess="false" localCategory="chemicals" localName="Dimethylamine, at plant" localSubCategory="organic" name="Dimethylamine, at plant" subCategory="organic" unit="kg"/>
+        <geography location="RER" text="The inventory is modelled for Europe."/>
+        <technology text="Reaction of methanol with ammonia"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications">
+          <startDate>2000-01</startDate>
+          <endDate>2005-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-09-14T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Transports and emissions are modelled with standard methods." percent="100" productionVolume="Total production of ethylamines  in the world  is around 30.000 tons." samplingProcedure="Literature data " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Sutter J." nameOfEditors="0" number="183498" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ETH" sourceNumber="0" sourceType="4" text="Sutter, J., 0 (2007) Life Cycle Inventories of Petrochemical Solvents. Final report ecoinvent Data v2.0. Editors: 0. 0. Volume: 22. Issue: 0. Swiss Centre for LCI, ETHZ. Duebendorf and St. Gallen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Sutter, J.\nOther authors: 0\nYear: 2007\nName of editors: 0\nTitle of anthology: Final report ecoinvent Data v2.0\nPlace of publication: Duebendorf and St. Gallen, CH\nPublisher: Swiss Centre for LCI, ETHZ\nJournal: 0\nVolume No: 22\nIssue No: 0\n" title="2007 - LCI petrochemical solvents - Sutter" titleOfAnthology="Final report ecoinvent Data v2.0" volumeNo="22" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed.; Other validation: none;" proofReadingValidator="136699"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138642"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138642" referenceToPublishedSource="183498"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Juergen Sutter" number="138642" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="1.0" name="Dimethylamine, at plant" number="279648" subCategory="organic" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(4,5,na,na,na,na); Estimation&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.003593" name="Methanol" number="30529" standardDeviation95="3.0908999999999995" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(4,5,na,na,na,na); Calculated from the water emissions&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.00517" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.6169" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000067-56-1" category="emissions to air" generalComment="(4,5,na,na,na,na); Estimation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.0014971" name="Methanol" number="28623" standardDeviation95="1.6169" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(4,5,na,na,na,na); Calculated from the water emissions&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.00135" name="DOC, Dissolved Organic Carbon" number="4408" standardDeviation95="1.6169" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,3,1,5,1,4); Kim 2003&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.3583" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.1635" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,3,1,5,1,4); Kim 2003&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="others" location="RER" meanValue="1.76" name="Heat, unspecific, in chemical plant" number="228634" standardDeviation95="1.1635" subCategory="others" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(4,5,na,na,na,na); Calculated from the water emissions&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.00135" name="TOC, Total Organic Carbon" number="2278" standardDeviation95="1.6169" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,na,na,na,na); Estimation&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="4.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.0908999999999995" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(4,5,na,na,na,na); Estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.024" name="Water, cooling, unspecified natural origin/m3" number="29019" standardDeviation95="1.3000999999999998" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.51587" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.085979" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="(4,5,na,na,na,na); Calculated from the water treatment&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.044463" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.3000999999999998" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="(4,5,na,na,na,na); Calculated from the water emissions&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.00517" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.6169" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,1,1,1,5); Stoechiometric calculation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="0.74854" name="Methanol, at plant" number="542730" standardDeviation95="1.3765000000000003" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,1,5,1,4); Calculated from the electricity input&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.2899" name="Heat, waste" number="46930" standardDeviation95="1.1635" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="014798-03-9" category="emissions to water" generalComment="(4,5,na,na,na,na); Estimation&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.39687" name="Ammonium, ion" number="89863" standardDeviation95="1.6169" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,1,1,1,5); Stoechiometric calculation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="0.11125" name="Ammonia, liquid, at regional storehouse" number="366825" standardDeviation95="1.3765000000000003" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007664-41-7" category="emissions to air" generalComment="(4,5,na,na,na,na); Estimation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="7.9532E-4" name="Ammonia" number="635" standardDeviation95="1.3713000000000002" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="22.8" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

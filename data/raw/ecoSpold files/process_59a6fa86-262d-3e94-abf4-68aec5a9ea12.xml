@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="598170" timestamp="2023-08-28T15:02:58.319+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="Treated vegetable oil consists of 93.7% triglycerides and 6.7% fatty acid methyl ester. Process refers to the acid-catalysed esterification of free fatty acids and includes water removal, glycerine washing and methanol recovery. ;&#10;Formula: C57H102O7; &#10;Synonyms: SVO, straight vegetable oil, pure vegetable oil, vegetable oil; &#10;UUID: 59a6fa86-262d-3e94-abf4-68aec5a9ea12" includedProcesses="This process includes the collection of waste vegetable oil and delivery to the treatment plant, treatment for impurities and water removal, conditioning and storage of the oil. Treatment of effluents is taken into account. Includes also the gross calorific value of the biomass and the carbon dioxide credit. System boundary is at the oil refining facility." infrastructureProcess="false" localCategory="fuels" localName="Vegetable oil, from waste cooking oil, at plant" localSubCategory="biofuels" name="Vegetable oil, from waste cooking oil, at plant" subCategory="biofuels" unit="kg"/>
+        <geography location="CH" text="&lt;null&gt;"/>
+        <technology text="Acid-catalysed esterification of free-fatty acids."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Data from 2003, existing technology">
+          <startDate>2004-01</startDate>
+          <endDate>2004-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2006-10-17T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="0" productionVolume="Waste cooking oil recycled represents 14'000 t/yr out of 100'000 t/yr." samplingProcedure="Data mostly from one literature source (US). " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J." firstAuthor="Jungbluth N." nameOfEditors="-" number="136872" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth N., Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J. (2007) Life Cycle Inventories of Bioenergy. Final report ecoinvent data v2.0. Volume: 17. Swiss Centre for LCI, ESU. Duebendorf and Uster, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth N.\nOther authors: Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Duebendorf and Uster, CH\nPublisher: Swiss Centre for LCI, ESU\nVolume No: 17\n" title="2007 - LCI bioenergy - Jungbluth" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="17" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="159099"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="159098" referenceToPublishedSource="136872"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Edgard Gnansounou" number="159098" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Arnaud Dauriat" number="159099" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="biofuels" location="CH" meanValue="1.0" name="Vegetable oil, from waste cooking oil, at plant" number="598170" subCategory="biofuels" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Based on ecoinvent Guidelines, standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.10082" name="Transport, freight, lorry, 7.5t-16t gross weight, fleet average" number="405764" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="(4,5,2,5,3,4); Calculation, according to emissions of oil to soil&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.0035" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.7026" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(1,5,1,1,3,na); Calculated from composition of waste cooking oil&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in air" meanValue="2.8435" name="Carbon dioxide, in air" number="66828" standardDeviation95="1.3000999999999998" subCategory="in air" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,5,1,2,4,na); Data from transesterification process, from process modelling&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="0.77304" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.6211" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(4,5,2,5,3,4); Calculation, according to emissions of oil to soil&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="4.3261E-4" name="DOC, Dissolved Organic Carbon" number="4408" standardDeviation95="1.7026" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,4,1,2,4,4); Model data from one literature source&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="CH" meanValue="0.1056" name="Glycerine, from rape oil, at esterification plant" number="195051" standardDeviation95="1.5955000000000001" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(4,5,na,na,na,na); Calculation, to close carbon balance&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.16657" name="Carbon dioxide, biogenic" number="80535" standardDeviation95="1.3000999999999998" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,4,1,2,4,4); Model data from one literature source&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="0.0021" name="Sulphuric acid, liquid, at plant" number="512921" standardDeviation95="1.5955000000000001" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Based on ecoinvent Guidelines, standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="0.08076" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(4,5,2,5,3,4); Losses 0.05% according to product properties&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="5.0E-4" name="Oils, biogenic" number="84469" standardDeviation95="1.7026" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(4,5,2,5,3,4); Calculation, according to emissions of oil to soil&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.0035" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.7026" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Based on ecoinvent Guidelines, standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.00673" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,4,1,2,4,4); Model data from one literature source&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="CH" meanValue="0.0269" name="Methanol, at regional storage" number="587361" standardDeviation95="1.5955000000000001" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(4,5,2,5,3,4); Calculation, according to emissions of oil to soil&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="4.3261E-4" name="TOC, Total Organic Carbon" number="2278" standardDeviation95="1.7026" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(5,5,1,2,5,4); Adapted from weak data from one literature source&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="1.1924E-4" name="Treatment, sewage, from residence, to wastewater treatment, class 2" number="538378" standardDeviation95="2.2944" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(4,5,1,2,4,na); Data from transesterification process, considered weak&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.050804" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.6211" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,1,2,1,na); Calculation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.6217" name="Heat, waste" number="46930" standardDeviation95="1.0511000000000004" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(4,5,1,2,1,na); Oil refining facility modelled as esterification plant&#10;" infrastructureProcess="true" localCategory="fuels" localSubCategory="biofuels\infrastructure" location="CH" meanValue="9.0909E-10" name="Vegetable oil esterification plant" number="285087" standardDeviation95="3.0909999999999997" subCategory="biofuels\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

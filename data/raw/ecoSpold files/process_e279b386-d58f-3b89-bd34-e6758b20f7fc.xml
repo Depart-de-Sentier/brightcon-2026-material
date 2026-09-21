@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="EcoInvent Excel2EcoSpold 1.9.18" number="429719" timestamp="2025-07-22T17:43:40">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electricity by fuel" datasetRelatesToProduct="true" generalComment="UUID=e279b386-d58f-3b89-bd34-e6758b20f7fc" includedProcesses="Electricity from wind farm, fed to grid. Includes the operation of the wind farm with the necessary change of gear oil.&#10;200MW wind farm, consisting of 59  onshore IEA reference wind turbines of.3.4MW each (Bortolotti et al., 2019; Cooperman et al., 2023).&#10;Model is based on the capacity factor of 23.5%, representing the average capacity factor of onshore wind farms in Europe between 2016-2024 (source: ENTSO-E).&#10;Assumed lifetime is 25 years. Annual electricity production is413 GWh, applying a capacity factor of 23.5%." infrastructureIncluded="true" infrastructureProcess="false" localCategory="electricity by fuel" localName="Electricity, at 200MW wind farm, onshore, 3.4MW turbines" localSubCategory="wind" name="Electricity, at 200MW wind farm, onshore, 3.4MW turbines" subCategory="wind" unit="kWh">
+          <synonym>0</synonym>
+        </referenceFunction>
+        <geography location="RER"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startYear>2024</startYear>
+          <endYear>2024</endYear>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2025-07-22T17:43:40" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness percent="100.0" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Frehner A., Stucki M." firstAuthor="Kroehnert H. " number="146316" placeOfPublications="Waedenswil, CH" publisher="ZHAW" sourceType="3" text="Report" title="2025 - LCI wind Energy - Kroehnert" titleOfAnthology="Project report" volumeNo="0" year="2025"/>
+        <validation otherDetails="&quot;S:\pools\n\N-IUNR-FG-LCA\Projekte\Wind LCA\LCI-Update\Sachbilanz&quot;" proofReadingDetails="22.07.2025" proofReadingValidator="146315"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="146314" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="2" person="146314" referenceToPublishedSource="146316"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="Matthias Stucki" number="137832" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="Hanna Kroehnert" number="138122" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="Alena Frehner" number="146314" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="MINES Paris PSL" countryCode="FR" email="anonymised" name="Joanna Schlesinger, Mathilde Marchand-Lasserre" number="146315" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity by fuel" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="1" name="Electricity, at 200MW wind farm, onshore, 3.4MW turbines" number="429719" subCategory="wind" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(4,1,1,1,1,1,BU:1.05); " meanValue="3.87" name="Energy, kinetic (in wind), converted" number="82055" standardDeviation95="1.05" subCategory="in air" uncertaintyType="1" unit="MJ">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="wind power" generalComment="(2,2,1,1,1,1,BU:3); Own calculation; number of wind turbines divided by total electricity production over a life cycle of 25 years with an annual electricity production of 413 GWh, calculated as 59/(25 × 413 GWh)" infrastructureProcess="true" localCategory="wind power" localSubCategory="production of components" location="RER" meanValue="5.711E-9" name="Wind turbine 3.4MW, onshore, moving parts" number="360949" standardDeviation95="3" subCategory="production of components" uncertaintyType="1" unit="unit">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wind power" generalComment="(2,2,1,1,1,1,BU:3); Own calculation; number of wind turbines divided by total electricity production over a life cycle of 25 years with an annual electricity production of 413 GWh, calculated as 59/(25 × 413 GWh)" infrastructureProcess="true" localCategory="wind power" localSubCategory="production of components" location="RER" meanValue="5.711E-9" name="Wind turbine 3.4MW, onshore, tower" number="230046" standardDeviation95="3" subCategory="production of components" uncertaintyType="1" unit="unit">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wind power" generalComment="(2,2,1,1,1,1,BU:3); Own calculation; number of wind turbines divided by total electricity production over a life cycle of 25 years with an annual electricity production of 413 GWh, calculated as 59/(25 × 413 GWh)" infrastructureProcess="true" localCategory="wind power" localSubCategory="production of components" location="RER" meanValue="5.711E-9" name="Wind turbine 3.4MW, onshore, foundation" number="473433" standardDeviation95="3" subCategory="production of components" uncertaintyType="1" unit="unit">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wind power" generalComment="(4,4,1,1,1,5,BU:3); Own calculation; total length of array and export cables of 126 km divided by total electricity production over a life cycle of 25 years with an annual electricity production of 413 GWh; calculated as 126 km / (25 × 413 GWh)" infrastructureProcess="true" localCategory="wind power" localSubCategory="production of components" location="RER" meanValue="1.2229E-8" name="Array and export cables, 33kV/110kV, onshore wind farm" number="399332" standardDeviation95="3" subCategory="production of components" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wind power" generalComment="(2,4,2,2,1,5,BU:3); Own calculation; 1p divided by total electricity production over a life cycle of 25 years with an annual electricity production of 413 GWh, calculated as 1 / (25 × 413 GWh)" infrastructureProcess="true" localCategory="wind power" localSubCategory="production of components" location="RER" meanValue="9.6797E-11" name="Substation, 200MW onshore wind farm" number="280547" standardDeviation95="3" subCategory="production of components" uncertaintyType="1" unit="unit">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,3,3,2,1,5,BU:3); Own estimation for access road based on Eberle et al. (2019)" infrastructureProcess="true" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="CH" meanValue="1.2173E-5" name="Road" number="506930" standardDeviation95="3" subCategory="road\operations\infrastructure" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,5,5,2,1,5,BU:1.05); Own calculation, assuming exchange of lubrication oil every two years" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="1.979E-5" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.05" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,5,5,2,1,5,BU:2); Own calculation, based on a transport distance of 100 km per oil change" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="1.979E-6" name="Transport, freight, lorry, 3.5t gross weight, fleet average" number="502881" standardDeviation95="2" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(4,5,1,2,1,5,BU:1.5); Estimated SF6 emissions due to 5% leackage over entire life cycle of wind farm" meanValue="1.7847E-9" name="Sulfur hexafluoride" number="90521" standardDeviation95="1.5" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(2,5,5,2,1,5,BU:1.05); Own calculation; assuming that 100% of the lubricating oil is disposed of after use." infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="1.979E-5" name="Disposal, used mineral oil, 10% water, to hazardous waste incineration" number="504085" standardDeviation95="1.05" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,483 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="348763" timestamp="2023-08-28T15:03:33.269+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="oil" datasetRelatesToProduct="true" generalComment="Description of all flows of materials and energy due to the throughput of 1kg crude oil in the refinery. The multioutput-process 'crude oil, in refinery' delivers the co-products petrol, unleaded, bitumen, diesel, light fuel oil, heavy fuel oil, kerosene, naphtha, propane/ butane, refinery gas, secondary sulphur and electricity. The impacts of processing are allocated to the different products with flow specific allocation factors described in the report.;&#10;UUID: 0f173a65-f695-38df-8d7a-9b9258a9aa22" includedProcesses="All processes on the refinery site, including energy use and emissions from combustion facilities, including waste water treatment, process emissions and direct discharges to rivers." infrastructureProcess="false" localCategory="oil" localName="Bitumen, at refinery" localSubCategory="fuels" name="Bitumen, at refinery" subCategory="fuels" unit="kg"/>
+        <geography location="RER" text="Assumption for the European average."/>
+        <technology text="Assumption for average technology."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Statistical data for the throughput and production volumes were available for the year 2016. Major indicators like energy use have been estimated based on a survey in European refineries. Other data and indicators have been estimated based on different environmental reports and statistical data sources.">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-06-02T16:20:31.553+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Some data were available only for single plants and have been extrapolated to the European situation." productionVolume="676 million tonnes crude oil for 2016 in 90 refineries in RER" samplingProcedure="Reference document of the European Commission, environmental reports, public statistics and literature data. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Meili C., Wenzel P." firstAuthor="Jungbluth N." nameOfEditors="-" number="150975" placeOfPublications="Schaffhausen, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Jungbluth N., Meili C., Wenzel P. (2018) Life cycle inventories of oil refinery processing and products. Project report. Volume: 565. ESU-services Ltd.. Schaffhausen, CH.\nType: Separate publication\nSource: Report\nFirst author: Jungbluth N.\nOther authors: Meili C., Wenzel P.\nYear: 2018\nTitle of anthology: Project report\nPlace of publication: Schaffhausen, CH\nPublisher: ESU-services Ltd.\nVolume No: 565\n" title="2018 - LCI oil refinery processing and products - Jungbluth" titleOfAnthology="Project report" volumeNo="565" year="2018"/>
+        <validation proofReadingDetails="Proof reading validation: 08.11.2018; Other validation: C:\Users;" proofReadingValidator="149974"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136351"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136351" referenceToPublishedSource="150975"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="Matthias Stucki, René Itten" number="149974" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="oil" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="fuels" location="RER" meanValue="1.0" name="Bitumen, at refinery" number="348763" subCategory="fuels" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-02-0" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="3.7909E-9" name="Nickel" number="91239" standardDeviation95="5.004300000000001" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.3969E-15" name="Cobalt" number="20110" standardDeviation95="3.0038" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,1,2,1,1,1); Concawe data for 2010&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="0.35538" name="Natural gas, burned in industrial furnace 1MW" number="293151" standardDeviation95="1.0586999999999998" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="001330-20-7" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.4594E-9" name="Xylene" number="89847" standardDeviation95="3.0038" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,4,5,3,3,na); IPPC European plant data&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="0.0010329" name="Chemicals organic, at plant" number="497739" standardDeviation95="1.5960000000000003" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="9.3402E-7" name="Potassium" number="157701" standardDeviation95="5.3402" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="014797-65-0" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="6.3474E-8" name="Nitrite" number="83991" standardDeviation95="1.5051" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.3314E-6" name="Magnesium" number="78821" standardDeviation95="5.3402" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-98-6" category="emissions to air" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="4.0977E-5" name="Propane" number="661" standardDeviation95="1.8531999999999997" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="8.1247E-9" name="Silver" number="21736" standardDeviation95="5.3402" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(3,4,5,3,3,na); Average of plant data&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="5.1324E-13" name="Hydrocarbons, aromatic" number="60809" standardDeviation95="1.8531999999999997" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="7.9498E-7" name="TOC, Total Organic Carbon" number="2278" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-92-1" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.8159E-9" name="Lead" number="91221" standardDeviation95="5.004300000000001" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.4527E-9" name="Tin" number="58837" standardDeviation95="5.004300000000001" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="4.8685E-5" name="Sodium" number="60865" standardDeviation95="5.3402" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,1,3,1,3); Env. reports DE&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="1.2339E-5" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.1376" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,1,2,1,1,1); Concawe data for 2010&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="0.95094" name="Refinery gas, burned in furnace" number="438579" standardDeviation95="1.0586999999999998" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007439-92-1" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="3.1591E-9" name="Lead" number="91221" standardDeviation95="5.004300000000001" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,4,1,3,1,3); Env. reports DE&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="9.327E-5" name="Chloride" number="34061" standardDeviation95="3.0194" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distance 100km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.00019941" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(3,4,5,3,3,na); Average of plant data&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.8819E-12" name="Hydrocarbons, aliphatic, unsaturated" number="25853" standardDeviation95="1.8531999999999997" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.4594E-9" name="Cyanide" number="19350" standardDeviation95="3.0038" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="2.5273E-9" name="Tin" number="58837" standardDeviation95="5.004300000000001" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="014797-55-8" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.2621E-6" name="Nitrate" number="49870" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000108-88-3" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="2.539E-9" name="Toluene" number="87897" standardDeviation95="3.0038" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="014797-55-8" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="3.9354E-6" name="Nitrate" number="49870" standardDeviation95="1.5051" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000109-66-0" category="emissions to air" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="5.1222E-5" name="Pentane" number="660" standardDeviation95="1.8531999999999997" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.1891E-7" name="Fluoride" number="73504" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.5869E-8" name="Sulfide" number="79511" standardDeviation95="1.5051" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="3.252E-6" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.5051" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007727-37-9" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.0383E-6" name="Nitrogen, organic bound" number="79881" standardDeviation95="1.5051" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.6757E-12" name="Boron" number="23758" standardDeviation95="5.004300000000001" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Average of CH plant&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.2838E-9" name="DOC, Dissolved Organic Carbon" number="4408" standardDeviation95="1.8531999999999997" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="fossilwater" meanValue="2.2986E-6" name="Suspended solids, unspecified" number="157731" standardDeviation95="1.5051" subCategory="fossilwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="3.4747E-8" name="AOX, Adsorbable Organic Halogen as Cl" number="81549" standardDeviation95="1.5051" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000115-07-1" category="emissions to air" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="2.0489E-6" name="Propene" number="662" standardDeviation95="1.8531999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="8.1247E-9" name="Aluminium" number="68256" standardDeviation95="5.3402" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="3.6485E-9" name="Hydrocarbons, aromatic" number="160293" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-89-6" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="9.5211E-8" name="Iron" number="91273" standardDeviation95="5.004300000000001" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="8.1247E-6" name="Calcium" number="46860" standardDeviation95="3.2968" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.1582E-9" name="Benzene" number="89849" standardDeviation95="3.0038" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="001330-20-7" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="2.539E-9" name="Xylene" number="89847" standardDeviation95="3.0038" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-43-9" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="3.6317E-10" name="Cadmium" number="91269" standardDeviation95="3.0038" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="130498-29-2" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.7374E-10" name="PAH, polycyclic aromatic hydrocarbons" number="76984" standardDeviation95="3.0038" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.9973E-8" name="AOX, Adsorbable Organic Halogen as Cl" number="81549" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-50-8" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="7.2634E-10" name="Copper" number="91271" standardDeviation95="3.0038" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007723-14-0" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.0946E-7" name="Phosphorus" number="67972" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="018540-29-9" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="6.3182E-10" name="Chromium VI" number="91249" standardDeviation95="3.0038" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-89-6" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="5.4728E-8" name="Iron" number="91273" standardDeviation95="5.004300000000001" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.8955E-9" name="Vanadium" number="67238" standardDeviation95="5.004300000000001" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="6.2673E-7" name="Propylene glycol, liquid, at plant" number="278943" standardDeviation95="1.5960000000000003" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="014265-44-2" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="4.7431E-8" name="Phosphate" number="38397" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="9.6321E-13" name="Boron" number="23758" standardDeviation95="5.004300000000001" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.0406E-8" name="Phenol" number="2976" standardDeviation95="3.0038" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="001330-20-7" category="emissions to air" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="4.0977E-6" name="Xylene" number="26329" standardDeviation95="1.8531999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="4.1893E-14" name="Molybdenum" number="85217" standardDeviation95="5.004300000000001" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-85-1" category="emissions to air" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="2.0489E-6" name="Ethene" number="649" standardDeviation95="1.8531999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007727-37-9" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="5.9679E-7" name="Nitrogen, organic bound" number="79881" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-02-0" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.179E-9" name="Nickel" number="91239" standardDeviation95="5.004300000000001" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000110-54-3" category="emissions to air" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.0489E-5" name="Hexane" number="652" standardDeviation95="1.8531999999999997" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="014265-44-2" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="8.2516E-8" name="Phosphate" number="38397" standardDeviation95="1.5051" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(3,4,5,3,3,na); Estimation&#10;" infrastructureProcess="true" localCategory="oil" localSubCategory="fuels" location="RER" meanValue="2.2775E-11" name="Refinery" number="357975" standardDeviation95="3.2968" subCategory="fuels" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000074-84-0" category="emissions to air" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.0244E-5" name="Ethane" number="647" standardDeviation95="1.8531999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-43-9" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="6.3182E-10" name="Cadmium" number="91269" standardDeviation95="3.0038" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature before 2003&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.0131E-7" name="Oils, unspecified" number="17550" standardDeviation95="1.8531999999999997" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000108-88-3" category="emissions to air" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.1466E-6" name="Toluene" number="665" standardDeviation95="1.8531999999999997" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="6.5008E-8" name="Strontium" number="40509" standardDeviation95="5.3402" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-97-6" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="3.6485E-11" name="Mercury" number="91219" standardDeviation95="5.004300000000001" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,3,1,3,1,3); Average of plant data&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="0.015196" name="Tap water, unspecified natural origin RER, at user" number="409911" standardDeviation95="1.1047" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,1,3,1,3); Calculation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.14384" name="Heat, waste" number="46930" standardDeviation95="1.1047" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-97-6" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="6.3474E-11" name="Mercury" number="91219" standardDeviation95="5.004300000000001" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.383E-6" name="TOC, Total Organic Carbon" number="2278" standardDeviation95="1.5051" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.1064E-6" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.5051" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.505E-5" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="1.5051" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,4,5,3,3,na); Literature, waste water treatment&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="4.998E-5" name="Sodium hypochlorite, 15% in H2O, at plant" number="398007" standardDeviation95="1.5960000000000003" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.6757E-13" name="Selenium" number="8956" standardDeviation95="5.004300000000001" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.6249E-6" name="Potassium" number="157701" standardDeviation95="5.3402" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,1,2,1,1,1); Concawe data for 2010&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.070402" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.0586999999999998" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="4.17E-15" name="Cobalt" number="20110" standardDeviation95="3.0038" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="014798-03-9" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.1643E-7" name="Ammonium, ion" number="89863" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000071-43-2" category="emissions to air" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.5083E-6" name="Benzene" number="638" standardDeviation95="3.0038" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="2.9593E-5" name="Sulfate" number="49702" standardDeviation95="1.8531999999999997" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,4,5,3,3,na); Literature, waste water treatment&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="4.998E-5" name="Iron sulphate, at plant" number="577997" standardDeviation95="1.5960000000000003" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="9.1213E-9" name="Sulfide" number="79511" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-38-2" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.5422E-10" name="Arsenic" number="91205" standardDeviation95="5.004300000000001" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007723-14-0" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.9042E-7" name="Phosphorus" number="67972" standardDeviation95="1.5051" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000106-97-8" category="emissions to air" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="4.0977E-5" name="Butane" number="639" standardDeviation95="1.8531999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.6249E-8" name="Barium" number="73410" standardDeviation95="5.3402" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="4.6701E-6" name="Calcium" number="46860" standardDeviation95="3.2968" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="3.9989E-6" name="Suspended solids, unspecified" number="157731" standardDeviation95="1.5051" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000100-41-4" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="2.7751E-9" name="Benzene, ethyl-" number="89855" standardDeviation95="3.0038" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-47-3" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="6.3182E-10" name="Chromium" number="158591" standardDeviation95="3.0038" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000108-88-3" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.4594E-9" name="Toluene" number="87897" standardDeviation95="3.0038" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,4,5,3,3,na); Literature before 2003&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="2.0066E-6" name="Ammonia, liquid, at regional storehouse" number="366825" standardDeviation95="1.5960000000000003" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-47-3" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="3.6317E-10" name="Chromium" number="158591" standardDeviation95="3.0038" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.7984E-5" name="Sodium" number="60865" standardDeviation95="5.3402" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-38-2" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="4.4227E-10" name="Arsenic" number="91205" standardDeviation95="5.004300000000001" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,1,3,1,3); Env. reports DE&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="0.0011247" name="Nitrogen, liquid, at plant" number="267576" standardDeviation95="1.1376" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.8104E-8" name="Phenol" number="2976" standardDeviation95="3.0038" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000142-82-5" category="emissions to air" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.0244E-5" name="Heptane" number="651" standardDeviation95="1.8531999999999997" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,1,2,1,1,1); Concawe data for 2010&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="0.27031" name="Petroleum coke, burned in refinery furnace" number="562273" standardDeviation95="1.0586999999999998" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.0895E-9" name="Vanadium" number="67238" standardDeviation95="5.004300000000001" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-96-5" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="2.539E-8" name="Manganese" number="91185" standardDeviation95="5.004300000000001" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="130498-29-2" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="9.9864E-11" name="PAH, polycyclic aromatic hydrocarbons" number="76984" standardDeviation95="3.0038" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="3.8084E-7" name="Fluoride" number="73504" standardDeviation95="1.5051" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,4,5,3,3,na); Env. reports DE&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="8.8992E-5" name="Hydrochloric acid, 30% in H2O, at plant" number="308041" standardDeviation95="1.5960000000000003" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(3,4,5,3,3,na); Average of plant data&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="3.4216E-11" name="Hydrocarbons, aliphatic, alkanes, unspecified" number="29171" standardDeviation95="1.8531999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="2.539E-9" name="Cyanide" number="19350" standardDeviation95="3.0038" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(1,1,1,1,1,3); Reference flow of mulit-output process, allocation by mass&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="transport" location="RER" meanValue="0.9494" name="Crude oil, market mix, at long distance transport" number="266438" standardDeviation95="1.0713999999999997" subCategory="transport" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to water" generalComment="(3,4,5,3,3,na); Literature before 2003&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.7624E-7" name="Oils, unspecified" number="17550" standardDeviation95="1.8531999999999997" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.408E-14" name="Molybdenum" number="85217" standardDeviation95="5.004300000000001" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="4.6701E-9" name="Silver" number="21736" standardDeviation95="5.3402" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007664-41-7" category="emissions to air" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.0996E-6" name="Ammonia" number="635" standardDeviation95="1.2090000000000003" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000100-41-4" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.5952E-9" name="Benzene, ethyl-" number="89855" standardDeviation95="3.0038" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,4,5,3,3,na); Average of plant data&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="1.6217E-5" name="Calcium chloride, CaCl2, at plant" number="307666" standardDeviation95="1.5960000000000003" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="025167-67-3" category="emissions to air" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.0244E-6" name="Butene" number="25923" standardDeviation95="1.8531999999999997" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,1,3,1,3); Env. reports DE&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="9.6842E-6" name="Sulphuric acid, liquid, at plant" number="512921" standardDeviation95="1.1376" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Average of CH plant&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="3.9731E-9" name="DOC, Dissolved Organic Carbon" number="4408" standardDeviation95="1.8531999999999997" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="8.5282E-6" name="Methane, fossil" number="90787" standardDeviation95="1.5051" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.2978E-7" name="Hydrocarbons, unspecified" number="53354" standardDeviation95="1.5051" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(1,1,2,1,1,1); Concawe data for 2010&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="0.0010696" name="Disposal, refinery sludge, 89.5% water, to hazardous waste incineration" number="586097" standardDeviation95="1.0586999999999998" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(1,1,2,1,1,1); Concawe data for 2010&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.0014494" name="Disposal, municipal solid waste, 22.9% water, to municipal incineration" number="360318" standardDeviation95="1.0586999999999998" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="4.6701E-9" name="Aluminium" number="68256" standardDeviation95="5.3402" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="014798-03-9" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="3.7654E-7" name="Ammonium, ion" number="89863" standardDeviation95="1.5051" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,4,1,3,1,3); Env. reports DE&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="5.3612E-5" name="Chloride" number="34061" standardDeviation95="3.0194" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.701E-5" name="Sulfate" number="49702" standardDeviation95="1.8531999999999997" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="5.4476E-9" name="Zinc" number="91189" standardDeviation95="5.004300000000001" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="9.6321E-14" name="Selenium" number="8956" standardDeviation95="5.004300000000001" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="6.6576E-10" name="Benzene" number="89849" standardDeviation95="3.0038" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="7.4599E-8" name="Hydrocarbons, unspecified" number="53354" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="014797-65-0" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="3.6485E-8" name="Nitrite" number="83991" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="9.3402E-9" name="Barium" number="73410" standardDeviation95="5.3402" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="6.3598E-7" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000100-41-4" category="emissions to air" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.0244E-6" name="Benzene, ethyl-" number="51458" standardDeviation95="3.2968" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="9.4773E-9" name="Zinc" number="91189" standardDeviation95="5.004300000000001" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-96-5" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.4594E-8" name="Manganese" number="91185" standardDeviation95="5.004300000000001" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.8692E-6" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-50-8" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.2636E-9" name="Copper" number="91271" standardDeviation95="3.0038" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,4,5,3,3,na); Estimation based on literature&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CH" meanValue="3.4986E-5" name="Lime, hydrated, packed, at plant" number="360311" standardDeviation95="1.5960000000000003" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,4,5,3,3,na); Average of plant data&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="washing agents\tensides" location="RER" meanValue="2.6743E-6" name="Soap, at plant" number="542602" standardDeviation95="1.5960000000000003" subCategory="washing agents\tensides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="6.3474E-9" name="Hydrocarbons, aromatic" number="160293" standardDeviation95="1.5051" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="018540-29-9" category="emissions to water" generalComment="(1,2,1,1,1,3); Barthe et al 2015&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="3.6317E-10" name="Chromium VI" number="91249" standardDeviation95="3.0038" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,1,2,1,1,1); Concawe data for 2010&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="0.24892" name="Heavy fuel oil, burned in refinery furnace" number="396705" standardDeviation95="1.0586999999999998" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="4.056E-6" name="Magnesium" number="78821" standardDeviation95="5.3402" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distance 600km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.0011964" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,3,na); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.131E-7" name="Strontium" number="40509" standardDeviation95="5.3402" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(1,2,1,1,1,3); Barthe et al 2015" infrastructureProcess="false" localCategory="resources" localSubCategory="unspecified" meanValue="0.0065973" name="Water, unspecified natural origin/m3" number="64511" standardDeviation95="1.0743944409" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(1,2,1,1,1,3); Barthe et al 2015" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.0076869" name="Water, cooling, unspecified natural origin/m3" number="29019" standardDeviation95="1.0743944409" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="6.267435" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="7.302555" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

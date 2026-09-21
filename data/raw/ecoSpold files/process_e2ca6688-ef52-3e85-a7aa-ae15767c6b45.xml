@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="379264" timestamp="2023-08-28T15:03:38.223+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="na;&#10;Synonyms: In UVEK2018 enthalten; &#10;UUID: e2ca6688-ef52-3e85-a7aa-ae15767c6b45" includedProcesses="The module does not include input of fuel (blast furnace gas) because blast furnace gas is treated as a waste product of steel production (i.e. zero allocation to blast furnace gas). Nevertheless, the module includes the emissions caused by the burning of the gas in the power plant. It includes also power plant infrastructure.; Geography: Data from literature, referring to Europe" infrastructureProcess="false" localCategory="heat" localName="Blast furnace gas, burned in power plant" localSubCategory="natural gas\power plants" name="Blast furnace gas, burned in power plant" subCategory="natural gas\power plants" unit="MJ"/>
+        <geography location="RER" text=" Data from literature, referring to Europe"/>
+        <technology text="Industry data."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>1990-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2021-02-10T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Some generic datasets from ecoinvent have been used." productionVolume="na" samplingProcedure="Data from literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bolt P., Conrad S." firstAuthor="Zschokke M." nameOfEditors="-" number="141100" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceNumber="0" sourceType="3" text="M. Zschokke, S. Conrad, P. Bolt (2020) Life cycle inventories of steel and iron processes for UVEK:2020. Project report. carbotech. Zurich, CH.\nType: Separate publication\nSource: Report\nFirst author: M. Zschokke\nOther authors: S. Conrad, P. Bolt\nYear: 2020\nTitle of anthology: Project report\nPlace of publication: Zurich, CH\nPublisher: carbotech\nOriginal title: Life cycle inventories of steel and iron processes for UVEK:2020\n" title="2021 - LCI steel and iron processes - Zschokke" titleOfAnthology="Project report" year="2021"/>
+        <validation proofReadingDetails="Proof reading validation: 10.02.2021; Other validation: \\tsclient\mischa\UBTeam\AKTUELLE Projekte\BAFU Update Eisenmetalle fu¨r UVEK-2020 - 287.65\Daten\Excel2EcoSpold\A_zum_Konvertieren\Updated February 2021\[blast furnace gas, burned in power plant, RER v0.3.xlsx]X-Process;" proofReadingValidator="137241"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="140702"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="140702" referenceToPublishedSource="141100"/>
+        <person address="anonymised" companyCode="U+E" countryCode="CH" email="anonymised" name="Frank Werner" number="137241" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Mischa Zschokke" number="140702" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\power plants" location="RER" meanValue="1.0" name="Blast furnace gas, burned in power plant" number="379264" subCategory="natural gas\power plants" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(2,2,3,1,1,nA,BU:3); ; Remus (2013)&#10;" infrastructureProcess="true" localCategory="electricity by fuel" localSubCategory="gas\power plant\infrastructure" location="RER" meanValue="1.2125E-12" name="Gas power plant, 100MWe" number="236806" standardDeviation95="3.0162000000000004" subCategory="gas\power plant\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to air" generalComment="(2,2,3,1,1,nA,BU:5); ; Remus (2013), only CO2 emissions allocated to steelwork&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="2.5893E-8" name="Zinc" number="666" standardDeviation95="5.018399999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="(2,2,3,1,1,nA,BU:1.05); ; Remus (2013)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.14054" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.1267" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(2,2,3,1,1,nA,BU:3); dust after abatement (&lt; 2.5 um); Remus (2013)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.875E-6" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="3.0162000000000004" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,3,1,1,nA,BU:5); ; Remus (2013)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="5.2679E-8" name="Manganese" number="31635" standardDeviation95="5.018399999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-92-1" category="emissions to air" generalComment="(2,2,3,1,1,nA,BU:5); ; Remus (2013)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="8.0357E-9" name="Lead" number="36341" standardDeviation95="5.018399999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007783-06-4" category="emissions to air" generalComment="(2,2,3,1,1,nA,BU:1.5); ; Remus (2013)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="3.8393E-6" name="Hydrogen sulfide" number="27907" standardDeviation95="1.5217" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,3,1,1,nA,BU:1.5); ; Remus (2013)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="7.5893E-4" name="Hydrogen" number="73124" standardDeviation95="1.5217" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

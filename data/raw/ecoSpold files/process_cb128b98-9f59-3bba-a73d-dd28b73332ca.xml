@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="602429" timestamp="2023-08-28T15:03:35.995+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="textiles" datasetRelatesToProduct="true" generalComment="The multioutput-process &quot;viscose fibres&quot; delivers the co-products &quot;viscose fibres, at plant&quot;, &quot;sodium sulphate from viscose production, at plant&quot; and &quot;sulphuric acid from viscose production, at plant&quot;. The allocation is based on economic criteria and was applied except for the used sulphate pulp.;&#10;UUID: cb128b98-9f59-3bba-a73d-dd28b73332ca" includedProcesses="This data includes the transformation of sulphate pulp to spinnable viscose using CS2" infrastructureProcess="false" localCategory="textiles" localName="Viscose fibres, at plant" localSubCategory="unspecified" name="Viscose fibres, at plant" subCategory="unspecified" unit="kg"/>
+        <geography location="GLO" text="&lt;null&gt;"/>
+        <technology text="Transformation of sulfat pulp by CS2 to spinnable viscose"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>1997-01</startDate>
+          <endDate>2007-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-11-07T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Some data are derived from other technologies." percent="0.1" productionVolume="World production about 1.8 million tons" samplingProcedure="Literature data. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Werner F., Stettler C., Dinkel F." firstAuthor="Althaus H.-J." nameOfEditors="0" number="167410" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, Umwelt &amp; Entwicklung, Carbotech AG" sourceNumber="0" sourceType="4" text="Althaus H.J., Dinkel F., Werner F. (2007) Life Cycle Inventories of Renewable Materials. Final report ecoinvent Data v2.0. Editors: 0. 0. Volume: 21. Issue: 0. Swiss Centre for LCI, Empa - TSL. Duebendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Althaus H.J.\nOther authors: Dinkel F., Werner F.\nYear: 2007\nName of editors: 0\nTitle of anthology: Final report ecoinvent Data v2.0\nPlace of publication: Duebendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nJournal: 0\nVolume No: 21\nIssue No: 0\n" title="2007 - LCI renewable materials - Althaus" titleOfAnthology="Final report ecoinvent Data v2.0" volumeNo="21" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="139614"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="141497"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="141497" referenceToPublishedSource="167410"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Cornelia Stettler" number="141497" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="textiles" generalComment="Global&#10;" infrastructureProcess="false" localCategory="textiles" localSubCategory="unspecified" location="GLO" meanValue="1.0" name="Viscose fibres, at plant" number="602429" subCategory="unspecified" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,3,3,3,1,5); Assumption Carbotech AG, 1/3 of Lenzing waste materials from fibres production, delivery non-hazardous waste Lenzing AG in depostion site&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="0.0093479" name="Disposal, municipal solid waste, 22.9% water, to sanitary landfill" number="490984" standardDeviation95="1.2501999999999998" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,3,2,3,1,5); Assumption Carbotech AG 50% of fibres purchased from oversea, 50% produced on site. Estimations oversea transport distance about 15000 to 20000 km for transport from USA, Brasil and South Africa to Asia.&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="OCE" meanValue="5.609375925158387" name="Transport, transoceanic freight ship" number="208374" standardDeviation95="2.0563000000000002" subCategory="ship" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,3,3,1,5); Data 2001 for fibre production Lenzing AG (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="0.92071" name="Sodium hydroxide, 50% in H2O, production mix, at plant" number="483088" standardDeviation95="1.2501999999999998" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="paper+ board" generalComment="(2,3,2,3,1,5); Assumption Carbotech AG, infrastructure similar than pulp plant with comparable output fibres respectively pulp&#10;" infrastructureProcess="true" localCategory="paper+ board" localSubCategory="pulp\infrastructure" location="RER" meanValue="7.4013E-11" name="Pulp plant" number="446579" standardDeviation95="3.0537" subCategory="pulp\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,3,3,1,5); Sludge and others for heat production from Lenzing AG 2001 (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="waste" location="CH" meanValue="1.174116288708627" name="Heat, digester sludge, at incineration plant, future, allocation price" number="552995" standardDeviation95="1.2501999999999998" subCategory="waste" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="paper+ board" generalComment="(2,3,2,3,1,5); Pulp amount and type from fibres production Lenzing AG 2001 (Federal Environment Agency- Austria, 2004). Use of existing data inventory 'sulphate pulp, TCF bleached, at plant'&#10;" infrastructureProcess="false" localCategory="paper+ board" localSubCategory="pulp" location="RER" meanValue="1.5083782343537215" name="Sulphate pulp, TCF bleached, at plant" number="410563" standardDeviation95="1.2264000000000004" subCategory="pulp" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,3,3,1,5); Data 2001 for fibre production Lenzing AG (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="0.25982" name="Sulphur dioxide, liquid, at plant" number="271296" standardDeviation95="1.2501999999999998" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,3,3,1,5); Data 2001 for fibre production Lenzing AG (Federal Environment Agency- Austria, 2004), no specific data about used auxiliaries, assupmtion Carbotehc AG 50% organic and 50% anorganic&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="GLO" meanValue="0.019555" name="Chemicals inorganic, at plant" number="499008" standardDeviation95="1.2501999999999998" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,3,3,1,5); Heat waste derived from electricity consumption&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="4.63010687429688" name="Heat, waste" number="46930" standardDeviation95="1.2501999999999998" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,3,3,1,5); Oil consumption for heat production from Lenzing AG 2001 (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="0.21885" name="Heat, light fuel oil, at industrial furnace 1MW" number="339773" standardDeviation95="1.2501999999999998" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,3,3,1,5); Data 2001 for fibre production Lenzing AG (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="0.11468" name="Carbon disulfide, at plant" number="252898" standardDeviation95="1.2501999999999998" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,3,3,1,5); Coal consumption for heat production from Lenzing AG 2001 (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="coal" location="RER" meanValue="8.348636686600745" name="Heat, at hard coal industrial furnace 1-10MW" number="592780" standardDeviation95="1.2501999999999998" subCategory="coal" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(2,3,3,3,1,5); Assumption Carbotech AG, 50% of total water consumed to waste water treatment ARA (in Lenzing total waste water treatment about 35% of total water consumption of company)&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="1.2848E-4" name="Treatment, sewage, to wastewater treatment, class 3" number="442955" standardDeviation95="1.2501999999999998" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(2,3,3,3,1,5); Water consumption for fibre production Lenzing AG 2001 (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.25695" name="Water, river" number="159985" standardDeviation95="1.2501999999999998" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,3,2,3,1,5); Transport distance of chemicals 100 km Lkw 32t as in guidelines eco-invent, sulfat pulp about 200 km considered twice as in guidelines ecoinvent for oversea purchased goods. Assumption Carbotech AG 50% of fibres from oversea.&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.44399" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.0563000000000002" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,3,3,1,5); Data 2001 for fibre production Lenzing AG (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="0.02342" name="Oxygen, liquid, at plant" number="403281" standardDeviation95="1.2501999999999998" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,3,3,1,5); Data 2001 for fibre production Lenzing AG (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="0.018594" name="Zinc monosulphate, ZnSO4.H2O, at plant" number="336642" standardDeviation95="1.2501999999999998" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(2,3,3,3,1,5); Mainly batteries and accumaltors, assumption Carbotech AG 1/3 of Lenzing waste materials from fibres production, 50% in recycling and 50% as hazardous waste Lenzing AG icineration of hazardous waste&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="2.2424E-5" name="Disposal, hazardous waste, 25% water, to hazardous waste incineration" number="165198" standardDeviation95="1.2501999999999998" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,3,3,1,5); Data 2001 for fibre production Lenzing AG (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="0.088055" name="Sulphuric acid, liquid, at plant" number="512921" standardDeviation95="1.2501999999999998" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,3,3,3,1,5); Electricity amount for fibre production from Lenzing AG 2001 (Federal Environment Agency- Austria, 2004), general electricity mix UCTE&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="1.2861477885013912" name="Electricity, low voltage, production ENTSO-E, at grid" number="744926" standardDeviation95="1.2501999999999998" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,3,3,1,5); Gas consumption for heat production from Lenzing AG 2001 (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="5.009332997809224" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.2501999999999998" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,3,3,1,5); Wood consumption for heat production from Lenzing AG 2001 (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="wood\heating systems" location="CH" meanValue="8.815182959322636" name="Wood chips, from industry, hardwood, burned in furnace 1000kW" number="441006" standardDeviation95="1.2501999999999998" subCategory="wood\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,3,3,1,5); Data 2001 for fibre production Lenzing AG (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="0.059004" name="Nitrogen, liquid, at plant" number="267576" standardDeviation95="1.2501999999999998" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,3,3,1,5); Heat unspecific assumed for not specified energy in fibres production Lenzing AG 2001 (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="others" location="RER" meanValue="0.97095" name="Heat, unspecific, in chemical plant" number="228634" standardDeviation95="1.2501999999999998" subCategory="others" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,3,2,3,1,5); Assumption Carbotech AG 50% of fibres purchased from oversea, 50% produced on site. Estimations oversea transport distance about 15000 to 20000 km for transport from USA, Brasil and South Africa to Asia.&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="1.1136212919651844" name="Transport, freight, rail" number="149864" standardDeviation95="2.0563000000000002" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,3,3,1,5); Data 2001 for fibre production Lenzing AG (Federal Environment Agency- Austria, 2004), no specific data about used auxiliaries, assupmtion Carbotehc AG 50% organic and 50% anorganic&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="0.019555" name="Chemicals organic, at plant" number="497739" standardDeviation95="1.2501999999999998" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,3,3,1,5); Data 2001 for fibre production Lenzing AG (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="0.19643" name="Sodium hypochlorite, 15% in H2O, at plant" number="398007" standardDeviation95="1.2501999999999998" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,3,3,1,5); Data 2001 for fibre production Lenzing AG (Federal Environment Agency- Austria, 2004)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="0.15578" name="Sodium chloride, powder, at plant" number="139127" standardDeviation95="1.2501999999999998" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="244.1025" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

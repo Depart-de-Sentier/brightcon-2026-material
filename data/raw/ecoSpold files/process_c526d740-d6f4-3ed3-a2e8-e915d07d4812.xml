@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="180536" timestamp="2023-08-28T15:03:22.472+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="Inventory is valid for the district heat based on heat from borehole heat pump only. Heat loss is 11% while heat transportation.;&#10;UUID: c526d740-d6f4-3ed3-a2e8-e915d07d4812" includedProcesses="Included is the infrastructure of the deliverysystem for district heat, the losses and the heat from borehole heat pump 50kW." infrastructureProcess="false" localCategory="heat" localName="District heat, at consumer, borehole heat pump 50kW" localSubCategory="heat pumps\district heat" name="District heat, at consumer, borehole heat pump 50kW" subCategory="heat pumps\district heat" unit="MJ"/>
+        <geography location="CH" text="Data apply to the supply in Switzerland."/>
+        <technology text="Average technology"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2018-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2021-02-19T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Waldburger L., Kern C., Roberts G., Zschokke M., Conte F., Weber L." firstAuthor="Kaegi T." nameOfEditors="-" number="137341" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceNumber="0" sourceType="3" text="Kägi Thomas, Livia Waldburger, Cyril Kern, Gavin Roberts, Mischa Zschokke, Flora Conte, Lea Weber (2020) LCI of heating systems. Carbotech im Auftrag des BAFU. Carbotech AG. Zürich. CH.\nType: Separate publication\nSource: Report\nFirst author: Kägi Thomas\nOther authors: Livia Waldburger, Cyril Kern, Gavin Roberts, Mischa Zschokke, Flora Conte, Lea Weber\nYear: 2020\nTitle of anthology: Carbotech im Auftrag des BAFU\nPlace of publication: Zürich. CH\nPublisher: Carbotech AG\n" title="2021 - LCI heating systems - Kaegi" titleOfAnthology="Carbotech im Auftrag des BAFU" year="2021"/>
+        <validation proofReadingDetails="Proof reading validation: 19.02.2021; Other validation: Z:\Schreibtisch\WinShare\BAFU Heizsysteme\A_zum konvertieren\Fernwärme\[EcoSpold_heat at district heat waste onlyv0.1.xlsx]X-Process;" proofReadingValidator="137339"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137340"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="141098" referenceToPublishedSource="137341"/>
+        <person address="anonymised" companyCode="EBP" countryCode="CH" email="anonymised" name="Andy Spoerri" number="137339" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Livia Waldburger" number="141098" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="heat pumps\district heat" location="CH" meanValue="1.0" name="District heat, at consumer, borehole heat pump 50kW" number="180536" subCategory="heat pumps\district heat" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,2,2,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="heat pumps\heating systems" location="CH" meanValue="1.11" name="Heat, at borehole heat pump, brine-water, 50kW, for district heating, CH electricity" number="538078" standardDeviation95="1.2192" subCategory="heat pumps\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,2,1,1,5,BU:3); ;&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="district heat" location="CH" meanValue="1.0" name="Transport, district heat, average" number="617552" standardDeviation95="3.0504" subCategory="district heat" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

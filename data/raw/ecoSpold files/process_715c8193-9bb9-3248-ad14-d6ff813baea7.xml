@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="426957" timestamp="2023-08-28T15:03:06.943+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="construction" datasetRelatesToProduct="true" generalComment="The raw materials per kg ready mix product are mixed in following ratio: Limestone powder (0.260 kg), sand (0.66 kg), bitumen (0.060 kg) and natural bitumen (0.020 kg). The only process emission taken into account are the VOC-emissions. Further emissions are not taken into account as they play a subordinate role compared to the emissions of the raw material production (e.g. drying of silica sand) and because no data are available. For inventorying the infrastructure, a yearly production amount of 150'000 tons is assumed. The lifespan of the machines is assumed to be 20 years.;&#10;UUID: 715c8193-9bb9-3248-ad14-d6ff813baea7" includedProcesses="Includes the whole manufacturing process to produce mastic asphalt: raw material provision and transport, heating and mixing, storage, flush mounting, and the infrastructure. No transportation from the plant to the construction site and no requirements for administration are included. No additional buildings and land-use are taken into account as it is assumed that the mixing process takes place at the construction site." infrastructureProcess="false" localCategory="construction" localName="Mastic asphalt, at plant" localSubCategory="others" name="Mastic asphalt, at plant" subCategory="others" unit="kg"/>
+        <geography location="CH" text="For the infrastructure RER-datasets are used as proxy"/>
+        <technology text="Mixing, heating and casting of raw materials according to current technology used in Switzerland. It can be assumed that the technology is basically the same all over Europe and probably also for the rest of the world."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-09-13T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="estimation " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Jungbluth N., Kuenniger T., Lehmann M., Thalmann P." firstAuthor="Kellenberger D." nameOfEditors="-" number="137820" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ESU-services Ltd., Bau- und Umweltchimie" sourceNumber="0" sourceType="4" text="Kellenberger D., Althaus H.-J., Jungbluth N., Künniger T. (2007) Life Cycle Inventories of Building Products. Final report ecoinvent data v2.0. Volume: 7. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Kellenberger D.\nOther authors: Althaus H.-J., Jungbluth N., Künniger T.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 7\n" title="2007 - LCI building products - Kellenberger" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="7" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="139614"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137819" referenceToPublishedSource="137820"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Daniel Kellenberger" number="137819" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="construction" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="others" location="CH" meanValue="1.0" name="Mastic asphalt, at plant" number="426957" subCategory="others" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="estimation&#10;" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="0.26" name="Limestone, milled, packed, at plant" number="585958" standardDeviation95="5.000000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,3,1,3,1,5,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.054" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.0989" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="estimation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.1" name="Heat, waste" number="46930" standardDeviation95="5.000000000000001" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="estimation&#10;" infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="6.6667E-6" name="Industrial machine, heavy, unspecified, at plant" number="563077" standardDeviation95="5.000000000000001" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,3,1,3,1,5,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.016" name="Transport, freight, rail" number="149864" standardDeviation95="2.0989" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="estimation&#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="0.021571" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="5.000000000000001" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000050-32-8" category="emissions to air" generalComment="estimation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="4.66E-10" name="Benzo(a)pyrene" number="29927" standardDeviation95="5.000000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="estimation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.9E-4" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="5.000000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="estimation&#10;" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="0.66" name="Sand, at mine" number="213208" standardDeviation95="5.000000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="estimation&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="1.5" name="Heat, light fuel oil, at industrial furnace 1MW" number="204888" standardDeviation95="5.000000000000001" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="estimation&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="fuels" location="CH" meanValue="0.08" name="Bitumen, at refinery" number="526801" standardDeviation95="5.000000000000001" subCategory="fuels" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="estimation&#10;" infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="3.3333E-8" name="Conveyor belt, at plant" number="325402" standardDeviation95="5.000000000000001" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="m">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="estimation&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.027778" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="2.9999999999999996" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

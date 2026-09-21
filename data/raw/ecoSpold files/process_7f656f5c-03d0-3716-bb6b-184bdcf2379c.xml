@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="532180" timestamp="2023-08-28T15:03:40.989+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="metals" datasetRelatesToProduct="true" generalComment="The module describes the primary production of cadmium metal (99.9%) on a global average. No secondary sources from post consumer scrap are considered. Only the most important source, the cadmium sludges from hydrometallurgical zinc operations, is reflected with the dataset. For the use in applications where cadmium is a major constituent – e.g. in NiCd battery systems – the dataset should be complemented with additional specific emission factors and the secondary production process.;&#10;CAS number: 007440-43-9; &#10;Formula: Cd; &#10;UUID: 7f656f5c-03d0-3716-bb6b-184bdcf2379c" includedProcesses="The module includes the treatment of cadmium sludge from hydrometallurgical zinc operations and subsequent refining by electrolysis. Transports and infrastructure are considered." infrastructureProcess="false" localCategory="metals" localName="Cadmium, primary, at plant" localSubCategory="non ferro" name="Cadmium, primary, at plant" subCategory="non ferro" unit="kg"/>
+        <geography location="GLO" text="This module represents the production of primary cadmium on a global average. The inventory however is compiled with European average data, e.g. for electricity production."/>
+        <technology text="Cadmium sludge formed in hydrometallurgical zinc operations by purification of zinc solution. Subsequent purification and oxidation of the sponge. Cadmium cathodes formed by electrowinning. Other sources from pyrometallurgical zinc wastes and post consumer scrap (batteries) disregarded."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2005-01</startDate>
+          <endDate>2005-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-08-22T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography and Technology" productionVolume="20'900 t in 2006" samplingProcedure="literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Blaser S., Scharnhorst W., Tuchschmid M., Jungbluth N., Faist Emmenegger M." firstAuthor="Classen M." nameOfEditors="-" number="148415" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Classen M., Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M. (2008) Life Cycle Inventories of Metals. Final report ecoinvent data v2.1. Volume: 10. Issue: 0. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Classen M.\nOther authors: Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M.\nYear: 2008\nTitle of anthology: Final report ecoinvent data v2.1\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 10\nIssue No: 0\n" title="2009 - LCI metals - Classen" titleOfAnthology="Final report ecoinvent data v2.1" volumeNo="10" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: Passed; Other validation: none;" proofReadingValidator="137747"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="148776"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="148776" referenceToPublishedSource="148415"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Mischa Classen" number="148776" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="metals" generalComment="Global&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="1.0" name="Cadmium, primary, at plant" number="532180" subCategory="non ferro" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,2,3,3,1,3,2)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="1.25" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.1286" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="normal dist +/- 5%&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="GLO" meanValue="2.2424" name="Cadmium sludge, from zinc electrolysis, at plant" number="448372" standardDeviation95="1.1286" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,2,3,3,1,3,13)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="4.5" name="Heat, waste" number="46930" standardDeviation95="1.1286" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,4,1,3,3,5,9)&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="8.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.1495" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,4,1,3,3,3,4)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="0.036" name="Sulphuric acid, liquid, at plant" number="512921" standardDeviation95="1.3286000000000002" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,4,1,3,3,5,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.25" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.1552000000000002" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

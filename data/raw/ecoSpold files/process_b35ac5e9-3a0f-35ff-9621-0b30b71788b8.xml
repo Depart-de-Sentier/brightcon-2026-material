@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="428279" timestamp="2023-08-28T15:03:14.362+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="energy, obsolete" datasetRelatesToProduct="true" generalComment="na;&#10;UUID: b35ac5e9-3a0f-35ff-9621-0b30b71788b8" includedProcesses="The module calls the module &quot;natural gas, burned in gas turbine&quot;, GLO, which in turn includes fuel input, infrastructure, and emissions. The module uses the estimated average net efficiency of a gas turbine. Heat waste of electricity output is subtracted to avoid double counting because it is already fully considered in &quot;natural gas, burned in gas turbine&quot; and will be considered in application of electricity module.; Geography: Global range of electric efficiency assumed 25% to 39%" infrastructureProcess="false" localCategory="energy, obsolete" localName="xx Electricity, natural gas, at turbine, 10MW" localSubCategory="electricity by fuel, obsolete\gas, obsolete" name="xx Electricity, natural gas, at turbine, 10MW" subCategory="electricity by fuel, obsolete\gas, obsolete" unit="kWh"/>
+        <geography location="GLO" text=" Global range of electric efficiency assumed 25% to 39%"/>
+        <technology text="Assumed capacity of gas turbine: about 10MWe."/>
+        <timePeriod dataValidForEntirePeriod="true" text="&lt;null&gt;">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-03-29T18:04:15.037+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Heck T., Jungbluth N., Tuchschmid M." firstAuthor="Faist Emmenegger M." nameOfEditors="Dones R." number="149369" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Faist Emmenegger, M., Heck, T., Jungbluth, N. (2007) Erdgas. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0. Editors: Dones R.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Faist Emmenegger, M.\nOther authors: Heck, T., Jungbluth, N.\nYear: 2007\nName of editors: Dones R.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2007 - Natural gas - Faist-Emmeneger" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0" volumeNo="6" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed.; Other validation: none;" proofReadingValidator="139311"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138970"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138970" referenceToPublishedSource="149369"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Michael Spielmann" number="139311" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Thomas Heck" number="138970" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="energy, obsolete" generalComment="Global&#10;" infrastructureProcess="false" localCategory="energy, obsolete" localSubCategory="electricity by fuel, obsolete\gas, obsolete" location="GLO" meanValue="1.0" name="xx Electricity, natural gas, at turbine, 10MW" number="428279" subCategory="electricity by fuel, obsolete\gas, obsolete" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="estimated uncertainty of efficiency based on range of values from different references&#10;" infrastructureProcess="false" localCategory="natural gas" localSubCategory="power plants" location="GLO" meanValue="10.9" name="Natural gas, burned in gas turbine" number="229876" standardDeviation95="1.3000000000000003" subCategory="power plants" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="negative because heat considered in &quot;natural gas, burned in gas turbine&quot; for pipeline and in application of electricity module&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="-3.6" name="Heat, waste" number="46930" standardDeviation95="1.0" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

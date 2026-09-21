@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="191790" timestamp="2023-08-28T15:03:22.992+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="metals" datasetRelatesToProduct="true" generalComment="This datasets describes the production of high-grade cadmium telluride (99.999%) from cadmium and tellurium. This purity of cadmium telluride can be used in the production of thin film solar cells. ;&#10;CAS number: 001306-25-8; &#10;Formula: CdTe; &#10;UUID: 32e7c3fe-a948-352f-a973-00322f4552f9" includedProcesses="The energy consumption and transports are considered for, emissions are estimated." infrastructureProcess="false" localCategory="metals" localName="Cadmium telluride, semiconductor-grade, at plant" localSubCategory="non ferro" name="Cadmium telluride, semiconductor-grade, at plant" subCategory="non ferro" unit="kg"/>
+        <geography location="US" text="Production in US"/>
+        <technology text="Production of cadmium telluride from cadmium and tellurium"/>
+        <timePeriod dataValidForEntirePeriod="true" text="patents">
+          <startDate>2005-01</startDate>
+          <endDate>2005-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2009-01-29T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Emissions of cadmium into the air are extrapolated from cadmium purification" percent="0" productionVolume="na" samplingProcedure="literature and own estimations " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Blaser S., Scharnhorst W., Tuchschmid M., Jungbluth N., Faist Emmenegger M." firstAuthor="Classen M." nameOfEditors="-" number="148415" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Classen M., Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M. (2008) Life Cycle Inventories of Metals. Final report ecoinvent data v2.1. Volume: 10. Issue: 0. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Classen M.\nOther authors: Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M.\nYear: 2008\nTitle of anthology: Final report ecoinvent data v2.1\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 10\nIssue No: 0\n" title="2009 - LCI metals - Classen" titleOfAnthology="Final report ecoinvent data v2.1" volumeNo="10" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: automatic validation in Excel; Other validation: none;" proofReadingValidator="139614"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="139145"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="139145" referenceToPublishedSource="148415"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Matthias Tuchschmid" number="139145" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="metals" generalComment="UNITED STATES&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="US" meanValue="1.0" name="Cadmium telluride, semiconductor-grade, at plant" number="191790" subCategory="non ferro" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-43-9" category="emissions to air" generalComment="(5,5,2,3,3,5); estimation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.0E-6" name="Cadmium" number="640" standardDeviation95="5.418800000000001" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(5,3,1,3,3,5); personal communication (Fthenakis)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="US" meanValue="12.436" name="Electricity, medium voltage, at grid" number="395204" standardDeviation95="1.6255000000000002" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,5,2,3,3,5); estimation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.75789" name="Heat, waste" number="46930" standardDeviation95="1.6778000000000006" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); standard distances for US (100km) &#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.10526" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,2,5,5,5); assumption&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="4.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.8212" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); standard distances for US (200km) &#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.21053" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(5,5,2,5,5,5); calculated based on formula&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="US" meanValue="0.49298" name="Cadmium, semiconductor-grade, at plant" number="267037" standardDeviation95="2.3413" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(5,5,2,5,5,5); calculated based on formula&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="0.55965" name="Tellurium, semiconductor-grade, at plant" number="580013" standardDeviation95="2.3413" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

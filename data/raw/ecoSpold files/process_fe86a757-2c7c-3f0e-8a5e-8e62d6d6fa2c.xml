@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="424073" timestamp="2023-08-28T15:03:35.039+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="The multioutput process &quot;grass to digestion&quot; describes a bio-refinery (grass-refinery) that delivers three co-products: biogas, proteins and fibres. Allocation for operation expenditures and emissions caused by the processing of grass has been performed by taking into account the revenues of the products. The above exchanges are allocated as follows: biogas: 16;&#10;UUID: fe86a757-2c7c-3f0e-8a5e-8e62d6d6fa2c" includedProcesses="Data represents the environmental exchanges due to grass processing in a grass-refinery. Grass-digestion as well as production of fibres and proteins are included. Gas purification and the use of the gas for co-generation are not included. The required process energy (heat for grass-pre-treatment and drying of fibres and proteins and electricity for fibre presses, fans, blowers reception bells etc.) is obtained from conventional energy carriers and not from the use of biogas. Transport of  grass to the plant is accounted for (10km). For infrastructure expenditures, the same infrastructure as for bio-ethanol production from grass is used as a first approximation." infrastructureProcess="false" localCategory="fuels" localName="xx Grass fibres, at digestion" localSubCategory="biofuels\biogas\byproducts" name="xx Grass fibres, at digestion" subCategory="biofuels\biogas\byproducts" unit="kg"/>
+        <geography location="CH" text="Conditions of plants in Schaffhausen (CH)"/>
+        <technology text="Grass-refinery Up-flow anaerobic sludge bed (UASB) reactor design for biogas production"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2004-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2006-05-05T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="100" productionVolume="max:  0.8t grass(DM)/d " samplingProcedure="Literature data " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J." firstAuthor="Jungbluth N." nameOfEditors="-" number="136872" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth N., Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J. (2007) Life Cycle Inventories of Bioenergy. Final report ecoinvent data v2.0. Volume: 17. Swiss Centre for LCI, ESU. Duebendorf and Uster, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth N.\nOther authors: Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Duebendorf and Uster, CH\nPublisher: Swiss Centre for LCI, ESU\nVolume No: 17\n" title="2007 - LCI bioenergy - Jungbluth" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="17" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="139311"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="139311" referenceToPublishedSource="136872"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Michael Spielmann" number="139311" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="biofuels\biogas\byproducts" location="CH" meanValue="1.0" name="xx Grass fibres, at digestion" number="424073" subCategory="biofuels\biogas\byproducts" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,2,3,1,5); literature studies and own consumptions&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="gas" location="RER" meanValue="4.8846196100000006" name="Heat, natural gas, at boiler condensing modulating &gt;100kW" number="252893" standardDeviation95="1.2334999999999998" subCategory="gas" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(3,3,2,3,1,5); own estimate&#10;" infrastructureProcess="true" localCategory="fuels" localSubCategory="biofuels\infrastructure" location="CH" meanValue="9.2341E-11" name="Ethanol fermentation plant" number="270445" standardDeviation95="3.0660999999999996" subCategory="biofuels\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,3,2,3,1,5); literature studies and own consumptions&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.38242" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.2334999999999998" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(2,3,1,1,1,3); literature studies&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="animal production\animal foods" location="CH" meanValue="0.4131" name="Grass from meadow intensive IP, at field" number="370776" standardDeviation95="1.1153" subCategory="animal production\animal foods" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(2,3,1,1,1,3); literature studies&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant production" location="CH" meanValue="0.077775" name="Grass from natural meadow extensive IP, at field" number="612456" standardDeviation95="1.1153" subCategory="plant production" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,2,3,1,5); own calculation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.3767205500000002" name="Heat, waste" number="46930" standardDeviation95="3.0569" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(2,3,1,1,1,3); oral communication&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="animal production\animal foods" location="CH" meanValue="0.78413" name="Grass from natural meadow intensive IP, at field" number="172853" standardDeviation95="1.1153" subCategory="animal production\animal foods" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(3,3,2,3,1,5); own estimates based on literature studies  &#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="0.0051004" name="Treatment, sewage grass refinery, to wastewater treatment, class 3" number="422519" standardDeviation95="1.4999999999999998" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(3,3,2,3,1,5); own calculation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.0090625" name="Water, river" number="159985" standardDeviation95="3.0660999999999996" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); oral communication&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.12437" name="Transport, freight, lorry, 7.5t-16t gross weight, fleet average" number="405764" standardDeviation95="2.0984000000000003" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="8.609375" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

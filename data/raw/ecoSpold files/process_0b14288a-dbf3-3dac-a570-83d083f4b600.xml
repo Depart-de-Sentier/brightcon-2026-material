@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="557555" timestamp="2023-08-28T15:03:10.156+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="The functional unit represent 1 kg of liquid lubricating oil. Large uncertainty of the process data due to weak data on the production process and missing data on process emissions.;&#10;UUID: 0b14288a-dbf3-3dac-a570-83d083f4b600" includedProcesses="Raw materials and chemicals used for production, transport of materials to manufacturing plant, estimated emissions to air and water from production (incomplete), estimation of energy demand and infrastructure of the plant (approximation). Solid wastes omitted." infrastructureProcess="false" localCategory="chemicals" localName="Lubricating oil, at plant" localSubCategory="others" name="Lubricating oil, at plant" subCategory="others" unit="kg"/>
+        <geography location="RER" text="Data used has no specific geographical origin (stoechiometry). Average europenan processes for raw materials, transport requirements and electricity mix used."/>
+        <technology text="Production out of diesel by hydrocracking, followed by distillation and dewaxing. The overall process yield is assumed to be 75%. Inventory bases on theoretical reflexions. The emissions to air are rough estimates."/>
+        <timePeriod dataValidForEntirePeriod="true" text="date of published literature">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-06-27T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="copper sulphate is included into the dataset as metallic copper and sulphuric acid due to the lack of an appropriate dataset for copper salt" productionVolume="na" samplingProcedure="Process data based on stoechiometric calculations of few literature sources. Energy demand based on approximation from large chemical plant. Process emissions based on estimations only. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Hellweg S., Hischier R., Jungbluth N., Osses M., Primas A." firstAuthor="Althaus H.-J." nameOfEditors="-" number="137407" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ETH, ESU-services Ltd., Chudacoff Oekoscience" sourceNumber="0" sourceType="4" text="Althaus H.-J., Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A. (2007) Life Cycle Inventories of Chemicals. Final report ecoinvent data v2.0. Volume: 8. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Althaus H.-J.\nOther authors: Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 8\n" title="2007 - LCI chemicals - Althaus" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="8" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="137406"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136699"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136699" referenceToPublishedSource="137407"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Heiko Kunst" number="137406" telephone="anonymised"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="1.0" name="Lubricating oil, at plant" number="557555" subCategory="others" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,5,1,1,4,5); calculated from electricity input&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.2" name="Heat, waste" number="46930" standardDeviation95="1.9" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(5,5,1,1,4,5); estimated with data from a large chem. plant &#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="2.0" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.9" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(5,5,1,1,4,5); estimated with data from a large chem. plant &#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.333" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.9" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(4,na,na,na,na,na); estimation based on process yield 70 - 80%&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="distribution" location="RER" meanValue="1.33" name="Diesel, at regional storage" number="458903" standardDeviation95="1.1999999999999997" subCategory="distribution" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(5,5,na,na,na,5); estimation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.01" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="2.3" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,1,3,5,4); estimation&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="4.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.7999999999999994" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

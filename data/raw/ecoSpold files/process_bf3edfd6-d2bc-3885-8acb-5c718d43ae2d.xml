@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="204861" timestamp="2024-10-14T10:45:09.545+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="Direct Air Capture (DAC) of CO2 through temperature-vacuum swing adsorption. This DAC process uses adsorbents to capture CO2 from the air and separates it through vacuum and low-temperature heating. Climeworks provides data from its commercial DAC plants, which consist of multiple CO2 collectors and heat exchangers, capturing and releasing CO2 in cyclic operations. The solid sorbent used here is Amine on Silica. It can be regenerated at low temperatures (80-120C). For the sorbent system, the LCI data are collected from the work of Deutz and Bardow based on the Climeworks system. The LCI data represent a plant with an annual capacity of 100 kt CO2/year and a lifetime of 20 years. &#10;&#10;Source: Deutz, S., Bardow, A. Life-cycle assessment of an industrial direct air capture process based on temperature-vacuum swing adsorption. Nat Energy 6, (2021). https://doi.org/10.1038/s41560-020-00771-9. Assumes &quot;future&quot; electricity consumption of 0.5 kWh/kg CO2 captured as per Deutz and Bardow, 2021. Current electricity consumption is closer to 0.7 kWh/kg CO2 captured. Future heat demand is 5.4 MJ/kg CO2 captured, as per Deutz and Bardow, 2021. The current demand is closer to 11.9. Future MEA consumption is 3 kg/t CO2 captured. Current consumption is closer to 7 kg/t CO2 captured, as per Deutz and Bardow, 2021.&#10;UUID: bf3edfd6-d2bc-3885-8acb-5c718d43ae2d" infrastructureProcess="false" localCategory="chemicals" localName="Carbon dioxide, captured from atmosphere, with adsorbent-based direct air capture system, operated with HP, 100kt CO2" localSubCategory="gases\transformation" name="Carbon dioxide, captured from atmosphere, with adsorbent-based direct air capture system, operated with HP, 100kt CO2" subCategory="gases\transformation" unit="kg"/>
+        <geography location="CH"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024-01</startDate>
+          <endDate>2024-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2024-10-14T10:14:10.762+02:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Pierryves Padey, Telephone: +41 58 462 93 11, E-mail: pierryves.padey@bafu.admin.ch, Company: Federal Office for the Environment, Country: CH" proofReadingValidator="168876"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="FOEN" countryCode="CH" email="anonymised" name="Pierryves Padey" number="168876" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="not defined" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases\transformation" location="CH" meanValue="1.0" name="Carbon dioxide, captured from atmosphere, with adsorbent-based direct air capture system, operated with HP, 100kt CO2" number="204861" subCategory="gases\transformation" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="operational {1;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.5" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.377" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="operational, proxy used (no industrial HP in the database) {1;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="heat" localSubCategory="heat pumps\heating systems" location="CH" meanValue="5.4" name="Heat, at heat pump, air-water, 50kW, CH electricity, in old building" number="398669" standardDeviation95="1.377" subCategory="heat pumps\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="operational {1;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\infrastructure" location="RER" meanValue="0.003" name="Amine-based silica production, for sorbent-based direct air capture system" number="420540" standardDeviation95="1.377" subCategory="synthetic\infrastructure" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="System" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\infrastructure" location="CH" meanValue="5.0E-10" name="Direct air capture system, sorbent-based, 100ktCO2" number="208310" standardDeviation95="3.1370000000000005" subCategory="synthetic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="CO2 sent for compression and storage" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases\transformation" location="CH" meanValue="1.0" name="Carbon dioxide compression, transport and storage" number="365739" standardDeviation95="1.0" subCategory="gases\transformation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: over 600.0 km." infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="0.0018" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.208" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: over 50.0 km." infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.00015" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.208" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="Others" generalComment="EoL" infrastructureProcess="false" localCategory="Others" localSubCategory="unspecified" location="RER" meanValue="5.0E-10" name="Treatment of direct air capture system, sorbent-based, 100ktCO2" number="245017" standardDeviation95="3.1370000000000005" subCategory="unspecified" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="resources" formula="CO2" generalComment="CO2 uptake {1;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="Resource" localSubCategory="in air" meanValue="1.0" name="Carbon dioxide, in air" number="66828" standardDeviation95="1.377" subCategory="in air" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" formula="CO2" generalComment="leak {1;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="air" localSubCategory="high population density" meanValue="0.021" name="Carbon dioxide, biogenic" number="80535" standardDeviation95="1.377" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

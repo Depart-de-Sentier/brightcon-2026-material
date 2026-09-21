@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="617656" timestamp="2023-08-28T15:03:17.638+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="water" datasetRelatesToProduct="true" generalComment="This process is based on the dataset &quot;water, deionised, at plant/kg/CH U&quot; from Ecoinvent v2.2. The electricity consumption is regionalised. The water withdrawal and water emissions to water are regionalised. The water embodied in product (1 kg/kg) is not included and has to be accounted for in the processes, which use deionised water. Large uncertainties exist due to influence of raw water quality and operation mode on regeneration chemical demand and electricity used.;&#10;CAS number: 007732-18-5; &#10;Formula: H2O; &#10;UUID: bb32c5b3-26a5-3d25-b2e8-e24d0779fe2d" includedProcesses="Energy for operation, chemicals used for regeneration, transport of chemicals to plant, emissions from regeneration chemicals, infrastructure of plant and replacement of spent exchane resin. Process does not include very small units (cartridges) or very large units with &gt;&gt;100 m3/h (power stations). Other production methods as reverse osmosis electrodialysis or distillation are not covered with this process (only ion exchange)." infrastructureProcess="false" localCategory="water" localName="Water, deionised, water balance according to MoeK 2013, at plant" localSubCategory="water supply\production" name="Water, deionised, water balance according to MoeK 2013, at plant" subCategory="water supply\production" unit="kg"/>
+        <geography location="DK" text="&lt;null&gt;"/>
+        <technology text="Process includes a strong cation exchanger a degasser and a strong anion exchanger. unit is operated with counterflow regeneration. Obtained water quality about 1 uS/cm for the conductivity and a silica content (as SiO2) of 5-25 ug/l. As water resource tap water from a public supply with a total hardnes of 1.71 mol/m3 (range 0.7 - 3.2) was assumed. No lime decarbonation as pre treatment is used."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of literature publication. Measurements took place partly before this period.">
+          <startDate>2000-01</startDate>
+          <endDate>2017-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-06-14T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="Data for regeneration chemical demand based mainly on design calculations for the specified water quality. Data on energy demand based on few literature sources. Emissions calculated from process input. Standard distances used for transports. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Stolz P." nameOfEditors="-" number="154083" placeOfPublications="Uster, CH" publisher="IEA PVPS Task 12" sourceNumber="0" sourceType="3" text="Stolz P., Frischknecht R. (2017) Life Cycle Water Use of Photovoltaic Electricity. Volume: 174. treeze Ltd.. Uster.\nType: Separate publication\nSource: Report\nFirst author: Stolz P.\nOther authors: Frischknecht R.\nYear: 2017\nPlace of publication: Uster\nPublisher: treeze Ltd.\nVolume No: 174\n" title="2017 - Water footprint euro. rooftop PV electricity - Stolz" titleOfAnthology="-" volumeNo="174" year="2017"/>
+        <validation proofReadingDetails="Proof reading validation: 08.06.2020; Other validation: G:\Projekte laufend\174 Photovoltaic, IEA Task 12\2016 Water use\EcoSpold\[174-Water-Deionised-v0.3.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138233"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138233" referenceToPublishedSource="154083"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Philippe Stolz" number="138233" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="water" generalComment="DENMARK&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="water supply\production" location="DK" meanValue="1.0" name="Water, deionised, water balance according to MoeK 2013, at plant" number="617656" subCategory="water supply\production" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,3,1,3,1,5,BU:3); ; Ecoinvent v2.2&#10;" infrastructureProcess="true" localCategory="water" localSubCategory="industry water\infrastructure" location="CH" meanValue="9.0E-11" name="Water treatment plant, deionisation" number="419617" standardDeviation95="3.0524999999999998" subCategory="industry water\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(1,3,1,3,1,1,BU:1.05); Regionalisation of water withdrawal.; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="water supply\production" location="DK" meanValue="1.11" name="Tap water, water balance according to MoeK 2013, at user" number="194328" standardDeviation95="1.0744000000000002" subCategory="water supply\production" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na,BU:2); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="6.24E-4" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,na,1,1,1,na,BU:3); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.3E-4" name="Chloride" number="34061" standardDeviation95="3.2254" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="emissions to water" generalComment="(4,5,na,na,na,na,BU:1.5); Regionalisation of water losses.; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="1.1E-4" name="Water, DK" number="57202" standardDeviation95="1.6169" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na,BU:2); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.000052" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,na,1,1,1,na,BU:1.05); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.3E-4" name="Carbon dioxide, biogenic" number="80535" standardDeviation95="1.5043999999999997" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,1,3,1,5,BU:1.05); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="1.2E-4" name="Sodium hydroxide, 50% in H2O, production mix, at plant" number="483088" standardDeviation95="1.2238000000000002" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,1,3,1,5,BU:1.05); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="2.4E-4" name="Hydrochloric acid, 30% in H2O, at plant" number="308041" standardDeviation95="1.2238000000000002" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,3,1,3,1,5,BU:1.05); Regionalisation of electricity use.; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="DK" meanValue="4.5E-4" name="Electricity, medium voltage, at grid" number="495002" standardDeviation95="1.2238000000000002" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,na,1,1,1,na,BU:5); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="7.0E-5" name="Sodium" number="60865" standardDeviation95="5.257899999999999" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,1,1,1,5,BU:1.05); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.00162" name="Heat, waste" number="46930" standardDeviation95="1.2225999999999997" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

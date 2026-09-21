@@ -1,0 +1,53 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="RStudio" number="328230" timestamp="2025-09-04 18:40:55.343782">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electricity" datasetRelatesToProduct="true" generalComment="Electricity domestic net consumption shares are based on annual averages for 2023. Losses are distributed across voltage levels with total losses for the same time frame as well as older proxy data for disaggregation. The transmission network and direct emissions to air (ozone and N2O) are also included. Remark: This dataset describes the transmission of high voltage electricity. Ozone- and NO2-emission factors are based on published measurements made in various countries. Assumptions for transmission network, losses and emissions are based on older UCTE data. UUID: 1f82e598-ed52-327f-8da0-bde30564d614" includedProcesses="Included are the shares of corresponding electricity production by technology and country at the busbar. Not included are transformation, transport or distribution losses." infrastructureIncluded="true" infrastructureProcess="false" localCategory="electricity" localName="Electricity, high voltage, at grid" localSubCategory="supply mix" name="Electricity, high voltage, at grid" subCategory="supply mix" unit="kWh">
+          <synonym>0</synonym>
+        </referenceFunction>
+        <geography location="JP" text="Data apply to utilities and auto-producers."/>
+        <technology text="No technology description is provided because the dataset just describes the power plant portfolio of the respective country using current average technology per energy carrier."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time period of statistics used.">
+          <startDate>2023</startDate>
+          <endDate>2023</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2025-09-04 18:40:55.346968" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness percent="100.0" samplingProcedure="Statistical data" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Oberschelp C." number="137486" placeOfPublications="Zuerich, CH" publisher="Oberschelp Consulting" sourceType="0" title="2025 - Electricity mixes in UVEK database - Oberschelp" titleOfAnthology="Project reports" volumeNo="0" year="2025"/>
+        <validation otherDetails="none" proofReadingDetails="manual review of spold files and documentation" proofReadingValidator="137485"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137484" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137484" referenceToPublishedSource="137486"/>
+        <person address="anonymised" companyCode="ETH" countryCode="CH" email="anonymised" name="Christopher Oberschelp" number="137484" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="René Itten" number="137485" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="JP" meanValue="1.0" name="Electricity, high voltage, at grid" number="328230" subCategory="supply mix" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,1,1,1,1,3,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="JP" meanValue="1.01945445566231" name="Electricity mix" number="423107" standardDeviation95="1.0714" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="010028-15-6" category="emissions to air" formula="O3" generalComment="(-,-,-,-,-,-); standard deviation based on variation reported in literature" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="4.5E-6" name="Ozone" number="66752" standardDeviation95="1.5" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="010024-97-2" category="emissions to air" formula="N2O" generalComment="(-,-,-,-,-,-); standard deviation based on variation reported in literature" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="5.0E-6" name="Dinitrogen monoxide" number="646" standardDeviation95="1.5" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,1,4,5,3,5); based on consumption statistics" infrastructureProcess="false" localCategory="electricity" localSubCategory="distribution" location="CH" meanValue="6.82E-9" name="Transmission network, electricity, high voltage" number="313112" standardDeviation95="3.1614" subCategory="distribution" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to soil" formula="" generalComment="(4,1,3,1,1,5); estimations based on losses" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="unspecified" meanValue="0.0046789" name="Heat, waste" number="30793" standardDeviation95="1.3221" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" formula="" generalComment="(4,1,3,1,1,5); estimations based on losses" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.088899" name="Heat, waste" number="46930" standardDeviation95="1.3221" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

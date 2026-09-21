@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="433231" timestamp="2023-08-28T15:03:23.848+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="Assumed lifetime: 20 years. Operation time for heat production 2030 h/a, for electricity production 3500 h/a, calculated from reported annual production.;&#10;UUID: 132b17bf-b333-3ce7-a5c4-44a323b7c6cf" includedProcesses="Infrastructure includes the generator and a control cabinet." infrastructureProcess="true" localCategory="heat" localName="Cogen unit 6400kWth, wood burning, components for electricity only" localSubCategory="wood\cogeneration\power unit\infrastructure" name="Cogen unit 6400kWth, wood burning, components for electricity only" subCategory="wood\cogeneration\power unit\infrastructure" unit="p"/>
+        <geography location="CH" text="Could be used for central European conditions."/>
+        <technology text="Specific cogeneration unit installed in Switzerland."/>
+        <timePeriod dataValidForEntirePeriod="true" text="none">
+          <startDate>2000-01</startDate>
+          <endDate>2001-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-08-19T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Bauer C." nameOfEditors="Dones R." number="156045" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI" sourceNumber="0" sourceType="4" text="Bauer, C. (2007) Holzenergie. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0. Editors: Dones R.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Bauer, C.\nYear: 2007\nName of editors: Dones R.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2007 - Wood energy - Bauer" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0" volumeNo="6" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="136750"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136750"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136750" referenceToPublishedSource="156045"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="SWITZERLAND&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="wood\cogeneration\power unit\infrastructure" location="CH" meanValue="1.0" name="Cogen unit 6400kWth, wood burning, components for electricity only" number="433231" subCategory="wood\cogeneration\power unit\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="basic uncertainty:1.6;(4,na,na,1,na,na); &#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="200.0" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="1.6600000000000001" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="basic uncertainty:2;(4,na,3,1,1,na); &#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="natural gas\cogeneration\power unit\infrastructure" location="RER" meanValue="3.0" name="Control cabinet cogen unit 160kWe" number="350893" standardDeviation95="2.06" subCategory="natural gas\cogeneration\power unit\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="basic uncertainty:2;(4,na,3,1,1,na); &#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="natural gas\cogeneration\power unit\infrastructure" location="RER" meanValue="1.0" name="Generator 200kWe" number="275569" standardDeviation95="2.06" subCategory="natural gas\cogeneration\power unit\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="basic uncertainty:1.6;(4,na,na,1,na,na); &#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="100" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="1.6600000000000001" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

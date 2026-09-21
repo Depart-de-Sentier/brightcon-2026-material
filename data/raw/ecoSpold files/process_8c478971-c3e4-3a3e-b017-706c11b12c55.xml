@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="521189" timestamp="2023-08-28T15:03:37.803+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="The dataset can be used for example as electrolyt for batteries. Data are based on patents. For infrastructure, the ecoinvent dataset &quot;chemical plant, organics&quot; is accounted. Transportation efforts are based on ecoinvent standard estimates.;&#10;CAS number: 000096-49-1; &#10;Formula: C3H4O3; &#10;Synonyms: 1,3-dioxolan-2-one; ethylene glycol carbonate; &#10;UUID: 8c478971-c3e4-3a3e-b017-706c11b12c55" includedProcesses="This dataset includes the reaction of ethylene oxide with carbon dioxide in a reactor with a reaction temperatur at 120°C under pressure and with the use of a silver based catalyst. Energy consumption, ethylene oxide and CO2 emissions to air are calculated. After heating, process runs adiabatic." infrastructureProcess="false" localCategory="chemicals" localName="Ethylene carbonate, at plant" localSubCategory="organic" name="Ethylene carbonate, at plant" subCategory="organic" unit="kg"/>
+        <geography location="CN" text="Some Swiss or European datasets are used for global processes."/>
+        <technology text="This dataset includes a method of producing ethylene carbonate out of ethylene oxide and carbon dioxide  under adiabatic conditions (after heating). Temperature in the reactor: 120 - 130 °C; pressure: 16 bar. Ethylene oxide conversion is 99.95%. Assupmtion: Catalyst ist silver based.   "/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2010-02-08T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography" productionVolume="na" samplingProcedure="patent, ecoinvent " uncertaintyAdjustments="Uncertainty is assessed using the pedigree matrix."/>
+        <source additionalAuthors="Bauer C.,  Doka G., Frischknecht R., Jungbluth N., Nemecek T., Simons A., Stucki M., Sutter J., Tuchschmid M." firstAuthor="Althaus H.-J." nameOfEditors="-" number="162298" placeOfPublications="Duebendorf and St. Gallen, CH" publisher="Swiss Centre for LCI" sourceNumber="0" sourceType="4" text="Hischier, R., Althaus H.-J., Bauer, Chr., Doka, G., Frischknecht R., Jungbluth N., Margni M., Nemecek, T., Simons A., Spielmann M. (2009) Documentation of changes implemented in ecoinvent Data v2.1. Final report ecoinvent data v2.1. Volume: 16. Swiss Centre for LCI. Dübendorf. CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Hischier, R.\nOther authors: Althaus H.-J., Bauer, Chr., Doka, G., Frischknecht R., Jungbluth N., Margni M., Nemecek, T., Simons A., Spielmann M.\nYear: 2009\nTitle of anthology: Final report ecoinvent data v2.1\nPlace of publication: Dübendorf. CH\nPublisher: Swiss Centre for LCI\nVolume No: 16\n" title="2010 - Changes in ecoinvent v2.1 and v2.2 - Althaus" titleOfAnthology="Final report ecoinvent data v2.1" volumeNo="16" year="2010"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="136750"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="165798"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="165798" referenceToPublishedSource="162298"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Dominic Notter" number="165798" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="CHINA&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="CN" meanValue="1.0" name="Ethylene carbonate, at plant" number="521189" subCategory="organic" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,4,2,3,1,5,1)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="0.14333" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.3249999999999997" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,4,2,3,3,5,6)&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="CH" meanValue="0.005" name="Disposal, catalyst base Eth.oxide prod., 0% water, to residual material landfill" number="318668" standardDeviation95="1.3305999999999998" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,2,3,1,5,3)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="0.50053" name="Ethylene oxide, at plant" number="378367" standardDeviation95="1.2458999999999998" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="(2,4,2,3,1,5,24)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.0053021" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.2458999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000075-21-8" category="emissions to air" generalComment="(2,4,2,3,1,5,23)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="2.5027E-4" name="Ethylene oxide" number="29971" standardDeviation95="2.0659" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(4,4,2,3,1,5,13)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.0072" name="Heat, waste" number="46930" standardDeviation95="1.3249999999999997" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(5,5,5,2,5,5,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.35082" name="Transport, freight, rail" number="149864" standardDeviation95="3.2046" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(4,5,3,5,3,5,2)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CN" meanValue="0.002" name="Electricity, medium voltage, at grid" number="171629" standardDeviation95="1.4797" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,5,2,3,3,5,9)&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="4.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.3649000000000004" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,2,3,1,5,4)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="0.50497" name="Carbon dioxide liquid, at plant" number="450573" standardDeviation95="1.2458999999999998" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(5,5,5,2,5,5,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.10055" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="3.2046" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

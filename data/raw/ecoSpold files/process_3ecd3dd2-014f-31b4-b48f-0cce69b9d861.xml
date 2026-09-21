@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="293185" timestamp="2024-07-09T13:23:19.707+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="pipeline" datasetRelatesToProduct="true" generalComment="LCI of solution mining for the future storage of 1 kg of hydrogen. Includes mostly the water demand, the water injection and the brine pumping. We use tap water for now, which may not be entirely correct. The salt cavern is assumed to be 500,000 m3 large. The available hydrogen amount is 4,000 tons per year, with a lifetime of 40 years, for a total capacity of 6,350 tons per year. Hence the inputs are normalized by 4,000 tons * 40 years. Here are some additional parameters. Water demand 10 mÂ³/mÂ³ (Niquet, 1978), Water demand, total 5,000,000 mÂ³, Capacity pump 570 kW (van Ohlen, 2015), Efficiency pump 76 % (Flowserve, 2015), Pumping rate, water 250 mÂ³/h (van Ohlen, 2015), Time for solution mining 20,000 h, Electricity demand pump 750 kWh/h, Electricity demand, total 15,000 MWh Source: C. Wulf et al. / Journal of Cleaner Production 199 (2018) 431-443&#10;&#10; UUID: 3ecd3dd2-014f-31b4-b48f-0cce69b9d861" infrastructureProcess="false" localCategory="pipeline" localName="Solution mining for geological hydrogen storage" localSubCategory="infrastructure" name="Solution mining for geological hydrogen storage" subCategory="infrastructure" unit="kg"/>
+        <geography location="CH"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024-01</startDate>
+          <endDate>2024-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2023-10-28T00:00:00.000+02:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Rolf Frischknecht, Telephone: 0041 44 940 61 91, E-mail: frischknecht@treeze.ch, Company: treeze, Country: CH" proofReadingValidator="136749"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="pipeline" generalComment="not defined" infrastructureProcess="false" localCategory="pipeline" localSubCategory="infrastructure" location="CH" meanValue="1.0" name="Solution mining for geological hydrogen storage" number="293185" subCategory="infrastructure" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="{5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.09375" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="2.565" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="{5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="CH" meanValue="31.25" name="Tap water, at user" number="422494" standardDeviation95="2.565" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

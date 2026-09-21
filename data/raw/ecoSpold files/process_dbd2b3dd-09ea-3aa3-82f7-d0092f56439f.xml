@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="218767" timestamp="2023-08-28T15:02:55.798+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="construction materials" datasetRelatesToProduct="true" generalComment="The dataset describes the production of cement (CEM III-B) in Switzerland \nTechnology: Industry data. Data approximates average swiss production\nTime period: Time of publications.\nVersion: 1\nEnergy values: Undefined\nLocal category: Mineralische Baustoffe\nLocal subcategory: Bindemittel\nUVEK 2022 source file:551-Zement-Klinker_v0.13_UVEK2021._CEM III-B.xml\n\n&#10;UUID: dbd2b3dd-09ea-3aa3-82f7-d0092f56439f" includedProcesses="From cradle, i.e. including all upstream activities. As source of gypsum, waste gypsum from flue gas treatment is assumed." infrastructureProcess="false" localCategory="construction materials" localName="CEM III, B cement, at plant" localSubCategory="binder" name="CEM III, B cement, at plant" subCategory="binder" unit="kg"/>
+        <geography location="CH" text="undefined"/>
+        <technology text="Industry data. Data approximates average swiss production"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2015-01</startDate>
+          <endDate>2015-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2021-05-06T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="Data from the association of the swiss cement industry (cemsuisse) representing average production in Switzerland " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Hellweg S." firstAuthor="Boesch M." nameOfEditors="-" number="216333" placeOfPublications="Zuerich, CH" publisher="AVENY" sourceNumber="0" sourceType="3" text="Boesch, Michael, Hellweg, S. (2010) Identifying improvements for the cement production. Project report. Volume: 44. AVENY. Zurich, CH.\nType: Separate publication\nSource: Article\nFirst author: Boesch, Michael\nOther authors: Hellweg, S.\nYear: 2010\nTitle of anthology: Project report\nPlace of publication: Zurich, CH\nPublisher: AVENY\nVolume No: 44\n" title="Identifying improvements for the cement production" titleOfAnthology="Project report" volumeNo="44" year="2010"/>
+        <validation proofReadingDetails="Proof reading validation: 06.05.2021; Other validation: G:\Projektablage\551 CEM IIIA Beton und Fertigbetonteile\EcoSpold\[551-Zement-Klinker_v0.13_UVEK2021.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136463"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136463" referenceToPublishedSource="216333"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Laura Tschuemperlin" number="136463" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="construction materials" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="construction materials" localSubCategory="binder" location="CH" meanValue="1.0" name="CEM III, B cement, at plant" number="218767" subCategory="binder" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,1,1,5,BU:2); ;&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.036803" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.0511" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,5,BU:1.05); ; ; Boesch et al. (2010)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.19764" name="Heat, waste" number="46930" standardDeviation95="1.2152" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,1,1,1,1,5,BU:1.05); ; ; Boesch et al. (2010)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="0.2336" name="Heavy fuel oil, burned in industrial furnace 1MW, non-modulating" number="496305" standardDeviation95="1.2152" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction materials" generalComment="(2,1,1,1,3,5,BU:1.05); ; ; Boesch et al. (2010)&#10;" infrastructureProcess="false" localCategory="construction materials" localSubCategory="binder" location="CH" meanValue="0.257" name="Clinker, at plant" number="181174" standardDeviation95="1.3059" subCategory="binder" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,1,1,1,1,5,BU:1.05); ; ; Boesch et al. (2010)&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="1.1E-4" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.2152" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction materials" generalComment="(1,3,3,3,1,1,BU:1.05); ; ; Boesch et al. (2010)&#10;" infrastructureProcess="false" localCategory="construction materials" localSubCategory="binder" location="RER" meanValue="0.73" name="Ground granulated blast furnace slag, no burdens, at plant" number="211317" standardDeviation95="1.3059" subCategory="binder" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,1,1,1,3,5,BU:1.05); ; ; Boesch et al. (2010)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.0549" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.3059" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(1,1,1,1,1,1,BU:3); ; ; Boesch et al. (2010)&#10;" infrastructureProcess="true" localCategory="construction" localSubCategory="binders\infrastructure" location="CH" meanValue="5.36E-11" name="Cement plant" number="453012" standardDeviation95="2.9999999999999996" subCategory="binders\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,3,3,3,1,1,BU:1.05); ; ; Boesch et al. (2010)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="5.5E-4" name="Ethylene glycol, at plant" number="186477" standardDeviation95="1.1266999999999998" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="(4,5,na,na,na,na,BU:1.05); ; ; Boesch et al. (2010)&#10;" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="0.0135" name="Gypsum, mineral, at mine" number="232189" standardDeviation95="1.3000999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,1,1,5,BU:2); ;&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.4384" name="Transport, freight, rail" number="149864" standardDeviation95="2.0511" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

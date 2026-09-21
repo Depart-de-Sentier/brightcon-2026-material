@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="EcoInvent Excel2EcoSpold 1.9.17" number="138146" timestamp="2025-07-16T13:53:31">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="natural gas" datasetRelatesToProduct="true" generalComment="Infrastructure requirements are based on estimated standard capacity. The net calorific value of natural gas is 36.0 MJ/Nm³. UUID=1118667c-dc37-383d-9779-6356ee142217" includedProcesses="This dataset describes the energy requirements and the emissions of the low pressure distribution network." infrastructureIncluded="true" infrastructureProcess="false" localCategory="natural gas" localName="Natural gas, low pressure, at consumer" localSubCategory="fuels" name="Natural gas, low pressure, at consumer" subCategory="fuels" unit="MJ"/>
+        <geography location="SK" text="Energy requirements and emissions are based on Swiss data"/>
+        <technology text="The quantity of gas delivered in the low pressure network is estimated. Residential and half of commercial and of others are assumed to consume low pressure gas."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Energy requirements are from 2019 and leakage data are from 2018.">
+          <startYear>2023</startYear>
+          <endYear>2024</endYear>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2025-07-16T13:53:31" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="not known" samplingProcedure="Literature." uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Jungbluth N., Bussa M., Stefanel A." firstAuthor="Meili C." number="136354" placeOfPublications="Schaffhausen, CH" publisher="ESU-services Ltd." sourceType="3" text="Report" title="2025 - LCI long-distance transport crude oil - Meili" titleOfAnthology="Project report" volumeNo="234" year="2025"/>
+        <source additionalAuthors="Jungbluth N., Meili C." firstAuthor="Bussa M." number="136355" placeOfPublications="Schaffhausen, CH" publisher="ESU-services Ltd." sourceType="3" text="Report" title="2025 - LCI long-dist. transp. and distrib. natural gas - Bussa" titleOfAnthology="Project report" volumeNo="234" year="2025"/>
+        <validation otherDetails="https://esuservices-my.sharepoint.com/personal/jungbluth_esu-services_ch/Documents/ESU-intern/565 Beratung BAFU/EcoSpoldDataXML/[565-EcoSpold-gas-transport-2025-v2.0.xlsb]X-Process" proofReadingDetails="Passed." proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136353" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="2" person="136351" referenceToPublishedSource="136355"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Christoph Meili" number="136352" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Maresa Bussa" number="136353" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="natural gas" infrastructureProcess="false" localCategory="natural gas" localSubCategory="fuels" location="SK" meanValue="1" name="Natural gas, low pressure, at consumer" number="138146" subCategory="fuels" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(4,3,5,3,1,BU:1.05); natural gas input" infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\gas to user" location="SK" meanValue="1.0025" name="Natural gas, high pressure, at consumer" number="359652" standardDeviation95="1.5688" subCategory="natural gas\gas to user" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(4,2,2,3,3,BU:1.05); Qualified estimates from different gas companies" infrastructureProcess="false" localCategory="natural gas" localSubCategory="power plants" location="SK" meanValue="0.0012255" name="Natural gas, burned in gas turbine" number="212805" standardDeviation95="1.3042" subCategory="power plants" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="pipeline" generalComment="(4,3,5,3,3,BU:3); calculation based on network length and capacity utilization" infrastructureProcess="true" localCategory="pipeline" localSubCategory="infrastructure" location="CH" meanValue="3.9724E-9" name="Pipeline, natural gas, low pressure distribution network" number="555047" standardDeviation95="3.321" subCategory="infrastructure" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition" meanValue="4.669E-5" name="Methane, fossil" number="90787" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition" meanValue="3.8672E-6" name="Ethane" number="647" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition" meanValue="8.7007E-7" name="Propane" number="661" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition" meanValue="4.4742E-7" name="Butane" number="639" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition" meanValue="3.2216E-8" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.05); Calculated based on leakage and average gas composition" meanValue="1.6151E-6" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.2226" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

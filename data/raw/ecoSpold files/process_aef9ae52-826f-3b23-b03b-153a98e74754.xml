@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="329207" timestamp="2023-08-28T15:03:25.728+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="transport systems" datasetRelatesToProduct="true" generalComment="Representatives of this class are for example: tractor, transporter or two-axle mower. Calculations were made based on a tractor of 3000 kg, with a useful life of 7000 hours and a repair factor of 0.74. For exact results, module should only be used if lifetime and repair factor of the balanced machinery are within a narrow range of the values the module is based on. The functional unit is 1kg tractor during its lifetime.;&#10;UUID: aef9ae52-826f-3b23-b03b-153a98e74754" includedProcesses="The inventory takes into account the use of resources and the amount of emissions during the production, the maintenance and repair and the disposal of agricultural vehicles. Not taken into account were the impacts caused by fuel consumption during operation-time of the machinery, and the amount of emission from the tyre abrasion during this time. No data was available about buildings needed for manufacture and maintenance of the machinery. The routes needed for transport from manufacturer place to the farm and from here to disposal place of the waste, are balanced in the utilised transport modules." infrastructureProcess="true" localCategory="transport systems" localName="Tractor, production" localSubCategory="road\operations\infrastructure" name="Tractor, production" subCategory="road\operations\infrastructure" unit="kg"/>
+        <geography location="CH" text="&lt;null&gt;"/>
+        <technology text="Values are based and adapted on a different technology (lorries-manufacture)."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Considered references range from start- to end-date">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-08-06T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Data are extrapolated, examined and adapted from lorry production in Europe." productionVolume="Tractors set into operation during 1999 in Switzerland: 2650" samplingProcedure="Values given in the reference originate mainly from studies about lorry production in Europe as examined and adapted by Zimmermann (2002) and experts estimations. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Kaegi T." firstAuthor="Nemecek T." nameOfEditors="0" number="138643" placeOfPublications="Duebendorf and Zuerich, CH" publisher="Swiss Centre for LCI, ART" sourceNumber="0" sourceType="4" text="Nemecek, T., Kägi, T., Blaser, S. (2007) Life Cycle Inventories of Agricultural Production Systems. Ecoinvent report version 2.0. Editors: 0. Volume: 15. Swiss Centre for LCI, ART. Duebendorf and Zurich, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Nemecek, T.\nOther authors: Kägi, T., Blaser, S.\nYear: 2007\nName of editors: 0\nTitle of anthology: Ecoinvent report version 2.0\nPlace of publication: Duebendorf and Zurich, CH\nPublisher: Swiss Centre for LCI, ART\nVolume No: 15\n" title="2007 - LCI agricultural prod. systems - Nemecek" titleOfAnthology="Ecoinvent report version 2.0" volumeNo="15" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136699"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="140836"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="141221" referenceToPublishedSource="138643"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Albert Zimmermann" number="141221" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Silvio Blaser" number="140836" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" generalComment="SWITZERLAND&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="CH" meanValue="1.0" name="Tractor, production" number="329207" subCategory="road\operations\infrastructure" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(3,4,3,2,3,na)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.0115" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.6100000000000003" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="(3,4,3,2,3,na)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.00654" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.2899999999999998" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(4,2,1,2,1,na)&#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="rubbers" location="RER" meanValue="0.296" name="Synthetic rubber, at plant" number="460936" standardDeviation95="1.2100000000000002" subCategory="rubbers" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(3,4,3,2,3,na)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="coal\furnace" location="RER" meanValue="0.84" name="Hard coal, burned in industrial furnace 1-10MW" number="395743" standardDeviation95="1.2899999999999998" subCategory="coal\furnace" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,2,1,2,1,na)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="0.206" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.2100000000000002" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(3,4,3,2,3,na)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="13.9" name="Light fuel oil, burned in boiler 100kW, non-modulating" number="316331" standardDeviation95="1.2899999999999998" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,4,1,2,1,na)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.44" name="Transport, freight, lorry, 32t-40t gross weight, fleet average" number="482448" standardDeviation95="2.06" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,4,1,2,1,na)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.1" name="Transport, freight, rail" number="149864" standardDeviation95="2.06" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,2,1,2,1,na)&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="0.04" name="Lead, at regional storage" number="262946" standardDeviation95="1.2100000000000002" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,2,1,2,1,na)&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="0.012" name="Zinc, primary, at regional storage" number="236764" standardDeviation95="1.2100000000000002" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,2,1,2,1,na)&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="0.036" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="1.2100000000000002" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="paper+ board" generalComment="(4,2,1,2,1,na)&#10;" infrastructureProcess="false" localCategory="paper+ board" localSubCategory="graphic paper" location="RER" meanValue="0.006" name="Paper, woodfree, coated, at integrated mill" number="320598" standardDeviation95="1.2100000000000002" subCategory="graphic paper" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,4,3,2,3,na)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="2.66" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.2899999999999998" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,2,1,2,1,na)&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="0.084" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.2100000000000002" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(4,2,1,2,1,na)&#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="0.039" name="Polypropylene, granulate, at plant" number="431726" standardDeviation95="1.2100000000000002" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(4,4,1,2,3,na)&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.048" name="Disposal, plastics, mixture, 15.3% water, to municipal incineration" number="174149" standardDeviation95="1.3199999999999998" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(4,4,1,2,3,na)&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="0.206" name="Disposal, used mineral oil, 10% water, to hazardous waste incineration" number="504085" standardDeviation95="1.3199999999999998" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(4,4,1,2,3,na)&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.006" name="Disposal, paper, 11.2% water, to municipal incineration" number="338676" standardDeviation95="1.3199999999999998" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,2,1,2,1,na)&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="0.806" name="Steel, converter, unalloyed, at plant" number="203953" standardDeviation95="1.2100000000000002" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="(4,4,1,2,3,na)&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="0.012" name="Disposal, building, glass sheet, to final disposal" number="453290" standardDeviation95="1.3199999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(3,4,3,2,3,na)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="4.92" name="Natural gas, burned in industrial furnace 1MWth" number="262422" standardDeviation95="1.2899999999999998" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="glass" generalComment="(4,2,1,2,1,na)&#10;" infrastructureProcess="false" localCategory="glass" localSubCategory="construction" location="RER" meanValue="0.012" name="Flat glass, uncoated, at plant" number="180727" standardDeviation95="1.2100000000000002" subCategory="construction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,2,1,2,1,na)&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="0.054" name="Aluminium, production mix, at plant" number="436582" standardDeviation95="1.2100000000000002" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,4,3,2,3,na)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="9.35" name="Heat, waste" number="46930" standardDeviation95="1.2899999999999998" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(4,2,1,2,1,na)&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="paints" location="RER" meanValue="0.006" name="Alkyd paint, white, 60% in solvent, at plant" number="472043" standardDeviation95="1.2100000000000002" subCategory="paints" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,2,1,2,1,na)&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="0.024" name="Copper, at regional storage" number="328058" standardDeviation95="1.2100000000000002" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

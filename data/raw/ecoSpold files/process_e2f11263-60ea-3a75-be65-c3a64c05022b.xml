@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="509657" timestamp="2023-08-28T15:02:52.583+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="energy, obsolete" datasetRelatesToProduct="true" generalComment="Use of a solar system excluding the necessary auxiliary heating.;&#10;UUID: e2f11263-60ea-3a75-be65-c3a64c05022b" includedProcesses="Delivery of heat with a solar system including maintenance and electricity use for operation. Excluding the necessary auxiliary heating." infrastructureProcess="false" localCategory="energy, obsolete" localName="xxx Heat, at flat plate collector, one-family house, for hot water" localSubCategory="others, obsolete" name="xxx Heat, at flat plate collector, one-family house, for hot water" subCategory="others, obsolete" unit="MJ"/>
+        <geography location="CH" text="&lt;null&gt;"/>
+        <technology text="Operation of a solar system, not including the necessary additional heating."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of simulation.">
+          <startDate>9999-01</startDate>
+          <endDate>9999-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-03-29T18:04:14.931+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="Total solar heat delivered by flat plate collectors in 2001 was 37TJ." samplingProcedure="Simulation done by SPF Rapperswil with Polysun 3.3 computer programme. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Jungbluth N." nameOfEditors="Dones R." number="165067" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth, N. (2007) Sonnenkollektor-Anlagen. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0. Editors: Dones R.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth, N.\nYear: 2007\nName of editors: Dones R.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2007 - Solar collector systems - Jungbluth" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0" volumeNo="6" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="149947"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136351"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136351" referenceToPublishedSource="165067"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Sebastiano Meier" number="149947" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="energy, obsolete" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="energy, obsolete" localSubCategory="others, obsolete" location="CH" meanValue="1.0" name="xxx Heat, at flat plate collector, one-family house, for hot water" number="509657" subCategory="others, obsolete" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,na,1,1,1,na); Simulation and solar energy&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.1842000000000001" name="Heat, waste" number="46930" standardDeviation95="1.0714000000000001" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,na,1,1,1,na); 250km per plant for maintenance&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.00056653" name="Transport, freight, lorry, 3.5t gross weight, fleet average" number="498982" standardDeviation95="3.0033" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,na,1,1,1,na); Simulation&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.016713" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.0714000000000001" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(2,na,1,1,1,na); Includes losses in the system&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in air" meanValue="1.124" name="Energy, solar, converted" number="82305" standardDeviation95="1.0714000000000001" subCategory="in air" uncertaintyType="1" unit="MJ">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="energy, obsolete" generalComment="(2,na,1,1,1,na); Simulation&#10;" infrastructureProcess="true" localCategory="energy, obsolete" localSubCategory="others, obsolete" location="CH" meanValue="5.1502E-6" name="xxx Solar system, flat plate collector, one-family house, hot water" number="230423" standardDeviation95="3.0033" subCategory="others, obsolete" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

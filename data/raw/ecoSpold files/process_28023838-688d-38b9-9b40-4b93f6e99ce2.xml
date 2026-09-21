@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="557471" timestamp="2023-08-28T15:03:13.251+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="agricultural" datasetRelatesToProduct="true" generalComment="The inventory for the cultivation of oil palms in Malyaysia  is modelled with data from literature. Machine usage is modelled with Malaysian processings and Swiss diesel consumptions.  The carbon which is bound in the tropical rainforest soil is calculated as &quot;carbon organic matter, soil&quot;. Transports are calculated with standard distances. The functional unit is 1 kg palm fruit bunches (fresh mass with a water content of 47 %). Carbon content: 0.313 kg/kg fresh mass. Biomass energy content: 16 MJ/kg fresh mass. Yield: 24978 kg/ha. The emissions of N2O and NH3 to air are calculated with standard emission factors for mineral fertilizers from Nemecek et al. 2004. The emission of nitrate to water is calculated with an estimated nitrogen loss factor of 20%.;&#10;UUID: 28023838-688d-38b9-9b40-4b93f6e99ce2" includedProcesses="Cultivation of oil palms in Malyaysia including use of diesel, machines, fertilizers, and pesticides." infrastructureProcess="false" localCategory="agricultural" localName="Palm fruit bunches, at farm" localSubCategory="plant production" name="Palm fruit bunches, at farm" subCategory="plant production" unit="kg"/>
+        <geography location="MY" text="The inventory is modelled for Malaysia"/>
+        <technology text="Cultivation of oil palms."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications">
+          <startDate>2000-01</startDate>
+          <endDate>2005-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2006-10-17T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Transports are modelled with standard distances. Machine usage is modelled with Malaysian processings and Swiss diesel consumptions and equipments. Emissions are calculated with standard methods." percent="100" productionVolume="Total production in Malaysia is around 75 Million tons." samplingProcedure="Literature data " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J." firstAuthor="Jungbluth N." nameOfEditors="-" number="136872" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth N., Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J. (2007) Life Cycle Inventories of Bioenergy. Final report ecoinvent data v2.0. Volume: 17. Swiss Centre for LCI, ESU. Duebendorf and Uster, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth N.\nOther authors: Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Duebendorf and Uster, CH\nPublisher: Swiss Centre for LCI, ESU\nVolume No: 17\n" title="2007 - LCI bioenergy - Jungbluth" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="17" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138642"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138642" referenceToPublishedSource="136872"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Juergen Sutter" number="138642" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="agricultural" generalComment="MALAYSIA&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant production" location="MY" meanValue="1.0" name="Palm fruit bunches, at farm" number="557471" subCategory="plant production" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,1,1,3); Tenaganita 2002&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="1.1424E-7" name="Pesticide unspecified, at regional storehouse" number="285276" standardDeviation95="1.0907" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(1,1,1,1,1,1); FAOSTAT 2006&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="0.016014" name="Transformation, to forest, intensive, short-cycle" number="77086" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="007723-14-0" category="emissions to water" generalComment="(4,3,1,1,1,4); Calculated with standard method&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="7.7885E-6" name="Phosphorus" number="67972" standardDeviation95="1.5798000000000003" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(4,3,1,1,1,4); calculated from the energy balance&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="biotic" meanValue="16.006" name="Energy, gross calorific value, in biomass" number="81693" standardDeviation95="1.2423" subCategory="biotic" uncertaintyType="1" unit="MJ">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="017804-35-2" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="3.7232E-8" name="Benomyl" number="154713" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007723-14-0" category="emissions to water" generalComment="(4,3,1,1,1,4); Calculated with standard method&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater" meanValue="2.8025E-6" name="Phosphorus" number="67972" standardDeviation95="1.5798000000000003" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000137-26-8" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="6.6054E-8" name="Thiram" number="153955" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Corley 2003&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.001269" name="Transport, freight, lorry, fleet average" number="228841" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-02-0" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the fertilizer input&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="7.692E-8" name="Nickel" number="91777" standardDeviation95="1.5798000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the fertilizer input&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="-4.2174E-6" name="Zinc" number="91717" standardDeviation95="1.5798000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,1,1,3); Tenaganita 2002&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="CH" meanValue="2.8822E-6" name="Pyretroid-compounds, at regional storehouse" number="617230" standardDeviation95="1.0907" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="(4,3,1,1,1,4); Calculated with standard method&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="4.5822E-5" name="Nitrogen oxides" number="79243" standardDeviation95="1.5798000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,1,1,3); Tenaganita 2002&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="5.8403E-6" name="Phenoxy-compounds, at regional storehouse" number="177176" standardDeviation95="1.0907" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,1,1,3); Tenaganita 2002&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="3.7232E-8" name="Benzimidazole-compounds, at regional storehouse" number="395374" standardDeviation95="1.0907" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="001563-66-2" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="2.0412E-5" name="Carbofuran" number="154389" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard Distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.02635" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,2,1,1,1,3); Average of several references&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="fertilisers (inorganic)" location="RER" meanValue="0.0012801" name="Diammonium phosphate, as P2O5, at regional storehouse" number="151354" standardDeviation95="1.6199999999999999" subCategory="fertilisers (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,1,1,3); Tenaganita 2002&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="2.0412E-5" name="[thio]carbamate-compounds, at regional storehouse" number="530711" standardDeviation95="1.0907" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="001071-83-6" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="4.0473E-5" name="Glyphosate" number="154415" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(2,3,2,1,1,4); Corley 2003&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="unspecified" location="CH" meanValue="3.363E-5" name="Fertilising, by broadcaster" number="542820" standardDeviation95="1.1397" subCategory="unspecified" uncertaintyType="1" unit="ha">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard Distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.0076141" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the fertilizer input&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="5.8458E-8" name="Chromium" number="20664" standardDeviation95="1.5798000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="010024-97-2" category="emissions to air" generalComment="(4,3,1,1,1,4); Calculated with standard method&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="2.182E-4" name="Dinitrogen monoxide" number="646" standardDeviation95="1.5798000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,1,1,3); Tenaganita 2002&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="pesticides" location="RER" meanValue="4.0473E-5" name="Organophosphorus-compounds, at regional storehouse" number="538098" standardDeviation95="1.0907" subCategory="pesticides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,2,1,1,1,3); Average of several references&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="fertilisers (inorganic)" location="RER" meanValue="0.0062985" name="Ammonium sulphate, as N, at regional storehouse" number="196049" standardDeviation95="1.6199999999999999" subCategory="fertilisers (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-43-9" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the fertilizer input&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="1.4474E-9" name="Cadmium" number="91781" standardDeviation95="1.5798000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000094-75-7" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="5.8403E-6" name="2,4-D" number="154199" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(4,3,1,1,1,4); from the deforestation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in ground" meanValue="0.025783" name="Carbon, organic, in soil or biomass stock" number="72844" standardDeviation95="1.2423" subCategory="in ground" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(1,1,1,1,1,1); FAOSTAT 2006&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="0.016014" name="Transformation, from forest, intensive, clear-cutting" number="82175" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(2,3,2,1,1,4); Corley 2003&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="unspecified" location="CH" meanValue="3.363E-5" name="Application of plant protection products, by field sprayer" number="402243" standardDeviation95="1.1397" subCategory="unspecified" uncertaintyType="1" unit="ha">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-50-8" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the fertilizer input&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="-3.8334E-6" name="Copper" number="91771" standardDeviation95="1.5798000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="(2,3,2,3,4,4); Corley 2003&#10;" infrastructureProcess="false" localCategory="wood" localSubCategory="unspecified" location="RER" meanValue="1.0858" name="Chopping, palm wood bunches, in forest" number="183715" standardDeviation95="1.5318999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007664-41-7" category="emissions to air" generalComment="(4,3,1,1,1,4); Calculated with standard method&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="5.0388E-4" name="Ammonia" number="635" standardDeviation95="1.3221000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="052315-07-8" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the pesticide application&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="2.8822E-6" name="Cypermethrin" number="154081" standardDeviation95="1.3221000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,2,1,1,1,3); Average of several references&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="fertilisers (inorganic)" location="CH" meanValue="0.0017215" name="Lime, from carbonation, at regional storehouse" number="302200" standardDeviation95="1.6199999999999999" subCategory="fertilisers (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,2,1,1,1,3); Average of several references&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="fertilisers (inorganic)" location="RER" meanValue="0.0094613" name="Potassium chloride, as K2O, at regional storehouse" number="513752" standardDeviation95="1.6199999999999999" subCategory="fertilisers (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007439-92-1" category="emissions to soil" generalComment="(4,3,1,1,1,4); Calculated from the fertilizer input&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="7.4806E-8" name="Lead" number="91759" standardDeviation95="1.5798000000000003" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="(4,3,1,1,1,4); Carbon loss from soil after deforestation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.094537" name="Carbon dioxide, land transformation" number="157837" standardDeviation95="1.4879000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(2,3,2,1,1,4); Corley 2003&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="unspecified" location="CH" meanValue="7.0062E-5" name="Irrigating" number="605335" standardDeviation95="1.1397" subCategory="unspecified" uncertaintyType="1" unit="ha">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(4,3,1,1,1,4); calculated from the carbon balance&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in air" meanValue="1.1477000000000002" name="Carbon dioxide, in air" number="66828" standardDeviation95="1.2423" subCategory="in air" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="014797-55-8" category="emissions to water" generalComment="(4,3,1,1,1,4); Estimation&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater" meanValue="0.0055787" name="Nitrate" number="49870" standardDeviation95="1.5798000000000003" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(1,1,1,1,1,1); FAOSTAT 2006&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="0.44839" name="Occupation, forest, intensive, short-cycle" number="146223" standardDeviation95="1.4999999999999998" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="(1,1,1,1,1,1); FAOSTAT 2006&#10;" infrastructureProcess="false" localCategory="wood" localSubCategory="extraction" location="MY" meanValue="0.016014" name="Provision, stubbed land" number="220288" standardDeviation95="1.0500000000000003" subCategory="extraction" uncertaintyType="1" unit="m2">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="(3,2,1,1,1,3); Average of several references&#10;" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="RER" meanValue="0.0032409" name="Dolomite, at plant" number="406404" standardDeviation95="1.6199999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

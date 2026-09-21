@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="448446" timestamp="2023-08-28T15:03:10.007+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="transport systems" datasetRelatesToProduct="true" generalComment="Inventory refers to the entire transport life cycle. The avereage aircraft transport operated by Lufthansa Group includes 23.2% short-haul, 13.5% medium-haul and 63.3% long-haul flights. The mix of short-, medium- and long-haul flights is based on information from Lufthansa Group.;&#10;UUID: af4f896e-6280-342e-9836-2f03f3de92b0" includedProcesses="The dataset describes the operation of aircrafts including taxying, take-off and landing covering fuel consumption and operation emissions. Aircraft manufacture and maintenance, airport construction, operation and dismantling are inputs to this dataset" infrastructureProcess="false" localCategory="transport systems" localName="Fuel in transport, aircraft, passenger" localSubCategory="airplane" name="Fuel in transport, aircraft, passenger" subCategory="airplane" unit="MJ"/>
+        <geography location="RER" text="Data refers to average transport conditions of aircrafts operated by Lufthansa Group"/>
+        <technology text="Aircraft operation modelled based on passenger aircrafts operated by Lufthansa Group in 2019. The emission profiles distinguish between LTO and cruise."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Start date refers to emission factor data. End date refers to year of reporting fuel consumption and transport activities">
+          <startDate>2009-01</startDate>
+          <endDate>2015-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2021-03-09T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Allocation between passengers and freight based on weight (average passenger weight between 158kg and 163kg); allocation between booking classes based on seat area." percent="100" productionVolume="243'982'000'000pkm" samplingProcedure="fuel consumption is based on corporate data, emission profiles are based on FOEN statistics " uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Messmer A." nameOfEditors="-" number="150346" placeOfPublications="Uster, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="3" text="Messmer A., Frischknecht R. (2015) Life cycle inventories of air transport services. Project report. Volume: 544. treeze Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: Messmer A.\nOther authors: Frischknecht R.\nYear: 2015\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: treeze Ltd.\nVolume No: 544\n" title="2016 - LCI air transport services - Messmer" titleOfAnthology="Project report" volumeNo="544" year="2016"/>
+        <validation proofReadingDetails="Proof reading validation: 09.03.2021; Other validation: G:\Projekte laufend\735 Aktualisierung Flugtransporte\EcoSpold\[735_aircraftTransport_2021_v0.10.xlsx]X-Process;" proofReadingValidator="137963"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136374"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136374" referenceToPublishedSource="150346"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Luana Krebs" number="137963" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="airplane" location="RER" meanValue="1.0" name="Fuel in transport, aircraft, passenger" number="448446" subCategory="airplane" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="" infrastructureProcess="false" localCategory="transport systems" localSubCategory="airplane" location="RER" meanValue="0.664117518" name="Transport, aircraft, passenger, Betrieb" number="485572" subCategory="airplane" uncertaintyType="0" unit="personkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

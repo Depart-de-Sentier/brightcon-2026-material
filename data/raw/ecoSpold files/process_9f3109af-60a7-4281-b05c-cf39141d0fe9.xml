@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="409334" timestamp="2023-08-28T15:03:09.538+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="nuclear waste" datasetRelatesToProduct="true" generalComment="Datasets established on tha basis of the modelling for CH. Difference is Chinese electricity mix, own assumption for distance travelled by spent fuel and steel using CN (coal) freight train transport.This plant is hypothesized at the same site of the repository. As first approximation the welding of lid and bottom of the canister is described with the ecoinvent module with double lenght. Electricity use is estimated hypothesizing 50 m total movement of the canister within the plant. The total spent fuel to condition is assumed to be 1800 t heavy metal, complying with the current (around 2003) Swiss scenario. This dataset has been developed with the goal to serve a preliminary estimation of the Chinese nuclear chain for the Chinese electricity mix. Hence, it cannot be used for comparisons of conditioning among countries.;&#10;UUID: 9f3109af-60a7-4281-b05c-cf39141d0fe9" includedProcesses="It includes transport of spent fuel elements and steel for canister, requirement of steel for canisters, steel welding, electricity consumption, and infrastructure requirement." infrastructureProcess="false" localCategory="nuclear waste" localName="Nuclear spent fuel, in conditioning, at plant" localSubCategory="unspecified" name="Nuclear spent fuel, in conditioning, at plant" subCategory="unspecified" unit="kg"/>
+        <geography location="CN" text="Swiss conditions adapted to China."/>
+        <technology text="Estimation of current technologies"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>1999-01</startDate>
+          <endDate>2002-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-09-05T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bauer C., Doka G." firstAuthor="Dones R." nameOfEditors="Bauer C." number="137748" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI, Doka LCA" sourceNumber="0" sourceType="4" text="Dones, R., Doka G. (2009) Kernenergie. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1. Editors: Bauer C.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Dones, R.\nOther authors: Doka G.\nYear: 2009\nName of editors: Bauer C.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2009 - Nuclear energy - Dones" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1" volumeNo="6" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137747"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137747" referenceToPublishedSource="137748"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="nuclear waste" generalComment="CHINA&#10;" infrastructureProcess="false" localCategory="nuclear waste" localSubCategory="unspecified" location="CN" meanValue="1.0" name="Nuclear spent fuel, in conditioning, at plant" number="409334" subCategory="unspecified" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="nuclear waste" generalComment="uncertainty from dimension of container &amp; content of U in heavy metal&#10;" infrastructureProcess="false" localCategory="nuclear waste" localSubCategory="unspecified" location="CH" meanValue="0.0023" name="Radioactive waste, in final repository for nuclear waste SF, HLW, and ILW" number="485413" standardDeviation95="1.1500000000000001" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="variation in lenght of canister&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="15.7" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="1.1500000000000001" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CN" meanValue="0.0024" name="Electricity, medium voltage, at grid" number="171629" standardDeviation95="2.0000000000000004" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="own assumptions (2.1 is standard for transports)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="1.56" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.9999999999999996" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="own assumptions (2.1 is standard for transports)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train\unspecified" location="CN" meanValue="32.9" name="Transport, coal freight, rail" number="178158" standardDeviation95="2.9999999999999996" subCategory="train\unspecified" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste" generalComment="uncertainty in the scenario&#10;" infrastructureProcess="true" localCategory="waste" localSubCategory="nuclear waste\infrastructure" location="CN" meanValue="5.56E-7" name="Nuclear spent fuel conditioning plant" number="271660" standardDeviation95="2.0000000000000004" subCategory="nuclear waste\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="welding" location="RER" meanValue="0.008" name="Welding, arc, steel" number="412129" standardDeviation95="2.9999999999999996" subCategory="welding" uncertaintyType="1" unit="m">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

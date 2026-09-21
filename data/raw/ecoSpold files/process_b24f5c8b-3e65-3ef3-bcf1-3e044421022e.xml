@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="271660" timestamp="2023-08-28T15:03:42.006+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="waste" datasetRelatesToProduct="true" generalComment="Datasets established on the basis of the modelling for CH. The assumed area and the volume of the building have been estimated from a preliminary aerial view of the CH design. Concrete for shielding and weight of machines are rough estimations. Used CN electricity mix and (coal) freight train transport. This dataset has been developed with the goal to serve a preliminary estimation of the Chinese nuclear chain for the Chinese electricity mix. Hence, it cannot be used for comparisons of conditioning among countries.;&#10;UUID: b24f5c8b-3e65-3ef3-bcf1-3e044421022e" includedProcesses="It includes land use, building, cranes and other mashines, concrete for shielding and its lining, transport of materials and mashines, and disposal of concrete for shielding. The disposal of the building is in the used module." infrastructureProcess="true" localCategory="waste" localName="Nuclear spent fuel conditioning plant" localSubCategory="nuclear waste\infrastructure" name="Nuclear spent fuel conditioning plant" subCategory="nuclear waste\infrastructure" unit="p"/>
+        <geography location="CN" text="Swiss conditions adapted to China."/>
+        <technology text="Estimation of current technologies"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>1999-01</startDate>
+          <endDate>2002-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-09-05T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bauer C., Doka G." firstAuthor="Dones R." nameOfEditors="Bauer C." number="137748" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI, Doka LCA" sourceNumber="0" sourceType="4" text="Dones, R., Doka G. (2009) Kernenergie. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1. Editors: Bauer C.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Dones, R.\nOther authors: Doka G.\nYear: 2009\nName of editors: Bauer C.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2009 - Nuclear energy - Dones" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1" volumeNo="6" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137747"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137747" referenceToPublishedSource="137748"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="waste" generalComment="CHINA&#10;" infrastructureProcess="true" localCategory="waste" localSubCategory="nuclear waste\infrastructure" location="CN" meanValue="1.0" name="Nuclear spent fuel conditioning plant" number="271660" subCategory="nuclear waste\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train\unspecified" location="CN" meanValue="5560.0" name="Transport, coal freight, rail" number="178158" standardDeviation95="2.9999999999999996" subCategory="train\unspecified" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="own assumption&#10;" infrastructureProcess="true" localCategory="construction" localSubCategory="others\infrastructure" location="RER" meanValue="130000.0" name="Building, multi-storey" number="498869" standardDeviation95="2.0000000000000004" subCategory="others\infrastructure" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="own assumption&#10;" infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="50000.0" name="Industrial machine, heavy, unspecified, at plant" number="563077" standardDeviation95="2.9999999999999996" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="360000.0" name="Occupation, industrial area, built up" number="116809" standardDeviation95="2.5000000000000004" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="22500.0" name="Transformation, from industrial area" number="5579" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="22500.0" name="Transformation, from unknown" number="54270" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="600000.0" name="Disposal, building, concrete, not reinforced, to final disposal" number="496088" standardDeviation95="2.9999999999999996" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="5000.0" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="2.9999999999999996" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="4500.0" name="Transformation, to industrial area, vegetation" number="85687" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="22500.0" name="Transformation, to unknown" number="25119" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="39200" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.9999999999999996" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="18000.0" name="Transformation, to industrial area, built up" number="86253" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="250.0" name="Concrete, normal, at plant" number="367058" standardDeviation95="2.9999999999999996" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="90000.0" name="Occupation, industrial area, vegetation" number="113531" standardDeviation95="2.5000000000000004" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

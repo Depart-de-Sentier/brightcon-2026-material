@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="506930" timestamp="2023-08-28T15:03:10.761+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="transport systems" datasetRelatesToProduct="true" generalComment="Inventory for an average swiss road (highway, cantonal and municipial). All data is referred to meter*year. Life time of road is assumed to be 100 yrs. For the 3 layers of a road, different life spans are assumed. In addition, environmental interventions due to tunnel and bridge construction have been taken into account, according to the share of tunnels in the Swiss road network.;&#10;UUID: da85c1ba-b1b3-3e9f-817b-d5c1430195ae" includedProcesses="The inventory includes processes for the supply of used materials such as gravel, bitumen and concrete.  NMVOC emissions from bitumen and particle emissions due to construction are included. Also transport of materials to the constructions site has been taken into account." infrastructureProcess="true" localCategory="transport systems" localName="Road" localSubCategory="road\operations\infrastructure" name="Road" subCategory="road\operations\infrastructure" unit="my"/>
+        <geography location="CH" text="&lt;null&gt;"/>
+        <technology text="Swiss state of the art technology"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Road lenght is based on current statistical data (2000). The material consumption represents a situation in the early 1990ties.">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-08-29T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="national statistics and literature " uncertaintyAdjustments="&lt;null&gt;"/>
+        <source additionalAuthors="Bauer C., Dones R., Tuchschmid M." firstAuthor="Spielmann M." nameOfEditors="-" number="149188" placeOfPublications="Duebendorf, Villigen and Uster, CH" publisher="Swiss Centre for LCI, PSI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Spielmann M., Dones R; Bauer C. (2007) Life Cycle Inventories of Transport Services. Final report ecoinvent Data v2.0. Volume: 14. Issue: 0. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Spielmann M.\nOther authors: Dones R; Bauer C.\nYear: 2007\nTitle of anthology: Final report ecoinvent Data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 14\nIssue No: 0\n" title="2007 - Transport services - Spielmann" titleOfAnthology="Final report ecoinvent Data v2.0" volumeNo="14" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed ; Other validation: self validation;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="139311"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="139311" referenceToPublishedSource="149188"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Michael Spielmann" number="139311" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" generalComment="SWITZERLAND&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="CH" meanValue="1.0" name="Road" number="506930" subCategory="road\operations\infrastructure" uncertaintyType="0" unit="my">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(3,3,3,1,1,5); literature studies and own calculations&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="fuels" location="CH" meanValue="3.24" name="Bitumen, at refinery" number="526801" standardDeviation95="1.2699999999999998" subCategory="fuels" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(3,3,3,1,1,5); literature studies and own calculations&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="0.0896" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.2699999999999998" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="(3,3,3,1,1,5); literature studies and own calculations&#10;" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="106.0" name="Gravel, crushed, at mine" number="602696" standardDeviation95="1.2699999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(4,3,2,1,1,5); literature studies and own calculations&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.0389" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.6199999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(3,3,3,1,1,5); literature studies and own calculations&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="1.32" name="Reinforcing steel, at plant" number="545988" standardDeviation95="1.2699999999999998" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(3,3,3,1,1,5); literature studies and own calculations&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="0.00478" name="Concrete, exacting, with de-icing salt contact, at plant" number="150482" standardDeviation95="1.2699999999999998" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,3,2,5,1,5); literature studies and own calculations&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.00127" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="2.0800000000000005" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,3,3,1,1,5); literature studies and own calculations&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.613" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.2699999999999998" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="(3,3,3,1,1,5); literature studies and own calculations&#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="36.300000000000004" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="1.2699999999999998" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(3,3,3,5,1,5); literature studies and own calculations&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="3.25E-4" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="2.0900000000000003" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,3,3,5,1,5); standard value&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="2.21" name="Heat, waste" number="46930" standardDeviation95="1.2899999999999998" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,3,3,1,1,5); literature studies and own calculations&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="3.86" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.12" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(3,3,3,1,1,5); literature studies and own calculations&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="construction waste landfill" location="CH" meanValue="9.66" name="Disposal, inert waste, 5% water, to construction waste landfill" number="509488" standardDeviation95="1.2699999999999998" subCategory="construction waste landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="(3,3,3,1,1,5); literature studies and own calculations&#10;" infrastructureProcess="false" localCategory="construction processes" localSubCategory="building equipment\unspecified" location="RER" meanValue="0.18" name="Excavation, skid-steer loader" number="566616" standardDeviation95="2.12" subCategory="building equipment\unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

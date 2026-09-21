@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="211617" timestamp="2023-08-28T15:03:33.732+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="building components" datasetRelatesToProduct="true" generalComment="Data are based on a door leaf of 0.9m x 2m and scaled to 1m2 door. 1m2 of wooden door frame weighs 8kg. The bill of materials is based on data from door manufactures.;&#10;UUID: 7f32400a-22ab-3987-aa30-3d5c62244a43" includedProcesses="Included are the materials used in an inner wooden door frame (without surface treatment). Production losses and the transport of the materials are also included." infrastructureProcess="false" localCategory="building components" localName="Door frame, inner, wood, at plant" localSubCategory="doors" name="Door frame, inner, wood, at plant" subCategory="doors" unit="m2"/>
+        <geography location="CH" text="Data apply to the supply in Switzerland."/>
+        <technology text="Industry data."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2018-01</startDate>
+          <endDate>2019-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2021-06-16T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Some generic datasets from ecoinvent have been used." productionVolume="na" samplingProcedure="Data survey at 4 door manufactures in Switzerland. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Stolz P., Frischknecht R." firstAuthor="Ramseier L." nameOfEditors="-" number="156025" placeOfPublications="Uster, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="3" text="Ramseier L., Stolz P., Frischknecht R. (2020) Ökobilanz von Holzfenstern und Holztüren. Project report. Volume: 634. treeze Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: Ramseier L.\nOther authors: Stolz P., Frischknecht R.\nYear: 2020\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: treeze Ltd.\nVolume No: 634\n" title="2020 - LCA wooden windows and doors - Ramseier" titleOfAnthology="Project report" volumeNo="634" year="2020"/>
+        <validation proofReadingDetails="Proof reading validation: 16.06.2021; Other validation: G:\Projekte laufend\634 Holzfenster u.-türen, energieSchweiz\EcoSpold\UVEK2021\[634_EcoSpold_Türen_v1.5_UVEK2021_v0.1.xlsx]X-Process;" proofReadingValidator="138233"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="156024"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="156024" referenceToPublishedSource="156025"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Philippe Stolz" number="138233" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Livia Ramseier" number="156024" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="building components" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="building components" localSubCategory="doors" location="CH" meanValue="1.0" name="Door frame, inner, wood, at plant" number="211617" subCategory="doors" uncertaintyType="0" unit="m2">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="building components" generalComment="(3,3,1,1,1,4,BU:1.05); Scantling from Europe; Average of data from manufacturers&#10;" infrastructureProcess="false" localCategory="building components" localSubCategory="other material" location="RER" meanValue="0.017015" name="Scantling, softwood, average, at plant" number="234560" standardDeviation95="1.1635" subCategory="other material" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building components" generalComment="(3,3,1,1,1,4,BU:1.05); Scantling from Switzerland; Average of data from manufacturers&#10;" infrastructureProcess="false" localCategory="building components" localSubCategory="other material" location="CH" meanValue="0.0026935" name="Scantling, softwood, average, at plant" number="164177" standardDeviation95="1.1635" subCategory="other material" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,3,1,1,1,4,BU:1.05); Transport of production waste to municipal incineration; Average of data from manufacturers or Frischknecht et al. 2007&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road" location="CH" meanValue="0.012146" name="Transport, municipal waste collection, lorry 21t" number="266056" standardDeviation95="1.1635" subCategory="road" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(3,3,1,1,1,4,BU:1.05); Disposal of processing waste scantling glue; Average of data from manufacturers&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.016184" name="Disposal, polyurethane, 0.2% water, to municipal incineration" number="346391" standardDeviation95="1.1635" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(3,3,1,1,1,4,BU:1.05); Disposal of processing waste scantling wood; Average of data from manufacturers&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="1.1984" name="Disposal, wood untreated, 20% water, to municipal incineration" number="263132" standardDeviation95="1.1635" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,3,1,1,1,4,BU:2); Transportation to production site; Average of data from manufacturers or Frischknecht et al. 2007&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="9.0407" name="Transport, freight, lorry, fleet average" number="228841" standardDeviation95="2.0296" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

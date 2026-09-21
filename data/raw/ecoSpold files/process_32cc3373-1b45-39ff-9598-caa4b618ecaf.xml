@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="358253" timestamp="2023-08-28T15:03:31.647+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="energy, obsolete" datasetRelatesToProduct="true" generalComment="The multioutput-process 'natural gas, burned in SOFC fuel cell 125kWe delivers the coproducts 'heat, natural gas, allocation exergy, at SOFC fuel cell 125kWe' and 'electricity, natural gas, allocation exergy, at SOFC fuel cell 125kWe' . The exergy allocation is the allocation scheme suggested to be used within the ecoinvent database (e.g. in electricity mixes).;&#10;UUID: 32cc3373-1b45-39ff-9598-caa4b618ecaf" includedProcesses="The module includes fuel input, infrastructure, emissions to air, and working materials for operation." infrastructureProcess="false" localCategory="energy, obsolete" localName="xx Heat, natural gas, allocation exergy, at SOFC fuel cell 125kWe, future" localSubCategory="cogeneration, obsolete\gas, obsolete" name="xx Heat, natural gas, allocation exergy, at SOFC fuel cell 125kWe, future" subCategory="cogeneration, obsolete\gas, obsolete" unit="MJ"/>
+        <geography location="CH" text="Natural gas input modelled for Switzerland. Process applicable in central European conditions."/>
+        <technology text="Solid oxide fuel cell (SOFC) with unpressurised tubular stack design for central cogeneration use. Performance, stack lifetime and catalyst use according to expected future values for a serial product. Operation with connection to low pressure gas network. Electrical efficiency 47%, total efficiency 80%. Operation as base load engine with low partial load hours. "/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2005-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-03-29T18:04:14.717+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Literature data and manufacturer information " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Primas A." nameOfEditors="0" number="137675" placeOfPublications="Duebendorf and Zuerich, CH" publisher="Swiss Centre for LCI, B&amp;H AG" sourceNumber="0" sourceType="4" text="Primas A., 0 (2007) Life Cycle Inventories of new CHP systems. Final report ecoinvent Data v2.0. Editors: 0. Volume: 20. Swiss Centre for LCI, B&amp;H AG. Duebendorf and Zurich, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Primas A.\nOther authors: 0\nYear: 2007\nName of editors: 0\nTitle of anthology: Final report ecoinvent Data v2.0\nPlace of publication: Duebendorf and Zurich, CH\nPublisher: Swiss Centre for LCI, B&amp;H AG\nVolume No: 20\n" title="2007 - LCI new CHP systems - Primas" titleOfAnthology="Final report ecoinvent Data v2.0" volumeNo="20" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137674"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137674" referenceToPublishedSource="137675"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="HSLU" countryCode="CH" email="anonymised" name="Alex Primas" number="137674" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="energy, obsolete" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="energy, obsolete" localSubCategory="cogeneration, obsolete\gas, obsolete" location="CH" meanValue="1.0" name="xx Heat, natural gas, allocation exergy, at SOFC fuel cell 125kWe, future" number="358253" subCategory="cogeneration, obsolete\gas, obsolete" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="007446-09-5" category="emissions to air" generalComment="(2,nA,nA,nA,1,nA); composition of natural gas&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.7667E-7" name="Sulfur dioxide" number="26215" standardDeviation95="1.0714000000000001" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,2,1,1,4); uncertainty of maintenance cycle&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\cogeneration\power unit" location="CH" meanValue="4.6576E-8" name="Maintenance SOFC fuel cell 125kWe, future" number="227526" standardDeviation95="1.1397" subCategory="natural gas\cogeneration\power unit" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,2,1,1,4); uncertainty of life time&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="natural gas\cogeneration\power unit\infrastructure" location="CH" meanValue="5.1715E-9" name="SOFC fuel cell 125kWe, future" number="512599" standardDeviation95="3.0201000000000002" subCategory="natural gas\cogeneration\power unit\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000630-08-0" category="emissions to air" generalComment="(2,3,2,1,1,4); estimate based on different references&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="5.4606E-7" name="Carbon monoxide, fossil" number="641" standardDeviation95="5.0229" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(nA,nA,nA,nA,nA,nA); input&#10;" infrastructureProcess="false" localCategory="natural gas" localSubCategory="fuels" location="CH" meanValue="0.32121" name="Natural gas, low pressure, at consumer" number="596986" standardDeviation95="1.0500000000000003" subCategory="fuels" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="(2,3,2,1,1,4); estimate based on different references&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.4242E-7" name="Nitrogen oxides" number="79243" standardDeviation95="1.5269000000000001" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="(2,nA,nA,nA,1,nA); composition of natural gas&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.017988" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.0714000000000001" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(4,3,2,1,1,4); estimate based on different references&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.2485E-7" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.5812999999999997" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,2,1,1,4); uncertainty of life time&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="natural gas\cogeneration\power unit\infrastructure" location="RER" meanValue="3.4848E-8" name="Storage 10000 l" number="387255" standardDeviation95="3.0201000000000002" subCategory="natural gas\cogeneration\power unit\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,2,1,1,3); uncertainty of heating value and electric efficiency&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.20268" name="Heat, waste" number="46930" standardDeviation95="1.1073" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(3,4,2,2,1,5); company data&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="CH" meanValue="7.7091E-6" name="Tap water, at user" number="422494" standardDeviation95="1.2636999999999998" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(4,3,2,1,1,5); estimate based on few references&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.2848E-6" name="Methane, fossil" number="90787" standardDeviation95="1.6224" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

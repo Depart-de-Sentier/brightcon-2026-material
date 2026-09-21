@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="138022" timestamp="2023-08-28T15:03:06.611+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="transport systems" datasetRelatesToProduct="true" generalComment="Inventory refers to the entire transport life cycle. For rail infrastructure, expenditures and environmental interventions due to construction, renewal and disposal of railway tracks have been allocated based on the Gross tonne kilometre performance of freight transport on SBB railway tracks in 2014 ( 20260 Mio. Gtkm).  Expenditures due to operation of the rail infrastructure, as well as land use have been allocated based on the yearly train kilometre performance (8615 Mio tkm).  For the operation of goods transportation average data for  freigth transport by rail in Switzerland were used. The data has been determined top down, by combining the total yearly energy consumption and the yearly tkm-performance of goods transportation.  Electricity consumption has been updated based on SBB data for the year 2019.;&#10;UUID: d78d71e3-e455-3377-8606-599681966753" includedProcesses="The inventory includes the  energy consumption of a goods train in Switzerland using electro energy only (no shunting processes are accounted for). In addition also the production and maintenance of  vehicles as well as the construction and maintenance of the rail way tracks are accounted for." infrastructureProcess="false" localCategory="transport systems" localName="Transport, freight, rail, electricity without shunting" localSubCategory="train" name="Transport, freight, rail, electricity without shunting" subCategory="train" unit="tkm"/>
+        <geography location="CH" text="&lt;null&gt;"/>
+        <technology text="Average technology"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications">
+          <startDate>2009-01</startDate>
+          <endDate>2015-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-11-13T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Some generic datasets from ecoinvent have been used." percent="100" productionVolume="8738.193775 Mio tkm/a" samplingProcedure="Statistics " uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Krebs L." nameOfEditors="-" number="137964" placeOfPublications="Uster, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="3" text="L. Krebs, R. Frischknecht (2020) Aktualisierung Ökobilanzdaten mobitool 2020, Teil 1. Project report. Volume: 713. treeze Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: L. Krebs\nOther authors: R. Frischknecht\nYear: 2020\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: treeze Ltd.\nVolume No: 713\n" title="2020 - Update Mobitool 2020 - Krebs" titleOfAnthology="Project report" volumeNo="713" year="2020"/>
+        <validation proofReadingDetails="Proof reading validation: 10.11.2020; Other validation: G:\Projekte laufend\713 Aktualisierung mobitool 2020\EcoSpold\[713_Transport-Train-freight-CH_EIV2_v0.3.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137963"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137963" referenceToPublishedSource="137964"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Luana Krebs" number="137963" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="1.0" name="Transport, freight, rail, electricity without shunting" number="138022" subCategory="train" uncertaintyType="0" unit="tkm">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,1,3,5,BU:3); calculation based on the number of locomotives of SBB in  2014, an assumed constant yearly  performance of 14478000000 vkm/a and a life time of 40 years; pers. correspondence SBB, June. 2015&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="RER" meanValue="5.6465E-10" name="Locomotive" number="348643" standardDeviation95="3.0942" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,1,3,5,BU:3); calculation based on the number of wagons of SBB in  2014, an assumed constant yearly  performance of 12300000000 vkm/a and a life time of 40 years; pers. correspondence SBB, June. 2015&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="RER" meanValue="4.0795E-8" name="Goods wagon" number="301872" standardDeviation95="3.0942" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="non material emissions" generalComment="(3,3,5,5,5,5,BU:1.5); ; Ecological Scarcity method 2013; Frischknecht &amp; Büsser Knöpfel 2013&#10;" infrastructureProcess="false" localCategory="non material emissions" localSubCategory="unspecified" meanValue="1.0" name="Noise, rail, freight train" number="59793" standardDeviation95="2.532" subCategory="unspecified" uncertaintyType="1" unit="tkm">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport waste" generalComment="(2,1,1,1,3,5,BU:3); based on the gross ton kilometric performance  on the SBB track in 2014: 72126484166Gtkm and the rail track length 2385 km; pers. correspondence SBB, Dec. 2015&#10;" infrastructureProcess="true" localCategory="transport waste" localSubCategory="unspecified" location="CH" meanValue="7.393E-5" name="Disposal, railway track" number="400291" standardDeviation95="3.0942" subCategory="unspecified" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport waste" generalComment="(2,1,1,1,3,5,BU:3); ;&#10;" infrastructureProcess="true" localCategory="transport waste" localSubCategory="unspecified" location="RER" meanValue="5.6465E-10" name="Disposal, locomotive" number="406807" standardDeviation95="3.0942" subCategory="unspecified" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(2,3,2,1,3,5,BU:1.5); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="5.344E-12" name="Antimony" number="50040" standardDeviation95="1.6263000000000003" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,1,3,5,BU:3); ;&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="RER" meanValue="5.6465E-10" name="Maintenance, locomotive" number="452151" standardDeviation95="3.0942" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,2,1,3,5,BU:5); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.1765E-10" name="Manganese" number="31635" standardDeviation95="5.112500000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(2,3,2,1,3,5,BU:1.5); hydrocarbon emission assumed as oil emission into soil; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="3.1803E-9" name="Oils, unspecified" number="79079" standardDeviation95="1.6263000000000003" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to soil" generalComment="(2,3,2,1,3,5,BU:1.5); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="1.0538E-11" name="Zinc" number="91717" standardDeviation95="1.6263000000000003" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-50-8" category="emissions to air" generalComment="(2,3,2,1,3,5,BU:5); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="3.0126E-10" name="Copper" number="644" standardDeviation95="5.112500000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,1,1,1,1,5,BU:1.05); average electricity  consumption of freight transport in CH: 0,39E-3 kWh/tkm (incl. 3.34% losses); Pers. communication SBB, Fabiano Piccinno, Oct. 2020&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.039209" name="Electricity, medium voltage, SBB, at grid" number="612314" standardDeviation95="1.2077" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,2,1,3,5,BU:5); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="2.7346E-8" name="Iron" number="22970" standardDeviation95="5.112500000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to water" generalComment="(2,3,2,1,3,5,BU:5); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="2.8844E-10" name="Zinc" number="91189" standardDeviation95="5.112500000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,2,5,5,5,BU:1.05); devault value;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.14115" name="Heat, waste" number="46930" standardDeviation95="2.1253000000000006" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-47-3" category="emissions to air" generalComment="(2,3,2,1,3,5,BU:5); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="4.7838E-11" name="Chromium" number="642" standardDeviation95="5.112500000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to air" generalComment="(2,3,2,1,3,5,BU:5); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="2.9688E-11" name="Zinc" number="666" standardDeviation95="5.112500000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-92-1" category="emissions to soil" generalComment="(2,3,2,1,3,5,BU:1.5); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="1.7826E-12" name="Lead" number="91759" standardDeviation95="1.6263000000000003" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,1,3,5,BU:3); based on the gross ton kilometric performance  on the SBB track in 2014: 72126484166Gtkm and the rail track length 2385 km; pers. correspondence SBB, Dec. 2015&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="CH" meanValue="7.393E-5" name="Operation, maintenance, railway track" number="260942" standardDeviation95="3.0942" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(2,3,2,1,3,5,BU:1.5); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="1.698E-11" name="Chromium" number="20664" standardDeviation95="1.6263000000000003" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(2,3,2,1,3,5,BU:1.5); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="9.7063E-9" name="Iron" number="40759" standardDeviation95="1.6263000000000003" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,1,3,5,BU:3); based on the gross ton kilometric performance  on the SBB track in 2014: 72126484166Gtkm and the rail track length 2385 km; pers. correspondence SBB, Dec. 2015&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="CH" meanValue="7.393E-5" name="Railway track" number="213626" standardDeviation95="3.0942" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,2,1,3,5,BU:5); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.5056E-11" name="Antimony" number="9302" standardDeviation95="5.112500000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-50-8" category="emissions to soil" generalComment="(2,3,2,1,3,5,BU:1.5); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="1.0693E-10" name="Copper" number="91771" standardDeviation95="1.6263000000000003" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-92-1" category="emissions to air" generalComment="(2,3,2,1,3,5,BU:5); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="5.0222E-12" name="Lead" number="36341" standardDeviation95="5.112500000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,1,3,5,BU:3); ;&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="RER" meanValue="4.0795E-8" name="Maintenance, goods wagon" number="459257" standardDeviation95="3.0942" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-50-8" category="emissions to water" generalComment="(2,3,2,1,3,5,BU:3); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="3.0233E-11" name="Copper" number="91271" standardDeviation95="3.0986" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(2,3,2,1,3,5,BU:1.5); ; Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="4.1758E-11" name="Manganese" number="32965" standardDeviation95="1.6263000000000003" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

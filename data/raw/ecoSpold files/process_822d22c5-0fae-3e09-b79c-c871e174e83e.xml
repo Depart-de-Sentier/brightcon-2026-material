@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="481979" timestamp="2024-07-09T17:48:31">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electronics" datasetRelatesToProduct="true" generalComment="The data set represents the production of smartphone bluetooh headset; UUID: 822d22c5-0fae-3e09-b79c-c871e174e83e" includedProcesses="The dataset comprises of high density polyethylene, battery, circuit boards, USB cables, and passive electronic components, all summing up to approximately 200 grams of bluetooth headset weight. The weight of the circuit boards is obtained specifically from a customizable PWB manufacturer. The product is a representation of standard Bluetooth headphones devices in the market. Additionally, the manufacturing electricity energy is assumed to be similar with the other headsets according to literature, ~ 2 kWh per device. The packaging materials are modeled as corrugated board and printed papers with a total weight of 400 grams." infrastructureIncluded="false" infrastructureProcess="false" localCategory="electronics" localName="Headset (bluetooth), for smartphone, at plant" localSubCategory="devices" name="Headset (bluetooth), for smartphone, at plant" subCategory="devices" unit="p">
+          <synonym>Smartphone</synonym>
+          <synonym>Bluetooth-Kopfhörer</synonym>
+        </referenceFunction>
+        <geography location="GLO" text="Data for global average bluetooth headset for smartphone"/>
+        <technology text="The headset for smartphone is equipped with bluetooth connectivity."/>
+        <timePeriod dataValidForEntirePeriod="" text="Unspecified">
+          <startDate>2023-01</startDate>
+          <endDate>2029-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2024-07-09T17:48:31" type="1" version="2024"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Average technology" productionVolume="unknown" samplingProcedure="Literature &amp; own estimations" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Permana Ajie M., Beloin-Saint-Pierre D." firstAuthor="Raka Adrianto L." number="148303" placeOfPublications="St. Gallen, CH" publisher="Empa" sourceType="0" title="2024 - LCI ICT sector - Raka Adrianto" year="2024"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Mischa Zschokke, Company: Carbotech, Country: CH" proofReadingValidator="140702"/>
+        <validation/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="148302" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="false" dataPublishedIn="2" person="148302" referenceToPublishedSource="148303"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre" number="148302" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Mischa Zschokke" number="140702" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electronics" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices" location="GLO" meanValue="1" name="Headset (bluetooth), for smartphone, at plant" number="481979" subCategory="devices" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(3,3,3,3,3,5,BU:1.05); BOM: 25 gr battery for wireless headset." infrastructureProcess="false" localCategory="electronics" localSubCategory="batteries" location="GLO" meanValue="0.025" name="Battery, Li-ion, NMC111, rechargeable, prismatic" number="562946" standardDeviation95="1.35" subCategory="batteries" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(3,3,3,3,3,5,BU:1.05); 30gr per 1 m." infrastructureProcess="false" localCategory="electronics" localSubCategory="component" location="GLO" meanValue="0.03" name="Connector, computer, peripherical type, at plant" number="291432" standardDeviation95="1.35" subCategory="component" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,3,3,3,3,5,BU:1.05); Literature: Andrae 2017." infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="RAS" meanValue="2" name="Electricity, medium voltage, production RAS, at grid" number="268196" standardDeviation95="1.35" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(3,3,1,3,3,5,BU:1.05); Literature: Cordella et al 2020" infrastructureProcess="false" localCategory="electronics" localSubCategory="component" location="GLO" meanValue="0.01" name="Electronic component, passive, unspecified, at plant" number="509278" standardDeviation95="1.33" subCategory="component" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(3,3,1,3,3,5,BU:1.05); Literature: Cordella et al 2020" infrastructureProcess="false" localCategory="plastics" localSubCategory="unspecified" location="RER" meanValue="0.08" name="Extrusion, plastic film" number="474018" standardDeviation95="1.33" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="cardboard" generalComment="(3,3,1,3,3,5,BU:1.05); Literature: Cordella et al 2020" infrastructureProcess="false" localCategory="cardboard" localSubCategory="unspecified" location="RER" meanValue="0.4" name="Folding boxboard, FBB, at plant" number="562464" standardDeviation95="1.33" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(3,3,1,3,3,5,BU:1.05); Literature: Cordella et al 2020" infrastructureProcess="false" localCategory="plastics" localSubCategory="unspecified" location="RER" meanValue="0.16" name="Injection moulding" number="166773" standardDeviation95="1.33" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(3,3,1,3,3,5,BU:1.05); Literature: Cordella et al 2020" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="0.08" name="Packaging film, LDPE, at plant" number="348694" standardDeviation95="1.33" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="material, obsolete" generalComment="(3,3,1,3,3,5,BU:1.05); Literature: Cordella et al 2020" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="paper + board, obsolete\graphic paper, obsolete" location="RER" meanValue="0.2" name="xx Paper, newsprint, at regional storage" number="270744" standardDeviation95="1.33" subCategory="paper + board, obsolete\graphic paper, obsolete" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(3,3,1,3,3,5,BU:1.05); Literature: Cordella et al 2020. Adapted using PP, with 50:50 split with other plastics" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="0.08" name="Polypropylene, granulate, at plant" number="431726" standardDeviation95="1.33" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(3,3,1,3,3,5,BU:1.05); Literature: Cordella et al 2020. Adapted using PP, with 50:50 split with other plastics" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermosets" location="RER" meanValue="0.08" name="Polyurethane, flexible foam, at plant" number="290187" standardDeviation95="1.33" subCategory="thermosets" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(3,3,1,3,3,5,BU:1.05); Max weight from a customizes PWB weight" infrastructureProcess="false" localCategory="electronics" localSubCategory="component" location="GLO" meanValue="0.01" name="Printed wiring board, surface mounted, unspec., Pb free, at plant" number="593934" standardDeviation95="1.33" subCategory="component" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,3,1,3,3,5,BU:2.00); According to headset mass." infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.0202" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.11" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,3,1,3,3,5,BU:2.00); According to headset mass." infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.004" name="Transport, freight, rail" number="149864" standardDeviation95="2.11" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,3,1,3,3,5,BU:2.00); According to headset mass." infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="OCE" meanValue="4.25" name="Transport, transoceanic container ship" number="536415" standardDeviation95="2.11" subCategory="ship" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

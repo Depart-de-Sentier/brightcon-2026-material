@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="514337" timestamp="2023-08-28T15:02:54.671+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="theoretical data from process analysis. Only the most important flows are taken into account. Electricity demand is estimated. Not to be used for systems where acetylene plays an important role.;&#10;CAS number: 000074-86-2; &#10;Formula: C2H2; &#10;Synonyms: Ethin, ethyne; &#10;UUID: 1fe91cd9-896a-3865-a49a-4235fbf6f911" includedProcesses="production and transport to Switzerland" infrastructureProcess="false" localCategory="chemicals" localName="Acetylene, at regional storehouse" localSubCategory="organic" name="Acetylene, at regional storehouse" subCategory="organic" unit="kg"/>
+        <geography location="CH" text="production in western Europe"/>
+        <technology text="partial oxidation of natural gas. The flue gas is assumed to be cleaned with electrofilters."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>1990-01</startDate>
+          <endDate>1999-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-06-27T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="theoretical model " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Hellweg S., Hischier R., Jungbluth N., Osses M., Primas A." firstAuthor="Althaus H.-J." nameOfEditors="-" number="137407" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ETH, ESU-services Ltd., Chudacoff Oekoscience" sourceNumber="0" sourceType="4" text="Althaus H.-J., Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A. (2007) Life Cycle Inventories of Chemicals. Final report ecoinvent data v2.0. Volume: 8. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Althaus H.-J.\nOther authors: Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 8\n" title="2007 - LCI chemicals - Althaus" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="8" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="137406"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="139614"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="139614" referenceToPublishedSource="137407"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Heiko Kunst" number="137406" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="CH" meanValue="1.0" name="Acetylene, at regional storehouse" number="514337" subCategory="organic" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,5,5,5,5,5,13)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.001" name="Heat, waste" number="46930" standardDeviation95="2.6000000000000005" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-86-2" category="emissions to air" generalComment="(5,5,5,5,5,5,23)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.01" name="Ethyne" number="30945" standardDeviation95="3.1999999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,n.A.,n.A.,n.A.,n.A.,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.1" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.1" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(5,5,5,5,5,5,2)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="2.78E-4" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="2.6000000000000005" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,n.A.,n.A.,n.A.,n.A.,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="1.2" name="Transport, freight, rail" number="149864" standardDeviation95="2.1" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,5,5,5,5,5,9)&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="4.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="4.299999999999999" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,3,3,2,1,5,3)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="5.3" name="Oxygen, liquid, at plant" number="403281" standardDeviation95="1.3000000000000003" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(3,3,3,2,1,5,1)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="0.16" name="Natural gas, burned in industrial furnace 1MWth" number="262422" standardDeviation95="1.3000000000000003" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(3,3,3,2,1,5,3)&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\gas to user" location="CH" meanValue="0.06048" name="Natural gas, high pressure, at consumer" number="275501" standardDeviation95="1.3000000000000003" subCategory="natural gas\gas to user" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

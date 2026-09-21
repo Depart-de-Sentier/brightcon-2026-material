@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="RStudio" number="401637" timestamp="2025-03-31T15:02:08">
+    <metaInformation>
+      <processInformation>
+        <timePeriod dataValidForEntirePeriod="True" text="Technology and vehicle lightweighting factors match manufacture year of 2020">
+          <startDate>2020-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <referenceFunction amount="1" category="transport systems" datasetRelatesToProduct="True" generalComment=" Power: 2.6 kW. Lifetime: 25000 km. Annual kilometers: 1570 km. Number of passengers: 1. Curb mass: 100.4 kg. Lightweighting of glider: 0%. Emission standard: None. Service visits throughout lifetime: 1. Range: 50 km. Battery capacity: 2.3 kWh. Available battery capacity: 1.84 kWh. Battery mass: 14.4 kg. Battery replacement throughout lifetime: 1. Fuel tank capacity: 0 kWh. Fuel mass: 0 kg. Source: Sacchi R., Bauer C. Life cycle inventories for on-road vehicles. Paul Scherrer Institut, 2023. DOI: 10.5281/zenodo.5156043. UUID: 34921e5a-7975-3431-afd9-2b17c0488192" infrastructureIncluded="True" infrastructureProcess="True" localCategory="transport systems" localName="Transport, Scooter, electric, &lt;4kW, NMC battery, 2020, label-certified electricity" localSubCategory="road\Transformation" name="Transport, Scooter, electric, &lt;4kW, NMC battery, 2020, label-certified electricity" subCategory="road\Transformation" unit="km"/>
+        <geography location="CH" text="Unspecified"/>
+        <technology text="Power: 2.6 kW. Lifetime: 25000 km. Annual kilometers: 1570 km. Number of passengers: 1. Curb mass: 100.4 kg. Lightweighting of glider: 0%. Emission standard: None. Service visits throughout lifetime: 1. Range: 50 km. Battery capacity: 2.3 kWh. Available battery capacity: 1.84 kWh. Battery mass: 14.4 kg. Battery replacement throughout lifetime: 1. Fuel tank capacity: 0 kWh. Fuel mass: 0 kg. Source: Sacchi R., Bauer C. Life cycle inventories for on-road vehicles. Paul Scherrer Institut, 2023. DOI: 10.5281/zenodo.5156043"/>
+        <dataSetInformation energyValues="0" impactAssessmentResult="False" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2025-03-31T15:02:08" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Unspecified" productionVolume="Unspecified" samplingProcedure="Unspecified" uncertaintyAdjustments="Unspecified"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="136752" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="doi: 10.5281/ZENODO.5156043" title="2023 - LCI on-road vehicles - Sacchi" year="2023"/>
+        <validation proofReadingDetails="Unspecified" proofReadingValidator="136748"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136751"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="False" dataPublishedIn="2" person="136749" referenceToPublishedSource="136752"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Brian Cox" number="136748" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Julien McTighe" number="136751" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="1.0" name="Transport, Scooter, electric, &lt;4kW, NMC battery, 2020, label-certified electricity" number="401637" subCategory="road\Transformation" uncertaintyType="0" unit="km">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Transformation\Infrastructure" location="CH" meanValue="4e-05" name="Scooter, electric, &lt;4kW, NMC battery, 2020" number="567228" standardDeviation95="1.128986925796466" subCategory="road\Transformation\Infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 1, 5, 2, 1, 1)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="CH" meanValue="9.66e-05" name="Road" number="506930" standardDeviation95="1.5168492538102136" subCategory="road\operations\infrastructure" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 1, 5, 2, 1, 1)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="CH" meanValue="0.00129" name="Operation, maintenance, road" number="349679" standardDeviation95="1.5168492538102136" subCategory="road\operations\infrastructure" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="Uncertainty from pedigree matrix: (2, 1, 2, 2, 1, 3)" infrastructureProcess="False" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.0408" name="Electricity, low voltage, certified electricity, at grid" number="353779" standardDeviation95="1.0786617442263404" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="CH" meanValue="4e-05" name="Maintenance, electric scooter, without battery" number="463677" standardDeviation95="1.128986925796466" subCategory="road\operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (4, 5, 2, 3, 4, 3)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="6.7e-06" name="Road wear emissions, passenger car" number="289953" standardDeviation95="1.623011859459048" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (4, 5, 2, 3, 4, 3)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="5.36e-06" name="Tyre wear emissions, passenger car" number="236383" standardDeviation95="1.623011859459048" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (4, 5, 2, 3, 4, 3)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="3.77e-06" name="Brake wear emissions, passenger car" number="451198" standardDeviation95="1.623011859459048" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="non material emissions" generalComment="Uncertainty from pedigree matrix: (5, 5, 2, 1, 4, 5)" meanValue="0.5" name="Noise, road, passenger car, average" number="59935" standardDeviation95="1.876507561897662" subCategory="unspecified" uncertaintyType="1" unit="km">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport waste" generalComment="Uncertainty from pedigree matrix: (3, 1, 5, 2, 1, 1)" infrastructureProcess="True" localCategory="transport waste" localSubCategory="unspecified" location="RER" meanValue="9.3e-05" name="Disposal, road" number="561882" standardDeviation95="1.5168492538102136" subCategory="unspecified" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

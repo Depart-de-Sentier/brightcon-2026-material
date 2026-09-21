@@ -1,0 +1,128 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="267971" timestamp="2023-07-27T15:37:51">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="fuels" datasetRelatesToProduct="true" generalComment="Update 2022 by ZHAW only updated domestic production shares and shares of imports, Remark: Average US coal quality (UHV=25.2MJ/kg). Dust from load/unload operations is included, as well as hard coal transport from mining to the power plant. Average coal losses are considered. Average emissions to groundwater due to leaching from coal heaps at storage at receiving terminal is estimated from the literature. NA; UUID: e5e6d166-d9c5-3b25-9db3-26611a4439cd" includedProcesses="Included processes: Average US hard coal for domestic supply. The coal requirement includes the total losses from mining to the power plant. The dataset includes emissions to groundwater and particle emissions from the storage, coal loss during storage, energy demand for coal loading and unloading, land use, and hard coal transport from mining to the power plant." infrastructureIncluded="true" infrastructureProcess="false" localCategory="fuels" localName="Hard coal supply mix, at regional storage" localSubCategory="coal\coal by country" name="Hard coal supply mix, at regional storage" subCategory="coal\coal by country" unit="kg">
+          <synonym>0</synonym>
+        </referenceFunction>
+        <geography location="US" text="Geography: Average US conditions"/>
+        <technology text="Technology: Not specified"/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2020-01</startDate>
+          <endDate>2020-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2023-07-27T15:37:51" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Extrapolations: see Geography/Text&#10;Uncertainty adjustments: none" samplingProcedure="Sampling procedure: literature" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Oberschelp C., Kroehnert H., Stucki M." firstAuthor="Itten R." number="138123" placeOfPublications="Waedenswil, CH" publisher="ZHAW" sourceType="3" text="Report" title="2023 - LCI solid fossil fuel - Itten" titleOfAnthology="Project report" year="2023"/>
+        <validation proofReadingDetails="27.07.2023" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137485" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="2" person="137485" referenceToPublishedSource="138123"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="René Itten" number="137485" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ETH" countryCode="CH" email="anonymised" name="Christopher Oberschelp" number="137484" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="Hanna Kroehnert" number="138122" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="Matthias Stucki" number="137832" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" infrastructureProcess="false" localCategory="fuels" localSubCategory="coal\coal by country" location="US" meanValue="1" name="Hard coal supply mix, at regional storage" number="267971" subCategory="coal\coal by country" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1.05) Production North America based on IEA coal production statistics 2020" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="coal" location="RNA" meanValue="0.98857" name="Hard coal, at mine" number="275187" standardDeviation95="1.05" subCategory="coal" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(1,1,1,1,1,1,BU:1.05) Import from Russia based on IEA coal import statistics 2020" infrastructureProcess="false" localCategory="fuels" localSubCategory="coal\produced coal" location="RU" meanValue="0.0006835" name="Hard coal, at regional storage" number="308524" standardDeviation95="1.05" subCategory="coal\produced coal" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(1,1,1,3,1,1,BU:1.05) Import from other (proxy) based on IEA coal import statistics 2020" infrastructureProcess="false" localCategory="fuels" localSubCategory="coal\produced coal" location="EEU" meanValue="0.00030528" name="Hard coal, at regional storage" number="250664" standardDeviation95="1.0541" subCategory="coal\produced coal" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(1,1,1,1,1,1,BU:1.05) Import from Colombia based on based on IEA coal import statistics 2020" infrastructureProcess="false" localCategory="fuels" localSubCategory="coal\produced coal" location="RLA" meanValue="0.0089585" name="Hard coal, at regional storage" number="536025" standardDeviation95="1.05" subCategory="coal\produced coal" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(1,1,1,3,1,1,BU:1.05) Import from Indonesia (proxy) based on IEA coal import statistics 2020" infrastructureProcess="false" localCategory="fuels" localSubCategory="coal\hard coal\fuels" location="IN" meanValue="0.0014751" name="Hard coal, at regional storage" number="453759" standardDeviation95="1.0541" subCategory="coal\hard coal\fuels" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,3,1,1,1,5,BU:2) Estimated transport distances based on supply mix, own calcuation" infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="OCE" meanValue="0.13554" name="Transport, transoceanic freight ship" number="208374" standardDeviation95="2.0984" subCategory="ship" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,3,1,1,1,5,BU:2) Estimated transport distances based on supply mix, own calcuation" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.04" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.0984" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,3,1,1,1,5,BU:2) Estimated transport distances based on supply mix, own calcuation" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train\unspecified" location="US" meanValue="0.40358" name="Transport, freight, rail, diesel" number="561683" standardDeviation95="2.0984" subCategory="train\unspecified" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="own assumption" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="US" meanValue="0.0072" name="Electricity, low voltage, at grid" number="280414" standardDeviation95="3" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own assumption" meanValue="1E-5" name="Transformation, from unknown" number="54270" standardDeviation95="3" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own assumption" meanValue="1E-5" name="Transformation, to industrial area" number="68360" standardDeviation95="3" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own assumption" meanValue="0.001" name="Occupation, industrial area" number="132653" standardDeviation95="3" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="own assumption" meanValue="0.0259" name="Heat, waste" number="46930" standardDeviation95="3" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="own assumption" meanValue="0.002" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="10" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="4E-11" name="Arsenic" number="91205" standardDeviation95="2" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="1E-7" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="3" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="1E-11" name="Cadmium" number="91269" standardDeviation95="5" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="2E-6" name="Chloride" number="34061" standardDeviation95="5" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="2E-10" name="Chromium" number="158591" standardDeviation95="3" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="1E-7" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="3" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="1E-9" name="Copper" number="91271" standardDeviation95="5" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="2E-9" name="Iron" number="91273" standardDeviation95="10" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="2E-10" name="Lead" number="91221" standardDeviation95="5" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="2E-7" name="Manganese" number="91185" standardDeviation95="2.5" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="4E-10" name="Nickel" number="91239" standardDeviation95="10" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="2E-10" name="Selenium" number="8956" standardDeviation95="2" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="1E-5" name="Solids, inorganic" number="24723" standardDeviation95="2.5" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="0.0001" name="Suspended solids, unspecified" number="157731" standardDeviation95="2" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="4E-5" name="Sulfate" number="49702" standardDeviation95="5" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="2E-10" name="Tin" number="58837" standardDeviation95="10" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

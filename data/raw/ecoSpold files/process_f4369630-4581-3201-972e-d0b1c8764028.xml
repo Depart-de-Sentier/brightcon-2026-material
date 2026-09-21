@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="234932" timestamp="2023-08-28T15:03:06.448+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="Inventory refers to infrastructure of an existing natural gas cogeneration plant (lambda=1 motor, 160kWe, operation start 1987) at Jakobsberg, Basel, Switzerland.;&#10;UUID: f4369630-4581-3201-972e-d0b1c8764028" includedProcesses="Includes energy needed." infrastructureProcess="true" localCategory="heat" localName="Assembly, module cogen unit 160kWe" localSubCategory="natural gas\cogeneration\power unit\infrastructure" name="Assembly, module cogen unit 160kWe" subCategory="natural gas\cogeneration\power unit\infrastructure" unit="p"/>
+        <geography location="RER" text="Data refers to a plant in Switzerland, assumed valid for Europe (RER)"/>
+        <technology text="Component of a specific cogeneration unit installed in Switzerland. Technology at end of 1980s."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>1990-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-08-27T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography/Text" productionVolume="na" samplingProcedure="Operator and manufacturer information " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Heck T." nameOfEditors="Dones R." number="138971" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI" sourceNumber="0" sourceType="4" text="Heck, T. (2007) Wärme-Kraft-Kopplung. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0. Editors: Dones R.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Heck, T.\nYear: 2007\nName of editors: Dones R.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2007 - Combined heat power generation - Heck" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0" volumeNo="6" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: had passed; Other validation: none;" proofReadingValidator="138969"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138970"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138970" referenceToPublishedSource="138971"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Gerald Rebitzer" number="138969" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Thomas Heck" number="138970" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="Europe&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="natural gas\cogeneration\power unit\infrastructure" location="RER" meanValue="1.0" name="Assembly, module cogen unit 160kWe" number="234932" subCategory="natural gas\cogeneration\power unit\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(3,3,3,3,4,3); &#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="27000.0" name="Light fuel oil, burned in industrial furnace 1MW, non-modulating" number="244929" standardDeviation95="1.5499999999999998" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,3,3,3,4,3); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="17800.0" name="Heat, waste" number="46930" standardDeviation95="1.5499999999999998" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,3,3,3,4,3); &#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="4940.0" name="Electricity, low voltage, production ENTSO-E, at grid" number="744926" standardDeviation95="1.5499999999999998" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

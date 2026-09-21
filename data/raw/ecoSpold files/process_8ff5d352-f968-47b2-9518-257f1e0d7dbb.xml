@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="EcoInvent Excel2EcoSpold 1.9.18" number="316010" timestamp="2026-01-19T09:49:04">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="building processes" datasetRelatesToProduct="true" generalComment="According to the dataset &quot;diesel, burned in building machine, with particle filter/MJ/CH,&quot; regulated exhaust emissions are calculated using the non-road database published by BAFU (2015) for the year 2015. Emissions of CO₂, CO, CH₄, NMVOC, NOₓ, N₂O, and PM were calculated based on specific average values for dumpers and are derived from non-road emission data. Data from the Emissions Inventory Guidebook (EMEP/EEA, 2013) were used for specific exhaust emissions not covered by the non-road database. The emission factors assume that all building machines are equipped with particle filters. NMVOC speciation is modelled using the distribution shares for lorries, and noise emissions are assumed to be proportional to the fuel consumption of lorries. The consumption of lubricating oil is taken from ecoinvent v2.2. &#10;UUID: 8ff5d352-f968-47b2-9518-257f1e0d7dbb" includedProcesses="This dataset is based on the process &quot;diesel, burned in building machine, with particle filter/MJ/CH&quot;. Compared to this reference process, the dataset includes only lubricating oil, diesel fuel and the emissions produced during the combustion of 1 MJ of diesel fuel in an average dumper in Switzerland. The provision of the building machine is excluded." infrastructureIncluded="true" infrastructureProcess="false" localCategory="building processes" localName="Diesel, burned in dumper, average, with particle filter" localSubCategory="machinery" name="Diesel, burned in dumper, average, with particle filter" subCategory="machinery" unit="MJ">
+          <synonym>0</synonym>
+        </referenceFunction>
+        <geography location="CH" text="Europe"/>
+        <technology text="The process &quot;diesel, burned in building machine, with particle filter/MJ/CH&quot; has been modified to generate a dataset that consider the emissions produced during the combustion of 1 MJ of diesel fuel in an average dumper in Switzerland."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Review of data currency scheduled after 5 years.">
+          <startYear>2025</startYear>
+          <endYear>2030</endYear>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2026-01-19T09:49:04" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Noise emissions and NMVOC speciation modelled based on data for lorries." percent="unknown.0" productionVolume="unknown" samplingProcedure="Statistics" uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Stamm R." firstAuthor="Pohl T." number="184329" placeOfPublications="Bern, CH" publisher="Umtec Technologie AG" sourceType="3" text="Report" title="2025 - Datasets construction machinery and infra. - Pohl" titleOfAnthology="Hintergrundbericht" year="2025"/>
+        <validation proofReadingDetails="Unspecified" proofReadingValidator="141497"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="769826" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="769826" referenceToPublishedSource="184329"/>
+        <person address="anonymised" companyCode="UMTEC" countryCode="CH" email="anonymised" name="Thomas Pohl" number="769826" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Cornelia Stettler" number="141497" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="building processes" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="1" name="Diesel, burned in dumper, average, with particle filter" number="316010" subCategory="machinery" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(2,2,2,3,1,2,BU:1.05); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." infrastructureProcess="false" localCategory="oil" localSubCategory="distribution" location="CH" meanValue="0.023361" name="Diesel, at regional storage" number="355103" standardDeviation95="1.086" subCategory="distribution" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,2,3,1,2,BU:1.05); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="0.000514" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.086" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:1.05); ; Amount represents emission factor specific for dumpers and corresponds to the average value of all engine power outputs classes of dumpers; BAFU 2015: Non-road database" meanValue="0.073588" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.086" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:5); ; Amount represents emission factor specific for dumpers and corresponds to the average value of all engine power outputs classes of dumpers; BAFU 2015: Non-road database" meanValue="0.00012353" name="Carbon monoxide, fossil" number="641" standardDeviation95="5.0069" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:1.5); ; Amount represents emission factor specific for dumpers and corresponds to the average value of all engine power outputs classes of dumpers; BAFU 2015: Non-road database" meanValue="6.5088E-7" name="Methane, fossil" number="90787" standardDeviation95="1.5082" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:1.5); ; Modelled by NMVOC speciation. Unspecified NMVOC for which no elementary exchange exists; 81.2% of total NMVOC emissions (BAFU 2015: Non-road database; EMEP/EEA Guidebook 2013, Tab. 3-112). NMVOC emissions are estimated as 1.2 times average NMHC emissions for dumpers, according to BAFU (2015: Non-road database), in order to account for additional oxygenated volatile organic compounds separately (e.g. aldehydes), following EMEP/EEA (2019: Air pollutant emission inventory guidebook)." meanValue="3.1349E-5" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.5676" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:1.5); ; Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.03%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112" meanValue="9.4047E-9" name="Ethane" number="647" standardDeviation95="1.5676" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:1.5); ; Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.10%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112" meanValue="3.1349E-8" name="Propane" number="661" standardDeviation95="1.5676" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:1.5); ; Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.15%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112" meanValue="4.7023E-8" name="Butane" number="639" standardDeviation95="1.5676" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:1.5); ; Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.06%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112" meanValue="1.8809E-8" name="Pentane" number="660" standardDeviation95="1.5676" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:1.5); ; Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.30%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112" meanValue="9.4047E-8" name="Heptane" number="651" standardDeviation95="1.5676" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:3); ; Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.07%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112" meanValue="2.1944E-8" name="Benzene" number="638" standardDeviation95="3.0515" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:1.5); ; Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.01%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112" meanValue="3.1349E-9" name="Toluene" number="665" standardDeviation95="1.5676" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:1.5); ; Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.98%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112" meanValue="3.0722E-7" name="m-Xylene" number="655" standardDeviation95="1.5676" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:1.5); ; Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.40%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112" meanValue="1.254E-7" name="o-Xylene" number="657" standardDeviation95="1.5676" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:1.5); ; Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 8.40%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112" meanValue="2.6333E-6" name="Formaldehyde" number="650" standardDeviation95="1.5676" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:1.5); ; Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 4.57%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112" meanValue="1.4326E-6" name="Acetaldehyde" number="632" standardDeviation95="1.5676" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:1.5); ; Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 1.37%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112" meanValue="4.2948E-7" name="Benzaldehyde" number="637" standardDeviation95="1.5676" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:1.5); ; Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 1.77%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112" meanValue="5.5488E-7" name="Acrolein" number="634" standardDeviation95="1.5676" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:1.5); ; Modelled by NMVOC speciation of lorries; Share in total NMVOC emissions: 0.56%; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112" meanValue="1.7555E-7" name="Styrene" number="664" standardDeviation95="1.5676" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:1.5); ; Amount represents emission factor specific for dumpers and corresponds to the average value of all engine power outputs classes of dumpers; BAFU 2015: Non-road database" meanValue="0.00030655" name="Nitrogen oxides" number="79243" standardDeviation95="1.5082" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:1.2); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." meanValue="1.8692E-7" name="Ammonia" number="635" standardDeviation95="1.2142" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:1.5); ; Amount represents emission factor specific for dumpers and corresponds to the average value of all engine power outputs classes of dumpers; BAFU 2015: Non-road database" meanValue="3.3816E-6" name="Dinitrogen monoxide" number="646" standardDeviation95="1.5676" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:1.05); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." meanValue="4.6729E-7" name="Sulfur dioxide" number="26215" standardDeviation95="1.086" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,3,2,BU:3); ; Amount represents emission factor specific for dumpers and corresponds to the average value of all engine power outputs classes of dumpers; BAFU 2015: Non-road database" meanValue="2.1349E-6" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="3.0515" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:3); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." meanValue="7.0093E-10" name="Benzo(a)pyrene" number="29927" standardDeviation95="3.006" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:3); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." meanValue="7.6869E-8" name="PAH, polycyclic aromatic hydrocarbons" number="658" standardDeviation95="3.006" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:5); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." meanValue="2.3364E-12" name="Arsenic" number="636" standardDeviation95="5.0069" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:5); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." meanValue="2.3364E-10" name="Selenium" number="663" standardDeviation95="5.0069" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:5); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." meanValue="2.3364E-8" name="Zinc" number="666" standardDeviation95="5.0069" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:5); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." meanValue="3.972E-8" name="Copper" number="644" standardDeviation95="5.0069" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:5); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." meanValue="1.6355E-9" name="Nickel" number="656" standardDeviation95="5.0069" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:5); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." meanValue="1.1682E-9" name="Chromium" number="642" standardDeviation95="5.0069" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:5); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." meanValue="2.3364E-12" name="Chromium VI" number="643" standardDeviation95="5.0069" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:5); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." meanValue="1.2383E-10" name="Mercury" number="89723" standardDeviation95="5.0069" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:5); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." meanValue="2.3364E-10" name="Cadmium" number="640" standardDeviation95="5.0069" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,1,2,BU:5); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." meanValue="1.215E-9" name="Lead" number="36341" standardDeviation95="5.0069" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="non material emissions" generalComment="(2,2,3,3,1,2,BU:1.5); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." meanValue="0.095498" name="Noise, road, lorry, average" number="59883" standardDeviation95="1.5231" subCategory="unspecified" uncertaintyType="1" unit="km">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(2,2,3,3,1,2,BU:1.05); ; Amount taken from: Diesel, burned in building machine, with particle filter {CH}, UVEK LCI Data DQRv2 2022." infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="0.000514" name="Disposal, used mineral oil, 10% water, to hazardous waste incineration" number="504085" standardDeviation95="1.1304" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

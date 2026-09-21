@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="196593" timestamp="2023-08-28T15:03:38.843+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="This data set includes land use for a natural gas service station as well as steel requirements for compressor and container. Data stems from a service station with 310'000 m3 gas (236'000 kg) sold per year (in 365 days). It is assumed that steel and concrete are recycled. A life span of 50 years is assumed.;&#10;UUID: 3fad1514-463b-3774-80b0-32ba7c434957" includedProcesses="This data set includes land use for a natural gas service station as well as steel and concrete requirements for compressor and container." infrastructureProcess="true" localCategory="fuels" localName="Natural gas service station" localSubCategory="natural gas\gas to user\infrastructure" name="Natural gas service station" subCategory="natural gas\gas to user\infrastructure" unit="p"/>
+        <geography location="CH" text="Data for Switzerland"/>
+        <technology text="Service station with steel compressor. "/>
+        <timePeriod dataValidForEntirePeriod="true" text="personal communication">
+          <startDate>2000-01</startDate>
+          <endDate>2004-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="1" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2005-12-02T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="0" productionVolume="310'000 m3/a resp. 236'000 kg/a" samplingProcedure="data for one service station " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J." firstAuthor="Jungbluth N." nameOfEditors="-" number="136872" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth N., Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J. (2007) Life Cycle Inventories of Bioenergy. Final report ecoinvent data v2.0. Volume: 17. Swiss Centre for LCI, ESU. Duebendorf and Uster, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth N.\nOther authors: Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Duebendorf and Uster, CH\nPublisher: Swiss Centre for LCI, ESU\nVolume No: 17\n" title="2007 - LCI bioenergy - Jungbluth" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="17" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed.; Other validation: none;" proofReadingValidator="159099"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="149368"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="149368" referenceToPublishedSource="136872"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Arnaud Dauriat" number="159099" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Mireille Faist Emmenegger" number="149368" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="SWITZERLAND&#10;" infrastructureProcess="true" localCategory="fuels" localSubCategory="natural gas\gas to user\infrastructure" location="CH" meanValue="1.0" name="Natural gas service station" number="196593" subCategory="natural gas\gas to user\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="(5,5,1,1,1,5); Estimation&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="26000.0" name="Disposal, building, reinforced concrete, to recycling" number="182743" standardDeviation95="1.6199999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(2,4,1,1,1,5); Expert data for one service station&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="106.0" name="Transformation, to traffic area, road network" number="22234" standardDeviation95="2.06" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,1,1,1,5); Expert data for one service station&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="5080.0" name="Reinforcing steel, at plant" number="545988" standardDeviation95="1.2400000000000002" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(5,5,1,1,1,5); Estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="1500.0" name="Occupation, industrial area, built up" number="116809" standardDeviation95="1.8800000000000001" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,4,1,1,1,5); Expert data for one service station&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="11.5" name="Concrete, normal, at plant" number="367058" standardDeviation95="1.2400000000000002" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="758" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.0900000000000003" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(2,4,1,1,1,5); Expert data for one service station&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="142.0" name="Transformation, from unknown" number="54270" standardDeviation95="2.06" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="3050.0" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.0900000000000003" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(2,4,1,1,1,5); Expert data for one service station&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="5600.0" name="Occupation, traffic area, road network" number="131267" standardDeviation95="1.5800000000000003" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(5,5,1,1,1,5); Estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="35.5" name="Transformation, to industrial area, built up" number="86253" standardDeviation95="2.3200000000000003" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(5,5,1,1,1,5); Estimation&#10;" infrastructureProcess="true" localCategory="construction" localSubCategory="others\infrastructure" location="CH" meanValue="35.5" name="Building, hall" number="520705" standardDeviation95="3.3200000000000003" subCategory="others\infrastructure" uncertaintyType="1" unit="m2">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

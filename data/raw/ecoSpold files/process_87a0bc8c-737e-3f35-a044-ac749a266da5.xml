@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="301872" timestamp="2023-08-28T15:02:46.600+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="transport systems" datasetRelatesToProduct="true" generalComment=" For the average good wagon we assumed that 65% of the transport is performed by closed wagons and  35% by tank wagons. 50% of the wagon in each category are 2 axis vehicles. The life span of one wagon  is assumed to be 40 years with a yearly kilometric performance of 21148km, resulting in a life time performance of 845'900 kilometres. The total weight of a wagon is assumed as about 27t);&#10;UUID: 87a0bc8c-737e-3f35-a044-ac749a266da5" includedProcesses="This inventory calls processes of material production, representing the material composition of an average goods wagon. For manufacturing, electricity and light oil burned in industrial furnance are included. For the transportation of materials standandard distance are applied." infrastructureProcess="true" localCategory="transport systems" localName="Goods wagon" localSubCategory="train\operations\infrastructure" name="Goods wagon" subCategory="train\operations\infrastructure" unit="p"/>
+        <geography location="RER" text="Manufacturing data reflects an average material consumption of wagons used in Europe. "/>
+        <technology text="The modelled goods wagons represent different technologies currently in use."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-07-23T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Data for three wagon types is used as an estimate for Europe" productionVolume="na" samplingProcedure="The data of the material composition and energy consumption is based on oral communication with an expert of one company. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bauer C., Dones R., Tuchschmid M." firstAuthor="Spielmann M." nameOfEditors="-" number="149188" placeOfPublications="Duebendorf, Villigen and Uster, CH" publisher="Swiss Centre for LCI, PSI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Spielmann M., Dones R; Bauer C. (2007) Life Cycle Inventories of Transport Services. Final report ecoinvent Data v2.0. Volume: 14. Issue: 0. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Spielmann M.\nOther authors: Dones R; Bauer C.\nYear: 2007\nTitle of anthology: Final report ecoinvent Data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 14\nIssue No: 0\n" title="2007 - Transport services - Spielmann" titleOfAnthology="Final report ecoinvent Data v2.0" volumeNo="14" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="139311"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="139311" referenceToPublishedSource="149188"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Michael Spielmann" number="139311" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" generalComment="Europe&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="RER" meanValue="1.0" name="Goods wagon" number="301872" subCategory="train\operations\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(4,3,3,3,1,4); own calculations based on oral communication&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="9220.0" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.3600000000000003" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(4,3,3,3,1,4); own calculations based on oral communication&#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="rubbers" location="RER" meanValue="10.0" name="Synthetic rubber, at plant" number="460936" standardDeviation95="1.3600000000000003" subCategory="rubbers" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="; own calculations based on oral communication&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="21000.0" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.3600000000000003" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(4,3,3,3,1,4); standard value&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="33200.0" name="Heat, waste" number="46930" standardDeviation95="1.3600000000000003" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); standard distance&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="2210" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.2800000000000002" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(4,3,3,3,1,4); own calculations based on oral communication&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="insulation" location="CH" meanValue="32.0" name="Rock wool, packed, at plant" number="521350" subCategory="insulation" uncertaintyType="0" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="(4,3,3,3,1,4); own calculations based on oral communication&#10;" infrastructureProcess="false" localCategory="wood" localSubCategory="wooden materials\new processes\other material" location="RER" meanValue="1.92" name="Glued laminated timber, average glue mix, at plant" number="371977" standardDeviation95="1.3600000000000003" subCategory="wooden materials\new processes\other material" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); standard distance&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="4430.0" name="Transport, freight, rail" number="149864" standardDeviation95="2.2800000000000002" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(4,3,3,3,1,4); own calculations based on oral communication&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="paints" location="RER" meanValue="106.0" name="Alkyd paint, white, 60% in solvent, at plant" number="472043" standardDeviation95="1.3600000000000003" subCategory="paints" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,3,3,3,1,4); own calculations based on oral communication&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="1070.0" name="Aluminium, production mix, at plant" number="436582" standardDeviation95="1.3600000000000003" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,3,3,3,1,4); own calculations based on oral communication&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="46000.0" name="Light fuel oil, burned in industrial furnace 1MW, non-modulating" number="244929" standardDeviation95="1.3600000000000003" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="445456" timestamp="2024-12-13T11:21:41.279+01:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="wood" datasetRelatesToProduct="true" generalComment="This dataset supplies 1 kilogram of preprocessed spruce wood before entering the pyrolysis process. The wood goes through drying and chipping. The energy requirements for drying the feedstock depend on its moisture content. The moisture level is assumed to be 40% (based on data from Tisserant, A., Morales, M., Cavalett, O., O'Toole, A., Weldon, S., Rasse, D. P., &amp; Cherubini, F. (2022). Life-cycle assessment to unravel co-benefits and trade-offs of large-scale biochar deployment in Norwegian agriculture. Resources, Conservation and Recycling, 179, 106030. https://doi.org/10.1016/j.resconrec.2021.106030) with a conversion factor to dry ton of 0.6. The feedstock is assumed to be dried to zero moisture content to be on the safe side in accounting for the energy requirements of evaporating water at all stages. Rotary drier requirements: 0.1 GJ electricity/tonnes of water and 2.7 GJ thermal energy/tonnes of water. Electricity and heat requirements are taken from Manouchehrinejad, M., &amp; Mani, S. (2019). Process simulation of an integrated biomass torrefaction and pelletization (iBTP) plant to produce solid biofuels. Energy Conversion and Management: X, 1, 100008. https://doi.org/10.1016/j.ecmx.2019.100008. Electric chipping requirements: 0.0005 GJ/ MJfsdry. The requirements for electric chipping are taken from Kuptz, D., &amp; Hartmann, H. (2014). Throughput Rate and Energy Consumption During Wood Chip Production in Relation to Raw Material, Chipper Type and Machine Setting. https://doi.org/10.5071/22ndEUBCE2014-2CO.1.5. The distance from the collection point to the plant is assumed to be 100km.&#10;&#10;Source: Hoeskuldsdottir, Gudrun. 2022. Life Cycle Assessment of Biochar to Soil Systems: A Parametric Analysis. Masterâ€™s thesis, Swiss Federal Institute of Technology ZÃ¼rich and Paul Scherrer Institute.&#10;UUID: fe3aeb88-d6f1-316a-8e08-c57091d6c724" infrastructureProcess="false" localCategory="wood" localName="Spruce wood, chipping and drying" localSubCategory="wooden materials\new processes\other material" name="Spruce wood, chipping and drying" subCategory="wooden materials\new processes\other material" unit="kg"/>
+        <geography location="CH"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024</startDate>
+          <endDate>2024</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2024-12-13T10:28:34.234+01:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Pierryves Padey, Telephone: +41 58 462 93 11, E-mail: pierryves.padey@bafu.admin.ch, Company: Federal Office for the Environment, Country: CH" proofReadingValidator="168876"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="FOEN" countryCode="CH" email="anonymised" name="Pierryves Padey" number="168876" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="wood" generalComment="" infrastructureProcess="false" localCategory="wood" localSubCategory="wooden materials\new processes\other material" location="CH" meanValue="1.0" name="Spruce wood, chipping and drying" number="445456" subCategory="wooden materials\new processes\other material" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="Pedigree: (1,1,4,5,4).&#10;" infrastructureProcess="false" localCategory="wood" localSubCategory="wooden materials\new processes\other material" location="DE" meanValue="1.0" name="Cleft timber, spruce, sustainable forest management, measured as dry mass, at forest road" number="418192" subCategory="wooden materials\new processes\other material" uncertaintyType="0" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="Heat input for drying (2,4,1,3,1,5,1.05)" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="1.08" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.2400000000000002" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="{3;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.015205547" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.3959999999999997" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Distribution: 1.0 kg over 100.0 km." infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="0.1" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.208" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

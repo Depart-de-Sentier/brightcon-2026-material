@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="481999" timestamp="2023-08-28T15:03:10.166+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity by fuel" datasetRelatesToProduct="true" generalComment="Sources: Baumgartner &amp; Doka (1998), Konersmann &amp; Jean-Baptiste (2000).;&#10;UUID: 3233c113-410b-3bc3-8068-5aa3f28d9e92" includedProcesses="This dataset describes the production of electricity from an average small hydropower plant. Furthermore, the infrastructure and the potential energy of the water are included. Information about the consumption of lubricating oil as well as the land transformation and occupation is missing." infrastructureProcess="false" localCategory="electricity by fuel" localName="Electricity, hydropower, at small hydropower plant" localSubCategory="hydro\reservoir" name="Electricity, hydropower, at small hydropower plant" subCategory="hydro\reservoir" unit="kWh"/>
+        <geography location="RER" text="Central Europe but also valid for other continents."/>
+        <technology text="Average small hydropower plant. The average efficiency is 0.82. Annual production volume: 1.18GWh/a."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>1998-01</startDate>
+          <endDate>2011-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2012-10-22T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Flury K." nameOfEditors="-" number="136376" placeOfPublications="Uster, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Flury K., Frischknecht R. (2011) Life Cycle Inventory of hydropower. Project report. Volume: 349. ESU-services Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: Flury K.\nOther authors: Frischknecht R.\nYear: 2011\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: ESU-services Ltd.\nVolume No: 349\n" title="2012 - LCI hydroelectric power generation - Flury" titleOfAnthology="Project report" volumeNo="349" year="2012"/>
+        <validation proofReadingDetails="Proof reading validation: 22.10.2012; Other validation: \\Server\e\ESU-Docs\Projektablage\349 Sachbilanzen erneuerbare Energie DE\DatenErgebnisse\[Ecospold_smallhydro_CH_v2.1.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136375"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136375" referenceToPublishedSource="136376"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Karin Flury" number="136375" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity by fuel" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="RER" meanValue="1.0" name="Electricity, hydropower, at small hydropower plant" number="481999" subCategory="hydro\reservoir" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(4,3,3,3,3,3,BU:1.05); Potenzielle Energie Wasser; literature&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="3.79" name="Energy, potential (in hydropower reservoir), converted" number="80139" standardDeviation95="1.600941855" subCategory="in water" uncertaintyType="1" unit="MJ">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,3,3,3,3,3,BU:3); literature&#10;" infrastructureProcess="true" localCategory="electricity by fuel" localSubCategory="hydro\reservoir\infrastructure" location="RER" meanValue="1.288936627E-8" name="Small hydropower plant" number="175259" standardDeviation95="3.7324928320000006" subCategory="hydro\reservoir\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

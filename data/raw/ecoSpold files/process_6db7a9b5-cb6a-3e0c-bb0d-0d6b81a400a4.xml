@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="431487" timestamp="2023-08-28T15:03:41.009+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="construction materials" datasetRelatesToProduct="true" generalComment="This dataset reflects granite milling and is based on the ecoinvent dataset &quot;limestone, milled, loose, at plant&quot; and scaled based on the ratio of energy consumption for granite and limestone processing reported by the natural stone council.;&#10;UUID: 6db7a9b5-cb6a-3e0c-bb0d-0d6b81a400a4" includedProcesses="This dataset includes the material and energy use of milling 1 kg of granite in Switzerland." infrastructureProcess="false" localCategory="construction materials" localName="Granite, natural stone council, milled, loose, at plant" localSubCategory="others" name="Granite, natural stone council, milled, loose, at plant" subCategory="others" unit="kg"/>
+        <geography location="CH" text="Data from North America modelled with Swiss and European datasets."/>
+        <technology text="Typical technology for average Swiss production"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2009-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2015-08-13T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="0" productionVolume="na" samplingProcedure="unknown " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="The Natural Stone Council" nameOfEditors="-" number="320855" placeOfPublications="USA" publisher="The Natural Stone Council" sourceNumber="0" sourceType="3" text="The Natural Stone Council (2009) A Life-Cycle Inventory of Granite Dimension Stone Quarrying and Processing. Project report. The Natural Stone Council. USA.\nType: Separate publication\nSource: Report\nFirst author: The Natural Stone Council\nYear: 2009\nTitle of anthology: Project report\nPlace of publication: USA\nPublisher: The Natural Stone Council\nOriginal title: A Life-Cycle Inventory of Granite Dimension Stone Quarrying and Processing\n" title="2009 - LCI granite dim. stone quarrying and proc. - NSC" titleOfAnthology="Project report" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: 13.08.2015; Other validation: \\SRV01\ESU-Docs\Projekte laufend\489 Erweiterung KBOB-Liste BFE\EcoSpold\Küche\[489_Granit_v0.2.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138233"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138233" referenceToPublishedSource="320855"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Philippe Stolz" number="138233" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="construction materials" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="construction materials" localSubCategory="others" location="CH" meanValue="1.0" name="Granite, natural stone council, milled, loose, at plant" number="431487" subCategory="others" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(3,3,2,3,3,2,BU:1.05); other fuel; Natural Stone Council 2009, LCI Naturals Stones&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="0.075296" name="Heat, light fuel oil, at boiler 100kW, non-modulating" number="453806" standardDeviation95="1.2471000000000003" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction materials" generalComment="(1,1,1,1,1,1,BU:1.05); ; Natural Stone Council 2009, LCI Naturals Stones&#10;" infrastructureProcess="false" localCategory="construction materials" localSubCategory="others" location="CH" meanValue="1.0" name="Granite, natural stone council, crushed, for mill" number="541932" standardDeviation95="1.0500000000000003" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,3,3,3,3,3,BU:1.05); according to ecoinvent limestone; ecoinvent report No. 7&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.01536" name="Heat, waste" number="46930" standardDeviation95="1.2748000000000002" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,3,2,3,3,2,BU:1.05); electricity; Natural Stone Council 2009, LCI Naturals Stones&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.0042667" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.2276" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="(3,5,3,3,3,5,BU:3); according to ecoinvent limestone; Natural Stone Council 2009, LCI Naturals Stones&#10;" infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="2.25E-4" name="Industrial machine, heavy, unspecified, at plant" number="563077" standardDeviation95="3.1618999999999997" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

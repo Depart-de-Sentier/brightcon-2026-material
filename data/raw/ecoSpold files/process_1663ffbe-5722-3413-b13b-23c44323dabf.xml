@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="523530" timestamp="2023-08-28T15:03:11.831+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="The functional unit represent 1 kg of solid zinc oxide powder. Large uncertainty of the process data due to weak data on the production process and missing data on process emissions.;&#10;CAS number: 001314-13-2; &#10;Formula: ZnO; &#10;Synonyms: zinc white; &#10;UUID: 1663ffbe-5722-3413-b13b-23c44323dabf" includedProcesses="Raw materials and chemicals used for production, transport of materials to manufacturing plant, estimated emissions to air and water from production (incomplete), estimation of energy demand and infrastructure of the plant (approximation). Solid wastes omitted." infrastructureProcess="false" localCategory="chemicals" localName="Zinc oxide, at plant" localSubCategory="inorganic" name="Zinc oxide, at plant" subCategory="inorganic" unit="kg"/>
+        <geography location="RER" text="&lt;null&gt;"/>
+        <technology text="Production out of secondary zinc materials by mean of the indirect (or French) way. The emissions to air (1 wt.% of raw material input) and water were estimated using mass balance."/>
+        <timePeriod dataValidForEntirePeriod="true" text="data of published literature">
+          <startDate>2004-01</startDate>
+          <endDate>2004-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-11-08T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see generalComment" productionVolume="na" samplingProcedure="Process data based on few literature sources. Energy demand based on approximation from large chemical plant. Process emissions based on estimations only. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Classen M., Lehmann M., Scharnhorst W." firstAuthor="Hischier R." nameOfEditors="-" number="148924" placeOfPublications="Duebendorf and St. Gallen, CH" publisher="Swiss Centre for LCI, Empa - TSL" sourceNumber="0" sourceType="4" text="Hischier R., Classen M., Lehmann M., Scharnhorst W. (2007) Life Cycle Inventories of Electric and Electronic Equipment - Production, Use &amp; Disposal. Final report ecoinvent Data v2.0. Volume: 18. Swiss Centre for LCI, Empa - TSL. Duebendorf and St. Gallen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Hischier R.\nOther authors: Classen M., Lehmann M., Scharnhorst W.\nYear: 2007\nTitle of anthology: Final report ecoinvent Data v2.0\nPlace of publication: Duebendorf and St. Gallen, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 18\nOriginal title: Life Cycle Inventories of Electric and Electronic Equipment - Production, Use &amp; Disposal\n" title="2007 - LCI electric and electronic equipment - Hischier" titleOfAnthology="Final report ecoinvent Data v2.0" volumeNo="18" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed.; Other validation: none;" proofReadingValidator="138642"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136699"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136699" referenceToPublishedSource="148924"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Juergen Sutter" number="138642" telephone="anonymised"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="1.0" name="Zinc oxide, at plant" number="523530" subCategory="inorganic" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,na,na,na,1,5,1); calculated from vaporization enthalpy - assuming a yield of 50%&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="36.428" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.3000999999999998" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to air" generalComment="estimation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="4.23E-4" name="Zinc" number="666" standardDeviation95="1.8752000000000004" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na,5); standard values&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.16905" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,4,3,1,5,9); Estimation, based on chemical production site&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="4.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.1826999999999996" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(5,5,1,1,4,5,2); estimated with data from a large chem. Plant&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.33333" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.8788" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na,5); standard values&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.084526" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,5,1,1,4,5,13); calculated from electricity input&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.2" name="Heat, waste" number="46930" standardDeviation95="1.8788" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,na,na,na,na,na,3); estimation, based on a process yield of 95%&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="waste metals" location="RER" meanValue="0.84526" name="Iron scrap, at plant" number="275624" standardDeviation95="1.2077" subCategory="waste metals" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="296581" timestamp="2023-08-28T15:03:14.500+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="metals" datasetRelatesToProduct="true" generalComment="Large uncertainties exist for data on energy use and SF6 emissions during magnesium production. This inventory describes an assumption for the average production.;&#10;CAS number: 007439-95-4; &#10;Formula: Mg; &#10;UUID: a8da43dc-78aa-3945-a75e-474b4e87c7fb" includedProcesses="Resource extraction until gate of the factory including infrastructure." infrastructureProcess="false" localCategory="metals" localName="Magnesium, at plant" localSubCategory="non ferro" name="Magnesium, at plant" subCategory="non ferro" unit="kg"/>
+        <geography location="RER" text="Data from literature and for 1 producer"/>
+        <technology text="Production of magnesium from seawater and dolomite in a modern production plant based on data from a Norwegian producer."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Environmental report">
+          <startDate>1998-01</startDate>
+          <endDate>1998-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-07-16T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="From 1 producer to average Europe, energy uses disaggregated from cumulated figures. Type of electricity mix not known." percent="30" productionVolume="372000 tonnes in 1998" samplingProcedure="Environmental data for an important producer " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Blaser S., Scharnhorst W., Tuchschmid M., Jungbluth N., Faist Emmenegger M." firstAuthor="Classen M." nameOfEditors="-" number="148415" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Classen M., Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M. (2008) Life Cycle Inventories of Metals. Final report ecoinvent data v2.1. Volume: 10. Issue: 0. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Classen M.\nOther authors: Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M.\nYear: 2008\nTitle of anthology: Final report ecoinvent data v2.1\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 10\nIssue No: 0\n" title="2009 - LCI metals - Classen" titleOfAnthology="Final report ecoinvent data v2.1" volumeNo="10" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="139614"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136351"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136351" referenceToPublishedSource="148415"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="metals" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="1.0" name="Magnesium, at plant" number="296581" subCategory="non ferro" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(4,1,3,1,1,3); Calculation from charcoal use, 2.93kg/kg&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.32" name="Carbon dioxide, biogenic" number="80535" standardDeviation95="1.2400000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="002551-62-4" category="emissions to air" generalComment="Estimation, large variations for different producers&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.0029" name="Sulfur hexafluoride" number="90521" standardDeviation95="4.099999999999999" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(1,3,1,3,4,5); Data from environmental report, type of sludges not clear&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="0.0574" name="Disposal, separator sludge, 90% water, to hazardous waste incineration" number="203157" standardDeviation95="1.5699999999999998" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distance 50km/100km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.143" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.1" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(1,3,1,3,1,5); Data from env. report&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="248.0" name="Tap water, at user" number="227940" standardDeviation95="1.22" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distance 600km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.272" name="Transport, freight, rail" number="149864" standardDeviation95="2.1" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="(1,3,1,3,3,5); Estimation for dolomite use&#10;" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="1.95" name="Limestone, milled, packed, at plant" number="585958" standardDeviation95="1.31" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="desaggregated from cumulative energy demand with 82% conversion efficiency, high variation of literature data, type of electricity mix varies for different producers&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="NORDEL" meanValue="21.5" name="Electricity, medium voltage, production NORDEL, at grid" number="576431" standardDeviation95="1.2500000000000002" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to water" generalComment="(1,3,1,3,1,3); Data from env. report&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="2.48E-8" name="Chlorinated solvents, unspecified" number="84447" standardDeviation95="2.0100000000000002" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,3,1,3,1,5); Estimation based on literature data&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="0.0029" name="Sulphur hexafluoride, liquid, at plant" number="522659" standardDeviation95="1.22" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007647-01-0" category="emissions to air" generalComment="(1,3,1,3,1,3); Data from env. report&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.002" name="Hydrogen chloride" number="25789" standardDeviation95="2.0100000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,4,1,3,1,5); 50a of uses with a production of 100000t/a&#10;" infrastructureProcess="true" localCategory="metals" localSubCategory="non ferro\production\infrastructure" location="RER" meanValue="2.0E-10" name="Magnesium plant" number="199858" standardDeviation95="3.1" subCategory="non ferro\production\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="001746-01-6" category="emissions to air" generalComment="(1,3,1,3,1,3); Data from env. report&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="2.33E-11" name="Dioxin, 2,3,7,8 Tetrachlorodibenzo-p-" number="29923" standardDeviation95="3.01" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007446-09-5" category="emissions to air" generalComment="(1,3,1,3,1,3); Data from env. report&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.00242" name="Sulfur dioxide" number="26215" standardDeviation95="2.0100000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(1,3,1,3,4,5); Environmental report, type of waste not clear&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="CH" meanValue="0.186" name="Disposal, decarbonising waste, 30% water, to residual material landfill" number="528778" standardDeviation95="1.5699999999999998" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="desaggregated from cumulative energy demand with assumption of 67% conversion efficiency, variation of literature data&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="38.7" name="Natural gas, burned in industrial furnace 1MWth" number="262422" standardDeviation95="2.0000000000000004" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(4,1,1,1,1,3); Calculated from electricity&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="49.7" name="Heat, waste" number="46930" standardDeviation95="1.22" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,na,na,1,na,na); Imports of Mg from China, imports of charcoal from overseas 10000km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="OCE" meanValue="6.2" name="Transport, transoceanic freight ship" number="208374" standardDeviation95="2.05" subCategory="ship" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(1,3,1,3,3,3); Data from env. report&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.752" name="Magnesium" number="19016" standardDeviation95="1.22" subCategory="in water" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(1,3,1,3,3,5); Data from env. report&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="0.248" name="Treatment, sewage, from residence, to wastewater treatment, class 2" number="538378" standardDeviation95="1.31" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,4,1,3,1,5); Literature&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="GLO" meanValue="0.45" name="Charcoal, at plant" number="479589" standardDeviation95="1.26" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

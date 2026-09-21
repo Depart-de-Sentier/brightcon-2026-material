@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="219622" timestamp="2022-05-09T17:32:10">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electricity" datasetRelatesToProduct="true" generalComment="Distribution losses are taken from Itten, Frischknecht and Stucki (2014): LCI of Electricity Mixes and Grid.; UUID:c4a92617-9f99-3d7b-95c0-15fb110b80ad" includedProcesses="This dataset describes the distribution of the consumer mix 2019 in Switzerland and includes the low voltage network infrastructure, transmission losses and air pollutant emissions. Not included are electricity losses due to building distribution." infrastructureIncluded="true" infrastructureProcess="false" localCategory="electricity" localName="Electricity, low voltage, at grid" localSubCategory="supply mix" name="Electricity, low voltage, at grid" subCategory="supply mix" unit="kWh">
+          <synonym>0</synonym>
+        </referenceFunction>
+        <geography location="CH" text="Switzerland"/>
+        <technology text="Average technology"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications">
+          <startDate>1992</startDate>
+          <endDate>2020</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2022-05-09T17:32:10" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Some generic datasets from ecoinvent have been used." samplingProcedure="Statistics" uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Krebs L." number="172680" placeOfPublications="Bern, CH" publisher="treeze Ltd." sourceType="3" text="Report" title="2021 - Energy label for passenger cars - Stolz" titleOfAnthology="Project report" volumeNo="754" year="2021"/>
+        <validation otherDetails="G:\Projekte laufend\754 Aktualisierung Energieetikette 2022 BFE\EcoSpold\Strommix Schweiz 2020\[754-Electricity-Mixes-Attributional-CH-v0.4.xlsx]X-Process" proofReadingDetails="09.05.2022" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136374" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="1" person="136374" referenceToPublishedSource="172680"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="1" name="Electricity, low voltage, at grid" number="219622" subCategory="supply mix" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,1,2,1,1,3,BU:1.05); Specific network losses estimated based on statistics; Itten, Frischknecht &amp; Stucki 2014" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="1.0564" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.129" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,2,5,3,1,5,BU:3); Assumed service life of the electricity grid: 40a; Itten, Frischknecht &amp; Stucki 2014" infrastructureProcess="true" localCategory="electricity" localSubCategory="distribution" location="CH" meanValue="8.7405E-8" name="Distribution network, electricity, low voltage" number="397602" standardDeviation95="3.2848" subCategory="distribution" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,3,3,1,5,BU:1.05); Estimation based on SF6 emissions; Itten, Frischknecht &amp; Stucki 2014" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="3.0773E-9" name="Sulphur hexafluoride, liquid, at plant" number="522659" standardDeviation95="1.2502" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(2,4,1,1,1,5,BU:1.05); Estimation based on network losses; " meanValue="0.010144" name="Heat, waste" number="30793" standardDeviation95="1.2423" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,1,1,1,5,BU:1.05); Estimation based on network losses; " meanValue="0.19273" name="Heat, waste" number="46930" standardDeviation95="1.2423" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,3,3,1,5,BU:1.5); Estimation based on national statistics from Switzerland with an emission rate of 1.0%; Itten, Frischknecht &amp; Stucki 2014" meanValue="3.0773E-9" name="Sulfur hexafluoride" number="90521" standardDeviation95="1.5846" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="291052" timestamp="2023-08-28T15:03:21.044+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="agricultural" datasetRelatesToProduct="true" generalComment="The module includes the use of energy and auxiliary materials for the operation of marine screw agitator. The functional unit is m3 slurry.;&#10;UUID: 23d239a1-9923-3c51-97bb-8692725b196d" includedProcesses="The inventory takes into account the energy and auxiliary materials like water, lubricating oil and cleaning agents. Also included is the use of the infrastructure. Not taken into account were the direct emission of the animal husbandry, fodder production and produced waste water." infrastructureProcess="false" localCategory="agricultural" localName="Slurry store and processing, operation" localSubCategory="operations" name="Slurry store and processing, operation" subCategory="operations" unit="m3"/>
+        <geography location="CH" text="&lt;null&gt;"/>
+        <technology text="The use of energy and auxiliary materials are calculated for the conditions defined in the infrastructure-module with literature data and experts knowledge."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Period indicated in the reference. ">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-08-06T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="Existing slurry store volume in CH in 1996: 14'847'685 m3." samplingProcedure="In the use of energy and auxiliary materials are big differences between the farms. The inventory is based on mean values from CH and WEU. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Kaegi T." firstAuthor="Nemecek T." nameOfEditors="0" number="138643" placeOfPublications="Duebendorf and Zuerich, CH" publisher="Swiss Centre for LCI, ART" sourceNumber="0" sourceType="4" text="Nemecek, T., Kägi, T., Blaser, S. (2007) Life Cycle Inventories of Agricultural Production Systems. Ecoinvent report version 2.0. Editors: 0. Volume: 15. Swiss Centre for LCI, ART. Duebendorf and Zurich, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Nemecek, T.\nOther authors: Kägi, T., Blaser, S.\nYear: 2007\nName of editors: 0\nTitle of anthology: Ecoinvent report version 2.0\nPlace of publication: Duebendorf and Zurich, CH\nPublisher: Swiss Centre for LCI, ART\nVolume No: 15\n" title="2007 - LCI agricultural prod. systems - Nemecek" titleOfAnthology="Ecoinvent report version 2.0" volumeNo="15" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136699"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="140836"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="140835" referenceToPublishedSource="138643"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Dunja Dux" number="140835" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Silvio Blaser" number="140836" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="agricultural" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="operations" location="CH" meanValue="1.0" name="Slurry store and processing, operation" number="291052" subCategory="operations" uncertaintyType="0" unit="m3">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,1,1,1,na)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.35" name="Heat, waste" number="46930" standardDeviation95="1.07" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,2,1,1,1,na)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.375" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.07" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(2,2,1,1,1,na)&#10;" infrastructureProcess="true" localCategory="agricultural" localSubCategory="operations\infrastructure" location="CH" meanValue="3.47E-5" name="Slurry store and processing" number="172521" standardDeviation95="2.9999999999999996" subCategory="operations\infrastructure" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

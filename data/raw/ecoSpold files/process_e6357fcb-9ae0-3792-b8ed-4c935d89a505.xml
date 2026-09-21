@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="168884" timestamp="2024-12-13T11:21:41.291+01:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="This dataset represents the production of 1 kilogram of biochar through slow pyrolysis. Biochar yield of 27.9% (of the dry feedstock), bio-oil (55%) and gas (17%). Annual plant capacity: 10'000 t fresh feedstock = 6000 t dry feedstock. The energy needed for pyrolysis, excluding drying (273.59 GJ electricity and 1316.65 GJ of thermal energy required to produce 1673.33 t biochar), was back-calculated from data in Tisserant, A., Morales, M., Cavalett, O., O'Toole, A., Weldon, S., Rasse, D. P., &amp; Cherubini, F. (2022). Life-cycle assessment to unravel co-benefits and trade-offs of large-scale biochar deployment in Norwegian agriculture. Resources, Conservation and Recycling, 179, 106030. https://doi.org/10.1016/j.resconrec.2021.106030, using their supplementary information. Using the cutoff approach for the byproducts.&#10;&#10;The yield of biochar is calculated on a dry ash-free basis (DAF) using the following formula: 0.126+0.273*(FSlignin/100)+0.539*EXP(-0.004*Tp, C) where:&#10;- FS lignin represents the Lignin content of the feedstock, which is expressed as a percentage.&#10;- Tp, C is pyrolysis temperature (Â°C)&#10;- exp(âˆ’0.004â‹…T p, C ) represents an exponential decay factor (biochar yield decreases with increasing pyrolysis temperature)&#10;&#10;The carbon content of biochar is calculated as a fraction of the dry ash-free biochar using the following formula: 0.93âˆ’0.92â‹…exp(âˆ’0.0042â‹…T p, C) where Tp, C is pyrolysis temperature (Â°C) and exp(âˆ’0.0042â‹…Tp, C): Exponential decay (carbon content stabilizes at higher temperatures)&#10;&#10;The oxygen content of biochar is calculated as a fraction of the dry ash-free biochar using the following formula: âˆ’0.0041+0.1â‹…exp(âˆ’0.0024â‹…T p, C ). exp(âˆ’0.0024â‹…T p, C) represents an exponential decay (oxygen content decreases with increasing pyrolysis temperature).&#10;&#10;The hydrogen content of biochar is calculated using the following formula: 0.07+0.85â‹…exp(âˆ’0.0048â‹…T p, C)&#10;&#10;The gaseous yields such as CO, H2, CH4, C2H2 are also calculated using the respective formulas:&#10;(CO) (0.043/(1+exp(17.2âˆ’0.03â‹…T p,K )))+(0.317/(1+exp(10.9âˆ’0.01â‹…T p,K)))&#10;(H2) 0.0295â‹…(1âˆ’exp(âˆ’0.0035â‹…T p,K ))^62.98&#10;(CH4) 0.0782â‹…(1âˆ’exp(âˆ’0.00338â‹…T p,K))^30.15&#10;(C2H2) 0.036â‹…(1âˆ’exp(âˆ’0.00522â‹…T p, K ))^154.97, pyrolysis temperature in this case is expressed in Kelvin.&#10; A matrix is used to allocate the elemental components (C, O, H) of the feedstock into the pyrolysis products: tar, COâ‚‚, and Hâ‚‚O. The use of the matrix ensures mass conservation for each element (C, O, H) and allows the calculation of yields for tar, COâ‚‚, and Hâ‚‚O based on the initial feedstock composition. The calculations result in bio-oil yields (55% yield, DAF) with an HHV of 16.3 GJ/Mg and of the pyrolysis Gas (17% yield, DAF) with an HHV of 6.8 GJ/Mg.&#10;&#10;Source: Hoeskuldsdottir, Gudrun. 2022. Life Cycle Assessment of Biochar to Soil Systems: A Parametric Analysis. Masterâ€™s thesis, Swiss Federal Institute of Technology ZÃ¼rich and Paul Scherrer Institute.&#10;UUID: e6357fcb-9ae0-3792-b8ed-4c935d89a505" infrastructureProcess="false" localCategory="chemicals" localName="Biochar, from spruce wood pyrolysis" localSubCategory="gases\transformation" name="Biochar, from spruce wood pyrolysis" subCategory="gases\transformation" unit="kg"/>
+        <geography location="CH"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024</startDate>
+          <endDate>2024</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2024-12-13T10:53:38.896+01:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Pierryves Padey, Telephone: +41 58 462 93 11, E-mail: pierryves.padey@bafu.admin.ch, Company: Federal Office for the Environment, Country: CH" proofReadingValidator="168876"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="FOEN" countryCode="CH" email="anonymised" name="Pierryves Padey" number="168876" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="not defined" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases\transformation" location="CH" meanValue="1.0" name="Biochar, from spruce wood pyrolysis" number="168884" subCategory="gases\transformation" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="{3;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.045416806" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.3959999999999997" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="Heat input for pyrolysis (2,4,1,3,1,5,1.05)" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="0.786846164" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.2400000000000002" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="Used as a proxy for a pyrolysis plant." infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\cogeneration\power unit\infrastructure" location="CH" meanValue="2.98806E-8" name="Mini CHP plant, common components for heat+electricity" number="316004" standardDeviation95="1.0" subCategory="natural gas\cogeneration\power unit\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="Oven dry spruce wood {3;5;1;2;3;5;1.05;}." infrastructureProcess="false" localCategory="wood" localSubCategory="wooden materials\new processes\other material" location="CH" meanValue="1.62" name="Spruce wood, chipping and drying" number="445456" standardDeviation95="1.3959999999999997" subCategory="wooden materials\new processes\other material" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

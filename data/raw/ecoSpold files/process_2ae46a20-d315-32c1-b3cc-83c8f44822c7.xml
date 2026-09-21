@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="219186" timestamp="2024-07-09T13:23:19.613+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="pipeline" datasetRelatesToProduct="true" generalComment="Downscaled from a hydrogen transmission pipeline from Tsiklios et al. 2022. Estimated mass of hydrogen circulated over 40 years: 0.22 Mtons. For more information, refer to Sacchi, R. and Bauer, C. LCA of Power-to-X processes and applications in the residential sector. Paul Scherrer Institut, 2023 for more information. Distribution pipeline (downscaled from transmission pipeline). Lifetime [years]: 40, Operating pressure range [bar]: 19, Annual operating hours [hours]: 8,000. Hydrogen circulated per lifetime [Mt]: 0.22, Mass flow [kg/s]: 0.19, Outer diameter [m]: 0.1, Inner diameter [m]: 0.1, Inner coating layer [micro-m]: 65, Steel layer [mm]: 27.09 * (5/55) = 4.5, Epoxy resin layer [mm]: 0.15 * (5/55) = 0.03, HDPE layer [mm]: 3 * (5/55) = 0.5. Source: C. Tsiklios, M. Hermesmann, T.E. MÃ¼ller, Hydrogen transport in large-scale transmission pipeline networks: Thermodynamic and environmental assessment of repurposed and new pipeline configurations, Applied Energy, 2022, https://doi.org/10.1016/j.apenergy.2022.120097&#10;&#10; UUID: 2ae46a20-d315-32c1-b3cc-83c8f44822c7" infrastructureProcess="false" localCategory="pipeline" localName="Pipeline, hydrogen, low pressure distribution network" localSubCategory="infrastructure" name="Pipeline, hydrogen, low pressure distribution network" subCategory="infrastructure" unit="km"/>
+        <geography location="CH"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024-01</startDate>
+          <endDate>2024-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2023-10-28T00:00:00.000+02:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Rolf Frischknecht, Telephone: 0041 44 940 61 91, E-mail: frischknecht@treeze.ch, Company: treeze, Country: CH" proofReadingValidator="136749"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="pipeline" generalComment="not defined" infrastructureProcess="false" localCategory="pipeline" localSubCategory="infrastructure" location="CH" meanValue="1.0" name="Pipeline, hydrogen, low pressure distribution network" number="219186" subCategory="infrastructure" uncertaintyType="0" unit="km">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="pipeline" generalComment="{5;5;5;5;5;5;3;}" infrastructureProcess="false" localCategory="pipeline" localSubCategory="infrastructure" location="CH" meanValue="1.0" name="Hydrogen distribution pipeline installation" number="552142" standardDeviation95="4.247" subCategory="infrastructure" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="pipeline" generalComment="{5;5;5;5;5;5;3;}" infrastructureProcess="false" localCategory="pipeline" localSubCategory="infrastructure" location="CH" meanValue="1.0" name="Hydrogen distribution pipeline construction" number="449271" standardDeviation95="4.247" subCategory="infrastructure" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="emissions to air" formula="H2O" generalComment="{5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="air" localSubCategory="lower stratosphere + upper troposphere" meanValue="280.5" name="Water" number="61571" standardDeviation95="2.565" subCategory="stratosphere + troposphere" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" formula="CORINE x" generalComment="{5;5;5;5;5;5;2;}" infrastructureProcess="false" localCategory="Resource" localSubCategory="land" meanValue="0.0249" name="Transformation, from unknown" number="54270" standardDeviation95="3.217" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" formula="CORINE 21" generalComment="{5;5;5;5;5;5;2;}" infrastructureProcess="false" localCategory="Resource" localSubCategory="land" meanValue="20.0" name="Transformation, to arable land, unspecified use" number="129628" standardDeviation95="3.217" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" formula="CORINE 121b" generalComment="{5;5;5;5;5;5;2;}" infrastructureProcess="false" localCategory="Resource" localSubCategory="land" meanValue="0.0249" name="Transformation, to industrial area, vegetation" number="85687" standardDeviation95="3.217" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="{5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="resource" localSubCategory="in water" meanValue="1.87" name="Water, unspecified natural origin/m3" number="64511" standardDeviation95="2.565" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="use and maintenance {5;5;5;5;5;5;2;}" infrastructureProcess="false" localCategory="transport systems" localSubCategory="helicopter" location="CH" meanValue="0.104" name="Transport, helicopter, single-engine, LTO cycle" number="291877" standardDeviation95="3.217" subCategory="helicopter" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" formula="CORINE 133" generalComment="{5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="Resource" localSubCategory="land" meanValue="33.0" name="Occupation, construction site" number="110833" standardDeviation95="2.565" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="use and maintenance {5;5;5;5;5;5;2;}" infrastructureProcess="false" localCategory="transport systems" localSubCategory="helicopter" location="CH" meanValue="0.26" name="Transport, freight helicopter, single-engine" number="353681" standardDeviation95="3.217" subCategory="helicopter" uncertaintyType="1" unit="hr">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" formula="CORINE 31" generalComment="{5;5;5;5;5;5;2;}" infrastructureProcess="false" localCategory="Resource" localSubCategory="land" meanValue="20.0" name="Transformation, from forest, unspecified" number="81553" standardDeviation95="3.217" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="{5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="water" meanValue="1589.0" name="Water" number="8" standardDeviation95="2.565" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="Others" generalComment="{5;5;5;5;5;5;3;}" infrastructureProcess="false" localCategory="Others" localSubCategory="unspecified" location="CH" meanValue="1.0" name="Treatment of hydrogen distribution pipeline" number="148409" standardDeviation95="4.247" subCategory="unspecified" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="1776.5" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

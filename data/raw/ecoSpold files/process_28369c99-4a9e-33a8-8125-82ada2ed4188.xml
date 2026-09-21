@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="265085" timestamp="2023-08-28T15:02:54.137+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="construction" datasetRelatesToProduct="true" generalComment="The raw materials per kg ready mix product are mixed in following ratio: sand: 0.55kg, clay: 0.25kg, water: 0.2kg. After mixing it is internally transported to the packing installation and packed. Can be used without adding water. No direct process emissions are taken into account as they play a subordinate role compared to the emissions of the raw material production (e.g. drying of silica sand) and because no data are available. For inventoring the infrastructure, a yearly production amount of 150'000 tons is assumed. The lifespan of the machines is assumed to be 20 years.;&#10;Synonyms: Lehmmörtel; &#10;UUID: 28369c99-4a9e-33a8-8125-82ada2ed4188" includedProcesses="Includes the whole manufacturing process to produce clay plaster (raw material provision, raw material mixing, packing, and storage), transports to plant, and infrastructure. No requirements for administration are included. No additional buildings and land-use have been taken into account as it is assumed that the mixing process takes place in an existing building of the sand/cement industry or on the construction site" infrastructureProcess="false" localCategory="construction" localName="Clay plaster, at plant" localSubCategory="coverings" name="Clay plaster, at plant" subCategory="coverings" unit="kg"/>
+        <geography location="CH" text="The amount of raw materials is based on estimations. The transportation distance is an estimation. For the infrastructure RER- and for the silica sand DE-modules are used as proxy"/>
+        <technology text="Assumed average current technology. The raw materials are mixed in a certain ratio, transported to the packing installation and packed."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2004-04-05T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="estimation " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Jungbluth N., Kuenniger T., Lehmann M., Thalmann P." firstAuthor="Kellenberger D." nameOfEditors="-" number="137820" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ESU-services Ltd., Bau- und Umweltchimie" sourceNumber="0" sourceType="4" text="Kellenberger D., Althaus H.-J., Jungbluth N., Künniger T. (2007) Life Cycle Inventories of Building Products. Final report ecoinvent data v2.0. Volume: 7. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Kellenberger D.\nOther authors: Althaus H.-J., Jungbluth N., Künniger T.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 7\n" title="2007 - LCI building products - Kellenberger" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="7" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="137747"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137819"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137819" referenceToPublishedSource="137820"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Daniel Kellenberger" number="137819" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="construction" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="coverings" location="CH" meanValue="1.0" name="Clay plaster, at plant" number="265085" subCategory="coverings" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="estimated&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="DE" meanValue="0.55" name="Silica sand, at plant" number="137826" standardDeviation95="5.000000000000001" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="estimated&#10;" infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="6.67E-6" name="Industrial machine, heavy, unspecified, at plant" number="563077" standardDeviation95="5.000000000000001" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="estimated&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.0278" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="5.000000000000001" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="estimated&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.1" name="Heat, waste" number="46930" standardDeviation95="5.000000000000001" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="estimated&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.016" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="5.000000000000001" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="estimated&#10;" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="0.25" name="Clay, at mine" number="402453" standardDeviation95="5.000000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="estimated&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="CH" meanValue="0.2" name="Tap water, at user" number="422494" standardDeviation95="5.000000000000001" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="estimated&#10;" infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="3.33E-8" name="Conveyor belt, at plant" number="325402" standardDeviation95="5.000000000000001" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="m">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="401478" timestamp="2023-08-28T15:02:59.862+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="material, obsolete" datasetRelatesToProduct="true" generalComment="Drying time: 30 days;&#10;Synonyms: Buche, Beech; &#10;UUID: 2103116a-cf7b-313c-ba9e-d85c0dc74b65" includedProcesses="Includes kiln drying of wet wood (u=70%) down to u=10%, and shrinkage. Air emissions released from the wood are not accounted for because the same emissions would occur if the wood would not be used. Kiln is assumed to be located on the sawmill site. No transports are considered." infrastructureProcess="false" localCategory="material, obsolete" localName="xxx Sawn timber, hardwood, raw, kiln dried, u=10%, at plant" localSubCategory="wood, obsolete\products, obsolete" name="xxx Sawn timber, hardwood, raw, kiln dried, u=10%, at plant" subCategory="wood, obsolete\products, obsolete" unit="m3"/>
+        <geography location="RER" text="&lt;null&gt;"/>
+        <technology text="Technology mix used in Germany (1986)"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>9999-01</startDate>
+          <endDate>9999-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-03-29T18:04:18.034+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography and Technology" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="The assumption that the German technology mix is representative for central Europe is considered in the uncertainties."/>
+        <source additionalAuthors="Althaus H.-J., Kuenniger T., Richter K., Jungbluth N." firstAuthor="Werner F." nameOfEditors="-" number="152269" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Werner F., Althaus H.-J., Künniger T., Richter K., Jungbluth N. (2007) 1Life Cycle Inventories of Wood as Fuel and Construction Material. Final report ecoinvent data v2.0. Volume: 9. Issue: 0. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Werner F.\nOther authors: Althaus H.-J., Künniger T., Richter K., Jungbluth N.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 9\nIssue No: 0\n" title="2007 - LCI wood as fuel and const. mat. - Werner" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="9" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="137747"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="139614"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="139614" referenceToPublishedSource="152269"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="material, obsolete" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="wood, obsolete\products, obsolete" location="RER" meanValue="1.0" name="xxx Sawn timber, hardwood, raw, kiln dried, u=10%, at plant" number="401478" subCategory="wood, obsolete\products, obsolete" uncertaintyType="0" unit="m3">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,3,5,3,1,1,4)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="33.0" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.51" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="(4,5,2,3,4,5,9)&#10;" infrastructureProcess="true" localCategory="wood" localSubCategory="infrastructure" location="RER" meanValue="6.09E-5" name="Technical wood drying, infrastructure" number="414829" standardDeviation95="3.36" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,5,3,1,1,13)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="119.0" name="Heat, waste" number="46930" standardDeviation95="1.51" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="material, obsolete" generalComment="(1,3,5,3,1,1,4)&#10;" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="wood, obsolete\products, obsolete" location="RER" meanValue="1.1400000000000001" name="xxx Sawn timber, hardwood, raw, plant-debarked, u=70%, at plant" number="521372" standardDeviation95="1.51" subCategory="wood, obsolete\products, obsolete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,3,5,3,1,1,4)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="wood\heating systems" location="CH" meanValue="1300.0" name="Wood chips, from industry, hardwood, burned in furnace 300kW" number="169196" standardDeviation95="1.51" subCategory="wood\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="(1,3,5,3,1,1,4)&#10;" infrastructureProcess="false" localCategory="wood" localSubCategory="extraction\allocation corrections" location="RER" meanValue="-0.136" name="Hardwood, allocation correction, 1" number="464229" standardDeviation95="1.0" subCategory="extraction\allocation corrections" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="535828" timestamp="2023-08-28T15:02:55.454+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity" datasetRelatesToProduct="true" generalComment="Distribution losses are taken from Itten, Frischknecht and Stucki (2014): LCI of Electricity Mixes and Grid.;&#10;UUID: 3769a510-2556-306a-8ea7-3ce33d558996" includedProcesses="This dataset describes the distribution of the railway mix in Germany and includes the low voltage network infrastructure, transmission losses and air pollutant emissions. Not included are electricity losses due to building distribution." infrastructureProcess="false" localCategory="electricity" localName="Electricity, high voltage, DB, at grid" localSubCategory="supply mix" name="Electricity, high voltage, DB, at grid" subCategory="supply mix" unit="kWh"/>
+        <geography location="DE" text="Germany"/>
+        <technology text="Average technology"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications">
+          <startDate>2014-01</startDate>
+          <endDate>2014-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-11-02T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Some generic datasets from ecoinvent have been used." percent="100" productionVolume="GWh" samplingProcedure="Statistics " uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Krebs L." nameOfEditors="-" number="137964" placeOfPublications="Uster, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="3" text="L. Krebs, R. Frischknecht (2020) Aktualisierung Ökobilanzdaten mobitool 2020, Teil 1. Project report. Volume: 713. treeze Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: L. Krebs\nOther authors: R. Frischknecht\nYear: 2020\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: treeze Ltd.\nVolume No: 713\n" title="2020 - Update Mobitool 2020 - Krebs" titleOfAnthology="Project report" volumeNo="713" year="2020"/>
+        <validation proofReadingDetails="Proof reading validation: 02.11.2020; Other validation: G:\Projekte laufend\713 Aktualisierung mobitool 2020\EcoSpold\[713-Strommix-Übertragung-Verteilung-Bahnstrom-EIv2-v0.4.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137963"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137963" referenceToPublishedSource="137964"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Luana Krebs" number="137963" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" generalComment="GERMANY&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="DE" meanValue="1.0" name="Electricity, high voltage, DB, at grid" number="535828" subCategory="supply mix" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,1,2,1,1,3,BU:1,05); Specific network losses estimated based on statistics; Itten, Frischknecht &amp; Stucki 2014&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="DE" meanValue="1.028" name="Electricity mix, DB" number="608650" standardDeviation95="1.129" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,2,5,3,1,5,BU:3); Assumed service life of the electricity grid: 40a; Long-distance transport included by assuming a distance of 50 km, a capacity of 1 GW and a load factor of 60%; Itten, Frischknecht &amp; Stucki 2014&#10;" infrastructureProcess="true" localCategory="electricity" localSubCategory="distribution" location="CH" meanValue="6.8199E-9" name="Transmission network, electricity, high voltage" number="313112" standardDeviation95="3.2848" subCategory="distribution" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(2,4,1,1,1,5,BU:1,05); Estimation based on network losses;&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="unspecified" meanValue="0.0050435" name="Heat, waste" number="30793" standardDeviation95="1.2423" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="010024-97-2" category="emissions to air" generalComment="(3,4,5,3,1,5,BU:1,5); Literature estimation; Itten, Frischknecht &amp; Stucki 2014&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="5.0E-6" name="Dinitrogen monoxide" number="646" standardDeviation95="1.8531999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,4,5,3,1,5,BU:1,5); Literature estimation; Itten, Frischknecht &amp; Stucki 2014&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="4.5E-6" name="Ozone" number="66752" standardDeviation95="1.8531999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,1,1,1,5,BU:1,05); Estimation based on network losses;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.095827" name="Heat, waste" number="46930" standardDeviation95="1.2423" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

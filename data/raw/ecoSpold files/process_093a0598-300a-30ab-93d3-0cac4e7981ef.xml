@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="220795" timestamp="2024-07-09T17:48:30">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electronics" datasetRelatesToProduct="true" generalComment="This dataset can be applied to describe the production of a typical power adapter for laptops. The total weight of the power adapter is 0.357 kg (without the belonging cables, which weigh an additional 0.174 kg). The information for this dataset is based on a study carried out with a leading laptop producer.; UUID: 093a0598-300a-30ab-93d3-0cac4e7981ef" includedProcesses="Describes the production of a typical power adapter for a laptop computer. Calculated per 1 unit of power adapter, as most of them are equally long and of similar shape. Included are the materials steel, copper, HIPS and PVC with their respective manufacturing processes. The infrastructure is calculated via the proxy &quot;electronic component factory&quot;. The electricity for the assembly of the power adaptor is considered to be 25% of the one for the computer mouse. The road and rail transportation for input materials from the regional storage to the production site plus the disposal of the power adapter are part of the dataset." infrastructureIncluded="false" infrastructureProcess="false" localCategory="electronics" localName="Power adapter, for laptop, at plant" localSubCategory="devices" name="Power adapter, for laptop, at plant" subCategory="devices" unit="p"/>
+        <geography location="GLO" text="The data describes a typical power adapter for a laptop in 2003. The kind of laptop power adapter is produced by a leading international computer manufacturer and available all over the world. Therefore a global dataset is justifiable. The dataset for adapter is updated in 2023 using recent inventory data from JRC technical report (2018). Input flows also consider regionalized dataset for materials."/>
+        <technology text="The manufacturing process is inventoried through plastic extrusion (for HIPS and PVC), rolling of steel into plates, and wire drawing for copper."/>
+        <timePeriod dataValidForEntirePeriod="" text="Unspecified">
+          <startDate>2023-01</startDate>
+          <endDate>2029-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2024-07-09T17:48:30" type="1" version="2024"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography and Technology" productionVolume="unknown" samplingProcedure="Literature and own assumptions for cable input and electricity consumption." uncertaintyAdjustments="see Geography and Technology"/>
+        <source additionalAuthors="Permana Ajie M., Beloin-Saint-Pierre D." firstAuthor="Raka Adrianto L." number="148303" placeOfPublications="St. Gallen, CH" publisher="Empa" sourceType="0" title="2024 - LCI ICT sector - Raka Adrianto" year="2024"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Mischa Zschokke, Company: Carbotech, Country: CH" proofReadingValidator="140702"/>
+        <validation/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="148302" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="false" dataPublishedIn="2" person="148302" referenceToPublishedSource="148303"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre" number="148302" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Mischa Zschokke" number="140702" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electronics" generalComment="Global" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices" location="GLO" meanValue="1" name="Power adapter, for laptop, at plant" number="220795" subCategory="devices" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,2,2,3,3,5,BU:1.05)" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="0.048" name="Polycarbonate, at plant" number="573301" standardDeviation95="1.31" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,2,2,3,3,5,BU:1.05)" infrastructureProcess="false" localCategory="plastics" localSubCategory="rubbers" location="RER" meanValue="0.037" name="Acrylonitrile-butadiene-styrene copolymer, ABS, at plant" number="605750" standardDeviation95="1.31" subCategory="rubbers" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(1,4,2,3,1,5,BU:1.05)" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices" location="GLO" meanValue="1.8" name="Cable, connector for computer, without plugs, at plant" number="148324" standardDeviation95="1.24" subCategory="devices" uncertaintyType="1" unit="m">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,4,2,3,1,5,BU:1.05) non ferrous fraction, from Tecchio et al 2018" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="0.04" name="Copper, primary, at refinery" number="398149" standardDeviation95="1.24" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,4,2,3,1,5,BU:1.05) non ferrous fraction, from Tecchio et al 2018" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="0.04" name="Aluminium, production mix, at plant" number="436582" standardDeviation95="1.24" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,4,2,3,1,5,BU:1.05)" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="GLO" meanValue="0.22224" name="Electricity, medium voltage, production GLO, at grid" number="235676" standardDeviation95="1.24" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(1,4,2,3,1,5,BU:1.05)" infrastructureProcess="false" localCategory="plastics" localSubCategory="unspecified" location="RER" meanValue="0.085" name="Extrusion, plastic pipes" number="419531" standardDeviation95="1.24" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(1,4,2,3,1,5,BU:1.05)" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices" location="GLO" meanValue="1" name="Plugs, inlet and outlet, for computer cable, at plant" number="383827" standardDeviation95="1.24" subCategory="devices" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(1,4,2,3,1,5,BU:3.00)" infrastructureProcess="true" localCategory="electronics" localSubCategory="manufacturing" location="GLO" meanValue="0.000000074256" name="Printed wiring board mounting plant" number="543534" standardDeviation95="3.06" subCategory="manufacturing" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,4,2,3,1,5,BU:1.05)" infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="0.002" name="Sheet rolling, steel" number="168302" standardDeviation95="1.24" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,2,3,3,5,BU:1.05)" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.10622" name="Transport, freight, rail" number="149864" standardDeviation95="1.31" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,2,3,3,5,BU:1.05)" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.05231" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="1.31" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,4,2,3,1,5,BU:1.05)" infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="0.04" name="Wire drawing, copper" number="254778" standardDeviation95="1.24" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(2,2,2,3,3,5,BU:1.05)" infrastructureProcess="false" localCategory="electronics" localSubCategory="component" location="GLO" meanValue="0.0265" name="Inductor, unspecified, at plant" number="164233" standardDeviation95="1.31" subCategory="component" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(2,2,2,3,3,5,BU:1.05)" infrastructureProcess="false" localCategory="electronics" localSubCategory="component" location="GLO" meanValue="0.0075" name="Capacitor, unspecified, at plant" number="184632" standardDeviation95="1.31" subCategory="component" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics waste" generalComment="(1,4,4,3,3,5,BU:1.05)" infrastructureProcess="false" localCategory="electronics waste" localSubCategory="unspecified" location="CH" meanValue="1" name="Disposal, power adapter, external, for laptop, to WEEE treatment" number="461741" standardDeviation95="1.4" subCategory="unspecified" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

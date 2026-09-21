@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="261046" timestamp="2024-10-01T16:17:22">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="transport systems" datasetRelatesToProduct="true" generalComment="A standard 750 kg steel mast was considered, without catenary elements. The steel masts are made from 100% recycled steel and are then galvanised (pers. comm., SBB, 2024). The data for the material requirements comes from SBB (pers. comm., SBB, 2018). The steel mast is transported 950 km by lorry from the steelworks to the galvanising plant. &#10;&#10;Offcuts and rejects are not taken into account. The ecoinvent standard values were used for transport distances for material deliveries by lorry (Frischknecht et al., 2007).; UUID:1cc836af-121b-3ba9-9e07-53d7711cde7a" includedProcesses="The inventory includes all the materials, energy and transport necessary to manifacture 1 steel mast for railways. Excluded are maintenance and disposal" infrastructureIncluded="true" infrastructureProcess="false" localCategory="transport systems" localName="Steel mast, standard size for rail ways" localSubCategory="train\operations\infrastructure" name="Steel mast, standard size for rail ways" subCategory="train\operations\infrastructure" unit="p">
+          <synonym>0</synonym>
+        </referenceFunction>
+        <geography location="CH" text="Data apply to construction in Switzerland. "/>
+        <technology text="Average technology available on the market"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2018</startDate>
+          <endDate>2024</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2024-10-01T16:17:22" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" samplingProcedure="based on literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Roberts G., Kaegi T., Stettler C., Frick R., Walther U., Althaus H.-J." firstAuthor="Conrad S." number="140740" placeOfPublications="Basel, CH" publisher="Carbotech AG, INFRAS" sourceType="3" text="Report" title="2024 - LCA railway infrastructure - Kaegi" titleOfAnthology="Carbotech und INFRAS im Auftrag des BAV" year="2024"/>
+        <validation otherDetails="\\tsclient\Schreibtisch\WinShare\BAV Gleisinfrastruktur\Ecospold\[EcoSpold_Steel mast v0.2.xlsx]X-Process" proofReadingDetails="01.10.2024" proofReadingValidator="140736"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137340" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="1" person="137340" referenceToPublishedSource="140740"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Gavin Roberts" number="140736" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Stefanie Conrad" number="140737" telephone="anonymised"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Roman Frick" number="202" telephone="anonymised"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Ursina Walther" number="203" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="CH" meanValue="1" name="Steel mast, standard size for rail ways" number="261046" subCategory="train\operations\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,1,3,1,1,5,BU:1.05); Steel for new mast; " infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="750" name="Steel, electric, un- and low-alloyed, at plant" number="487152" standardDeviation95="1.2355" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="processing, obsolete" generalComment="(5,1,3,1,3,5,BU:1.05); Processing the steel for the new mast; " infrastructureProcess="false" localCategory="processing, obsolete" localSubCategory="metals\chipless shaping" location="RER" meanValue="750" name="xx Warm impact extrusion, steel, 1 stroke" number="350228" standardDeviation95="1.6361" subCategory="metals\chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,1,3,1,1,5,BU:1.05); Zinc coating of mast; " infrastructureProcess="false" localCategory="metals" localSubCategory="coating" location="RER" meanValue="7.5" name="Zinc coating, pieces" number="531049" standardDeviation95="1.2355" subCategory="coating" uncertaintyType="1" unit="m2">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,1,3,1,1,5,BU:1.05); Energy for welding; " infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="112" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.2355" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,1,3,1,1,5,BU:1.05); Gas for welding; " infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="1.5" name="Argon, liquid, at plant" number="211514" standardDeviation95="1.2355" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,1,3,1,1,5,BU:1.05); Gas for welding; " infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="0.34" name="Carbon dioxide liquid, at plant" number="450573" standardDeviation95="1.2355" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,1,3,1,1,5,BU:1.05); Welding wire; " infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="1" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.2355" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,1,1,1,1,5,BU:2); Transport from steelplant (D, PL) to galvanizing plant; " infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="713" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,1,1,1,1,5,BU:2); Transport welding materials; " infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="0.1" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

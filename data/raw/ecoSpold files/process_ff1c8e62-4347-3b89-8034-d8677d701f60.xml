@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="342313" timestamp="2023-08-28T15:03:42.870+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="pipeline" datasetRelatesToProduct="true" generalComment="Transport of natural gas in European pipeline after LNG evaporation.;&#10;UUID: ff1c8e62-4347-3b89-8034-d8677d701f60" includedProcesses="This dataset describes the energy consumption and the emissions linked to the transport of 1 tkm Nigerian natural gas in an onshore pipeline." infrastructureProcess="false" localCategory="pipeline" localName="Transport, natural gas, pipeline, long distance" localSubCategory="unspecified" name="Transport, natural gas, pipeline, long distance" subCategory="unspecified" unit="tkm"/>
+        <geography location="NG" text="&lt;null&gt;"/>
+        <technology text="Long-distance gas transport onshore with average compressor station."/>
+        <timePeriod dataValidForEntirePeriod="true" text="The data for emissions is from 1994, the data for energy requirements from 2001.">
+          <startDate>2000-01</startDate>
+          <endDate>2010-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2012-09-24T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="100" productionVolume="na" samplingProcedure="statistics " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Stucki M., Flury K., Itten R., Tuchschmid M." firstAuthor="Frischknecht R." nameOfEditors="-" number="165328" placeOfPublications="Uster, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Schori S., Frischknecht R. (2011) Life Cycle Inventories of energy systems. Project report. Volume: 407. ESU-services Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: Schori S.\nOther authors: Frischknecht R.\nYear: 2011\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: ESU-services Ltd.\nVolume No: 407\n" title="2012 - Prim. energy fact. of energy systems - Frischknecht" titleOfAnthology="Project report" volumeNo="407" year="2012"/>
+        <validation proofReadingDetails="Proof reading validation: 24.09.2012; Other validation: \\server\e\ESU-Docs\Projekte laufend\407 Update LCI Energiesysteme\EcoSpold\Erdgas EcoSpold\[407_NG transport v0.4.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="165327"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="165327" referenceToPublishedSource="165328"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Salome Schori" number="165327" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="pipeline" generalComment="NIGERIA&#10;" infrastructureProcess="false" localCategory="pipeline" localSubCategory="unspecified" location="NG" meanValue="1.0" name="Transport, natural gas, pipeline, long distance" number="342313" subCategory="unspecified" uncertaintyType="0" unit="tkm">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="000353-59-3" category="emissions to air" generalComment="(2,3,1,1,3,5,BU:1.5); For cooling of compressor stations and fire protection. Based on dutch environmental report.; Gasunie 1998, Gasunie 2001&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="2.24E-8" name="Methane, bromochlorodifluoro-, Halon 1211" number="71894" standardDeviation95="1.6249000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(2,4,1,1,1,5,BU:1.5); calculated based on leakage and gas composition;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.6905E-4" name="Methane, fossil" number="90787" standardDeviation95="1.5798000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-97-6" category="emissions to air" generalComment="(2,4,1,1,1,5,BU:5); calculated based on leakage and gas composition;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="2.5721E-12" name="Mercury" number="89723" standardDeviation95="5.069600000000001" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(1,2,1,1,1,1,BU:1.05); mercury in condensate, based on dutch data; Dutch gas distribution company 2002&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="1.16E-6" name="Disposal, used mineral oil, 10% water, to hazardous waste incineration" number="504085" standardDeviation95="1.0541" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="pipeline" generalComment="(1,1,1,1,1,1,BU:3); based on estimated standard capacity;&#10;" infrastructureProcess="true" localCategory="pipeline" localSubCategory="infrastructure" location="GLO" meanValue="3.5612E-9" name="Pipeline, natural gas, long distance, low capacity, onshore" number="210053" standardDeviation95="2.9999999999999996" subCategory="infrastructure" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,3,1,1,1,BU:1.05); qualified estimates;&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas\gas turbine" location="DZ" meanValue="0.71606" name="Natural gas, burned in gas turbine, for compressor station" number="584414" standardDeviation95="1.1130000000000002" subCategory="gas\gas turbine" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000074-98-6" category="emissions to air" generalComment="(2,4,1,1,1,5,BU:1.5); calculated based on leakage and gas composition;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.2408E-5" name="Propane" number="661" standardDeviation95="1.5798000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-84-0" category="emissions to air" generalComment="(2,3,1,1,3,5,BU:1.5); calculated based on leakage and gas composition;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.6033E-5" name="Ethane" number="647" standardDeviation95="1.6249000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,1,1,BU:1.05); published data ;&#10;" infrastructureProcess="false" localCategory="natural gas" localSubCategory="production" location="NG" meanValue="3.1981E-4" name="Natural gas, at production" number="175171" standardDeviation95="1.0500000000000003" subCategory="production" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000075-45-6" category="emissions to air" generalComment="(2,3,1,1,3,5,BU:1.5); For cooling of compressor stations and fire protection. Based on dutch environmental report.; Gasunie 1998, Gasunie 2001&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="6.93E-8" name="Methane, chlorodifluoro-, HCFC-22" number="71752" standardDeviation95="1.6249000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(1,1,1,1,1,1,BU:2); estimates for waste transport;&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.000000116" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.0000000000000004" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000106-97-8" category="emissions to air" generalComment="(2,4,1,1,1,5,BU:1.5); calculated based on leakage and gas composition;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="9.0583E-6" name="Butane" number="639" standardDeviation95="1.5798000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

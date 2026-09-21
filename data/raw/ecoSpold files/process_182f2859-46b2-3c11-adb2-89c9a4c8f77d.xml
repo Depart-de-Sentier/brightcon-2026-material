@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="419349" timestamp="2023-08-28T15:03:23.981+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="paper+ board" datasetRelatesToProduct="true" generalComment="The functional unit represent 1 kg of core board, as produced in a modern core board mill;&#10;UUID: 182f2859-46b2-3c11-adb2-89c9a4c8f77d" includedProcesses="Material input, water (cooling &amp; process) consumption, energy consumption, emissions to air and water. Estimations for transports and infrastructure. No waste reported." infrastructureProcess="false" localCategory="paper+ board" localName="Core board, at plant" localSubCategory="board" name="Core board, at plant" subCategory="board" unit="kg"/>
+        <geography location="RER" text="Data based on one finnish plant from Corenso Ltd. Representing here average European data."/>
+        <technology text="presently used technology in a modern plant in Finnland"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-08-29T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="Examined mill 102 kt - company total 300 kt (3 mills)" samplingProcedure="&lt;null&gt;" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Hischier R." nameOfEditors="-" number="150046" placeOfPublications="Duebendorf and St. Gallen, CH" publisher="Swiss Centre for LCI, Empa - TSL" sourceNumber="0" sourceType="4" text="Hischier R. (2007) Life Cycle Inventories of Packaging and Graphical Paper. Final report ecoinvent data v2.0. Volume: 11. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Hischier R.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 11\n" title="2007 - LCI packagings and graphical papers - Hischier" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="11" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="139614"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136699"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136699" referenceToPublishedSource="150046"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="paper+ board" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="paper+ board" localSubCategory="board" location="RER" meanValue="1.0" name="Core board, at plant" number="419349" subCategory="board" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="007723-14-0" category="emissions to water" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.2E-6" name="Phosphorus" number="67972" standardDeviation95="1.4999999999999998" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.0105" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.1" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="NORDEL" meanValue="0.578" name="Electricity, medium voltage, production NORDEL, at grid" number="576431" standardDeviation95="1.1" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="wood\heating systems" location="CH" meanValue="5.58" name="Heat, softwood chips from industry, at furnace 300kW" number="344711" standardDeviation95="1.1" subCategory="wood\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="4.9E-4" name="Suspended solids, unspecified" number="157731" standardDeviation95="1.4999999999999998" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="paper+ board" generalComment="(4,na,na,na,na,na); own assumption&#10;" infrastructureProcess="true" localCategory="paper+ board" localSubCategory="graphic paper\infrastructure" location="RER" meanValue="5.44E-11" name="Paper mill, integrated" number="522919" standardDeviation95="3.1" subCategory="graphic paper\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="6.7E-4" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.4999999999999998" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.0626" name="Transport, freight, rail" number="149864" standardDeviation95="2.1" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.0153" name="Water, cooling, unspecified natural origin/m3" number="29019" standardDeviation95="1.1" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="007727-37-9" category="emissions to water" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="7.5E-5" name="Nitrogen" number="78458" standardDeviation95="1.4999999999999998" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="4.08E-5" name="Nitrogen oxides" number="79243" standardDeviation95="1.4999999999999998" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.26E-5" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.1" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="paper+ board" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="paper+ board" localSubCategory="waste paper" location="RER" meanValue="0.763" name="Waste paper, sorted, for further treatment" number="282600" standardDeviation95="1.1" subCategory="waste paper" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="0.00802" name="Rosin size, in paper production, at plant" number="379198" standardDeviation95="1.1" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="wood" localSubCategory="wooden materials\new processes\other material" location="SE" meanValue="8.16E-4" name="Pulpwood, birch, sustainable forest management, measured as solid wood under bark, at forest road" number="361010" standardDeviation95="1.1" subCategory="wooden materials\new processes\other material" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007446-09-5" category="emissions to air" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.57E-5" name="Sulfur dioxide" number="26215" standardDeviation95="1.1" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.00593" name="Water, unspecified natural origin/m3" number="64511" standardDeviation95="1.1" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="007783-06-4" category="emissions to air" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.2E-5" name="Hydrogen sulfide" number="27907" standardDeviation95="1.4999999999999998" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="1.8" name="Heat, light fuel oil, at industrial furnace 1MW" number="339773" standardDeviation95="1.1" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="0.00519" name="Aluminium sulphate, powder, at plant" number="363444" standardDeviation95="1.1" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(2,3,1,3,1,3); data from 1 European producer&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant production" location="DE" meanValue="0.091" name="Potato starch, at plant" number="453974" standardDeviation95="1.1" subCategory="plant production" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,1,3,1,3); calculated from electricity input&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.08" name="Heat, waste" number="46930" standardDeviation95="1.1" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="14.535" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="5.6335" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

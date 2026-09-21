@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="512634" timestamp="2024-07-09T17:48:29">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electronics" datasetRelatesToProduct="true" generalComment="Data are based on literature (report from a European research project in the field of lead-free soldering). Infrastructure and transportation efforts are based on own assumptions.; UUID: db859e65-1929-321b-9247-3bf5faea26d5" includedProcesses="This dataset includes soldering material input, energy consumption and waste, as well as an estimation of emissions to air, the efforts for transportation and of the infrastructure for the mounting process of through-hole components. Input of PWB and components are not included in this dataset." infrastructureIncluded="false" infrastructureProcess="false" localCategory="electronics" localName="Mounting, through-hole technology, Pb-free solder" localSubCategory="manufacturing" name="Mounting, through-hole technology, Pb-free solder" subCategory="manufacturing" unit="m2"/>
+        <geography location="GLO" text="Data from a European study- representing global valuable values for the mounting activities in the electronics industry. Besides globalized production at the inventory level, the energy consumption is expected to decrease by 17% according to literature."/>
+        <technology text="Information from two global electronics producing companies in the framework of a European study."/>
+        <timePeriod dataValidForEntirePeriod="" text="Unspecified">
+          <startDate>2023-01</startDate>
+          <endDate>2029-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2024-07-09T17:48:29" type="1" version="2024"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography &amp; Technology" samplingProcedure="own estimation" uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Permana Ajie M., Beloin-Saint-Pierre D." firstAuthor="Raka Adrianto L." number="148303" placeOfPublications="St. Gallen, CH" publisher="Empa" sourceType="0" title="2024 - LCI ICT sector - Raka Adrianto" year="2024"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Mischa Zschokke, Company: Carbotech, Country: CH" proofReadingValidator="140702"/>
+        <validation/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="148302" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="false" dataPublishedIn="2" person="148302" referenceToPublishedSource="148303"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre" number="148302" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Mischa Zschokke" number="140702" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electronics" generalComment="Global" infrastructureProcess="false" localCategory="electronics" localSubCategory="manufacturing" location="GLO" meanValue="1" name="Mounting, through-hole technology, Pb-free solder" number="512634" subCategory="manufacturing" uncertaintyType="0" unit="m2">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,3,4,3,1,5,BU:1.04); data from literature" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="GLO" meanValue="5.611298" name="Electricity, medium voltage, production GLO, at grid" number="235676" standardDeviation95="1.31" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,4,3,1,5,BU:1.04); data from literature" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="GLO" meanValue="0.2514" name="Flux, wave soldering, at plant" number="519077" standardDeviation95="1.31" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,4,3,1,5,BU:1.04); data from literature" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="74.338" name="Nitrogen, liquid, at plant" number="267576" standardDeviation95="1.31" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(4,5,4,3,5,5,BU:3.00); rough estimation of infrastructure" infrastructureProcess="true" localCategory="electronics" localSubCategory="manufacturing" location="GLO" meanValue="0.000000208" name="Printed wiring board mounting plant" number="543534" standardDeviation95="3.85" subCategory="manufacturing" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,3,4,3,1,5,BU:1.04); data from literature" infrastructureProcess="false" localCategory="metals" localSubCategory="alloys" location="GLO" meanValue="0.42254" name="Solder, bar, Sn95.5Ag3.9Cu0.6, for electronics industry, at plant" number="543478" standardDeviation95="1.31" subCategory="alloys" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,4,3,5,5,BU:2.00); standard distances" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.042254" name="Transport, freight, rail" number="149864" standardDeviation95="2.85" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,4,3,5,5,BU:2.00); standard distances" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.084507" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.85" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(4,3,4,3,1,5,BU:2.00); calculated from input of flux material" meanValue="0.2514" name="2-Propanol" number="63639" standardDeviation95="2.15" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,3,1,5,BU:1.50); calculated from electricity input" meanValue="24.338" name="Heat, waste" number="46930" standardDeviation95="1.63" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,3,4,3,1,5,BU:1.04); data from literature" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="0.12254" name="Disposal, tin sheet, 0% water, to sanitary landfill" number="354646" standardDeviation95="1.31" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

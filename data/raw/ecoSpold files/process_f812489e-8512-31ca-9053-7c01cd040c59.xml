@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="400405" timestamp="2023-08-28T15:03:39.558+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="Use of a solar system with PV modules (electricity use for the solar collector from PV) for the same size better known as PVT system including hot water heat storage. Excluding further necessary auxiliary heating. The simulation is made for solar collector systems in Switzerland. The annual irradiation amounts to 1249 kWh/m2. 50% solar fraction, 30° inclination, 22° southeast orientation.;&#10;Synonyms: Wärme aus Solarkollektor NUR in PVT-System, 100m2, auf Schrägdach montiert mit Warmwasser Wärmespeicher, heat from solar collector ONLY in PVT-System, 100m2, mounted on slanted-roof with hot water heat storage; &#10;UUID: f812489e-8512-31ca-9053-7c01cd040c59" includedProcesses="Infrastructure of the solar system of a PVT system including maintenance and electricity use  for operation. PV infrastructure is not included but allocated to the electricity production of a PVT system." infrastructureProcess="false" localCategory="heat" localName="Heat, at 100m2 solar collector in PVT system, Al-Cu, slanted roof, hot water heat storage" localSubCategory="pvt\heating systems" name="Heat, at 100m2 solar collector in PVT system, Al-Cu, slanted roof, hot water heat storage" subCategory="pvt\heating systems" unit="MJ"/>
+        <geography location="CH" text="operated in Switzerland"/>
+        <technology text="PVT combination system with borehole heat regeneration"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2015-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-09-14T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="Data provided by manufacturer and literature data  on worldwide module production. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Waldburger L., Kern C., Roberts G., Zschokke M., Conte F., Weber L." firstAuthor="Kaegi T." nameOfEditors="-" number="137341" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceNumber="0" sourceType="3" text="Kägi Thomas, Livia Waldburger, Cyril Kern, Gavin Roberts, Mischa Zschokke, Flora Conte, Lea Weber (2020) LCI of heating systems. Carbotech im Auftrag des BAFU. Carbotech AG. Zürich. CH.\nType: Separate publication\nSource: Report\nFirst author: Kägi Thomas\nOther authors: Livia Waldburger, Cyril Kern, Gavin Roberts, Mischa Zschokke, Flora Conte, Lea Weber\nYear: 2020\nTitle of anthology: Carbotech im Auftrag des BAFU\nPlace of publication: Zürich. CH\nPublisher: Carbotech AG\n" title="2021 - LCI heating systems - Kaegi" titleOfAnthology="Carbotech im Auftrag des BAFU" year="2021"/>
+        <validation proofReadingDetails="Proof reading validation: 14.09.2020; Other validation: Z:\Schreibtisch\WinShare\BAFU Heizsysteme\_A-Konvertieren\PVT\[EcoSpold_heat at solar collector in PVT system, Al-Cu, installed on slanted roof_v0.1_lwa.xlsx]X-Process;" proofReadingValidator="137339"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137340"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="141098" referenceToPublishedSource="137341"/>
+        <person address="anonymised" companyCode="EBP" countryCode="CH" email="anonymised" name="Andy Spoerri" number="137339" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Livia Waldburger" number="141098" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="pvt\heating systems" location="CH" meanValue="1.0" name="Heat, at 100m2 solar collector in PVT system, Al-Cu, slanted roof, hot water heat storage" number="400405" subCategory="pvt\heating systems" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,5,1,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.13" name="Heat, waste" number="46930" standardDeviation95="1.3059" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,5,1,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="pvt\heating systems" location="CH" meanValue="2.14E-4" name="Electricity, PV in PVT-System, 16.7kWp,  single-Si,  slanted-roof" number="199123" standardDeviation95="1.3059" subCategory="pvt\heating systems" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,5,1,1,1,5,BU:2); ;&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.0000552" name="Transport, freight, lorry, 3.5t gross weight, fleet average" number="498982" standardDeviation95="2.0984000000000003" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(,,,,,,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in air" meanValue="1.1321" name="Energy, solar, converted" number="82305" standardDeviation95="1.0500000000000003" subCategory="in air" uncertaintyType="1" unit="MJ">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,5,1,1,1,5,BU:3); ;&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="pvt\heating systems" location="CH" meanValue="3.1746E-7" name="Solar system for PVT ONLY, 100m2 Al-Cu flat plate collector, on slanted roof, hot water heat storage" number="289176" standardDeviation95="3.0942" subCategory="pvt\heating systems" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="311914" timestamp="2023-08-28T15:02:57.145+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity" datasetRelatesToProduct="true" generalComment="This dataset describes the transformation from medium to low voltage as well as the distribution of electricity at low voltage.;&#10;UUID: 2acb87c2-5e4c-33f7-b960-de99fac2e4e4" includedProcesses="Included are the electricity production using , the transmission network as well as direct SF6-emissions to air. Electricity losses during low-voltage transmission and transformation from medium-voltage are accounted for." infrastructureProcess="false" localCategory="electricity" localName="xxx Electricity, low voltage, production CENTREL, at grid" localSubCategory="notMaintained" name="xxx Electricity, low voltage, production CENTREL, at grid" subCategory="notMaintained" unit="kWh"/>
+        <geography location="CENTREL" text="Data apply to public and self producers. Geographical classification according to IEA. Assumptions for transmission network, losses and emissions are based on Swiss data."/>
+        <technology text="Average technology used to distribute electricity. Includes underground and overhead lines, as well as air- and SF6-insulated medium-to-low voltage switching stations. Electricity production according to related datasets"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Statistics for 2008">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2012-06-22T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="unknown " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Itten R., Flury K." firstAuthor="Frischknecht R." nameOfEditors="-" number="138564" placeOfPublications="Uster, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Itten, R., Frischknecht, R. (2012) Life Cycle Inventories of electricity mixes. Project reports. Volume: 401. ESU-services Ltd.. Uster, CH.\nType: Separate publication\nFirst author: Itten, R.\nOther authors: Frischknecht, R.\nYear: 2012\nTitle of anthology: Project reports\nPlace of publication: Uster, CH\nPublisher: ESU-services Ltd.\nVolume No: 401\n" title="2012 - GHG emis. from Swiss elec. mixes - Frischknecht" titleOfAnthology="Project reports" volumeNo="401" year="2012"/>
+        <validation proofReadingDetails="Proof reading validation: 22.06.2012; Other validation: Z:\ESU-Docs\Projekte laufend\401 Update Strommix v3.0\EcoSpold\[401-electricity-mix-europe-RER-world-GLO-v1.0.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137485"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137485" referenceToPublishedSource="138564"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="René Itten" number="137485" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" generalComment="Central european power association&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="notMaintained" location="CENTREL" meanValue="1.0" name="xxx Electricity, low voltage, production CENTREL, at grid" number="311914" subCategory="notMaintained" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,1,1,1,3,1); specific losses of network estimated based on statistics&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="notMaintained" location="CENTREL" meanValue="1.0705" name="xxx Electricity, medium voltage, production CENTREL, at grid" number="597279" standardDeviation95="1.2355" subCategory="notMaintained" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(4,1,3,1,1,5); estimations based on losses&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.063475" name="Heat, waste" number="46930" standardDeviation95="1.3221000000000003" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,1,4,5,3,5); based on consumption statistics&#10;" infrastructureProcess="true" localCategory="electricity" localSubCategory="distribution" location="CH" meanValue="8.74E-8" name="Distribution network, electricity, low voltage" number="397602" standardDeviation95="3.1613999999999995" subCategory="distribution" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,1,2,1,1,3); based on emission data&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="6.2531E-9" name="Sulphur hexafluoride, liquid, at plant" number="522659" standardDeviation95="1.078" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="002551-62-4" category="emissions to air" generalComment="(1,1,2,1,1,3); national statistics&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="6.2531E-9" name="Sulfur hexafluoride" number="90521" standardDeviation95="1.5059999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(4,1,3,1,1,5); estimations based on losses&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="unspecified" meanValue="0.19042" name="Heat, waste" number="30793" standardDeviation95="1.3221000000000003" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

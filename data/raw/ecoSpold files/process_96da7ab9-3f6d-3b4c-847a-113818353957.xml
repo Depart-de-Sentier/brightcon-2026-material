@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="233190" timestamp="2023-08-28T15:03:10.833+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="minerals" datasetRelatesToProduct="true" generalComment="For a lack of data the dust emissions for bauxite mining are used as proxy. No recultivation is assumed. To account for the phosphate mined together with the vermiculite, the resource &quot;phosphorus, 18% in apatite, 12% in crude ore, in ground&quot; is inventoried. Since the apatite is dumped but afterwards used by other companies it is neither considered co-product nor waste. The paraffin fueled heating system is approximated with &quot;light fuel oil, burned in industrial furnace 1 MW, non-modulating&quot;. For the electricity mix the UCPTE-mix has been used.;&#10;Synonyms: Glimmer; &#10;UUID: 96da7ab9-3f6d-3b4c-847a-113818353957" includedProcesses="includes excavation by digger, blasting, transportation within mine, the land-use for quarrying, the recultivation" infrastructureProcess="false" localCategory="minerals" localName="Vermiculite, at mine" localSubCategory="unspecified" name="Vermiculite, at mine" subCategory="unspecified" unit="kg"/>
+        <geography location="ZA" text="&lt;null&gt;"/>
+        <technology text="High level of technology used in one of the biggest vermiculite mines in the world, in South-Africa."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2005-07-19T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="data which are only available for GLO, RER, MK and CH have been used as proxy for ZA" productionVolume="2'390'000 tons (2001)" samplingProcedure="Data from questionnaire from one company called Parabora mining company ltd. in South-Africa. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Jungbluth N., Kuenniger T., Lehmann M., Thalmann P." firstAuthor="Kellenberger D." nameOfEditors="-" number="137820" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ESU-services Ltd., Bau- und Umweltchimie" sourceNumber="0" sourceType="4" text="Kellenberger D., Althaus H.-J., Jungbluth N., Künniger T. (2007) Life Cycle Inventories of Building Products. Final report ecoinvent data v2.0. Volume: 7. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Kellenberger D.\nOther authors: Althaus H.-J., Jungbluth N., Künniger T.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 7\n" title="2007 - LCI building products - Kellenberger" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="7" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="137747"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137819"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137819" referenceToPublishedSource="137820"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Daniel Kellenberger" number="137819" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="minerals" generalComment="SOUTH AFRICA&#10;" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="ZA" meanValue="1.0" name="Vermiculite, at mine" number="233190" subCategory="unspecified" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(1,4,1,1,1,5);&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="6.5E-4" name="Occupation, mineral extraction site" number="151625" standardDeviation95="1.5800000000000003" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="4.0E-5" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="10.000000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="(1,4,1,1,1,5);&#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="0.00697" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="1.2400000000000002" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="(1,4,1,1,5,5);&#10;" infrastructureProcess="true" localCategory="minerals" localSubCategory="infrastructure" location="ZA" meanValue="6.45E-12" name="Mine, vermiculite" number="571343" standardDeviation95="3.73" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="8.06E-5" name="Lubricating oil, at plant" number="557555" standardDeviation95="5.000000000000001" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="8.0E-6" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="10.000000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(1,4,1,1,1,5);&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in ground" meanValue="1.0" name="Vermiculite" number="23672" standardDeviation95="1.2400000000000002" subCategory="in ground" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="Others" generalComment="(1,4,1,1,5,5);&#10;" infrastructureProcess="false" localCategory="Others" localSubCategory="unspecified" location="RER" meanValue="1.66E-4" name="Blasting" number="222941" standardDeviation95="2.06" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.12E-4" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="10.000000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(1,4,1,1,1,5);&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="1.3E-5" name="Transformation, to mineral extraction site" number="81565" standardDeviation95="2.06" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,4,1,1,1,5);&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="3.76E-4" name="Heat, waste" number="46930" standardDeviation95="1.2400000000000002" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(1,4,1,1,1,5);&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="1.3E-5" name="Transformation, from unknown" number="54270" standardDeviation95="2.06" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,4,1,1,1,5);&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="1.05E-4" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.2400000000000002" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,4,1,1,5,5);&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="0.00532" name="Light fuel oil, burned in industrial furnace 1MW, non-modulating" number="244929" standardDeviation95="2.06" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007723-14-0" category="resources" generalComment="(1,4,1,1,5,5);&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in ground" meanValue="0.3" name="Phosphorus" number="35017" standardDeviation95="2.06" subCategory="in ground" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

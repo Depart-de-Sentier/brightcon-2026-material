@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="197932" timestamp="2026-02-16T15:26:16.303+01:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="metals" datasetRelatesToProduct="true" generalComment="Represents Swiss import mix of reinforced steel. Based on data from the swiss steel association 100% of the import is steel from secondary material. The European country percentages were calculated using the five‑year average from Swiss import‑customs data.&#10;&#10;Distribution: Germany 32 %, France 42 %, Italy 55 %, Poland 3.5 %, and for the remaining 5.3 % the RER process was used.&#10;&#10;For each country the transportation was modelled using information from the swiss steel association. Which resulted in the following: DE 670 km (14% lorry, 86% train), FR 540 km lorry, IT 425 km lorry, PL 1400 km lorry and RER was averaged to 1643.3 km lorry (Average from remaining countries).  &#10;UUID: 359ffce6-23b6-3ee0-a57b-6a8dd6712f85" infrastructureIncluded="false" infrastructureProcess="false" localCategory="metals" localName="Reinforcing steel, import to CH" localSubCategory="extraction" name="Reinforcing steel, import to CH" subCategory="extraction" unit="kg"/>
+        <geography location="RER" text="Data from literature, referring to Europe and Switzerland"/>
+        <technology text="Industry data."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startYear>2020</startYear>
+          <endYear>2025</endYear>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2026-02-16T14:48:41.200+01:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Data from literature"/>
+        <source additionalAuthors="Giger J." firstAuthor="Zschokke M." number="614850" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceType="0" text="On behalf of the Federal Office for the Environment, Bern" title="2025 - Update and suppl. LCI reinforcing steel - Zchokke" year="2025"/>
+        <validation proofReadingDetails="none" proofReadingValidator="439798"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="640227" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="640227" referenceToPublishedSource="614850"/>
+        <person address="anonymised" companyCode="" countryCode="CH" name="Simon Züst" number="439798" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" name="Jonas Giger" number="640227" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="metals" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="1.0" name="Reinforcing steel, import to CH" number="197932" subCategory="extraction" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,2,1,1,1,nA,BU:1.05); ;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="PL" meanValue="0.035" name="Reinforcing steel, electric, import CH, at plant" number="600356" standardDeviation95="1.0743944409" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,2,1,1,1,nA,BU:1.05); ;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="IT" meanValue="0.55" name="Reinforcing steel, electric, import CH, at plant" number="385576" standardDeviation95="1.0743944409" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,2,1,1,1,nA,BU:1.05); ;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="0.053" name="Reinforcing steel, electric, at plant" number="273079" standardDeviation95="1.0743944409" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,2,1,1,1,nA,BU:1.05); ;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="DE" meanValue="0.32" name="Reinforcing steel, electric, import CH, at plant" number="834161" standardDeviation95="1.0743944409" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,2,1,1,1,nA,BU:1.05); ;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="FR" meanValue="0.042" name="Reinforcing steel, electric, import CH, at plant" number="922073" standardDeviation95="1.0743944409" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,1,1;1;3,BU:2) - Transport from PL to CH" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.0490" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.007428290682054" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,1,1;1;3,BU:2) - Transport from IT to CH" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.23375" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.007428290682054" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,1,1;1;3,BU:2) - Transport from RER to CH - average value from data provided by the Steel Association" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.0870949" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.007428290682054" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,1,1;1;3,BU:2) - Transport from DE to CH - 86% by Train" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.184384" name="Transport, freight, rail" number="149864" standardDeviation95="2.007428290682054" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,1,1;1;3,BU:2) - Transport from FR to CH" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.02268" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.007428290682054" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,1,1;1;3,BU:2) - Transport from DE to CH - 14% by Truck" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.030016" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.007428290682054" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

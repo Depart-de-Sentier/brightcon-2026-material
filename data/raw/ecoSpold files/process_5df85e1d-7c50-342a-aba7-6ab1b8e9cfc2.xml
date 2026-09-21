@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="408991" timestamp="2023-08-28T15:03:44.222+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="This inventory is modelled using data of the regional distribution of petrol in Switzerland.;&#10;UUID: 5df85e1d-7c50-342a-aba7-6ab1b8e9cfc2" includedProcesses="Supply of ethanol at service stations in Switzerland including ethanol production and transports from Sweden to Switzerland." infrastructureProcess="false" localCategory="fuels" localName="Ethanol, 99.7% in H2O, from Swedish wood, at service station" localSubCategory="biofuels\ethanol" name="Ethanol, 99.7% in H2O, from Swedish wood, at service station" subCategory="biofuels\ethanol" unit="kg"/>
+        <geography location="CH" text="The inventory is modelled for Switzerland including import of ethanol from Sweden."/>
+        <technology text="Production of ethanol from Scandinavian softwood chips."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Nicht spezifiziert">
+          <startDate>2000-01</startDate>
+          <endDate>2008-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2010-02-09T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="100" productionVolume="World ethanol production was around 276 Mio hl in 2003." samplingProcedure="Literature data. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bauer C.,  Doka G., Frischknecht R., Jungbluth N., Nemecek T., Simons A., Stucki M., Sutter J., Tuchschmid M." firstAuthor="Althaus H.-J." nameOfEditors="-" number="162298" placeOfPublications="Duebendorf and St. Gallen, CH" publisher="Swiss Centre for LCI" sourceNumber="0" sourceType="4" text="Hischier, R., Althaus H.-J., Bauer, Chr., Büsser S., Doka, G., Frischknecht R., Kleijer A., Leuenberger M., Nemecek, T., Simons A. (2010) Documentation of changes implemented in ecoinvent Data v2.2. Final report ecoinvent data v2.2. Volume: 16. Swiss Centre for LCI. Dübendorf. CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Hischier, R.\nOther authors: Althaus H.-J., Bauer, Chr., Büsser S., Doka, G., Frischknecht R., Kleijer A., Leuenberger M., Nemecek, T., Simons A.\nYear: 2010\nTitle of anthology: Final report ecoinvent data v2.2\nPlace of publication: Dübendorf. CH\nPublisher: Swiss Centre for LCI\nVolume No: 16\n" title="2010 - Changes in ecoinvent v2.1 and v2.2 - Althaus" titleOfAnthology="Final report ecoinvent data v2.2" volumeNo="16" year="2010"/>
+        <validation proofReadingDetails="Proof reading validation: passed.; Other validation: none;" proofReadingValidator="136699"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="162297"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="162297" referenceToPublishedSource="162298"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Sybille Buesser" number="162297" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="biofuels\ethanol" location="CH" meanValue="1.0" name="Ethanol, 99.7% in H2O, from Swedish wood, at service station" number="408991" subCategory="biofuels\ethanol" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,4,1,3,3,3); Estimation according  fuel distribution&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="6.27E-6" name="Disposal, municipal solid waste, 22.9% water, to sanitary landfill" number="490984" standardDeviation95="1.2501999999999998" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,4,1,3,3,3); Estimation according  fuel distribution&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.0067" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.2501999999999998" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000064-17-5" category="emissions to air" generalComment="(3,na,1,3,3,na); Estimation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="5.0E-4" name="Ethanol" number="30905" standardDeviation95="1.5763" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,4,1,3,3,3); Estimation according  fuel distribution&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="6.21E-4" name="Light fuel oil, burned in boiler 100kW, non-modulating" number="316331" standardDeviation95="1.2501999999999998" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,1,3,1,3); due to electricity input&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.02412" name="Heat, waste" number="46930" standardDeviation95="1.1376" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(2,4,1,3,3,3); Estimation according  fuel distribution&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="6.89E-7" name="Treatment, sewage, to wastewater treatment, class 2" number="383344" standardDeviation95="1.2501999999999998" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(1,1,1,1,1,1); Product&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="biofuels\ethanol" location="SE" meanValue="1.0005" name="Ethanol, 99.7% in H2O, from wood, at distillation" number="162304" standardDeviation95="1.0500000000000003" subCategory="biofuels\ethanol" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,4,1,3,3,3); Estimation according  fuel distribution&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="CH" meanValue="6.89E-4" name="Tap water, at user" number="422494" standardDeviation95="1.2501999999999998" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="0.1" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.15" name="Transport, freight, lorry, 32t-40t gross weight, fleet average" number="482448" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(2,4,1,3,3,3); Estimation according  fuel distribution&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="1.68E-4" name="Disposal, separator sludge, 90% water, to hazardous waste incineration" number="203157" standardDeviation95="1.2501999999999998" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(2,4,1,3,3,3); Estimation according  fuel distribution&#10;" infrastructureProcess="true" localCategory="oil" localSubCategory="production" location="RER" meanValue="2.6E-10" name="Regional distribution, oil products" number="600841" standardDeviation95="3.0649" subCategory="production" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(2,4,1,3,3,3); Estimation according  fuel distribution&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="7.5E-5" name="Treatment, rainwater mineral oil storage, to wastewater treatment, class 2" number="576983" standardDeviation95="1.2501999999999998" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Transport from Sweden to Swiss border&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="2.4012000000000002" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

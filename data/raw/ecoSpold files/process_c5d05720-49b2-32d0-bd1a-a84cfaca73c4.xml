@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="618337" timestamp="2023-08-28T15:03:08.389+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity" datasetRelatesToProduct="true" generalComment="Technology shares determined based on information from ÖBB and information on gross electricity generation in Austria;&#10;UUID: c5d05720-49b2-32d0-bd1a-a84cfaca73c4" includedProcesses="This dataset includes the shares of different technologies of the ÖBB production mix in Austria." infrastructureProcess="false" localCategory="electricity" localName="Electricity mix, ÖBB" localSubCategory="supply mix" name="Electricity mix, ÖBB" subCategory="supply mix" unit="kWh"/>
+        <geography location="AT" text="Austria"/>
+        <technology text="Average technology"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications">
+          <startDate>2014-01</startDate>
+          <endDate>2014-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-11-02T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" percent="100" productionVolume="GWh" samplingProcedure="Statistics " uncertaintyAdjustments="&lt;null&gt;"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Krebs L." nameOfEditors="-" number="137964" placeOfPublications="Uster, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="3" text="L. Krebs, R. Frischknecht (2020) Aktualisierung Ökobilanzdaten mobitool 2020, Teil 1. Project report. Volume: 713. treeze Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: L. Krebs\nOther authors: R. Frischknecht\nYear: 2020\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: treeze Ltd.\nVolume No: 713\n" title="2020 - Update Mobitool 2020 - Krebs" titleOfAnthology="Project report" volumeNo="713" year="2020"/>
+        <validation proofReadingDetails="Proof reading validation: 02.11.2020; Other validation: G:\Projekte laufend\713 Aktualisierung mobitool 2020\EcoSpold\[713-Strommix-Übertragung-Verteilung-Bahnstrom-EIv2-v0.4.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137963"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137963" referenceToPublishedSource="137964"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Luana Krebs" number="137963" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" generalComment="AUSTRIA&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="AT" meanValue="1.0" name="Electricity mix, ÖBB" number="618337" subCategory="supply mix" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation AT&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="AT" meanValue="0.013245" name="Electricity, production mix photovoltaic, at plant" number="303684" standardDeviation95="1.0500000000000003" subCategory="photovoltaic" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation AT&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro" location="AT" meanValue="0.80132" name="Electricity, hydropower, at power plant" number="619014" standardDeviation95="1.0500000000000003" subCategory="hydro" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation AT&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="0.11921" name="Electricity, at wind farm" number="598753" standardDeviation95="1.0500000000000003" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="biomass\cogeneration" location="CH" meanValue="0.066225" name="Electricity, at cogen with biogas engine, allocation exergy" number="442004" standardDeviation95="1.0500000000000003" subCategory="biomass\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

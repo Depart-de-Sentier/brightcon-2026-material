@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="397338" timestamp="2023-08-28T15:03:37.775+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="textiles" datasetRelatesToProduct="true" generalComment="Inventory refers to the weeving of 1 kg  yarn into textile, the production of the yarn itself is not included.;&#10;UUID: bd5523e1-3bad-3d62-a578-49037daf5bbe" includedProcesses="The inventories include energy consumption, transports and infrastructure for the weeving of cotton yarn into a textile." infrastructureProcess="false" localCategory="textiles" localName="Weeving, cotton" localSubCategory="unspecified" name="Weeving, cotton" subCategory="unspecified" unit="kg"/>
+        <geography location="GLO" text="&lt;null&gt;"/>
+        <technology text="Weeving was cosidered for the textile production in the present study."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>1995-01</startDate>
+          <endDate>1999-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-08-31T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume=" " samplingProcedure="Data were compiled from literature.  " uncertaintyAdjustments="&lt;null&gt;"/>
+        <source additionalAuthors="Werner F., Stettler C., Dinkel F." firstAuthor="Althaus H.-J." nameOfEditors="0" number="167410" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, Umwelt &amp; Entwicklung, Carbotech AG" sourceNumber="0" sourceType="4" text="Althaus H.J., Dinkel F., Werner F. (2007) Life Cycle Inventories of Renewable Materials. Final report ecoinvent Data v2.0. Editors: 0. 0. Volume: 21. Issue: 0. Swiss Centre for LCI, Empa - TSL. Duebendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Althaus H.J.\nOther authors: Dinkel F., Werner F.\nYear: 2007\nName of editors: 0\nTitle of anthology: Final report ecoinvent Data v2.0\nPlace of publication: Duebendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nJournal: 0\nVolume No: 21\nIssue No: 0\n" title="2007 - LCI renewable materials - Althaus" titleOfAnthology="Final report ecoinvent Data v2.0" volumeNo="21" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="139614"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="141497"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="141497" referenceToPublishedSource="167410"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Cornelia Stettler" number="141497" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="textiles" generalComment="Global&#10;" infrastructureProcess="false" localCategory="textiles" localSubCategory="unspecified" location="GLO" meanValue="1.0" name="Weeving, cotton" number="397338" subCategory="unspecified" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,2,3,1,1,4); Öko-Institut, Baumwoll Datendokumentation (Wiegmann K., 2002)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CN" meanValue="7.077800000000002" name="Electricity, low voltage, at grid" number="294016" standardDeviation95="1.1650000000000003" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,2,3,1,1,5); Öko-Institut, Baumwoll Datendokumentation (Wiegmann K., 2002), Czech Republic electricity mix considered representing GUS.&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="3.0333" name="Electricity, low voltage, production ENTSO-E, at grid" number="744926" standardDeviation95="1.2435000000000003" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,3,3,1,4); Assumption Carbotech AG, all cotton at least transport of about 250 km to next factory or harbour for shipping to China/Eastern Europe. Distance oversea transport counted twice as in ecoinvent guidelines&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.35" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.0307" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="paper+ board" generalComment="(5,1,1,3,4,5); Estimation infrastructure comparable to packaging plant (buidling, equipment, electronics). Assumption life time 50 years with an output of 20' 000 t of yarn per year. Totally max. 5% of impacts.&#10;" infrastructureProcess="true" localCategory="paper+ board" localSubCategory="packagings\infrastructure" location="RER" meanValue="1.0E-9" name="Packaging box production unit" number="572417" standardDeviation95="3.5" subCategory="packagings\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,3,1,1,5); Heat waste derived from electricity consumption&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="36.4" name="Heat, waste" number="46930" standardDeviation95="1.2435000000000003" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,3,3,1,4); Assumption Öko-Institut Baumwoll Datendokumentation (Wiegmann K., 2002). USA 40% of production for processing transport of 10% to China and 30% to Eastern Europe, Assumption average distance 12'000 km by Carbotech AG&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="OCE" meanValue="4.8" name="Transport, transoceanic freight ship" number="208374" standardDeviation95="2.0307" subCategory="ship" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

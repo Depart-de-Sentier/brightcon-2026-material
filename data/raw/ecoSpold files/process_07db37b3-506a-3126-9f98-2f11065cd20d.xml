@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="440530" timestamp="2023-08-28T15:02:54.654+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity" datasetRelatesToProduct="true" generalComment="Transmission losses are taken from Itten, Frischknecht and Stucki (2014): LCI of Electricity Mixes and Grid.;&#10;UUID: 07db37b3-506a-3126-9f98-2f11065cd20d" includedProcesses="This dataset describes the transmission of the electricity mix used for the operation of storage pumps in Austria in winter 2018 and includes the high voltage network infrastructure (including long-distance transport), transmission losses and air pollutant emissions. Not included are electricity losses due to long-distance transport since they are assumed to be contained in the total electricity losses of the country network." infrastructureProcess="false" localCategory="electricity" localName="Electricity, high voltage, operation storage pumps, ENTSO, winter 2018, at grid" localSubCategory="production mix" name="Electricity, high voltage, operation storage pumps, ENTSO, winter 2018, at grid" subCategory="production mix" unit="kWh"/>
+        <geography location="AT" text="Austria"/>
+        <technology text="Average technology"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications">
+          <startDate>2018-01</startDate>
+          <endDate>2018-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-07-20T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Some generic datasets from ecoinvent have been used." productionVolume="na" samplingProcedure="Statistics " uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Alig M." firstAuthor="Frischknecht R." nameOfEditors="-" number="150544" placeOfPublications="Bern, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="3" text="Stolz P., Frischknecht R. (2020) Electricity Mixes in Life Cycle Assessments of Buildings. Project report. Volume: 651. treeze Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: Stolz P.\nOther authors: Frischknecht R.\nYear: 2020\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: treeze Ltd.\nVolume No: 651\n" title="2021 - Electricity mixes in LCA of buildings - Frischknecht" titleOfAnthology="Project report" volumeNo="651" year="2021"/>
+        <validation proofReadingDetails="Proof reading validation: 20.07.2020; Other validation: G:\Projekte laufend\651 Strommixe LCA Gebäude BFE\EcoSpold\[651-Electricity-Mixes-Attributional-CH-v0.19.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138233"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138233" referenceToPublishedSource="150544"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Philippe Stolz" number="138233" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" generalComment="AUSTRIA&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="AT" meanValue="1.0" name="Electricity, high voltage, operation storage pumps, ENTSO, winter 2018, at grid" number="440530" subCategory="production mix" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,2,5,3,1,5,BU:3); Assumed service life of the electricity grid: 40a; Long-distance transport included by assuming a distance of 50 km, a capacity of 1 GW and a load factor of 60%; Itten, Frischknecht &amp; Stucki 2014&#10;" infrastructureProcess="true" localCategory="electricity" localSubCategory="distribution" location="CH" meanValue="6.8199E-9" name="Transmission network, electricity, high voltage" number="313112" standardDeviation95="3.2848" subCategory="distribution" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="010024-97-2" category="emissions to air" generalComment="(3,4,5,3,1,5,BU:1.5); Literature estimation; Itten, Frischknecht &amp; Stucki 2014&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="5.0E-6" name="Dinitrogen monoxide" number="646" standardDeviation95="1.8531999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,1,1,1,5,BU:1.05); Estimation based on network losses;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.071898" name="Heat, waste" number="46930" standardDeviation95="1.2423" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,1,2,1,1,3,BU:1.05); Specific network losses estimated based on statistics; Itten, Frischknecht &amp; Stucki 2014&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="AT" meanValue="1.021" name="Electricity mix, operation storage pumps, ENTSO, winter 2018, at plant" number="520571" standardDeviation95="1.129" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(2,4,1,1,1,5,BU:1.05); Estimation based on network losses;&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="unspecified" meanValue="0.0037841" name="Heat, waste" number="30793" standardDeviation95="1.2423" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,4,5,3,1,5,BU:1.5); Literature estimation; Itten, Frischknecht &amp; Stucki 2014&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="4.5E-6" name="Ozone" number="66752" standardDeviation95="1.8531999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

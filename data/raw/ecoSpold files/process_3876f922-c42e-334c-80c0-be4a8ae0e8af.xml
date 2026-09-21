@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="449698" timestamp="2023-08-28T15:03:36.820+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="Heat from a brine-water heat pump, 15kW with heat source form groundwater, 9m deep and Swiss electricity mix (CH). Lifetime of the heating system is 20 years. SPF=3.2. Loss of coolant is 2% (of the total amount in the system) per year.;&#10;UUID: 3876f922-c42e-334c-80c0-be4a8ae0e8af" includedProcesses="Included are the share of the production of the brine-water heatpump with a lifetime of 20years scaled for 1MJ. Also the  the groundwater delivery and return with a lifetime of 20 years is part of this process. " infrastructureProcess="false" localCategory="heat" localName="Heat, at groundwater heat pump, brine-water, 15kW, CH electr., in old building" localSubCategory="heat pumps\heating systems" name="Heat, at groundwater heat pump, brine-water, 15kW, CH electr., in old building" subCategory="heat pumps\heating systems" unit="MJ"/>
+        <geography location="CH" text="Data apply to the supply in Switzerland."/>
+        <technology text="undefined"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2019-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2021-02-19T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="heat efficieny based on literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Waldburger L., Kern C., Roberts G., Zschokke M., Conte F., Weber L." firstAuthor="Kaegi T." nameOfEditors="-" number="137341" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceNumber="0" sourceType="3" text="T. Kägi, L. Waldburger, C. Kern (2020) Life cycle inventories of heating systems. Project report. carbotech. Zurich, CH.\nType: Separate publication\nSource: Report\nFirst author: T. Kägi\nOther authors: L. Waldburger, C. Kern\nYear: 2020\nTitle of anthology: Project report\nPlace of publication: Zurich, CH\nPublisher: carbotech\n" title="2021 - LCI heating systems - Kaegi" titleOfAnthology="Project report" year="2021"/>
+        <validation proofReadingDetails="Proof reading validation: 19.02.2021; Other validation: Z:\Schreibtisch\WinShare\BAFU Heizsysteme\A_zum konvertieren\WP\[EcoSpold_heat at groundwater heat pump_15-50kW_CH electricity mix_v0.1_lwa.xlsx]X-Process;" proofReadingValidator="137339"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137340"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="141098" referenceToPublishedSource="137341"/>
+        <person address="anonymised" companyCode="EBP" countryCode="CH" email="anonymised" name="Andy Spoerri" number="137339" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Livia Waldburger" number="141098" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="heat pumps\heating systems" location="CH" meanValue="1.0" name="Heat, at groundwater heat pump, brine-water, 15kW, CH electr., in old building" number="449698" subCategory="heat pumps\heating systems" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,1,1,1,1,5,BU:3); ;&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="heat pumps\heating systems" location="RER" meanValue="4.4092E-7" name="Heat pump, brine-water, 15kW" number="323838" standardDeviation95="3.0487" subCategory="heat pumps\heating systems" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,1,1,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.086806" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.2152" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,1,1,1,1,5,BU:3); ;&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="heat pumps\heating systems" location="CH" meanValue="4.4092E-7" name="Delivery and return well for groundwater heat pump, 9m, " number="250763" standardDeviation95="3.0487" subCategory="heat pumps\heating systems" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.3125" name="Heat, waste" number="46930" standardDeviation95="1.2152" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000075-10-5" category="emissions to air" generalComment="(1,1,1,1,1,5,BU:1.5); ;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.4691E-7" name="Methane, difluoro-, HFC-32" number="156253" standardDeviation95="1.5597999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000354-33-6" category="emissions to air" generalComment="(1,1,1,1,1,5,BU:1.5); ;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.4691E-7" name="Ethane, pentafluoro-, HFC-125" number="90783" standardDeviation95="1.5597999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(2,1,1,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in ground" meanValue="0.74359" name="Energy, geothermal, converted" number="81957" standardDeviation95="1.2152" subCategory="in ground" uncertaintyType="1" unit="MJ">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,3,1,2,5,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organics" location="US" meanValue="2.4691E-7" name="1,1-difluoroethane, HFC-152a, at plant" number="191327" standardDeviation95="2.2851" subCategory="organics" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,3,1,2,5,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="2.4691E-7" name="Trifluoromethane, at plant" number="227536" standardDeviation95="2.2851" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat pumps" generalComment="none " infrastructureProcess="false" localCategory="heat pumps" localSubCategory="disposal" location="CH" meanValue="4.4092E-7" name="Disposal, heat pump, brine-water, 15kW" number="137529" standardDeviation95="3.0487" subCategory="disposal" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

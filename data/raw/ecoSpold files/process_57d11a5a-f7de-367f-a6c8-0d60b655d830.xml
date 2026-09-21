@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="562343" timestamp="2023-08-28T15:03:28.408+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="The functional unit represent 1 kg of graphite battery grade. Large uncertainty of the process data due to weak data on the production process.;&#10;UUID: 57d11a5a-f7de-367f-a6c8-0d60b655d830" includedProcesses="Raw materials, machineries and energy consumption for production, estimated emissions to air from production and infrastructure of the site (approximation). No water emissions. The difference to the dataset &quot;graphite, at plant&quot; is the  input of hard coal coke (40 MJ) and electicity (1 kWh)." infrastructureProcess="false" localCategory="chemicals" localName="Graphite, battery grade, at plant" localSubCategory="inorganic" name="Graphite, battery grade, at plant" subCategory="inorganic" unit="kg"/>
+        <geography location="CN" text="It is assumed that the original dataset (graphite, at plant) can be used for chinese production. Chinese electricity mix is used."/>
+        <technology text="Data approximated with data from lime mining, crushing and milling."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2005-01</startDate>
+          <endDate>2009-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2010-02-08T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography" productionVolume="na" samplingProcedure="approximation with data from literature, website, oral communication,  " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bauer C.,  Doka G., Frischknecht R., Jungbluth N., Nemecek T., Simons A., Stucki M., Sutter J., Tuchschmid M." firstAuthor="Althaus H.-J." nameOfEditors="-" number="162298" placeOfPublications="Duebendorf and St. Gallen, CH" publisher="Swiss Centre for LCI" sourceNumber="0" sourceType="4" text="Hischier, R., Althaus H.-J., Bauer, Chr., Doka, G., Frischknecht R., Jungbluth N., Margni M., Nemecek, T., Simons A., Spielmann M. (2009) Documentation of changes implemented in ecoinvent Data v2.1. Final report ecoinvent data v2.1. Volume: 16. Swiss Centre for LCI. Dübendorf. CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Hischier, R.\nOther authors: Althaus H.-J., Bauer, Chr., Doka, G., Frischknecht R., Jungbluth N., Margni M., Nemecek, T., Simons A., Spielmann M.\nYear: 2009\nTitle of anthology: Final report ecoinvent data v2.1\nPlace of publication: Dübendorf. CH\nPublisher: Swiss Centre for LCI\nVolume No: 16\n" title="2010 - Changes in ecoinvent v2.1 and v2.2 - Althaus" titleOfAnthology="Final report ecoinvent data v2.1" volumeNo="16" year="2010"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="136750"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="165798"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="165798" referenceToPublishedSource="162298"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Dominic Notter" number="165798" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="CHINA&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CN" meanValue="1.0" name="Graphite, battery grade, at plant" number="562343" subCategory="inorganic" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="(4,4,1,3,1,5,1)&#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="0.018" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="1.3229999999999997" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="(4,4,1,3,1,5,4)&#10;" infrastructureProcess="true" localCategory="minerals" localSubCategory="infrastructure" location="CH" meanValue="5.25E-11" name="Mine, limestone" number="349014" standardDeviation95="1.3229999999999997" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,4,1,3,1,5,33)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="4.78E-5" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="1.8395999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="Others" generalComment="(1,4,1,3,1,4,4)&#10;" infrastructureProcess="false" localCategory="Others" localSubCategory="unspecified" location="CH" meanValue="6.52E-6" name="Recultivation, limestone mine" number="386986" standardDeviation95="1.1557000000000002" subCategory="unspecified" uncertaintyType="1" unit="m2">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(2,4,1,3,3,5,4)&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in ground" meanValue="1.0526" name="Metamorphous rock, graphite containing" number="75032" standardDeviation95="1.3286000000000002" subCategory="in ground" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,2,1,3,4,4,2)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CN" meanValue="1.0325" name="Electricity, medium voltage, at grid" number="171629" standardDeviation95="1.5267000000000004" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(5,4,1,3,1,5,6)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="8.87E-6" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="1.5805000000000002" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="Others" generalComment="(4,4,1,3,1,5,5)&#10;" infrastructureProcess="false" localCategory="Others" localSubCategory="unspecified" location="RER" meanValue="7.73E-5" name="Blasting" number="222941" standardDeviation95="2.1084" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(2,2,1,3,4,4,1)&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="coal\cokes\briquets" location="GLO" meanValue="40.0" name="Hard coal coke, at plant" number="275640" standardDeviation95="1.5267000000000004" subCategory="coal\cokes\briquets" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(1,4,1,3,1,4,4)&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="6.52E-6" name="Transformation, from forest, unspecified" number="81553" standardDeviation95="1.1557000000000002" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(2,4,1,3,3,5,4)&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="2.93E-5" name="Water, well" number="160727" standardDeviation95="1.3286000000000002" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="(5,5,5,2,5,5,5)&#10;" infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="2.78E-8" name="Conveyor belt, at plant" number="325402" standardDeviation95="3.2046" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="m">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="(5,5,5,2,5,5,5)&#10;" infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="2.31E-4" name="Industrial machine, heavy, unspecified, at plant" number="563077" standardDeviation95="3.2046" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(2,4,1,3,3,5,4)&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="6.52E-6" name="Transformation, to mineral extraction site" number="81565" standardDeviation95="1.3286000000000002" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(4,4,1,3,1,5,31)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="3.717" name="Heat, waste" number="46930" standardDeviation95="1.6327000000000003" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(4,4,1,3,1,5,13)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.21E-4" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="1.3229999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,5,3,5,3,5,2)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="0.00359" name="Light fuel oil, burned in boiler 100kW, non-modulating" number="316331" standardDeviation95="1.4797" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(2,4,1,3,3,5,4)&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="8.48E-5" name="Occupation, mineral extraction site" number="151625" standardDeviation95="1.3286000000000002" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(5,5,2,3,3,5,9)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="0.0898" name="Heat, light fuel oil, at industrial furnace 1MW" number="339773" standardDeviation95="3.3649000000000004" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="0.02637" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="299393" timestamp="2023-08-28T15:03:23.252+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="The functional unit represent 1 kg of anhydrous borax powder. Large uncertainty of the process data due to weak data on the production process and missing data on process emissions.;&#10;CAS number: 001330-43-4; &#10;Formula: Na2B4O7; &#10;UUID: 51300f1a-2cf0-32e6-b9fb-558b60cc9125" includedProcesses="Raw materials and chemicals used for production, transport of materials to manufacturing plant, estimated emissions to air and water from production (incomplete), estimation of energy demand and infrastructure of the plant (approximation). Solid wastes omitted." infrastructureProcess="false" localCategory="chemicals" localName="Borax, anhydrous, powder, at plant" localSubCategory="inorganic" name="Borax, anhydrous, powder, at plant" subCategory="inorganic" unit="kg"/>
+        <geography location="RER" text="Data used has no specific geographical origin (stoechiometry). Average europenan processes for raw materials, transport requirements and electricity mix used."/>
+        <technology text="Production out of sodium borates by melting technology, using a rotary kiln and a subsequent fusion furnace. The overall process yield is assumed as 98%. Input amount bases on stoechiometric calculations. The energy consumption is estimated based on filament glass production in Europe."/>
+        <timePeriod dataValidForEntirePeriod="true" text="date of published literature">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-06-27T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="Process data based on stoechiometric calculations of few literature sources. Energy demand based on approximation from other sector (glass production). " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Hellweg S., Hischier R., Jungbluth N., Osses M., Primas A." firstAuthor="Althaus H.-J." nameOfEditors="-" number="137407" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ETH, ESU-services Ltd., Chudacoff Oekoscience" sourceNumber="0" sourceType="4" text="Althaus H.-J., Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A. (2007) Life Cycle Inventories of Chemicals. Final report ecoinvent data v2.0. Volume: 8. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Althaus H.-J.\nOther authors: Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 8\n" title="2007 - LCI chemicals - Althaus" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="8" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="137406"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136699"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136699" referenceToPublishedSource="137407"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Heiko Kunst" number="137406" telephone="anonymised"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="1.0" name="Borax, anhydrous, powder, at plant" number="299393" subCategory="inorganic" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,na,na,na,na,na); estimation based on process yield 90-99.8%&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="US" meanValue="1.71" name="Sodium borates, at plant" number="232231" standardDeviation95="1.1999999999999997" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(5,5,1,1,4,5); estimated with data from a large chem. plant &#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.944" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.9" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); assumed distance of 50 km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.0853" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.1" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="glass" generalComment="(4,5,1,3,5,4); estimation&#10;" infrastructureProcess="true" localCategory="glass" localSubCategory="packaging\infrastructure" location="RER" meanValue="1.25E-10" name="Glass production site" number="203661" standardDeviation95="3.7999999999999994" subCategory="packaging\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(5,5,1,1,4,5); estimated with data from a large chem. plant &#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="13.600000000000003" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.9" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,5,1,1,4,5); calculated from electricity input&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.4" name="Heat, waste" number="46930" standardDeviation95="1.9" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

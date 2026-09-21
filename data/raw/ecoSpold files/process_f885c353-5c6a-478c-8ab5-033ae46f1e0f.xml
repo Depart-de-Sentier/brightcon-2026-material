@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="286849" timestamp="2023-08-28T15:03:22.948+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="Others" datasetRelatesToProduct="true" generalComment="Inventory refers to 1kg of biowaste. Electricity consumption and emissions represent the biogas production in a digestion plant.  Infrastructure expenditures are included. Methane emissions are based on Dinkel et al. 2012, Ökobilanzen zur Biomasseverwertung, Tab 4: sum of pre-storage, fermentation and cogen, but without post rotting (not common anymore) and purification (outside the systemboundary). Allocation factor of 18% and 82% for biogas production and biowaste disposal was considered.;&#10;UUID: f885c353-5c6a-478c-8ab5-033ae46f1e0f" includedProcesses="Data represents the environmental exchanges due to biowaste pre treatment biowaste digestion and post-composting of digested matter" infrastructureProcess="false" localCategory="Others" localName="Disposal, biowaste, to anaerobic digestion, economic allocation" localSubCategory="biomass" name="Disposal, biowaste, to anaerobic digestion, economic allocation" subCategory="biomass" unit="kg"/>
+        <geography location="CH" text="Data represents conditions of biogas from biowaste production in Switzerland"/>
+        <technology text="Industry data."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2016-01</startDate>
+          <endDate>2016-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2021-04-12T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Data provided by factories " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Zschokke M., Dinkel F." firstAuthor="Kaegi T." nameOfEditors="-" number="199337" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceNumber="0" sourceType="0" text="Kägi T, Zschokke M, Dinkel F (2021) Life Cycle Inventories of Biogas and Biomethane Processes. On behaltf of FOEN, 2021\n" title="2022 - LCI biogas and biomethane processes - Kaegi" titleOfAnthology="-" year="2022"/>
+        <validation proofReadingDetails="Proof reading validation: 12.04.2021; Other validation: Z:\Schreibtisch\WinShare\BAFU Heizsysteme\A_zum konvertieren\[EcoSpold_biogas_rohbiogas.xlsx]X-Process;" proofReadingValidator="250837"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137340"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137340" referenceToPublishedSource="199337"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Norbert Egli" number="250837" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="Others" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="Others" localSubCategory="biomass" location="CH" meanValue="1.0" name="Disposal, biowaste, to anaerobic digestion, economic allocation" number="286849" subCategory="biomass" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="007783-06-4" category="emissions to air" generalComment="(4,3,1,1,1,5,BU:1.5); ;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="7.093E-5" name="Hydrogen sulfide" number="27907" standardDeviation95="1.6209" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="014797-55-8" category="emissions to water" generalComment="(4,4,4,3,1,5,BU:1.5); ;&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="2.4354E-6" name="Nitrate" number="49870" standardDeviation95="1.6871999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(3,4,3,3,4,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="CH" meanValue="0.1845" name="Tap water, at user" number="422494" standardDeviation95="1.6115" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="014797-65-0" category="emissions to water" generalComment="(4,4,4,3,1,5,BU:1.5); ;&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="7.6096E-8" name="Nitrite" number="83991" standardDeviation95="1.6871999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(1,4,1,3,3,5,BU:3); ;&#10;" infrastructureProcess="true" localCategory="fuels" localSubCategory="biofuels\infrastructure" location="CH" meanValue="1.3694E-9" name="Anaerobic digestion plant, biowaste" number="566493" standardDeviation95="3.1038999999999994" subCategory="biofuels\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007727-37-9" category="emissions to water" generalComment="(4,4,4,3,1,5,BU:1.5); ;&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="8.938E-8" name="Nitrogen, organic bound" number="79881" standardDeviation95="1.6871999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,5,1,5,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="biomass\cogeneration" location="CH" meanValue="0.19844" name="Heat, at cogen with biogas engine, allocation exergy" number="139326" standardDeviation95="1.3958" subCategory="biomass\cogeneration" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="014798-03-9" category="emissions to water" generalComment="(4,4,4,3,1,5,BU:1.5); ;&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="7.6096E-8" name="Ammonium, ion" number="89863" standardDeviation95="1.6871999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,3,2,3,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="2.8864E-4" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.2264" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(3,4,3,3,4,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="1.845E-4" name="Treatment, sewage, to wastewater treatment, class 4" number="323641" standardDeviation95="1.6115" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(1,1,1,1,1,5,BU:1.5); ;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.001394" name="Methane, biogenic" number="155267" standardDeviation95="1.5597999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007723-14-0" category="emissions to water" generalComment="(4,4,4,3,1,5,BU:1.5); ;&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="5.7728E-8" name="Phosphorus" number="67972" standardDeviation95="1.6871999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(4,3,1,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.1722" name="Carbon dioxide, biogenic" number="80535" standardDeviation95="1.3059" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

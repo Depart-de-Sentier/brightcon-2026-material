@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="EcoInvent Excel2EcoSpold 1.9.17" number="338660" timestamp="2025-07-16T13:28:55">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="transport systems" datasetRelatesToProduct="true" generalComment="UUID=6cc6e1f7-1b2c-39bc-97ee-68c520772523" includedProcesses="This dataset describes the transport of Nigerian liquefied natural gas on a LNG tanker." infrastructureIncluded="true" infrastructureProcess="false" localCategory="transport systems" localName="Transport, liquefied natural gas NG, freight ship" localSubCategory="ship" name="Transport, liquefied natural gas NG, freight ship" subCategory="ship" unit="tkm"/>
+        <geography location="OCE" text="Global data für fuel requirements and emissions."/>
+        <technology text="LNG tanker with a dual fuel diesel-cycle engine as propulsion technology."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Data for fuel requirements stems from 2006, for emissions from 2015 and 2019.">
+          <startYear>2023</startYear>
+          <endYear>2024</endYear>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2025-07-16T13:28:55" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="not known" samplingProcedure="Literature." uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Jungbluth N., Bussa M., Stefanel A." firstAuthor="Meili C." number="136354" placeOfPublications="Schaffhausen, CH" publisher="ESU-services Ltd." sourceType="3" text="Report" title="2025 - LCI long-distance transport crude oil - Meili" titleOfAnthology="Project report" volumeNo="234" year="2025"/>
+        <source additionalAuthors="Jungbluth N., Meili C." firstAuthor="Bussa M." number="136355" placeOfPublications="Schaffhausen, CH" publisher="ESU-services Ltd." sourceType="3" text="Report" title="2025 - LCI long-dist. transp. and distrib. natural gas - Bussa" titleOfAnthology="Project report" volumeNo="234" year="2025"/>
+        <validation otherDetails="https://esuservices-my.sharepoint.com/personal/jungbluth_esu-services_ch/Documents/ESU-intern/565 Beratung BAFU/EcoSpoldDataXML/[565-EcoSpold-gas-transport-2025-v2.0.xlsb]X-Process" proofReadingDetails="Passed." proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136353" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="2" person="136351" referenceToPublishedSource="136355"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Christoph Meili" number="136352" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Maresa Bussa" number="136353" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="OCE" meanValue="1" name="Transport, liquefied natural gas NG, freight ship" number="338660" subCategory="ship" uncertaintyType="0" unit="tkm">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,4,5,3,3,BU:2); estimates for waste transport" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="1.09E-5" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.304" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5); Based on data from IMO(2015) and Sternersen (2017)" meanValue="0.00012906" name="Methane, fossil" number="90787" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.05); Based on data from IMO(2015) and Sternersen (2017)" meanValue="0.013424" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.2226" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,5,5,3,3,BU:5); Based on data from IMO(2015) and Sternersen (2017)" meanValue="3.9249E-5" name="Carbon monoxide, fossil" number="641" standardDeviation95="5.6294" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,5,5,3,3,BU:1.5); Based on data from IMO(2015) and Sternersen (2017)" meanValue="6.105E-7" name="Dinitrogen monoxide" number="646" standardDeviation95="2.1136" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,5,5,3,3,BU:1.5); Based on data from IMO(2015) and Sternersen (2017)" meanValue="0.00013244" name="Nitrogen oxides" number="79243" standardDeviation95="2.1136" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(4,3,3,1,1,BU:1.05); Based on data from Faist-Emmenegger (2015)" infrastructureProcess="false" localCategory="natural gas" localSubCategory="production" location="NG" meanValue="0.00429" name="Natural gas, liquefied, at liquefaction plant" number="537616" standardDeviation95="1.2423" subCategory="production" uncertaintyType="1" unit="Nm3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(4,3,3,1,1,BU:1.05); Based on data from Faist-Emmenegger (2015)" infrastructureProcess="false" localCategory="oil" localSubCategory="distribution" location="RER" meanValue="0.0016478" name="Heavy fuel oil, at regional storage" number="167349" standardDeviation95="1.2423" subCategory="distribution" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(5,4,5,1,1,BU:3); Assumptions on the basis of older data" infrastructureProcess="true" localCategory="water" localSubCategory="operations\infrastructure" location="OCE" meanValue="2.43E-11" name="Transoceanic freight ship" number="192024" standardDeviation95="3.4657" subCategory="operations\infrastructure" uncertaintyType="1" unit="unit">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(5,4,5,1,1,BU:3); Assumptions on the basis of older data" infrastructureProcess="true" localCategory="water" localSubCategory="operations\infrastructure" location="RER" meanValue="2.43E-11" name="Operation, maintenance, port" number="193765" standardDeviation95="3.4657" subCategory="operations\infrastructure" uncertaintyType="1" unit="unit">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(5,4,5,1,1,BU:3); Assumptions on the basis of older data" infrastructureProcess="true" localCategory="water" localSubCategory="operations\infrastructure" location="RER" meanValue="2.43E-11" name="Maintenance, transoceanic freight ship" number="542153" standardDeviation95="3.4657" subCategory="operations\infrastructure" uncertaintyType="1" unit="unit">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(2,4,5,1,1,BU:1.05); Assumptions on the basis of older data" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="0.000218" name="Disposal, bilge oil, 90% water, to hazardous waste incineration" number="315922" standardDeviation95="1.5253" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

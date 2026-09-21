@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="506916" timestamp="2023-08-28T15:03:28.180+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="construction" datasetRelatesToProduct="true" generalComment="The drilling for the mining process is assumed to be done with compressed air, which is produced with electricity. The sawing is assumed to be accomplished with diamond wires. The diamond losses are not taken into account even though they might be significant as no data on diamond production is available. The dust emissions are estimated based on the losses (volume of granite with a density of 2?750 kg/m3) by cutting a plate with the geometry 0.5 * 0.5 * 0.03 m and a weight of 20 kg. It is assumed that 95% of the dust is bound in the cooling water.;&#10;UUID: fa69ed43-cfc5-31f6-b8e8-76d63a6d5bd8" includedProcesses="Includes the raw material granite, the mining, sawing and cooling, the transports within the mine and to the regional storage in Switzerland and the infrastructure (machines). No administration, wastewater, wear and spare parts are included. Dust is accounted for." infrastructureProcess="false" localCategory="construction" localName="Natural stone plate, cut, at regional storage" localSubCategory="others" name="Natural stone plate, cut, at regional storage" subCategory="others" unit="kg"/>
+        <geography location="CH" text="For some exchanges RER- and GLO-modules are used as proxy"/>
+        <technology text="Typical technology for average Swiss production. Mining of boulders by direct separation from rock, whole to whole drilling, kerving wire saw, oxygen lance and water jet. Cutting by wire saw."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2010-02-07T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="See geography" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Althaus H.-J., Jungbluth N., Kuenniger T., Lehmann M., Thalmann P." firstAuthor="Kellenberger D." nameOfEditors="-" number="137820" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ESU-services Ltd., Bau- und Umweltchimie" sourceNumber="0" sourceType="4" text="Kellenberger D., Althaus H.-J., Jungbluth N., Künniger T. (2007) Life Cycle Inventories of Building Products. Final report ecoinvent data v2.0. Volume: 7. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Kellenberger D.\nOther authors: Althaus H.-J., Jungbluth N., Künniger T.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 7\n" title="2007 - LCI building products - Kellenberger" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="7" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="139614"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137819" referenceToPublishedSource="137820"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Daniel Kellenberger" number="137819" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="construction" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="others" location="CH" meanValue="1.0" name="Natural stone plate, cut, at regional storage" number="506916" subCategory="others" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="(3,5,1,2,3,5); &#10;" infrastructureProcess="true" localCategory="minerals" localSubCategory="infrastructure" location="CH" meanValue="2.0E-10" name="Mine, limestone" number="349014" standardDeviation95="3.1500000000000012" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,1,1,3,5); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="2.02" name="Heat, waste" number="46930" standardDeviation95="1.4" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,1,1,3,5); &#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.3" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.19" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="composite&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.56" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.4" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(2,5,3,5,5,5); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.03E-4" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="2.7800000000000002" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="(3,5,1,1,3,5); &#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="1.071" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="1.4" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(2,5,3,5,5,5); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="5.6E-5" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="3.7899999999999996" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(5,5,1,1,3,5); &#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in ground" meanValue="1.3800000000000001" name="Granite" number="17806" standardDeviation95="1.6799999999999997" subCategory="in ground" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,5,3,5,5,5); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="2.8E-5" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="2.35" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(2,5,1,3,3,5); &#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.00373" name="Water, river" number="159985" standardDeviation95="1.3800000000000001" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="3.5435" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

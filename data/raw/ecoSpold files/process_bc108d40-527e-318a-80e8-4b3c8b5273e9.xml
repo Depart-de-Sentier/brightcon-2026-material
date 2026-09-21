@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="329856" timestamp="2023-08-28T15:03:05.621+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity by fuel" datasetRelatesToProduct="true" generalComment="The module is based on &quot;nuclear power plant, boiling water reactor 1000MW&quot;, CH. Only two differences are: the supply mix of electricity, DE instead of CH;&#10;UUID: bc108d40-527e-318a-80e8-4b3c8b5273e9" includedProcesses="The module includes materials, energy and transport requirements used for construction of the plant. Land-use is included with the assumption of 40 years operation. Disposal of non-contaminated material from dismantling is also included, whereas contaminated materials are attributed to the operation." infrastructureProcess="true" localCategory="electricity by fuel" localName="Nuclear power plant, boiling water reactor 1000MW" localSubCategory="waste\nuclear\bwr\infrastructure" name="Nuclear power plant, boiling water reactor 1000MW" subCategory="waste\nuclear\bwr\infrastructure" unit="p"/>
+        <geography location="DE" text="Extrapolated from Swiss data on one specific plant."/>
+        <technology text="The described plant Leibstadt started commercial operation at the end of 1984. It belongs to the 1000 MW class (net installed capacity has been upgraded in steps from the original 990 MW to 1165 MW at the end of 1999). It has a GE designed primary circuit, a Mark III containment, and a cooling tower. This module can be assumed to be representative for German boiling water reactors of the same class."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-08-19T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bauer C., Doka G." firstAuthor="Dones R." nameOfEditors="Bauer C." number="137748" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI, Doka LCA" sourceNumber="0" sourceType="4" text="Dones, R., Doka G. (2009) Kernenergie. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1. Editors: Bauer C.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Dones, R.\nOther authors: Doka G.\nYear: 2009\nName of editors: Bauer C.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2009 - Nuclear energy - Dones" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1" volumeNo="6" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: for final calculation August 2003;" proofReadingValidator="137747"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137747"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137747" referenceToPublishedSource="137748"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity by fuel" generalComment="GERMANY&#10;" infrastructureProcess="true" localCategory="electricity by fuel" localSubCategory="waste\nuclear\bwr\infrastructure" location="DE" meanValue="1.0" name="Nuclear power plant, boiling water reactor 1000MW" number="329856" subCategory="waste\nuclear\bwr\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="extrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="construction waste landfill" location="CH" meanValue="3.79E8" name="Disposal, inert waste, 5% water, to construction waste landfill" number="509488" standardDeviation95="1.3000000000000003" subCategory="construction waste landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="assumption&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="190000.0" name="Transformation, to unknown" number="25119" standardDeviation95="1.1" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="estrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="1.74E8" name="Light fuel oil, burned in industrial furnace 1MW, non-modulating" number="319298" standardDeviation95="1.1999999999999997" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="standard&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="1.97E7" name="Transport, freight, rail" number="149864" standardDeviation95="2.1" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="estrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="1.9E8" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="1.1999999999999997" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="estrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="200000.0" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.1999999999999997" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="standard&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="27400000" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.1" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="estrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="2.06E7" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="1.1999999999999997" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="own estimation on plan&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="3610000.0" name="Occupation, construction site" number="110833" standardDeviation95="1.1" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="assumption&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="190000.0" name="Transformation, from pasture, man made" number="42235" standardDeviation95="1.1" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="estrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="DE" meanValue="5.31E8" name="Electricity, medium voltage, at grid" number="584179" standardDeviation95="1.1999999999999997" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="assumption&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="19000.0" name="Transformation, to industrial area, vegetation" number="85687" standardDeviation95="1.1" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="assumption&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="171000.0" name="Transformation, to industrial area, built up" number="86253" standardDeviation95="1.1" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="assumption&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="190000.0" name="Transformation, from industrial area" number="5579" standardDeviation95="1.1" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="own estimation on plan&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="6840000.0" name="Occupation, industrial area, built up" number="116809" standardDeviation95="1.1" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="estrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="1470000.0" name="Copper, at regional storage" number="328058" standardDeviation95="1.1999999999999997" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="estrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="200000.0" name="Concrete, normal, at plant" number="367058" standardDeviation95="1.1999999999999997" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="paper+ board" generalComment="estrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="paper+ board" localSubCategory="graphic paper" location="RER" meanValue="4250000.0" name="Paper, woodfree, coated, at integrated mill" number="320598" standardDeviation95="1.1999999999999997" subCategory="graphic paper" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="estrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="construction processes" localSubCategory="civil engineering" location="CH" meanValue="100000.0" name="Excavation, hydraulic digger, average" number="432664" standardDeviation95="1.3000000000000003" subCategory="civil engineering" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="estrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="200000.0" name="Aluminium, production mix, at plant" number="436582" standardDeviation95="1.1999999999999997" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="estrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="wood" localSubCategory="wooden materials\updated processes\other material" location="RER" meanValue="8000.0" name="Plywood, outdoor use, at plant" number="518256" standardDeviation95="1.1999999999999997" subCategory="wooden materials\updated processes\other material" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="estrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="4.0E7" name="Reinforcing steel, at plant" number="545988" standardDeviation95="1.1999999999999997" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="own estimation on plan&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="760000.0" name="Occupation, industrial area, vegetation" number="113531" standardDeviation95="1.1" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="estrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="5570000.0" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.1999999999999997" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="extrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.91E9" name="Heat, waste" number="46930" standardDeviation95="1.1999999999999997" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="estrapolation from Swiss data&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="coverings" location="CH" meanValue="5300000.0" name="Fibre cement facing tile, at plant" number="260451" standardDeviation95="1.1999999999999997" subCategory="coverings" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

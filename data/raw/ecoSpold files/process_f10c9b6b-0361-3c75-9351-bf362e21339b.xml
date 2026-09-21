@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="316686" timestamp="2024-07-09T17:48:30">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="computers &amp; network" datasetRelatesToProduct="true" generalComment="The data set represents the mix of use/CPE networks in Switzerland; UUID: f10c9b6b-0361-3c75-9351-bf362e21339b" includedProcesses="The dataset corresponds to the amount of equipment and electricity consumed to support a certain amount of network traffic. In literature, they are also often termed as CPE or Customer Premises Equipment. The dataset is based on the number of modems, multimedia gateways, and CSTBs needed to support a certain amount of network traffic in Switzerland for the year 2013. Total amount of network traffic is based on measured traffic for internet-phone and television broadcast. For television broadcast, data volumes are calculated by multiplying the average television use in minutes with the channel and transmission rates of a specific television channel. The amount of electricity consumed is calculated by multiplying the energy intensity of customer premise equipment (modems, multimedia gateways, and CSTBs) with the number of customer premise equipment. The dataset assumes a device lifetime of 6 years. The reference flow of this dataset is = 1 GB (replaced by p since this type of flow and units do not exist in the current data schema document)." infrastructureIncluded="false" infrastructureProcess="false" localCategory="computers &amp; network" localName="Use of CPE, for transmission network per GB" localSubCategory="use cases" name="Use of CPE, for transmission network per GB" subCategory="use cases" unit="unit">
+          <synonym>Übertragungsnetz</synonym>
+          <synonym>Nutzung</synonym>
+        </referenceFunction>
+        <geography location="CH" text="Data for Swiss networks"/>
+        <technology text="The mix of Swiss use/CPE transmission network. Technologies considered are modems, multimedia gateways, and complex set top boxes (CSTBs)"/>
+        <timePeriod dataValidForEntirePeriod="" text="Unspecified">
+          <startDate>2023-01</startDate>
+          <endDate>2029-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2024-07-09T17:48:30" type="1" version="2024"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Average technology" productionVolume="unknown" samplingProcedure="Literature &amp; own estimations" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Permana Ajie M., Beloin-Saint-Pierre D." firstAuthor="Raka Adrianto L." number="148303" placeOfPublications="St. Gallen, CH" publisher="Empa" sourceType="0" title="2024 - LCI ICT sector - Raka Adrianto" year="2024"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Mischa Zschokke, Company: Carbotech, Country: CH" proofReadingValidator="140702"/>
+        <validation/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="148302" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="false" dataPublishedIn="2" person="148302" referenceToPublishedSource="148303"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre" number="148302" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Mischa Zschokke" number="140702" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="computers &amp; network" generalComment="1 unit = 1 GB data" infrastructureProcess="false" localCategory="computers &amp; network" localSubCategory="use cases" location="CH" meanValue="1" name="Use of CPE, for transmission network per GB" number="316686" subCategory="use cases" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(2,3,2,2,2,5,BU:1.05) Based on SFOE 2015" infrastructureProcess="false" localCategory="electronics" localSubCategory="internet network" location="CH" meanValue="2.63805E-6" name="Multimedia gateway, for customer premise equipment (CPE)" number="449752" standardDeviation95="1.23" subCategory="internet network" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(2,3,2,2,2,5,BU:1.05) Based on SFOE 2015" infrastructureProcess="false" localCategory="electronics" localSubCategory="internet network" location="CH" meanValue="1.13027E-5" name="Modem, for customer premise equipment (CPE)" number="386609" standardDeviation95="1.23" subCategory="internet network" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(2,3,2,2,2,5,BU:1.05) Based on SFOE 2015" infrastructureProcess="false" localCategory="electronics" localSubCategory="internet network" location="CH" meanValue="9.54018E-6" name="Complex Set Top Boxes (CSTB), for customer premise equipment (CPE)" number="328509" standardDeviation95="1.23" subCategory="internet network" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,3,2,2,2,5,BU:1.05) Based on SFOE 2015" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.03105" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.23" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

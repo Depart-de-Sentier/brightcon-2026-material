@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="470651" timestamp="2023-08-28T15:03:30.200+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="glass" datasetRelatesToProduct="true" generalComment="Assumption with inventory data for normal glass. This glass differes from normal glass mainly due to the type of raw materials, which is considered with a higher transport distance. Additional transports for importing it to Europe are included in the inventory.;&#10;UUID: 4655e015-cfe3-3852-b4e5-3a2a62c61d5f" includedProcesses="Gate to gate inventory for the process including transport to RER" infrastructureProcess="false" localCategory="glass" localName="Solar glass, low-iron, at regional storage" localSubCategory="construction" name="Solar glass, low-iron, at regional storage" subCategory="construction" unit="kg"/>
+        <geography location="RER" text="&lt;null&gt;"/>
+        <technology text="Estimation of low-iron glass production with technology used for normal flat glass."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Date of estimation.">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-07-01T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Assessment with European electricity mix." productionVolume="na" samplingProcedure="Assumption " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Jungbluth N., Kuenniger T., Lehmann M., Thalmann P." firstAuthor="Kellenberger D." nameOfEditors="-" number="137820" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ESU-services Ltd., Bau- und Umweltchimie" sourceNumber="0" sourceType="4" text="Kellenberger D., Althaus H.-J., Jungbluth N., Künniger T. (2007) Life Cycle Inventories of Building Products. Final report ecoinvent data v2.0. Volume: 7. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Kellenberger D.\nOther authors: Althaus H.-J., Jungbluth N., Künniger T.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 7\n" title="2007 - LCI building products - Kellenberger" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="7" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="137819"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136351"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136351" referenceToPublishedSource="137820"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Daniel Kellenberger" number="137819" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="glass" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="glass" localSubCategory="construction" location="RER" meanValue="1.0" name="Solar glass, low-iron, at regional storage" number="470651" subCategory="construction" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="glass" generalComment="(3,na,1,5,4,na); Assumption for a comparable product&#10;" infrastructureProcess="false" localCategory="glass" localSubCategory="construction" location="RER" meanValue="1.0" name="Flat glass, uncoated, at plant" number="180727" standardDeviation95="1.4999999999999998" subCategory="construction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,3,1,1,1,na); Additional transport of sand (75%), 500km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.375" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.0000000000000004" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,3,1,1,1,na); Additional transport from US, 6000km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="OCE" meanValue="6.0" name="Transport, transoceanic freight ship" number="208374" standardDeviation95="2.0000000000000004" subCategory="ship" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="542730" timestamp="2023-08-28T15:03:42.044+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="The process describes the production of methanol from natural gas. The process refers on a steam reforming process to obtsin syn-gas for the production of methanol. No CO2 use, no Hydrogen production (assumed as burnded in the furnace).;&#10;CAS number: 000067-56-1; &#10;Formula: CH3OH; &#10;Synonyms: methyl alcohol, methyl hydroxide, monohydroxymethane; &#10;UUID: 1bf86f83-27bd-3271-9390-c280d9994184" includedProcesses="Raw materials, processing energy, estimate on catalyst use, emissions to air and water from process, plant infrastructure ." infrastructureProcess="false" localCategory="chemicals" localName="Methanol, at plant" localSubCategory="organic" name="Methanol, at plant" subCategory="organic" unit="kg"/>
+        <geography location="GLO" text="Data from various plants of different locations.  Data mainly from literature and articles related with plant design."/>
+        <technology text="Data refers to steam reforming of natural gas. Other reforming technologies used for to determine the uncertainity. Only production from natural gas included."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-03-31T18:21:00.246+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="50" productionVolume="28.2 Mt world wide in 2000" samplingProcedure="Production asessed with mixed data from literature and plant reports on plant design or efficiency. Representativity of the data concerning energy semms good Representativity concerning the actual average emission levels is much lower. It was assumed that the data cover about 50-60% of the production. Aabout 90% of the world wide production is from natural gas. 60% of the natural gas operated plant work with the steam reforming process. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Hellweg S., Hischier R., Jungbluth N., Osses M., Primas A." firstAuthor="Althaus H.-J." nameOfEditors="-" number="137407" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ETH, ESU-services Ltd., Chudacoff Oekoscience" sourceNumber="0" sourceType="4" text="Althaus H.-J., Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A. (2007) Life Cycle Inventories of Chemicals. Final report ecoinvent data v2.0. Volume: 8. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Althaus H.-J.\nOther authors: Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 8\n" title="2007 - LCI chemicals - Althaus" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="8" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136699"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137674"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137674" referenceToPublishedSource="137407"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+        <person address="anonymised" companyCode="HSLU" countryCode="CH" email="anonymised" name="Alex Primas" number="137674" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="Global&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="1.0" name="Methanol, at plant" number="542730" subCategory="organic" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Weak data of one source&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="2.0E-6" name="Chloride" number="34061" standardDeviation95="1.8900000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,3,2,3,4,3); Data dependent on technology&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.074" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.5300000000000002" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="(3,5,2,3,4,5); Weak data of one source&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="4.9E-4" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.8900000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(3,3,2,3,4,3); Data dependent on technology&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="industry water" location="CH" meanValue="0.85" name="Water, deionised, at plant" number="617689" standardDeviation95="1.5300000000000002" subCategory="industry water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Weak data of one source&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="2.4E-4" name="TOC, Total Organic Carbon" number="2278" standardDeviation95="1.8900000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,2,3,1,3); Calculated from natural gas in furnace&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="natural gas\heating systems" location="RER" meanValue="-2.16E-8" name="Industrial furnace, 1MW, natural gas" number="204100" standardDeviation95="3.01" subCategory="natural gas\heating systems" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,2,3,1,3); Data from several sources, energy split estim.&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="7.7" name="Natural gas, burned in industrial furnace 1MW" number="293151" standardDeviation95="1.1099999999999999" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Weak data of one source&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="2.0E-5" name="Suspended solids, unspecified" number="157731" standardDeviation95="1.8900000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007446-09-5" category="emissions to air" generalComment="(2,3,2,3,5,4); Calculated difference, dependent on technology&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.38E-5" name="Sulfur dioxide" number="26215" standardDeviation95="2.0300000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,3,3,5,5); Estimated from weak data&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="9.0E-5" name="Copper oxide, at plant" number="601476" standardDeviation95="2.16" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(2,3,2,3,1,3); Data from several sources, energy split estim.&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\gas to user" location="RER" meanValue="8.65" name="Natural gas, high pressure, at consumer" number="330680" standardDeviation95="1.1099999999999999" subCategory="natural gas\gas to user" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Weak data of one source&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="2.4E-4" name="DOC, Dissolved Organic Carbon" number="4408" standardDeviation95="1.8900000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,5,3,3,5,5); Estimated from weak data&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="1.0E-5" name="Molybdenum, at regional storage" number="175491" standardDeviation95="2.16" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,5,3,3,5,5); Estimated from weak data&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="3.0E-5" name="Zinc, primary, at regional storage" number="236764" standardDeviation95="2.16" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,1,3,3,5); Data from one several plants used&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="GLO" meanValue="3.72E-11" name="Methanol plant" number="451585" standardDeviation95="3.1" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(2,3,3,3,4,5); Data dependent on technology, average used&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.00816" name="Water, cooling, unspecified natural origin/m3" number="29019" standardDeviation95="1.5900000000000003" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(2,4,1,3,4,5); Data from one source, current technology&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="9.8E-4" name="Methane, fossil" number="90787" standardDeviation95="1.84" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000067-56-1" category="emissions to air" generalComment="(2,4,1,3,4,5); Data from one source, current technology&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="5.3E-4" name="Methanol" number="28623" standardDeviation95="1.84" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,3,2,3,4,3); Calculated from electricity and hydrogen burned&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="4.87" name="Heat, waste" number="46930" standardDeviation95="1.5300000000000002" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,3,2,3,4,3); Calculated from electricity and hydrogen burned&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="0.4" name="Heat, waste" number="45460" standardDeviation95="1.8" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Weak data of one source&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="3.0E-5" name="Methanol" number="30529" standardDeviation95="3.3299999999999996" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Weak data of one source&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="1.0E-4" name="Formaldehyde" number="51960" standardDeviation95="3.3299999999999996" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,3,3,5,5); Estimated from weak data&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganics" location="RER" meanValue="2.4E-4" name="Aluminium oxide, at plant" number="423671" standardDeviation95="2.16" subCategory="inorganics" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007723-14-0" category="emissions to water" generalComment="(3,5,2,3,4,5); Weak data of one source&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="1.0E-5" name="Phosphorus" number="67972" standardDeviation95="1.8900000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="(2,3,2,3,5,4); Calculated difference, dependent on technology&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.5E-4" name="Nitrogen oxides" number="79243" standardDeviation95="2.25" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Weak data of one source&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="1.0E-5" name="Phenol" number="2976" standardDeviation95="3.3299999999999996" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to water" generalComment="(3,5,2,3,4,5); Weak data of one source&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="1.0E-6" name="AOX, Adsorbable Organic Halogen as Cl" number="81549" standardDeviation95="1.8900000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,5,2,3,4,5); Weak data of one source&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="1.8E-4" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.8900000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,5,3,3,5,5); Estimated from weak data&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="2.0E-5" name="Nickel, 99.5%, at plant" number="509334" standardDeviation95="2.16" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="&lt;null&gt;" infrastructureProcess="false" localCategory="natural gas" localSubCategory="production" location="DZ" meanValue="0.43" name="Natural gas, at production" number="555597" subCategory="production" uncertaintyType="0" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="7.752" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

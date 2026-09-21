@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="598151" timestamp="2023-08-28T15:03:43.931+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="metals" datasetRelatesToProduct="true" generalComment="The multi-output-process &quot;anode slime generation, primary copper production&quot; delivers the co-products &quot;anode slime, silver and tellurium containing, primary copper production&quot; and &quot;cathode, copper, primary copper production&quot;. The product &quot;cathode, …&quot; is an intermediary in the production of refined copper and is not to be used by the LCA practitioner.  The flow &quot;anode slime, …&quot; is a by-product of this process that receives part of the burdens allocated.\nInput of tellurium corrected based on its content in and the demand of silver ore, Philippe Stolz &amp; Rolf Frischknecht, October 2017.;&#10;UUID: 2a71151f-9891-3217-a6bf-97cd34b48abc" includedProcesses="The module includes the upstream production of primary copper represented by the pri-mary copper input and the resource depletion of silver and telluride found jointly with copper" infrastructureProcess="false" localCategory="metals" localName="Anode slime, silver and tellurium containing, primary copper production" localSubCategory="extraction" name="Anode slime, silver and tellurium containing, primary copper production" subCategory="extraction" unit="kg"/>
+        <geography location="GLO" text="Data refers to global copper production and hence reflects a global average."/>
+        <technology text="Electrorefining of copper anode."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Unspecified">
+          <startDate>2000-01</startDate>
+          <endDate>2005-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2017-10-11T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography and Technology" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Blaser S., Scharnhorst W., Tuchschmid M., Jungbluth N., Faist Emmenegger M." firstAuthor="Classen M." nameOfEditors="-" number="148415" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Classen M., Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M. (2008) Life Cycle Inventories of Metals. Final report ecoinvent data v2.1. Volume: 10. Issue: 0. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Classen M.\nOther authors: Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M.\nYear: 2008\nTitle of anthology: Final report ecoinvent data v2.1\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 10\nIssue No: 0\n" title="2009 - LCI metals - Classen" titleOfAnthology="Final report ecoinvent data v2.1" volumeNo="10" year="2009"/>
+        <validation proofReadingDetails="" proofReadingValidator="138233"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138233"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138233" referenceToPublishedSource="148415"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Philippe Stolz" number="138233" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="metals" generalComment="Global&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="GLO" meanValue="1.0" name="Anode slime, silver and tellurium containing, primary copper production" number="598151" subCategory="extraction" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="calculation&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="1.2152" name="Copper, primary, at refinery" number="398149" standardDeviation95="1.0" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="013494-80-9" category="resources" generalComment="calculation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in ground" meanValue="0.0043986" name="Tellurium" number="91345" standardDeviation95="1.0" subCategory="in ground" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-22-4" category="resources" generalComment="calculation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in ground" meanValue="0.19999" name="Silver, 3.2ppm in sulfide, Ag 1.2ppm, Cu and Te, in crude ore" number="35089" standardDeviation95="1.0" subCategory="in ground" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="calculation&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro\resource corrections" location="GLO" meanValue="1.3617" name="Resource correction, CuMo, copper, negative" number="504277" standardDeviation95="1.0" subCategory="non ferro\resource corrections" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

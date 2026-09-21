@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="398340" timestamp="2023-08-28T15:03:00.744+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity by fuel" datasetRelatesToProduct="true" generalComment="Electricity production shares are determined on annual average and on the level of net production.;&#10;UUID: 07bbcbaa-3476-3542-942a-cbcf5b477742" includedProcesses="Includes shares of electricity produced by of run-of-river and reservoir hydropower plants. " infrastructureProcess="false" localCategory="electricity by fuel" localName="Electricity, hydropower, at power plant" localSubCategory="hydro" name="Electricity, hydropower, at power plant" subCategory="hydro" unit="kWh"/>
+        <geography location="FI" text="Valid for this single country."/>
+        <technology text="Not applicable because the dataset just describes shares."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>1945-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-06-27T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bolliger R., Tuchschmid M., Faist-Emmenegger M." firstAuthor="Bauer C." nameOfEditors="Dones R." number="170837" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Bolliger, R., Bauer, Ch. (2007) Wasserkraft. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0. Editors: Dones R.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Bolliger, R.\nOther authors: Bauer, Ch.\nYear: 2007\nName of editors: Dones R.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2007 - Hydropower - Bauer" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0" volumeNo="6" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="149947"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136750"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136750" referenceToPublishedSource="170837"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Sebastiano Meier" number="149947" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity by fuel" generalComment="FINLAND&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro" location="FI" meanValue="1.0" name="Electricity, hydropower, at power plant" number="398340" subCategory="hydro" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="FI" meanValue="0.75" name="Electricity, hydropower, at reservoir power plant" number="279937" standardDeviation95="1.0" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\flow through" location="RER" meanValue="0.25" name="Electricity, hydropower, at run-of-river power plant" number="270757" standardDeviation95="1.0" subCategory="hydro\flow through" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

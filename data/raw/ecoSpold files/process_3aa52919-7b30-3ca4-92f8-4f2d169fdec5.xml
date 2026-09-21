@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="491489" timestamp="2023-08-28T15:03:32.014+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="transport systems" datasetRelatesToProduct="true" generalComment="The data set reflects a e-bike of 24kg including additionals (e.g. carriers, lights). The frame material is Aluminium and the battery contains LiMn2O4-cells.;&#10;Synonyms: e-Bike; &#10;UUID: 3aa52919-7b30-3ca4-92f8-4f2d169fdec5" includedProcesses="This data set includes the material use for the manufacturing of an average bicycle with an additional electric motor. Manufacturing of the bike parts is assumed to take place in China. Transport to Europe included." infrastructureProcess="true" localCategory="transport systems" localName="Electric bicycle, at regional storage" localSubCategory="road\operations\infrastructure" name="Electric bicycle, at regional storage" subCategory="road\operations\infrastructure" unit="p"/>
+        <geography location="RER" text="Data cover manufacturing in China and retail in Europe"/>
+        <technology text="Electric bicycle with electric motor at wheel-hub and  LiMn2O4 battery pack, 100Wh/kg-"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2009-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2010-02-07T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Electric motor and battery extrapolated from BEV, Manufacturing plant is extrapolated from passenger car plant, electricity consumption extrapolated according to weight ratio from passenger car" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bauer C., Dones R., Tuchschmid M." firstAuthor="Spielmann M." nameOfEditors="-" number="149188" placeOfPublications="Duebendorf, Villigen and Uster, CH" publisher="Swiss Centre for LCI, PSI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Spielmann M., Dones R; Bauer C. (2007) Life Cycle Inventories of Transport Services. Final report ecoinvent Data v2.0. Volume: 14. Issue: 0. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Spielmann M.\nOther authors: Dones R; Bauer C.\nYear: 2007\nTitle of anthology: Final report ecoinvent Data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 14\nIssue No: 0\n" title="2007 - Transport services - Spielmann" titleOfAnthology="Final report ecoinvent Data v2.0" volumeNo="14" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: 26.01.2010; Other validation: C:\Dokumente und Einstellungen\Marianne\Eigene Dateien\Projekte\277_Mobitool\Review\[Ecospold_Bike-v1.1.xls]X-Process;" proofReadingValidator="136750"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="149187"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="149187" referenceToPublishedSource="149188"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Marianne Leuenberger" number="149187" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" generalComment="Europe&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="RER" meanValue="1.0" name="Electric bicycle, at regional storage" number="491489" subCategory="road\operations\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(4,4,2,1,4,4); Extrapolation from passenger car manufacture using weight ratio, thereof 25%&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CN" meanValue="6.8902" name="Electricity, medium voltage, at grid" number="171629" standardDeviation95="1.5969" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,1,1,3); Extrapolation for bicycle plant: 25% of weight ratio&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="RER" meanValue="1.3227E-9" name="Road vehicle plant" number="323804" standardDeviation95="3.0065" subCategory="road\operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,1,1,1,4,3); Assumption: pipe diamter: 4cm, pipe length: 3m&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="coating" location="RER" meanValue="0.35" name="Powder coating, aluminium sheet" number="299933" standardDeviation95="1.5681" subCategory="coating" uncertaintyType="1" unit="m2">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Assumption for Asia--&gt; Europe: 13000km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="OCE" meanValue="312.0" name="Transport, transoceanic freight ship" number="208374" standardDeviation95="2.095" subCategory="ship" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Assumption Rotterdam/Genoa --&gt; assembly site: 1000km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="24" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,1,1,1,1,3); Literature, Shimano/Selle Italia&#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="1.9575" name="Polyethylene, HDPE, granulate, at plant" number="599376" standardDeviation95="1.0882" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,1,1,1,4,3); Assumption&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="chipping" location="RER" meanValue="0.159" name="Turning, chromium steel, conventional, average" number="534326" standardDeviation95="1.5681" subCategory="chipping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(2,3,1,1,1,4); Assumption based on: Cherry, C.R. 2009, 1488 liters waste water for all production phases (incl. Battery manufacturing --&gt; 50%)&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="7.44E-4" name="Treatment, sewage, to wastewater treatment, class 3" number="442955" standardDeviation95="1.1358000000000001" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,3,1,1,1,4); Assumption based on: Cherry, C.R. 2009, 4.5 kg solid waste per bicycle&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="4.5" name="Disposal, municipal solid waste, 22.9% water, to municipal incineration" number="360318" standardDeviation95="1.1358000000000001" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,1,1,1,1,3); Literature, Selle Italia&#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermosets" location="RER" meanValue="0.03" name="Polyurethane, flexible foam, at plant" number="290187" standardDeviation95="1.0882" subCategory="thermosets" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,1,1,1,4,3); Assumption for pipe drawing&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="3.7663" name="Section bar extrusion, aluminium" number="542103" standardDeviation95="1.5681" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,1,1,1,1,3); Factsheets Bicycle parts manufacturere: Shimano, DT Swiss&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="1.59" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="1.0882" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,1,1,1,1,3); Factsheets Bicycle parts manufacturere: Shimano, DT Swiss&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="4.9025" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.0882" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,3,1,1,1,4); Assumption based on: Cherry, C.R. 2009, 1488 liters waste water for all production phases (incl. Battery manufacturing --&gt; 50%)&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="0.744" name="Tap water, at user" number="227940" standardDeviation95="1.1358000000000001" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(2,1,1,1,1,3); Literature, Biketec&#10;" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices\module" location="GLO" meanValue="2.6" name="Battery, LiIo, rechargeable, prismatic, at plant" number="528528" standardDeviation95="1.0882" subCategory="devices\module" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,1,1,3); Literature, Biketec&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="RER" meanValue="4.4" name="Electric motor, electric vehicle, at plant" number="528517" standardDeviation95="1.0882" subCategory="road\operations\infrastructure" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,1,1,1,1,3); Factsheets Bicycle parts manufacturere: Shimano, DT Swiss&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="7.5325" name="Aluminium, production mix, at plant" number="436582" standardDeviation95="1.0882" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(4,1,1,1,4,3); Assumption&#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="unspecified" location="RER" meanValue="1.9575" name="Injection moulding" number="166773" standardDeviation95="1.5681" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,4,2,1,4,4); Extrapolation from passenger car manufacture using weight ratio, thereof 25%&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="0.20284" name="Light fuel oil, burned in industrial furnace 1MW, non-modulating" number="244929" standardDeviation95="1.5969" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,4,2,1,4,4); Extrapolation from passenger car manufacture; weight ratio&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="14.295" name="Natural gas, burned in industrial furnace 1MWth" number="262422" standardDeviation95="1.5969" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,1,1,1,5); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="24.805" name="Heat, waste" number="46930" standardDeviation95="1.2423" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,1,1,1,1,3); Literature, Schwalbe&#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="rubbers" location="RER" meanValue="0.5625" name="Synthetic rubber, at plant" number="460936" standardDeviation95="1.0882" subCategory="rubbers" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,1,1,1,4,3); Assumption: pipe diameter: 4cm --&gt; 0.125 m per joint, 6 joints per bike&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="welding" location="RER" meanValue="0.75" name="Welding, arc, aluminium" number="371867" standardDeviation95="1.5681" subCategory="welding" uncertaintyType="1" unit="m">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,1,1,1,4,3); Assumption&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="0.3375" name="Wire drawing, steel" number="451015" standardDeviation95="1.5681" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

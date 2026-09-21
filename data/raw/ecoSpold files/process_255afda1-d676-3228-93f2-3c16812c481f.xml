@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="161900" timestamp="2023-08-28T15:03:39.756+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity" datasetRelatesToProduct="true" generalComment="Electricity domestic net production shares are based on IEA statistics for the year 2008.;&#10;UUID: 255afda1-d676-3228-93f2-3c16812c481f" includedProcesses="It includes the shares of domestic electricity production by technology at the busbar. It does not include transformation, transport nor distribution losses." infrastructureProcess="false" localCategory="electricity" localName="xxx Electricity, production mix ES" localSubCategory="notMaintained" name="xxx Electricity, production mix ES" subCategory="notMaintained" unit="kWh"/>
+        <geography location="ES" text="Data apply to public and self producers in Spain."/>
+        <technology text="No technology description is provided because the dataset just describes the power plant portfolio of the respective country using current (2004) average technology per energy carrier."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time period of statistics used (2008).">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2012-06-22T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="100" productionVolume="314 TWh" samplingProcedure="Statistical data " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Itten R., Flury K." firstAuthor="Frischknecht R." nameOfEditors="-" number="138564" placeOfPublications="Uster, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Itten, R., Frischknecht, R. (2012) Life Cycle Inventories of electricity mixes. Project reports. Volume: 401. ESU-services Ltd.. Uster, CH.\nType: Separate publication\nFirst author: Itten, R.\nOther authors: Frischknecht, R.\nYear: 2012\nTitle of anthology: Project reports\nPlace of publication: Uster, CH\nPublisher: ESU-services Ltd.\nVolume No: 401\n" title="2012 - GHG emis. from Swiss elec. mixes - Frischknecht" titleOfAnthology="Project reports" volumeNo="401" year="2012"/>
+        <validation proofReadingDetails="Proof reading validation: automatic validation in Excel; Other validation: Z:\ESU-Docs\Projekte laufend\401 Update Strommix v3.0\EcoSpold\_Europa\[401-electricity-mix-spain-ES-v1.0.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137485"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137485" referenceToPublishedSource="138564"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="René Itten" number="137485" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" generalComment="SPAIN&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="notMaintained" location="ES" meanValue="1.0" name="xxx Electricity, production mix ES" number="161900" subCategory="notMaintained" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,2,1,1); assumption for geothermal power production in Spain, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="0.10987" name="Electricity, at wind farm" number="598753" standardDeviation95="1.0511" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1); estimated share of pumped storage  production in Spain: 10%&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\pumping storage" location="ES" meanValue="0.0087409" name="Electricity, hydropower, at pumped storage power plant" number="465477" standardDeviation95="1.0500000000000003" subCategory="hydro\pumping storage" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for diesel and other fossil fuel power production in Spain, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil\cogeneration" location="CH" meanValue="0.014744" name="Electricity, at cogen 300kWth, diesel, allocation exergy" number="597488" standardDeviation95="1.0541" subCategory="oil\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,2,1,1); assumption for industrial, coke and blast furnace gas power production in Spain, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="ES" meanValue="0.0039494" name="Electricity, industrial gas, at power plant" number="523659" standardDeviation95="1.0511" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,2,1,1); estimated share of reservoir hydropower production in Spain: 34%&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="RER" meanValue="0.026738" name="Electricity, hydropower, at reservoir power plant, non alpine regions" number="615575" standardDeviation95="1.0511" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,2,1,1); assumption for nuclear power production in Spain using BWR, value: IEA statistics 2008, fraction: IAEA Database 2010 (PRIS)&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste\nuclear\bwr" location="UCTE" meanValue="0.043158" name="Electricity, nuclear, at power plant boiling water reactor" number="235404" standardDeviation95="1.0511" subCategory="waste\nuclear\bwr" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1); assumption for petroleum product and fuel oil power production in Spain, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil" location="ES" meanValue="0.041728" name="Electricity, oil, at power plant" number="556548" standardDeviation95="1.0500000000000003" subCategory="oil" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,2,1,1); assumption for nuclear power production in Spain using PWR, value: IEA statistics 2008, fraction: IAEA Database 2010 (PRIS)&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste\nuclear\pwr" location="UCTE" meanValue="0.14422" name="Electricity, nuclear, at power plant pressure water reactor" number="571283" standardDeviation95="1.0511" subCategory="waste\nuclear\pwr" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,2,1,1); estimated share of ROR  hydropower production in Spain: 66%&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\flow through" location="RER" meanValue="0.051903" name="Electricity, hydropower, at run-of-river power plant" number="270757" standardDeviation95="1.0511" subCategory="hydro\flow through" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for power production from municipal and industrial waste in Spain, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste" location="CH" meanValue="0.0049062" name="Electricity from waste, at municipal waste incineration plant" number="419687" standardDeviation95="1.0541" subCategory="waste" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1); assumption for solar power production in Spain, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="ES" meanValue="0.0081405" name="Electricity, production mix photovoltaic, at plant" number="420628" standardDeviation95="1.0500000000000003" subCategory="photovoltaic" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1); assumption for natural gas power production in Spain, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="ES" meanValue="0.38133" name="Electricity, from natural gas" number="356162" standardDeviation95="1.0500000000000003" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for cogeneration power production in Spain, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wood\cogeneration" location="CH" meanValue="0.0059226" name="Electricity, at cogen 1MWth, wood chips, allocation exergy" number="477818" standardDeviation95="1.0541" subCategory="wood\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1); assumption for hard coal power production in Spain, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="coal" location="ES" meanValue="0.15281" name="Electricity, hard coal, at power plant" number="323799" standardDeviation95="1.0500000000000003" subCategory="coal" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for power production from biogas, sewage and landfill gas in Spain, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="biomass\cogeneration" location="CH" meanValue="0.0018351" name="Electricity, at cogen with biogas engine, allocation exergy" number="442004" standardDeviation95="1.0541" subCategory="biomass\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

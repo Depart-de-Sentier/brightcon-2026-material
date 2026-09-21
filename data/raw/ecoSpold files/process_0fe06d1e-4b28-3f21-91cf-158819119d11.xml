@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="EcoInvent Excel2EcoSpold 1.9.17" number="430921" timestamp="2025-07-16T13:47:48">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="natural gas" datasetRelatesToProduct="true" generalComment="In 2023 100% of the imported Swiss natural gas to RER was imported by pipeline and 0% as LNG. An average distance of 0 km is estimated for the pipeline export from Switzerland, of which are 0 km offshore pipeline. The estimated shipping distance for LNG are 0 km. The net calorific value of natural is 36.0 MJ/Nm³. UUID=0fe06d1e-4b28-3f21-91cf-158819119d11" includedProcesses="This dataset describes the transport needed for an average export of Swiss natural gas. Gas losses and emissions during seasonal storage are included." infrastructureIncluded="true" infrastructureProcess="false" localCategory="natural gas" localName="Natural gas, production CH, at long-distance pipeline" localSubCategory="transport" name="Natural gas, production CH, at long-distance pipeline" subCategory="transport" unit="MJ"/>
+        <geography location="RER" text="The data for storage emissions are based on global data. The amount of gas stored is a rough estimate based on European data. The average weighted transport distance is based on the trade movements 2019."/>
+        <technology text="The distance is an European average based on the European long-distance pipeline network and LNG shipping routes."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Transport modes investigated for 2023.">
+          <startYear>2023</startYear>
+          <endYear>2024</endYear>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2025-07-16T13:47:48" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="not known" samplingProcedure="Literature." uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Jungbluth N., Bussa M., Stefanel A." firstAuthor="Meili C." number="136354" placeOfPublications="Schaffhausen, CH" publisher="ESU-services Ltd." sourceType="3" text="Report" title="2025 - LCI long-distance transport crude oil - Meili" titleOfAnthology="Project report" volumeNo="234" year="2025"/>
+        <source additionalAuthors="Jungbluth N., Meili C." firstAuthor="Bussa M." number="136355" placeOfPublications="Schaffhausen, CH" publisher="ESU-services Ltd." sourceType="3" text="Report" title="2025 - LCI long-dist. transp. and distrib. natural gas - Bussa" titleOfAnthology="Project report" volumeNo="234" year="2025"/>
+        <validation otherDetails="https://esuservices-my.sharepoint.com/personal/jungbluth_esu-services_ch/Documents/ESU-intern/565 Beratung BAFU/EcoSpoldDataXML/[565-EcoSpold-gas-transport-2025-v2.0.xlsb]X-Process" proofReadingDetails="Passed." proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136353" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="2" person="136351" referenceToPublishedSource="136355"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Christoph Meili" number="136352" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Maresa Bussa" number="136353" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="natural gas" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RER" meanValue="1" name="Natural gas, production CH, at long-distance pipeline" number="430921" subCategory="transport" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(4,3,5,3,1,BU:1.05); natural gas input" infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\gas to user" location="CH" meanValue="1.0001" name="Natural gas, high pressure, at consumer" number="275501" standardDeviation95="1.5688" subCategory="natural gas\gas to user" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(4,2,2,3,3,BU:1.05); Energy expenditure of seasonal storage " infrastructureProcess="false" localCategory="natural gas" localSubCategory="power plants" location="CH" meanValue="0.00225" name="Natural gas, burned in gas turbine" number="247864" standardDeviation95="1.3042" subCategory="power plants" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5);Emissions from storage. Calculated based on average losses and gas composition " meanValue="1.8413E-6" name="Methane, fossil" number="90787" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5);Emissions from storage. Calculated based on average losses and gas composition " meanValue="1.5251E-7" name="Ethane" number="647" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5);Emissions from storage. Calculated based on average losses and gas composition " meanValue="3.4313E-8" name="Propane" number="661" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5);Emissions from storage. Calculated based on average losses and gas composition " meanValue="1.7645E-8" name="Butane" number="639" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.5);Emissions from storage. Calculated based on average losses and gas composition " meanValue="1.2705E-9" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.5681" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:1.05);Emissions from storage. Calculated based on average losses and gas composition " meanValue="6.3694E-8" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.2226" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,4,1,1,BU:5);Emissions from storage. Calculated based on average losses and gas composition " meanValue="2.7778E-14" name="Mercury" number="89723" standardDeviation95="5.0592" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

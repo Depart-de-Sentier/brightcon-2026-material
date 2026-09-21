@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="442404" timestamp="2024-03-12T09:04:06">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electricity by fuel" datasetRelatesToProduct="true" generalComment="Inventory for 1 MJ heat from pellets, burned in a cogeneration unit with a capacity of 300 kWth. The multioutput process &quot;pellets, burned in cogen 300kWth delivers the coproducts &quot;heat, at cogen 300kWth, pellets, allocation exergy&quot; and &quot;electricity, at cogen 300kWth, pellets, allocation exergy&quot;. The energy efficiency is 30% for electricity and 54% for heat. The economic factor is 0.77 for electricity and 0.23 for heat. This leads to the allocation factor of 0.65 for electricity and 0.35 for heat." includedProcesses="Included are the pellets burning in a 300 kWth cogen unit which in turn includes fuel input, infrastructure (boiler), air and water emissions and electrictiy needed for operation. The efficiency and economic allocation is considered" infrastructureIncluded="true" infrastructureProcess="false" localCategory="electricity by fuel" localName="Electricity, at cogen 300kWth, pellets, economic allocation" localSubCategory="wood\cogeneration" name="Electricity, at cogen 300kWth, pellets, economic allocation" subCategory="wood\cogeneration" unit="kWh">
+          <synonym>0</synonym>
+        </referenceFunction>
+        <geography location="CH" text="Data apply to the combustion in Switzerland. "/>
+        <technology text="efficiency of average technology available on the market"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2015-01</startDate>
+          <endDate>2020-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2020-09-14T08:56:25" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Some generic datasets from ecoinvent have been used." productionVolume="none" samplingProcedure="Data from literature" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Waldburger L., Kern C., Roberts G., Zschokke M., Conte F., Weber L." firstAuthor="Kaegi T." number="137341" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceType="3" text="Report" title="2021 - LCI heating systems - Kaegi" titleOfAnthology="Carbotech im Auftrag des BAFU" year="2021"/>
+        <validation otherDetails="Z:\Schreibtisch\WinShare\BAFU Heizsysteme\_A-Konvertieren\BHKW\[EcoSpold_heat pellets cogen300kw_v0.1.xlsx]X-Process" proofReadingDetails="14.09.2020" proofReadingValidator="137339"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137340" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="1" person="137340" referenceToPublishedSource="137341"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+        <person address="anonymised" companyCode="EBP" countryCode="CH" email="anonymised" name="Andy Spoerri" number="137339" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Cyrill Kern" number="141097" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Livia Waldburger" number="141098" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity by fuel" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wood\cogeneration" location="CH" meanValue="1" name="Electricity, at cogen 300kWth, pellets, economic allocation" number="442404" subCategory="wood\cogeneration" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,1,1,1,1,5,BU:1.05); ; " infrastructureProcess="false" localCategory="heat" localSubCategory="wood\cogeneration" location="CH" meanValue="7.759" name="Pellets, burned in cogen 300kWth" number="201711" standardDeviation95="1.2077" subCategory="wood\cogeneration" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

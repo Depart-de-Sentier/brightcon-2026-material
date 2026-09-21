@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="372409" timestamp="2023-08-28T15:02:53.321+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="transport systems" datasetRelatesToProduct="true" generalComment="Inventory refers to the entire transport life cycle. For rail infrastructure, expenditures and environmental interventions due to construction, renewal and disposal of rail tracks have been allocated based on the Gross tonne kilometre performance on SBB track in 2014 (72126484166 Gtkm).  Expenditures due to operation of the rail infrastructure, as well as land use have been allocated based on the yearly train kilometre performance (398215 vkm) and a load factor of 193 passengers. Electricity and diesel consumption have been updated based on SBB data for the year 2019.;&#10;UUID: 6a6fb9ab-b65c-3ba2-8eda-70dce1588aa0" includedProcesses="The module calls the modules  &quot;production, maintenance and disposal of vehicles&quot; as well as the modules &quot;construction, maintenance and disposal of railway tracks&quot;. Included in this modul is the operation (energy consumption including shunting and emissions) of the train ." infrastructureProcess="false" localCategory="transport systems" localName="Transport, long-distance train, SBB mix, Infrastruktur" localSubCategory="train" name="Transport, long-distance train, SBB mix, Infrastruktur" subCategory="train" unit="personkm"/>
+        <geography location="CH" text="&lt;null&gt;"/>
+        <technology text="For vehicle operation all technologies  are included in the average data. Rail construction addresses conventional gravel track beddings. For the manufacturing of vehicles, the data reflects the currently dominating train type (IC2000)."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications">
+          <startDate>2009-01</startDate>
+          <endDate>2015-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-11-13T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Some generic datasets from ecoinvent have been used." percent="100" productionVolume="12442797635 pkm/a" samplingProcedure="Statistics " uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Krebs L." nameOfEditors="-" number="137964" placeOfPublications="Uster, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="3" text="L. Krebs, R. Frischknecht (2020) Aktualisierung Ökobilanzdaten mobitool 2020, Teil 1. Project report. Volume: 713. treeze Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: L. Krebs\nOther authors: R. Frischknecht\nYear: 2020\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: treeze Ltd.\nVolume No: 713\n" title="2020 - Update Mobitool 2020 - Krebs" titleOfAnthology="Project report" volumeNo="713" year="2020"/>
+        <validation proofReadingDetails="Proof reading validation: 13.11.2020; Other validation: G:\Projekte laufend\713 Aktualisierung mobitool 2020\EcoSpold\[713_Transport-Train-passenger-CH_v0.7.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137963"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137963" referenceToPublishedSource="137964"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Luana Krebs" number="137963" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="1.0" name="Transport, long-distance train, SBB mix, Infrastruktur" number="372409" subCategory="train" uncertaintyType="0" unit="personkm">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,3,1,1,1,5,BU:3); ;&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="CH" meanValue="7.9814E-5" name="Operation, maintenance, railway track" number="260942" standardDeviation95="3.0519" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport waste" generalComment="(2,3,1,1,1,5,BU:3); ;&#10;" infrastructureProcess="true" localCategory="transport waste" localSubCategory="unspecified" location="CH" meanValue="7.9814E-5" name="Disposal, railway track" number="400291" standardDeviation95="3.0519" subCategory="unspecified" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,3,1,1,1,5,BU:3); demand infrastructure per Gtkm 3.31E-8km/Gtkm; Pers. communication SBB, 26.10.2020&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="CH" meanValue="7.9814E-5" name="Railway track" number="213626" standardDeviation95="3.0519" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

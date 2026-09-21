@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="502220" timestamp="2023-08-28T15:03:44.039+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="Data includes concentration of acid after purification to 85% H3PO4 content. Estimations made on the type and amount of solvents used. Composition of solid production wastes calculated with average content of crude phosphoric acid.;&#10;CAS number: 007664-38-2; &#10;Formula: H3PO4; &#10;UUID: a47f8fa1-648f-386b-9982-9153ff9096a3" includedProcesses="Raw materials, processing chemicals and processing energy, direct emissions to waterfrom process, disposal of solid process waste to landfill and of spent solvent to incineration, estimations on of raw materials transport to the plant,approximation process for infrastructure. Average phospohoric acid production from wet phosphate rock with the dihydrate process in the United States (Florida) and from dry phosphate rock with the dihydrate process in Morocco as ressource considered." infrastructureProcess="false" localCategory="chemicals" localName="Phosphoric acid, industrial grade, 85% in H2O, at plant" localSubCategory="acids (inorganic)" name="Phosphoric acid, industrial grade, 85% in H2O, at plant" subCategory="acids (inorganic)" unit="kg"/>
+        <geography location="RER" text="Data from one site in United Kingdom used. No data of other sites within Europe considered."/>
+        <technology text="Only a process with high P2O5 yield using solvent extracrion included. No splitting processes considerd, which include a utilisation of the extracted aqueous phase with the impurities for the processing of fertilisers."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2004-06-07T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Production of one plant and one process extrapolated to the whole production." productionVolume="Capacity in Europe 0.3 Mt in 1990" samplingProcedure="Representativity and share on the total production of the asessed production process is not known. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Hellweg S., Hischier R., Jungbluth N., Osses M., Primas A." firstAuthor="Althaus H.-J." nameOfEditors="-" number="137407" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ETH, ESU-services Ltd., Chudacoff Oekoscience" sourceNumber="0" sourceType="4" text="Althaus H.-J., Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A. (2007) Life Cycle Inventories of Chemicals. Final report ecoinvent data v2.0. Volume: 8. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Althaus H.-J.\nOther authors: Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 8\n" title="2007 - LCI chemicals - Althaus" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="8" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136699"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137674"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137674" referenceToPublishedSource="137407"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+        <person address="anonymised" companyCode="HSLU" countryCode="CH" email="anonymised" name="Alex Primas" number="137674" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="1.0" name="Phosphoric acid, industrial grade, 85% in H2O, at plant" number="502220" subCategory="acids (inorganic)" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,2,1,1,5); Data from one plant relevant used&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CH" meanValue="0.108" name="Quicklime, milled, loose, at plant" number="594290" standardDeviation95="1.2400000000000002" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,5,1,1,5,5); Approximation with average chem. plant&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="4.7E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.99" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,4,2,1,1,5); Data from one plant relevant used&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="0.0017" name="Sodium" number="60865" standardDeviation95="1.5800000000000003" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,1,1,3,5); Assumed transport from Morocco&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.47" name="Transport, freight, rail" number="149864" standardDeviation95="2.19" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(5,5,1,1,5,5); Estimated value&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="0.007" name="Disposal, solvents mixture, 16.5% water, to hazardous waste incineration" number="269170" standardDeviation95="2.33" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,4,2,1,1,5); Data from one plant relevant used&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="industry water" location="CH" meanValue="1.09" name="Water, deionised, at plant" number="617689" standardDeviation95="1.2400000000000002" subCategory="industry water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,5,1,1,5,5); Estimated value&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="0.007" name="Isopropanol, at plant" number="572147" standardDeviation95="2.33" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(2,4,2,1,1,5); Data from one plant relevant used&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="5.0E-4" name="Water, well" number="160727" standardDeviation95="1.2400000000000002" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,1,1,3,5); Assumed transport from Morocco&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="OCE" meanValue="3.31" name="Transport, transoceanic tanker" number="374506" standardDeviation95="2.19" subCategory="ship" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,1,1,3,5); Assumed transport from Morocco&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.2" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.19" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,2,1,1,5); Data from one plant relevant used&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="0.129" name="Sulphuric acid, liquid, at plant" number="512921" standardDeviation95="1.2400000000000002" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,4,2,1,1,5); Data from one plant relevant used&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="0.0014" name="Fluoride" number="73504" standardDeviation95="1.5800000000000003" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,4,2,1,3,5); Distribution between fuels estimated&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="0.372" name="Heat, heavy fuel oil, at industrial furnace 1MW" number="608317" standardDeviation95="1.4" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,2,1,1,5); Data from one plant relevant used&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="0.026" name="Sodium hydroxide, 50% in H2O, production mix, at plant" number="483088" standardDeviation95="1.2400000000000002" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,4,2,1,3,5); Distribution between fuels estimated&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="0.372" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.4" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,4,2,1,1,5); Data from one plant relevant used&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="CH" meanValue="0.352" name="Disposal, H3PO4 purification residue, 0% water, to residual material landfill" number="250321" standardDeviation95="1.2400000000000002" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,2,1,1,5); Data from one plant relevant used&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="GLO" meanValue="1.02" name="Phosphoric acid, fertiliser grade, 70% in H2O, at plant" number="339010" standardDeviation95="1.2400000000000002" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="0.45" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

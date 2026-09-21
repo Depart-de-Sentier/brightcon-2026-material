@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="302599" timestamp="2023-08-28T15:02:47.435+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="water" datasetRelatesToProduct="true" generalComment="Rough estimation for the process.;&#10;Formula: H2O; &#10;UUID: 82ca8b8e-5480-3fae-9187-7399adf84de5" includedProcesses="Use of chemicals and some emissions for the treatment of water used in power plants." infrastructureProcess="false" localCategory="water" localName="Water, completely softened, at plant" localSubCategory="industry water" name="Water, completely softened, at plant" subCategory="industry water" unit="kg"/>
+        <geography location="RER" text="&lt;null&gt;"/>
+        <technology text="Water treatment by ion-exchanger for the use as cooling water in power plants."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publication.">
+          <startDate>1993-01</startDate>
+          <endDate>1991-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-07-04T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="From single data to European situation." productionVolume="na" samplingProcedure="Literature and information of plant manufacturer. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Jungbluth N." nameOfEditors="Dones R." number="163727" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth, N. (2007) Erdöl. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0. Editors: Dones R.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth, N.\nYear: 2007\nName of editors: Dones R.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2007 - Crude oil - Jungbluth" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0" volumeNo="6" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed.; Other validation: none;" proofReadingValidator="139311"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136351"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136351" referenceToPublishedSource="163727"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Michael Spielmann" number="139311" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="water" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="industry water" location="RER" meanValue="1.0" name="Water, completely softened, at plant" number="302599" subCategory="industry water" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,1,1,1,3); Literature information for a modern power plant&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="2.78E-7" name="Sodium hydroxide, 50% in H2O, production mix, at plant" number="483088" standardDeviation95="1.1" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(3,4,3,1,1,5); Estimation&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="industry water" location="RER" meanValue="1.05" name="Water, decarbonised, at plant" number="605508" standardDeviation95="1.3000000000000003" subCategory="industry water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distance 600km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="9.11E-7" name="Transport, freight, rail" number="149864" standardDeviation95="2.1" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,3,1,1,5); Calculation&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.24E-6" name="Chloride" number="34061" standardDeviation95="1.6" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to water" generalComment="(3,4,3,1,1,5); Literature&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.5E-8" name="AOX, Adsorbable Organic Halogen as Cl" number="81549" standardDeviation95="1.6" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distance 100km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.000000152" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.1" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,3,1,1,5); Calculation&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.78E-7" name="Sodium" number="60865" standardDeviation95="1.6" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(5,na,1,1,1,na); Estimation&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="5.0E-5" name="Treatment, sewage, unpolluted, to wastewater treatment, class 3" number="230660" standardDeviation95="1.4999999999999998" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,1,1,1,3); Literature information for a modern power plant, split of old data&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="1.24E-6" name="Hydrochloric acid, 30% in H2O, at plant" number="308041" standardDeviation95="1.1" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

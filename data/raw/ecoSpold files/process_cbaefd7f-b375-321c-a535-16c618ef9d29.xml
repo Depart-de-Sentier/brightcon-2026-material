@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="348479" timestamp="2023-08-28T15:03:27.158+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="transport systems" datasetRelatesToProduct="true" generalComment="This dataset describes the treatment of a used  electric drivetrain of an electric passenger car. The original dataset has been developed for a 100kW drivetrain comprising an electric motor (53kg), a converter (4.5kg), an inverter (9.5kg), a power distribution unit (3.9kg), a charger and cables (3m). First, the drivetrain is manually dismantled to recover all large metal scrap, especially from the electric motror and from the cases of the electronic devices. The scrap steel, copper and aluminium directly recovered from the components is sent to the respective scrap recycling facilities, while the remaining electronics scrap is sent to a smelter facility. Information on the materialisation of the dismatled components are in F. Habermacher  &quot;Modeling material inventories and environmental impacts of electric passenger cars&quot;, Matser Thesis, Department of Environmental Sciences, ETH Zurich, 2011.;&#10;UUID: cbaefd7f-b375-321c-a535-16c618ef9d29" includedProcesses="The dataset starts with the electric drivetrain which needs to be dismanlted already in the dismantling facility." infrastructureProcess="true" localCategory="transport systems" localName="Disposal, powertrain, for electric passenger car" localSubCategory="road" name="Disposal, powertrain, for electric passenger car" subCategory="road" unit="kg"/>
+        <geography location="RER" text="data of situation in Switzerland"/>
+        <technology text="current manual dismantling activities in Switzerland."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Unspecified">
+          <startDate>2014-01</startDate>
+          <endDate>2014-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2016-07-05T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="720000 kg" samplingProcedure="Literature " uncertaintyAdjustments="&lt;null&gt;"/>
+        <source additionalAuthors="Messmer A., Stolz P." firstAuthor="Frischknecht R." nameOfEditors="0" number="159150" placeOfPublications="Bern, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="3" text="none" title="2016 - Mobitool - Frischknecht" titleOfAnthology="Project Report" volumeNo="0" year="2016"/>
+        <validation proofReadingDetails="" proofReadingValidator="159149"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="159149"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137241" referenceToPublishedSource="159150"/>
+        <person address="anonymised" companyCode="QUANTIS" countryCode="CH" email="anonymised" name="Andrea Delduce" number="159149" telephone="anonymised"/>
+        <person address="anonymised" companyCode="U+E" countryCode="CH" email="anonymised" name="Frank Werner" number="137241" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" generalComment="Europe&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="1.0" name="Disposal, powertrain, for electric passenger car" number="348479" subCategory="road" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,4,5,4,3,na)&#10;Remaining plastic scrap from the electric motor and the different power electronic components. The details concerning the dataset of this devices and of the electric drivetrain it is used with are described in Habermacher 2010.&#10;Production Volume Amount: 10080&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.014" name="Disposal, plastic, industr. electronics, 15.3% water, to municipal incineration" number="308127" standardDeviation95="1.5765000000000002" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste" generalComment="(4,5,5,5,5,na)&#10;Value taken from electronic waste manual treatment. Rough estimation of infrastructure.&#10;" infrastructureProcess="true" localCategory="waste" localSubCategory="infrastructure" location="GLO" meanValue="1.6E-8" name="Manual treatment plant, WEEE scrap" number="366765" standardDeviation95="4.5746" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

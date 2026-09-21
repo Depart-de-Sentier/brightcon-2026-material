@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="221956" timestamp="2023-08-28T15:03:13.042+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="The multioutput-process 'natural gas, burned in cogen 1MWe lean burn, allocation heat' delivers the coproducts 'heat, at cogen 1MWe lean burn, allocation heat' and 'electricity, at cogen 1MWe lean burn, allocation heat'.;&#10;UUID: c7a0220a-a34b-3dbf-bf68-d5f8dceec8d2" includedProcesses="The module includes fuel input, infrastructure, emissions to air, and substances needed for operation. Module &quot;natural gas, high pressure, at consumer&quot; is used; methane emissions from leakages due to distribution in low pressure network have been included (emission factor taken from Swiss module &quot;natural gas, low pressure, at consumer, CH&quot;)." infrastructureProcess="false" localCategory="heat" localName="Heat, at cogen 1MWe lean burn, allocation heat" localSubCategory="natural gas\cogeneration" name="Heat, at cogen 1MWe lean burn, allocation heat" subCategory="natural gas\cogeneration" unit="MJ"/>
+        <geography location="RER" text="Emissions and efficiencies adjusted to typical European conditions; extrapolated from German and Swiss emission regulations."/>
+        <technology text="Average technology available on market."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2004-04-15T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography/Text" productionVolume="na" samplingProcedure="Literature. Manufacturer information. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Heck T." nameOfEditors="Dones R." number="138971" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI" sourceNumber="0" sourceType="4" text="Heck, T. (2007) Wärme-Kraft-Kopplung. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0. Editors: Dones R.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Heck, T.\nYear: 2007\nName of editors: Dones R.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2007 - Combined heat power generation - Heck" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0" volumeNo="6" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: had passed; Other validation: none;" proofReadingValidator="138969"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138970"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138970" referenceToPublishedSource="138971"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Gerald Rebitzer" number="138969" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Thomas Heck" number="138970" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\cogeneration" location="RER" meanValue="1.0" name="Heat, at cogen 1MWe lean burn, allocation heat" number="221956" subCategory="natural gas\cogeneration" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="uncertainty because of application of CH module to RER&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\gas to user" location="RER" meanValue="2.272727272727273" name="Natural gas, high pressure, at consumer" number="330680" standardDeviation95="1.0500000000000003" subCategory="natural gas\gas to user" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="losses due to distribution in low pressure network, data from module 'natural gas, low pressure, at consumer, CH'&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="3.0455E-4" name="Methane, fossil" number="90787" standardDeviation95="2.25" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="rough estimate&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="6.8182E-5" name="Disposal, used mineral oil, 10% water, to hazardous waste incineration" number="504085" standardDeviation95="2.0000000000000004" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="composition of natural gas&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.12727" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.0500000000000003" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000630-08-0" category="emissions to air" generalComment="estimate based on different references&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.4318E-4" name="Carbon monoxide, fossil" number="641" standardDeviation95="2.5000000000000004" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="estimate based on different references&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.3864E-4" name="Nitrogen oxides" number="79243" standardDeviation95="2.0000000000000004" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="" infrastructureProcess="true" localCategory="heat" localSubCategory="natural gas\cogeneration\power unit\infrastructure" location="RER" meanValue="2.4091E-9" name="Cogen unit 1MWe, common components for heat+electricity" number="458926" standardDeviation95="1.0" subCategory="natural gas\cogeneration\power unit\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="" infrastructureProcess="true" localCategory="heat" localSubCategory="natural gas\cogeneration\power unit\infrastructure" location="RER" meanValue="2.4091E-9" name="Cogen unit 1MWe, components for heat only" number="585911" standardDeviation95="1.0" subCategory="natural gas\cogeneration\power unit\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007446-09-5" category="emissions to air" generalComment="composition of natural gas&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.25E-6" name="Sulfur dioxide" number="26215" standardDeviation95="1.0500000000000003" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="estimate based on different references&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.8182E-4" name="Methane, fossil" number="90787" standardDeviation95="4.0" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="010024-97-2" category="emissions to air" generalComment="rough estimate&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.1364E-5" name="Dinitrogen monoxide" number="646" standardDeviation95="2.9999999999999996" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="uncertainty of heating value and electric efficiency&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.6363636363636362" name="Heat, waste" number="46930" standardDeviation95="1.0500000000000003" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="estimate based on different references&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.2727E-5" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="8.000000000000002" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="estimate based on different references&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.4091E-7" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="2.0000000000000004" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="vendor information&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="6.8182E-5" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.1999999999999997" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

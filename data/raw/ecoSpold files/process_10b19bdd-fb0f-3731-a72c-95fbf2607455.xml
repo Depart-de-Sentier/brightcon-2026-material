@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="378305" timestamp="2024-07-09T17:48:29">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electronics" datasetRelatesToProduct="true" generalComment="The data represent a 1 kV low volage cable with copper wire sheath, type GKN (Ceander / waveconal cable). Material data are taken from datasheet of a producer of such a cable. Infrastructure and production efforts are based on own assumptions. The dataset represents a cable with a meter-weight of 1.04 kg/m. In 2023 updates, material and energy input are now represented by global inventory flows; UUID: 10b19bdd-fb0f-3731-a72c-95fbf2607455" includedProcesses="This module includes material, an estimation of the production efforts (transportation, energy, process chemicals, …) and of the infrastructure for the production of a three-conductor cable used in the construction of new buildings. No information about emissions (air, water) and waste are included." infrastructureIncluded="false" infrastructureProcess="false" localCategory="electronics" localName="Cable, three-conductor cable, at plant" localSubCategory="devices" name="Cable, three-conductor cable, at plant" subCategory="devices" unit="m"/>
+        <geography location="GLO" text="Data from one Swiss producer, used as representative for the global situation."/>
+        <technology text="Data from one producer of such type of cable."/>
+        <timePeriod dataValidForEntirePeriod="" text="Unspecified">
+          <startDate>2023-01</startDate>
+          <endDate>2029-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2024-07-09T17:48:29" type="1" version="2024"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography and Technology" samplingProcedure="Literature &amp; own estimations" uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Permana Ajie M., Beloin-Saint-Pierre D." firstAuthor="Raka Adrianto L." number="148303" placeOfPublications="St. Gallen, CH" publisher="Empa" sourceType="0" title="2024 - LCI ICT sector - Raka Adrianto" year="2024"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Mischa Zschokke, Company: Carbotech, Country: CH" proofReadingValidator="140702"/>
+        <validation/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="148302" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="false" dataPublishedIn="2" person="148302" referenceToPublishedSource="148303"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre" number="148302" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Mischa Zschokke" number="140702" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electronics" generalComment="Global" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices" location="GLO" meanValue="1" name="Cable, three-conductor cable, at plant" number="378305" subCategory="devices" uncertaintyType="0" unit="m">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,3,4,3,4,5,BU:1.06); data from composition of one such cable" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="0.49238" name="Copper, primary, at refinery" number="398149" standardDeviation95="1.63" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(1,3,4,3,4,5,BU:1.06); data from composition of one such cable" infrastructureProcess="false" localCategory="plastics" localSubCategory="unspecified" location="RER" meanValue="0.54762" name="Extrusion, plastic pipes" number="419531" standardDeviation95="1.63" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(1,3,4,3,4,5,BU:1.06); data from composition of one such cable" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="0.54762" name="Polyethylene, HDPE, granulate, at plant" number="599376" standardDeviation95="1.63" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,5,4,3,5,5,BU:3.00); rough estimation of infrastructure" infrastructureProcess="true" localCategory="metals" localSubCategory="infrastructure" location="RER" meanValue="0.000000000033766" name="Rolling mill" number="385948" standardDeviation95="3.85" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,4,3,5,5,BU:2.00); standard distances" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.208" name="Transport, freight, rail" number="149864" standardDeviation95="2.85" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,4,3,5,5,BU:2.00); standard distances" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.104" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.85" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,3,4,3,4,5,BU:1.06); data from composition of one such cable" infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="0.49238" name="Wire drawing, copper" number="254778" standardDeviation95="1.63" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

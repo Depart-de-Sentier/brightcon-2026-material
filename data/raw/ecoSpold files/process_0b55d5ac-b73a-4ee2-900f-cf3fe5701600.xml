@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="410304" timestamp="2023-08-28T15:03:42.184+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="landfill" datasetRelatesToProduct="true" generalComment="Inventoried waste contains 100% Green liquor dregs from pulp production, to landfill; . waste composition (wet, in ppm): H2O 250000; O 240000; H n.a.; C 293000; S 48000; N n.a.; P n.a.; B n.a.; Cl n.a.; Br n.a.; F n.a.; I n.a.; Ag n.a.; As n.a.; Ba n.a.; Cd n.a.; Co n.a.; Cr 730; Cu 300; Hg n.a.; Mn n.a.; Mo n.a.; Ni n.a.; Pb n.a.; Sb n.a.; Se n.a.; Sn n.a.; V n.a.; Zn 2150; Be n.a.; Sc n.a.; Sr n.a.; Ti n.a.; Tl n.a.; W n.a.; Si n.a.; Fe n.a.; Ca n.a.; Al n.a.; K n.a.; Mg n.a.; Na 165820; Share of carbon in waste that is biogenic 100%. Additional solidification with 0.4 kg of cement.;; UUID: 0b55d5ac-b73a-4ee2-900f-cf3fe5701600" includedProcesses="Waste-specific short-term emissions to water from leachate. Long-term emissions from landfill to ground water. Expenditures for solidificalion with cement (user-specified option)" infrastructureProcess="false" localCategory="landfill" localName="Disposal, green liquor dregs, 25% water, to residual material landfill" localSubCategory="residual material landfill" name="Disposal, green liquor dregs, 25% water, to residual material landfill" subCategory="residual material landfill" unit="kg"/>
+        <geography location="CH" text="Technology encountered in Switzerland in 2000. Landfill includes base seal and leachate collection system."/>
+        <technology text="Swiss residual material landfill for polluted, inorganic waste. With base seal and leachate collection system. Recultivation after closure. "/>
+        <timePeriod dataValidForEntirePeriod="true" text="Waste composition as given in literature reference, theoretical data or other source. Transfer coefficients from prospective model.">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2009-02-15T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="Landfill model based on observed leachate concentrations in literature. Extrapolated to 60'000 years heeding chemical characteristics. Initial waste composition from various literature sources. " uncertaintyAdjustments="uncertainty of waste input composition data derived from generic formula GSD(c) = N*ln(c)+1. Mean long-term emissions are the emissions until the next glacial period occurs (in 60'000a) and the landfill is eroded. Maximal long-term emissions are the complete emissions of all landfilled material (except Cr). Minimal long-term emissions are derived implicitly from the mean and maximal values assuming a lognormal distribution."/>
+        <source additionalAuthors="" firstAuthor="Doka G." nameOfEditors="-" number="136700" placeOfPublications="Duebendorf and St. Gallen, CH" publisher="Swiss Centre for LCI, Doka LCA" sourceNumber="0" sourceType="4" text="Doka G. (2009) Life Cycle Inventories of Waste Treatment Services. Final report ecoinvent data v2.1. Volume: 13. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Doka G.\nYear: 2009\nTitle of anthology: Final report ecoinvent data v2.1\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 13\n" title="2009 - LCI waste treatment services - Doka" titleOfAnthology="Final report ecoinvent data v2.1" volumeNo="13" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: passed.; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136699"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136698" referenceToPublishedSource="136700"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Gabor Doka" number="136698" telephone="anonymised"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="landfill" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="CH" meanValue="1.0" name="Disposal, green liquor dregs, 25% water, to residual material landfill" number="410304" subCategory="residual material landfill" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="3.1611E-4" name="TOC, Total Organic Carbon" number="2278" standardDeviation95="5.2236" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="waste" generalComment="demands per kilogram waste. uncertainty is heeded in the module&#10;" infrastructureProcess="true" localCategory="waste" localSubCategory="infrastructure" location="CH" meanValue="2.0833E-9" name="Residual material landfill facility" number="504989" standardDeviation95="1.0" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="018540-29-9" category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater, long-term" meanValue="1.3862E-4" name="Chromium VI" number="91249" standardDeviation95="5.364399999999999" subCategory="groundwater, long-term" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater, long-term" meanValue="0.18935" name="DOC, Dissolved Organic Carbon" number="4408" standardDeviation95="1.8090000000000006" subCategory="groundwater, long-term" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater, long-term" meanValue="0.12855" name="Sulfate" number="49702" standardDeviation95="2.4053999999999998" subCategory="groundwater, long-term" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-50-8" category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.9279E-8" name="Copper" number="91271" standardDeviation95="14.964" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater, long-term" meanValue="0.47852" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.8090000000000006" subCategory="groundwater, long-term" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater, long-term" meanValue="0.18935" name="TOC, Total Organic Carbon" number="2278" standardDeviation95="1.8090000000000006" subCategory="groundwater, long-term" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="7.9887E-4" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="5.2236" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="018540-29-9" category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="4.3882E-5" name="Chromium VI" number="91249" standardDeviation95="6.4346" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="Cement for solidification of residual material waste. Uncertainty in mass from solidification recipe.&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="binders" location="CH" meanValue="0.4" name="Cement, unspecified, at plant" number="330147" standardDeviation95="1.2100000000000002" subCategory="binders" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="3.1611E-4" name="DOC, Dissolved Organic Carbon" number="4408" standardDeviation95="5.2236" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Transport of solidification cement, uncertainty from transported mass and generic transportation distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.02" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="1.2100000000000002" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater, long-term" meanValue="0.10359" name="Sodium" number="60865" standardDeviation95="1.7928000000000004" subCategory="groundwater, long-term" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.01545" name="Sulfate" number="49702" standardDeviation95="3.0225000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.062229" name="Sodium" number="60865" standardDeviation95="1.9157000000000002" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="Hydrated cement for solidification of residual material waste. Uncertainty in mass from solidification recipe.&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="CH" meanValue="1.0" name="Disposal, cement, hydrated, 0% water, to residual material landfill" number="288978" standardDeviation95="1.2100000000000002" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater, long-term" meanValue="2.635E-5" name="Zinc" number="91189" standardDeviation95="104.44000000000001" subCategory="groundwater, long-term" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-50-8" category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater, long-term" meanValue="1.1548E-5" name="Copper" number="91271" standardDeviation95="41.461" subCategory="groundwater, long-term" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="4.3991E-8" name="Zinc" number="91189" standardDeviation95="13.820000000000002" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="demands per kilogram waste. uncertainty is heeded in the module&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="CH" meanValue="1.0" name="Process-specific burdens, residual material landfill" number="216234" standardDeviation95="1.0" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in residual landfill&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.6131E-4" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="5.2236" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="uncertainty is calculated from uncertainties in waste composition and transfer coefficients in incinerator and landfills.&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater, long-term" meanValue="0.15652" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.8090000000000006" subCategory="groundwater, long-term" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Transport of solidification cement, uncertainty from transported mass and generic transportation distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.04" name="Transport, freight, rail" number="149864" standardDeviation95="1.2100000000000002" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

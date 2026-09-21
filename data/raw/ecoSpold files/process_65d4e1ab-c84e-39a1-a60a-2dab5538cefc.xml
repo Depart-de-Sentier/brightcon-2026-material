@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="RStudio" number="431465" timestamp="2025-09-04 18:38:41.794495">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electricity" datasetRelatesToProduct="true" generalComment="Electricity domestic net production shares are based on annual averages for 2023. Only gross to net electicity conversion losses are included as the power plants could not be operated without these, whereas other losses (such as transmission and distribution losses) are not included. Electricity trade between countries is also not included. UUID: 65d4e1ab-c84e-39a1-a60a-2dab5538cefc" includedProcesses="Included are the shares of domestic electricity production by technology at the busbar. Not included are transformation, transport or distribution losses." infrastructureIncluded="true" infrastructureProcess="false" localCategory="electricity" localName="Electricity, production mix" localSubCategory="production mix" name="Electricity, production mix" subCategory="production mix" unit="kWh">
+          <synonym>0</synonym>
+        </referenceFunction>
+        <geography location="RU" text="Data apply to utilities and auto-producers."/>
+        <technology text="No technology description is provided because the dataset just describes the power plant portfolio of the respective country using current average technology per energy carrier."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time period of statistics used.">
+          <startDate>2023</startDate>
+          <endDate>2023</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2025-09-04 18:38:41.795939" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness percent="100.0" samplingProcedure="Statistical data" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Oberschelp C." number="137486" placeOfPublications="Zuerich, CH" publisher="Oberschelp Consulting" sourceType="0" title="2025 - Electricity mixes in UVEK database - Oberschelp" titleOfAnthology="Project reports" volumeNo="0" year="2025"/>
+        <validation otherDetails="none" proofReadingDetails="manual review of spold files and documentation" proofReadingValidator="137485"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137484" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137484" referenceToPublishedSource="137486"/>
+        <person address="anonymised" companyCode="ETH" countryCode="CH" email="anonymised" name="Christopher Oberschelp" number="137484" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="René Itten" number="137485" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="RU" meanValue="1.0" name="Electricity, production mix" number="431465" subCategory="production mix" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="DE" meanValue="0.00714052726747875" name="Electricity, industrial gas, at power plant" number="301831" standardDeviation95="1.113015" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="lignite" location="PL" meanValue="0.0557013159741279" name="Electricity, lignite, at power plant" number="398923" standardDeviation95="1.113015" subCategory="lignite" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="coal" location="RU" meanValue="0.0909439593651464" name="Electricity, hard coal, at power plant" number="521318" standardDeviation95="1.05" subCategory="coal" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,2,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\flow through" location="RER" meanValue="0.131797651309857" name="Electricity, hydropower, at run-of-river power plant" number="270757" standardDeviation95="1.051055" subCategory="hydro\flow through" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="FI" meanValue="0.0439325504366192" name="Electricity, hydropower, at reservoir power plant" number="279937" standardDeviation95="1.113015" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\pumping storage" location="RU" meanValue="0.00172690113188813" name="Electricity, hydropower, at pumped storage power plant" number="282341" standardDeviation95="1.05" subCategory="hydro\pumping storage" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste" location="CH" meanValue="0.00329111080316567" name="Electricity from waste, at municipal waste incineration plant" number="419687" standardDeviation95="1.113015" subCategory="waste" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="JP" meanValue="0.455383812330803" name="Electricity, from natural gas" number="354606" standardDeviation95="1.113015" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste\nuclear\bwr" location="DE" meanValue="0.0546792019207063" name="Electricity, nuclear, at power plant boiling water reactor" number="548546" standardDeviation95="1.113015" subCategory="waste\nuclear\bwr" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste\nuclear\pwr" location="CN" meanValue="0.137913998983261" name="Electricity, nuclear, at power plant pressure water reactor" number="518783" standardDeviation95="1.113015" subCategory="waste\nuclear\pwr" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil\cogeneration" location="CH" meanValue="0.00499892977954242" name="Electricity, at cogen 300kWth, diesel, allocation exergy" number="597488" standardDeviation95="1.113015" subCategory="oil\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil" location="FI" meanValue="0.00246486435114173" name="Electricity, oil, at power plant" number="198538" standardDeviation95="1.113015" subCategory="oil" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="peat" location="NORDEL" meanValue="0.000298406656812048" name="Electricity, peat, at power plant" number="422959" standardDeviation95="1.113015" subCategory="peat" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="CN" meanValue="0.00247985145576046" name="Electricity, production mix photovoltaic, at plant" number="321458" standardDeviation95="1.113015" subCategory="photovoltaic" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,2,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="0.00678622534123708" name="Electricity, at wind farm" number="598753" standardDeviation95="1.051055" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wood\cogeneration" location="CH" meanValue="6.28509766319869e-05" name="Electricity, at cogen 1MWth, wood chips, allocation exergy" number="477818" standardDeviation95="1.113015" subCategory="wood\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

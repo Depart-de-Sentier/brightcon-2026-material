@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="587048" timestamp="2024-07-09T13:23:19.010+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="1 MWe Solid Oxide electrolyzer based on Niklas Gerloff, Comparative Life-Cycle-Assessment analysis of three major water electrolysis technologies while applying various energy scenarios for a greener hydrogen production, Journal of Energy Storage, Volume 43, 2021, https://doi.org/10.1/j.est0.20.1. Stack lifetime of 20'000 hours or 2.5 years @ 8'000 hours/year. Produced amount of H2 over 20 years: 3,776,000 kg. Amounts of lanthanum oxide and strontium carbonate are unsure.  Values have already account for 7 stack replacements over 20 years of use, excluding the initial component. For further secifications (e.g., efficiency, lifetime, etc.), refer to Sacchi, R. and Bauer, C. LCA of Power-to-X processes and applications in the residential sector. Paul Scherrer Institut, 2023.&#10;&#10; UUID: 83908945-c01e-33ee-aa47-4fd3a4ab9730" infrastructureProcess="false" localCategory="fuels" localName="Electrolyzer production, 1MWe, SOEC, Stack" localSubCategory="synthetic\infrastructure" name="Electrolyzer production, 1MWe, SOEC, Stack" subCategory="synthetic\infrastructure" unit="p"/>
+        <geography location="RER"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024-01</startDate>
+          <endDate>2024-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2023-10-28T00:00:00.000+02:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Rolf Frischknecht, Telephone: 0041 44 940 61 91, E-mail: frischknecht@treeze.ch, Company: treeze, Country: CH" proofReadingValidator="136749"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="not defined" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\infrastructure" location="RER" meanValue="1.0" name="Electrolyzer production, 1MWe, SOEC, Stack" number="587048" subCategory="synthetic\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: 1306.54 kg over 1400.0 km." infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="1829.0" name="Transport, freight, rail" number="149864" standardDeviation95="2.208" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: 48.04 kg over 700.0 km." infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="RER" meanValue="33.63" name="Transport, barge tanker" number="355239" standardDeviation95="2.208" subCategory="ship" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="screen printing {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="7.5" name="Nickel, 99.5%, at plant" number="509334" standardDeviation95="1.3289999999999997" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="assembly energy {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="GLO" meanValue="366700.0" name="Electricity, low voltage, production GLO, at grid" number="549342" standardDeviation95="1.3289999999999997" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="electrolyte + H2 electrode {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="6.4" name="Silicone product, at plant" number="566430" standardDeviation95="1.3289999999999997" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="air electrode {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="8976.0" name="Sheet rolling, chromium steel" number="440148" standardDeviation95="1.3289999999999997" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="material, obsolete" generalComment="screen printing {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="minerals, obsolete" location="CN" meanValue="22.9" name="xx Samarium europium gadolinium concentrate, 94% rare earth oxide, at plant" number="205056" standardDeviation95="1.3289999999999997" subCategory="minerals, obsolete" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="electrolyte + H2 electrode {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganics" location="RER" meanValue="6.4" name="Aluminium oxide, at plant" number="423671" standardDeviation95="1.3289999999999997" subCategory="inorganics" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="blocking layer {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="AU" meanValue="170.7" name="Zirconium oxide, at plant" number="464111" standardDeviation95="1.3289999999999997" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="electrolyte + H2 electrode {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="GLO" meanValue="6.4" name="Boric oxide, at plant" number="565519" standardDeviation95="1.3289999999999997" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="firing of cell {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="136.6" name="Nickel, 99.5%, at plant" number="509334" standardDeviation95="1.3289999999999997" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="material, obsolete" generalComment="screen printing {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="chemicals, obsolete\inorganic, obsolete" location="CN" meanValue="9.0" name="xx Praseodymium oxide, at plant" number="320151" standardDeviation95="1.3289999999999997" subCategory="chemicals, obsolete\inorganic, obsolete" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="electrolyte - to check {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CN" meanValue="21.0" name="Lanthanum oxide, at plant" number="232577" standardDeviation95="1.3289999999999997" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="screen printing {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CN" meanValue="91.5" name="Cerium concentrate, 60% cerium oxide, at plant" number="464830" standardDeviation95="1.3289999999999997" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="air electrode {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="8976.0" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="1.3289999999999997" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: 237.25 kg over 4700.0 km." infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="1115" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.208" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="material, obsolete" generalComment="blocking layer {2;4;1;3;3;5;1.05;}" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="minerals, obsolete" location="CN" meanValue="14.8" name="xx Samarium europium gadolinium concentrate, 94% rare earth oxide, at plant" number="205056" standardDeviation95="1.3289999999999997" subCategory="minerals, obsolete" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

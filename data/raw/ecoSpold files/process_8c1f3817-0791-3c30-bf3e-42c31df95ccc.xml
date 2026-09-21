@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="458903" timestamp="2023-08-28T15:03:00.858+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="oil" datasetRelatesToProduct="true" generalComment="Inventory for the distribution of petroleum product to the final consumer (household, car, power plant, etc.) including all necessary transports.;&#10;Synonyms: green diesel, gasoil; &#10;UUID: 8c1f3817-0791-3c30-bf3e-42c31df95ccc" includedProcesses="Transportation of product from the refinery to the end user. Operation of storage tanks and petrol stations. Emissions from evaporation and treatment of effluents. Excluding emissions from car-washing at petrol stations." infrastructureProcess="false" localCategory="oil" localName="Diesel, at regional storage" localSubCategory="distribution" name="Diesel, at regional storage" subCategory="distribution" unit="kg"/>
+        <geography location="RER" text="Surveys mainly for DE and CH."/>
+        <technology text="Distribution of petroleum products."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Actual data for transport distances and NMVOC emissions. Some information for the year 2000. Split up of NMVOC emissions published 1989.">
+          <startDate>1989-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2018-10-22T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="From single companies to average data." productionVolume="258 billion t in 2000" samplingProcedure="Environmental reports and literature. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Meili C." firstAuthor="Jungbluth N." nameOfEditors="-" number="167345" placeOfPublications="Schaffhausen, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Jungbluth N., Wenzel P., Meili C. (2018) Life cycle inventories of storage and distribution for oil products. Project report. Volume: 565. ESU-services Ltd.. Schaffhausen, CH.\nType: Separate publication\nSource: Report\nFirst author: Jungbluth N.\nOther authors: Wenzel P., Meili C.\nYear: 2018\nTitle of anthology: Project report\nPlace of publication: Schaffhausen, CH\nPublisher: ESU-services Ltd.\nVolume No: 565\nOriginal title: Life cycle inventories of storage and distribution for oil products\n" title="2018 - LCI oil products distribution - Jungbluth" titleOfAnthology="Project report" volumeNo="565" year="2018"/>
+        <validation proofReadingDetails="Proof reading validation: 22.10.2018; Other validation: C:\Users\Regula\OneDrive - ESU-services\565 LCI oil sector CH BAFU\EcoSpold\[EcoSpold-distribution-2018-v5.0.xlsx]X-Process;" proofReadingValidator="149974"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136351"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136351" referenceToPublishedSource="167345"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="Matthias Stucki, René Itten" number="149974" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="oil" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="distribution" location="RER" meanValue="1.0" name="Diesel, at regional storage" number="458903" subCategory="distribution" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,5,1,1,na); Calculation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.18274" name="Heat, waste" number="46930" standardDeviation95="1.5131" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(1,1,1,1,1,na); Calculation incl. Losses&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="fuels" location="RER" meanValue="0.9451" name="Diesel, at refinery" number="419819" standardDeviation95="1.0713999999999997" subCategory="fuels" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,1,5,1,1,na); Literature fuel depot plus dispensing at retail site&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.050762" name="Electricity, low voltage, production ENTSO-E, at grid" number="744926" standardDeviation95="1.5131" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,4,4,3,1,na); Environmental report&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="6.2712E-6" name="Disposal, municipal solid waste, 22.9% water, to sanitary landfill" number="490984" standardDeviation95="1.2501999999999998" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,1,1,na); Literature&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.15" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.0068999999999995" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(2,4,4,3,1,na); Used water&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="6.8864E-7" name="Treatment, sewage, to wastewater treatment, class 2" number="383344" standardDeviation95="1.2501999999999998" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(4,5,4,3,1,na); Rainwater with pollutants&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="7.5E-5" name="Treatment, rainwater mineral oil storage, to wastewater treatment, class 2" number="576983" standardDeviation95="1.3824" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="(3,1,1,1,1,na); Credit for fossil fuel replaced by biogenic fuel&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="-0.17343" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.1249" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(3,4,5,3,1,na); Calculation&#10;" infrastructureProcess="true" localCategory="oil" localSubCategory="production" location="RER" meanValue="5.4609E-10" name="Regional distribution, oil products" number="600841" standardDeviation95="3.2542000000000004" subCategory="production" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,4,3,3,1,na); Environmental report&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="6.8864E-4" name="Tap water, unspecified natural origin RER, at user" number="409911" standardDeviation95="1.1738999999999997" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(1,1,1,1,1,na); Imports from outside Europe&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="OCE" meanValue="1.3126" name="Transport, transoceanic tanker" number="374506" standardDeviation95="2.0034" subCategory="ship" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,4,4,3,1,na); Environmental report&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="6.2532E-4" name="Light fuel oil, burned in boiler 100kW, average" number="164800" standardDeviation95="1.2501999999999998" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,1,1,na); Literature&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="RER" meanValue="0.1" name="Transport, barge tanker" number="355239" standardDeviation95="2.0068999999999995" subCategory="ship" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,1,1,na); Literature&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.05" name="Transport, freight, rail" number="149864" standardDeviation95="2.0068999999999995" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="biomass" generalComment="(1,1,1,1,1,na); Consumption mix of methyl ester&#10;" infrastructureProcess="false" localCategory="biomass" localSubCategory="fuels" location="RER" meanValue="0.055006" name="Methyl ester, from biogenic oils, mix, at regional storage" number="195342" standardDeviation95="1.0713999999999997" subCategory="fuels" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(2,4,3,3,1,na); Winkler 2004&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.11E-4" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.5423" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,1,1,1,1,na); Emission from biogenic fuel&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.15588" name="Carbon dioxide, biogenic" number="80535" standardDeviation95="1.1249" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,1,1,na); Literature&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="pipeline" location="RER" meanValue="0.8215" name="Transport, crude oil pipeline, onshore" number="563712" standardDeviation95="1.0882" subCategory="pipeline" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(2,4,4,3,1,na); Environmental report and literature&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="1.6847E-4" name="Disposal, separator sludge, 90% water, to hazardous waste incineration" number="203157" standardDeviation95="1.2501999999999998" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

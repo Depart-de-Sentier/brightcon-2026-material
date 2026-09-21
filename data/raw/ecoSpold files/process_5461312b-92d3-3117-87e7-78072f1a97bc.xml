@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="588636" timestamp="2023-08-28T15:02:55.345+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="computers &amp; network" datasetRelatesToProduct="true" generalComment="The laser jet printer use (color, office) is calculated via the active mode electricity consumption taken from literature information. The dataset includes the share of the printer production (assumed life span 4 years, running 240 days a year), the energy consumption for the active mode, the rail and road transport from factory to user, the toner usage as well as the benzene emissions for the printing of 1 kg of paper.;&#10;UUID: 5461312b-92d3-3117-87e7-78072f1a97bc" includedProcesses="Describes the use of a laser jet printer (color) in an office. Calculated per 1 kg of printed paper. Swiss supply mix applied for electricity consumption (low voltage)." infrastructureProcess="false" localCategory="computers &amp; network" localName="xx Use, printer, laser jet, colour, per kg printed paper" localSubCategory="use, obsolete\computers &amp; network" name="xx Use, printer, laser jet, colour, per kg printed paper" subCategory="use, obsolete\computers &amp; network" unit="kg"/>
+        <geography location="CH" text="&lt;null&gt;"/>
+        <technology text="No technology involved, except for the production of printer and toner, which are represented in the individual subdatasets."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2004-01</startDate>
+          <endDate>2004-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-03-29T18:04:27.275+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography and Technology" productionVolume="na" samplingProcedure="Manufacturers, literature and own assumptions. " uncertaintyAdjustments="Assumptions had to be made for the printer life span."/>
+        <source additionalAuthors="Classen M., Lehmann M., Scharnhorst W." firstAuthor="Hischier R." nameOfEditors="-" number="148924" placeOfPublications="Duebendorf and St. Gallen, CH" publisher="Swiss Centre for LCI, Empa - TSL" sourceNumber="0" sourceType="4" text="Hischier R., Classen M., Lehmann M., Scharnhorst W. (2007) Life Cycle Inventories of Electric and Electronic Equipment - Production, Use &amp; Disposal. Final report ecoinvent Data v2.0. Volume: 18. Swiss Centre for LCI, Empa - TSL. Duebendorf and St. Gallen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Hischier R.\nOther authors: Classen M., Lehmann M., Scharnhorst W.\nYear: 2007\nTitle of anthology: Final report ecoinvent Data v2.0\nPlace of publication: Duebendorf and St. Gallen, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 18\nOriginal title: Life Cycle Inventories of Electric and Electronic Equipment - Production, Use &amp; Disposal\n" title="2007 - LCI electric and electronic equipment - Hischier" titleOfAnthology="Final report ecoinvent Data v2.0" volumeNo="18" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="138642"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="149409"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="149409" referenceToPublishedSource="148924"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Juergen Sutter" number="138642" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Martin Lehmann" number="149409" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="computers &amp; network" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="computers &amp; network" localSubCategory="use, obsolete\computers &amp; network" location="CH" meanValue="1.0" name="xx Use, printer, laser jet, colour, per kg printed paper" number="588636" subCategory="use, obsolete\computers &amp; network" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="000071-43-2" category="emissions to air" generalComment="(2,5,1,3,1,2,23)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.8462E-7" name="Benzene" number="638" standardDeviation95="2.0522" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,3,2,2,1,4,2)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.25" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.1401000000000001" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,4,1,3,3,5,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.00041094" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.1117999999999997" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(3,3,1,2,1,5,3)&#10;" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices" location="GLO" meanValue="2.3782E-5" name="Printer, laser jet, colour, at plant" number="196545" standardDeviation95="1.2426000000000001" subCategory="devices" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,4,1,3,3,5,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="8.2188E-4" name="Transport, freight, rail" number="149864" standardDeviation95="2.1117999999999997" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(2,3,1,2,1,5,3)&#10;" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices" location="GLO" meanValue="0.004" name="Toner, colour, used for printing, at user" number="559221" standardDeviation95="1.2229" subCategory="devices" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="195946" timestamp="2023-08-28T15:02:50.131+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="photovoltaic" datasetRelatesToProduct="true" generalComment="Photovoltaic installation with a capacity of 3kWp and a life time of 30 years installed in China. The efficiency of multi-Si PV modules is 16.8% (Fraunhofer ISE Photovoltaics Report 2019). The share of rejected or replaced PV modules is estimated at 3%. The inverter is assumed to be replaced once during the service life of the PV system.;&#10;Synonyms: polycrystalline, multi-crystalline, silicon; &#10;UUID: 9968559c-29ba-3b4b-888b-a4f2895a9f20" includedProcesses="All components for the installation of a 3kWp photovoltaic plant, energy use for the mounting, transport of materials and persons to the construction place. Disposal of components after end of life." infrastructureProcess="true" localCategory="photovoltaic" localName="3kWp slanted-roof installation, multi-Si, panel, mounted, on roof" localSubCategory="production of components" name="3kWp slanted-roof installation, multi-Si, panel, mounted, on roof" subCategory="production of components" unit="p"/>
+        <geography location="CN" text="Installation in China."/>
+        <technology text="Current technology for mounting of panels or laminates, electric installations and other components."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Average module efficiency in 2018.">
+          <startDate>2000-01</startDate>
+          <endDate>2018-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-09-30T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Estimations for lifetime of PV modules (30a) and inverters (15a) as well as for transport distances. Modules are assumed to be produced in China." percent="50" productionVolume="Total installed capacity in 2018: approximately 175 GWp in China." samplingProcedure="Publication for efficiency, mounting systems and own estimations for other components. " uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Itten R., Sinha P., de Wild-Scholten M., Zhank J." firstAuthor="Frischknecht R." nameOfEditors="-" number="138234" placeOfPublications="Petten, NL" publisher="IEA PVPS Task 12" sourceNumber="0" sourceType="3" text="Frischknecht R.,, Stolz P., Sinha P., de Wild-Scholten M. (2020) Life Cycle Inventories and Life Cycle Assessments of Photovoltaic Systems. Project report. Volume: 174. IEA PVPS Task 12.\nType: Separate publication\nSource: Report\nFirst author: Frischknecht R.,\nOther authors: Stolz P., Sinha P., de Wild-Scholten M.\nYear: 2020\nTitle of anthology: Project report\nPublisher: IEA PVPS Task 12\nVolume No: 174\nOriginal title: Life Cycle Inventories and Life Cycle Assessments of Photovoltaic Systems\n" title="2015 - LCI and LCA photovoltaic systems - Frischknecht" titleOfAnthology="Project report" volumeNo="174" year="2020"/>
+        <validation proofReadingDetails="Proof reading validation: 30.09.2020; Other validation: G:\Projekte laufend\174 Photovoltaic, IEA Task 12\2017 Global supply chain\EcoSpold\[174-photovoltaics-global-supply-chain-v2.5.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138233"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138233" referenceToPublishedSource="138234"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Philippe Stolz" number="138233" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="photovoltaic" generalComment="CHINA&#10;" infrastructureProcess="true" localCategory="photovoltaic" localSubCategory="production of components" location="CN" meanValue="1.0" name="3kWp slanted-roof installation, multi-Si, panel, mounted, on roof" number="195946" subCategory="production of components" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,4,3,1,1,5); transport of inverter, electric installation, mounting structure and module 100km to construction site&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="36.072" name="Transport, freight, lorry, 7.5t-16t gross weight, fleet average" number="608734" standardDeviation95="2.0865" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(3,4,3,1,1,5); recycling of PV modules at the end of life&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="recycling" location="RER" meanValue="226.51" name="Treatment, c-Si PV module" number="369840" standardDeviation95="1.285" subCategory="recycling" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,4,3,1,1,5); Energy use for erection of 3kWp plant&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CN" meanValue="0.23" name="Electricity, low voltage, at grid" number="294016" standardDeviation95="1.285" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="photovoltaic" generalComment="(3,1,1,1,1,na); calculation with m2 panel&#10;" infrastructureProcess="true" localCategory="photovoltaic" localSubCategory="production of components" location="RER" meanValue="16.667" name="Slanted-roof construction, mounted, on roof" number="397313" standardDeviation95="1.2284000000000002" subCategory="production of components" uncertaintyType="1" unit="m2">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,4,3,1,1,5); calculated with electricity use&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.828" name="Heat, waste" number="46930" standardDeviation95="1.285" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="photovoltaic" generalComment="(3,4,3,1,1,5); Calculation, 2% of modules repaired in the life time, 1% rejects&#10;" infrastructureProcess="true" localCategory="photovoltaic" localSubCategory="production of components" location="CN" meanValue="17.167" name="Photovoltaic panel, multi-Si, at plant" number="222628" standardDeviation95="1.3581999999999999" subCategory="production of components" uncertaintyType="1" unit="m2">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="photovoltaic" generalComment="(2,4,1,1,1,na); 1 replacement during the lifetime of the PV system; demand scaled linearly by power output&#10;" infrastructureProcess="true" localCategory="photovoltaic" localSubCategory="production of components" location="RER" meanValue="2.4" name="Inverter, 2.5 kW, average, at plant" number="441319" standardDeviation95="1.2355" subCategory="production of components" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="photovoltaic" generalComment="(3,4,3,1,1,5); Literature&#10;" infrastructureProcess="true" localCategory="photovoltaic" localSubCategory="production of components" location="CH" meanValue="1.0" name="Electric installation, photovoltaic plant, at plant" number="386956" standardDeviation95="2.0865" subCategory="production of components" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

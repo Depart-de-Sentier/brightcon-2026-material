@@ -1,3 +1,3 @@
 # Data
 
-Participants will add database files and supporting documents. Use `raw/` for original files and `processed/` for derived files. Data payloads are ignored by Git by default.
+Use `raw/` for original database files and supporting documents and `processed/` for derived files. The BAFU 2026 raw files are tracked in Git. Derived data payloads are ignored by default.
