@@ -2,7 +2,7 @@
 
 Add extraction, transformation, validation, and analysis scripts here.
 
-- [Import repaired EcoSpold files (notebook)](import_fixed_ecospold.ipynb): use the `bw` kernel to create a project with biosphere 3.10, inspect the repaired-file import, and write the database if all exchanges link.
+- [Import repaired EcoSpold files (notebook)](import_fixed_ecospold.ipynb): use the `bw` kernel to create a project with biosphere 3.10, apply the [technosphere migrations](../schemas/mappings/README.md), and inspect import and linking results.
 - [EcoSpold 1 import attempt](ecospold%20importer/README.md): run the standard Brightway importer on the original BAFU files using the `bw` conda environment and record the result.
 - [Import with biosphere 3.10](ecospold%20importer/import_with_biosphere310.py): create a local Brightway project and try importing the repaired BAFU files against the ecoinvent 3.10 biosphere.
 - [EcoSpold namespace repair](ecospold%20importer/repair_namespace.py): create modified copies with the missing namespace added and record source/output checksums.
