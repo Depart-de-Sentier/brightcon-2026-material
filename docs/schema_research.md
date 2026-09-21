@@ -1,3 +1,7 @@
+# collaboration link
+
+https://miro.com/app/board/uXjVHkBEvas=/?share_link_id=856681092570
+
 # notes
 - context: Sentier.dev uses parquet and geoparquet, so its metadata requirements are also important to consider; in hackathon 2025 group 1 datapackage.json was referenced as a possible useable/adaptable standard.
 - three primitives according to open metadata
@@ -14,7 +18,7 @@
 - provenance
 - lineage
 - metadata
-- phylogeny ? same as lineage
+- phylogeny ? same as lineage ?
 - schema
 
 # links
