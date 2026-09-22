@@ -51,6 +51,12 @@ The verified export is committed in this repository. To rebuild it, add `--outpu
 
 To import the exported files into a separate project, run [the EcoSpold 2 import notebook](scripts/import_ecospold2.ipynb) with the `bw` kernel. It creates a project with biosphere 3.10 and writes the imported database once all exchanges link.
 
+## Data lineage tracking
+
+One idea to integrate better lineage documentation was this: Any job runs (data transformations like parsing, repair, mapping, export) can be logged and streamed to a running [OpenLineage](https://openlineage.io/) instance specific to sentier.dev, so every transformation is visible as a dataset/job graph as it happens.
+
+See [How to set up OpenLineage](docs/how_to_openlineage.md) for local setup (including Codespaces-specific fixes) and example `START`/`COMPLETE` events.
+
 ## Repository structure
 
 | Folder | Purpose |
