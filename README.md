@@ -30,6 +30,16 @@ Run [the import notebook](scripts/import_fixed_ecospold.ipynb) with the `bw` ker
 
 The latest full check links all technosphere exchanges and 290,756 of 293,747 biosphere exchanges. The remaining 2,991 biosphere occurrences are listed in `reports/generated/biosphere-unlinked.json`. Flows without a supported target remain unresolved. A notebook guard stops Run All before the existing drop/write/LCA cells while any exchange remains unlinked. See the [remaining review work](docs/bafu-2026-biosphere-unresolved-review.md).
 
+## Write the mapped database and export EcoSpold 2
+
+```bash
+conda run --no-capture-output -n bw python "scripts/ecospold importer/import_export_ecospold2.py"
+```
+
+This applies all approved mappings, saves every unlinked biosphere exchange in a separate audit file, and excludes those exchanges from the written database and XML export. It creates **`BAFU:2026-mapped`** in project **`bafu-2026-biosphere-310`** and writes **`data/processed/ecospold2-biosphere310/`**, including EcoSpold 2 files with biosphere 3.10 UUIDs, the exclusion audit, retained metadata, and a verification manifest.
+
+The script checks the XML schema, re-imports every file, compares links/amounts/uncertainty, and verifies the written database. Existing databases and output directories are refused. See the [export instructions](docs/bafu-2026-ecospold2-export.md) for reruns and the bundled re-import helper that preserves uncertainty.
+
 ## Repository structure
 
 | Folder | Purpose |

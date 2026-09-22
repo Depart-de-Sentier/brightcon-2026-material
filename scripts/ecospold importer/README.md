@@ -1,5 +1,13 @@
 # EcoSpold 1 import attempt
 
+For the complete mapped import and **EcoSpold 2 export**, run:
+
+```bash
+conda run --no-capture-output -n bw python "scripts/ecospold importer/import_export_ecospold2.py"
+```
+
+This creates `BAFU:2026-mapped` in the existing biosphere 3.10 project. It applies all approved migrations, audits and excludes unresolved biosphere exchanges, validates the exported XML, verifies re-import, and checks database readback. Output: `data/processed/ecospold2-biosphere310/`. See [scope, audit files and re-import instructions](../../docs/bafu-2026-ecospold2-export.md). The short baseline import script described below does not apply these mappings.
+
 For a consolidated explanation of each defect and its exact repair, see [BAFU:2026 EcoSpold 1 defects and repairs](../../docs/bafu-2026-ecospold-repair-report.md).
 
 The latest cumulative files are in `data/processed/ecospold1-schema-fixed/`. All 11,947 files pass the installed EcoSpold 1 schema and the inventory-preservation audit. With the local timestamp/date adapters enabled, Brightway extracts all datasets and completes its nine default strategies without exceptions. Linking is still incomplete. See [Complete the schema repairs](#complete-the-schema-repairs) for the current commands, documented fallback values, and import status. Earlier sections record the sequence of failures and fixes.
