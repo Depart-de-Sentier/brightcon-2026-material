@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="ec7bd0b7-1250-5599-8bcf-d75806319827" activityNameId="92d5d1b4-4c5f-58d3-84a8-e13920d88cb5" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Electricity mix, DB</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Electricity mix, DB
+Technology shares determined based on information from DB and information on gross electricity generation in Germany;
+UUID: 7af072a0-dd17-3094-b0f0-e10659604b4c
+This dataset includes the shares of different technologies of the DB production mix in Germany .
+Location: Germany
+Technology: Average technology
+Time period: Time of publications
+Production volume: GWh
+Sampling: Statistics 
+Extrapolations: Some generic datasets from ecoinvent have been used.
+Uncertainty adjustments: None
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_7af072a0-dd17-3094-b0f0-e10659604b4c.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="948c6fdb-25b0-54ae-bf5c-e320176f724c" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">DE</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Germany</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Average technology</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2014-01-01" endDate="2014-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Time of publications</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="45f6b16c-858b-51d3-90a1-35496683b676" amount="1.0" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="ec7bd0b7-1250-5599-8bcf-d75806319827" intermediateExchangeId="b53bee22-201c-56d1-ac85-3cb669b677d5" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity mix, DB</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity mix, DB
+GERMANY
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4af336b3-8f37-590f-b09d-5f41056fbcd8" amount="0.005" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="d0a50aaf-17ed-5395-ac01-7707782f8240" intermediateExchangeId="08e12fd8-c803-5dc3-bc1f-65c3ed838f3f" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, industrial gas, at power plant</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, industrial gas, at power plant
+(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.005" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-5.298317366548036"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1804adef-b961-5028-8cc4-f2e9d5e9b406" amount="0.047252" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="b2a3cb35-23ab-5444-a724-8169e52d8dc2" intermediateExchangeId="21754474-1366-5b4c-86af-ff1e3e86b0cc" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, hydropower, at power plant</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, hydropower, at power plant
+(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.047252" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-3.0522602978958635"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="aa9169ed-3d22-5b36-b29f-91b02919ad31" amount="0.079113" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="96e7a5db-17fb-5ae7-ae26-d434ff0a5cab" intermediateExchangeId="b9dcc154-5bdc-5544-abf4-45526e10627b" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, hard coal, at power plant</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, hard coal, at power plant
+(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.079113" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-2.536878068786923"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="02b805a3-220c-52b8-bfac-8ce32fe5a8c7" amount="0.096" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="1261ee91-b215-5091-b5c6-f222b5e53780" intermediateExchangeId="f3768aff-62d2-50a1-9351-64e62364e292" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, nuclear, at power plant</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, nuclear, at power plant
+(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.096" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-2.3434070875143007"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4693a199-27df-55a1-bdbb-9ee9e34a7e76" amount="0.30465" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="37827e22-b574-5add-847a-e3384c526254" intermediateExchangeId="c90a8c7b-4275-5c9c-b3d6-d6d7611bdb7a" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, at wind farm</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, at wind farm
+(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation AT
+
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.30465" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-1.1885917022876338"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="dcd33d0f-bbd4-582d-b0b1-b0cc1d8fe1b2" amount="0.10694" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="58e622ad-b5ba-5434-870b-034b5a3d7783" intermediateExchangeId="96414310-e97e-5cfb-9cef-e35502cad226" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, at cogen with biogas engine, allocation exergy</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, at cogen with biogas engine, allocation exergy
+(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+
+BAFU mapping audit: {"bafu source exchange index": 6}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.10694" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-2.2354873494615517"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="70e4263e-5780-598f-977a-719c1ac7e647" amount="0.11316" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="02ca7dff-8797-5e2e-9d7a-4220729aad50" intermediateExchangeId="d8f47807-360f-5ce8-bb33-23cfd36b71e0" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, production mix photovoltaic, at plant</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, production mix photovoltaic, at plant
+(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+
+BAFU mapping audit: {"bafu source exchange index": 7}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.11316" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-2.1789525325487706"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c1fdbd39-20de-595e-a4e7-d02c5afe474f" amount="0.16489" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="854e7717-4258-5b26-a730-32020c6f8513" intermediateExchangeId="0e562cd6-bfc5-545d-8cca-e3009a71b37b" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, lignite, at power plant</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, lignite, at power plant
+(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+
+BAFU mapping audit: {"bafu source exchange index": 8}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.16489" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-1.80247669406926"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3fe43318-da3e-5c52-9500-a9c9cdee3bcf" amount="0.083" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="3af8d7da-e994-5c6e-a398-375926a355ee" intermediateExchangeId="44a93288-7eff-5012-b98d-90428008cbfa" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, natural gas, at power plant</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, natural gas, at power plant
+(1,1,1,1,1,1,BU:1,05); ; personal communication SBB (2020), gross electricity generation DE
+
+BAFU mapping audit: {"bafu source exchange index": 9}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.083" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-2.488914671185539"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="3a898a28-7290-5da4-bacb-11851aebbeb9" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Luana Krebs" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="3a898a28-7290-5da4-bacb-11851aebbeb9" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Luana Krebs" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

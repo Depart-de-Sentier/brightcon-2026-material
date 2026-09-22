@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="1fe1b60c-d612-5cab-992f-835392c46386" activityNameId="eaed3fd0-d693-50e2-8763-d1f586432d1a" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Use of global transmission network per GB</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Use of global transmission network per GB
+The data set represents the global (data center) networks; UUID: 278db06b-bcc6-3dcc-9b29-e0334dfe2af9
+The dataset represents a global IP traffic and the amount of data centres globally. Global IP traffic is based on Cisco 2018 CGI, representing 4.4 ZB data in 2020. The total amount of data centres globally is based on the assumption that globally, data centres consume 340 TWh (source: IEA 2022 Data Centres). This total amount is then divided by the average electricity consumption of a single data centre. The average electricity consumption of a data centre assumes a 24/7 operation for 365 days and a data centre power intensity of 6646 W / m2. The data centre power intensity assumes a power usage effectiveness (PUE) of 2. It is based on the IT area per IT power from Siddik et al 2021 and is weighted based on IT area of different data centre types (e.g., hyperscale, small, etc) from Shehabi et al 2021. The large number of data centres seems plausible since small data centres are included in the assumption. The input of the total number of data centres already considers the lifetime of each data centre element, for example servers, network equipment, and storage equipment (HDD and SSD). The functional unit = 1 GB.
+Location: Data for global data centers, applied in connection with Swiss networks
+Technology: Swiss use CPE transmission networks.
+Time period: Unspecified
+Production volume: unknown
+Sampling: Literature &amp; own estimations
+Extrapolations: Average technology
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_278db06b-bcc6-3dcc-9b29-e0334dfe2af9.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="f4808887-5a57-5892-975e-ba0565a93e23" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">GLO</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Data for global data centers, applied in connection with Swiss networks</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Swiss use CPE transmission networks.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2023-01-01" endDate="2029-12-31" isDataValidForEntirePeriod="false">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Unspecified</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="15178c93-cf07-5343-8686-201f016b7f8a" amount="1.0" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="1fe1b60c-d612-5cab-992f-835392c46386" intermediateExchangeId="5eda2668-3204-5e8b-8e6f-08567fbe2c2c" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use of global transmission network per GB</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Use of global transmission network per GB
+1 Unit = 1 GB of data transfer
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7d1dbf89-4651-5166-bb49-4962d54c5b84" amount="2.15e-10" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="06e3d798-a632-59c7-9f0e-dacee90bcbf0" intermediateExchangeId="194bc9ee-056c-5df7-a3ba-3069ca6f692c" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Data center</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Data center
+(2,2,1,3,3,5,BU:1.05)
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.15e-10" varianceWithPedigreeUncertainty="0.018228663707870213" mu="-22.260383087800886"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2a3f4d51-aa5e-5436-b8ce-97f407dd38cd" amount="0.0773" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="4c638cc7-d406-549a-b5dc-49e21b5054f2" intermediateExchangeId="f1ff75a8-821d-5cee-a0e1-b67037482993" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, medium voltage, production GLO, at grid</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, medium voltage, production GLO, at grid
+(2,2,1,3,3,5,BU:1.05)
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0773" varianceWithPedigreeUncertainty="0.018228663707870213" mu="-2.560061323388761"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised" isCopyrightProtected="false"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

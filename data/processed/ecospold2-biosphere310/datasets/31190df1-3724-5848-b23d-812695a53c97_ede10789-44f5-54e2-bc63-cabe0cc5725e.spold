@@ -1,0 +1,254 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="31190df1-3724-5848-b23d-812695a53c97" activityNameId="b6a27d32-760f-57d7-ab4f-7d7bba3a46c5" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Crude oil, production SA, at long distance transport</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Crude oil, production SA, at long distance transport
+Calculation for transport distances assuming transport by pipeline offshore and onshore as well as sea transport in tanker. Sites and modes of transportation based on the supply situation in 2016.;
+UUID: b07d53b1-bf1d-31c4-83ce-b0e5812343ce
+Transportation of crude oil from exploration site to refinery in Switzerland. Includes transport service requirements and emissions from oil handling and evaporation.
+Location: Calculations based on assumptions for supply to Swiss refineries.
+Technology: Operation of crude oil pipelines by electricity.
+Time period: Transport modes investigated for 2016
+Production volume: na
+Sampling: Literature. Online calculators for distances. 
+Extrapolations: none
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_b07d53b1-bf1d-31c4-83ce-b0e5812343ce.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Calculations based on assumptions for supply to Swiss refineries.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Operation of crude oil pipelines by electricity.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2000-01-01" endDate="2016-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Transport modes investigated for 2016</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="14b24aec-1bf3-55d6-b571-e40945fe79e7" amount="1.0" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="31190df1-3724-5848-b23d-812695a53c97" intermediateExchangeId="ede10789-44f5-54e2-bc63-cabe0cc5725e" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Crude oil, production SA, at long distance transport</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Crude oil, production SA, at long distance transport
+SWITZERLAND
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="db886867-9848-5b15-9766-c17b7d6ef269" amount="4.1" unitId="97a43c83-639b-5b25-b36e-39233e1b0540" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="f81cd48c-8ddf-5bc7-a81d-c266bfa6be34" intermediateExchangeId="d0bb02c4-76fe-56db-a6d7-557685496861" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Transport, transoceanic tanker</name>
+        <unitName xml:lang="en">ton kilometer</unitName>
+        <comment xml:lang="en">Full flow name: Transport, transoceanic tanker
+(4,1,1,3,1,na); Calculation 2016
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.1" varianceWithPedigreeUncertainty="0.12852589985148574" mu="1.410986973710262"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0fcae964-daa3-561c-a264-30d916d1bd7a" amount="0.02" unitId="97a43c83-639b-5b25-b36e-39233e1b0540" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="b5d485d2-fc14-5c35-be4e-4e2c1f3f51df" intermediateExchangeId="24e318ec-2a43-5fa4-a233-a242268d3f3b" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Transport, crude oil pipeline, offshore</name>
+        <unitName xml:lang="en">ton kilometer</unitName>
+        <comment xml:lang="en">Full flow name: Transport, crude oil pipeline, offshore
+(4,1,1,3,1,na); Calculation 2016
+
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.02" varianceWithPedigreeUncertainty="0.009005399958270018" mu="-3.912023005428146"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a6ce2c0f-c99a-597b-94e8-5e70d330dffd" amount="1.9" unitId="97a43c83-639b-5b25-b36e-39233e1b0540" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="6b0d4066-f2e0-5c96-8f2e-d675bec95ead" intermediateExchangeId="c1d579ab-5e03-5005-8f06-a01d971cb545" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Transport, crude oil pipeline, onshore</name>
+        <unitName xml:lang="en">ton kilometer</unitName>
+        <comment xml:lang="en">Full flow name: Transport, crude oil pipeline, onshore
+(4,1,1,3,1,na); Calculation 2016
+
+BAFU mapping audit: {"bafu source exchange index": 6}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.9" varianceWithPedigreeUncertainty="0.009005399958270018" mu="0.6418538861723947"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a096882e-79cd-5df3-af88-c934da8b74b2" amount="1.0003" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="9f9297be-07de-5c13-93b8-278e115b2c4a" intermediateExchangeId="186c0995-061a-5175-aa39-e02a72ee4d09" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Crude oil, at production</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Crude oil, at production
+(1,1,1,1,1,na); Transported crude oil +losses
+
+BAFU mapping audit: {"bafu source exchange index": 8}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0003" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="0.00029995500899794244"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="e9c63c29-80b7-5048-94b9-67d6d2e4f3a6" amount="2.7e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="3b1ecf8e-1d2c-4330-81da-a79f9068976d">
+        <name xml:lang="en">Toluene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Toluene
+(3,5,4,1,1,na); Literature
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.7e-07" varianceWithPedigreeUncertainty="0.05999254903488561" mu="-15.124843877948036"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="a3ed2c3b-9726-53d7-ad70-bea7a81f0f85" amount="9.558e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="516606eb-99f6-4e8c-b99a-6b439aaed48c">
+        <name xml:lang="en">Pentane</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Pentane
+(3,5,4,1,1,na); Literature
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="9.558e-05" varianceWithPedigreeUncertainty="0.05999254903488561" mu="-9.255546964814261"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="84cd42d0-9ea0-582a-b09d-022f06521443" amount="5.3876e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="3bbc78d0-08c4-48ef-a863-704e32fddcb3">
+        <name xml:lang="en">Hexane</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Hexane
+(3,5,4,1,1,na); Literature
+
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="5.3876e-05" varianceWithPedigreeUncertainty="0.05999254903488561" mu="-9.828825448227706"/>
+        </uncertainty>
+        <compartment subcompartmentId="4715d9fb-1efc-5514-9bf6-f0bb4e5fab5f" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">urban air close to ground</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="d3534e5f-d4de-5dd2-9d9a-b584745633bb" amount="4.5e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="28999907-a8a7-45b3-857e-836495ca2aa0">
+        <name xml:lang="en">Benzene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Benzene
+(3,5,4,1,1,na); Literature
+
+BAFU mapping audit: {"bafu source exchange index": 7}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.5e-07" varianceWithPedigreeUncertainty="0.3206198450696471" mu="-14.614018254182046"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="84f2103d-8a96-54c0-99f5-f8491db22685" amount="1.35e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="2451f9df-0596-49ec-8380-08e4ad75a153">
+        <name xml:lang="en">Hydrocarbons, aliphatic, alkanes, unspecified</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Hydrocarbons, aliphatic, alkanes, unspecified
+(3,5,4,1,1,na); Literature
+
+BAFU mapping audit: {"bafu source exchange index": 9}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.35e-06" varianceWithPedigreeUncertainty="0.05999254903488561" mu="-13.515405965513937"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="76b4974e-af4e-531b-a018-889620bcee8a" amount="1.498e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="0795345f-c7ae-410c-ad25-1845784c75f5">
+        <name xml:lang="en">Methane, fossil</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Methane, fossil
+(3,5,4,1,1,na); Literature
+
+BAFU mapping audit: {"bafu source exchange index": 10}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.498e-06" varianceWithPedigreeUncertainty="0.05999254903488561" mu="-13.411379672869247"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="118786dc-581e-593c-a020-24f53a47d2df" amount="0.00012642" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="982b0510-96ac-4bcb-a758-e98006b95f4d">
+        <name xml:lang="en">Butane</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Butane
+(3,5,4,1,1,na); Literature
+
+BAFU mapping audit: {"bafu source exchange index": 11}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00012642" varianceWithPedigreeUncertainty="0.05999254903488561" mu="-8.975900860920122"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="9b3513c5-9687-5e11-b2e0-a0d41027be22" amount="1.601e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="8e30c990-5ed4-4f94-9d0e-2f5e4ff1a1f9">
+        <name xml:lang="en">Ethane</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Ethane
+(3,5,4,1,1,na); Literature
+
+BAFU mapping audit: {"bafu source exchange index": 12}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.601e-06" varianceWithPedigreeUncertainty="0.05999254903488561" mu="-13.344882123949697"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="72bb34cf-819e-5227-9f53-d7f2032669f9" amount="6.1296e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="3a6c936c-0276-4f11-9d98-1bd011387a6e">
+        <name xml:lang="en">Propane</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Propane
+(3,5,4,1,1,na); Literature
+
+BAFU mapping audit: {"bafu source exchange index": 13}</comment>
+        <uncertainty>
+          <lognormal meanValue="6.1296e-05" varianceWithPedigreeUncertainty="0.05999254903488561" mu="-9.699795970005981"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="514ac02e-a558-5b15-9e4e-8de78c19bc47" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Christoph Meili" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="15487bbc-f107-5f59-b425-f7ae85f50b54" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Niels Jungbluth" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

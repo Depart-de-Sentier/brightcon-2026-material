@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="37a01748-fdb4-513e-bd76-6bb9e6ebebd5" activityNameId="a7d000c2-fa21-528e-9c61-95bae479ca68" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">External drive, at plant</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: External drive, at plant
+The dataset is a mix of storage drives available in the market; UUID: c3b235ed-2a16-3419-9c61-dea339d5b88c
+The dataset is modeled as a mix of SSD and HDD, with a ratio of 60:40 according to the market projection (Statista, 2017). In total, the external drives have the capacity of approximately 500 GB - 1000 GB. For SSD and HDD, each storage drives is modeled individually as its own module.
+Location: Data for global average external drives.
+Technology: SSD and HDD storage drives are considered.
+Time period: Unspecified
+Production volume: unknown
+Sampling: Literature &amp; own estimations
+Extrapolations: Average technology
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_c3b235ed-2a16-3419-9c61-dea339d5b88c.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="f4808887-5a57-5892-975e-ba0565a93e23" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">GLO</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Data for global average external drives.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: SSD and HDD storage drives are considered.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2023-01-01" endDate="2029-12-31" isDataValidForEntirePeriod="false">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Unspecified</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="9609f0e6-d2b6-5e47-8be4-3e967a48a75b" amount="1.0" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="37a01748-fdb4-513e-bd76-6bb9e6ebebd5" intermediateExchangeId="f3b8528d-95d0-5d5f-9151-e5b44858d8b3" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">External drive, at plant</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: External drive, at plant
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d660721f-8e77-5925-9b66-2814867a11ec" amount="0.6" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="cda73b87-9e58-58b4-bdaf-d3ae1e91b47d" intermediateExchangeId="d8d471b8-9ea1-580c-8493-20a25a30f78e" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Solid State Drive, SSD, at plant</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Solid State Drive, SSD, at plant
+(2,2,2,2,2,5,BU:1.06); HDD for laptops + SSD, with a share of 40:60 (Statista, 2017).
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.6" varianceWithPedigreeUncertainty="0.010713716581470602" mu="-0.5108256237659907"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3809c548-ce2e-5ee5-86cf-be0e810aa860" amount="0.4" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="0cdaea92-e31c-5dce-9b38-6632ead5a755" intermediateExchangeId="df42cbfe-fed7-547a-b28d-becfaf9149b5" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">HDD, laptop computer, at plant</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: HDD, laptop computer, at plant
+(2,2,2,2,2,5,BU:1.06); HDD for laptops + SSD, with a share of 40:60 (Statista, 2017).
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.4" varianceWithPedigreeUncertainty="0.010713716581470602" mu="-0.916290731874155"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised" isCopyrightProtected="false"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

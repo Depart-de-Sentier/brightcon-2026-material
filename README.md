@@ -47,6 +47,8 @@ This applies all approved mappings, saves every unlinked biosphere exchange in a
 
 The script checks the XML schema, re-imports every file, compares links/amounts/uncertainty, and verifies the written database. Existing databases and output directories are refused. See the [export instructions](docs/bafu-2026-ecospold2-export.md) for reruns and the bundled re-import helper that preserves uncertainty.
 
+The verified export is committed in this repository. To rebuild it, add `--output data/processed/ecospold2-biosphere310-rebuilt` (or another unused directory) to the command above. Its retained-inventory audit is stored losslessly as `audit/retained-inventory.jsonl.gz` to fit GitHub's file-size limit; the [export instructions](docs/bafu-2026-ecospold2-export.md#git-storage) explain how to restore and verify it. No decompression is needed to import the `.spold` files.
+
 To import the exported files into a separate project, run [the EcoSpold 2 import notebook](scripts/import_ecospold2.ipynb) with the `bw` kernel. It creates a project with biosphere 3.10 and writes the imported database once all exchanges link.
 
 ## Repository structure
@@ -67,4 +69,4 @@ To import the exported files into a separate project, run [the EcoSpold 2 import
 
 This repository contains the initial project structure and the BAFU 2026 raw dataset: 11,947 EcoSpold XML files and 114 PDF inventory reports. Participants will add the schemas, code, and assessment criteria.
 
-Raw files under `data/raw/` are tracked in Git. Other data payloads, including derived files under `data/processed/`, are ignored by default; folder READMEs are tracked.
+Raw files under `data/raw/` and the verified export under `data/processed/ecospold2-biosphere310/` are tracked in Git. Other derived data payloads are ignored by default; folder READMEs are tracked.

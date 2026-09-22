@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="5f504726-f96c-52be-9179-efcb4ccabe54" activityNameId="808ef0f3-8514-5db4-bea6-3fd3ee99d3f5" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Electricity, medium voltage, DB, at grid</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Electricity, medium voltage, DB, at grid
+Distribution losses are taken from Itten, Frischknecht and Stucki (2014): LCI of Electricity Mixes and Grid.;
+UUID: de757a30-21d0-335e-909a-de809815603b
+This dataset describes the distribution of the railway mix in Germany and includes the low voltage network infrastructure, transmission losses and air pollutant emissions. Not included are electricity losses due to building distribution.
+Location: Germany
+Technology: Average technology
+Time period: Time of publications
+Production volume: GWh
+Sampling: Statistics 
+Extrapolations: Some generic datasets from ecoinvent have been used.
+Uncertainty adjustments: None
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_de757a30-21d0-335e-909a-de809815603b.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="948c6fdb-25b0-54ae-bf5c-e320176f724c" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">DE</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Germany</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Average technology</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2014-01-01" endDate="2014-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Time of publications</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="3b85b693-9b06-5871-87e9-6c41a0ba87c9" amount="1.0" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="5f504726-f96c-52be-9179-efcb4ccabe54" intermediateExchangeId="ddb61335-38a8-5b7f-9122-396fefab594f" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, medium voltage, DB, at grid</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, medium voltage, DB, at grid
+GERMANY
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e5b07f75-bc1e-588e-9588-d4326dde7ea8" amount="1.0259" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="279d227a-3302-5c12-a2c3-4d6e1204d68b" intermediateExchangeId="c759d8b2-1ae1-508a-bb96-4fba158d36db" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, high voltage, DB, at grid</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, high voltage, DB, at grid
+(3,1,2,1,1,3,BU:1,05); Specific network losses estimated based on statistics; Itten, Frischknecht &amp; Stucki 2014
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0259" varianceWithPedigreeUncertainty="0.003680380855993401" mu="0.025570276111530045"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2226f73b-cbd3-540a-b56e-da1f4a7886c5" amount="1.1694e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="4ff84c5d-d10c-55a1-ab0d-c16d66c634b5" intermediateExchangeId="1156647a-5da8-5736-87cb-17f56d929fc3" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Sulphur hexafluoride, liquid, at plant</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Sulphur hexafluoride, liquid, at plant
+(2,3,3,3,1,5,BU:1,05); Estimation based on SF6 emissions; Itten, Frischknecht &amp; Stucki 2014
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.1694e-07" varianceWithPedigreeUncertainty="0.01246611757839419" mu="-15.961604854198887"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0423e707-762b-52d8-8206-4374990caa4d" amount="1.8628e-08" unitId="ed57815c-d0f9-5333-b0a1-03bd8247964e" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="592634af-93e7-52ec-a0f1-937774373c35" intermediateExchangeId="81367012-d562-54fc-9ba1-f4d9112408bd" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Transmission network, electricity, medium voltage</name>
+        <unitName xml:lang="en">kilometer</unitName>
+        <comment xml:lang="en">Full flow name: Transmission network, electricity, medium voltage
+(3,2,5,3,1,5,BU:3); Assumed service life of the electricity grid: 40a; Itten, Frischknecht &amp; Stucki 2014
+
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.8628e-08" varianceWithPedigreeUncertainty="0.35361205202287305" mu="-17.79860001182628"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="d314c485-fee0-5bd2-9fb5-88a047f55702" amount="1.1694e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="35d1dff5-b535-4628-9826-4a8fce08a1f2">
+        <name xml:lang="en">Sulfur hexafluoride</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Sulfur hexafluoride
+(2,3,3,3,1,5,BU:1,5); Estimation based on national statistics from Switzerland with an emission rate of 2.1%; Itten, Frischknecht &amp; Stucki 2014
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.1694e-07" varianceWithPedigreeUncertainty="0.052976389753856205" mu="-15.961604854198887"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="9c3fc908-6b32-563f-870a-9c4100e1553b" amount="0.088578" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="f2d84834-d0b3-42e5-b41a-f04cc80337a4">
+        <name xml:lang="en">Heat, waste</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, waste
+(2,4,1,1,1,5,BU:1,05); Estimation based on network losses;
+
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.088578" varianceWithPedigreeUncertainty="0.011768398590826405" mu="-2.423871759202131"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="e4e8160c-d9fa-5eb1-be3e-65218fb8f1f7" amount="0.004662" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="dfbe093a-f470-4ae7-a207-50444f1f23f1">
+        <name xml:lang="en">Heat, waste</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, waste
+(2,4,1,1,1,5,BU:1,05); Estimation based on network losses;
+
+BAFU mapping audit: {"bafu source exchange index": 6}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.004662" varianceWithPedigreeUncertainty="0.011768398590826405" mu="-5.368310738368572"/>
+        </uncertainty>
+        <compartment subcompartmentId="8b37fd25-9143-5540-a876-7441dc598d32" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="3a898a28-7290-5da4-bacb-11851aebbeb9" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Luana Krebs" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="3a898a28-7290-5da4-bacb-11851aebbeb9" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Luana Krebs" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

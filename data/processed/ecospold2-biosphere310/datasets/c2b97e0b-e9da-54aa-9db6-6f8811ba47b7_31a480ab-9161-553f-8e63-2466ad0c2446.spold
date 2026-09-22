@@ -1,0 +1,170 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="c2b97e0b-e9da-54aa-9db6-6f8811ba47b7" activityNameId="3561ef24-53bd-5249-b9f9-89f21b562870" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Printed wiring board plant</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Printed wiring board plant
+This data is based on an environmental report from a PWB plant. The original use of land is estimated to be agriculture.;
+UUID: cd20d723-e663-3ccf-a654-38c7531b7928
+This data describes the land use and the buildings of a PWB plant in Austria
+Location: Plant in Austria.
+Technology: Fabricatio of multilayer PWB.
+Time period: Period of environmental report.
+Production volume: 915809 m2 1-layer
+Sampling: unknown 
+Extrapolations: none
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_cd20d723-e663-3ccf-a654-38c7531b7928.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="20a9bf48-6cea-59b4-ad08-000cb981f2d0" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">RER</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Plant in Austria.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Fabricatio of multilayer PWB.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2000-01-01" endDate="2000-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Period of environmental report.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="e5a3bc29-9a19-5911-ac11-a938e6d40bfd" amount="1.0" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="c2b97e0b-e9da-54aa-9db6-6f8811ba47b7" intermediateExchangeId="31a480ab-9161-553f-8e63-2466ad0c2446" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Printed wiring board plant</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Printed wiring board plant
+Europe
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f0ef11f8-e68f-5a9c-a5bd-a4ace76e0520" amount="545560.0" unitId="db3b2def-24b3-5d7e-a8b7-14695362b285" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="ab65a308-4f6e-587e-b366-89b82649a167" intermediateExchangeId="6a76863f-4121-5ef2-befe-e631156dd74f" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Building, multi-storey</name>
+        <unitName xml:lang="en">cubic meter</unitName>
+        <comment xml:lang="en">Full flow name: Building, multi-storey
+(5,3,1,1,1,5); estimates
+
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="545560.0" varianceWithPedigreeUncertainty="0.35174696192742777" mu="13.209568069040811"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="9c49362b-1f42-5f02-9c80-8f713a2a4cae" amount="818340.0" unitId="3a10ffbc-f05c-5d1a-aa56-ef31fa3d8c58" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="fe9c3a98-a6d2-452d-a9a4-a13e64f1b95b">
+        <name xml:lang="en">Occupation, industrial area</name>
+        <unitName xml:lang="en">square meter-year</unitName>
+        <comment xml:lang="en">Full flow name: Occupation, industrial area
+(3,3,1,1,1,5); environmental report + estimated life time
+
+BAFU mapping audit: {"bafu original biosphere": {"categories": ["natural resource", "land"], "name": "Occupation, industrial area, built up", "unit": "square meter-year"}, "bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="818340.0" varianceWithPedigreeUncertainty="0.35174696192742777" mu="13.615033177148975"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="4143570a-e785-522a-8c93-4276e10c0ff2" amount="1730900.0" unitId="3a10ffbc-f05c-5d1a-aa56-ef31fa3d8c58" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="fe9c3a98-a6d2-452d-a9a4-a13e64f1b95b">
+        <name xml:lang="en">Occupation, industrial area</name>
+        <unitName xml:lang="en">square meter-year</unitName>
+        <comment xml:lang="en">Full flow name: Occupation, industrial area
+(3,3,1,1,1,5); environmental report + estimated life time
+
+BAFU mapping audit: {"bafu original biosphere": {"categories": ["natural resource", "land"], "name": "Occupation, industrial area, vegetation", "unit": "square meter-year"}, "bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="1730900.0" varianceWithPedigreeUncertainty="0.05228042390623151" mu="14.36415206241449"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="73304d3c-eb11-5d1b-b2cc-606cbb647442" amount="125440.0" unitId="2ffee513-1cfa-5700-836b-d4190b6e12cb" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="36965153-1daf-452a-8089-f4b5222c46ae">
+        <name xml:lang="en">Transformation, to unknown</name>
+        <unitName xml:lang="en">square meter</unitName>
+        <comment xml:lang="en">Full flow name: Transformation, to unknown
+(3,3,1,1,1,5); environmental report + estimates
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="125440.0" varianceWithPedigreeUncertainty="0.13129545568477718" mu="11.739582835584235"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="04c021f8-0926-51ab-b1d4-c1c863cc9fd2" amount="662100.0" unitId="3a10ffbc-f05c-5d1a-aa56-ef31fa3d8c58" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="26efe47c-92a5-4dea-b4d0-eac13e418a58">
+        <name xml:lang="en">Occupation, traffic area, road network</name>
+        <unitName xml:lang="en">square meter-year</unitName>
+        <comment xml:lang="en">Full flow name: Occupation, traffic area, road network
+(3,3,1,1,1,5); environmental report + estimated life time
+
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="662100.0" varianceWithPedigreeUncertainty="0.05228042390623151" mu="13.403171880912938"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="2a562700-ccc1-57e2-868e-201989786448" amount="543720.0" unitId="3a10ffbc-f05c-5d1a-aa56-ef31fa3d8c58" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="fe9c3a98-a6d2-452d-a9a4-a13e64f1b95b">
+        <name xml:lang="en">Occupation, industrial area</name>
+        <unitName xml:lang="en">square meter-year</unitName>
+        <comment xml:lang="en">Full flow name: Occupation, industrial area
+(3,3,1,1,1,5); environmental report + estimated life time
+
+BAFU mapping audit: {"bafu source exchange index": 6}</comment>
+        <uncertainty>
+          <lognormal meanValue="543720.0" varianceWithPedigreeUncertainty="0.05228042390623151" mu="13.206189687449184"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="ed7202f5-7eb2-5173-bcac-25faf9f2bef5" amount="125440.0" unitId="2ffee513-1cfa-5700-836b-d4190b6e12cb" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="f05cca02-ec18-4acc-9939-59658ff9a554">
+        <name xml:lang="en">Transformation, from annual crop</name>
+        <unitName xml:lang="en">square meter</unitName>
+        <comment xml:lang="en">Full flow name: Transformation, from annual crop
+(3,3,1,1,1,5); environmental report + estimates
+
+BAFU mapping audit: {"bafu source exchange index": 7}</comment>
+        <uncertainty>
+          <lognormal meanValue="125440.0" varianceWithPedigreeUncertainty="0.05228042390623151" mu="11.739582835584235"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="639146fe-153b-54bc-b78a-3543f23fcae3" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Mireille Faist Emmenegger" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="639146fe-153b-54bc-b78a-3543f23fcae3" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Mireille Faist Emmenegger" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

@@ -1,0 +1,98 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="29c723b3-8f4a-5f99-b8a9-64263f09ea4a" activityNameId="8f6189df-3521-5c4b-8ac2-1cf4810e0ffa" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Transport, aircraft, freight, long-haul, Infrastruktur</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Transport, aircraft, freight, long-haul, Infrastruktur
+Inventory refers to the entire transport life cycle. Airport infrastructure expenditures and environmental interventions are accounted for using the yearly transport performance at Zurich airport (478'800 tkm/a). Aircraft manufacturing is allocated based on the total life span of an aircraft (25'000 LTO), the average distance of a flight (7850km) and its average freight load (11.5t/unit);
+UUID: da0f6e45-5252-31db-b88a-b5ee05d69eef
+The dataset describes the operation of aircrafts including taxying, take-off and landing covering fuel consumption and operation emissions. Aircraft manufacture and maintenance, airport construction, operation and dismantling are inputs to this dataset
+Location: &lt;null&gt;
+Technology: Aircraft operation modelled based on passenger aircrafts operated by Lufthansa Group in 2019. The emission profiles distinguish between LTO and cruise.
+Time period: Start date refers to emission factor data. End date refers to year of reporting fuel consumption and transport activities
+Production volume: 7'866'000'000tkm
+Sampling: fuel consumption is based on corporate data, emission profiles are based on FOEN statistics 
+Extrapolations: &lt;null&gt;
+Uncertainty adjustments: &lt;null&gt;
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_da0f6e45-5252-31db-b88a-b5ee05d69eef.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="20a9bf48-6cea-59b4-ad08-000cb981f2d0" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">RER</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: &lt;null&gt;</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Aircraft operation modelled based on passenger aircrafts operated by Lufthansa Group in 2019. The emission profiles distinguish between LTO and cruise.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2016-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Start date refers to emission factor data. End date refers to year of reporting fuel consumption and transport activities</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="8ce5e248-1ec4-5009-b4fe-3b8a8acb074a" amount="1.0" unitId="97a43c83-639b-5b25-b36e-39233e1b0540" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="29c723b3-8f4a-5f99-b8a9-64263f09ea4a" intermediateExchangeId="e96a75c5-e32a-58ac-a877-b71a8bf5c04f" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Transport, aircraft, freight, long-haul, Infrastruktur</name>
+        <unitName xml:lang="en">ton kilometer</unitName>
+        <comment xml:lang="en">Full flow name: Transport, aircraft, freight, long-haul, Infrastruktur
+Europe
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="3d79dae7-3cc6-5917-a3ff-8387cd95c5ba" amount="4.5303e-11" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="bfd8fd71-b503-532a-9f39-2e7fbd243354" intermediateExchangeId="d2e316f4-6bd9-51ef-b4d8-8c2e649d617a" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Operation, maintenance, airport</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Operation, maintenance, airport
+(2,4,1,3,1,5,BU:2); same as airport multipied by the lifetime of the airport of 100 years;
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.5303e-11" varianceWithPedigreeUncertainty="0.13138323336335603" mu="-23.817647860466785"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f095012f-2c8a-519f-a020-1cc72c70c2f5" amount="4.5303e-13" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="fdccc467-a8d1-56ec-86da-9539574aafb6" intermediateExchangeId="b779990b-a6ec-51a6-acdb-af8b40940882" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Disposal, airport</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Disposal, airport
+(2,4,1,3,1,5,BU:3); same as airport;
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.5303e-13" varianceWithPedigreeUncertainty="0.313005369016595" mu="-28.42281804645488"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2e7ed026-b24e-5fb4-bf12-686fbf8955d0" amount="4.5303e-13" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="e6536b2f-2f70-568c-9dfd-342d6bfb512d" intermediateExchangeId="f425f5bc-5b01-5d59-ba63-24b6ac8cc442" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Airport</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Airport
+(2,4,1,3,1,5,BU:3); assumed yearly throughput airport: passenger 5608369 p and freight 423221t; Airport Zürich, yearly report 2019
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.5303e-13" varianceWithPedigreeUncertainty="0.313005369016595" mu="-28.42281804645488"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="8a21f2b6-949a-54ab-b045-d2d47ac1a76b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Rolf Frischknecht" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="8a21f2b6-949a-54ab-b045-d2d47ac1a76b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Rolf Frischknecht" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

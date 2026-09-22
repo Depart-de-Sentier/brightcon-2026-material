@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="451c5f3d-8e1a-57f8-b0c2-cce5b94609f3" activityNameId="c7a27780-b55d-5c90-a4dd-e1867c7c863d" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Electricity, industrial gas, at power plant</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Electricity, industrial gas, at power plant
+na;
+UUID: dda724b1-81c3-34b4-9c1b-d43289de071b
+The module includes coke oven gas and blast furnace gas. The module uses the average net efficiency of industrial gas power plants in NORDEL countries (estimated from IEA 2001, including countries FI, NO, SE).
+Location: undefined
+Technology: Average of installed power plants.
+Time period: undefined
+Production volume: na
+Sampling: Literature 
+Extrapolations: none
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_dda724b1-81c3-34b4-9c1b-d43289de071b.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="0570c514-72ef-5029-a151-d76a96ca351b" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">NORDEL</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: undefined</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Average of installed power plants.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2000-01-01" endDate="2000-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: undefined</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="36fdb1c8-7868-5a11-9fb0-8658a92eba09" amount="1.0" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="451c5f3d-8e1a-57f8-b0c2-cce5b94609f3" intermediateExchangeId="9eebd84d-3cce-540a-b6ed-a91ef89f4632" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, industrial gas, at power plant</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, industrial gas, at power plant
+Nordic countries power association
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="656dcd04-ae69-5a01-b3ba-ba63982c70ed" amount="2.15" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="c42a4d41-d1f7-5bbd-9095-906976dde39d" intermediateExchangeId="68d4c5c1-e350-5e39-a483-e458a2c1344d" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Coke oven gas, burned in power plant</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Coke oven gas, burned in power plant
+shares from early 1990th, distribution uncertain
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.15" varianceWithPedigreeUncertainty="0.02830339150422037" mu="0.7654678421395714"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="54c1aaa3-2b22-57b3-8958-59b7956f9cf1" amount="5.8" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="eb789539-53e1-5534-ad0e-1d1e874a263a" intermediateExchangeId="7b262689-d0f4-5a31-a948-021545b53d7d" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Blast furnace gas, burned in power plant</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Blast furnace gas, burned in power plant
+shares from early 1990th, distribution uncertain
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="5.8" varianceWithPedigreeUncertainty="0.02830339150422037" mu="1.7578579175523736"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="ed3fc1e0-76f9-5a39-9214-90513502264b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Thomas Heck" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="ed3fc1e0-76f9-5a39-9214-90513502264b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Thomas Heck" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

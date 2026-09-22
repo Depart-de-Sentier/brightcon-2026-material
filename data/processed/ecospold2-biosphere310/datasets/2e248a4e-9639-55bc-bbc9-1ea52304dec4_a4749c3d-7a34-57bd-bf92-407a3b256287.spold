@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="2e248a4e-9639-55bc-bbc9-1ea52304dec4" activityNameId="27aeaab6-fc33-5889-94fc-edcbb9a7e40b" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Use, laptop, high intensity per hour</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Use, laptop, high intensity per hour
+The data set represents the use of a laptop computer and internet use.; UUID: ffa53b98-dbb4-34a6-85b7-e4c160e35333
+This data set includes the use of a laptop and the energy consumption on the end user side. Additionally, the energy and embodied impacts associated with the transmission network on the could are also included. Medium intensity means that the device consumption is higher than standard and data consumption is set at 7 GB per hour.
+Location: Data for Swiss conditions
+Technology: Using an average laptop computer at active mode while consuming data via internet and transmission network
+Time period: Unspecified
+Production volume: unknown
+Sampling: Literature
+Extrapolations: Average technology
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_ffa53b98-dbb4-34a6-85b7-e4c160e35333.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Data for Swiss conditions</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Using an average laptop computer at active mode while consuming data via internet and transmission network</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2023-01-01" endDate="2029-12-31" isDataValidForEntirePeriod="false">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Unspecified</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="c6798bb6-1a5e-5108-8f79-54efc7325c9a" amount="1.0" unitId="9ab8d6e2-bd5e-592b-add5-ebeee086e9dd" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="2e248a4e-9639-55bc-bbc9-1ea52304dec4" intermediateExchangeId="a4749c3d-7a34-57bd-bf92-407a3b256287" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use, laptop, high intensity per hour</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">Full flow name: Use, laptop, high intensity per hour
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="92f858f8-f010-5a8a-b58c-d2e9e3492d0f" amount="0.000139" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="6024d72f-095f-53f9-b1b4-6fbb5321fc7f" intermediateExchangeId="cdfd30fd-88e6-5a32-a802-45cffd2be06e" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Laptop computer, at plant</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Laptop computer, at plant
+(2,2,1,2,1,5,BU:1.05); life time: 4 years and 1800 hours (360 days/year, 5h/day)
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000139" varianceWithPedigreeUncertainty="0.009885416005922408" mu="-8.881036624833582"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="57448d9b-d8ad-5f71-a8db-e0b3c2c2143a" amount="0.0311" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="6de0d104-e5c3-5bee-955b-6f6232c3fdc3" intermediateExchangeId="77eb694f-7dfa-5a7e-8152-53bed7445781" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, low voltage, at grid</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, low voltage, at grid
+(2,2,1,2,1,5,BU:1.05); according to digisuff 2023 report and Viana et al 2022: normal use = 27 W + 15% as a function of intensity
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0311" varianceWithPedigreeUncertainty="0.009885416005922408" mu="-3.470547459796949"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="7ec8bad8-9a24-51c7-928a-93ebf064c4cb" amount="1.0" unitId="9ab8d6e2-bd5e-592b-add5-ebeee086e9dd" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="b8e1b368-8c49-5e89-8a51-5d63177ea780" intermediateExchangeId="88e35281-c0c7-5a40-bed7-ae63f865a31c" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use of core national IP network per hour</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">Full flow name: Use of core national IP network per hour
+(2,2,2,2,1,5,BU:1.05);
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0" varianceWithPedigreeUncertainty="0.009885416005922408" mu="0.0"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2c598d45-cea5-52fc-9683-14c829d76837" amount="7.0" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="1fe1b60c-d612-5cab-992f-835392c46386" intermediateExchangeId="5eda2668-3204-5e8b-8e6f-08567fbe2c2c" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use of global transmission network per GB</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Use of global transmission network per GB
+(2,2,2,2,1,5,BU:1.05); Unit = 1GB. For high intensity = 7 GB data consumption/hour, according to Vianna et al 2022.
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="7.0" varianceWithPedigreeUncertainty="0.009885416005922408" mu="1.9459101490553132"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2300a8cf-df41-58ad-8553-7a21cd2c7aaf" amount="1.0" unitId="9ab8d6e2-bd5e-592b-add5-ebeee086e9dd" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="e0d4fc45-797d-5e08-bd74-05f1fe4f0e19" intermediateExchangeId="59aa0867-0ee3-5588-b32d-755c26df020d" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use of fixed IP access network per hour</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">Full flow name: Use of fixed IP access network per hour
+(2,2,2,2,1,5,BU:1.05);
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0" varianceWithPedigreeUncertainty="0.009885416005922408" mu="0.0"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="057846ff-0fb3-5e44-80b7-d7f8df2f3d61" amount="1.0" unitId="9ab8d6e2-bd5e-592b-add5-ebeee086e9dd" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="5ce56fb9-77c5-51b2-beb4-f6f477bcfb2f" intermediateExchangeId="d94d2e07-8357-5c63-9a85-e07511d4bf3f" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use of CPE, for transmission network per hour</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">Full flow name: Use of CPE, for transmission network per hour
+(2,2,2,2,1,5,BU:1.05);
+BAFU mapping audit: {"bafu source exchange index": 6}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0" varianceWithPedigreeUncertainty="0.009885416005922408" mu="0.0"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised" isCopyrightProtected="false"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

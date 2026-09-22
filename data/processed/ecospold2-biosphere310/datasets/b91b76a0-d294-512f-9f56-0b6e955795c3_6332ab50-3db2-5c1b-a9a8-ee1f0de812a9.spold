@@ -1,0 +1,458 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="b91b76a0-d294-512f-9f56-0b6e955795c3" activityNameId="146d9aa5-51b9-5150-bfb9-0a12f8cd217f" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Disposal, ash slurry solids and bark chips, to landfarming</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Disposal, ash slurry solids and bark chips, to landfarming
+Ash composition pig slurry: no information available, modelled equal to horse dung;
+UUID: 065cf162-aaf2-4f38-b29e-a314a0f105c9
+This data set includes the wood chips. Horse dung as a waste is assumed to be used with zero burden from its production.
+Location: The inventory is modelled for a pilot plant in Switzerland
+Technology: bark furnace 1MW
+Time period: Collection of data and publication.
+Production volume: na
+Sampling: Literature 
+Extrapolations: none
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_065cf162-aaf2-4f38-b29e-a314a0f105c9.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: The inventory is modelled for a pilot plant in Switzerland</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: bark furnace 1MW</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="1998-01-01" endDate="1998-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Collection of data and publication.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="01a96a6f-9e42-529a-9095-fd61e5dd2216" amount="1.0" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="b91b76a0-d294-512f-9f56-0b6e955795c3" intermediateExchangeId="6332ab50-3db2-5c1b-a9a8-ee1f0de812a9" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Disposal, ash slurry solids and bark chips, to landfarming</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Disposal, ash slurry solids and bark chips, to landfarming
+SWITZERLAND
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5a173a64-8134-54a5-962c-88a675ce5d67" amount="1.0" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="e1a8e1a3-51e3-5ebb-b825-9f91e341c33c" intermediateExchangeId="9c66a75f-09c3-5e5b-9f76-e5e5f4f7d7fb" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Solid manure loading and spreading, by hydraulic loader and spreader</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Solid manure loading and spreading, by hydraulic loader and spreader
+(1,4,2,1,1,5,BU:1.05); approximate burden for spreading. (n.a.,n.a.,1,1,4,n.a.) &amp; basic uncertainty of 1.05; solid manure spreadingfor landfarming of waste
+
+BAFU mapping audit: {"bafu source exchange index": 25}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0" varianceWithPedigreeUncertainty="0.011395260854507861" mu="0.0"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="eac478fa-1106-5fe2-b4ce-8547d7858796" amount="0.02" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="9ba8c05d-1593-45a5-8d3b-5c4f3e9fef32">
+        <name xml:lang="en">Manganese II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Manganese II
+(1,4,2,5,4,5,BU:1.1); direct emission from landfarming process. Uncertainty from uncertainty in waste composition.
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.02" varianceWithPedigreeUncertainty="0.05644846651951866" mu="-3.912023005428146"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="ba5334bc-8425-5336-bc6c-9e67fd184eed" amount="0.000195" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="e7881581-21b3-4f5c-bd63-6b0684b5e712">
+        <name xml:lang="en">Chromium III</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Chromium III
+(1,4,2,5,4,5,BU:1.1); direct emission from landfarming process. Uncertainty from uncertainty in waste composition.
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000195" varianceWithPedigreeUncertainty="0.05644846651951866" mu="-8.542510999400527"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="20f05a3b-2d98-59c7-8c46-0ec6bf080be6" amount="0.0208" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="2baa4381-b781-4f5e-90de-508b0fa3fd1f">
+        <name xml:lang="en">Aluminium III</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Aluminium III
+(1,4,2,5,4,5,BU:1.1); direct emission from landfarming process. Uncertainty from uncertainty in waste composition.
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0208" varianceWithPedigreeUncertainty="0.05644846651951866" mu="-3.872802292274865"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="5ad8f314-762e-54de-a024-72f9135f67dd" amount="0.0032" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="6ab08314-53e1-4c4b-963f-3c6e6970273d">
+        <name xml:lang="en">Chloride</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Chloride
+(1,4,2,1,1,5,BU:1.5); Ash composition: no information available, modelled equal to horse dung
+
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0032" varianceWithPedigreeUncertainty="0.05190448647765091" mu="-5.744604469176456"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="9a696da7-fad3-53b4-bb5f-85fff1897089" amount="0.012" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="62859da4-f3c5-417b-a575-8b00d8d658b1">
+        <name xml:lang="en">Carbon</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Carbon
+(1,4,2,5,4,5,BU:1.5); direct emission from landfarming process. Uncertainty from uncertainty in waste composition.
+
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.012" varianceWithPedigreeUncertainty="0.09527885645070698" mu="-4.422848629194137"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="fac97e42-2047-573f-94e6-08005972de82" amount="0.0826" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="39f248d5-dd9b-4460-8f34-3415dc3f3e43">
+        <name xml:lang="en">Silicon</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Silicon
+(1,4,2,5,4,5,BU:1.1); direct emission from landfarming process. Uncertainty from uncertainty in waste composition.
+
+BAFU mapping audit: {"bafu source exchange index": 6}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0826" varianceWithPedigreeUncertainty="0.05644846651951866" mu="-2.4937455984552046"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="8d83b057-e057-5a20-9d35-8f182356953b" amount="0.00083359" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="7e66a41c-d311-4949-bdd8-eef09cdcfa47">
+        <name xml:lang="en">Copper ion</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Copper ion
+(1,4,2,1,1,5,BU:1.1); Ash composition: no information available, modelled equal to horse dung
+
+BAFU mapping audit: {"bafu source exchange index": 7}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00083359" varianceWithPedigreeUncertainty="0.013070019498692605" mu="-7.089768883198355"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="dc0d481c-13e6-505e-81cd-277387fff9d6" amount="8.6775e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="e429b852-e421-4fcb-8a9b-b0241863bfb2">
+        <name xml:lang="en">Cadmium II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Cadmium II
+(1,4,2,1,1,5,BU:1.1); Ash composition: no information available, modelled equal to horse dung
+
+BAFU mapping audit: {"bafu source exchange index": 8}</comment>
+        <uncertainty>
+          <lognormal meanValue="8.6775e-07" varianceWithPedigreeUncertainty="0.013070019498692605" mu="-13.957362182204516"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="95a8caf9-0c77-5c02-84aa-6d02eb9748b1" amount="0.14712" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="b717518e-b8b6-44fa-a8e1-f9fde2436caf">
+        <name xml:lang="en">Potassium I</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Potassium I
+(1,4,2,1,1,5,BU:1.1); Ash composition: no information available, modelled equal to horse dung
+
+BAFU mapping audit: {"bafu source exchange index": 9}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.14712" varianceWithPedigreeUncertainty="0.013070019498692605" mu="-1.9165066986860715"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="0282274e-0700-5f4a-8570-7f9a572cd8ee" amount="0.00284" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="f16fa1da-e426-4820-bf9d-71595c22283b">
+        <name xml:lang="en">Calcium II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Calcium II
+(1,4,2,5,4,5,BU:1.1); direct emission from landfarming process. Uncertainty from uncertainty in waste composition.
+
+BAFU mapping audit: {"bafu source exchange index": 10}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00284" varianceWithPedigreeUncertainty="0.05644846651951866" mu="-5.863951226809022"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="30033a86-8bb9-5ade-8ade-7c20152c3f57" amount="0.20096" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="896bfa32-a9a9-4e75-aed0-e178987ec038">
+        <name xml:lang="en">Sodium I</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Sodium I
+(1,4,2,1,1,5,BU:1.5); direct emission from landfarming process. Uncertainty from uncertainty in waste composition.
+
+BAFU mapping audit: {"bafu source exchange index": 11}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.20096" varianceWithPedigreeUncertainty="0.05190448647765091" mu="-1.6046493957023031"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="86d29d1e-1def-53c0-ac6b-fd7c89078878" amount="5.52e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="b4580545-243d-48d2-a3a0-2633a4f46fb1">
+        <name xml:lang="en">Nickel II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Nickel II
+(1,4,2,1,1,5,BU:1.1); Ash composition: no information available, modelled equal to horse dung
+
+BAFU mapping audit: {"bafu source exchange index": 12}</comment>
+        <uncertainty>
+          <lognormal meanValue="5.52e-05" varianceWithPedigreeUncertainty="0.013070019498692605" mu="-9.804547604681224"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="739f2ffb-eeaa-5ea9-a253-cf0485acc77c" amount="3.7e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="9cf3a683-ed3d-40e9-b039-7653e4fc9e20">
+        <name xml:lang="en">Molybdenum VI</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Molybdenum VI
+(1,4,2,5,4,5,BU:1.1); direct emission from landfarming process. Uncertainty from uncertainty in waste composition.
+
+BAFU mapping audit: {"bafu source exchange index": 13}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.7e-06" varianceWithPedigreeUncertainty="0.05644846651951866" mu="-12.507177738314095"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="611eedce-ad67-5ac3-90cb-528560945187" amount="0.083654" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="c89a0749-40a5-4c9c-8770-c4295ea34977">
+        <name xml:lang="en">Phosphorus</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Phosphorus
+(1,4,2,1,1,5,BU:1.5); Ash composition: no information available, modelled equal to horse dung
+
+BAFU mapping audit: {"bafu source exchange index": 14}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.083654" varianceWithPedigreeUncertainty="0.05190448647765091" mu="-2.481066034402066"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="5b09de20-7e67-5260-90ad-d1dad11eaeb3" amount="0.0092" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="d4049741-cef2-4edd-a3af-9728b9e3a568">
+        <name xml:lang="en">Sulfur</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Sulfur
+(1,4,2,5,4,5,BU:1.5); direct emission from landfarming process. Uncertainty from uncertainty in waste composition.
+
+BAFU mapping audit: {"bafu source exchange index": 15}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0092" varianceWithPedigreeUncertainty="0.09527885645070698" mu="-4.688551794927142"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="8f574ed2-7200-5496-b50f-07052cefe42a" amount="1e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="ed2d49f8-110d-4db4-9488-f61c349e6117">
+        <name xml:lang="en">Mercury II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Mercury II
+(1,4,2,5,4,5,BU:1.1); direct emission from landfarming process. Uncertainty from uncertainty in waste composition.
+
+BAFU mapping audit: {"bafu source exchange index": 16}</comment>
+        <uncertainty>
+          <lognormal meanValue="1e-07" varianceWithPedigreeUncertainty="0.05644846651951866" mu="-16.11809565095832"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="59f41117-2d47-50f1-a915-0cf293f55320" amount="0.0321" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="e8475907-2081-4fd5-9526-bfcef88380db">
+        <name xml:lang="en">Magnesium</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Magnesium
+(1,4,2,1,1,5,BU:1.1); Ash composition: no information available, modelled equal to horse dung
+
+BAFU mapping audit: {"bafu source exchange index": 17}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0321" varianceWithPedigreeUncertainty="0.013070019498692605" mu="-3.438899248846167"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="0e2c8cca-6adf-54d5-a176-ec7e3adfadb8" amount="0.0029213" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="84aa799e-9d98-4d34-85e0-516d28ab1be9">
+        <name xml:lang="en">Zinc II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Zinc II
+(1,4,2,1,1,5,BU:1.1); Ash composition: no information available, modelled equal to horse dung
+
+BAFU mapping audit: {"bafu source exchange index": 18}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0029213" varianceWithPedigreeUncertainty="0.013070019498692605" mu="-5.8357265562970495"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="79d1334c-4156-5775-8a2e-7c4704ee1ef0" amount="3.95e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="adfb11ec-7a41-47da-abc2-c92c59810e50">
+        <name xml:lang="en">Vanadium V</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Vanadium V
+(1,4,2,5,4,5,BU:1.1); direct emission from landfarming process. Uncertainty from uncertainty in waste composition.
+
+BAFU mapping audit: {"bafu source exchange index": 19}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.95e-05" varianceWithPedigreeUncertainty="0.05644846651951866" mu="-10.139209886057198"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="cd559f35-0f6e-5b27-9c77-4938bc036df5" amount="0.00138" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="334f3d29-ec7d-4ca4-9e65-524c64c6649c">
+        <name xml:lang="en">Titanium ion</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Titanium ion
+(1,4,2,5,4,5,BU:1.1); direct emission from landfarming process. Uncertainty from uncertainty in waste composition.
+
+BAFU mapping audit: {"bafu source exchange index": 20}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00138" varianceWithPedigreeUncertainty="0.05644846651951866" mu="-6.5856717798130235"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="bacb9891-2869-5f63-9f06-db8c690d7598" amount="6.7e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="4673a799-36a5-4359-ac6a-fa933281bc93">
+        <name xml:lang="en">Arsenic ion</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Arsenic ion
+(1,4,2,5,4,5,BU:1.1); direct emission from landfarming process. Uncertainty from uncertainty in waste composition.
+
+BAFU mapping audit: {"bafu source exchange index": 21}</comment>
+        <uncertainty>
+          <lognormal meanValue="6.7e-06" varianceWithPedigreeUncertainty="0.05644846651951866" mu="-11.913403031567354"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="5a88e81e-744b-5013-b30f-4a064c45c496" amount="1.8e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="9542444c-7c7a-48e2-bc9c-9c7c34fb7b3e">
+        <name xml:lang="en">Cobalt II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Cobalt II
+(1,4,2,5,4,5,BU:1.1); direct emission from landfarming process. Uncertainty from uncertainty in waste composition.
+
+BAFU mapping audit: {"bafu source exchange index": 22}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.8e-05" varianceWithPedigreeUncertainty="0.05644846651951866" mu="-10.92513880006811"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="e466aedc-723d-5550-8119-c088a5935d73" amount="1.2651e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="4010918f-7fd0-4925-8fbb-8fd7a44a806c">
+        <name xml:lang="en">Lead II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Lead II
+(1,4,2,1,1,5,BU:1.1); Ash composition: no information available, modelled equal to horse dung
+
+BAFU mapping audit: {"bafu source exchange index": 23}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.2651e-05" varianceWithPedigreeUncertainty="0.013070019498692605" mu="-11.277774294531742"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="de663eaa-19c7-5d11-beb1-f1d2ea5c3e92" amount="0.0228" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="db364689-e1a3-4629-8835-e6c59d6daf09">
+        <name xml:lang="en">Iron ion</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Iron ion
+(1,4,2,5,4,5,BU:1.1); direct emission from landfarming process. Uncertainty from uncertainty in waste composition.
+
+BAFU mapping audit: {"bafu source exchange index": 24}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0228" varianceWithPedigreeUncertainty="0.05644846651951866" mu="-3.780994743021742"/>
+        </uncertainty>
+        <compartment subcompartmentId="bb0ea1bd-71ce-5edc-892a-a036e4763b18" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">agricultural</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="66c83b92-b1f9-5ae1-8076-027d894a56d2" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="René Itten" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="c9438db2-6db7-5bf1-8355-2ed9647f99a7" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Matthias Stucki" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

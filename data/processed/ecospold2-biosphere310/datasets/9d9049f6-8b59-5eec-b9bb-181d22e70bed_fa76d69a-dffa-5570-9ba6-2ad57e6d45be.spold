@@ -1,0 +1,618 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="9d9049f6-8b59-5eec-b9bb-181d22e70bed" activityNameId="f0fbbe4b-c2ff-5ccf-ba38-900b936af05c" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Operation, passenger car, natural gas</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Operation, passenger car, natural gas
+Average data for the operation of an Euro-3 Swiss passenger car.;
+UUID: bcf9d90a-3c05-3465-b2e7-31a0f06370cd
+natural gas, production mix, at service station supplies are included. Direct airborne emissions of gaseous substances, particulate matters and heavy metals are accounted for. Heavy metal emissions to water and to soil are included. Tyre abrasion is included.
+Location: Data refers to average transport conditions and kilometric performance of different passenger car categories in Switzerland.
+Technology: Euro3
+Time period: undefined
+Production volume: na
+Sampling: National statistics, data from technical institutions and literature data. 
+Extrapolations: none
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_bcf9d90a-3c05-3465-b2e7-31a0f06370cd.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Data refers to average transport conditions and kilometric performance of different passenger car categories in Switzerland.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Euro3</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2005-01-01" endDate="2005-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: undefined</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="d7f93127-3439-59ac-88e3-e5a1a02c0e19" amount="1.0" unitId="ed57815c-d0f9-5333-b0a1-03bd8247964e" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="9d9049f6-8b59-5eec-b9bb-181d22e70bed" intermediateExchangeId="fa76d69a-dffa-5570-9ba6-2ad57e6d45be" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Operation, passenger car, natural gas</name>
+        <unitName xml:lang="en">kilometer</unitName>
+        <comment xml:lang="en">Full flow name: Operation, passenger car, natural gas
+SWITZERLAND
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="080ad60d-3d30-5922-8da7-2fb13f9f76af" amount="0.06409" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="bbd6742c-22a7-57d4-8150-5613325194ec" intermediateExchangeId="a5dee7b6-af43-518a-8bbe-2c2ad431d923" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Natural gas, production mix, at service station</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Natural gas, production mix, at service station
+(,,,,,); Same as for carbon dioxide. However, value might be much higher since fuel consumption calculated following ecoinvent convention differs from lab values.
+
+BAFU mapping audit: {"bafu source exchange index": 7}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.06409" varianceWithPedigreeUncertainty="0.03050575710881185" mu="-2.7474669334660016"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="d82a3242-9eb0-5e26-bd73-3f9ec8b6a7f6" amount="0.17154" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="349b29d1-3e58-4c66-98b9-9d1a076efd2e">
+        <name xml:lang="en">Carbon dioxide, fossil</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Carbon dioxide, fossil
+(,,,,,); NewEuropeanDrivingCycle, VCA 2004, Hendriksen et al. 2003
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.17154" varianceWithPedigreeUncertainty="0.03050575710881185" mu="-1.7629388034198616"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="7ae73485-9064-5816-8505-612a27612676" amount="5.39e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="5c234628-ab1e-4284-ae2b-f1c2f6883f71">
+        <name xml:lang="en">Xylenes, unspecified</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Xylenes, unspecified
+(2,1,1,3,1,4); Common Artemis Driving Cycle, Average Driver, Hendriksen et al. 2003
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="5.39e-06" varianceWithPedigreeUncertainty="0.0440639148829688" mu="-12.130965173043368"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="c698b500-105f-5f61-98cf-88404378d8b9" amount="1.0688e-09" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="3e5d7d91-67d7-4afb-91dd-36fab58e4685">
+        <name xml:lang="en">PAH, polycyclic aromatic hydrocarbons</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: PAH, polycyclic aromatic hydrocarbons
+(2,1,1,3,1,3); NewEuropeanDrivingCycle, VCA 2004, Hendriksen et al. 2003
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0688e-09" varianceWithPedigreeUncertainty="0.30301881947050696" mu="-20.656729313146165"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="83ce4d15-54c8-5d11-995f-919d533eaae7" amount="2.32e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="2c7be02c-791f-4fef-b231-b90321bbeb30">
+        <name xml:lang="en">Zinc II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Zinc II
+14_transports, table 4.34
+
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.32e-06" varianceWithPedigreeUncertainty="0.8026004988921001" mu="-12.973943372286056"/>
+        </uncertainty>
+        <compartment subcompartmentId="d1626126-18fd-5436-bc1d-f41bb5c4108d" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="cbdf534a-f07b-5f1e-8d75-78c281830762" amount="4.5089e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="0795345f-c7ae-410c-ad25-1845784c75f5">
+        <name xml:lang="en">Methane, fossil</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Methane, fossil
+(2,1,1,3,1,3); NewEuropeanDrivingCycle, Hendriksen et al. 2003
+
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.5089e-05" varianceWithPedigreeUncertainty="0.04239037712280685" mu="-10.006872243643704"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="5e83e947-e23e-5eda-ae0f-132e53243c01" amount="8.6633e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="20185046-64bb-4c09-a8e7-e8a9e144ca98">
+        <name xml:lang="en">Dinitrogen monoxide</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Dinitrogen monoxide
+(2,1,1,3,1,3); NewEuropeanDrivingCycle, Hendriksen et al. 2003
+
+BAFU mapping audit: {"bafu source exchange index": 6}</comment>
+        <uncertainty>
+          <lognormal meanValue="8.6633e-07" varianceWithPedigreeUncertainty="0.04239037712280685" mu="-13.958999938614138"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="9bae9e53-dbec-5027-a047-afc928529ee6" amount="3.45e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="87883a4e-1e3e-4c9d-90c0-f1bea36f8014">
+        <name xml:lang="en">Ammonia</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Ammonia
+(2,1,1,3,1,4); Common Artemis Driving Cycle, Average Driver, Hendriksen et al. 2003
+
+BAFU mapping audit: {"bafu source exchange index": 8}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.45e-05" varianceWithPedigreeUncertainty="0.011274795313213062" mu="-10.27455123392696"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="34e64125-c75b-5399-b59a-ee9ac49097b9" amount="4.33e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="44d3e792-7c9e-48ab-9de9-acfa2e097f26">
+        <name xml:lang="en">Copper ion</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Copper ion
+14_transports, table 4.34
+
+BAFU mapping audit: {"bafu source exchange index": 9}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.33e-08" varianceWithPedigreeUncertainty="0.8026004988921001" mu="-16.955113201937966"/>
+        </uncertainty>
+        <compartment subcompartmentId="8b37fd25-9143-5540-a876-7441dc598d32" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="40823185-7875-5958-8f7c-13d2ff5a96ce" amount="6.56e-09" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="e142b577-e934-4085-9a07-3983d4d92afb">
+        <name xml:lang="en">Chromium III</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Chromium III
+(4,5,1,2,1,1); 14_transports, table 4.33
+
+BAFU mapping audit: {"bafu source exchange index": 10}</comment>
+        <uncertainty>
+          <lognormal meanValue="6.56e-09" varianceWithPedigreeUncertainty="0.664213068715815" mu="-18.842275233990414"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="00f023ed-013a-5761-b635-f5e7ef350830" amount="5.83e-09" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="a5506f4b-113f-4713-95c3-c819dde6e48b">
+        <name xml:lang="en">Nickel II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Nickel II
+(4,5,1,2,1,1); 14_transports, table 4.33
+
+BAFU mapping audit: {"bafu source exchange index": 11}</comment>
+        <uncertainty>
+          <lognormal meanValue="5.83e-09" varianceWithPedigreeUncertainty="0.664213068715815" mu="-18.96024883658401"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="64077119-c146-5994-9ef7-e753fa83f2ec" amount="2.31e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="2bcad3b3-5305-481c-a166-ad5e6eac2675">
+        <name xml:lang="en">Nickel II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Nickel II
+14_transports, table 4.34
+
+BAFU mapping audit: {"bafu source exchange index": 12}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.31e-08" varianceWithPedigreeUncertainty="0.8026004988921001" mu="-17.583433219418662"/>
+        </uncertainty>
+        <compartment subcompartmentId="8b37fd25-9143-5540-a876-7441dc598d32" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="e92fcae6-40ed-5647-a28a-2a1341cf5eb3" amount="1.34e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="b967e1bf-f09b-4c89-8740-ace21db47bba">
+        <name xml:lang="en">Particulate Matter, &gt; 2.5 um and &lt; 10um</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Particulate Matter, &gt; 2.5 um and &lt; 10um
+(2,1,1,3,1,3); NewEuropeanDrivingCycle, Hendriksen et al. 2003, non-exhaust table 4.23 
+
+BAFU mapping audit: {"bafu source exchange index": 13}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.34e-05" varianceWithPedigreeUncertainty="0.12139661918238992" mu="-11.220255851007408"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="33e869ab-7565-5d45-8463-ff2c36465749" amount="4.33e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="615b1460-6860-4cf6-8678-ad92c03c5e8b">
+        <name xml:lang="en">Copper ion</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Copper ion
+14_transports, table 4.34
+
+BAFU mapping audit: {"bafu source exchange index": 15}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.33e-08" varianceWithPedigreeUncertainty="0.8026004988921001" mu="-16.955113201937966"/>
+        </uncertainty>
+        <compartment subcompartmentId="d1626126-18fd-5436-bc1d-f41bb5c4108d" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="6661d417-f833-5371-912b-5f9252cd3d9b" amount="9.7709e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="fd7aa71c-508c-480d-81a6-8052aad92646">
+        <name xml:lang="en">Sulfur dioxide</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Sulfur dioxide
+(2,1,1,3,1,3); NewEuropeanDrivingCycle, VCA 2004, Hendriksen et al. 2003
+
+BAFU mapping audit: {"bafu source exchange index": 16}</comment>
+        <uncertainty>
+          <lognormal meanValue="9.7709e-07" varianceWithPedigreeUncertainty="0.001884414727684361" mu="-13.838687070415489"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="42b8667e-4779-583a-9e9f-916d1666ee0a" amount="2.89e-09" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="2712fe5f-0d3c-4c8e-8bc4-26c604413849">
+        <name xml:lang="en">Cadmium II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Cadmium II
+14_transports, table 4.34
+
+BAFU mapping audit: {"bafu source exchange index": 17}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.89e-09" varianceWithPedigreeUncertainty="0.8026004988921001" mu="-19.66200933482207"/>
+        </uncertainty>
+        <compartment subcompartmentId="d1626126-18fd-5436-bc1d-f41bb5c4108d" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="f0bdac45-2d7b-5f7b-b3c0-204e11d9ffba" amount="2.6e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="e0336c9b-a0ff-4ae3-b8bb-ca1e46bbbc11">
+        <name xml:lang="en">Chromium III</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Chromium III
+14_transports, table 4.34
+
+BAFU mapping audit: {"bafu source exchange index": 18}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.6e-08" varianceWithPedigreeUncertainty="0.8026004988921001" mu="-17.46516929892493"/>
+        </uncertainty>
+        <compartment subcompartmentId="8b37fd25-9143-5540-a876-7441dc598d32" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="a22a1dfa-2c6f-52e5-a762-2ef1e3a1eb84" amount="7.8e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="66020d27-7ae4-4e59-83a3-89214b72c40a">
+        <name xml:lang="en">Particulate Matter, &gt; 10 um</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Particulate Matter, &gt; 10 um
+(2,1,1,3,1,3); NewEuropeanDrivingCycle, Hendriksen et al. 2003, non-exhaust table 4.23 
+
+BAFU mapping audit: {"bafu source exchange index": 19}</comment>
+        <uncertainty>
+          <lognormal meanValue="7.8e-05" varianceWithPedigreeUncertainty="0.04239037712280685" mu="-9.458801731274683"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="3bdae2f5-3cfd-546c-afa9-02d075ae0f3a" amount="3.65e-09" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="8e123669-94d3-41d8-9480-a79211fe7c43">
+        <name xml:lang="en">Lead II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Lead II
+(3,2,1,1,1,1); 14_transports, table 4.33
+
+BAFU mapping audit: {"bafu source exchange index": 20}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.65e-09" varianceWithPedigreeUncertainty="0.6499371557575419" mu="-19.42853866935201"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="739e58f1-9206-5732-a087-6415b1b7ea2f" amount="1.0533e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="d3260d0e-8203-4cbb-a45a-6a13131a5108">
+        <name xml:lang="en">NMVOC, non-methane volatile organic compounds</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: NMVOC, non-methane volatile organic compounds
+(2,1,1,3,1,3); NewEuropeanDrivingCycle, Hendriksen et al. 2003
+
+BAFU mapping audit: {"bafu source exchange index": 21}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0533e-05" varianceWithPedigreeUncertainty="0.04239037712280685" mu="-11.460997372109869"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="05c783d0-e596-5d6e-bfcd-ccc351ecd12e" amount="3.39" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="f2d84834-d0b3-42e5-b41a-f04cc80337a4">
+        <name xml:lang="en">Heat, waste</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, waste
+14_transports, table 4.63
+
+BAFU mapping audit: {"bafu source exchange index": 22}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.39" varianceWithPedigreeUncertainty="0.0027227531996190405" mu="1.220829921392359"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="e73be4fb-f82b-55c8-bd43-c57ad187f147" amount="7.29e-10" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="1c5a7322-9261-4d59-a692-adde6c12de92">
+        <name xml:lang="en">Cadmium II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Cadmium II
+(4,5,1,2,1,1); 14_transports, table 4.33
+
+BAFU mapping audit: {"bafu source exchange index": 23}</comment>
+        <uncertainty>
+          <lognormal meanValue="7.29e-10" varianceWithPedigreeUncertainty="0.664213068715815" mu="-21.03934738391989"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="da543c50-eee5-59aa-baed-6cb632912199" amount="2.31e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="6ec6cdaa-5a01-46d4-b716-1905e56690ea">
+        <name xml:lang="en">Nickel II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Nickel II
+14_transports, table 4.34
+
+BAFU mapping audit: {"bafu source exchange index": 24}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.31e-08" varianceWithPedigreeUncertainty="0.8026004988921001" mu="-17.583433219418662"/>
+        </uncertainty>
+        <compartment subcompartmentId="d1626126-18fd-5436-bc1d-f41bb5c4108d" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="09948045-316f-5705-8a59-42caae4b5525" amount="2.32e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="77887584-ddca-4920-952c-3609730e0c13">
+        <name xml:lang="en">Zinc II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Zinc II
+14_transports, table 4.34
+
+BAFU mapping audit: {"bafu source exchange index": 25}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.32e-06" varianceWithPedigreeUncertainty="0.8026004988921001" mu="-12.973943372286056"/>
+        </uncertainty>
+        <compartment subcompartmentId="8b37fd25-9143-5540-a876-7441dc598d32" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="cff4fe70-9fe9-54ac-8995-49f2735ae915" amount="1.09e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="ec8144d6-d123-43b1-9c17-a295422a0498">
+        <name xml:lang="en">Copper ion</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Copper ion
+(4,5,1,2,1,1); 14_transports, table 4.33
+
+BAFU mapping audit: {"bafu source exchange index": 26}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.09e-08" varianceWithPedigreeUncertainty="0.664213068715815" mu="-18.334503047711312"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="5397f957-c601-5535-89b6-a0d1bd939f84" amount="7.6165e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="28999907-a8a7-45b3-857e-836495ca2aa0">
+        <name xml:lang="en">Benzene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Benzene
+(2,1,1,3,1,3); NewEuropeanDrivingCycle, Hendriksen et al. 2003
+
+BAFU mapping audit: {"bafu source exchange index": 27}</comment>
+        <uncertainty>
+          <lognormal meanValue="7.6165e-07" varianceWithPedigreeUncertainty="0.04239037712280685" mu="-14.087778704363702"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="6ba553a0-4b73-5f7c-8832-cb68f63fd9fc" amount="2.6e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="30f484ee-dec4-47ae-8e92-d00d4b93fe05">
+        <name xml:lang="en">Chromium III</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Chromium III
+14_transports, table 4.34
+
+BAFU mapping audit: {"bafu source exchange index": 28}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.6e-08" varianceWithPedigreeUncertainty="0.8026004988921001" mu="-17.46516929892493"/>
+        </uncertainty>
+        <compartment subcompartmentId="d1626126-18fd-5436-bc1d-f41bb5c4108d" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="15bee120-11d6-516e-ab35-b21bd00fc8c0" amount="0.0004465" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="ba2f3f82-c93a-47a5-822a-37ec97495275">
+        <name xml:lang="en">Carbon monoxide, fossil</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Carbon monoxide, fossil
+(,,,,,); NewEuropeanDrivingCycle, VCA 2004, Hendriksen et al. 2003
+
+BAFU mapping audit: {"bafu source exchange index": 29}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0004465" varianceWithPedigreeUncertainty="0.04529656961024626" mu="-7.71407115764772"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="b9fb9918-e6aa-5ade-8f5f-44b8a43683be" amount="2.89e-09" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="12d6029e-3801-42ee-a1bc-1ebf936884fc">
+        <name xml:lang="en">Cadmium II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Cadmium II
+14_transports, table 4.34
+
+BAFU mapping audit: {"bafu source exchange index": 30}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.89e-09" varianceWithPedigreeUncertainty="0.8026004988921001" mu="-19.66200933482207"/>
+        </uncertainty>
+        <compartment subcompartmentId="8b37fd25-9143-5540-a876-7441dc598d32" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="0a69b95c-2bda-5282-ae77-a520c5a7cf61" amount="1.44e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="739234c8-5359-48b4-983f-9cb170d68c8d">
+        <name xml:lang="en">Lead II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Lead II
+14_transports, table 4.34
+
+BAFU mapping audit: {"bafu source exchange index": 31}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.44e-08" varianceWithPedigreeUncertainty="0.8026004988921001" mu="-18.056037630364457"/>
+        </uncertainty>
+        <compartment subcompartmentId="8b37fd25-9143-5540-a876-7441dc598d32" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="5b86cc6c-60dd-5a9c-8752-b32d4987feb3" amount="5.25e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="3b1ecf8e-1d2c-4330-81da-a79f9068976d">
+        <name xml:lang="en">Toluene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Toluene
+(2,1,1,3,1,4); Common Artemis Driving Cycle, Average Driver, Hendriksen et al. 2003
+
+BAFU mapping audit: {"bafu source exchange index": 32}</comment>
+        <uncertainty>
+          <lognormal meanValue="5.25e-06" varianceWithPedigreeUncertainty="0.0440639148829688" mu="-12.157282481360742"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="59774329-d91e-54a4-97b1-e17b6f24bca6" amount="7.3667e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="21e46cb8-6233-4c99-bac3-c41d2ab99498">
+        <name xml:lang="en">Particulate Matter, &lt; 2.5 um</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Particulate Matter, &lt; 2.5 um
+(2,1,1,3,1,3); NewEuropeanDrivingCycle, Hendriksen et al. 2003, non-exhaust table 4.23 
+
+BAFU mapping audit: {"bafu source exchange index": 33}</comment>
+        <uncertainty>
+          <lognormal meanValue="7.3667e-06" varianceWithPedigreeUncertainty="0.30301881947050696" mu="-11.818540713232036"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="d20de11a-20d4-5c82-9a9c-fa5706327e27" amount="2.0644e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="c1b91234-6f24-417b-8309-46111d09c457">
+        <name xml:lang="en">Nitrogen oxides</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Nitrogen oxides
+(,,,,,); NewEuropeanDrivingCycle, VCA 2004, Hendriksen et al. 2003
+
+BAFU mapping audit: {"bafu source exchange index": 34}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.0644e-05" varianceWithPedigreeUncertainty="0.3034581553678911" mu="-10.788085837677793"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="17303106-5b2f-54bd-b2a0-a8e7556c0ddc" amount="1.44e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="31c4d160-b21e-41b3-b9c1-3d7a72377653">
+        <name xml:lang="en">Lead II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Lead II
+14_transports, table 4.34
+
+BAFU mapping audit: {"bafu source exchange index": 35}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.44e-08" varianceWithPedigreeUncertainty="0.8026004988921001" mu="-18.056037630364457"/>
+        </uncertainty>
+        <compartment subcompartmentId="d1626126-18fd-5436-bc1d-f41bb5c4108d" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="93031619-4ac3-52fe-8183-9430af211b78" amount="5.85e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="5ce378a0-b48d-471c-977d-79681521efde">
+        <name xml:lang="en">Zinc II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Zinc II
+(4,5,1,2,1,1); 14_transports, table 4.33
+
+BAFU mapping audit: {"bafu source exchange index": 36}</comment>
+        <uncertainty>
+          <lognormal meanValue="5.85e-07" varianceWithPedigreeUncertainty="0.664213068715815" mu="-14.351653989714555"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="cc047da4-1443-5ee8-90eb-64f908f1e8f1" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Natascha Kljun" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="cc047da4-1443-5ee8-90eb-64f908f1e8f1" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Natascha Kljun" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

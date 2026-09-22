@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="72b5ceb4-76b0-582d-9811-528d73eaff4f" activityNameId="0f806980-500b-5ed1-92a9-c28ab2d33977" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">xxx Operation, tram</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: xxx Operation, tram
+Average data for the operation of Swiss trams. The data has been determined top down, by combining the total yearly energy consumption and the yearly vkm-performance. Particulate emissions due to abrasion of rail tracks, wheels, brakes and overhead contact line is included. For a first estimate of European trams, the user may change the electricity mix.;
+UUID: ad25793a-52eb-34d6-bb30-b350d18de185
+The inventory includes the actual energy consumption due to traction. 
+Location: &lt;null&gt;
+Technology: all technologies included
+Time period: undefined
+Production volume: 369 Mio pkm in 2000  in Switzerland
+Sampling: national statistics and own assumptions 
+Extrapolations: none
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_ad25793a-52eb-34d6-bb30-b350d18de185.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: &lt;null&gt;</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: all technologies included</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="9999-01-01" endDate="9999-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: undefined</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="c25e26b1-9784-5331-9064-28f2f22c01c3" amount="1.0" unitId="ed57815c-d0f9-5333-b0a1-03bd8247964e" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="72b5ceb4-76b0-582d-9811-528d73eaff4f" intermediateExchangeId="8f3a3eec-a9dc-53ea-8e34-f6804567529d" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">xxx Operation, tram</name>
+        <unitName xml:lang="en">kilometer</unitName>
+        <comment xml:lang="en">Full flow name: xxx Operation, tram
+SWITZERLAND
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="dc793fd1-5b13-5925-8489-39a1d07c4b84" amount="4.75" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="bab4e660-f5d7-5f13-87ab-a4ef1e2658c7" intermediateExchangeId="bd2dba96-dfe7-5ec4-ad52-1f65b4f66c3b" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, medium voltage, at grid</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, medium voltage, at grid
+data dreived top down, using national transport statistic data (vkm performance and total energy consumption)
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.75" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="1.55814461804655"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="0fc001bb-20ab-5610-8eac-fc592541bb6e" amount="0.000456" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="1eb1b94c-e9d8-47ab-969b-9cca920157d8">
+        <name xml:lang="en">Particulate Matter, &gt; 10 um</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Particulate Matter, &gt; 10 um
+own estimates based on recent PM 10 studies; estimated basic uncertainty = 2.
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000456" varianceWithPedigreeUncertainty="0.12011325347955039" mu="-7.693017748449888"/>
+        </uncertainty>
+        <compartment subcompartmentId="4715d9fb-1efc-5514-9bf6-f0bb4e5fab5f" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">urban air close to ground</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="057d0709-124e-59bc-a64c-bd0e58dacf5e" amount="17.1" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="b411ec8b-c60a-4235-a3b2-8bf8443cbc55">
+        <name xml:lang="en">Heat, waste</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, waste
+(2,1,1,1,1,1); standard value
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="17.1" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="2.8390784635086144"/>
+        </uncertainty>
+        <compartment subcompartmentId="4715d9fb-1efc-5514-9bf6-f0bb4e5fab5f" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">urban air close to ground</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="ee94e9d9-55d9-5968-8cbd-ed593dc81910" amount="0.000674" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="98693cdf-d9fc-43ed-bfe6-78dfe5742d33">
+        <name xml:lang="en">Iron ion</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Iron ion
+own estimates based on recent PM 10 studies; estimated basic uncertainty = 2.
+
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000674" varianceWithPedigreeUncertainty="0.12011325347955039" mu="-7.302280447051967"/>
+        </uncertainty>
+        <compartment subcompartmentId="20003291-15bf-5511-9f7e-3dbc92189f5b" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">soil</compartment>
+          <subcompartment xml:lang="en">industrial</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="b3dd6bc9-6e46-5b24-9906-a343cb6d553d" amount="0.000813" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="ccb169c3-8aae-4727-89bb-a7dd122946f3">
+        <name xml:lang="en">Particulate Matter, &gt; 2.5 um and &lt; 10um</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Particulate Matter, &gt; 2.5 um and &lt; 10um
+own estimates based on recent PM 10 studies; estimated basic uncertainty = 2.
+
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000813" varianceWithPedigreeUncertainty="0.12011325347955039" mu="-7.1147794484164635"/>
+        </uncertainty>
+        <compartment subcompartmentId="4715d9fb-1efc-5514-9bf6-f0bb4e5fab5f" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">urban air close to ground</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="52be1b35-b0b8-587a-b85c-e6037ee4a1e4" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Michael Spielmann" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="52be1b35-b0b8-587a-b85c-e6037ee4a1e4" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Michael Spielmann" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

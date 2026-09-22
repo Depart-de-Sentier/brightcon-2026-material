@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="bb6b8f74-ef39-5a19-81cc-b59f1df5f97d" activityNameId="53fd0079-3630-547b-b501-b8fe1d6131bc" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Natural gas, liquefied, production NO, at freight ship</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Natural gas, liquefied, production NO, at freight ship
+The process is normalized on the gaseous form of gas. The net calorific value of natural gas is 36.0 MJ/Nm³. UUID=30e12b04-8ada-3247-8561-19b4946876a8
+This dataset describes the transport of natural gas on a freight ship between the liquefaction plant in NO and a German evaporation plant.
+Location: not known
+Technology: The distances between liquefaction and evaporation plant is based on port distances.
+Time period: Transport modes investigated for 2023.
+Production volume: not known
+Sampling: Literature.
+Extrapolations: none
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_30e12b04-8ada-3247-8561-19b4946876a8.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="948c6fdb-25b0-54ae-bf5c-e320176f724c" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">DE</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: not known</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: The distances between liquefaction and evaporation plant is based on port distances.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2023-01-01" endDate="2024-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Transport modes investigated for 2023.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="cf2a670c-72f8-5596-bf4e-9476095bc7c8" amount="1.0" unitId="bfdabcf8-1351-57c7-b5aa-58ac6c5b4daa" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="bb6b8f74-ef39-5a19-81cc-b59f1df5f97d" intermediateExchangeId="7b78e9db-0f64-580e-8a95-8d432d194a6a" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Natural gas, liquefied, production NO, at freight ship</name>
+        <unitName xml:lang="en">normal cubic meter</unitName>
+        <comment xml:lang="en">Full flow name: Natural gas, liquefied, production NO, at freight ship
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="944bfda5-3822-5457-8eb8-f0cee8071014" amount="1.0" unitId="bfdabcf8-1351-57c7-b5aa-58ac6c5b4daa" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="e1c56bc9-521a-5023-9cad-efd63daef348" intermediateExchangeId="6e59bd36-f7b1-51c9-9b8c-b0825eebdebf" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Natural gas, liquefied, at liquefaction plant</name>
+        <unitName xml:lang="en">normal cubic meter</unitName>
+        <comment xml:lang="en">Full flow name: Natural gas, liquefied, at liquefaction plant
+(4,3,3,1,1,BU:1.05); Based on data from Faist-Emmenegger (2015)
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0" varianceWithPedigreeUncertainty="0.011768398590826405" mu="0.0"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e12e3905-a853-56f3-9a00-a3c8aecfa089" amount="1.764" unitId="97a43c83-639b-5b25-b36e-39233e1b0540" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="ef05842a-1460-5a4e-9527-8e51f023a83f" intermediateExchangeId="3c971714-3b49-5432-a315-1ae18a0c7803" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Transport, liquefied natural gas NO, freight ship</name>
+        <unitName xml:lang="en">ton kilometer</unitName>
+        <comment xml:lang="en">Full flow name: Transport, liquefied natural gas NO, freight ship
+(3,3,3,1,3,BU:2); Average weighted distance based on BP statistics for 2021
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.764" varianceWithPedigreeUncertainty="0.13356267258211618" mu="0.5675839575845996"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="15b3f79a-ec50-5ae1-aa89-0f48ba4fb63b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Maresa Bussa" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="2c38e3e4-eebf-574c-820d-f534bb79c993" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Niels Jungbluth" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

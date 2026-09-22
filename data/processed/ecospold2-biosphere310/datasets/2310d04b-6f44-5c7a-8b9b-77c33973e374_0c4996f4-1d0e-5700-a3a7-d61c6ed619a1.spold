@@ -1,0 +1,666 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="2310d04b-6f44-5c7a-8b9b-77c33973e374" activityNameId="494e1650-84f2-571d-bc61-b0b8b924bb8f" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Transport, aircraft, freight, medium-haul, Betrieb</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Transport, aircraft, freight, medium-haul, Betrieb
+Inventory refers to the entire transport life cycle. Airport infrastructure expenditures and environmental interventions are accounted for using the yearly transport performance at Zurich airport (478'800 tkm/a). Aircraft manufacturing is allocated based on the total life span of an aircraft (50'000 LTO) , the average distance of a flight (2800km) and its transport performance (1.14t/unit);
+UUID: eab860e5-9931-3341-8ecc-9f7a8d1a43e8
+The dataset describes the operation of aircrafts including taxying, take-off and landing covering fuel consumption and operation emissions. Aircraft manufacture and maintenance, airport construction, operation and dismantling are inputs to this dataset
+Location: &lt;null&gt;
+Technology: Aircraft operation modelled based on passenger aircrafts operated by Lufthansa Group in 2019. The emission profiles distinguish between LTO and cruise.
+Time period: Start date refers to emission factor data. End date refers to year of reporting fuel consumption and transport activities
+Production volume: 708'000'000tkm
+Sampling: fuel consumption is based on corporate data, emission profiles are based on FOEN statistics 
+Extrapolations: &lt;null&gt;
+Uncertainty adjustments: &lt;null&gt;
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_eab860e5-9931-3341-8ecc-9f7a8d1a43e8.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="20a9bf48-6cea-59b4-ad08-000cb981f2d0" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">RER</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: &lt;null&gt;</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Aircraft operation modelled based on passenger aircrafts operated by Lufthansa Group in 2019. The emission profiles distinguish between LTO and cruise.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2016-01-01" endDate="2019-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Start date refers to emission factor data. End date refers to year of reporting fuel consumption and transport activities</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="64db20eb-681e-5435-9f1f-b5bb8209c4d9" amount="1.0" unitId="97a43c83-639b-5b25-b36e-39233e1b0540" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="2310d04b-6f44-5c7a-8b9b-77c33973e374" intermediateExchangeId="0c4996f4-1d0e-5700-a3a7-d61c6ed619a1" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Transport, aircraft, freight, medium-haul, Betrieb</name>
+        <unitName xml:lang="en">ton kilometer</unitName>
+        <comment xml:lang="en">Full flow name: Transport, aircraft, freight, medium-haul, Betrieb
+Europe
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a3b4fa90-54ef-5a5c-86cb-c7f90a95625d" amount="0.17993" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="20f2a5ae-0993-5c97-95fc-d4cf028b8e8b" intermediateExchangeId="56f5171f-6436-5257-bcb4-e6aa71f16b47" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Kerosene, at regional storage</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Kerosene, at regional storage
+(2,4,1,3,1,5,BU:1.05); ; Lufthansa Balance 2015, BLD 2014, pers. communication Lufthasa, Mail 20.8.2015
+
+BAFU mapping audit: {"bafu source exchange index": 29}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.17993" varianceWithPedigreeUncertainty="0.011873369510035063" mu="-1.7151873926177097"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="06060cbc-8b95-5ce5-80d8-2bcdf60cb217" amount="1.6884e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="33b38ccb-593b-4b11-b965-10d747ba3556">
+        <name xml:lang="en">NMVOC, non-methane volatile organic compounds</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: NMVOC, non-methane volatile organic compounds
+(2,5,2,5,1,5,BU:1.5); ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.6884e-05" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-10.989144130044021"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="42cb60fd-ea83-5e5a-a772-6c6900970989" amount="1.004e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="21e46cb8-6233-4c99-bac3-c41d2ab99498">
+        <name xml:lang="en">Particulate Matter, &lt; 2.5 um</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Particulate Matter, &lt; 2.5 um
+(2,5,2,5,1,5,BU:3); ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.004e-06" varianceWithPedigreeUncertainty="0.3214408523729075" mu="-13.811518536694736"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="1e81746a-f274-5bd4-99be-f6f0747ed59e" amount="1.9968e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="a861cfae-a310-4e9d-b9eb-5d555c9a684c">
+        <name xml:lang="en">Formaldehyde</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Formaldehyde
+(2,5,2,5,1,5,BU:1.5); ; VOC Profil wie ecoinvent 2.2, ecoinvent report 14
+
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.9968e-06" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-13.123964658771303"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="b44fe73b-e471-5966-a3f3-0812d561574a" amount="2.3961e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="5064da53-d4ec-44ee-ba23-b20a4f8c4964">
+        <name xml:lang="en">Butadiene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Butadiene
+(2,5,2,5,1,5,BU:1.5); ; VOC Profil wie ecoinvent 2.2, ecoinvent report 14
+
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.3961e-07" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-15.244253235349003"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="73909d30-f5af-57c5-9be6-866f8b9dbef4" amount="3.9935e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="36c96aed-9335-4564-8cdd-46f01a13700c">
+        <name xml:lang="en">NMVOC, non-methane volatile organic compounds</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: NMVOC, non-methane volatile organic compounds
+(2,5,2,5,1,5,BU:1.5); ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 6}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.9935e-05" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-10.128257425594922"/>
+        </uncertainty>
+        <compartment subcompartmentId="e055f9bd-09fd-5977-ad72-d4a889f6d32c" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">lower stratosphere + upper troposphere</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="bc1cbc25-b7b9-553a-9d3b-7ff28819813e" amount="0.0001567" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="77357947-ccc5-438e-9996-95e65e1e1bce">
+        <name xml:lang="en">Nitrogen oxides</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Nitrogen oxides
+(2,5,2,5,1,5,BU:1.5); ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 7}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0001567" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-8.761177408602299"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="1e2e004e-10ec-58b2-bf97-8965027cb7c6" amount="4.1822e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="fd7aa71c-508c-480d-81a6-8052aad92646">
+        <name xml:lang="en">Sulfur dioxide</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Sulfur dioxide
+(2,5,2,5,1,5,BU:1.05); ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 8}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.1822e-05" varianceWithPedigreeUncertainty="0.020299603329463005" mu="-10.082088041099666"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="b1515b80-1d5e-57e9-bcea-f3b0f6661d81" amount="0.00015562" unitId="db3b2def-24b3-5d7e-a8b7-14695362b285" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="f14b59ff-d438-442d-8bad-b53694b8263a">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">cubic meter</unitName>
+        <comment xml:lang="en">Full flow name: Water
+(2,5,2,5,1,5,BU:1.5); ; Ecoinvent Report 14
+
+BAFU mapping audit: {"bafu source exchange index": 9}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00015562" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-8.76809341977549"/>
+        </uncertainty>
+        <compartment subcompartmentId="e055f9bd-09fd-5977-ad72-d4a889f6d32c" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">lower stratosphere + upper troposphere</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="c1c8ccbf-47ee-5e07-91ec-9da748536320" amount="3.0121e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="ddd99a3a-be86-423d-b36a-a9dc8af1b1f8">
+        <name xml:lang="en">Particulate Matter, &lt; 2.5 um</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Particulate Matter, &lt; 2.5 um
+(2,5,2,5,1,5,BU:3); ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 10}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.0121e-06" varianceWithPedigreeUncertainty="0.3214408523729075" mu="-12.712873048046545"/>
+        </uncertainty>
+        <compartment subcompartmentId="e055f9bd-09fd-5977-ad72-d4a889f6d32c" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">lower stratosphere + upper troposphere</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="30a298dc-5d68-5ce2-9c09-579f7bb7d65f" amount="0.00054072" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="c1b91234-6f24-417b-8309-46111d09c457">
+        <name xml:lang="en">Nitrogen oxides</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Nitrogen oxides
+(2,5,2,5,1,5,BU:1.5); ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 11}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00054072" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-7.522608973172176"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="12d00885-5aa1-5e74-91fc-cfb9db51a237" amount="2.5326e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="9167dca7-615e-435c-8ba6-dbbf50e50e34">
+        <name xml:lang="en">Formaldehyde</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Formaldehyde
+(2,5,2,5,1,5,BU:1.5); ; VOC Profil wie ecoinvent 2.2, ecoinvent report 14
+
+BAFU mapping audit: {"bafu source exchange index": 12}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.5326e-06" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-12.886264114929903"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="1bee5605-d91f-58e5-922d-fe64066b6c54" amount="5.1875e-05" unitId="db3b2def-24b3-5d7e-a8b7-14695362b285" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="075e433b-4be4-448e-9510-9a5029c1ce94">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">cubic meter</unitName>
+        <comment xml:lang="en">Full flow name: Water
+(2,5,2,5,1,5,BU:1.5); ; Ecoinvent Report 14
+
+BAFU mapping audit: {"bafu source exchange index": 13}</comment>
+        <uncertainty>
+          <lognormal meanValue="5.1875e-05" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-9.866673579413412"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="4b562ca0-f758-5895-b322-242af7408051" amount="5.9903e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="a861cfae-a310-4e9d-b9eb-5d555c9a684c">
+        <name xml:lang="en">Formaldehyde</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Formaldehyde
+(2,5,2,5,1,5,BU:1.5); ; VOC Profil wie ecoinvent 2.2, ecoinvent report 14
+
+BAFU mapping audit: {"bafu original biosphere": {"categories": ["air", "lower stratosphere + upper troposphere"], "name": "Formaldehyde", "unit": "kilogram"}, "bafu source exchange index": 14}</comment>
+        <uncertainty>
+          <lognormal meanValue="5.9903e-06" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-12.025369063618598"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="ed980a5c-c530-5471-a65a-90e2bb5edc4c" amount="0.39534" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="16eeda8a-1ea2-408e-ab37-2648495058dd">
+        <name xml:lang="en">Carbon dioxide, fossil</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Carbon dioxide, fossil
+(2,5,2,5,1,5,BU:1.05); assumption: a share of  of the cruise emission take place in the upper troposphere and lower stratosphere (this corresponds to a share of  of the total emissions); BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 15}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.39534" varianceWithPedigreeUncertainty="0.020299603329463005" mu="-0.9280091248283535"/>
+        </uncertainty>
+        <compartment subcompartmentId="e055f9bd-09fd-5977-ad72-d4a889f6d32c" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">lower stratosphere + upper troposphere</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="18d05a6d-6793-5dde-b85b-261e664c4233" amount="3.208e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="5e883a00-04e6-4d96-8dce-12d7117c6635">
+        <name xml:lang="en">Benzene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Benzene
+(2,5,2,5,1,5,BU:3); ; VOC Profil wie ecoinvent 2.2, ecoinvent report 14
+
+BAFU mapping audit: {"bafu source exchange index": 16}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.208e-07" varianceWithPedigreeUncertainty="0.3214408523729075" mu="-14.952447960954052"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="f8f74228-46cd-5a65-bbea-cedf89bf37a5" amount="6.9487e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="90f722bf-cb9b-571a-88fc-34286632bdc4">
+        <name xml:lang="en">Ethylene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Ethylene
+(2,5,2,5,1,5,BU:1.5); ; VOC Profil wie ecoinvent 2.2, ecoinvent report 14
+
+BAFU mapping audit: {"bafu original biosphere": {"categories": ["air", "lower stratosphere + upper troposphere"], "name": "Ethene", "unit": "kilogram"}, "bafu source exchange index": 17}</comment>
+        <uncertainty>
+          <lognormal meanValue="6.9487e-06" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-11.876955966243386"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="64d9d30b-e268-5bd4-b546-1300e35f62d7" amount="2.9378e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="87f683ed-44ae-41a6-b4bc-230622f8cfef">
+        <name xml:lang="en">Ethylene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Ethylene
+(2,5,2,5,1,5,BU:1.5); ; VOC Profil wie ecoinvent 2.2, ecoinvent report 14
+
+BAFU mapping audit: {"bafu source exchange index": 18}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.9378e-06" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-12.737849556049097"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="6750471f-c271-51d2-a476-7318a31fa189" amount="0.00057435" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="07f704a2-2746-4364-bcfd-606cefc30715">
+        <name xml:lang="en">Heat, waste</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, waste
+(2,5,2,5,1,5,BU:1.05); default value;
+
+BAFU mapping audit: {"bafu source exchange index": 19}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00057435" varianceWithPedigreeUncertainty="0.020299603329463005" mu="-7.462271591372861"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="19ef7811-6cbf-57ca-898d-ccf6bb2d01fb" amount="7.1883e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="5064da53-d4ec-44ee-ba23-b20a4f8c4964">
+        <name xml:lang="en">Butadiene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Butadiene
+(2,5,2,5,1,5,BU:1.5); ; VOC Profil wie ecoinvent 2.2, ecoinvent report 14
+
+BAFU mapping audit: {"bafu original biosphere": {"categories": ["air", "lower stratosphere + upper troposphere"], "name": "Butadiene", "unit": "kilogram"}, "bafu source exchange index": 20}</comment>
+        <uncertainty>
+          <lognormal meanValue="7.1883e-07" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-14.145640946680894"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="7a723a3e-aa72-5ba2-81c2-031abc075bcf" amount="1.2595e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="66f50b33-fd62-4fdd-a373-c5b0de7de00d">
+        <name xml:lang="en">Particulate Matter, &lt; 2.5 um</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Particulate Matter, &lt; 2.5 um
+(2,5,2,5,1,5,BU:3); ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 21}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.2595e-06" varianceWithPedigreeUncertainty="0.3214408523729075" mu="-13.584795741153746"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="47d2fbef-53b0-5002-a04e-4080b9054f19" amount="0.005723" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="f2d84834-d0b3-42e5-b41a-f04cc80337a4">
+        <name xml:lang="en">Heat, waste</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, waste
+(2,5,2,5,1,5,BU:1.05); ; default value
+
+BAFU mapping audit: {"bafu original biosphere": {"categories": ["air", "lower stratosphere + upper troposphere"], "name": "Heat, waste", "unit": "megajoule"}, "bafu source exchange index": 22}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.005723" varianceWithPedigreeUncertainty="0.020299603329463005" mu="-5.163262135555172"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="503cb35c-5a30-5d0f-9024-c9defc37e7f1" amount="1.5618000000000002e-05" unitId="db3b2def-24b3-5d7e-a8b7-14695362b285" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="09872080-d143-4fb1-a3a5-647b077107ff">
+        <name xml:lang="en">Water</name>
+        <unitName xml:lang="en">cubic meter</unitName>
+        <comment xml:lang="en">Full flow name: Water
+(2,5,2,5,1,5,BU:1.5); ; Ecoinvent Report 14
+
+BAFU mapping audit: {"bafu source exchange index": 23}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.5618000000000002e-05" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-11.067086462723791"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="350611bb-c07d-5d20-a2bf-bcb9294fefb1" amount="7.5877e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="28999907-a8a7-45b3-857e-836495ca2aa0">
+        <name xml:lang="en">Benzene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Benzene
+(2,5,2,5,1,5,BU:3); ; VOC Profil wie ecoinvent 2.2, ecoinvent report 14
+
+BAFU mapping audit: {"bafu original biosphere": {"categories": ["air", "lower stratosphere + upper troposphere"], "name": "Benzene", "unit": "kilogram"}, "bafu source exchange index": 24}</comment>
+        <uncertainty>
+          <lognormal meanValue="7.5877e-07" varianceWithPedigreeUncertainty="0.3214408523729075" mu="-14.09156713577677"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="24681d10-c87b-595c-91ce-dcadb6e1a3ac" amount="0.0019077" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="f2d84834-d0b3-42e5-b41a-f04cc80337a4">
+        <name xml:lang="en">Heat, waste</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, waste
+(2,5,2,5,1,5,BU:1.05); default value;
+
+BAFU mapping audit: {"bafu source exchange index": 25}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0019077" varianceWithPedigreeUncertainty="0.020299603329463005" mu="-6.261856951022803"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="2a209d82-eb5d-5825-ae2c-9088a33e5694" amount="0.00023814" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="a3beb5ac-5149-47f6-a035-53fc5030f10a">
+        <name xml:lang="en">Carbon monoxide, fossil</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Carbon monoxide, fossil
+(2,5,2,5,1,5,BU:5); ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 26}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00023814" varianceWithPedigreeUncertainty="0.6672767643232886" mu="-8.342651821941246"/>
+        </uncertainty>
+        <compartment subcompartmentId="e055f9bd-09fd-5977-ad72-d4a889f6d32c" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">lower stratosphere + upper troposphere</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="e5ca0dc1-699f-55d2-b818-10194613debe" amount="1.2709e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="66f50b33-fd62-4fdd-a373-c5b0de7de00d">
+        <name xml:lang="en">Particulate Matter, &lt; 2.5 um</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Particulate Matter, &lt; 2.5 um
+(2,5,2,5,1,5,BU:3);  PM2.5 Emission of the abrasion during LTO ; pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 27}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.2709e-06" varianceWithPedigreeUncertainty="0.3214408523729075" mu="-13.575785247058386"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="93a2209e-883d-54f2-bbfe-40e7d4b32c55" amount="2.5292e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="28999907-a8a7-45b3-857e-836495ca2aa0">
+        <name xml:lang="en">Benzene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Benzene
+(2,5,2,5,1,5,BU:3); ; VOC Profil wie ecoinvent 2.2, ecoinvent report 14
+
+BAFU mapping audit: {"bafu source exchange index": 28}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.5292e-07" varianceWithPedigreeUncertainty="0.3214408523729075" mu="-15.190192603755998"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="e191ea93-234f-57b0-9959-3cc9ecf97cb8" amount="0.0016222" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="4841a0fe-c250-4a39-94a1-1bc31426c0f1">
+        <name xml:lang="en">Nitrogen oxides</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Nitrogen oxides
+(2,5,2,5,1,5,BU:1.5); ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 30}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0016222" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-6.4239720263280295"/>
+        </uncertainty>
+        <compartment subcompartmentId="e055f9bd-09fd-5977-ad72-d4a889f6d32c" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">lower stratosphere + upper troposphere</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="4fd8d1bb-dbaf-5e9d-90a8-7baddcc9620b" amount="0.00012547" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="16521d00-4b6f-464f-b5dd-8da4a27b15ca">
+        <name xml:lang="en">Sulfur dioxide</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Sulfur dioxide
+(2,5,2,5,1,5,BU:1.05); ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 31}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00012547" varianceWithPedigreeUncertainty="0.020299603329463005" mu="-8.983443871792666"/>
+        </uncertainty>
+        <compartment subcompartmentId="e055f9bd-09fd-5977-ad72-d4a889f6d32c" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">lower stratosphere + upper troposphere</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="f8e3ca41-6404-523b-a248-fa8e16eebe5f" amount="1.3312e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="d3260d0e-8203-4cbb-a45a-6a13131a5108">
+        <name xml:lang="en">NMVOC, non-methane volatile organic compounds</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: NMVOC, non-methane volatile organic compounds
+(2,5,2,5,1,5,BU:1.5); ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 32}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.3312e-05" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-11.226844673885422"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="76b81ae5-a9a6-54b8-b343-f3a2655cccde" amount="0.039675" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="aa7cac3a-3625-41d4-bc54-33e2cf11ec46">
+        <name xml:lang="en">Carbon dioxide, fossil</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Carbon dioxide, fossil
+(2,5,2,5,1,5,BU:1.05); assumption: a share of   of the total emission occure during the LTO; for LTO emissions different emission factors are used than for cruise; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 33}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.039675" varianceWithPedigreeUncertainty="0.020299603329463005" mu="-3.227034012569664"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="11cc62b8-aed8-559c-a3b0-9731a76edfc4" amount="0.13178" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="349b29d1-3e58-4c66-98b9-9d1a076efd2e">
+        <name xml:lang="en">Carbon dioxide, fossil</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Carbon dioxide, fossil
+(2,5,2,5,1,5,BU:1.05); assumption: a share of  of the cruise emission take place in the troposphere  (this corresponds to a share of  of the total emissions) ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 34}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.13178" varianceWithPedigreeUncertainty="0.020299603329463005" mu="-2.0266214134964633"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="64a16eac-053c-5de6-b469-05fd895c1e78" amount="1.2616e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="78c3efe4-421c-4d30-82e4-b97ac5124993">
+        <name xml:lang="en">Sulfur dioxide</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Sulfur dioxide
+(2,5,2,5,1,5,BU:1.05); ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 35}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.2616e-05" varianceWithPedigreeUncertainty="0.020299603329463005" mu="-11.280544708303538"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="c054ca5b-ea60-5dc6-8de6-1440eb7a98f9" amount="3.0391e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="8a970585-5ce2-4226-b60d-df1c34649a56">
+        <name xml:lang="en">Butadiene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Butadiene
+(2,5,2,5,1,5,BU:1.5); ; VOC Profil wie ecoinvent 2.2, ecoinvent report 14
+
+BAFU mapping audit: {"bafu source exchange index": 36}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.0391e-07" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-15.006534232004"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="1e1667a8-85cc-5288-8f16-e0c24ab5ddbc" amount="0.00016665" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="099b36ab-4c03-4587-87f4-2f81e337afb8">
+        <name xml:lang="en">Carbon monoxide, fossil</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Carbon monoxide, fossil
+(2,5,2,5,1,5,BU:5); ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 37}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00016665" varianceWithPedigreeUncertainty="0.6672767643232886" mu="-8.699614753210525"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="b1e06022-d0e6-5d3e-829d-1f6418ff5006" amount="2.3162e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="90f722bf-cb9b-571a-88fc-34286632bdc4">
+        <name xml:lang="en">Ethylene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Ethylene
+(2,5,2,5,1,5,BU:1.5); ; VOC Profil wie ecoinvent 2.2, ecoinvent report 14
+
+BAFU mapping audit: {"bafu source exchange index": 38}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.3162e-06" varianceWithPedigreeUncertainty="0.060804332005615386" mu="-12.975582646196134"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="65fac7a6-8201-5103-8b67-7dfe495e2986" amount="7.9381e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="ba2f3f82-c93a-47a5-822a-37ec97495275">
+        <name xml:lang="en">Carbon monoxide, fossil</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Carbon monoxide, fossil
+(2,5,2,5,1,5,BU:5); ; BAFU (2016) Switzerland’s Informative Inventory Report 2014 (IIR); pers. correspondence BAZL, 27.9.2016
+
+BAFU mapping audit: {"bafu source exchange index": 39}</comment>
+        <uncertainty>
+          <lognormal meanValue="7.9381e-05" varianceWithPedigreeUncertainty="0.6672767643232886" mu="-9.44125151305706"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="8a21f2b6-949a-54ab-b045-d2d47ac1a76b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Rolf Frischknecht" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="8a21f2b6-949a-54ab-b045-d2d47ac1a76b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Rolf Frischknecht" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

@@ -1,0 +1,182 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="62474e7d-dbd9-5f5a-9b6d-192beb945ea3" activityNameId="8ba1db96-7f99-5fbd-b54a-513398a221cf" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">xxx Electricity mix</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: xxx Electricity mix
+Electricity domestic net production and import shares are based on IEA statistics 2008.;
+UUID: 8ea287b6-2778-3caa-b640-0375c91067ea
+It includes the shares of domestic electricity production by technology and imports from neighbouring countries (production mixes) at the busbar. It does not include transformation, transport nor distribution losses.
+Location: Data apply to public and self producers in Serbia.
+Technology: No technology description is provided because the dataset just describes the power plant portfolio of the respective country using current (2004) average technology per energy carrier.
+Time period: Time period of statistics used (2008).
+Production volume: 43 TWh
+Sampling: Statistical data 
+Extrapolations: none
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_8ea287b6-2778-3caa-b640-0375c91067ea.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="81b23b57-75fa-57d2-b6f8-bd726620151f" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CS</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Data apply to public and self producers in Serbia.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: No technology description is provided because the dataset just describes the power plant portfolio of the respective country using current (2004) average technology per energy carrier.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2000-01-01" endDate="2000-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Time period of statistics used (2008).</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="e96c8e35-95b2-5245-a10b-f7117915e0a5" amount="1.0" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="62474e7d-dbd9-5f5a-9b6d-192beb945ea3" intermediateExchangeId="4d584187-d19b-56b9-a1dd-5bd4fa692520" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">xxx Electricity mix</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: xxx Electricity mix
+SERBIA
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="24e288f2-7dc9-5c16-8d12-f15939989dae" amount="0.061968" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="6e0da7a9-adee-5187-86d7-9ff3fd549b12" intermediateExchangeId="ba20509b-1f68-57ca-b8e2-cf9239a4818e" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">xxx Electricity, production mix HU</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: xxx Electricity, production mix HU
+(1,1,1,1,1,1); assumption for imported electricity in Serbia, value: IEA statistics 2008
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.061968" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-2.7811371562097404"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2fa1ffb5-cc4d-5e10-b4be-4986d1a7c139" amount="0.035405" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="b2d991a5-5e54-5d33-a741-119907cc4ae1" intermediateExchangeId="b8fc68fe-ae25-5363-a51c-f3c3cfea8b53" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, hydropower, at reservoir power plant, non alpine regions</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, hydropower, at reservoir power plant, non alpine regions
+(1,1,1,2,1,1); estimated share of reservoir hydropower production in Serbia: 16%
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.035405" varianceWithPedigreeUncertainty="0.0006209374943030311" mu="-3.3409022258784"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="82a2cc74-8eaf-5bd3-b56d-1fe5a22a10a1" amount="0.0035432" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="e83d61b9-62fc-55f1-9280-44b67dd58109" intermediateExchangeId="58e8b82f-7ff1-5c1d-a31d-2a9e0231b2b1" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, oil, at power plant</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, oil, at power plant
+(1,1,1,1,1,1); assumption for petroleum product and fuel oil power production in Serbia, value: IEA statistics 2008
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0035432" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-5.6427250053552855"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0f982301-9b35-582a-8f68-8027ddb35267" amount="0.011646" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="8f149c1d-3b3a-5935-8341-7284268981bd" intermediateExchangeId="577c2f63-aa4b-5eb3-9b31-8e6df1ec45ef" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, hydropower, at pumped storage power plant</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, hydropower, at pumped storage power plant
+(1,1,1,1,1,1); estimated share of pumped storage  production in Serbia: 5%
+
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.011646" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-4.452792505567209"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4013224d-1cf8-578f-bc19-fb5a5bc56126" amount="0.54714" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="7f3d1e0d-bacf-5a0a-a0b6-9267f6e47108" intermediateExchangeId="603d0ae1-3397-5e00-8803-173fe303098a" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, lignite, at power plant</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, lignite, at power plant
+(1,1,1,1,1,1); assumption for lignite power production in Serbia, value: IEA statistics 2008
+
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.54714" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-0.603050567808508"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="20436045-bd43-5d40-8e8f-ef8dcdfd5df9" amount="0.082624" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="66be5cf7-fd5c-59f5-a415-12979d8c045d" intermediateExchangeId="ac906e95-3f80-5dda-b9de-27cd28621b77" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">xxx Electricity, production mix BG</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: xxx Electricity, production mix BG
+(1,1,1,1,1,1); assumption for imported electricity in Serbia, value: IEA statistics 2008
+
+BAFU mapping audit: {"bafu source exchange index": 6}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.082624" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-2.4934550837579597"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="20047a2d-1392-5ed1-ae2b-7b4285696a82" amount="0.18588" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="b416dc3a-7435-52d0-bec2-8a9b40535c2f" intermediateExchangeId="76449741-c46e-5403-bef7-74474171bd62" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, hydropower, at run-of-river power plant</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, hydropower, at run-of-river power plant
+(1,1,1,2,1,1); estimated share of ROR  hydropower production in Serbia: 84%
+
+BAFU mapping audit: {"bafu source exchange index": 7}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.18588" varianceWithPedigreeUncertainty="0.0006209374943030311" mu="-1.6826539747653595"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1feaca65-bd37-5fae-aa80-271faa17a045" amount="0.061968" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="6f55ebd3-52be-59e7-abf0-c21578adf28a" intermediateExchangeId="48250495-2b7b-5127-911d-760c60034a18" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">xxx Electricity, production mix RO</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: xxx Electricity, production mix RO
+(1,1,1,1,1,1); assumption for imported electricity in Serbia, value: IEA statistics 2008
+
+BAFU mapping audit: {"bafu source exchange index": 8}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.061968" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-2.7811371562097404"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="494efc01-8957-5e4a-97be-923920330e06" amount="0.0085491" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="f0c38a6d-7c65-5d90-8a4d-d1235706c054" intermediateExchangeId="146b2b9d-1995-5eca-aaac-5bcf16d3c1ae" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, from natural gas</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, from natural gas
+(1,1,1,3,1,1); assumption for natural gas power production in Serbia, value: IEA statistics 2008
+
+BAFU mapping audit: {"bafu source exchange index": 9}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0085491" varianceWithPedigreeUncertainty="0.000693988482232975" mu="-4.761929264731918"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e7365e94-a70b-5655-8a52-e0c62b7e3e1e" amount="0.0012769" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="7c900d89-3f72-523d-9323-2c362055c6a3" intermediateExchangeId="2ee44a56-7361-514b-bd66-ab775f8fb938" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, industrial gas, at power plant</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, industrial gas, at power plant
+(1,1,1,3,1,1); assumption for industrial, coke and blast furnace gas power production in Serbia, value: IEA statistics 2008
+
+BAFU mapping audit: {"bafu source exchange index": 10}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0012769" varianceWithPedigreeUncertainty="0.000693988482232975" mu="-6.663320013533639"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="66c83b92-b1f9-5ae1-8076-027d894a56d2" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="René Itten" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="66c83b92-b1f9-5ae1-8076-027d894a56d2" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="René Itten" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="9453958c-ca2b-5051-b1d2-256238f53b21" activityNameId="290fad3d-7b48-558a-b1f9-e79b0257e3d5" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Use, network access devices</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Use, network access devices
+The data set represents average values for one hour use of network access devices per work station.;
+UUID: 91226b81-0c27-3adf-b050-89b371b2d37e
+This data set includes the use of internet access devices for one end user during one hour, taking into account device use and electricity consumption (consumer mix)
+Location: &lt;null&gt;
+Technology: Included devices: ADSL  modem with router (0.0042kW) and DSLAM (0.0013 kW) per end user
+Time period: undefined
+Production volume: na
+Sampling: unknown 
+Extrapolations: Average technology
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_91226b81-0c27-3adf-b050-89b371b2d37e.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: &lt;null&gt;</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Included devices: ADSL  modem with router (0.0042kW) and DSLAM (0.0013 kW) per end user</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2005-01-01" endDate="2009-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: undefined</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="e3a1a1d2-626b-5644-a976-bf2906fc2211" amount="1.0" unitId="9ab8d6e2-bd5e-592b-add5-ebeee086e9dd" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="9453958c-ca2b-5051-b1d2-256238f53b21" intermediateExchangeId="fa616f22-0e3f-5598-b7f9-dd572dd4c2d1" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use, network access devices</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">Full flow name: Use, network access devices
+SWITZERLAND
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e274089e-6892-52a9-bb35-e249a9dff396" amount="0.0075556" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="6de0d104-e5c3-5bee-955b-6f6232c3fdc3" intermediateExchangeId="77eb694f-7dfa-5a7e-8152-53bed7445781" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, low voltage, at grid</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, low voltage, at grid
+(4,3,1,1,3,4); Electricity demand: 4.2Wh ADSL, 1.3Wh DSLAM per port, 4.2Wh/Router at 1MBit/s
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0075556" varianceWithPedigreeUncertainty="0.020085709454954036" mu="-4.88546626880661"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="86e6afa4-8ce8-50b1-a115-9aa26188ec49" amount="9.009e-05" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="1bac00f6-0a79-5f71-b406-006cacbf527d" intermediateExchangeId="c58c8a5e-344d-5bb1-8d58-0494b7067ff4" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Network access devices, internet, at user</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Network access devices, internet, at user
+(4,3,1,1,3,4); 1 ADSL modem/router, DSLAM per port
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="9.009e-05" varianceWithPedigreeUncertainty="0.32122193077251565" mu="-9.314701387300925"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="9c4d3089-9e0c-547e-88ac-c7914be2589f" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Marianne Leuenberger" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="9c4d3089-9e0c-547e-88ac-c7914be2589f" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Marianne Leuenberger" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

@@ -1,0 +1,126 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="b8e1b368-8c49-5e89-8a51-5d63177ea780" activityNameId="ca9a44c1-790d-5b99-9c54-3396ec08d351" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Use of core national IP network per hour</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Use of core national IP network per hour
+The data set represents the IP core network in Switzerland; UUID: d3991e88-d640-3de3-90ff-066966dea8ab
+The dataset corresponds to the amount of equipment and electricity consumed to support a certain amount of network traffic in this specific network type. The dataset is based on the total amount of material, equipment, and components for the core network in Switzerland. The information is based on Swisscom's network. The literature describes the amount of material, equipment, and components for an average site. This is then multiplied with the total number of sites which Swisscom has. The information however is confidential. The total amount of network traffic is based on the Swisscom network in the year 2020. The total amount of electricity consumed is based on the addition of the core network and transport network. This terminology is based on the report but corresponds to the entire core network. It is assumed that the equipment has the same lifetime as a server which is 6 years. The functional unit = 1 GB.
+Location: Data for Swiss networks
+Technology: The mix of Swiss core transmission network.
+Time period: Unspecified
+Production volume: unknown
+Sampling: Literature &amp; own estimations
+Extrapolations: Average technology
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_d3991e88-d640-3de3-90ff-066966dea8ab.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Data for Swiss networks</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: The mix of Swiss core transmission network.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2023-01-01" endDate="2029-12-31" isDataValidForEntirePeriod="false">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Unspecified</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="376f9f55-d957-5ba4-af20-748755aa7e64" amount="1.0" unitId="9ab8d6e2-bd5e-592b-add5-ebeee086e9dd" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="b8e1b368-8c49-5e89-8a51-5d63177ea780" intermediateExchangeId="88e35281-c0c7-5a40-bed7-ae63f865a31c" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use of core national IP network per hour</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">Full flow name: Use of core national IP network per hour
+1 unit = 1 GB data
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="934c479c-5693-5409-81c2-948842b38371" amount="3.68e-05" unitId="9ba25965-088d-5ba8-abf2-fecdc9749b3c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="72c59bca-ef20-5ade-a6dd-504eb9f2eb4e" intermediateExchangeId="82632753-98d7-59d1-b78c-dbcac12b767d" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Cable, data cable in infrastructure, at plant</name>
+        <unitName xml:lang="en">meter</unitName>
+        <comment xml:lang="en">Full flow name: Cable, data cable in infrastructure, at plant
+(2,2,1,1,2,5,BU:1.05) Based on full time use over 6 years (i.e. 6*365*24) and number of users
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.68e-05" varianceWithPedigreeUncertainty="0.009885416005922408" mu="-10.21001271278939"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="fa0bf461-2c29-57b0-8eac-e8d36778d740" amount="3.25e-07" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="a16d0c6e-962c-5b19-a684-7a4b8d94d490" intermediateExchangeId="5e874163-3c30-57eb-9504-25d115cc4660" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Router, IP network, at server</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Router, IP network, at server
+(2,2,1,1,2,5,BU:1.05) Based on full time use over 6 years (i.e. 6*365*24) and number of users
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.25e-07" varianceWithPedigreeUncertainty="0.009885416005922408" mu="-14.939440654616673"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f1440137-307e-5629-b69a-9f3f3531da6e" amount="1.64e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="1d2500bd-036c-53ef-a069-4b7677874c1f" intermediateExchangeId="c7b12eec-8fa7-54d8-9ac0-e6701af3f7fb" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Printed wiring board, mounted, Laptop PC mainboard, Pb free, at plant</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Printed wiring board, mounted, Laptop PC mainboard, Pb free, at plant
+(2,2,1,1,2,5,BU:1.05) Based on full time use over 6 years (i.e. 6*365*24) and number of users
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.64e-08" varianceWithPedigreeUncertainty="0.009885416005922408" mu="-17.925984502116258"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8ae6d20e-b67c-5db0-9028-d552d3f01a1e" amount="1.21e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="aa24f37d-8723-59c0-a1d2-37d424caaccb" intermediateExchangeId="055ffc0c-51bc-51e0-9cdc-cd89b6833064" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Steel, low-alloyed, at plant</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Steel, low-alloyed, at plant
+(2,2,1,1,2,5,BU:1.05) Based on full time use over 6 years (i.e. 6*365*24) and number of users
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.21e-08" varianceWithPedigreeUncertainty="0.009885416005922408" mu="-18.230060384343716"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d408f0f8-bf43-50fe-a43d-08c92852bef3" amount="1.21e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="45c926ca-4ba3-5f3f-9a5f-ecc465cd9261" intermediateExchangeId="89fd7195-2ee0-5835-b902-781bc1c6a0fc" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Hot rolling, steel</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Hot rolling, steel
+(2,2,1,1,2,5,BU:1.05) Link to value of steel input
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.21e-08" varianceWithPedigreeUncertainty="0.009885416005922408" mu="-18.230060384343716"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="53a20974-afd9-56e1-a118-6f45953f2f76" amount="0.000189" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="6de0d104-e5c3-5bee-955b-6f6232c3fdc3" intermediateExchangeId="77eb694f-7dfa-5a7e-8152-53bed7445781" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, low voltage, at grid</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, low voltage, at grid
+(2,2,1,1,2,5,BU:1.05) Based on annual electricity use and number of users
+BAFU mapping audit: {"bafu source exchange index": 6}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000189" varianceWithPedigreeUncertainty="0.009885416005922408" mu="-8.573763542904631"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised" isCopyrightProtected="false"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

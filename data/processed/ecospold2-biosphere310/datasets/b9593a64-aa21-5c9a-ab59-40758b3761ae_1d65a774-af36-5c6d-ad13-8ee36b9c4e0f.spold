@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="b9593a64-aa21-5c9a-ab59-40758b3761ae" activityNameId="d795b393-9c25-501c-b507-94ca7da1bdc5" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Network equipment, at data center</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Network equipment, at data center
+The data center contains a share of power supply unit and network switch; UUID: 2a8c200e-7391-36d9-ab9e-d063e23f3df1
+The dataset assumes that 2 power supply units are needed per switch (source: UBA 2021, Table 75). Number of switches per data centre are an average of 9 data centres in Germany and Switzerland.
+Location: Global average data centers.
+Technology: Power supply units and network switches are considered.
+Time period: Unspecified
+Production volume: unknown
+Sampling: Literature &amp; own estimations
+Extrapolations: 
+Uncertainty adjustments: 
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_2a8c200e-7391-36d9-ab9e-d063e23f3df1.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="f4808887-5a57-5892-975e-ba0565a93e23" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">GLO</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Global average data centers.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Power supply units and network switches are considered.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2023-01-01" endDate="2029-12-31" isDataValidForEntirePeriod="false">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Unspecified</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="c739997a-14b1-5248-927a-ed93a19fba90" amount="1.0" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="b9593a64-aa21-5c9a-ab59-40758b3761ae" intermediateExchangeId="1d65a774-af36-5c6d-ad13-8ee36b9c4e0f" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Network equipment, at data center</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Network equipment, at data center
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a0133197-8a75-5c5f-909c-5988a7f14431" amount="0.668" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="53e9bf54-ab42-5af0-80dd-b0d18b7f39e7" intermediateExchangeId="a314855e-1863-54b1-a0ef-d1e550b65641" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Power supply unit, at plant</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Power supply unit, at plant
+(2,2,1,3,2,5,BU:1.07)
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.668" varianceWithPedigreeUncertainty="0.010713716581470602" mu="-0.40346710544549125"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b09da2e3-fbc6-5ee9-a247-ad04dd62d0bc" amount="0.332" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="daa1ba36-b4ee-5110-949f-ea2a0cb9fc7c" intermediateExchangeId="1e98c989-fca8-5a29-8058-c65e22c36676" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Switch, data center devices, at plant</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Switch, data center devices, at plant
+(2,2,1,3,2,5,BU:1.07)
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.332" varianceWithPedigreeUncertainty="0.010713716581470602" mu="-1.1026203100656484"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised" isCopyrightProtected="false"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

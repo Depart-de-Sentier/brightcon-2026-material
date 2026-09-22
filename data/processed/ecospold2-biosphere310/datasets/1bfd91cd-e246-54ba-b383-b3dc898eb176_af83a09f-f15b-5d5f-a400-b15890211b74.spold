@@ -1,0 +1,104 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="1bfd91cd-e246-54ba-b383-b3dc898eb176" activityNameId="d49cf721-c8ca-596f-b391-2a34e763b0f3" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Use of CPE, for transmission network per GB</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Use of CPE, for transmission network per GB
+The data set represents the mix of use/CPE networks in Switzerland; UUID: f10c9b6b-0361-3c75-9351-bf362e21339b
+The dataset corresponds to the amount of equipment and electricity consumed to support a certain amount of network traffic. In literature, they are also often termed as CPE or Customer Premises Equipment. The dataset is based on the number of modems, multimedia gateways, and CSTBs needed to support a certain amount of network traffic in Switzerland for the year 2013. Total amount of network traffic is based on measured traffic for internet-phone and television broadcast. For television broadcast, data volumes are calculated by multiplying the average television use in minutes with the channel and transmission rates of a specific television channel. The amount of electricity consumed is calculated by multiplying the energy intensity of customer premise equipment (modems, multimedia gateways, and CSTBs) with the number of customer premise equipment. The dataset assumes a device lifetime of 6 years. The reference flow of this dataset is = 1 GB (replaced by p since this type of flow and units do not exist in the current data schema document).
+Location: Data for Swiss networks
+Technology: The mix of Swiss use/CPE transmission network. Technologies considered are modems, multimedia gateways, and complex set top boxes (CSTBs)
+Time period: Unspecified
+Production volume: unknown
+Sampling: Literature &amp; own estimations
+Extrapolations: Average technology
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_f10c9b6b-0361-3c75-9351-bf362e21339b.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Data for Swiss networks</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: The mix of Swiss use/CPE transmission network. Technologies considered are modems, multimedia gateways, and complex set top boxes (CSTBs)</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2023-01-01" endDate="2029-12-31" isDataValidForEntirePeriod="false">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Unspecified</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="3bc05add-ffcb-556b-8e22-65ed6afb15a8" amount="1.0" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="1bfd91cd-e246-54ba-b383-b3dc898eb176" intermediateExchangeId="af83a09f-f15b-5d5f-a400-b15890211b74" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use of CPE, for transmission network per GB</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Use of CPE, for transmission network per GB
+1 unit = 1 GB data
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ebefa532-5b10-5e39-9fd7-6bd510e81d8a" amount="2.63805e-06" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="f31a61a8-7ea1-5207-96ea-66c70f6dfa62" intermediateExchangeId="a7d32fb9-575f-5288-9e3d-715f02435a21" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Multimedia gateway, for customer premise equipment (CPE)</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Multimedia gateway, for customer premise equipment (CPE)
+(2,3,2,2,2,5,BU:1.05) Based on SFOE 2015
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.63805e-06" varianceWithPedigreeUncertainty="0.010713716581470602" mu="-12.845470550095929"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e87c4420-5631-5c66-91fa-524152bd601a" amount="1.13027e-05" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="926da00f-14aa-554b-a93a-c5e6c6fba8c2" intermediateExchangeId="9c0b94bb-5bb1-52c0-9918-108abf90db6d" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Modem, for customer premise equipment (CPE)</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Modem, for customer premise equipment (CPE)
+(2,3,2,2,2,5,BU:1.05) Based on SFOE 2015
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.13027e-05" varianceWithPedigreeUncertainty="0.010713716581470602" mu="-11.390468922734032"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a0cac35b-ad9f-54f9-b030-a28b9c18a023" amount="9.54018e-06" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="c522ce12-2b0d-5f65-8e36-01e7d0ea67cf" intermediateExchangeId="554bdcc1-577e-5f19-a77e-0ba7c0afbd36" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Complex Set Top Boxes (CSTB), for customer premise equipment (CPE)</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Complex Set Top Boxes (CSTB), for customer premise equipment (CPE)
+(2,3,2,2,2,5,BU:1.05) Based on SFOE 2015
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="9.54018e-06" varianceWithPedigreeUncertainty="0.010713716581470602" mu="-11.559998204757548"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8dc3b582-252e-5d1e-b7f6-bae1c8bc12a9" amount="0.03105" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="6de0d104-e5c3-5bee-955b-6f6232c3fdc3" intermediateExchangeId="77eb694f-7dfa-5a7e-8152-53bed7445781" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, low voltage, at grid</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, low voltage, at grid
+(2,3,2,2,2,5,BU:1.05) Based on SFOE 2015
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.03105" varianceWithPedigreeUncertainty="0.010713716581470602" mu="-3.4721564706026493"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised" isCopyrightProtected="false"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

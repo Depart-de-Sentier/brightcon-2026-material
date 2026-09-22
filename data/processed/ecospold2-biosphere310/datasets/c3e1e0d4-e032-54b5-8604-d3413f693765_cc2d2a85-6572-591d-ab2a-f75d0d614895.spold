@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="c3e1e0d4-e032-54b5-8604-d3413f693765" activityNameId="5987c2e0-8574-55ca-9a25-6d1b00011bbc" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Reinforcing steel, at regional storage</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Reinforcing steel, at regional storage
+Represents market of reinforcing steel in Switzerland. Storage volume is assumed to remain constant over time. 45% of reinforcing steel is imported mainly from D, FR, IT and PL, 55% is produced in CH. The transportation of the imports is taken into account in the corresponding sub-process. It is assumed that the locally produced steel will be transported by train at an average distance of 90 kilometres in Switzerland.  
+UUID: 36f49fc8-c223-3f57-82e4-aef9bab9ee05
+Location: Data relate to plants in Switzerland and Europe
+Technology: Industry data.
+Time period: Time of publications.
+Production volume: 
+Sampling: Data from literature
+Extrapolations: 
+Uncertainty adjustments: 
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_36f49fc8-c223-3f57-82e4-aef9bab9ee05.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Data relate to plants in Switzerland and Europe</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Industry data.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2020-01-01" endDate="2025-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Time of publications.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="fe7899d9-74b2-5204-a15f-2b4d6ec89129" amount="1.0" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="c3e1e0d4-e032-54b5-8604-d3413f693765" intermediateExchangeId="cc2d2a85-6572-591d-ab2a-f75d0d614895" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Reinforcing steel, at regional storage</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Reinforcing steel, at regional storage
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6dd99eae-d917-5fde-963c-149def91f5fd" amount="0.55" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="74df04e1-81ff-5bf6-87af-cbb600c61158" intermediateExchangeId="26e403af-2387-5c35-b8fe-cf740a9b9c58" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Reinforcing steel, at plant</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Reinforcing steel, at plant
+(2,2,1,1,1,nA,BU:1.05); production from Swiss plants
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.55" varianceWithPedigreeUncertainty="0.0012874593016206036" mu="-0.5978370007556204"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="956b8f7e-be04-5f42-80e8-ead3924a3f8b" amount="0.45" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="76593d58-e99b-5f43-a125-ce9cf40852a7" intermediateExchangeId="08dcc923-ef43-5d7d-ae76-f54a79ec8f2a" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Reinforcing steel, import to CH</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Reinforcing steel, import to CH
+(2,2,1,1,1,nA,BU:1.05); import of European reinforcing steel
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.45" varianceWithPedigreeUncertainty="0.0012874593016206036" mu="-0.7985076962177716"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="38ff1d5e-4f7d-5e1e-850a-e72ac7c38df1" amount="0.0495" unitId="97a43c83-639b-5b25-b36e-39233e1b0540" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="cb4220f1-47ef-535f-9129-73afd1096716" intermediateExchangeId="dd05e915-a28d-5d3e-94e3-301f6d92e1b2" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Transport, freight, rail, electricity with shunting</name>
+        <unitName xml:lang="en">ton kilometer</unitName>
+        <comment xml:lang="en">Full flow name: Transport, freight, rail, electricity with shunting
+(2,2,1,1;1;5,BU:2) - own assumption: average transportation distance by train in CH: 80 - 100 km 0.55 kg * 90km
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0495" varianceWithPedigreeUncertainty="0.1291166970393718" mu="-3.0057826094074924"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="d94e9c6b-201d-5788-8250-c9b14315d9b7" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Jonas Giger" personEmail="None"/>
+      <dataGeneratorAndPublication personId="d94e9c6b-201d-5788-8250-c9b14315d9b7" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Jonas Giger" personEmail="None" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

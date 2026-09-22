@@ -1,0 +1,198 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="4f2b2dd2-2fdb-5443-a760-c353498d3e5c" activityNameId="2b6ba4aa-d8b4-58bf-9524-e06b541f7838" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Natural gas, liquefied, at liquefaction plant</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Natural gas, liquefied, at liquefaction plant
+The process is normalized on the gaseous form of gas. The net calorific value of natural gas is 36.0 MJ/Nm³. UUID=77c630d5-4dc1-3bda-ac2e-935e7c591f0b
+This dataset describes the liquefaction of Omani natural gas in a Omani liquefaction plant.
+Location: Global data for energy requirements combined and natural gas characteristics. 
+Technology: Technology average.
+Time period: Data on energy use for the liquefaction stems of a review of common technologies from 2019. Data on leakages stem from 1990.
+Production volume: not known
+Sampling: Literature
+Extrapolations: none
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_77c630d5-4dc1-3bda-ac2e-935e7c591f0b.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="dbd02a77-5380-53b2-8757-91161428ed65" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">OM</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Global data for energy requirements combined and natural gas characteristics. </text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Technology average.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2023-01-01" endDate="2024-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Data on energy use for the liquefaction stems of a review of common technologies from 2019. Data on leakages stem from 1990.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="337e0ba7-eb47-5d82-a2a2-01ff95704521" amount="1.0" unitId="bfdabcf8-1351-57c7-b5aa-58ac6c5b4daa" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="4f2b2dd2-2fdb-5443-a760-c353498d3e5c" intermediateExchangeId="6555ea50-6530-509c-9441-64cd643c8ec0" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Natural gas, liquefied, at liquefaction plant</name>
+        <unitName xml:lang="en">normal cubic meter</unitName>
+        <comment xml:lang="en">Full flow name: Natural gas, liquefied, at liquefaction plant
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b24730ac-5a1b-5e27-a112-1af42972bc4e" amount="1.0005" unitId="bfdabcf8-1351-57c7-b5aa-58ac6c5b4daa" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="4c203a7a-467c-5873-a6e7-ac1157a4127f" intermediateExchangeId="d0340b5f-fdd6-518d-953b-cbe1d09e5a2b" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Natural gas, at production</name>
+        <unitName xml:lang="en">normal cubic meter</unitName>
+        <comment xml:lang="en">Full flow name: Natural gas, at production
+(4,2,1,1,1,BU:1.05); Natural gas input + leakage 
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0005" varianceWithPedigreeUncertainty="0.009005399958270018" mu="0.0004998750416509929"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="134059fe-2f49-5154-9383-b735d9ee4479" amount="3.105" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="00bbe839-f1b0-55f4-8751-e3aeb1a0036a" intermediateExchangeId="f19702f7-fbd6-50cb-ace0-1f622126d051" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Natural gas, burned in gas turbine</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Natural gas, burned in gas turbine
+(4,2,2,3,3,BU:1.05); Based on technology average
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.105" varianceWithPedigreeUncertainty="0.017634488915618626" mu="1.133013715385442"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a831d217-f5f8-5ade-8cc9-fca7c529c375" amount="7.89e-13" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="b4632b12-1601-5572-a773-6a42d3949bf4" intermediateExchangeId="a7bbc333-9efb-5c89-972a-45cbe81215a3" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Production plant, natural gas</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Production plant, natural gas
+(5,3,3,3,3,BU:3); Estimate for Europe
+BAFU mapping audit: {"bafu source exchange index": 10}</comment>
+        <uncertainty>
+          <lognormal meanValue="7.89e-13" varianceWithPedigreeUncertainty="0.3541189063252803" mu="-27.86801007406481"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="6a515d05-838a-5836-a2d5-f1ac6d9b68a8" amount="0.00033143" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="70ef743b-3ed5-4a6d-b192-fb6d62378555">
+        <name xml:lang="en">Methane, fossil</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Methane, fossil
+(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00033143" varianceWithPedigreeUncertainty="0.050594561042924376" mu="-8.012093932023694"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="b24e5110-fcdf-54da-a7b2-43f923c1ba76" amount="2.7452e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="e7e0031e-791d-42f4-b26c-ec322db637bc">
+        <name xml:lang="en">Ethane</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Ethane
+(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.7452e-05" varianceWithPedigreeUncertainty="0.050594561042924376" mu="-10.503071532917886"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="0a3b8684-a0e9-53eb-a915-d6b12b6f81df" amount="6.1762e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="9beb60a3-3a8c-4345-9a0e-107eec2f709f">
+        <name xml:lang="en">Propane</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Propane
+(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="6.1762e-06" varianceWithPedigreeUncertainty="0.050594561042924376" mu="-11.99480736234644"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="0c84662c-1193-5359-9a67-63d7e481f93c" amount="3.176e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="fa5512cf-04a2-4014-8e96-d3e2d137f0df">
+        <name xml:lang="en">Butane</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Butane
+(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition
+BAFU mapping audit: {"bafu source exchange index": 6}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.176e-06" varianceWithPedigreeUncertainty="0.050594561042924376" mu="-12.659888014579385"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="c049419a-85e1-53ec-a0b2-4eb5cbf133e4" amount="2.2869e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="33b38ccb-593b-4b11-b965-10d747ba3556">
+        <name xml:lang="en">NMVOC, non-methane volatile organic compounds</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: NMVOC, non-methane volatile organic compounds
+(2,3,4,1,1,BU:1.5); Calculated based on leakage and average gas composition
+BAFU mapping audit: {"bafu source exchange index": 7}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.2869e-07" varianceWithPedigreeUncertainty="0.050594561042924376" mu="-15.290898462278118"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="a668324f-3d2d-58ba-82b6-b37ff50a6d25" amount="0.02293" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="aa7cac3a-3625-41d4-bc54-33e2cf11ec46">
+        <name xml:lang="en">Carbon dioxide, fossil</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Carbon dioxide, fossil
+(2,3,4,1,1,BU:1.05); Carbon dioxide separation, based on natural gas composition
+BAFU mapping audit: {"bafu source exchange index": 8}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.02293" varianceWithPedigreeUncertainty="0.010098213833185972" mu="-3.775309182112324"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="1634e53c-80ee-5250-b776-abe5969e95d0" amount="5e-12" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="5ec9c16a-959d-44cd-be7d-a935727d2151">
+        <name xml:lang="en">Mercury II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Mercury II
+(2,3,4,1,1,BU:5); Calculated based on leakage and average gas composition
+BAFU mapping audit: {"bafu source exchange index": 9}</comment>
+        <uncertainty>
+          <lognormal meanValue="5e-12" varianceWithPedigreeUncertainty="0.6570791431450684" mu="-26.021583203494448"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="15b3f79a-ec50-5ae1-aa89-0f48ba4fb63b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Maresa Bussa" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="2c38e3e4-eebf-574c-820d-f534bb79c993" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Niels Jungbluth" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

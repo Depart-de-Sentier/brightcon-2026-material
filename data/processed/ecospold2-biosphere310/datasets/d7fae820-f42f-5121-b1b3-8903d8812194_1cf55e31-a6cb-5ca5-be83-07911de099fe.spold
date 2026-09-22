@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="d7fae820-f42f-5121-b1b3-8903d8812194" activityNameId="3a042eb2-e213-5432-9133-a0a9498fa6d0" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Heat, at system cogen 160kWe Jakobsberg, allocation price</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Heat, at system cogen 160kWe Jakobsberg, allocation price
+Heat at system i.e. distribution is not included.;
+UUID: e4d26b45-2a5e-30e1-bf89-50f8d1205b4b
+The module includes heat from module cogen (i.e. the cogeneration unit and a heat pump) and from two oil boilers.
+Location: Efficiencies refer to a specific plant in Switzerland.
+Technology: Specific cogeneration unit installed in Switzerland.
+Time period: undefined
+Production volume: na
+Sampling: Operator information 
+Extrapolations: none
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_e4d26b45-2a5e-30e1-bf89-50f8d1205b4b.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Efficiencies refer to a specific plant in Switzerland.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Specific cogeneration unit installed in Switzerland.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2000-01-01" endDate="2000-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: undefined</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="72a800d6-634e-5d95-8b19-0002b84d387f" amount="1.0" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="d7fae820-f42f-5121-b1b3-8903d8812194" intermediateExchangeId="1cf55e31-a6cb-5ca5-be83-07911de099fe" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Heat, at system cogen 160kWe Jakobsberg, allocation price</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, at system cogen 160kWe Jakobsberg, allocation price
+SWITZERLAND
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ff5b3cef-3561-53a9-a6cf-88bb428ceaa1" amount="0.6" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="c9d59c63-6ec7-54e4-8639-4a166ba362e8" intermediateExchangeId="21386edd-7ba1-5685-96d4-d678f5d29de1" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Heat, at module cogen 160kWe Jakobsberg, allocation price</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, at module cogen 160kWe Jakobsberg, allocation price
+data from operators; basic uncertainty
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.6" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-0.5108256237659907"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8fd02e3a-71e3-5d54-8f10-a454637e0721" amount="0.4" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="73841e13-454c-5c74-b5e0-c6eab22cb2cf" intermediateExchangeId="c04c77de-e6e1-58b7-a467-59f622b0abc6" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Heat, light fuel oil, at boiler 100kW, non-modulating</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, light fuel oil, at boiler 100kW, non-modulating
+data from operators; basic uncertainty
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.4" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-0.916290731874155"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="ed3fc1e0-76f9-5a39-9214-90513502264b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Thomas Heck" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="ed3fc1e0-76f9-5a39-9214-90513502264b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Thomas Heck" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

@@ -1,8 +1,11 @@
-# Track raw inputs and folder documentation; ignore other data payloads.
+# Track raw inputs, the verified EcoSpold 2 export, and folder documentation.
 /data/**
 !/data/**/
 !/data/**/README.md
 !/data/raw/**
+!/data/processed/ecospold2-biosphere310/**
+# The retained inventory is tracked as a lossless gzip archive (GitHub size limit).
+/data/processed/ecospold2-biosphere310/audit/retained-inventory.jsonl
 
 # Generated artifacts belong in local output folders.
 /outputs/

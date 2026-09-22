@@ -1,0 +1,88 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="3c060c1b-c956-5cfe-b4ee-890917c76666" activityNameId="4bba4457-a5a4-5e2f-a938-b7c6ab39920d" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Hydrogen, liquid, at plant</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Hydrogen, liquid, at plant
+95% of hydrogen is produced from cracking of fossil fuels, the remaining 5% from electrolysis of salt brine.;
+CAS number: 001333-74-0; 
+Formula: H2; 
+UUID: 5c8dc33f-bb23-3f2e-9628-c16695008af1
+&lt;null&gt;
+Location: RER
+Technology: based on literature data 
+Time period: undefined
+Production volume: na
+Sampling: Sampling procedure: see technology 
+Extrapolations: see technology
+Uncertainty adjustments: &lt;null&gt;
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_5c8dc33f-bb23-3f2e-9628-c16695008af1.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="20a9bf48-6cea-59b4-ad08-000cb981f2d0" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">RER</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: RER</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: based on literature data </text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2000-01-01" endDate="2000-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: undefined</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="508bc1f8-7776-5d8b-bfe2-ea0c60762c6b" amount="1.0" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="3c060c1b-c956-5cfe-b4ee-890917c76666" intermediateExchangeId="0d9fbc45-56ee-51e1-b55b-997bc97d6f24" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Hydrogen, liquid, at plant</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Hydrogen, liquid, at plant
+Europe
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="f85eb67f-a646-55bd-b509-1d610da2587d" amount="0.05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="09a70393-c9da-515f-9df8-2b034ee5d3a4" intermediateExchangeId="874e1c8d-ac4d-562f-a4d3-369d48cbd70c" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Hydrogen, liquid, from chlorine electrolysis, production mix, at plant</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Hydrogen, liquid, from chlorine electrolysis, production mix, at plant
+(1,3,1,1,1,4); hydrogen from electrolysis of salt brine
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.05" varianceWithPedigreeUncertainty="0.002271007593583191" mu="-2.995732273553991"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ea776507-b8b9-50f8-9dcb-16d56fdf0d0e" amount="0.95" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="7360f1b2-03c0-506d-ba1f-24a872da72b8" intermediateExchangeId="75b2e945-9add-5a23-9284-bc8f63c264f5" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Hydrogen, cracking, APME, at plant</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Hydrogen, cracking, APME, at plant
+(1,3,1,1,1,4); hydrogen from cracking of fossil fuels
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.95" varianceWithPedigreeUncertainty="0.002271007593583191" mu="-0.05129329438755058"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="30a2a204-50a2-5323-99c7-ca565b067b5d" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Mike Chudacoff" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="30a2a204-50a2-5323-99c7-ca565b067b5d" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Mike Chudacoff" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

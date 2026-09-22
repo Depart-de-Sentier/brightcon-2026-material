@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="c9a4ec17-b92f-5779-98a1-313c90d65274" activityNameId="e35cb030-2aa9-5b3e-b3d0-6c91e27f73f8" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">District heat, at consumer, waste from municipal waste incineration</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: District heat, at consumer, waste from municipal waste incineration
+Inventory is valid for the district heat based on heat waste incineration only. Heat loss is 11% while heat transportation. Heat from waste incineration ist considered to be burden-free.;
+UUID: 44c06df9-31b2-3696-b9db-a1bd2dfda28d
+Included is the infrastructure of the deliverysystem for district heat, the losses and the heat from waste incineration.
+Location: Data apply to the supply in Switzerland.
+Technology: Average technology
+Time period: Time of publications.
+Production volume: na
+Sampling: literature 
+Extrapolations: &lt;null&gt;
+Uncertainty adjustments: &lt;null&gt;
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_44c06df9-31b2-3696-b9db-a1bd2dfda28d.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Data apply to the supply in Switzerland.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Average technology</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2018-01-01" endDate="2020-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Time of publications.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="694cb14b-4616-5d42-9b8d-c7499224059a" amount="1.0" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="c9a4ec17-b92f-5779-98a1-313c90d65274" intermediateExchangeId="e7a32089-1b44-5cae-ac26-be38d501878f" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">District heat, at consumer, waste from municipal waste incineration</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: District heat, at consumer, waste from municipal waste incineration
+SWITZERLAND
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b0b93fbd-0322-555f-a0c5-2f44bebf9673" amount="1.0" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="3d7a3f1d-9b97-5729-914c-f91613cc9e71" intermediateExchangeId="a4288603-6438-5643-9cc8-7e0316e64c5c" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Transport, district heat, average</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Transport, district heat, average
+(2,2,2,1,1,5,BU:3); ;
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0" varianceWithPedigreeUncertainty="0.31095831532573176" mu="0.0"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="391690c6-616b-5cbd-892c-53a42395524e" amount="1.11" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="fadc5ca8-ad60-599f-b892-c3dc579539ba" intermediateExchangeId="13d1706f-5caa-53f5-b8c4-d41784437984" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Heat from waste, at municipal waste incineration plant</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat from waste, at municipal waste incineration plant
+(2,2,2,1,1,5,BU:1.05); ;
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.11" varianceWithPedigreeUncertainty="0.00982030518615659" mu="0.10436001532424286"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="1be3fcfd-37fa-533c-8085-c8bc7778e22a" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Thomas Kaegi" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="5152449a-fa0d-51a4-bc70-ab2840bbc9ff" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Livia Waldburger" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

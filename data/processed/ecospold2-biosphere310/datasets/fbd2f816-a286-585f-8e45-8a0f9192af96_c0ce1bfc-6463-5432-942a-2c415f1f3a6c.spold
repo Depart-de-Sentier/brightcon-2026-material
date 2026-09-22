@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="fbd2f816-a286-585f-8e45-8a0f9192af96" activityNameId="e2e303f4-9e1b-544d-89ad-8d626d187cb3" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Operation, maintenance, port</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Operation, maintenance, port
+Land use is further distingished in built up area (0.6%), road area (sealed area) (45.6%) and water bodies (54.29%).  Emission to waters include emission from production sites on the port site, which are not directly connected to the the transport activities.;
+UUID: b973dd9f-ac42-3fe6-815f-d1ede1c7cc3b
+This inventory includes emissions of to water due to non removed oil spills.  Land occupation and transformation are taken into account. Energy consumption at the port is based on assumptions for the specifice electricty consumption at the port in Hamburg. 
+Location: Data refers to one port in Europe.
+Technology: unknown
+Time period: Land use data represents conditions in 2002.
+Production volume: na
+Sampling: literature studies and own assumptions 
+Extrapolations: none
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_b973dd9f-ac42-3fe6-815f-d1ede1c7cc3b.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="20a9bf48-6cea-59b4-ad08-000cb981f2d0" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">RER</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Data refers to one port in Europe.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: unknown</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2000-01-01" endDate="2000-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Land use data represents conditions in 2002.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="048ebe3c-65ca-59b3-923b-23bc04985b4b" amount="1.0" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="fbd2f816-a286-585f-8e45-8a0f9192af96" intermediateExchangeId="c0ce1bfc-6463-5432-942a-2c415f1f3a6c" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Operation, maintenance, port</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Operation, maintenance, port
+Europe
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="196781eb-8b52-554a-821e-41399a67feae" amount="2270000000.0" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="22879c02-1e1a-51a4-a6ab-fae44d77e097" intermediateExchangeId="d9f7299d-8706-5736-b5ec-ae70136b62fa" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, medium voltage, production ENTSO-E, at grid</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, medium voltage, production ENTSO-E, at grid
+data based on literature studies for the port in Hamburg.
+
+BAFU mapping audit: {"bafu source exchange index": 14}</comment>
+        <uncertainty>
+          <lognormal meanValue="2270000000.0" varianceWithPedigreeUncertainty="0.12011325347955039" mu="21.543045668439724"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="f2a0e8df-932e-5e39-b613-4209eb6e3ae4" amount="595000.0" unitId="2ffee513-1cfa-5700-836b-d4190b6e12cb" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="12264257-7f8b-4afe-b3cb-3ac28ca1661a">
+        <name xml:lang="en">Transformation, from unknown</name>
+        <unitName xml:lang="en">square meter</unitName>
+        <comment xml:lang="en">Full flow name: Transformation, from unknown
+Estimation based on land occupation and an assumed life span of the port of 100 years.
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="595000.0" varianceWithPedigreeUncertainty="0.04110048847329133" mu="13.296316684527767"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="66bbe61e-0f93-5078-9c72-301c35e36c53" amount="86600.0" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="d1c0567e-ff1a-4cb7-a4f0-de28b2d99b63">
+        <name xml:lang="en">TOC, Total Organic Carbon</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: TOC, Total Organic Carbon
+own calculation, according to quality guidelines, derived from emissions of oil.
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="86600.0" varianceWithPedigreeUncertainty="0.12011325347955039" mu="11.369055094550527"/>
+        </uncertainty>
+        <compartment subcompartmentId="4be35ed4-46ea-560e-96dc-c141e3a5fec3" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">ocean</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="e75e18ae-9c45-5836-875a-cfaef288b287" amount="315000.0" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="f012d2d5-ebb4-4531-8285-0b98af3dcbd4">
+        <name xml:lang="en">BOD5, Biological Oxygen Demand</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: BOD5, Biological Oxygen Demand
+own calculation, according to quality guidelines, derived from emissions of oil.
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="315000.0" varianceWithPedigreeUncertainty="0.12011325347955039" mu="12.66032791780777"/>
+        </uncertainty>
+        <compartment subcompartmentId="4be35ed4-46ea-560e-96dc-c141e3a5fec3" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">ocean</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="f9f3de2b-cc4b-53c2-a4e7-a55a6ae58bd2" amount="100000.0" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="6da0e891-3648-43a5-b0cf-f1872c57db8d">
+        <name xml:lang="en">Oils, unspecified</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Oils, unspecified
+oral communication. The data represents the geomean of a data from 1994-1998.
+
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="100000.0" varianceWithPedigreeUncertainty="1.2706302462531571" mu="11.512925464970229"/>
+        </uncertainty>
+        <compartment subcompartmentId="d1626126-18fd-5436-bc1d-f41bb5c4108d" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="6736507b-9588-5e04-a3c0-6a9106237133" amount="415.0" unitId="2ffee513-1cfa-5700-836b-d4190b6e12cb" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="4624deff-2016-41d4-b2bf-3db8dab88779">
+        <name xml:lang="en">Transformation, to industrial area</name>
+        <unitName xml:lang="en">square meter</unitName>
+        <comment xml:lang="en">Full flow name: Transformation, to industrial area
+Estimation based on land occupation and an assumed life span of the port of 100 years.
+
+BAFU mapping audit: {"bafu original biosphere": {"categories": ["natural resource", "land"], "name": "Transformation, to industrial area, built up", "unit": "square meter"}, "bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="415.0" varianceWithPedigreeUncertainty="0.04110048847329133" mu="6.028278520230698"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="0cdc2222-2488-5819-a33e-b4d17e7d836c" amount="122000.0" unitId="2ffee513-1cfa-5700-836b-d4190b6e12cb" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="a42347d2-09f1-405e-95dd-bf6ac03765d8">
+        <name xml:lang="en">Transformation, to traffic area, road network</name>
+        <unitName xml:lang="en">square meter</unitName>
+        <comment xml:lang="en">Full flow name: Transformation, to traffic area, road network
+Estimation based on land occupation and an assumed life span of the port of 100 years.
+
+BAFU mapping audit: {"bafu source exchange index": 6}</comment>
+        <uncertainty>
+          <lognormal meanValue="122000.0" varianceWithPedigreeUncertainty="0.04110048847329133" mu="11.711776323715394"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="a87115c8-a086-5165-a1c9-9660d27b7aa5" amount="315000.0" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="ec76fb5c-b402-416b-825c-53e074fe7525">
+        <name xml:lang="en">COD, Chemical Oxygen Demand</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: COD, Chemical Oxygen Demand
+own calculation, according to quality guidelines, derived from emissions of oil.
+
+BAFU mapping audit: {"bafu source exchange index": 7}</comment>
+        <uncertainty>
+          <lognormal meanValue="315000.0" varianceWithPedigreeUncertainty="0.12011325347955039" mu="12.66032791780777"/>
+        </uncertainty>
+        <compartment subcompartmentId="4be35ed4-46ea-560e-96dc-c141e3a5fec3" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">ocean</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="8e841fdc-c2bb-5ffd-852a-2158d7199728" amount="41500.0" unitId="3a10ffbc-f05c-5d1a-aa56-ef31fa3d8c58" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="fe9c3a98-a6d2-452d-a9a4-a13e64f1b95b">
+        <name xml:lang="en">Occupation, industrial area</name>
+        <unitName xml:lang="en">square meter-year</unitName>
+        <comment xml:lang="en">Full flow name: Occupation, industrial area
+Port statistics and oral communication. Data represent occupied area in 2002
+
+BAFU mapping audit: {"bafu original biosphere": {"categories": ["natural resource", "land"], "name": "Occupation, industrial area, built up", "unit": "square meter-year"}, "bafu source exchange index": 8}</comment>
+        <uncertainty>
+          <lognormal meanValue="41500.0" varianceWithPedigreeUncertainty="0.04110048847329133" mu="10.63344870621879"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="c99fb0ae-bc7a-5834-8cd4-fa4f4fd01184" amount="12200000.0" unitId="3a10ffbc-f05c-5d1a-aa56-ef31fa3d8c58" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="26efe47c-92a5-4dea-b4d0-eac13e418a58">
+        <name xml:lang="en">Occupation, traffic area, road network</name>
+        <unitName xml:lang="en">square meter-year</unitName>
+        <comment xml:lang="en">Full flow name: Occupation, traffic area, road network
+Port statistics and oral communication. Data represent occupied area in 2002
+
+BAFU mapping audit: {"bafu source exchange index": 9}</comment>
+        <uncertainty>
+          <lognormal meanValue="12200000.0" varianceWithPedigreeUncertainty="0.04110048847329133" mu="16.316946509703484"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="69781e9a-af6e-59ae-b589-504562bafbcc" amount="8180000000.0" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="07f704a2-2746-4364-bcfd-606cefc30715">
+        <name xml:lang="en">Heat, waste</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, waste
+standard value 
+
+BAFU mapping audit: {"bafu source exchange index": 10}</comment>
+        <uncertainty>
+          <lognormal meanValue="8180000000.0" varianceWithPedigreeUncertainty="0.3017372402031454" mu="22.824957987561067"/>
+        </uncertainty>
+        <compartment subcompartmentId="09cf6235-2645-535b-84a3-ec31dd135977" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">non-urban air or from high stacks</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="a88f39e1-6215-57a7-aa2c-56debdca1808" amount="350000.0" unitId="2ffee513-1cfa-5700-836b-d4190b6e12cb" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="84b65d8f-2edd-4ddd-8f68-ca28d1c681b0">
+        <name xml:lang="en">Transformation, to lake, artificial</name>
+        <unitName xml:lang="en">square meter</unitName>
+        <comment xml:lang="en">Full flow name: Transformation, to lake, artificial
+Estimation based on land occupation and an assumed life span of the port of 100 years.
+
+BAFU mapping audit: {"bafu source exchange index": 11}</comment>
+        <uncertainty>
+          <lognormal meanValue="350000.0" varianceWithPedigreeUncertainty="0.04110048847329133" mu="12.765688433465597"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="55b2a093-4ce3-51bc-bb53-0101d894c780" amount="35000000.0" unitId="3a10ffbc-f05c-5d1a-aa56-ef31fa3d8c58" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="69dfa439-8e4e-4cae-bb0c-85a8aa8b9a73">
+        <name xml:lang="en">Occupation, lake, artificial</name>
+        <unitName xml:lang="en">square meter-year</unitName>
+        <comment xml:lang="en">Full flow name: Occupation, lake, artificial
+Port statistics and oral communication. Data represent occupied area in 2002
+
+BAFU mapping audit: {"bafu source exchange index": 12}</comment>
+        <uncertainty>
+          <lognormal meanValue="35000000.0" varianceWithPedigreeUncertainty="0.04110048847329133" mu="17.37085861945369"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="4e019308-eacc-56a1-b483-c1d541a580ca" amount="122000.0" unitId="2ffee513-1cfa-5700-836b-d4190b6e12cb" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="4624deff-2016-41d4-b2bf-3db8dab88779">
+        <name xml:lang="en">Transformation, to industrial area</name>
+        <unitName xml:lang="en">square meter</unitName>
+        <comment xml:lang="en">Full flow name: Transformation, to industrial area
+Estimation based on land occupation and an assumed life span of the port of 100 years.
+
+BAFU mapping audit: {"bafu source exchange index": 13}</comment>
+        <uncertainty>
+          <lognormal meanValue="122000.0" varianceWithPedigreeUncertainty="0.04110048847329133" mu="11.711776323715394"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="239f1ea9-b8c3-584d-b4de-5ad5198d8260" amount="12200000.0" unitId="3a10ffbc-f05c-5d1a-aa56-ef31fa3d8c58" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="fe9c3a98-a6d2-452d-a9a4-a13e64f1b95b">
+        <name xml:lang="en">Occupation, industrial area</name>
+        <unitName xml:lang="en">square meter-year</unitName>
+        <comment xml:lang="en">Full flow name: Occupation, industrial area
+Port statistics and oral communication. Data represent occupied area in 2002
+
+BAFU mapping audit: {"bafu source exchange index": 15}</comment>
+        <uncertainty>
+          <lognormal meanValue="12200000.0" varianceWithPedigreeUncertainty="0.04110048847329133" mu="16.316946509703484"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="2d92edd9-a0a2-5b8c-a697-84e87d527916" amount="86600.0" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="72f14baf-d36c-4f8e-8c17-5304a995f00a">
+        <name xml:lang="en">DOC, Dissolved Organic Carbon</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: DOC, Dissolved Organic Carbon
+own calculation, according to quality guidelines, derived from emissions of oil.
+
+BAFU mapping audit: {"bafu source exchange index": 16}</comment>
+        <uncertainty>
+          <lognormal meanValue="86600.0" varianceWithPedigreeUncertainty="0.12011325347955039" mu="11.369055094550527"/>
+        </uncertainty>
+        <compartment subcompartmentId="4be35ed4-46ea-560e-96dc-c141e3a5fec3" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">water</compartment>
+          <subcompartment xml:lang="en">ocean</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="52be1b35-b0b8-587a-b85c-e6037ee4a1e4" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Michael Spielmann" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="52be1b35-b0b8-587a-b85c-e6037ee4a1e4" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Michael Spielmann" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="b6794f5d-bb4e-523a-9dc6-b4fadf026450" activityNameId="68c2d0e8-5b53-552b-8583-b572e164ea64" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Use, smartphone, low intensity per GB</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Use, smartphone, low intensity per GB
+The data set represents the use of a laptop computer and internet use.; UUID: a30586a0-8b3e-3498-8ea4-7d1be8eb9d81
+This data set includes the use of a smartphone and the energy consumption on the end user side. Additionally, the energy and embodied impacts associated with the transmission network on the could are also included. Low intensity means that the device consumption is standard while data consumption is set at 0.1 GB per hour.
+Location: Data for Swiss conditions
+Technology: Using an average smartphone at active mode while consuming data via internet and transmission network, which includes wireless mobile network, IP core network, and global network.
+Time period: Unspecified
+Production volume: unknown
+Sampling: Literature
+Extrapolations: Average technology
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_a30586a0-8b3e-3498-8ea4-7d1be8eb9d81.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Data for Swiss conditions</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Using an average smartphone at active mode while consuming data via internet and transmission network, which includes wireless mobile network, IP core network, and global network.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2023-01-01" endDate="2029-12-31" isDataValidForEntirePeriod="false">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Unspecified</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="a22885ee-507f-5474-a734-b05a77b7e284" amount="1.0" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="b6794f5d-bb4e-523a-9dc6-b4fadf026450" intermediateExchangeId="4faf7799-c006-5e86-96a4-208057281bfc" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use, smartphone, low intensity per GB</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Use, smartphone, low intensity per GB
+1 p = 0.1 GB over an hour
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="422e002a-4ec2-5457-9889-3c2d7862bf28" amount="0.000347" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="d9bff6f0-ffea-5d83-83a3-fecca6f5d619" intermediateExchangeId="1bbf2736-fdaa-5109-8466-9178ca6c200d" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Smartphone, high-tech phone, at plant</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Smartphone, high-tech phone, at plant
+(2,2,1,2,1,5,BU:1.05); life time: 2 years and 1440 hours (360 days/year, 4h/day)
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000347" varianceWithPedigreeUncertainty="0.009885416005922408" mu="-7.966185778017415"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5a25ec27-16d8-5575-b251-1d620ec53599" amount="0.005" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="6de0d104-e5c3-5bee-955b-6f6232c3fdc3" intermediateExchangeId="77eb694f-7dfa-5a7e-8152-53bed7445781" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, low voltage, at grid</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, low voltage, at grid
+(2,2,1,2,1,5,BU:1.05); according to digisuff 2023 report: normal use = 5 W
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.005" varianceWithPedigreeUncertainty="0.009885416005922408" mu="-5.298317366548036"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ac11d4f5-d6b8-5229-9c01-c2ef23b1d302" amount="0.1" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="c7608abe-77f0-53f9-a061-792a2fde1a53" intermediateExchangeId="7fe1bfb4-63b3-532f-ae65-fc63b8d4f932" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use of core national IP network per GB</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Use of core national IP network per GB
+(2,2,2,2,1,5,BU:1.05); Unit = 1GB. For low intensity = 0.1 GB data consumption/hour, according to Vianna et al 2022.
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.1" varianceWithPedigreeUncertainty="0.009885416005922408" mu="-2.3025850929940455"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="878ea83b-ab36-51d2-b22a-db718d496d7a" amount="0.1" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="1fe1b60c-d612-5cab-992f-835392c46386" intermediateExchangeId="5eda2668-3204-5e8b-8e6f-08567fbe2c2c" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use of global transmission network per GB</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Use of global transmission network per GB
+(2,2,2,2,1,5,BU:1.05); Unit = 1GB. For low intensity = 0.1 GB data consumption/hour, according to Vianna et al 2022.
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.1" varianceWithPedigreeUncertainty="0.009885416005922408" mu="-2.3025850929940455"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="68f6e7f9-b757-5c01-96b2-90aa23d21441" amount="0.1" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="030a430d-6325-5675-9d35-c7f68c1cc1b1" intermediateExchangeId="8ecf92e0-5aa7-591c-8f4f-0174dad45009" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use of wireless IP access network per GB</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Use of wireless IP access network per GB
+(2,2,2,2,1,5,BU:1.05); Unit = 1GB. For low intensity = 0.1 GB data consumption/hour, according to Vianna et al 2022.
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.1" varianceWithPedigreeUncertainty="0.009885416005922408" mu="-2.3025850929940455"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised" isCopyrightProtected="false"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

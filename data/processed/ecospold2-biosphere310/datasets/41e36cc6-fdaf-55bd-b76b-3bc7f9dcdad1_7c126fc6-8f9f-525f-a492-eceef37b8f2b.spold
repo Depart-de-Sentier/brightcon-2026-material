@@ -1,0 +1,99 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="41e36cc6-fdaf-55bd-b76b-3bc7f9dcdad1" activityNameId="ea1b8d8c-e8da-5af5-99b1-dbb09d144ffa" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Use, computer, laptop, office use</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Use, computer, laptop, office use
+The laptop computer office use is calculated according to the share between active (5.5 hrs/day), standby (2 hrs/day) and off (16.5 hrs/day) modes taken from literature information.;
+Synonyms: Notebook, Lifebook; 
+UUID: 729a78a7-3d78-38d8-b192-a60ac8e6989c
+Describes the use of a laptop computer in an office. Calculated per 1 hour of laptop use in an office. UCTE production mix applied for electricity consumption (low voltage).
+Location: &lt;null&gt;
+Technology: No technology involved, except for the production of the laptop computer, which is described in another dataset.
+Time period: undefined
+Production volume: na
+Sampling: Literature, producer information and own assumptions 
+Extrapolations: see Geography and Technology
+Uncertainty adjustments: Daily experiences confirm retrieved data from literature.
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_729a78a7-3d78-38d8-b192-a60ac8e6989c.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="20a9bf48-6cea-59b4-ad08-000cb981f2d0" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">RER</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: &lt;null&gt;</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: No technology involved, except for the production of the laptop computer, which is described in another dataset.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2004-01-01" endDate="2004-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: undefined</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="2ddbbb32-fc64-5de0-b3e5-042e520e8223" amount="1.0" unitId="9ab8d6e2-bd5e-592b-add5-ebeee086e9dd" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="41e36cc6-fdaf-55bd-b76b-3bc7f9dcdad1" intermediateExchangeId="7c126fc6-8f9f-525f-a492-eceef37b8f2b" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use, computer, laptop, office use</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">Full flow name: Use, computer, laptop, office use
+Europe
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1a3b03e1-7f31-5092-be83-0dab614a2e39" amount="0.083333" unitId="9ab8d6e2-bd5e-592b-add5-ebeee086e9dd" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="3aac7bbb-143f-5652-b4ea-dae112ec1876" intermediateExchangeId="327d67db-6131-5772-ae47-a43558f296c7" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use, computer, laptop, standby/sleep mode</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">Full flow name: Use, computer, laptop, standby/sleep mode
+(3,5,1,2,1,5,3)
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.083333" varianceWithPedigreeUncertainty="0.019512268634995188" mu="-2.4849106497960003"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="8df61677-ff98-5529-a165-55c261dc555e" amount="0.6875" unitId="9ab8d6e2-bd5e-592b-add5-ebeee086e9dd" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="4cf716da-0c14-5f1c-872a-a67f065ee27e" intermediateExchangeId="e8155dbc-26dc-5ce0-ac7b-5d2c38656840" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use, computer, laptop, off mode</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">Full flow name: Use, computer, laptop, off mode
+(3,5,1,2,1,5,3)
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.6875" varianceWithPedigreeUncertainty="0.019512268634995188" mu="-0.3746934494414107"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9250ad2a-8ba4-5962-b593-28b3db2c32f1" amount="0.22917" unitId="9ab8d6e2-bd5e-592b-add5-ebeee086e9dd" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="587c3f07-a908-5187-9dd3-0f438e3e890e" intermediateExchangeId="46a024ee-f801-5e02-85aa-cca7184bf815" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use, computer, laptop, active mode</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">Full flow name: Use, computer, laptop, active mode
+(3,5,1,2,1,5,3)
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.22917" varianceWithPedigreeUncertainty="0.019512268634995188" mu="-1.473291192760759"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="73c4102c-3a87-55e1-b964-263454273081" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Martin Lehmann" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="73c4102c-3a87-55e1-b964-263454273081" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Martin Lehmann" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>
