@@ -27,7 +27,8 @@ https://miro.com/app/board/uXjVHkBEvas=/?share_link_id=856681092570
   - https://github.com/Depart-de-Sentier/brightcon-2025-material/issues/2
   - https://github.com/Depart-de-Sentier/brightcon-2025-material/issues/1
 - links from previous projects:
-  - https://vocab.sentier.dev/web/concept_schemes/?language=en
+  - https://github.com/sentier-dev/sentier-vocab/tree/main/data
+    - [Outdated] https://vocab.sentier.dev/web/concept_schemes/ (previous version, use the github vocab instead)
   - https://openlineage.io/
   - https://docs.open-metadata.org/v2.0.x/connectors/database/s3-datalake
   - https://specs.frictionlessdata.io/data-package/
