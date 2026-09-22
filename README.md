@@ -40,6 +40,8 @@ This applies all approved mappings, saves every unlinked biosphere exchange in a
 
 The script checks the XML schema, re-imports every file, compares links/amounts/uncertainty, and verifies the written database. Existing databases and output directories are refused. See the [export instructions](docs/bafu-2026-ecospold2-export.md) for reruns and the bundled re-import helper that preserves uncertainty.
 
+To import the exported files into a separate project, run [the EcoSpold 2 import notebook](scripts/import_ecospold2.ipynb) with the `bw` kernel. It creates a project with biosphere 3.10 and writes the imported database once all exchanges link.
+
 ## Repository structure
 
 | Folder | Purpose |
