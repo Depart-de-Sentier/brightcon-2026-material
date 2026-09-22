@@ -34,6 +34,8 @@ https://miro.com/app/board/uXjVHkBEvas=/?share_link_id=856681092570
   - https://datapackage.org/standard/data-package/#sources
 
 # the structure of ecospold2
+- https://support.ecoinvent.org/ecospold2
+- https://support.ecoinvent.org/data-formats-overview-2
 - used for ecoinvent v3
 - created based on hearing may 2009
 - designed to represent all three stages of LCA: UPR (unit process raw), LCI and LCIA

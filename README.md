@@ -6,6 +6,13 @@ The hackathon will explore a proposed traceability standard, establish data line
 
 Project context: [Brightcon 2026 hackathon issue #42](https://github.com/Depart-de-Sentier/brightcon-2026-material/issues/42).
 
+## lineage of lineage projects
+- 2024: https://github.com/Depart-de-Sentier/brightcon-2024-material/tree/main/hackathon/data-lineage
+- 2025: 
+    - https://github.com/Depart-de-Sentier/brightcon-2025-material/issues/2
+    - https://github.com/Depart-de-Sentier/brightcon-2025-material/issues/1
+        - https://github.com/TimoDiepers/trailpack
+
 ## Repair the raw EcoSpold files
 
 From the repository root, run this single command using the existing `bw` conda environment (with `lxml`, `pyecospold` and `tqdm` installed):
