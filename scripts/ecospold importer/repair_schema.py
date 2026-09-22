@@ -18,6 +18,7 @@ import re
 
 from lxml import etree
 from pyecospold import Defaults
+from tqdm import tqdm
 
 from repair_metadata import COMMENT_PREFIX
 from repair_namespace import NAMESPACE, REPO_ROOT
@@ -187,7 +188,9 @@ def build_catalog(files):
     """Collect identical source identities and reserve all existing regional codes."""
     sources = defaultdict(list)
     locations = set()
-    for path in files:
+    for path in tqdm(
+        files, desc="Schema catalog", unit="file", dynamic_ncols=True, mininterval=0.5
+    ):
         tree = etree.parse(str(path))
         for element in tree.findall(f".//{NS}source"):
             sources[element.get("number")].append((dict(element.attrib), path.name))
@@ -507,7 +510,9 @@ def main():
         "errors": [],
         "schema_invalid_files": [],
     }
-    for path in files:
+    for path in tqdm(
+        files, desc="Schema repairs", unit="file", dynamic_ncols=True, mininterval=0.5
+    ):
         try:
             original = path.read_bytes()
             repaired, changes, unresolved = repair_schema(

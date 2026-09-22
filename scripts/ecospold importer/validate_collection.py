@@ -11,6 +11,7 @@ import re
 
 from lxml import etree
 from pyecospold import Defaults
+from tqdm import tqdm
 
 from repair_namespace import REPO_ROOT
 from repair_schema import BOOL_ATTRIBUTES
@@ -133,7 +134,13 @@ def main():
             }
         )
     schema = etree.XMLSchema(file=Defaults.SCHEMA_V1_FILE)
-    for name, path in sorted(files.items()):
+    for name, path in tqdm(
+        sorted(files.items()),
+        desc="Validation",
+        unit="file",
+        dynamic_ncols=True,
+        mininterval=0.5,
+    ):
         try:
             payload = path.read_bytes()
             checksum = hashlib.sha256(payload).hexdigest()

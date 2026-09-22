@@ -11,6 +11,7 @@ import re
 from xml.parsers import expat
 
 from lxml import etree
+from tqdm import tqdm
 
 from repair_metadata import ATTRIBUTE, COMMENT_PREFIX, start_tag_end
 from repair_namespace import NAMESPACE, REPO_ROOT
@@ -209,7 +210,9 @@ def main():
         "files": [],
         "errors": [],
     }
-    for path in files:
+    for path in tqdm(
+        files, desc="Exchange numbers", unit="file", dynamic_ncols=True, mininterval=0.5
+    ):
         try:
             original = path.read_bytes()
             repaired, changes = repair_exchange_numbers(original)

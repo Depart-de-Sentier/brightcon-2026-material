@@ -9,6 +9,8 @@ from pathlib import Path
 import re
 from xml.parsers import expat
 
+from tqdm import tqdm
+
 from repair_namespace import NAMESPACE, REPO_ROOT
 
 
@@ -126,7 +128,9 @@ def main():
         "files": [],
         "errors": [],
     }
-    for path in files:
+    for path in tqdm(
+        files, desc="Dates", unit="file", dynamic_ncols=True, mininterval=0.5
+    ):
         try:
             original = path.read_bytes()
             repaired, changes = repair_dates(original)

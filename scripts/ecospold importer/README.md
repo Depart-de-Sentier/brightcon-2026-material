@@ -14,6 +14,8 @@ conda run --no-capture-output -n bw python "scripts/ecospold importer/repair_all
 
 This runs every repair step below in order, followed by `validate_collection.py`, stopping on the first failed step. It leaves raw files unchanged, uses the approved values in `schema_overrides.json`, and produces `data/processed/ecospold1-schema-fixed/` with reports under `reports/generated/`. Identical existing copies are accepted; conflicting copies are refused. It does not run the Brightway import.
 
+Each step shows a `tqdm` progress bar with files processed, percentage, elapsed time, estimated time remaining and processing speed. The schema step has separate catalog-building and repair bars. These bars also appear when running a repair script individually. Keep `--no-capture-output` in the conda command to see updates live; `tqdm` is already included in the `bw` environment.
+
 ## Import repaired files with biosphere 3.10
 
 ```bash

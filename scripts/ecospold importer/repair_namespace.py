@@ -8,6 +8,7 @@ import json
 from pathlib import Path
 from xml.parsers import expat
 
+from tqdm import tqdm
 
 REPO_ROOT = Path(__file__).resolve().parents[2]
 NAMESPACE = "http://www.EcoInvent.org/EcoSpold01"
@@ -93,7 +94,9 @@ def main():
         "files": [],
         "errors": [],
     }
-    for path in files:
+    for path in tqdm(
+        files, desc="Namespace", unit="file", dynamic_ncols=True, mininterval=0.5
+    ):
         try:
             original = path.read_bytes()
             repaired, changed = add_namespace(original)

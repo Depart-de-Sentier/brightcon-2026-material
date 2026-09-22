@@ -8,13 +8,15 @@ Project context: [Brightcon 2026 hackathon issue #42](https://github.com/Depart-
 
 ## Repair the raw EcoSpold files
 
-From the repository root, run this single command using the existing `bw` conda environment (with `lxml` and `pyecospold` installed):
+From the repository root, run this single command using the existing `bw` conda environment (with `lxml`, `pyecospold` and `tqdm` installed):
 
 ```bash
 conda run --no-capture-output -n bw python "scripts/ecospold importer/repair_all.py"
 ```
 
 The runner applies all eight repair steps to `data/raw/ecoSpold files/`, then validates the final XML against the EcoSpold 1 schema and checks inventory preservation. It uses the documented fallback values in [schema_overrides.json](scripts/ecospold%20importer/schema_overrides.json) and stops if any step fails.
+
+Each step displays a file progress bar with counts, processing speed and estimated time remaining, including the final validation.
 
 - **Repaired files:** `data/processed/ecospold1-schema-fixed/`
 - **Intermediate copies:** separate directories under `data/processed/`

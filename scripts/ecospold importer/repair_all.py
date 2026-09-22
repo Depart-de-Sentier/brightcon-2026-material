@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Run all BAFU EcoSpold 1 repairs from raw files, then validate the result."""
+"""Run all BAFU EcoSpold 1 repairs and validation with per-file progress bars."""
 
 from pathlib import Path
 import subprocess
@@ -24,7 +24,7 @@ def main():
         print(f"[{number}/{len(STEPS)}] {script} {' '.join(args)}", flush=True)
         try:
             subprocess.run(
-                [sys.executable, str(SCRIPTS / script), *args], check=True
+                [sys.executable, "-u", str(SCRIPTS / script), *args], check=True
             )
         except subprocess.CalledProcessError as exc:
             print(f"Stopped: {script} failed with exit code {exc.returncode}.")
