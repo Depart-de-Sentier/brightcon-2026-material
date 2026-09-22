@@ -26,7 +26,7 @@ Raw files remain unchanged. Reruns accept identical existing copies, refuse conf
 
 Run [the import notebook](scripts/import_fixed_ecospold.ipynb) with the `bw` kernel. It imports the repaired files against biosphere 3.10 and applies the [documented technosphere and biosphere migrations](schemas/mappings/README.md). Rerun extraction and the migration cells after editing a mapping.
 
-The latest full check links all technosphere exchanges and 290,220 of 293,747 biosphere exchanges. The remaining 3,527 biosphere occurrences are listed in `reports/generated/biosphere-unlinked.json`. Flows without a supported target remain unresolved. A notebook guard stops Run All before the existing drop/write/LCA cells while any exchange remains unlinked. See the [remaining review work](docs/bafu-2026-biosphere-unresolved-review.md).
+The latest full check links all technosphere exchanges and 290,756 of 293,747 biosphere exchanges. The remaining 2,991 biosphere occurrences are listed in `reports/generated/biosphere-unlinked.json`. Flows without a supported target remain unresolved. A notebook guard stops Run All before the existing drop/write/LCA cells while any exchange remains unlinked. See the [remaining review work](docs/bafu-2026-biosphere-unresolved-review.md).
 
 ## Repository structure
 
