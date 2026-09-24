@@ -1,0 +1,19 @@
+# python: 3.12
+# display-name: Edges in BONSAI BC26
+# Brightcon 2026: kernel for the edges + BONSAI notebook in this folder.
+# Versions below are the ones the notebook was run with.
+edges==1.4.1
+bw2data==4.7
+bw2calc==2.5.0
+# The IO-table importer used for BONSAI is not in the bw2io release yet.
+bw2io @ git+https://github.com/mfastudillo/brightway2-io.git@cc72fd1290520f8bc4d5e1a7abadbb6f0eed575f
+numpy<2.4
+pandas
+scipy
+matplotlib
+plotly
+country_converter>=1.3.1
+openpyxl
+jupyterlab
+# Fast sparse solver, Intel/AMD only; without it bw2calc falls back to scipy (slower).
+pypardiso; platform_machine == "x86_64" or platform_machine == "AMD64"
