@@ -112,11 +112,12 @@ def add_uncertainty(parent, exc, metadata: dict | None = None):
     pm_str = "pedigreeMatrix"
 
     if metadata and pm_str in metadata:
+        # if values are 0 consider that it should be 5 instead (no data)
         pm = metadata[pm_str]
         element(
             unc,
             pm_str,
-            **{k: pm.get(k, 5) for k in pm_es2}
+            **{k: min(pm.get(k, 5) or 5, 5) for k in pm_es2}
         )
 
 
@@ -288,21 +289,37 @@ def dataset_xml(ds, datasets, biosphere, source):
             attrs["activityLinkContextId"] = attrs["intermediateExchangeContextId"] = (
                 CONTEXT
             )
-        el = element(
-            flow_data,
-            "elementaryExchange" if is_bio else "intermediateExchange",
-            **attrs,
-        )
-        full_name = target["name"] if is_bio else target["reference product"]
-        language(el, "name", label(full_name))
-        language(el, "unitName", target["unit"])
-        details = {k: v for k, v in exc.items() if k.startswith("bafu ")}
 
         # extracting metadata from comment
         raw_data = exc.get("comment", "")
 
         metadata = extract_exchange_metadata(raw_data)
 
+        src_metadata = metadata.get("source", {})
+
+        if src_metadata:
+            # max length authorized is 40 char
+            attrs.update({
+                f"source{k[0].upper()}{k[1:]}": src_metadata[k][:40]
+                for k in ("firstAuthor", "year")
+                if k in src_metadata
+            })
+            # value_for_uuid = "_".join(("-".join((k, v)) for k, v in src_metadata.items())
+            # comment_metadata["sourceId"] = uuid("source", value_for_uuid)
+
+        # create element
+        el = element(
+            flow_data,
+            "elementaryExchange" if is_bio else "intermediateExchange",
+            **attrs,
+        )
+
+        full_name = target["name"] if is_bio else target["reference product"]
+        language(el, "name", label(full_name))
+        language(el, "unitName", target["unit"])
+        details = {k: v for k, v in exc.items() if k.startswith("bafu ")}
+
+        # comment
         comment = (
             "Full flow name: "
             + full_name
@@ -314,18 +331,7 @@ def dataset_xml(ds, datasets, biosphere, source):
         if len(comment) > 32000:
             comment = f"Full comment and audit in audit/retained-inventory.jsonl; {ds['filename']}, exchange {exc[SOURCE_INDEX]}"
 
-        src_metadata = metadata.get("source", {})
-        comment_metadata = {}
-
-        if src_metadata:
-            comment_metadata = {
-                f"source{k[0].upper()}{k[1:]}": src_metadata[k]
-                for k in ("firstAuthor", "year")
-            }
-            # value_for_uuid = "_".join(("-".join((k, v)) for k, v in src_metadata.items())
-            # comment_metadata["sourceId"] = uuid("source", value_for_uuid)
-
-        language(el, "comment", comment, **comment_metadata)
+        language(el, "comment", comment)
 
         add_uncertainty(el, exc, metadata)
 

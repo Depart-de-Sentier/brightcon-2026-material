@@ -159,6 +159,11 @@ def arguments():
         action="store_true",
         help="Export and verify without writing an inventory database",
     )
+    parser.add_argument(
+        "--overwrite",
+        action="store_true",
+        help="Overwrite output if it already exists",
+    )
     return parser.parse_args()
 
 
@@ -166,10 +171,13 @@ def main():
     args = arguments()
     if not args.input.is_dir() or not any(args.input.glob("*.xml")):
         raise FileNotFoundError(f"No repaired XML in {args.input}")
+    if args.overwrite:
+        shutil.rmtree(args.output)
+        args.reuse_existing = True
     if args.output.exists():
-        raise FileExistsError(
-            f"Output already exists: {args.output}; choose a new --output"
-        )
+            raise FileExistsError(
+                f"Output already exists: {args.output}; choose a new --output"
+            )
     args.storage.mkdir(parents=True, exist_ok=True)
     os.environ["BRIGHTWAY2_DIR"] = str(args.storage.resolve())
     import bw2data as bd
