@@ -34,7 +34,7 @@ window.DECK = {
     },
     {
      "icon": "ai",
-     "label": "AI Assistant",
+     "label": "LCA AI Assistant",
      "head": "An AI assistant for Brightway — the latest models for everyone",
      "sub": "Claude Opus 5.5 + a Brightway MCP"
     }
