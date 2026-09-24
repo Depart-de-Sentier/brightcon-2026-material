@@ -23,16 +23,16 @@ There is already a lot of BAFU related work going on in the open community - mos
 
 The discussion are being held in smaller groups. We have separated possible topics to discuss. In order to document your discussion insights and outcomes, we will be using the discussions section on the brightcon-2026-material github repo. Your comments there will be the basis for the wrap-up at the end of the session. So please add your comments directly during your discussion. If it helps, you can keep it short and in keywords only. Paste as well any links to helpful further material/projects/repos/initiatives.
 
-For the onsite participants: Gather with your neighbors (2-4 people) around at least one computer, choose one of the topics on https://github.com/Depart-de-Sentier/brightcon-2026-material/discussions, and share your discussion insights as comments in the github discussions section. If you leave the room, please come back to the Auditorium for the Plenum Wrap Up after ca. 30 min.
+For the onsite participants: Gather with your neighbors (2-4 people) around at least one computer, choose one of the topics on https://github.com/Depart-de-Sentier/brightcon-2026-material/discussions?discussions_q=is%3Aopen+open+data+collaboration, and share your discussion insights as comments in the github discussions section. If you leave the room, please come back to the Auditorium for the Plenum Wrap Up after ca. 30 min.
 
-For the online participants: Go to the HyHyve Parallel Workshops area and join one of the topic groups. Share your discussion insights as comments in the github discussions section. After the ca. 30 min. of discussion, please come back to the HyHyve Auditorium for the Plenum Wrap Up.
+For the online participants: Go to the HyHyve Parallel Workshops area and join one of the topic groups. Share your discussion insights as comments in the dedicated github discussion on https://github.com/Depart-de-Sentier/brightcon-2026-material/discussions?discussions_q=is%3Aopen+open+data+collaboration. After the ca. 30 min. of discussion, please come back to the HyHyve Auditorium for the Plenum Wrap Up.
 
 Topics for the discussion:
 
-- Open Data Collaboration: Platform for discussion and sharing, https://github.com/Depart-de-Sentier/brightcon-2026-material/discussions/49
-- Open Data Collaboration: Technical formats, https://github.com/Depart-de-Sentier/brightcon-2026-material/discussions/50
-- Open Data Collaboration: Elementary nomenclatures and methods, https://github.com/Depart-de-Sentier/brightcon-2026-material/discussions/51
-- Open Data Collaboration: Legal and license aspects, https://github.com/Depart-de-Sentier/brightcon-2026-material/discussions/52
-- Open Data Collaboration: All other things, https://github.com/Depart-de-Sentier/brightcon-2026-material/discussions/53
+- Open Data Collaboration: Platform for discussion and sharing (https://github.com/Depart-de-Sentier/brightcon-2026-material/discussions/49)
+- Open Data Collaboration: Technical formats (https://github.com/Depart-de-Sentier/brightcon-2026-material/discussions/50)
+- Open Data Collaboration: Elementary nomenclatures and methods (https://github.com/Depart-de-Sentier/brightcon-2026-material/discussions/51)
+- Open Data Collaboration: Legal and license aspects (https://github.com/Depart-de-Sentier/brightcon-2026-material/discussions/52)
+- Open Data Collaboration: All other things (https://github.com/Depart-de-Sentier/brightcon-2026-material/discussions/53)
 
 
