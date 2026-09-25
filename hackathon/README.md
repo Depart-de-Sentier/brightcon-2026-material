@@ -1,10 +1,22 @@
 # LCA data lineage hackathon
 
-Private workspace for the Brightcon 2026 hackathon on traceable datapoints and lineage in life cycle assessment (LCA) databases.
+Workspace for the Brightcon 2026 hackathon on traceable datapoints and lineage in life cycle assessment (LCA) databases.
 
 The hackathon will explore a proposed traceability standard, establish data lineage, and assess the BAFU LCA database against the requirements developed by participants.
 
 Project context: [Brightcon 2026 hackathon issue #42](https://github.com/Depart-de-Sentier/brightcon-2026-material/issues/42).
+
+## Working directory
+
+These materials now live in `hackathon/` in the Brightcon 2026 material repository.
+From the repository root, enter this directory before running the commands below:
+
+```bash
+cd hackathon
+```
+
+Paths in the lineage documentation are relative to `hackathon/`. Start Jupyter
+from this directory or `hackathon/scripts/` so the import notebooks can find the data.
 
 ## lineage of lineage projects
 - 2024: https://github.com/Depart-de-Sentier/brightcon-2024-material/tree/main/hackathon/data-lineage
@@ -15,7 +27,7 @@ Project context: [Brightcon 2026 hackathon issue #42](https://github.com/Depart-
 
 ## Repair the raw EcoSpold files
 
-From the repository root, run this single command using the existing `bw` conda environment (with `lxml`, `pyecospold` and `tqdm` installed):
+From `hackathon/`, run this single command using the existing `bw` conda environment (with `lxml`, `pyecospold` and `tqdm` installed):
 
 ```bash
 conda run --no-capture-output -n bw python "scripts/ecospold importer/repair_all.py"
@@ -61,6 +73,8 @@ See [How to set up OpenLineage](docs/how_to_openlineage.md) for local setup (inc
 
 | Folder | Purpose |
 | --- | --- |
+| [AddAdditionalData/](AddAdditionalData/) | Additional-data hackathon project |
+| [input-data/](input-data/) | Shared hackathon input data |
 | [schemas/candidates/](schemas/candidates/) | Candidate schemas |
 | [schemas/mappings/](schemas/mappings/) | Mappings between schemas and data formats |
 | [scripts/](scripts/) | Extraction, transformation, validation, and analysis scripts |
