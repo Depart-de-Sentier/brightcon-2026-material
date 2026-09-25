@@ -7,6 +7,7 @@ explicit, deterministic BAFU export context, not the ecoinvent master catalog.
 import hashlib
 import json
 import math
+import numpy as np
 from pathlib import Path
 from uuid import NAMESPACE_URL, UUID, uuid5
 
@@ -14,7 +15,11 @@ from lxml import etree
 from pyecospold import Defaults
 from tqdm import tqdm
 
-from metadata_extractors import extract_exchange_metadata, pm_es2
+from metadata_extractors import (
+    extract_exchange_metadata,
+    extract_source_from_process,
+    pm_es2,
+)
 
 
 NS = "http://www.EcoInvent.org/EcoSpold02"
@@ -206,13 +211,14 @@ def audit_and_exclude(data, source, audit_dir):
     return excluded, manifest
 
 
-def dataset_xml(ds, datasets, biosphere, source):
+def dataset_xml(ds, datasets, biosphere, source, sources_root, sources_uids):
     activity_id, product_id = ids(ds)
     tags = dict(ds["tags"])
     activity_type = int(tags.get("ecoSpold01type", 1))
     if activity_type not in (1, 2):
         raise ValueError(f"Unsupported EcoSpold 1 dataset type: {activity_type}")
     original = etree.parse(str(Path(source) / ds["filename"]))
+
     root = etree.Element(f"{{{NS}}}ecoSpold", nsmap={None: NS})
     dataset = element(root, "activityDataset")
     description = element(dataset, "activityDescription")
@@ -266,6 +272,42 @@ def dataset_xml(ds, datasets, biosphere, source):
     )
     language(scenario, "name", "Unspecified in BAFU source")
     flow_data = element(dataset, "flowData")
+
+    # get the references
+    references = ds.get("references", [])
+
+    best_reference = np.inf
+    best_ref_dict = None
+
+    for ref_dict in references:
+        ref_dict, ref_text = extract_source_from_process(ref_dict, uid)
+
+        ref_uid = ref_dict["id"]
+
+        # check if this is the reference we keep
+        st = ref_dict.get("sourceType", 0)
+
+        if np.isinf(best_reference) or (st > 0 and st < best_reference):
+            best_reference = st
+            best_ref_dict = ref_dict
+
+        # make the element and store uid if it does not exist
+        if ref_uid not in sources_uids:
+            sources_uids.add(ref_uid)
+
+            src_elt = element(
+                sources_root,
+                "source",
+                **ref_dict
+            )
+
+            if ref_text:
+                language(
+                    src_elt,
+                    "comment",
+                    text=ref_text
+                )
+
     # The XSD requires all intermediate exchanges before elementary exchanges.
     exchanges = sorted(ds["exchanges"], key=lambda e: e["type"] == "biosphere")
     for exc in exchanges:
@@ -304,8 +346,24 @@ def dataset_xml(ds, datasets, biosphere, source):
                 for k in ("firstAuthor", "year")
                 if k in src_metadata
             })
-            # value_for_uuid = "_".join(("-".join((k, v)) for k, v in src_metadata.items())
-            # comment_metadata["sourceId"] = uuid("source", value_for_uuid)
+
+            value_for_uuid = "_".join(
+                "-".join((k, str(v))) for k, v in src_metadata.items()
+            )
+
+            src_uid = uid("source", value_for_uuid)
+
+            attrs["sourceId"] = src_uid
+
+            if src_uid not in sources_uids:
+                src_metadata["id"] = src_uid
+                sources_uids.add(src_uid)
+
+                src_elt = element(
+                    sources_root,
+                    "source",
+                    **src_metadata
+                )
 
         # create element
         el = element(
@@ -373,8 +431,20 @@ def dataset_xml(ds, datasets, biosphere, source):
             "personName": person.get("name"),
             "personEmail": person.get("email"),
         }
+
         if name == "dataGeneratorAndPublication":
             attrs["isCopyrightProtected"] = source_record.get("copyright")
+
+            # add reference information
+            if best_ref_dict:
+                attrs["publishedSourceId"] = best_ref_dict["id"]
+
+                if "year" in best_ref_dict:
+                    attrs["publishedSourceYear"] = best_ref_dict["year"]
+
+                if "firstAuthor" in best_ref_dict:
+                    attrs["publishedSourceFirstAuthor"] = best_ref_dict["firstAuthor"]
+
         element(admin, name, **attrs)
     attributes = element(
         admin,
@@ -394,19 +464,64 @@ def dataset_xml(ds, datasets, biosphere, source):
     return root
 
 
-def export_datasets(data, biosphere, source, destination):
-    destination.mkdir(parents=True, exist_ok=True)
+def export_datasets(
+    data, biosphere, source, dataset_destination, masterdata_destination
+):
+    dataset_destination.mkdir(parents=True, exist_ok=True)
     by_key = {(ds["database"], ds["code"]): ds for ds in data}
     if len(by_key) != len(data):
         raise ValueError("Duplicate activity codes")
+
     schema = etree.XMLSchema(file=Defaults.SCHEMA_V2_FILE)
+
     manifest = []
+
+    # context (validity checked)
+    context_name = "Brightcon2026-hackathon_lineage-group"
+    context_uid = uid("context", context_name)
+    context_root = etree.Element(
+        f"{{{NS}}}validContext",
+        attrib={"id": context_uid, "majorRelease": "1", "minorRelease": "0"},
+        nsmap={None: NS}
+    )
+
+    element(context_root, "name", context_name)
+    element(
+        context_root,
+        "comment",
+        "Done by the lineage group for the hackathon during Brightcon 2026, see:"
+        "https://github.com/Depart-de-Sentier/brightcon-2026-material/issues/42"
+    )
+
+    payload = etree.tostring(
+        context_root, encoding="utf-8", xml_declaration=True, pretty_print=True
+    )
+
+    manifest.append(
+        {
+            "file": "MasterData/Context.xml",
+            "sha256": hashlib.sha256(payload).hexdigest(),
+        }
+    )
+
+    with (masterdata_destination / "Context.xml").open("xb") as out:
+        out.write(payload)
+
+    # sources
+    sources_root = etree.Element(
+        f"{{{NS}}}validSources",
+        attrib={"contextId": context_uid, "majorRelease": "1", "minorRelease": "0"},
+        nsmap={None: NS}
+    )
+
+    sources_uids = set()
+
     for ds in tqdm(
         data, desc="Export and validate XML", unit="dataset", mininterval=0.5
     ):
         if len([e for e in ds["exchanges"] if e["type"] == "production"]) != 1:
             raise ValueError(f"Expected one reference product in {ds['filename']}")
-        root = dataset_xml(ds, by_key, biosphere, source)
+        root = dataset_xml(ds, by_key, biosphere, source, sources_root, sources_uids)
         try:
             schema.assertValid(root)
         except etree.DocumentInvalid as error:
@@ -416,14 +531,30 @@ def export_datasets(data, biosphere, source, destination):
         payload = etree.tostring(
             root, encoding="utf-8", xml_declaration=True, pretty_print=True
         )
-        with (destination / name).open("xb") as out:
+        with (dataset_destination / name).open("xb") as out:
             out.write(payload)
         manifest.append(
             {
-                "file": name,
+                "file": f"datasets/{name}",
                 "source": ds["filename"],
                 "code": ds["code"],
                 "sha256": hashlib.sha256(payload).hexdigest(),
             }
         )
+
+    # write sources
+    payload = etree.tostring(
+        sources_root, encoding="utf-8", xml_declaration=True, pretty_print=True
+    )
+
+    manifest.append(
+        {
+            "file": "MasterData/Sources.xml",
+            "sha256": hashlib.sha256(payload).hexdigest(),
+        }
+    )
+
+    with (masterdata_destination / "Sources.xml").open("xb") as out:
+        out.write(payload)
+
     return manifest
