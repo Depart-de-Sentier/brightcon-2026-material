@@ -47,7 +47,7 @@ Independent complete-record comparison checks that only the declared names, audi
 
 Source-document and raw XML hashes, original XML attributes, target UUIDs, and decision bases are in `reports/generated/biosphere-context-evidence.json`. Verification is in `biosphere-context-migration-check.json`; this stage’s unresolved report is `biosphere-unlinked-after-context.json`. The preceding stage now writes `biosphere-unlinked-after-source-review.json`.
 
-The focused tests use the installed bw2io migration strategies and cover filename isolation, cleanup on errors, source CAS restrictions, stale links, and idempotence. Run them in `bw` from `hackathon/`:
+The focused tests use the installed bw2io migration strategies and cover filename isolation, cleanup on errors, source CAS restrictions, stale links, and idempotence. Run them in `bw` from `hackathon/lca-lineage/`:
 
 ```bash
 BRIGHTWAY2_DIR="$PWD/artifacts/brightway" conda run --no-capture-output -n bw python -m unittest discover -s "scripts/ecospold importer" -p "test_biosphere_*.py"

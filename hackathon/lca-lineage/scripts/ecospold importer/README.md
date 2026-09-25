@@ -21,7 +21,7 @@ The latest cumulative files are in `data/processed/ecospold1-schema-fixed/`. All
 
 ## Run all repairs from raw files
 
-From `hackathon/`:
+From `hackathon/lca-lineage/`:
 
 ```bash
 conda run --no-capture-output -n bw python "scripts/ecospold importer/repair_all.py"
@@ -45,7 +45,7 @@ Tested in `bw`: the project contains 4,362 biosphere flows, all 11,947 datasets 
 
 Run the standard [`bw2io.SingleOutputEcospold1Importer`](https://docs.brightway.dev/en/latest/content/api/bw2io/importers/ecospold1/index.html) against the original BAFU XML files, followed by its default strategies and import statistics. Brightway's EcoSpold importers are in `bw2io`; `bw2data` manages the project and databases.
 
-From `hackathon/`, using the existing `bw` conda environment:
+From `hackathon/lca-lineage/`, using the existing `bw` conda environment:
 
 ```bash
 conda run --no-capture-output -n bw python "scripts/ecospold importer/try_import.py"

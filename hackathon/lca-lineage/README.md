@@ -8,15 +8,15 @@ Project context: [Brightcon 2026 hackathon issue #42](https://github.com/Depart-
 
 ## Working directory
 
-These materials now live in `hackathon/` in the Brightcon 2026 material repository.
+These materials now live in `hackathon/lca-lineage/` in the Brightcon 2026 material repository.
 From the repository root, enter this directory before running the commands below:
 
 ```bash
-cd hackathon
+cd hackathon/lca-lineage
 ```
 
-Paths in the lineage documentation are relative to `hackathon/`. Start Jupyter
-from this directory or `hackathon/scripts/` so the import notebooks can find the data.
+Paths in the lineage documentation are relative to `hackathon/lca-lineage/`. Start Jupyter
+from this directory or `hackathon/lca-lineage/scripts/` so the import notebooks can find the data.
 
 ## lineage of lineage projects
 - 2024: https://github.com/Depart-de-Sentier/brightcon-2024-material/tree/main/hackathon/data-lineage
@@ -27,7 +27,7 @@ from this directory or `hackathon/scripts/` so the import notebooks can find the
 
 ## Repair the raw EcoSpold files
 
-From `hackathon/`, run this single command using the existing `bw` conda environment (with `lxml`, `pyecospold` and `tqdm` installed):
+From `hackathon/lca-lineage/`, run this single command using the existing `bw` conda environment (with `lxml`, `pyecospold` and `tqdm` installed):
 
 ```bash
 conda run --no-capture-output -n bw python "scripts/ecospold importer/repair_all.py"
@@ -73,8 +73,6 @@ See [How to set up OpenLineage](docs/how_to_openlineage.md) for local setup (inc
 
 | Folder | Purpose |
 | --- | --- |
-| [AddAdditionalData/](AddAdditionalData/) | Additional-data hackathon project |
-| [input-data/](input-data/) | Shared hackathon input data |
 | [schemas/candidates/](schemas/candidates/) | Candidate schemas |
 | [schemas/mappings/](schemas/mappings/) | Mappings between schemas and data formats |
 | [scripts/](scripts/) | Extraction, transformation, validation, and analysis scripts |

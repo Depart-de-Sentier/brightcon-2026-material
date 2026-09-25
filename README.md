@@ -2,7 +2,7 @@
 
 This repository holds the material used during brightcon 2026.
 
-The [LCA data lineage hackathon](hackathon/README.md) includes the BAFU data,
+The [LCA data lineage hackathon](hackathon/lca-lineage/README.md) includes the BAFU data,
 repair and import tools, notebooks, and traceability documentation.
 
 ## Repository structure
@@ -17,6 +17,7 @@ repair and import tools, notebooks, and traceability documentation.
 │   ├── beginners/
 │   └── intermediate/
 ├── hackathon/
+│   ├──lca-lineage/         # LCA data lineage project
 │   ├──input-data/          # Input data for the hackathon
 ```
 

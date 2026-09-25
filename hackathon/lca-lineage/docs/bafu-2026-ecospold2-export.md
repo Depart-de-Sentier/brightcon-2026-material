@@ -1,6 +1,6 @@
 # Mapped BAFU:2026 database and EcoSpold 2 export
 
-Run from `hackathon/` in the `bw` environment, after repairing the raw files:
+Run from `hackathon/lca-lineage/` in the `bw` environment, after repairing the raw files:
 
 ```bash
 conda run --no-capture-output -n bw python "scripts/ecospold importer/import_export_ecospold2.py"
@@ -50,7 +50,7 @@ intermediate repair copies and other generated data remain ignored.
 The export script produces uncompressed JSONL audits. For the committed bundle,
 `audit/retained-inventory.jsonl` is stored as a lossless gzip archive because the
 original exceeds GitHub's 100 MiB file limit. All `.spold` files remain unchanged
-and can be imported directly. To restore the original audit from `hackathon/`:
+and can be imported directly. To restore the original audit from `hackathon/lca-lineage/`:
 
 ```bash
 gzip -dk data/processed/ecospold2-biosphere310/audit/retained-inventory.jsonl.gz
@@ -95,7 +95,7 @@ its file checksums are recorded in the manifest.
 ## Re-import the export
 
 Use the bundled helper with the `bw` environment and an existing project containing
-`ecoinvent-3.10-biosphere`. From `hackathon/`:
+`ecoinvent-3.10-biosphere`. From `hackathon/lca-lineage/`:
 
 ```python
 import os
