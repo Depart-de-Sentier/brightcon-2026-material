@@ -131,7 +131,10 @@ def check_database(data, stored):
             ):
                 # Brightway 4 normalizes this node label during Database.write.
                 continue
-            if key != "exchanges" and dumps(actual.get(key)) != dumps(value):
+            if (
+                key not in ("exchanges", "references") and
+                dumps(actual.get(key)) != dumps(value)
+            ):
                 raise ValueError(
                     f"Written dataset metadata differs: {ds['filename']} {key}"
                 )
@@ -172,8 +175,9 @@ def main():
     if not args.input.is_dir() or not any(args.input.glob("*.xml")):
         raise FileNotFoundError(f"No repaired XML in {args.input}")
     if args.overwrite:
-        shutil.rmtree(args.output)
         args.reuse_existing = True
+        if args.output.exists():
+            shutil.rmtree(args.output)
     if args.output.exists():
             raise FileExistsError(
                 f"Output already exists: {args.output}; choose a new --output"
@@ -193,7 +197,10 @@ def main():
         raise ValueError(
             f"Database already exists: {args.database}; choose a new --database"
         )
+
+    # make folder storing master data XMLs
     args.output.parent.mkdir(parents=True, exist_ok=True)
+
     # Failed work is kept for diagnosis; only a complete run gets the final name.
     work = Path(tempfile.mkdtemp(prefix=".ecospold2-building-", dir=args.output.parent))
     report = {
@@ -294,8 +301,14 @@ def main():
                 )
             ).encode()
         ).hexdigest()
+
+        # make the masterdata folder
+        (work / "MasterData").mkdir(parents=True)
+
         report["files"] = export_datasets(
-            importer.data, biosphere, args.input, work / "datasets"
+            importer.data, biosphere, args.input,
+            work / "datasets",
+            work / "MasterData"
         )
         report["roundtrip"] = check_roundtrip(
             importer.data, work / "datasets", args.biosphere

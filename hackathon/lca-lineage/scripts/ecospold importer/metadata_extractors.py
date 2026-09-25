@@ -1,4 +1,5 @@
 # functions to extract the metadata
+from collections.abc import Callable
 from babel.dates import get_month_names
 import numpy as np
 
@@ -23,11 +24,24 @@ source_type_to_int = {
     "article": 1,
     "chapters in anthology": 2,
     "separate publication": 3,
+    "seperate publication": 3,  # encountered typo
     "measurement on site": 4,
     "pral communication": 5,
     "personal written communication": 6,
     "questionnaries": 7
 }
+
+source_keys_to_es2 = {
+    "issue": "issueNo",
+    "volume": "volumeNo",
+    "place_of_publication": "placeOfPublications",
+    "anthology": "titleOfAnthology",
+    "pages": "pageNumbers",
+    "editors": "namesOfEditors",
+    "type": "sourceType"
+}
+
+required_keys = {"year", "title", "firstAuthor"}
 
 # valid entries for the pedigree matrix in ecospold2
 pm_es2 = {
@@ -39,7 +53,101 @@ pm_es2 = {
 }
 
 
-def extract_process_metadata(comment: str) -> dict:
+def extract_source_from_process(
+    reference: dict,
+    uid: Callable[[str, str], str]
+) -> dict:
+    """
+    Return source attributes from a process reference data.
+
+    Returns
+    -------
+    ref_dict: dict
+    ref_text: str
+
+    Note
+    ----
+    The dict potentially containing any of the following entries:
+    {
+        'id': str,
+        'sourceType': int,
+        'title': str,
+        'firstAuthor': str,
+        'additionalAuthors': str,
+        'year': str,
+        'issueNo': str,
+        'voumeNo': str,
+        'placeOfPublications': str,
+        'titleOfAnthology': str,
+        'pageNumbers': str,
+        'namesOfEditors': str,
+        'journal': str,
+        'publisher': str
+    }
+
+    id, title, firstAuthor, year are always there.
+    """
+    # get text
+    ref_text = reference.get("text").strip()
+
+    if ref_text.lower() == "none":
+        ref_text = ""
+
+    # extract and remove unused or invalid entries
+    first_author = ""
+    other_authors = None
+
+    if reference["authors"]:
+        first_author = reference["authors"][0]
+
+        if len(reference["authors"]) > 1:
+            other_authors = reference["authors"][1:]
+
+    del reference["identifier"]
+    del reference["text"]
+    del reference["authors"]
+
+    for k, v in source_keys_to_es2.items():
+        # move some entries to the correct ecospold2 name
+        if k in reference:
+            if k == "type":
+                reference[v] = source_type_to_int.get(reference[k], 0)
+            elif reference[k] or k in ("firstAuthor", "year", "title"):
+                # if not mandatory only keep it if it's not empty
+                reference[v] = reference[k]
+
+            del reference[k]
+
+    # get author/year or title to create the uid
+    year = str(reference.get("year", ""))
+
+    value_for_uuid = f"{first_author}{year}"
+
+    if not value_for_uuid:
+        raw_data = ref_text or reference.get("title", "")
+
+        if raw_data:
+            reference.update(extract_process_unformatted(raw_data))
+
+            first_author = reference.get("firstAuthor", "")
+            year = reference.get("year", "")
+
+            value_for_uuid = f"{first_author}{year}"
+
+        value_for_uuid = value_for_uuid or raw_data
+
+    ref_uid = uid("source", value_for_uuid)
+
+    reference["id"] = ref_uid
+
+    for k in required_keys:
+        if k not in reference:
+            reference[k] = ""
+
+    return reference, ref_text
+
+
+def extract_process_unformatted(comment: str) -> dict:
     """
     Produce a metadata dict to update the process if the
     pre-processed data is missing.
@@ -74,7 +182,7 @@ def extract_process_metadata(comment: str) -> dict:
         )
 
         if source_type == 0 and "report" in raw_data.lower():
-                source_type = 3
+            source_type = 3
 
         return {
             "title": title,
@@ -256,6 +364,16 @@ def extract_exchange_metadata(comment: str) -> dict:
                     best_id = i
                     best_st_val = st
 
-        metadata["source"] = sources[best_id]
+        best_src = sources[best_id]
+
+        for k in required_keys:
+            if k not in best_src:
+                best_src[k] = ""
+            elif k == "firstAuthor":
+                best_src[k] = best_src[k][:40]
+            elif k == "title":
+                best_src[k] = best_src[k][:255]
+
+        metadata["source"] = best_src
 
     return metadata
