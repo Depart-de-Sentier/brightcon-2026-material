@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="348519" timestamp="2023-08-28T15:02:49.582+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity" datasetRelatesToProduct="true" generalComment="Electricity domestic net production shares are based on IEA statistics for the year 2008.;&#10;UUID: 3874560b-2333-3c18-967b-732a5d2fa9f4" includedProcesses="It includes the shares of domestic electricity production by technology at the busbar. It does not include transformation, transport nor distribution losses." infrastructureProcess="false" localCategory="electricity" localName="xxx Electricity, production mix HR" localSubCategory="notMaintained" name="xxx Electricity, production mix HR" subCategory="notMaintained" unit="kWh"/>
+        <geography location="HR" text="Data apply to public and self producers in Croatia."/>
+        <technology text="No technology description is provided because the dataset just describes the power plant portfolio of the respective country using current (2004) average technology per energy carrier."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time period of statistics used (2008).">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2012-06-22T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="100" productionVolume="12 TWh" samplingProcedure="Statistical data " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Itten R., Flury K." firstAuthor="Frischknecht R." nameOfEditors="-" number="138564" placeOfPublications="Uster, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Itten, R., Frischknecht, R. (2012) Life Cycle Inventories of electricity mixes. Project reports. Volume: 401. ESU-services Ltd.. Uster, CH.\nType: Separate publication\nFirst author: Itten, R.\nOther authors: Frischknecht, R.\nYear: 2012\nTitle of anthology: Project reports\nPlace of publication: Uster, CH\nPublisher: ESU-services Ltd.\nVolume No: 401\n" title="2012 - GHG emis. from Swiss elec. mixes - Frischknecht" titleOfAnthology="Project reports" volumeNo="401" year="2012"/>
+        <validation proofReadingDetails="Proof reading validation: automatic validation in Excel; Other validation: Z:\ESU-Docs\Projekte laufend\401 Update Strommix v3.0\EcoSpold\_Europa\[401-electricity-mix-croatia-HR-v1.0.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137485"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137485" referenceToPublishedSource="138564"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="René Itten" number="137485" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" generalComment="CROATIA (local name: Hrvatska)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="notMaintained" location="HR" meanValue="1.0" name="xxx Electricity, production mix HR" number="348519" subCategory="notMaintained" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,2,1,1); estimated share of reservoir hydropower production in Croatia: 98%&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="RER" meanValue="0.40792" name="Electricity, hydropower, at reservoir power plant, non alpine regions" number="615575" standardDeviation95="1.0511" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,2,1,1); assumption for petroleum product and fuel oil power production in Croatia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil" location="HR" meanValue="0.15566" name="Electricity, oil, at power plant" number="409957" standardDeviation95="1.0511" subCategory="oil" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for lignite power production in Croatia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="lignite" location="BA" meanValue="0.071561" name="Electricity, lignite, at power plant" number="221676" standardDeviation95="1.0541" subCategory="lignite" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,2,1,1); assumption for geothermal power production in Croatia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="0.0034323" name="Electricity, at wind farm" number="598753" standardDeviation95="1.0511" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,2,1,1); estimated share of ROR  hydropower production in Croatia: 2%&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\flow through" location="RER" meanValue="0.0083249" name="Electricity, hydropower, at run-of-river power plant" number="270757" standardDeviation95="1.0511" subCategory="hydro\flow through" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1); assumption for natural gas power production in Croatia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="HR" meanValue="0.19282" name="Electricity, from natural gas" number="598695" standardDeviation95="1.0500000000000003" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1); estimated share of pumped storage  production in Croatia: 8%&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\pumping storage" location="HR" meanValue="0.036195" name="Electricity, hydropower, at pumped storage power plant" number="611121" standardDeviation95="1.0500000000000003" subCategory="hydro\pumping storage" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1); assumption for hard coal power production in Croatia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="coal" location="HR" meanValue="0.12317" name="Electricity, hard coal, at power plant" number="267067" standardDeviation95="1.0500000000000003" subCategory="coal" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,2,1,1); assumption for industrial, coke and blast furnace gas power production in Croatia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="CENTREL" meanValue="9.1746E-4" name="Electricity, industrial gas, at power plant" number="303666" standardDeviation95="1.0511" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

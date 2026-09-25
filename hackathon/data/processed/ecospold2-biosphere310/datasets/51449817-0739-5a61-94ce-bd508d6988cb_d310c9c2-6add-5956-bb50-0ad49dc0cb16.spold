@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="51449817-0739-5a61-94ce-bd508d6988cb" activityNameId="3f41bf32-eaa1-51af-a26c-4e1bafcd3dd6" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Use of fixed IP access network per GB</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Use of fixed IP access network per GB
+The data set represents the mix of fixed network in Switzerland; UUID: f38a0b30-a3b5-32e5-a005-0d50c20ed972
+The datasets represents the split of fixed networks (cable, optic fibre, xDSL) in Switzerland for the reference year of 2014. The functional unit = 1 GB.
+Location: Data for Swiss networks
+Technology: The mix of Swiss access transmission network, fixed.
+Time period: Unspecified
+Production volume: unknown
+Sampling: Literature &amp; own estimations
+Extrapolations: Average technology
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_f38a0b30-a3b5-32e5-a005-0d50c20ed972.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Data for Swiss networks</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: The mix of Swiss access transmission network, fixed.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2023-01-01" endDate="2029-12-31" isDataValidForEntirePeriod="false">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Unspecified</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="e4fcdb37-ebb7-54ff-b223-9fe86affb07f" amount="1.0" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="51449817-0739-5a61-94ce-bd508d6988cb" intermediateExchangeId="d310c9c2-6add-5956-bb50-0ad49dc0cb16" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use of fixed IP access network per GB</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Use of fixed IP access network per GB
+1 Unit = 1 GB of data transfer (based on OECD statistics for subscribers) 
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d6ce21db-b141-57ff-9954-7f670a1f4dbc" amount="0.31" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="88778d9d-0f58-5adf-bffb-0f8614796b36" intermediateExchangeId="64123dee-0c00-5d39-a04b-895f2ba1a224" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use of cable, fixed IP access network per GB</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Use of cable, fixed IP access network per GB
+(2,3,1,2,2,5,BU:1.05) Shares based on https://www.oecd.org/digital/broadband/broadband-statistics/
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.31" varianceWithPedigreeUncertainty="0.010713716581470602" mu="-1.171182981502945"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c87522ec-93de-5739-bf4d-c483f7be6590" amount="0.09" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="2597e273-2b85-542e-b581-c4f042b056ce" intermediateExchangeId="7d8d3633-06d3-543e-966c-90cc0bb9b0e0" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use of optic fibre, fixed IP access network per GB</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Use of optic fibre, fixed IP access network per GB
+(2,3,1,2,2,5,BU:1.05) Shares based on https://www.oecd.org/digital/broadband/broadband-statistics/
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.09" varianceWithPedigreeUncertainty="0.010713716581470602" mu="-2.4079456086518722"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="5df80d73-d247-5f77-97c0-acee1209bdff" amount="0.6" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="b0b83be2-af44-59f0-b9cb-b7bc1421797a" intermediateExchangeId="3b2242c5-bcad-5cb3-bd9a-14843a7a042d" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use of xDSL, fixed IP access network per GB</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Use of xDSL, fixed IP access network per GB
+(2,3,1,2,2,5,BU:1.05) Shares based on https://www.oecd.org/digital/broadband/broadband-statistics/
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.6" varianceWithPedigreeUncertainty="0.010713716581470602" mu="-0.5108256237659907"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised" isCopyrightProtected="false"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

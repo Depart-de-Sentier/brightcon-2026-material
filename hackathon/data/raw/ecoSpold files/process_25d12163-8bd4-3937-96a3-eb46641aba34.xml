@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="219747" timestamp="2023-08-28T15:02:51.077+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="The LPG production mix represents the average of 1999 until 2008 and is based on Swiss trade statistics.;&#10;UUID: 25d12163-8bd4-3937-96a3-eb46641aba34" includedProcesses="Dataset includes LPG production and distribution. Filling station is considered. Losses at loading, unloading and refuelling are included." infrastructureProcess="false" localCategory="fuels" localName="Liquefied petroleum gas, at service station" localSubCategory="oil\propane\butane" name="Liquefied petroleum gas, at service station" subCategory="oil\propane\butane" unit="kg"/>
+        <geography location="CH" text="Switzerland"/>
+        <technology text="Average data for the used technology"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Nicht spezifiziert">
+          <startDate>1999-01</startDate>
+          <endDate>2008-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2010-02-09T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="Total LPG consumption in 2008 for transport services was 5000 tons." samplingProcedure="statistics, company data " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bauer C.,  Doka G., Frischknecht R., Jungbluth N., Nemecek T., Simons A., Stucki M., Sutter J., Tuchschmid M." firstAuthor="Althaus H.-J." nameOfEditors="-" number="162298" placeOfPublications="Duebendorf and St. Gallen, CH" publisher="Swiss Centre for LCI" sourceNumber="0" sourceType="4" text="Hischier, R., Althaus H.-J., Bauer, Chr., Büsser S., Doka, G., Frischknecht R., Kleijer A., Leuenberger M., Nemecek, T., Simons A. (2010) Documentation of changes implemented in ecoinvent Data v2.2. Final report ecoinvent data v2.2. Volume: 16. Swiss Centre for LCI. Dübendorf. CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Hischier, R.\nOther authors: Althaus H.-J., Bauer, Chr., Büsser S., Doka, G., Frischknecht R., Kleijer A., Leuenberger M., Nemecek, T., Simons A.\nYear: 2010\nTitle of anthology: Final report ecoinvent data v2.2\nPlace of publication: Dübendorf. CH\nPublisher: Swiss Centre for LCI\nVolume No: 16\n" title="2010 - Changes in ecoinvent v2.1 and v2.2 - Althaus" titleOfAnthology="Final report ecoinvent data v2.2" volumeNo="16" year="2010"/>
+        <validation proofReadingDetails="Proof reading validation: passed.; Other validation: none;" proofReadingValidator="136699"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="162297"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="162297" referenceToPublishedSource="162298"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Sybille Buesser" number="162297" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="oil\propane\butane" location="CH" meanValue="1.0" name="Liquefied petroleum gas, at service station" number="219747" subCategory="oil\propane\butane" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(2,4,1,3,1,3); according to distribution of oil&#10;" infrastructureProcess="true" localCategory="oil" localSubCategory="production" location="RER" meanValue="2.78E-10" name="Regional distribution, oil products" number="600841" standardDeviation95="3.02" subCategory="production" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(2,4,1,3,1,3); according to distribution of oil&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="7.5E-5" name="Treatment, rainwater mineral oil storage, to wastewater treatment, class 2" number="576983" standardDeviation95="1.14" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,4,1,3,1,3); according to distribution of oil&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="6.27E-6" name="Disposal, municipal solid waste, 22.9% water, to sanitary landfill" number="490984" standardDeviation95="1.14" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); LPG Transport from European refineries to Switzerland&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.11872" name="Transport, freight, rail" number="149864" standardDeviation95="2.0900000000000003" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000106-97-8" category="emissions to air" generalComment="(1,1,1,1,1,1); losses, mix LGP 50% butane and 50% propane&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.6482E-4" name="Butane" number="639" standardDeviation95="1.4999999999999998" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,1,1,1,1); due to electricity consumption&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.010008" name="Heat, waste" number="46930" standardDeviation95="1.0500000000000003" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-98-6" category="emissions to air" generalComment="(1,1,1,1,1,1); losses, mix LGP 50% butane and 50% propane&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.6482E-4" name="Propane" number="661" standardDeviation95="1.4999999999999998" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(2,4,1,3,1,3); according to distribution of oil&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="6.89E-7" name="Treatment, sewage, to wastewater treatment, class 2" number="383344" standardDeviation95="1.14" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,1,1,1,1,1); at the filling station&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.00278" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.0500000000000003" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(1,1,1,1,1,1); Distribution in Switzerland, 168 km including return trip&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.084007" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.0000000000000004" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); LPG Transport from European refineries to Switzerland&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.019787" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.0900000000000003" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(1,1,1,1,1,1); Product plus losses at loading, unloading and refuelling, trade mix according to BFE (2009)&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="fuels" location="RER" meanValue="0.19787" name="Propane, butane, at refinery" number="369665" standardDeviation95="1.0500000000000003" subCategory="fuels" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(1,1,1,1,1,1); Product plus losses at loading, unloading and refuelling, trade mix according to BFE (2009)&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="fuels" location="CH" meanValue="0.80246" name="Propane, butane, at refinery" number="318014" standardDeviation95="1.0500000000000003" subCategory="fuels" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(2,4,1,3,1,3); according to distribution of oil&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="1.68E-4" name="Disposal, separator sludge, 90% water, to hazardous waste incineration" number="203157" standardDeviation95="1.14" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

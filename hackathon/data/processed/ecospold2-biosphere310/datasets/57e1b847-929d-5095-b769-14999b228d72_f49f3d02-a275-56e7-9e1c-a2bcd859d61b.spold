@@ -1,0 +1,132 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="57e1b847-929d-5095-b769-14999b228d72" activityNameId="254ca2cf-be98-5e49-8282-56d8d95f8cbd" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Disposal, building, reinforcement steel, to sorting plant</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Disposal, building, reinforcement steel, to sorting plant
+The waste contains 1kg steel (GSD=100%)  Waste density is 7900 kg/m3. ;
+UUID: db86092e-194f-4159-a552-fc6240c7d22e
+energy for dismantling, machines for handling in sorting plant, electricity demand for sorting plant, transport to dismantling facilities, 
+Location: Specific to the technology mix encountered in Switzerland in late 1990ies
+Technology: Building demolition with skid-steer loaders. Dry sorting plant for building wastes with pre-sorting of mixed waste, crushing and manual sorting.
+Time period: undefined
+Production volume: na
+Sampling: waste-specific calculation based on literature data 
+Extrapolations: none
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_db86092e-194f-4159-a552-fc6240c7d22e.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Specific to the technology mix encountered in Switzerland in late 1990ies</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Building demolition with skid-steer loaders. Dry sorting plant for building wastes with pre-sorting of mixed waste, crushing and manual sorting.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2000-01-01" endDate="2000-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: undefined</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="7e5d86b6-8804-567e-93cd-bd56f8aa8f9b" amount="1.0" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="57e1b847-929d-5095-b769-14999b228d72" intermediateExchangeId="f49f3d02-a275-56e7-9e1c-a2bcd859d61b" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Disposal, building, reinforcement steel, to sorting plant</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Disposal, building, reinforcement steel, to sorting plant
+SWITZERLAND
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="122f729a-e556-5d36-8377-e8bfa0410d91" amount="1e-10" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="29efcd2c-2658-5641-87c8-1d682e28839b" intermediateExchangeId="ddc035ab-548b-5485-a746-ddfdf5e7d58d" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Sorting plant for construction waste</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Sorting plant for construction waste
+Uncertainty heeded in exchanges, 1kg = 1kg
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e0970d7f-ea33-5cb9-b996-05c1a4090ae7" amount="0.626" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="c2e32cda-bfc6-536a-af06-a37aa3e38d7b" intermediateExchangeId="7b069d1a-7a79-5a92-95e0-60a1994aae87" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Diesel, burned in building machine, average</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Diesel, burned in building machine, average
+energy for demolition. Uncertainty from range in (DAFSTB 1996)
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.626" varianceWithPedigreeUncertainty="0.07039158520632442" mu="-0.46840490788203853"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="793c5c99-c884-5711-9b6d-a1433c124489" amount="0.000141" unitId="db3b2def-24b3-5d7e-a8b7-14695362b285" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="8436ff66-ed0c-5f0e-9080-112511088905" intermediateExchangeId="ea9420ad-115c-5c8c-ae0f-83b90ac86f59" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Excavation, hydraulic digger, average</name>
+        <unitName xml:lang="en">cubic meter</unitName>
+        <comment xml:lang="en">Full flow name: Excavation, hydraulic digger, average
+handling in sorting plant. Uncertainty from range in literature
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000141" varianceWithPedigreeUncertainty="0.008310287517942792" mu="-8.866750667586105"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="1f3ddfc0-5d99-5234-8312-571160cadbe3" amount="0.0037" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="6de0d104-e5c3-5bee-955b-6f6232c3fdc3" intermediateExchangeId="77eb694f-7dfa-5a7e-8152-53bed7445781" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, low voltage, at grid</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, low voltage, at grid
+demand in sorting plant. Uncertainty from range in literature
+
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0037" varianceWithPedigreeUncertainty="0.008310287517942792" mu="-5.599422459331958"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="08acdcbb-d7c7-5308-9478-04be6e085c3f" amount="0.0177" unitId="97a43c83-639b-5b25-b36e-39233e1b0540" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="f1a6f666-c9f0-545f-984c-e5c4d98c8645" intermediateExchangeId="b4dfedb6-8c2c-5bab-8526-5c7265a484eb" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Transport, freight, lorry, 16t-32t gross weight, fleet average</name>
+        <unitName xml:lang="en">ton kilometer</unitName>
+        <comment xml:lang="en">Full flow name: Transport, freight, lorry, 16t-32t gross weight, fleet average
+transport to disposal facilities. Uncertainty calculated from uncertainty in transported masses and the uncertainty in generic transportation distances
+
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="86de8772-ddeb-5243-841b-32e4246d5c8d" amount="0.0133" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="b411ec8b-c60a-4235-a3b2-8bf8443cbc55">
+        <name xml:lang="en">Heat, waste</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, waste
+emission in sorting plant. Uncertainty from range in literature
+
+BAFU mapping audit: {"bafu source exchange index": 6}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0133" varianceWithPedigreeUncertainty="0.008310287517942792" mu="-4.319991243754429"/>
+        </uncertainty>
+        <compartment subcompartmentId="4715d9fb-1efc-5514-9bf6-f0bb4e5fab5f" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">urban air close to ground</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="88bf855e-b96a-5ba5-a3bf-2c64afacb90f" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Roland Hischier" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="5b0d7db8-772a-5909-a765-07cdfe1426d8" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Gabor Doka" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="454077" timestamp="2023-08-28T15:02:54.133+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="waste treatment, obsolete" datasetRelatesToProduct="true" generalComment="The waste contains 1kg steel (GSD=100%)  Waste density is 7900 kg/m3. ;&#10;CAS number: 007439-89-6; &#10;Formula: Fe; &#10;UUID: 4db4beab-693a-42e9-a509-18be2c3e2be5" includedProcesses="energy for dismantling, transport to dismantling facilities, final disposal of waste material, " infrastructureProcess="false" localCategory="waste treatment, obsolete" localName="xx Disposal, building, reinforcement steel, to final disposal" localSubCategory="construction waste, obsolete" name="xx Disposal, building, reinforcement steel, to final disposal" subCategory="construction waste, obsolete" unit="kg"/>
+        <geography location="CH" text="Specific to the technology mix encountered in Switzerland in late 1990ies"/>
+        <technology text="Building demolition with skid-steer loaders. "/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-03-29T18:04:29.134+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="waste-specific calculation based on literature data " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Doka G." nameOfEditors="-" number="136700" placeOfPublications="Duebendorf and St. Gallen, CH" publisher="Swiss Centre for LCI, Doka LCA" sourceNumber="0" sourceType="3" text="Doka G. (2007) Life Cycle Inventories of Waste Treatment Services. Final report ecoinvent data v2.0. Volume: 13. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Separate publication\nSource: CD-ROM\nFirst author: Doka G.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 13\n" title="2009 - LCI waste treatment services - Doka" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="13" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: Passed. Calculation for standard deviation 95 of infrastructure, land occupation, transport services and other services can differ from standard Pedigree approach used in this project and figures obtained by this procedure. ; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136699"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136698" referenceToPublishedSource="136700"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Gabor Doka" number="136698" telephone="anonymised"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="waste treatment, obsolete" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="waste treatment, obsolete" localSubCategory="construction waste, obsolete" location="CH" meanValue="1.0" name="xx Disposal, building, reinforcement steel, to final disposal" number="454077" subCategory="construction waste, obsolete" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="transport to disposal facilities. Uncertainty calculated from uncertainty in transported masses and the uncertainty in generic transportation distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.015" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="1.0" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="disposed masses. Uncertainty calculated from uncertainty of waste composition&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="construction waste landfill" location="CH" meanValue="1.0" name="Disposal, steel, 0% water, to construction waste landfill" number="390890" standardDeviation95="1.0" subCategory="construction waste landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="energy for demolition. Uncertainty from range in (DAFSTB 1996)&#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="0.626" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="1.7" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

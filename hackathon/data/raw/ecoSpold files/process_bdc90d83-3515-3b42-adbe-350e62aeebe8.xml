@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="428002" timestamp="2023-11-15T15:39:26.502+01:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="food industry" datasetRelatesToProduct="true" generalComment="Inventory refers to the shock freezing an storage of 1kg of beans over several weeks. " includedProcesses="nan" infrastructureProcess="false" localCategory="food industry" localName="Freezing of beans" localSubCategory="processing" name="Freezing of beans" subCategory="processing" unit="kg"/>
+        <geography location="CH" text="The inventory is modelled for Switzerland"/>
+        <technology text="nan"/>
+        <timePeriod dataValidForEntirePeriod="true" text="nan">
+          <startDate>2016-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2023-11-15T15:15:22.161+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="nan" samplingProcedure="based on confidential data from a company" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Glimmann M., Conte F., Roberts G." firstAuthor="Kaegi T." nameOfEditors="nan" number="164878" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceType="3" text="pdf" title="2021 - LCA tomatoes and green beans production - Kaegi" titleOfAnthology="Carbotech on behalf of BAFU" year="2021"/>
+        <validation proofReadingDetails="15.12.2021 \\tsclient\Schreibtisch\WinShare\BAFU Gemuese\2021-12-15\[EcoSpold_Bafu_Gemuese_Freezing of beans CH v1.xlsx]X-Process" proofReadingValidator="137340"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="164877"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="164877" referenceToPublishedSource="164878"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Melina Glimmann" number="164877" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="food industry" infrastructureProcess="false" localCategory="food industry" localSubCategory="processing" location="CH" meanValue="1.0" name="Freezing of beans" number="428002" subCategory="processing" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="000354-33-6" category="emissions to air" generalComment="(2,4,2,1,1,5,BU:1.5); ;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.32E-6" name="Ethane, pentafluoro-, HFC-125" number="90783" standardDeviation95="1.5813062500000001" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,4,2,1,1,5,BU:1.05); ;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="1.09" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.2448088041" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,2,1,1,5,BU:3); ;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="1.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.0622900036000003" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

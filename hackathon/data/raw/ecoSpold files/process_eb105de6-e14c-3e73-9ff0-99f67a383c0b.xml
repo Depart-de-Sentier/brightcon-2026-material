@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="617377" timestamp="2023-08-28T15:03:11.791+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="The material and energy requirements for construction have been roughly estimated on the basis of the data from an old US reference and scaling them down by the ratio of the capacities (centrifuge process is modular, therefore in first approximation linearity can be assumed for requirements). It is assumed that 75% of reinforced concrete is dumped as non-contaminated waste from decommissioning. Although Russian facilities have higher capacity, the original dataset developed for URENCO plants has been directly used herewith for the previously explained reason, with the only difference of electricity requirements from the Russian mix. This mix has been approximated using existing ecoinvent v2.0 electricity datasets for Europe.;&#10;UUID: eb105de6-e14c-3e73-9ff0-99f67a383c0b" includedProcesses="The module includes: estimated land use of a plant with capacity of 1500 t SWU (separative work unit); energy (electricity, diesel, and light oil) and material requirements for the construction of the facility; transport requirements during construction; energy and transport requirements (for non-contaminated inerts concrete with reinforcing bars) during decommissioning; disposal of the non-contaminated inerts. The non contaminated metals are assumed to be recycled." infrastructureProcess="true" localCategory="fuels" localName="Uranium enrichment centrifuge plant" localSubCategory="uranium\enriched\infrastructure" name="Uranium enrichment centrifuge plant" subCategory="uranium\enriched\infrastructure" unit="p"/>
+        <geography location="RU" text="&lt;null&gt;"/>
+        <technology text="Available construction material and energy data refer to a model plant in early 1980s."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>1999-01</startDate>
+          <endDate>2002-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-08-24T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bauer C., Doka G." firstAuthor="Dones R." nameOfEditors="Bauer C." number="137748" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI, Doka LCA" sourceNumber="0" sourceType="4" text="Dones, R., Doka G. (2009) Kernenergie. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1. Editors: Bauer C.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Dones, R.\nOther authors: Doka G.\nYear: 2009\nName of editors: Bauer C.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2009 - Nuclear energy - Dones" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1" volumeNo="6" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="138641"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137747"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137747" referenceToPublishedSource="137748"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Thomas Nemecek" number="138641" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="RUSSIAN FEDERATION&#10;" infrastructureProcess="true" localCategory="fuels" localSubCategory="uranium\enriched\infrastructure" location="RU" meanValue="1.0" name="Uranium enrichment centrifuge plant" number="617377" subCategory="uranium\enriched\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="mechanical" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="mechanical" localSubCategory="other energy" location="GLO" meanValue="6.9E8" name="Diesel, burned in diesel-electric generating set" number="316704" standardDeviation95="2.0000000000000004" subCategory="other energy" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="150000.0" name="Transformation, from industrial area" number="5579" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="standard&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="16500000" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.1" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="old US reference for total electricity&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil" location="CZ" meanValue="161000.0" name="Electricity, oil, at power plant" number="438713" standardDeviation95="2.0000000000000004" subCategory="oil" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="old US reference for total electricity&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wood\cogeneration" location="CH" meanValue="11300.0" name="Electricity, at cogen ORC 1400kWth, wood, allocation exergy" number="552360" standardDeviation95="2.0000000000000004" subCategory="wood\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="150000.0" name="Transformation, to unknown" number="25119" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="1.63E7" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="2.0000000000000004" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="6500000.0" name="Aluminium, primary, at plant" number="301003" standardDeviation95="2.0000000000000004" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="standard&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="9790000.0" name="Transport, freight, rail" number="149864" standardDeviation95="2.1" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="1.63E7" name="Chromium steel 18/8, at plant" number="609015" subCategory="ferro" uncertaintyType="0" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="50000.0" name="Transformation, to industrial area, vegetation" number="85687" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="100000.0" name="Transformation, to industrial area, built up" number="86253" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="old US reference for total electricity&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="RER" meanValue="1140000.0" name="Electricity, hydropower, at reservoir power plant, non alpine regions" number="615575" standardDeviation95="2.0000000000000004" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="CH" meanValue="26000.0" name="Brass, at plant" number="287690" standardDeviation95="2.0000000000000004" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="150000.0" name="Transformation, from unknown" number="54270" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="33000.0" name="Zinc, primary, at regional storage" number="236764" standardDeviation95="2.0000000000000004" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="6.9E8" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="2.0000000000000004" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="6.8E7" name="Disposal, building, reinforced concrete, to final disposal" number="491964" standardDeviation95="2.0000000000000004" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="9000000.0" name="Reinforcing steel, at plant" number="545988" standardDeviation95="2.0000000000000004" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="3000000.0" name="Occupation, industrial area, built up" number="116809" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="same as for electricity&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="2.12E7" name="Heat, waste" number="46930" standardDeviation95="2.0000000000000004" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="old US reference for total electricity&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="RU" meanValue="2690000.0" name="Electricity, from natural gas" number="255260" standardDeviation95="2.0000000000000004" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="770000.0" name="Copper, at regional storage" number="328058" standardDeviation95="2.0000000000000004" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="old US reference for total electricity&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="coal" location="PL" meanValue="1030000.0" name="Electricity, hard coal, at power plant" number="535534" standardDeviation95="2.0000000000000004" subCategory="coal" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="own estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="1500000.0" name="Occupation, industrial area, vegetation" number="113531" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="48000.0" name="Lubricating oil, at plant" number="557555" standardDeviation95="2.0000000000000004" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="old US reference for total electricity&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste\nuclear" location="UCTE" meanValue="925000.0" name="Electricity, nuclear, at power plant" number="268188" standardDeviation95="2.0000000000000004" subCategory="waste\nuclear" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="75000.0" name="Concrete, normal, at plant" number="367058" standardDeviation95="2.0000000000000004" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

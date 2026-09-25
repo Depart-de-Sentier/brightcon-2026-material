@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="606829" timestamp="2024-07-09T17:48:32">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electronics waste" datasetRelatesToProduct="true" generalComment="manual dismantling in various fractions based on common transfer coefficients for this type of treatment. Data from own experiences in Switzerland. No updates were made in 2023, as the transportation system is already recent. The pedigree matrix for uncertainties are nevertheless adapted for the year 2023; UUID: 2a0a679a-5265-4b08-b04b-5348c5c9bebd" includedProcesses="This dataset represents the manual dismantling of a WEEE devices in Switzerland." infrastructureIncluded="false" infrastructureProcess="false" localCategory="electronics waste" localName="Dismantling, desktop computer, manually, at plant" localSubCategory="unspecified" name="Dismantling, desktop computer, manually, at plant" subCategory="unspecified" unit="kg"/>
+        <geography location="CH" text="data of situation in Switzerland"/>
+        <technology text="current manual dismantling activities in Switzerland."/>
+        <timePeriod dataValidForEntirePeriod="" text="Unspecified">
+          <startDate>2023-01</startDate>
+          <endDate>2029-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2024-07-09T17:48:32" type="1" version="2024"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="100.0" productionVolume="unknown" samplingProcedure="own experiences" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Permana Ajie M., Beloin-Saint-Pierre D." firstAuthor="Raka Adrianto L." number="148303" placeOfPublications="St. Gallen, CH" publisher="Empa" sourceType="0" title="2024 - LCI ICT sector - Raka Adrianto" year="2024"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Mischa Zschokke, Company: Carbotech, Country: CH" proofReadingValidator="140702"/>
+        <validation/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="148302" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="false" dataPublishedIn="2" person="148302" referenceToPublishedSource="148303"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre" number="148302" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Mischa Zschokke" number="140702" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electronics waste" generalComment="SWITZERLAND" infrastructureProcess="false" localCategory="electronics waste" localSubCategory="unspecified" location="CH" meanValue="1" name="Dismantling, desktop computer, manually, at plant" number="606829" subCategory="unspecified" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,1,4,1,1,5,BU:2.00); data from Swiss WEEE systems - reported in Hischier (2005)" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="0.014535" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.11" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,1,4,1,1,5,BU:2.00); data from Swiss WEEE systems - reported in Hischier (2005)" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.028215" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.11" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste" generalComment="(4,5,4,3,5,5,BU:3.00); rough estimation of infrastructure" infrastructureProcess="true" localCategory="waste" localSubCategory="infrastructure" location="GLO" meanValue="0.000000016" name="Manual treatment plant, WEEE scrap" number="366765" standardDeviation95="3.85" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics waste" generalComment="(3,4,4,1,1,5,BU:1.05); calculated - based on composition data" infrastructureProcess="false" localCategory="electronics waste" localSubCategory="unspecified" location="GLO" meanValue="0.272" name="Dismantling, shredder fraction from manual dismantling, mechanically, at plant" number="474062" standardDeviation95="1.34" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(3,4,4,1,1,5,BU:1.05); calculated - based on composition data" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="0.00972" name="Disposal, capacitors, 0% water, to hazardous waste incineration" number="505834" standardDeviation95="1.34" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(3,4,4,1,1,5,BU:1.05); calculated - based on composition data" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.021" name="Disposal, plastic, consumer electronics, 15.3% water, to municipal incineration" number="552690" standardDeviation95="1.34" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

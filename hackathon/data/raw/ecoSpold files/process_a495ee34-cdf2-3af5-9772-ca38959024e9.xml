@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="RStudio" number="366527" timestamp="2025-03-31T15:02:08">
+    <metaInformation>
+      <processInformation>
+        <timePeriod dataValidForEntirePeriod="True" text="Base technology year of 2020">
+          <startDate>2020-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <referenceFunction amount="1" category="fuels" datasetRelatesToProduct="True" generalComment=" Inventories on first, second and third generation biofuels production.Based on Masters thesis at PSI in 2018. Has not been thoroughly peer reviewed, though datasets have been used in several peer reviewed publications. Original source: Life Cycle Assessment of Biofuels in EU/CH, F. Cozzolini 2018, PSI. UUID: a495ee34-cdf2-3af5-9772-ca38959024e9" infrastructureIncluded="True" infrastructureProcess="True" localCategory="fuels" localName="Biodiesel, from used cooking oil, at fuelling station" localSubCategory="biofuels\Biodiesel\Transformation" name="Biodiesel, from used cooking oil, at fuelling station" subCategory="biofuels\Biodiesel\Transformation" unit="kg"/>
+        <geography location="RER" text="Unspecified"/>
+        <technology text="Inventories on first, second and third generation biofuels production.Based on Masters thesis at PSI in 2018. Has not been thoroughly peer reviewed, though datasets have been used in several peer reviewed publications. Original source: Life Cycle Assessment of Biofuels in EU/CH, F. Cozzolini 2018, PSI"/>
+        <dataSetInformation energyValues="0" impactAssessmentResult="False" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2025-03-31T15:02:08" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Unspecified" productionVolume="Unspecified" samplingProcedure="Unspecified" uncertaintyAdjustments="Unspecified"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="136752" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="doi: 10.5281/ZENODO.5156043" title="2023 - LCI on-road vehicles - Sacchi" year="2023"/>
+        <validation proofReadingDetails="Unspecified" proofReadingValidator="136748"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136751"/>
+        <dataGeneratorAndPublication accessRestrictedTo="3" copyright="False" dataPublishedIn="1" person="136749" referenceToPublishedSource="136752"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Brian Cox" number="136748" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Julien McTighe" number="136751" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" infrastructureProcess="True" localCategory="fuels" localSubCategory="biofuels\Biodiesel\Transformation" location="RER" meanValue="1.0" name="Biodiesel, from used cooking oil, at fuelling station" number="366527" subCategory="biofuels\Biodiesel\Transformation" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="Uncertainty from pedigree matrix: (3, 5, 3, 1, 1, 3)" infrastructureProcess="False" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="0.000584" name="Heat, heavy fuel oil, at industrial furnace 1MW" number="608317" standardDeviation95="1.2610264677735246" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 5, 3, 1, 1, 3)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.0336" name="Transport, freight, rail" number="149864" standardDeviation95="1.2610264677735246" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="Uncertainty from pedigree matrix: (3, 5, 3, 1, 1, 3)" infrastructureProcess="True" localCategory="fuels" localSubCategory="biofuels\Biodiesel\Transformation" location="RER" meanValue="1.0" name="Biodiesel from cooking oil" number="518343" standardDeviation95="1.2610264677735246" subCategory="biofuels\Biodiesel\Transformation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="Uncertainty from pedigree matrix: (3, 5, 3, 1, 1, 3)" infrastructureProcess="True" localCategory="oil" localSubCategory="production" location="RER" meanValue="2.6e-10" name="Regional distribution, oil products" number="600841" standardDeviation95="1.2610264677735246" subCategory="production" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="Uncertainty from pedigree matrix: (3, 5, 3, 1, 1, 3)" infrastructureProcess="False" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="0.000689" name="Tap water, at user" number="227940" standardDeviation95="1.2610264677735246" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 5, 3, 1, 1, 3)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.0326" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="1.2610264677735246" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="Uncertainty from pedigree matrix: (3, 5, 3, 1, 1, 3)" infrastructureProcess="False" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="7.5e-05" name="Treatment, rainwater mineral oil storage, to wastewater treatment, class 2" number="576983" standardDeviation95="1.2610264677735246" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="Uncertainty from pedigree matrix: (3, 5, 3, 1, 1, 3)" infrastructureProcess="False" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="6.27e-06" name="Disposal, municipal solid waste, 22.9% water, to municipal incineration" number="360318" standardDeviation95="1.2610264677735246" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="Uncertainty from pedigree matrix: (3, 5, 3, 1, 1, 3)" infrastructureProcess="False" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="6.89e-07" name="Treatment, sewage, from residence, to wastewater treatment, class 2" number="538378" standardDeviation95="1.2610264677735246" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

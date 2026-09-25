@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="203320" timestamp="2023-08-28T15:02:59.653+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="energy, obsolete" datasetRelatesToProduct="true" generalComment="Heat from 30 kW heat pump installed at 160kW cogeneration unit.;&#10;UUID: ce71934f-f039-3a6b-922b-052fb96dcbe5" includedProcesses="Includes heat pump infrastructure, electricity from cogeneration unit, and refrigerant R134a emissions during operation." infrastructureProcess="false" localCategory="energy, obsolete" localName="Heat, at heat pump 30kW, allocation exergy" localSubCategory="heat, obsolete\heat pumps, obsolete" name="Heat, at heat pump 30kW, allocation exergy" subCategory="heat, obsolete\heat pumps, obsolete" unit="MJ"/>
+        <geography location="CH" text="Could be used for European conditions."/>
+        <technology text="none"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2004-04-02T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="0" productionVolume="na" samplingProcedure="Literature, manufacturer information " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Heck T." nameOfEditors="Dones R." number="138971" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI" sourceNumber="0" sourceType="4" text="Heck, T. (2007) Wärme-Kraft-Kopplung. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0. Editors: Dones R.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Heck, T.\nYear: 2007\nName of editors: Dones R.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2007 - Combined heat power generation - Heck" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0" volumeNo="6" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: prepared; Other validation: none;" proofReadingValidator="138969"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138970"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138970" referenceToPublishedSource="138971"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Gerald Rebitzer" number="138969" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Thomas Heck" number="138970" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="energy, obsolete" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="energy, obsolete" localSubCategory="heat, obsolete\heat pumps, obsolete" location="CH" meanValue="1.0" name="Heat, at heat pump 30kW, allocation exergy" number="203320" subCategory="heat, obsolete\heat pumps, obsolete" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="Seasonal Performance Factor, data from operators; uncertainty from range of Coefficient of Performance.&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="natural gas\cogeneration" location="CH" meanValue="0.0617" name="Electricity, at cogen 160kWe Jakobsberg, allocation exergy" number="255280" standardDeviation95="1.1999999999999997" subCategory="natural gas\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="equals electricity input&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.222" name="Heat, waste" number="46930" standardDeviation95="1.1999999999999997" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000811-97-2" category="emissions to air" generalComment="estimated from range of values in literature&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.93E-7" name="Ethane, 1,1,1,2-tetrafluoro-, HFC-134a" number="648" standardDeviation95="1.7" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="energy, obsolete" generalComment="uncertainty of life time&#10;" infrastructureProcess="true" localCategory="energy, obsolete" localSubCategory="heat, obsolete\heat pumps, obsolete\infrastructure" location="RER" meanValue="3.47E-8" name="Heat pump 30kW" number="244739" standardDeviation95="1.4999999999999998" subCategory="heat, obsolete\heat pumps, obsolete\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

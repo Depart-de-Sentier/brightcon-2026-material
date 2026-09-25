@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="14b5c460-363b-50c1-8ff8-80eaf82434ca" activityNameId="dd6a4133-8e09-5467-96b9-4b39b6b4366b" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">xx Heat, air-water heat pump 10kW, at heat radiator</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: xx Heat, air-water heat pump 10kW, at heat radiator
+Heat after distribution.;
+UUID: 4ec5e342-f52e-3cd2-a336-77e74c3c2c80
+Includes heat from heat pump and heat distribution.
+Location: Conditions of operation extrapolated from Switzerland to RER. Operation with UCTE electricity mix.
+Technology: Based on average SPF2 (Seasonal Performance Factor, including auxiliary energy) of air-water heat pumps installed in year 1998 operating in Switzerland.
+Time period: undefined
+Production volume: na
+Sampling: Literature 
+Extrapolations: none
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_4ec5e342-f52e-3cd2-a336-77e74c3c2c80.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="20a9bf48-6cea-59b4-ad08-000cb981f2d0" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">RER</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Conditions of operation extrapolated from Switzerland to RER. Operation with UCTE electricity mix.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Based on average SPF2 (Seasonal Performance Factor, including auxiliary energy) of air-water heat pumps installed in year 1998 operating in Switzerland.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="1998-01-01" endDate="2000-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: undefined</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="c9ec00a1-b180-55f9-8069-0ebd3bfae736" amount="1.0" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="14b5c460-363b-50c1-8ff8-80eaf82434ca" intermediateExchangeId="bd07173e-85f1-5aeb-862f-fba05c74906f" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">xx Heat, air-water heat pump 10kW, at heat radiator</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: xx Heat, air-water heat pump 10kW, at heat radiator
+Europe
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d53710e9-45f5-5e2f-84df-a6bdcac7ae7c" amount="1.05" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="8c1db2a3-9fb2-515d-81f7-fc2cbe64d8c7" intermediateExchangeId="52d17d7b-7b1d-551d-bc3a-eedef4457e19" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Heat, at air-water heat pump 10kW</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, at air-water heat pump 10kW
+uncertainty estimated from range of values in literature
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.05" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="0.04879016416943205"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="d7b110ec-506b-51f4-a478-44abb679824b" amount="7.29e-07" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="d7d0e309-25de-530a-a137-85922b6dae13" intermediateExchangeId="551705ee-645e-5c4e-8161-b2afe032812f" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Heat distribution, hydronic radiant floor heating, 150m2</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Heat distribution, hydronic radiant floor heating, 150m2
+uncertainty of life time
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="7.29e-07" varianceWithPedigreeUncertainty="0.04110048847329133" mu="-14.131592104937752"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="ed3fc1e0-76f9-5a39-9214-90513502264b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Thomas Heck" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="ed3fc1e0-76f9-5a39-9214-90513502264b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Thomas Heck" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

@@ -1,0 +1,249 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="338932" timestamp="2023-08-28T15:03:07.668+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity" datasetRelatesToProduct="true" generalComment="Technology shares determined based on data from ENTSO Transparency Platform. Both electricity production in Switzerland and electricity imports from neighbouring countries (Italy, France, Germany, Austria) are included.;&#10;UUID: 11d53ec9-71ce-34ae-a6cf-8fb4c092e426" includedProcesses="This dataset includes the shares of different technologies of the electricity mix used for the operation of storage pumps in Switzerland in winter 2018." infrastructureProcess="false" localCategory="electricity" localName="Electricity mix, operation storage pumps, ENTSO, winter 2018, at plant" localSubCategory="production mix" name="Electricity mix, operation storage pumps, ENTSO, winter 2018, at plant" subCategory="production mix" unit="kWh"/>
+        <geography location="CH" text="Switzerland"/>
+        <technology text="Average technology"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications">
+          <startDate>2018-01</startDate>
+          <endDate>2018-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-07-20T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Some generic datasets from ecoinvent have been used." productionVolume="na" samplingProcedure="Statistics " uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Alig M." firstAuthor="Frischknecht R." nameOfEditors="-" number="150544" placeOfPublications="Bern, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="3" text="Stolz P., Frischknecht R. (2020) Electricity Mixes in Life Cycle Assessments of Buildings. Project report. Volume: 651. treeze Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: Stolz P.\nOther authors: Frischknecht R.\nYear: 2020\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: treeze Ltd.\nVolume No: 651\n" title="2021 - Electricity mixes in LCA of buildings - Frischknecht" titleOfAnthology="Project report" volumeNo="651" year="2021"/>
+        <validation proofReadingDetails="Proof reading validation: 20.07.2020; Other validation: G:\Projekte laufend\651 Strommixe LCA Gebäude BFE\EcoSpold\[651-Electricity-Mixes-Attributional-CH-v0.19.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138233"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138233" referenceToPublishedSource="150544"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Philippe Stolz" number="138233" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="CH" meanValue="1.0" name="Electricity mix, operation storage pumps, ENTSO, winter 2018, at plant" number="338932" subCategory="production mix" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Gas / AT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="AT" meanValue="0.022156" name="Electricity, natural gas, at power plant" number="194969" standardDeviation95="1.3069000000000002" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Oil / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil\cogeneration" location="CH" meanValue="6.2179E-5" name="Electricity, at cogen 300kWth, diesel, allocation exergy" number="597488" standardDeviation95="1.3069000000000002" subCategory="oil\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Hydro Run-of-river and poundage / FR; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\flow through" location="RER" meanValue="0.020108" name="Electricity, hydropower, at run-of-river power plant" number="270757" standardDeviation95="1.3069000000000002" subCategory="hydro\flow through" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Wind Onshore / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="0.02366" name="Electricity, at 100MW wind farm, onshore, 2.3MW turbines" number="535960" standardDeviation95="1.3069000000000002" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Hard coal / FR; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="coal" location="FR" meanValue="0.0038929" name="Electricity, hard coal, at power plant" number="395298" standardDeviation95="1.3069000000000002" subCategory="coal" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Biomass / IT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wood\cogeneration" location="CH" meanValue="1.983E-4" name="Electricity, at cogen 1MWth, wood chips, allocation exergy" number="477818" standardDeviation95="1.3069000000000002" subCategory="wood\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Hydro Water Reservoir / CH; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="CH" meanValue="0.1472" name="Electricity, hydropower, net, at reservoir power plant" number="243158" standardDeviation95="1.3069000000000002" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Biomass / IT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="biomass\cogeneration" location="CH" meanValue="1.2009E-4" name="Electricity, at cogen with biogas engine, allocation exergy" number="442004" standardDeviation95="1.3069000000000002" subCategory="biomass\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Waste / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste" location="CH" meanValue="0.0015103" name="Electricity from waste, at municipal waste incineration plant" number="419687" standardDeviation95="1.3069000000000002" subCategory="waste" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Gas / FR; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="FR" meanValue="0.021967" name="Electricity, natural gas, at power plant" number="617809" standardDeviation95="1.3069000000000002" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Oil / IT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil" location="IT" meanValue="9.979E-5" name="Electricity, oil, at power plant" number="584669" standardDeviation95="1.3069000000000002" subCategory="oil" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Biomass / CH; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="biomethane\cogeneration" location="CH" meanValue="0.0047641" name="Electricity, at cogen 300kWth, biomethane, allocation exergy" number="534830" standardDeviation95="1.3069000000000002" subCategory="biomethane\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Oil / IT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil\cogeneration" location="CH" meanValue="2.2312E-6" name="Electricity, at cogen 300kWth, diesel, allocation exergy" number="597488" standardDeviation95="1.3069000000000002" subCategory="oil\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Nuclear / FR; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste\nuclear\pwr" location="FR" meanValue="0.20665" name="Electricity, nuclear, at power plant pressure water reactor" number="165413" standardDeviation95="1.3069000000000002" subCategory="waste\nuclear\pwr" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Hydro Water Reservoir / AT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="RER" meanValue="0.005026" name="Electricity, hydropower, at reservoir power plant, alpine region" number="485300" standardDeviation95="1.3069000000000002" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Biomass / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="biomass\cogeneration" location="CH" meanValue="0.0056185" name="Electricity, at cogen with biogas engine, allocation exergy" number="442004" standardDeviation95="1.3069000000000002" subCategory="biomass\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Hydro Run-of-river and poundage / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\flow through" location="RER" meanValue="0.0032233" name="Electricity, hydropower, at run-of-river power plant" number="270757" standardDeviation95="1.3069000000000002" subCategory="hydro\flow through" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Hydro Water Reservoir / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="RER" meanValue="1.7521E-4" name="Electricity, hydropower, at reservoir power plant, non alpine regions" number="615575" standardDeviation95="1.3069000000000002" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Other / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="DE" meanValue="8.3634E-4" name="Electricity, industrial gas, at power plant" number="301831" standardDeviation95="1.3069000000000002" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Hard coal / AT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="coal" location="AT" meanValue="0.0047284" name="Electricity, hard coal, at power plant" number="180239" standardDeviation95="1.3069000000000002" subCategory="coal" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Solar / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="DE" meanValue="0.0017452" name="Electricity, production mix photovoltaic, at plant" number="440246" standardDeviation95="1.3069000000000002" subCategory="photovoltaic" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Hydro Pumped Storage / IT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\power plants" location="IT" meanValue="1.721E-4" name="Electricity, hydropower, at pumped storage plant, ENTSO, winter 2018" number="191997" standardDeviation95="1.3069000000000002" subCategory="hydro\power plants" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Biomass / AT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="biomass\cogeneration" location="CH" meanValue="0.001054" name="Electricity, at cogen with biogas engine, allocation exergy" number="442004" standardDeviation95="1.3069000000000002" subCategory="biomass\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Hydro Water Reservoir / FR; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="RER" meanValue="0.0093228" name="Electricity, hydropower, at reservoir power plant, alpine region" number="485300" standardDeviation95="1.3069000000000002" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Other / IT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="IT" meanValue="0.0057605" name="Electricity, industrial gas, at power plant" number="535408" standardDeviation95="1.3069000000000002" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Other / AT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="AT" meanValue="3.245E-4" name="Electricity, industrial gas, at power plant" number="354016" standardDeviation95="1.3069000000000002" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Wind Onshore / AT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="0.0121" name="Electricity, at wind farm" number="598753" standardDeviation95="1.3069000000000002" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Other renewable / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="3.561E-4" name="Electricity, at 100MW wind farm, onshore, 2.3MW turbines" number="535960" standardDeviation95="1.3069000000000002" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Biomass / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wood\cogeneration" location="CH" meanValue="0.0046224" name="Electricity, at cogen 1MWth, wood chips, allocation exergy" number="477818" standardDeviation95="1.3069000000000002" subCategory="wood\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Oil / FR; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil\cogeneration" location="CH" meanValue="8.6391E-5" name="Electricity, at cogen 300kWth, diesel, allocation exergy" number="597488" standardDeviation95="1.3069000000000002" subCategory="oil\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Hydro Run-of-river and poundage / AT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\flow through" location="RER" meanValue="0.033516" name="Electricity, hydropower, at run-of-river power plant" number="270757" standardDeviation95="1.3069000000000002" subCategory="hydro\flow through" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Oil / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil" location="DE" meanValue="7.1142E-4" name="Electricity, oil, at power plant" number="428621" standardDeviation95="1.3069000000000002" subCategory="oil" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Wind Offshore / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="0.0052165" name="Electricity, at 100MW wind farm, onshore, 2.3MW turbines" number="535960" standardDeviation95="1.3069000000000002" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Coal-derived gas / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="DE" meanValue="9.4074E-4" name="Electricity, industrial gas, at power plant" number="301831" standardDeviation95="1.3069000000000002" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Nuclear / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste\nuclear\bwr" location="DE" meanValue="0.0040471" name="Electricity, nuclear, at power plant boiling water reactor" number="548546" standardDeviation95="1.3069000000000002" subCategory="waste\nuclear\bwr" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Waste / FR; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste" location="CH" meanValue="9.8988E-4" name="Electricity from waste, at municipal waste incineration plant" number="419687" standardDeviation95="1.3069000000000002" subCategory="waste" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Hard coal / IT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="coal" location="IT" meanValue="0.0025487" name="Electricity, hard coal, at power plant" number="205592" standardDeviation95="1.3069000000000002" subCategory="coal" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Hydro Pumped Storage / FR; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\power plants" location="FR" meanValue="0.0025678" name="Electricity, hydropower, at pumped storage plant, ENTSO, winter 2018" number="551727" standardDeviation95="1.3069000000000002" subCategory="hydro\power plants" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Solar / AT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="AT" meanValue="3.8472E-4" name="Electricity, production mix photovoltaic, at plant" number="303684" standardDeviation95="1.3069000000000002" subCategory="photovoltaic" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Wind Onshore / FR; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="0.017015" name="Electricity, at wind farm" number="598753" standardDeviation95="1.3069000000000002" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Biomass / FR; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wood\cogeneration" location="CH" meanValue="0.0010847" name="Electricity, at cogen 1MWth, wood chips, allocation exergy" number="477818" standardDeviation95="1.3069000000000002" subCategory="wood\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Coal-derived gas / IT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="IT" meanValue="1.5191E-4" name="Electricity, industrial gas, at power plant" number="535408" standardDeviation95="1.3069000000000002" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Hydro Pumped Storage / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\power plants" location="DE" meanValue="0.0021433" name="Electricity, hydropower, at pumped storage plant, ENTSO, winter 2018" number="180778" standardDeviation95="1.3069000000000002" subCategory="hydro\power plants" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Solar / IT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="IT" meanValue="3.2548E-4" name="Electricity, production mix photovoltaic, at plant" number="612083" standardDeviation95="1.3069000000000002" subCategory="photovoltaic" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Biomass / FR; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="biomass\cogeneration" location="CH" meanValue="5.1698E-4" name="Electricity, at cogen with biogas engine, allocation exergy" number="442004" standardDeviation95="1.3069000000000002" subCategory="biomass\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Hydro Water Reservoir / IT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="RER" meanValue="5.2117E-4" name="Electricity, hydropower, at reservoir power plant, alpine region" number="485300" standardDeviation95="1.3069000000000002" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Waste / IT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste" location="CH" meanValue="2.9286E-5" name="Electricity from waste, at municipal waste incineration plant" number="419687" standardDeviation95="1.3069000000000002" subCategory="waste" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Solar / FR; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="FR" meanValue="0.0010069" name="Electricity, production mix photovoltaic, at plant" number="483157" standardDeviation95="1.3069000000000002" subCategory="photovoltaic" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Hydro Run-of-river and poundage / CH; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="CH" meanValue="0.018714" name="Electricity, hydropower, at small hydropower plant" number="330020" standardDeviation95="1.3069000000000002" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Oil / CH; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil\cogeneration" location="CH" meanValue="1.4756E-4" name="Electricity, at cogen 300kWth, diesel, allocation exergy" number="597488" standardDeviation95="1.3069000000000002" subCategory="oil\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Hard coal / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="coal" location="DE" meanValue="0.024432" name="Electricity, hard coal, at power plant" number="571390" standardDeviation95="1.3069000000000002" subCategory="coal" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Brown coal/Lignite / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="lignite" location="DE" meanValue="0.033317" name="Electricity, lignite, at power plant" number="166335" standardDeviation95="1.3069000000000002" subCategory="lignite" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Hydro Pumped Storage / AT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\power plants" location="AT" meanValue="0.0065715" name="Electricity, hydropower, at pumped storage plant, ENTSO, winter 2018" number="599284" standardDeviation95="1.3069000000000002" subCategory="hydro\power plants" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Nuclear / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste\nuclear\pwr" location="DE" meanValue="0.014942" name="Electricity, nuclear, at power plant pressure water reactor" number="607383" standardDeviation95="1.3069000000000002" subCategory="waste\nuclear\pwr" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Gas / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="DE" meanValue="0.011599" name="Electricity, natural gas, at power plant" number="172708" standardDeviation95="1.3069000000000002" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Solar / CH; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="CH" meanValue="0.0023537" name="Electricity, production mix photovoltaic, at plant" number="285595" standardDeviation95="1.3069000000000002" subCategory="photovoltaic" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Wind Onshore / CH; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="CH" meanValue="9.25E-4" name="Electricity, at wind farm" number="519347" standardDeviation95="1.3069000000000002" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Nuclear / CH; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste\nuclear\pwr" location="CH" meanValue="0.099461" name="Electricity, nuclear, at power plant pressure water reactor" number="399566" standardDeviation95="1.3069000000000002" subCategory="waste\nuclear\pwr" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Hydro Run-of-river and poundage / IT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\flow through" location="RER" meanValue="0.0023927" name="Electricity, hydropower, at run-of-river power plant" number="270757" standardDeviation95="1.3069000000000002" subCategory="hydro\flow through" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Biomass / AT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wood\cogeneration" location="CH" meanValue="0.0034177" name="Electricity, at cogen 1MWth, wood chips, allocation exergy" number="477818" standardDeviation95="1.3069000000000002" subCategory="wood\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Nuclear / CH; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste\nuclear\bwr" location="CH" meanValue="0.089436" name="Electricity, nuclear, at power plant boiling water reactor" number="497583" standardDeviation95="1.3069000000000002" subCategory="waste\nuclear\bwr" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Biomass / CH; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="biomass\cogeneration" location="CH" meanValue="0.0020796" name="Electricity, at cogen with biogas engine, agricultural covered, alloc. exergy" number="271678" standardDeviation95="1.3069000000000002" subCategory="biomass\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Waste / CH; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste" location="CH" meanValue="0.0087042" name="Electricity from waste, at municipal waste incineration plant" number="419687" standardDeviation95="1.3069000000000002" subCategory="waste" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Gas / IT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="IT" meanValue="0.0072593" name="Electricity, natural gas, at power plant" number="297601" standardDeviation95="1.3069000000000002" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Geothermal / DE; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="7.739E-6" name="Electricity, at wind farm" number="598753" standardDeviation95="1.3069000000000002" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Waste / AT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste" location="CH" meanValue="0.001475" name="Electricity from waste, at municipal waste incineration plant" number="419687" standardDeviation95="1.3069000000000002" subCategory="waste" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Hydro Run-of-river and poundage / CH; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\flow through" location="CH" meanValue="0.07619" name="Electricity, hydropower, at run-of-river power plant" number="539352" standardDeviation95="1.3069000000000002" subCategory="hydro\flow through" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Oil / FR; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil" location="FR" meanValue="0.00115" name="Electricity, oil, at power plant" number="289155" standardDeviation95="1.3069000000000002" subCategory="oil" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Wind Onshore / IT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="0.0022965" name="Electricity, at wind farm" number="598753" standardDeviation95="1.3069000000000002" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Fossil Gas / CH; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="natural gas\cogeneration" location="CH" meanValue="0.0046344" name="Electricity, at cogen 300kWth, natural gas, allocation exergy" number="180470" standardDeviation95="1.3069000000000002" subCategory="natural gas\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Biomass / CH; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wood\cogeneration" location="CH" meanValue="0.0067054" name="Electricity, at cogen 1MWth, wood chips, allocation exergy" number="477818" standardDeviation95="1.3069000000000002" subCategory="wood\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(4,2,1,1,3,3,BU:1.05); Geothermal / IT; ENTSO Transparency Platform&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="5.2549E-4" name="Electricity, at wind farm" number="598753" standardDeviation95="1.3069000000000002" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="250789" timestamp="2023-08-26T12:41:06">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="fuels" datasetRelatesToProduct="true" generalComment="Update 2022 by ZHAW only updated methane emissions at mine, Remark: Average data for coal mining in the specific region have been taken from a summary study on material flows and energy uses. Data are normalized by the mass unit of produced coal, including preparation and without differentiating steam coal from the rest. Due to a lack of data, the upper heating value of raw coal of this region had to be estimated as the used worldwide average of 19.1 MJ/kg n order to enable a consistent calculation of the cumulative energy demand. Mine reclamation is not included in this module, because it mostly concerns the tailings, which are described in a separate module. Electricity, heating from heavy oil industrial boilers, and diesel uses are included. The use of the module &quot;heat, at hard coal industrial furnace 1-10MW&quot; leads to an underestimation of emissions, because the quality of coal burned at mines is usually lower than coal burned in industrial boilers elsewhere. Electricity supply is modelled with the UCTE mix, because no specific mix has been modelled. Water uses in mining and coal washing have been approximately described using the module &quot;tap water&quot;. Particle emissions are assumed to be all greater than 10 micrometer. Radon emissions are average value worldwide. Methane emissions are region specific. Emissions to water are estimated for Western European conditions and applied to this region. They are assumed to be released to rivers. Possible emissions to groundwater have not been accounted for. All coalbed methane released from the seam is accounted for as natural gas resource. However the recovered methane, possibly used for district heating and for energetic needs of some individual mines, has not been described as an energy byproduct. The unaccounted energy is nevertheless negligible compared to the energy content of the product coal (maximum of two percent for underground mining).; NA; UUID: f15c4cad-e3dc-3eaf-8b1c-f8c12b2f6edd" includedProcesses="Included processes: The module represents average operational conditions in the relevant geographical region. It quantifies the directly affected area and occupation during operation of the mine. Electricity, heat, and diesel requirements for mining operation are included. Pumped groundwater, explosives, emissions to air and water, and solid waste complete the module. Not included is the methane recovered." infrastructureIncluded="true" infrastructureProcess="false" localCategory="fuels" localName="Hard coal, at mine" localSubCategory="coal\produced coal\mined coal" name="Hard coal, at mine" subCategory="coal\produced coal\mined coal" unit="kg"/>
+        <geography location="RLA" text=" Geography: Region specific."/>
+        <technology text="Technology: Not specified."/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2018-01</startDate>
+          <endDate>2020-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2023-08-26T12:41:06" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Extrapolations: see Geography/Text&#10;Uncertainty adjustments: none" samplingProcedure="Sampling procedure: literature" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Oberschelp C., Kroehnert H., Stucki M." firstAuthor="Itten R." number="138123" placeOfPublications="Waedenswil, CH" publisher="ZHAW" sourceType="3" text="Report" title="2023 - LCI solid fossil fuel - Itten" titleOfAnthology="Project report" year="2023"/>
+        <validation proofReadingDetails="26.08.2023" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137485" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="2" person="138122" referenceToPublishedSource="138123"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="René Itten" number="137485" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ETH" countryCode="CH" email="anonymised" name="Christopher Oberschelp" number="137484" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="Hanna Kroehnert" number="138122" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="Matthias Stucki" number="137832" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" infrastructureProcess="false" localCategory="fuels" localSubCategory="coal\produced coal\mined coal" location="RLA" meanValue="1" name="Hard coal, at mine" number="250789" subCategory="coal\produced coal\mined coal" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="standard for ressources" infrastructureProcess="true" localCategory="fuels" localSubCategory="coal\produced coal\mined coal\infrastructure" location="GLO" meanValue="3.33E-11" name="Open cast mine, hard coal" number="319710" standardDeviation95="1.05" subCategory="coal\produced coal\mined coal\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="own assumption" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="0.2" name="Tap water, at user" number="227940" standardDeviation95="2" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="Others" generalComment="own assumption" infrastructureProcess="false" localCategory="Others" localSubCategory="unspecified" location="RER" meanValue="0.002" name="Blasting" number="222941" standardDeviation95="2" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="own assumption" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="ENTSO" meanValue="0.01" name="Electricity, high voltage, production ENTSO-E, at grid" number="744906" standardDeviation95="2" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="own assumption" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="0.12" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="2" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="impoundment" generalComment="own assumption" infrastructureProcess="false" localCategory="impoundment" localSubCategory="unspecified" location="GLO" meanValue="0.25" name="Disposal, tailings from hard coal milling, in impoundment" number="200303" standardDeviation95="2" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="own assumption" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="GLO" meanValue="4.742" name="Disposal, spoil from coal mining, in surface landfill" number="288554" standardDeviation95="3" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="large spread in data" meanValue="9.7E-5" name="Transformation, from unknown" number="54270" standardDeviation95="5" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="large spread in data" meanValue="2.5E-5" name="Transformation, to mineral extraction site" number="81565" standardDeviation95="5" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own assumption" meanValue="0.003" name="Occupation, mineral extraction site" number="151625" standardDeviation95="5" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="large spread in data" meanValue="7.2E-5" name="Transformation, to dump site" number="14694" standardDeviation95="5" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="large spread in data" meanValue="0.0087" name="Occupation, dump site" number="104003" standardDeviation95="5" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own assumption" meanValue="1.25" name="Coal, hard" number="74314" standardDeviation95="1.2" subCategory="in ground" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own assumption" meanValue="0.0002" name="Gas, mine, off-gas, process, coal mining/m3" number="74582" standardDeviation95="2" subCategory="in ground" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own assumption" meanValue="0.0013" name="Water, well" number="160727" standardDeviation95="3" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="own assumption" meanValue="0.036" name="Heat, waste" number="46930" standardDeviation95="2" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,1,1,1,1,BU:1.5), updated emissions based on IEA 2018 / USEPA 2020" meanValue="0.0083846" name="Methane, fossil" number="90787" standardDeviation95="1.5" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="own assumption" meanValue="0.0004" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="3" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="own assumption" meanValue="0.012" name="Radon-222" number="85707" standardDeviation95="5" subCategory="low. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="1E-6" name="Aluminium" number="68256" standardDeviation95="5" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="1E-6" name="Ammonium, ion" number="89863" standardDeviation95="5" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="3E-6" name="Fluoride" number="73504" standardDeviation95="2" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="2E-6" name="Iron" number="91273" standardDeviation95="5" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="1E-6" name="Manganese" number="91185" standardDeviation95="2" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="1E-7" name="Nickel" number="91239" standardDeviation95="3" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="0.0001" name="Solids, inorganic" number="24723" standardDeviation95="5" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="1.5E-5" name="Suspended solids, unspecified" number="157731" standardDeviation95="3" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="5E-6" name="Strontium" number="40509" standardDeviation95="2" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="0.0005" name="Sulfate" number="49702" standardDeviation95="5" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="own assumption" meanValue="1E-7" name="Zinc" number="91189" standardDeviation95="3" subCategory="groundwater" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="1.17" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

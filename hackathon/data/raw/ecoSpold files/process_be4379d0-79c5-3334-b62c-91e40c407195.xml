@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="317614" timestamp="2023-08-28T15:03:20.486+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="metals" datasetRelatesToProduct="true" generalComment="The module describes the primary production of indium metal (99.999%, 5N) on a European average. No secondary sources from post consumer scrap are consid-ered. Only the most important source of indium raw material, the hydrometallurgical zinc operations, is reflected with the dataset. This dataset is based on the respec-tive flow from multi-output module &quot;smelting, primary zinc production&quot;. This dataset is not to be used when indium is a substantial part of the system modelled, viz. for comparisons of special solder pastes.;&#10;CAS number: 007440-74-6; &#10;Formula: In; &#10;UUID: be4379d0-79c5-3334-b62c-91e40c407195" includedProcesses="The module includes the production of indium from zinc extraction operations. Infrastructure and transports to Europe are considered. Most process specific emissions are missing." infrastructureProcess="false" localCategory="metals" localName="Indium, at regional storage" localSubCategory="non ferro" name="Indium, at regional storage" subCategory="non ferro" unit="kg"/>
+        <geography location="RER" text="This module represents the production of primary indium on a European average. The inventory however is compiled with global average data, e.g. for zinc-production."/>
+        <technology text="Indium containing residues from hydrometallurgical zinc operations are leached. Subsequent solvent extraction and precipitation of sponge indium. Indium cathodes are cast and electrorefined, followed by vacuum refining to obtain 5N quality. Solvent-extraction and electrowinning has been extrapolated from copper refining."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2005-01</startDate>
+          <endDate>2005-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-08-22T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography and Technology" productionVolume="480 t in 2006" samplingProcedure="literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Blaser S., Scharnhorst W., Tuchschmid M., Jungbluth N., Faist Emmenegger M." firstAuthor="Classen M." nameOfEditors="-" number="148415" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Classen M., Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M. (2008) Life Cycle Inventories of Metals. Final report ecoinvent data v2.1. Volume: 10. Issue: 0. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Classen M.\nOther authors: Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M.\nYear: 2008\nTitle of anthology: Final report ecoinvent data v2.1\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 10\nIssue No: 0\n" title="2009 - LCI metals - Classen" titleOfAnthology="Final report ecoinvent data v2.1" volumeNo="10" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: Passed; Other validation: none;" proofReadingValidator="137747"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="148776"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="148776" referenceToPublishedSource="148415"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Mischa Classen" number="148776" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="metals" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="1.0" name="Indium, at regional storage" number="317614" subCategory="non ferro" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,2,1,2,3,5,3)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="0.0375" name="Sulphuric acid, liquid, at plant" number="512921" standardDeviation95="1.3775000000000002" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(3,2,1,2,3,5,3)&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="GLO" meanValue="10000.0" name="Leaching residues, indium rich, from zinc circuit, at smelter" number="514849" standardDeviation95="1.3232000000000004" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(4,2,1,2,1,5,16)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.091735" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.6177000000000001" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(5,3,1,1,3,5,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.75" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.3276" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,1,1,1,3,5,9)&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="8.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.3171000000000004" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,1,1,1,1,13)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="40.56" name="Heat, waste" number="46930" standardDeviation95="1.0500000000000003" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007664-93-9" category="emissions to air" generalComment="(4,2,1,2,1,5,18)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.043382" name="Sulfuric acid" number="25859" standardDeviation95="1.6177000000000001" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(4,2,1,2,3,5,2)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="11.267" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.3775000000000002" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(5,3,1,1,3,5,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="airplane" location="RER" meanValue="7.5" name="Transport, aircraft, freight" number="259073" standardDeviation95="2.3276" subCategory="airplane" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,2,1,2,1,5,3)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="0.0425" name="Chemicals organic, at plant" number="497739" standardDeviation95="1.3013000000000003" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,162 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="355239" timestamp="2023-08-28T15:03:26.943+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="transport systems" datasetRelatesToProduct="true" generalComment="Inventory refers to the entire transport life cycle. Port infrastructure expenditures and environmental interventions are allocated based the yearly throughput. Vessel manufacturing is allocated based on the total kilometric performance (6'921'600km) and its transport performance (2164t/unit). The canal demand is estimated based on the total transport performance on the Rhein (41400000000tkm) and the transport distance of 850km.;&#10;UUID: 9ff39b71-5d21-3756-85b8-76a08a064a12" includedProcesses="The module calls the modules addressing: production of vessel; construction and land use of port; operation, maintenance and disposal of port. In addition canal construction and maintenance are called. Also included are fuel useage and the emissions of vessel operation." infrastructureProcess="false" localCategory="transport systems" localName="Transport, barge tanker" localSubCategory="ship" name="Transport, barge tanker" subCategory="ship" unit="tkm"/>
+        <geography location="RER" text="&lt;null&gt;"/>
+        <technology text="diesel engine technology"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2017-04-04T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Extrapolations" percent="100" productionVolume="na" samplingProcedure="Sampling Procedure " uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Messmer A." nameOfEditors="-" number="208366" placeOfPublications="Uster, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="3" text="Annika Messmer, Rolf Frischknecht (2015) Life cycle inventories of water transport services. Project report. Volume: 544. treeze Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: Annika Messmer\nOther authors: Rolf Frischknecht\nYear: 2015\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: treeze Ltd.\nVolume No: 544\n" title="2016 - LCI water transport services - Messmer" titleOfAnthology="Project report" volumeNo="544" year="2016"/>
+        <validation proofReadingDetails="Proof reading validation: 04.04.2017; Other validation: \\SRV01\ESU-Docs\Projektablage\544 Aktualisierung mobitool\Schiff\Frachtschiff\Ecospold\[544_Binnenschifffahrt_EIV2_v0.5.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="150662"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="150662" referenceToPublishedSource="208366"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Annika Messmer" number="150662" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="RER" meanValue="1.0" name="Transport, barge tanker" number="355239" subCategory="ship" uncertaintyType="0" unit="tkm">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,4,1,3,1,5,BU:3); assumed throughput port in Rotterdam: 444733000t per year ; Yearly report, Port Rotterdam 2014&#10;" infrastructureProcess="true" localCategory="water" localSubCategory="operations\infrastructure" location="RER" meanValue="5.2907E-14" name="Port facilities" number="260601" standardDeviation95="3.0616" subCategory="operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000142-82-5" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 3.15E-2 g/kg diesel; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="3.0518E-7" name="Heptane" number="651" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-02-0" category="emissions to air" generalComment="(2,5,2,3,3,5,BU:5); emission factor of diesel: 8.80E-9 g/kg diesel; EMEP/EEA guidebook 2013, 1.A.3.b.i-iv, Tab. 3-103&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="8.536E-11" name="Nickel" number="656" standardDeviation95="5.1616" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to air" generalComment="(2,5,2,3,3,5,BU:5); emission factor of diesel: 1.74E-6 g/kg diesel; EMEP/EEA guidebook 2013, 1.A.3.b.i-iv, Tab. 3-103&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.6859E-8" name="Zinc" number="666" standardDeviation95="5.1616" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,5,2,3,3,5,BU:1.05); devault value;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.39964" name="Heat, waste" number="46930" standardDeviation95="1.3843000000000003" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,4,1,3,1,5,BU:3); assumed throughput port in Rotterdam: 44473300000t per year; Yearly report, Port Rotterdam 2014&#10;" infrastructureProcess="true" localCategory="water" localSubCategory="operations\infrastructure" location="RER" meanValue="5.2907E-12" name="Operation, maintenance, port" number="193765" standardDeviation95="3.0616" subCategory="operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000050-32-8" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:3); emission factor of diesel: 7.70E-6 g/kg diesel; ecoinvent report 14&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="7.469E-11" name="Benzo(a)pyrene" number="29927" standardDeviation95="3.1506999999999996" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:3); emission factor of diesel: 1.33E+0 g/kg diesel; BAFU 2015: non road database&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.2893E-5" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="3.1506999999999996" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000106-97-8" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 1.57E-2 g/kg diesel; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.5259E-7" name="Butane" number="639" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(4,4,1,3,4,5,BU:3); assumed total yearly transport performance on the Rhein: 41400000000tkm and a transport distance of 850km; 0&#10;" infrastructureProcess="true" localCategory="water" localSubCategory="operations\infrastructure" location="RER" meanValue="2.0531E-5" name="Maintenance, operation, canal" number="495597" standardDeviation95="3.3302000000000005" subCategory="operations\infrastructure" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000075-07-0" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 4.79E-1 g/kg diesel; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="4.6489E-6" name="Acetaldehyde" number="632" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000100-52-7" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 1.44E-1 g/kg diesel; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.3937E-6" name="Benzaldehyde" number="637" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(4,4,1,3,4,5,BU:3); calculated based on the total yearly transport performance on the Rhein: 41400000000tkm and a transport distance of 850km; Marktbeobachtung 2014 Binnenschifffahrt Europa&#10;" infrastructureProcess="true" localCategory="water" localSubCategory="operations\infrastructure" location="RER" meanValue="2.0531E-5" name="Canal" number="204819" standardDeviation95="3.3302000000000005" subCategory="operations\infrastructure" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 6.14E-2 g/kg diesel; BAFU 2015: non road database&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="5.9546E-7" name="Methane, fossil" number="90787" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000108-88-3" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 1.05E-3 g/kg diesel; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.0173E-8" name="Toluene" number="665" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="018540-29-9" category="emissions to air" generalComment="(2,5,2,3,3,5,BU:5); emission factor of diesel: 6.00E-11 g/kg diesel; EMEP/EEA guidebook 2013, 1.A.3.b.i-iv, Tab. 3-103&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="5.82E-13" name="Chromium VI" number="643" standardDeviation95="5.1616" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,5,2,3,3,5,BU:5); emission factor of diesel: 1.00E-10 g/kg diesel; EMEP/EEA guidebook 2013, 1.A.3.b.i-iv, Tab. 3-103&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="9.7E-13" name="Arsenic" number="636" standardDeviation95="5.1616" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="010024-97-2" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 1.54E-1 g/kg diesel; BAFU 2015: non road database&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.4967E-6" name="Dinitrogen monoxide" number="646" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000107-02-8" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 1.86E-1 g/kg diesel; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.8006E-6" name="Acrolein" number="634" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-97-6" category="emissions to air" generalComment="(2,5,2,3,3,5,BU:5); emission factor of diesel: 5.30E-9 g/kg diesel; EMEP/EEA guidebook 2013, 1.A.3.b.i-iv, Tab. 3-103&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="5.141E-11" name="Mercury" number="89723" standardDeviation95="5.1616" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 8.52E+0 g/kg diesel; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="8.2632E-5" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-84-0" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 3.15E-3 g/kg diesel; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="3.0518E-8" name="Ethane" number="647" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-50-8" category="emissions to air" generalComment="(2,5,2,3,3,5,BU:5); emission factor of diesel: 2.12E-8 g/kg diesel; EMEP/EEA guidebook 2013, 1.A.3.b.i-iv, Tab. 3-103&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="2.0564E-10" name="Copper" number="644" standardDeviation95="5.1616" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000630-08-0" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:5); emission factor of diesel: 2.10E+1 g/kg diesel; BAFU 2015: non road database&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="2.0344E-4" name="Carbon monoxide, fossil" number="641" standardDeviation95="5.1721" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000071-43-2" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:3); emission factor of diesel: 1.66E-2 g/kg diesel; BAFU 2015: non road database&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.6093E-7" name="Benzene" number="638" standardDeviation95="3.1506999999999996" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000050-00-0" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 8.81E-1 g/kg diesel; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="8.545E-6" name="Formaldehyde" number="650" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,5,2,3,3,5,BU:5); emission factor of diesel: 1.00E-10 g/kg diesel; EMEP/EEA guidebook 2013, 1.A.3.b.i-iv, Tab. 3-103&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="9.7E-13" name="Selenium" number="663" standardDeviation95="5.1616" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007446-09-5" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.05); emission factor of diesel: 2.00E-2 g/kg diesel; HBEFA 3.1.&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.94E-7" name="Sulfur dioxide" number="26215" standardDeviation95="1.3984000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-43-9" category="emissions to air" generalComment="(2,5,2,3,3,5,BU:5); emission factor of diesel: 8.70E-9 g/kg diesel; EMEP/EEA guidebook 2013, 1.A.3.b.i-iv, Tab. 3-103&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="8.439E-11" name="Cadmium" number="640" standardDeviation95="5.1616" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-47-3" category="emissions to air" generalComment="(2,5,2,3,3,5,BU:5); emission factor of diesel: 3.00E-8 g/kg diesel; EMEP/EEA guidebook 2013, 1.A.3.b.i-iv, Tab. 3-103&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="2.91E-10" name="Chromium" number="642" standardDeviation95="5.1616" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 4.14E+1 g/kg diesel; BAFU 2015: non road database&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="4.0113E-4" name="Nitrogen oxides" number="79243" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000095-47-6" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 4.19E-2 g/kg diesel; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="4.0691E-7" name="o-Xylene" number="657" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-98-6" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 1.05E-2 g/kg diesel; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.0173E-7" name="Propane" number="661" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:2); emission factor of diesel: 5.47E-2 g/kg diesel;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="5.3082E-7" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="2.1564" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,3,1,3,1,5,BU:3); assumed transport distance: 850km and 50 rides a year and a average life time of 33 years; own assumption, ecoinvent report 14, Tremod 2012&#10;" infrastructureProcess="true" localCategory="water" localSubCategory="operations\infrastructure" location="RER" meanValue="7.0153E-10" name="Barge tanker" number="454084" standardDeviation95="3.0524999999999998" subCategory="operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000100-42-5" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 5.87E-2 g/kg diesel; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="5.6967E-7" name="Styrene" number="664" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 5.62E-2 g/kg diesel;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="5.4479E-7" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000109-66-0" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 6.29E-3 g/kg diesel; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="6.1036E-8" name="Pentane" number="660" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(4,3,1,3,1,5,BU:3); ;&#10;" infrastructureProcess="true" localCategory="water" localSubCategory="operations\infrastructure" location="RER" meanValue="7.0153E-10" name="Maintenance, barge" number="423651" standardDeviation95="3.0946999999999996" subCategory="operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(2,4,1,3,1,5,BU:1.05); assumed diesel consumption 8g/tkm for barge ship and   10g/tkm for barge tanker; Tremod 2012&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="distribution" location="RER" meanValue="0.0097" name="Diesel, at regional storage" number="458903" standardDeviation95="1.2435000000000003" subCategory="distribution" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000108-38-3" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.5); emission factor of diesel: 1.03E-1 g/kg diesel; BAFU 2015: Non-road database; EMEP/EEA guidebook 2013, Tab. 3-112&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="9.9692E-7" name="m-Xylene" number="655" standardDeviation95="1.6886" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="(3,5,2,3,3,5,BU:1.05); emission factor of diesel: 3.15E+3 g/kg diesel; BAFU 2015: non road database&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.030556" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.3984000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-92-1" category="emissions to air" generalComment="(2,5,2,3,3,5,BU:5); emission factor of diesel: 5.21E-8 g/kg diesel; EMEP/EEA guidebook 2013, 1.A.3.b.i-iv, Tab. 3-103&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="5.0537E-10" name="Lead" number="36341" standardDeviation95="5.1616" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

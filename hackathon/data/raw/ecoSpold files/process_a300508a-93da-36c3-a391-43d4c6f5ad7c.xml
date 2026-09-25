@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="321558" timestamp="2023-08-28T15:03:25.540+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="Inventory refers to the production of 1 kg anhydrous ethanol 99.7% (dry basis, i.e. 1.003 kg anhydrous ethanol wet basis). Dehydration is carried out by molecular sieve technology. Ethanol is produced from corn, in the average US context.;&#10;CAS number: 000064-17-5; &#10;Formula: C2H6O ; &#10;Synonyms: Alkohol, alcohol dehydrated, algrain, Anhydrol, cologne spirit, cologne spirits (alcohol), Denatured alcohol, Ethyl alcohol, Ethanol, ethanol 200 proof, Ethanol absolute, ethyl hydrate, ethyl hydroxide, fermentation alcohol, grain alcohol, bioethanol, bio-ethanol; &#10;UUID: a300508a-93da-36c3-a391-43d4c6f5ad7c" includedProcesses="This dataset includes the dehydration of hydrated ethanol (95%) to anhydrous ethanol (99.7%). Hydrated ethanol input is corn-based ethanol, produced in the US context. Treatment of waste streams is included." infrastructureProcess="false" localCategory="fuels" localName="Ethanol, 99.7% in H2O, from biomass, at distillation" localSubCategory="biofuels\ethanol" name="Ethanol, 99.7% in H2O, from biomass, at distillation" subCategory="biofuels\ethanol" unit="kg"/>
+        <geography location="US" text="Data is from the etha+ project (Alcosuisse, CH), adapted to US context"/>
+        <technology text="Dehydration is done by molecular sieve technology."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Data from 1990 to 2006, current dry-mill technology for the production of ethanol from corn">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2006-08-15T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="0" productionVolume="Production volume of ethanol for use as a fuel was 12'000 Ml in 2004 in US" samplingProcedure="Data is from the etha+ project (Alcosuisse, CH), technology by French ethanol plant supplier, modelling by ENERS (CH) " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J." firstAuthor="Jungbluth N." nameOfEditors="-" number="136872" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth N., Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J. (2007) Life Cycle Inventories of Bioenergy. Final report ecoinvent data v2.0. Volume: 17. Swiss Centre for LCI, ESU. Duebendorf and Uster, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth N.\nOther authors: Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Duebendorf and Uster, CH\nPublisher: Swiss Centre for LCI, ESU\nVolume No: 17\n" title="2007 - LCI bioenergy - Jungbluth" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="17" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="159099"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="159098" referenceToPublishedSource="136872"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Edgard Gnansounou" number="159098" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Arnaud Dauriat" number="159099" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="UNITED STATES&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="biofuels\ethanol" location="US" meanValue="1.0" name="Ethanol, 99.7% in H2O, from biomass, at distillation" number="321558" subCategory="biofuels\ethanol" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,2,1,1,1,5); etha+ project Alcosuisse, industrial data, cross checking with literature survey for US conditions&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="US" meanValue="0.0088389" name="Electricity, medium voltage, at grid" number="395204" standardDeviation95="1.2090000000000003" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,1,3,1,3); ecoinvent guidelines, calculation from electricity consumption and energy balance&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.03182" name="Heat, waste" number="46930" standardDeviation95="1.1376" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(1,1,1,1,1,1); Product, calculation&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="biofuels\ethanol" location="US" meanValue="1.0" name="Ethanol, 95% in H2O, from corn, at distillery" number="230203" standardDeviation95="1.0500000000000003" subCategory="biofuels\ethanol" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(1,2,1,1,1,5); etha+ project Alcosuisse, industrial data, cross checking with literature survey for US conditions&#10;" infrastructureProcess="true" localCategory="fuels" localSubCategory="biofuels\infrastructure" location="CH" meanValue="5.2989E-11" name="Ethanol fermentation plant" number="270445" standardDeviation95="3.046" subCategory="biofuels\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(1,2,1,1,1,5); etha+ project Alcosuisse, industrial data, cross checking with literature survey for US conditions&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="4.9623E-5" name="Treatment, sewage, from residence, to wastewater treatment, class 2" number="538378" standardDeviation95="1.2090000000000003" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,2,1,1,1,5); etha+ project Alcosuisse, industrial data, cross checking with literature survey for US conditions&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="1.0046" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.2090000000000003" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

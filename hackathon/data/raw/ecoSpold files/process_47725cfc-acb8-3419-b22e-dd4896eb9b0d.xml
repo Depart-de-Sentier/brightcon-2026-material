@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="565491" timestamp="2023-08-28T15:03:41.208+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity" datasetRelatesToProduct="true" generalComment="The location and technology of the production of the residual attributes have been for some technologies (biomass, solar, hydropower) adapted by the ENTSO-mix based on technologies, which is a rough estimation.\nTime period: Time of publications.\nVersion: 1\nEnergy values: Undefined\nLocal category: Elektrizität\nLocal subcategory: Residualmix\nUVEK 2022 source file:589-Strommix-EAM_v0.2._X-European Attribute Mix 2014.xml\n\n&#10;UUID: 47725cfc-acb8-3419-b22e-dd4896eb9b0d" includedProcesses="Includes the shares of resudial attributes produced in Europe in 2014 with the different technologies." infrastructureProcess="false" localCategory="electricity" localName="Electricity, european attribute mix, at plant" localSubCategory="production mix" name="Electricity, european attribute mix, at plant" subCategory="production mix" unit="kWh"/>
+        <geography location="RER" text="undefined"/>
+        <technology text="undefined"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2014-01</startDate>
+          <endDate>2014-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2017-05-06T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="&lt;null&gt;" uncertaintyAdjustments="&lt;null&gt;"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Messmer A." nameOfEditors="-" number="565488" placeOfPublications="Uster, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="3" text="Messmer A., Frischknecht, R. (2016) Umweltbilanz Strommix Schweiz 2014. Project reports. Volume: 589. treeze Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: Messmer A.\nOther authors: Frischknecht, R.\nYear: 2016\nTitle of anthology: Project reports\nPlace of publication: Uster, CH\nPublisher: treeze Ltd.\nVolume No: 589\n" title="2016 - LCA electricity mix Switzerland 2014 - Messmer" titleOfAnthology="Project reports" volumeNo="589" year="2016"/>
+        <validation proofReadingDetails="Proof reading validation: 06.05.2017; Other validation: \\SRV01\ESU-Docs\Projektablage\589 Strommix Schweiz 2014\EcoSpold\[589-Strommix-EAM_v0.2.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="150662"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="150662" referenceToPublishedSource="565488"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Annika Messmer" number="150662" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="RER" meanValue="1.0" name="Electricity, european attribute mix, at plant" number="565491" subCategory="production mix" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1.05); Differentiated between different hydropower technologies according to dataset ENTSO based on technologies; RE-DISS II (2015)&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="RER" meanValue="0.0015231" name="Electricity, hydropower, at reservoir power plant, non alpine regions" number="615575" standardDeviation95="1.0500000000000003" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1.05); Same dataset used as in the dataset ENTSO based on technologies; RE-DISS II (2015)&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="DE" meanValue="5.1544E-4" name="Electricity, production mix photovoltaic, at plant" number="440246" standardDeviation95="1.0500000000000003" subCategory="photovoltaic" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1.05); ; RE-DISS II (2015)&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="lignite" location="ENTSO-E" meanValue="0.29689" name="Electricity, lignite, at power plant" number="548759" standardDeviation95="1.0500000000000003" subCategory="lignite" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1.05); Differentiated between different hydropower technologies according to dataset ENTSO based on technologies; RE-DISS II (2015)&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="RER" meanValue="0.0015231" name="Electricity, hydropower, at reservoir power plant, alpine region" number="485300" standardDeviation95="1.0500000000000003" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1.05); ; RE-DISS II (2015)&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste\nuclear" location="UCTE" meanValue="0.41864" name="Electricity, nuclear, at power plant" number="268188" standardDeviation95="1.0500000000000003" subCategory="waste\nuclear" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1.05); ; RE-DISS II (2015)&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil" location="UCTE" meanValue="0.0050967" name="Electricity, oil, at power plant" number="266860" standardDeviation95="1.0500000000000003" subCategory="oil" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1.05); Differentiated between different hydropower technologies according to dataset ENTSO based on technologies; RE-DISS II (2015)&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\flow through" location="RER" meanValue="7.6794E-4" name="Electricity, hydropower, at run-of-river power plant" number="270757" standardDeviation95="1.0500000000000003" subCategory="hydro\flow through" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1.05); ; RE-DISS II (2015)&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="coal" location="ENTSO-E" meanValue="0.18951" name="Electricity, hard coal, at power plant" number="355543" standardDeviation95="1.0500000000000003" subCategory="coal" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1.05); ; RE-DISS II (2015)&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="0.001237" name="Electricity, at wind farm" number="598753" standardDeviation95="1.0500000000000003" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1.05); Same dataset used as in the dataset ENTSO based on technologies; RE-DISS II (2015)&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="biomass\cogeneration" location="CH" meanValue="0.001134" name="Electricity, at cogen with biogas engine, allocation exergy" number="442004" standardDeviation95="1.0500000000000003" subCategory="biomass\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1,BU:1.05); ; RE-DISS II (2015)&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="ENTSO-E" meanValue="0.08317" name="Electricity, from natural gas" number="176217" standardDeviation95="1.0500000000000003" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

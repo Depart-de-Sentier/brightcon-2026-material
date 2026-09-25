@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="RStudio" number="224220" timestamp="2025-03-31T15:02:08">
+    <metaInformation>
+      <processInformation>
+        <timePeriod dataValidForEntirePeriod="True" text="Base technology year of 2020">
+          <startDate>2020-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <referenceFunction amount="1" category="transport systems" datasetRelatesToProduct="True" generalComment=" This is the inventory for 1 kg of gearbox for a MDV/HDV. Original source: Wolff et al. 2020, Sustainability, DOI: 10.3390/su12135396. UUID: 543cb150-8524-38cc-81f1-3845129f7cc9" infrastructureIncluded="True" infrastructureProcess="True" localCategory="transport systems" localName="Gearbox, for lorry" localSubCategory="road\Vehicle components" name="Gearbox, for lorry" subCategory="road\Vehicle components" unit="kg"/>
+        <geography location="RER" text="Unspecified"/>
+        <technology text="This is the inventory for 1 kg of gearbox for a MDV/HDV. Original source: Wolff et al. 2020, Sustainability, DOI: 10.3390/su12135396"/>
+        <dataSetInformation energyValues="0" impactAssessmentResult="False" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2025-03-31T15:02:08" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Unspecified" productionVolume="Unspecified" samplingProcedure="Unspecified" uncertaintyAdjustments="Unspecified"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="136752" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="doi: 10.5281/ZENODO.5156043" title="2023 - LCI on-road vehicles - Sacchi" year="2023"/>
+        <validation proofReadingDetails="Unspecified" proofReadingValidator="136748"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136751"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="False" dataPublishedIn="2" person="136749" referenceToPublishedSource="136752"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Brian Cox" number="136748" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Julien McTighe" number="136751" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Vehicle components" location="RER" meanValue="1.0" name="Gearbox, for lorry" number="224220" subCategory="road\Vehicle components" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" infrastructureProcess="False" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="0.5" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.2451093276686365" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" infrastructureProcess="False" localCategory="electricity" localSubCategory="production mix" location="ENTSO-E" meanValue="1.93" name="Electricity, low voltage, production ENTSO-E, at grid" number="744926" standardDeviation95="1.2451093276686365" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" infrastructureProcess="False" localCategory="heat" localSubCategory="natural gas\cogeneration" location="RER" meanValue="1.82" name="Heat, at cogen 1MWe lean burn, allocation heat" number="221956" standardDeviation95="1.2451093276686365" subCategory="natural gas\cogeneration" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" infrastructureProcess="False" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="0.25" name="Sheet rolling, chromium steel" number="440148" standardDeviation95="1.2451093276686365" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" infrastructureProcess="False" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="0.25" name="Cast iron, at plant" number="506433" standardDeviation95="1.2451093276686365" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" infrastructureProcess="False" localCategory="metals" localSubCategory="general manufacturing" location="RER" meanValue="1.0" name="Steel product manufacturing, average metal working" number="348293" standardDeviation95="1.2451093276686365" subCategory="general manufacturing" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.2" name="Transport, freight, rail" number="149864" standardDeviation95="1.2451093276686365" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.1" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="1.2451093276686365" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" meanValue="0.001" name="Occupation, industrial area, vegetation" number="113531" standardDeviation95="1.2451093276686365" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="Uncertainty from pedigree matrix: (3, 3, 2, 2, 3, 3)" meanValue="0.001" name="Transformation, to industrial area, vegetation" number="85687" standardDeviation95="1.2451093276686365" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

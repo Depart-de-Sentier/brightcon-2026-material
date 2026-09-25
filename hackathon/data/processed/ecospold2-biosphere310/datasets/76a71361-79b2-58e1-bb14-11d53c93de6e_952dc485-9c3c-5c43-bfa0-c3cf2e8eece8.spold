@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="76a71361-79b2-58e1-bb14-11d53c93de6e" activityNameId="22c1b237-9189-5f04-8b7b-50b810e0e50c" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">EV charger, level 3, plugin, 200 kW</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: EV charger, level 3, plugin, 200 kW
+ Level 2 charger for BEV. From https://doi.org/10.1016/S0306-2619(01)00032-0. Used for overnight charging. Can charge a regular passenger car in 3 hours. Assumed lifetime of 24 years. We upscale it to a 100 kW Level-3 charger by upscaling the charger component given a mass of 1290 kg given by AAB's 100 kW bus charger. Original source: https://doi.org/10.1016/S0306-2619(01)00032-0. UUID: 7d61c1d5-ea08-3f81-a3cc-81ad0d64fb6e
+Location: Unspecified
+Technology: Level 2 charger for BEV. From https://doi.org/10.1016/S0306-2619(01)00032-0. Used for overnight charging. Can charge a regular passenger car in 3 hours. Assumed lifetime of 24 years. We upscale it to a 100 kW Level-3 charger by upscaling the charger component given a mass of 1290 kg given by AAB's 100 kW bus charger. Original source: https://doi.org/10.1016/S0306-2619(01)00032-0
+Time period: Base technology year of 2020
+Production volume: Unspecified
+Sampling: Unspecified
+Extrapolations: Unspecified
+Uncertainty adjustments: Unspecified
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_7d61c1d5-ea08-3f81-a3cc-81ad0d64fb6e.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="20a9bf48-6cea-59b4-ad08-000cb981f2d0" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">RER</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Unspecified</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Level 2 charger for BEV. From https://doi.org/10.1016/S0306-2619(01)00032-0. Used for overnight charging. Can charge a regular passenger car in 3 hours. Assumed lifetime of 24 years. We upscale it to a 100 kW Level-3 charger by upscaling the charger component given a mass of 1290 kg given by AAB's 100 kW bus charger. Original source: https://doi.org/10.1016/S0306-2619(01)00032-0</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2020-01-01" endDate="2020-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Base technology year of 2020</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="1e93b374-d4dd-5c97-9937-af8405e8cdb6" amount="1.0" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="76a71361-79b2-58e1-bb14-11d53c93de6e" intermediateExchangeId="952dc485-9c3c-5c43-bfa0-c3cf2e8eece8" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">EV charger, level 3, plugin, 200 kW</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: EV charger, level 3, plugin, 200 kW
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="570a7087-cdeb-52d5-815f-229898d6b53f" amount="1.0" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="fbb1caaa-1370-53d5-86f9-db8c15e22083" intermediateExchangeId="feac0433-d2f2-50a0-b264-b3404997a48b" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Storage battery</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Storage battery
+Uncertainty from pedigree matrix: (3, 2, 5, 3, 1, 1)
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0" varianceWithPedigreeUncertainty="0.04356756809079021" mu="0.0"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="c2a60060-251d-52ad-be8e-49ac75bb53cf" amount="4.3" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="b0201909-fa5b-5b92-9ada-b17f5362e34c" intermediateExchangeId="ac5cf50c-a324-5e63-a7b1-f7aa8c3fcbcb" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Charger</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Charger
+Uncertainty from pedigree matrix: (3, 2, 5, 3, 1, 1)
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.3" varianceWithPedigreeUncertainty="0.04356756809079021" mu="1.4586150226995167"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6b5e2add-b534-59f1-bdf6-6d213618780d" amount="1.0" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="0b473ac7-6917-5047-b493-191b3322f444" intermediateExchangeId="a1457dab-cb6b-54cf-88d8-6914fc5c7a0a" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Charging stand</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Charging stand
+Uncertainty from pedigree matrix: (3, 2, 5, 3, 1, 1)
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.0" varianceWithPedigreeUncertainty="0.04356756809079021" mu="0.0"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="a3700465-69bf-59e6-ac5e-ad646f262240" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Julien McTighe" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="1426216e-3338-5592-ad7a-3abe3eb8a28a" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Romain Sacchi" personEmail="anonymised" isCopyrightProtected="false"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

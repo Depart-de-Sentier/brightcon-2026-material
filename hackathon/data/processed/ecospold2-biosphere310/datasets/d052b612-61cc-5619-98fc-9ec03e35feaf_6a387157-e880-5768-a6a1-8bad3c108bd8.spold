@@ -1,0 +1,982 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="d052b612-61cc-5619-98fc-9ec03e35feaf" activityNameId="0915b520-e752-501b-86ed-ee61ff6eadae" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="1">
+        <activityName xml:lang="en">Operation, coal freight train, steam</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Operation, coal freight train, steam
+Coal use per tkm estimated from energy content in diesel consumed in diesel locomotives and a factor 6 lower efficiency for steam locomotives compared to diesel locomotives. Emissions are based on the dataset "hard coal, burned in coal mine power plant" and 24 MJ/kg LHV. However, emissions to air but CO2, NOx, N2O and CH4 have been arbitrarily increased by a factor of 2 per MJ, CO by a factor of 5, particles by a factor of 10, whereas ashes have been decreased by a factor of 2 compared to small coal mine power plants. This dataset should not be used for comparisons of locomotive types nor of transport means across different countries but only when transport is not a major contributor to total environmental burdens of a process or product being analyzed.;
+UUID: cc4ab222-ff65-3a7d-9850-a2f2905d6b5a
+Based on "operation, freight train, diesel" dataset for RER adapting coal as fuel.
+Location: RER operation model with own estimation for coal consumption &amp; emissions per tkm.
+Technology: Unspecified.
+Time period: undefined
+Production volume: na
+Sampling: &lt;null&gt;
+Extrapolations: &lt;null&gt;
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_cc4ab222-ff65-3a7d-9850-a2f2905d6b5a.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="3142d8e2-0d30-557e-b090-9faae2b72357" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CN</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: RER operation model with own estimation for coal consumption &amp; emissions per tkm.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Unspecified.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="1999-01-01" endDate="2004-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: undefined</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="e29f70ad-94af-5c1d-bcca-75c503a125e9" amount="1.0" unitId="97a43c83-639b-5b25-b36e-39233e1b0540" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="d052b612-61cc-5619-98fc-9ec03e35feaf" intermediateExchangeId="6a387157-e880-5768-a6a1-8bad3c108bd8" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Operation, coal freight train, steam</name>
+        <unitName xml:lang="en">ton kilometer</unitName>
+        <comment xml:lang="en">Full flow name: Operation, coal freight train, steam
+CHINA
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9586fe0e-80b6-5e0b-aca8-34344f52fceb" amount="0.0467" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="20fe745e-75de-5df4-85b8-b4c1825b16e7" intermediateExchangeId="de2f3283-2d59-51ed-9a53-01157d34f883" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Hard coal, at mine</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Hard coal, at mine
+own assumption (original dataset for Europe 1.09)
+
+BAFU mapping audit: {"bafu source exchange index": 24}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0467" varianceWithPedigreeUncertainty="0.12011325347955039" mu="-3.0640111143072857"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="457f335a-f54a-561e-b422-f69730d2b4ac" amount="0.0149" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="757c6af5-5c3d-5fb0-8b5c-18e0b85cc8bf" intermediateExchangeId="61d036dd-ef55-5978-938a-279761dcb454" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Disposal, hard coal ash, 0% water, to residual material landfill</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Disposal, hard coal ash, 0% water, to residual material landfill
+own assumption
+
+BAFU mapping audit: {"bafu source exchange index": 50}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0149" varianceWithPedigreeUncertainty="0.3017372402031454" mu="-4.2063940660307235"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="bc3e9731-09d6-5b3b-8e1e-e4012f825d25" amount="0.106" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="349b29d1-3e58-4c66-98b9-9d1a076efd2e">
+        <name xml:lang="en">Carbon dioxide, fossil</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Carbon dioxide, fossil
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.106" varianceWithPedigreeUncertainty="0.034514869117188776" mu="-2.24431618487007"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="46c250c7-c0bb-50ec-981c-a27fd80ba484" amount="4.43e-09" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="77927dac-dea3-429d-a434-d5a71d92c4f7">
+        <name xml:lang="en">Antimony ion</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Antimony ion
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.43e-09" varianceWithPedigreeUncertainty="1.054856078332833" mu="-19.23486625288937"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="a2a69b6a-27aa-538c-b8d1-df075b32eca1" amount="7.84e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="3a6c936c-0276-4f11-9d98-1bd011387a6e">
+        <name xml:lang="en">Propane</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Propane
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="7.84e-08" varianceWithPedigreeUncertainty="0.34730690010028137" mu="-16.36144190959005"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="291cecaa-71a8-5fd9-b195-1e2aa80403eb" amount="0.000132" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="b967e1bf-f09b-4c89-8740-ace21db47bba">
+        <name xml:lang="en">Particulate Matter, &gt; 2.5 um and &lt; 10um</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Particulate Matter, &gt; 2.5 um and &lt; 10um
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000132" varianceWithPedigreeUncertainty="0.5739026330164225" mu="-8.932708635377903"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="ff9b0cf5-d389-56cf-b37c-3d8f79202079" amount="4.86e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="28999907-a8a7-45b3-857e-836495ca2aa0">
+        <name xml:lang="en">Benzene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Benzene
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.86e-07" varianceWithPedigreeUncertainty="0.34730690010028137" mu="-14.537057213045918"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="ace0fd8f-a6b8-56a9-bfad-6b8dff337a6b" amount="4.9e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="2451f9df-0596-49ec-8380-08e4ad75a153">
+        <name xml:lang="en">Hydrocarbons, aliphatic, alkanes, unspecified</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Hydrocarbons, aliphatic, alkanes, unspecified
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 6}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.9e-07" varianceWithPedigreeUncertainty="0.34730690010028137" mu="-14.528860445841739"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="24d47740-3e8f-5302-ac0a-04d2c1f84e04" amount="3.58e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="64165202-4870-47d0-8602-b85e5d672865">
+        <name xml:lang="en">Propylene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Propylene
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 7}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.58e-08" varianceWithPedigreeUncertainty="0.34730690010028137" mu="-17.145317943539755"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="edddebaa-dfb8-5a4d-9e6a-2d451fbb8384" amount="1.12e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="0795345f-c7ae-410c-ad25-1845784c75f5">
+        <name xml:lang="en">Methane, fossil</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Methane, fossil
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 8}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.12e-06" varianceWithPedigreeUncertainty="0.34730690010028137" mu="-13.70218187265727"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="51e1a84a-1dbf-54d8-ada6-7f57a675c2be" amount="0.826" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="f2d84834-d0b3-42e5-b41a-f04cc80337a4">
+        <name xml:lang="en">Heat, waste</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, waste
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 9}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.826" varianceWithPedigreeUncertainty="0.027110239470539435" mu="-0.19116050546115904"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="06a1f62f-40bc-5228-aa84-04619f7ad204" amount="0.00082" unitId="a688ac50-b87b-599e-934a-99e10066a45a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="cb3265f8-49a0-4b09-9bd9-c374370c4cc4">
+        <name xml:lang="en">Radon-222</name>
+        <unitName xml:lang="en">kilo Becquerel</unitName>
+        <comment xml:lang="en">Full flow name: Radon-222
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 10}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00082" varianceWithPedigreeUncertainty="0.8759108473633841" mu="-7.106206217705975"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="1e08372c-cb9d-5778-af45-b6c79a1f5575" amount="2.55e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="e142b577-e934-4085-9a07-3983d4d92afb">
+        <name xml:lang="en">Chromium III</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Chromium III
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 11}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.55e-08" varianceWithPedigreeUncertainty="1.054856078332833" mu="-17.48458738478203"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="86fa5b08-2fbc-54c7-9530-f1f4c6285884" amount="3.29e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="516606eb-99f6-4e8c-b99a-6b439aaed48c">
+        <name xml:lang="en">Pentane</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Pentane
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 12}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.29e-07" varianceWithPedigreeUncertainty="0.34730690010028137" mu="-14.92720808618104"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="ed810a2b-d296-5151-bacd-c1c6558bb58e" amount="0.000281" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="66020d27-7ae4-4e59-83a3-89214b72c40a">
+        <name xml:lang="en">Particulate Matter, &gt; 10 um</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Particulate Matter, &gt; 10 um
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 13}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000281" varianceWithPedigreeUncertainty="0.34730690010028137" mu="-8.177155888630528"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="af39d5da-7690-5f2b-8b10-2a55fe8ba9eb" amount="6.69e-05" unitId="a688ac50-b87b-599e-934a-99e10066a45a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="4bc2ecf7-fbc3-4c74-81f6-30f9f4425d30">
+        <name xml:lang="en">Potassium-40</name>
+        <unitName xml:lang="en">kilo Becquerel</unitName>
+        <comment xml:lang="en">Full flow name: Potassium-40
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 14}</comment>
+        <uncertainty>
+          <lognormal meanValue="6.69e-05" varianceWithPedigreeUncertainty="0.8759108473633841" mu="-9.61231159083009"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="c4efb8ee-8b15-505b-959d-84dea4e8eae8" amount="1.72e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="5ce378a0-b48d-471c-977d-79681521efde">
+        <name xml:lang="en">Zinc II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Zinc II
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 15}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.72e-07" varianceWithPedigreeUncertainty="1.054856078332833" mu="-15.575771360132958"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="84c484a9-15f3-5aa5-bd8a-74a18c0bed9d" amount="2.48e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="0d9f52b2-f2d5-46a3-90a3-e22ef252cc37">
+        <name xml:lang="en">Strontium II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Strontium II
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 16}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.48e-07" varianceWithPedigreeUncertainty="1.054856078332833" mu="-15.209837090781429"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="654b0e12-0cf6-5aa8-b9cc-f3591fe8be30" amount="6.55e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="446d8fe4-fde6-4640-bc23-f04a663bbc04">
+        <name xml:lang="en">Iodine</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Iodine
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 17}</comment>
+        <uncertainty>
+          <lognormal meanValue="6.55e-07" varianceWithPedigreeUncertainty="0.4630642945462152" mu="-14.23863060131116"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="2e7236b5-6c0a-5742-b60f-88bdfebfc679" amount="0.00113" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="21e46cb8-6233-4c99-bac3-c41d2ab99498">
+        <name xml:lang="en">Particulate Matter, &lt; 2.5 um</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Particulate Matter, &lt; 2.5 um
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 18}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00113" varianceWithPedigreeUncertainty="0.6795188159309188" mu="-6.785537646257888"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="b314131e-afa1-5ce5-b4c0-362f3d718093" amount="3.16e-09" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="81e17d9a-3e0b-414e-9b2e-eca7e5b3bd4a">
+        <name xml:lang="en">Chromium VI</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Chromium VI
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 19}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.16e-09" varianceWithPedigreeUncertainty="0.6795188159309188" mu="-19.57269380934759"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="a74dd437-2dc9-543c-b9aa-19f6477c5748" amount="2.24e-09" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="3e5d7d91-67d7-4afb-91dd-36fab58e4685">
+        <name xml:lang="en">PAH, polycyclic aromatic hydrocarbons</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: PAH, polycyclic aromatic hydrocarbons
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 20}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.24e-09" varianceWithPedigreeUncertainty="0.6795188159309188" mu="-19.916789971079464"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="dc396f50-f546-502d-8d34-d90b92230b78" amount="2.44e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="3b1ecf8e-1d2c-4330-81da-a79f9068976d">
+        <name xml:lang="en">Toluene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Toluene
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 21}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.44e-07" varianceWithPedigreeUncertainty="0.34730690010028137" mu="-15.22609761165321"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="d6db3010-3fd9-5bfc-8334-3b42d6305030" amount="1.3e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="a861cfae-a310-4e9d-b9eb-5d555c9a684c">
+        <name xml:lang="en">Formaldehyde</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Formaldehyde
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 22}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.3e-07" varianceWithPedigreeUncertainty="0.34730690010028137" mu="-15.85573138649083"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="2def62c7-6b1c-57d4-a95e-13bd161ac03f" amount="1.35e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="295060ba-3c3d-45e4-99ca-e17b1204b553">
+        <name xml:lang="en">Manganese II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Manganese II
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 23}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.35e-07" varianceWithPedigreeUncertainty="1.054856078332833" mu="-15.817991058507982"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="efb94272-7548-5b55-975f-626c6290083e" amount="9.18e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="8e30c990-5ed4-4f94-9d0e-2f5e4ff1a1f9">
+        <name xml:lang="en">Ethane</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Ethane
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 25}</comment>
+        <uncertainty>
+          <lognormal meanValue="9.18e-08" varianceWithPedigreeUncertainty="0.34730690010028137" mu="-16.203653539319966"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="ccf4d193-413d-5c20-8728-62c43a3c562e" amount="4.25e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="982b0510-96ac-4bcb-a758-e98006b95f4d">
+        <name xml:lang="en">Butane</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Butane
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 26}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.25e-08" varianceWithPedigreeUncertainty="0.34730690010028137" mu="-16.97376176101604"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="c77bc037-4bad-594b-b1fb-b426afa937d6" amount="4.48e-13" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="5e13c2ab-5466-4ff5-816d-702dfdf25f76">
+        <name xml:lang="en">Benzo(a)pyrene</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Benzo(a)pyrene
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 27}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.48e-13" varianceWithPedigreeUncertainty="0.34730690010028137" mu="-28.4339831624957"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="070ba680-e7fd-57f6-8b2b-f7cb873c5788" amount="1.42e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="8e123669-94d3-41d8-9480-a79211fe7c43">
+        <name xml:lang="en">Lead II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Lead II
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 28}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.42e-07" varianceWithPedigreeUncertainty="1.054856078332833" mu="-15.76743877934515"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="43bb5d68-a931-5111-96ad-bc186738643c" amount="2.08e-05" unitId="a688ac50-b87b-599e-934a-99e10066a45a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="d5ca33b3-f101-4371-b684-c720463ae2ab">
+        <name xml:lang="en">Radium-228</name>
+        <unitName xml:lang="en">kilo Becquerel</unitName>
+        <comment xml:lang="en">Full flow name: Radium-228
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 29}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.08e-05" varianceWithPedigreeUncertainty="0.8759108473633841" mu="-10.780557571257003"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="945ce6aa-b76c-527d-9eeb-68095aae329b" amount="1.76e-05" unitId="a688ac50-b87b-599e-934a-99e10066a45a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="08ebf986-d40a-4538-8aa7-21da2f99edf7">
+        <name xml:lang="en">Thorium-232</name>
+        <unitName xml:lang="en">kilo Becquerel</unitName>
+        <comment xml:lang="en">Full flow name: Thorium-232
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 30}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.76e-05" varianceWithPedigreeUncertainty="0.8759108473633841" mu="-10.947611655920168"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="9d55ab88-4c4d-534f-b6c0-2ce613d69de9" amount="0.000497" unitId="a688ac50-b87b-599e-934a-99e10066a45a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="13738d15-2256-40f6-99da-d802e5f4c747">
+        <name xml:lang="en">Polonium-210</name>
+        <unitName xml:lang="en">kilo Becquerel</unitName>
+        <comment xml:lang="en">Full flow name: Polonium-210
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 31}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000497" varianceWithPedigreeUncertainty="0.8759108473633841" mu="-7.606920531867646"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="9be45434-47a0-574d-a351-2687bb33fb4e" amount="1.12e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="20185046-64bb-4c09-a8e7-e8a9e144ca98">
+        <name xml:lang="en">Dinitrogen monoxide</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Dinitrogen monoxide
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 32}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.12e-06" varianceWithPedigreeUncertainty="0.22825053039460494" mu="-13.70218187265727"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="9196f77b-72f3-56c2-ad21-1bca4f8017fb" amount="0.000457" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="c1b91234-6f24-417b-8309-46111d09c457">
+        <name xml:lang="en">Nitrogen oxides</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Nitrogen oxides
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 33}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000457" varianceWithPedigreeUncertainty="0.22825053039460494" mu="-7.690827167070069"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="7f99b4c8-1742-5891-96cb-27bd8031b16a" amount="1.57e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="b8fc2875-a1ce-4a7c-a73d-6ba5b26319d3">
+        <name xml:lang="en">Boron</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Boron
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 34}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.57e-06" varianceWithPedigreeUncertainty="1.054856078332833" mu="-13.364434938604058"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="b7bea95c-16cb-5b05-b89c-07d797529da0" amount="7.02e-05" unitId="a688ac50-b87b-599e-934a-99e10066a45a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="b912f4b4-34ac-4ec1-aba1-01b9c83683e5">
+        <name xml:lang="en">Radium-226</name>
+        <unitName xml:lang="en">kilo Becquerel</unitName>
+        <comment xml:lang="en">Full flow name: Radium-226
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 35}</comment>
+        <uncertainty>
+          <lognormal meanValue="7.02e-05" varianceWithPedigreeUncertainty="0.8759108473633841" mu="-9.564162246932508"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="0980f724-95fa-5638-b875-5c2ea20f9cc0" amount="8.96e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="ba2f3f82-c93a-47a5-822a-37ec97495275">
+        <name xml:lang="en">Carbon monoxide, fossil</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Carbon monoxide, fossil
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 36}</comment>
+        <uncertainty>
+          <lognormal meanValue="8.96e-05" varianceWithPedigreeUncertainty="1.054856078332833" mu="-9.32015523798339"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="e3d5d629-ce6b-52a8-8f35-019973680df0" amount="2.7e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="dc6dbdaa-9f13-43a8-8af5-6603688c6ad0">
+        <name xml:lang="en">Arsenic ion</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Arsenic ion
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 37}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.7e-08" varianceWithPedigreeUncertainty="1.054856078332833" mu="-17.42742897094208"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="7a16cffa-9ba4-5bd6-b900-c54f8201f04c" amount="1.12e-05" unitId="a688ac50-b87b-599e-934a-99e10066a45a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="ecc877ac-3c34-4838-b1f8-6ae0ff2cd2fc">
+        <name xml:lang="en">Thorium-228</name>
+        <unitName xml:lang="en">kilo Becquerel</unitName>
+        <comment xml:lang="en">Full flow name: Thorium-228
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 39}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.12e-05" varianceWithPedigreeUncertainty="0.8759108473633841" mu="-11.399596779663225"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="0da83b34-e625-5156-8a03-5e326ded36bb" amount="4.84e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="4cff006f-c6df-42a8-9dee-cc064f14326e">
+        <name xml:lang="en">Hydrocarbons, aliphatic, unsaturated</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Hydrocarbons, aliphatic, unsaturated
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 40}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.84e-07" varianceWithPedigreeUncertainty="0.34730690010028137" mu="-14.54118093022978"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="e4497847-70c6-5711-94ad-2931b1b0221b" amount="1.06e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="f0e28a62-ddf9-4c93-af81-676a58c3f2d4">
+        <name xml:lang="en">Cobalt II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Cobalt II
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 41}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.06e-08" varianceWithPedigreeUncertainty="1.054856078332833" mu="-18.36241183582839"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="1d34f43b-0db0-5ee1-b284-fd493e6004ed" amount="3.42e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="ec8144d6-d123-43b1-9c17-a295422a0498">
+        <name xml:lang="en">Copper ion</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Copper ion
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 42}</comment>
+        <uncertainty>
+          <lognormal meanValue="3.42e-08" varianceWithPedigreeUncertainty="1.054856078332833" mu="-17.191040192877853"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="8c439244-e776-57b6-8441-8e37ffc3acb7" amount="2.59e-09" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="1c5a7322-9261-4d59-a692-adde6c12de92">
+        <name xml:lang="en">Cadmium II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Cadmium II
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 43}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.59e-09" varianceWithPedigreeUncertainty="1.054856078332833" mu="-19.771607961234963"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="899794b3-db15-52aa-93eb-c4e39a384583" amount="1.57e-14" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="082903e4-45d8-4078-94cb-736b15279277">
+        <name xml:lang="en">Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Dioxins, measured as 2,3,7,8-tetrachlorodibenzo-p-dioxin
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 44}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.57e-14" varianceWithPedigreeUncertainty="0.6795188159309188" mu="-31.785115682556423"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="3380d51b-f5d4-5c71-9382-56ffe232664e" amount="7.47e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="a5506f4b-113f-4713-95c3-c819dde6e48b">
+        <name xml:lang="en">Nickel II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Nickel II
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 45}</comment>
+        <uncertainty>
+          <lognormal meanValue="7.47e-08" varianceWithPedigreeUncertainty="1.054856078332833" mu="-16.40978574480764"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="bf9bfdd4-20ac-59f0-864d-a0735746dcee" amount="4.82e-09" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="640e30d2-3158-4a1a-82ef-fd0c72922c9a">
+        <name xml:lang="en">Molybdenum VI</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Molybdenum VI
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 46}</comment>
+        <uncertainty>
+          <lognormal meanValue="4.82e-09" varianceWithPedigreeUncertainty="1.054856078332833" mu="-19.150491908883904"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="8aeb16bd-aac1-5d3e-a24d-37d77d60aa98" amount="6.11e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="24541c8c-9f11-49ae-9de5-456f238a3f5e">
+        <name xml:lang="en">Hydrogen fluoride</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Hydrogen fluoride
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 47}</comment>
+        <uncertainty>
+          <lognormal meanValue="6.11e-06" varianceWithPedigreeUncertainty="0.4630642945462152" mu="-12.00558378478077"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="c8ce4ec7-c4b2-50c6-a01c-f4283434f774" amount="0.000272" unitId="a688ac50-b87b-599e-934a-99e10066a45a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="00e73fdb-98df-4a03-8290-79931cddfd12">
+        <name xml:lang="en">Lead-210</name>
+        <unitName xml:lang="en">kilo Becquerel</unitName>
+        <comment xml:lang="en">Full flow name: Lead-210
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 48}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000272" varianceWithPedigreeUncertainty="1.054856078332833" mu="-8.209708491668277"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="aa2c4908-f08e-51e8-9e48-497d649904d6" amount="6.25e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="591b0a62-8064-4697-86ed-47bfa1f8b5e6">
+        <name xml:lang="en">Vanadium V</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Vanadium V
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 49}</comment>
+        <uncertainty>
+          <lognormal meanValue="6.25e-08" varianceWithPedigreeUncertainty="1.054856078332833" mu="-16.588099280204055"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="700353f2-5bfc-5237-b927-32bff1ce3505" amount="0.0028" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="fd7aa71c-508c-480d-81a6-8052aad92646">
+        <name xml:lang="en">Sulfur dioxide</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Sulfur dioxide
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 51}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0028" varianceWithPedigreeUncertainty="0.22825053039460494" mu="-5.8781358618009785"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="c41228d9-08ca-54ee-8ff2-15a9a57f9853" amount="2.21e-08" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="454c61fd-c52b-4a04-9731-f141bb7b5264">
+        <name xml:lang="en">Selenium IV</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Selenium IV
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 52}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.21e-08" varianceWithPedigreeUncertainty="1.054856078332833" mu="-17.627688228422706"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="3027796e-bee0-59ce-a59b-90cd3aa62890" amount="1.28e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="c24f5894-f95e-4661-ba76-130397348894">
+        <name xml:lang="en">Bromine</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Bromine
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 53}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.28e-06" varianceWithPedigreeUncertainty="0.394142908392847" mu="-13.568650480032748"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="cb459ebd-a10e-5bc1-a3a6-ebe29354c684" amount="0.00146" unitId="a688ac50-b87b-599e-934a-99e10066a45a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="b613b3b0-a98d-4b7a-a908-999ccfe1452d">
+        <name xml:lang="en">Radon-220</name>
+        <unitName xml:lang="en">kilo Becquerel</unitName>
+        <comment xml:lang="en">Full flow name: Radon-220
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 54}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00146" varianceWithPedigreeUncertainty="0.8759108473633841" mu="-6.529318843261892"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="f74eb8e6-fe24-5812-8dee-964759635ce2" amount="5.85e-05" unitId="a688ac50-b87b-599e-934a-99e10066a45a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="c36056d2-5101-4198-b13b-fdc0a8cf27ee">
+        <name xml:lang="en">Uranium-238</name>
+        <unitName xml:lang="en">kilo Becquerel</unitName>
+        <comment xml:lang="en">Full flow name: Uranium-238
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 55}</comment>
+        <uncertainty>
+          <lognormal meanValue="5.85e-05" varianceWithPedigreeUncertainty="0.8759108473633841" mu="-9.746483803726463"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="4c3e9f91-fa8c-5908-837a-1d99413a7c46" amount="6.84e-05" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="c9a8073a-8a19-5b9b-a120-7d549563b67b">
+        <name xml:lang="en">Hydrochloric acid</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Hydrochloric acid
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 56}</comment>
+        <uncertainty>
+          <lognormal meanValue="6.84e-05" varianceWithPedigreeUncertainty="0.4630642945462152" mu="-9.59013773333577"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="8f9f317b-2e91-58cc-a421-097de12663e9" amount="2.72e-07" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="7e246e3a-5cff-43fc-a8e6-02d191424559">
+        <name xml:lang="en">Barium II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Barium II
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 57}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.72e-07" varianceWithPedigreeUncertainty="1.054856078332833" mu="-15.117463770650414"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="4ffcbfc0-1a81-5cfc-aa42-24d2ba3503e3" amount="2.06e-06" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="5c234628-ab1e-4284-ae2b-f1c2f6883f71">
+        <name xml:lang="en">Xylenes, unspecified</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Xylenes, unspecified
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 58}</comment>
+        <uncertainty>
+          <lognormal meanValue="2.06e-06" varianceWithPedigreeUncertainty="0.34730690010028137" mu="-13.092804575162784"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="3d8a061b-4ba3-5543-b6fb-cc56852b42ab" amount="7.16e-09" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="71234253-b3a7-4dfe-b166-a484ad15bee7">
+        <name xml:lang="en">Mercury II</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Mercury II
+increased by a factor 1.3 from the corresponding uncertainty in "hard coal, burned in coal mine power plant"
+
+BAFU mapping audit: {"bafu source exchange index": 59}</comment>
+        <uncertainty>
+          <lognormal meanValue="7.16e-09" varianceWithPedigreeUncertainty="1.054856078332833" mu="-18.75475585597386"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="750e42b0-9b90-5edf-ad34-a355d4210c80" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Roberto Dones" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="750e42b0-9b90-5edf-ad34-a355d4210c80" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Roberto Dones" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="RStudio" number="219597" timestamp="2025-03-31T15:02:08">
+    <metaInformation>
+      <processInformation>
+        <timePeriod dataValidForEntirePeriod="True" text="Base technology year of 2020">
+          <startDate>2020-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <referenceFunction amount="1" category="transport systems" datasetRelatesToProduct="True" generalComment=" Level 2 charger for BEV. From https://doi.org/10.1016/S0306-2619(01)00032-0. Used for overnight charging. Can charge a regular passenger car in 3 hours. Assumed lifetime of 24 years. We upscale it to a 100 kW Level-3 charger by upscaling the charger component given a mass of 1290 kg given by AAB's 100 kW bus charger. Original source: https://doi.org/10.1016/S0306-2619(01)00032-0. UUID: a123b7b4-2c1f-3777-a2b9-5d29f705f398" infrastructureIncluded="True" infrastructureProcess="True" localCategory="transport systems" localName="Charger" localSubCategory="road\Transformation\Infrastructure" name="Charger" subCategory="road\Transformation\Infrastructure" unit="p"/>
+        <geography location="RER" text="Unspecified"/>
+        <technology text="Level 2 charger for BEV. From https://doi.org/10.1016/S0306-2619(01)00032-0. Used for overnight charging. Can charge a regular passenger car in 3 hours. Assumed lifetime of 24 years. We upscale it to a 100 kW Level-3 charger by upscaling the charger component given a mass of 1290 kg given by AAB's 100 kW bus charger. Original source: https://doi.org/10.1016/S0306-2619(01)00032-0"/>
+        <dataSetInformation energyValues="0" impactAssessmentResult="False" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2025-03-31T15:02:08" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Unspecified" productionVolume="Unspecified" samplingProcedure="Unspecified" uncertaintyAdjustments="Unspecified"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="136752" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="doi: 10.5281/ZENODO.5156043" title="2023 - LCI on-road vehicles - Sacchi" year="2023"/>
+        <validation proofReadingDetails="Unspecified" proofReadingValidator="136748"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136751"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="False" dataPublishedIn="2" person="136749" referenceToPublishedSource="136752"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Brian Cox" number="136748" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Julien McTighe" number="136751" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Transformation\Infrastructure" location="RER" meanValue="1.0" name="Charger" number="219597" subCategory="road\Transformation\Infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Uncertainty from pedigree matrix: (3, 2, 5, 3, 1, 1)" infrastructureProcess="False" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="80.0" name="Copper, at regional storage" number="328058" standardDeviation95="1.518095988926524" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Uncertainty from pedigree matrix: (3, 2, 5, 3, 1, 1)" infrastructureProcess="False" localCategory="metals" localSubCategory="general manufacturing" location="RER" meanValue="50.0" name="Aluminium product manufacturing, average metal working" number="548129" standardDeviation95="1.518095988926524" subCategory="general manufacturing" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Uncertainty from pedigree matrix: (3, 2, 5, 3, 1, 1)" infrastructureProcess="False" localCategory="metals" localSubCategory="general manufacturing" location="RER" meanValue="80.0" name="Copper product manufacturing, average metal working" number="411951" standardDeviation95="1.518095988926524" subCategory="general manufacturing" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Uncertainty from pedigree matrix: (3, 2, 5, 3, 1, 1)" infrastructureProcess="False" localCategory="metals" localSubCategory="general manufacturing" location="RER" meanValue="400.0" name="Chromium steel product manufacturing, average metal working" number="607139" standardDeviation95="1.518095988926524" subCategory="general manufacturing" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="Uncertainty from pedigree matrix: (3, 2, 5, 3, 1, 1)" infrastructureProcess="False" localCategory="electronics" localSubCategory="devices" location="RER" meanValue="70.0" name="Electronics for control units" number="287974" standardDeviation95="1.518095988926524" subCategory="devices" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Uncertainty from pedigree matrix: (3, 2, 5, 3, 1, 1)" infrastructureProcess="False" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="400.0" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="1.518095988926524" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="Uncertainty from pedigree matrix: (3, 2, 5, 3, 1, 1)" infrastructureProcess="False" localCategory="metals" localSubCategory="alloys" location="RER" meanValue="50.0" name="Aluminium alloy, AlMg3, at plant" number="199563" standardDeviation95="1.518095988926524" subCategory="alloys" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 2, 5, 3, 1, 1)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="120" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="1.518095988926524" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 2, 5, 3, 1, 1)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="104.0" name="Transport, freight, rail" number="149864" standardDeviation95="1.518095988926524" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (3, 2, 5, 3, 1, 1)" infrastructureProcess="False" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="52" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="1.518095988926524" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

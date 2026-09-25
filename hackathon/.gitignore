@@ -1,0 +1,39 @@
+# Track raw inputs, the verified EcoSpold 2 export, and folder documentation.
+/data/**
+!/data/**/
+!/data/**/README.md
+!/data/raw/**
+!/data/processed/ecospold2-biosphere310/**
+# The retained inventory is tracked as a lossless gzip archive (GitHub size limit).
+/data/processed/ecospold2-biosphere310/audit/retained-inventory.jsonl
+
+# Generated artifacts belong in local output folders.
+/outputs/
+/artifacts/
+/reports/generated/
+
+# Credentials and local settings.
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python and notebooks.
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+build/
+dist/
+
+# Editors and operating systems.
+.DS_Store
+.idea/
+.vscode/
+*.swp

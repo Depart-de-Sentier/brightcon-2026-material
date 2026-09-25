@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="369189" timestamp="2023-08-28T15:03:05.529+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity" datasetRelatesToProduct="true" generalComment="Electricity domestic net production shares are based on IEA statistics for the year 2008.;&#10;UUID: 0b287bee-60dc-3497-b796-1b289fd7e1cc" includedProcesses="It includes the shares of domestic electricity production by technology at the busbar. It does not include transformation, transport nor distribution losses." infrastructureProcess="false" localCategory="electricity" localName="xxx Electricity, production mix CS" localSubCategory="notMaintained" name="xxx Electricity, production mix CS" subCategory="notMaintained" unit="kWh"/>
+        <geography location="CS" text="Data apply to public and self producers in Serbia."/>
+        <technology text="No technology description is provided because the dataset just describes the power plant portfolio of the respective country using current (2004) average technology per energy carrier."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time period of statistics used (2008).">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2012-06-22T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="100" productionVolume="37 TWh" samplingProcedure="Statistical data " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Itten R., Flury K." firstAuthor="Frischknecht R." nameOfEditors="-" number="138564" placeOfPublications="Uster, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Itten, R., Frischknecht, R. (2012) Life Cycle Inventories of electricity mixes. Project reports. Volume: 401. ESU-services Ltd.. Uster, CH.\nType: Separate publication\nFirst author: Itten, R.\nOther authors: Frischknecht, R.\nYear: 2012\nTitle of anthology: Project reports\nPlace of publication: Uster, CH\nPublisher: ESU-services Ltd.\nVolume No: 401\n" title="2012 - GHG emis. from Swiss elec. mixes - Frischknecht" titleOfAnthology="Project reports" volumeNo="401" year="2012"/>
+        <validation proofReadingDetails="Proof reading validation: automatic validation in Excel; Other validation: Z:\ESU-Docs\Projekte laufend\401 Update Strommix v3.0\EcoSpold\_Europa\[401-electricity-mix-serbia-CS-v1.0.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137485"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137485" referenceToPublishedSource="138564"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="René Itten" number="137485" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" generalComment="SERBIA&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="notMaintained" location="CS" meanValue="1.0" name="xxx Electricity, production mix CS" number="369189" subCategory="notMaintained" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1); assumption for petroleum product and fuel oil power production in Serbia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil" location="CS" meanValue="0.0044657" name="Electricity, oil, at power plant" number="472133" standardDeviation95="1.0500000000000003" subCategory="oil" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,2,1,1); estimated share of reservoir hydropower production in Serbia: 16%&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="RER" meanValue="0.044622" name="Electricity, hydropower, at reservoir power plant, non alpine regions" number="615575" standardDeviation95="1.0511" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1); estimated share of pumped storage  production in Serbia: 5%&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\pumping storage" location="CS" meanValue="0.014678" name="Electricity, hydropower, at pumped storage power plant" number="497272" standardDeviation95="1.0500000000000003" subCategory="hydro\pumping storage" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for natural gas power production in Serbia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="HU" meanValue="0.010775" name="Electricity, from natural gas" number="320141" standardDeviation95="1.0541" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1); assumption for lignite power production in Serbia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="lignite" location="ENTSO-E" meanValue="0.68958" name="Electricity, lignite, at power plant" number="548759" standardDeviation95="1.0500000000000003" subCategory="lignite" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,2,1,1); estimated share of ROR  hydropower production in Serbia: 84%&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\flow through" location="RER" meanValue="0.23427" name="Electricity, hydropower, at run-of-river power plant" number="270757" standardDeviation95="1.0511" subCategory="hydro\flow through" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for industrial, coke and blast furnace gas power production in Serbia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="CENTREL" meanValue="0.0016093" name="Electricity, industrial gas, at power plant" number="303666" standardDeviation95="1.0541" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

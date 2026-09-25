@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="400963" timestamp="2023-08-28T15:03:29.553+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="construction materials" datasetRelatesToProduct="true" generalComment="based on ecoinvent 3.2 dataset;&#10;UUID: 509b1c64-78e4-3132-864b-162ea9a6ac18" includedProcesses="Without the ingredients for the concrete at the factory gate. Includes the whole manufacturing processes to produce ready-mixed concrete and infrastructure. No administration is included." infrastructureProcess="false" localCategory="construction materials" localName="Concrete for building construction, only common base, at plant" localSubCategory="concrete" name="Concrete for building construction, only common base, at plant" subCategory="concrete" unit="m3"/>
+        <geography location="CH" text="Unspecified"/>
+        <technology text="Data from the Amt für Hochbauten, Stadt Zürich. Data approximates average swiss production"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2015-01</startDate>
+          <endDate>2015-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2016-06-23T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="Measured data of several Swiss plants, intended to be representative for the Swiss production volume " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="" nameOfEditors="0" number="136635" placeOfPublications="" publisher="" sourceNumber="0" sourceType="0" text="Steiner, R., Frischknecht, R. (2007) Life Cycle Inventories of Metal Processing and Compressed Air Supply. Final report ecoinvent Data v2.0. Editors: 0. 0. Volume: 23. Issue: 0. Swiss Centre for LCI, ESU. Dübendorf and Uster, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Steiner, R.\nOther authors: Frischknecht, R.\nYear: 2007\nName of editors: 0\nTitle of anthology: Final report ecoinvent Data v2.0\nPlace of publication: Dübendorf and Uster, CH\nPublisher: Swiss Centre for LCI, ESU\nJournal: 0\nVolume No: 23\nIssue No: 0\nOriginal title: Life Cycle Inventories of Metal Processing and Compressed Air Supply\n" title="Created for EcoSpold 1 compatibility" titleOfAnthology="Final report ecoinvent Data v2.0" volumeNo="23" year=""/>
+        <validation proofReadingDetails="" proofReadingValidator="136463"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136463"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136463" referenceToPublishedSource="136635"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Laura Tschuemperlin" number="136463" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="construction materials" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="construction materials" localSubCategory="concrete" location="CH" meanValue="1.0" name="Concrete for building construction, only common base, at plant" number="400963" subCategory="concrete" uncertaintyType="0" unit="m3">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,1,1,1,1,5,BU:1.05); ; &#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="5.7" name="Natural gas, burned in industrial furnace 1MW" number="293151" standardDeviation95="1.2152" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,1,2,1,1,5,BU:1.05); ; &#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.05" name="Disposal, municipal solid waste, 22.9% water, to municipal incineration" number="360318" standardDeviation95="1.218" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,1,1,1,1,5,BU:1.05); ; &#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="0.02" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.2152" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="only the transport of synthetic rubber and lubricating oil is included&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="0.036" name="Transport, freight, rail, electricity with shunting" number="209432" subCategory="train" uncertaintyType="0" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,1,2,1,1,5,BU:3); ; &#10;" infrastructureProcess="true" localCategory="construction" localSubCategory="concrete\infrastructure" location="CH" meanValue="4.17E-7" name="Concrete mixing plant" number="224235" standardDeviation95="3.0499" subCategory="concrete\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="(1,3,3,3,1,1,BU:1.05); ; &#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="0.4" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="1.3059" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="only the transport of synthetic rubber and lubricating oil is included&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.007" name="Transport, freight, lorry, 32t-40t gross weight, fleet average" number="482448" subCategory="road\Transformation" uncertaintyType="0" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,3,3,2,1,1,BU:1.05); ; &#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="4.3" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.1639" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,1,1,1,1,5,BU:1.05); ; &#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="rubbers" location="RER" meanValue="0.12" name="Synthetic rubber, at plant" number="460936" standardDeviation95="1.2152" subCategory="rubbers" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(5,1,3,1,1,5,BU:1.05); ; &#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="8.2" name="Light fuel oil, burned in boiler 10kW condensing, non-modulating" number="198930" standardDeviation95="1.5798000000000003" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,1,2,1,1,5,BU:1.05); ; &#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="construction waste landfill" location="CH" meanValue="5.38" name="Disposal, concrete, 5% water, to construction waste landfill" number="171658" standardDeviation95="1.218" subCategory="construction waste landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

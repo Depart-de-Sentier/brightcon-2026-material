@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="471863" timestamp="2023-08-28T15:02:56.764+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="agricultural" datasetRelatesToProduct="true" generalComment="Inventory refers to the production of 1 kg rape oil, respectively rape meal. The multioutput-process 'rape seeds, in oil mill' delivers the co-products 'rape oil, at oil mill' and 'rape meal, at oil mill'. Economic allocation with allocation factor of 74.3% to rape oil. Allocation is done according to carbon balance for CO2 emissions.;&#10;UUID: 6dfb616b-49a8-3bef-80d4-9fd17d577657" includedProcesses="This process includes the transport of rape seeds to the mill, and the processing of the seeds to rape oil and rape meal. The oil extraction refers to the solvent extraction technique. System boundary is at the oil mill." infrastructureProcess="false" localCategory="agricultural" localName="Rape meal, at oil mill" localSubCategory="plant oils\byproducts" name="Rape meal, at oil mill" subCategory="plant oils\byproducts" unit="kg"/>
+        <geography location="RER" text="&lt;null&gt;"/>
+        <technology text="Typical oil mill designed for rape oil solvent extraction, with pre-pressing of rape seeds, European context."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Data from 1996 to 2003, current technology in the EU">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2006-08-15T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="0" productionVolume="Approx. 8100 kt of rape seeds were processed to RME in 2005 in the EU" samplingProcedure="Cross-checking of various literature sources from 1998 to 2006 " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J." firstAuthor="Jungbluth N." nameOfEditors="-" number="136872" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth N., Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J. (2007) Life Cycle Inventories of Bioenergy. Final report ecoinvent data v2.0. Volume: 17. Swiss Centre for LCI, ESU. Duebendorf and Uster, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth N.\nOther authors: Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Duebendorf and Uster, CH\nPublisher: Swiss Centre for LCI, ESU\nVolume No: 17\n" title="2007 - LCI bioenergy - Jungbluth" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="17" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="159099"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="159098" referenceToPublishedSource="136872"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Edgard Gnansounou" number="159098" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Arnaud Dauriat" number="159099" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="agricultural" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant oils\byproducts" location="RER" meanValue="1.0" name="Rape meal, at oil mill" number="471863" subCategory="plant oils\byproducts" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,1,2,1,3); Data from literature survey (1998-2006) &amp; biodiesel producers&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="DE" meanValue="9.5336E-4" name="Bentonite, at processing" number="473746" standardDeviation95="1.1031" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,1,1,2,1,3); Data from literature survey (1998-2006) &amp; biodiesel producers&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.016208" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.0888" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,1,3,1,3); ecoinvent guidelines, calculation from electricity consumption and energy balance&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.19429" name="Heat, waste" number="46930" standardDeviation95="1.1376" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Based on ecoinvent Guidelines, standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.040692" name="Transport, freight, lorry, 7.5t-16t gross weight, fleet average" number="608734" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,2,1,3); Data from literature survey (1998-2006) &amp; biodiesel producers&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="1.4435E-4" name="Phosphoric acid, industrial grade, 85% in H2O, at plant" number="502220" standardDeviation95="1.0913000000000004" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(5,5,1,2,1,na); Calculation to close mass balance of process&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="1.0977E-6" name="Treatment, sewage, from residence, to wastewater treatment, class 2" number="538378" standardDeviation95="1.5641999999999998" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Based on ecoinvent Guidelines, standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.00015443" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,2,1,3); Data from literature survey (1998-2006) &amp; biodiesel producers&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="4.4659E-4" name="Hexane, at plant" number="603586" standardDeviation95="1.0913000000000004" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000110-54-3" category="emissions to air" generalComment="(1,1,1,2,1,3); Emissions are taken to be equal to input of gas&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="4.4659E-4" name="Hexane" number="652" standardDeviation95="1.5046000000000002" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,4,1,3,4,5); Calculation, according to feed capacity and lifetime of the plant&#10;" infrastructureProcess="true" localCategory="agricultural" localSubCategory="plant oils\infrastructure" location="CH" meanValue="1.3564E-10" name="Oil mill" number="530843" standardDeviation95="3.2843" subCategory="plant oils\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,1,1,2,1,3); Data from literature survey (1998-2006) &amp; biodiesel producers&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant production" location="DE" meanValue="0.40692" name="Rape seed conventional, at farm" number="576562" standardDeviation95="1.0722000000000003" subCategory="plant production" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Based on ecoinvent Guidelines, standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="9.2659E-4" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,1,1,2,1,3); Data from literature survey (1998-2006) &amp; biodiesel producers&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="0.28798" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.0888" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(1,1,1,1,1,na); Correction to close carbon balance of individual outputs&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in air" meanValue="1.4929020516214426" name="Carbon dioxide, in air" number="66828" standardDeviation95="1.0500000000000003" subCategory="in air" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

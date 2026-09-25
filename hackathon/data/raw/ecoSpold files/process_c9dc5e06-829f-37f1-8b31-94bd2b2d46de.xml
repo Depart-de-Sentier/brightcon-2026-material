@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="599314" timestamp="2023-08-28T15:03:25.226+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="Refers to 1 kg N, resp. 1 kg K2O in potassium nitrate with a N-content of 14.0% and a K2O-content of 44.0%. The multioutput-process 'potassium nitrate, at regional storehouse' delivers the co-products 'potassium nitrate phosphate, as N, at regional storehouse' and 'potassium nitrate phosphate, as K2O, at regional storehouse'. Allocation factors are based on the energy requirements of the respective nutrients for the production processes: 61% for 'potassium nitrate phosphate, as N, at regional storehouse' and 39% for 'potassium nitrate phosphate, as K2O, at regional storehouse' (exceptions see report). The allocated inventories must always be used simultaneously.;&#10;CAS number: 007757-79-1; &#10;Formula: KNO3; &#10;UUID: c9dc5e06-829f-37f1-8b31-94bd2b2d46de" includedProcesses="The unit process inventory takes into account the production of potassium nitrate from potassium chloride and nitric acid. Transports of raw materials and intermediate products to the fertiliser plant as well as the transport of the fertiliser product from the factory to the regional department store were included. Production and waste treatment of catalysts, coating and packaging of the final fertiliser products were not included. Infrastructure was included by means of a proxy module. " infrastructureProcess="false" localCategory="chemicals" localName="Potassium nitrate, as N, at regional storehouse" localSubCategory="fertilisers (inorganic)" name="Potassium nitrate, as N, at regional storehouse" subCategory="fertilisers (inorganic)" unit="kg"/>
+        <geography location="RER" text="&lt;null&gt;"/>
+        <technology text="Production inventory was derived from detailed literature studies and specifications from the manufacturer, relevant for the European production. Transport specifications of the fertiliser product to the regional department store, which were not included in the reference used for this inventory, were complemented by data given in Patyk &amp; Reinhardt (1997)."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Year when the principal reference used for this inventory was published.">
+          <startDate>1999-01</startDate>
+          <endDate>1999-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2004-05-28T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="Values given in the reference originate from manufacturers and/or other data sources which in turn refer to the real situation and hence are largely secured. However, the emissions of N and P into the water may be somewhat uncertain. When no information on the speciation of N- and P emissions was given in the reference, the most likely speciation based on expert's opinion is presented. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Kaegi T." firstAuthor="Nemecek T." nameOfEditors="0" number="138643" placeOfPublications="Duebendorf and Zuerich, CH" publisher="Swiss Centre for LCI, ART" sourceNumber="0" sourceType="4" text="Nemecek, T., Kägi, T., Blaser, S. (2007) Life Cycle Inventories of Agricultural Production Systems. Ecoinvent report version 2.0. Editors: 0. Volume: 15. Swiss Centre for LCI, ART. Duebendorf and Zurich, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Nemecek, T.\nOther authors: Kägi, T., Blaser, S.\nYear: 2007\nName of editors: 0\nTitle of anthology: Ecoinvent report version 2.0\nPlace of publication: Duebendorf and Zurich, CH\nPublisher: Swiss Centre for LCI, ART\nVolume No: 15\n" title="2007 - LCI agricultural prod. systems - Nemecek" titleOfAnthology="Ecoinvent report version 2.0" volumeNo="15" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="151347"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138641"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="151348" referenceToPublishedSource="138643"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Maggie Osses" number="151347" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Angelika Heil" number="151348" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Thomas Nemecek" number="138641" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="fertilisers (inorganic)" location="RER" meanValue="1.0" name="Potassium nitrate, as N, at regional storehouse" number="599314" subCategory="fertilisers (inorganic)" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,2,3,3,5)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="-6.312342857142857" name="Heat, waste" number="46930" standardDeviation95="1.31" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="1.0345714285714285" name="Transport, freight, rail" number="149864" standardDeviation95="2.0900000000000003" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,1,1,2,1,3)&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="1.7534E-9" name="Chemical plant, organics" number="447244" standardDeviation95="3.01" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,1,1,2,1,3)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="4.5" name="Nitric acid, 50% in H2O, at plant" number="276300" standardDeviation95="1.09" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,1,1,2,1,3)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="19.989085714285714" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.09" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

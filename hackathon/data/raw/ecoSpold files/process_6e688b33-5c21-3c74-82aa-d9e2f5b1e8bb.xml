@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="273416" timestamp="2023-08-28T15:03:12.838+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="Inventory for 1 MJ heat from diesel, burned in a cogeneration unit with a capacity of 1MWth. The multioutput process &quot;diesel, burned in cogen 1MWth delivers the coproducts &quot;heat, at cogen 1MWth, diesel, allocation exergy&quot; and &quot;electricity, at cogen 1MWth, diesel, allocation exergy&quot;. The energy efficiency is 44% for electricity and 42% for heat. The economic factor is 0.74 for electricity and 0.26 for heat. This leads to the allocation factor of 0.75 for electricity and 0.25 for heat.;&#10;UUID: 6e688b33-5c21-3c74-82aa-d9e2f5b1e8bb" includedProcesses="Included are the diesel burning in a 1 MWth cogen unit which in turn includes fuel input, infrastructure (boiler), air and water emissions and electrictiy needed for operation. The efficiency and economic allocation is considered" infrastructureProcess="false" localCategory="heat" localName="Heat, at cogen 1MWth, diesel, economic allocation" localSubCategory="oil\cogeneration" name="Heat, at cogen 1MWth, diesel, economic allocation" subCategory="oil\cogeneration" unit="MJ"/>
+        <geography location="CH" text="Data apply to the combustion in Switzerland."/>
+        <technology text="efficiency of average technology available on the market"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2015-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-09-14T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="Data from literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Waldburger L., Kern C., Roberts G., Zschokke M., Conte F., Weber L." firstAuthor="Kaegi T." nameOfEditors="-" number="137341" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceNumber="0" sourceType="3" text="T. Kägi, L. Waldburger, C. Kern (2020) Life cycle inventories of heating systems. Project report. carbotech. Zurich, CH.\nType: Separate publication\nSource: Report\nFirst author: T. Kägi\nOther authors: L. Waldburger, C. Kern\nYear: 2020\nTitle of anthology: Project report\nPlace of publication: Zurich, CH\nPublisher: carbotech\n" title="2021 - LCI heating systems - Kaegi" titleOfAnthology="Project report" year="2021"/>
+        <validation proofReadingDetails="Proof reading validation: 14.09.2020; Other validation: Z:\Schreibtisch\WinShare\BAFU Heizsysteme\_A-Konvertieren\BHKW\[EcoSpold_heat diesel cogen1Mw_v0.1.xlsx]X-Process;" proofReadingValidator="137339"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137340"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137340" referenceToPublishedSource="137341"/>
+        <person address="anonymised" companyCode="EBP" countryCode="CH" email="anonymised" name="Andy Spoerri" number="137339" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\cogeneration" location="CH" meanValue="1.0" name="Heat, at cogen 1MWth, diesel, economic allocation" number="273416" subCategory="oil\cogeneration" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,1,1,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\cogeneration" location="CH" meanValue="0.75585" name="Diesel, burned in cogen 1MWth" number="602011" standardDeviation95="1.2077" subCategory="oil\cogeneration" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="203661" timestamp="2023-08-28T15:02:52.211+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="glass" datasetRelatesToProduct="true" generalComment="A production site with a production amount of 3 times 250 t/d (resulting in 266 kt per year) and a total life span of 50 a is assumed here.;&#10;UUID: f922ca45-d058-3023-a86f-d034d697bbea" includedProcesses="This module includes the land-use, the material and construction efforts of the machineries (melting furnace, forming machine, cooling furnace), the transport of the furnace to the glass production site and the buildings. Dismantling of the machineries and the buildings are accounted for as well." infrastructureProcess="true" localCategory="glass" localName="Glass production site" localSubCategory="packaging\infrastructure" name="Glass production site" subCategory="packaging\infrastructure" unit="p"/>
+        <geography location="RER" text="european production site, based on personal communication from experts of a European packaging glass producer"/>
+        <technology text="mix of regenerative and recuperative furnace"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-08-20T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="&lt;null&gt;" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Hischier R." nameOfEditors="-" number="150046" placeOfPublications="Duebendorf and St. Gallen, CH" publisher="Swiss Centre for LCI, Empa - TSL" sourceNumber="0" sourceType="4" text="Hischier R. (2007) Life Cycle Inventories of Packaging and Graphical Paper. Final report ecoinvent data v2.0. Volume: 11. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Hischier R.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 11\n" title="2007 - LCI packagings and graphical papers - Hischier" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="11" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="139614"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136699"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136699" referenceToPublishedSource="150046"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="glass" generalComment="Europe&#10;" infrastructureProcess="true" localCategory="glass" localSubCategory="packaging\infrastructure" location="RER" meanValue="1.0" name="Glass production site" number="203661" subCategory="packaging\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(5,4,1,3,4,5); own estimation&#10;" infrastructureProcess="true" localCategory="construction" localSubCategory="others\infrastructure" location="CH" meanValue="160000.0" name="Building, hall, steel construction" number="242395" standardDeviation95="3.5100000000000002" subCategory="others\infrastructure" uncertaintyType="1" unit="m2">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(4,4,2,3,1,5); estimation based on 1 site&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="14800.0" name="Transformation, to industrial area, vegetation" number="85687" standardDeviation95="2.11" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,1,3,1,5); calculated, based on Frischknecht 1996&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="43400.0" name="Light fuel oil, burned in industrial furnace 1MW, non-modulating" number="244929" standardDeviation95="1.22" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(4,4,2,3,1,5); estimation based on 1 site&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="200000.0" name="Transformation, to industrial area, built up" number="86253" standardDeviation95="2.11" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,3,1,3,1,5); personal information from experts&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="4240000.0" name="Cast iron, at plant" number="506433" standardDeviation95="1.22" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,1,3,1,5); calculated, based on Frischknecht 1996&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="43400.0" name="Natural gas, burned in industrial furnace 1MW" number="293151" standardDeviation95="1.22" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="(5,4,1,3,4,5); own estimation&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="2760000.0" name="Disposal, building, concrete, not reinforced, to final disposal" number="496088" standardDeviation95="1.84" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(5,4,1,3,4,5); own estimation&#10;" infrastructureProcess="true" localCategory="construction" localSubCategory="others\infrastructure" location="RER" meanValue="200000.0" name="Building, multi-storey" number="498869" standardDeviation95="3.5100000000000002" subCategory="others\infrastructure" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(4,4,1,3,3,5); estimation, in accordance with experts&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="2310.0" name="Concrete, sole plate and foundation, at plant" number="260003" standardDeviation95="1.4" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,3,1,3,1,5); personal information from experts&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="insulation" location="CH" meanValue="60000.0" name="Rock wool, at plant" number="572315" standardDeviation95="1.22" subCategory="insulation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(5,4,1,3,4,5); own estimation&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="road\operations\infrastructure" location="CH" meanValue="1000000.0" name="Roads, company, internal" number="354908" standardDeviation95="3.5100000000000002" subCategory="road\operations\infrastructure" uncertaintyType="1" unit="m2a">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(4,4,2,3,1,5); estimation based on 1 site&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="400000.0" name="Occupation, construction site" number="110833" standardDeviation95="1.63" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,3,1,3,1,5); personal information from experts&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="bricks" location="DE" meanValue="4.49E7" name="Refractory, fireclay, packed, at plant" number="466632" standardDeviation95="1.22" subCategory="bricks" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(2,3,1,3,1,5); personal information from experts&#10;" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices" location="RER" meanValue="150000.0" name="Electronics for control units" number="287974" standardDeviation95="1.22" subCategory="devices" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="(5,4,1,3,4,5); own estimation&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="2760000.0" name="Disposal, building, concrete, not reinforced, to sorting plant" number="535857" standardDeviation95="1.84" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(4,4,2,3,1,5); estimation based on 1 site&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="1.0E7" name="Occupation, industrial area, built up" number="116809" standardDeviation95="1.63" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,3,1,3,1,5); personal information from experts&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="408000.0" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="1.22" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,4,1,3,4,5); calculated, based on input&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3180.0" name="Heat, waste" number="46930" standardDeviation95="1.84" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(4,4,2,3,1,5); estimation based on 1 site&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="215000.0" name="Transformation, from unknown" number="54270" standardDeviation95="2.11" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(4,4,2,3,1,5); estimation based on 1 site&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="740000.0" name="Occupation, industrial area, vegetation" number="113531" standardDeviation95="1.63" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,3,1,3,1,5); personal information from experts&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="3070000.0" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.22" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,3,1,3,1,5); calculated, based on Frischknecht 1996&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="883.0" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.22" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(5,4,1,3,4,5); own estimation&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="12900000" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.52" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="Others" generalComment="(5,4,1,3,4,5); calculated, based on input&#10;" infrastructureProcess="false" localCategory="Others" localSubCategory="unspecified" location="RER" meanValue="150000.0" name="Disposal, electronics for control units" number="264999" standardDeviation95="1.84" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

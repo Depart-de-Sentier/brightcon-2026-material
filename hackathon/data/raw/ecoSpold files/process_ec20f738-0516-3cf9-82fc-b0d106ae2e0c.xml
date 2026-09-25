@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="139326" timestamp="2023-08-28T15:03:32.849+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="The multioutput process &quot;biogas gas burned in cogen with gas engine&quot; delivers the co-products: heat and electricity. The allocation is based on the exergy values of heat and electricity. The exergy value of electricity is 1, and the exergy value of heat is 0.17.  The degrees of efficiency are as follows: electricity: 0.32 and heat: 0.55.;&#10;UUID: ec20f738-0516-3cf9-82fc-b0d106ae2e0c" includedProcesses="Use of biogas in a cogeneration unit. Included are emissions to air, biogas consumption, use and disposal of operational supplements as well as infrastructure expenditures. " infrastructureProcess="false" localCategory="heat" localName="Heat, at cogen with biogas engine, allocation exergy" localSubCategory="biomass\cogeneration" name="Heat, at cogen with biogas engine, allocation exergy" subCategory="biomass\cogeneration" unit="MJ"/>
+        <geography location="CH" text="Conditions of cogeneration in Switzerland."/>
+        <technology text="Lambda 1-engine&quot; with a catalytic converter"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2000-01</startDate>
+          <endDate>2004-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-04-01T18:02:46.346+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="100" productionVolume="In 2002 the production of electricity from biogas was 9.8 GWh/a." samplingProcedure="Literature data  " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J." firstAuthor="Jungbluth N." nameOfEditors="-" number="136872" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth N., Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J. (2007) Life Cycle Inventories of Bioenergy. Final report ecoinvent data v2.0. Volume: 17. Swiss Centre for LCI, ESU. Duebendorf and Uster, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth N.\nOther authors: Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Duebendorf and Uster, CH\nPublisher: Swiss Centre for LCI, ESU\nVolume No: 17\n" title="2007 - LCI bioenergy - Jungbluth" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="17" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="139311"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="139311"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="139311" referenceToPublishedSource="136872"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Michael Spielmann" number="139311" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="biomass\cogeneration" location="CH" meanValue="1.0" name="Heat, at cogen with biogas engine, allocation exergy" number="139326" subCategory="biomass\cogeneration" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(1,4,2,1,3,4); value for cogeneration of natural gas used as approximination&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="8.2225E-7" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="3.071500000000001" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,4,2,1,3,4); value for cogeneration of natural gas used as approximination&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="2.8779E-12" name="Platinum" number="43331" standardDeviation95="5.0815" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(1,4,1,1,3,4); value for cogeneration of natural gas used as approximination&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="9.4559E-6" name="Methane, biogenic" number="155267" standardDeviation95="3.0702999999999996" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(1,4,2,1,3,4); value for cogeneration of natural gas used as approximination&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="1.2334E-5" name="Disposal, used mineral oil, 10% water, to hazardous waste incineration" number="504085" standardDeviation95="1.2634000000000003" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,4,2,1,3,4); ecoinvent V1.1. cogeneration of natural gas.&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="natural gas\cogeneration\power unit\infrastructure" location="RER" meanValue="9.0909E-9" name="Cogen unit 160kWe, components for heat only" number="278522" standardDeviation95="3.071500000000001" subCategory="natural gas\cogeneration\power unit\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,4,2,1,3,4); own calculations based on carbon content in biogas&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.03433" name="Carbon dioxide, biogenic" number="80535" standardDeviation95="1.2634000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="(1,4,2,1,3,4); value for cogeneration of natural gas used as approximination&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="6.1669E-6" name="Nitrogen oxides" number="79243" standardDeviation95="2.0748" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,4,2,1,3,4); value of cogeneration of natural gas used as approximination&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="1.2334E-5" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.2634000000000003" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007446-09-5" category="emissions to air" generalComment="(1,4,2,1,3,4); own calculations based on sulphur content in biogas&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="8.6353E-6" name="Sulfur dioxide" number="26215" standardDeviation95="1.2634000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,4,2,1,3,4); own calculations&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.167571860909091" name="Heat, waste" number="46930" standardDeviation95="1.2634000000000003" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="010024-97-2" category="emissions to air" generalComment="(1,4,2,1,3,4); value for cogeneration of natural gas used as approximination&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.0278E-6" name="Dinitrogen monoxide" number="646" standardDeviation95="3.071500000000001" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,4,2,1,3,4); value for cogeneration of natural gas used as approximination&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.9734E-5" name="Carbon monoxide, biogenic" number="81433" standardDeviation95="2.0748" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,4,2,1,3,4); ecoinvent V1.1. cogeneration of natural gas.&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="natural gas\cogeneration\power unit\infrastructure" location="RER" meanValue="2.0556E-9" name="Cogen unit 160kWe, common components for heat+electricity" number="247186" standardDeviation95="3.071500000000001" subCategory="natural gas\cogeneration\power unit\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(1,4,2,1,3,4); own calculations based onlower heating value of biogas&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="biofuels\biogas" location="CH" meanValue="0.018085" name="Biogas, production mix, at storage" number="201310" standardDeviation95="1.2634000000000003" subCategory="biofuels\biogas" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

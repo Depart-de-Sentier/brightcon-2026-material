@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="278878" timestamp="2023-08-28T15:03:09.479+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="material, obsolete" datasetRelatesToProduct="true" generalComment="The multi-output process &quot;planing, softwood, air dried, u=20%&quot; delivers the two coproducts &quot;sawn timber, softwood, planed, air dried, at plant&quot; and &quot;industrial residue wood, from planing, softwood, air dried, u=20%, at plant&quot;. Allocation is based on the over-all proceeds of the process.;&#10;UUID: 7ac6c653-0dae-35fa-88d6-86e4da0d210b" includedProcesses="Includes planing process. planing mill is assumed to be located on the sawmill site. No transports are considered. Dust emissions are neglected for a lack of data." infrastructureProcess="false" localCategory="material, obsolete" localName="xxx Sawn timber, softwood, planed, air dried, at plant" localSubCategory="wood, obsolete\products, obsolete" name="xxx Sawn timber, softwood, planed, air dried, at plant" subCategory="wood, obsolete\products, obsolete" unit="m3"/>
+        <geography location="RER" text="&lt;null&gt;"/>
+        <technology text="Technology mix used in Germany (1986)"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>9999-01</startDate>
+          <endDate>9999-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-03-29T18:04:18.045+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography and Technology" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="The assumption that the German technology mix is representative for central Europe is considered in the uncertainties."/>
+        <source additionalAuthors="Althaus H.-J., Kuenniger T., Richter K., Jungbluth N." firstAuthor="Werner F." nameOfEditors="-" number="152269" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Werner F., Althaus H.-J., Künniger T., Richter K., Jungbluth N. (2007) 1Life Cycle Inventories of Wood as Fuel and Construction Material. Final report ecoinvent data v2.0. Volume: 9. Issue: 0. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Werner F.\nOther authors: Althaus H.-J., Künniger T., Richter K., Jungbluth N.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 9\nIssue No: 0\n" title="2007 - LCI wood as fuel and const. mat. - Werner" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="9" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="137747"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="139614"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="139614" referenceToPublishedSource="152269"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="material, obsolete" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="wood, obsolete\products, obsolete" location="RER" meanValue="1.0" name="xxx Sawn timber, softwood, planed, air dried, at plant" number="278878" subCategory="wood, obsolete\products, obsolete" uncertaintyType="0" unit="m3">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="calculated correction term&#10;" infrastructureProcess="false" localCategory="wood" localSubCategory="extraction\allocation corrections" location="RER" meanValue="-0.138" name="Softwood, allocation correction, 1" number="299910" standardDeviation95="1.0" subCategory="extraction\allocation corrections" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="material, obsolete" generalComment="(1,3,5,3,1,1,4)&#10;" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="wood, obsolete\products, obsolete" location="RER" meanValue="1.1385" name="xxx Sawn timber, softwood, raw, air dried, u=20%, at plant" number="342097" standardDeviation95="1.51" subCategory="wood, obsolete\products, obsolete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,3,5,3,1,1,13)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="110.88" name="Heat, waste" number="46930" standardDeviation95="1.51" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="(4,5,2,3,4,5,9)&#10;" infrastructureProcess="true" localCategory="wood" localSubCategory="products\infrastructure" location="RER" meanValue="7.92E-7" name="Planing mill" number="214782" standardDeviation95="3.36" subCategory="products\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,3,5,3,1,1,4)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="30.789" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.51" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

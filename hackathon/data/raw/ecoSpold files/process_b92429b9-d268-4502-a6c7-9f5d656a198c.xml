@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="565229" timestamp="2023-08-28T15:03:44.070+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="waste management" datasetRelatesToProduct="true" generalComment="This dataset represents a weighted average of the amount of recovered materials of four recycling facilities in Europe. The benefits for recovery of waste glass are modelled based on information from Held and Ilg (2011) and KBOB LCI data DQRv2:2016. It is assumed that 90% of the glass and 100% of the metals are recovered.;&#10;UUID: b92429b9-d268-4502-a6c7-9f5d656a198c" includedProcesses="This dataset includes the benefits for the avoided production of glass, aluminium and copper by the  recycling of crystalline silicon photovoltaic panels. The amount of recovered materials is calculated based on information from four European recyclers." infrastructureProcess="false" localCategory="waste management" localName="Avoided burden from recycling, c-Si PV module" localSubCategory="recycling" name="Avoided burden from recycling, c-Si PV module" subCategory="recycling" unit="kg"/>
+        <geography location="RER" text="Europe"/>
+        <technology text="Industry data."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2014-01</startDate>
+          <endDate>2017-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-09-30T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Some generic datasets from ecoinvent have been used." productionVolume="na" samplingProcedure="Data survey at recycling companies in Europe. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Itten R., Sinha P., de Wild-Scholten M., Zhank J." firstAuthor="Frischknecht R." nameOfEditors="-" number="138234" placeOfPublications="Petten, NL" publisher="IEA PVPS Task 12" sourceNumber="0" sourceType="3" text="Frischknecht R.,, Stolz P., Sinha P., de Wild-Scholten M. (2020) Life Cycle Inventories and Life Cycle Assessments of Photovoltaic Systems. Project report. Volume: 174. IEA PVPS Task 12.\nType: Separate publication\nSource: Report\nFirst author: Frischknecht R.,\nOther authors: Stolz P., Sinha P., de Wild-Scholten M.\nYear: 2020\nTitle of anthology: Project report\nPublisher: IEA PVPS Task 12\nVolume No: 174\nOriginal title: Life Cycle Inventories and Life Cycle Assessments of Photovoltaic Systems\n" title="2015 - LCI and LCA photovoltaic systems - Frischknecht" titleOfAnthology="Project report" volumeNo="174" year="2020"/>
+        <validation proofReadingDetails="Proof reading validation: 30.09.2020; Other validation: G:\Projekte laufend\174 Photovoltaic, IEA Task 12\2017 Global supply chain\EcoSpold\[174-photovoltaics-global-supply-chain-v2.5.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138233"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138233" referenceToPublishedSource="138234"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Philippe Stolz" number="138233" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="waste management" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="recycling" location="RER" meanValue="1.0" name="Avoided burden from recycling, c-Si PV module" number="565229" subCategory="recycling" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,1,1,1,3,BU:1.05); Avoided primary copper production materials from junction box and cables; Recycling content of copper is 44 % according to KBOB-list; Weighted average of data from recyclers; KBOB LCI data DQRv2:2016&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="-0.024817" name="Copper, at regional storage" number="328058" standardDeviation95="1.1357999999999997" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="(2,4,1,1,1,3,BU:1.05); Avoided primary glass production materials; Weighted average of data from recyclers; Held and Ilg 2011; KBOB LCI data DQRv2:2016&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="-0.12367" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.1357999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,1,1,1,3,BU:1.05); Avoided primary glass production materials; Weighted average of data from recyclers; Held and Ilg 2011; KBOB LCI data DQRv2:2016&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="DE" meanValue="-0.34447" name="Silica sand, at plant" number="137826" standardDeviation95="1.1357999999999997" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,1,1,1,3,BU:1.05); Avoided primary aluminium production materials from frame; Recycling content of AlMg3 alloy is 77 % according to KBOB-list; Weighted average of data from recyclers; KBOB LCI data DQRv2:2016&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="-0.053358" name="Aluminium, primary, at plant" number="301003" standardDeviation95="1.1357999999999997" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,4,1,1,1,3,BU:1.05); Avoided primary glass production materials; Weighted average of data from recyclers; Held and Ilg 2011; KBOB LCI data DQRv2:2016&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="-0.5278" name="Heavy fuel oil, burned in industrial furnace 1MW, non-modulating" number="496305" standardDeviation95="1.1357999999999997" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,1,1,1,3,BU:1.05); Avoided primary glass production materials; Weighted average of data from recyclers; Held and Ilg 2011; KBOB LCI data DQRv2:2016&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="-0.13648" name="Soda, powder, at plant" number="219996" standardDeviation95="1.1357999999999997" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,1,1,1,3,BU:1.05); Efforts for making secondary aluminium from scrap;&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="0.053358" name="Aluminium, secondary, from old scrap, at plant" number="160941" standardDeviation95="1.1357999999999997" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="(2,4,1,1,1,3,BU:1.05); Avoided primary glass production materials; Weighted average of data from recyclers; Held and Ilg 2011; KBOB LCI data DQRv2:2016&#10;" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="-0.23839" name="Limestone, milled, packed, at plant" number="585958" standardDeviation95="1.1357999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,4,1,1,1,3,BU:1.05); Avoided primary glass production materials; Weighted average of data from recyclers; Held and Ilg 2011; KBOB LCI data DQRv2:2016&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="-0.8153" name="Natural gas, burned in industrial furnace 1MWth" number="262422" standardDeviation95="1.1357999999999997" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,1,1,1,3,BU:1.05); Efforts for making secondary copper from scrap;&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="0.024817" name="Copper, secondary, at refinery" number="411973" standardDeviation95="1.1357999999999997" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

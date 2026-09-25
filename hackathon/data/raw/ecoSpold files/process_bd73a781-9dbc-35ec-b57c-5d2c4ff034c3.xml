@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="332021" timestamp="2024-07-09T13:23:19.233+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="Based on stoichiometry, for every kilogram of methane produced, the system would consume approximately 2.75 kilograms of CO2 and 0.5 kilograms of H2, and produce approximately 2.25 kilograms of water. Rest of info Adapted from BioCat II project Annex I 2014. Consider 51.3 kg CH4 per full-load hour. Reactor heat re-circulated at the wastewater treatment plant, hence not considered here. Infrastructure missing. Source: https://energiforskning.dk/sites/energiforskning.dk/files/slutrapporter/12164_annex_1_p2g_biocat_lca_final_report.pdf&#10;&#10; UUID: bd73a781-9dbc-35ec-b57c-5d2c4ff034c3" infrastructureProcess="false" localCategory="fuels" localName="Methane, from biological methanation, with carbon from atmospheric CO2 capture, hydrogen from autonomous hybrid plant" localSubCategory="synthetic\transformation" name="Methane, from biological methanation, with carbon from atmospheric CO2 capture, hydrogen from autonomous hybrid plant" subCategory="synthetic\transformation" unit="kg"/>
+        <geography location="CH"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024-01</startDate>
+          <endDate>2024-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2023-10-28T00:00:00.000+02:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Rolf Frischknecht, Telephone: 0041 44 940 61 91, E-mail: frischknecht@treeze.ch, Company: treeze, Country: CH" proofReadingValidator="136749"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="not defined" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\transformation" location="CH" meanValue="1.0" name="Methane, from biological methanation, with carbon from atmospheric CO2 capture, hydrogen from autonomous hybrid plant" number="332021" subCategory="synthetic\transformation" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="60 kW at full-load, 10 kW at standby, 3000 full-load hours per year. 51.3 kg CH4 /h at full-load {4;5;2;2;3;5;1.05;}" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="1.55" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.4470000000000003" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="{4;5;2;2;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases\transformation" location="CH" meanValue="2.75" name="Carbon dioxide, captured from atmosphere, with a sorbent-based direct air capture system, 100ktCO2" number="224493" standardDeviation95="1.4470000000000003" subCategory="gases\transformation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="{4;5;2;2;3;5;1.05;}" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\transformation" location="CH" meanValue="0.5" name="Hydrogen supply, distributed by pipeline, produced by Electrolysis, PEM using electricity from Solar PV + Wind (MA)" number="432898" standardDeviation95="1.4470000000000003" subCategory="synthetic\transformation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="0,0833 kg Ammonia/full load hour. {4;5;2;2;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CH" meanValue="0.001624" name="Ammonia, liquid, at regional storehouse" number="526313" standardDeviation95="1.4470000000000003" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: 0.0 kg over 600.0 km." infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="9.743E-4" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.208" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: 0.0 kg over 50.0 km." infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.00008119" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.208" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="34 m3 of wastewater/full-load hour. {4;5;2;2;3;5;1.05;}" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="0.6628" name="Treatment, sewage, to wastewater treatment, class 1" number="299668" standardDeviation95="1.4470000000000003" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

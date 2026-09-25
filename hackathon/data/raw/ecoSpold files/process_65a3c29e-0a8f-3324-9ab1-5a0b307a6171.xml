@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="476173" timestamp="2024-12-13T11:21:41.222+01:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="This dataset represents the grinding of 1 kilogram of olivine to a size of 10 Âµm. The transportation of rocks to the crushing/grinding facility at a distance of 10 km. In the paper, they use mining truck data from the ELCD database with an off-road transport payload of 220 t expressed in mass units. Instead of the mining truck in this inventory, we chose the &quot;dirtiest&quot; transportation mode available from ecoinvent v3.9.1. The electricity consumption includes the electricity needed for the vibrating feeder, conveyor belt, vibrating screen and crushing the mineral to 10Âµm.&#10;Foteinis, S., Campbell, J. S., &amp; Renforth, P. (2023). Life Cycle Assessment of Coastal Enhanced Weathering for Carbon Dioxide Removal from Air. Environmental Science and Technology, 57(15), 6169â€“6178. https://doi.org/10.1021/acs.est.2c08633&#10;UUID: 65a3c29e-0a8f-3324-9ab1-5a0b307a6171" infrastructureProcess="false" localCategory="chemicals" localName="Olivine comminution" localSubCategory="gases\transformation" name="Olivine comminution" subCategory="gases\transformation" unit="kg"/>
+        <geography location="CH"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024</startDate>
+          <endDate>2024</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2024-12-13T10:30:31.537+01:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Pierryves Padey, Telephone: +41 58 462 93 11, E-mail: pierryves.padey@bafu.admin.ch, Company: Federal Office for the Environment, Country: CH" proofReadingValidator="168876"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="FOEN" countryCode="CH" email="anonymised" name="Pierryves Padey" number="168876" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="not defined" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases\transformation" location="CH" meanValue="1.0" name="Olivine comminution" number="476173" subCategory="gases\transformation" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,1,1,1,3,5,BU:1.05); ;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.074456" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.3000999999999998" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="" infrastructureProcess="false" localCategory="resource" localSubCategory="in water" meanValue="3.256E-4" name="Water, well" number="160727" subCategory="in water" uncertaintyType="0" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.01" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.208" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,5)" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CH" meanValue="1.0" name="Quarrying of olivine" number="744723" standardDeviation95="2.0483000000000002" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="0.29304" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

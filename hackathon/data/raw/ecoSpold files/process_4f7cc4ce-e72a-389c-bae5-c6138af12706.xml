@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="600841" timestamp="2023-08-28T15:03:09.831+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="oil" datasetRelatesToProduct="true" generalComment="Bottom-Up estimation based on plant data. Life time is 40 years. Product storage volume of storage tanks is 10'000 m3. The average storage time is 2 months. Thus total through flow in the life time is 4.8 million. m3.;&#10;UUID: 4f7cc4ce-e72a-389c-bae5-c6138af12706" includedProcesses="Infrastructure (materials and land use) for storage tanks and petrol stations." infrastructureProcess="true" localCategory="oil" localName="Regional distribution, oil products" localSubCategory="production" name="Regional distribution, oil products" subCategory="production" unit="p"/>
+        <geography location="RER" text="&lt;null&gt;"/>
+        <technology text="Tank storage and fuel stations."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Publication of literature.">
+          <startDate>1991-01</startDate>
+          <endDate>1992-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2018-10-22T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="From CH to RER." productionVolume="In 2015 total storage capacity in Switzerland was 7.5 Mio. m3." samplingProcedure="Literature and own estimations. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Meili C." firstAuthor="Jungbluth N." nameOfEditors="-" number="167345" placeOfPublications="Schaffhausen, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Jungbluth N., Wenzel P., Meili C. (2018) Life cycle inventories of storage and distribution for oil products. Project report. Volume: 565. ESU-services Ltd.. Schaffhausen, CH.\nType: Separate publication\nSource: Report\nFirst author: Jungbluth N.\nOther authors: Wenzel P., Meili C.\nYear: 2018\nTitle of anthology: Project report\nPlace of publication: Schaffhausen, CH\nPublisher: ESU-services Ltd.\nVolume No: 565\nOriginal title: Life cycle inventories of storage and distribution for oil products\n" title="2018 - LCI oil products distribution - Jungbluth" titleOfAnthology="Project report" volumeNo="565" year="2018"/>
+        <validation proofReadingDetails="Proof reading validation: 22.10.2018; Other validation: C:\Users\Regula\OneDrive - ESU-services\565 LCI oil sector CH BAFU\EcoSpold\[EcoSpold-distribution-2018-v5.0.xlsx]X-Process;" proofReadingValidator="149974"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136351"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136351" referenceToPublishedSource="167345"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="Matthias Stucki, René Itten" number="149974" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="oil" generalComment="Europe&#10;" infrastructureProcess="true" localCategory="oil" localSubCategory="production" location="RER" meanValue="1.0" name="Regional distribution, oil products" number="600841" subCategory="production" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(5,na,5,1,1,na); Estimation 25% of fuel station area&#10;" infrastructureProcess="true" localCategory="construction" localSubCategory="others\infrastructure" location="CH" meanValue="14337.0" name="Building, hall" number="520705" standardDeviation95="5.238900000000001" subCategory="others\infrastructure" uncertaintyType="1" unit="m2">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(3,5,5,1,1,5); Literature&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="59848.0" name="Transformation, from unknown" number="54270" standardDeviation95="4.008" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(3,5,5,1,1,5); Literature, life time 80 years&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="200000.0" name="Occupation, industrial area, built up" number="116809" standardDeviation95="5.0991" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(3,5,5,1,1,5); Literature fuel station&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="57348.0" name="Transformation, to traffic area, road network" number="22234" standardDeviation95="3.333" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(3,5,5,1,1,5); Literature&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="300000.0" name="Disposal, asphalt, 0.1% water, to sanitary landfill" number="571401" standardDeviation95="3.333" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(3,5,5,1,1,5); Literature&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="200000.0" name="Reinforcing steel, at plant" number="545988" standardDeviation95="3.333" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(3,5,5,1,1,5); Literature&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="construction waste landfill" location="CH" meanValue="1000000.0" name="Disposal, concrete, 5% water, to construction waste landfill" number="171658" standardDeviation95="3.333" subCategory="construction waste landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distance 50km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="147500" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="3.7597" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(3,5,5,1,1,5); Literature&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="75000.0" name="Disposal, bitumen, 1.4% water, to sanitary landfill" number="418447" standardDeviation95="3.333" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="(3,5,5,1,1,5); Literature&#10;" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="300000.0" name="Gravel, round, at mine" number="212312" standardDeviation95="3.333" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(3,5,5,1,1,5); Literature&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="454.55" name="Concrete, sole plate and foundation, at plant" number="260003" standardDeviation95="3.333" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(3,5,5,1,1,5); Literature&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="fuels" location="RER" meanValue="75000.0" name="Bitumen, at refinery" number="348763" standardDeviation95="3.333" subCategory="fuels" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(3,5,5,1,1,5); Literature oil storage&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="2500.0" name="Transformation, to industrial area, built up" number="86253" standardDeviation95="4.008" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(3,5,5,1,1,5); Literature, life time 80 years&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="4587800.0" name="Occupation, traffic area, road network" number="131267" standardDeviation95="3.333" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

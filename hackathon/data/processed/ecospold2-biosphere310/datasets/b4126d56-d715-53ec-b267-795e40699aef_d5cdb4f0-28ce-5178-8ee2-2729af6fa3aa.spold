@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="b4126d56-d715-53ec-b267-795e40699aef" activityNameId="7e20e2f6-90e0-5f48-83e8-b728341ba6a8" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Lead, at regional storage</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Lead, at regional storage
+This dataset describes the supply mix of lead used in Europe. It is modelled with a blend of 25% primary and 75% secondary production, complemented with the transport service required to transport the material to the regional storage. In the global average the secondary production amounts only 65%.;
+Formula: Pb; 
+UUID: 5097fdf8-210b-3053-9e5a-98fbf73b914f
+The module includes the production of primary and secondary lead for Europe.
+Location: This module represents the consumption mix of lead in Europe.
+Technology: A mix of 25% primary and 75% secondary production.
+Time period: undefined
+Production volume: 8'050'000 in 2005
+Sampling: literature 
+Extrapolations: see Geography and Technology
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_5097fdf8-210b-3053-9e5a-98fbf73b914f.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="20a9bf48-6cea-59b4-ad08-000cb981f2d0" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">RER</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: This module represents the consumption mix of lead in Europe.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: A mix of 25% primary and 75% secondary production.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2000-01-01" endDate="2000-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: undefined</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="db80c830-b8c0-5fed-b4a4-e8f6cb9438b2" amount="1.0" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="b4126d56-d715-53ec-b267-795e40699aef" intermediateExchangeId="d5cdb4f0-28ce-5178-8ee2-2729af6fa3aa" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Lead, at regional storage</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Lead, at regional storage
+Europe
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="e4a0844c-898b-569f-884f-08120267c9b7" amount="1.25" unitId="97a43c83-639b-5b25-b36e-39233e1b0540" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="b74a3676-858c-59e9-937b-bd78e4acd93b" intermediateExchangeId="fc6b7ed8-6090-58b7-9766-70ad6f235e25" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Transport, transoceanic freight ship</name>
+        <unitName xml:lang="en">ton kilometer</unitName>
+        <comment xml:lang="en">Full flow name: Transport, transoceanic freight ship
+(5,5,1,1,1,5,5)
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.25" varianceWithPedigreeUncertainty="0.17783886799488452" mu="0.22314355131420976"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="2ef46f39-e9af-5dfe-b639-07431e7df594" amount="0.1" unitId="97a43c83-639b-5b25-b36e-39233e1b0540" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="e8d98f20-65eb-59b7-8a3c-0da1cb90eb4f" intermediateExchangeId="018cb8ee-2b42-551f-b0f7-043621dacea7" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Transport, freight, lorry, fleet average</name>
+        <unitName xml:lang="en">ton kilometer</unitName>
+        <comment xml:lang="en">Full flow name: Transport, freight, lorry, fleet average
+(5,5,1,1,1,5,5)
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.1" varianceWithPedigreeUncertainty="0.17783886799488452" mu="-2.3025850929940455"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="a9015d1c-7b98-59e9-8ddc-58948483b62e" amount="0.2" unitId="97a43c83-639b-5b25-b36e-39233e1b0540" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="7d429f3a-359c-5db1-b13a-3abd8f9eb208" intermediateExchangeId="c40ab47d-baa0-5b31-9729-285ad0592fd9" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Transport, freight, rail</name>
+        <unitName xml:lang="en">ton kilometer</unitName>
+        <comment xml:lang="en">Full flow name: Transport, freight, rail
+(5,5,1,1,1,5,5)
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.2" varianceWithPedigreeUncertainty="0.17783886799488452" mu="-1.6094379124341003"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="40b9f7a2-da32-5826-82a4-12a5c92174da" amount="0.25" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="25d8511c-fa04-5905-af55-c75d36a3aa4c" intermediateExchangeId="2e9c24ac-970c-5ca9-9609-84c7c10f22b9" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Lead, primary, at plant</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Lead, primary, at plant
+15% to 35%
+
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.25" varianceWithPedigreeUncertainty="0.17783886799488452" mu="-1.3862943611198906"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="b00c767a-37b2-55a4-8f7f-24d195cdd47f" amount="0.75" unitId="0ffcf2f0-31e5-53bd-b882-80dc6c9c369a" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="8e9c6fd1-6a17-5bca-8508-86655fc32d9a" intermediateExchangeId="1e8c65bc-ea70-5ca4-9bbf-da120f6230d9" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Lead, secondary, at plant</name>
+        <unitName xml:lang="en">kilogram</unitName>
+        <comment xml:lang="en">Full flow name: Lead, secondary, at plant
+65% to 85%
+
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.75" varianceWithPedigreeUncertainty="0.17783886799488452" mu="-0.2876820724517809"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="011a0c6e-4d42-5130-b1ef-576b06c3b8f1" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Mischa Classen" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="011a0c6e-4d42-5130-b1ef-576b06c3b8f1" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Mischa Classen" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="244854" timestamp="2023-08-28T15:03:42.745+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="construction" datasetRelatesToProduct="true" generalComment="technical drying by heat from liquid gas (natural gas used as proxy). It is assumed that there is wastewater but as no data is available it is not included. The lifespan of the plant is assumed to be 50 years.;&#10;UUID: ba8c524b-f3c3-32be-98db-2e9428ae7de8" includedProcesses="includes the raw materials clay, straw and water, their transport to the finishing plant, the drying energy, the packaging and the infrastructure. Beside the product, some solid household (e.g. packing material) waste is taken into account." infrastructureProcess="false" localCategory="construction" localName="Light clay brick, at plant" localSubCategory="bricks" name="Light clay brick, at plant" subCategory="bricks" unit="kg"/>
+        <geography location="DE" text="For some exchanges CH, RER and GLO modules have been used as proxy."/>
+        <technology text="The raw materials (clay and straw) are mixed with water and poured into a mould. The drying process is technical with the use of a natural gas heater"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2004-04-05T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="See geography" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Jungbluth N., Kuenniger T., Lehmann M., Thalmann P." firstAuthor="Kellenberger D." nameOfEditors="-" number="137820" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ESU-services Ltd., Bau- und Umweltchimie" sourceNumber="0" sourceType="4" text="Kellenberger D., Althaus H.-J., Jungbluth N., Künniger T. (2007) Life Cycle Inventories of Building Products. Final report ecoinvent data v2.0. Volume: 7. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Kellenberger D.\nOther authors: Althaus H.-J., Jungbluth N., Künniger T.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 7\n" title="2007 - LCI building products - Kellenberger" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="7" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="137747"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137819"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137819" referenceToPublishedSource="137820"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Daniel Kellenberger" number="137819" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="construction" generalComment="GERMANY&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="bricks" location="DE" meanValue="1.0" name="Light clay brick, at plant" number="244854" subCategory="bricks" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(3,5,5,3,1,5); &#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="construction waste landfill" location="CH" meanValue="1.25E-4" name="Disposal, inert waste, 5% water, to construction waste landfill" number="509488" standardDeviation95="1.6400000000000001" subCategory="construction waste landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,5,5,3,1,5); &#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="DE" meanValue="0.00556" name="Electricity, medium voltage, at grid" number="584179" standardDeviation95="1.6400000000000001" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(3,5,5,3,1,5); &#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="1.78" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.6400000000000001" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(3,5,3,1,1,5); &#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant production" location="CH" meanValue="0.162" name="Straw IP, at farm" number="224153" standardDeviation95="1.3400000000000003" subCategory="plant production" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="estimated&#10;" infrastructureProcess="true" localCategory="minerals" localSubCategory="infrastructure" location="CH" meanValue="1.67E-10" name="Mine, clay" number="539206" standardDeviation95="5.000000000000001" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(3,5,5,3,1,5); &#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="0.113" name="Tap water, at user" number="227940" standardDeviation95="1.6400000000000001" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="(3,5,5,3,1,5); &#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="0.0158" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="1.6400000000000001" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,5,5,3,1,5); &#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.0176" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.34" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,5,5,3,1,5); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.02" name="Heat, waste" number="46930" standardDeviation95="1.6400000000000001" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="Others" generalComment="estimated&#10;" infrastructureProcess="false" localCategory="Others" localSubCategory="unspecified" location="CH" meanValue="1.0" name="Packing, clay products" number="318218" standardDeviation95="5.000000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="(3,5,3,1,1,5); &#10;" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="1.01" name="Clay, at mine" number="402453" standardDeviation95="1.3400000000000003" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

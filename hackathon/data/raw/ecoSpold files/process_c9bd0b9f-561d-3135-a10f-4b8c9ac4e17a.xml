@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="230028" timestamp="2024-07-09T13:23:18.732+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="energy, obsolete" datasetRelatesToProduct="true" generalComment="This dataset represents the supply of 1 megajoule of heat in a residence, by transfer of geothermal heat in a ground source heat pump.  The electricity is from Solar PV (CH). Heat conversion efficiency [% LHV input]: 390%. LHV [MJ/kg]: 3.6. Market price [Euro/MJ]: 0.03. Distribution loss [% output]: 0%. Storage loss [% output]: 0%. Synthesis efficiency [% LHV input]: 0%. Hydrogen production efficiency [% LHV input]: 0. Grid loss [%]: 0.06. CO2 biogenic share [%]: 0%. Power [kW]: 10. Lifetime [years]: 20. Annual operation [hours]: 2100. : .  For more information, refer to: Sacchi, R., Bauer, C. LCA of Power-to-X processes and applications in the residential sector. Paul Scherrer Institut, 2023. Source: Sacchi, R., Bauer, C. LCA of Power-to-X processes and applications in the residential sector. Paul Scherrer Institut, 2023.&#10;&#10; UUID: c9bd0b9f-561d-3135-a10f-4b8c9ac4e17a" infrastructureProcess="false" localCategory="energy, obsolete" localName="Heat, residential, by transfer of geothermal heat using ground source heat pump using electricity from Solar PV (CH)" localSubCategory="heat, obsolete\heat pumps, obsolete\transformation" name="Heat, residential, by transfer of geothermal heat using ground source heat pump using electricity from Solar PV (CH)" subCategory="heat, obsolete\heat pumps, obsolete\transformation" unit="MJ"/>
+        <geography location="CH"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024-01</startDate>
+          <endDate>2024-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2023-10-28T00:00:00.000+02:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Rolf Frischknecht, Telephone: 0041 44 940 61 91, E-mail: frischknecht@treeze.ch, Company: treeze, Country: CH" proofReadingValidator="136749"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="energy, obsolete" generalComment="not defined" infrastructureProcess="false" localCategory="energy, obsolete" localSubCategory="heat, obsolete\heat pumps, obsolete\transformation" location="CH" meanValue="1.0" name="Heat, residential, by transfer of geothermal heat using ground source heat pump using electricity from Solar PV (CH)" number="230028" subCategory="heat, obsolete\heat pumps, obsolete\transformation" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="000075-46-7" category="emissions to air" formula="CHF3" generalComment="Proxy for refrigerant R404a {5;5;5;5;5;5;1.5;}" infrastructureProcess="false" localCategory="air" localSubCategory="unspecified" meanValue="2.513E-7" name="Methane, trifluoro-, HFC-23" number="238" standardDeviation95="2.7850000000000006" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="Proxy for refrigerant R404a {5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organics" location="US" meanValue="2.513E-7" name="1,1-difluoroethane, HFC-152a, at plant" number="191327" standardDeviation95="2.565" subCategory="organics" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: 0.0 kg over 133.0 km." infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.00000003823" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.208" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="COP of 3.9 for heating. 1 [MJ]/CoP/3.6 [MJ/kWh] {5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="CH" meanValue="0.07123" name="Electricity, production mix photovoltaic, at plant" number="285595" standardDeviation95="2.565" subCategory="photovoltaic" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: 0.0 kg over 1233.0 km." infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="3.147E-7" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.208" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Proxy for refrigerant R404a {5;5;5;5;5;5;1.5;}" infrastructureProcess="false" localCategory="air" meanValue="2.513E-7" name="Ethane, 1,1-difluoro-, HFC-152a" number="90611" standardDeviation95="2.7850000000000006" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="Proxy for refrigerant R404a {5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="2.513E-7" name="Trifluoromethane, at plant" number="227536" standardDeviation95="2.565" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="{5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="construction" localSubCategory="ventilation\components" location="RER" meanValue="1.323E-5" name="Air filter, in exhaust air valve, at plant" number="495608" standardDeviation95="2.565" subCategory="ventilation\components" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="Others" generalComment="{5;5;5;5;5;5;3;}" infrastructureProcess="false" localCategory="Others" localSubCategory="unspecified" location="CH" meanValue="6.614E-7" name="Treatment of heat pump 10 kW production for air source heat pump system" number="364654" standardDeviation95="4.247" subCategory="unspecified" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" formula="" generalComment="{5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="Resource" localSubCategory="in ground" meanValue="1.0" name="Energy, geothermal, converted" number="81957" standardDeviation95="2.565" subCategory="in ground" uncertaintyType="1" unit="MJ">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="{5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="3.968E-7" name="Lubricating oil, at plant" number="557555" standardDeviation95="2.565" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="energy, obsolete" generalComment="1/(Cap. [kW] * lifetime [y] * annual operation [h] * 3.6 [MJ/kWh]) {5;5;5;5;5;5;3;}" infrastructureProcess="false" localCategory="energy, obsolete" localSubCategory="heat, obsolete\heat pumps, obsolete\infrastructure" location="CH" meanValue="6.614E-7" name="Heat pump 10 kW production for ground source heat pump system" number="580038" standardDeviation95="4.247" subCategory="heat, obsolete\heat pumps, obsolete\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

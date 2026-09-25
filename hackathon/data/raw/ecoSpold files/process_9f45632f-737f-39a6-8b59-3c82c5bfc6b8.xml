@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="180470" timestamp="2023-08-28T15:02:59.634+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity by fuel" datasetRelatesToProduct="true" generalComment="Inventory for 1 MJ heat from natural gas, burned in a cogeneration unit with a capacity of 300 kWth. The multioutput process &quot;natural gas, burned in cogen 300kWth delivers the coproducts &quot;heat, at cogen 300kWth, natural gas, allocation exergy&quot; and &quot;electricity, at cogen 300kWth, natural gas, allocation exergy&quot;. The energy efficiency is 38% for electricity and 49% for heat. The exergy factor is 1 for ectricity and 0.170 for heat. This leads to the allocation factor of 0.82 for electricity an 0.18 for heat.;&#10;UUID: 9f45632f-737f-39a6-8b59-3c82c5bfc6b8" includedProcesses="Included are the natural gas burning in a 300 kWth cogen unit which in turn includes fuel input, infrastructure (boiler), air and water emissions and electrictiy needed for operation. The efficiency and allocation according to exergy is considered" infrastructureProcess="false" localCategory="electricity by fuel" localName="Electricity, at cogen 300kWth, natural gas, allocation exergy" localSubCategory="natural gas\cogeneration" name="Electricity, at cogen 300kWth, natural gas, allocation exergy" subCategory="natural gas\cogeneration" unit="kWh"/>
+        <geography location="CH" text="Data apply to the combustion in Switzerland."/>
+        <technology text="efficiency of average technology available on the market"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2015-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-09-14T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="Data from literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Waldburger L., Kern C., Roberts G., Zschokke M., Conte F., Weber L." firstAuthor="Kaegi T." nameOfEditors="-" number="137341" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceNumber="0" sourceType="3" text="Kägi Thomas, Livia Waldburger, Cyril Kern, Gavin Roberts, Mischa Zschokke, Flora Conte, Lea Weber (2020) LCI of heating systems. Carbotech im Auftrag des BAFU. Carbotech AG. Zürich. CH.\nType: Separate publication\nSource: Report\nFirst author: Kägi Thomas\nOther authors: Livia Waldburger, Cyril Kern, Gavin Roberts, Mischa Zschokke, Flora Conte, Lea Weber\nYear: 2020\nTitle of anthology: Carbotech im Auftrag des BAFU\nPlace of publication: Zürich. CH\nPublisher: Carbotech AG\n" title="2021 - LCI heating systems - Kaegi" titleOfAnthology="Carbotech im Auftrag des BAFU" year="2021"/>
+        <validation proofReadingDetails="Proof reading validation: 14.09.2020; Other validation: Z:\Schreibtisch\WinShare\BAFU Heizsysteme\_A-Konvertieren\BHKW\[EcoSpold_heat natural gas cogen300kw_v0.1.xlsx]X-Process;" proofReadingValidator="137339"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137340"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137340" referenceToPublishedSource="137341"/>
+        <person address="anonymised" companyCode="EBP" countryCode="CH" email="anonymised" name="Andy Spoerri" number="137339" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity by fuel" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="natural gas\cogeneration" location="CH" meanValue="1.0" name="Electricity, at cogen 300kWth, natural gas, allocation exergy" number="180470" subCategory="natural gas\cogeneration" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,1,1,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\cogeneration" location="CH" meanValue="7.8467" name="Natural gas, burned in cogen 300kWth" number="605298" standardDeviation95="1.2077" subCategory="natural gas\cogeneration" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

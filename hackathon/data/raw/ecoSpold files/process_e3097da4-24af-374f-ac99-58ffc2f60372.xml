@@ -1,0 +1,76 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="618421" timestamp="2023-08-28T15:03:06.527+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="energy supply, kbob recommendation" datasetRelatesToProduct="true" generalComment="na;&#10;UUID: e3097da4-24af-374f-ac99-58ffc2f60372" includedProcesses="This dataset contains the generation of heat in a biomethane driven CHP based on PSI data (BFE project 407, Christian Bauer, April 2012).; Geography: PSI data (BFE project 407). Emissions and efficiencies adjusted to Swiss emission regulation (LRV, Luftreinhalteverordnung) valid in year 2000." infrastructureProcess="false" localCategory="energy supply, kbob recommendation" localName="Heat, at cogen with biogas engine, methane 96%-vol allocation exergy" localSubCategory="fuels, renewable" name="Heat, at cogen with biogas engine, methane 96%-vol allocation exergy" subCategory="fuels, renewable" unit="MJ"/>
+        <geography location="CH" text=" PSI data (BFE project 407). Emissions and efficiencies adjusted to Swiss emission regulation (LRV, Luftreinhalteverordnung) valid in year 2000."/>
+        <technology text="Average technology available on market."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2011-01</startDate>
+          <endDate>2011-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-01-24T16:34:06.580+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="0" productionVolume="na" samplingProcedure="Literature. Manufacturer information. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Frischknecht R., Eckle P., Flury K., Neal T., Papp K., Schori S., Simons A., Stucki M., Treyer K." firstAuthor="Bauer C." nameOfEditors="-" number="162366" placeOfPublications="Uster and Villigen, CH" publisher="Swiss Centre for LCI, ESU-services Ltd., PSI" sourceNumber="0" sourceType="3" text="Ch. Bauer, Frischknecht (2012) Umweltauswirkungen Strom. Volume: 407. PSI. Uster und Villigen, CH.\nType: Separate publication\nSource: CD-ROM\nFirst author: Ch. Bauer\nOther authors: Frischknecht\nYear: 2012\nPlace of publication: Uster und Villigen, CH\nPublisher: PSI\nVolume No: 407\n" title="2012 - LCA electricity generation in Switzerland - Uster" titleOfAnthology="-" volumeNo="407" year="2012"/>
+        <validation proofReadingDetails="Proof reading validation: 19.12.2013; Other validation: \\Server\e\ESU-Docs\Projekte laufend\388 Aktualisierung PEF Energie\EcoSpold\[388_BHKW_Biogas-update-Erdgas-v0.2.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137485"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138970" referenceToPublishedSource="162366"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Thomas Heck" number="138970" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="René Itten" number="137485" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="energy supply, kbob recommendation" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="energy supply, kbob recommendation" localSubCategory="fuels, renewable" location="CH" meanValue="1.0" name="Heat, at cogen with biogas engine, methane 96%-vol allocation exergy" number="618421" subCategory="fuels, renewable" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="010024-97-2" category="emissions to air" generalComment="(1,4,2,1,3,4,BU:1.5); value for cogeneration of natural gas used as approximination&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.0555E-6" name="Dinitrogen monoxide" number="646" standardDeviation95="3.0715" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,4,2,1,3,4,BU:3);  own calculations based onlower heating value of biogas&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="natural gas\cogeneration\power unit\infrastructure" location="RER" meanValue="8.3273E-9" name="Cogen unit 200kWe, components for heat only" number="615121" standardDeviation95="1.2634000000000003" subCategory="natural gas\cogeneration\power unit\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,4,2,1,3,4,BU:3); ecoinvent V1.1. cogeneration of natural gas&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="natural gas\cogeneration\power unit\infrastructure" location="RER" meanValue="1.8828E-9" name="Cogen unit 200kWe, common components for heat+electricity" number="195807" standardDeviation95="3.0715" subCategory="natural gas\cogeneration\power unit\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,4,2,1,3,4,BU:1.05); value for cogeneration of natural gas used as approximination&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.1929" name="Heat, waste" number="46930" standardDeviation95="5.0815" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(1,4,2,1,3,4,BU:1.5); own calculations based on carbon content in biogas&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.2887E-5" name="Methane, biogenic" number="155267" standardDeviation95="1.2634000000000003" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,4,2,1,3,4,BU:1.05); value for cogeneration of natural gas used as approximination&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.023021" name="Carbon dioxide, biogenic" number="80535" standardDeviation95="2.0748" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007446-09-5" category="emissions to air" generalComment="(1,4,2,1,3,4,BU:1.05); value for cogeneration of natural gas used as approximination&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.261E-7" name="Sulfur dioxide" number="26215" standardDeviation95="3.0715" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="(1,4,2,1,3,4,BU:1.5); own calculations&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.8776E-5" name="Nitrogen oxides" number="79243" standardDeviation95="1.2634000000000003" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(1,4,2,1,3,4,BU:1.5); calculated from company data on water usage and amount of water to treatment&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="4.1109E-6" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="3.0702999999999996" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(1,4,2,1,3,4,BU:1.05); ecoinvent V1.1. cogeneration of natural gas&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="biofuels\methane" location="CH" meanValue="0.41109" name="Methane, 96 vol-%, from biogas, low pressure, at consumer" number="559201" standardDeviation95="3.0715" subCategory="biofuels\methane" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,4,2,1,3,4,BU:5); value for cogeneration of natural gas used as approximination&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.5775E-5" name="Carbon monoxide, biogenic" number="81433" standardDeviation95="2.0748" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(1,4,2,1,3,4,BU:1.05); value of cogeneration of natural gas used as approximination&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="1.2333E-5" name="Disposal, used mineral oil, 10% water, to hazardous waste incineration" number="504085" standardDeviation95="1.2634000000000003" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,4,2,1,3,4,BU:1.05); value of cogeneration of natural gas used as approximination&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="1.2333E-5" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.2634000000000003" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(1,4,2,1,3,4,BU:3); own calculations based on sulphur content in biogas&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="6.1664E-8" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="1.2634000000000003" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

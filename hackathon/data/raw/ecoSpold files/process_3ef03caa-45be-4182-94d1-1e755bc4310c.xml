@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="EcoInvent Excel2EcoSpold 1.9.18" number="631623" timestamp="2026-03-31T14:40:41">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="construction materials" datasetRelatesToProduct="true" generalComment="Modern Swiss und European technologies are applied to building machines, material production and building processes. &#10;UUID: 3ef03caa-45be-4182-94d1-1e755bc4310c" includedProcesses="The process and material data for the production of RAP were determined through a survey of 11 asphalt plants that produce these recycling material. According to estimates, the surveyed asphalt plants produce approx. 860'000 tons of reclaimed asphalt, which corresponds to about 40% of the annually produced asphalt granulate of 2.1 million tons. A distinction was made between RAP produced in diesel-powered plants and RAP produced in electrically powered plants. This distinction arises from the fact that, in some facilities, mobile processing plants are used that are powered by diesel. The life cycle inventories of these two types of plants differ only in the energy source used. The life cycle inventories of these two types of plants differ only in the energy source applied. For this life cycle inventory, a distribution of 50% diesel-powered and 50% electrically powered plants was assumed.The machines used for material handling (wheel loaders/hydraulic excavators) are represented by the process “Building machine/RER/1 U” as well as by scaled quantities of lubricating oil based on the process “diesel, burned in building machine, with particle filter/MJ/CH” and the disposal of waste oil." infrastructureIncluded="true" infrastructureProcess="false" localCategory="construction materials" localName="Reclaimed asphalt pavement (RAP), at plant" localSubCategory="asphalt" name="Reclaimed asphalt pavement (RAP), at plant" subCategory="asphalt" unit="kg">
+          <synonym>0</synonym>
+        </referenceFunction>
+        <geography location="CH" text="Switzerland"/>
+        <technology text="Production of reclaimed asphalt, with 50% from diesel-powered and 50% from electrically powered plants."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Review of data currency scheduled after 5 years.">
+          <startYear>2025</startYear>
+          <endYear>2030</endYear>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2026-03-31T14:40:41" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="None" percent="40.0" productionVolume="860'000 t" samplingProcedure="Survey " uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Spitzhofer N., Osterwalder D." firstAuthor="Pohl T." number="952456" pageNumbers="51" placeOfPublications="Zuerich, CH" publisher="Umtec Technologie AG" sourceType="3" text="Report" title="2025 - Asphalt calculator - Pohl" year="2025"/>
+        <validation proofReadingDetails="Unspecified" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="769826" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="2" person="769826" referenceToPublishedSource="952456"/>
+        <person address="anonymised" companyCode="UMTEC" countryCode="CH" email="anonymised" name="Thomas Pohl" number="769826" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="construction materials" infrastructureProcess="false" localCategory="construction materials" localSubCategory="asphalt" location="CH" meanValue="1" name="Reclaimed asphalt pavement (RAP), at plant" number="631623" subCategory="asphalt" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="(1,1,1,1,1,3,BU:3); Wheel loader; process adopted for 1 building machine from: diesel, burned in building machine, with particle filter/CH U.; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="4.1199999999999997e-10" name="Building machine" number="275603" standardDeviation95="3.0033" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,1,1,1,1,3,BU:1.05); Lubricating oil for the wheel loader; data taken from: diesel, burned in building machine, with particle filter/CH U. Lubricating oil for 1 p of building machine.; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="6.3448e-07" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.0714" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(1,1,1,1,1,3,BU:1.05); Data from: diesel, burned in building machine, with particle filter/CH U, adjusted for 1 building machine (wheel loader).; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="6.3448e-07" name="Disposal, used mineral oil, 10% water, to hazardous waste incineration" number="504085" standardDeviation95="1.0714" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="(1,1,1,1,1,3,BU:2); Diesel consumption of the wheel loader. ; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="0.0007239999999999999" name="Diesel, burned in building machine, with particle filter, without building machine and lubricating oil" number="407974" standardDeviation95="2.0034" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="(1,1,1,1,1,3,BU:3); Wheel loader / hydraulic excavator; process adopted for 1 building machine from: diesel, burned in building machine, with particle filter/CH U.; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="4.82e-10" name="Building machine" number="275603" standardDeviation95="3.0033" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,1,1,1,1,3,BU:1.05); Lubricating oil for the Wheel loader / hydraulic excavator; data taken from: diesel, burned in building machine, with particle filter/CH U. Lubricating oil for 1 p of building machine.; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="7.422800000000001e-07" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.0714" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(1,1,1,1,1,3,BU:1.05); Data from: diesel, burned in building machine, with particle filter/CH U, adjusted for 1 building machine (Wheel loader / hydraulic excavator).; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="7.422800000000001e-07" name="Disposal, used mineral oil, 10% water, to hazardous waste incineration" number="504085" standardDeviation95="1.0714" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="(1,1,1,1,1,3,BU:2); Diesel consumption of the wheel loader / hydraulic excavator. ; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="0.0009220000000000001" name="Diesel, burned in building machine, with particle filter, without building machine and lubricating oil" number="407974" standardDeviation95="2.0034" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="(1,1,1,1,1,3,BU:3); Impact crusher.; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="1.1214999999999999e-05" name="Industrial machine, heavy, unspecified, at plant" number="563077" standardDeviation95="3.0033" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="(1,1,1,1,1,3,BU:2); Diesel consumption of the impact crusher.; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="0.000635" name="Diesel, burned in building machine, with particle filter, without building machine and lubricating oil" number="407974" standardDeviation95="2.0034" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,1,1,1,1,3,BU:1.05); Electricity consumption of the impact crusher.; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.000107" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.0714" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,1,1,1,1,3,BU:1.05); Abrasion of impact plates.; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="4.37e-06" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.0714" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(1,1,1,1,1,3,BU:2); Transport to material recycling: 1 ton x 20 km x allocation factor 0.137; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.0027400000000000002" name="Transport, freight, lorry, 32t-40t gross weight, fleet average" number="482448" standardDeviation95="2.0034" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(1,1,1,1,1,3,BU:2); Transport of 73.5 kg waste from processing to landfill: 73.5 kg x 32 km x allocation factor 0.137; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.000322" name="Transport, freight, lorry, 32t-40t gross weight, fleet average" number="482448" standardDeviation95="2.0034" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(1,1,1,1,1,3,BU:1.05); During the production of 1 ton of RAP, 73.5 kg of waste is generated that must be landfilled. Multiplied by 0.137 and scaled to 1 t Asphalt with factor 0.9315; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="0.009380000000000001" name="Disposal, asphalt, 0.1% water, to sanitary landfill" number="571401" standardDeviation95="1.0714" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

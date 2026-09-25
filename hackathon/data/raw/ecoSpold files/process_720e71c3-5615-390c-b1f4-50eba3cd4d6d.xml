@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="450754" timestamp="2023-08-28T15:03:39.838+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="Infrastructure data are estimated based on a tour and sketches of the process. The value of the infrastructure is normalized with a annual production capacity of about 20'000 tons of product per year. The estimated lifespan of the machines is 25 years. There are no significant dust emissions as a dust control system is installed. This product exists also packed.;&#10;Formula: Ca(OH)2; &#10;UUID: 720e71c3-5615-390c-b1f4-50eba3cd4d6d" includedProcesses="Includes the processes: slaking, crushing, dust abatement (cyclone), transportation and storing. A part of the total heating energy for &quot;production&quot; and &quot;administration&quot; is included. Equipment included in the infrastructure: 1 swing hammer crusher, 2 cyclone dust catchers, 1 lime slaking plant, 2 conveyor worms, and 1 silo." infrastructureProcess="false" localCategory="chemicals" localName="Lime, hydrated, loose, at plant" localSubCategory="inorganic" name="Lime, hydrated, loose, at plant" subCategory="inorganic" unit="kg"/>
+        <geography location="CH" text="data are from only one company in Switzerland (KFN), for some exchanges RER-modules have been used as proxy"/>
+        <technology text="The company KFN works on a technically high level. Effective dust control systems are installed."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2004-04-14T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="data which are only available for RER have been used as proxy for CH" percent="50" productionVolume="37'000t" samplingProcedure="survey " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Jungbluth N., Kuenniger T., Lehmann M., Thalmann P." firstAuthor="Kellenberger D." nameOfEditors="-" number="137820" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ESU-services Ltd., Bau- und Umweltchimie" sourceNumber="0" sourceType="4" text="Kellenberger D., Althaus H.-J., Jungbluth N., Künniger T. (2007) Life Cycle Inventories of Building Products. Final report ecoinvent data v2.0. Volume: 7. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Kellenberger D.\nOther authors: Althaus H.-J., Jungbluth N., Künniger T.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 7\n" title="2007 - LCI building products - Kellenberger" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="7" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed; Other validation: none;" proofReadingValidator="137747"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137819"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137819" referenceToPublishedSource="137820"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Daniel Kellenberger" number="137819" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CH" meanValue="1.0" name="Lime, hydrated, loose, at plant" number="450754" subCategory="inorganic" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,1); &#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CH" meanValue="0.769" name="Quicklime, in pieces, loose, at plant" number="387549" standardDeviation95="1.1" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="(4,3,1,1,1,5); &#10;" infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="8.76E-5" name="Industrial machine, heavy, unspecified, at plant" number="563077" standardDeviation95="3.1" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,2,1,1,1,1); &#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.00636" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.1" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(3,2,1,1,1,1); &#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="6.02E-4" name="Water, well" number="160727" standardDeviation95="1.1" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,2,1,1,1,1); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.0458" name="Heat, waste" number="46930" standardDeviation95="1.1" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,2,1,1,1,1); &#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\flow through" location="CH" meanValue="0.00636" name="Electricity, hydropower, at run-of-river power plant" number="539352" standardDeviation95="1.1" subCategory="hydro\flow through" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,2,1,1,1,1); &#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="0.0015" name="Light fuel oil, burned in boiler 100kW, non-modulating" number="316331" standardDeviation95="1.1" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="0.5418" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

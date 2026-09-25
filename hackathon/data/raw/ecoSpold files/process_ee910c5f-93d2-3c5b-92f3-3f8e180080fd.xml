@@ -1,0 +1,103 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="558848" timestamp="2023-08-28T15:03:31.476+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="Inventory for the production of a gas boiler with a life time of 20 years. Metallic components are assumed to be recycled at the end of life;&#10;Synonyms: Brennwerttechnik, gas thermal value equipment; &#10;UUID: ee910c5f-93d2-3c5b-92f3-3f8e180080fd" includedProcesses="Infrastructure of the boiler, including electric and electronic equipment. Energy use for the production. Disposal of the facilities." infrastructureProcess="true" localCategory="heat" localName="Gas boiler 300kW" localSubCategory="natural gas\heating systems" name="Gas boiler 300kW" subCategory="natural gas\heating systems" unit="p"/>
+        <geography location="RER" text="Data apply to the supply in Switzerland. Production occurs at Viessmann in Berlin (DE)."/>
+        <technology text="Industry data."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Materials and energy use based on environmental report from 2014.">
+          <startDate>2014-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-08-17T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Data for Germany used with assumptions for Swiss energy supply." productionVolume="na" samplingProcedure="Data provided by manufacturer " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Waldburger L., Kern C., Roberts G., Zschokke M., Conte F., Weber L." firstAuthor="Kaegi T." nameOfEditors="-" number="137341" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceNumber="0" sourceType="3" text="T. Kägi, L. Waldburger, C. Kern (2020) Life cycle inventories of heating systems. Project report. carbotech. Zurich, CH.\nType: Separate publication\nSource: Report\nFirst author: T. Kägi\nOther authors: L. Waldburger, C. Kern\nYear: 2020\nTitle of anthology: Project report\nPlace of publication: Zurich, CH\nPublisher: carbotech\n" title="2021 - LCI heating systems - Kaegi" titleOfAnthology="Project report" year="2021"/>
+        <validation proofReadingDetails="Proof reading validation: 17.08.2020; Other validation: Z:\Schreibtisch\WinShare\BAFU Heizsysteme\[EcoSpold_gasboiler_v0.5.xlsx]X-Process;" proofReadingValidator="137339"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="141098"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137340" referenceToPublishedSource="137341"/>
+        <person address="anonymised" companyCode="EBP" countryCode="CH" email="anonymised" name="Andy Spoerri" number="137339" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Livia Waldburger" number="141098" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="Europe&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="natural gas\heating systems" location="RER" meanValue="1.0" name="Gas boiler 300kW" number="558848" subCategory="natural gas\heating systems" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(3,4,3,1,4,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="alloys" location="RER" meanValue="37.962" name="Brazing solder, cadmium free, at plant" number="442578" standardDeviation95="1.5577" subCategory="alloys" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(3,4,3,1,1,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="35.947" name="Aluminium, production mix, cast alloy, at plant" number="280747" standardDeviation95="1.1958999999999997" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(3,4,3,1,1,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="551.19" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.1958999999999997" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(3,4,3,1,1,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="insulation" location="CH" meanValue="27.36" name="Rock wool, packed, at plant" number="521350" standardDeviation95="1.1958999999999997" subCategory="insulation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,4,1,3,1,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="246.24" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.1376" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(3,4,3,1,1,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="construction waste landfill" location="CH" meanValue="27.36" name="Disposal, mineral wool, 0% water, to construction waste landfill" number="556756" standardDeviation95="1.1958999999999997" subCategory="construction waste landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,4,1,3,1,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="2007.5" name="Natural gas, burned in industrial furnace 1MWth" number="262422" standardDeviation95="1.1376" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(1,4,2,1,1,5,BU:1.5); ;&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="2.046" name="Occupation, industrial area, vegetation" number="113531" standardDeviation95="1.5771999999999997" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(1,4,2,1,1,5,BU:1.5); ;&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="3.008" name="Occupation, industrial area, built up" number="116809" standardDeviation95="1.5771999999999997" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(3,4,3,1,1,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="6.84" name="Disposal, hazardous waste, 25% water, to hazardous waste incineration" number="165198" standardDeviation95="1.1958999999999997" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(3,4,3,1,1,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="13.68" name="Disposal, plastics, mixture, 15.3% water, to municipal incineration" number="174149" standardDeviation95="1.1958999999999997" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,4,1,3,1,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="559.17" name="Tap water, at user" number="227940" standardDeviation95="1.1376" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(3,4,3,1,1,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="23.965" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="1.1958999999999997" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,4,3,1,1,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="818.58" name="Heat, waste" number="46930" standardDeviation95="1.1958999999999997" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na,BU:2); ;&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="25.65" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na,BU:2); ;&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="307.8" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,na,na,na,1,na,BU:2); ;&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="25.65" name="Transport, freight, lorry, 3.5t gross weight, fleet average" number="502881" standardDeviation95="2.0130999999999997" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(3,4,3,1,1,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="CH" meanValue="0.23965" name="Brass, at plant" number="287690" standardDeviation95="1.1958999999999997" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(2,4,1,3,1,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="0.46379" name="Treatment, pig iron production effluent, to wastewater treatment, class 3" number="300256" standardDeviation95="1.1376" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(3,4,3,1,1,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="paints" location="RER" meanValue="1.3851" name="Alkyd paint, white, 60% in solvent, at plant" number="472043" standardDeviation95="1.1958999999999997" subCategory="paints" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(1,4,2,1,1,5,BU:1.5); ;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.1341E-4" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.5771999999999997" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(1,4,2,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices" location="RER" meanValue="2.052" name="Electronics for control units" number="287974" standardDeviation95="1.238" subCategory="devices" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(3,4,3,1,1,3,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="14.5" name="Copper, at regional storage" number="328058" standardDeviation95="1.1958999999999997" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

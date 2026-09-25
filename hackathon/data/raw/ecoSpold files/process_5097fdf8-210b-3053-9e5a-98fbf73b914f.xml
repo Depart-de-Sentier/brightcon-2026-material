@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="262946" timestamp="2023-08-28T15:03:33.454+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="metals" datasetRelatesToProduct="true" generalComment="This dataset describes the supply mix of lead used in Europe. It is modelled with a blend of 25% primary and 75% secondary production, complemented with the transport service required to transport the material to the regional storage. In the global average the secondary production amounts only 65%.;&#10;Formula: Pb; &#10;UUID: 5097fdf8-210b-3053-9e5a-98fbf73b914f" includedProcesses="The module includes the production of primary and secondary lead for Europe." infrastructureProcess="false" localCategory="metals" localName="Lead, at regional storage" localSubCategory="non ferro" name="Lead, at regional storage" subCategory="non ferro" unit="kg"/>
+        <geography location="RER" text="This module represents the consumption mix of lead in Europe."/>
+        <technology text="A mix of 25% primary and 75% secondary production."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-08-22T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography and Technology" productionVolume="8'050'000 in 2005" samplingProcedure="literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Blaser S., Scharnhorst W., Tuchschmid M., Jungbluth N., Faist Emmenegger M." firstAuthor="Classen M." nameOfEditors="-" number="148415" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Classen M., Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M. (2008) Life Cycle Inventories of Metals. Final report ecoinvent data v2.1. Volume: 10. Issue: 0. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Classen M.\nOther authors: Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M.\nYear: 2008\nTitle of anthology: Final report ecoinvent data v2.1\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 10\nIssue No: 0\n" title="2009 - LCI metals - Classen" titleOfAnthology="Final report ecoinvent data v2.1" volumeNo="10" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: Passed; Other validation: none;" proofReadingValidator="137747"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="148776"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="148776" referenceToPublishedSource="148415"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Mischa Classen" number="148776" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="metals" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="1.0" name="Lead, at regional storage" number="262946" subCategory="non ferro" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(5,5,1,1,1,5,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="OCE" meanValue="1.25" name="Transport, transoceanic freight ship" number="208374" standardDeviation95="2.3243" subCategory="ship" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(5,5,1,1,1,5,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.1" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.3243" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(5,5,1,1,1,5,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.2" name="Transport, freight, rail" number="149864" standardDeviation95="2.3243" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="15% to 35%&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="0.25" name="Lead, primary, at plant" number="398556" standardDeviation95="2.3243" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="65% to 85%&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="0.75" name="Lead, secondary, at plant" number="267173" standardDeviation95="2.3243" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

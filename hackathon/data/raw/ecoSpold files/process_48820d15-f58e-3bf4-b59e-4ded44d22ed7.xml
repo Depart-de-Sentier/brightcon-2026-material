@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="RStudio" number="353472" timestamp="2025-09-04 18:38:44.081059">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electricity" datasetRelatesToProduct="true" generalComment="Electricity domestic net production shares are based on annual averages for 2023. Only gross to net electicity conversion losses are included as the power plants could not be operated without these, whereas other losses (such as transmission and distribution losses) are not included. Electricity trade between countries is also not included. UUID: 48820d15-f58e-3bf4-b59e-4ded44d22ed7" includedProcesses="Included are the shares of domestic electricity production by technology at the busbar. Not included are transformation, transport or distribution losses." infrastructureIncluded="true" infrastructureProcess="false" localCategory="electricity" localName="Electricity, production mix" localSubCategory="production mix" name="Electricity, production mix" subCategory="production mix" unit="kWh">
+          <synonym>0</synonym>
+        </referenceFunction>
+        <geography location="QA" text="Data apply to utilities and auto-producers."/>
+        <technology text="No technology description is provided because the dataset just describes the power plant portfolio of the respective country using current average technology per energy carrier."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time period of statistics used.">
+          <startDate>2023</startDate>
+          <endDate>2023</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2025-09-04 18:38:44.08506" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness percent="100.0" samplingProcedure="Statistical data" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Oberschelp C." number="137486" placeOfPublications="Zuerich, CH" publisher="Oberschelp Consulting" sourceType="0" title="2025 - Electricity mixes in UVEK database - Oberschelp" titleOfAnthology="Project reports" volumeNo="0" year="2025"/>
+        <validation otherDetails="none" proofReadingDetails="manual review of spold files and documentation" proofReadingValidator="137485"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137484" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137484" referenceToPublishedSource="137486"/>
+        <person address="anonymised" companyCode="ETH" countryCode="CH" email="anonymised" name="Christopher Oberschelp" number="137484" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="René Itten" number="137485" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="QA" meanValue="1.0" name="Electricity, production mix" number="353472" subCategory="production mix" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="IT" meanValue="0.999847950395325" name="Electricity, from natural gas" number="221290" standardDeviation95="1.113015" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,5,1,1,BU:1.05), EIA energy statistics and others, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="IL" meanValue="0.000152049604674664" name="Electricity, production mix photovoltaic, at plant" number="503624" standardDeviation95="1.113015" subCategory="photovoltaic" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

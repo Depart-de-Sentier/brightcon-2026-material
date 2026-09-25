@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="295567" timestamp="2023-08-28T15:03:01.909+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="natural gas" datasetRelatesToProduct="true" generalComment="The process is normalized on the gaseous form of gas.;&#10;9e5224a4-e63e-3e71-8e2b-3a0f65a853a9" includedProcesses="This dataset describes the gasification of Qatari natural gas in a European evaporation plant." infrastructureProcess="false" localCategory="natural gas" localName="Natural gas, production QA, at evaporation plant" localSubCategory="transport" name="Natural gas, production QA, at evaporation plant" subCategory="transport" unit="Nm3"/>
+        <geography location="RER" text=" Global data for energy requirements combined with country-specific natural gas characteristics."/>
+        <technology text="European technology average."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Data on energy use for the liquefaction stems of a review of common technologies from 2017 and 2019.">
+          <startDate>2000-01</startDate>
+          <endDate>2020-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-04-01T12:27:07.686+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="100" productionVolume="none" samplingProcedure="Literature." uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Jungbluth N., Meili C." firstAuthor="Bussa M." nameOfEditors="-" number="198644" placeOfPublications="Schaffhausen, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Bussa M., Meili C., Jungbluth N. (2021) Life cycle inventories for long-distance transport of natural gas. Project report. Volume: 565. ESU-services Ltd.. Schaffhausen, CH.\nType: Separate publication\nSource: Report\nFirst author: Bussa M.\nOther authors: Meili C., Jungbluth N.\nYear: 2021\nTitle of anthology: Project report\nPlace of publication: Schaffhausen, CH\nPublisher: ESU-services Ltd.\nVolume No: 565\n" title="2021 - LCI long-dist. transp. and distrib. natural gas - Bussa" titleOfAnthology="Project report" volumeNo="565" year="2021"/>
+        <validation proofReadingDetails="Passed. https://esuservices-my.sharepoint.com/personal/jungbluth_esuservices_onmicrosoft_com/Documents/ESU-intern/565 LCI oil and gas sector CH BAFU/EcoSpold/[EcoSpold-oil¬gas-transport-2020-v2.0.xlsb]X-Process" proofReadingValidator="136600"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136353"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136351" referenceToPublishedSource="198644"/>
+        <person address="anonymised" companyCode="IFEU" countryCode="DE" email="anonymised" name="Axel Liebich, Daniel Muenter" number="136600" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Maresa Bussa" number="136353" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="natural gas" generalComment="&lt;null&gt;" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="RER" meanValue="1.0" name="Natural gas, production QA, at evaporation plant" number="295567" subCategory="transport" uncertaintyType="0" unit="Nm3">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,1,BU:1.05); " infrastructureProcess="false" localCategory="natural gas" localSubCategory="production" location="QA" meanValue="1.0" name="Natural gas, liquefied, at freight ship" number="323818" standardDeviation95="1.0500000000000003" subCategory="production" uncertaintyType="1" unit="Nm3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="emissions to water" generalComment="(4,5,3,3,3,BU:1.5); Environmental report of Greek site" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="6420.0" name="Water" number="8" standardDeviation95="1.6871999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,3,3,3,BU:1.05); Environmental report of Greek site" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="0.0336" name="Sodium hypochlorite, 15% in H2O, at plant" number="398007" standardDeviation95="1.3966000000000003" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(5,3,3,3,3,BU:3); Estimate for Europe" infrastructureProcess="true" localCategory="fuels" localSubCategory="natural gas\produced gas\infrastructure" location="GLO" meanValue="7.89E-13" name="Production plant, natural gas" number="562673" standardDeviation95="3.2876000000000003" subCategory="natural gas\produced gas\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(4,1,1,3,3,BU:1.05); Based on technology average" infrastructureProcess="false" localCategory="natural gas" localSubCategory="power plants" location="QA" meanValue="0.25561" name="Natural gas, burned in gas turbine" number="193963" standardDeviation95="1.301" subCategory="power plants" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(4,5,3,3,3,BU:1.05); Environmental report of Greek site" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="6.42" name="Water, salt, ocean" number="7" standardDeviation95="1.3966000000000003" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(4,3,3,1,1,BU:1.5); Based on data from IMO (2015) and Sternersen (2017)" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="3.5E-4" name="Methane, fossil" number="90787" standardDeviation95="1.5798000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

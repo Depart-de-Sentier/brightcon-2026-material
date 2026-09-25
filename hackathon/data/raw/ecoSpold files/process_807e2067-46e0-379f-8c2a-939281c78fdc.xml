@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="586374" timestamp="2023-08-28T15:02:59.945+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="oil" datasetRelatesToProduct="true" generalComment="Rough estimation. Other mixing ratios from 1:5 up to 1:100 are possible. Energy use for mixing and additional fugitive emissions from mixing are neglected.;&#10;UUID: 807e2067-46e0-379f-8c2a-939281c78fdc" includedProcesses="Mixing of lubricant and petrol (ratio 1:50) at the petrol station." infrastructureProcess="false" localCategory="oil" localName="Petrol, two-stroke blend, at regional storage" localSubCategory="distribution" name="Petrol, two-stroke blend, at regional storage" subCategory="distribution" unit="kg"/>
+        <geography location="RER" text="RER"/>
+        <technology text="Mixing of two-stroke petrol at the fuel station."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Literature publication for mixing ratio and time of estimation.">
+          <startDate>1989-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2018-10-22T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Own estimation based on mixing ratio. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Meili C." firstAuthor="Jungbluth N." nameOfEditors="-" number="167345" placeOfPublications="Schaffhausen, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Jungbluth N., Wenzel P., Meili C. (2018) Life cycle inventories of storage and distribution for oil products. Project report. Volume: 565. ESU-services Ltd.. Schaffhausen, CH.\nType: Separate publication\nSource: Report\nFirst author: Jungbluth N.\nOther authors: Wenzel P., Meili C.\nYear: 2018\nTitle of anthology: Project report\nPlace of publication: Schaffhausen, CH\nPublisher: ESU-services Ltd.\nVolume No: 565\nOriginal title: Life cycle inventories of storage and distribution for oil products\n" title="2018 - LCI oil products distribution - Jungbluth" titleOfAnthology="Project report" volumeNo="565" year="2018"/>
+        <validation proofReadingDetails="Proof reading validation: 22.10.2018; Other validation: C:\Users\Regula\OneDrive - ESU-services\565 LCI oil sector CH BAFU\EcoSpold\[EcoSpold-distribution-2018-v5.0.xlsx]X-Process;" proofReadingValidator="149974"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136351"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136351" referenceToPublishedSource="167345"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="Matthias Stucki, René Itten" number="149974" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="oil" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="distribution" location="RER" meanValue="1.0" name="Petrol, two-stroke blend, at regional storage" number="586374" subCategory="distribution" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,5,5,3,na); Standard distance 100 km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.002" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.3825" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,3,5,1,1,na); Literature&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="0.02" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.5253" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(3,3,5,1,1,na); Assumption&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="distribution" location="RER" meanValue="0.98" name="Petrol, at regional storage" number="313319" standardDeviation95="1.5253" subCategory="distribution" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

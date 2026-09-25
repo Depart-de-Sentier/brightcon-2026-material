@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="9958e649-1387-54fe-867a-81ba7326a500" activityNameId="2ff5229a-2b6f-5e76-9307-001ce121750b" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Electricity, hard coal, at power plant</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Electricity, hard coal, at power plant
+The dataset describes the electricity production at an average hard coal power plant at busbar in this region of the North American Electricity Reliability Corporation (NERC), modelled separately from the other regions. The datasets includes as only input the fuel use. The corresponding dataset describing the combustion of the fuel contains the following data, assumptions, and extrapolations: The plant is assumed to operate 150000 hours during its lifetime. For the assessment of some of the main characteristics (efficiency and capacity of the plant, capacity factor) and criteria emissions (SOx, NOx, mercury, and CO2) a bottom-up approach has been used, based upon the complete set of these factors for every US hard coal power stations in 2004. The limited number of combined heat and power plants has not been included in the analysis. All other emission data are based on US EPA (1998) and US DOE (1998) reports. The size distribution of particles has been derived from German data, assumed as well representative for European hard coal power plants. The amounts of retained SOx (due to use of FGD) and retained NOx (due to use of SCR) have been calculated as the difference between uncontrolled average US SOx and NOx emissions in year 1998 and actual region specific SOx and NOx emissions in year 2004 assuming that the characteristics of the coals have not changed in the meanwhile. The waste heat releases to air and water have been allocated on the basis of the assumed share of cooling tower vs. river cooled power plants and assumptions on the direct losses to air, along with the corresponding European datasets. The share of the recycled ash is the average US. For the disposal of the remaining ash, the German disposal dataset has been used, roughly representing average European environmental impacts due to hard coal ash disposal.;
+UUID: 84c15d21-025f-3f75-96f0-104f43507d09
+Conversion of hard coal into electricity: electricity output at busbar. The module uses the average net efficiency of ERCOT hard coal power plants (37.5%) in 2004.
+Location: FRCC = Florida Reliability Coordinating Council. Region-specific, US average, and European data, see ReferenceFunction/GeneralComment and ReferenceFunction/IncludedProcesses.
+Technology: Average installed technology.
+Time period: undefined
+Production volume: na
+Sampling: literature and statistics 
+Extrapolations: see Geography/Text
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_84c15d21-025f-3f75-96f0-104f43507d09.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="b3002fea-249b-53b2-8061-70fa8ced582d" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">US-FRCC</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: FRCC = Florida Reliability Coordinating Council. Region-specific, US average, and European data, see ReferenceFunction/GeneralComment and ReferenceFunction/IncludedProcesses.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Average installed technology.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2004-01-01" endDate="2004-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: undefined</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="84ce423f-bd6c-5164-a149-dac12d0e01cf" amount="1.0" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="9958e649-1387-54fe-867a-81ba7326a500" intermediateExchangeId="65d392ad-f3ee-532f-960d-054ffe6e89af" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, hard coal, at power plant</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, hard coal, at power plant
+
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="4f30bdb8-228b-5e47-9e6e-1643b3a05612" amount="9.6" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="ac66cd0f-8132-5258-9749-7ae2f13bd8f3" intermediateExchangeId="ff642ecd-b36c-5b1f-93ba-efe1bbd85e22" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Hard coal, burned in power plant</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Hard coal, burned in power plant
+US NERC statistics; uncertainty own estimate
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="9.6" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="2.2617630984737906"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="170a13be-9107-5d84-9886-6fa5cf8bd2ef" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Christian Bauer" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="170a13be-9107-5d84-9886-6fa5cf8bd2ef" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Christian Bauer" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

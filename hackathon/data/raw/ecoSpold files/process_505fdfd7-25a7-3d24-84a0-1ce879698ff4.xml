@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="308061" timestamp="2023-08-28T15:03:19.650+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="Production of a chrome steel tank including heat exchanger and boiler. ;&#10;UUID: 505fdfd7-25a7-3d24-84a0-1ce879698ff4" includedProcesses="Production and disposal of a hot water tank. Including materials and energy use of production." infrastructureProcess="true" localCategory="heat" localName="Hot water tank 600l, at plant" localSubCategory="solar\infrastructure" name="Hot water tank 600l, at plant" subCategory="solar\infrastructure" unit="p"/>
+        <geography location="CH" text="Production in CH."/>
+        <technology text="Hot water tank with 600l for use in a solar collector heating system."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Materials investigated in 1993. Energy use investigated in 2001.">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-07-16T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Data of one factory used for CH. Energy use extrapolated by weight for 2000l storage." productionVolume="Production volume 1000 units per year. Total production in CH not known." samplingProcedure="Questionnaires. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Jungbluth N." nameOfEditors="Dones R." number="165067" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth, N. (2007) Sonnenkollektor-Anlagen. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0. Editors: Dones R.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth, N.\nYear: 2007\nName of editors: Dones R.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2007 - Solar collector systems - Jungbluth" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0" volumeNo="6" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="149947"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136351"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136351" referenceToPublishedSource="165067"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Sebastiano Meier" number="149947" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="SWITZERLAND&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="solar\infrastructure" location="CH" meanValue="1.0" name="Hot water tank 600l, at plant" number="308061" subCategory="solar\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,4,1,1,1,5); Questionnaire for 2000l storage&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="solar\infrastructure" location="CH" meanValue="2.0E-5" name="Hot water tank factory" number="401142" standardDeviation95="3.06" subCategory="solar\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,4,1,1,1,5); Questionnaire for 2000l storage&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="153.0" name="Natural gas, burned in industrial furnace 1MW" number="293151" standardDeviation95="1.2400000000000002" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(2,4,1,1,1,5); Questionnaire&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="0.617" name="Treatment, sewage, from residence, to wastewater treatment, class 2" number="538378" standardDeviation95="1.2400000000000002" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,4,1,1,1,5); Questionnaire&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="paints" location="RER" meanValue="1.0" name="Alkyd paint, white, 60% in solvent, at plant" number="472043" standardDeviation95="1.2400000000000002" subCategory="paints" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,1,1,1,5); Questionnaire&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="welding" location="RER" meanValue="7.72" name="Welding, gas, steel" number="528888" standardDeviation95="1.2400000000000002" subCategory="welding" uncertaintyType="1" unit="m">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,1,1,1,5); Questionnaire&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="250.0" name="Heat, waste" number="46930" standardDeviation95="1.2400000000000002" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distance 600km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="170.0" name="Transport, freight, rail" number="149864" standardDeviation95="2.1" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,4,1,1,1,5); Questionnaire&#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="2.0" name="Polyvinylchloride, at regional storage" number="208751" standardDeviation95="1.2400000000000002" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,4,1,1,1,5); Questionnaire&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="insulation" location="CH" meanValue="20.0" name="Glass wool mat, at plant" number="516257" standardDeviation95="1.2400000000000002" subCategory="insulation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(2,4,1,1,1,5); Questionnaire for 2000l storage&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="CH" meanValue="34.7" name="Electricity, PV, at 3kWp slanted-roof, multi-Si, panel, mounted" number="440282" standardDeviation95="1.2400000000000002" subCategory="photovoltaic" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,4,1,1,1,5); Questionnaire for 2000l storage&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="wood\heating systems" location="CH" meanValue="113.0" name="Wood chips, from forest, softwood, burned in furnace 300kW" number="295410" standardDeviation95="1.2400000000000002" subCategory="wood\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="(2,4,1,1,1,5); Questionnaire&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="20.0" name="Disposal, building, mineral wool, to sorting plant" number="519257" standardDeviation95="1.2400000000000002" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,4,1,1,1,5); Questionnaire&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="617.0" name="Tap water, at user" number="227940" standardDeviation95="1.2400000000000002" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="(2,4,1,1,1,5); Estimation&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="2.0" name="Disposal, building, polyvinylchloride products, to final disposal" number="388153" standardDeviation95="1.2400000000000002" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,1,1,1,5); Questionnaire&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="220.0" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.2400000000000002" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,4,1,1,1,5); Questionnaire, packaging wastes&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="3.86" name="Disposal, plastics, mixture, 15.3% water, to municipal incineration" number="174149" standardDeviation95="1.2400000000000002" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distance 50km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="14.2" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.1" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="(2,4,1,1,1,5); Packaging, information by Wagner&#10;" infrastructureProcess="false" localCategory="wood" localSubCategory="wooden materials\new processes\other material" location="CH" meanValue="0.0222" name="Sawnwood, production mix, softwood, dried (u=20%), planed, at sawmill" number="369971" standardDeviation95="1.2400000000000002" subCategory="wooden materials\new processes\other material" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,1,1,1,5); Questionnaire&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="40.0" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="1.2400000000000002" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,4,1,1,1,5); Questionnaire for 2000l storage&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="34.7" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.2400000000000002" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="RStudio" number="272336" timestamp="2025-03-31T15:02:08">
+    <metaInformation>
+      <processInformation>
+        <timePeriod dataValidForEntirePeriod="True" text="EURO-5 emissions standards apply to car registrations from 2011-01 until 2014-12. Vehicle lightweighting factors match manufacture year of 2013">
+          <startDate>2013-01</startDate>
+          <endDate>2013-12</endDate>
+        </timePeriod>
+        <referenceFunction amount="1" category="transport systems" datasetRelatesToProduct="True" generalComment=" Driving cycle: WLTC. Combustion engine power: 77 [kW]. Electric motor power: 82 [kW]. Power share from combustion engine: 50 [%]. Km over lifetime: 200000 [km]. Yearly mileage: 12000 [km/year]. Autonomy on a full tank/battery: 760 [km]. Tank-to-wheel efficiency: 41 [%]. Tank-to-wheel energy consumption: 1849 [kj/km]. Battery capacity: 6 [kWh]. Fuel tank capacity: 554 [kWh]. Mass of battery: 137 [kg]. Curb mass (excl. driver and cargo): 1996 [kg]. Driving mass (incl. driver and cargo): 2136 [kg].. UUID: ee3386d2-8bc2-39ba-a97e-dac20f3bda22" infrastructureIncluded="True" infrastructureProcess="True" localCategory="transport systems" localName="Passenger car, plugin diesel hybrid, Large, 2013, EURO-5" localSubCategory="road\Transformation\Infrastructure" name="Passenger car, plugin diesel hybrid, Large, 2013, EURO-5" subCategory="road\Transformation\Infrastructure" unit="p"/>
+        <geography location="RER" text="Unspecified"/>
+        <technology text="Driving cycle: WLTC. Combustion engine power: 77 [kW]. Electric motor power: 82 [kW]. Power share from combustion engine: 50 [%]. Km over lifetime: 200000 [km]. Yearly mileage: 12000 [km/year]. Autonomy on a full tank/battery: 760 [km]. Tank-to-wheel efficiency: 41 [%]. Tank-to-wheel energy consumption: 1849 [kj/km]. Battery capacity: 6 [kWh]. Fuel tank capacity: 554 [kWh]. Mass of battery: 137 [kg]. Curb mass (excl. driver and cargo): 1996 [kg]. Driving mass (incl. driver and cargo): 2136 [kg]."/>
+        <dataSetInformation energyValues="0" impactAssessmentResult="False" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2025-03-31T15:02:08" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Unspecified" productionVolume="Unspecified" samplingProcedure="Unspecified" uncertaintyAdjustments="Unspecified"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="136752" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="doi: 10.5281/ZENODO.5156043" title="2023 - LCI on-road vehicles - Sacchi" year="2023"/>
+        <validation proofReadingDetails="Unspecified" proofReadingValidator="136748"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136751"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="False" dataPublishedIn="2" person="136749" referenceToPublishedSource="136752"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Brian Cox" number="136748" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Julien McTighe" number="136751" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Transformation\Infrastructure" location="RER" meanValue="1.0" name="Passenger car, plugin diesel hybrid, Large, 2013, EURO-5" number="272336" subCategory="road\Transformation\Infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (2, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Vehicle components\Energy storage\Lithium-ion battery" location="GLO" meanValue="85.0" name="Battery BoP" number="266145" standardDeviation95="1.0936573467430124" subCategory="road\Vehicle components\Energy storage\Lithium-ion battery" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (2, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Vehicle components\Energy storage\Lithium-ion battery" location="GLO" meanValue="52.2" name="Battery cell, NMC-622" number="546421" standardDeviation95="1.0936573467430124" subCategory="road\Vehicle components\Energy storage\Lithium-ion battery" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (2, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Vehicle components" location="GLO" meanValue="163.0" name="Glider lightweighting" number="200478" standardDeviation95="1.0936573467430124" subCategory="road\Vehicle components" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (2, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="5.99" name="Charger, for electric passenger car" number="293951" standardDeviation95="1.0936573467430124" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (2, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="4.49" name="Converter, for electric passenger car" number="527512" standardDeviation95="1.0936573467430124" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (2, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="50.9" name="Electric motor, for electric passenger car" number="496131" standardDeviation95="1.0936573467430124" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (2, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="1600.0" name="Glider, for passenger car" number="601002" standardDeviation95="1.0936573467430124" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (2, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="304.0" name="Internal combustion engine, for passenger car" number="449347" standardDeviation95="1.0936573467430124" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (2, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="8.98" name="Inverter, for electric passenger car" number="297212" standardDeviation95="1.0936573467430124" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (2, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="3.99" name="Power distribution unit, for electric passenger car" number="327781" standardDeviation95="1.0936573467430124" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (2, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="74.4" name="Disposal, powertrain, for electric passenger car" number="348479" standardDeviation95="1.0936573467430124" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="Uncertainty from pedigree matrix: (2, 3, 2, 1, 1, 3)" infrastructureProcess="False" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="41.6" name="Polyethylene, HDPE, granulate, at plant" number="599376" standardDeviation95="1.0936573467430124" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (2, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="1480.0" name="Disposal, glider, for passenger car" number="319811" standardDeviation95="1.0936573467430124" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (2, 3, 2, 1, 1, 3)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road" location="RER" meanValue="304.0" name="Disposal, internal combustion engine, for passenger car" number="208284" standardDeviation95="1.0936573467430124" subCategory="road" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics waste" generalComment="Uncertainty from pedigree matrix: (2, 3, 2, 1, 1, 3)" infrastructureProcess="False" localCategory="electronics waste" localSubCategory="unspecified" location="GLO" meanValue="137.0" name="Disposal, Li-ions batteries, mixed technology" number="523176" standardDeviation95="1.0936573467430124" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

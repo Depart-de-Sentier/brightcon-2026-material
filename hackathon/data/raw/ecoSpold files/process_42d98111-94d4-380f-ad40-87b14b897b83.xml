@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="184981" timestamp="2024-03-12T09:04:06">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="heat" datasetRelatesToProduct="true" generalComment="Heat from a air-water heat pump, 15kW with Swiss electricity mix (CH). Lifetime of the heating system is 20 years. SPF=4.4. Loss of coolant is 2% (of the total amount in the system) per year. &#10;UUID: 42d98111-94d4-380f-ad40-87b14b897b83" includedProcesses="Included are the share of the production of the air-water heatpump with a lifetime of 20years scaled for 1MJ.&#10;The use of Swiss electricity mix (CH) is calculated by the  SPF of 4.4 for a new building, single house.&#10;Also the loss of coolant (2% in a year) is included.&#10;There are NO end of life processes included. Only the deposit of waste during the construction or usephase are included." infrastructureIncluded="true" infrastructureProcess="false" localCategory="heat" localName="Heat, at heat pump, air-water, 15kW, CH electricity, in new building" localSubCategory="heat pumps\heating systems" name="Heat, at heat pump, air-water, 15kW, CH electricity, in new building" subCategory="heat pumps\heating systems" unit="MJ">
+          <synonym>0</synonym>
+        </referenceFunction>
+        <geography location="CH" text="Data apply to the supply in Switzerland. "/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2019-01</startDate>
+          <endDate>2020-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2024-03-12T09:09:10" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" samplingProcedure="heat efficieny based on literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Waldburger L., Kern C., Roberts G., Zschokke M., Conte F., Weber L." firstAuthor="Kaegi T." number="137341" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceType="3" text="pdf" title="2021 - LCI heating systems - Kaegi" titleOfAnthology="Carbotech im Auftrag des BAFU" year="2021"/>
+        <validation otherDetails="\\tsclient\Schreibtisch\WinShare\BAFU Heizsysteme\A zum Konvertieren\[EcoSpold_heat at heat pump_ air-water_15-50kW_CH electricity mix_v0.2.xlsx]X-Process" proofReadingDetails="12.03.2024" proofReadingValidator="137339"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137340" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="1" person="141097" referenceToPublishedSource="137341"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Cyrill Kern" number="141097" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Livia Waldburger" number="141098" telephone="anonymised"/>
+        <person address="anonymised" companyCode="EBP" countryCode="CH" email="anonymised" name="Andy Spoerri" number="137339" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" infrastructureProcess="false" localCategory="heat" localSubCategory="heat pumps\heating systems" location="CH" meanValue="1" name="Heat, at heat pump, air-water, 15kW, CH electricity, in new building" number="184981" subCategory="heat pumps\heating systems" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(2,1,1,1,1,5,BU:1.05); ; " meanValue="0.77273" name="Energy, geothermal, converted" number="81957" standardDeviation95="1.2152" subCategory="in ground" uncertaintyType="1" unit="MJ">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,1,1,1,1,5,BU:1.05); ; " infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.063131" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.2152" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,3,1,2,5,5,BU:1.05); ; " infrastructureProcess="false" localCategory="chemicals" localSubCategory="organics" location="US" meanValue="3.9683E-7" name="1,1-difluoroethane, HFC-152a, at plant" number="191327" standardDeviation95="2.2851" subCategory="organics" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,3,1,2,5,5,BU:1.05); ; " infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="3.9683E-7" name="Trifluoromethane, at plant" number="227536" standardDeviation95="2.2851" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,1,1,1,1,5,BU:3); ; " infrastructureProcess="true" localCategory="heat" localSubCategory="heat pumps\heating systems" location="RER" meanValue="4.4092E-7" name="Heat pump, air-water, 15kW" number="184810" standardDeviation95="3.0487" subCategory="heat pumps\heating systems" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,5,BU:1.05); ; " meanValue="0.22727" name="Heat, waste" number="46930" standardDeviation95="1.2152" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,1,1,1,5,BU:1.5); ; " meanValue="3.9683E-7" name="Methane, difluoro-, HFC-32" number="156253" standardDeviation95="1.5598" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,1,1,1,5,BU:1.5); ; " meanValue="3.9683E-7" name="Ethane, pentafluoro-, HFC-125" number="90783" standardDeviation95="1.5598" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat pumps" generalComment="none " infrastructureProcess="false" localCategory="heat pumps" localSubCategory="disposal" location="CH" meanValue="4.4092E-7" name="Disposal, heat pump, air-water, 15kW" number="137427" standardDeviation95="3.0486906025000002" subCategory="disposal" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

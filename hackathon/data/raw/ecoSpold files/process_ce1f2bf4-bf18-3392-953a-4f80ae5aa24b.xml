@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="213976" timestamp="2023-08-28T15:03:36.083+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="agricultural" datasetRelatesToProduct="true" generalComment="Ammonia and heavy metal emissions are calculated from the elemental compostion of the biogas substrate.;&#10;UUID: ce1f2bf4-bf18-3392-953a-4f80ae5aa24b" includedProcesses="application of compost on agricultural land including machinery and heavy metal emissions" infrastructureProcess="false" localCategory="agricultural" localName="Application, digested matter, from glycerine, on agricultural land" localSubCategory="other processing" name="Application, digested matter, from glycerine, on agricultural land" subCategory="other processing" unit="kg"/>
+        <geography location="CH" text="Switzerland"/>
+        <technology text="Agriculture"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2006-01</startDate>
+          <endDate>2010-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2012-02-01T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Jungbluth N., Leuenberger M." firstAuthor="Stucki M." nameOfEditors="-" number="138885" placeOfPublications="Uster, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Stucki M., Jungbluth N., Leuenberger M. (2011) Life Cycle Assessment of Biogas Production from Different Substrates. Project report. Volume: 320. ESU-services Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: Stucki M.\nOther authors: Jungbluth N., Leuenberger M.\nYear: 2011\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: ESU-services Ltd.\nVolume No: 320\nOriginal title: Life Cycle Assessment of Biogas Production from Different Substrates\n" title="2011 - LCA biogas prod. from diff. substrates - Stucki" titleOfAnthology="Project report" volumeNo="320" year="2011"/>
+        <validation proofReadingDetails="Proof reading validation: 01.02.2012; Other validation: \\Server\e\ESU-Docs\Projektablage\320_FP Biomasse Biogas_Substrate\Ecospold\Veröffentlicht\[320_Ecospold_Biogas-v1.3.xlsx]X-Process;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137832"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137832" referenceToPublishedSource="138885"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="Matthias Stucki" number="137832" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="agricultural" generalComment="&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="other processing" location="CH" meanValue="1.0" name="Application, digested matter, from glycerine, on agricultural land" number="213976" subCategory="other processing" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,3,1,1,1,3,BU:2); 10.5 km average from questionnaires&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.0105" name="Transport, freight, lorry, fleet average" number="228841" standardDeviation95="2.0199000000000003" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007664-41-7" category="emissions to air" generalComment="(3,5,1,3,1,5,BU:1.2); Calculated from elemental composition of substrate. 40% reduction because of spreading with trail hoses.&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="4.394E-4" name="Ammonia" number="635" standardDeviation95="1.3915999999999997" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,1,1,1,1,1,BU:1.05); assumption&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="unspecified" location="CH" meanValue="0.001" name="Slurry spreading, by vacuum tanker" number="344486" standardDeviation95="1.0500000000000003" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

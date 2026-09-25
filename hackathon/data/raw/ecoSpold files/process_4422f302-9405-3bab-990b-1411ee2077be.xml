@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="228102" timestamp="2023-08-28T15:03:05.969+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="Without waste going to recycling (glass, metals, paper, cardboard).;&#10;UUID: 4422f302-9405-3bab-990b-1411ee2077be" includedProcesses="This dataset includes all non-hazardous wastes from the combined offshore oil and gas production on the Norwegian Continental Shelf. These are blasting sand, EE-waste, glass, food waste, plastics, wood and other. Metal, cardboard and paper waste are assumed to go to recycling and are therefore not included in this dataset." infrastructureProcess="false" localCategory="fuels" localName="Waste, non-hazardous, from combined oil and gas production, offshore" localSubCategory="natural gas\produced gas\processes" name="Waste, non-hazardous, from combined oil and gas production, offshore" subCategory="natural gas\produced gas\processes" unit="kg"/>
+        <geography location="NO" text="&lt;null&gt;"/>
+        <technology text="Waste treatment technology according to Swiss standard."/>
+        <timePeriod dataValidForEntirePeriod="true" text="2010">
+          <startDate>2010-01</startDate>
+          <endDate>2010-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2012-09-24T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="100" productionVolume="14766t waste in 2010" samplingProcedure="Literature data. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Stucki M., Flury K., Itten R., Tuchschmid M." firstAuthor="Frischknecht R." nameOfEditors="-" number="165328" placeOfPublications="Uster, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Schori S., Frischknecht R. (2011) Life Cycle Inventories of energy systems. Project report. Volume: 407. ESU-services Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: Schori S.\nOther authors: Frischknecht R.\nYear: 2011\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: ESU-services Ltd.\nVolume No: 407\n" title="2012 - Prim. energy fact. of energy systems - Frischknecht" titleOfAnthology="Project report" volumeNo="407" year="2012"/>
+        <validation proofReadingDetails="Proof reading validation: 24.09.2012; Other validation: \\server\e\ESU-Docs\Projekte laufend\407 Update LCI Energiesysteme\EcoSpold\Erdgas EcoSpold\[407_NG ProdNO_v1.0.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="165327"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="165327" referenceToPublishedSource="165328"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Salome Schori" number="165327" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="NORWAY&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\produced gas\processes" location="NO" meanValue="1.0" name="Waste, non-hazardous, from combined oil and gas production, offshore" number="228102" subCategory="natural gas\produced gas\processes" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(1,1,1,1,1,1,BU:1.05); OLF 2011&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.16152" name="Disposal, wood untreated, 20% water, to municipal incineration" number="263132" standardDeviation95="1.0500000000000003" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(1,1,1,1,1,1,BU:1.05); OLF 2011. Residual waste, wet organic waste, contaminated food and other waste.&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="0.75809" name="Disposal, municipal solid waste, 22.9% water, to sanitary landfill" number="490984" standardDeviation95="1.0500000000000003" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics waste" generalComment="(1,1,1,1,1,1,BU:1.05); OLF 2011. EE waste&#10;" infrastructureProcess="false" localCategory="electronics waste" localSubCategory="unspecified" location="CH" meanValue="0.039957" name="Disposal, industrial devices, to WEEE treatment" number="270497" standardDeviation95="1.0500000000000003" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(1,1,1,1,1,1,BU:1.05); OLF 2011&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.040431" name="Disposal, plastics, mixture, 15.3% water, to municipal incineration" number="174149" standardDeviation95="1.0500000000000003" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

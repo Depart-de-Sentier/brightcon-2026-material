@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="172892" timestamp="2023-08-28T15:03:43.087+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="Transport of Latin American crude oil by pipeline to loading station and by tanker to European sites at the Mediterranean Sea, followed by pipeline transport to a European refinery. Weighted average transport distance calculated by tanker calculated for Caracas and Rio de Janeiro to Marseille. Onshore production of crude oil is modelled by the dataset for the Saudi Arabia and offshore production is approximated by the situation in Great Britain. The shares of onshore and offshore production were estimated based on EIA information for Venezuela and Brazil.;&#10;UUID: 5be517f3-0dbf-38e8-8244-2da4cdf5ccb9" includedProcesses="Transportation of crude oil from exploration site to refinery in Europe. Includes transport service requirements and emissions from oil handling and evaporation." infrastructureProcess="false" localCategory="fuels" localName="Crude oil, production RLA, at long distance transport" localSubCategory="oil\transport" name="Crude oil, production RLA, at long distance transport" subCategory="oil\transport" unit="kg"/>
+        <geography location="RER" text="Calculations based on assumptions for supply to European refineries."/>
+        <technology text="Use of different generic transport devices (pipelines and tanker)."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>1992-01</startDate>
+          <endDate>1994-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2019-05-07T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Literature, statistics and own calculations. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Frischknecht R." nameOfEditors="-" number="172887" placeOfPublications="Bern, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="4" text="Stolz P., Frischknecht R. (2016) Aktualisierung Energieetikette BFE. Volume: 579. treeze Ltd.. Uster, CH.\nType: Measurement on site\nFirst author: Stolz P.\nOther authors: Frischknecht R.\nYear: 2016\nPlace of publication: Uster, CH\nPublisher: treeze Ltd.\nVolume No: 579\n" title="2016 - Energy label for passenger cars - Frischknecht" titleOfAnthology="-" volumeNo="579" year="2022"/>
+        <validation proofReadingDetails="" proofReadingValidator="138233"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138233"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138233" referenceToPublishedSource="172887"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Philippe Stolz" number="138233" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="oil\transport" location="RER" meanValue="1.0" name="Crude oil, production RLA, at long distance transport" number="172892" subCategory="oil\transport" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(1,1,1,1,1,1); Onshore production modelled by situation in the Saudi Arabia; Share estimated based on information from EIA country analyses of Venezuela and Brazil&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="production" location="SA" meanValue="0.57421" name="Crude oil, at production" number="500484" standardDeviation95="1.0500000000000003" subCategory="production" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000074-84-0" category="emissions to air" generalComment="(3,5,4,1,1,na); Meili et al. 2018&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.601E-6" name="Ethane" number="647" standardDeviation95="1.6320999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000108-88-3" category="emissions to air" generalComment="(3,5,4,1,1,na); Meili et al. 2018&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="2.7E-7" name="Toluene" number="665" standardDeviation95="1.6320999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000109-66-0" category="emissions to air" generalComment="(3,5,4,1,1,na); Meili et al. 2018&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="9.558E-5" name="Pentane" number="660" standardDeviation95="1.6320999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,1,3,3,1,na); Weighted average transport distance from Caracas or Rio de Janeiro to Marseille (searates.com)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="OCE" meanValue="8.5681" name="Transport, transoceanic tanker" number="374506" standardDeviation95="2.0612" subCategory="ship" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,1,1,3,1,na); Calculation for 1994&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="pipeline" location="OCE" meanValue="0.1" name="Transport, crude oil pipeline, offshore" number="321413" standardDeviation95="1.2090000000000003" subCategory="pipeline" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000071-43-2" category="emissions to air" generalComment="(3,5,4,1,1,na); Meili et al. 2018&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="4.5E-7" name="Benzene" number="638" standardDeviation95="3.1032999999999995" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000110-54-3" category="emissions to air" generalComment="(3,5,4,1,1,na); Meili et al. 2018&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="5.3876E-5" name="Hexane" number="652" standardDeviation95="1.6320999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(3,5,4,1,1,na); Meili et al. 2018&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.498E-6" name="Methane, fossil" number="90787" standardDeviation95="1.6320999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,1,3,3,1,na); Pipeline transport from Venezuelan onshore oil fields to the Atlantic ocean (assumption: 400 km) and from the Mediterranean Sea to the refinery (100 km, Meili et al. 2018)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="pipeline" location="RER" meanValue="0.32962" name="Transport, crude oil pipeline, onshore" number="563712" standardDeviation95="2.0612" subCategory="pipeline" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000074-98-6" category="emissions to air" generalComment="(3,5,4,1,1,na); Meili et al. 2018&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="6.1296E-5" name="Propane" number="661" standardDeviation95="1.6320999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000106-97-8" category="emissions to air" generalComment="(3,5,4,1,1,na); Meili et al. 2018&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.2642E-4" name="Butane" number="639" standardDeviation95="1.6320999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(3,5,4,1,1,na); Meili et al. 2018&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.35E-6" name="Hydrocarbons, aliphatic, alkanes, unspecified" number="29171" standardDeviation95="1.6320999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(1,1,1,1,1,1); Offshore production modelled by situation in Great Britain; Share estimated based on information from EIA country analyses of Venezuela and Brazil&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="production" location="GB" meanValue="0.42609" name="Crude oil, at production offshore" number="496098" standardDeviation95="1.0500000000000003" subCategory="production" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,142 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="258668" timestamp="2023-08-28T15:03:20.891+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="Data is based on the environmental report of the two gas processing plants of Norway Karsto and Kollsnes.;&#10;UUID: 29c41380-c322-36a6-b309-365255ba535d" includedProcesses="Drying and processing of 1 m3 natural gas before being inducted in transport network." infrastructureProcess="false" localCategory="fuels" localName="Drying, natural gas" localSubCategory="natural gas\produced gas\processes" name="Drying, natural gas" subCategory="natural gas\produced gas\processes" unit="m3"/>
+        <geography location="NO" text="The figures are based on Norwegian data for the gas processing plants Karsto and Kollsnes. A"/>
+        <technology text="Kårstø started operation in 1985 and Kollsnes in 1996. No further information on technology available."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Data for 2000 is used. Emissions of CO2 and NMVOC were stable in the past 5 years. NOx increased slightly per tonne of product in the  processing plant Karsto. ">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-09-22T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="The figures are based on the data for the Norwegian gas processing plants Karsto and Kollsnes. About 60% of the Norwegian gas is processed either at Kårstø or at Kollsnes. The rest is processed on the platforms. An average of both plants was taken. Kollsnes is the onshore processing plant for the offshore Troll gas field. Part of the processing (mainly water separation) of the Troll gas is performed on the Troll platform, where as the final processing is performed at Kollsnes. The Troll gas contains very little liquids (condensate and oil) compared to the other fields on the Norwegian Shelf. Kårstø is a complex facility. The main energy consumption for processing is for distillation, i.e. heating of the gas to distill off its various components. The emissions of flared gas and of use of fuel gas are included in the process. The Norwegian data can be extrapolated for European processing of gas" percent="100" productionVolume="2.95E7 Sm3 o.e. natural gas, 4.25E6 Sm3 o.e. condensate, 2.82E11 MJ other gases" samplingProcedure="Data is based on environmental report. No information about the sampling procedure. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Heck T., Jungbluth N., Tuchschmid M." firstAuthor="Faist Emmenegger M." nameOfEditors="Dones R." number="149369" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Faist Emmenegger, M., Heck, T., Jungbluth, N. (2007) Erdgas. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0. Editors: Dones R.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Faist Emmenegger, M.\nOther authors: Heck, T., Jungbluth, N.\nYear: 2007\nName of editors: Dones R.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2007 - Natural gas - Faist-Emmeneger" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0" volumeNo="6" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="139311"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136351"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="149368" referenceToPublishedSource="149369"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Michael Spielmann" number="139311" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Mireille Faist Emmenegger" number="149368" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="NORWAY&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\produced gas\processes" location="NO" meanValue="1.0" name="Drying, natural gas" number="258668" subCategory="natural gas\produced gas\processes" uncertaintyType="0" unit="m3">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="(1,1,1,1,3,1); environmental report, aggregation of different processes&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.0167" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.2100000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,1,1,3,3,3); Norwegian data&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="3.85E-7" name="Disposal, wood untreated, 20% water, to municipal incineration" number="263132" standardDeviation95="1.22" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(2,1,1,3,3,3); Norwegian data&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="4.38E-6" name="Disposal, used mineral oil, 10% water, to hazardous waste incineration" number="504085" standardDeviation95="1.22" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,na,na,3,1,5); Extrapolation for sum parameter&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="6.67E-7" name="DOC, Dissolved Organic Carbon" number="4408" standardDeviation95="1.5800000000000003" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,1,1,1,3,3); environmental report&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="2.11E-6" name="Soda, powder, at plant" number="219996" standardDeviation95="1.22" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="(3,na,na,3,1,5); Extrapolation for sum parameter&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="2.72E-7" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.5800000000000003" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,1,1,1,3,3); environmental report&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="1.82E-6" name="Ethylene glycol, at plant" number="186477" standardDeviation95="1.22" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,1,1,1,3,3); environmental report&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="2.65E-6" name="Chemicals organic, at plant" number="497739" standardDeviation95="1.22" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(1,1,1,1,3,1); environmental report, aggregation of different processes&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.64E-5" name="Methane, fossil" number="90787" standardDeviation95="1.56" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(5,1,1,3,3,5); estimates for waste transport&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.00000152" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.32" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to water" generalComment="(1,1,1,1,3,1); environmental report, aggregation of different processes&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="8.97E-9" name="Oils, unspecified" number="17550" standardDeviation95="3.05" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(2,1,1,3,3,3); Norwegian data&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="4.04E-6" name="Disposal, antifreezer liquid, 51.8% water, to hazardous waste incineration" number="286546" standardDeviation95="1.22" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); standard distance&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="5.54E-6" name="Transport, freight, rail" number="149864" standardDeviation95="2.0900000000000003" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(1,1,1,1,3,3); environmental report, aggregation of different processes&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="distribution" location="RER" meanValue="5.99E-6" name="Diesel, at regional storage" number="458903" standardDeviation95="1.22" subCategory="distribution" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,1,1,1,3,1); environmental report, aggregation of different processes&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="6.67E-7" name="TOC, Total Organic Carbon" number="2278" standardDeviation95="1.56" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="014798-03-9" category="emissions to water" generalComment="(1,1,1,1,3,1); environmental report, aggregation of different processes&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="9.47E-10" name="Ammonium, ion" number="89863" standardDeviation95="1.56" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="(1,1,1,1,3,1); environmental report, aggregation of different processes&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.54E-5" name="Nitrogen oxides" number="79243" standardDeviation95="1.56" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,1,1,3,3,3); Norwegian data&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="1.39E-7" name="Disposal, textiles, soiled, 25% water, to municipal incineration" number="466100" standardDeviation95="1.22" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007727-37-9" category="emissions to water" generalComment="(3,na,na,3,1,5); Extrapolation for sum parameter&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="6.93E-12" name="Nitrogen" number="78458" standardDeviation95="1.5800000000000003" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(2,1,1,3,3,3); Norwegian data&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="4.16E-8" name="Disposal, emulsion paint remains, 0% water, to hazardous waste incineration" number="212631" standardDeviation95="1.22" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,1,1,2,3,3); environmental report, standard module&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="NO" meanValue="0.0204" name="Electricity, medium voltage, at grid" number="535209" standardDeviation95="1.22" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007446-09-5" category="emissions to air" generalComment="(1,1,1,1,3,1); environmental report, aggregation of different processes&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="4.73E-8" name="Sulfur dioxide" number="26215" standardDeviation95="1.2100000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(1,1,1,1,3,1); environmental report, aggregation of different processes&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="6.72E-5" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="2.05" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,na,na,3,1,5); Extrapolation for sum parameter&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="2.4E-11" name="Sulfur" number="42603" standardDeviation95="1.5800000000000003" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,1,1,1,3,1); environmental report, aggregation of different processes&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="4.02E-8" name="Methanol" number="30529" standardDeviation95="3.05" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,3,3); environmental report, aggregation of different processes&#10;" infrastructureProcess="false" localCategory="natural gas" localSubCategory="production" location="NO" meanValue="0.00746" name="Natural gas, at production offshore" number="221991" standardDeviation95="1.22" subCategory="production" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,na,na,3,1,5); Extrapolation for sum parameter&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="2.72E-7" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.5800000000000003" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,1,1,1,3,3); environmental report&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="GLO" meanValue="2.65E-6" name="Chemicals inorganic, at plant" number="499008" standardDeviation95="1.22" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,1,1,1,3,1); environmental report, aggregation of different processes&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="4.73E-10" name="Phenol" number="2976" standardDeviation95="3.05" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to water" generalComment="(3,na,na,3,1,5); Extrapolation for sum parameter&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="9.24E-14" name="AOX, Adsorbable Organic Halogen as Cl" number="81549" standardDeviation95="1.5800000000000003" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,1,1,1,3,1); environmental report, aggregation of different processes&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="ocean" meanValue="1.21E-7" name="Triethylene glycol" number="83089" standardDeviation95="3.05" subCategory="ocean" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(1,1,1,1,3,1); environmental report, standard module&#10;" infrastructureProcess="true" localCategory="fuels" localSubCategory="natural gas\produced gas\infrastructure" location="GLO" meanValue="3.94E-13" name="Production plant, natural gas" number="562673" standardDeviation95="1.2100000000000002" subCategory="natural gas\produced gas\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,1,1,3,3,3); Norwegian data&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="2.13E-6" name="Disposal, municipal solid waste, 22.9% water, to sanitary landfill" number="490984" standardDeviation95="1.22" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,1,1,3,1); environmental report, aggregation of different processes&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.0736" name="Heat, waste" number="46930" standardDeviation95="1.2100000000000002" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(2,1,1,3,3,3); Norwegian data&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="7.09E-7" name="Disposal, solvents mixture, 16.5% water, to hazardous waste incineration" number="269170" standardDeviation95="1.22" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,1,1,3,3,3); Norwegian data&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="CH" meanValue="2.17E-8" name="Disposal, average incineration residue, 0% water, to residual material landfill" number="329503" standardDeviation95="1.22" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

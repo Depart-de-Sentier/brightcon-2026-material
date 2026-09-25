@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="302669" timestamp="2023-08-28T15:02:52.712+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="plastics" datasetRelatesToProduct="true" generalComment="Inventory refers to the production of 1 kg  granulate modified starch. The inventories is based on calculations and extrapolations using highly aggregated background data from the environmental product declaration of Materbi (Novamont, 2004, Italy). Included processes in the inventory of modified starch granulate are the production of input materials corn starch and fossil components (plasticizers and complexing agents),  transports of input materials, energy consumption in the processing and packaging at plant aswell as waste treatment.;&#10;UUID: 0b873e35-ee9d-3312-a538-b76aec6ee3ac" includedProcesses="Only high aggregated data were available. So the emissions from energy consumption, waste water treatement and raw material inputs have been subtracted resulting in a difference in NMVOC emissions.shown in this process.   " infrastructureProcess="false" localCategory="plastics" localName="Modified starch, at plant" localSubCategory="biopolymers" name="Modified starch, at plant" subCategory="biopolymers" unit="kg"/>
+        <geography location="RER" text="Modified starch &quot;mater-bi&quot;  is produced mainly by Novamont in Terni, Italy"/>
+        <technology text="Production of modified starch out of corn starch,  plasticizers and complexing agent."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2007-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-08-31T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="20'000 t/year produced by Novamont in Italy." samplingProcedure="Data were compiled from environmental product declaration of producer Novamont in Italy " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Werner F., Stettler C., Dinkel F." firstAuthor="Althaus H.-J." nameOfEditors="0" number="167410" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, Umwelt &amp; Entwicklung, Carbotech AG" sourceNumber="0" sourceType="4" text="Althaus H.J., Dinkel F., Werner F. (2007) Life Cycle Inventories of Renewable Materials. Final report ecoinvent Data v2.0. Editors: 0. 0. Volume: 21. Issue: 0. Swiss Centre for LCI, Empa - TSL. Duebendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Althaus H.J.\nOther authors: Dinkel F., Werner F.\nYear: 2007\nName of editors: 0\nTitle of anthology: Final report ecoinvent Data v2.0\nPlace of publication: Duebendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nJournal: 0\nVolume No: 21\nIssue No: 0\n" title="2007 - LCI renewable materials - Althaus" titleOfAnthology="Final report ecoinvent Data v2.0" volumeNo="21" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="139614"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="141497"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="141496" referenceToPublishedSource="167410"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Fredy Dinkel" number="141496" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Cornelia Stettler" number="141497" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="plastics" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="biopolymers" location="RER" meanValue="1.0" name="Modified starch, at plant" number="302669" subCategory="biopolymers" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,2,3,4,5); Data for oil consumption in Transport from EPDM Materbi Granulated Novamont (Novamont, 2004)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.041873" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.2840000000000003" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,2,3,4,5); Total oil consumption from EDP Materbi Granulate NF07U (Novamont, 2004). Assumption Carbotech AG share between fuel and material use (=plasticizer for Materbi)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.998" name="Heat, waste" number="46930" standardDeviation95="1.5710000000000004" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,2,2,3,4,5); Total oil consumption from EDP Materbi Granulate NF07U (Novamont, 2004). Assumption Carbotech AG for share beteween use as fuel and material use as plasticizer for Materbi&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="5.024500000000001" name="Heat, light fuel oil, at industrial furnace 1MW" number="339773" standardDeviation95="1.5710000000000004" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(2,2,2,3,4,5); Total gas consumption from EDP Materbi Granulate NF07U (Novamont, 2004). Assumption Carbotech AG material use mainly (=plasticizers for Mater-bi)&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\gas to user" location="IT" meanValue="12.547" name="Natural gas, high pressure, at consumer" number="312109" standardDeviation95="1.5710000000000004" subCategory="natural gas\gas to user" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,2,2,3,4,5); Total coal consumption from EDP Materbi Granulate NF07U (Novamont, 2004). Assumption Carbotech AG use as fuel mainly.&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="coal" location="RER" meanValue="3.399800000000001" name="Heat, at hard coal industrial furnace 1-10MW" number="592780" standardDeviation95="1.5710000000000004" subCategory="coal" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(5,4,1,1,4,5); Correction for lacking potential emissions photochemical oxidants compared to aggregated data in EDP Materbi Granulate NF07U (Novamont, 2004). Assumption Carbotech AG VOC emissions as typical in plastic industry&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="7.0E-4" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="2.0788" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,2,2,3,4,5); Data for granulate processing and packaging from EDP Materbi Granulate NF07U (Novamont, 2004), assumption landfill&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="0.0029" name="Disposal, municipal solid waste, 22.9% water, to sanitary landfill" number="490984" standardDeviation95="1.5710000000000004" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,2,2,3,4,5); Value for direct electricity consumption from EDP Materbi Granulate NF07U (Novamont, 2004)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="IT" meanValue="0.555" name="Electricity, low voltage, at grid" number="487131" standardDeviation95="1.5710000000000004" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(2,2,2,3,4,5); Calculation portion starch from reported CO2 fixation per kg granulate (0.59 kg CO2) compared to CO2 fixation in corn starch (1.74 kg CO2). 0.59 kg CO2 per kg Materbi reported in EDP Materbi Granulate NF07U (Novamont, 2004)&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant production" location="DE" meanValue="0.33561" name="Maize starch, at plant" number="289738" standardDeviation95="1.5710000000000004" subCategory="plant production" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(2,2,2,3,4,5); Data for granulate processing and packaging from EDP Materbi Granulate NF07U (Novamont, 2004), assumption icineration&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="0.009" name="Disposal, hazardous waste, 25% water, to hazardous waste incineration" number="165198" standardDeviation95="1.5710000000000004" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(2,2,2,3,4,5); Total oil consumption from EDP Materbi Granulate NF07U (Novamont, 2004). Assumption Carbotech AG share between fuel and material use (=plasticizer for Materbi)&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="oil\naphtha" location="RER" meanValue="0.30923" name="Naphtha, APME mix, at refinery" number="344264" standardDeviation95="1.5710000000000004" subCategory="oil\naphtha" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,4,1,1,4,5); Assumption infrastructure similar than chemical plant, but only half size. 50 years lifte time and output 20'000 t as Novamont in Italy&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="5.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.5121" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="236561" timestamp="2024-07-09T17:48:30">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electronics" datasetRelatesToProduct="true" generalComment="The functional unit represents 1 m2 of a 6-layer FR-4 PWB, Pb-free surface finished (mixture of different finishing methods), with soldermask, for surface mount applications, without mounted components. It is designed to be used in ICT applications. Process data are taken from environmental reports of 3 German PWB producers, plus from literature. The described PWB has a square weight of 3.26 kg/m2. An update was made in 2023, comprising: modification to energy consumption and regionalization of inventory flows, such as energy and metal input (Duque Ciceri et al., 2010; Kupka et al., 2018.); Geography: This module is based on information from European producers that are seen as representative for the global situation.; UUID: b748c7f6-1878-3ab5-857f-b4af0ee1457b" includedProcesses="The module covers the assembly of a PWB prepared for surface mounting of components. In this dataset (raw) materials, infrastructure, energy consumption, emissions to air and water and waste amounts from the production of 1 m2 of board are taken into account. Not included into this dataset is the mounting of the PWB." infrastructureIncluded="false" infrastructureProcess="false" localCategory="electronics" localName="Printed wiring board, surface mount, lead-free surface, at plant" localSubCategory="component" name="Printed wiring board, surface mount, lead-free surface, at plant" subCategory="component" unit="m2"/>
+        <geography location="GLO" text="This module is based on information from European producers that are seen as representative for the global situation."/>
+        <technology text="Dataset comprises the following steps of PWB production: substrate preparation, imaging, exposure, etching, sandwiching, activation and accelaration steps as well as copper plating, cleaning, oxidification, dry vacuum lamination, micro etching, surface finishing."/>
+        <timePeriod dataValidForEntirePeriod="" text="Unspecified">
+          <startDate>2023-01</startDate>
+          <endDate>2029-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2024-07-09T17:48:30" type="1" version="2024"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography and Technology" productionVolume="$ 18.9315 Billion in 1998 (includes all rigid PWB)" samplingProcedure="literature" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Permana Ajie M., Beloin-Saint-Pierre D." firstAuthor="Raka Adrianto L." number="148303" placeOfPublications="St. Gallen, CH" publisher="Empa" sourceType="0" title="2024 - LCI ICT sector - Raka Adrianto" year="2024"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Mischa Zschokke, Company: Carbotech, Country: CH" proofReadingValidator="140702"/>
+        <validation/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="148302" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="false" dataPublishedIn="2" person="148302" referenceToPublishedSource="148303"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre" number="148302" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Mischa Zschokke" number="140702" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electronics" generalComment="Global" infrastructureProcess="false" localCategory="electronics" localSubCategory="component" location="GLO" meanValue="1" name="Printed wiring board, surface mount, lead-free surface, at plant" number="236561" subCategory="component" uncertaintyType="0" unit="m2">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="2.8746" name="Copper, primary, at refinery" number="398149" standardDeviation95="1.27" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="0.50069" name="Dipropylene glycol monomethyl ether, at plant" number="476188" standardDeviation95="1.27" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,4,3,4,1,5,BU:1.05); Updated data from literature" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="GLO" meanValue="185" name="Electricity, medium voltage, production GLO, at grid" number="235676" standardDeviation95="1.27" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(4,5,1,3,5,5,BU:3.00); rough assumption" infrastructureProcess="true" localCategory="electronics" localSubCategory="manufacturing" location="GLO" meanValue="0.00000002" name="Electronic component production plant" number="525389" standardDeviation95="3.81" subCategory="manufacturing" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="1.8897" name="Glass fibre reinforced plastic, polyester resin, hand lay-up, at plant" number="397207" standardDeviation95="1.27" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,3,4,1,5,BU:1.05); average from several ZVEI umbrella specifications for PWB" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="0.00015474" name="Gold, primary, at refinery" number="231775" standardDeviation95="1.27" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,4,3,4,1,5,BU:1.05); Updated data from literature" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="213" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.27" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="13.644" name="Hydrochloric acid, 30% in H2O, at plant" number="308041" standardDeviation95="1.27" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="1.7693" name="Hydrogen peroxide, 50% in H2O, at plant" number="521731" standardDeviation95="1.27" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CH" meanValue="0.86093" name="Iron (III) chloride, 40% in H2O, at plant" number="527659" standardDeviation95="1.27" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,3,4,1,5,BU:1.05); average from several ZVEI umbrella specifications for PWB" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="0.00077474" name="Nickel, 99.5%, at plant" number="509334" standardDeviation95="1.27" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="0.21332" name="Phenolic resin, at plant" number="388174" standardDeviation95="1.27" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="1.8167" name="Sheet rolling, copper" number="597728" standardDeviation95="1.27" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,3,4,1,5,BU:1.05); average from several ZVEI umbrella specifications for PWB" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="0.00051474" name="Silver, at regional storage" number="313761" standardDeviation95="1.27" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="0.51072" name="Sodium chloride, powder, at plant" number="139127" standardDeviation95="1.27" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="6.96770000000000156" name="Sodium hydroxide, 50% in H2O, production mix, at plant" number="483088" standardDeviation95="1.27" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="1.1674" name="Sulphuric acid, liquid, at plant" number="512921" standardDeviation95="1.27" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="23.967" name="Tap water, at user" number="227940" standardDeviation95="1.27" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,4,3,4,1,5,BU:1.05); average from several ZVEI umbrella specifications for PWB" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="0.0027884" name="Tin, at regional storage" number="468952" standardDeviation95="1.27" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,4,3,4,1,5,BU:2.00); standard distances" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="19.303" name="Transport, freight, rail" number="149864" standardDeviation95="2.08" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,4,3,4,1,5,BU:2.00); standard distances" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="3.2172" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.08" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 3 European PWB producer" infrastructureProcess="false" localCategory="water" localSubCategory="industry water" location="GLO" meanValue="1087.10000000000014" name="Water, ultrapure, at plant" number="386088" standardDeviation95="1.27" subCategory="industry water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" meanValue="5.5814" name="Water, unspecified natural origin/m3" number="64511" standardDeviation95="1.27" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,3,4,1,5,BU:3.00); calculated from total release in USA" meanValue="0.00498" name="Copper" number="644" standardDeviation95="3.08" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,3,4,1,5,BU:1.50); calculated, from electricity input" meanValue="1175.40000000000009" name="Heat, waste" number="46930" standardDeviation95="1.6" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,3,4,1,5,BU:2.00); average data over 3 years from 1 European PWB producer" meanValue="0.0028564" name="Hydrogen chloride" number="25789" standardDeviation95="2.08" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,3,4,1,5,BU:2.00); average data over 3 years from 1 European PWB producer" meanValue="0.00034474" name="Hydrogen peroxide" number="63037" standardDeviation95="2.08" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,3,4,1,5,BU:2.00); average data over 3 years from 1 European PWB producer" meanValue="0.042682" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="2.08" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,3,4,1,5,BU:2.00); average data over 3 years from 1 European PWB producer" meanValue="0.00033653" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="2.08" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,3,4,1,5,BU:2.00); average data over 3 years from 1 European PWB producer" meanValue="0.00011218" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="2.08" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,3,4,1,5,BU:2.00); average data over 3 years from 1 European PWB producer" meanValue="0.0014774" name="Sodium hydroxide" number="83167" standardDeviation95="2.08" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,3,4,1,5,BU:2.00); average data over 3 years from 1 European PWB producer" meanValue="0.00024624" name="Sulfuric acid" number="25859" standardDeviation95="2.08" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,4,3,4,1,5,BU:1.50); average data over 3 years from 1 European PWB producer" meanValue="0.00013352" name="AOX, Adsorbable Organic Halogen as Cl" number="81549" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,4,3,4,1,5,BU:5.00); average data over 3 years from 1 European PWB producer" meanValue="0.0000021779" name="Arsenic" number="91205" standardDeviation95="5.09" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,4,3,4,1,5,BU:1.50); average data over 3 years from 1 European PWB producer" meanValue="0.081715" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,4,3,4,1,5,BU:5.00); average data over 3 years from 1 European PWB producer" meanValue="0.000018422" name="Cadmium" number="91269" standardDeviation95="5.09" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,4,3,4,1,5,BU:5.00); average data over 3 years from 1 European PWB producer " meanValue="0.000052166" name="Chromium" number="158591" standardDeviation95="5.09" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,4,3,4,1,5,BU:1.50); average data over 3 years from 1 European PWB producer" meanValue="0.081715" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,4,3,4,1,5,BU:5.00); average data over 3 years from 1 European PWB producer" meanValue="0.00017547" name="Copper" number="91271" standardDeviation95="5.09" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,4,3,4,1,5,BU:1.50); average data over 3 years from 1 European PWB producer" meanValue="0.00037574" name="Fluoride" number="73504" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,4,3,4,1,5,BU:5.00); average data over 3 years from 1 European PWB producer" meanValue="0.00000060922" name="Mercury" number="91219" standardDeviation95="5.09" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,4,3,4,1,5,BU:5.00); average data over 3 years from 1 European PWB producer" meanValue="0.000060922" name="Nickel" number="91239" standardDeviation95="5.09" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,4,3,4,1,5,BU:5.00); average data over 3 years from 1 European PWB producer" meanValue="0.000051437" name="Zinc" number="91189" standardDeviation95="5.09" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.18204" name="Disposal, emulsion paint, 0% water, to municipal incineration" number="608122" standardDeviation95="1.27" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="13.899" name="Disposal, hazardous waste, 25% water, to hazardous waste incineration" number="165198" standardDeviation95="1.27" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.052276" name="Disposal, municipal solid waste, 22.9% water, to municipal incineration" number="360318" standardDeviation95="1.27" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,4,3,4,1,5,BU:1.05); average data over 3 years from 1 European PWB producer" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="CH" meanValue="4.1222" name="Disposal, sludge, pig iron production, 8.6% water, to residual material landfill" number="397059" standardDeviation95="1.27" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="5302.33" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

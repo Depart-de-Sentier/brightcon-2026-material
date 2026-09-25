@@ -1,0 +1,110 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="EcoInvent Excel2EcoSpold 1.9.18" number="433575" timestamp="2026-03-30T17:01:13">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="building processes" datasetRelatesToProduct="true" generalComment="The consumption of lubricating oil are taken from ecoinvent v2.2, as well as emission patern during the combustion. Values for CO2, CO, NOx, CH4 and NMHC were taken from the Non-road database and represent average factors for gasoline-powered, four-stroke, hand-guided tamping rammers and vibratory plates. &#10;UUID: ce890b07-c419-41bf-83b9-ff19734f38f6" includedProcesses="This dataset is based on the process &quot;Diesel, burned in building machine {GLO}|&quot;. Compared to this reference process, the dataset includes only lubricating oil, diesel fuel and the emissions produced during the combustion of 1 MJ of petrol fuel in an average building machine in Switzerland. " infrastructureIncluded="true" infrastructureProcess="false" localCategory="building processes" localName="Petrol, burned in building machine, with particle filter" localSubCategory="machinery" name="Petrol, burned in building machine, with particle filter" subCategory="machinery" unit="MJ">
+          <synonym>0</synonym>
+        </referenceFunction>
+        <geography location="CH" text="Europe"/>
+        <technology text="The process &quot;petrol, burned in building machine, with particle filter/MJ/CH&quot; has been modified to generate a dataset that consider the emissions produced during the combustion of 1 MJ of petrol fuel in a building machine in Switzerland."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Review of data currency scheduled after 5 years.">
+          <startYear>2025</startYear>
+          <endYear>2030</endYear>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2026-03-30T17:01:13" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;" productionVolume="unknown" samplingProcedure="Statistics" uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Stamm R." firstAuthor="Pohl T." number="184329" placeOfPublications="Bern, CH" publisher="Umtec Technologie AG" sourceType="3" text="Report" title="2025 - Datasets construction machinery and infra. - Pohl" titleOfAnthology="Hintergrundbericht" year="2025"/>
+        <validation proofReadingDetails="Unspecified" proofReadingValidator="141497"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="769826" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="769826" referenceToPublishedSource="184329"/>
+        <person address="anonymised" companyCode="UMTEC" countryCode="CH" email="anonymised" name="Thomas Pohl" number="769826" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Cornelia Stettler" number="141497" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="building processes" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="1" name="Petrol, burned in building machine, with particle filter" number="433575" subCategory="machinery" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(1,5,2,3,1,3,BU:1.05); ; (1,5,1,3,1,3); ecoinvent v2.2, Net calorific value petrol 40.86 MJ/kg" infrastructureProcess="false" localCategory="oil" localSubCategory="distribution" location="RER" meanValue="0.02447" name="Petrol, at regional storage" number="313319" standardDeviation95="1.2192" subCategory="distribution" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,5,2,3,1,3,BU:1.05); ; (1,5,1,3,1,3); ecoinvent v2.2." infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="0.000514" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.2192" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="(1,5,1,3,1,3,BU:3); ; (1,5,1,3,1,3); ecoinvent v2.2." infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="1.34E-7" name="Building machine" number="275603" standardDeviation95="3.0492" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:1.2); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); based on ecoinvent v2.2." meanValue="4.67E-7" name="Ammonia" number="635" standardDeviation95="1.301" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:3); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); based on ecoinvent v2.2." meanValue="7.01E-10" name="Benzo(a)pyrene" number="29927" standardDeviation95="3.0492" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:5); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); based on ecoinvent v2.2." meanValue="2.34E-10" name="Cadmium" number="640" standardDeviation95="5.0561" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:1.05); Values for the considered emissions were taken from the Non-road database and represent average factors for gasoline-powered, four-stroke, hand-guided tamping rammers and vibratory plates.; (1,5,1,3,1,3)" meanValue="0.076867" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.2165" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:5); Values for the considered emissions were taken from the Non-road database and represent average factors for gasoline-powered, four-stroke, hand-guided tamping rammers and vibratory plates.; (1,5,1,3,1,3)" meanValue="0.023766" name="Carbon monoxide, fossil" number="641" standardDeviation95="5.0561" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:5); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); based on ecoinvent v2.2." meanValue="1.17E-9" name="Chromium" number="642" standardDeviation95="5.0561" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:5); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); based on ecoinvent v2.2." meanValue="3.97E-8" name="Copper" number="644" standardDeviation95="5.0561" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:1.5); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); based on ecoinvent v2.2." meanValue="2.8E-6" name="Dinitrogen monoxide" number="646" standardDeviation95="1.5647" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,5,1,3,1,3,BU:1.5); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); based on ecoinvent v2.2." meanValue="1.4E-15" name="Dioxin, 2,3,7,8 Tetrachlorodibenzo-p-" number="356" standardDeviation95="1.5647" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:1.05); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); based on ecoinvent v2.2." meanValue="1.06" name="Heat, waste" number="46930" standardDeviation95="1.2165" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:1.5); Values for the considered emissions were taken from the Non-road database and represent average factors for gasoline-powered, four-stroke, hand-guided tamping rammers and vibratory plates.; (1,5,1,3,1,3)" meanValue="3.3429E-5" name="Methane, fossil" number="90787" standardDeviation95="1.5647" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:5); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); based on ecoinvent v2.2." meanValue="1.64E-9" name="Nickel" number="656" standardDeviation95="5.0561" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:1.5); Values for the considered emissions were taken from the Non-road database and represent average factors for gasoline-powered, four-stroke, hand-guided tamping rammers and vibratory plates.; (1,5,1,3,1,3)" meanValue="0.00013152" name="Nitrogen oxides" number="79243" standardDeviation95="1.5647" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:1.5); Values for the considered emissions were taken from the Non-road database and represent average factors for gasoline-powered, four-stroke, hand-guided tamping rammers and vibratory plates.; (1,5,1,3,1,3)" meanValue="0.00096726" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.5647" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:3); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); based on ecoinvent v2.2." meanValue="7.85E-8" name="PAH, polycyclic aromatic hydrocarbons" number="658" standardDeviation95="3.0492" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:3); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); ecoinvent v2.2. Reduction factor applied: 97.4%; based on BUWAL 2000 and ecoinvent v2.2" meanValue="2.4518E-6" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="3.0492" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:5); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); based on ecoinvent v2.2." meanValue="2.34E-10" name="Selenium" number="663" standardDeviation95="5.0561" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:1.05); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); based on ecoinvent v2.2." meanValue="2.36E-5" name="Sulfur dioxide" number="26215" standardDeviation95="1.2165" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:5); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); based on ecoinvent v2.2." meanValue="2.34E-8" name="Zinc" number="666" standardDeviation95="5.0561" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:1.5); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); ecoinvent v2.2. Reduction factor applied: 97.4%; based on BUWAL 2000 and ecoinvent v2.2" meanValue="1.6328E-7" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="1.5647" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,3,1,3,BU:2); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); ecoinvent v2.2. Reduction factor applied: 97.4%; based on BUWAL 2000 and ecoinvent v2.2" meanValue="1.0894E-7" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="2.0517" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(1,5,1,3,1,3,BU:1.05); Emissions taken from &quot;Diesel, burned in building machine {GLO}&quot;; (1,5,1,3,1,3); based on ecoinvent v2.2." infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="0.000514" name="Disposal, used mineral oil, 10% water, to hazardous waste incineration" number="504085" standardDeviation95="1.2165" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

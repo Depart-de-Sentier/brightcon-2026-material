@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="614751" timestamp="2024-07-09T17:48:29">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electronics" datasetRelatesToProduct="true" generalComment="Data are a rough estimation of the average production efforts over all types of transistors. Data for auxillaries, energy, emissions and waste are taken from a dataset ouf of an international LCI database. Infrastructure and transportation efforts are based on own assumptions. Updates were made in 2023, showing that 20% energy reduction is achieved; UUID: d853443c-5d22-3201-98ab-a8c87d84de29" includedProcesses="This module includes auxillary and energy consumption, emissions (air, water) and waste amounts, as well as an estimation of the efforts for transportation and of the infrastructure for the production of transistors." infrastructureIncluded="false" infrastructureProcess="false" localCategory="electronics" localName="Production efforts, transistors" localSubCategory="manufacturing" name="Production efforts, transistors" subCategory="manufacturing" unit="kg"/>
+        <geography location="GLO" text="Data from literature – here representing the global situation."/>
+        <technology text="average production technology comprising Si-crystal die bonding; wire bonding; encapsulation; plating; triming; forming and marking."/>
+        <timePeriod dataValidForEntirePeriod="" text="Unspecified">
+          <startDate>2023-01</startDate>
+          <endDate>2029-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2024-07-09T17:48:29" type="1" version="2024"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography &amp; Technology" samplingProcedure="estimation - based on literature" uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Permana Ajie M., Beloin-Saint-Pierre D." firstAuthor="Raka Adrianto L." number="148303" placeOfPublications="St. Gallen, CH" publisher="Empa" sourceType="0" title="2024 - LCI ICT sector - Raka Adrianto" year="2024"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Mischa Zschokke, Company: Carbotech, Country: CH" proofReadingValidator="140702"/>
+        <validation/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="148302" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="false" dataPublishedIn="2" person="148302" referenceToPublishedSource="148303"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre" number="148302" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Mischa Zschokke" number="140702" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electronics" generalComment="Global" infrastructureProcess="false" localCategory="electronics" localSubCategory="manufacturing" location="GLO" meanValue="1" name="Production efforts, transistors" number="614751" subCategory="manufacturing" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,3,3,1,5,BU:1.05); value from 1 literature source" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="0.38" name="Chemicals organic, at plant" number="497739" standardDeviation95="1.27" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,4,3,3,1,5,BU:1.05); value from 1 literature source. Energy consumption is updated to reflect improvement" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="GLO" meanValue="160" name="Electricity, medium voltage, production GLO, at grid" number="235676" standardDeviation95="1.27" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(4,5,4,3,5,5,BU:3.00); rough assumption" infrastructureProcess="true" localCategory="electronics" localSubCategory="manufacturing" location="GLO" meanValue="0.00000002" name="Electronic component production plant" number="525389" standardDeviation95="3.85" subCategory="manufacturing" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,3,3,1,5,BU:1.05); value from 1 literature source" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="8.3" name="Nitrogen, liquid, at plant" number="267576" standardDeviation95="1.27" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,4,3,3,1,5,BU:2.00); standard distances" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="8.688" name="Transport, freight, rail" number="149864" standardDeviation95="2.08" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,4,3,3,1,5,BU:2.00); standard distances" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="1.448" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.08" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(2,4,3,3,1,5,BU:1.50); estimation, based on total water amount from 1 literature source" meanValue="0.00146" name="Water, cooling, unspecified natural origin/m3" number="29019" standardDeviation95="1.6" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(2,4,3,3,1,5,BU:1.50); estimation, based on total water amount from 1 literature source" meanValue="0.00584" name="Water, unspecified natural origin/m3" number="64511" standardDeviation95="1.6" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,3,3,1,5,BU:1.50); calculated, from electricity input" meanValue="720" name="Heat, waste" number="46930" standardDeviation95="1.6" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,3,3,1,5,BU:1.50); calculated from input of auxillaries" meanValue="0.38" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.6" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,4,3,3,1,5,BU:1.05); calculated from input of auxillaries" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="2.42" name="Disposal, plastics, mixture, 15.3% water, to municipal incineration" number="174149" standardDeviation95="1.27" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,4,3,3,1,5,BU:1.05); estimation, based on total waste amount from 1 literature source" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="0.69" name="Disposal, tin sheet, 0% water, to sanitary landfill" number="354646" standardDeviation95="1.27" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,4,3,3,1,5,BU:1.05); estimation, based on total waste amount from 1 literature source" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="CH" meanValue="0.01" name="Disposal, waste, Si waferprod., inorg, 9.4% water, to residual material landfill" number="588459" standardDeviation95="1.27" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(2,4,3,3,1,5,BU:1.05); estimation, based on total waste amount from 1 literature source" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="0.00584" name="Treatment, sewage, to wastewater treatment, class 2" number="383344" standardDeviation95="1.27" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="1.387" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="5.548" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

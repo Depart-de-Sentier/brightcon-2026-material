@@ -1,0 +1,115 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="d772ce47-1d05-5b07-9569-ad2bf078f476" activityNameId="5e2b3b07-d073-5eeb-acb0-18388d4efde5" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Use of xDSL, fixed IP access network per hour</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Use of xDSL, fixed IP access network per hour
+The data set represents the xDSL fixed network in Switzerland; UUID: 7b22286e-abe2-3dc3-9f2f-76649d5e0579
+The dataset represents the sum digital subscriber line (xDSL) network in Switzerland. The reference year for network traffic is 2014. The equipment is based on information from 2010 but is deemed the most actual. A lifetime of 12 years is assumed. The amount of electricity consumed is assumed to be the same as cable since the main source used does not distinguish between copper and xDSL. Both are referred to as "copper network". Amount of electricity consumed is based on the network electricity intensity (kWh/GB) information from the Telefonica Access Network. The functional unit = 1 GB.
+Location: Data for Swiss networks
+Technology: The mix of Swiss access transmission network, fixed.
+Time period: Unspecified
+Production volume: unknown
+Sampling: Literature &amp; own estimations
+Extrapolations: Average technology
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_7b22286e-abe2-3dc3-9f2f-76649d5e0579.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Data for Swiss networks</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: The mix of Swiss access transmission network, fixed.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2023-01-01" endDate="2029-12-31" isDataValidForEntirePeriod="false">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Unspecified</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="2edc0f87-02b5-5447-b40d-cb79f5534bf8" amount="1.0" unitId="9ab8d6e2-bd5e-592b-add5-ebeee086e9dd" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="d772ce47-1d05-5b07-9569-ad2bf078f476" intermediateExchangeId="0ac6bcd4-5ca9-52a2-866b-235370771757" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Use of xDSL, fixed IP access network per hour</name>
+        <unitName xml:lang="en">hour</unitName>
+        <comment xml:lang="en">Full flow name: Use of xDSL, fixed IP access network per hour
+Total value is calculated from # of subscribers and hours in a year
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="bb7d3eb0-4b94-5930-a579-ff71495cec5e" amount="1e-05" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="1bac00f6-0a79-5f71-b406-006cacbf527d" intermediateExchangeId="c58c8a5e-344d-5bb1-8d58-0494b7067ff4" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Network access devices, internet, at user</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Network access devices, internet, at user
+(2,3,4,2,2,5,BU:1.05) Based on Table S4 for FTTB with evolution from 2009 &gt; 2014
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="1e-05" varianceWithPedigreeUncertainty="0.019269845291644095" mu="-11.512925464970229"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="9d68c108-4883-5bc0-adfe-f6064e8887b3" amount="1.01e-08" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="a16d0c6e-962c-5b19-a684-7a4b8d94d490" intermediateExchangeId="5e874163-3c30-57eb-9504-25d115cc4660" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Router, IP network, at server</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Router, IP network, at server
+(2,3,4,2,2,5,BU:1.05) Based on Table S4 for FTTB with evolution from 2009 &gt; 2014
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.01e-08" varianceWithPedigreeUncertainty="0.019269845291644095" mu="-18.4107304130992"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="28fd274f-5b4d-5dbf-991e-27406505a8bb" amount="1.04e-11" unitId="b6e46b9d-5414-59b3-a162-c830476eae1c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="0bdfed99-ca2e-53ee-b6e4-e5e544994da3" intermediateExchangeId="d8a7f1f7-544e-59a8-9817-7c62e6f74310" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Ventilation system, decentralized, 6 x 120 m3/h, steel ducts, with GHE</name>
+        <unitName xml:lang="en">unit</unitName>
+        <comment xml:lang="en">Full flow name: Ventilation system, decentralized, 6 x 120 m3/h, steel ducts, with GHE
+(2,3,4,2,2,5,BU:1.05) Based on Table S4 for FTTB with evolution from 2009 &gt; 2014
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="1.04e-11" varianceWithPedigreeUncertainty="0.019269845291644095" mu="-25.28921530978122"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="ca889a2b-48d8-5e28-bca0-998cf23c3fa4" amount="0.000188" unitId="9ba25965-088d-5ba8-abf2-fecdc9749b3c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="72c59bca-ef20-5ade-a6dd-504eb9f2eb4e" intermediateExchangeId="82632753-98d7-59d1-b78c-dbcac12b767d" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Cable, data cable in infrastructure, at plant</name>
+        <unitName xml:lang="en">meter</unitName>
+        <comment xml:lang="en">Full flow name: Cable, data cable in infrastructure, at plant
+(2,3,4,2,2,5,BU:1.05) Based on Table S4 for FTTB with evolution from 2009 &gt; 2014
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.000188" varianceWithPedigreeUncertainty="0.019269845291644095" mu="-8.579068595134325"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="6b3f3c91-2f99-5f3d-ad9b-4e4fe0414c46" amount="0.00703" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="6de0d104-e5c3-5bee-955b-6f6232c3fdc3" intermediateExchangeId="77eb694f-7dfa-5a7e-8152-53bed7445781" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, low voltage, at grid</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, low voltage, at grid
+(2,3,4,2,2,5,BU:1.05) Based on Table S10 for FTTB with evolution from 2009 &gt; 2014
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.00703" varianceWithPedigreeUncertainty="0.019269845291644095" mu="-4.957568573159564"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="8df173d9-7352-52a0-bcbc-8ca8b82c654b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="" personEmail="anonymised" isCopyrightProtected="false"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

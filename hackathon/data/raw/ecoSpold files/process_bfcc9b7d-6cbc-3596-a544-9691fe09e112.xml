@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="307404" timestamp="2023-08-28T15:03:35.008+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="agricultural" datasetRelatesToProduct="true" generalComment="data based on the ECOSOL study of the European surfactant industry. Allocations in multioutput processes were made, using the relative mass outputs of products.;&#10;UUID: bfcc9b7d-6cbc-3596-a544-9691fe09e112" includedProcesses="This module contains material and energy input, production of waste and emissions for the steps from the harvested coconuts to the crude coconut oil (i.e. the coconut halving, extraction of water, meat removal &amp; shell production, drying and the oil extraction). Water consumption and infrastructure have been estimated." infrastructureProcess="false" localCategory="agricultural" localName="Crude coconut oil, at plant" localSubCategory="plant oils" name="Crude coconut oil, at plant" subCategory="plant oils" unit="kg"/>
+        <geography location="PH" text="Data based on coconut oil mills in Phillippines"/>
+        <technology text="Average technology, typical for Phillippines conditions in the mid 90s"/>
+        <timePeriod dataValidForEntirePeriod="true" text="data of published literature">
+          <startDate>1995-01</startDate>
+          <endDate>1995-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2005-07-19T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="worldwide 2'900 kt in 1993" samplingProcedure="&lt;null&gt;" uncertaintyAdjustments="&lt;null&gt;"/>
+        <source additionalAuthors="Hischier R." firstAuthor="Zah R." nameOfEditors="-" number="172576" placeOfPublications="Duebendorf and St. Gallen, CH" publisher="Swiss Centre for LCI, Empa - TSL" sourceNumber="0" sourceType="4" text="Zah R., Hischier R. (2007) Life Cycle Inventories of Detergents. Final report ecoinvent data v2.0. Volume: 12. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Zah R.\nOther authors: Hischier R.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 12\n" title="2007 - LCI detergents - Zah" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="12" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: energetic value of crude coconut oil has been added; Other validation: none;" proofReadingValidator="307401"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136699"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136699" referenceToPublishedSource="172576"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Christian Capello" number="307401" telephone="anonymised"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="agricultural" generalComment="PHILIPPINES&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant oils" location="PH" meanValue="1.0" name="Crude coconut oil, at plant" number="307404" subCategory="plant oils" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(4,5,2,1,1,5); estimation, based on ECOSOL data&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.172" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.3800000000000001" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(5,5,1,5,4,5); estimated from a large chem. plant &#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.024" name="Water, cooling, unspecified natural origin/m3" number="29019" standardDeviation95="1.8900000000000001" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,5,2,1,1,5); data from ECOSOL study (Literature)&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.00442" name="Oils, unspecified" number="17550" standardDeviation95="3.1" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant production" location="PH" meanValue="2.97" name="Husked nuts harvesting, at farm" number="567295" subCategory="plant production" uncertaintyType="0" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(2,5,2,1,1,5); data from ECOSOL study (Literature)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.65E-4" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="3.1" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,5,2,1,1,5); data from ECOSOL study (Literature)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.39E-4" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="1.6199999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.00479" name="Acidity, unspecified" number="18390" subCategory="river" uncertaintyType="0" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,5,2,1,1,5); estimation, based on ECOSOL data&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="0.297" name="Heat, heavy fuel oil, at industrial furnace 1MW" number="194927" standardDeviation95="1.3800000000000001" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(2,5,2,1,1,5); data from ECOSOL study (Literature)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="4.56E-4" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="2.1" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,5,2,1,1,5); data from ECOSOL study (Literature)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.619" name="Heat, waste" number="46930" standardDeviation95="1.31" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="(2,5,2,1,1,5); data from ECOSOL study (Literature)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="8.8E-5" name="Nitrogen oxides" number="79243" standardDeviation95="1.6199999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007727-37-9" category="emissions to water" generalComment="(2,5,2,1,1,5); data from ECOSOL study (Literature)&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.00442" name="Nitrogen" number="78458" standardDeviation95="1.6199999999999999" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.134" name="Transport, freight, lorry, fleet average" number="453425" subCategory="road\Transformation" uncertaintyType="0" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="" infrastructureProcess="false" localCategory="resources" localSubCategory="biotic" meanValue="37.5" name="Energy, gross calorific value, in biomass" number="81693" subCategory="biotic" uncertaintyType="0" unit="MJ">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(5,5,1,5,4,5); estimated from a large chem. plant &#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.006" name="Water, unspecified natural origin/m3" number="64511" standardDeviation95="1.8900000000000001" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(2,5,2,1,1,5); data from ECOSOL study (Literature)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.0E-4" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.6199999999999999" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,5,2,1,1,5); data from ECOSOL study (Literature)&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.0138" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.6199999999999999" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,5,2,1,1,5); data from ECOSOL study (Literature)&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.0416" name="Suspended solids, unspecified" number="157731" standardDeviation95="1.6199999999999999" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,5,2,1,1,5); data from ECOSOL study (Literature)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.268" name="Carbon dioxide, biogenic" number="80535" standardDeviation95="1.31" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007446-09-5" category="emissions to air" generalComment="(2,5,2,1,1,5); data from ECOSOL study (Literature)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="5.8E-5" name="Sulfur dioxide" number="26215" standardDeviation95="1.31" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="(2,5,2,1,1,5); data from ECOSOL study (Literature)&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.0138" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.6199999999999999" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,5,1,5,4,5); estimated from a large chem. plant &#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="4.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.56" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,5,2,1,1,5); data from ECOSOL study (Literature)&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="0.00104" name="Disposal, wood ash mixture, pure, 0% water, to sanitary landfill" number="396232" standardDeviation95="1.31" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="22.8" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="5.7" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

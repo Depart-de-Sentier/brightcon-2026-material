@@ -1,0 +1,138 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="d6569f9a-c912-59ef-b5d0-8425ecefec68" activityNameId="58f2548a-ff95-5f03-a15d-7a17dd5174b4" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Operation, tram track</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Operation, tram track
+Material consumption due to tram track renewal are not included. The consumption of these materials are included in the module "tram track". (assumed life span of infrastructure = 15 years);
+UUID: e156f77c-40d0-3254-9156-be8f2f385da7
+The inventory includes energy consumption for signals. Furthermore, land occupation and transformation are included.
+Location: Data refers to average conditions in Switzerland. For de icing activities, a recent Austrian has been applied.
+Technology: Swiss state of the art technology
+Time period: Tram track length is based on current statistical data (2000).  
+Production volume: na
+Sampling: national statistics, data  published in literature and expert estimates 
+Extrapolations: &lt;null&gt;
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_e156f77c-40d0-3254-9156-be8f2f385da7.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="fdab769f-4bdb-5024-8349-c1745bbb2597" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">CH</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Data refers to average conditions in Switzerland. For de icing activities, a recent Austrian has been applied.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Swiss state of the art technology</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2000-01-01" endDate="2000-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Tram track length is based on current statistical data (2000).  </text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="992d868c-c025-5a22-94f1-1d5915d71981" amount="1.0" unitId="a32750eb-e638-518a-b636-87b52299ec4c" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="d6569f9a-c912-59ef-b5d0-8425ecefec68" intermediateExchangeId="2c574fa5-f714-5e38-8caa-f48d1000ad0d" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Operation, tram track</name>
+        <unitName xml:lang="en">meter-year</unitName>
+        <comment xml:lang="en">Full flow name: Operation, tram track
+SWITZERLAND
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0d534d7e-a193-5c95-8f85-78292756b20e" amount="79.5" unitId="54436b9b-8b2f-5220-848e-5b13ce231386" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="bab4e660-f5d7-5f13-87ab-a4ef1e2658c7" intermediateExchangeId="bd2dba96-dfe7-5ec4-ad52-1f65b4f66c3b" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Electricity, medium voltage, at grid</name>
+        <unitName xml:lang="en">kilowatt hour</unitName>
+        <comment xml:lang="en">Full flow name: Electricity, medium voltage, at grid
+(3,3,3,1,1,5); literature studies 
+
+BAFU mapping audit: {"bafu source exchange index": 3}</comment>
+        <uncertainty>
+          <lognormal meanValue="79.5" varianceWithPedigreeUncertainty="0.014282269677631196" mu="4.375757021660286"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <elementaryExchange id="d8bf67b1-1fad-5b22-bfe2-a4819210d4c9" amount="286.0" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="f2d84834-d0b3-42e5-b41a-f04cc80337a4">
+        <name xml:lang="en">Heat, waste</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, waste
+(3,3,3,1,1,5); literature studies 
+
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="286.0" varianceWithPedigreeUncertainty="0.014282269677631196" mu="5.655991810819852"/>
+        </uncertainty>
+        <compartment subcompartmentId="ae9e443b-f820-50cb-a3c8-035eb1da4783" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">air</compartment>
+          <subcompartment xml:lang="en">unspecified</subcompartment>
+        </compartment>
+        <outputGroup>4</outputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="ea547dda-7cd8-5bee-ac62-010e876f3526" amount="6.5" unitId="3a10ffbc-f05c-5d1a-aa56-ef31fa3d8c58" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="26efe47c-92a5-4dea-b4d0-eac13e418a58">
+        <name xml:lang="en">Occupation, traffic area, road network</name>
+        <unitName xml:lang="en">square meter-year</unitName>
+        <comment xml:lang="en">Full flow name: Occupation, traffic area, road network
+(2,2,1,1,na,2); literature studies 
+
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="6.5" varianceWithPedigreeUncertainty="0.04245859107615355" mu="1.8718021769015913"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="23929473-fb44-5c1c-9eb4-624adb291dcb" amount="0.0065" unitId="2ffee513-1cfa-5700-836b-d4190b6e12cb" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="a42347d2-09f1-405e-95dd-bf6ac03765d8">
+        <name xml:lang="en">Transformation, to traffic area, road network</name>
+        <unitName xml:lang="en">square meter</unitName>
+        <comment xml:lang="en">Full flow name: Transformation, to traffic area, road network
+(2,2,1,1,na,4); literature studies 
+
+BAFU mapping audit: {"bafu source exchange index": 4}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0065" varianceWithPedigreeUncertainty="0.12358652763882824" mu="-5.035953102080546"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+      <elementaryExchange id="14c56ce4-8a3d-5958-8b6a-7a2633f29158" amount="0.0065" unitId="2ffee513-1cfa-5700-836b-d4190b6e12cb" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" elementaryExchangeId="12264257-7f8b-4afe-b3cb-3ac28ca1661a">
+        <name xml:lang="en">Transformation, from unknown</name>
+        <unitName xml:lang="en">square meter</unitName>
+        <comment xml:lang="en">Full flow name: Transformation, from unknown
+(2,2,1,1,na,3); literature studies 
+
+BAFU mapping audit: {"bafu source exchange index": 5}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.0065" varianceWithPedigreeUncertainty="0.12184802254028272" mu="-5.035953102080546"/>
+        </uncertainty>
+        <compartment subcompartmentId="3888cd5e-0072-5bc7-83c7-fba4bdfab174" subcompartmentContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+          <compartment xml:lang="en">natural resource</compartment>
+          <subcompartment xml:lang="en">land</subcompartment>
+        </compartment>
+        <inputGroup>4</inputGroup>
+      </elementaryExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="52be1b35-b0b8-587a-b85c-e6037ee4a1e4" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Michael Spielmann" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="52be1b35-b0b8-587a-b85c-e6037ee4a1e4" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Michael Spielmann" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

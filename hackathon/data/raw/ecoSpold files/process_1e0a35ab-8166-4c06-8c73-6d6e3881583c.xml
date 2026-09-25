@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="477725" timestamp="2023-08-28T15:02:49.707+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="transport waste" datasetRelatesToProduct="true" generalComment="The data set reflects the disposal of a scooter of 90kg. Aluminium and steel parts are fully recycled. Plastics are incinerated, batteries are treated.;&#10;UUID: 1e0a35ab-8166-4c06-8c73-6d6e3881583c" includedProcesses="This data set includes the disposal of all remaining parts, that are not recycled. All recycled parts are attributed to the reuse process (cut-off). Transport for recycled materials included." infrastructureProcess="true" localCategory="transport waste" localName="Disposal, scooter" localSubCategory="unspecified" name="Disposal, scooter" subCategory="unspecified" unit="p"/>
+        <geography location="CH" text="Data for disposal of vehicle parts in Europe."/>
+        <technology text="unknown"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2007-01</startDate>
+          <endDate>2009-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2010-02-07T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Some data derived from car disposal" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bauer C., Dones R., Tuchschmid M." firstAuthor="Spielmann M." nameOfEditors="-" number="149188" placeOfPublications="Duebendorf, Villigen and Uster, CH" publisher="Swiss Centre for LCI, PSI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Spielmann M., Dones R; Bauer C. (2007) Life Cycle Inventories of Transport Services. Final report ecoinvent Data v2.0. Volume: 14. Issue: 0. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Spielmann M.\nOther authors: Dones R; Bauer C.\nYear: 2007\nTitle of anthology: Final report ecoinvent Data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 14\nIssue No: 0\n" title="2007 - Transport services - Spielmann" titleOfAnthology="Final report ecoinvent Data v2.0" volumeNo="14" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: 26.01.2010; Other validation: C:\Dokumente und Einstellungen\Marianne\Eigene Dateien\Projekte\277_Mobitool\Review\[Ecospold_Disposal_ebikes-v1.1.xls]X-Process;" proofReadingValidator="136750"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="149187"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="149187" referenceToPublishedSource="149188"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Marianne Leuenberger" number="149187" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport waste" generalComment="SWITZERLAND&#10;" infrastructureProcess="true" localCategory="transport waste" localSubCategory="unspecified" location="CH" meanValue="1.0" name="Disposal, scooter" number="477725" subCategory="unspecified" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,1,1,1,3,3); 50% of tyres to municipal incineration&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="2.4031000000000002" name="Disposal, rubber, unspecified, 0% water, to municipal incineration" number="534118" standardDeviation95="1.2226000000000001" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,1,1,1,1,3); Assumption: all materials to recycling plant&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="14.538" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.0511" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,1,1,1,3,3); Extrapolated from car disposal&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.39463" name="Disposal, zinc in car shredder residue, 0% water, to municipal incineration" number="336763" standardDeviation95="1.2226000000000001" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(4,1,1,1,3,3); Assumption for plastic recycling: all parts replaced once&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="22.23" name="Disposal, plastics, mixture, 15.3% water, to municipal incineration" number="174149" standardDeviation95="1.3059" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics waste" generalComment="(2,1,1,1,3,3); Assumption for battery treatment&#10;" infrastructureProcess="false" localCategory="electronics waste" localSubCategory="unspecified" location="GLO" meanValue="6.9" name="Disposal, treatment of batteries" number="231856" standardDeviation95="1.2226000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

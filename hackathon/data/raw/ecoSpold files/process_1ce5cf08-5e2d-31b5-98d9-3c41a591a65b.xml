@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="400606" timestamp="2023-08-28T15:03:44.156+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity by fuel" datasetRelatesToProduct="true" generalComment="This study adresses Swiss dams only. The data have been applied for an extrapolation to preliminary describe dam-mixes in non-alpine countries. Considering the difficulty to clearly seperate within the Swiss dams system for some of the dams function for normal electricity generation from pumping storage, the same basic information has been used for the modules describing the two functions. A representative sample of Swiss dams with a height of more than 30 metres is taken into account for calculating the numbers. Lifetime is assumed to be 150 years. The efficiency of the pumps is assumed to be 70%. The results of this module cannot be applied to describe a single unit.;&#10;UUID: 1ce5cf08-5e2d-31b5-98d9-3c41a591a65b" includedProcesses="Includes the conversion of electricity from domestic high voltage grid to potential energy by pumping water up to the reservoir and generation of peak-load power when water flows back down to the turbine (reverse mode). The module has the same structure as the module for operation for reservoir plants." infrastructureProcess="false" localCategory="electricity by fuel" localName="Electricity, hydropower, at pumped storage power plant" localSubCategory="hydro\pumping storage" name="Electricity, hydropower, at pumped storage power plant" subCategory="hydro\pumping storage" unit="kWh"/>
+        <geography location="DK" text="Data were extrapolated from the average Swiss pumped storage hydropower plant."/>
+        <technology text="The module describes average installed technology with an efficiency of 70% (best technology has 74%)."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Unspecified">
+          <startDate>1945-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-06-06T23:56:15.881+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography/Text" productionVolume="na" samplingProcedure="literature " uncertaintyAdjustments="Data may not be representative for specific national conditions. The uncertainities calculated for the Swiss conditions have been somewhat increased."/>
+        <source additionalAuthors="Bolliger R., Tuchschmid M., Faist-Emmenegger M." firstAuthor="Bauer C." nameOfEditors="Dones R." number="170837" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Bolliger, R., Bauer, Ch. (2007) Wasserkraft. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0. Editors: Dones R.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Bolliger, R.\nOther authors: Bauer, Ch.\nYear: 2007\nName of editors: Dones R.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2007 - Hydropower - Bauer" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0" volumeNo="6" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="136750"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136750"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136750" referenceToPublishedSource="170837"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity by fuel" generalComment="&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\pumping storage" location="DK" meanValue="1.0" name="Electricity, hydropower, at pumped storage power plant" number="400606" subCategory="hydro\pumping storage" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="7.0E-6" name="Disposal, used mineral oil, 10% water, to hazardous waste incineration" number="504085" standardDeviation95="1.0" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="based on statistics&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="DK" meanValue="1.4300000000000002" name="Electricity, high voltage, at grid" number="327715" standardDeviation95="1.0500000000000003" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="2.28E-4" name="Transformation, to water bodies, artificial" number="24050" standardDeviation95="2.9999999999999996" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.006" name="Carbon dioxide, land transformation" number="157837" standardDeviation95="2.0000000000000004" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="2.3E-6" name="Transformation, to industrial area, built up" number="86253" standardDeviation95="2.9999999999999996" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="0.035" name="Occupation, water bodies, artificial" number="66011" standardDeviation95="2.9999999999999996" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="2.3E-4" name="Transformation, from unknown" number="54270" standardDeviation95="2.9999999999999996" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="same uncertainty as for electricity input&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.55" name="Heat, waste" number="45460" standardDeviation95="1.0500000000000003" subCategory="river" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="own assumption on lifetime&#10;" infrastructureProcess="true" localCategory="electricity by fuel" localSubCategory="hydro\reservoir\infrastructure" location="RER" meanValue="3.9E-13" name="Reservoir hydropower plant, non alpine regions" number="493576" standardDeviation95="1.4999999999999998" subCategory="hydro\reservoir\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.15" name="Volume occupied, reservoir" number="85137" standardDeviation95="2.9999999999999996" subCategory="in water" uncertaintyType="1" unit="m3y">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="standard for resources&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="8.1" name="Water, turbine use, unspecified natural origin" number="55628" standardDeviation95="1.0500000000000003" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="7.0E-6" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.8" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="8100" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

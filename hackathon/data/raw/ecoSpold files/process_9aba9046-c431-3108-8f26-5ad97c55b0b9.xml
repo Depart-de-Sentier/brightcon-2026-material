@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="RStudio" number="250172" timestamp="2025-03-31T15:02:08">
+    <metaInformation>
+      <processInformation>
+        <timePeriod dataValidForEntirePeriod="True" text="Base technology year of 2020">
+          <startDate>2020-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <referenceFunction amount="1" category="transport systems" datasetRelatesToProduct="True" generalComment=" Fuel supply for vehicles. Represents the fuel blends used. If synthetic fuels are part of the blend, the electricity input to produce them (e.g., to operate the electrolysis) is added separately in this dataset.. UUID: 9aba9046-c431-3108-8f26-5ad97c55b0b9" infrastructureIncluded="True" infrastructureProcess="True" localCategory="transport systems" localName="Fuel supply for gasoline vehicles" localSubCategory="road\Transformation\Infrastructure" name="Fuel supply for gasoline vehicles" subCategory="road\Transformation\Infrastructure" unit="kg"/>
+        <geography location="CH" text="Unspecified"/>
+        <technology text="Fuel supply for vehicles. Represents the fuel blends used. If synthetic fuels are part of the blend, the electricity input to produce them (e.g., to operate the electrolysis) is added separately in this dataset."/>
+        <dataSetInformation energyValues="0" impactAssessmentResult="False" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2025-03-31T15:02:08" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Unspecified" productionVolume="Unspecified" samplingProcedure="Unspecified" uncertaintyAdjustments="Unspecified"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="136752" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="doi: 10.5281/ZENODO.5156043" title="2023 - LCI on-road vehicles - Sacchi" year="2023"/>
+        <validation proofReadingDetails="Unspecified" proofReadingValidator="136748"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136751"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="False" dataPublishedIn="2" person="136749" referenceToPublishedSource="136752"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Brian Cox" number="136748" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Julien McTighe" number="136751" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Transformation\Infrastructure" location="CH" meanValue="1.0" name="Fuel supply for gasoline vehicles" number="250172" subCategory="road\Transformation\Infrastructure" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="Uncertainty from pedigree matrix: (1, 1, 2, 1, 1, 1)" infrastructureProcess="False" localCategory="fuels" localSubCategory="biofuels\ethanol" location="CH" meanValue="0.013" name="Ethanol, 95% in H2O, from whey, at fermentation plant" number="364481" standardDeviation95="1.03" subCategory="biofuels\ethanol" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="Uncertainty from pedigree matrix: (1, 1, 2, 1, 1, 1)" infrastructureProcess="False" localCategory="fuels" localSubCategory="biofuels\ethanol" location="SE" meanValue="0.013" name="Ethanol, 95% in H2O, from wood, at distillery" number="213237" standardDeviation95="1.03" subCategory="biofuels\ethanol" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="Uncertainty from pedigree matrix: (1, 1, 2, 1, 1, 1)" infrastructureProcess="False" localCategory="oil" localSubCategory="distribution" location="CH" meanValue="0.974" name="Petrol, at regional storage" number="572218" standardDeviation95="1.03" subCategory="distribution" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

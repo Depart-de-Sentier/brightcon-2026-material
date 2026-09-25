@@ -1,0 +1,147 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="302756" timestamp="2023-08-28T15:03:18.101+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="Modeled is the operation of a plant fabricating UO2 fuel for light water nuclear reactors (PWR and BWR), with no MOX (mixed oxides), no RepU (reprocessed fuel), and no HEU (highly enriched uranium from warheads) fuel elements. Hence the radioactive emissions (and spectrum) as well as the radioactive solid waste may have been somewhat underestimated. Data for the operation of a nuclear fuel fabrication facility are relatively old but emissions to water are complete for a US plant. Radioactive emissions to air and water have been taken or derived from two commercial German facilities: both (one operational, the other closed) exhibit emissions per unit of product fuel much lower than data published in the 1980s. An average value of the two plants is used. Zirconium for cladding is modelled as chromium, for lack of complete information on its metallurgical process;&#10;UUID: 69a36d56-0af0-3e3a-898e-ba0b6c85f65f" includedProcesses="The module includes: input of enriched uranium given in terms of separative work units per kg enriched uranium; electricity and light fuel oil used for operation; zirconium requirements for the cladding; water use and wastewater treatment; cement assumed to be used for conditioning of contaminated scrap from decommissioning; transport requirements of operation materials, industrial wastes, and contaminated waste from decommissioning. Radioactive and non-radioactive emissions to air and to water from the operation are also included. The infrastructure requirements are accounted for, though construction and operation data partially refer to different plants rather than to one single unit." infrastructureProcess="false" localCategory="fuels" localName="U enriched 4.2%, in fuel element for LWR, at nuclear fuel fabrication plant" localSubCategory="uranium\enriched" name="U enriched 4.2%, in fuel element for LWR, at nuclear fuel fabrication plant" subCategory="uranium\enriched" unit="kg"/>
+        <geography location="CH" text="&lt;null&gt;"/>
+        <technology text="Information regards facilities operating in the 1980s, with few more recent data."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-10-26T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bauer C., Doka G." firstAuthor="Dones R." nameOfEditors="Bauer C." number="137748" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI, Doka LCA" sourceNumber="0" sourceType="4" text="Dones, R., Doka G. (2009) Kernenergie. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1. Editors: Bauer C.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Dones, R.\nOther authors: Doka G.\nYear: 2009\nName of editors: Bauer C.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2009 - Nuclear energy - Dones" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1" volumeNo="6" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: Passed; Other validation: none;" proofReadingValidator="139614"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137747"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137747" referenceToPublishedSource="137748"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="uranium\enriched" location="CH" meanValue="1.0" name="U enriched 4.2%, in fuel element for LWR, at nuclear fuel fabrication plant" number="302756" subCategory="uranium\enriched" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.0358" name="Fluoride" number="73504" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="estimation on number, not on module substituting Zr&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="0.6" name="Chromium, at regional storage" number="521567" standardDeviation95="1.1" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.00703" name="Chloride" number="34061" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="old reference &amp; own assumption&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="36.0" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="2.0000000000000004" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.17E-5" name="Silver" number="21736" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.0023" name="Suspended solids, unspecified" number="157731" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.0166" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-96-5" category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.02E-5" name="Manganese" number="91185" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="construction waste landfill" location="CH" meanValue="0.8" name="Disposal, inert waste, 5% water, to construction waste landfill" number="509488" standardDeviation95="1.1" subCategory="construction waste landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="standard&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="6.5E-4" name="Transport, freight, rail" number="149864" standardDeviation95="2.1" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.00128" name="Oils, unspecified" number="17550" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="same as electricity&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="130.0" name="Heat, waste" number="46930" standardDeviation95="2.9999999999999996" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="own estimation&#10;" infrastructureProcess="true" localCategory="fuels" localSubCategory="uranium\enriched\infrastructure" location="GLO" meanValue="3.7E-8" name="Nuclear fuel fabrication plant" number="209263" standardDeviation95="1.4999999999999998" subCategory="uranium\enriched\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.0121" name="Sulfate" number="49702" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.083" name="Calcium" number="46860" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="few recent data, or too old data&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.8" name="Uranium alpha" number="42337" standardDeviation95="2.9999999999999996" subCategory="river" uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.0033" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="2.0000000000000004" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="few recent data, or too old data&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.0E-4" name="Uranium alpha" number="1774" standardDeviation95="2.9999999999999996" subCategory="low. pop." uncertaintyType="1" unit="kBq">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.03" name="Nitrogen oxides" number="79243" standardDeviation95="2.0000000000000004" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.00894" name="Sodium" number="60865" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="old reference &amp; own assumption&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="32.0" name="Light fuel oil, burned in industrial furnace 1MW, non-modulating" number="319298" standardDeviation95="2.0000000000000004" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="4.02E-4" name="Magnesium" number="78821" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="industry water" location="RER" meanValue="300.0" name="Water, decarbonised, at plant" number="605508" standardDeviation95="2.0000000000000004" subCategory="industry water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.00313" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="binders" location="CH" meanValue="0.0065" name="Cement, unspecified, at plant" number="330147" standardDeviation95="2.0000000000000004" subCategory="binders" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-02-0" category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.47E-4" name="Nickel" number="91239" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="6.39E-5" name="Boron" number="23758" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="nuclear waste" generalComment="own assumption&#10;" infrastructureProcess="false" localCategory="nuclear waste" localSubCategory="unspecified" location="CH" meanValue="3.33E-4" name="Low active radioactive waste" number="258901" standardDeviation95="2.9999999999999996" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="standard&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="2.85" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.1" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007727-37-9" category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.0703" name="Nitrogen" number="78458" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.0894" name="VOC, volatile organic compounds, unspecified origin" number="160203" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.85E-4" name="Sulfite" number="52076" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.75E-5" name="Molybdenum" number="85217" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007723-14-0" category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="2.17E-4" name="Phosphorus" number="67972" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="calculated&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="uranium\enriched" location="CH" meanValue="6.12" name="Uranium, enriched 4.2% for pressure water reactor" number="256309" standardDeviation95="1.1" subCategory="uranium\enriched" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="014798-03-9" category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.0581" name="Ammonium, ion" number="89863" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-89-6" category="emissions to water" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.53E-4" name="Iron" number="91273" standardDeviation95="2.0000000000000004" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="old reference&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="0.135" name="Treatment, sewage, unpolluted, to wastewater treatment, class 3" number="230660" standardDeviation95="2.0000000000000004" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

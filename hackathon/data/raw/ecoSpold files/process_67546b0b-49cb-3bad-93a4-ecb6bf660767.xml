@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="311540" timestamp="2023-08-28T15:02:54.142+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="Use of a solar system excluding the necessary auxiliary heating. The simulation is made for solar collector systems in the city of Zurich. The annual irradiation amounts to 1249 kWh/m2. 37% solar fraction, 30° inclination, 22° southeast orientation.;&#10;UUID: 67546b0b-49cb-3bad-93a4-ecb6bf660767" includedProcesses="Delivery of heat with a solar system including maintenance and electricity use for operation. Excluding the necessary auxiliary heating." infrastructureProcess="false" localCategory="heat" localName="Heat, at 20 m2 Cu collector, multiple dwelling, slanted roof, for hot water" localSubCategory="solar" name="Heat, at 20 m2 Cu collector, multiple dwelling, slanted roof, for hot water" subCategory="solar" unit="MJ"/>
+        <geography location="CH" text="Solar collector system operated in CH."/>
+        <technology text="Solar collector system for hot water installed on the roof of a house."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of simulation.">
+          <startDate>2010-01</startDate>
+          <endDate>2010-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2010-12-17T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="Total heat delivered by flat plate collectors in CH in 2008 was 213'500 MWh." samplingProcedure="Own simulation. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Jungbluth N." firstAuthor="Stucki M." nameOfEditors="-" number="158046" placeOfPublications="Uster, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Stucki M., Jungbluth N. (2010) Update of the Life Cycle Inventories of Solar Collectors. Volume: 352. ESU-services Ltd.. Uster, CH.\nType: Separate publication\nFirst author: Stucki M.\nOther authors: Jungbluth N.\nYear: 2010\nPlace of publication: Uster, CH\nPublisher: ESU-services Ltd.\nVolume No: 352\n" title="2012 - Update LCI solar collectors - Stucki" titleOfAnthology="-" volumeNo="352" year="2012"/>
+        <validation proofReadingDetails="Proof reading validation: 17.12.2010; Other validation: \\Server\E\ESU-Docs\Projekte laufend\352 Sonnenkollektoranlagen\Berechnung\[neueingabe-Kollektoren-2.2+V1.0.xlsx]X-Process;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137832"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137832" referenceToPublishedSource="158046"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="Matthias Stucki" number="137832" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="solar" location="CH" meanValue="1.0" name="Heat, at 20 m2 Cu collector, multiple dwelling, slanted roof, for hot water" number="311540" subCategory="solar" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,na,1,1,1,na); 250km per plant for maintenance&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.000075211" name="Transport, freight, lorry, 3.5t gross weight, fleet average" number="498982" standardDeviation95="3.0033" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,na,1,1,1,na); Simulation&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="solar\infrastructure" location="CH" meanValue="1.1142E-6" name="Solar system, 20 m2 Cu flat plate collector, on slanted roof, hot water" number="440217" standardDeviation95="3.0033" subCategory="solar\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,na,1,1,1,na); Simulation&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.0040469" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="1.0713999999999997" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,na,1,1,1,na); Simulation and solar energy&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.1363" name="Heat, waste" number="46930" standardDeviation95="1.0713999999999997" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(2,na,1,1,1,na); Includes losses in the system&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in air" meanValue="1.1217" name="Energy, solar, converted" number="82305" standardDeviation95="1.0713999999999997" subCategory="in air" uncertaintyType="1" unit="MJ">
+        <inputGroup>4</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

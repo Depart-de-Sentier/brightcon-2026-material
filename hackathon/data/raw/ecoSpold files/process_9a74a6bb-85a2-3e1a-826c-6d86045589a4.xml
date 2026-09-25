@@ -1,0 +1,78 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="449417" timestamp="2023-08-28T15:03:07.400+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="minerals" datasetRelatesToProduct="true" generalComment="The multi-output-process 'mining, gypsum' delivers the co-products 'gypsum, mineral, at mine' and 'anhydrite rock, at mine'. Allocation is done by weight. In some mines anhydrite is not exploited but left in the mine. Since the electricity consumption has a relevant share on the total energy consumption, the choice of the energy mix is important. For gypsum mined in countries with high fossil share in the electricity mix this module has to be adopted accordingly.;&#10;CAS number: 013397-24-5; &#10;Formula: CaSO4 * 2 H2O; &#10;UUID: 9a74a6bb-85a2-3e1a-826c-6d86045589a4" includedProcesses="mining and crushing of gypsum and anhydrite" infrastructureProcess="false" localCategory="minerals" localName="Anhydrite rock, at mine" localSubCategory="unspecified" name="Anhydrite rock, at mine" subCategory="unspecified" unit="kg"/>
+        <geography location="CH" text="data for Switzerland"/>
+        <technology text="open pit mining; composition of products: 65% gypsum, 34% anhydrite, 1% others."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2005-07-19T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="environmental report, literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Jungbluth N., Kuenniger T., Lehmann M., Thalmann P." firstAuthor="Kellenberger D." nameOfEditors="-" number="137820" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ESU-services Ltd., Bau- und Umweltchimie" sourceNumber="0" sourceType="4" text="Kellenberger D., Althaus H.-J., Jungbluth N., Künniger T. (2007) Life Cycle Inventories of Building Products. Final report ecoinvent data v2.0. Volume: 7. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Kellenberger D.\nOther authors: Althaus H.-J., Jungbluth N., Künniger T.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 7\n" title="2007 - LCI building products - Kellenberger" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="7" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="137747"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="139614"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="139614" referenceToPublishedSource="137820"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="minerals" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="1.0" name="Anhydrite rock, at mine" number="449417" subCategory="unspecified" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(4,4,1,1,1,5); &#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="1.8663E-5" name="Transformation, to mineral extraction site" number="81565" standardDeviation95="2.11" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="Others" generalComment="(1,4,1,1,3,5); &#10;" infrastructureProcess="false" localCategory="Others" localSubCategory="unspecified" location="RER" meanValue="7.7982E-5" name="Blasting" number="222941" standardDeviation95="1.3199999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="(5,4,1,1,3,5); &#10;" infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="1.0593E-8" name="Conveyor belt, at plant" number="325402" standardDeviation95="3.3299999999999996" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="m">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(1,5,2,3,4,3); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="8.0706E-5" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="3.28" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(4,4,1,1,1,5); &#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="1.8663E-5" name="Transformation, from unknown" number="54270" standardDeviation95="2.11" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,4,1,1,3,5); &#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="9.2408E-4" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.3400000000000003" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="(3,4,1,1,3,5); &#10;" infrastructureProcess="true" localCategory="minerals" localSubCategory="infrastructure" location="CH" meanValue="5.3064E-11" name="Mine, limestone" number="349014" standardDeviation95="3.12" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="(3,4,1,1,3,5); &#10;" infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="4.6709E-6" name="Industrial machine, heavy, unspecified, at plant" number="563077" standardDeviation95="3.12" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="013397-24-5" category="resources" generalComment="definition&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in ground" meanValue="1.0088235294117645" name="Gypsum" number="81843" standardDeviation95="1.0" subCategory="in ground" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="Others" generalComment="(4,4,1,1,1,5); &#10;" infrastructureProcess="false" localCategory="Others" localSubCategory="unspecified" location="CH" meanValue="1.8663E-5" name="Recultivation, limestone mine" number="386986" standardDeviation95="2.11" subCategory="unspecified" uncertaintyType="1" unit="m2">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,4,1,1,3,5); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.0033291" name="Heat, waste" number="46930" standardDeviation95="1.3400000000000003" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(4,4,1,1,1,5); &#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="1.8663E-4" name="Occupation, mineral extraction site" number="151625" standardDeviation95="1.63" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,2,3,4,3); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.0011299" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="1.8300000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="(1,4,1,1,3,5); &#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="0.018159" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="2.11" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(1,5,2,3,4,3); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="4.0353E-4" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="2.2800000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

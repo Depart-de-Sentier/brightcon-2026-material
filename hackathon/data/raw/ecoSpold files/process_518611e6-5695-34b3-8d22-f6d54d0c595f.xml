@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="RStudio" number="435636" timestamp="2025-03-31T15:02:08">
+    <metaInformation>
+      <processInformation>
+        <timePeriod dataValidForEntirePeriod="True" text="Technology and vehicle lightweighting factors match manufacture year of 2020">
+          <startDate>2020-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <referenceFunction amount="1" category="transport systems" datasetRelatesToProduct="True" generalComment=" Power: 660 kW. Lifetime: 2800000 km. Annual kilometers: 70000 km. Number of passengers: 38. Curb mass: 54000 kg. Lightweighting of glider: 0%. Emission standard: None. Service visits throughout lifetime: every year for 40 years. Range: 0 km. Battery capacity: 0 kWh. Battery mass: 0 kg. Battery replacement throughout lifetime: 0. Fuel tank capacity: 0 kWh. Fuel mass: 0 kg. Source: Sacchi R., Bauer C. Life cycle inventories for on-road vehicles. Paul Scherrer Institut, 2023. DOI: 10.5281/zenodo.5156043. UUID: 518611e6-5695-34b3-8d22-f6d54d0c595f" infrastructureIncluded="True" infrastructureProcess="True" localCategory="transport systems" localName="Transport, Tram, electric, 2020" localSubCategory="road\Transformation" name="Transport, Tram, electric, 2020" subCategory="road\Transformation" unit="personkm"/>
+        <geography location="CH" text="Unspecified"/>
+        <technology text="Power: 660 kW. Lifetime: 2800000 km. Annual kilometers: 70000 km. Number of passengers: 38. Curb mass: 54000 kg. Lightweighting of glider: 0%. Emission standard: None. Service visits throughout lifetime: every year for 40 years. Range: 0 km. Battery capacity: 0 kWh. Battery mass: 0 kg. Battery replacement throughout lifetime: 0. Fuel tank capacity: 0 kWh. Fuel mass: 0 kg. Source: Sacchi R., Bauer C. Life cycle inventories for on-road vehicles. Paul Scherrer Institut, 2023. DOI: 10.5281/zenodo.5156043"/>
+        <dataSetInformation energyValues="0" impactAssessmentResult="False" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2025-03-31T15:02:08" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Unspecified" productionVolume="Unspecified" samplingProcedure="Unspecified" uncertaintyAdjustments="Unspecified"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="136752" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="doi: 10.5281/ZENODO.5156043" title="2023 - LCI on-road vehicles - Sacchi" year="2023"/>
+        <validation proofReadingDetails="Unspecified" proofReadingValidator="136748"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136751"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="False" dataPublishedIn="2" person="136749" referenceToPublishedSource="136752"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Brian Cox" number="136748" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Julien McTighe" number="136751" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="1.0" name="Transport, Tram, electric, 2020" number="435636" subCategory="road\Transformation" uncertaintyType="0" unit="personkm">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (4, 4, 2, 1, 1, 5)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="road\Transformation\Infrastructure" location="CH" meanValue="9.4e-09" name="Tram, electric, 2020" number="260436" standardDeviation95="1.318477871546865" subCategory="road\Transformation\Infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="Uncertainty from pedigree matrix: (4, 4, 2, 1, 1, 5)" infrastructureProcess="False" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.0972" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.318477871546865" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="Uncertainty from pedigree matrix: (4, 4, 2, 1, 1, 5)" infrastructureProcess="False" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="2.21e-07" name="Refrigerant R134a, at plant" number="191385" standardDeviation95="1.318477871546865" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Uncertainty from pedigree matrix: (4, 4, 2, 1, 1, 5)" infrastructureProcess="True" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="CH" meanValue="1.25e-08" name="Maintenance, tram" number="323551" standardDeviation95="1.318477871546865" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (4, 4, 2, 1, 1, 5)" meanValue="1.5e-07" name="Ethane, 1,1,1,2-tetrafluoro-, HFC-134a" number="648" standardDeviation95="1.318477871546865" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (4, 4, 2, 1, 1, 5)" meanValue="4.21e-09" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="1.318477871546865" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (4, 4, 2, 1, 1, 5)" meanValue="8.42e-09" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="1.318477871546865" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (4, 4, 2, 1, 1, 5)" meanValue="8.68e-09" name="Copper" number="644" standardDeviation95="1.318477871546865" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (4, 4, 2, 1, 1, 5)" meanValue="2.37e-07" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="1.318477871546865" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (4, 4, 2, 1, 1, 5)" meanValue="4.74e-07" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="1.318477871546865" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (4, 4, 2, 1, 1, 5)" meanValue="1.05e-07" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="1.318477871546865" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (4, 4, 2, 1, 1, 5)" meanValue="2.11e-07" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="1.318477871546865" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (4, 4, 2, 1, 1, 5)" meanValue="2.11e-09" name="Chromium" number="642" standardDeviation95="1.318477871546865" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="Uncertainty from pedigree matrix: (4, 4, 2, 1, 1, 5)" meanValue="4.21e-09" name="Nickel" number="656" standardDeviation95="1.318477871546865" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport waste" generalComment="Uncertainty from pedigree matrix: (4, 4, 2, 1, 1, 5)" infrastructureProcess="True" localCategory="transport waste" localSubCategory="unspecified" location="RER" meanValue="7.6e-05" name="Disposal, road" number="561882" standardDeviation95="1.318477871546865" subCategory="unspecified" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

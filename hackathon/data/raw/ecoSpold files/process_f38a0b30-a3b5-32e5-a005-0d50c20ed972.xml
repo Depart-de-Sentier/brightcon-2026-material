@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="465220" timestamp="2024-07-09T16:45:28">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="computers &amp; network" datasetRelatesToProduct="true" generalComment="The data set represents the mix of fixed network in Switzerland; UUID: f38a0b30-a3b5-32e5-a005-0d50c20ed972" includedProcesses="The datasets represents the split of fixed networks (cable, optic fibre, xDSL) in Switzerland for the reference year of 2014. The functional unit = 1 GB." infrastructureIncluded="false" infrastructureProcess="false" localCategory="computers &amp; network" localName="Use of fixed IP access network per GB" localSubCategory="use cases" name="Use of fixed IP access network per GB" subCategory="use cases" unit="unit">
+          <synonym>Übertragungsnetz</synonym>
+          <synonym>Zugriff</synonym>
+          <synonym>Festnetz</synonym>
+        </referenceFunction>
+        <geography location="CH" text="Data for Swiss networks"/>
+        <technology text="The mix of Swiss access transmission network, fixed."/>
+        <timePeriod dataValidForEntirePeriod="" text="Unspecified">
+          <startDate>2023-01</startDate>
+          <endDate>2029-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2024-07-09T16:45:28" type="1" version="2024"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Average technology" productionVolume="unknown" samplingProcedure="Literature &amp; own estimations" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Permana Ajie M., Beloin-Saint-Pierre D." firstAuthor="Raka Adrianto L." number="148303" placeOfPublications="St. Gallen, CH" publisher="Empa" sourceType="0" title="2024 - LCI ICT sector - Raka Adrianto" year="2024"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Mischa Zschokke, Company: Carbotech, Country: CH" proofReadingValidator="140702"/>
+        <validation/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="148302" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="false" dataPublishedIn="2" person="148302" referenceToPublishedSource="148303"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre" number="148302" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Mischa Zschokke" number="140702" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="computers &amp; network" generalComment="1 Unit = 1 GB of data transfer (based on OECD statistics for subscribers) " infrastructureProcess="false" localCategory="computers &amp; network" localSubCategory="use cases" location="CH" meanValue="1" name="Use of fixed IP access network per GB" number="465220" subCategory="use cases" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="computers &amp; network" generalComment="(2,3,1,2,2,5,BU:1.05) Shares based on https://www.oecd.org/digital/broadband/broadband-statistics/" infrastructureProcess="false" localCategory="computers &amp; network" localSubCategory="use cases" location="CH" meanValue="0.31" name="Use of cable, fixed IP access network per GB" number="293278" standardDeviation95="1.23" subCategory="use cases" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="computers &amp; network" generalComment="(2,3,1,2,2,5,BU:1.05) Shares based on https://www.oecd.org/digital/broadband/broadband-statistics/" infrastructureProcess="false" localCategory="computers &amp; network" localSubCategory="use cases" location="CH" meanValue="0.09" name="Use of optic fibre, fixed IP access network per GB" number="479559" standardDeviation95="1.23" subCategory="use cases" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="computers &amp; network" generalComment="(2,3,1,2,2,5,BU:1.05) Shares based on https://www.oecd.org/digital/broadband/broadband-statistics/" infrastructureProcess="false" localCategory="computers &amp; network" localSubCategory="use cases" location="CH" meanValue="0.6" name="Use of xDSL, fixed IP access network per GB" number="303569" standardDeviation95="1.23" subCategory="use cases" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

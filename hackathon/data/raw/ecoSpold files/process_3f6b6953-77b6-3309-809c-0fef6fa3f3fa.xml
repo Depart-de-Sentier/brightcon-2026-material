@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="210410" timestamp="2023-08-28T15:02:58.737+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity by fuel" datasetRelatesToProduct="true" generalComment="The dataset consists of figures of the Itaipu hydropower station complemented with European data. The lifetime is assumed to be 150 years for the dams and 80 years for the rest of the materials. The data set describes a mix and is therefore not representative for individual plants. This dataset recalculated based on Itaipu Binacional, Frischknecht et al. (1996) and Bauer (2007), complemented with data from Vattenfall (2008).;&#10;UUID: 3f6b6953-77b6-3309-809c-0fef6fa3f3fa" includedProcesses="The dataset includes the most important materials used for the construction of an average hydropower reservoir in Brazil and its disposal/recycling. Furthermore, transports and energy used for the construction as well as particle emissions due to the construction activities are included." infrastructureProcess="true" localCategory="electricity by fuel" localName="Reservoir hydropower plant" localSubCategory="hydro\reservoir\infrastructure" name="Reservoir hydropower plant" subCategory="hydro\reservoir\infrastructure" unit="p"/>
+        <geography location="BR" text="&lt;null&gt;"/>
+        <technology text="The data is not representative for individual reservoir hydropower stations. Capacity: 95MW"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>1945-01</startDate>
+          <endDate>2008-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2012-10-22T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Flury K." nameOfEditors="-" number="136376" placeOfPublications="Uster, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Flury K., Frischknecht R. (2011) Life Cycle Inventory of hydropower. Project report. Volume: 349. ESU-services Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: Flury K.\nOther authors: Frischknecht R.\nYear: 2011\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: ESU-services Ltd.\nVolume No: 349\n" title="2012 - LCI hydroelectric power generation - Flury" titleOfAnthology="Project report" volumeNo="349" year="2012"/>
+        <validation proofReadingDetails="Proof reading validation: 22.10.2012; Other validation: \\Server\e\ESU-Docs\Projektablage\349 Sachbilanzen erneuerbare Energie DE\DatenErgebnisse\[Ecospold_reservoir_CH_v2.2.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136375"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136375" referenceToPublishedSource="136376"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Karin Flury" number="136375" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity by fuel" generalComment="BRAZIL&#10;" infrastructureProcess="true" localCategory="electricity by fuel" localSubCategory="hydro\reservoir\infrastructure" location="BR" meanValue="1.0" name="Reservoir hydropower plant" number="210410" subCategory="hydro\reservoir\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(4,4,1,3,1,4,BU:1.05); Concrete for dams, buildings and other infrastructure; based on data of the Itaipu&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="3900000.0" name="Concrete, normal, at plant" number="367058" standardDeviation95="1.2620910620000003" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="(5,5,4,5,1,4,BU:1.05); Recycling of reinforced infrastructure; based on Frischknecht (1996), assumed recycling rate: 100%&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="4.186186607E8" name="Disposal, building, reinforced concrete, to recycling" number="182743" standardDeviation95="1.6510818629999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na,BU:2); Transport of materials to the construction site; based on Bertschinger (1959)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="9.825E9" name="Transport, freight, rail" number="149864" standardDeviation95="2.09499413" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,5,4,5,1,4,BU:1.05); From electricity&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="3.697821811E10" name="Heat, waste" number="46930" standardDeviation95="1.6510818629999997" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(4,5,3,5,5,5,BU:2); Particle emissions during the construction; based on BUWAL (2001, 2003)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1147500.0" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="2.825405203" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(5,5,4,5,1,4,BU:1.05); Turbines and generators; based on data of the Itaipu&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="1.3126875E7" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="1.6510818629999997" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(5,5,4,5,1,4,BU:1.05); Tubes and pipes; recalculated based on recalculated based on Bertschinger (1959), Condrau (1962), KVR (1968), Salanfe (1951), Walther und Fetz (1963; 1971), Weber (1965; 1971) and other sources.&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="5.51465474E7" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.6510818629999997" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(4,5,3,5,5,5,BU:3); Particle emissions during the construction; based on BUWAL (2001, 2003)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="202500.0" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="3.832863231" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(5,5,4,5,1,4,BU:1.05); Electric cables; Vattenfall (2008)&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="1.1138238E8" name="Copper, at regional storage" number="328058" standardDeviation95="1.6510818629999997" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="(5,5,4,5,1,4,BU:1.05); Non-inforced infrastructure left on-site at the end of the use phase of the power station (especially the dams, tunnels, galleries); based on Frischknecht et al. (1996)&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="8.173939899E9" name="Disposal, building, concrete, not reinforced, to final disposal" number="496088" standardDeviation95="1.6510818629999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,5,4,5,1,5,BU:1.05); Tunnels and galleries; recalculated based on Béguin et al. 1963, Bertschinger 1959, Blenio Kraftwerke 1968, Condrau 1962, KVR 1963; 1968, Töndury 1956; 1964, Weber et al. 1965 and other sources.&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="CH" meanValue="2.240110731E8" name="Explosives, tovex, at plant" number="442426" standardDeviation95="1.6904023610000003" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(5,5,4,5,1,4,BU:1.05); Electricity supply for the construction; recalculated based on Bertschinger (1959), Blenio Kraftwerke (1968), KVR (1968), Töndury (1964), Walther und Fetz (1963), Weber et al. (1965), BFE (1992) and other sources.&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="BR" meanValue="1.027172725E10" name="Electricity, medium voltage, at grid" number="235155" standardDeviation95="1.6510818629999997" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="(4,4,1,3,1,4,BU:1.05); Excavation; based on data of the Itaipu&#10;" infrastructureProcess="false" localCategory="construction processes" localSubCategory="civil engineering" location="CH" meanValue="2.36E7" name="Excavation, hydraulic digger, average" number="432664" standardDeviation95="1.2620910620000003" subCategory="civil engineering" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(5,5,4,5,1,4,BU:1.05); Buildings and other infrastructure; recalculated based on Bertschinger (1959), Condrau (1962), KVR (1968), Salanfe (1951), Walther und Fetz (1963; 1971), Weber (1965; 1971) and other sources.&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="1.255855982E7" name="Reinforcing steel, at plant" number="545988" standardDeviation95="1.6510818629999997" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(4,5,3,5,5,5,BU:1.5); Particle emissions during the construction; based on BUWAL (2001, 2003)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="4050000.0" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="2.394928991" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="(5,5,4,5,1,4,BU:1.05); Recycling of turbines, generators, tubes and pipes; assumed recycling rate: 100%&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="6.82734224E7" name="Disposal, building, reinforcement steel, to recycling" number="150515" standardDeviation95="1.6510818629999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na,BU:2); Transport of materials to the construction site; based on Bertschinger (1959)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="1800000000" name="Transport, freight, lorry, 32t-40t gross weight, fleet average" number="243234" standardDeviation95="2.09499413" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="188041" timestamp="2023-08-28T15:02:48.530+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="transport systems" datasetRelatesToProduct="true" generalComment="Inventory refers to the entire transport life cycle. For rail infrastructure, expenditures and environmental interventions due to construction, renewal and disposal of rail tracks have been allocated based on the share of Gross tonne kilometre performance operated with electricity (38815 Mio. Gtkm).  Expenditures due to operation of the rail infrastructure, as well as land use have been allocated based on the share of the yearly train kilometre performance operated with electricity (12481 Mio. tkm).  For the operation of goods transportation average data by rail in Italy were used. The data has been determined top down, by combining the total yearly energy consumption and the yearly performance of goods transportation. Shunting processes are not included.;&#10;UUID: 41566e6c-7084-33c7-a52b-75402ba34868" includedProcesses="The inventory includes the actual energy consumption for an average goods train in Italy using electro energy. In addition also the production, maintenance and disposal of vehicles and railyway tracks is accounted for." infrastructureProcess="false" localCategory="transport systems" localName="Transport, freight, rail, electricity only" localSubCategory="train" name="Transport, freight, rail, electricity only" subCategory="train" unit="tkm"/>
+        <geography location="IT" text="&lt;null&gt;"/>
+        <technology text="Average technology"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications">
+          <startDate>2009-01</startDate>
+          <endDate>2015-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-11-13T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Train and rail track demand per tkm was used from data of Switzerland and extrapolated with the tkm of IT" percent="100" productionVolume="12481Mio tkm" samplingProcedure="Statistics " uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Krebs L." nameOfEditors="-" number="137964" placeOfPublications="Uster, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="3" text="L. Krebs, R. Frischknecht (2020) Aktualisierung Ökobilanzdaten mobitool 2020, Teil 1. Project report. Volume: 713. treeze Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: L. Krebs\nOther authors: R. Frischknecht\nYear: 2020\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: treeze Ltd.\nVolume No: 713\n" title="2020 - Update Mobitool 2020 - Krebs" titleOfAnthology="Project report" volumeNo="713" year="2020"/>
+        <validation proofReadingDetails="Proof reading validation: 10.11.2020; Other validation: G:\Projekte laufend\713 Aktualisierung mobitool 2020\EcoSpold\[713_Transport-Train-freight-AT,IT,FR,DE-electricity only__EIV2_v0.2.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137963"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137963" referenceToPublishedSource="137964"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Luana Krebs" number="137963" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" generalComment="ITALY&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="IT" meanValue="1.0" name="Transport, freight, rail, electricity only" number="188041" subCategory="train" uncertaintyType="0" unit="tkm">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-47-3" category="emissions to air" generalComment="(3,3,1,3,1,1,BU:5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="6.759E-11" name="Chromium" number="642" standardDeviation95="5.018399999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,4,1,3,4,5,BU:3); estimation based on the demand per vkm from CH (2,08E-6unit/vkm)) and the average load; SBB, Zahlen und Fakten 2014&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="RER" meanValue="5.4862E-9" name="Goods wagon" number="301872" standardDeviation95="3.2876000000000003" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(3,3,1,3,1,1,BU:1.5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="5.9E-11" name="Manganese" number="32965" standardDeviation95="1.5217" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-50-8" category="emissions to water" generalComment="(3,3,1,3,1,1,BU:3); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="4.2716E-11" name="Copper" number="91271" standardDeviation95="3.0162000000000004" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport waste" generalComment="(2,4,1,3,4,5,BU:3); same demand as for rail track; SBB Zahlen und Fakten 2014, UIC Statistic 2012&#10;" infrastructureProcess="true" localCategory="transport waste" localSubCategory="unspecified" location="CH" meanValue="1.0283E-4" name="Disposal, railway track" number="400291" standardDeviation95="3.2876000000000003" subCategory="unspecified" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,3,1,3,1,1,BU:5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.6622E-10" name="Manganese" number="31635" standardDeviation95="5.018399999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,3,1,3,1,1,BU:5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="2.1272E-11" name="Antimony" number="9302" standardDeviation95="5.018399999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-92-1" category="emissions to soil" generalComment="(3,3,1,3,1,1,BU:1.5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="2.5187E-12" name="Lead" number="91759" standardDeviation95="1.5217" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,4,1,3,4,5,BU:3); estimation based on track demand per Gtkm for CH (3,31E-8km/Gtkm) and the specific gross transport performance per tkm (Gtkm/tkm)); SBB Zahlen und Fakten 2014, UIC Statistic 2012&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="CH" meanValue="1.0283E-4" name="Railway track" number="213626" standardDeviation95="3.2876000000000003" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,4,1,3,4,5,BU:1.05); electricity consumption 0,00kWh/tkm, assumed losses 8,11%; UIC Statistik 2016 &amp; 2018, SBB pers. Correspondence, Okt. 2020&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="IT" meanValue="0.036987" name="Electricity, medium voltage, railway, at grid" number="566645" standardDeviation95="1.5846" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to air" generalComment="(3,3,1,3,1,1,BU:5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="4.1946E-11" name="Zinc" number="666" standardDeviation95="5.018399999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport waste" generalComment="(2,4,1,3,4,5,BU:3); same demand as for locomotive; SBB Zahlen und Fakten 2014, UIC Statistic 2012&#10;" infrastructureProcess="true" localCategory="transport waste" localSubCategory="unspecified" location="RER" meanValue="6.4023E-10" name="Disposal, locomotive" number="406807" standardDeviation95="3.2876000000000003" subCategory="unspecified" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,1,3,1,1,BU:1.05); default value;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.13315" name="Heat, waste" number="46930" standardDeviation95="1.0907" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-92-1" category="emissions to air" generalComment="(3,3,1,3,1,1,BU:5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="7.0959E-12" name="Lead" number="36341" standardDeviation95="5.018399999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to soil" generalComment="(3,3,1,3,1,1,BU:1.5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="1.4889E-11" name="Zinc" number="91717" standardDeviation95="1.5217" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(3,3,1,3,1,1,BU:1.5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="7.5505E-12" name="Antimony" number="50040" standardDeviation95="1.5217" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="non material emissions" generalComment="(3,3,5,5,5,5,BU:1.5); ; Ecological Scarcity method 2013; Frischknecht &amp; Büsser Knöpfel 2013&#10;" infrastructureProcess="false" localCategory="non material emissions" localSubCategory="unspecified" meanValue="1.0" name="Noise, rail, freight train" number="59793" standardDeviation95="2.532" subCategory="unspecified" uncertaintyType="1" unit="tkm">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(3,3,1,3,1,1,BU:1.5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="2.3991E-11" name="Chromium" number="20664" standardDeviation95="1.5217" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,4,1,3,4,5,BU:3); estimation based on the demand per vkm from CH (2,43E-7unit/vkm)) and the average load; SBB, Zahlen und Fakten 2014&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="RER" meanValue="6.4023E-10" name="Locomotive" number="348643" standardDeviation95="3.2876000000000003" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,4,1,3,4,5,BU:3); same demand as for goods wagon; SBB, Zahlen und Fakten 2014&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="RER" meanValue="5.4862E-9" name="Maintenance, goods wagon" number="459257" standardDeviation95="3.2876000000000003" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to water" generalComment="(3,3,1,3,1,1,BU:5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="4.0754E-10" name="Zinc" number="91189" standardDeviation95="5.018399999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-50-8" category="emissions to air" generalComment="(3,3,1,3,1,1,BU:5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="4.2565E-10" name="Copper" number="644" standardDeviation95="5.018399999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,4,1,3,4,5,BU:3); same demand as for locomotive; SBB, Zahlen und Fakten 2014&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="RER" meanValue="6.4023E-10" name="Maintenance, locomotive" number="452151" standardDeviation95="3.2876000000000003" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-50-8" category="emissions to soil" generalComment="(3,3,1,3,1,1,BU:1.5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="1.5108E-10" name="Copper" number="91771" standardDeviation95="1.5217" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(3,3,1,3,1,1,BU:1.5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="4.4935E-9" name="Oils, unspecified" number="79079" standardDeviation95="1.5217" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(3,3,1,3,1,1,BU:1.5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="industrial" meanValue="1.3714E-8" name="Iron" number="40759" standardDeviation95="1.5217" subCategory="industrial" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,4,1,3,4,5,BU:3); same demand as for rail track; SBB Zahlen und Fakten 2014, UIC Statistic 2012&#10;" infrastructureProcess="true" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="CH" meanValue="1.0283E-4" name="Operation, maintenance, railway track" number="260942" standardDeviation95="3.2876000000000003" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="my">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,3,1,3,1,1,BU:5); estimation based on the emission factors per Gkm of freight transport in Switzerland and specific gross ton kilometric performance per tkm (Gtkm/tkm); Data from ANABEL; Personal correspondence Gunter Adolf, SBB, June 2016, UIC statistic 2012&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="3.8637E-8" name="Iron" number="22970" standardDeviation95="5.018399999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

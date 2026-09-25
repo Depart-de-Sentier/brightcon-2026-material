@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="224586" timestamp="2023-08-28T15:03:18.138+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="water" datasetRelatesToProduct="true" generalComment="na;&#10;UUID: 5c2c05cd-e093-3517-82db-f9a2b1389b70" includedProcesses="This dataset describes the transport of LNG on a LNG tanker. It includes leakage and the use of evaporated natural gas for the turbine.; Geography: The data stems from the maritime sector of the Snam fleet (Italy) 1998/1999." infrastructureProcess="false" localCategory="water" localName="Transport, liquefied natural gas, freight ship" localSubCategory="unspecified" name="Transport, liquefied natural gas, freight ship" subCategory="unspecified" unit="tkm"/>
+        <geography location="OCE" text=" The data stems from the maritime sector of the Snam fleet (Italy) 1998/1999."/>
+        <technology text="The fleet of SNAM is for one half very recent (2 boats went in service 1997 and 1998). All tankers are equipped with a turbine to burn boil-off gas, which reduces the leakages of natural gas. Italy imports about 3% of the total transported LNG gas in the world. The losses of natural gas amount to 0.094m3/t LNG transported (0.0696 m3/t in 1999)."/>
+        <timePeriod dataValidForEntirePeriod="true" text="&lt;null&gt;">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-03-31T18:52:37.053+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="The emissions data are calculated on the basis of the energy consumption and with the emissions of a standard turbine." percent="0" productionVolume="136.96 e9 Nm3 (world)" samplingProcedure="unknown " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Stucki M., Flury K., Itten R., Tuchschmid M." firstAuthor="Frischknecht R." nameOfEditors="-" number="165328" placeOfPublications="Uster, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Schori S., Frischknecht R. (2011) Life Cycle Inventories of energy systems. Project report. Volume: 407. ESU-services Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: Schori S.\nOther authors: Frischknecht R.\nYear: 2011\nTitle of anthology: Project report\nPlace of publication: Uster, CH\nPublisher: ESU-services Ltd.\nVolume No: 407\n" title="2012 - Prim. energy fact. of energy systems - Frischknecht" titleOfAnthology="Project report" volumeNo="407" year="2012"/>
+        <validation proofReadingDetails="Proof reading validation: 13.12.2011; Other validation: \\server\e\ESU-Docs\Projekte laufend\407 Update LCI Energiesysteme\EcoSpold\EcoSpold NG\[407_LNG processes.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="165327"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="165327" referenceToPublishedSource="165328"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Salome Schori" number="165327" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="water" generalComment="Oceanic&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="unspecified" location="OCE" meanValue="1.0" name="Transport, liquefied natural gas, freight ship" number="224586" subCategory="unspecified" uncertaintyType="0" unit="tkm">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(1,1,1,1,1,1,BU:1.05); estimates for waste transport;&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="2.18E-4" name="Disposal, bilge oil, 90% water, to hazardous waste incineration" number="315922" standardDeviation95="1.0500000000000003" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="(2,4,1,1,1,5,BU:1.05);  emissions from standard turbine;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="0.0212" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.2423" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(2,4,1,1,1,5,BU:1.5);  emissions from standard turbine;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="2.12E-6" name="Methane, fossil" number="90787" standardDeviation95="1.5798000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,4,1,1,1,5,BU:3); assumptions on the basis of older data;&#10;" infrastructureProcess="true" localCategory="water" localSubCategory="operations\infrastructure" location="RER" meanValue="2.43E-11" name="Operation, maintenance, port" number="193765" standardDeviation95="3.0610999999999997" subCategory="operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="(2,3,1,1,3,5,BU:1.5);  emissions from standard turbine;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="7.22E-5" name="Nitrogen oxides" number="79243" standardDeviation95="1.6249000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000630-08-0" category="emissions to air" generalComment="(2,4,1,1,1,5,BU:5);  emissions from standard turbine;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.49E-5" name="Carbon monoxide, fossil" number="641" standardDeviation95="5.069600000000001" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(1,1,1,1,1,1,BU:3); assumptions on the basis of older data;&#10;" infrastructureProcess="true" localCategory="water" localSubCategory="operations\infrastructure" location="OCE" meanValue="2.43E-11" name="Transoceanic freight ship" number="192024" standardDeviation95="2.9999999999999996" subCategory="operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(1,1,1,1,1,1,BU:2);  environmental report italian company;&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.0000109" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.0000000000000004" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(1,2,1,1,1,1,BU:3); assumptions on the basis of older data;&#10;" infrastructureProcess="true" localCategory="water" localSubCategory="operations\infrastructure" location="RER" meanValue="2.43E-11" name="Maintenance, transoceanic freight ship" number="542153" standardDeviation95="3.0004999999999997" subCategory="operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(2,3,1,1,3,5,BU:1.05);  estimates based on environmental report italian company;&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.0112" name="Water, salt, ocean" number="7" standardDeviation95="1.3117000000000003" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(2,3,1,1,3,5,BU:1.5);  emissions from standard turbine;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="3.72E-7" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.6249000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="010024-97-2" category="emissions to air" generalComment="(2,3,1,1,3,5,BU:1.5);  emissions from standard turbine;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="3.72E-7" name="Dinitrogen monoxide" number="646" standardDeviation95="1.6249000000000002" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(1,1,1,1,1,1,BU:1.05);  environmental report italian company;&#10;" infrastructureProcess="false" localCategory="natural gas" localSubCategory="production" location="DZ" meanValue="0.00935" name="Natural gas, at production" number="555597" subCategory="production" uncertaintyType="0" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

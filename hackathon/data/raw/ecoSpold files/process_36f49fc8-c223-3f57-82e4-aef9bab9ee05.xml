@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="202272" timestamp="2026-02-16T15:26:16.319+01:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="metals" datasetRelatesToProduct="true" generalComment="Represents market of reinforcing steel in Switzerland. Storage volume is assumed to remain constant over time. 45% of reinforcing steel is imported mainly from D, FR, IT and PL, 55% is produced in CH. The transportation of the imports is taken into account in the corresponding sub-process. It is assumed that the locally produced steel will be transported by train at an average distance of 90 kilometres in Switzerland.  &#10;UUID: 36f49fc8-c223-3f57-82e4-aef9bab9ee05" infrastructureIncluded="false" infrastructureProcess="false" localCategory="metals" localName="Reinforcing steel, at regional storage" localSubCategory="extraction" name="Reinforcing steel, at regional storage" subCategory="extraction" unit="kg"/>
+        <geography location="CH" text="Data relate to plants in Switzerland and Europe"/>
+        <technology text="Industry data."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startYear>2020</startYear>
+          <endYear>2025</endYear>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2026-02-16T14:52:42.970+01:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Data from literature"/>
+        <source additionalAuthors="Giger J." firstAuthor="Zschokke M." number="614850" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceType="0" text="On behalf of the Federal Office for the Environment, Bern" title="2025 - Update and suppl. LCI reinforcing steel - Zchokke" year="2025"/>
+        <validation proofReadingDetails="none" proofReadingValidator="439798"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="640227" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="640227" referenceToPublishedSource="614850"/>
+        <person address="anonymised" companyCode="" countryCode="CH" name="Simon Züst" number="439798" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" name="Jonas Giger" number="640227" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="metals" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="CH" meanValue="1.0" name="Reinforcing steel, at regional storage" number="202272" subCategory="extraction" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,2,1,1,1,nA,BU:1.05); production from Swiss plants" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="CH" meanValue="0.55" name="Reinforcing steel, at plant" number="495457" standardDeviation95="1.0744000000000002" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,2,1,1,1,nA,BU:1.05); import of European reinforcing steel" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="0.45" name="Reinforcing steel, import to CH" number="197932" standardDeviation95="1.0744000000000002" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,1,1;1;5,BU:2) - own assumption: average transportation distance by train in CH: 80 - 100 km 0.55 kg * 90km" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="0.0495" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.051674395005123" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

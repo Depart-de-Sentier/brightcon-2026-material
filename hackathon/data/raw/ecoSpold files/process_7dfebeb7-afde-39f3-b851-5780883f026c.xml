@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="432898" timestamp="2024-07-09T13:23:19.404+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="This dataset represents the supply of 1 kilogram of hydrogen. The hydrogen is distributed by pipeline over 2500 km to the regional storage (Geological cavity) and transported another 250 km to the consumer.  The hydrogen is produced by  Electrolysis, PEM, with electricity from Solar PV + Wind (MA) as feedstock. Transmission loss [% output]: 0.01%. Regional storage loss [% output]: 0.69.  For more information, refer to: Sacchi, R. and Bauer, C. LCA of Power-to-X processes and applications in the residential sector. Paul Scherrer Institut, 2023. Source: Sacchi, R. and Bauer, C. LCA of Power-to-X processes and applications in the residential sector. Paul Scherrer Institut, 2023.&#10;&#10; UUID: 7dfebeb7-afde-39f3-b851-5780883f026c" infrastructureProcess="false" localCategory="fuels" localName="Hydrogen supply, distributed by pipeline, produced by Electrolysis, PEM using electricity from Solar PV + Wind (MA)" localSubCategory="synthetic\transformation" name="Hydrogen supply, distributed by pipeline, produced by Electrolysis, PEM using electricity from Solar PV + Wind (MA)" subCategory="synthetic\transformation" unit="kg"/>
+        <geography location="CH"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024-01</startDate>
+          <endDate>2024-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2023-10-28T00:00:00.000+02:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Rolf Frischknecht, Telephone: 0041 44 940 61 91, E-mail: frischknecht@treeze.ch, Company: treeze, Country: CH" proofReadingValidator="136749"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="not defined" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\transformation" location="CH" meanValue="1.0" name="Hydrogen supply, distributed by pipeline, produced by Electrolysis, PEM using electricity from Solar PV + Wind (MA)" number="432898" subCategory="synthetic\transformation" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="pipeline" generalComment="0.22 Mton of hydrogen circulated over the pipeline's lifetime. Mass flow of 0.19 kg/second. {5;5;5;5;5;5;3;}" infrastructureProcess="false" localCategory="pipeline" localSubCategory="infrastructure" location="CH" meanValue="1.144E-6" name="Pipeline, hydrogen, low pressure distribution network" number="219186" standardDeviation95="4.247" subCategory="infrastructure" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="001333-74-0" category="emissions to air" formula="H2" generalComment="Hydrogen leaks. Equal to losses. {5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="air" localSubCategory="unspecified" meanValue="0.007043" name="Hydrogen" number="73124" standardDeviation95="2.565" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="To compress the H2 before and during distribution. {5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.143" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="2.565" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="pipeline" generalComment="124.81 Mton of hydrogen circulated over the pipeline's lifetime. Mass flow of 108.34 kg/second. {5;5;5;5;5;5;3;}" infrastructureProcess="false" localCategory="pipeline" localSubCategory="infrastructure" location="CH" meanValue="2.017E-8" name="Pipeline, hydrogen, high pressure transmission network" number="478998" standardDeviation95="4.247" subCategory="infrastructure" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="Hydrogen leak. {5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\transformation" location="MA" meanValue="0.007043" name="Hydrogen production, gaseous, 30 bar, from PEM electrolysis, from autonomous hybrid plant" number="361322" standardDeviation95="2.565" subCategory="synthetic\transformation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="Hydrogen input. {5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\transformation" location="MA" meanValue="1.0" name="Hydrogen production, gaseous, 30 bar, from PEM electrolysis, from autonomous hybrid plant" number="361322" standardDeviation95="2.565" subCategory="synthetic\transformation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="To compress the H2 before and during transmission. {5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="2.317" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="2.565" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="pipeline" generalComment="Hydrogen compressor for transmission pipeline. {5;5;5;5;5;5;3;}" infrastructureProcess="false" localCategory="pipeline" localSubCategory="infrastructure" location="RER" meanValue="3.227E-10" name="Compressor assembly for transmission hydrogen pipeline" number="539587" standardDeviation95="4.247" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="pipeline" generalComment="Geological cavity to store hydrogen. 30% of the supplied amount is stored. {5;5;5;5;5;5;3;}" infrastructureProcess="false" localCategory="pipeline" localSubCategory="infrastructure" location="CH" meanValue="0.3021" name="Geological hydrogen storage" number="300638" standardDeviation95="4.247" subCategory="infrastructure" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="To compress the H2 before storage. {5;5;5;5;5;5;1.05;}" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.6445" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="2.565" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

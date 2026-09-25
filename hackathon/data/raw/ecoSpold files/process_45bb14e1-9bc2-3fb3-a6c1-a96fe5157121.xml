@@ -1,0 +1,149 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="172733" timestamp="2024-10-01T16:16:10">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="transport systems" datasetRelatesToProduct="true" generalComment="The inventory contains all expenditure and material consumption for the construction of 1 km of subway structure. According to SBB (pers. communication, SBB, 2024), 1 km of undercrossing structure consists on average of 400 m of tunnel and 600 m of ramp. The tunnel is constructed using open-cast mining, i.e. the soil will be completely removed and backfilled with soil after the actual tunnel construction. For the excavation volume, it was assumed that the excavation would be 1 m deeper than the actual tunnel (11.6 m in total), the slope has a 60 degree incline and the width at ground level is therefore an additional 13.4 m. For the tunnel materials, it was assumed that the same amount of material isrequired as for conventional tunnelling. A uniform gradient of 0 m to -11.6 m over a length of 300 m was assumed for the construction of the ramps on both sides. The material consumption was approximated to that of the tunnel, taking into account that the ramp does not have a ceiling and that the walls are from 0 m high at the start of the ramp to 10.6 m high at the tunnel entrance (average height of 5.3 m over 300 m). The energy requirement for the construction work (excluding excavation) was derived from an LCA study by SBB on platform construction per tonne of material installed (Rüegsegger &amp; Schori, 2017).&#10;&#10;The subway structure also contains rails, as well as the traction current system and safety system.&#10;&#10;Like the tunnel, the service life of a subway structure is 135 years, whereby the service life of the rails is 25 years and that of the railway sleepers 40 years. After that, refurbishment or new construction is due. Maintenance, refurbishment or dismantling were not taken into account in these inventories.; UUID:45bb14e1-9bc2-3fb3-a6c1-a96fe5157121" includedProcesses="The inventory includes all the materials, energy and transport necessary for constructing a single track railway underpass. Excluded are maintenance and disposal" infrastructureIncluded="true" infrastructureProcess="false" localCategory="transport systems" localName="Railway track, with underpass construction, single track" localSubCategory="train\operations\infrastructure" name="Railway track, with underpass construction, single track" subCategory="train\operations\infrastructure" unit="kmy">
+          <synonym>0</synonym>
+        </referenceFunction>
+        <geography location="CH" text="Data apply to construction in Switzerland. "/>
+        <technology text="Average technology available on the market"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2022</startDate>
+          <endDate>2024</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2024-10-01T16:16:10" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" samplingProcedure="based on literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Roberts G., Kaegi T., Stettler C., Frick R., Walther U., Althaus H.-J." firstAuthor="Conrad S." number="140740" placeOfPublications="Basel, CH" publisher="Carbotech AG, INFRAS" sourceType="3" text="Report" title="2024 - LCA railway infrastructure - Kaegi" titleOfAnthology="Carbotech und INFRAS im Auftrag des BAV" year="2024"/>
+        <validation otherDetails="\\tsclient\Schreibtisch\WinShare\BAV Gleisinfrastruktur\Ecospold\[EcoSpold_Railway track with underpass construction v0.2.xlsx]X-Process" proofReadingDetails="01.10.2024" proofReadingValidator="137340"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137340" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="1" person="140737" referenceToPublishedSource="140740"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Gavin Roberts" number="140736" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Stefanie Conrad" number="140737" telephone="anonymised"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Roman Frick" number="202" telephone="anonymised"/>
+        <person address="anonymised" companyCode="INFRAS" countryCode="CH" email="anonymised" name="Ursina Walther" number="203" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="transport systems" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="CH" meanValue="1" name="Railway track, with underpass construction, single track" number="172733" subCategory="train\operations\infrastructure" uncertaintyType="0" unit="kmy">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(5,1,1,1,1,5,BU:1.5); 600m ramps; " meanValue="4200" name="Occupation, traffic area, rail network, CH" number="596706" standardDeviation95="1.8252" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(5,1,1,1,1,5,BU:1.5); 600m ramps with 6.7m average width; " meanValue="4020" name="Occupation, traffic area, rail/road embankment, CH" number="596707" standardDeviation95="1.8252" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(5,1,1,1,1,5,BU:2); ; " meanValue="60.889" name="Transformation, from unspecified" number="596705" standardDeviation95="2.2784" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(5,1,1,1,1,5,BU:2); ; " meanValue="31.111" name="Transformation, to traffic area, rail/road embankment" number="22950" standardDeviation95="2.2784" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(5,1,1,1,1,5,BU:2); ; " meanValue="29.778" name="Transformation, to traffic area, rail network" number="60953" standardDeviation95="2.2784" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="(5,1,1,3,3,5,BU:2); Excavation tunnel: 10.6 m tunnel height +1 m, 12.6 m tunnel track width,26m earth gap, 600/2 length of ramp; " infrastructureProcess="false" localCategory="construction processes" localSubCategory="civil engineering" location="CH" meanValue="265.3" name="Excavation, hydraulic digger, with particle filter" number="438331" standardDeviation95="2.3248" subCategory="civil engineering" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,1,1,3,3,5,BU:1.05); Tunnnel material, structural sections, bars, wire rods; " infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="2813.3" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.3069" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,1,1,3,3,5,BU:1.05); Tunnel material; " infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="2813.3" name="Hot rolling, steel" number="556910" standardDeviation95="1.3069" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,1,1,3,3,5,BU:1.05); Steel fibres, tunnel material; " infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="197.04" name="Reinforcing steel, at plant" number="545988" standardDeviation95="1.3069" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,1,1,3,3,5,BU:1.05); Precast concrete, tunnel material; " infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="0.96424" name="Concrete, exacting, at plant" number="459528" standardDeviation95="1.3069" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,1,1,3,3,5,BU:1.05); Normal concrete, tunnel material; " infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="89.277" name="Concrete, normal, at plant" number="367058" standardDeviation95="1.3069" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,1,1,3,3,5,BU:1.05); PVC sheets and pipes, tunnel material; " infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="251.31" name="Polyvinylchloride, at regional storage" number="208751" standardDeviation95="1.3069" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,1,1,3,3,5,BU:1.05); PVC sheets, tunnel material; " infrastructureProcess="false" localCategory="plastics" localSubCategory="unspecified" location="RER" meanValue="175.07" name="Calendering, rigid sheets" number="267048" standardDeviation95="1.3069" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,1,1,3,3,5,BU:1.05); PVC pipes, tunnel material; " infrastructureProcess="false" localCategory="plastics" localSubCategory="unspecified" location="RER" meanValue="76.24" name="Extrusion, plastic pipes" number="419531" standardDeviation95="1.3069" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,1,1,3,3,5,BU:1.05); PP geotextile and fibres, tunnnel material; " infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="65.413" name="Polypropylene, granulate, at plant" number="431726" standardDeviation95="1.3069" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,1,1,3,3,5,BU:1.05); PP geotextile and fibres, tunnnel material; " infrastructureProcess="false" localCategory="plastics" localSubCategory="unspecified" location="RER" meanValue="65.413" name="Stretch blow moulding" number="228246" standardDeviation95="1.3069" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="(2,1,1,3,3,5,BU:2); Diesel consumption for construction (43.7MJ/L), ramp construction; " infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="10339" name="Diesel, burned in building machine, with particle filter" number="498220" standardDeviation95="2.0989" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,1,3,2,3,5,BU:2); Material for tunnel construction, transportation to construction site; " infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="4523.6" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.1548" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,1,3,2,3,5,BU:2); Material for tunnel construction, transportation to construction site; " infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="2101.9" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.1548" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="(2,1,1,3,3,5,BU:2); Excavation ramp: 10.6 m tunnel hight +1 m, 12.6 m tunnel track width,26m earth gap, 600/2 length of ramp; " infrastructureProcess="false" localCategory="construction processes" localSubCategory="civil engineering" location="CH" meanValue="324.8" name="Excavation, hydraulic digger, with particle filter" number="438331" standardDeviation95="2.0989" subCategory="civil engineering" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(5,1,1,3,3,5,BU:1.05); Ramp material, structural sections, bars, wire rods; " infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="1582.5" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.6215" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(5,1,1,3,3,5,BU:1.05); Ramp material; " infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="1582.5" name="Hot rolling, steel" number="556910" standardDeviation95="1.6215" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(5,1,1,3,3,5,BU:1.05); Steel fibres, ramp material; " infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="110.83" name="Reinforcing steel, at plant" number="545988" standardDeviation95="1.6215" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(5,1,1,3,3,5,BU:1.05); Precast concrete, ramp material; " infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="0.54238" name="Concrete, exacting, at plant" number="459528" standardDeviation95="1.6215" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(5,1,1,3,3,5,BU:1.05); Normal concrete, ramp material; " infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="50.218" name="Concrete, normal, at plant" number="367058" standardDeviation95="1.6215" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(5,1,1,3,3,5,BU:1.05); PVC sheets and pipes, ramp material; " infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="141.36" name="Polyvinylchloride, at regional storage" number="208751" standardDeviation95="1.6215" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(5,1,1,3,3,5,BU:1.05); PVC sheets, ramp material; " infrastructureProcess="false" localCategory="plastics" localSubCategory="unspecified" location="RER" meanValue="98.478" name="Calendering, rigid sheets" number="267048" standardDeviation95="1.6215" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(5,1,1,3,3,5,BU:1.05); PVC pipes, ramp material; " infrastructureProcess="false" localCategory="plastics" localSubCategory="unspecified" location="RER" meanValue="42.885" name="Extrusion, plastic pipes" number="419531" standardDeviation95="1.6215" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(5,1,1,3,3,5,BU:1.05); PP geotextile and fibres, ramp material; " infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="36.795" name="Polypropylene, granulate, at plant" number="431726" standardDeviation95="1.6215" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(5,1,1,3,3,5,BU:1.05); PP geotextile and fibres, ramp material; " infrastructureProcess="false" localCategory="plastics" localSubCategory="unspecified" location="RER" meanValue="36.795" name="Stretch blow moulding" number="228246" standardDeviation95="1.6215" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="(5,1,1,3,3,5,BU:2); Diesel consumption for construction (43.7MJ/L), ramp construction; " infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="5794.2" name="Diesel, burned in building machine, with particle filter" number="498220" standardDeviation95="2.3248" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,3,3,5,BU:1.05); 57 kg per single rail and metre; " infrastructureProcess="false" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="CH" meanValue="4560" name="Rail, at regional storage" number="300044" standardDeviation95="1.3069" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,3,3,5,BU:1.05); ; " infrastructureProcess="false" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="CH" meanValue="41.667" name="Concrete sleeper, at regional storage" number="277309" standardDeviation95="1.3069" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,3,3,5,BU:1.05); ; " infrastructureProcess="false" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="CH" meanValue="1" name="Traction power system, single track" number="523644" standardDeviation95="1.3069" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="kmy">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,1,3,3,5,BU:1.05); ; " infrastructureProcess="false" localCategory="transport systems" localSubCategory="train\operations\infrastructure" location="CH" meanValue="1" name="Safety system, single track" number="377849" standardDeviation95="1.3069" subCategory="train\operations\infrastructure" uncertaintyType="1" unit="kmy">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,1,3,2,3,5,BU:2); Material for ramp construction, transportation to construction site; " infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="12269" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.1548" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,1,3,2,3,5,BU:2); Material for ramp construction, transportation to construction site; " infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="2264.9" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.1548" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

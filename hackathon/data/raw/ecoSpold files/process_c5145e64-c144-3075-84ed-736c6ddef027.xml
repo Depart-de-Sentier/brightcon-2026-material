@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="173883" timestamp="2023-08-28T15:03:08.841+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="energy, obsolete" datasetRelatesToProduct="true" generalComment="Heat at heat pump without heat distribution.;&#10;UUID: c5145e64-c144-3075-84ed-736c6ddef027" includedProcesses="Includes infrastucture and electricity (electricity mix UCTE) for heat pump. Includes emissions of refrigerant (R134a) during operation. Heat at heat pump, i.e. heat distribution in the house is not included." infrastructureProcess="false" localCategory="energy, obsolete" localName="Heat, borehole heat exchanger, at brine-water heat pump 10kW" localSubCategory="heat, obsolete\heat pumps, obsolete" name="Heat, borehole heat exchanger, at brine-water heat pump 10kW" subCategory="heat, obsolete\heat pumps, obsolete" unit="MJ"/>
+        <geography location="RER" text="Conditions of operation extrapolated from Switzerland to RER. Operation with UCTE electricity mix."/>
+        <technology text="Based on average SPF2 (Seasonal Performance Factor, including auxiliary energy) of brine-water heat pumps installed in year 1998 operating in Switzerland."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2004-05-28T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography/Text" percent="0" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Heck T." nameOfEditors="Dones R." number="173873" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI" sourceNumber="0" sourceType="4" text="Heck, T. (2007) Wärmepumpen. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0. Editors: Dones R.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Heck, T.\nYear: 2007\nName of editors: Dones R.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2007 - Heat pumps - Heck" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0" volumeNo="6" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: prepared; Other validation: none;" proofReadingValidator="138969"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138970"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138970" referenceToPublishedSource="173873"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Gerald Rebitzer" number="138969" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Thomas Heck" number="138970" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="energy, obsolete" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="energy, obsolete" localSubCategory="heat, obsolete\heat pumps, obsolete" location="RER" meanValue="1.0" name="Heat, borehole heat exchanger, at brine-water heat pump 10kW" number="173883" subCategory="heat, obsolete\heat pumps, obsolete" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="0&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.0" name="Heat, waste" number="46930" standardDeviation95="1.0" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000811-97-2" category="emissions to air" generalComment="estimated from range of values in literature&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.5E-6" name="Ethane, 1,1,1,2-tetrafluoro-, HFC-134a" number="648" standardDeviation95="1.7" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="energy, obsolete" generalComment="uncertainty of life time&#10;" infrastructureProcess="true" localCategory="energy, obsolete" localSubCategory="heat, obsolete\heat pumps, obsolete\infrastructure, obsolete" location="CH" meanValue="2.78E-7" name="xxx Borehole heat exchanger 150 m" number="447455" standardDeviation95="2.0000000000000004" subCategory="heat, obsolete\heat pumps, obsolete\infrastructure, obsolete" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="uncertainty estimated from range of values in literature&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="2.5E-6" name="Refrigerant R134a, at plant" number="191385" standardDeviation95="1.7" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="Seasonal Performance Factor measured in Switzerland 1998; uncertainty from range of Coefficient of Performance.&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in ground" meanValue="0.744" name="Energy, geothermal, converted" number="81957" standardDeviation95="1.1" subCategory="in ground" uncertaintyType="1" unit="MJ">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="Seasonal Performance Factor measured in Switzerland 1998; uncertainty from range of Coefficient of Performance.&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.0712" name="Electricity, low voltage, production ENTSO-E, at grid" number="744926" standardDeviation95="1.1999999999999997" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="energy, obsolete" generalComment="uncertainty of life time&#10;" infrastructureProcess="true" localCategory="energy, obsolete" localSubCategory="heat, obsolete\heat pumps, obsolete\infrastructure" location="CH" meanValue="6.94E-7" name="Heat pump, brine-water, 10kW" number="213991" standardDeviation95="1.4999999999999998" subCategory="heat, obsolete\heat pumps, obsolete\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

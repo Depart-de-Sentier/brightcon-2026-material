@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="398812" timestamp="2023-08-28T15:03:34.984+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heating" datasetRelatesToProduct="true" generalComment="Production of components for an average heat production system for a building with a specific heat demand of 10 W per m2 heated gross floor area;&#10;UUID: 54855858-b600-38f1-9b08-a409264d0e2a" includedProcesses="Materials used for the production. Transport of raw materials to the plant. Energy use for the production and processing of the raw materials. No infrastructure of the production site included." infrastructureProcess="false" localCategory="heating" localName="Heat production system, specific heat demand 10W" localSubCategory="heating systems" name="Heat production system, specific heat demand 10W" subCategory="heating systems" unit="m2"/>
+        <geography location="CH" text="Data sources mainly from Switzerland. Process applicable in central European conditions."/>
+        <technology text="Average of different heat production technologies; including furnaces for gas, oil, wood pellets and wood logs; no system with heat pump in average included"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Amount of material for average investigated in 2008. Process information partly from 1994 to 2003">
+          <startDate>1994-01</startDate>
+          <endDate>2008-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2014-04-28T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Manufacturer informations and literature data. Data of typical product range for small and medium buildings used (10-100kW). " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Primas A." nameOfEditors="-" number="182851" placeOfPublications="Zuerich, CH" publisher="B&amp;H AG" sourceNumber="0" sourceType="3" text="Primas A. (2008) Ökologische Bewertung von Gebäudetechnikanlagen für SIA 2032. Schlussbericht. Amt für Hochbauten der Stadt Zürich. Zürich.\nType: Separate publication\nSource: Report\nFirst author: Primas A.\nYear: 2008\nTitle of anthology: Schlussbericht\nPlace of publication: Zürich\nPublisher: Amt für Hochbauten der Stadt Zürich\n" title="2008 - LCA building tech. inst. SIA 2032 - Primas" titleOfAnthology="Schlussbericht" year="2008"/>
+        <validation proofReadingDetails="" proofReadingValidator="137674"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137674"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137674" referenceToPublishedSource="182851"/>
+        <person address="anonymised" companyCode="HSLU" countryCode="CH" email="anonymised" name="Alex Primas" number="137674" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heating" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="heating" localSubCategory="heating systems" location="CH" meanValue="1.0" name="Heat production system, specific heat demand 10W" number="398812" subCategory="heating systems" uncertaintyType="0" unit="m2">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="6.6667E-5" name="Oil storage 3000l" number="237384" standardDeviation95="1.3117000000000003" subCategory="oil\heating systems" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="energy, obsolete" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="true" localCategory="energy, obsolete" localSubCategory="heat, obsolete\wood, obsolete\furnace, obsolete\infrastructure, obsolete" location="CH" meanValue="2.5E-5" name="xxx Furnace, logs, mixed, 100kW" number="593827" standardDeviation95="1.3117000000000003" subCategory="heat, obsolete\wood, obsolete\furnace, obsolete\infrastructure, obsolete" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="-7.15E-4" name="Concrete, normal, at plant" number="367058" standardDeviation95="1.3117000000000003" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="0.0034" name="Disposal, building, mineral wool, to final disposal" number="573526" standardDeviation95="1.3117000000000003" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="energy, obsolete" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="true" localCategory="energy, obsolete" localSubCategory="heat, obsolete\gas, obsolete\furnace, obsolete\infrastructure, obsolete" location="RER" meanValue="2.5E-4" name="xxx Gas boiler" number="542998" standardDeviation95="1.3117000000000003" subCategory="heat, obsolete\gas, obsolete\furnace, obsolete\infrastructure, obsolete" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="building demolition" location="CH" meanValue="-1.0" name="Disposal, heat production system, specific heat demand 10W" number="369876" standardDeviation95="1.3117000000000003" subCategory="building demolition" uncertaintyType="1" unit="m2">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="2.5E-5" name="Oil boiler 100kW" number="529143" standardDeviation95="1.3117000000000003" subCategory="oil\heating systems" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="0.0015" name="Chimney" number="348702" standardDeviation95="1.3117000000000003" subCategory="oil\heating systems" uncertaintyType="1" unit="m">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="0.0146" name="Sheet rolling, chromium steel" number="440148" standardDeviation95="1.3117000000000003" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="wood\heating systems" location="CH" meanValue="5.0E-5" name="Furnace, pellets, 50kW" number="531256" standardDeviation95="1.3117000000000003" subCategory="wood\heating systems" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.0059423" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.1017" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="insulation" location="CH" meanValue="0.0034" name="Rock wool, at plant" number="572315" standardDeviation95="1.3117000000000003" subCategory="insulation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="0.0146" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="1.3117000000000003" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="solar\infrastructure" location="CH" meanValue="6.25E-4" name="Expansion vessel 80l, at plant" number="165078" standardDeviation95="1.3117000000000003" subCategory="solar\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="-1.5315" name="Disposal, building, reinforced concrete, to sorting plant" number="607019" standardDeviation95="1.3117000000000003" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="CH" meanValue="-0.17017" name="Disposal, building, reinforced concrete, to final disposal" number="491964" standardDeviation95="1.3117000000000003" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="0.59423" name="Disposal, inert material, 0% water, to sanitary landfill" number="208503" standardDeviation95="1.3117000000000003" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,4,1,1,5); Average based on assumptions, older data sources used&#10;" infrastructureProcess="true" localCategory="heat" localSubCategory="solar\infrastructure" location="CH" meanValue="6.25E-5" name="Heat storage 2000l, at plant" number="198545" standardDeviation95="1.3117000000000003" subCategory="solar\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

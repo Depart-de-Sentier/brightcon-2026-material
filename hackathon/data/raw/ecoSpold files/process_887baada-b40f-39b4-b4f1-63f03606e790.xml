@@ -1,0 +1,169 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="531049" timestamp="2023-08-28T15:03:00.831+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="metals" datasetRelatesToProduct="true" generalComment="This module is applicable, if batch zinc coating of semifinished steel products, that's shape doesn't change anymore, has to be balanced. Data given per tonne of coated product had to be transformed dividing it by the mean surface area of 60 m2/t.  For the chemicals and the zinc, 100 km of 32t lorry transport were balanced. The softened industrial water is assumed to be produced at the coating plant. The coating layer is 65um thick, if the surface is coated on both sides and 130 um thick, if coating is done on one side only. Due to the fact, that data are given per square meter and not per kg, the energy inventoried for heavy pieces is to low and for light pieces to high. If the data would have been given per kg, the error would have been the contrary.;&#10;Synonyms: hot dip coating, galvanising; &#10;UUID: 887baada-b40f-39b4-b4f1-63f03606e790" includedProcesses="Includes the process steps degreasing, pickling, fluxing, galvanising (melt zinc coating) and finishing. Does not include the fabricates being coated." infrastructureProcess="false" localCategory="metals" localName="Zinc coating, pieces" localSubCategory="coating" name="Zinc coating, pieces" subCategory="coating" unit="m2"/>
+        <geography location="RER" text="&lt;null&gt;"/>
+        <technology text="Average technique for EU. "/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-06-17T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see technology" percent="0" productionVolume="5 million tonnes in 1997" samplingProcedure="Literature " uncertaintyAdjustments="The fact that no data were available about the percentage of companies represented by the study citated is considered in the uncertainties."/>
+        <source additionalAuthors="Althaus H.-J., Kuenniger T., Richter K., Jungbluth N." firstAuthor="Werner F." nameOfEditors="-" number="152269" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Werner F., Althaus H.-J., Künniger T., Richter K., Jungbluth N. (2007) 1Life Cycle Inventories of Wood as Fuel and Construction Material. Final report ecoinvent data v2.0. Volume: 9. Issue: 0. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Werner F.\nOther authors: Althaus H.-J., Künniger T., Richter K., Jungbluth N.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 9\nIssue No: 0\n" title="2007 - LCI wood as fuel and const. mat. - Werner" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="9" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136699"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="139614"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="140836" referenceToPublishedSource="152269"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Silvio Blaser" number="140836" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="metals" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="coating" location="RER" meanValue="1.0" name="Zinc coating, pieces" number="531049" subCategory="coating" uncertaintyType="0" unit="m2">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="007647-01-0" category="emissions to air" generalComment="(1,5,2,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="3.05E-4" name="Hydrogen chloride" number="25789" standardDeviation95="2.1" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="calculated from max value assuming lognormal distribution&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="GLO" meanValue="0.025" name="Chemicals inorganic, at plant" number="499008" standardDeviation95="2.0000000000000004" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,5); &#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="4.95E-6" name="DOC, Dissolved Organic Carbon" number="4408" standardDeviation95="2.5000000000000004" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,2,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="3.16E-9" name="Arsenic" number="636" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,5,2,1,1,3); &#10;" infrastructureProcess="false" localCategory="water" localSubCategory="industry water" location="CH" meanValue="3.33" name="Water, deionised, at plant" number="617689" standardDeviation95="1.1999999999999997" subCategory="industry water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007664-41-7" category="emissions to air" generalComment="(1,5,2,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="7.27E-4" name="Ammonia" number="635" standardDeviation95="2.1" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="calculated from max value assuming lognormal distribution&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="CH" meanValue="0.245" name="Disposal, dust, unalloyed EAF steel, 15.4% water, to residual material landfill" number="148343" standardDeviation95="2.5000000000000004" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,5); &#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="2.2E-4" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="2.5000000000000004" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,5,1,1,1,3); &#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="1.51E-5" name="Aluminium sulphate, powder, at plant" number="363444" standardDeviation95="1.1999999999999997" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,n.a.,n.a.,n.a.,n.a.); &#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.134" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.1" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="calculated from max value assuming lognormal distribution&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="others" location="RER" meanValue="0.335" name="Heat, unspecific, in chemical plant" number="228634" standardDeviation95="2.0000000000000004" subCategory="others" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="calculated from max value assuming lognormal distribution&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.339" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="4.0" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,5,1,1,1,3); &#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="residual material landfill" location="CH" meanValue="0.00151" name="Disposal, sludge from steel rolling, 20% water, to residual material landfill" number="307987" standardDeviation95="1.1999999999999997" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,5,1,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="1.73E-6" name="Oils, unspecified" number="17550" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-89-6" category="emissions to water" generalComment="(1,5,2,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="9.42E-5" name="Iron" number="91273" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="calculated from max value assuming lognormal distribution&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="12.8" name="Heat, light fuel oil, at industrial furnace 1MW" number="339773" standardDeviation95="2.4000000000000004" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(1,5,2,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.27E-4" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="2.1" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007723-14-0" category="emissions to water" generalComment="(2,5,1,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="1.5E-6" name="Phosphorus" number="67972" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,5,1,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="3.74E-6" name="Suspended solids, unspecified" number="157731" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-47-3" category="emissions to water" generalComment="(2,5,1,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="1.1E-7" name="Chromium" number="158591" standardDeviation95="5.099999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="(2,5,1,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="2.2E-4" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,5,2,1,1,3); &#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="5.1E-4" name="Ammonia, liquid, at regional storehouse" number="366825" standardDeviation95="1.1999999999999997" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to air" generalComment="calculated from max value assuming lognormal distribution&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="4.58E-4" name="Zinc" number="666" standardDeviation95="3.1999999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,5,1,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="4.95E-6" name="TOC, Total Organic Carbon" number="2278" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(1,5,1,1,1,3); &#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="0.00267" name="Disposal, used mineral oil, 10% water, to hazardous waste incineration" number="504085" standardDeviation95="1.6" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.126" name="Heat, waste" number="46930" standardDeviation95="1.1999999999999997" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="calculated from max value assuming lognormal distribution&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="1.05" name="Zinc, primary, at regional storage" number="236764" standardDeviation95="3.1999999999999997" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="calculated from max value assuming lognormal distribution&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="12.8" name="Natural gas, burned in industrial furnace 1MWth" number="262422" standardDeviation95="2.4000000000000004" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007439-92-1" category="emissions to water" generalComment="(2,5,1,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="2.51E-8" name="Lead" number="91221" standardDeviation95="5.099999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,5,2,1,1,3); &#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="0.00167" name="Soda, powder, at plant" number="219996" standardDeviation95="2.1" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="calculated from max value assuming lognormal distribution&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="0.00633" name="Sodium hydroxide, 50% in H2O, production mix, at plant" number="483088" standardDeviation95="2.0000000000000004" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="calculated from max value assuming lognormal distribution&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="0.37" name="Hydrochloric acid, 30% in H2O, at plant" number="308041" standardDeviation95="2.1" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,5,2,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="3.13E-5" name="Chloride" number="34061" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="calculated from max value assuming lognormal distribution&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="0.00167" name="Chemicals organic, at plant" number="497739" standardDeviation95="2.0000000000000004" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="018540-29-9" category="emissions to water" generalComment="(2,5,1,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="1.67E-8" name="Chromium VI" number="91249" standardDeviation95="5.099999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(2,5,1,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="1.98E-6" name="Hydrocarbons, unspecified" number="53354" standardDeviation95="3.1" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-43-9" category="emissions to air" generalComment="(1,5,2,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="2.18E-8" name="Cadmium" number="640" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-02-0" category="emissions to water" generalComment="(2,5,1,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="1.67E-8" name="Nickel" number="91239" standardDeviation95="5.099999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,5,2,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="2.33E-5" name="Iron" number="22970" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(4,5,1,3,3,4); &#10;" infrastructureProcess="true" localCategory="metals" localSubCategory="infrastructure" location="RER" meanValue="2.71E-12" name="Rolling mill" number="385948" standardDeviation95="3.1999999999999997" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="calculated from max value assuming lognormal distribution&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.00261" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="3.9" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-92-1" category="emissions to air" generalComment="(1,5,2,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="5.67E-8" name="Lead" number="36341" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="calculated from max value assuming lognormal distribution&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="8.5E-4" name="Water, unspecified natural origin/m3" number="64511" standardDeviation95="2.0000000000000004" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="007440-66-6" category="emissions to water" generalComment="(1,5,2,1,1,3); &#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="3.16E-5" name="Zinc" number="91189" standardDeviation95="1.6" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="0.8075" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

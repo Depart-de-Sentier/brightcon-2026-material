@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="288272" timestamp="2023-08-28T15:03:00.555+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="wastewater treatment" datasetRelatesToProduct="true" generalComment="Wastewater purified in a moderatly large municipal wastewater treatment plant (capacity class 2), with an average capacity size of 71100 per-captia-equivalents PCE. \nWastewater contains (in kg/m3): COD: 650 (GSD=124.9%);&#10;UUID: 331a7790-b820-44be-9b7b-b1332f439be5" includedProcesses="Infrastructure materials for municipal wastewater treatment plant, transports, dismantling. Land use burdens." infrastructureProcess="false" localCategory="wastewater treatment" localName="Treatment, heat carrier liquid, 40% C3H8O2, to wastewater treatment, class 2" localSubCategory="unspecified" name="Treatment, heat carrier liquid, 40% C3H8O2, to wastewater treatment, class 2" subCategory="unspecified" unit="m3"/>
+        <geography location="CH" text="&lt;null&gt;"/>
+        <technology text="Three stage wastewater treatment (mechanical, biological, chemical) including sludge digestion (fermentation) according to the average technology in Switzerland"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2009-01-22T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="&lt;null&gt;" uncertaintyAdjustments="&lt;null&gt;"/>
+        <source additionalAuthors="" firstAuthor="Doka G." nameOfEditors="-" number="136700" placeOfPublications="Duebendorf and St. Gallen, CH" publisher="Swiss Centre for LCI, Doka LCA" sourceNumber="0" sourceType="4" text="Doka G. (2008) Life Cycle Inventories of Waste Treatment Services. Final report ecoinvent data v2.1. Volume: 13. Issue: 0. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Doka G.\nYear: 2008\nTitle of anthology: Final report ecoinvent data v2.1\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 13\nIssue No: 0\n" title="2009 - LCI waste treatment services - Doka" titleOfAnthology="Final report ecoinvent data v2.1" volumeNo="13" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: passed.; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136699"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136698" referenceToPublishedSource="136700"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Gabor Doka" number="136698" telephone="anonymised"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="wastewater treatment" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="1.0" name="Treatment, heat carrier liquid, 40% C3H8O2, to wastewater treatment, class 2" number="288272" subCategory="unspecified" uncertaintyType="0" unit="m3">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="direct wastewater treatment plant burden plus burden from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.006249" name="Transport, freight, rail" number="149864" standardDeviation95="1.5176000000000003" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste" generalComment="burden from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="true" localCategory="waste" localSubCategory="infrastructure" location="CH" meanValue="3.2532E-10" name="Residual material landfill facility" number="504989" standardDeviation95="1.4495000000000002" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="burden from sludge spreading. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="unspecified" location="CH" meanValue="0.69284" name="Slurry spreading, by vacuum tanker" number="344486" standardDeviation95="1.0947" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="sewer overload discharge plus direct wastewater treatment plant emission plus emission from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="33.748" name="TOC, Total Organic Carbon" number="2278" standardDeviation95="1.1231999999999998" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="emission from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater, long-term" meanValue="0.442" name="DOC, Dissolved Organic Carbon" number="4408" standardDeviation95="1.7679" subCategory="groundwater, long-term" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="waste" generalComment="uncertainty heeded in exchanges of the module&#10;" infrastructureProcess="true" localCategory="waste" localSubCategory="infrastructure" location="CH" meanValue="1.6832E-7" name="Sewer grid, class 2" number="237103" standardDeviation95="1.0" subCategory="infrastructure" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="emission from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater, long-term" meanValue="0.36537" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.7679" subCategory="groundwater, long-term" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="burden from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="CH" meanValue="0.15615" name="Disposal, cement, hydrated, 0% water, to residual material landfill" number="288978" standardDeviation95="1.5179" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="burden from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="municipal incineration" location="CH" meanValue="204.91" name="Process-specific burdens, municipal waste incineration" number="406857" standardDeviation95="1.1591999999999998" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="direct digester gas emission. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.0097378" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="2.5734" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="burden from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="binders" location="CH" meanValue="0.062461" name="Cement, unspecified, at plant" number="330147" standardDeviation95="1.5179" subCategory="binders" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="direct wastewater treatment plant burden. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.0155" name="Disposal, paper, 11.2% water, to municipal incineration" number="338676" standardDeviation95="1.07" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="sewer overload discharge plus direct wastewater treatment plant emission plus emission from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="125.96" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.5258000000000003" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="burden from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="CH" meanValue="0.15615" name="Process-specific burdens, residual material landfill" number="216234" standardDeviation95="1.4495000000000002" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="emission from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.1431" name="Methane, fossil" number="90787" standardDeviation95="1.9254999999999998" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="direct wastewater treatment plant emission plus emission from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2986.9" name="Heat, waste" number="46930" standardDeviation95="1.5716000000000003" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="waste" generalComment="burden from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="true" localCategory="waste" localSubCategory="infrastructure" location="CH" meanValue="6.0153E-10" name="Slag compartment" number="279461" standardDeviation95="1.4437999999999998" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="emission from sludge spreading. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="agricultural" meanValue="28.545" name="Carbon" number="20988" standardDeviation95="1.7178999999999998" subCategory="agricultural" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="burden from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="waste" location="CH" meanValue="171.86" name="Heat from waste, at municipal waste incineration plant" number="398347" standardDeviation95="1.1684" subCategory="waste" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="burden from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="1.7453E-6" name="Hydrochloric acid, 30% in H2O, at plant" number="308041" standardDeviation95="1.7365999999999997" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="direct wastewater treatment plant burden. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="169.94" name="Electricity, low voltage, at grid" number="219622" standardDeviation95="2.2031" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000630-08-0" category="emissions to air" generalComment="emission from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.68106" name="Carbon monoxide, fossil" number="641" standardDeviation95="2.0438" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="burden from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste" location="CH" meanValue="29.46" name="Electricity from waste, at municipal waste incineration plant" number="419687" standardDeviation95="3.8111" subCategory="waste" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="burden from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="municipal incineration" location="CH" meanValue="0.33836" name="Process-specific burdens, slag compartment" number="585273" standardDeviation95="1.4437999999999998" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="direct wastewater treatment plant emission plus emission from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="4865.7" name="Heat, waste" number="45460" standardDeviation95="1.4190000000000003" subCategory="river" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to water" generalComment="emission from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater, long-term" meanValue="0.442" name="TOC, Total Organic Carbon" number="2278" standardDeviation95="1.7679" subCategory="groundwater, long-term" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="waste" generalComment="uncertainty heeded in exchanges of the module&#10;" infrastructureProcess="true" localCategory="waste" localSubCategory="infrastructure" location="CH" meanValue="1.9883E-9" name="Wastewater treatment plant, class 2" number="292514" standardDeviation95="1.0" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="direct wastewater treatment plant burden. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.0155" name="Disposal, plastics, mixture, 15.3% water, to municipal incineration" number="174149" standardDeviation95="1.07" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="direct wastewater treatment plant burden plus burden from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="18.394" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="1.0767" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="emission from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="802.82" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.3793999999999997" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="sewer overload discharge plus direct wastewater treatment plant emission plus emission from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="31.523" name="DOC, Dissolved Organic Carbon" number="4408" standardDeviation95="1.5052" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="burden from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="GLO" meanValue="2.9089E-6" name="Chemicals inorganic, at plant" number="499008" standardDeviation95="1.7365999999999997" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste" generalComment="burden from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="true" localCategory="waste" localSubCategory="infrastructure" location="CH" meanValue="5.1228E-8" name="Municipal waste incineration plant" number="136729" standardDeviation95="1.1591999999999998" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="emission from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="groundwater, long-term" meanValue="1.117" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.7679" subCategory="groundwater, long-term" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="sewer overload discharge plus direct wastewater treatment plant emission plus emission from sludge incineration. Uncertainty calculated from wastewater composition and treatment model&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="41.366" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.1573000000000002" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

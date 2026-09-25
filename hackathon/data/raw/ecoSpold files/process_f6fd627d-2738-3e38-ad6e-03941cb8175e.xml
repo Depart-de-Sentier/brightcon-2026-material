@@ -1,0 +1,63 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="300624" timestamp="2023-08-28T15:03:23.971+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="material, obsolete" datasetRelatesToProduct="true" generalComment="The raw materials are mixed in following ratio: sand: 0.772kg, cement: 0.205kg, lime hydrated: 0.023kg, additives: 0.0002kg. After mixing it is internally transported to the packing installation and packed. For the use 0.082 kg water has to be added (not included in this module). No direct process emissions are taken into account as they play a subordinate role compared to the emissions of the raw material production (e.g. drying of silica sand) and because no data are available. For inventoring the infrastructure, a yearly production amount of 150'000 tons is assumed. The lifespan of the machines is assumed to be 20 years.;&#10;Synonyms: Zementputz; &#10;UUID: f6fd627d-2738-3e38-ad6e-03941cb8175e" includedProcesses="Includes the whole manufacturing process to produce base plaster (raw material provision, raw material mixing, packing, and storage), transports to plant, and infrastructure. No requirements for administration are included. No additional buildings and land-use have been taken into account as it is assumed that the mixing process takes place in an existing building of the sand/cement industry or on the construction site" infrastructureProcess="false" localCategory="material, obsolete" localName="xx Base plaster, at plant" localSubCategory="construction, obsolete\coverings, obsolete" name="xx Base plaster, at plant" subCategory="construction, obsolete\coverings, obsolete" unit="kg"/>
+        <geography location="CH" text="The amount of raw materials is based on estimations. The transportation distance is an estimation. For the infrastructure RER-, for the silica sand DE- and for the organic chemicals GLO-modules are used as proxy"/>
+        <technology text="Assumed average current technology. The raw materials are mixed in a certain ratio, transported to the packing installation and packed."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-03-29T18:04:18.546+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="estimation " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Jungbluth N., Kuenniger T., Lehmann M., Thalmann P." firstAuthor="Kellenberger D." nameOfEditors="-" number="137820" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ESU-services Ltd., Bau- und Umweltchimie" sourceNumber="0" sourceType="4" text="Kellenberger D., Althaus H.-J., Jungbluth N., Künniger T. (2007) Life Cycle Inventories of Building Products. Final report ecoinvent data v2.0. Volume: 7. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Kellenberger D.\nOther authors: Althaus H.-J., Jungbluth N., Künniger T.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 7\n" title="2007 - LCI building products - Kellenberger" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="7" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="137747"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137819"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137819" referenceToPublishedSource="137820"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Daniel Kellenberger" number="137819" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="material, obsolete" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="construction, obsolete\coverings, obsolete" location="CH" meanValue="1.0" name="xx Base plaster, at plant" number="300624" subCategory="construction, obsolete\coverings, obsolete" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="estimated&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="DE" meanValue="0.772" name="Silica sand, at plant" number="137826" standardDeviation95="5.000000000000001" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="estimated&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="binders" location="CH" meanValue="0.205" name="Portland cement, strength class Z 42.5, at plant" number="575955" standardDeviation95="5.000000000000001" subCategory="binders" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="estimated&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.1" name="Heat, waste" number="46930" standardDeviation95="5.000000000000001" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="estimated&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CH" meanValue="0.023" name="Lime, hydrated, packed, at plant" number="360311" standardDeviation95="5.000000000000001" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="estimated&#10;" infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="6.67E-6" name="Industrial machine, heavy, unspecified, at plant" number="563077" standardDeviation95="5.000000000000001" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="estimated&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.02" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="5.000000000000001" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="estimated&#10;" infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="3.33E-8" name="Conveyor belt, at plant" number="325402" standardDeviation95="5.000000000000001" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="m">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="estimated&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.0278" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="5.000000000000001" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="Others" generalComment="estimated&#10;" infrastructureProcess="false" localCategory="Others" localSubCategory="unspecified" location="CH" meanValue="1.0" name="Packing, cement" number="294122" standardDeviation95="5.000000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="estimated&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="2.0E-4" name="Chemicals organic, at plant" number="497739" standardDeviation95="5.000000000000001" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

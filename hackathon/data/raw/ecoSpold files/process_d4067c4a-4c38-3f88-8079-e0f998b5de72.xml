@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="222978" timestamp="2023-08-28T15:03:40.709+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity" datasetRelatesToProduct="true" generalComment="Electricity domestic net production shares are based on IEA statistics for the year 2008.;&#10;UUID: d4067c4a-4c38-3f88-8079-e0f998b5de72" includedProcesses="It includes the shares of domestic electricity production by technology at the busbar. It does not include transformation, transport nor distribution losses." infrastructureProcess="false" localCategory="electricity" localName="xxx Electricity, production mix AU" localSubCategory="notMaintained" name="xxx Electricity, production mix AU" subCategory="notMaintained" unit="kWh"/>
+        <geography location="AU" text="Data apply to public and self producers in Australia."/>
+        <technology text="No technology description is provided because the dataset just describes the power plant portfolio of the respective country using current (2004) average technology per energy carrier."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time period of statistics used (2008).">
+          <startDate>2006-01</startDate>
+          <endDate>2009-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2012-06-22T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="100" productionVolume="257 TWh" samplingProcedure="Statistical data " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Itten R., Flury K." firstAuthor="Frischknecht R." nameOfEditors="-" number="138564" placeOfPublications="Uster, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Itten, R., Frischknecht, R. (2012) Life Cycle Inventories of electricity mixes. Project reports. Volume: 401. ESU-services Ltd.. Uster, CH.\nType: Separate publication\nFirst author: Itten, R.\nOther authors: Frischknecht, R.\nYear: 2012\nTitle of anthology: Project reports\nPlace of publication: Uster, CH\nPublisher: ESU-services Ltd.\nVolume No: 401\n" title="2012 - GHG emis. from Swiss elec. mixes - Frischknecht" titleOfAnthology="Project reports" volumeNo="401" year="2012"/>
+        <validation proofReadingDetails="Proof reading validation: automatic validation in Excel; Other validation: Z:\ESU-Docs\Projekte laufend\401 Update Strommix v3.0\EcoSpold\_Australien\[401-electricity-mix-australia-AU-v1.0.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137485"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137485" referenceToPublishedSource="138564"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ZHAW" countryCode="CH" email="anonymised" name="René Itten" number="137485" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" generalComment="AUSTRALIA&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="notMaintained" location="AU" meanValue="1.0" name="xxx Electricity, production mix AU" number="222978" subCategory="notMaintained" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for geothermal power production in Australia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="0.017104" name="Electricity, at wind farm" number="598753" standardDeviation95="1.0541" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for power production from biogas, sewage and landfill gas in Australia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="biomass\cogeneration" location="CH" meanValue="0.0038635" name="Electricity, at cogen with biogas engine, allocation exergy" number="442004" standardDeviation95="1.0541" subCategory="biomass\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for natural gas power production in Australia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="US" meanValue="0.14862" name="Electricity, from natural gas" number="168453" standardDeviation95="1.0541" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for petroleum product and fuel oil power production in Australia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil" location="UCTE" meanValue="0.0024161" name="Electricity, oil, at power plant" number="266860" standardDeviation95="1.0541" subCategory="oil" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for cogeneration power production in Australia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wood\cogeneration" location="CH" meanValue="0.0046431" name="Electricity, at cogen 1MWth, wood chips, allocation exergy" number="477818" standardDeviation95="1.0541" subCategory="wood\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for diesel and other fossil fuel power production in Australia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil\cogeneration" location="CH" meanValue="0.0082209" name="Electricity, at cogen 300kWth, diesel, allocation exergy" number="597488" standardDeviation95="1.0541" subCategory="oil\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1); assumption for solar power production in Australia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="AU" meanValue="6.358E-4" name="Electricity, production mix photovoltaic, at plant" number="271073" standardDeviation95="1.0500000000000003" subCategory="photovoltaic" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,1); estimated share of pumped storage  production in Australia: 1.23%&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\pumping storage" location="AU" meanValue="6.3528E-4" name="Electricity, hydropower, at pumped storage power plant" number="576728" standardDeviation95="1.0500000000000003" subCategory="hydro\pumping storage" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for hard coal power production in Australia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="coal" location="US" meanValue="0.54696" name="Electricity, hard coal, at power plant" number="354939" standardDeviation95="1.0541" subCategory="coal" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for industrial, coke and blast furnace gas power production in Australia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="UCTE" meanValue="0.0070283" name="Electricity, industrial gas, at power plant" number="223241" standardDeviation95="1.0541" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); estimated share of ROR  hydropower production in Australia: 100%&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\flow through" location="RER" meanValue="0.051119" name="Electricity, hydropower, at run-of-river power plant" number="270757" standardDeviation95="1.0541" subCategory="hydro\flow through" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,3,1,1); assumption for lignite power production in Australia, value: IEA statistics 2008&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="lignite" location="ENTSO-E" meanValue="0.20875" name="Electricity, lignite, at power plant" number="548759" standardDeviation95="1.0541" subCategory="lignite" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

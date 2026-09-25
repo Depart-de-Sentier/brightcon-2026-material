@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="406039" timestamp="2024-07-09T17:48:30">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electronics" datasetRelatesToProduct="true" generalComment="The data center is constructed using typical materials found for the building of large IT facilities; UUID: c96074ca-7b22-31d1-9fa7-bc5f2cc902f7" includedProcesses="The dataset is based on a description of a data center from a UK source from Whitehead et al 2015. Inputs are described with the unit kg/kW/year. To obtain the values in kg, the original input value needs to be multiplied with the IT power of the data centre, which is 12895 kW. Inputs described with Input-Output databases are not considered. The data center facility is based on a lifetime of 60 years. The amount of materials are based on the assumption that they should be replaced after 20 years." infrastructureIncluded="false" infrastructureProcess="true" localCategory="electronics" localName="Facility of data center" localSubCategory="internet network" name="Facility of data center" subCategory="internet network" unit="p">
+          <synonym>Rechenzentrum</synonym>
+          <synonym>Anlage</synonym>
+        </referenceFunction>
+        <geography location="GLO" text="Global average data centers, though the source is based in the UK"/>
+        <technology text="Various construction materials are included in the inventory."/>
+        <timePeriod dataValidForEntirePeriod="" text="Unspecified">
+          <startDate>2023-01</startDate>
+          <endDate>2029-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2024-07-09T17:48:30" type="1" version="2024"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness productionVolume="unknown" samplingProcedure="Literature &amp; own estimations"/>
+        <source additionalAuthors="Permana Ajie M., Beloin-Saint-Pierre D." firstAuthor="Raka Adrianto L." number="148303" placeOfPublications="St. Gallen, CH" publisher="Empa" sourceType="0" title="2024 - LCI ICT sector - Raka Adrianto" year="2024"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Mischa Zschokke, Company: Carbotech, Country: CH" proofReadingValidator="140702"/>
+        <validation/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="148302" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="false" dataPublishedIn="2" person="148302" referenceToPublishedSource="148303"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre" number="148302" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Mischa Zschokke" number="140702" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electronics" generalComment="Reference flow is 1 facility with 60 years lifetime" infrastructureProcess="true" localCategory="electronics" localSubCategory="internet network" location="GLO" meanValue="1" name="Facility of data center" number="406039" subCategory="internet network" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="plastics" localSubCategory="rubbers" location="RER" meanValue="35" name="Acrylonitrile-butadiene-styrene copolymer, ABS, at plant" number="605750" standardDeviation95="1.26" subCategory="rubbers" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="construction" localSubCategory="paints" location="RER" meanValue="2424" name="Alkyd paint, white, 60% in H2O, at plant" number="570075" standardDeviation95="1.26" subCategory="paints" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="3843" name="Aluminium, production mix, wrought alloy, at plant" number="260403" standardDeviation95="1.26" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(2,3,3,3,2,5,BU:1.06); Assuming 0.036 kg/m (UVEK)" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices" location="GLO" meanValue="472" name="Cable, network cable, category 5, without plugs, at plant" number="246175" standardDeviation95="1.26" subCategory="devices" uncertaintyType="1" unit="m">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(2,3,3,3,2,5,BU:1.06); Assuming 1.04 kg/m (UVEK)" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices" location="GLO" meanValue="4.76E3" name="Cable, three-conductor cable, at plant" number="378305" standardDeviation95="1.26" subCategory="devices" uncertaintyType="1" unit="m">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="material, obsolete" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="metals, obsolete\non ferro, obsolete" location="GLO" meanValue="311" name="xx Cathode, copper, primary copper production" number="493516" standardDeviation95="1.26" subCategory="metals, obsolete\non ferro, obsolete" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="construction" localSubCategory="binders" location="CH" meanValue="32753" name="Cement mortar, at plant" number="195960" standardDeviation95="1.26" subCategory="binders" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="material, obsolete" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="construction, obsolete\concrete, obsolete" location="DE" meanValue="141845" name="xx Concrete block, at plant" number="409259" standardDeviation95="1.26" subCategory="construction, obsolete\concrete, obsolete" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,3,3,3,2,5,BU:1.06); Assuming a density of 2300 kg/m3, including precast concrete" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="179" name="Concrete, normal, at plant" number="367058" standardDeviation95="1.26" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="construction" localSubCategory="others" location="CH" meanValue="13540" name="Natural stone plate, cut, at regional storage" number="506916" standardDeviation95="1.26" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="material, obsolete" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="construction, obsolete\doors, obsolete" location="RER" meanValue="31.1" name="xxx Door, inner, wood, at plant" number="535428" standardDeviation95="1.26" subCategory="construction, obsolete\doors, obsolete" uncertaintyType="1" unit="m2">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="construction" localSubCategory="insulation" location="CH" meanValue="8948" name="Glass wool mat, at plant" number="516257" standardDeviation95="1.26" subCategory="insulation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="material, obsolete" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="construction, obsolete\coverings, obsolete" location="CH" meanValue="13798" name="xx Gypsum plaster board, at plant" number="228453" standardDeviation95="1.26" subCategory="construction, obsolete\coverings, obsolete" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="material, obsolete" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="construction, obsolete\coverings, obsolete" location="CH" meanValue="331" name="xx Cement cast plaster floor, at plant" number="208249" standardDeviation95="1.26" subCategory="construction, obsolete\coverings, obsolete" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="887" name="Polyethylene, HDPE, granulate, at plant" number="599376" standardDeviation95="1.26" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="565" name="Polyethylene, LDPE, granulate, at plant" number="476483" standardDeviation95="1.26" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="694" name="Limestone, crushed, for mill" number="465155" standardDeviation95="1.26" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="(2,3,3,3,2,5,BU:1.06); Assuming a density of 750 kg/m3" infrastructureProcess="false" localCategory="wood" localSubCategory="wooden materials\new processes\other material" location="RER" meanValue="20.8" name="Particleboard, average glue mix, uncoated, at plant" number="493794" standardDeviation95="1.26" subCategory="wooden materials\new processes\other material" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="(2,3,3,3,2,5,BU:1.06); Assuming a density of 750 kg/m3" infrastructureProcess="false" localCategory="wood" localSubCategory="wooden materials\new processes\other material" location="RER" meanValue="0.353" name="Plywood, hardwood veneer, UF-bonded, at plant" number="472541" standardDeviation95="1.26" subCategory="wooden materials\new processes\other material" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="4" name="Concrete, normal, at plant" number="367058" standardDeviation95="1.26" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="2890" name="Polyvinylchloride, at regional storage" number="208751" standardDeviation95="1.26" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="construction" localSubCategory="insulation" location="CH" meanValue="1715" name="Rock wool, at plant" number="572315" standardDeviation95="1.26" subCategory="insulation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="447" name="Sand, at mine" number="213208" standardDeviation95="1.26" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="182080" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="1.26" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="182080" name="Sheet rolling, steel" number="168302" standardDeviation95="1.26" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="11902" name="Tap water, unspecified natural origin RER, at user" number="409911" standardDeviation95="1.26" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="material, obsolete" generalComment="(2,3,3,3,2,5,BU:1.06)" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="construction, obsolete\coverings, obsolete" location="CH" meanValue="15990" name="xx Thermal plaster, at plant" number="519188" standardDeviation95="1.26" subCategory="construction, obsolete\coverings, obsolete" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,61 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="383846" timestamp="2023-08-28T15:03:37.574+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="Inventory is valid for the average district heat mix in Switzerland (2.4% light fuel oil from heating plant, 11.3% natural gas from heating plant, 11.3% natural gas from cogen, 23.0% wood in heating plant, 7.3% wood in cogen, 5.6% heat pump, 32.2% heat from municipal incineration and 6.9 % heat from nuclear power plant) including 11% of heat loss while heat transportation. For heat from cogeneration allocation exergy was used.;&#10;UUID: 05bc9e52-5649-3fa0-8e18-1876d1bc8e59" includedProcesses="Included is the infrastructure of the deliverysystem for district heat, the losses and the different energy sources. " infrastructureProcess="false" localCategory="heat" localName="District heat, at consumer, swiss average, allocation exergy" localSubCategory="district heat" name="District heat, at consumer, swiss average, allocation exergy" subCategory="district heat" unit="MJ"/>
+        <geography location="CH" text="Data apply to the supply in Switzerland."/>
+        <technology text="average technology"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2018-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-12-02T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="based on literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Waldburger L., Kern C., Roberts G., Zschokke M., Conte F., Weber L." firstAuthor="Kaegi T." nameOfEditors="-" number="137341" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceNumber="0" sourceType="3" text="Kägi Thomas, Livia Waldburger, Cyril Kern, Gavin Roberts, Mischa Zschokke, Flora Conte, Lea Weber (2020) LCI of heating systems. Carbotech im Auftrag des BAFU. Carbotech AG. Zürich. CH.\nType: Separate publication\nSource: Report\nFirst author: Kägi Thomas\nOther authors: Livia Waldburger, Cyril Kern, Gavin Roberts, Mischa Zschokke, Flora Conte, Lea Weber\nYear: 2020\nTitle of anthology: Carbotech im Auftrag des BAFU\nPlace of publication: Zürich. CH\nPublisher: Carbotech AG\n" title="2021 - LCI heating systems - Kaegi" titleOfAnthology="Carbotech im Auftrag des BAFU" year="2021"/>
+        <validation proofReadingDetails="Proof reading validation: 02.12.2020; Other validation: Z:\Schreibtisch\WinShare\BAFU Heizsysteme\_A konvertieren\[EcoSpold_heat at district heat swiss average CH_v0.1_lwa.xlsx]X-Process;" proofReadingValidator="137339"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137340"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="141098" referenceToPublishedSource="137341"/>
+        <person address="anonymised" companyCode="EBP" countryCode="CH" email="anonymised" name="Andy Spoerri" number="137339" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Livia Waldburger" number="141098" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="district heat" location="CH" meanValue="1.0" name="District heat, at consumer, swiss average, allocation exergy" number="383846" subCategory="district heat" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,1,2,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="0.12532" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.3022" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,1,2,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\cogeneration" location="CH" meanValue="0.12532" name="Heat, at cogen 1MWth, natural gas, allocation exergy" number="420465" standardDeviation95="1.3022" subCategory="natural gas\cogeneration" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,2,2,1,3,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="heat pumps\heating systems" location="CH" meanValue="0.062049" name="Heat, at borehole heat pump, brine-water, 50kW, CH electricity, in new building" number="478983" standardDeviation95="1.3792" subCategory="heat pumps\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,1,2,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="CH" meanValue="0.02664" name="Heat, light fuel oil, at industrial furnace 1MW" number="204888" standardDeviation95="1.218" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,1,2,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="wood\cogeneration" location="CH" meanValue="0.081363" name="Heat, at cogen 1MWth, wood chips, allocation exergy" number="339207" standardDeviation95="1.3022" subCategory="wood\cogeneration" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,1,2,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="wood\heating systems" location="CH" meanValue="0.25574" name="Heat, mixed chips from forest, at furnace 1000kW" number="617770" standardDeviation95="1.3022" subCategory="wood\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,1,2,1,4,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="nuclear power\district heat" location="CH" meanValue="0.076368" name="Heat, at nuclear power plant, allocation exergy" number="456882" standardDeviation95="1.6224" subCategory="nuclear power\district heat" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,1,2,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="waste" location="CH" meanValue="0.35698" name="Heat from waste, at municipal waste incineration plant" number="398347" standardDeviation95="1.3022" subCategory="waste" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,2,1,1,5,BU:3); ;&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="district heat" location="CH" meanValue="1.0" name="Transport, district heat, average" number="617552" standardDeviation95="3.0504" subCategory="district heat" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

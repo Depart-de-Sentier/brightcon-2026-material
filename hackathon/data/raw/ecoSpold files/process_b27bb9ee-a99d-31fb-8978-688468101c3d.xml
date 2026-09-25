@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="447260" timestamp="2023-08-28T15:02:57.509+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="The process describes the production of pure xenon and krypton deriven from a crude concentrate from a cryogenic air separation process. As products only gaseous xenon and gaseous krypton were considered. Oxygen that is used as carrier material and returned to the air separation process is not considered. The allocation factors were calculated from the sales price of xenon and krypton in Europe in the year 1998. The ressources xenon, krypton were allocated to 100% to the corresponing product.;&#10;UUID: b27bb9ee-a99d-31fb-8978-688468101c3d" includedProcesses="Xenon, krypron as ressource, Electricity for process, cooling water and waste heat. Estimation for process infrastructure ." infrastructureProcess="false" localCategory="chemicals" localName="Xenon, gaseous, at plant" localSubCategory="gases" name="Xenon, gaseous, at plant" subCategory="gases" unit="kg"/>
+        <geography location="RER" text="&lt;null&gt;"/>
+        <technology text="Kr-Xe-concentrate with 99.7% O2 is obtained from a side column of large air separation plants. Processes as purification and further distillation and the achieved yield may vary. Data represents an average process."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-08-27T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="Production amount world-wide about 30-40 t/a for xenon and 300-400 t/a for krypton. Amount of production represented in Europe is not known. " uncertaintyAdjustments="&lt;null&gt;"/>
+        <source additionalAuthors="Chudacoff M., Hellweg S., Hischier R., Jungbluth N., Osses M., Primas A." firstAuthor="Althaus H.-J." nameOfEditors="-" number="137407" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ETH, ESU-services Ltd., Chudacoff Oekoscience" sourceNumber="0" sourceType="4" text="Althaus H.-J., Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A. (2007) Life Cycle Inventories of Chemicals. Final report ecoinvent data v2.0. Volume: 8. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Althaus H.-J.\nOther authors: Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 8\n" title="2007 - LCI chemicals - Althaus" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="8" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136699"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137674"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137674" referenceToPublishedSource="137407"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+        <person address="anonymised" companyCode="HSLU" countryCode="CH" email="anonymised" name="Alex Primas" number="137674" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="1.0" name="Xenon, gaseous, at plant" number="447260" subCategory="gases" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(nA,nA,nA,nA,nA,nA); Ressource input determined from output&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in air" meanValue="1.0" name="Xenon" number="13148" standardDeviation95="1.0500000000000003" subCategory="in air" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,4,1,1,1,5); Data from an average process, estimations&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="1409.5714285714287" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.26" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,4,1,1,1,5); Calculated from electricity use&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="5066.285714285715" name="Heat, waste" number="46930" standardDeviation95="1.26" subCategory="low. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(3,4,1,1,4,5); Assumtions of technology used for cooling&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="2.8600000000000003" name="Water, cooling, unspecified natural origin/m3" number="29019" standardDeviation95="1.6" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,5,1,3,5,5); Estimated&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="gases\infrastructure" location="RER" meanValue="2.0429E-6" name="Air separation plant" number="519647" standardDeviation95="4.0" subCategory="gases\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="2717" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

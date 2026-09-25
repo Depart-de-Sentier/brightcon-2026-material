@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="358780" timestamp="2023-08-28T15:03:39.715+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="The process &quot;boron trifluoride , at plant, GLO&quot; is modelled for the production of  boron trifluoride  from boric acid and hydrofluoric acid in the world.  Raw materials are modelled with a stoechiometric calculation. Energy consumptions and emissions are estimated. Infrastructure and transports are calculated with standard values.;&#10;CAS number: 007637-07-2; &#10;Formula: BF3; &#10;UUID: f3952cae-45ad-3ba0-8cb6-2a8f1e43603f" includedProcesses="Production of boron trifluoride including materials, energy uses, infrastructure and emissions." infrastructureProcess="false" localCategory="chemicals" localName="Boron trifluoride, at plant" localSubCategory="inorganic" name="Boron trifluoride, at plant" subCategory="inorganic" unit="kg"/>
+        <geography location="GLO" text="The inventory is modelled for the world."/>
+        <technology text="Fluorination of boric acid"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications">
+          <startDate>2000-01</startDate>
+          <endDate>2006-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-09-14T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Energy consumptions and emissions are estimated. Infrastructure and transports are calculated with standard values." percent="100" productionVolume="na" samplingProcedure="Standard values " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Sutter J." nameOfEditors="0" number="191131" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ETH" sourceNumber="0" sourceType="4" text="Sutter, J., 0 (2007) Life Cycle Inventories of Highly Pure Chemicals. Final report ecoinvent Data v2.0. Editors: 0. Volume: 19. Swiss Centre for LCI, ETHZ. Duebendorf and St. Gallen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Sutter, J.\nOther authors: 0\nYear: 2007\nName of editors: 0\nTitle of anthology: Final report ecoinvent Data v2.0\nPlace of publication: Duebendorf and St. Gallen, CH\nPublisher: Swiss Centre for LCI, ETHZ\nVolume No: 19\n" title="2007 - LCI highly pure chemicals - Sutter" titleOfAnthology="Final report ecoinvent Data v2.0" volumeNo="19" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed.; Other validation: none;" proofReadingValidator="136699"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138642"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138642" referenceToPublishedSource="191131"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Juergen Sutter" number="138642" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="Global&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="GLO" meanValue="1.0" name="Boron trifluoride, at plant" number="358780" subCategory="inorganic" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.18885" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,1,1,1,5); Stoechiometric calculation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganics" location="GLO" meanValue="0.92879" name="Hydrogen fluoride, at plant" number="396900" standardDeviation95="1.3765000000000003" subCategory="inorganics" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(4,5,na,na,na,na); Estimation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="3.4056E-4" name="Boron" number="65827" standardDeviation95="5.103700000000001" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(4,5,na,na,na,na); Calculated from the electricity input&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.1988" name="Heat, waste" number="46930" standardDeviation95="1.3000999999999998" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(4,5,na,na,na,na); Estimation&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="2.0" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.3000999999999998" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,na,na,na,na); Estimation&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="4.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.0908999999999995" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(4,5,na,na,na,na); Estimation&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.0081734" name="Boron" number="23758" standardDeviation95="5.103700000000001" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(4,5,na,na,na,na); Estimation&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.042353" name="Fluoride" number="73504" standardDeviation95="1.6169" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,1,1,1,5); Stoechiometric calculation&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="0.95975" name="Boric acid, anhydrous, powder, at plant" number="361542" standardDeviation95="1.3765000000000003" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(4,5,na,na,na,na); Estimation&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.024" name="Water, cooling, unspecified natural origin/m3" number="29019" standardDeviation95="1.3000999999999998" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="007664-39-3" category="emissions to air" generalComment="(4,5,na,na,na,na); Estimation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.0018576" name="Hydrogen fluoride" number="46232" standardDeviation95="1.6169" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(4,5,na,na,na,na); Estimation&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.333" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.3000999999999998" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="1.1331" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="22.8" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

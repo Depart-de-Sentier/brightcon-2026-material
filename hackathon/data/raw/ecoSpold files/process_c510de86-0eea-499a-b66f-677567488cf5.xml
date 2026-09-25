@@ -1,0 +1,73 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="744723" timestamp="2024-12-13T11:21:41.230+01:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="&quot;This dataset represents the supply of 1 kg of olivine. The authors assumed that an area of 200,000m2 will be mined over 50 years, with an annual capacity of 500 kt, i.e., 0.5 m2 for land use and 0.01 m2 per year for land use change are ascribed per FU. An average topsoil thickness of 0.2 m, with a bulk density of 1.3 t m−3, is considered, suggesting that 1.04 kt of overburden is produced year-round. For overburden handling, a bulldozer and a hydraulic shovel is considered, with the energy input taken from US Department of Energy, corresponding to activities in a surface limestone mine, whereas 200 km was ascribed for overburden transportation, used for backfilling. The quarry infrastructure was assumed to be similar to that of a gravel/sand quarry, as described in Kellenberger et al.&#10;Source: Foteinis, S., Campbell, J. S., &amp; Renforth, P. (2023). Life Cycle Assessment of Coastal Enhanced Weathering for Carbon Dioxide Removal from Air. Environmental Science and Technology, 57(15), 6169–6178. https://doi.org/10.1021/acs.est.2c08633&#10;&#10;****Additional comments****&#10;Diesel, represents the diesel amount used for bulldozers and hydraulic shovel for overburden handling, for drilling, the diesel used for trucks, graders and lighting for mining operations and the energy input for loading. For the machinery used in quarrying (drill, service trucks, bulk trucks, and graders), Ecoinvent’s data for diesel burned in agricultural machinery, i.e., for running a tractor with a trailer, was used as a proxy.&#10;The quarry infrastructure was assumed to be similar to that of a gravel/sand quarry, as described in Kellenberger et al.&#10;For blasting, explosives consumption ranges from 0.145 kg (basalt) to 0.374 kg (granite) per extracted t, with the higher value considered herein since this leads to better fragmentation, which is beneficial for comminution.&#10;Lubricating oil used for drilling and loading. For rock drilling, the lubricating oil consumption is considered as described in Rosado et al.&#10;For water pumping, a mean energy of 0.45 kWh per m3 was ascribed for (borehole) water pumping (diesel-powered).&#10;UUID: c510de86-0eea-499a-b66f-677567488cf5" infrastructureProcess="false" localCategory="chemicals" localName="Quarrying of olivine" localSubCategory="inorganic" name="Quarrying of olivine" subCategory="inorganic" unit="kg"/>
+        <geography location="CH"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024</startDate>
+          <endDate>2024</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2024-12-13T10:30:24.222+01:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Pierryves Padey, Telephone: +41 58 462 93 11, E-mail: pierryves.padey@bafu.admin.ch, Company: Federal Office for the Environment, Country: CH" proofReadingValidator="168876"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="FOEN" countryCode="CH" email="anonymised" name="Pierryves Padey" number="168876" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CH" meanValue="1.0" name="Quarrying of olivine" number="744723" subCategory="inorganic" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="0.013946771" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="2.0000000000000004" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="(1,3,1,1,1,5);" infrastructureProcess="false" localCategory="minerals" localSubCategory="infrastructure" location="CH" meanValue="4.0E-11" name="Mine, gravel/sand" number="415578" standardDeviation95="3.05" subCategory="infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="" infrastructureProcess="false" localCategory="resource" localSubCategory="in water" meanValue="7.1296E-5" name="Water, well" number="160727" subCategory="in water" uncertaintyType="0" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="" infrastructureProcess="false" localCategory="resource" localSubCategory="land" meanValue="8.0E-6" name="Occupation, mineral extraction site" number="151625" subCategory="land" uncertaintyType="0" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="CH" meanValue="1.448E-4" name="Explosives, tovex, at plant" number="442426" standardDeviation95="1.0500000000000003" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="" infrastructureProcess="false" localCategory="resource" localSubCategory="land" meanValue="4.0E-4" name="Transformation, to mineral extraction site" number="81565" subCategory="land" uncertaintyType="0" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,4,1,1,1,5,BU:1.05)" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="1.752E-6" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.2610000000000001" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="" infrastructureProcess="false" localCategory="resource" localSubCategory="in ground" meanValue="1.0" name="Olivine" number="17346" subCategory="in ground" uncertaintyType="0" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="" infrastructureProcess="false" localCategory="resource" localSubCategory="land" meanValue="2.0E-4" name="Transformation, from forest, unspecified" number="81553" subCategory="land" uncertaintyType="0" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.000824" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.208" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="" infrastructureProcess="false" localCategory="resource" meanValue="2.0E-4" name="Transformation, from unspecified, natural (non-use)" number="60409" subCategory="unspecified" uncertaintyType="0" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,2,1,1,1,1); &#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="4.0484E-5" name="Electricity, medium voltage, at grid" number="224133" standardDeviation95="1.1" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="0.0641664" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

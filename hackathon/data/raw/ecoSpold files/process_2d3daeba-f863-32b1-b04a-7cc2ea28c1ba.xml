@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="202481" timestamp="2023-08-28T15:03:07.051+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="water" datasetRelatesToProduct="true" generalComment="This process is based on the dataset &quot;tap water, at user/kg/RER U&quot; from Ecoinvent v2.2. The electricity consumption is regionalised. The water withdrawal and water emissions to water are regionalised. The water embodied in product (1 kg/kg) is not included and has to be accounted for in the processes, which use tap water.;&#10;CAS number: 007732-18-5; &#10;Formula: H2O; &#10;UUID: 2d3daeba-f863-32b1-b04a-7cc2ea28c1ba" includedProcesses="Infrastructure and energy use for water treatment and transportation to the end user. No emissions from water treatment." infrastructureProcess="false" localCategory="water" localName="Tap water, water balance according to MoeK 2013, at user" localSubCategory="water supply\production" name="Tap water, water balance according to MoeK 2013, at user" subCategory="water supply\production" unit="kg"/>
+        <geography location="HU" text="&lt;null&gt;"/>
+        <technology text="Example of a water works in CH."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2000-01</startDate>
+          <endDate>2017-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2019-03-29T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="&lt;null&gt;" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Stolz P." nameOfEditors="-" number="154083" placeOfPublications="Uster, CH" publisher="IEA PVPS Task 12" sourceNumber="0" sourceType="3" text="Stolz P., Frischknecht R. (2017) Life Cycle Water Use of Photovoltaic Electricity. Volume: 174. treeze Ltd.. Uster.\nType: Separate publication\nSource: Report\nFirst author: Stolz P.\nOther authors: Frischknecht R.\nYear: 2017\nPlace of publication: Uster\nPublisher: treeze Ltd.\nVolume No: 174\n" title="2017 - Water footprint euro. rooftop PV electricity - Stolz" titleOfAnthology="-" volumeNo="174" year="2017"/>
+        <validation proofReadingDetails="Proof reading validation: 29.03.2019; Other validation: \\SRV01\ESU-Docs\Projekte laufend\174 Photovoltaic, IEA Task 12\2017 National PV Mixes\EcoSpold\[603-Tap-Water-aus-Proj603-v0.7.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138233"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138233" referenceToPublishedSource="154083"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Philippe Stolz" number="138233" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="water" generalComment="HUNGARY&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="water supply\production" location="HU" meanValue="1.0" name="Tap water, water balance according to MoeK 2013, at user" number="202481" subCategory="water supply\production" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,1,1,1,5,BU:1.05); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.001404" name="Heat, waste" number="46930" standardDeviation95="1.2225999999999997" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(2,3,1,3,1,5,BU:1.05); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="1.7656E-5" name="Treatment, sewage, unpolluted, to wastewater treatment, class 3" number="230660" standardDeviation95="1.2238000000000002" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,na,1,1,1,na,BU:5); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.2948E-6" name="Aluminium" number="68256" standardDeviation95="5.257899999999999" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(1,3,1,3,1,1,BU:1.05); Regionalisation of water withdrawal.; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.0011287" name="Water, unspecified natural origin, HU" number="55596" standardDeviation95="1.0744000000000002" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,na,1,1,1,na,BU:3); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="1.0E-7" name="Chlorine" number="16934" standardDeviation95="3.2254" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na,BU:2); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="8.888E-6" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,na,1,1,1,na,BU:3); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="5.0352E-6" name="Chloride" number="34061" standardDeviation95="3.2254" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,3,1,3,1,5,BU:3); ; Ecoinvent v2.2&#10;" infrastructureProcess="true" localCategory="water" localSubCategory="drinking water\infrastructure" location="CH" meanValue="2.0568E-11" name="Water storage" number="187806" standardDeviation95="3.0524999999999998" subCategory="drinking water\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,1,3,1,5,BU:1.05); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="6.33E-6" name="Aluminium sulphate, powder, at plant" number="363444" standardDeviation95="1.2238000000000002" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,1,3,1,5,BU:1.05); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="3.3333E-6" name="Ozone, liquid, at plant" number="585808" standardDeviation95="1.2238000000000002" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,1,3,1,5,BU:1.05); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="8.8E-7" name="Hydrogen peroxide, 50% in H2O, at plant" number="521731" standardDeviation95="1.2238000000000002" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,1,3,1,5,BU:1.05); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="1.0E-7" name="Chlorine, liquid, production mix, at plant" number="141071" standardDeviation95="1.2238000000000002" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,3,1,3,1,5,BU:1.05); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="4.17E-6" name="Disposal, wood untreated, 20% water, to municipal incineration" number="263132" standardDeviation95="1.2238000000000002" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,3,1,3,1,5,BU:1.05); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="GLO" meanValue="4.17E-6" name="Charcoal, at plant" number="479589" standardDeviation95="1.2238000000000002" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na,BU:2); ; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.0000014813" name="Transport, freight, lorry, fleet average" number="228841" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,3,1,3,1,5,BU:3); ; Ecoinvent v2.2&#10;" infrastructureProcess="true" localCategory="water" localSubCategory="drinking water\infrastructure" location="CH" meanValue="2.0568E-11" name="Pump station" number="492145" standardDeviation95="3.0524999999999998" subCategory="drinking water\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,3,1,3,1,5,BU:3); ; Ecoinvent v2.2&#10;" infrastructureProcess="true" localCategory="water" localSubCategory="drinking water\infrastructure" location="CH" meanValue="3.1429E-10" name="Water supply network" number="447878" standardDeviation95="3.0524999999999998" subCategory="drinking water\infrastructure" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,3,1,3,1,5,BU:3); ; Ecoinvent v2.2&#10;" infrastructureProcess="true" localCategory="water" localSubCategory="drinking water\infrastructure" location="CH" meanValue="1.1907E-11" name="Water works" number="361425" standardDeviation95="3.0524999999999998" subCategory="drinking water\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,3,1,3,1,5,BU:1.05); Regionalisation of electricity use.; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="HU" meanValue="3.9E-4" name="Electricity, medium voltage, at grid" number="458803" standardDeviation95="1.2238000000000002" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="emissions to water" generalComment="(4,5,na,na,na,na,BU:1.5); Regionalisation of water losses.; Ecoinvent v2.2&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="1.11E-4" name="Water, HU" number="58040" standardDeviation95="1.6169" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

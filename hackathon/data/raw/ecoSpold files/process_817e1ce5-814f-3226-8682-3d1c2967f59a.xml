@@ -1,0 +1,72 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="236806" timestamp="2023-08-28T15:03:39.939+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity by fuel" datasetRelatesToProduct="true" generalComment="Average gas power plant 100 MWe.;&#10;UUID: 817e1ce5-814f-3226-8682-3d1c2967f59a" includedProcesses="The module includes the most important materials used for construction. It includes also the energy requirements for construction; transport is implicitly included in energy consumption. (Life time for operation assumed 180&quot;000 h.)" infrastructureProcess="true" localCategory="electricity by fuel" localName="Gas power plant, 100MWe" localSubCategory="gas\power plant\infrastructure" name="Gas power plant, 100MWe" subCategory="gas\power plant\infrastructure" unit="p"/>
+        <geography location="RER" text="Average conditions for European plants."/>
+        <technology text="Average installed gas power plant"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-07-08T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Heck T., Jungbluth N., Tuchschmid M." firstAuthor="Faist Emmenegger M." nameOfEditors="Dones R." number="149369" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Faist Emmenegger, M., Heck, T., Jungbluth, N. (2007) Erdgas. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0. Editors: Dones R.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Faist Emmenegger, M.\nOther authors: Heck, T., Jungbluth, N.\nYear: 2007\nName of editors: Dones R.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2007 - Natural gas - Faist-Emmeneger" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0" volumeNo="6" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed.; Other validation: none;" proofReadingValidator="139311"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138970"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138970" referenceToPublishedSource="149369"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Michael Spielmann" number="139311" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Thomas Heck" number="138970" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity by fuel" generalComment="Europe&#10;" infrastructureProcess="true" localCategory="electricity by fuel" localSubCategory="gas\power plant\infrastructure" location="RER" meanValue="1.0" name="Gas power plant, 100MWe" number="236806" subCategory="gas\power plant\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="basic uncertainty&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="75000.0" name="Copper, at regional storage" number="328058" standardDeviation95="2.9999999999999996" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="uncertainty of amount of material and of energy needed&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="1.16E7" name="Heavy fuel oil, burned in industrial furnace 1MW, non-modulating" number="496305" standardDeviation95="4.499999999999999" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="estimated from range of values in literature&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="20000.0" name="Transformation, to industrial area" number="68360" standardDeviation95="2.9999999999999996" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="uncertainty of electricity consumed (see exchange &quot;electricity, medium voltage, production UCTE, at grid&quot;)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="850000.0" name="Heat, waste" number="46930" standardDeviation95="4.499999999999999" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="basic uncertainty&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="insulation" location="CH" meanValue="150000.0" name="Rock wool, packed, at plant" number="521350" standardDeviation95="2.9999999999999996" subCategory="insulation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="uncertainty of amount of material and of energy needed&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="236000.0" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="4.499999999999999" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="estimated from range of values in literature&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="20000.0" name="Transformation, from unknown" number="54270" standardDeviation95="2.9999999999999996" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="uncertainty of land use and life time&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="720000.0" name="Occupation, industrial area" number="132653" standardDeviation95="4.0" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="uncertainty of amount of material and of energy needed&#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="1.16E7" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="4.499999999999999" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="basic uncertainty&#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="150000.0" name="Polyethylene, LDPE, granulate, at plant" number="476483" standardDeviation95="2.9999999999999996" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="basic uncertainty&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="1820.0" name="Concrete, normal, at plant" number="367058" standardDeviation95="2.9999999999999996" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="basic uncertainty&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="550000.0" name="Reinforcing steel, at plant" number="545988" standardDeviation95="2.9999999999999996" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="basic uncertainty&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="75000.0" name="Aluminium, production mix, at plant" number="436582" standardDeviation95="2.9999999999999996" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

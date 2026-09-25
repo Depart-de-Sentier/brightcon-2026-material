@@ -1,0 +1,90 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="245295" timestamp="2023-08-28T15:03:11.068+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="metals" datasetRelatesToProduct="true" generalComment="The inventory is meant to be used as a background dataset for technical processes using soft solder. The lead-free product investigated is Sn97Cu3 that is made from tin (97%) and copper (3%). The investigation is based on data provided by a producer and information from literature.;&#10;UUID: 9a04086e-d3c2-399a-aa86-f9b959e29b68" includedProcesses="Gate to gate including solder mixing and casting, atomisation and paste mixing, including estimate for emissions and infrastructure." infrastructureProcess="false" localCategory="metals" localName="Soft solder, Sn97Cu3, at plant" localSubCategory="alloys" name="Soft solder, Sn97Cu3, at plant" subCategory="alloys" unit="kg"/>
+        <geography location="RER" text="&lt;null&gt;"/>
+        <technology text="Production of lead-free soft solder from metals tin and copper."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications. Most data for 2000.">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-06-16T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="From one producer to European average." productionVolume="2000t for this product." samplingProcedure="Questionnaire and literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Blaser S., Scharnhorst W., Tuchschmid M., Jungbluth N., Faist Emmenegger M." firstAuthor="Classen M." nameOfEditors="-" number="148415" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Classen M., Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M. (2008) Life Cycle Inventories of Metals. Final report ecoinvent data v2.1. Volume: 10. Issue: 0. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Classen M.\nOther authors: Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M.\nYear: 2008\nTitle of anthology: Final report ecoinvent data v2.1\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 10\nIssue No: 0\n" title="2009 - LCI metals - Classen" titleOfAnthology="Final report ecoinvent data v2.1" volumeNo="10" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="139614"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136351"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136351" referenceToPublishedSource="148415"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="metals" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="alloys" location="RER" meanValue="1.0" name="Soft solder, Sn97Cu3, at plant" number="245295" subCategory="alloys" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distance 100km, 50km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.141" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.1" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="incineration" generalComment="(2,3,1,3,1,3); Waste water from production&#10;" infrastructureProcess="false" localCategory="incineration" localSubCategory="hazardous waste incineration" location="CH" meanValue="0.0075" name="Disposal, separator sludge, 90% water, to hazardous waste incineration" number="203157" standardDeviation95="1.1" subCategory="hazardous waste incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,3,1,3,5,5); Estimation (97% of 5mg/m3 in flow rate of inert gas)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="3.0E-6" name="Tin" number="20850" standardDeviation95="6.1" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,3,1,3,1,3); Questionnaire&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.25" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.1" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(2,3,1,3,1,3); Unspecified wastes&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="municipal incineration" location="CH" meanValue="0.025" name="Disposal, municipal solid waste, 22.9% water, to municipal incineration" number="360318" standardDeviation95="1.1" subCategory="municipal incineration" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007647-01-0" category="emissions to air" generalComment="(5,3,1,3,5,5); Maximum estimation in inert gas flow&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.86E-5" name="Hydrogen chloride" number="25789" standardDeviation95="2.5000000000000004" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,3,1,3,1,3); Questionnaire&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="0.828" name="Natural gas, burned in industrial furnace 1MWth" number="262422" standardDeviation95="1.1" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,3,1,3,1,3); Produced waste water&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="0.0075" name="Tap water, at user" number="227940" standardDeviation95="1.1" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,3,2,3,1,3); Assumption for additives based on literature&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="0.111" name="Chemicals organic, at plant" number="497739" standardDeviation95="1.1" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007664-41-7" category="emissions to air" generalComment="(5,3,1,3,5,5); Maximum estimation in inert gas flow&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="9.25E-6" name="Ammonia" number="635" standardDeviation95="2.3" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007440-50-8" category="emissions to air" generalComment="(5,3,1,3,5,5); Estimation (3% of 5mg/m3 in flow rate of inert gas)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="9.29E-8" name="Copper" number="644" standardDeviation95="6.1" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(5,3,1,3,5,5); Maximum estimation in inert gas flow&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="3.08E-5" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="2.5000000000000004" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,3,1,3,1,3); 1% losses&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="0.0273" name="Copper, at regional storage" number="328058" standardDeviation95="1.1" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distance 100, 200, 600km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.326" name="Transport, freight, rail" number="149864" standardDeviation95="2.1" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,3,2,3,1,3); Literature, Inert gas&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="0.774" name="Nitrogen, liquid, at plant" number="267576" standardDeviation95="1.1" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,3,1,3,1,3); Calculation for plant with 100'000t/a and a life time of 50a&#10;" infrastructureProcess="true" localCategory="metals" localSubCategory="non ferro\production\infrastructure" location="RER" meanValue="2.0E-10" name="Solder production plant" number="199013" standardDeviation95="2.9999999999999996" subCategory="non ferro\production\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(5,3,1,3,5,5); Maximum estimation in inert gas flow&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="6.17E-6" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="2.8999999999999995" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,3,1,3,1,3); Calculation&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.9" name="Heat, waste" number="46930" standardDeviation95="1.1" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,3,1,3,1,3); 1% losses&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="0.882" name="Tin, at regional storage" number="468952" standardDeviation95="1.1" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

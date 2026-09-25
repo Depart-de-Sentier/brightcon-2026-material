@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="288262" timestamp="2023-08-28T15:03:41.808+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity" datasetRelatesToProduct="true" generalComment="This dataset describes the transmission of high voltage electricity.\nTime period: Time of publications.\nVersion: 1\nEnergy values: Undefined\nLocal category: Elektrizität\nLocal subcategory: Erzeugungsmix\nUVEK 2022 source file:726-Strommixe-EU_v0.8._X-GO supply mix Distribution.xml\n\n&#10;UUID: 2411ff63-5aec-399f-9c50-3c1f98c145c3" includedProcesses="Included are the electricity production in LT, the transmission network and direct emissions to air (ozone and N2O). Electricity losses are accounted for." infrastructureProcess="false" localCategory="electricity" localName="xxx Electricity, high voltage, GO supply mix" localSubCategory="notMaintained" name="xxx Electricity, high voltage, GO supply mix" subCategory="notMaintained" unit="kWh"/>
+        <geography location="LT" text="undefined"/>
+        <technology text="undefined"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2018-01</startDate>
+          <endDate>2018-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2021-02-10T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" productionVolume="na" samplingProcedure="&lt;null&gt;" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Krebs L." nameOfEditors="-" number="138842" placeOfPublications="Uster, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="3" text="Krebs L., Stolz P., Frischknecht R. (2020) Umweltbilanz Strommix Schweiz 2018. Project reports. Volume: 723. treeze Ltd.. Uster, CH.\nType: Separate publication\nFirst author: Krebs L.\nOther authors: Stolz P., Frischknecht R.\nYear: 2020\nTitle of anthology: Project reports\nPlace of publication: Uster, CH\nPublisher: treeze Ltd.\nVolume No: 723\n" title="2021 - LCA electricity mix Switzerland 2018 - Krebs" titleOfAnthology="Project reports" volumeNo="723" year="2021"/>
+        <validation proofReadingDetails="Proof reading validation: 10.02.2021; Other validation: G:\Projekte laufend\726 Umweltbilanz Strommix Schweiz 2018\EcoSpold\[726-Strommixe-EU_v0.8.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137963"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137963" referenceToPublishedSource="138842"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Luana Krebs" number="137963" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" generalComment="LITHUANIA&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="notMaintained" location="LT" meanValue="1.0" name="xxx Electricity, high voltage, GO supply mix" number="288262" subCategory="notMaintained" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="" infrastructureProcess="false" localCategory="electricity" localSubCategory="notMaintained" location="LT" meanValue="1.0368" name="xxx Electricity, GO supply mix" number="586979" subCategory="notMaintained" uncertaintyType="0" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,4,5,3,1,5,BU:1,5); Literature estimation; Itten, Frischknecht &amp; Stucki 2014&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="4.5E-6" name="Ozone" number="66752" standardDeviation95="1.8531999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to soil" generalComment="(2,4,1,1,1,5,BU:1,05); Estimation based on network losses;&#10;" infrastructureProcess="false" localCategory="emissions to soil" localSubCategory="unspecified" meanValue="0.0066164" name="Heat, waste" number="30793" standardDeviation95="1.2423" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,1,1,1,5,BU:1,05); Estimation based on network losses;&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.12571" name="Heat, waste" number="46930" standardDeviation95="1.2423" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="010024-97-2" category="emissions to air" generalComment="(3,4,5,3,1,5,BU:1,5); Literature estimation; Itten, Frischknecht &amp; Stucki 2014&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="5.0E-6" name="Dinitrogen monoxide" number="646" standardDeviation95="1.8531999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(3,2,5,3,1,5,BU:3); Assumed service life of the electricity grid: 40a; Long-distance transport included by assuming a distance of 50 km, a capacity of 1 GW and a load factor of 60%; Itten, Frischknecht &amp; Stucki 2014&#10;" infrastructureProcess="true" localCategory="electricity" localSubCategory="distribution" location="CH" meanValue="6.8199E-9" name="Transmission network, electricity, high voltage" number="313112" standardDeviation95="3.2848" subCategory="distribution" uncertaintyType="1" unit="km">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

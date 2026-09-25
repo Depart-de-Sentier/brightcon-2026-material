@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="359687" timestamp="2023-08-28T15:03:14.154+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="metals" datasetRelatesToProduct="true" generalComment="The module describes the consump-tion of chromite in Europe in 1994. It is designed for the use of chromite as intermediary product in the pro-duction of ferrochromium, dichro-mate and refractories. This module does not consider secondary sources of chromium. Process data is taken mainly from a material flow analysis for the consumption of chromium compounds in Germany. Results are used as a proxy for the European situation. ;&#10;Synonyms: ferro-chrome, ferrochrome, chromeisen; &#10;UUID: b896d2ec-abc9-3300-9394-10baf6b94365" includedProcesses="The module includes the transportation of high-carbon ferrochromium to Europe. No secondary production considered, since secondary chromium is recycled to the foundries and has to be inventoried in the respective module, i. e. when casting the final rawmaterial in the stainless steel production." infrastructureProcess="false" localCategory="metals" localName="Ferrochromium, high-carbon, 68% Cr, at regional storage" localSubCategory="alloys" name="Ferrochromium, high-carbon, 68% Cr, at regional storage" subCategory="alloys" unit="kg"/>
+        <geography location="RER" text="This module relates to the consumption in Europe, although the import mix for Germany is chosen. Production relates to a global average."/>
+        <technology text="Most transport by ship"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>1994-01</startDate>
+          <endDate>2003-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-07-03T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography and Technology" productionVolume="n.a. 350'000 t in GER (1994), no info on consumpt. in RER" samplingProcedure="literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Althaus H.-J., Blaser S., Scharnhorst W., Tuchschmid M., Jungbluth N., Faist Emmenegger M." firstAuthor="Classen M." nameOfEditors="-" number="148415" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Classen M., Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M. (2008) Life Cycle Inventories of Metals. Final report ecoinvent data v2.1. Volume: 10. Issue: 0. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Classen M.\nOther authors: Althaus H.-J., Blaser S., Doka G., Jungbluth N., Tuchschmid M.\nYear: 2008\nTitle of anthology: Final report ecoinvent data v2.1\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 10\nIssue No: 0\n" title="2009 - LCI metals - Classen" titleOfAnthology="Final report ecoinvent data v2.1" volumeNo="10" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136699"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="148776"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="148776" referenceToPublishedSource="148415"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Mischa Classen" number="148776" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="metals" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="alloys" location="RER" meanValue="1.0" name="Ferrochromium, high-carbon, 68% Cr, at regional storage" number="359687" subCategory="alloys" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,3,1,1,2,5); calculation based on assumptions&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="3.0" name="Transport, freight, rail" number="149864" standardDeviation95="2.0000000000000004" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,3,1,1,2,5); calculation based on assumptions&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="ship" location="OCE" meanValue="11.600000000000003" name="Transport, transoceanic tanker" number="374506" standardDeviation95="2.0000000000000004" subCategory="ship" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(2,2,3,1,1,2,4)&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="alloys" location="GLO" meanValue="1.0" name="Ferrochromium, high-carbon, 68% Cr, at plant" number="194580" standardDeviation95="1.1" subCategory="alloys" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

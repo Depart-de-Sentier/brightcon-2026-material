@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="278412" timestamp="2024-07-09T13:23:19.629+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="Natural gas:  0.73 kg/m3 at standard condition @ 15Â°C, 1.03 bar. LHV by mass: 46.5 MJ/kg. LHV by volume at standard condition: 36.0 MJ/Nm3. Post-combusiton carbon capture, based on MDEA technology, with a 98% efficiency. The reformer furnace emissions are not captured. Hence, there is an overall capture rate of 65%. Source: Antonini et al., 2020. Hydrogen production from natural gas and biomethane with carbon capture and storage â€“ A techno-environmental analysis. Sustainable Energy Fuels, 2020,4, 2967-2986. https://doi.org/10.1/D0SE00222D&#10;&#10; UUID: 9f6b50e7-6262-351e-a60d-add77e7d8e97" infrastructureProcess="false" localCategory="fuels" localName="Hydrogen production, auto-thermal reforming of natural gas, with CCS, 25 bar" localSubCategory="synthetic\transformation" name="Hydrogen production, auto-thermal reforming of natural gas, with CCS, 25 bar" subCategory="synthetic\transformation" unit="kg"/>
+        <geography location="CH"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024-01</startDate>
+          <endDate>2024-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2023-10-28T00:00:00.000+02:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Rolf Frischknecht, Telephone: 0041 44 940 61 91, E-mail: frischknecht@treeze.ch, Company: treeze, Country: CH" proofReadingValidator="136749"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="not defined" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\transformation" location="CH" meanValue="1.0" name="Hydrogen production, auto-thermal reforming of natural gas, with CCS, 25 bar" number="278412" subCategory="synthetic\transformation" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" formula="NOx as NO2" generalComment="{2;4;2;3;3;5;1.5;}" infrastructureProcess="false" localCategory="air" localSubCategory="unspecified" meanValue="0.003" name="Nitrogen oxides" number="79243" standardDeviation95="1.6379999999999997" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="{2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="3.624E-4" name="Copper oxide, at plant" number="601476" standardDeviation95="1.331" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="{2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="civil engineering_transport" location="RER" meanValue="3.124E-4" name="Portafer, at plant" number="406101" standardDeviation95="1.331" subCategory="civil engineering_transport" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: 0.0 kg over 5100.0 km." infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="CH" meanValue="0.001439" name="Transport, freight, rail, electricity with shunting" number="209432" standardDeviation95="2.208" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="Generic transport distances calculated based on Table 4.2 of the ecoinvent v.2 Methodology report. Distribution: 0.0 kg over 490.0 km." infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.0001385" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.208" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="001333-74-0" category="emissions to air" formula="H2" generalComment="Loss {2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="air" localSubCategory="unspecified" meanValue="0.0025" name="Hydrogen" number="73124" standardDeviation95="1.331" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="{2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="2.029E-4" name="Nickel, 99.5%, at plant" number="509334" standardDeviation95="1.331" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="{2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganics" location="RER" meanValue="5.327E-4" name="Aluminium oxide, at plant" number="423671" standardDeviation95="1.331" subCategory="inorganics" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="{2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="3.6E-5" name="Chromium oxide, flakes, at plant" number="207523" standardDeviation95="1.331" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" formula="CO2" generalComment="{2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="air" localSubCategory="unspecified" meanValue="0.5884" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.331" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="25 years. 75 ktons per year. {2;4;2;3;3;5;3;}" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\transformation" location="CH" meanValue="5.348E-10" name="Hydrogen plant construction, by methane reforming" number="260627" standardDeviation95="3.1080000000000005" subCategory="synthetic\transformation" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="{2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="3.714E-4" name="Zinc oxide, at plant" number="523530" standardDeviation95="1.331" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="{2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="resource" localSubCategory="in water" meanValue="0.3804" name="Water, cooling, unspecified natural origin/m3" number="29019" standardDeviation95="1.331" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="{2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="2.796E-5" name="Magnesium oxide, at plant" number="570542" standardDeviation95="1.331" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="{2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="water" localSubCategory="industry water" location="CH" meanValue="7.539" name="Water, deionised, at plant" number="617689" standardDeviation95="1.331" subCategory="industry water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="{2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="1.159E-5" name="Sheet rolling, steel" number="168302" standardDeviation95="1.331" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="{2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CH" meanValue="4.8E-5" name="Quicklime, milled, packed, at plant" number="270724" standardDeviation95="1.331" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="{2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="washing agents\builders" location="RER" meanValue="8.829E-4" name="Zeolite, powder, at plant" number="214934" standardDeviation95="1.331" subCategory="washing agents\builders" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="{2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="CH" meanValue="8.344" name="Carbon dioxide storage, at hydrogen production plant, pre, pipeline 200km, storage 1000m" number="245541" standardDeviation95="1.331" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="{2;4;2;3;3;5;1.05;}" infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\gas to user" location="CH" meanValue="156.82" name="Natural gas, high pressure, at consumer" number="275501" standardDeviation95="1.331" subCategory="natural gas\gas to user" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="361.38" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

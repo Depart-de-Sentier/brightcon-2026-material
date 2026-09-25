@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="203999" timestamp="2023-08-28T15:03:38.627+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="natural gas" datasetRelatesToProduct="true" generalComment="In 2019 100% of the imported Russian natural gas to DE was imported by pipeline and 0% as LNG. An average distance of 4860 km is estimated for the pipeline export from Russian Federation, of which are 410 km offshore pipeline. The estimated shipping distance for LNG are 11700 km.;&#10;5bf64358-ff40-3ab3-b6e9-415948badd4c" includedProcesses="This dataset describes the transport needed for an average export of Russian natural gas. Gas losses and emissions during seasonal storage are included." infrastructureProcess="false" localCategory="natural gas" localName="Natural gas, production RU, at long-distance pipeline" localSubCategory="transport" name="Natural gas, production RU, at long-distance pipeline" subCategory="transport" unit="Nm3"/>
+        <geography location="DE" text=" The data for storage emissions are based on global data. The amount of gas stored is a rough estimate based on European data. The average weighted transport distance is based on the trade movements 2019."/>
+        <technology text="The distance is an European average based on the European long-distance pipeline network and LNG shipping routes."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Transport modes investigated for 2019.">
+          <startDate>2000-01</startDate>
+          <endDate>2020-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-04-01T12:27:07.728+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" percent="100" productionVolume="none" samplingProcedure="Literature. Online calculators for distances." uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Jungbluth N., Meili C." firstAuthor="Bussa M." nameOfEditors="-" number="198644" placeOfPublications="Schaffhausen, CH" publisher="ESU-services Ltd." sourceNumber="0" sourceType="3" text="Bussa M., Meili C., Jungbluth N. (2021) Life cycle inventories for long-distance transport of natural gas. Project report. Volume: 565. ESU-services Ltd.. Schaffhausen, CH.\nType: Separate publication\nSource: Report\nFirst author: Bussa M.\nOther authors: Meili C., Jungbluth N.\nYear: 2021\nTitle of anthology: Project report\nPlace of publication: Schaffhausen, CH\nPublisher: ESU-services Ltd.\nVolume No: 565\n" title="2021 - LCI long-dist. transp. and distrib. natural gas - Bussa" titleOfAnthology="Project report" volumeNo="565" year="2021"/>
+        <validation proofReadingDetails="Passed. https://esuservices-my.sharepoint.com/personal/jungbluth_esuservices_onmicrosoft_com/Documents/ESU-intern/565 LCI oil and gas sector CH BAFU/EcoSpold/[EcoSpold-oil¬gas-transport-2020-v2.0.xlsb]X-Process" proofReadingValidator="136600"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136353"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136351" referenceToPublishedSource="198644"/>
+        <person address="anonymised" companyCode="IFEU" countryCode="DE" email="anonymised" name="Axel Liebich, Daniel Muenter" number="136600" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Maresa Bussa" number="136353" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="natural gas" generalComment="&lt;null&gt;" infrastructureProcess="false" localCategory="natural gas" localSubCategory="transport" location="DE" meanValue="1.0" name="Natural gas, production RU, at long-distance pipeline" number="203999" subCategory="transport" uncertaintyType="0" unit="Nm3">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(2,1,1,1,1,BU:1.05); Imports via pipeline + losses" infrastructureProcess="false" localCategory="natural gas" localSubCategory="production" location="RU" meanValue="1.0001" name="Natural gas, at production" number="478441" standardDeviation95="1.0713999999999997" subCategory="production" uncertaintyType="1" unit="Nm3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000106-97-8" category="emissions to air" generalComment="(2,5,3,1,1,BU:1.5); Emissions from storage. Calculated based on average losses and gas composition" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="6.3521E-7" name="Butane" number="639" standardDeviation95="1.5798000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007439-97-6" category="emissions to air" generalComment="(2,5,3,1,1,BU:5); Emissions from storage. Calculated based on average losses and gas composition" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.0E-12" name="Mercury" number="89723" standardDeviation95="5.069600000000001" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-98-6" category="emissions to air" generalComment="(2,5,3,1,1,BU:1.5); Emissions from storage. Calculated based on average losses and gas composition" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="1.2353E-6" name="Propane" number="661" standardDeviation95="1.5798000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-84-0" category="emissions to air" generalComment="(2,5,3,1,1,BU:1.5); Emissions from storage. Calculated based on average losses and gas composition" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="5.4904E-6" name="Ethane" number="647" standardDeviation95="1.5798000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(2,1,1,1,1,BU:1.05); Average weighted distance is estimated based on trade statistics and pipeline network." infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas" location="RU" meanValue="0.3116" name="Transport, natural gas, offshore pipeline, long distance" number="280388" standardDeviation95="1.0713999999999997" subCategory="natural gas" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(2,5,3,1,1,BU:1.5); Emissions from storage. Calculated based on average losses and gas composition" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="4.5738E-8" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.5798000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000074-82-8" category="emissions to air" generalComment="(2,5,3,1,1,BU:1.5); Emissions from storage. Calculated based on average losses and gas composition" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="6.6287E-5" name="Methane, fossil" number="90787" standardDeviation95="1.5798000000000003" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(2,1,1,1,1,BU:1.05); Average weighted distance is estimated based on trade statistics and pipeline network." infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas" location="RU" meanValue="3.382" name="Transport, natural gas, onshore pipeline, long distance" number="161019" standardDeviation95="1.0713999999999997" subCategory="natural gas" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000124-38-9" category="emissions to air" generalComment="(2,5,3,1,1,BU:1.05); Emissions from storage. Calculated based on average losses and gas composition" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="low. pop." meanValue="2.293E-6" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.2423" subCategory="low. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="natural gas" generalComment="(4,1,5,3,3,BU:1.05); Energy expenditure of seasonal storage" infrastructureProcess="false" localCategory="natural gas" localSubCategory="power plants" location="RU" meanValue="0.083592" name="Natural gas, burned in gas turbine" number="424172" standardDeviation95="1.6215" subCategory="power plants" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

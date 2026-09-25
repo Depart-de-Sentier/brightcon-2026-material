@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="EcoInvent Excel2EcoSpold 1.9.18" number="189123" timestamp="2023-09-14T08:17:02">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electricity by fuel" datasetRelatesToProduct="true" generalComment="Annual output of grid-connected PV power plants differentiated for roof-top, facade and centralized power plants. Technology and installation type breakdown based on literature (IEA-PVPS Task 1 and Fraunhofer ISE reports) and expert estimates. Average yield based on national statistics (Swissolar annual reports 2012-2018). The lifetime of PV systems is estimated at 30 years and a linear degradation rate of 0.7% per year is assumed (10.5% on average over 30 years) based on the PEFCR PV electricity. UUID: 115f0fa9-3fb0-3497-bcd4-7c8a8a7a5273" includedProcesses="Infrastructure for 280kWp PV plant, water use for cleaning, amount of solar energy transformed to electricity and waste heat emission due to losses of electricity in the system. Annual output, Roof-Top: 976 kWh/kWp." infrastructureIncluded="true" infrastructureProcess="false" localCategory="electricity by fuel" localName="Electricity, PV, at 280 kWp flat-roof, single-Si" localSubCategory="photovoltaic" name="Electricity, PV, at 280 kWp flat-roof, single-Si" subCategory="photovoltaic" unit="kWh">
+          <synonym>monocrystalline</synonym>
+          <synonym>single crystalline</synonym>
+          <synonym>silicon</synonym>
+        </referenceFunction>
+        <geography location="CH" text="Use in CH."/>
+        <technology text="Electricity production with grid-connected photovoltaic power plants."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2006-01</startDate>
+          <endDate>2018-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2023-09-14T08:17:02" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Water demand estimated at 20 L per m2 PV module over life time of the system." percent="100.0" samplingProcedure="Statistical data for CH." uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Itten R." number="165340" placeOfPublications="Uster, CH" publisher="treeze Ltd." sourceType="3" text="Report" title="2014 - LCI global PV supply chain - Itten" titleOfAnthology="Project report" volumeNo="174" year="2014"/>
+        <source additionalAuthors="Stucki M., Flury K., Frischknecht R., Buesser S." firstAuthor="Jungbluth N." nameOfEditors="Bauer C." number="165341" placeOfPublications="Uster, CH" publisher="ESU-services Ltd." sourceType="3" text="www.esu-services.ch" title="2012 - LCI photovoltaics - Jungbluth" titleOfAnthology="0" volumeNo="407" year="2012"/>
+        <source additionalAuthors="Frischknecht R., Wyss F., de Wild-Scholten M." firstAuthor="Stolz P." number="165342" placeOfPublications="Uster, CH" publisher="treeze Ltd." sourceType="3" text="Report" title="2016 - Electricity from photovoltaics PEFCR - Stolz" titleOfAnthology="Project report" volumeNo="174" year="2016"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Stolz P." number="165343" placeOfPublications="Uster, CH" publisher="treeze Ltd." sourceType="3" text="Report" title="2019 - LCA national PV electricity mixes - Stolz" titleOfAnthology="Project report" volumeNo="174" year="2019"/>
+        <source additionalAuthors="Itten R., Sinha P., de Wild-Scholten M., Zhank J." firstAuthor="Frischknecht R." number="138234" placeOfPublications="Petten, NL" publisher="IEA PVPS Task 12" sourceType="3" text="Report" title="2015 - LCI and LCA photovoltaic systems - Frischknecht" titleOfAnthology="Project report" volumeNo="174" year="2020"/>
+        <validation otherDetails="G:\Projekte laufend\174 Photovoltaic, IEA Task 12\2017 Global supply chain\EcoSpold\[174-photovoltaics-global-supply-chain-v2.7.xlsx]X-Process" proofReadingDetails="14.09.2023" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138233" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="2" person="138233" referenceToPublishedSource="138234"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telefax="anonymised" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Philippe Stolz" number="138233" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity by fuel" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="CH" meanValue="1" name="Electricity, PV, at 280 kWp flat-roof, single-Si" number="189123" subCategory="photovoltaic" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(2,2,3,2,1,3); Energy loss in the system is included" meanValue="3.8503" name="Energy, solar, converted" number="82305" standardDeviation95="1.3328" subCategory="in air" uncertaintyType="1" unit="MJ">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,2,3,2,1,3); Estimation 20l/m2 module" infrastructureProcess="false" localCategory="water" localSubCategory="water supply\production" location="CH" meanValue="0.0035045" name="Tap water, water balance according to MoeK 2013, at user" number="409268" standardDeviation95="1.3383" subCategory="water supply\production" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(2,2,3,2,1,3); Estimation 20l/m2 module" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="3.1541E-6" name="Treatment, sewage, from residence, to wastewater treatment, class 2" number="538378" standardDeviation95="1.3328" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(2,1,1,1,1,5); Annual yield 976 kWh/kWp, lifetime 30a, average degradation over lifetime 10.5%" infrastructureProcess="true" localCategory="electricity by fuel" localSubCategory="photovoltaic\infrastructure" location="CH" meanValue="1.2203E-7" name="280 kWp flat-roof installation, single-Si, on roof" number="186166" standardDeviation95="3.7239" subCategory="photovoltaic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,na,na,na,na,na); Calculation" meanValue="0.25027" name="Heat, waste" number="46930" standardDeviation95="1.2323" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,na,na,na,na,na); Calculation" meanValue="0.00035045" name="Water, CH" number="52456" standardDeviation95="1.5738" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

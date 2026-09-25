@@ -1,0 +1,48 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="542310" timestamp="2024-07-09T13:23:19.247+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="This dataset represents the supply of 1 kilowatt hour of electricity in a residence, by hydrogen conversion in a fuel cell, PEM. The hydrogen is produced by  Pyrolysis, with liquefied natural gas from Algeria as feedstock. Electricity conversion efficiency [% LHV input]: 45%. LHV [kWh/kg]: 33.33. Market price [Euro/MJ]: 0.03. Synthesis efficiency [% LHV input]: 0%. Total cap. Input-related [kW]: 2.74. CO2 biogenic share [%]: 0%. Power [kW]: 1.6. Lifetime [years]: 4.88. Annual operation [hours]: 4100. Allocation factor: 0.88. On-site storage loss [%]: 0. Use loss [%]: 0.56. For more information, refer to: Sacchi, R. and Bauer, C. LCA of Power-to-X processes and applications in the residential sector. Paul Scherrer Institut, 2023. Source: Sacchi, R. and Bauer, C. LCA of Power-to-X processes and applications in the residential sector. Paul Scherrer Institut, 2023.&#10;&#10; UUID: 6ba615ac-d91e-3aba-865c-a7f53fd028d2" infrastructureProcess="false" localCategory="heat" localName="Electricity, residential, by conversion of hydrogen using fuel cell, PEM, allocated by exergy, distributed by pipeline, produced by Pyrolysis using liquefied natural gas from Algeria" localSubCategory="synthetic\transformation" name="Electricity, residential, by conversion of hydrogen using fuel cell, PEM, allocated by exergy, distributed by pipeline, produced by Pyrolysis using liquefied natural gas from Algeria" subCategory="synthetic\transformation" unit="kWh"/>
+        <geography location="CH"/>
+        <technology/>
+        <timePeriod dataValidForEntirePeriod="true">
+          <startDate>2024-01</startDate>
+          <endDate>2024-01</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="en" timestamp="2023-10-28T00:00:00.000+02:00" type="1" version="0.0"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness samplingProcedure="Sampling procedure: Literature data"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Rolf Frischknecht, Telephone: 0041 44 940 61 91, E-mail: frischknecht@treeze.ch, Company: treeze, Country: CH" proofReadingValidator="136749"/>
+        <source additionalAuthors="Bauer C." firstAuthor="Sacchi R." number="137305" placeOfPublications="Villigen, CH" publisher="PSI" sourceType="3" text="Report" title="2024 - LCA power-to-X in residential sector - Sacchi" titleOfAnthology="Project report" year="2024"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136749"/>
+        <dataEntryBy person="136749" qualityNetwork="1"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Romain Sacchi" number="136749" telephone="anonymised"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="not defined" infrastructureProcess="false" localCategory="heat" localSubCategory="synthetic\transformation" location="CH" meanValue="1.0" name="Electricity, residential, by conversion of hydrogen using fuel cell, PEM, allocated by exergy, distributed by pipeline, produced by Pyrolysis using liquefied natural gas from Algeria" number="542310" subCategory="synthetic\transformation" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="Operational time of 20,000 hours at power of 1 kWe. Due to the degradation effects the hydrogen consumption must be increased to always generate the power of 1 kWe. Because of dynamic operational regime 5 replacements of the PEMFC stack are included (lifetime of 3'800 hours per stack), while the BoP lasts the whole operational time. {2;5;1;2;3;5;3;}" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\infrastructure" location="GLO" meanValue="1.602E-5" name="Fuel cell system assembly, 1 kWe, proton exchange membrane (PEM)" number="197826" standardDeviation95="3.1370000000000005" subCategory="synthetic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="001333-74-0" category="emissions to air" formula="H2" generalComment="Hydrogen leakage." infrastructureProcess="false" localCategory="air" localSubCategory="unspecified" meanValue="3.273E-4" name="Hydrogen" number="73124" subCategory="unspecified" uncertaintyType="0" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="Hydrogen input. 1 [MJ H2]/120 [MJ/kg H2]/ eff.(th) {2;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\transformation" location="CH" meanValue="0.05844" name="Hydrogen supply, distributed by pipeline, produced by Pyrolysis using liquefied natural gas from Algeria" number="196025" standardDeviation95="1.3820000000000001" subCategory="synthetic\transformation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="emissions to air" formula="H2O" generalComment="9kg of water produced per kg of H2 combusted. {2;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="air" localSubCategory="lower stratosphere + upper troposphere" meanValue="0.526" name="Water" number="61571" standardDeviation95="1.3820000000000001" subCategory="stratosphere + troposphere" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="((1+storage loss)*(1+use loss)-1)*hydrogen input {2;5;1;2;3;5;1.05;}" infrastructureProcess="false" localCategory="fuels" localSubCategory="synthetic\transformation" location="CH" meanValue="3.273E-4" name="Hydrogen supply, distributed by pipeline, produced by Pyrolysis using liquefied natural gas from Algeria" number="196025" standardDeviation95="1.3820000000000001" subCategory="synthetic\transformation" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

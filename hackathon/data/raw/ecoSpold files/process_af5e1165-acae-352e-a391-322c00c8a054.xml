@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="228634" timestamp="2023-08-28T15:03:37.505+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="To be used for heat energy production in average chemical plant.;&#10;Synonyms: steam, Dampf; &#10;UUID: af5e1165-acae-352e-a391-322c00c8a054" includedProcesses="Includes the heat production needed for the production of 1 MJ (=0.3636 kg) steam from cold water. Does not include the water input because steam is often used in closed systems." infrastructureProcess="false" localCategory="heat" localName="Heat, unspecific, in chemical plant" localSubCategory="others" name="Heat, unspecific, in chemical plant" subCategory="others" unit="MJ"/>
+        <geography location="RER" text="Data from Europe"/>
+        <technology text="Average technology in chemical and plastics industry in Europe"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-06-27T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Hellweg S., Hischier R., Jungbluth N., Osses M., Primas A." firstAuthor="Althaus H.-J." nameOfEditors="-" number="137407" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ETH, ESU-services Ltd., Chudacoff Oekoscience" sourceNumber="0" sourceType="4" text="Althaus H.-J., Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A. (2007) Life Cycle Inventories of Chemicals. Final report ecoinvent data v2.0. Volume: 8. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Althaus H.-J.\nOther authors: Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 8\n" title="2007 - LCI chemicals - Althaus" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="8" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="137406"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="139614"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="139614" referenceToPublishedSource="137407"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Heiko Kunst" number="137406" telephone="anonymised"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="others" location="RER" meanValue="1.0" name="Heat, unspecific, in chemical plant" number="228634" subCategory="others" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,2,2,1,3,1); &#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="coal\furnace" location="RER" meanValue="0.193" name="Hard coal, burned in industrial furnace 1-10MW" number="395743" standardDeviation95="1.1999999999999997" subCategory="coal\furnace" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,2,2,1,3,1); &#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="0.8" name="Natural gas, burned in industrial furnace 1MWth" number="262422" standardDeviation95="1.1999999999999997" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,2,2,1,3,1); &#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" location="CH" meanValue="0.00808" name="Electricity, medium voltage, production CH, at grid" number="165099" standardDeviation95="1.1999999999999997" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,2,2,1,3,1); &#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="0.284" name="Light fuel oil, burned in industrial furnace 1MW, non-modulating" number="244929" standardDeviation95="1.1999999999999997" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

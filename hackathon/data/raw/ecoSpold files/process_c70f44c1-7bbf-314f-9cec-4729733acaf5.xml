@@ -1,0 +1,66 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="363429" timestamp="2023-08-28T15:03:37.487+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="material, obsolete" datasetRelatesToProduct="true" generalComment="The volume does not include the bark. CO2 assimilation is based on 49.4% carbon in the wood. Biomass energy equals gross calorific value including bark.;&#10;UUID: c70f44c1-7bbf-314f-9cec-4729733acaf5" includedProcesses="This module includes material and energy amounts for stand establishment, tending, site development, thinnings and final cutting of scandinavian industrial softwood (for pulp and paper industry), its transport to the nearest forest road as well as the land and materials use for the forest roads" infrastructureProcess="false" localCategory="material, obsolete" localName="xxx Industrial wood, Scandinavian softwood, under bark, u=140%, at forest road" localSubCategory="wood, obsolete\extraction, obsolete" name="xxx Industrial wood, Scandinavian softwood, under bark, u=140%, at forest road" subCategory="wood, obsolete\extraction, obsolete" unit="m3"/>
+        <geography location="NORDEL" text="&lt;null&gt;"/>
+        <technology text="Modern average technology used in Scandinavia"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>9999-01</startDate>
+          <endDate>9999-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-03-29T18:04:18.007+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Allocation to roundwood (logs) and industrial wood already made by authors of the finnish LCA database. Allocation factors unknown." productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Hischier R." nameOfEditors="-" number="150046" placeOfPublications="Duebendorf and St. Gallen, CH" publisher="Swiss Centre for LCI, Empa - TSL" sourceNumber="0" sourceType="4" text="Hischier R. (2007) Life Cycle Inventories of Packaging and Graphical Paper. Final report ecoinvent data v2.0. Volume: 11. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Hischier R.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 11\n" title="2007 - LCI packagings and graphical papers - Hischier" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="11" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed; Other validation: none;" proofReadingValidator="139614"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136699"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="136699" referenceToPublishedSource="150046"/>
+        <person address="anonymised" companyCode="ECOEXISTENCE" countryCode="CH" email="anonymised" name="Hans-Joerg Althaus" number="139614" telephone="anonymised"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="material, obsolete" generalComment="Nordic countries power association&#10;" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="wood, obsolete\extraction, obsolete" location="NORDEL" meanValue="1.0" name="xxx Industrial wood, Scandinavian softwood, under bark, u=140%, at forest road" number="363429" subCategory="wood, obsolete\extraction, obsolete" uncertaintyType="0" unit="m3">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="material, obsolete" generalComment="(2,5,1,5,1,5); data from European module&#10;" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="wood, obsolete\extraction, obsolete" location="NORDEL" meanValue="1.0" name="xxx Softwood, Scandinavian, standing, under bark, in forest" number="429056" standardDeviation95="1.33" subCategory="wood, obsolete\extraction, obsolete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="(2,4,1,3,1,5); average data from KCL database&#10;" infrastructureProcess="false" localCategory="wood" localSubCategory="wooden materials\new processes\other material" location="RER" meanValue="0.144" name="Power sawing, without catalytic converter" number="525719" standardDeviation95="1.2400000000000002" subCategory="wooden materials\new processes\other material" uncertaintyType="1" unit="hr">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="(2,4,1,3,1,5); average data from KCL database&#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="111.0" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="1.2400000000000002" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(2,4,1,3,1,5); average data from KCL database&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="0.456" name="Transformation, from forest, extensive" number="82913" standardDeviation95="2.06" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,5,1,5,1,5); data from European module&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="15.9" name="Transport, freight, lorry, 7.5t-16t gross weight, fleet average" number="608734" standardDeviation95="2.11" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(2,4,1,3,1,5); average data from KCL database&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="68.5" name="Occupation, traffic area, road embankment" number="99845" standardDeviation95="1.5800000000000003" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,1,3,1,5); average data from KCL database&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="fertilisers (inorganic)" location="RER" meanValue="1.25" name="Ammonium sulphate, as N, at regional storehouse" number="196049" standardDeviation95="1.2400000000000002" subCategory="fertilisers (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,4,1,3,1,5); average data from KCL database&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="others" location="RER" meanValue="0.071" name="Lubricating oil, at plant" number="557555" standardDeviation95="1.2400000000000002" subCategory="others" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(2,4,1,3,1,5); average data from KCL database&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="0.456" name="Transformation, to traffic area, road embankment" number="22436" standardDeviation95="2.06" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="minerals" generalComment="(2,5,1,5,1,5); data from European module&#10;" infrastructureProcess="false" localCategory="minerals" localSubCategory="unspecified" location="CH" meanValue="319.0" name="Gravel, crushed, at mine" number="602696" standardDeviation95="3.11" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007727-37-9" category="emissions to water" generalComment="(2,4,1,3,1,5); average data from KCL database&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.023" name="Nitrogen" number="78458" standardDeviation95="1.5800000000000003" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

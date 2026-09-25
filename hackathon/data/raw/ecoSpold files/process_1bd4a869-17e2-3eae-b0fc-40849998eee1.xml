@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="436131" timestamp="2023-08-28T15:03:36.869+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="agricultural" datasetRelatesToProduct="true" generalComment="Inventory refers to the production of 1 kg sugar, respectively 1 kg of ethanol (95% w/w dry basis, i.e. 1.05 kg hydrated ethanol 95% wet basis), 1 kg of excess bagasse (wet basis, 79% dry matter), 1 kWh of electricity and 1 kg of vinasse. The multioutput-process 'sugarcane, in sugar refinery' delivers the co-products 'sugar, from sugarcane, at sugar refinery' and 'ethanol, 95% in H2O, from sugarcane molasses, at sugar refinery', 'bagasse, from sugarcane, at sugar refinery', 'electricity, bagasse, sugarcane, at sugar refinery' and 'vinasse, from sugarcane molasses, at sugar refinery'. Economic allocation with allocation factor for common sugar production stages of 80-85% to sugar, 10-11% to ethanol. Allocation according to carbon balance for CO2.;&#10;UUID: 1bd4a869-17e2-3eae-b0fc-40849998eee1" includedProcesses="This dataset includes the transport of sugarcane to the sugar refinery and the processing of sugarcane to sugar, ethanol (95% w/w), bagasse (79% dry matter, excess), excess electricity and vinasse from ethanol production. System boundary is at the sugar refinery. Treatment of waste effluents is not included (most wastewater is spread over the fields nearby). Packaging is not included." infrastructureProcess="false" localCategory="agricultural" localName="Vinasse, from sugarcane molasses, at sugar refinery" localSubCategory="food\byproducts" name="Vinasse, from sugarcane molasses, at sugar refinery" subCategory="food\byproducts" unit="kg"/>
+        <geography location="BR" text="&lt;null&gt;"/>
+        <technology text="Juice extraction is performed through milling (not diffusion). The juice is then purified and crystallized to sugar according to standard processes. Ethanol is produced by standard fermentation and distillation techniques. Energy supply is done by combustion of the bagasse resulting from the extraction stage. The two main products are sugar and ethanol."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Data from 1994 to 2006, current technology for the production of ethanol from sugarcane">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2006-08-15T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Direct emissions (resulting from the combustion of sugarcane bagasse) are based on the the combustion of wood chips (without emission control), according to the corresponding dry matter content, carbon content and energy content." percent="0" productionVolume="Production of sugar was 26.6 Mt in Brazil in 2004-2005" samplingProcedure="Data is from various sugar and ethanol producers in Brazil (incl. literature data) and from sugar producer in CH " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J." firstAuthor="Jungbluth N." nameOfEditors="-" number="136872" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth N., Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J. (2007) Life Cycle Inventories of Bioenergy. Final report ecoinvent data v2.0. Volume: 17. Swiss Centre for LCI, ESU. Duebendorf and Uster, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth N.\nOther authors: Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Duebendorf and Uster, CH\nPublisher: Swiss Centre for LCI, ESU\nVolume No: 17\n" title="2007 - LCI bioenergy - Jungbluth" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="17" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="159099"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="159098" referenceToPublishedSource="136872"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Edgard Gnansounou" number="159098" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Arnaud Dauriat" number="159099" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="agricultural" generalComment="BRAZIL&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="food\byproducts" location="BR" meanValue="1.0" name="Vinasse, from sugarcane molasses, at sugar refinery" number="436131" subCategory="food\byproducts" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(1,1,1,1,1,1); Calculation, to close carbon balance&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in air" meanValue="0.050708" name="Carbon dioxide, in air" number="66828" standardDeviation95="1.0500000000000003" subCategory="in air" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

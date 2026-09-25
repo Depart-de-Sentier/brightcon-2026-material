@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="8fae6efd-99af-57f8-b5d7-7b01d17d8661" activityNameId="196d85d2-565d-5858-8671-71f4674d37f3" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Natural gas, at production</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Natural gas, at production
+Oil production delivers the co-product natural gas. The values are derived from a multioutput-process "combined onshore gas and oil production" by allocation based on heating values for crude oil and natural gas UUID=18f4d5f5-25e7-3926-932f-4d54752a96d3
+Production of natural gas including energy use, infrastructure and emissions.
+Location: Data valid for NG.
+Technology: 90 % offshore and  10 % onshore production
+Time period: Time of most relevant publications and statistics. Other generic data, e.g. for infrastructure are based on older publications.
+Production volume: 44 billion Nm3 natural gas per year in 2023.
+Sampling: Statistics and use of generic data
+Extrapolations: A part of the data has been estimated with generic assumptions for on- and offshore production.
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_18f4d5f5-25e7-3926-932f-4d54752a96d3.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="c3de1aaf-f5db-553c-ad8d-85aaf773c5fd" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">NG</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: Data valid for NG.</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: 90 % offshore and  10 % onshore production</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2023-01-01" endDate="2025-12-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: Time of most relevant publications and statistics. Other generic data, e.g. for infrastructure are based on older publications.</text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="0217f578-1e1d-5e80-af01-deed9db59386" amount="1.0" unitId="bfdabcf8-1351-57c7-b5aa-58ac6c5b4daa" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="8fae6efd-99af-57f8-b5d7-7b01d17d8661" intermediateExchangeId="b36503df-c00e-5eec-b7fe-d1badf1655db" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Natural gas, at production</name>
+        <unitName xml:lang="en">normal cubic meter</unitName>
+        <comment xml:lang="en">Full flow name: Natural gas, at production
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="0e17c322-d326-5005-911b-80ad733a1b2c" amount="0.9" unitId="bfdabcf8-1351-57c7-b5aa-58ac6c5b4daa" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="a3f4a6c8-e770-5927-8fec-5ade406457cb" intermediateExchangeId="d4882d33-7c34-54ae-b548-e2fc4c9629c5" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Natural gas, at production offshore</name>
+        <unitName xml:lang="en">normal cubic meter</unitName>
+        <comment xml:lang="en">Full flow name: Natural gas, at production offshore
+(2,3,1,1,3,5); Share Offshore 2023
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.9" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-0.10536051565782628"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="584820ad-b8f0-529f-a9b9-ea431f466b8d" amount="0.1" unitId="bfdabcf8-1351-57c7-b5aa-58ac6c5b4daa" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="b4f5c464-04dd-547a-bcca-1b65d9dbcb6e" intermediateExchangeId="66562ae9-14ee-57bf-84a3-a876820d3e48" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Natural gas, at production onshore</name>
+        <unitName xml:lang="en">normal cubic meter</unitName>
+        <comment xml:lang="en">Full flow name: Natural gas, at production onshore
+(2,3,1,1,3,5); Share Onshore 2023
+BAFU mapping audit: {"bafu source exchange index": 2}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.1" varianceWithPedigreeUncertainty="0.0005951200299200359" mu="-2.3025850929940455"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="b835d67a-6e7b-5f0c-b510-72043739d8a6" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Christoph Meili" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="15b3f79a-ec50-5ae1-aa89-0f48ba4fb63b" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Maresa Bussa" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

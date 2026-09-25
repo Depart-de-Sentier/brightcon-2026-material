@@ -1,0 +1,108 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="570012" timestamp="2023-08-28T15:03:29.492+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="photovoltaic" datasetRelatesToProduct="true" generalComment="The reference flow for the life cycle inventory is 1 square metre of wafer surface. The single-crystalline silicon ingots are sawn into square wafers with a size 156.75x156.75 mm2 (0.0244 m2), a thickness of 170 um and a weight of 396 g/m2. The sawing losses are 121 um (95 um kerf loss and 26 um additional losses such as pot scrap, ingot top, squaring, cropping etc.) or 282 g/m2. The diamond wire is modelled as a stainless steel wire because data on industrial diamond manufacture are missing. Water is used as a cutting fluid.;&#10;Synonyms: monocrystalline, single crystalline, silicon; &#10;UUID: 3b7aed12-7639-3aa8-bcb3-5a7d680aca9e" includedProcesses="Diamond sawing and cleaning of wafers. The process data include electricity use, water and working material consumption. Production wastes to be treated and process-specific waterborne pollutants are considered. No data on other process specific air emissions." infrastructureProcess="false" localCategory="photovoltaic" localName="Single-Si wafer, photovoltaics, at plant" localSubCategory="production of components" name="Single-Si wafer, photovoltaics, at plant" subCategory="production of components" unit="m2"/>
+        <geography location="CN" text="&lt;null&gt;"/>
+        <technology text="Use of diamond wire saws."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Collection of data in 2005. Use of some data from older publications. Silicon demand, electricity consumption as well as diamond wire and water demand updated for 2018.">
+          <startDate>1992-01</startDate>
+          <endDate>2021-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-09-30T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Extrapolation of European LCI data by changing the electricity mix." percent="0" productionVolume="Approximately 105000 MW for total c-Si in 2018" samplingProcedure="Data collection by factory representatives. Environmental report and LCA studies. " uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Itten R., Sinha P., de Wild-Scholten M., Zhank J." firstAuthor="Frischknecht R." nameOfEditors="-" number="138234" placeOfPublications="Petten, NL" publisher="IEA PVPS Task 12" sourceNumber="0" sourceType="3" text="Frischknecht R.,, Stolz P., Sinha P., de Wild-Scholten M. (2020) Life Cycle Inventories and Life Cycle Assessments of Photovoltaic Systems. Project report. Volume: 174. IEA PVPS Task 12.\nType: Separate publication\nSource: Report\nFirst author: Frischknecht R.,\nOther authors: Stolz P., Sinha P., de Wild-Scholten M.\nYear: 2020\nTitle of anthology: Project report\nPublisher: IEA PVPS Task 12\nVolume No: 174\nOriginal title: Life Cycle Inventories and Life Cycle Assessments of Photovoltaic Systems\n" title="2015 - LCI and LCA photovoltaic systems - Frischknecht" titleOfAnthology="Project report" volumeNo="174" year="2020"/>
+        <validation proofReadingDetails="Proof reading validation: 30.09.2020; Other validation: G:\Projekte laufend\174 Photovoltaic, IEA Task 12\2017 Global supply chain\EcoSpold\[174-photovoltaics-global-supply-chain-v2.5.xlsx]X-Process;" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138233"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138233" referenceToPublishedSource="138234"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Philippe Stolz" number="138233" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="photovoltaic" generalComment="CHINA&#10;" infrastructureProcess="false" localCategory="photovoltaic" localSubCategory="production of components" location="CN" meanValue="1.0" name="Single-Si wafer, photovoltaics, at plant" number="570012" subCategory="production of components" uncertaintyType="0" unit="m2">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(3,4,2,3,1,5); Calculation based on water withdrawal and water emissions&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="0.05" name="Treatment, sewage, to wastewater treatment, class 2" number="383344" standardDeviation95="1.2644999999999997" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="underground deposit" generalComment="(1,2,4,1,1,3); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="underground deposit" localSubCategory="unspecified" location="DE" meanValue="0.11012" name="Disposal, waste, silicon wafer production, 0% water, to underground deposit" number="210744" standardDeviation95="1.2165" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,4,1,1,3); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (organic)" location="RER" meanValue="0.038996" name="Acetic acid, 98% in H2O, at plant" number="513962" standardDeviation95="1.2165" subCategory="acids (organic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="(3,4,5,3,1,5); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.011095" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.8531999999999997" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(3,4,4,3,1,5); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="17.143" name="Heat, waste" number="46930" standardDeviation95="1.3439999999999999" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="photovoltaic" generalComment="(1,2,4,1,1,3); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="true" localCategory="photovoltaic" localSubCategory="production of components" location="DE" meanValue="3.9982E-6" name="Wafer factory" number="575966" standardDeviation95="3.0492" subCategory="production of components" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Transport distance: 100-600km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="1.2465" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(3,2,1,1,3,5); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="0.008948" name="Wire drawing, steel" number="451015" standardDeviation95="1.3229999999999997" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="emissions to air" generalComment="(3,4,4,3,1,5); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="5.5556" name="Water, CN" number="50430" standardDeviation95="1.6478000000000002" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,4,1,1,3); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="0.29997" name="Dipropylene glycol monomethyl ether, at plant" number="476188" standardDeviation95="1.2165" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,1,5); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.029545" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.8531999999999997" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,4,1,1,3); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="0.014998" name="Sodium hydroxide, 50% in H2O, production mix, at plant" number="483088" standardDeviation95="1.2165" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,4,1,1,3); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="0.0020012" name="Acrylic binder, 34% in H2O, at plant" number="557446" standardDeviation95="1.2165" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,2,4,1,1,3); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="3.9982" name="Natural gas, burned in industrial furnace 1MW" number="293151" standardDeviation95="1.2165" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(3,4,2,3,1,5); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="water supply\production" location="CN" meanValue="55.556" name="Water, deionised, water balance according to MoeK 2013, at plant" number="520555" standardDeviation95="1.2644999999999997" subCategory="water supply\production" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,2,1,2,1,5); Woodhouse et al. (2019): c-Si PV Manufacturing Costs 2018&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CN" meanValue="4.7619" name="Electricity, medium voltage, at grid" number="171629" standardDeviation95="2.0518" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,4,1,1,3); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="0.0026997" name="Hydrochloric acid, 30% in H2O, at plant" number="308041" standardDeviation95="1.2165" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(3,2,1,1,3,5); Proxy for diamond wire; Woodhouse et al. (2019): c-Si PV Manufacturing Costs 2018&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="0.0015105" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="1.3229999999999997" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,4,1,1,3); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="washing agents\tensides" location="RER" meanValue="0.23997" name="Alkylbenzene sulfonate, linear, petrochemical, at plant" number="209660" standardDeviation95="1.2165" subCategory="washing agents\tensides" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="photovoltaic" generalComment="(2,2,1,2,1,5); Wafer thickness: 170 um, kerf loss: 65 um, additional losses: 20.5 um; silicon density: 2330 kg/m3; ITRPV 2020; Woodhouse et al. (2019): c-Si PV Manufacturing Costs 2018&#10;" infrastructureProcess="false" localCategory="photovoltaic" localSubCategory="production of components" location="CN" meanValue="0.59524" name="CZ single crystalline silicon, photovoltaics, at plant" number="410407" standardDeviation95="1.2168" subCategory="production of components" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Transport distance: 100km; silicon: 200km&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.23587" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,2,4,1,1,3); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="CH" meanValue="0.0074375" name="Brass, at plant" number="287690" standardDeviation95="1.2165" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(3,4,5,3,1,5); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.011095" name="TOC, Total Organic Carbon" number="2278" standardDeviation95="1.8531999999999997" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="(2,4,4,3,1,5); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.029545" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.6366999999999998" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="glass" generalComment="(3,4,2,3,1,5); de Wild-Scholten (2014) Life Cycle Assessment of Photovoltaics Status 2011, Part 1 Data Collection (Table 19,25)&#10;" infrastructureProcess="false" localCategory="glass" localSubCategory="construction" location="RER" meanValue="0.0099852" name="Flat glass, uncoated, at plant" number="180727" standardDeviation95="1.2644999999999997" subCategory="construction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

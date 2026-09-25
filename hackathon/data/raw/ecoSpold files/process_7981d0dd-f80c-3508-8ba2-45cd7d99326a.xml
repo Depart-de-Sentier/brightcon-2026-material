@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="420270" timestamp="2022-05-10T11:25:04">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electricity" datasetRelatesToProduct="true" generalComment="Electricity domestic net production shares are based on annual averages for the year 2019; UUID:7981d0dd-f80c-3508-8ba2-45cd7d99326a" includedProcesses="Included are the shares of domestic electricity production  and imports by technology at the busbar. Not included are transformation, transport or distribution losses" infrastructureProcess="false" localCategory="electricity" localName="Electricity, supply mix GO" localSubCategory="supply mix" name="Electricity, supply mix GO" subCategory="supply mix" unit="kWh">
+          <synonym>0</synonym>
+        </referenceFunction>
+        <geography location="CH" text="Data apply to public and self producers in Switzerland and from imports.&#10;Wind power plants are European averages."/>
+        <technology text="No technology description is provided because the dataset just describes the power plant portfolio of the respective country using current average technology per energy carrier."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time period of statistics used.">
+          <startDate>2020</startDate>
+          <endDate>2020</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2022-05-10T11:25:04" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness percent="100.0" samplingProcedure="Statistical data" uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Frischknecht R." number="152397" placeOfPublications="Bern, CH" publisher="treeze Ltd." sourceType="3" title="2022 - Energy label for passenger cars - Frischknecht" titleOfAnthology="Project reports" volumeNo="754" year="2022"/>
+        <validation otherDetails="G:\Projekte laufend\754 Aktualisierung Energieetikette 2022 BFE\EcoSpold\Strommix Schweiz 2020\[754-StrommixSchweiz2020_v0.1.xlsx]X-Process" proofReadingDetails="automatic validation in Excel" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="136374" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="2" person="136374" referenceToPublishedSource="152397"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="1" name="Electricity, supply mix GO" number="420270" subCategory="supply mix" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Flury &amp; Frischknecht 2012" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\flow through" location="CH" meanValue="0.22609" name="Electricity, hydropower, at run-of-river power plant" number="539352" standardDeviation95="1.0714" subCategory="hydro\flow through" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="CH" meanValue="0.29371" name="Electricity, hydropower, net, at reservoir power plant" number="243158" standardDeviation95="1.0714" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Flury &amp; Frischknecht 2012" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="CH" meanValue="0.053953" name="Electricity, hydropower, at small hydropower plant" number="330020" standardDeviation95="1.0714" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, Pronovo Jahresbericht EVS, MKF 2020, BFE Statistik der erneuerbaren Energien 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="CH" meanValue="0.028698" name="Electricity, production mix photovoltaic, at plant" number="285595" standardDeviation95="1.0714" subCategory="photovoltaic" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, Pronovo Jahresbericht EVS, MKF 2020, BFE Statistik der erneuerbaren Energien 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="CH" meanValue="0.0028068" name="Electricity, at wind farm" number="519347" standardDeviation95="1.0714" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, Pronovo Jahresbericht EVS, MKF 2020, BFE Statistik der erneuerbaren Energien 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wood\cogeneration" location="CH" meanValue="0.0065412" name="Electricity, at cogen 1MWth, wood chips, allocation exergy" number="477818" standardDeviation95="1.0714" subCategory="wood\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, Pronovo Jahresbericht EVS, MKF 2020, BFE Statistik der erneuerbaren Energien 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="biomass\cogeneration" location="CH" meanValue="0.0029141" name="Electricity, at cogen with biogas engine, agricultural covered, alloc. exergy" number="271678" standardDeviation95="1.0714" subCategory="biomass\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, Pronovo Jahresbericht EVS, MKF 2020, BFE Statistik der erneuerbaren Energien 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="biomethane\cogeneration" location="CH" meanValue="0.0035329" name="Electricity, at cogen 300kWth, biomethane, allocation exergy" number="534830" standardDeviation95="1.0714" subCategory="biomethane\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, Pronovo Jahresbericht EVS, MKF 2020, BFE Statistik der erneuerbaren Energien 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste" location="CH" meanValue="0.015452" name="Electricity from waste, at municipal waste incineration plant" number="419687" standardDeviation95="1.0714" subCategory="waste" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste\nuclear\pwr" location="CH" meanValue="0.12845" name="Electricity, nuclear, at power plant pressure water reactor" number="399566" standardDeviation95="1.0714" subCategory="waste\nuclear\pwr" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste\nuclear\bwr" location="CH" meanValue="0.083531" name="Electricity, nuclear, at power plant boiling water reactor" number="497583" standardDeviation95="1.0714" subCategory="waste\nuclear\bwr" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="oil\cogeneration" location="CH" meanValue="0.00010744" name="Electricity, at cogen 300kWth, diesel, allocation exergy" number="597488" standardDeviation95="1.0714" subCategory="oil\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="natural gas\cogeneration" location="CH" meanValue="0.0011819" name="Electricity, at cogen 1MWth, natural gas, allocation exergy" number="360212" standardDeviation95="1.0714" subCategory="natural gas\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste" location="CH" meanValue="0.0074136" name="Electricity from waste, at municipal waste incineration plant" number="419687" standardDeviation95="1.0714" subCategory="waste" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\flow through" location="RER" meanValue="0.14341" name="Electricity, hydropower, at run-of-river power plant" number="270757" standardDeviation95="1.0714" subCategory="hydro\flow through" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="hydro\reservoir" location="RER" meanValue="0.027316" name="Electricity, hydropower, at reservoir power plant, non alpine regions" number="615575" standardDeviation95="1.0714" subCategory="hydro\reservoir" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="photovoltaic" location="DE" meanValue="0.00010744" name="Electricity, production mix photovoltaic, at plant" number="440246" standardDeviation95="1.0714" subCategory="photovoltaic" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wind" location="RER" meanValue="0.014075" name="Electricity, at wind farm" number="598753" standardDeviation95="1.0714" subCategory="wind" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="wood\cogeneration" location="CH" meanValue="7.4136E-5" name="Electricity, at cogen 1MWth, wood chips, allocation exergy" number="477818" standardDeviation95="1.0714" subCategory="wood\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="biomass\cogeneration" location="CH" meanValue="3.3028E-5" name="Electricity, at cogen with biogas engine, agricultural covered, alloc. exergy" number="271678" standardDeviation95="1.0714" subCategory="biomass\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="biomethane\cogeneration" location="CH" meanValue="4.004E-5" name="Electricity, at cogen 300kWth, biomethane, allocation exergy" number="534830" standardDeviation95="1.0714" subCategory="biomethane\cogeneration" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste" location="CH" meanValue="0.00017513" name="Electricity from waste, at municipal waste incineration plant" number="419687" standardDeviation95="1.0714" subCategory="waste" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="waste\nuclear\pwr" location="FR" meanValue="0.0017191" name="Electricity, nuclear, at power plant pressure water reactor" number="165413" standardDeviation95="1.0714" subCategory="waste\nuclear\pwr" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="ENTSO-E" meanValue="0.008488" name="Electricity, from natural gas" number="176217" standardDeviation95="1.0714" subCategory="gas" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="(1,1,1,1,1,3,BU:1.05); BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="coal" location="DE" meanValue="0.0025786" name="Electricity, hard coal, at power plant" number="571390" standardDeviation95="1.0714" subCategory="coal" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,1,1,1,1,3,BU:1.05); Non-verfied electricity; BFE Elektrizitätsstatistik 2020, Pronovo Cockpit Stromkennzeichnung 2020, own calculations" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="CH" meanValue="0.022026" name="Electricity, residual mix" number="348546" standardDeviation95="1.0714" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

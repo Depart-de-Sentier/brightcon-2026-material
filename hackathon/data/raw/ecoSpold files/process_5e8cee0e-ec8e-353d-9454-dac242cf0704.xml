@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="319529" timestamp="2024-07-09T17:48:31">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="electronics" datasetRelatesToProduct="true" generalComment="Data are based on information in an LCA study about OLED matrices for device screens; UUID: 5e8cee0e-ec8e-353d-9454-dac242cf0704" includedProcesses="The source of life cycle inventory for organic light emitting diode (OLED) is the LCA study of Amasawa et al., 2016. Overall, the approaches for constructing inventories of fine specialty chemicals and fabrication process in the OLED for smartphones or other smart devices involve creation of inventory with stoichiometry and application of observed correlation between display area and production cost in the display industry. From this study, four specialty chemicals/ingredients are chosen for organic and metal layer depositions, namely bisphenol-A, phtalic anhydride, magnesium, and silver. The geographical specificity is set to be in South Korea, because the majority of active matrix OLED display productions (&gt;90% of production share) occur in the country according to Semenza, 2013. For such reason, all electricity input reflects the electricity mix of South Korean grid." infrastructureIncluded="false" infrastructureProcess="false" localCategory="electronics" localName="OLED module, at plant" localSubCategory="devices" name="OLED module, at plant" subCategory="devices" unit="kg">
+          <synonym>OLED Modul</synonym>
+          <synonym>ab Werk</synonym>
+        </referenceFunction>
+        <geography location="GLO" text="Data from literature – used as data for the global composition average"/>
+        <technology text="OLED module manufactured using specialty chemicals."/>
+        <timePeriod dataValidForEntirePeriod="" text="Unspecified">
+          <startDate>2023-01</startDate>
+          <endDate>2029-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2024-07-09T17:48:31" type="1" version="2024"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see generalComment" productionVolume="unknown" samplingProcedure="literature &amp; own estimations" uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Permana Ajie M., Beloin-Saint-Pierre D." firstAuthor="Raka Adrianto L." number="148303" placeOfPublications="St. Gallen, CH" publisher="Empa" sourceType="0" title="2024 - LCI ICT sector - Raka Adrianto" year="2024"/>
+        <validation proofReadingDetails="Proof reading validation: Passed, Other validation: none, Validator: Mischa Zschokke, Company: Carbotech, Country: CH" proofReadingValidator="140702"/>
+        <validation/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="148302" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="false" dataPublishedIn="2" person="148302" referenceToPublishedSource="148303"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Lugas Raka Adrianto, Maulana Permana Ajie, Didier Beloin-Saint-Pierre" number="148302" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Mischa Zschokke" number="140702" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electronics" generalComment="Global" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices" location="GLO" meanValue="1" name="OLED module, at plant" number="319529" subCategory="devices" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(1,3,3,3,1,5,BU:1.03); data from an US-EPA LCA study. Adapted to SK electricity mix" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices" location="GLO" meanValue="1" name="Assembly, OLED module, at plant" number="502307" standardDeviation95="1.24" subCategory="devices" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,4,2,4,2,5,BU:1.06); Proxy for speciality chemicals. Literature: Amasawa et al 2016" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="0.55" name="Bisphenol A, powder, at plant" number="198976" standardDeviation95="1.28" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,3,3,3,1,5,BU:1.03); calculated from an US-EPA study" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="0.11345" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="1.24" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,3,3,3,1,5,BU:1.03); calculated from an US-EPA study" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="GLO" meanValue="0.0031" name="Copper, primary, at refinery" number="398149" standardDeviation95="1.24" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(1,3,3,3,1,5,BU:1.03); calculated from an US-EPA study" infrastructureProcess="false" localCategory="plastics" localSubCategory="unspecified" location="RER" meanValue="0.0938" name="Injection moulding" number="166773" standardDeviation95="1.24" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(1,3,3,3,1,5,BU:1.03); calculated from an US-EPA study" infrastructureProcess="false" localCategory="electronics" localSubCategory="component" location="GLO" meanValue="0.0082" name="Integrated circuit, IC, logic type, at plant" number="234939" standardDeviation95="1.24" subCategory="component" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(1,3,3,3,1,5,BU:1.03); calculated from an US-EPA study" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices" location="GLO" meanValue="0.2965" name="LCD glass, at plant" number="391674" standardDeviation95="1.24" subCategory="devices" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(1,3,3,3,1,5,BU:1.03); calculated from an US-EPA study" infrastructureProcess="false" localCategory="electronics" localSubCategory="devices" location="GLO" meanValue="0.127" name="Light emitting diode, LED, at plant" number="506637" standardDeviation95="1.24" subCategory="devices" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(3,4,2,4,2,5,BU:1.06); Proxy for speciality chemicals. Literature: Amasawa et al 2016" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="0.0045" name="Magnesium, at plant" number="296581" standardDeviation95="1.28" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(3,4,2,4,2,5,BU:1.06); Proxy for speciality chemicals. Literature: Amasawa et al 2016" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="0.55" name="Phthalic anhydride, at plant" number="151421" standardDeviation95="1.28" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="(1,3,3,3,1,5,BU:1.03); calculated from an US-EPA study" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="0.0938" name="Polycarbonate, at plant" number="573301" standardDeviation95="1.24" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electronics" generalComment="(1,3,3,3,1,5,BU:1.03); calculated from an US-EPA study" infrastructureProcess="false" localCategory="electronics" localSubCategory="component" location="GLO" meanValue="0.0415" name="Printed wiring board, surface mounted, unspec., Pb free, at plant" number="593934" standardDeviation95="1.24" subCategory="component" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,3,3,3,1,5,BU:1.03); calculated from an US-EPA study" infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="0.1094" name="Section bar rolling, steel" number="396832" standardDeviation95="1.24" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,3,3,3,1,5,BU:1.03); calculated from an US-EPA study" infrastructureProcess="false" localCategory="metals" localSubCategory="chipless shaping" location="RER" meanValue="0.0031" name="Sheet rolling, copper" number="597728" standardDeviation95="1.24" subCategory="chipless shaping" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(3,4,2,4,2,5,BU:1.06); Proxy for speciality chemicals. Literature: Amasawa et al 2016" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="0.0045" name="Silver, at regional storage" number="313761" standardDeviation95="1.28" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

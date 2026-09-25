@@ -1,0 +1,71 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ecoSpold xmlns="http://www.EcoInvent.org/EcoSpold02">
+  <activityDataset>
+    <activityDescription>
+      <activity id="d4585046-63fa-549e-8218-a7cf6d128b5b" activityNameId="fa3d3419-f7e3-5659-9ff9-d0492b59c5a2" activityNameContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" type="1" specialActivityType="0" energyValues="0">
+        <activityName xml:lang="en">Heat, hard coal, at cogen, allocation exergy</activityName>
+        <generalComment>
+          <text xml:lang="en" index="1">Full activity name: Heat, hard coal, at cogen, allocation exergy
+The average allocated fuel input per heat output is about 0.96 MJ/MJ. The heat supply of this technology in the region is at about 26000 TJ based on IEA. NA; UUID: a00e2266-0ee5-341c-bbfb-7faf3cc9b25f
+Heat output at the plant gate. The dataset uses the average net efficiency of power plants in the region adjusted for co-generation (using allocation based on exergy content). 
+Location: US in 2019
+Technology: Average installed technology.
+Time period: 
+Production volume: 26000 TJ
+Sampling: Databases/ literature data based on regional statistics.
+Extrapolations: No relevant extrapolations.
+Uncertainty adjustments: none
+BAFU mapped export: unsupported biosphere exchanges excluded; see audit/. Local UUIDs and generic activity classification are export conventions. Source: process_a00e2266-0ee5-341c-bbfb-7faf3cc9b25f.xml</text>
+        </generalComment>
+      </activity>
+      <geography geographyId="18e42d69-b6f0-544d-8efd-22ef219905d9" geographyContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <shortname xml:lang="en">SK</shortname>
+        <comment>
+          <text xml:lang="en" index="1">Location: US in 2019</text>
+        </comment>
+      </geography>
+      <technology>
+        <comment>
+          <text xml:lang="en" index="1">Technology: Average installed technology.</text>
+        </comment>
+      </technology>
+      <timePeriod startDate="2018-01-01" endDate="2020-01-31" isDataValidForEntirePeriod="true">
+        <comment>
+          <text xml:lang="en" index="1">Time period: </text>
+        </comment>
+      </timePeriod>
+      <macroEconomicScenario macroEconomicScenarioId="17559ae7-f987-5cd2-ab44-483521e77f44" macroEconomicScenarioContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Unspecified in BAFU source</name>
+      </macroEconomicScenario>
+    </activityDescription>
+    <flowData>
+      <intermediateExchange id="5373e2d5-16fe-5a33-9c74-3b2c35bd010c" amount="1.0" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="d4585046-63fa-549e-8218-a7cf6d128b5b" intermediateExchangeId="908c4488-2b42-5456-8b99-c9909dc9167a" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Heat, hard coal, at cogen, allocation exergy</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Heat, hard coal, at cogen, allocation exergy
+
+BAFU mapping audit: {"bafu source exchange index": 0}</comment>
+        <outputGroup>0</outputGroup>
+      </intermediateExchange>
+      <intermediateExchange id="773bc9d8-0ebd-5b60-be57-f00f935bdc50" amount="0.91" unitId="ad3ccf08-e271-5e1c-8e72-c36b31eea981" unitContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" activityLinkId="199226b0-8b2f-56e6-a45b-c2755b4e5e3b" intermediateExchangeId="03b13d15-b962-5fa0-bc7d-1484906a1769" activityLinkContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" intermediateExchangeContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83">
+        <name xml:lang="en">Hard coal, burned in power plant</name>
+        <unitName xml:lang="en">megajoule</unitName>
+        <comment xml:lang="en">Full flow name: Hard coal, burned in power plant
+(1.1,BU:1.05)calculated from IEA Extended World Energy Balances for 2019; uncertainty own estimate
+BAFU mapping audit: {"bafu source exchange index": 1}</comment>
+        <uncertainty>
+          <lognormal meanValue="0.91" varianceWithPedigreeUncertainty="0.002271007593583191" mu="-0.09431067947124129"/>
+        </uncertainty>
+        <inputGroup>5</inputGroup>
+      </intermediateExchange>
+    </flowData>
+    <modellingAndValidation/>
+    <administrativeInformation>
+      <dataEntryBy personId="b03936fb-83ac-583c-a3e1-60c4cf9a1f5c" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="René Itten" personEmail="anonymised"/>
+      <dataGeneratorAndPublication personId="d41e91bc-dc6c-5423-b510-4902367b6a40" personContextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" personName="Christopher Oberschelp" personEmail="anonymised" isCopyrightProtected="true"/>
+      <fileAttributes majorRelease="2026" minorRelease="0" majorRevision="1" minorRevision="0" defaultLanguage="en" contextId="f44c43c1-5cc5-54a6-ade6-24435bd12c83" fileGenerator="BAFU mapped EcoSpold 2 export" internalSchemaVersion="2.0.14">
+        <contextName xml:lang="en">BAFU 2026 mapped export; local supporting UUIDs</contextName>
+      </fileAttributes>
+    </administrativeInformation>
+  </activityDataset>
+</ecoSpold>

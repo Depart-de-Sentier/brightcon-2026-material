@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="161047" timestamp="2023-08-28T15:03:26.874+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="heat" datasetRelatesToProduct="true" generalComment="Inventory is valid for the district heat based on heat from wood chips in cogeneration plant only. Heat loss is 11% while heat transportation. For heat from cogeneration allocation exergy was used.;&#10;UUID: 6031ccda-37ae-3318-861e-45c12c9c2f08" includedProcesses="Included is the infrastructure of the deliverysystem for district heat, the losses and the heat from wood at cogen 1MWth." infrastructureProcess="false" localCategory="heat" localName="District heat, at consumer, wood chips cogen 1MWth, allocation exergy" localSubCategory="district heat" name="District heat, at consumer, wood chips cogen 1MWth, allocation exergy" subCategory="district heat" unit="MJ"/>
+        <geography location="CH" text="Data apply to the supply in Switzerland."/>
+        <technology text="average technology"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications.">
+          <startDate>2018-01</startDate>
+          <endDate>2020-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2020-09-14T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="heat efficieny based on literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Waldburger L., Kern C., Roberts G., Zschokke M., Conte F., Weber L." firstAuthor="Kaegi T." nameOfEditors="-" number="137341" placeOfPublications="Zuerich, CH" publisher="Carbotech AG" sourceNumber="0" sourceType="3" text="Kägi Thomas, Livia Waldburger, Cyril Kern, Gavin Roberts, Mischa Zschokke, Flora Conte, Lea Weber (2020) LCI of heating systems. Carbotech im Auftrag des BAFU. Carbotech AG. Zürich. CH.\nType: Separate publication\nSource: Report\nFirst author: Kägi Thomas\nOther authors: Livia Waldburger, Cyril Kern, Gavin Roberts, Mischa Zschokke, Flora Conte, Lea Weber\nYear: 2020\nTitle of anthology: Carbotech im Auftrag des BAFU\nPlace of publication: Zürich. CH\nPublisher: Carbotech AG\n" title="2021 - LCI heating systems - Kaegi" titleOfAnthology="Carbotech im Auftrag des BAFU" year="2021"/>
+        <validation proofReadingDetails="Proof reading validation: 14.09.2020; Other validation: Z:\Schreibtisch\WinShare\BAFU Heizsysteme\_A-Konvertieren\Fernwärme\[EcoSpold_heat at district heat wood onlyv0.1.xlsx]X-Process;" proofReadingValidator="137339"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137340"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="141098" referenceToPublishedSource="137341"/>
+        <person address="anonymised" companyCode="EBP" countryCode="CH" email="anonymised" name="Andy Spoerri" number="137339" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Livia Waldburger" number="141098" telephone="anonymised"/>
+        <person address="anonymised" companyCode="CARBOTECH" countryCode="CH" email="anonymised" name="Thomas Kaegi" number="137340" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="heat" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="district heat" location="CH" meanValue="1.0" name="District heat, at consumer, wood chips cogen 1MWth, allocation exergy" number="161047" subCategory="district heat" uncertaintyType="0" unit="MJ">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,2,2,1,1,5,BU:1.05); ;&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="wood\cogeneration" location="CH" meanValue="1.11" name="Heat, at cogen 1MWth, wood chips, allocation exergy" number="339207" standardDeviation95="1.2192" subCategory="wood\cogeneration" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,2,1,1,5,BU:3); ;&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="district heat" location="CH" meanValue="1.0" name="Transport, district heat, average" number="617552" standardDeviation95="3.0504" subCategory="district heat" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

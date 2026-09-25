@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="EcoInvent Excel2EcoSpold 1.9.18" number="509053" timestamp="2026-03-31T14:43:48">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1" category="waste management" datasetRelatesToProduct="true" generalComment="Modern Swiss und European technologies are applied to building machines, material production and building processes. &#10;UUID: 731a47f9-2c40-4a0a-8efc-7164a1721301" includedProcesses="This dataset includes the phases C1–C4 of asphalt disposal.&#10;C1: Deconstruction with a road milling machine (removal of asphalt from the pavement). The deconstruction data are taken from Project 3 ‘Standardized Method for the Life Cycle Assessment of Pavements’ of the platform Gravel for Generations. Emissions are based on the study from &quot;J. Lenk, «Ökobilanz (LCA) von Gussasphalt als Deckschicht auf Schweizer Nationalstrassen, Anhang,» Masterthesis, Burgdorf, 2023&quot;.&#10;C2: Transport to waste treatment.&#10;C3: Waste treatment. The environmental impacts of recycling reclaimed asphalt are allocated economically between the disposal service (C3) and the new life cycle (material provision of RAP, A1). Since the RAP data refer to 1 t of output (RAP), they were converted to the treatment of 1 t of reclaimed asphalt. The scaling factor of 0.935 results from the 935 kg of RAP obtained from processing 1 t of reclaimed asphalt.&#10;C4: Transport to landfill." infrastructureIncluded="true" infrastructureProcess="false" localCategory="waste management" localName="Disposal, asphalt construction waste" localSubCategory="construction waste landfill" name="Disposal, asphalt construction waste" subCategory="construction waste landfill" unit="kg">
+          <synonym>0</synonym>
+        </referenceFunction>
+        <geography location="CH" text="Europe"/>
+        <technology text="This process involves the use of a road milling machine for asphalt removal from the pavement, transport with a EURO6 truck, and processing into RAP taking into account the allocation factor."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Review of data currency scheduled after 5 years.">
+          <startYear>2025</startYear>
+          <endYear>2030</endYear>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="1.0" languageCode="en" localLanguageCode="de" timestamp="2026-03-31T14:43:48" type="1" version="1"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness productionVolume="unknown" samplingProcedure="Survey" uncertaintyAdjustments="None"/>
+        <source additionalAuthors="Spitzhofer N., Osterwalder D." firstAuthor="Pohl T." number="952456" pageNumbers="51" placeOfPublications="Zuerich, CH" publisher="Umtec Technologie AG" sourceType="3" text="Report" title="2025 - Asphalt calculator - Pohl" year="2025"/>
+        <validation proofReadingDetails="Unspecified" proofReadingValidator="136374"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="769826" qualityNetwork="1"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" pageNumbers="38" person="769826" referenceToPublishedSource="952456"/>
+        <person address="anonymised" companyCode="UMTEC" countryCode="CH" email="anonymised" name="Thomas Pohl" number="769826" telephone="anonymised"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Rolf Frischknecht" number="136374" telefax="anonymised" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="waste management" infrastructureProcess="false" localCategory="waste management" localSubCategory="construction waste landfill" location="CH" meanValue="1" name="Disposal, asphalt construction waste" number="509053" subCategory="construction waste landfill" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="construction processes" generalComment="(2,2,2,1,1,2,BU:3); Process for phase C1: Deconstruction. Provision of road milling machine. ; " infrastructureProcess="true" localCategory="construction processes" localSubCategory="building equipment\infrastructure" location="RER" meanValue="5.56e-09" name="Building machine" number="275603" standardDeviation95="3.0055" subCategory="building equipment\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(2,2,2,1,1,2,BU:1.05); Process for phase C1: Deconstruction. Diesel consumption of the road milling machine. ; " infrastructureProcess="false" localCategory="oil" localSubCategory="distribution" location="CH" meanValue="0.000916" name="Diesel, at regional storage" number="355103" standardDeviation95="1.0834" subCategory="distribution" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,2,2,1,1,2,BU:2); Process for phase C1: Deconstruction. Transport of the building machine. ; " infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.0182" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.0058" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,3,1,1,2,BU:2); Process for phase C2: Transport to waste processing. Transport after demolition: 816 kg to recycling plant, assumed distance 10 km.; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 21 asphalt mixing plants)." infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.00816" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.0171" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,3,1,1,2,BU:2); Process for phase C2: Transport to waste processing. Transport after demolition: 154 kg for use in loose application, assumed distance 10 km.; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 21 asphalt mixing plants)." infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.0015400000000000001" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.0171" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(2,1,3,1,1,2,BU:2); Process for phase C2: Transport to waste processing. Transport after demolition: 30 kg directly to landfill type B, assumed distance 32 km.; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 21 asphalt mixing plants)." infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.0009599999999999999" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.0171" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction materials" generalComment="(2,1,1,1,1,2,BU:1.05); Process for phase C3: Processing of reclaimed asphalt. The total amount was adjusted from the allocation factor for material provision of RAP (0.137) to the allocation factor for disposal services (0.863) and scaled to one ton of reclaimed asphalt using the factor 0.9315. Calculations: 1 ton / 0.137 x 0.863 x 0.9315; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG (survey of 11 asphalt mixing plants)." infrastructureProcess="false" localCategory="construction materials" localSubCategory="asphalt" location="CH" meanValue="5.8678" name="Reclaimed asphalt pavement (RAP), at plant" number="631623" standardDeviation95="1.0744" subCategory="asphalt" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,5,BU:1.05); Process for phase C1: Deconstruction; J. Lenk, «Ökobilanz (LCA) von Gussasphalt als Deckschicht auf Schweizer Nationalstrassen, Anhang,» Masterthesis, Burgdorf, 2023." meanValue="0.00287" name="Carbon dioxide, fossil" number="90295" standardDeviation95="1.2152" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,5,BU:5); Process for phase C1: Deconstruction; J. Lenk, «Ökobilanz (LCA) von Gussasphalt als Deckschicht auf Schweizer Nationalstrassen, Anhang,» Masterthesis, Burgdorf, 2023." meanValue="1.7e-05" name="Carbon monoxide, fossil" number="641" standardDeviation95="5.0554" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,5,BU:1.5); Process for phase C1: Deconstruction; J. Lenk, «Ökobilanz (LCA) von Gussasphalt als Deckschicht auf Schweizer Nationalstrassen, Anhang,» Masterthesis, Burgdorf, 2023." meanValue="1.05e-08" name="Carbon black" number="161212" standardDeviation95="1.564" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,5,BU:1.5); Process for phase C1: Deconstruction; J. Lenk, «Ökobilanz (LCA) von Gussasphalt als Deckschicht auf Schweizer Nationalstrassen, Anhang,» Masterthesis, Burgdorf, 2023." meanValue="1.39e-06" name="NMVOC, non-methane volatile organic compounds, unspecified origin" number="89729" standardDeviation95="1.564" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,5,BU:2); Process for phase C1: Deconstruction; J. Lenk, «Ökobilanz (LCA) von Gussasphalt als Deckschicht auf Schweizer Nationalstrassen, Anhang,» Masterthesis, Burgdorf, 2023." meanValue="2.22e-07" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="2.0511" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,5,BU:1.5); Process for phase C1: Deconstruction; J. Lenk, «Ökobilanz (LCA) von Gussasphalt als Deckschicht auf Schweizer Nationalstrassen, Anhang,» Masterthesis, Burgdorf, 2023." meanValue="1.5800000000000003e-08" name="Methane, fossil" number="90787" standardDeviation95="1.564" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,5,BU:1.2); Process for phase C1: Deconstruction; J. Lenk, «Ökobilanz (LCA) von Gussasphalt als Deckschicht auf Schweizer Nationalstrassen, Anhang,» Masterthesis, Burgdorf, 2023." meanValue="1.05e-08" name="Ammonia" number="635" standardDeviation95="1.3001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,5,BU:1.5); Process for phase C1: Deconstruction; J. Lenk, «Ökobilanz (LCA) von Gussasphalt als Deckschicht auf Schweizer Nationalstrassen, Anhang,» Masterthesis, Burgdorf, 2023." meanValue="1.84e-07" name="Dinitrogen monoxide" number="646" standardDeviation95="1.564" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,5,BU:1.5); Process for phase C1: Deconstruction; J. Lenk, «Ökobilanz (LCA) von Gussasphalt als Deckschicht auf Schweizer Nationalstrassen, Anhang,» Masterthesis, Burgdorf, 2023." meanValue="3.69e-05" name="Nitrogen oxides" number="79243" standardDeviation95="1.564" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,1,1,1,1,5,BU:1.5); Process for phase C1: Deconstruction; J. Lenk, «Ökobilanz (LCA) von Gussasphalt als Deckschicht auf Schweizer Nationalstrassen, Anhang,» Masterthesis, Burgdorf, 2023." meanValue="2.37e-07" name="Particulates, &lt; 10 um" number="60857" standardDeviation95="1.564" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,1,3,1,1,5,BU:1.05); Process for phase C3: Final disposal. Of the 86 kg that are landfilled, 30 kg go directly from the construction site to the landfill. The remaining 56 kg result from processing and are therefore accounted for in C2, respectively A1 of Reclaimed Asphalt Pavement RAP.; Data from Asphaltsuisse, Asphalt Calculator Project by Umtec Technologie AG" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="0.03" name="Disposal, asphalt, 0.1% water, to sanitary landfill" number="571401" standardDeviation95="1.2423" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

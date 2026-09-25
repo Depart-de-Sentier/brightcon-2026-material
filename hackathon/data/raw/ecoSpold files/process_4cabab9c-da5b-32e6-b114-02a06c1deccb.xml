@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="453974" timestamp="2023-08-28T15:03:25.377+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="agricultural" datasetRelatesToProduct="true" generalComment="The potatoes used as input refer to IP production. In the reference the inventory is based on, by-products evolving during starch production were allocated on an economic basis. The inventory refers to potato starch with a water content of 20% by weight.;&#10;UUID: 4cabab9c-da5b-32e6-b114-02a06c1deccb" includedProcesses="The production steps required to obtain potato starch from potato tubers were taken into account, including washing of the potatoes, chopping, separation of the potato fruit water, washing, refinering and finally drying of the starch. Processing of process water was included. Infrastructure use is consideration." infrastructureProcess="false" localCategory="agricultural" localName="Potato starch, at plant" localSubCategory="plant production" name="Potato starch, at plant" subCategory="plant production" unit="kg"/>
+        <geography location="DE" text="&lt;null&gt;"/>
+        <technology text="Refers to typical potato starch production in Germany."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Year when the data for this inventory was delivered.">
+          <startDate>2002-01</startDate>
+          <endDate>2002-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2007-10-24T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Potato production in Germany approximated by Swiss data." percent="100" productionVolume="600'000 tons in Germany (1998)" samplingProcedure="Data based on a detailed literature study. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Kaegi T." firstAuthor="Nemecek T." nameOfEditors="0" number="138643" placeOfPublications="Duebendorf and Zuerich, CH" publisher="Swiss Centre for LCI, ART" sourceNumber="0" sourceType="4" text="Nemecek, T., Kägi, T., Blaser, S. (2007) Life Cycle Inventories of Agricultural Production Systems. Ecoinvent report version 2.0. Editors: 0. Volume: 15. Swiss Centre for LCI, ART. Duebendorf and Zurich, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Nemecek, T.\nOther authors: Kägi, T., Blaser, S.\nYear: 2007\nName of editors: 0\nTitle of anthology: Ecoinvent report version 2.0\nPlace of publication: Duebendorf and Zurich, CH\nPublisher: Swiss Centre for LCI, ART\nVolume No: 15\n" title="2007 - LCI agricultural prod. systems - Nemecek" titleOfAnthology="Ecoinvent report version 2.0" volumeNo="15" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="151347"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138641"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138641" referenceToPublishedSource="138643"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Maggie Osses" number="151347" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Thomas Nemecek" number="138641" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="agricultural" generalComment="GERMANY&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant production" location="DE" meanValue="1.0" name="Potato starch, at plant" number="453974" subCategory="plant production" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="1.624" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.0907" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.603" name="Heat, waste" number="46930" standardDeviation95="1.0907" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,1,1,3)&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="4.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.0070000000000006" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(2,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant production" location="CH" meanValue="3.920000000000001" name="Potatoes IP, at farm" number="194846" standardDeviation95="1.0907" subCategory="plant production" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(2,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="0.005811" name="Treatment, potato starch production effluent, to wastewater treatment, class 2" number="452931" standardDeviation95="1.0907" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="DE" meanValue="0.1675" name="Electricity, medium voltage, at grid" number="584179" standardDeviation95="1.0907" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.098" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(2,2,1,1,1,3)&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="3.727" name="Tap water, at user" number="227940" standardDeviation95="1.0907" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

@@ -1,0 +1,82 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="285752" timestamp="2023-08-28T15:02:54.613+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="fuels" datasetRelatesToProduct="true" generalComment="Inventory refers to the production of 1 kg soybean methyl ester, respectively glycerine, from soybean oil. The multioutput-process 'soybean oil, in esterification plant' delivers the co-products 'soybean methyl ester, at esterification plant' and 'glycerine, from soybean oil, at esterification plant'. Economic allocation with allocation factor of 92.0% to soybean oil and 8.0% to glycerine. Allocation of CO2 emissions is done according to carbon balance.;&#10;UUID: 6df0f8d8-e418-38d9-b852-e338fe16021a" includedProcesses="This process includes the esterification process of soybean oil to methyl ester and glycerine, intermediate storage of the oil and products, treatment of specific wastewater effluents. System boundary is at the esterification plant." infrastructureProcess="false" localCategory="fuels" localName="Soybean methyl ester, at esterification plant" localSubCategory="biofuels" name="Soybean methyl ester, at esterification plant" subCategory="biofuels" unit="kg"/>
+        <geography location="BR" text="&lt;null&gt;"/>
+        <technology text="Typical vegetable oil esterification plant designed for the production of methyl ester (for use in the vehicle fuels market), global context. Base-catalyzed transesterification."/>
+        <timePeriod dataValidForEntirePeriod="true" text="Data from 1996 to 2003, current technology for large scale biodiesel plants worldwide">
+          <startDate>2004-01</startDate>
+          <endDate>2006-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2006-08-15T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" percent="0" productionVolume="Production of soybean methyl ester marginal in 2005 in BR" samplingProcedure="Cross-checking of various literature sources from 1998 to 2006 " uncertaintyAdjustments="&lt;null&gt;"/>
+        <source additionalAuthors="Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J." firstAuthor="Jungbluth N." nameOfEditors="-" number="136872" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth N., Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J. (2007) Life Cycle Inventories of Bioenergy. Final report ecoinvent data v2.0. Volume: 17. Swiss Centre for LCI, ESU. Duebendorf and Uster, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth N.\nOther authors: Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Duebendorf and Uster, CH\nPublisher: Swiss Centre for LCI, ESU\nVolume No: 17\n" title="2007 - LCI bioenergy - Jungbluth" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="17" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="159099"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="159098" referenceToPublishedSource="136872"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Edgard Gnansounou" number="159098" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Arnaud Dauriat" number="159099" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="fuels" generalComment="BRAZIL&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="biofuels" location="BR" meanValue="1.0" name="Soybean methyl ester, at esterification plant" number="285752" subCategory="biofuels" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(5,5,1,2,1,na); Calculation, to close mass balance of process&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="5.7556E-5" name="Treatment, sewage, from residence, to wastewater treatment, class 2" number="538378" standardDeviation95="1.5641999999999998" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,1,1,2,1,3); Literature data &amp; biodiesel producer&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="BR" meanValue="0.038931" name="Electricity, medium voltage, at grid" number="235155" standardDeviation95="1.0722000000000003" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,1,1,2,1,3); Literature data &amp; biodiesel producer&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="coal" location="RER" meanValue="0.10799" name="Heat, at hard coal industrial furnace 1-10MW" number="592780" standardDeviation95="1.0722000000000003" subCategory="coal" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Based on ecoinvent Guidelines, standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.071584" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(2,4,1,3,1,3); ecoinvent guidelines, calculation from electricity consumption and energy balance&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.38515479798499" name="Heat, waste" number="46930" standardDeviation95="1.1376" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,1,1,2,1,3); Literature data &amp; biodiesel producer&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="0.045915" name="Heat, light fuel oil, at industrial furnace 1MW" number="339773" standardDeviation95="1.0722000000000003" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,1,1,1,1); Calculation, to close carbon balance&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.082221" name="Carbon dioxide, biogenic" number="80535" standardDeviation95="1.0500000000000003" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,1,1,2,1,3); Literature data &amp; biodiesel producer&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="0.10456" name="Methanol, at plant" number="542730" standardDeviation95="1.0722000000000003" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(5,5,1,2,1,na); Literature, environmental report&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="drinking water" location="RER" meanValue="0.02515" name="Tap water, at user" number="227940" standardDeviation95="1.5641999999999998" subCategory="drinking water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Based on ecoinvent Guidelines, standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.011925" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(1,1,1,2,1,3); Calculation, to close carbon balance&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in air" meanValue="0.076093" name="Carbon dioxide, in air" number="66828" standardDeviation95="1.0722000000000003" subCategory="in air" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,1,1,2,1,3); Literature data &amp; biodiesel producer&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="0.69638" name="Heat, natural gas, at industrial furnace 1MW" number="300762" standardDeviation95="1.0722000000000003" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,2,1,3); Literature data &amp; biodiesel producer&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="0.0042363" name="Hydrochloric acid, 30% in H2O, at plant" number="308041" standardDeviation95="1.0913000000000004" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(1,4,1,3,1,5); Calculation, according to feed capacity and lifetime of the plant&#10;" infrastructureProcess="true" localCategory="fuels" localSubCategory="biofuels\infrastructure" location="CH" meanValue="8.6025E-10" name="Vegetable oil esterification plant" number="285087" standardDeviation95="3.0584" subCategory="biofuels\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="agricultural" generalComment="(1,2,1,2,1,5); Literature data &amp; biodiesel producer&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="plant oils" location="BR" meanValue="0.94627" name="Soybean oil, at oil mill" number="542577" standardDeviation95="1.2093" subCategory="plant oils" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,2,1,3); Literature data &amp; biodiesel producer&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="0.010453" name="Phosphoric acid, industrial grade, 85% in H2O, at plant" number="502220" standardDeviation95="1.0913000000000004" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

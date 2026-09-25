@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="405466" timestamp="2023-08-28T15:03:02.981+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="agricultural" datasetRelatesToProduct="true" generalComment="Transport processes are only accounted for household biowaste collected as part of the municipal waste collection scheme. Total share: 58% of the total treated biowaste. The transport distance is assumed to be 15 km for municipal waste collection. In addition, 17 km of transport from municipal collection points to the treatment plant are taken into account.  The reference value is the total mass of biowaste with a share of 40% dry matter, an organic share of 70% of dry matter, a carbon content of 53% and total organic decomposition of 55%. ;&#10;UUID: 2cdf82d5-f9f7-3461-8a51-42ed38b314ca" includedProcesses="Transport processes required to collect the biowaste from households and deliver it to the treatment plant. In addition a credit entry accounting for the extraction of CO2 from the atmosphere is accounted for." infrastructureProcess="false" localCategory="agricultural" localName="Biowaste, at collection point" localSubCategory="others" name="Biowaste, at collection point" subCategory="others" unit="kg"/>
+        <geography location="CH" text="Share of biowaste from municipal collection represents conditions in the Canton of Zürich. Transport distances represent conditions in Germany."/>
+        <technology text="garbage truck for municipal waste collection"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2004-01</startDate>
+          <endDate>2004-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2005-08-04T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="&lt;null&gt;" percent="100" productionVolume="na" samplingProcedure="Literature data " uncertaintyAdjustments="&lt;null&gt;"/>
+        <source additionalAuthors="Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J." firstAuthor="Jungbluth N." nameOfEditors="-" number="136872" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Jungbluth N., Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J. (2007) Life Cycle Inventories of Bioenergy. Final report ecoinvent data v2.0. Volume: 17. Swiss Centre for LCI, ESU. Duebendorf and Uster, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Jungbluth N.\nOther authors: Chudacoff M., Dauriat A., Dinkel F., Doka G., Faist Emmenegger M., Gnansounou E., Kljun N., Spielmann M., Stettler C., Sutter J.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Duebendorf and Uster, CH\nPublisher: Swiss Centre for LCI, ESU\nVolume No: 17\n" title="2007 - LCI bioenergy - Jungbluth" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="17" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136351"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="139311"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="139311" referenceToPublishedSource="136872"/>
+        <person address="anonymised" companyCode="ESU" countryCode="CH" email="anonymised" name="Niels Jungbluth" number="136351" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Michael Spielmann" number="139311" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="agricultural" generalComment="SWITZERLAND&#10;" infrastructureProcess="false" localCategory="agricultural" localSubCategory="others" location="CH" meanValue="1.0" name="Biowaste, at collection point" number="405466" subCategory="others" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,4,2,3,1,5); literature studies&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="CH" meanValue="0.00992" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="491435" standardDeviation95="2.0800000000000005" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(3,4,3,3,1,5); own calculation based on literature studies &#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in air" meanValue="0.299" name="Carbon dioxide, in air" number="66828" standardDeviation95="1.2899999999999998" subCategory="in air" uncertaintyType="1" unit="kg">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(3,4,2,3,1,5); literature studies&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road" location="CH" meanValue="0.00876" name="Transport, municipal waste collection, lorry 21t" number="266056" standardDeviation95="1.26" subCategory="road" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

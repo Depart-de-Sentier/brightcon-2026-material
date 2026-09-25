@@ -1,0 +1,93 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="198488" timestamp="2023-08-28T15:03:43.459+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="The dataset can be used for preparing electrode base material for batteries. Data are based on an environmental survey from SEIA-CONAMA (2006). Infrastructure: ecoinvent dataset &quot;chemical plant, organics&quot; is accounted. Transportation efforts are calculated in detail, based on the environmental survey.The plant uses liquified gas. Liquified gas is not available as &quot;heat…&quot; or &quot;burned…&quot; .  Thus we balanced more &quot;natural gas, burned...&quot; and made a credit for preparation of &quot;natural gas, high pressure&quot;. ;&#10;CAS number: 000554-13-2; &#10;Formula: Li2CO3; &#10;Synonyms: Li2CO3; &#10;UUID: 2f4a8d1a-d27a-39c5-9370-8a2776ec7326" includedProcesses="Concentrated lithium brine is treated with additives for the removal of boron, followed by a purification step. Finally, the addition of soda for carbonation results in the precipitation of lithium carbonate (Li2CO3). The salt is filtered, washed and dried and subsequently reaches a purity of 99.2%" infrastructureProcess="false" localCategory="chemicals" localName="Lithium carbonate, at plant" localSubCategory="inorganic" name="Lithium carbonate, at plant" subCategory="inorganic" unit="kg"/>
+        <geography location="GLO" text="Production site is in Chile, all data originate from an environmental survey about the plant in Chile. This dataset can be used globally, as this plant produces 70% of the Li2CO3 worldwide."/>
+        <technology text="The concentrated lithium brine is treated with additives for the removal of boron, followed by a purification step.  Finally, the addition of soda for carbonation results in the precipitation of lithium carbonate (Li2CO3)."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2006-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2010-02-08T00:00:00.000+01:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="see Geography" productionVolume="na" samplingProcedure="ecoinvental survey " uncertaintyAdjustments="Uncertainty is assessed using the pedigree matrix."/>
+        <source additionalAuthors="Bauer C.,  Doka G., Frischknecht R., Jungbluth N., Nemecek T., Simons A., Stucki M., Sutter J., Tuchschmid M." firstAuthor="Althaus H.-J." nameOfEditors="-" number="162298" placeOfPublications="Duebendorf and St. Gallen, CH" publisher="Swiss Centre for LCI" sourceNumber="0" sourceType="4" text="Hischier, R., Althaus H.-J., Bauer, Chr., Doka, G., Frischknecht R., Jungbluth N., Margni M., Nemecek, T., Simons A., Spielmann M. (2009) Documentation of changes implemented in ecoinvent Data v2.1. Final report ecoinvent data v2.1. Volume: 16. Swiss Centre for LCI. Dübendorf. CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Hischier, R.\nOther authors: Althaus H.-J., Bauer, Chr., Doka, G., Frischknecht R., Jungbluth N., Margni M., Nemecek, T., Simons A., Spielmann M.\nYear: 2009\nTitle of anthology: Final report ecoinvent data v2.1\nPlace of publication: Dübendorf. CH\nPublisher: Swiss Centre for LCI\nVolume No: 16\n" title="2010 - Changes in ecoinvent v2.1 and v2.2 - Althaus" titleOfAnthology="Final report ecoinvent data v2.1" volumeNo="16" year="2010"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="136750"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="165798"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="165798" referenceToPublishedSource="162298"/>
+        <person address="anonymised" companyCode="PSI" countryCode="CH" email="anonymised" name="Christian Bauer" number="136750" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Dominic Notter" number="165798" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="Global&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="GLO" meanValue="1.0" name="Lithium carbonate, at plant" number="198488" subCategory="inorganic" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(2,2,1,3,1,4,1)&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="6.094600000000002" name="Natural gas, burned in industrial furnace 1MWth" number="262422" standardDeviation95="1.1286" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,3,1,4,4)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="CH" meanValue="0.17644" name="Quicklime, milled, loose, at plant" number="594290" standardDeviation95="1.1286" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,3,1,4,4)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="1.875E-4" name="Sodium hydroxide, 50% in H2O, production mix, at plant" number="483088" standardDeviation95="1.1286" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(2,2,1,3,1,4,1)&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\gas to user" location="RER" meanValue="-2.0008" name="Natural gas, high pressure, at consumer" number="330680" standardDeviation95="1.1286" subCategory="natural gas\gas to user" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(4,2,1,3,1,4,13)&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.0020165" name="Heat, waste" number="46930" standardDeviation95="1.2377" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,3,4,4,4)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="0.0011875" name="2-methyl-2-butanol, at plant" number="344988" standardDeviation95="1.5267000000000004" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(5,2,1,3,1,4,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.0024013" name="Transport, freight, lorry, 7.5t-16t gross weight, fleet average" number="608734" standardDeviation95="2.2460000000000004" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="(2,2,1,3,1,4,11)&#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="0.28355" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="1.1286" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(5,2,1,3,1,4,5)&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="2.5932" name="Transport, freight, lorry, 16t-32t gross weight, fleet average" number="355963" standardDeviation95="2.2460000000000004" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(2,2,1,3,1,4,6)&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="CH" meanValue="6.4059" name="Disposal, decarbonising waste, 30% water, to residual material landfill" number="528778" standardDeviation95="1.1286" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,3,1,4,4)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="0.035687" name="Sulphuric acid, liquid, at plant" number="512921" standardDeviation95="1.1286" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,3,1,4,4)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="acids (inorganic)" location="RER" meanValue="0.057063" name="Hydrochloric acid, 30% in H2O, at plant" number="308041" standardDeviation95="1.1286" subCategory="acids (inorganic)" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,3,1,4,4)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="GLO" meanValue="9.375" name="Concentrated lithium brine (6.7 %  Li), at plant" number="210676" standardDeviation95="1.1286" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,3,1,4,4)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="RER" meanValue="3.7298" name="Soda, powder, at plant" number="219996" standardDeviation95="1.1286" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="underground deposit" generalComment="(2,2,1,3,1,4,6)&#10;" infrastructureProcess="false" localCategory="underground deposit" localSubCategory="unspecified" location="DE" meanValue="2.0531E-4" name="Disposal, hazardous waste, 0% water, to underground deposit" number="438312" standardDeviation95="1.1286" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,3,4,4,4)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="GLO" meanValue="0.00475" name="Solvents, organic, unspecified, at plant" number="276460" standardDeviation95="1.5267000000000004" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(2,2,1,3,4,4,4)&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="inorganic" location="DE" meanValue="0.014438" name="Bentonite, at processing" number="473746" standardDeviation95="1.5267000000000004" subCategory="inorganic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="fuels" generalComment="(2,2,1,3,4,4,11)&#10;" infrastructureProcess="false" localCategory="fuels" localSubCategory="natural gas\gas to user" location="JP" meanValue="0.00343" name="Natural gas, high pressure, at consumer" number="506802" standardDeviation95="1.5267000000000004" subCategory="natural gas\gas to user" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,2,1,3,1,4,9)&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="4.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.2390000000000008" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(2,2,1,3,4,4,2)&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="supply mix" location="BR" meanValue="5.6012E-4" name="Electricity, medium voltage, at grid" number="235155" standardDeviation95="1.5267000000000004" subCategory="supply mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

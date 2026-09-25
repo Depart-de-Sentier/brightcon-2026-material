@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="519647" timestamp="2023-08-28T15:03:25.970+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="chemicals" datasetRelatesToProduct="true" generalComment="Large uncertainties for equipment used due to weak data from small air separation plants. Process refers to an estimated air separation plant with 80'000 t liquid products per year. Assumed life time 20 years.;&#10;UUID: 2fadcdd2-e35e-31e6-bd9e-a8d00a84d031" includedProcesses="Aluminium for distillation column, approximated infrastructure process for further infrastructure and dismatling, land use, no energy for construction processes included." infrastructureProcess="true" localCategory="chemicals" localName="Air separation plant" localSubCategory="gases\infrastructure" name="Air separation plant" subCategory="gases\infrastructure" unit="p"/>
+        <geography location="RER" text="Data partly from U.S. plant producer."/>
+        <technology text="No specific technology modelled"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-08-26T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Extrapolation small plants with a production volume of 0.1-3 t per hour to a larger plant with 10 t per hour production." productionVolume="na" samplingProcedure="Estimation from weak data of smaller plants. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Chudacoff M., Hellweg S., Hischier R., Jungbluth N., Osses M., Primas A." firstAuthor="Althaus H.-J." nameOfEditors="-" number="137407" placeOfPublications="Duebendorf, CH" publisher="Swiss Centre for LCI, Empa - TSL, ETH, ESU-services Ltd., Chudacoff Oekoscience" sourceNumber="0" sourceType="4" text="Althaus H.-J., Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A. (2007) Life Cycle Inventories of Chemicals. Final report ecoinvent data v2.0. Volume: 8. Swiss Centre for LCI, Empa - TSL. Dübendorf, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Althaus H.-J.\nOther authors: Chudacoff M., Hischier R., Jungbluth N., Osses M., Primas A.\nYear: 2007\nTitle of anthology: Final report ecoinvent data v2.0\nPlace of publication: Dübendorf, CH\nPublisher: Swiss Centre for LCI, Empa - TSL\nVolume No: 8\n" title="2007 - LCI chemicals - Althaus" titleOfAnthology="Final report ecoinvent data v2.0" volumeNo="8" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Passed.; Other validation: none;" proofReadingValidator="136699"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137674"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137674" referenceToPublishedSource="137407"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+        <person address="anonymised" companyCode="HSLU" countryCode="CH" email="anonymised" name="Alex Primas" number="137674" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="chemicals" generalComment="Europe&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="gases\infrastructure" location="RER" meanValue="1.0" name="Air separation plant" number="519647" subCategory="gases\infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(4,5,1,3,3,5); Estimated from data of small plants&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="20000.0" name="Occupation, industrial area" number="132653" standardDeviation95="1.7299999999999998" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,1,3,3,5); Estimated from data of small plants&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="2000.0" name="Transport, freight, rail" number="149864" standardDeviation95="2.0900000000000003" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="construction waste" generalComment="(5,5,1,3,3,5); Estimated from data of small plants&#10;" infrastructureProcess="false" localCategory="construction waste" localSubCategory="unspecified" location="RER" meanValue="90000.0" name="Disposal, facilities, chemical production" number="473679" standardDeviation95="3.36" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(5,5,1,3,3,5); Estimated from data of small plants&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="others\infrastructure" location="RER" meanValue="90000.0" name="Facilities, chemical production" number="494062" standardDeviation95="3.36" subCategory="others\infrastructure" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="(4,5,1,3,3,5); Estimated from data of small plants&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="1000.0" name="Occupation, construction site" number="110833" standardDeviation95="1.7299999999999998" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(5,5,1,3,3,5); Estimated from data of small plants&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="10000.0" name="Aluminium, primary, at plant" number="301003" standardDeviation95="1.6799999999999997" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(4,5,1,3,3,5); Estimated from data of small plants&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="1000.0" name="Transformation, to industrial area, built up" number="86253" standardDeviation95="2.19" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,1,3,3,5); Estimated from data of small plants&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="1000" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.0900000000000003" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="(4,5,1,3,3,5); Estimated from data of small plants&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="1000.0" name="Transformation, from unknown" number="54270" standardDeviation95="2.19" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

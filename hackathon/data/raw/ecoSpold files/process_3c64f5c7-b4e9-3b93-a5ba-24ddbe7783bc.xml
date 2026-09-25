@@ -1,0 +1,125 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="493721" timestamp="2023-08-28T15:02:53.354+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="metals" datasetRelatesToProduct="true" generalComment="Data are based on the EAA report 2013 which refers to 2010.;&#10;UUID: 3c64f5c7-b4e9-3b93-a5ba-24ddbe7783bc" includedProcesses="Includes anode production (with its plant), transports of materials to the plant and the disposal of the wastes." infrastructureProcess="false" localCategory="metals" localName="Anode, aluminium electrolysis" localSubCategory="extraction" name="Anode, aluminium electrolysis" subCategory="extraction" unit="kg"/>
+        <geography location="RER" text="Europe"/>
+        <technology text="Industry data"/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2016-04-06T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Data are based on the EAA report 2013 which refers to 2010. " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Frischknecht R." firstAuthor="Stolz P." nameOfEditors="-" number="260400" placeOfPublications="Uster, CH" publisher="treeze Ltd." sourceNumber="0" sourceType="3" text="Stolz P., Frischknecht R. (2016) Life Cycle Inventories of Aluminium. Volume: 525. treeze Ltd.. Uster, CH.\nType: Separate publication\nSource: Report\nFirst author: Stolz P.\nOther authors: Frischknecht R.\nYear: 2016\nPlace of publication: Uster, CH\nPublisher: treeze Ltd.\nVolume No: 525\n" title="2016 - LCI aluminium and aluminium profiles - Stolz" titleOfAnthology="-" volumeNo="525" year="2016"/>
+        <validation proofReadingDetails="" proofReadingValidator="138233"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138233"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138233" referenceToPublishedSource="260400"/>
+        <person address="anonymised" companyCode="TREEZE" countryCode="CH" email="anonymised" name="Philippe Stolz" number="138233" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="metals" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="1.0" name="Anode, aluminium electrolysis" number="493721" subCategory="extraction" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.3888" name="Heat, waste" number="46930" standardDeviation95="1.1" subCategory="unspecified" uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.108" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.1" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wastewater treatment" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="wastewater treatment" localSubCategory="unspecified" location="CH" meanValue="0.0022" name="Treatment, sewage, to wastewater treatment, class 3" number="442955" standardDeviation95="1.0586999999999998" subCategory="unspecified" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="130498-29-2" category="emissions to water" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="9.6E-7" name="PAH, polycyclic aromatic hydrocarbons" number="76984" standardDeviation95="3.0012000000000003" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,1,2,1,1,1); EAA 2013; size split according to ecoinvent&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="9.0328E-5" name="Particulates, &gt; 10 um" number="5649" standardDeviation95="1.4999999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000050-32-8" category="emissions to air" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="6.0E-8" name="Benzo(a)pyrene" number="29927" standardDeviation95="2.9999999999999996" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); ecoinvent, standard distances for all sub-processes&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.166" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(1,1,2,1,1,3); EAA 2013&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="fuels" location="RER" meanValue="0.152" name="Bitumen, at refinery" number="348763" standardDeviation95="1.1" subCategory="fuels" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(5,na,na,na,na,na); ecoinvent&#10;" infrastructureProcess="true" localCategory="metals" localSubCategory="non ferro\production\infrastructure" location="RER" meanValue="2.5E-10" name="Anode plant" number="227793" standardDeviation95="3.1999999999999997" subCategory="non ferro\production\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="130498-29-2" category="emissions to air" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="6.0E-5" name="PAH, polycyclic aromatic hydrocarbons" number="658" standardDeviation95="2.9999999999999996" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="unspecified" meanValue="1.4E-4" name="Suspended solids, unspecified" number="157731" standardDeviation95="1.5016000000000003" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="bricks" location="DE" meanValue="0.0059" name="Refractory, fireclay, packed, at plant" number="466632" standardDeviation95="1.1" subCategory="bricks" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="0.0041" name="Cast iron, at plant" number="506433" standardDeviation95="1.1" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="sanitary landfill" location="CH" meanValue="0.0096" name="Disposal, asphalt, 0.1% water, to sanitary landfill" number="571401" standardDeviation95="1.1" subCategory="sanitary landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="emissions to air" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="3.4" name="Water, Europe" number="41693" standardDeviation95="1.5016000000000003" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007446-09-5" category="emissions to air" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="7.7E-4" name="Sulfur dioxide" number="26215" standardDeviation95="1.1" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007664-39-3" category="emissions to air" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="1.231E-5" name="Hydrogen fluoride" number="46232" standardDeviation95="1.4999999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="oil\heating systems" location="RER" meanValue="0.52" name="Heavy fuel oil, burned in industrial furnace 1MW, non-modulating" number="496305" standardDeviation95="1.1" subCategory="oil\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); ecoinvent, standard distances for all sub-processes&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.0831" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000630-08-0" category="emissions to air" generalComment="(1,1,2,1,1,3); ecoinvent v2.0&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="0.00104" name="Carbon monoxide, fossil" number="641" standardDeviation95="5.000000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(1,1,2,1,1,1); EAA 2013; size split according to ecoinvent&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="9.9361E-5" name="Particulates, &gt; 2.5 um, and &lt; 10um" number="85941" standardDeviation95="2.0000000000000004" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="landfill" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="landfill" localSubCategory="residual material landfill" location="CH" meanValue="0.003" name="Disposal, refractory SPL, Al elec.lysis, 0% water, to residual material landfill" number="421357" standardDeviation95="1.1" subCategory="residual material landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="emissions to air" generalComment="(1,1,2,1,1,1); EAA 2013; size split according to ecoinvent&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="6.0311E-5" name="Particulates, &lt; 2.5 um" number="659" standardDeviation95="2.9999999999999996" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.0056" name="Water, cooling, unspecified natural origin/m3" number="29019" standardDeviation95="1.1" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="building processes" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="building processes" localSubCategory="machinery" location="CH" meanValue="0.0155" name="Diesel, burned in building machine, average" number="214499" standardDeviation95="1.0586999999999998" subCategory="machinery" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="underground deposit" generalComment="(1,1,2,1,1,3); EAA 2013&#10;" infrastructureProcess="false" localCategory="underground deposit" localSubCategory="unspecified" location="DE" meanValue="0.0014" name="Disposal, hazardous waste, 0% water, to underground deposit" number="438312" standardDeviation95="5.999999999999999" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="oil" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="oil" localSubCategory="fuels" location="RER" meanValue="0.72" name="Petroleum coke, at refinery" number="231932" standardDeviation95="1.1" subCategory="fuels" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="011104-93-1" category="emissions to air" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="unspecified" meanValue="4.5E-4" name="Nitrogen oxides" number="79243" standardDeviation95="1.4999999999999998" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\heating systems" location="CH" meanValue="2.225" name="Natural gas, burned in industrial furnace 1MWth" number="262422" standardDeviation95="1.1" subCategory="natural gas\heating systems" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="waste management" generalComment="(1,1,2,1,1,1); EAA 2013&#10;" infrastructureProcess="false" localCategory="waste management" localSubCategory="construction waste landfill" location="CH" meanValue="0.0033" name="Disposal, inert waste, 5% water, to construction waste landfill" number="509488" standardDeviation95="1.1" subCategory="construction waste landfill" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="5.32" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

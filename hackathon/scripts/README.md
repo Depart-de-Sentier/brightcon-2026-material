@@ -1,0 +1,18 @@
+# Scripts
+
+Add extraction, transformation, validation, and analysis scripts here.
+
+- [Import exported EcoSpold 2 files (notebook)](import_ecospold2.ipynb): use the `bw` kernel to create a separate project with biosphere 3.10, import the mapped `.spold` files with uncertainty preserved, check links, and write the database. All import logic is included in the notebook; no local Python helper is needed.
+
+- [Import repaired EcoSpold files (notebook)](import_fixed_ecospold.ipynb): use the `bw` kernel to create a project with biosphere 3.10, apply the [technosphere migrations](../schemas/mappings/README.md) and [biosphere category corrections](../docs/bafu-2026-biosphere-migrations.md) [flow name/unit mappings](../docs/bafu-2026-biosphere-flow-migrations.md), [historical catalog mappings](../docs/bafu-2026-biosphere-catalog-migrations.md), [resource/unit corrections](../docs/bafu-2026-biosphere-resource-migrations.md), [additional reviewed mappings](../docs/bafu-2026-biosphere-reviewed-migrations.md), [water/context corrections](../docs/bafu-2026-biosphere-water-context-migrations.md), [chemical aliases and elemental mass](../docs/bafu-2026-biosphere-chemistry-migrations.md), the [approved gas-unit assumption](../docs/bafu-2026-biosphere-gas-unit-migrations.md), [land/resource mappings](../docs/bafu-2026-biosphere-land-resource-migrations.md), [reviewed follow-up mappings](../docs/bafu-2026-biosphere-followup-migrations.md), and [reviewed compartment mappings](../docs/bafu-2026-biosphere-compartment-migrations.md), and inspect import and linking results.
+- [Biosphere migrations](ecospold%20importer/biosphere_migrations.py): normalize compartment labels, apply reviewed names, missing resource subcategories, regional-water metadata, elemental mass conversions, and the approved gas-unit relabeling through bw2io, and report unresolved signatures without dropping exchanges.
+- [EcoSpold 1 import attempt](ecospold%20importer/README.md): run the standard Brightway importer on the original BAFU files using the `bw` conda environment and record the result.
+- [Import with biosphere 3.10](ecospold%20importer/import_with_biosphere310.py): create a local Brightway project and try importing the repaired BAFU files against the ecoinvent 3.10 biosphere.
+- [EcoSpold namespace repair](ecospold%20importer/repair_namespace.py): create modified copies with the missing namespace added and record source/output checksums.
+- [EcoSpold date repair](ecospold%20importer/repair_dates.py): correct partial-date element types while preserving their values and precision.
+- [EcoSpold metadata repair](ecospold%20importer/repair_metadata.py): handle publisher, company-code, and source-number constraints separately, preserving full originals in XML comments and repair logs.
+- [EcoSpold administrative-order repair](ecospold%20importer/repair_administrative_order.py): reorder administrative elements while preserving their contents and attached comments.
+- [EcoSpold date parser compatibility](ecospold%20importer/date_compat.py): enable optional parsing of calendar dates with timezone offsets during import, preserving the XML and stated calendar day.
+- [EcoSpold exchange-number repair](ecospold%20importer/repair_exchange_numbers.py): make repeated exchange IDs unique within each dataset while retaining every inventory row and recording the original IDs.
+- [Remaining EcoSpold schema repairs](ecospold%20importer/repair_schema.py): produce the final schema-valid copies with reversible edits and explicitly documented missing-field fallbacks.
+- [Full collection validation](ecospold%20importer/validate_collection.py): validate every final file and compare all inventory rows with the raw release.

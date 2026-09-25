@@ -1,0 +1,111 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="212960" timestamp="2023-08-28T15:03:06.917+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="material, obsolete" datasetRelatesToProduct="true" generalComment="The process &quot;4-methyl-2-pentanone, at plant, RER&quot; is modelled for the production of 4-methyl-2-pentanone from acetone in Europe. Raw materials, auxilliaries, energy consumptions and emissions are modelled with data from US-production.  Infrastructure and transports are calculated with standard values.;&#10;CAS number: 000108-10-1; &#10;Formula: C6H12O; &#10;Synonyms: methyl isobutyl ketone; &#10;UUID: 6931fb2e-057d-3510-bdaa-539c0fd13f41" includedProcesses="Production of 4-methyl-2-pentanone including materials, energy uses, infrastructure and emissions." infrastructureProcess="false" localCategory="material, obsolete" localName="xx 4-methyl-2-pentanone, at plant" localSubCategory="chemicals, obsolete\organic, obsolete" name="xx 4-methyl-2-pentanone, at plant" subCategory="chemicals, obsolete\organic, obsolete" unit="kg"/>
+        <geography location="RER" text="The inventory is modelled for Europe."/>
+        <technology text="Hydrgenation of acetone"/>
+        <timePeriod dataValidForEntirePeriod="true" text="Time of publications">
+          <startDate>2000-01</startDate>
+          <endDate>2005-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2023-03-29T18:04:18.361+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="Transports are modelled with standard distances." percent="100" productionVolume="Total production in the world  is around 380.000 tons." samplingProcedure="Literature data " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="" firstAuthor="Sutter J." nameOfEditors="0" number="183498" placeOfPublications="Duebendorf and Uster, CH" publisher="Swiss Centre for LCI, ETH" sourceNumber="0" sourceType="4" text="Sutter, J., 0 (2007) Life Cycle Inventories of Petrochemical Solvents. Final report ecoinvent Data v2.0. Editors: 0. 0. Volume: 22. Issue: 0. Swiss Centre for LCI, ETHZ. Duebendorf and St. Gallen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Sutter, J.\nOther authors: 0\nYear: 2007\nName of editors: 0\nTitle of anthology: Final report ecoinvent Data v2.0\nPlace of publication: Duebendorf and St. Gallen, CH\nPublisher: Swiss Centre for LCI, ETHZ\nJournal: 0\nVolume No: 22\nIssue No: 0\n" title="2007 - LCI petrochemical solvents - Sutter" titleOfAnthology="Final report ecoinvent Data v2.0" volumeNo="22" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: passed.; Other validation: none;" proofReadingValidator="136699"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138642"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138642" referenceToPublishedSource="183498"/>
+        <person address="anonymised" companyCode="EMPA" countryCode="CH" email="anonymised" name="Roland Hischier" number="136699" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Juergen Sutter" number="138642" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="material, obsolete" generalComment="Europe&#10;" infrastructureProcess="false" localCategory="material, obsolete" localSubCategory="chemicals, obsolete\organic, obsolete" location="RER" meanValue="1.0" name="xx 4-methyl-2-pentanone, at plant" number="212960" subCategory="chemicals, obsolete\organic, obsolete" uncertaintyType="0" unit="kg">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.00455" name="Methyl pentane" number="41321" standardDeviation95="1.0744000000000002" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="gases" location="RER" meanValue="0.0216" name="Hydrogen, liquid, at plant" number="542147" standardDeviation95="1.0744000000000002" subCategory="gases" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Calculated from the water emissions&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.551" name="BOD5, Biological Oxygen Demand" number="13296" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="0.14337" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.095" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000067-63-0" category="emissions to air" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="1.0E-5" name="2-Propanol" number="63639" standardDeviation95="1.0744000000000002" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="007732-18-5" category="resources" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="in water" meanValue="0.063392" name="Water, cooling, unspecified natural origin/m3" number="29019" standardDeviation95="1.0744000000000002" subCategory="in water" uncertaintyType="1" unit="m3">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange CASNumber="017612-50-9" category="emissions to water" generalComment="(1,2,1,1,1,3); Calculated from the water emissions&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.551" name="COD, Chemical Oxygen Demand" number="68218" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="others" location="RER" meanValue="4.45" name="Heat, unspecific, in chemical plant" number="228634" standardDeviation95="1.0744000000000002" subCategory="others" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000107-83-5" category="emissions to air" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="5.0E-5" name="Pentane, 2-methyl-" number="48130" standardDeviation95="1.0744000000000002" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.00114" name="2-Propanol" number="41711" standardDeviation95="1.0744000000000002" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Calculated from the water emissions&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.156" name="TOC, Total Organic Carbon" number="2278" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(4,5,na,na,na,na); Estimation&#10;" infrastructureProcess="true" localCategory="chemicals" localSubCategory="organic\infrastructure" location="RER" meanValue="4.0E-10" name="Chemical plant, organics" number="447244" standardDeviation95="3.0908999999999995" subCategory="organic\infrastructure" uncertaintyType="1" unit="p">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.07368" name="4-Methyl-2-pentanone" number="2292" standardDeviation95="1.0744000000000002" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="3.8E-4" name="4-Methyl-2-pentanol" number="85553" standardDeviation95="1.0744000000000002" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="chemicals" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="chemicals" localSubCategory="organic" location="RER" meanValue="1.4229" name="Acetone, liquid, at plant" number="441771" standardDeviation95="1.0744000000000002" subCategory="organic" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.12807" name="Acetone" number="43895" standardDeviation95="3.0038" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.02462" name="Diisobutyl ketone" number="42389" standardDeviation95="1.0744000000000002" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,2,1,1,1,3); Calculated from the electricity input&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.6100000000000003" name="Heat, waste" number="46930" standardDeviation95="1.0744000000000002" subCategory="high. pop." uncertaintyType="1" unit="MJ">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="(4,5,na,na,na,na); Standard distances&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="0.8559" name="Transport, freight, rail" number="149864" standardDeviation95="2.095" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="electricity" localSubCategory="production mix" meanValue="0.725" name="Electricity, medium voltage, production ENTSO-E, at grid" number="744754" standardDeviation95="1.0744000000000002" subCategory="production mix" uncertaintyType="1" unit="kWh">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="water" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="water" localSubCategory="industry water" location="CH" meanValue="0.21208" name="Water, deionised, at plant" number="617689" standardDeviation95="1.0744000000000002" subCategory="industry water" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="000108-10-1" category="emissions to air" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.01074" name="4-Methyl-2-pentanone" number="38529" standardDeviation95="1.0744000000000002" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to air" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="2.5E-4" name="Hydrogen" number="73124" standardDeviation95="1.5051" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(1,2,1,1,1,3); Calculated from the water emissions&#10;" infrastructureProcess="false" localCategory="emissions to water" localSubCategory="river" meanValue="0.156" name="DOC, Dissolved Organic Carbon" number="4408" standardDeviation95="1.5051" subCategory="river" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange CASNumber="000067-64-1" category="emissions to air" generalComment="(1,2,1,1,1,3); Overcash 1998 - 2004&#10;" infrastructureProcess="false" localCategory="emissions to air" localSubCategory="high. pop." meanValue="0.07578" name="Acetone" number="633" standardDeviation95="1.5051" subCategory="high. pop." uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+      <exchange category="emissions to water" generalComment="(5,5,5,5,5,BU:1.05); All uncertainty-values set to 5.0 by default. Balance of input water" meanValue="60.2224" name="Water" number="8" standardDeviation95="2.5196000000000001" subCategory="unspecified" uncertaintyType="1" unit="kg">
+        <outputGroup>4</outputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

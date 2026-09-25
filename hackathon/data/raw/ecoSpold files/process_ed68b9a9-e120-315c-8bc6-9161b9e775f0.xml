@@ -1,0 +1,39 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="301831" timestamp="2023-08-28T15:03:31.766+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="electricity by fuel" datasetRelatesToProduct="true" generalComment="na;&#10;UUID: ed68b9a9-e120-315c-8bc6-9161b9e775f0" includedProcesses="The module includes coke oven gas and blast furnace gas. The module uses the average net efficiency of industrial gas power plants in DE (estimated from IEA 2001)." infrastructureProcess="false" localCategory="electricity by fuel" localName="Electricity, industrial gas, at power plant" localSubCategory="gas" name="Electricity, industrial gas, at power plant" subCategory="gas" unit="kWh"/>
+        <geography location="DE" text="undefined"/>
+        <technology text="Average of installed power plants."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2003-07-06T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Heck T., Jungbluth N., Tuchschmid M." firstAuthor="Faist Emmenegger M." nameOfEditors="Dones R." number="149369" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI, ESU-services Ltd." sourceNumber="0" sourceType="4" text="Faist Emmenegger, M., Heck, T., Jungbluth, N. (2007) Erdgas. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0. Editors: Dones R.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Faist Emmenegger, M.\nOther authors: Heck, T., Jungbluth, N.\nYear: 2007\nName of editors: Dones R.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2007 - Natural gas - Faist-Emmeneger" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent data v2.0" volumeNo="6" year="2007"/>
+        <validation proofReadingDetails="Proof reading validation: Preliminary passed, based on a review of a first draft of the final reort. Data have to be validated again after review of the written report.; Other validation: none;" proofReadingValidator="139311"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="138970"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="138970" referenceToPublishedSource="149369"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Michael Spielmann" number="139311" telephone="anonymised"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Thomas Heck" number="138970" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="electricity by fuel" generalComment="GERMANY&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas" location="DE" meanValue="1.0" name="Electricity, industrial gas, at power plant" number="301831" subCategory="gas" uncertaintyType="0" unit="kWh">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="heat" generalComment="shares from early 1990th, distribution uncertain&#10;" infrastructureProcess="false" localCategory="heat" localSubCategory="natural gas\power plants" location="RER" meanValue="5.71" name="Blast furnace gas, burned in power plant" number="379264" standardDeviation95="1.4" subCategory="natural gas\power plants" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="electricity by fuel" generalComment="shares from early 1990th, distribution uncertain&#10;" infrastructureProcess="false" localCategory="electricity by fuel" localSubCategory="gas\power plant" location="RER" meanValue="4.83" name="Coke oven gas, burned in power plant" number="608517" standardDeviation95="1.4" subCategory="gas\power plant" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>

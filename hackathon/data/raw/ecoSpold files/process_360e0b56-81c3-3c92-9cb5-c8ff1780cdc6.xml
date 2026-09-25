@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<ecoSpold>
+  <dataset generator="openLCA" number="599872" timestamp="2023-08-28T15:03:42.767+02:00">
+    <metaInformation>
+      <processInformation>
+        <referenceFunction amount="1.0" category="minerals" datasetRelatesToProduct="true" generalComment="Assuming that the buildings of the model mill cover an area 100 m * 200 m. The model mill is assumed to produce 490 tonnes of natural uranium in yellowcake U3O8 per year over a lifetime of 15 years. All necessary electricity is assumed to be produced on site by diesel generators.;&#10;UUID: 360e0b56-81c3-3c92-9cb5-c8ff1780cdc6" includedProcesses="This module includes the metal and concrete as well as the energy requirements for the construction of the model mill. Also the transport of these materials and the land use are included. " infrastructureProcess="true" localCategory="minerals" localName="Uranium mill" localSubCategory="infrastructure" name="Uranium mill" subCategory="infrastructure" unit="p"/>
+        <geography location="US" text="&lt;null&gt;"/>
+        <technology text="Average conditions."/>
+        <timePeriod dataValidForEntirePeriod="true" text="undefined">
+          <startDate>2000-01</startDate>
+          <endDate>2000-12</endDate>
+        </timePeriod>
+        <dataSetInformation energyValues="0" impactAssessmentResult="false" internalVersion="0.0" languageCode="en" localLanguageCode="de" timestamp="2006-10-17T00:00:00.000+02:00" type="1" version="2023"/>
+      </processInformation>
+      <modellingAndValidation>
+        <representativeness extrapolations="none" productionVolume="na" samplingProcedure="Literature " uncertaintyAdjustments="none"/>
+        <source additionalAuthors="Bauer C., Doka G." firstAuthor="Dones R." nameOfEditors="Bauer C." number="137748" placeOfPublications="Duebendorf and Villigen, CH" publisher="Swiss Centre for LCI, PSI, Doka LCA" sourceNumber="0" sourceType="4" text="Dones, R., Doka G. (2009) Kernenergie. Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1. Editors: Bauer C.. Volume: 6. Swiss Centre for LCI, PSI. Dübendorf and Villigen, CH.\nType: Measurement on site\nSource: CD-ROM\nFirst author: Dones, R.\nOther authors: Doka G.\nYear: 2009\nName of editors: Bauer C.\nTitle of anthology: Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1\nPlace of publication: Dübendorf and Villigen, CH\nPublisher: Swiss Centre for LCI, PSI\nVolume No: 6\n" title="2009 - Nuclear energy - Dones" titleOfAnthology="Sachbilanzen von Energiesystemen. Final report No. 6 ecoinvent v2.1" volumeNo="6" year="2009"/>
+        <validation proofReadingDetails="Proof reading validation: passed; Other validation: none;" proofReadingValidator="137747"/>
+      </modellingAndValidation>
+      <administrativeInformation>
+        <dataEntryBy person="137747"/>
+        <dataGeneratorAndPublication accessRestrictedTo="0" copyright="true" dataPublishedIn="0" person="137747" referenceToPublishedSource="137748"/>
+        <person address="anonymised" companyCode="" countryCode="CH" email="anonymised" name="Roberto Dones" number="137747" telephone="anonymised"/>
+      </administrativeInformation>
+    </metaInformation>
+    <flowData>
+      <exchange category="minerals" generalComment="UNITED STATES&#10;" infrastructureProcess="true" localCategory="minerals" localSubCategory="infrastructure" location="US" meanValue="1.0" name="Uranium mill" number="599872" subCategory="infrastructure" uncertaintyType="0" unit="p">
+        <outputGroup>0</outputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="standard&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="train" location="RER" meanValue="1.75E8" name="Transport, freight, rail" number="149864" standardDeviation95="2.1" subCategory="train" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="mechanical" generalComment="old reference for unit mill&#10;" infrastructureProcess="false" localCategory="mechanical" localSubCategory="other energy" location="GLO" meanValue="3.54E8" name="Diesel, burned in diesel-electric generating set" number="316704" standardDeviation95="2.0000000000000004" subCategory="other energy" uncertaintyType="1" unit="MJ">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="old reference for unit mill &amp; uncertainty on steel type&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="9560000.0" name="Steel, low-alloyed, at plant" number="185969" standardDeviation95="2.9999999999999996" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="390000.0" name="Aluminium, production mix, at plant" number="436582" subCategory="extraction" uncertaintyType="0" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="old reference for unit mill&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="extraction" location="RER" meanValue="1.28E7" name="Reinforcing steel, at plant" number="545988" standardDeviation95="2.0000000000000004" subCategory="extraction" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="old reference for unit mill&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="non ferro" location="RER" meanValue="390000.0" name="Copper, at regional storage" number="328058" standardDeviation95="2.0000000000000004" subCategory="non ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="wood" generalComment="old reference for unit mill&#10;" infrastructureProcess="false" localCategory="wood" localSubCategory="wooden materials\updated processes\other material" location="RER" meanValue="341.0" name="Plywood, outdoor use, at plant" number="518256" standardDeviation95="2.0000000000000004" subCategory="wooden materials\updated processes\other material" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own estimation, based on range of data&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="20000.0" name="Transformation, from industrial area" number="5579" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="metals" generalComment="old reference for unit mill &amp; uncertainty on steel type&#10;" infrastructureProcess="false" localCategory="metals" localSubCategory="ferro" location="RER" meanValue="3190000.0" name="Chromium steel 18/8, at plant" number="609015" standardDeviation95="2.9999999999999996" subCategory="ferro" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own estimation, based on range of data&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="20000.0" name="Transformation, from unknown" number="54270" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="construction" generalComment="old reference for unit mill&#10;" infrastructureProcess="false" localCategory="construction" localSubCategory="concrete" location="CH" meanValue="107000.0" name="Concrete, normal, at plant" number="367058" standardDeviation95="2.0000000000000004" subCategory="concrete" uncertaintyType="1" unit="m3">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own estimation, based on range of data&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="20000.0" name="Transformation, to industrial area" number="68360" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="transport systems" generalComment="standard&#10;" infrastructureProcess="false" localCategory="transport systems" localSubCategory="road\Transformation" location="RER" meanValue="29100000" name="Transport, freight, lorry, fleet average" number="453425" standardDeviation95="2.1" subCategory="road\Transformation" uncertaintyType="1" unit="tkm">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange category="plastics" generalComment="old reference for unit mill&#10;" infrastructureProcess="false" localCategory="plastics" localSubCategory="thermoplasts" location="RER" meanValue="266000.0" name="Polyethylene, HDPE, granulate, at plant" number="599376" standardDeviation95="2.0000000000000004" subCategory="thermoplasts" uncertaintyType="1" unit="kg">
+        <inputGroup>5</inputGroup>
+      </exchange>
+      <exchange CASNumber="" category="resources" generalComment="own estimation, based on range of data&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="1000000.0" name="Occupation, industrial area" number="132653" standardDeviation95="2.5000000000000004" subCategory="land" uncertaintyType="1" unit="m2a">
+        <inputGroup>4</inputGroup>
+      </exchange>
+      <exchange category="resources" generalComment="own estimation, based on range of data&#10;" infrastructureProcess="false" localCategory="resources" localSubCategory="land" meanValue="20000.0" name="Transformation, to unknown" number="25119" standardDeviation95="2.0000000000000004" subCategory="land" uncertaintyType="1" unit="m2">
+        <inputGroup>4</inputGroup>
+      </exchange>
+    </flowData>
+  </dataset>
+</ecoSpold>
