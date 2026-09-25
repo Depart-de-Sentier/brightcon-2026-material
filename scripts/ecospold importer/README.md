@@ -1,3 +1,10 @@
+# Ecospold 2 with structured metadata
+
+The ``ecospold2_export.py`` file uses regular expressions (regex) to extract source-related information about the processes and exchanges that do not have structured metadata (everything is in an unformatted comment).
+
+The functions used to extract the structured metadata are in ``metadata_extractors.py`` and use the regular expressions that are detailed in ``regex.py``.
+
+
 # EcoSpold 1 import attempt
 
 For the complete mapped import and **EcoSpold 2 export**, run:
