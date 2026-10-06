@@ -2,8 +2,10 @@
 from collections.abc import Callable
 from babel.dates import get_month_names
 import numpy as np
+import re
 
 from regex import (
+    and_pattern, re_punct, re_strip, strip_title,
     re_source, re_year, re_authoryear, re_author, re_any_source,  # regex for author/year
     re_formatted_source,                                          # specific case for processes
     re_report, re_interview, re_personal_corr,                    # regex for type of source
@@ -15,8 +17,9 @@ from regex import (
 incorrect_author = set((v.lower() for v in get_month_names('wide', locale='en_US').values()))
 incorrect_author.update((v.lower() for v in get_month_names('wide', locale='de').values()))
 incorrect_author.update(
-    ("in", "average", "annual report", "calculation", "data", "glo", "mpa, rna only, glo",
-     "fakten", "zahlen", "ch", "update", "questionnaire", "questionnaires", "statistics")
+    ("in", "average", "annual report", "calculation", "data", "glo",
+     "mpa, rna only, glo", "fakten", "zahlen", "ch", "update", "questionnaire",
+     "questionnaires", "statistics", "literature")
 )
 
 # conversion from source type to ecospold2 format
@@ -53,10 +56,53 @@ pm_es2 = {
 }
 
 
+def metadata_to_uuid(d: dict, text: str) -> str:
+    ''' Generate UUID from metadata '''
+    values = []
+
+    for k in ("firstAuthor", "additionalAuthors", "year"):
+        v = str(d.get(k, ''))
+
+        if v:
+            values.append(
+                f"{k}-{re_punct.sub('', v)}"
+            )
+
+    if not values:
+        values.append(text)
+
+    return "_".join(values)
+
+
+def strip_dict(d: dict) -> dict:
+    '''  Remove punctuation at beginning or end '''
+    return {
+        k: (
+            v if not isinstance(v, str) else
+            (strip_title(v) if k == "title" else re_strip.sub("", v))
+        ) for k, v in d.items()
+    }
+
+
+def strip_results(func):
+    ''' Wrapper for the functions to strip results using `strip_dict` '''
+    def inner(*args, **kwargs):
+        res = func(*args, **kwargs)
+
+        if isinstance(res, dict):
+            return strip_dict(res)
+
+        dres, sres = res
+
+        return strip_dict(dres), sres
+    return inner
+
+
+@strip_results
 def extract_source_from_process(
     reference: dict,
     uid: Callable[[str, str], str]
-) -> dict:
+) -> tuple[dict, str]:
     """
     Return source attributes from a process reference data.
 
@@ -99,9 +145,11 @@ def extract_source_from_process(
 
     if reference["authors"]:
         first_author = reference["authors"][0]
+        reference["firstAuthor"] = first_author
 
         if len(reference["authors"]) > 1:
             other_authors = reference["authors"][1:]
+            reference["other_authors"] = ", ".join(other_authors)
 
     del reference["identifier"]
     del reference["text"]
@@ -111,30 +159,30 @@ def extract_source_from_process(
         # move some entries to the correct ecospold2 name
         if k in reference:
             if k == "type":
-                reference[v] = source_type_to_int.get(reference[k], 0)
+                reference[v] = source_type_to_int.get(
+                    reference[k].lower(),
+                    0
+                )
             elif reference[k] or k in ("firstAuthor", "year", "title"):
                 # if not mandatory only keep it if it's not empty
                 reference[v] = reference[k]
 
             del reference[k]
 
+    # remove potential punctuation at beginning or end
+    reference = strip_dict(reference)
+
     # get author/year or title to create the uid
-    year = str(reference.get("year", ""))
+    if not first_author:
+        ref_text = ref_text or reference.get("title", "")
 
-    value_for_uuid = f"{first_author}{year}"
+        if ref_text == "Created for EcoSpold 1 compatibility":
+            return {}, ref_text
 
-    if not value_for_uuid:
-        raw_data = ref_text or reference.get("title", "")
+        if ref_text:
+            reference.update(extract_process_unformatted(ref_text))
 
-        if raw_data:
-            reference.update(extract_process_unformatted(raw_data))
-
-            first_author = reference.get("firstAuthor", "")
-            year = reference.get("year", "")
-
-            value_for_uuid = f"{first_author}{year}"
-
-        value_for_uuid = value_for_uuid or raw_data
+    value_for_uuid = metadata_to_uuid(reference, ref_text)
 
     ref_uid = uid("source", value_for_uuid)
 
@@ -147,6 +195,7 @@ def extract_source_from_process(
     return reference, ref_text
 
 
+@strip_results
 def extract_process_unformatted(comment: str) -> dict:
     """
     Produce a metadata dict to update the process if the
@@ -233,10 +282,13 @@ def extract_exchange_metadata(comment: str) -> dict:
         'basicUncertainty'
     ]
 
+    raw_data = str(comment)
+
     # pedigree matrix
     pedigree = re_pedigree.search(comment)
 
     if pedigree:
+        raw_data = raw_data[pedigree.span()[1] + 1:]
         pedigree_text = pedigree.groupdict()["matrix"]
         splitter = ";" if ";" in pedigree_text else ","
         tpl = tuple(
@@ -258,16 +310,15 @@ def extract_exchange_metadata(comment: str) -> dict:
 
     start = 0
 
-    for match in re_year.finditer(comment):
+    for match in re_year.finditer(raw_data):
         source_type = 0
         end = match.span()[1]
-        subpart = comment[start:end+7]
-
-        start = max(end, 1)
+        subpart = raw_data[start:end]
         
         year = None
         author = None
         other_authors = None
+        title = None
 
         res = re_year.search(subpart)
 
@@ -282,40 +333,47 @@ def extract_exchange_metadata(comment: str) -> dict:
         if res_author and res_author.groupdict()["author"]:
             author_start = res_author.span()[0]
 
-            matched_str = res_author.groupdict()["author"].strip(",")
+            title = subpart[start:author_start]
 
-            splitter = "&" if "&" in matched_str else " and "
-            author_split = matched_str.split(splitter)
+            matched_str = re_strip.sub("", res_author.groupdict()["author"])
 
-            author = author_split[0].strip()
+            author_split = [
+                re_strip.sub("", v) for v in re.split(and_pattern, matched_str)
+            ]
+
+            author = author_split[0]
 
             if author.lower() in incorrect_author:
                 author = None
             elif len(author_split) > 1:
-                other_authors = author_split[1].strip()
+                other_authors = ", ".join(author_split[1:])
         else:
             res_author = re_author.search(subpart)
 
             if res_author:
                 author_start = res_author.span()[0]
                 gdict = res_author.groupdict()
-                first_auth = gdict["first"].strip(",")
+                first_auth = re_strip.sub("", gdict["first"])
 
                 if first_auth.lower() not in incorrect_author:
-                    author = first_auth.strip()
+                    author = first_auth
 
-                    if "second" in gdict:
-                        other_authors = gdict["second"]
+                    if gdict["second"]:
+                        other_authors = re_strip.sub("", gdict["second"])
                 else:
                     author = None
 
                     res_author = re_any_source.search(subpart)
 
                     if res_author:
-                        first_auth = res_author.group().strip()
+                        first_auth = re_strip.sub("", res_author.group())
 
                         if first_auth.lower() not in incorrect_author:
                             author = first_auth
+
+        title = title or subpart[author_start:end+1]
+
+        start = max(end, 1)
 
         if not author and not year:
             continue
@@ -333,7 +391,7 @@ def extract_exchange_metadata(comment: str) -> dict:
 
         src = {
             "sourceType": source_type,
-            "title": subpart[author_start:end+1]
+            "title": title
         }
 
         if author:
@@ -345,7 +403,7 @@ def extract_exchange_metadata(comment: str) -> dict:
         if year:
             src["year"] = year
 
-        sources.append(src)
+        sources.append(strip_dict(src))
         source_types.append(source_type)
 
     if sources:
