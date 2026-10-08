@@ -18,6 +18,7 @@ from tqdm import tqdm
 from metadata_extractors import (
     extract_exchange_metadata,
     extract_source_from_process,
+    metadata_to_uuid,
     pm_es2,
 )
 
@@ -282,6 +283,9 @@ def dataset_xml(ds, datasets, biosphere, source, sources_root, sources_uids):
     for ref_dict in references:
         ref_dict, ref_text = extract_source_from_process(ref_dict, uid)
 
+        if not ref_dict:
+            continue
+
         ref_uid = ref_dict["id"]
 
         # check if this is the reference we keep
@@ -290,6 +294,13 @@ def dataset_xml(ds, datasets, biosphere, source, sources_root, sources_uids):
         if np.isinf(best_reference) or (st > 0 and st < best_reference):
             best_reference = st
             best_ref_dict = ref_dict
+        elif st == best_reference:
+            score_best = sum(v != "" for v in best_ref_dict.values())
+            score_ref = sum(v != "" for v in ref_dict.values())
+
+            if score_ref > score_best:
+                best_reference = st
+                best_ref_dict = ref_dict
 
         # make the element and store uid if it does not exist
         if ref_uid not in sources_uids:
@@ -347,9 +358,7 @@ def dataset_xml(ds, datasets, biosphere, source, sources_root, sources_uids):
                 if k in src_metadata
             })
 
-            value_for_uuid = "_".join(
-                "-".join((k, str(v))) for k, v in src_metadata.items()
-            )
+            value_for_uuid = metadata_to_uuid(src_metadata, raw_data)
 
             src_uid = uid("source", value_for_uuid)
 
@@ -422,6 +431,7 @@ def dataset_xml(ds, datasets, biosphere, source, sources_root, sources_uids):
     admin = element(dataset, "administrativeInformation")
     source_admin = original.find(".//{*}administrativeInformation")
     people = {p.get("number"): p for p in source_admin.findall("{*}person")}
+
     for name in ("dataEntryBy", "dataGeneratorAndPublication"):
         source_record = source_admin.find("{*}" + name)
         person = people[source_record.get("person")]
