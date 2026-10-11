@@ -1,0 +1,108 @@
+{
+ "mappings": [
+  {
+   "item": "Synthetic rutile",
+   "chosen": "Rutile, 95% titanium dioxide, at plant",
+   "location": "AU",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Tab. 85.3 names 'Synthetic rutile' for the chloride route; the rutile concentrate is that material, while ilmenite is the lower-grade ore the sulfate route uses."
+  },
+  {
+   "item": "Chlorine",
+   "chosen": "Chlorine, liquid, production mix, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact substance and a production mix, as the report gives no specific electrolysis route; chlorine dioxide is a different chemical."
+  },
+  {
+   "item": "Electric energy",
+   "chosen": "xxx Electricity, medium voltage, production UCTE, at grid",
+   "location": "UCTE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The report says the model plant 'imports UCTE grid electricity'; this is the UCTE production mix, beating the single-fuel UCTE variants and the RER/CH grids."
+  },
+  {
+   "item": "Steam",
+   "chosen": "Heat, natural gas, at industrial furnace 1MW",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The report: 'uses natural gas in a boiler to produce steam'; this is delivered heat in MJ from a natural-gas furnace, which matches the MJ/kg the table gives, beating the 'burned in' variants that model the combustion itself."
+  },
+  {
+   "item": "Gas",
+   "chosen": "Natural gas, burned in industrial furnace 1MW",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Direct process gas burned on site, which is what the separate 'Gas' row of Tab. 85.5 is, as opposed to the gas that makes the steam."
+  },
+  {
+   "item": "Particles (air)",
+   "chosen": "Particulates, unspecified",
+   "location": "",
+   "compartment": "air",
+   "dependency": false,
+   "reason": "The only candidate; the report states no particle size fraction for TiO2, so the unspecified particulate flow is the honest choice."
+  },
+  {
+   "item": "HCl (air)",
+   "chosen": "Hydrogen Chloride",
+   "location": "",
+   "compartment": "air",
+   "dependency": false,
+   "reason": "Exact substance in the stated air compartment; the soil and water copies are the wrong compartment and 'Chloride' is the ion, not HCl."
+  },
+  {
+   "item": "SO2 (air)",
+   "chosen": "Sulfur Dioxide",
+   "location": "",
+   "compartment": "air",
+   "dependency": false,
+   "reason": "Exact substance and compartment; 'Sulfur Oxides' is the aggregate and 'Sulfur' the element."
+  },
+  {
+   "item": "Iron (water)",
+   "chosen": "Iron",
+   "location": "",
+   "compartment": "water",
+   "dependency": false,
+   "reason": "The report says only 'Iron' with no oxidation state, so the unspecified iron flow beats Iron(2+) and Iron(3+)."
+  },
+  {
+   "item": "Cadmium (water)",
+   "chosen": "Cadmium",
+   "location": "",
+   "compartment": "water",
+   "dependency": false,
+   "reason": "Exact substance and compartment; Cadmium(2+) presumes an oxidation state the report does not give and Cadmium-109 is a radionuclide."
+  },
+  {
+   "item": "Mercury (water)",
+   "chosen": "Mercury",
+   "location": "",
+   "compartment": "water",
+   "dependency": false,
+   "reason": "Exact substance and compartment; Mercury(2+) presumes a speciation the report does not give."
+  },
+  {
+   "item": "Filter residues",
+   "chosen": "xx Disposal, residue from TiO2 prod. Cl, 56% water, to residual material landfill",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The disposal dataset made for exactly this residue stream of the chloride route, beating the SO4 variant and the generic residue landfills."
+  },
+  {
+   "item": "Chloride process sludges",
+   "chosen": "xx Disposal, residue from TiO2 prod. Cl, 56% water, to residual material landfill",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Same stream as the filter residues and the only chloride-route TiO2 disposal dataset in the database."
+  }
+ ]
+}

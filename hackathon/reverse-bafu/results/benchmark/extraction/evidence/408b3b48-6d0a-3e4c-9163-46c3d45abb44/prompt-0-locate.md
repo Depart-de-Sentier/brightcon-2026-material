@@ -1,0 +1,177 @@
+You are locating the inventory table of one dataset inside a life-cycle-inventory report.
+
+Dataset: `Transport, passenger car, gasoline, Large, 2021, EURO-6d` [CH], 1 km, BAFU category transport systems / road\Transformation.
+Metadata: includedProcesses: — · technology: Driving cycle: WLTC. Combustion engine power: 142 [kW]. Electric motor power: 0 [kW]. Power share from combustion engine: 99 [%]. Km over lifetime: 200000 [km]. Yearly mileage: 12000 [km/year]. Autono · comment:  Driving cycle: WLTC. Combustion engine power: 142 [kW]. Electric motor power: 0 [kW]. Power share from combustion engine: 99 [%]. Km over lifetime: 200000 [km]. Yearly mileage: 12000 [km/year]. Autonomy on a full tank/battery: 871 [km]. Tank-to-wheel efficiency: 21 [%]. Tank-to-wheel energy consump
+
+Report: `2023 - LCI on-road vehicles - Sacchi.pdf` (158 PDF pages). Below is every table and figure caption found in it, with the PDF page it appears on (not the printed page number). The report may be in German, French or English; the dataset name is English — match on meaning (e.g. "gebrannter Ölschiefer" = burnt shale, "Gipsfaserplatte" = gypsum fibre board).
+
+- p.5: Table 1 Fuel and battery options considered in this study
+- p.6: Table 2 Two-wheelers included in this study
+- p.6: Table 3 Passenger cars considered in this study
+- p.7: Table 4 City and coach buses considered in this study
+- p.8: Table 5 Medium and heavy-duty trucks considered in this study
+- p.14: Table 6 Overview of data sources
+- p.14: Table 7 lists some of this study's most critical assumptions or limitations.
+- p.14: Table 7 Summary of potentially critical model limitations or data quality issues
+- p.17: Table 8 Fuels characteristics
+- p.18: Table 9 Sulfur concentration values for on-road fuel in Switzerland and Europe
+- p.18: Table 10 Specification of fuel blends for Switzerland and Europe
+- p.18: Table 11. Table 11 NMVOC sub-species as fractions of the mass emitted
+- p.19: Table 12 Emission factors for engine wear as fractions of the fuel mass combusted
+- p.20: Table 13 Regression coefficients to estimate abrasion emissions
+- p.21: Table 14 Weighting coefficients to calculate representative abrasion emissions given a type
+- p.21: Figure 1 Negative motive energy and recuperated energy between the second 300 and 450
+- p.21: Table 15 Approximate reduction factors for brake wear emissions. Values differ slightly
+- p.22: Table 16 LCI datasets used to approximate PM emissions composition and emissions to air,
+- p.22: Table 17 Use and loss of refrigerant gas for onboard air conditioning systems
+- p.23: Table 18 Noise emission factors as implemented for UVEK:2018 datasets. UF = electric
+- p.24: Table 19 Specifications for the different battery types
+- p.25: Table 20 gives an overview of the number of battery replacements assumed for the different
+- p.25: Table 20 Number of battery replacements assumed or calculated for each vehicle type
+- p.26: Table 21 lists the specifications of the fuel cell stack and system used in this study. The
+- p.26: Table 21 Specifications for fuel cell stack systems
+- p.29: Table 22 Overview of vehicles included in the two-wheelers category.
+- p.30: Table 23 Exhaust emissions for two-wheelers, in grams per vehicle-kilometer
+- p.30: Figure 2 shows the calculated abrasion emissions for two-wheeled vehicles in mg per
+- p.31: Figure 2 Total particulate matter emissions (<2.5 µm and 2.5-10 µm) in mg per vehicle-
+- p.32: Table 24 are about twice as high as those used in (Brian Cox et al. 2020), based on
+- p.32: Table 24 Specifications for kick-scooters
+- p.34: Table 25 Specifications for conventional bicycles
+- p.36: Table 26 Specifications for electric bicycles
+- p.38: Table 27 Kilometric and calendar lifetime values for gasoline scooters
+- p.39: Table 28 Specifications for gasoline scooters
+- p.41: Table 29 Kilometric and calendar lifetime values for electric scooters
+- p.42: Table 30 Specifications for electric scooters
+- p.43: Table 34. Table 31 Kilometric and calendar lifetime values for gasoline motorbikes
+- p.44: Table 32 Specifications for gasoline motorbikes, 4-11 kW
+- p.44: Table 33 Specifications for gasoline motorbikes, 11-35 kW
+- p.45: Table 34 Specifications for gasoline motorbikes, > 35 kW
+- p.46: Table 35 Fleet composition data for gasoline motorbikes in Switzerland in 2020
+- p.48: Table 36 Kilometric and calendar lifetime values for electric motorbikes
+- p.48: Table 37 Specifications for electric motorbikes
+- p.51: Table 38 Criteria for size classes
+- p.52: Table 39 Size classes criteria used in this study.
+- p.53: Table 40 Correspondence between manufacture year and emission standards used in this
+- p.53: Table 41. Vehicles with a lifetime below six years or above 30 years are considered outliers
+- p.54: Table 41 Kilometric lifetime values for passenger vehicles
+- p.55: Figure 3 Representation of the sizing of the passenger car model
+- p.56: Table 42 Amount of aluminum in European passenger cars. Source: (Ducker Frontier 2019)
+- p.57: Figure 4 Calibration of the curb mass of the passenger car model against the EC-CO2-PC
+- p.57: Table 43 shows the mass distribution for gasoline and battery electric passenger cars
+- p.57: Table 43 Mass distribution for gasoline and battery electric passenger cars in 2021
+- p.58: Figure 5 Representation of the different types of resistance considered.
+- p.58: Table 44 Auxiliary power demand
+- p.59: Figure 6 exemplifies a calculation for a medium battery electric passenger car manufactured
+- p.59: Figure 6 Cumulated tank-to-wheel energy consumption, along the WLTC driving cycle, for a
+- p.59: Figure 7 shows the calculated abrasion emissions for passenger cars in mg per vehicle-
+- p.60: Figure 7 Total particulate matter emissions (<2.5 µm and 2.5-10 µm) in mg per vehicle-
+- p.60: Table 45 Fleet composition data given by HBEFA 4.1 (updated) for passenger cars
+- p.61: Table 46 Passenger cars stock composition data from the Swiss Federal Statistical Office
+- p.61: Table 47 Fleet composition data for Switzerland in 2020, all powertrain types and size
+- p.62: Table 48 Fleet composition data for the EU 27 + the United Kingdom in 2020, all powertrain
+- p.64: Figure 8 Representation of the different sources of emission other than exhaust emissions
+- p.64: Table 49 Degradation factors at 200'000 km for passenger cars
+- p.65: Figure 9 Relation between emission factor and fuel consumption for a diesel-powered
+- p.67: Figure 10 Validation of the exhaust emissions model with the emission factors provided by
+- p.68: Figure 11 Energy storage capacity for current battery electric cars, shown in relation to curb
+- p.68: Table 50 Parameters for battery sizing for battery electric vehicles using NMC battery
+- p.69: Table 51 Parameters for battery sizing for plugin hybrid vehicles using NMC battery
+- p.70: Figure 12 Energy consumption model calibration and validation against the EU-CO2-PC
+- p.71: Table 52 shows the fuel and electricity consumption of this calibration and validation
+- p.71: Table 52 Energy consumption for passenger cars in 2020 (EURO-d-temp or equivalent), in
+- p.73: Table 53 Powertrain-size class combinations considered in this study
+- p.74: Table 54 Buses emission standards and year of manufacture
+- p.74: Table 55. These bus models correspond to the baseline year of 2010. A 2% light weighting
+- p.75: Table 55 Mass of urban bus and coach systems and components
+- p.76: Table 56 Kilometric lifetime values for urban buses and coaches
+- p.76: Table 57 Annual mileage for buses and trolleybuses
+- p.76: Table 58. Some have been obtained or calculated from manufacturers’ data, which is
+- p.77: Table 58 Use and size parameters for urban buses and coaches.
+- p.78: Table 59 Auxiliary base power demand for different bus sizes
+- p.79: Figure 13 Relation between ambient outdoor temperature and HVAC system power output
+- p.79: Figure 14 compares the different auxiliary energy components between a 13m single-deck
+- p.80: Figure 14 Auxiliary energy consumption as a function of outdoor ambient temperature
+- p.80: Figure 15 Auxiliary energy consumption for different countries, based on their yearly average
+- p.81: Figure 16 shows the energy consumption6 of a 13m-long single-deck bus for urban and
+- p.81: Figure 16 Distribution of the tank-to-wheel energy use for a single-deck 13m bus function of
+- p.81: Figure 17 shows the calculated abrasion emissions for buses in mg per vehicle-kilometer,
+- p.82: Figure 17 Total particulate matter emissions (<2.5 µm and 2.5-10 µm) in mg per vehicle-
+- p.83: Figure 18 VECTO's Urban driving cycle (first two hundred seconds)
+- p.83: Figure 19 Road gradients corresponding to VECTO's urban driving cycle.
+- p.83: Figure 20 VECTO's Intercity driving cycle (first two hundred seconds)
+- p.83: Table 60 compares some of the parameters of both driving cycles.
+- p.83: Table 60 Parameters for "Urban" and "Intercity" driving cycles
+- p.84: Figure 21 Calibration of carculator_bus energy model against VECTO simulations for a
+- p.84: Table 61 Difference in fuel economy between diesel and compressed gas urban and coach
+- p.85: Table 62 Degradation factors at 890'000 km for diesel buses
+- p.86: Figure 22 Relation between emission factors and fuel consumption for a diesel-powered
+- p.88: Figure 23 Validation of the exhaust emissions model with the emission factors provided by
+- p.89: Table 63 Statistics on electric bus routes in Europe
+- p.89: Table 64 Use-related parameters for the different electric buses
+- p.90: Table 66. Table 65 Efficiency values along the drivetrain of electric buses in driving mode
+- p.90: Table 66 Efficiency values along the drivetrain of electric buses in recuperation mode
+- p.92: Table 67. 92
+- p.93: Table 67 Parameters for different battery chemistries for battery electric buses
+- p.93: Table 68 shows the battery sizing factors considered.
+- p.93: Table 68 Sizing factors used for different battery chemistries
+- p.94: Figure 24 Effect of battery chemistry on the number of replacements, battery capacity, and
+- p.94: Table 69 indicates the number of battery replacements considered for each type of battery
+- p.94: Table 69 Lifetime battery replacements for different battery chemistries
+- p.95: Figure 25 Relation between stored hydrogen mass and hydrogen storage cylinder mass
+- p.95: Figure 26 Relation between the mass of stored compressed gas and cylinder mass
+- p.96: Table 70 Parameters of the different charging stations for battery electric buses
+- p.97: Figure 27 Validation of the vehicles' curb mass against manufacturers' data. Above each
+- p.98: Figure 28 Validation of the vehicles' engine power against manufacturers' data. Above each
+- p.99: Figure 29 Validation of the energy storage capacity of the battery electric buses against
+- p.100: Figure 30 Validation of the vehicles' curb mass against manufacturers' data. Above each
+- p.100: Figure 31 compares the tank-to-wheel energy consumption modeled for urban buses with
+- p.101: Figure 31 Compares modeled tank-to-wheel energy consumption for city buses and values
+- p.101: Figure 32 compares the tank-to-wheel energy consumption modeled for coach buses with
+- p.102: Figure 32 Compares modeled tank-to-wheel energy consumption for coach buses and
+- p.104: Table 71 Powertrain-size class combinations for medium and heavy-duty trucks considered
+- p.104: Table 72 Emission standards and year of manufacture for medium and heavy/duty trucks
+- p.106: Table 73 Mass distribution of components for medium- and heavy-duty trucks
+- p.107: Table 74 Kilometric lifetime values for delivery trucks, medium- and heavy-duty trucks
+- p.107: Table 75 Annual mileage for Swiss medium- and heavy-duty trucks
+- p.107: Table 76 Calendar and kilometric lifetime values for Swiss medium- and heavy-duty trucks
+- p.108: Table 77 Average distance-weighted load for Swiss medium- and heavy-duty trucks
+- p.108: Table 78 Average loads for Swiss medium- and heavy-duty trucks
+- p.109: Table 79 Kilometric and calendar lifetimes for European trucks
+- p.109: Table 80 Average loads for European medium- and heavy-duty trucks
+- p.110: Table 81 Size-related parameters common to Swiss and European trucks
+- p.110: Table 82 Correspondence between vehicle size classes in HEBFA and carculator_truck
+- p.111: Table 83 Fleet composition for trucks in Switzerland in 2020
+- p.111: Figure 33 shows the calculated abrasion emissions for trucks in mg per vehicle-kilometer,
+- p.111: Figure 33 Total particulate matter emissions (<2.5 µm and 2.5-10 µm) in mg per vehicle-
+- p.112: Table 84 Fleet composition for trucks in Europe in 2020 (sums to 100%)
+- p.112: Figure 34 shows the first two hundred seconds of the “Urban delivery” driving cycle. It
+- p.113: Figure 34 VECTO's "Urban delivery" driving cycle (first two hundred seconds)
+- p.113: Figure 35 Road gradients corresponding to VECTO's "Urban delivery" driving cycle
+- p.113: Figure 36 VECTO's "Long haul" driving cycle (first two hundred seconds)
+- p.114: Table 85 shows a few parameters about the three driving cycles considered. Value intervals
+- p.114: Table 85 Parameters of driving cycles used for medium- and heavy-duty trucks
+- p.114: Figure 37 Calibration of carculator_truck energy model against VECTO simulations for a 40t
+- p.115: Table 86 Degradation factors at 890'000 km for diesel trucks
+- p.116: Figure 38 Relation between emission factors and fuel consumption for a diesel-powered
+- p.117: Figure 39 Validation of the exhaust emissions model with the emission factors provided by
+- p.118: Table 87 Efficiency values along the drivetrain of electric trucks in driving mode
+- p.118: Table 88 Efficiency values along the drivetrain of electric trucks in recuperation mode
+- p.119: Table 89 Parameters for different battery chemistries for battery electric trucks
+- p.120: Figure 40 Effect of battery chemistry on the number of replacements, battery capacity, mass,
+- p.120: Table 90 Energy storage and electric utility factor of plugin hybrid trucks
+- p.121: Figure 41 Relation between stored hydrogen mass and hydrogen storage cylinder mass
+- p.122: Figure 42 Relation between the mass of stored compressed gas and cylinder mass
+- p.122: Table 91. The number of vehicles serviced by the charging station daily is defined by the
+- p.122: Table 91 Parameters of the charging station for battery electric trucks
+- p.123: Figure 43 compares the fuel economy of trucks of different size classes modeled by
+- p.124: Figure 43 Fuel consumption for diesel trucks in L diesel per 100 km, against literature data.
+- p.124: Figure 44 compares some of the modeled parameters for battery electric trucks with the
+- p.125: Figure 44 Comparison of modeled maximum payload, engine peak power, battery capacity,
+
+Rules:
+1. Choose the caption(s) that hold the unit-process inventory of this dataset — inputs, energy, emissions, transport — not impact results, not a diagram. Prefer "Sachbilanz" / "inventory" / "LCI" tables.
+2. Return the PDF page range that covers those tables plus the paragraph introducing them: `first_page`, `last_page` (at most 4 pages). Tables can run onto the next page.
+3. If no caption fits (the report does not document this dataset's inventory, or only as a result), return `found` = false and say why in `reason`.
+4. `reason` names the caption(s) you chose and why.
+
+Return only the JSON object described by the schema.

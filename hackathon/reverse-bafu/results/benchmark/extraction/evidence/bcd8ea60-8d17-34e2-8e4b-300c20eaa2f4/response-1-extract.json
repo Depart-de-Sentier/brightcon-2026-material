@@ -1,0 +1,82 @@
+{
+ "basis": "Figure 20 'Unit process raw data of canning of food', column 'Canning of legumes' [CH], per 1 kg",
+ "basis_amount": 1,
+ "allocation": "none stated",
+ "mass_sum": null,
+ "items": [
+  {
+   "name": "Canning of legumes",
+   "kind": "product",
+   "quote": "product              Canning of legumes                     CH                        0                    kg            1.0                   0",
+   "raw_value": 1.0,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "kg",
+   "per": "per kg of legumes canned",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "canning of legumes",
+   "compartment": "",
+   "confidence": "high",
+   "note": "reference product"
+  },
+  {
+   "name": "electricity, low voltage, at grid",
+   "kind": "input",
+   "quote": "technosphere         electricity, low voltage, at grid      CH                        0                    kWh         7.08E-01        1.00E+00 1.25E+00 (2,3,3,2,1,5,BU:1.05); ;",
+   "raw_value": 0.708,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "kWh",
+   "per": "per kg of legumes canned",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "electricity low voltage at grid",
+   "compartment": "",
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "name": "chemical plant, organics",
+   "kind": "input",
+   "quote": "                     chemical plant, organics              RER                        1                    unit        1.00E-10        1.00E+00 3.06E+00 (2,3,3,2,1,5,BU:3); ;",
+   "raw_value": 1e-10,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "unit",
+   "per": "per kg of legumes canned",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "chemical plant organics",
+   "compartment": "",
+   "confidence": "high",
+   "note": "infrastructure proxy"
+  },
+  {
+   "name": "tap water, at user",
+   "kind": "input",
+   "quote": "                     tap water, at user                     CH                        0                    kg         1.20E+00         1.00E+00 1.25E+00 (2,3,3,2,1,5,BU:1.05); ;",
+   "raw_value": 1.2,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "kg",
+   "per": "per kg of legumes canned",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "tap water at user",
+   "compartment": "",
+   "confidence": "high",
+   "note": "washing and blanching water"
+  }
+ ],
+ "gaps": [
+  "The tin can itself is explicitly excluded: 'The inventory includes all processes from washing, blanching to filling, but without the tincan itself.'",
+  "No heat/steam input is listed even though blanching needs it - the whole energy demand is booked as electricity.",
+  "No waste water output and no direct emissions are given (unlike the neighbouring drying dataset, which books a Water emission).",
+  "No transport of the legumes to the cannery."
+ ]
+}

@@ -1,0 +1,101 @@
+{
+  "target": {
+    "code": "bfff239d-8ae3-3730-a048-dffb312515f3",
+    "name": "Purified terephthalic acid, at plant",
+    "location": "RER"
+  },
+  "strategy": {
+    "code": "S3",
+    "label": "top-down model: p-xylene by the oxidation stoichiometry from the dataset's own process description, energy calibrated",
+    "note": "NOT S1. The cited report prints no inventory and says of PTA only that a x1000 correction was applied to one land-occupation flow (sec. 3.8). The dataset's own includedProcesses field names the chemistry - 'Crude terephthalic acid (CTA) is produced by oxidation of p-xylene. A subsequent purification step leads to purified terephthalic acid (PTA)' - and the feedstock amount follows from that reaction. Two honest weaknesses: (1) the amount is the theoretical minimum, because no yield is printed anywhere in the bundle, so the model is low on p-xylene by whatever the real loss is; (2) BAFU has only 'Xylene, at plant', the mixed-isomer dataset, not p-xylene, so the isomer separation - which Althaus 2007 sec. 96.5.1 describes as crystallisation or molecular-sieve adsorption and does not quantify - is missing from the chain. The acetic acid solvent and the cobalt/manganese/bromide catalyst of the oxidation step are named by neither the dataset nor any report in the bundle and are left out rather than guessed."
+  },
+  "evidence": [
+    {
+      "source": "2025 - LCI plastics - Rajabihamedani.pdf (the dataset's own cited report)",
+      "where": "sec. 3.2, Tab. 1.1, sec. 6",
+      "note": "Prints no unit-process inventory for any of its 14 datasets: 'All datasets addressed for the updates are nowadays only available as system processes and therefore are modelled accordingly in this study' (sec. 3.2); Foreground data = 'Cumulative inventories of Plastics as provided by PlasticsEurope' (Tab. 1.1). Verified page by page, including every table that is embedded as an image. The full finding is in specs/evidence/<code>/response-0-locate.json. What the report does give and is used here: sec. 3.6 (infrastructure, 4.0E-10 p of Chemical plant, organics)."
+    },
+    {
+      "source": "bafu-2026 ecoSpold metadata of the target (includedProcesses)",
+      "where": "includedProcesses",
+      "note": "'Crude terephthalic acid (CTA) is produced by oxidation of p-xylene. A subsequent purification step leads to purified terephthalic acid (PTA). In addition to these foreground processes, the following processes in the supply chain are considered for this EPD: extraction and refinery of crude oil and natural gas, steam cracking of hydrocarbons (predominantly naphtha) into lower olefins and pygas, catalytic reforming of naphtha, and the extraction and production of p-xylene from both pygas and reformate (xylene loop).'"
+    },
+    {
+      "source": "stoichiometry of the p-xylene oxidation",
+      "where": "the one material amount",
+      "note": "C8H10 + 3 O2 -> C8H6O4 + 2 H2O. Per kg of PTA: M(C8H10)/M(C8H6O4) = 106.165/166.131 = 0.6390 kg of p-xylene. The oxygen is taken from air and is not an inventoried input, as in every air-oxidation process in BAFU (cf. Ethylene oxide, at plant, whose oxygen is a purchased pure-O2 input and is therefore listed there but not here)."
+    },
+    {
+      "source": "2007 - LCI chemicals - Althaus.pdf",
+      "where": "sec. 96.5.1 p-Xylene, o-Xylene",
+      "note": "Describes the isomer separation that this model cannot represent: 'Crystallization techniques take advantage of the spread of melting points ... p-Xylene can also be recovered using solid absorption of the molecular-sieve type.' No amounts are given for it anywhere."
+    }
+  ],
+  "node": {
+    "name": "Purified terephthalic acid, at plant, disaggregated",
+    "unit": "kilogram",
+    "location": "RER",
+    "comment": "Air oxidation of p-xylene to CTA plus purification to PTA, per kg. The waste-treatment services that the BAFU dataset already carries as explicit exchanges (Tab. 3.1 of Rajabihamedani 2025 documents how they were re-linked, but prints no amounts) are deliberately NOT part of this model: they were never collapsed away, so reconstructing them adds nothing, and copying their amounts out of the target would be reading the answer. Adding the whole Tab. 3.1 candidate list as free inputs was tested on Ethylene glycol - the fit drove all eleven to ~1e-12 and the agreement did not move by a single flow - so they are left out. Consequence for the harness number: the target's cumulative vector gets its long tail of trace flows from those disposal chains, while this model gets a different tail from the ecoinvent-v2 chains of its own inputs; the two tails cannot agree, which caps the 'share of all flows within 10 %' far below what the main flows achieve. This model terminates on Xylene, at plant [RER], which is itself an ecoSpold type=2 dataset - the harness flags that, correctly. It is linked to the BAFU dataset rather than to the sibling rebuild so that this spec's check measures only this spec's evidence; re-point it with the input's `sandbox` field to chain the rebuilds together.",
+    "inputs": [
+      {
+        "name": "Xylene, at plant",
+        "amount": 0.6390438870529883,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "C8H10 + 3 O2 -> C8H6O4 + 2 H2O: 106.165/166.131 = 0.6390 kg, the theoretical minimum (no yield printed in the bundle); mixed xylene stands in for p-xylene, see the strategy note",
+        "code": "a29aa0d5-9e37-34d7-8868-8a4fff95350a"
+      },
+      {
+        "name": "Electricity, medium voltage, production ENTSO-E, at grid",
+        "amount": 0.0013225714688312837,
+        "unit": "kilowatt hour",
+        "location": "ENTSO-E",
+        "free": true,
+        "note": "oxidation reactor agitation, air compression, crystallisation, centrifuges; never quantified -> calibrated, unbounded",
+        "code": "648e3bb3-7b98-46f8-9da1-f45627c309ef"
+      },
+      {
+        "name": "Steam, for chemical processes, at plant",
+        "amount": 0.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "free": true,
+        "note": "the purification step is a high-pressure hydrogenation and recrystallisation; never quantified -> calibrated, unbounded",
+        "code": "ca51da0f-d926-3dbe-bc07-e0449bb7dcab"
+      },
+      {
+        "name": "Chemical plant, organics",
+        "amount": 1.541381459222137e-10,
+        "unit": "unit",
+        "location": "RER",
+        "free": true,
+        "bounds": [
+          0.0,
+          4e-10
+        ],
+        "note": "Rajabihamedani 2025 sec. 3.6: 'For the implementation, the dataset \"Chemical plant, organics {RER}U\" is used. The quantity is the standard amount for production of chemicals of 4.0E-10 p.' The target carries exactly that, which is why 4.0E-10 is the upper bound here. It is the upper bound and not the amount because ESU added one chemical plant per *dataset*, i.e. one for a whole cradle-to-gate chain, while this model links to a precursor dataset that already carries its own 4.0E-10 - so a second one is a double count against the target's own convention. That matters more than its size suggests: of the 1790 flows in the cumulative vector of every one of these 14 datasets, 1316 get more than 90 % of their value from this single exchange (see scripts/plasticseurope_infrastructure_diagnostic.py), so doubling it doubles three quarters of the vector. The amount is therefore fitted between 0 and the report's 4.0E-10.",
+        "code": "13ed4fe0-7ba5-3b60-82b6-a63918ee814d"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "The dataset's own text names 'transportation of feedstock' but no report in the bundle gives a distance for it, so the amount is calibrated. The starting value is the ecoinvent v2 standard distance for precursor materials (Althaus 2007 sec. 34.6.7: 'As there is no information about the transport amounts, standard distances and means according to Frischknecht et al. (2007) are used for the different raw materials') = 0.6 tkm rail + 0.1 tkm lorry per kg of precursor, the ratio BAFU's Ethylene dichloride, Ethylene oxide, Ethyl benzene and PET-amorphous unit processes all carry; precursor mass here 0.639 kg. It is left free rather than fixed because the PlasticsEurope eco-profile accounts for its feedstock transport as elementary flows only - it carries no vehicle or track infrastructure - so an ecoinvent transport dataset adds a background the target cannot have, and the fit is the right place to decide how much of it belongs.",
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "The dataset's own text names 'transportation of feedstock' but no report in the bundle gives a distance for it, so the amount is calibrated. The starting value is the ecoinvent v2 standard distance for precursor materials (Althaus 2007 sec. 34.6.7: 'As there is no information about the transport amounts, standard distances and means according to Frischknecht et al. (2007) are used for the different raw materials') = 0.6 tkm rail + 0.1 tkm lorry per kg of precursor, the ratio BAFU's Ethylene dichloride, Ethylene oxide, Ethyl benzene and PET-amorphous unit processes all carry; precursor mass here 0.639 kg. It is left free rather than fixed because the PlasticsEurope eco-profile accounts for its feedstock transport as elementary flows only - it carries no vehicle or track infrastructure - so an ecoinvent transport dataset adds a background the target cannot have, and the fit is the right place to decide how much of it belongs.",
+        "code": "99f8a4b0-99b5-3130-924c-5de4c10b62ef"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

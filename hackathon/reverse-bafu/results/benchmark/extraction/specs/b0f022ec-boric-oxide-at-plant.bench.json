@@ -1,0 +1,283 @@
+{
+  "target": {
+    "code": "b0f022ec-7c92-3912-aff1-0980965a281c",
+    "name": "Boric oxide, at plant",
+    "location": "GLO"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 3.8 'Unit process raw data for the boric oxide production', column 'boric oxide, at plant' [GLO], per 1 kg; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI highly pure chemicals - Sutter.pdf",
+      "where": "pages 45-48 -> report-p45-48.txt",
+      "note": "report sha256 b7974a4b55d0bf1c…, text sha256 7e50e64e49bc38a5…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/b0f022ec-7c92-3912-aff1-0980965a281c/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "ac41ed2b13c8313ddb46de5bbdd24c87d8e9e6c4bb89436962e17328c3ad491f",
+      "at": "2026-09-22T21:31:51Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "48bf10f3d0577d66065f1afa83b23afc91761d6c7b332aff38984c2542c50fc2",
+      "at": "2026-09-22T21:31:53Z"
+    },
+    "gaps_reported_by_model": [
+      "No land use is inventoried although section 3.5 says the system includes land use; only the 'chemical plant, organics' infrastructure proxy carries it.",
+      "No waste-water treatment input and no cooling water released back to water.",
+      "No sodium sulfate co-product: the excerpt describes the 96 % grade route producing sodium sulfate, but the inventory models the boric-acid fusing route with a single product.",
+      "Energy and cooling water are both proxies from an unrelated German chemical site (Gendorf 2000), so their absolute level is weak."
+    ],
+    "skipped_items": [
+      "boric oxide, at plant: product — reference product",
+      "Water, cooling, unspecified natural origin: no flow chosen (The keyword search returned no candidate for cooling water of unspecified natural origin, so nothing can be chosen.)"
+    ],
+    "assembled_at": "2026-09-22T21:31:53Z"
+  },
+  "node": {
+    "name": "Boric oxide, at plant, disaggregated",
+    "unit": "kg",
+    "location": "GLO",
+    "comment": "drafted from 2007 - LCI highly pure chemicals - Sutter.pdf pp. 45-48",
+    "inputs": [
+      {
+        "name": "Boric acid, anhydrous, powder, at plant",
+        "amount": 1.86,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "stoichiometric calculation at 95 % yield",
+        "derivation": {
+          "evidence": "report-p45-48.txt",
+          "quote": "                          5              -        boric acid, anhydrous, powder, at plant        RER              0          kg       1.86E+0             1          1.38 (4,5,1,1,1,5); Stoichiometric calculation",
+          "raw_value": 1.86,
+          "raw_unit": "kg",
+          "per": "per kg boric oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "boric acid anhydrous powder at plant",
+          "mapping_reason": "The only candidate and an exact name match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "03b94c73-7c4c-35b9-bc43-a9e013f10a75"
+      },
+      {
+        "name": "xxx Heat, natural gas, at industrial furnace low-NOx >100kW",
+        "amount": 2.0,
+        "unit": "megajoule",
+        "location": "RER",
+        "note": "all heat and steam booked as natural gas",
+        "derivation": {
+          "evidence": "report-p45-48.txt",
+          "quote": "                                                  heat, natural gas, at industrial furnace",
+          "raw_value": 2.0,
+          "raw_unit": "MJ",
+          "per": "per kg boric oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "heat natural gas industrial furnace >100kW",
+          "mapping_reason": "'Heat, natural gas, at industrial furnace low-NOx >100kW' at RER is the same size class (>100 kW) and geography as the report's line; candidate 1 is a 1 MW CH furnace and candidate 2 district heat at the consumer.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "72d574ad-634c-33e3-a037-41c027e813f0"
+      },
+      {
+        "name": "xxx Electricity, medium voltage, production UCTE, at grid",
+        "amount": 0.333,
+        "unit": "kilowatt hour",
+        "location": "UCTE",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p45-48.txt",
+          "quote": "                                                  electricity, medium voltage, production",
+          "raw_value": 0.333,
+          "raw_unit": "kWh",
+          "per": "per kg boric oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electricity medium voltage production UCTE at grid",
+          "mapping_reason": "Exact name and geography match for the UCTE production mix at medium voltage; the single-technology and other-region entries do not fit.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "d86e2374-784b-3fd9-910b-7583462ea81b"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 0.186,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "standard distance 100 km",
+        "derivation": {
+          "evidence": "report-p45-48.txt",
+          "quote": "                          5              -        transport, lorry >16t, fleet average           RER              0          tkm       1.86E-1            1          2.09 (4,5,na,na,na,na); Standard distances",
+          "raw_value": 0.186,
+          "raw_unit": "tkm",
+          "per": "per kg boric oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry >16t fleet average",
+          "mapping_reason": "The 16t-32t gross-weight fleet average at RER is the '>16t' class the report means; 32t-40t is larger and 7.5t-16t below the threshold.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "85b3a5a6-2635-3546-b51b-4ccad397650b"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 1.12,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "standard distance 600 km",
+        "derivation": {
+          "evidence": "report-p45-48.txt",
+          "quote": "                          5              -        transport, freight, rail                       RER              0          tkm      1.12E+0             1          2.09 (4,5,na,na,na,na); Standard distances",
+          "raw_value": 1.12,
+          "raw_unit": "tkm",
+          "per": "per kg boric oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "Exact name match at RER, the geography the table gives.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Chemical plant, organics",
+        "amount": 4e-10,
+        "unit": "unit",
+        "location": "RER",
+        "note": "infrastructure proxy, 4.2 ha, 50'000 t/a, 50 a life",
+        "derivation": {
+          "evidence": "report-p45-48.txt",
+          "quote": "                          5              -        chemical plant, organics                       RER              1          unit     4.00E-10            1          3.09 (4,5,na,na,na,na); Estimation",
+          "raw_value": 4e-10,
+          "raw_unit": "unit",
+          "per": "per kg boric oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "chemical plant organics",
+          "mapping_reason": "Exact name and unit (unit, infrastructure) match; the other candidates are chemicals by mass, heat, steam or a storage tank.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "13ed4fe0-7ba5-3b60-82b6-a63918ee814d"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Waste Heat",
+        "category": "air",
+        "amount": 1.2,
+        "unit": "megajoule",
+        "note": "100 % of the electricity input released as waste heat, high population density",
+        "derivation": {
+          "evidence": "report-p45-48.txt",
+          "quote": "high population            -            4         Heat, waste                                        -            -          MJ       1.20E+0             1          1.30 (4,5,na,na,na,na); Calculated from the electricity input",
+          "raw_value": 1.2,
+          "raw_unit": "MJ",
+          "per": "per kg boric oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Waste heat released to air; section 3.10 says 100 % of the electricity is converted to waste heat and released to the air.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-9136-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Boron",
+        "category": "air",
+        "amount": 0.000662,
+        "unit": "kilogram",
+        "note": "0.2 % of the boric acid input, vented, high population density",
+        "derivation": {
+          "evidence": "report-p45-48.txt",
+          "quote": "                           -            4         Boron                                              -            -          kg        6.62E-4            1          5.10 (4,5,na,na,na,na); Estimation",
+          "raw_value": 0.000662,
+          "raw_unit": "kg",
+          "per": "per kg boric oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Boron is the right element and the report emits it both to air (0.2 % of the boric acid input) and to water (the unreacted 4.8 %). Both lines share the flow name, so the compartment is left to each line item rather than fixed here; boron carbide, boron trioxide and the trifluoride complex are different substances.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-a0f7-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Boron",
+        "category": "water",
+        "amount": 0.0159,
+        "unit": "kilogram",
+        "note": "4.8 % unreacted boric acid leaving with the waste water, to river",
+        "derivation": {
+          "evidence": "report-p45-48.txt",
+          "quote": "                           -            4         Boron                                              -            -          kg        1.59E-2            1          5.10 (4,5,na,na,na,na); Stoichiometric calculation",
+          "raw_value": 0.0159,
+          "raw_unit": "kg",
+          "per": "per kg boric oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Boron is the right element and the report emits it both to air (0.2 % of the boric acid input) and to water (the unreacted 4.8 %). Both lines share the flow name, so the compartment is left to each line item rather than fixed here; boron carbide, boron trioxide and the trifluoride complex are different substances.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-a0fd-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": []
+  }
+}

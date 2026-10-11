@@ -1,0 +1,733 @@
+You are helping rebuild an aggregated life-cycle-inventory dataset as a unit process.
+
+The dataset `Ventilation duct, steel, zinc coated, s= 0.75mm, at plant` [CH], reference unit 1 m2, is shipped in the BAFU-2026 database as a "system terminated" inventory: it has no technosphere inputs, only ~16 cumulative elementary flows. A public report documents the underlying process. Your job is to read the report excerpt and produce the *unit process* as line items — what the process consumes from other datasets and what it emits directly — each traceable to the excerpt.
+
+## What the database says about the dataset
+
+- BAFU category: ventilation / production of components
+- includedProcesses: Materials used for the production. Energy use for the different production steps and for heating the production building. Transport of raw materials to the plant. Estimation for infrastructure of the production site included.
+- technology: Typical technology, materials and components used for ventilation systems in commercial and public buildings
+- generalComment: Production of a rectangular ventilation duct, made of hot-dip galvanized steel sheet with 275g/m2 zinc coating, sheet thickness 0.75 mm, total weight: 7.7 kg/m2. Including average material for joining profile, slide profile, bolt clamps to join components. Stiffening profiles or internal rods to decrease the bulging and caving of the duct. Suspension profile with EPDM shock absorbing rubber, channels, channel brackets and cantilevers for fixation on walls or ceilings.;
+UUID: e1f228bf-f70b-3032-aee7-0ea982b2b87e
+- source cited in the metadata: Klingler M. | 2014 | 2014 - LCA ventilation and heating systems - Klingler
+- time period: 2014-01-2014-12
+
+## Direct resource flows visible in the aggregated vector
+
+These flows appear in the aggregated inventory with amounts that no upstream dataset would plausibly emit on this dataset's behalf; they are candidates for the process's own direct resource flows (per 1 m2):
+- none
+
+## Report excerpt
+
+Source file: `report-p117-119.txt` (SHA-256 fbda9f888ca9fd8e249295ea6ba772c4128951c1ac5e954f534bdec32ca0dd7e), pages 117-119 of `2014 - LCA data ventilation and heating systems - Klingler.pdf`.
+
+```
+Ökobilanzdaten für Lüftungs- und Wärmeanlagen                                                                                                                                        ARGE LW-Bilanzen
+
+
+
+Der Bandverzinkungsprozess in ecoinvent weist eine Effizienz bezüglich Zinkauftrag von etwa
+50-60% auf. Bezogen auf das Verzinken von Lüftungskanälen müsste der Zinkbedarf im Pro-
+zess damit ca. 500 g/m2 betragen. Aus den Angaben der Prozessbeschreibung beträgt das
+geometrische Mittel der Zinkauflage (je Seite) für den Prozess 30 µm. Durch die Einführung des
+zusätzlichen Korrekturprozesses für -10 µm würde für die Zinkauflage von 275 g/m2 mit einer
+Prozesseffizienz von 46% ein ähnlicher Wert wie für den Grundprozess erreicht.
+Der Strombedarf für die Produktion der Lüftungskanäle wurde primär auf Basis von Daten eines
+entsprechenden Unternehmens eingeschätzt [23]. Vergleiche mit Daten eines Unternehmens
+mit ähnlichen Produktionsprozessen [25] bestätigen diese Annahme. Für den Wärmebedarf der
+Produktionsgebäude und die Gebäudeinfrastruktur wurden die mittleren Datensätze für die
+Metallverarbeitung aus ecoinvent verwendet [27]. Die bilanzierte Menge bezieht sich dabei auf
+das Gesamtgewicht der Komponente. Bei der Sachbilanz der Dämmmaterialien sind die Auf-
+wendungen für die Herstellung bereits im Prozess des Dämmmaterials enthalten. Weitergehen-
+de Prozessenergien wurden hier vernachlässigt.
+Die Transporte wurden mit den Standarddistanzen gemäss ecoinvent-Dokumentation v2.2
+eingesetzt. Für die Abschätzung der Unsicherheiten wurde die Methode der Pedigree-Matrix
+nach [10] angewendet.
+
+                Entsorgung Luftverteilung und Dämmungen
+Die Entsorgung der Lüftungsgeräte wird entweder direkt durch den Lieferanten erfolgen oder
+über einen Rückbau in einzelnen Teilen überwiegend als Metallschrott erfolgen. Für den Rück-
+bau wurde daher in erster Linie auf die Datensätze des Gebäuderückbaus zurückgegriffen.
+Für den jährlichen Ersatz der Luftfilter über die 20 Jahre Lebensdauer wird eine Entsorgung
+über die Kehrichtverbrennung zugrunde gelegt.
+
+
+             Sachbilanz Luftverteilung und Dämmungen
+
+                Herstellung
+Tabelle 40: Spiralfalzrohre aus verzinktem Stahlblech
+                                                                                          Wickelfalzrohr, Stahl
+
+
+
+
+                                                                                                                  Wickelfalzrohr, Stahl
+
+
+
+
+                                                                                                                                          Wickelfalzrohr, Stahl
+
+
+
+
+                                                                                                                                                                  Wickelfalzrohr, Stahl
+                                                                                          verzinkt, s= 0.5mm,
+
+
+
+
+                                                                                                                  verzinkt, s= 0.6mm,
+
+
+
+
+                                                                                                                                          verzinkt, s= 0.8mm,
+
+
+
+
+                                                                                                                                                                  verzinkt, s= 1.0mm,
+
+
+
+
+                                                                                                                                                                                              Geometrische Standard-
+                                                                                                                                                                                              Abweichtung (Pedigree-
+                                                                                          ab Werk
+
+
+
+
+                                                                                                                  ab Werk
+
+
+
+
+                                                                                                                                          ab Werk
+
+
+
+
+                                                                                                                                                                  ab Werk
+
+
+
+
+                                                                                                                                                                                              Matrix)
+
+
+
+
+                                                                                           CH           CH           CH           CH
+ecoinvent - Datensatz                                                                      m2           m2           m2           m2
+steel, electric, un- and low-alloyed, at plant, RER, [kg]                                 1.56E+0      1.89E+0      2.56E+0      3.23E+0                                                  1.22, (2,3,1,1,1,5)
+steel, converter, unalloyed, at plant, RER, [kg]                                          2.65E+0      3.22E+0      4.36E+0      5.50E+0                                                  1.22, (2,3,1,1,1,5)
+steel, low-alloyed, at plant, RER, [kg]                                                    2.00E-1      2.00E-1      2.00E-1      2.00E-1                                                 1.32, (4,4,1,1,1,5)
+synthetic rubber, at plant, RER, [kg]                                                      1.00E-1      1.00E-1      1.00E-1      1.00E-1                                                 1.32, (4,4,1,1,1,5)
+sheet rolling, steel, RER, [kg]                                                           4.21E+0      5.12E+0      6.92E+0      8.73E+0                                                  1.22, (2,3,1,1,1,5)
+section bar rolling, steel, RER, [kg]                                                      2.00E-1      2.00E-1      2.00E-1      2.00E-1                                                 1.32, (4,4,1,1,1,5)
+zinc coating, coils, RER, [m2]                                                            1.07E+0      1.09E+0      1.10E+0      1.11E+0                                                  1.22, (2,3,1,1,1,5)
+zinc coating, pieces, RER, [m2]                                                            1.70E-2      1.70E-2      1.70E-2      1.70E-2                                                 1.32, (4,4,1,1,1,5)
+zinc coating, pieces, adjustment per um, RER, [m2]                                       -1.64E+1     -1.66E+1     -1.69E+1     -1.70E+1                                                  1.22, (2,3,1,1,1,5)
+electricity, medium voltage, production UCTE, at grid, UCTE, [kWh]                        1.35E+0      1.62E+0      2.17E+0      2.71E+0                                                  1.22, (2,3,1,1,1,5)
+metal working factory operation, average heat energy, RER, [kg]                           4.51E+0      5.42E+0      7.22E+0      9.03E+0                                                  1.27, (2,4,2,1,3,4)
+metal working factory, RER, [unit]                                                         2.07E-9      2.48E-9      3.31E-9      4.13E-9                                                 3.07, (2,4,2,1,3,4)
+transport, freight, rail, RER, [tkm]                                                      2.71E+0      3.25E+0      4.33E+0      5.42E+0                                                  2.14, (4,5,1,1,1,5)
+transport, lorry 20-28t, fleet average, CH, [tkm]                                          2.26E-1      2.71E-1      3.61E-1      4.51E-1                                                 2.14, (4,5,1,1,1,5)
+Location: Geographischer Bezug für Prozess (RER = Europa; CH = Schweiz, UCTE = Union for the Coordination of Transmission of Electricity)
+
+BFE Forschungsprojekt Schlussbericht, August 2014                                                                                                                                                                      117
+Ökobilanzdaten für Lüftungs- und Wärmeanlagen                                                                                                                                                                                                           ARGE LW-Bilanzen
+
+
+
+
+Tabelle 41: Spiralfalzrohre aus rostfreiem Stahlblech
+
+
+
+
+                                                                                                                           rostfrei, s= 0.5mm, ab
+
+
+
+
+                                                                                                                                                               rostfrei, s= 0.6mm, ab
+
+
+
+
+                                                                                                                                                                                                  rostfrei, s= 0.8mm, ab
+
+
+
+
+                                                                                                                                                                                                                                      rostfrei, s= 1.0mm, ab
+                                                                                                                           Wickelfalzrohr, Stahl
+
+
+
+
+                                                                                                                                                               Wickelfalzrohr, Stahl
+
+
+
+
+                                                                                                                                                                                                  Wickelfalzrohr, Stahl
+
+
+
+
+                                                                                                                                                                                                                                      Wickelfalzrohr, Stahl
+
+
+
+
+                                                                                                                                                                                                                                                                             Geometrische Standard-
+                                                                                                                                                                                                                                                                             Abweichtung (Pedigree-
+                                                                                                                           Werk
+
+
+
+
+                                                                                                                                                               Werk
+
+
+
+
+                                                                                                                                                                                                  Werk
+
+
+
+
+                                                                                                                                                                                                                                      Werk
+
+
+
+
+                                                                                                                                                                                                                                                                             Matrix)
+                                                                                           CH           CH          CH            CH
+ecoinvent - Datensatz                                                                      m2           m2          m2            m2
+chromium steel 18/8, at plant, RER, [kg]                                                  4.21E+0      5.12E+0     6.92E+0       8.73E+0                                                                                                                                 1.22, (2,3,1,1,1,5)
+steel, low-alloyed, at plant, RER, [kg]                                                    2.00E-1      2.00E-1     2.00E-1       2.00E-1                                                                                                                                1.32, (4,4,1,1,1,5)
+synthetic rubber, at plant, RER, [kg]                                                      1.00E-1      1.00E-1     1.00E-1       1.00E-1                                                                                                                                1.32, (4,4,1,1,1,5)
+sheet rolling, steel, RER, [kg]                                                           4.21E+0      5.12E+0     6.92E+0       8.73E+0                                                                                                                                 1.22, (2,3,1,1,1,5)
+section bar rolling, steel, RER, [kg]                                                      2.00E-1      2.00E-1     2.00E-1       2.00E-1                                                                                                                                1.32, (4,4,1,1,1,5)
+zinc coating, pieces, RER, [m2]                                                            1.70E-2      1.70E-2     1.70E-2       1.70E-2                                                                                                                                1.32, (4,4,1,1,1,5)
+electricity, medium voltage, production UCTE, at grid, UCTE, [kWh]                        1.35E+0      1.62E+0     2.17E+0       2.71E+0                                                                                                                                 1.22, (2,3,1,1,1,5)
+metal working factory operation, average heat energy, RER, [kg]                           4.51E+0      5.42E+0     7.22E+0       9.03E+0                                                                                                                                 1.27, (2,4,2,1,3,4)
+metal working factory, RER, [unit]                                                         2.07E-9      2.48E-9     3.31E-9       4.13E-9                                                                                                                                3.07, (2,4,2,1,3,4)
+transport, freight, rail, RER, [tkm]                                                      2.71E+0      3.25E+0     4.33E+0       5.42E+0                                                                                                                                 2.14, (4,5,1,1,1,5)
+transport, lorry 20-28t, fleet average, CH, [tkm]                                          2.26E-1      2.71E-1     3.61E-1       4.51E-1                                                                                                                                2.14, (4,5,1,1,1,5)
+Location: Geographischer Bezug für Prozess (RER = Europa; CH = Schweiz, UCTE = Union for the Coordination of Transmission of Electricity)
+
+
+
+
+Tabelle 42: Lüftungskanäle aus verzinktem Stahlblech
+                                                                                              verzinkt, s= 0.62mm,
+
+
+
+
+                                                                                                                         verzinkt, s= 0.75mm,
+
+
+
+
+                                                                                                                                                        verzinkt, s= 0.87mm,
+
+
+
+
+                                                                                                                                                                                                                   verzinkt, s= 1.25mm,
+                                                                                              Lüftungskanal, Stahl
+
+
+
+
+                                                                                                                         Lüftungskanal, Stahl
+
+
+
+
+                                                                                                                                                        Lüftungskanal, Stahl
+
+
+
+
+                                                                                                                                                                                    Lüftungskanal, Stahl
+
+
+
+
+                                                                                                                                                                                                                   Lüftungskanal, Stahl
+
+
+
+
+                                                                                                                                                                                                                                                  Lüftungskanal, Stahl
+                                                                                                                                                                                    verzinkt, s= 1.0mm,
+
+
+
+
+                                                                                                                                                                                                                                                  verzinkt, s= 1.5mm,
+
+
+
+
+                                                                                                                                                                                                                                                                                Geometrische Standard-
+                                                                                                                                                                                                                                                                                Abweichtung (Pedigree-
+                                                                                              ab Werk
+
+
+
+
+                                                                                                                         ab Werk
+
+
+
+
+                                                                                                                                                        ab Werk
+
+
+
+
+                                                                                                                                                                                    ab Werk
+
+
+
+
+                                                                                                                                                                                                                   ab Werk
+
+
+
+
+                                                                                                                                                                                                                                                  ab Werk
+
+
+
+
+                                                                                                                                                                                                                                                                                Matrix)
+                                                                                           CH           CH           CH           CH                                                                                CH                             CH
+ecoinvent - Datensatz                                                                      m2           m2           m2           m2                                                                                m2                             m2
+steel, electric, un- and low-alloyed, at plant, RER, [kg]                                 2.23E+0      2.72E+0      3.17E+0      3.66E+0                                                                           4.61E+0                        5.55E+0                  1.22, (2,3,1,1,1,5)
+steel, converter, unalloyed, at plant, RER, [kg]                                          3.80E+0      4.63E+0      5.40E+0      6.24E+0                                                                           7.85E+0                        9.45E+0                  1.22, (2,3,1,1,1,5)
+steel, low-alloyed, at plant, RER, [kg]                                                    2.50E-1      2.50E-1      2.50E-1      2.50E-1                                                                           2.50E-1                        2.50E-1                 1.32, (4,4,1,1,1,5)
+synthetic rubber, at plant, RER, [kg]                                                      5.00E-2      5.00E-2      5.00E-2      5.00E-2                                                                           5.00E-2                        5.00E-2                 1.32, (4,4,1,1,1,5)
+sheet rolling, steel, RER, [kg]                                                           6.03E+0      7.35E+0      8.58E+0      9.91E+0                                                                           1.25E+1                        1.50E+1                  1.22, (2,3,1,1,1,5)
+section bar rolling, steel, RER, [kg]                                                      2.50E-1     7.65E+0      8.88E+0      1.02E+1                                                                           1.28E+1                        1.53E+1                  1.32, (4,4,1,1,1,5)
+zinc coating, coils, RER, [m2]                                                            1.24E+0      1.25E+0      1.26E+0      1.26E+0                                                                           1.27E+0                        1.27E+0                  1.22, (2,3,1,1,1,5)
+zinc coating, pieces, RER, [m2]                                                            2.13E-2      2.13E-2      2.13E-2      2.13E-2                                                                           2.13E-2                        2.13E-2                 1.32, (4,4,1,1,1,5)
+zinc coating, pieces, adjustment per um, RER, [m2]                                       -1.89E+1     -1.91E+1     -1.92E+1     -1.93E+1                                                                          -1.94E+1                       -1.95E+1                  1.22, (2,3,1,1,1,5)
+electricity, medium voltage, production UCTE, at grid, UCTE, [kWh]                        1.90E+0      2.30E+0      2.66E+0      3.06E+0                                                                           3.83E+0                        4.59E+0                  1.22, (2,3,1,1,1,5)
+metal working factory operation, average heat energy, RER, [kg]                           6.33E+0      7.65E+0      8.88E+0      1.02E+1                                                                           1.28E+1                        1.53E+1                  1.27, (2,4,2,1,3,4)
+metal working factory, RER, [unit]                                                         2.90E-9      3.51E-9      4.07E-9      4.67E-9                                                                           5.84E-9                        7.01E-9                 3.07, (2,4,2,1,3,4)
+transport, freight, rail, RER, [tkm]                                                      3.80E+0      4.59E+0      5.33E+0      6.12E+0                                                                           7.65E+0                        9.18E+0                  2.14, (4,5,1,1,1,5)
+transport, lorry 20-28t, fleet average, CH, [tkm]                                          3.16E-1      3.83E-1      4.44E-1      5.10E-1                                                                           6.38E-1                        7.65E-1                 2.14, (4,5,1,1,1,5)
+Location: Geographischer Bezug für Prozess (RER = Europa; CH = Schweiz, UCTE = Union for the Coordination of Transmission of Electricity)
+
+
+
+
+Tabelle 43: Lüftungskanäle aus rostfreiem Stahlblech
+                                                                                                                                                                                rostfrei, s= 1.0mm, ab
+
+
+
+
+                                                                                                                                                                                                                                              rostfrei, s= 1.5mm, ab
+                                                                                          Lüftungskanal, Stahl
+
+
+
+
+                                                                                                                     Lüftungskanal, Stahl
+
+
+
+
+                                                                                                                                                    Lüftungskanal, Stahl
+
+
+
+
+                                                                                                                                                                                Lüftungskanal, Stahl
+
+
+
+
+                                                                                                                                                                                                               Lüftungskanal, Stahl
+
+
+
+
+                                                                                                                                                                                                                                              Lüftungskanal, Stahl
+                                                                                          rostfrei, s= 0.62mm,
+
+
+
+
+                                                                                                                     rostfrei, s= 0.75mm,
+
+
+
+
+                                                                                                                                                    rostfrei, s= 0.87mm,
+
+
+
+
+                                                                                                                                                                                                               rostfrei, s= 1.25mm,
+
+
+
+
+                                                                                                                                                                                                                                                                                Geometrische Standard-
+                                                                                                                                                                                                                                                                                Abweichtung (Pedigree-
+                                                                                          ab Werk
+
+
+
+
+                                                                                                                     ab Werk
+
+
+
+
+                                                                                                                                                    ab Werk
+
+
+
+
+                                                                                                                                                                                                               ab Werk
+                                                                                                                                                                                Werk
+
+
+
+
+                                                                                                                                                                                                                                              Werk
+
+
+
+
+                                                                                                                                                                                                                                                                                Matrix)
+
+
+
+
+                                                                                           CH           CH          CH            CH                                                                                CH                              CH
+ecoinvent - Datensatz                                                                      m2           m2          m2            m2                                                                                m2                              m2
+chromium steel 18/8, at plant, RER, [kg]                                                  6.03E+0      7.35E+0     8.58E+0       9.91E+0                                                                           1.25E+1                         1.50E+1                 1.22, (2,3,1,1,1,5)
+steel, low-alloyed, at plant, RER, [kg]                                                    2.50E-1      2.50E-1     2.50E-1       2.50E-1                                                                           2.50E-1                         2.50E-1                1.32, (4,4,1,1,1,5)
+synthetic rubber, at plant, RER, [kg]                                                      5.00E-2      5.00E-2     5.00E-2       5.00E-2                                                                           5.00E-2                         5.00E-2                1.32, (4,4,1,1,1,5)
+sheet rolling, steel, RER, [kg]                                                           6.03E+0      7.35E+0     8.58E+0       9.91E+0                                                                           1.25E+1                         1.50E+1                 1.22, (2,3,1,1,1,5)
+section bar rolling, steel, RER, [kg]                                                      2.50E-1      2.50E-1     2.50E-1       2.50E-1                                                                           2.50E-1                         2.50E-1                1.32, (4,4,1,1,1,5)
+zinc coating, pieces, RER, [m2]                                                            2.13E-2      2.13E-2     2.13E-2       2.13E-2                                                                           2.13E-2                         2.13E-2                1.32, (4,4,1,1,1,5)
+electricity, medium voltage, production UCTE, at grid, UCTE, [kWh]                        1.90E+0      2.30E+0     2.66E+0       3.06E+0                                                                           3.83E+0                         4.59E+0                 1.22, (2,3,1,1,1,5)
+metal working factory operation, average heat energy, RER, [kg]                           6.33E+0      7.65E+0     8.88E+0       1.02E+1                                                                           1.28E+1                         1.53E+1                 1.27, (2,4,2,1,3,4)
+metal working factory, RER, [unit]                                                         2.90E-9      3.51E-9     4.07E-9       4.67E-9                                                                           5.84E-9                         7.01E-9                3.07, (2,4,2,1,3,4)
+transport, freight, rail, RER, [tkm]                                                      3.80E+0      4.59E+0     5.33E+0       6.12E+0                                                                           7.65E+0                         9.18E+0                 2.14, (4,5,1,1,1,5)
+transport, lorry 20-28t, fleet average, CH, [tkm]                                          3.16E-1      3.83E-1     4.44E-1       5.10E-1                                                                           6.38E-1                         7.65E-1                2.14, (4,5,1,1,1,5)
+Location: Geographischer Bezug für Prozess (RER = Europa; CH = Schweiz, UCTE = Union for the Coordination of Transmission of Electricity)
+
+
+
+BFE Forschungsprojekt Schlussbericht, August 2014                                                                                                                                                                                                                                                  118
+Ökobilanzdaten für Lüftungs- und Wärmeanlagen                                                                                                                                                                                                                                    ARGE LW-Bilanzen
+
+
+
+
+Tabelle 44: Thermische / Brandschutz Dämmung Lüftungskanäle mit gitterverstärkten Alufolie
+
+
+
+
+                                                                                                                                                                                                                                                              100mm, 120kg/m3 mit Aluminiumfolie
+                                                                                                                                                                                    EI 30 Brandschutz-Dämmung, 50mm,
+
+
+
+
+                                                                                                                                                                                                                        EI 60 Brandschutz-Dämmung, 70mm,
+                                                                                                                                                     Thermische Dämmung, 100mm,
+
+
+
+
+                                                                                                                                                                                                                                                                                                                 Geometrische Standard-Abweichtung
+                                                                                       Thermische Dämmung, 30mm,
+
+
+
+
+                                                                                                                      Thermische Dämmung, 60mm,
+
+
+
+
+                                                                                                                                                                                                                                                              EI 90 Brandschutz-Dämmung,
+                                                                                                                                                                                    120kg/m3 mit Aluminiumfolie
+
+
+
+
+                                                                                                                                                                                                                        120kg/m3 mit Aluminiumfolie
+                                                                                       40kg/m3 mit Aluminiumfolie
+
+
+
+
+                                                                                                                      40kg/m3 mit Aluminiumfolie
+
+
+
+
+                                                                                                                                                     40kg/m3 mit Aluminiumfolie
+                                                                                       gitterverstärkt, ab Werk
+
+
+
+
+                                                                                                                      gitterverstärkt, ab Werk
+
+
+
+
+                                                                                                                                                     gitterverstärkt, ab Werk
+
+
+
+
+                                                                                                                                                                                    gitterverstärkt, ab Werk
+
+
+
+
+                                                                                                                                                                                                                        gitterverstärkt, ab Werk
+
+
+
+
+                                                                                                                                                                                                                                                              gitterverstärkt, ab Werk
+
+
+
+
+                                                                                                                                                                                                                                                                                                                 (Pedigree-Matrix)
+                                                                                    CH           CH            CH          CH              CH                                                                                                                          CH
+ecoinvent - Datensatz                                                               m2           m2            m2          m2              m2                                                                                                                          m2
+rock wool, at plant, CH, [kg]                                                      1.32E+0      2.64E+0       4.40E+0     6.60E+0         9.24E+0                                                                                                                     1.32E+1                        1.22, (2,3,1,1,1,5)
+aluminium, production mix, wrought alloy, at plant, RER, [kg]                       1.08E-1      1.08E-1       1.08E-1     1.08E-1         1.08E-1                                                                                                                     1.08E-1                       1.26, (3,4,1,1,1,5)
+chromium steel 18/8, at plant, RER, [kg]                                            3.80E-1      3.80E-1       3.80E-1     3.80E-1         3.80E-1                                                                                                                     3.80E-1                       1.26, (3,4,1,1,1,5)
+polyethylene, LDPE, granulate, at plant, RER, [kg]                                  5.40E-2      5.40E-2       5.40E-2     5.40E-2         5.40E-2                                                                                                                     5.40E-2                       1.26, (3,4,1,1,1,5)
+sheet rolling, aluminium, RER, [kg]                                                 1.08E-1      1.08E-1       1.08E-1     1.08E-1         1.08E-1                                                                                                                     1.08E-1                       1.26, (3,4,1,1,1,5)
+wire drawing, steel, RER, [kg]                                                      3.80E-1      3.80E-1       3.80E-1     3.80E-1         3.80E-1                                                                                                                     3.80E-1                       1.26, (3,4,1,1,1,5)
+transport, freight, rail, RER, [tkm]                                                3.72E-1      6.36E-1       9.88E-1    1.43E+0         1.96E+0                                                                                                                     2.75E+0                        2.14, (4,5,1,1,1,5)
+transport, lorry 20-28t, fleet average, CH, [tkm]                                   9.31E-2      1.59E-1       2.47E-1     3.57E-1         4.89E-1                                                                                                                     6.87E-1                       2.14, (4,5,1,1,1,5)
+Location: Geographischer Bezug für Prozess (RER = Europa; CH = Schweiz, UCTE = Union for the Coordination of Transmission of Electricity)
+
+
+
+
+Tabelle 45: Thermische Dämmung Lüftungskanäle Blechummantelung (Alu / rostfreier Stahl)
+
+
+
+
+                                                                                                                                                                                  40kg/m3 mit Blechmantel, Stahl
+
+
+
+
+                                                                                                                                                                                                                       40kg/m3 mit Blechmantel, Stahl
+
+
+
+
+                                                                                                                                                                                                                                                             40kg/m3 mit Blechmantel, Stahl
+                                                                                                                                                   Thermische Dämmung, 100mm,
+
+
+
+
+                                                                                                                                                                                                                                                             Thermische Dämmung, 100mm,
+
+
+
+
+                                                                                                                                                                                                                                                                                                                 Geometrische Standard-Abweichtung
+                                                                                    Thermische Dämmung, 30mm,
+
+
+
+
+                                                                                                                    Thermische Dämmung, 60mm,
+
+
+
+
+                                                                                                                                                                                  Thermische Dämmung, 30mm,
+
+
+
+
+                                                                                                                                                                                                                       Thermische Dämmung, 60mm,
+                                                                                    40kg/m3 mit Blechmantel,
+
+
+
+
+                                                                                                                    40kg/m3 mit Blechmantel,
+
+
+
+
+                                                                                                                                                   40kg/m3 mit Blechmantel,
+                                                                                    Aluminium, ab Werk
+
+
+
+
+                                                                                                                    Aluminium, ab Werk
+
+
+
+
+                                                                                                                                                   Aluminium, ab Werk
+
+
+
+
+                                                                                                                                                                                  rostfrei, ab Werk
+
+
+
+
+                                                                                                                                                                                                                       rostfrei, ab Werk
+
+
+
+
+                                                                                                                                                                                                                                                             rostfrei, ab Werk
+
+
+
+
+                                                                                                                                                                                                                                                                                                                 (Pedigree-Matrix)
+                                                                                 CH            CH            CH          CH             CH                                                                                                                            CH
+ecoinvent - Datensatz                                                            m2            m2            m2          m2             m2                                                                                                                            m2
+rock wool, at plant, CH, [kg]                                                   1.32E+0       2.64E+0      4.40E+0      1.32E+0        2.64E+0                                                                                                                       4.40E+0                         1.22, (2,3,1,1,1,5)
+aluminium, production mix, wrought alloy, at plant, RER, [kg]                   2.16E+0       2.16E+0      2.16E+0              -             -                                                                                                                             -                        1.26, (3,4,1,1,1,5)
+chromium steel 18/8, at plant, RER, [kg]                                                 -            -            -    6.28E+0        6.28E+0                                                                                                                       6.28E+0                         1.26, (3,4,1,1,1,5)
+sheet rolling, aluminium, RER, [kg]                                             2.16E+0       2.16E+0      2.16E+0              -             -                                                                                                                             -                        1.26, (3,4,1,1,1,5)
+sheet rolling, steel, RER, [kg]                                                          -            -            -    6.28E+0        6.28E+0                                                                                                                       6.28E+0                         1.26, (3,4,1,1,1,5)
+transport, freight, rail, RER, [tkm]                                             6.96E-1       9.60E-1     1.31E+0      4.03E+0        4.30E+0                                                                                                                       4.65E+0                         2.14, (4,5,1,1,1,5)
+transport, lorry 20-28t, fleet average, CH, [tkm]                                1.74E-1       2.40E-1      3.28E-1      3.80E-1        4.46E-1                                                                                                                       5.34E-1                        2.14, (4,5,1,1,1,5)
+Location: Geographischer Bezug für Prozess (RER = Europa; CH = Schweiz, UCTE = Union for the Coordination of Transmission of Electricity)
+
+
+
+
+                  Entsorgung
+
+Tabelle 46: Spiralfalzrohre aus verzinktem Stahlblech
+                                                                                                                                                                                                                                                                                                         Abweichtung (Pedigree-Matrix)
+                                                                                                                               verzinkt, s= 0.5mm, ab
+
+
+
+
+                                                                                                                                                                  verzinkt, s= 0.6mm, ab
+
+
+
+
+                                                                                                                                                                                                          verzinkt, s= 0.8mm, ab
+
+
+
+
+                                                                                                                                                                                                                                                    verzinkt, s= 1.0mm, ab
+                                                                                                                               Wickelfalzrohr, Stahl
+
+
+
+
+                                                                                                                                                                  Wickelfalzrohr, Stahl
+
+
+
+
+                                                                                                                                                                                                          Wickelfalzrohr, Stahl
+
+
+
+
+                                                                                                                                                                                                                                                    Wickelfalzrohr, Stahl
+
+
+
+
+                                                                                                                                                                                                                                                                                                         Geometrische Standard-
+                                                                                                                               Entsorgung,
+
+
+
+
+                                                                                                                                                                  Entsorgung,
+
+
+
+
+                                                                                                                                                                                                          Entsorgung,
+
+
+
+
+                                                                                                                                                                                                                                                    Entsorgung,
+                                                                                                                               Werk
+
+
+
+
+                                                                                                                                                                  Werk
+
+
+
+
+                                                                                                                                                                                                          Werk
+
+
+
+
+                                                                                                                                                                                                                                                    Werk
+
+
+
+
+                                                                                           CH           CH           CH           CH
+ecoinvent - Datensatz                                                                      m2           m2           m2           m2
+disposal, building, bulk iron (excluding reinforcement), to sorting plant, CH, [kg]       4.41E+0      5.32E+0      7.12E+0      8.93E+0                                                                                                                                                           1.22, (2,3,1,1,1,5)
+disposal, rubber, unspecified, 0% water, to municipal incineration, CH, [kg]               1.00E-1      1.00E-1      1.00E-1      1.00E-1                                                                                                                                                          1.32, (4,4,1,1,1,5)
+Location: Geographischer Bezug für Prozess (RER = Europa; CH = Schweiz, UCTE = Union for the Co-ordination of Transmission of Electricity)
+
+
+BFE Forschungsprojekt Schlussbericht, August 2014                                                                                                                                                                                                                                                                                                    119
+```
+
+## Rules
+
+1. Every line item must quote the exact line of the excerpt it comes from (`quote`), with the raw value and raw unit as printed. Never invent a value. If the excerpt gives a range, report the range as `raw_min`/`raw_max` and put your point estimate in `raw_value`.
+2. Report values per the excerpt's own basis (`per`, e.g. "per t burnt shale", "per m2 board"); do not convert. State the reference basis you found in `basis` so the code can scale to 1 m2.
+3. If a value needs a physical conversion (litres of diesel to MJ, m3 of water to kg), give `factor`, `factor_unit` and `factor_source` (a standard value with its source, e.g. "diesel 0.84 kg/l × 42.8 MJ/kg = 36 MJ/l, ecoinvent convention"). Leave `factor` at 1 otherwise.
+4. Classify each line: `kind` = "input" (a product or service from another dataset), "emission" (a direct release to air/water/soil), "resource" (a direct extraction from nature), "product" (the reference product), "co-product" or "ignore" (with a reason).
+5. Propose a `search` phrase (2–4 words) that a name search in a life-cycle database would use: for inputs the supplying dataset in ecoinvent-2 naming style ("diesel burned building machine", "sodium hydroxide production mix"); for emissions and resources the substance in EF 3.1 / ecoinvent nomenclature ("particles PM10" for dust, "nitrogen oxides", "carbon dioxide fossil", "crude oil", "water"). Do not guess the exact name; the search is resolved by code afterwards.
+6. If the excerpt describes allocation (e.g. an economic allocation between co-products), record it in `allocation` and use the allocated column when the table has one. If it states that the composition items add up to a mass ("adds up to 1.00 kg"), put that mass per basis in `mass_sum`, else null.
+7. Mark anything you are unsure about with `confidence` = "low" and say why in `note`. Do not omit uncertain items; the reviewer decides.
+8. Do not add inputs the excerpt does not mention, even if you know the process needs them. Missing items are reported in `gaps` instead.
+
+Return only the JSON object described by the schema.

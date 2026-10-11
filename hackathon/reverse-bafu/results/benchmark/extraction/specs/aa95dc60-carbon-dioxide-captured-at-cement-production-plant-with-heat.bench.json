@@ -1,0 +1,286 @@
+{
+  "target": {
+    "code": "aa95dc60-623b-3281-82dc-9d34c21d47d8",
+    "name": "Carbon dioxide, captured at cement production plant, with heat recovery, for subsequent reuse",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Table 59 'Life-cycle inventories of the different carbon dioxide capture systems', column 'carbon dioxide, captured at cement production plant, for subsequent reuse/CH U', with-heat-recovery variant; per 1 kg CO2; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2024 - LCA power-to-X in residential sector - Sacchi.pdf",
+      "where": "pages 88-91 -> report-p88-91.txt",
+      "note": "report sha256 165eb1e3cb0728f7…, text sha256 fd5745b1d7c00376…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/aa95dc60-623b-3281-82dc-9d34c21d47d8/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "7ed514634943fb294036833a81d4bb2bceb6e92e93a945abff70c056c71d33a2",
+      "at": "2026-09-22T22:05:39Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "3eeca970c8722c6eee80d447b59e5fb35a40aa895b0eee064e086aaf46c35815",
+      "at": "2026-09-22T22:05:40Z"
+    },
+    "gaps_reported_by_model": [
+      "No capture-unit infrastructure is booked for the cement (or MSWI) columns - only the DAC column carries the plant (concrete, steel, hall, collector containers) and its end-of-life.",
+      "No 'Carbon dioxide, in air' uptake resource: that appears only in the DAC column; the CO2 captured here comes from the kiln's flue gas and is not booked as a flow.",
+      "No ammonia emission for the cement column (the MSWI column has 1.00e-04 kg).",
+      "The electricity figure of Tab. 59 (6.90e-03 kWh/kg) contradicts Tab. 58 (0.07 MWh/t = 0.07 kWh/kg) by a factor of ten.",
+      "No compression or conditioning of the captured CO2 for reuse."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T22:05:41Z"
+  },
+  "node": {
+    "name": "Carbon dioxide, captured at cement production plant, with heat recovery, for subsequent reuse, disaggregated",
+    "unit": "kg",
+    "location": "CH",
+    "comment": "drafted from 2024 - LCA power-to-X in residential sector - Sacchi.pdf pp. 88-91",
+    "inputs": [
+      {
+        "name": "Amine-based silica production, for sorbent-based direct air capture system",
+        "amount": 0.004,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "MEA degradation rate, 4 kg per t CO2 captured (Tab. 58, aligned with the MSWI case)",
+        "derivation": {
+          "evidence": "report-p88-91.txt",
+          "quote": "amine-based    silica       kg                                                  3.00e-03               4.00e-03                  4.00e-03    operational",
+          "raw_value": 0.004,
+          "raw_unit": "kg",
+          "per": "per kg CO2 captured at the cement plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "amine-based silica sorbent",
+          "mapping_reason": "The only candidate and an exact name match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "85d4e7c4-b589-3350-9f08-b9884934a01c"
+      },
+      {
+        "name": "Sodium hydroxide, 50% in H2O, production mix, at plant",
+        "amount": 0.0001,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p88-91.txt",
+          "quote": "Sodium     hydroxide,       kg                                                                         1.00e-04                  1.00e-04",
+          "raw_value": 0.0001,
+          "raw_unit": "kg",
+          "per": "per kg CO2 captured at the cement plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "sodium hydroxide 50% in H2O production mix at plant",
+          "mapping_reason": "The only candidate and an exact name match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "ce8a12aa-ecaa-37d9-8355-5cb7da9ce6c0"
+      },
+      {
+        "name": "Tap water, at user",
+        "amount": 0.00966,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p88-91.txt",
+          "quote": "tap     water,        at    kg                                                                         9.66e-03                  9.66E-03",
+          "raw_value": 0.00966,
+          "raw_unit": "kg",
+          "per": "per kg CO2 captured at the cement plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "tap water at user",
+          "mapping_reason": "Exact name match at CH, the location the dataset is in; the 'unspecified natural origin' variant is a different water-accounting convention.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "1a2f0384-d903-4f9d-8757-1e78d84366ab"
+      },
+      {
+        "name": "Transport, freight, rail, electricity with shunting",
+        "amount": 0.0024,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "cement-plant column",
+        "derivation": {
+          "evidence": "report-p88-91.txt",
+          "quote": "transport, freight, rail,   tkm            5.34e+05                             1.80e-03               2.40e-03                  2.52e-03    Generic         transport",
+          "raw_value": 0.0024,
+          "raw_unit": "tkm",
+          "per": "per kg CO2 captured at the cement plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail electricity with shunting",
+          "mapping_reason": "Exact name match; 'without shunting' is the narrower variant.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a169f230-3e05-33d0-a12d-f9d6d4d6abf1"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 0.0002,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "cement-plant column",
+        "derivation": {
+          "evidence": "report-p88-91.txt",
+          "quote": " transport,     freight,   tkm           3.16e+05                             1.50e-04              2.00e-04                  2.10e-04    Generic         transport",
+          "raw_value": 0.0002,
+          "raw_unit": "tkm",
+          "per": "per kg CO2 captured at the cement plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight lorry 16-32t fleet average",
+          "mapping_reason": "Exact class and fleet-average match at CH; 32t-40t is the next larger class.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "eb5552ed-63a8-374d-8fa4-296f644c37f8"
+      },
+      {
+        "name": "Electricity, low voltage, at grid",
+        "amount": 0.0690019861987474,
+        "unit": "kilowatt hour",
+        "location": "CH",
+        "note": "Cement-plant column of Tab. 59. NOTE the inconsistency with Tab. 58, which gives 0.07 MWh per ton CO2 captured = 0.07 kWh/kg, ten times more; bounds span the two readings.",
+        "derivation": {
+          "evidence": "report-p88-91.txt",
+          "quote": " electricity,       low    kW                                                 5.00e-01              6.90e-03                  1.00e-01    operational",
+          "raw_value": 0.0069,
+          "raw_unit": "kWh",
+          "per": "per kg CO2 captured at the cement plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electricity low voltage at grid",
+          "mapping_reason": "The Swiss low-voltage supply mix; SBB is the railway grid.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "free": true,
+        "bounds": [
+          0.0069,
+          0.07
+        ],
+        "code": "c4a92617-9f99-3d7b-95c0-15fb110b80ad"
+      },
+      {
+        "name": "Steam, for chemical processes, at plant",
+        "amount": 0.9,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "Cement-plant column, WITH heat recovery. The header says 'With / without heat recovery' but the numbers are the other way round: Tab. 58 gives 3.66 GJ/t without and 2.5 GJ/t with heat recovery, and at the stated 0.36 kg steam per MJ that is 1.32 kg and 0.90 kg - so 9.00E-1 is the with-heat-recovery value. The MSWI column confirms it (3.7 -> 1.40, 0.4 -> 0.144).",
+        "derivation": {
+          "evidence": "report-p88-91.txt",
+          "quote": " Steam, for chemical       kg                                                1.94e+00     1.32e+00 / 9.00e-01       1.40e+00 / 1.44e-01   With / without heat",
+          "raw_value": 0.9,
+          "raw_unit": "kg",
+          "per": "per kg CO2 captured at the cement plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "steam for chemical processes at plant",
+          "mapping_reason": "The only candidate and an exact name match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "ca51da0f-d926-3dbe-bc07-e0449bb7dcab"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Carbon Dioxide (fossil)",
+        "category": "emissions",
+        "amount": 0.103,
+        "unit": "kilogram",
+        "note": "CO2 leakage from the capture unit",
+        "derivation": {
+          "evidence": "report-p88-91.txt",
+          "quote": " Carbon dioxide, fossil    kg                                                                       1.03e-01                  8.40e-02    CO2 leakage.",
+          "raw_value": 0.103,
+          "raw_unit": "kg",
+          "per": "per kg CO2 captured at the cement plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Fossil CO2 leaking to air; candidate 1 is an uptake from air.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-923d-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Carbon Dioxide (biogenic)",
+        "category": "emissions",
+        "amount": 0.00646,
+        "unit": "kilogram",
+        "note": "CO2 leakage, biogenic share of the cement kiln's fuel",
+        "derivation": {
+          "evidence": "report-p88-91.txt",
+          "quote": " Carbon        dioxide,    kg                                                 2.10e-02              6.46e-03                  9.10e-02    CO2 leakage.",
+          "raw_value": 0.00646,
+          "raw_unit": "kg",
+          "per": "per kg CO2 captured at the cement plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Biogenic CO2 leaking to air; candidate 1 is an uptake from air.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-9c15-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": []
+  }
+}

@@ -1,0 +1,411 @@
+{
+  "target": {
+    "code": "c3490cfc-bcf2-38a2-a8c1-2d50ba65c83e",
+    "name": "Cement ZN, D, at plant",
+    "location": "CH"
+  },
+  "variant": "draft",
+  "strategy": {
+    "code": "S3",
+    "label": "top-down model drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: per 1 kg cement ZN/D, ab Werk (Tab. 3.14, Werner 2018); the composition rows are percentage ranges of the kg; allocation: none stated for the cement itself; the burnt-shale input carries the economic allocation of section 3.6; 7 of 13 inputs carry a printed amount, 6 a printed range, 0 no number in the report. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2020 - LCA selected types of concrete - Tschuemperlin.pdf",
+      "where": "pages 25-26 -> report-p25-26.txt",
+      "note": "report sha256 83e2e7ea46d35899…, text sha256 95d82d20fed0b8de…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "specs/evidence/c3490cfc-bcf2-38a2-a8c1-2d50ba65c83e/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "llm:claude-opus-5 (interactive session, not API)",
+      "prompt_sha256": "071a8e7bad7d11385dbb3e8cf3b32ce2945bcfb338c4fc395a764d51e0ecc359",
+      "at": "2026-09-22T08:49:53Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "llm:claude-opus-5 (interactive session, not API)",
+      "prompt_sha256": "4d31796391e2fa88709151972c48f685afb8a161fc5bb6cbb027f3f5764a6fee",
+      "at": "2026-09-22T08:49:55Z"
+    },
+    "gaps_reported_by_model": [
+      "No direct emissions are listed for cement grinding/blending (only inputs).",
+      "The six composition shares are ranges that must add up to 1 kg ('addiert sich zu 1.00 kg'); the point estimates are midpoints and need calibration under that constraint.",
+      "Water use and packaging are not in the table."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T08:49:55Z"
+  },
+  "node": {
+    "name": "Cement ZN, D, at plant, disaggregated",
+    "unit": "kg",
+    "location": "CH",
+    "comment": "drafted from 2020 - LCA selected types of concrete - Tschuemperlin.pdf pp. 25-26",
+    "mass_sum": 1.0,
+    "inputs": [
+      {
+        "name": "Clinker, at plant",
+        "amount": 0.4000000000000001,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "range given as a share of the kg; point estimate = midpoint, bounds = the range",
+        "derivation": {
+          "evidence": "report-p25-26.txt",
+          "quote": "Klinker                                                                                                %                                 40%-70%",
+          "raw_value": 0.55,
+          "raw_unit": "kg",
+          "per": "per kg cement ZN/D (Tab. 3.14)",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "% of 1 kg",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "llm:claude-opus-5 (interactive session, not API)",
+          "reviewed_by": null,
+          "search": "clinker at plant",
+          "mapping_reason": "the only clinker dataset; the others are unrelated word-start matches (Planting, Cement plant).",
+          "mapping_by": "llm:claude-opus-5 (interactive session, not API)"
+        },
+        "free": true,
+        "bounds": [
+          0.4,
+          0.7
+        ],
+        "code": "137152eb-d111-382a-9eae-3e592047418d"
+      },
+      {
+        "name": "Gypsum, mineral, at mine",
+        "amount": 0.0,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "range given as a share of the kg; point estimate = midpoint, bounds = the range; '< 10 %'",
+        "derivation": {
+          "evidence": "report-p25-26.txt",
+          "quote": "Gips, mineralisch                                                                                      %                                  < 10%",
+          "raw_value": 0.05,
+          "raw_unit": "kg",
+          "per": "per kg cement ZN/D (Tab. 3.14)",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "llm:claude-opus-5 (interactive session, not API)",
+          "reviewed_by": null,
+          "search": "gypsum mineral mine",
+          "mapping_reason": "mineral gypsum as mined, the cement-industry input; only candidate of that substance.",
+          "mapping_by": "llm:claude-opus-5 (interactive session, not API)"
+        },
+        "free": true,
+        "bounds": [
+          0.0,
+          0.1
+        ],
+        "code": "23d4e39c-14e5-3290-a4e2-931581ecbc7a"
+      },
+      {
+        "name": "Recycling aggregate from mixed demolition, dry, at plant",
+        "amount": 0.29999999999999993,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "range given as a share of the kg; point estimate = midpoint, bounds = the range; recycled mixed construction rubble, dry",
+        "derivation": {
+          "evidence": "report-p25-26.txt",
+          "quote": "Mischgranulat (MG)                                                                                     %                                 15%-30%",
+          "raw_value": 0.225,
+          "raw_unit": "kg",
+          "per": "per kg cement ZN/D (Tab. 3.14)",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "llm:claude-opus-5 (interactive session, not API)",
+          "reviewed_by": null,
+          "search": "recycling aggregate mixed demolition",
+          "mapping_reason": "Mischgranulat is the mixed-demolition recycling aggregate; the concrete-demolition variant is Betongranulat.",
+          "mapping_by": "llm:claude-opus-5 (interactive session, not API)"
+        },
+        "free": true,
+        "bounds": [
+          0.15,
+          0.3
+        ],
+        "code": "730bdb86-26fa-3ada-bd05-ff4bc719b7b6"
+      },
+      {
+        "name": "Burnt shale, at plant",
+        "amount": 0.2995365980478916,
+        "unit": "kilogram",
+        "location": "DE",
+        "note": "range given as a share of the kg; point estimate = midpoint, bounds = the range; the burnt-shale dataset is itself aggregated in BAFU — link the rebuilt node if available",
+        "derivation": {
+          "evidence": "report-p25-26.txt",
+          "quote": "Schiefer, gebrannt                                                                                     %                                 15%-30%",
+          "raw_value": 0.225,
+          "raw_unit": "kg",
+          "per": "per kg cement ZN/D (Tab. 3.14)",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "llm:claude-opus-5 (interactive session, not API)",
+          "reviewed_by": null,
+          "search": "burnt shale plant",
+          "mapping_reason": "the only candidate; it is itself an aggregated dataset — flagged as a dependency so a rebuilt node is used where one exists.",
+          "mapping_by": "llm:claude-opus-5 (interactive session, not API)",
+          "linked_rebuilt_node": "d8ec4be3-c410-3806-98f5-a2ec5a284fee-disagg"
+        },
+        "sandbox": "d8ec4be3-c410-3806-98f5-a2ec5a284fee-disagg",
+        "free": true,
+        "bounds": [
+          0.15,
+          0.3
+        ],
+        "code": "d8ec4be3-c410-3806-98f5-a2ec5a284fee-disagg"
+      },
+      {
+        "name": "Iron sulphate, at plant",
+        "amount": 0.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "range given as a share of the kg; point estimate = midpoint, bounds = the range; '< 1 %'",
+        "derivation": {
+          "evidence": "report-p25-26.txt",
+          "quote": "Eisen-II Sulfat                                                                                        %                                    < 1%",
+          "raw_value": 0.005,
+          "raw_unit": "kg",
+          "per": "per kg cement ZN/D (Tab. 3.14)",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "llm:claude-opus-5 (interactive session, not API)",
+          "reviewed_by": null,
+          "search": "iron sulphate plant",
+          "mapping_reason": "only candidate.",
+          "mapping_by": "llm:claude-opus-5 (interactive session, not API)"
+        },
+        "free": true,
+        "bounds": [
+          0.0,
+          0.01
+        ],
+        "code": "1b541649-c28b-369b-a574-066c98648887"
+      },
+      {
+        "name": "Limestone, milled, loose, at plant",
+        "amount": 0.0004633534828007107,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "range given as a share of the kg; point estimate = midpoint, bounds = the range; '< 10 %'; filter dust modelled as milled limestone",
+        "derivation": {
+          "evidence": "report-p25-26.txt",
+          "quote": "Filterstaub / Kalkstein                                                                                %                                  < 10%",
+          "raw_value": 0.05,
+          "raw_unit": "kg",
+          "per": "per kg cement ZN/D (Tab. 3.14)",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "llm:claude-opus-5 (interactive session, not API)",
+          "reviewed_by": null,
+          "search": "limestone milled loose",
+          "mapping_reason": "the table pairs filter dust with limestone; milled loose limestone is the generic filler, quicklime is burnt and wrong.",
+          "mapping_by": "llm:claude-opus-5 (interactive session, not API)"
+        },
+        "free": true,
+        "bounds": [
+          0.0,
+          0.1
+        ],
+        "code": "f8e122b3-92fb-37d6-aade-43ee2f2de640"
+      },
+      {
+        "name": "Ethylene glycol, at plant",
+        "amount": 0.00055,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "the BAFU ethylene glycol dataset is itself aggregated (PlasticsEurope)",
+        "derivation": {
+          "evidence": "report-p25-26.txt",
+          "quote": "Ethylenglykol als Mahlhilfe                                                                            kg/kg                             5.50E-04",
+          "raw_value": 0.00055,
+          "raw_unit": "kg",
+          "per": "per kg cement ZN/D (Tab. 3.14)",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "llm:claude-opus-5 (interactive session, not API)",
+          "reviewed_by": null,
+          "search": "ethylene glycol plant",
+          "mapping_reason": "the substance itself; aggregated in BAFU, flagged.",
+          "mapping_by": "llm:claude-opus-5 (interactive session, not API)"
+        },
+        "code": "582ad303-7f18-3110-83c2-bccca0dc995f"
+      },
+      {
+        "name": "Electricity, medium voltage, at grid",
+        "amount": 0.0497,
+        "unit": "kilowatt hour",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p25-26.txt",
+          "quote": "Strom, Mittelspannung                                                                                  kWh/kg                            4.97E-02",
+          "raw_value": 0.0497,
+          "raw_unit": "kWh",
+          "per": "per kg cement ZN/D (Tab. 3.14)",
+          "factor": 1.0,
+          "factor_unit": "kWh",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "llm:claude-opus-5 (interactive session, not API)",
+          "reviewed_by": null,
+          "search": "electricity medium voltage grid",
+          "mapping_reason": "Swiss grid, medium voltage, as the table says; the process's own country.",
+          "mapping_by": "llm:claude-opus-5 (interactive session, not API)"
+        },
+        "code": "df605f09-34c5-3b3f-94ea-227f7a3c06a7"
+      },
+      {
+        "name": "Heavy fuel oil, burned in industrial furnace 1MW, non-modulating",
+        "amount": 0.162,
+        "unit": "megajoule",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p25-26.txt",
+          "quote": "Schweröl zur Wärmeerzeugung                                                                            MJ/kg                             1.62E-01",
+          "raw_value": 0.162,
+          "raw_unit": "MJ",
+          "per": "per kg cement ZN/D (Tab. 3.14)",
+          "factor": 1.0,
+          "factor_unit": "MJ",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "llm:claude-opus-5 (interactive session, not API)",
+          "reviewed_by": null,
+          "search": "heavy fuel oil burned industrial furnace",
+          "mapping_reason": "heavy oil burned on site for heat: the industrial-furnace dataset; CH matches the plant location.",
+          "mapping_by": "llm:claude-opus-5 (interactive session, not API)"
+        },
+        "code": "8da866f1-f25d-305f-81ab-fa95dd2d25de"
+      },
+      {
+        "name": "Cement plant",
+        "amount": 5.36e-11,
+        "unit": "unit",
+        "location": "CH",
+        "note": "'p/kg' = pieces per kg",
+        "derivation": {
+          "evidence": "report-p25-26.txt",
+          "quote": "Zementfabrik, Infrastruktur                                                                            p/kg                              5.36E-11",
+          "raw_value": 5.36e-11,
+          "raw_unit": "unit",
+          "per": "per kg cement ZN/D (Tab. 3.14)",
+          "factor": 1.0,
+          "factor_unit": "unit",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "llm:claude-opus-5 (interactive session, not API)",
+          "reviewed_by": null,
+          "search": "cement plant",
+          "mapping_reason": "the infrastructure unit; the cement product datasets are not infrastructure.",
+          "mapping_by": "llm:claude-opus-5 (interactive session, not API)"
+        },
+        "code": "30df91c3-fac6-3ccf-835b-71863079263a"
+      },
+      {
+        "name": "Steel, low-alloyed, at plant",
+        "amount": 0.00011,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "grinding media wear",
+        "derivation": {
+          "evidence": "report-p25-26.txt",
+          "quote": "Stahl für Mahlwerk, niedrig legiert                                                                    kg/kg                             1.10E-04",
+          "raw_value": 0.00011,
+          "raw_unit": "kg",
+          "per": "per kg cement ZN/D (Tab. 3.14)",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "llm:claude-opus-5 (interactive session, not API)",
+          "reviewed_by": null,
+          "search": "steel low-alloyed plant",
+          "mapping_reason": "only low-alloyed steel candidate.",
+          "mapping_by": "llm:claude-opus-5 (interactive session, not API)"
+        },
+        "code": "b9430f24-d0b9-3422-a5ad-f874acbbef18"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 0.00837,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "lorry class not stated",
+        "derivation": {
+          "evidence": "report-p25-26.txt",
+          "quote": "Transport LKW                                                                                          tkm/kg                            8.37E-03",
+          "raw_value": 0.00837,
+          "raw_unit": "tkm",
+          "per": "per kg cement ZN/D (Tab. 3.14)",
+          "factor": 1.0,
+          "factor_unit": "tkm",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "llm:claude-opus-5 (interactive session, not API)",
+          "reviewed_by": null,
+          "search": "transport freight lorry 16t-32t",
+          "mapping_reason": "the fleet-average mid class, CH; the table gives no lorry size.",
+          "mapping_by": "llm:claude-opus-5 (interactive session, not API)"
+        },
+        "code": "eb5552ed-63a8-374d-8fa4-296f644c37f8"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.0428,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p25-26.txt",
+          "quote": "Transport Bahn                                                                                         tkm/kg                            4.28E-02",
+          "raw_value": 0.0428,
+          "raw_unit": "tkm",
+          "per": "per kg cement ZN/D (Tab. 3.14)",
+          "factor": 1.0,
+          "factor_unit": "tkm",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "llm:claude-opus-5 (interactive session, not API)",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "generic rail freight in the process's country.",
+          "mapping_by": "llm:claude-opus-5 (interactive session, not API)"
+        },
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

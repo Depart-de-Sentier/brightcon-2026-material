@@ -1,0 +1,68 @@
+{
+ "mappings": [
+  {
+   "item": "rolled steel, at regional storage",
+   "chosen": "Rolled steel, at regional storage",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name and location; the 'with resource correction' variant is the same product plus a correction flow, which the report's table books separately, and reinforcing steel is the other line of this table."
+  },
+  {
+   "item": "reinforcing steel, secondary production, (100% Rec.)",
+   "chosen": "Steel, low alloyed, secondary production (100% Rec.)",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The report states the 100 % recycled (secondary) route explicitly, which this candidate matches, whereas 'Reinforcing steel, primary production (0% Rec.)' is the opposite route; no 'reinforcing steel, secondary production' dataset appears among the candidates, so the product form (bar rather than unspecified low-alloyed steel) is the compromise."
+  },
+  {
+   "item": "concrete, concrete for drilled piles, average cement Switzerland, at plant",
+   "chosen": null,
+   "location": "",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The keyword search returned no candidate at all for the drilled-pile concrete with average Swiss cement, so nothing can be chosen. This is the largest input of the process (4.92E+3 kg per m2) and is reported as missing."
+  },
+  {
+   "item": "diesel, burned in building machine",
+   "chosen": "Diesel, burned in building machine, average",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The report names the plain 'diesel, burned in building machine' with no filter technology, so the 'average' dataset beats the with/without particle filter variants; the agricultural machine and concrete crusher datasets are different machinery and are measured per kilogram."
+  },
+  {
+   "item": "transport, lorry >28t, fleet average",
+   "chosen": "Transport, freight, lorry, 32t-40t gross weight, fleet average",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "'>28t' is the heavy class, whose equivalent in the newer gross-weight naming is 32-40 t; the 16-32 t class sits below the stated threshold, and 'xxx Operation, lorry >28t' matches the label but is obsolete and measured per kilometre rather than per tonne-kilometre."
+  },
+  {
+   "item": "transport, freight, rail",
+   "chosen": "Transport, freight, rail, electricity with shunting",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The report's line is CH, and electric traction with shunting is the standard Swiss freight rail service; the 'Betrieb', 'Fahrzeug' and 'Infrastruktur' entries are the sub-components of that same dataset and the RER one would change the geography."
+  },
+  {
+   "item": "Gravel, resource correction",
+   "chosen": "Gravel, resource correction ",
+   "location": "",
+   "compartment": "resources / in ground",
+   "dependency": false,
+   "reason": "An exact name match for the negative resource correction the report applies; 'Gravel [soil]' is an emission to soil, not a resource credit."
+  },
+  {
+   "item": "Sand, resource correction",
+   "chosen": "Sand, resource correction ",
+   "location": "",
+   "compartment": "resources / in ground",
+   "dependency": false,
+   "reason": "An exact name match for the negative resource correction; 'Sand [soil]' is an emission compartment and the oil sands are a different material."
+  }
+ ]
+}

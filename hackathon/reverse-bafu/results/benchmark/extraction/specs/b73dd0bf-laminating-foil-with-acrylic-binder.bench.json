@@ -1,0 +1,155 @@
+{
+  "target": {
+    "code": "b73dd0bf-3974-3459-b0f7-288fa24e7286",
+    "name": "Laminating, foil, with acrylic binder",
+    "location": "RER"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tabelle 10.5 'Produktionsprozess, Laminieren von Folien', column 'Laminieren, Folie, mit Acrylat-Bindemittel' [RER], per 1 m2; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI comfort ventilation in dwellings - Haessig.pdf",
+      "where": "pages 83-85 -> report-p83-85.txt",
+      "note": "report sha256 e6613342bceacac1…, text sha256 86c0d588b4d79fad…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/b73dd0bf-3974-3459-b0f7-288fa24e7286/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "929b980ec0255ff403e3ddaf2ab7f7f2042bd07393c1dabfb4bd1d4e71db5aa8",
+      "at": "2026-09-22T22:00:21Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "70df07831f1667ad78a0acf9b788dc651eadfdde7080070a44aa371ddf3ec48b",
+      "at": "2026-09-22T22:00:22Z"
+    },
+    "gaps_reported_by_model": [
+      "The foil itself (113 g/m2) is not an input of this dataset: the process covers only 'Laminieren verkleben und Zuschneiden einer Folie mit 113 g/m2'.",
+      "No infrastructure (the table marks Infrastr. '-').",
+      "No solvent emission to air, unlike the neighbouring powder-coating process.",
+      "No transport of the binder."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T22:00:22Z"
+  },
+  "node": {
+    "name": "Laminating, foil, with acrylic binder, disaggregated",
+    "unit": "m2",
+    "location": "RER",
+    "comment": "drafted from 2007 - LCI comfort ventilation in dwellings - Haessig.pdf pp. 83-85",
+    "inputs": [
+      {
+        "name": "xxx Electricity, medium voltage, production UCTE, at grid",
+        "amount": 0.0183,
+        "unit": "kilowatt hour",
+        "location": "UCTE",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p83-85.txt",
+          "quote": "Strom, Mittelspannung, Produktion UCTE, ab Netz                                                 UCTE           - kWh                          1.83E-02",
+          "raw_value": 0.0183,
+          "raw_unit": "kWh",
+          "per": "per m2 of laminated foil",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electricity medium voltage production UCTE at grid",
+          "mapping_reason": "Exact name and geography match for the UCTE medium-voltage production mix; the single-technology entries are individual routes.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "d86e2374-784b-3fd9-910b-7583462ea81b"
+      },
+      {
+        "name": "Acrylic binder, 34% in H2O, at plant",
+        "amount": 0.0014,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p83-85.txt",
+          "quote": "Acrylat-Bindemittel, 54% in H2O, ab Werk                                                         RER           - kg                           1.40E-03",
+          "raw_value": 0.0014,
+          "raw_unit": "kg",
+          "per": "per m2 of laminated foil",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "acrylic binder 54% in H2O at plant",
+          "mapping_reason": "The only candidate and the acrylic binder the report means; it is supplied at 34 % rather than 54 % solids in water, which is the closest available concentration.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "841dac4d-05cf-3a4d-af9d-77430bcb3f5b"
+      },
+      {
+        "name": "Disposal, paint remains, 0% water, to hazardous waste incineration",
+        "amount": 0.0002,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p83-85.txt",
+          "quote": "Entsorgung, Anstrichstoff Reste, 0% Wasser, in Sonderabfallverbrennung                            CH           - kg                           2.00E-04",
+          "raw_value": 0.0002,
+          "raw_unit": "kg",
+          "per": "per m2 of laminated foil",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "disposal paint remains hazardous waste incineration",
+          "mapping_reason": "Exact name and water-content match for generic paint remains; candidate 1 is emulsion-paint remains specifically.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "c36e82c0-d3c0-428e-a133-8d8da0f81f83"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Waste Heat",
+        "category": "air",
+        "amount": 0.0659,
+        "unit": "megajoule",
+        "note": "emitted in an urban ('Stadt', high population density) compartment",
+        "derivation": {
+          "evidence": "report-p83-85.txt",
+          "quote": "Abwärme                                                                                          Stadt        -   MJ                         6.59E-02",
+          "raw_value": 0.0659,
+          "raw_unit": "MJ",
+          "per": "per m2 of laminated foil",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Waste heat released to air, the compartment the table gives ('Emissionen in Luft', Stadt).",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-9136-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": []
+  }
+}

@@ -1,0 +1,112 @@
+<title>BAFU System Processes</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f7f8f5;--bg2:#eceee8;--ink:#171a1c;--ink2:#555d68;--rule:#d5d9d0;--blue:#2a78d6;--orange:#eb6834;--good:#008300;--bad:#c0392b;--card:#ffffff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#171a1c;--bg2:#1f2326;--ink:#f1f2ee;--ink2:#b7bec5;--rule:#353b40;--blue:#3987e5;--orange:#d95926;--good:#4fbf4f;--bad:#e66767;--card:#1c2023}}
+:root[data-theme="dark"]{--bg:#171a1c;--bg2:#1f2326;--ink:#f1f2ee;--ink2:#b7bec5;--rule:#353b40;--blue:#3987e5;--orange:#d95926;--good:#4fbf4f;--bad:#e66767;--card:#1c2023}
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:15px;line-height:1.55;padding-inline:16px;padding-block:8px 56px}
+main{max-width:920px;margin:0 auto}
+h1,h2,h3{font-family:Spectral,Georgia,serif;font-weight:500;text-wrap:balance;line-height:1.15;margin:0}
+h1{font-size:2.2rem;margin-top:28px} h2{font-size:1.5rem;margin-top:52px;padding-top:16px;border-top:1px solid var(--rule)} h3{font-size:1.1rem;margin-top:26px}
+p{max-width:70ch;margin:10px 0} .muted{color:var(--ink2)} .lede{font-size:1.08rem;color:var(--ink2);max-width:64ch}
+.eyebrow{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink2);font-weight:500}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.86em} code{background:var(--bg2);padding:0 4px;border-radius:3px}
+.tbl{overflow-x:auto;margin-top:10px} table{border-collapse:collapse;width:100%;font-size:.86rem} th{text-align:left;font-weight:500;color:var(--ink2);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;padding:6px 8px;border-bottom:1px solid var(--rule);vertical-align:bottom} td{padding:8px;border-bottom:1px solid var(--rule);vertical-align:top} td.num{text-align:right;font-family:"IBM Plex Mono",monospace;font-variant-numeric:tabular-nums} td.num .muted{display:block;font-family:"IBM Plex Sans",sans-serif;font-size:.78rem;text-align:right}
+.tag{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.72rem;padding:0 6px;border-radius:3px;border:1px solid var(--rule);color:var(--ink2);white-space:nowrap} .tag.s{border-color:var(--blue);color:var(--blue)} .tag.no{border-color:var(--bad);color:var(--bad)} .tag.yes{border-color:var(--good);color:var(--good)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px;margin-top:14px} .stat{background:var(--bg2);padding:10px 12px;border-radius:6px} .stat .k{font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2)} .stat .v{font-family:Spectral,serif;font-size:1.5rem;line-height:1.1}
+.callout{border-left:3px solid var(--orange);padding:6px 16px;margin:18px 0;background:var(--bg2);border-radius:0 6px 6px 0} .callout p{margin:6px 0}
+ul.plain{padding-left:18px} ul.plain li{margin-bottom:6px}
+@media (max-width:640px){h1{font-size:1.7rem}}
+</style>
+<main>
+<div class="eyebrow">reverse‑bafu · evidence page · companion to the method explainer</div>
+<h1>The system processes of BAFU‑2026 and what stands behind them</h1>
+<p class="lede">Which datasets ship as system processes, where they came from, what their reports actually print, who entered them, and how many of them we dis‑aggregated. Data basis: <span class="mono">results/system_terminated.csv</span> (the 101 with the ecoSpold flag), <span class="mono">results/system_terminated_extended.csv</span> (all 138), the raw ecoSpold XML, the 114 report PDFs of the BAFU documentation bundle, and the <span class="mono">bafu‑2026</span> Brightway database.</p>
+
+<h2>1 · What they are</h2>
+<p>We found <b>138</b> system processes. <b>101</b> carry ecoSpold <code>dataSetInformation@type = 2</code>: the dataset holds the <em>cumulative</em> elementary flows of its whole upstream chain — an LCI result — not the process's own flows plus links to suppliers. 87 have no technosphere inputs at all; the 14 PlasticsEurope polymers keep 1–17 inputs, but those are only the waste‑treatment services ecoinvent v2 attached to the eco‑profile's reported waste amounts. The production chain itself (crude oil → naphtha → cracker → polymer) is folded into the flows.</p>
+<p>The long flow lists are real, not padded: the ~1,300‑flow (Empa) and ~1,660‑flow (French) vectors have 0–2 zero entries each. They are the full ecoinvent‑v2 / openLCA background, resolved. A 102nd flagged dataset (<em>Disposal, rectangular straw bale</em>) has no exchanges at all and is dropped.</p>
+<p>The flag is reliable but not complete. <b>37</b> more carry no flag and were found by structure (<span class="mono">scripts/find_system_processes.py</span>): no production input at all, only waste‑treatment services, but a full elementary‑flow vector. They are the APME / PlasticsEurope‑era eco‑profiles — benzene, toluene, styrene, the nylons, ABS, polycarbonate, MDI, TDI, the PMMAs and others — and their own metadata confirms it (<em>"Aggregated data for all processes from raw material extraction until delivery at plant"</em>). 466 BAFU‑2026 datasets consume at least one of them. The sections below survey the 101 family by family; the 37 are covered in <span class="mono">exports/README.md</span>.</p>
+<div class="stats">
+ <div class="stat"><div class="k">datasets in BAFU‑2026</div><div class="v">11,947</div></div>
+ <div class="stat"><div class="k">system processes found</div><div class="v">138</div></div>
+ <div class="stat"><div class="k">type = 2 flag</div><div class="v">101</div></div>
+ <div class="stat"><div class="k">found by structure</div><div class="v">37</div></div>
+ <div class="stat"><div class="k">flagged, with no inputs</div><div class="v">87</div></div>
+ <div class="stat"><div class="k">with zero consumers</div><div class="v">60</div></div>
+ <div class="stat"><div class="k">obsolete (xx prefix)</div><div class="v">12</div></div>
+</div>
+
+<h2>2 · The 101 flagged: five families, by data origin</h2>
+<div class="tbl"><table><thead><tr><th>Family</th><th class="num">n</th><th class="num">Consuming processes</th><th>Origin</th><th>Public data behind it</th><th>Unit‑process sibling in BAFU</th></tr></thead><tbody>
+<tr><td><span class="tag">plasticseurope</span></td><td class="num">14</td><td class="num"><b>1,049</b><br><span class="muted">HDPE 533 · PP 173 · LDPE 122 · ethylene glycol 76 · ethylene 72</span></td><td>PlasticsEurope eco‑profiles 2012–2014, via ecoinvent v2</td><td>Eco‑profile PDFs: gross energy per fuel and per stage (feedstock / fuel use / process / transport), waste, emissions — cradle‑to‑gate totals only; member data confidential</td><td>none for the polymers; <code>Naphtha, at refinery</code> (32 inputs) and <code>Chemical plant, organics</code> exist as building blocks; no steam‑cracker dataset</td></tr>
+<tr><td><span class="tag">ecoinvent‑v2‑confidential</span></td><td class="num">24</td><td class="num">150<br><span class="muted">zeolite 40 · polycarboxylates 35 · CMC 22 · latex 22 · feldspar 15</span></td><td>Empa / ETH / ESU 2007: ecoinvent reports 8, 9, 11, 12</td><td>Reports exist, but the XML says "inventory data are confidential" / "based on company information" — no unit‑process tables for these</td><td>4: the three <code>xx Packaging glass</code> colours and <code>Wood wool boards, cement bonded</code> (obsolete <code>xx</code> variants)</td></tr>
+<tr><td><span class="tag">treeze‑kbob</span></td><td class="num">10</td><td class="num">13</td><td>treeze reports for KBOB: gypsum 2016 ("data from German manufacturers"), concrete 2020, cellulose 2014</td><td>Reports public on treeze.ch and in the bundle</td><td>2: <code>Gypsum fibre board</code> (CH unit process, 10 inputs; DE aggregated), <code>Gypsum plaster board</code></td></tr>
+<tr><td><span class="tag">french‑biobased</span></td><td class="num">29</td><td class="num"><b>0</b></td><td>2022 <i>Rapports méthodologiques ACV</i>: flax, hemp, jute, straw bale, rammed earth (FDES background studies)</td><td>Not online and not in the bundle; the derived FDES on INIES give module totals only</td><td>none</td></tr>
+<tr><td><span class="tag">kbob‑manufacturer</span></td><td class="num">24</td><td class="num">10</td><td>Manufacturer‑specific KBOB entries: Flumroc rock wool (5), Misapor cellular glass (2), Hydro window frames (3), Baumgartner windows (4), V‑ZUG washing machine (3), CLT (2), perlite brick (2), Supafil, render board</td><td>EPDs public for Flumroc, Misapor, Hydro CIRCAL; bills of materials confidential</td><td>generic siblings for the window frames (<code>Window frame, wood, opaquely painted, U=1.2 W/m2K, wall opening, at plant</code>); the manufacturer token blocks the exact match</td></tr>
+</tbody></table></div>
+<div class="callout">
+<p><b>Impact and feasibility are anti‑correlated.</b> The family that matters most downstream (PlasticsEurope; HDPE alone touches 212 transport datasets) has no public unit‑process data. The family that transcribes cleanly (French, 29 datasets) changes no downstream result.</p>
+<p><b>A third of the list is obsolete or leaf.</b> 12 datasets carry the <code>xx</code> prefix and 60 have zero consumers; replacing them improves the transparency of that one dataset and nothing else.</p>
+</div>
+
+<h2>3 · What the report PDFs actually contain</h2>
+<p>The documentation bundle ships 114 LCI report PDFs whose file names equal the <code>source.title</code> field of the XML, so <span class="mono">scripts/list_sources.py</span> joins them automatically: 112 of 129 sources have a PDF, covering 12,848 dataset‑source pairs. For the 101 flagged datasets the bundle was read report by report:</p>
+<div class="tbl"><table><thead><tr><th>Family · report</th><th>PDF</th><th>What it contains for the flagged datasets</th><th>Consequence</th></tr></thead><tbody>
+<tr><td>plasticseurope · <b>2025 – LCI plastics – Rajabihamedani</b> (ESU‑services for FOEN)</td><td><span class="tag yes">yes</span> cited as <em>second</em> source in the XML</td><td>States the PlasticsEurope data "are nowadays only available as system processes" (ILCD, IFEU / PE International); documents the disposal re‑linking to UVEK datasets (Tab. 3.1), name mapping (Tab. 3.2–3.3), the methane add‑on <code>CH₄ = crude oil [kg]·0.0117 + natural gas [m³]·0.006</code>, a wrong‑unit fix (crude oil in MJ, assumed kg), a ×1000 correction on one flow; pedigree set to 5</td><td>No unit‑process data, but everything needed to <em>undo</em> the post‑processing before fitting: strip the methane add‑on and disposal inputs, then work on the eco‑profile vector</td></tr>
+<tr><td>ecoinvent‑v2 · detergents (Zah &amp; Hischier 2007, 97 p.)</td><td><span class="tag yes">yes</span></td><td>Zeolite: "no unit process data … can be shown" (Fawer 1996 / Dall'Acqua 1999 confidential), but the process is described — hydrogel route from aluminium hydroxide + sodium silicate + NaOH, 38 % slurry / 62 % dried to 20 % water, "transport and infrastructure estimated"</td><td>S3 stoichiometric model + calibration; the description fixes the input list</td></tr>
+<tr><td>ecoinvent‑v2 · packaging (Hischier 2007, 17 p. overview)</td><td><span class="tag yes">yes</span></td><td>Latex, feldspar: APME / industry aggregated; packaging glass: obsolete <code>xx</code> datasets with unit‑process siblings</td><td>S2 for glass, S3 for latex / feldspar</td></tr>
+<tr><td>ecoinvent‑v2 · chemicals (Althaus 2007, 957 p.)</td><td><span class="tag yes">yes</span></td><td>TiO₂ chloride process, anthraquinone, versatic acid ester: chapters §44, §85, §91 with process descriptions and BAT literature; inventory confidential</td><td>S3 from BAT data</td></tr>
+<tr><td>ecoinvent‑v2 · wood (Werner 2007, 176 p.)</td><td><span class="tag yes">yes</span></td><td>Wood wool boards: the unit‑process table is printed with <em>confidential</em> in the electricity cell, everything else visible</td><td>S2 / S3 — one number missing</td></tr>
+<tr><td>treeze‑kbob · concrete (Tschümperlin 2020)</td><td><span class="tag yes">yes</span></td><td><b>Full gate‑to‑gate inventory tables</b>: burnt shale (Tab. 3.9: explosives, diesel, kWh per step, HCl / NaOH, dust / NOₓ / SO₂ / CO₂ split fossil / geogenic), cement ZN/D (Tab. 3.14), CEM I–III (Tab. 3.11–3.13), transport distances (Tab. 3.10)</td><td>the cleanest cases in the whole list, both rebuilt: burnt shale by <b>S1 transcription</b>; cement ZN/D prints its composition only as ranges, so it is <b>S3</b></td></tr>
+<tr><td>treeze‑kbob · KBOB renewal (Kasser 2016, 436 p.)</td><td><span class="tag yes">yes</span></td><td>Gypsum boards: "Sachbilanzdaten … im vertraulichen Anhang Z"; only the binder inventories and transport are printed; Misapor confidential</td><td>S2 from the CH <code>Gypsum fibre board</code> unit process (rebuilt)</td></tr>
+<tr><td>treeze‑kbob · KBOB update (Wyss 2014, 23 p.)</td><td><span class="tag yes">yes</span></td><td>Cellulose fibres (isofloc): manufacturer‑specific, "vertraulicher Hintergrundbericht (Werner 2011)"</td><td>S3</td></tr>
+<tr><td>french‑biobased · seven <i>rapports méthodologiques</i> 2022</td><td><span class="tag no">no</span></td><td>—</td><td>reports to be obtained from the author (see §4)</td></tr>
+<tr><td>kbob‑manufacturer</td><td><span class="tag no">no dedicated report</span></td><td>some appear inside Kasser 2016 (Misapor: confidential)</td><td>S3 from public EPDs, or leave</td></tr>
+</tbody></table></div>
+
+<h2>4 · What the ecoSpold metadata adds — and who to ask</h2>
+<p>Beyond the source citation, every dataset carries the data‑entry person, the data‑generator person and the proof‑reading validator (name, company code, country; addresses and e‑mails anonymised), a <code>representativeness</code> block (sampling procedure, percent of production covered, production volume, extrapolations), a time period, and sometimes a second source. These are columns in <span class="mono">results/system_terminated.csv</span>.</p>
+<div class="tbl"><table><thead><tr><th>Family</th><th>Data generator / validator</th><th>Representativeness</th><th>Second source</th></tr></thead><tbody>
+<tr><td>plasticseurope</td><td>Christoph Meili / Niels Jungbluth [ESU]</td><td>"Questionnaires sent out to all production units in Europe operated by PlasticsEurope member companies"; <b>68.3 % of 6,720 kt HDPE (2011)</b>, 76.7 % PP, 72.3 % LDPE; period 2011–2023; external review passed</td><td>2025 – LCI plastics – Rajabihamedani</td></tr>
+<tr><td>ecoinvent‑v2‑confidential</td><td>Hischier [EMPA], Zah, Althaus [ecoexistence] / Kunst, Althaus, Dones</td><td>"company information by a filled in questionnaire", "survey"; partly 90–100 % of production; period 2000</td><td>—</td></tr>
+<tr><td>treeze‑kbob</td><td>Daniel Savi, Frank Werner [U+E], Büsser [treeze]</td><td>mostly empty</td><td>—</td></tr>
+<tr><td>kbob‑manufacturer</td><td>Stolz, Krebs, Messmer [treeze]; 11 entries "default / Not reviewed"</td><td>"Data survey at window manufacturer Baumgartner", "Data survey at SAPA Building Systems AG"</td><td>—</td></tr>
+<tr><td>french‑biobased</td><td><b>Sébastien Lasvaux [HEIG/CH]</b> for all 29 — entry, generation and validation</td><td>"Data were compiled from one agricultural …", "… from expert knowledge"; period placeholder 9999</td><td>—</td></tr>
+</tbody></table></div>
+<p>Two things follow. The French reports were brought into BAFU by Sébastien Lasvaux (HEIG‑VD, Yverdon), so they are to be requested from him, not searched for. And the representativeness fields give the plastics fit a hard constraint: the eco‑profile is a production‑weighted European average, not a single site.</p>
+<p class="muted">What the metadata does <em>not</em> add: the per‑exchange comments on aggregated datasets are pedigree placeholders only — <code>(5,5,5,5,5,BU:x); All uncertainty‑values set to 5.0 by default as data comes from System process</code> — so there is no per‑flow provenance to mine. The default‑5 pedigree is itself a usable aggregation marker, complementary to <code>type = 2</code>.</p>
+
+<h2>5 · What we rebuilt</h2>
+<p>The method explainer gives the three routes — S1 transcription, S2 template transfer, S3 top‑down model — and every rebuild also gets a hybrid node whose residual block reproduces the original exactly. Applied to the families above:</p>
+<div class="tbl"><table><thead><tr><th>Family</th><th class="num">system processes</th><th class="num">rebuilt</th><th>What decided it</th></tr></thead><tbody>
+<tr><td><span class="tag">plasticseurope</span></td><td class="num">14</td><td class="num">12</td><td>S3 for ten: monomer from the chemistry (an addition polymer carries its monomer), utilities from ecoinvent v2's generic chemicals block, amounts calibrated; S2 for ethylene glycol and PET, from same‑product unit processes</td></tr>
+<tr><td><span class="tag">apme eco‑profiles</span> (found by structure)</td><td class="num">37</td><td class="num">22</td><td>S3 for 19 from the dataset's own process description and chemistry; S2 for benzene, epoxy resin and naphtha from a same‑product unit process. The flows that reach these originals only through their waste links cannot be matched: see <span class="mono">exports/README.md</span></td></tr>
+<tr><td><span class="tag">ecoinvent‑v2‑confidential</span></td><td class="num">24</td><td class="num">13</td><td>S3 from process descriptions and BAT data in the reports; S2 for the packaging glass and the wood wool boards, from their unit‑process siblings; glass at regional storage is the rebuilt at‑plant node plus transport (S3)</td></tr>
+<tr><td><span class="tag">treeze‑kbob</span></td><td class="num">10</td><td class="num">4</td><td>burnt shale transcribed (S1), cement ZN/D from printed ranges (S3), gypsum boards from the CH unit process (S2)</td></tr>
+<tr><td><span class="tag">french‑biobased</span></td><td class="num">29</td><td class="num">0</td><td>the reports are neither online nor in the bundle</td></tr>
+<tr><td><span class="tag">kbob‑manufacturer</span></td><td class="num">24</td><td class="num">0</td><td>bills of materials confidential</td></tr>
+<tr><td><b>total</b></td><td class="num"><b>138</b></td><td class="num"><b>51</b></td><td>S1 1 · S2 11 · S3 39; 32 completely opened, 19 still link to a system process we did not rebuild</td></tr>
+</tbody></table></div>
+<p>Per dataset: <span class="mono">artifacts/rebuilt-inventories.html</span> and <span class="mono">artifacts/flow-parity.html</span>. Which of the 87 others would matter most next: <span class="mono">artifacts/replacement-priority.html</span>.</p>
+
+<h2>6 · Open questions</h2>
+<ul class="plain">
+ <li>The 2022 French <i>rapports méthodologiques</i>: request from Sébastien Lasvaux (HEIG‑VD).</li>
+ <li>Tolerance on the inventory itself: the rebuilt process is compared flow by flow with the original, so no characterisation method or weighting between impact categories enters the verdict. ±10 % on the large flows is a starting proposal; the long tail of trace flows from background chains will not be reproduced by a handful of explicit inputs for method reasons.</li>
+ <li>PlasticsEurope: rebuild against the 2012–2014 eco‑profiles BAFU holds (with the 2025 methane update) or the current versions?</li>
+ <li>The calibration uses no impact assessment and so needs no category weighting: flows are fitted in relative error, with each (unit, compartment) group of flows counting equally. What still has to be agreed is the <em>tolerance per category</em> used to judge a rebuild, not a weighting used to produce one.</li>
+ <li>Report the dropped <code>type</code> flag to sentier‑importers so the list becomes a column upstream.</li>
+</ul>
+
+<h2>Sources</h2>
+<ul class="plain">
+ <li>EcoSpold01 <code>type</code> semantics: <a href="https://github.com/brightway-lca/pyecospold/blob/main/pyecospold/schemas/v1/EcoSpold01MetaInformation.xsd#L26-L60">EcoSpold01MetaInformation.xsd, lines 26–60</a></li>
+ <li>PlasticsEurope: <a href="https://plasticseurope.org/sustainability/circularity/life-cycle-thinking/eco-profiles-set/">eco‑profiles set</a> · <a href="https://plasticseurope.org/wp-content/uploads/2021/12/PlasticsEurope-Ecoprofiles-program-and-methodology_V3.0.pdf">programme and methodology v3.0</a> · <a href="https://www.pedagogie.ac-aix-marseille.fr/upload/docs/application/pdf/2015-11/4-_eco-profile_pe_2014-04.pdf">HDPE / LDPE / LLDPE eco‑profile 2014 (mirror)</a></li>
+ <li>treeze: <a href="https://treeze.ch/de/projects/fallstudien/gebaeude-und-baumaterialien/oekobilanz-ausgewaehlter-betonsorten-und-betonfertigteile">Ökobilanz ausgewählter Betonsorten (2020)</a> · <a href="https://treeze.ch/projects/case-studies/building-and-construction/qualibob-project">QualiBOB / KBOB renewal</a> · <a href="https://treeze.ch/projects/case-studies/building-and-construction/kbob/">KBOB list</a></li>
+ <li>ecoinvent v2: <a href="https://support.ecoinvent.org/ecoinvent-version-2">knowledge base</a> · <a href="https://www.researchgate.net/publication/233739504_Life_Cycle_Inventories_of_Detergents">Zah &amp; Hischier 2007, report No. 12</a></li>
+ <li>French bio‑based FDES context: <a href="https://www.biofib.com/wp-content/uploads/biofib-chanvre-fdes-200.pdf">Biofib' hemp insulation FDES (EVEA, 2022)</a> · <a href="https://www.materiaux-naturels.fr/doc/product/fdes_187.pdf">hemp‑lime concrete FDES</a></li>
+ <li>Related reading (repository <span class="mono">references.txt</span>): Bourgault, Lesage &amp; Samson 2012, <i>Systematic disaggregation</i>, IJLCA 17 — an LCI computation algorithm for interpretation; Schindler et al. 2025, <i>Closing data gaps with emission factors</i>, IJLCA 30 — carrying aggregated EPD results as proxy flows in Brightway (the precedent for the hybrid node's residual block)</li>
+ <li>BAFU data: <a href="https://nexus.openlca.org/downloads">openLCA Nexus</a> — "BAFU:2026 Version 1 – ecoSpold1" and "– Documentation". Source: Life Cycle Inventory database of the Swiss Federal Administration, BAFU:2026.</li>
+</ul>
+</main>

@@ -1,0 +1,194 @@
+{
+  "target": {
+    "code": "53117f8b-9311-37b3-bf5b-6e14b2ae711c",
+    "name": "Polycarbonate, at plant",
+    "location": "RER"
+  },
+  "variant": "draft",
+  "strategy": {
+    "code": "S3",
+    "label": "top-down model drafted from the dataset's own metadata by the LLM pipeline (reverse-bafu draft-all, metadata route)",
+    "note": "No report prints this dataset's inventory; the input list comes from its ecoSpold metadata and name. Amount basis: 2 stoichiometry, 1 implied; standard utility block added, fitted. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "BAFU-2026 ecoSpold metadata of the target",
+      "where": "name, processInformation/technology, referenceFunction/includedProcesses",
+      "note": "specs/evidence/53117f8b-9311-37b3-bf5b-6e14b2ae711c/prompt-4-metadata.md and response-4-metadata.json"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft-all, metadata route",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5-5",
+      "prompt_sha256": "9e9e4ac3fa8a2205d3d03e40d230de0f582be4880a6be021757f62b3bb1a2256",
+      "at": "2026-09-24T13:45:08Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5-5",
+      "prompt_sha256": "bf7549268e1ae497ce62c3fc42463762c1aa735589cd4879317fee65a56d1d3f",
+      "at": "2026-09-24T13:45:28Z"
+    },
+    "gaps_reported_by_model": [
+      "the dichloromethane solvent of the interfacial process (recycled, make-up rate not stated)",
+      "the chain terminator and catalyst"
+    ],
+    "skipped_items": [],
+    "warnings": [],
+    "assembled_at": "2026-09-24T13:45:50Z"
+  },
+  "node": {
+    "name": "Polycarbonate, at plant, disaggregated",
+    "unit": "kg",
+    "location": "RER",
+    "comment": "drafted from the dataset's own ecoSpold metadata",
+    "inputs": [
+      {
+        "name": "Bisphenol A, powder, at plant",
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "100 %-yield floor; the real amount can only be higher.",
+        "derivation": {
+          "evidence": "ecoSpold metadata, technology",
+          "quote": "production by interfacial polycondesation out of phosgene and bisphenol A",
+          "basis": "stoichiometry",
+          "equation": "C15H16O2 (bisphenol A, 228.291) + COCl2 (phosgene, 98.910) -> -[C16H14O3]- (carbonate repeat unit, 254.285) + 2 HCl (72.916)",
+          "calculation": "228.291 / 254.285 = 0.89777 kg per kg of polycarbonate",
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5-5",
+          "reviewed_by": null,
+          "search": "bisphenol A powder",
+          "mapping_reason": "The only candidate that is bisphenol A; the others are different powders.",
+          "mapping_by": "claude-code:claude-opus-5-5"
+        },
+        "amount": 0.89777,
+        "code": "4ef9c067-e357-33f0-837a-659b928864e5"
+      },
+      {
+        "name": "Phosgene, liquid, at plant",
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "100 %-yield floor; the real amount can only be higher.",
+        "derivation": {
+          "evidence": "ecoSpold metadata, technology",
+          "quote": "production by interfacial polycondesation out of phosgene and bisphenol A",
+          "basis": "stoichiometry",
+          "equation": "C15H16O2 (bisphenol A, 228.291) + COCl2 (phosgene, 98.910) -> -[C16H14O3]- (carbonate repeat unit, 254.285) + 2 HCl (72.916)",
+          "calculation": "98.910 / 254.285 = 0.38897 kg per kg of polycarbonate",
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5-5",
+          "reviewed_by": null,
+          "search": "phosgene liquid",
+          "mapping_reason": "The only phosgene candidate; the rest are other liquids.",
+          "mapping_by": "claude-code:claude-opus-5-5"
+        },
+        "amount": 0.38897,
+        "code": "448a623c-0145-3b9a-925f-33f9e560e585"
+      },
+      {
+        "name": "Sodium hydroxide, 50% in H2O, production mix, at plant",
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "An interfacial polycondensation runs the bisphenol as its sodium salt in an aqueous phase; the 2 HCl per repeat unit are neutralised by caustic soda.",
+        "derivation": {
+          "evidence": "ecoSpold metadata, technology",
+          "quote": "interfacial polycondesation",
+          "basis": "implied",
+          "equation": "2 HCl + 2 NaOH -> 2 NaCl + 2 H2O",
+          "calculation": "2 x 39.997 / 254.285 = 0.31459 kg NaOH (100 %) per kg of polycarbonate",
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5-5",
+          "reviewed_by": null,
+          "search": "sodium hydroxide 50%",
+          "mapping_reason": "The production mix is the generic purchased caustic soda; the cell-specific datasets are single routes.",
+          "mapping_by": "claude-code:claude-opus-5-5"
+        },
+        "amount": 0.31459,
+        "code": "ce8a12aa-ecaa-37d9-8355-5cb7da9ce6c0"
+      },
+      {
+        "name": "Electricity, medium voltage, production ENTSO-E, at grid",
+        "amount": 0.333,
+        "unit": "kilowatt hour",
+        "location": "ENTSO-E",
+        "free": true,
+        "note": "standard ecoinvent-v2 chemical utility block: starting value 0.333 kilowatt hour per kg of product; a template, not evidence, and fitted",
+        "derivation": {
+          "evidence": "utility block of the ecoinvent-v2 organic chemicals in BAFU-2026",
+          "basis": "template",
+          "by": "reverse-bafu draft-all",
+          "reviewed_by": null
+        },
+        "code": "648e3bb3-7b98-46f8-9da1-f45627c309ef"
+      },
+      {
+        "name": "Heat, natural gas, at industrial furnace 1MW",
+        "amount": 2.0,
+        "unit": "megajoule",
+        "location": "CH",
+        "free": true,
+        "note": "standard ecoinvent-v2 chemical utility block: starting value 2 megajoule per kg of product; a template, not evidence, and fitted",
+        "derivation": {
+          "evidence": "utility block of the ecoinvent-v2 organic chemicals in BAFU-2026",
+          "basis": "template",
+          "by": "reverse-bafu draft-all",
+          "reviewed_by": null
+        },
+        "code": "2fcda415-e506-38d9-9c3e-8ce2c2e7c8f2"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.9607979999999999,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "standard ecoinvent-v2 chemical utility block: starting value 0.6 ton kilometer per kg of precursor; a template, not evidence, and fitted",
+        "derivation": {
+          "evidence": "utility block of the ecoinvent-v2 organic chemicals in BAFU-2026",
+          "basis": "template",
+          "by": "reverse-bafu draft-all",
+          "reviewed_by": null
+        },
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 0.160133,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "standard ecoinvent-v2 chemical utility block: starting value 0.1 ton kilometer per kg of precursor; a template, not evidence, and fitted",
+        "derivation": {
+          "evidence": "utility block of the ecoinvent-v2 organic chemicals in BAFU-2026",
+          "basis": "template",
+          "by": "reverse-bafu draft-all",
+          "reviewed_by": null
+        },
+        "code": "99f8a4b0-99b5-3130-924c-5de4c10b62ef"
+      },
+      {
+        "name": "Chemical plant, organics",
+        "amount": 4e-10,
+        "unit": "unit",
+        "location": "RER",
+        "free": true,
+        "note": "standard ecoinvent-v2 chemical utility block: starting value 4e-10 unit per kg of product; a template, not evidence, and fitted",
+        "derivation": {
+          "evidence": "utility block of the ecoinvent-v2 organic chemicals in BAFU-2026",
+          "basis": "template",
+          "by": "reverse-bafu draft-all",
+          "reviewed_by": null
+        },
+        "bounds": [
+          0.0,
+          4e-10
+        ],
+        "code": "13ed4fe0-7ba5-3b60-82b6-a63918ee814d"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

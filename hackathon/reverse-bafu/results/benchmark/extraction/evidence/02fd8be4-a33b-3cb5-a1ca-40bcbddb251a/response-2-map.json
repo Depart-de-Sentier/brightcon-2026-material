@@ -1,0 +1,44 @@
+{
+ "mappings": [
+  {
+   "item": "electricity, medium voltage, at grid",
+   "chosen": "Electricity, medium voltage, at grid",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The report's Tab. 4.25 draws the Swiss medium-voltage grid; this dataset is the hard-coal PRODUCTION route but no 'production from hard coal' medium-voltage candidate is offered, so the generic Swiss medium-voltage grid is the closest available and keeps the exchange structure right. The import-XX variants are foreign routes and SBB is the railway grid."
+  },
+  {
+   "item": "sulphur hexafluoride, liquid, at plant",
+   "chosen": "Sulphur hexafluoride, liquid, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name match; sulphuric acid and sulphur dioxide are different substances."
+  },
+  {
+   "item": "distribution network, electricity, low voltage",
+   "chosen": "Distribution network, electricity, low voltage",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The only candidate and an exact name and unit (kilometre) match."
+  },
+  {
+   "item": "Heat, waste",
+   "chosen": "Waste Heat",
+   "location": "",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Waste Heat is the right substance and megajoule unit. The two waste-heat lines of this dataset (25 % to air, 75 % to soil per the footnote of Tab. 4.24) carry the same flow name, so the compartment is left to each line item rather than fixed here."
+  },
+  {
+   "item": "Sulfur hexafluoride",
+   "chosen": "Sulfur Hexafluoride",
+   "location": "",
+   "compartment": "air",
+   "dependency": false,
+   "reason": "SF6 released to air; candidate 1 is the same substance in the older nomenclature and the soil and water variants are the wrong compartment."
+  }
+ ]
+}

@@ -1,0 +1,359 @@
+{
+  "target": {
+    "code": "87f791bb-fc12-31eb-ae1e-387398762a32",
+    "name": "Copper oxide, at plant",
+    "location": "RER"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 27.5 'Input / Output and uncertainty for the process “copper oxide, at plant (RER)”', column 'copper oxide, at plant' [RER], per 1 kg. Tab. 27.4 on the preceding page gives the same figures per kg copper(II)oxide.; allocation: none; ammonium and carbon dioxide by-products are recovered and returned to the start of the process, so they are not treated as co-products. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI chemicals - Althaus.pdf",
+      "where": "pages 326-328 -> report-p326-328.txt",
+      "note": "report sha256 68e0839ffea919f9…, text sha256 4feacafcef271a7f…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/87f791bb-fc12-31eb-ae1e-387398762a32/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "9edf63351ea0941ab887726311d07eb936abec7bf79f34464547b47530217c02",
+      "at": "2026-09-22T12:21:36Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "4047130c90dd95e54bbb95986c29dfa57bf51c7b939ee558f3f6be726028a9a3",
+      "at": "2026-09-22T12:21:37Z"
+    },
+    "gaps_reported_by_model": [
+      "Oxygen (201.131 g stoechiometric) is taken from air and deliberately not inventoried.",
+      "Solid wastes were explicitly neglected in this inventory.",
+      "No emissions to water: the remaining ammonia compounds are assumed recovered, so the report reports none.",
+      "No process emissions to air were measured; the two air emissions are a 0.2 % of stoechiometric input assumption."
+    ],
+    "skipped_items": [
+      "copper oxide, at plant: product — the reference product",
+      "Ammonium carbonate: no flow chosen (No ammonium carbonate flow exists among the candidates. Every offered flow is a different ammonium salt (acetate, bromide, nitrate, oxalate, sulfate, chloride, fluoride) or the bare ammonium ion, and mapping a carbonate onto one of those would be a different chemical, so the line is reported as missing.)"
+    ],
+    "assembled_at": "2026-09-22T12:21:38Z"
+  },
+  "node": {
+    "name": "Copper oxide, at plant, disaggregated",
+    "unit": "kg",
+    "location": "RER",
+    "comment": "drafted from 2007 - LCI chemicals - Althaus.pdf pp. 326-328",
+    "inputs": [
+      {
+        "name": "Ammonia, liquid, at regional storehouse",
+        "amount": 0.000427,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "only the amount equal to the air emission is charged as input; the rest is recovered inside the process",
+        "derivation": {
+          "evidence": "report-p326-328.txt",
+          "quote": "Input from        am m onia, liquid, at regional s torehous e              RER          kg       4.27E-04         1              1.21                        (4,na,na,na,na,na); es tim ation - equal to em itted am ount",
+          "raw_value": 0.000427,
+          "raw_unit": "kg",
+          "per": "per kg copper oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "ammonia liquid regional storehouse",
+          "mapping_reason": "Exact name match, and the report gives RER, which also ranks above CH in the location preference.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "461aa0e0-5253-3cda-b22f-4c075152cdb5"
+      },
+      {
+        "name": "Copper, at regional storage",
+        "amount": 0.815,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "stoechiometric 798.24 g at 98 % yield = 814.531 g, printed as 0.815 kg in Tab. 27.4",
+        "derivation": {
+          "evidence": "report-p326-328.txt",
+          "quote": "Technos phere     copper, at regional s torage                             RER          kg       8.15E-01         1              1.21                    (4,na,na,na,na,na); es tim ation bas ed on proces s yield 90-99.8%",
+          "raw_value": 0.815,
+          "raw_unit": "kg",
+          "per": "per kg copper oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "copper regional storage",
+          "mapping_reason": "Exact name and location; every other candidate is a different metal or fuel at regional storage.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "3972eb0c-d60e-3537-9ad1-fd6b7bbafce8"
+      },
+      {
+        "name": "Ammonium carbonate, at plant",
+        "amount": 0.00121,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "again only the amount equal to the air emission; the remainder is recovered",
+        "derivation": {
+          "evidence": "report-p326-328.txt",
+          "quote": "                  am m onium carbonate, at plant                           RER          kg       1.21E-03         1              1.21                        (4,na,na,na,na,na); es tim ation - equal to em itted am ount",
+          "raw_value": 0.00121,
+          "raw_unit": "kg",
+          "per": "per kg copper oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "ammonium carbonate plant",
+          "mapping_reason": "Exact chemical, name and location; ammonium bicarbonate and the other carbonates are different chemicals and must not be substituted.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "48437dbd-050b-38c9-bf8a-13df82183791"
+      },
+      {
+        "name": "xxx Electricity, medium voltage, production UCTE, at grid",
+        "amount": 0.333,
+        "unit": "kilowatt hour",
+        "location": "UCTE",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p326-328.txt",
+          "quote": "                  electricity, m edium voltage, production UCTE, at grid   UCTE        kWh       3.33E-01         1              1.88                       (5,5,1,1,4,5); es tim ated with data from a large chem . plant",
+          "raw_value": 0.333,
+          "raw_unit": "kWh",
+          "per": "per kg copper oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electricity medium voltage UCTE",
+          "mapping_reason": "The only UCTE production mix in the list and an exact name match for what the report cites; it carries the 'xxx' obsolete marker, but the alternatives are either single-carrier UCTE mixes (oil, hard coal, natural gas) or the RER mix, which would change the geography the report states.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "d86e2374-784b-3fd9-910b-7583462ea81b"
+      },
+      {
+        "name": "Heat, natural gas, at industrial furnace 1MW",
+        "amount": 2.0,
+        "unit": "megajoule",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p326-328.txt",
+          "quote": "                  heat, natural gas , at indus trial furnace >100kW        RER          MJ       2.00E+00         1              1.88                       (5,5,1,1,4,5); es tim ated with data from a large chem . plant",
+          "raw_value": 2.0,
+          "raw_unit": "MJ",
+          "per": "per kg copper oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "heat natural gas industrial furnace",
+          "mapping_reason": "The same product - heat delivered from natural gas burned in an industrial furnace, in megajoules - and the only non-obsolete candidate of that kind; the >100kW variant exists only as the 'xxx' low-NOx dataset, so the furnace size class differs from the report's '>100kW'.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "2fcda415-e506-38d9-9c3e-8ce2c2e7c8f2"
+      },
+      {
+        "name": "Chemical plant, organics",
+        "amount": 4e-10,
+        "unit": "unit",
+        "location": "RER",
+        "note": "infrastructure approximation; the text says 4E-10 units per kg copper carbonate, the table applies it to copper oxide",
+        "derivation": {
+          "evidence": "report-p326-328.txt",
+          "quote": "                  chem ical plant, organics                                RER         unit      4.00E-10         1              3.77                                           (4,5,1,3,5,4); es tim ation",
+          "raw_value": 4e-10,
+          "raw_unit": "unit",
+          "per": "per kg copper oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "chemical plant organics",
+          "mapping_reason": "Exact name and location for the infrastructure unit the report used as an approximation; the other candidates are heat, steam, storage tanks or bulk chemicals.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "13ed4fe0-7ba5-3b60-82b6-a63918ee814d"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.49,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p326-328.txt",
+          "quote": "                  trans port, freight, rail                                RER         tkm       4.90E-01         1              2.09                                  (4,5,na,na,na,na); s tandard dis tances",
+          "raw_value": 0.49,
+          "raw_unit": "tkm",
+          "per": "per kg copper oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "Exact name and the RER location the report gives; the CH variants fix the traction and shunting.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 0.0816,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p326-328.txt",
+          "quote": "                  trans port, lorry 32t                                    RER         tkm       8.16E-02         1              2.09                                  (4,5,na,na,na,na); s tandard dis tances",
+          "raw_value": 0.0816,
+          "raw_unit": "tkm",
+          "per": "per kg copper oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry 32t",
+          "mapping_reason": "A 32 t gross-weight lorry falls in the 16-32 t class, and 'fleet average' matches the report's unspecified 'lorry 32t'; the EURO-numbered candidates would additionally fix an emission standard and a long-haul or urban-delivery duty cycle the report does not state.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "85b3a5a6-2635-3546-b51b-4ccad397650b"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Waste Heat ",
+        "category": "air",
+        "amount": 1.2,
+        "unit": "megajoule",
+        "note": "100 % of the 0.333 kWh electricity (1.2 MJ) assumed released to air",
+        "derivation": {
+          "evidence": "report-p326-328.txt",
+          "quote": "Air em is s ion   Heat, was te                                                          MJ       1.20E+00         1              1.88                              (5,5,1,1,4,5); calculated from electricity input",
+          "raw_value": 1.2,
+          "raw_unit": "MJ",
+          "per": "per kg copper oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Waste heat released to air in megajoules, matching the table's unit and its 'Air emission' label; the soil and water variants are the wrong compartment.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-9136-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Ammonia ",
+        "category": "emissions",
+        "amount": 0.000427,
+        "unit": "kilogram",
+        "note": "estimated as 0.2 % of the stoechiometric amount",
+        "derivation": {
+          "evidence": "report-p326-328.txt",
+          "quote": "                  Am m onia                                                             kg       4.27E-04         1              2.32                                       (5,5,na,na,na,5); es tim ation",
+          "raw_value": 0.000427,
+          "raw_unit": "kg",
+          "per": "per kg copper oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Exact substance in the air compartment the table states; the soil and water entries are the wrong compartment and acetaldehyde--ammonia is a different compound.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-a2a9-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Water To Cooling ",
+        "category": "resources",
+        "amount": 0.024,
+        "unit": "cubic meter",
+        "note": "no plant data existed; approximated from a large German chemical site at 24 kg water per kg product. Matches the 0.024 m3 'Water To Cooling' resource flow visible in the aggregated vector.",
+        "derivation": {
+          "evidence": "report-p326-328.txt",
+          "quote": "Res ource         Water, cooling, uns pecified natural origin                          m3        2.40E-02         1              1.88                       (5,5,1,1,4,5); es tim ated with data from a large chem . plant",
+          "raw_value": 0.024,
+          "raw_unit": "m3",
+          "per": "per kg copper oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "The only cooling-water resource flow in cubic metres, matching the table's 2.40E-02 m3; 'Water Cooling Sea' is sea water in kilograms and 'Water from cooling' is a discharge, not a withdrawal.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "21868f36-62ab-4e8e-98ed-7106228c17be",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Water ",
+        "category": "resources",
+        "amount": 0.006,
+        "unit": "cubic meter",
+        "note": "process water assumed as 25 % of the cooling water. Matches the 0.006 m3 'Water' resource flow visible in the aggregated vector.",
+        "derivation": {
+          "evidence": "report-p326-328.txt",
+          "quote": "                  Water, uns pecified natural origin                                   m3        6.00E-03         1              1.88                       (5,5,1,1,4,5); es tim ated with data from a large chem . plant",
+          "raw_value": 0.006,
+          "raw_unit": "m3",
+          "per": "per kg copper oxide, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Unspecified water withdrawn from nature in cubic metres, matching the table's 6.00E-03 m3; lake, river, ground and cooling water are specific sub-types the report does not name.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "419682fe-60fb-4b43-be89-bf2824b51104",
+        "database": "ef-3.1-biosphere"
+      }
+    ]
+  }
+}

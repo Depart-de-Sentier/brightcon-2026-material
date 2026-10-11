@@ -1,0 +1,331 @@
+{
+  "target": {
+    "code": "80edb9d9-1b57-3472-9388-1f6a3961b4c9",
+    "name": "Packing, clay products",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Fig. 7.5 'Flows for “packing, clay products”', per 1 kg of clay product packed (the module's reference flow, 1.00E+00 kg); allocation: none stated. The module is derived from 'packing, lime products' by scaling the flows with the ratio of bulk densities (about 800 kg/m3 for average lime product, 1'600 kg/m3 for clay products).. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI building products - Kellenberger.pdf",
+      "where": "pages 178-179 -> report-p178-179.txt",
+      "note": "report sha256 07faa39bab6942a9…, text sha256 5ff45668cf7ea68e…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/80edb9d9-1b57-3472-9388-1f6a3961b4c9/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "57c80e5daaef839a92264a89c4862cefb62fd6946b55bc7d6c216927b26d05b3",
+      "at": "2026-09-22T12:17:56Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "aaa2ff3afccae14067beac975dc7dcbad5a10d6f4090542eba2c8052acddc56f",
+      "at": "2026-09-22T12:18:03Z"
+    },
+    "gaps_reported_by_model": [
+      "No direct emissions other than waste heat are given; no dust from the packing operation.",
+      "The paper/bag material itself is not inventoried - only pallets and plastic foil appear.",
+      "Fig. 7.5's mean values are extrapolated from the lime-product module, so every figure inherits that module's data rather than measurements on clay products."
+    ],
+    "skipped_items": [
+      "packing, clay products: product — the reference product: packing of 1 kg of clay product in general"
+    ],
+    "assembled_at": "2026-09-22T12:18:03Z"
+  },
+  "node": {
+    "name": "Packing, clay products, disaggregated",
+    "unit": "kg",
+    "location": "CH",
+    "comment": "drafted from 2007 - LCI building products - Kellenberger.pdf pp. 178-179",
+    "inputs": [
+      {
+        "name": "Industrial machine, heavy, unspecified, at plant",
+        "amount": 0.0015,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "infrastructure for packing and loading; weight copied from 'packing, lime product', estimated 30 t of machines over 20 years",
+        "derivation": {
+          "evidence": "report-p178-179.txt",
+          "quote": "                         Î                                                                                                                                                     machinery             Yes    RER                                       1.50E-03 kg                                 1     3.45   (5,na,na,na,4,na);",
+          "raw_value": 0.0015,
+          "raw_unit": "kg",
+          "per": "per kg clay product packed",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "industrial machine heavy unspecified",
+          "mapping_reason": "The only candidate and an exact name and location match for the infrastructure line.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "5906ff1f-2cd1-3951-9bfc-abd0cdbf8c75"
+      },
+      {
+        "name": "xxx Electricity, medium voltage, production UCTE, at grid",
+        "amount": 0.00309,
+        "unit": "kilowatt hour",
+        "location": "UCTE",
+        "note": "no data available; energy consumption copied from 'packing, lime product'",
+        "derivation": {
+          "evidence": "report-p178-179.txt",
+          "quote": "                                                                                                                                                                                                   electricity, medium voltage,                                                                                                                      3.09E-03 kWh                                1     1.51   (1,2,1,1,4,1);",
+          "raw_value": 0.00309,
+          "raw_unit": "kWh",
+          "per": "per kg clay product packed",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electricity medium voltage UCTE",
+          "mapping_reason": "The only UCTE production mix offered and an exact name match for the module the report cites; it carries the 'xxx' obsolete marker, but the alternatives are single-carrier UCTE mixes or Swiss grid mixes, which would change the geography.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "d86e2374-784b-3fd9-910b-7583462ea81b"
+      },
+      {
+        "name": "EUR-flat pallet",
+        "amount": 6.25e-05,
+        "unit": "unit",
+        "location": "RER",
+        "note": "assumptions: average density 1600 kg/m3, loading volume 1 m3, pallets used 10 times, pallet weight 22 kg",
+        "derivation": {
+          "evidence": "report-p178-179.txt",
+          "quote": "pallets, at plant        Î                                                                                                                    wooden materials processing            No     RER    EUR-flat pallet                    6.25E-05 unit                               1     1.68   (4,5,1,1,4,5);",
+          "raw_value": 6.25e-05,
+          "raw_unit": "unit",
+          "per": "per kg clay product packed",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "EUR-flat pallet",
+          "mapping_reason": "The only candidate and an exact name and location match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "0669988c-64e1-3574-931e-640b8ad2f246"
+      },
+      {
+        "name": "Extrusion, plastic film",
+        "amount": 6.15e-05,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "pallet circumference 4 m, height 2 m, 2 layers of plastic at 0.0123 kg/m2",
+        "derivation": {
+          "evidence": "report-p178-179.txt",
+          "quote": "plastic foil extrusion   Î                                                                       layer of plastic with a weight of 0.0123     plastics         processing            No     RER    extrusion, plastic film            6.15E-05 kg      folien.de/hpage.htm,       1     1.56   (4,na,na,na,4,na);",
+          "raw_value": 6.15e-05,
+          "raw_unit": "kg",
+          "per": "per kg clay product packed",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "extrusion plastic film",
+          "mapping_reason": "Exact name match for the film extrusion process; 'Extrusion, plastic pipes' is a different converting process.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "c06a8970-8ec4-359e-887a-0bbf51d9ee6f"
+      },
+      {
+        "name": "Polyethylene, HDPE, granulate, at plant",
+        "amount": 6.15e-05,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "same mass as the extrusion line: the foil material itself",
+        "derivation": {
+          "evidence": "report-p178-179.txt",
+          "quote": "plastic foil             Î                                                                       layer of plastic with a weight of 0.0123     plastics         polymers              No     RER                                       6.15E-05 kg      folien.de/hpage.htm,       1     1.56   (4,na,na,na,4,na);",
+          "raw_value": 6.15e-05,
+          "raw_unit": "kg",
+          "per": "per kg clay product packed",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "polyethylene HDPE granulate",
+          "mapping_reason": "The report names HDPE explicitly, so the HDPE granulate beats the LDPE, LLDPE and PET candidates; it is itself an aggregated dataset, so dependency is set.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "6738f024-eb64-3ef8-837e-05b84c6e43da"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.00139,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "standard distance, transport by train 200 km, for pallets and plastic foil to the plant",
+        "derivation": {
+          "evidence": "report-p178-179.txt",
+          "quote": "and plastic foil to plant Î                                                                                                                     transport systems train              No     CH     transport, freight, rail           1.39E-03 tkm                                1     2.46   (5,na,na,na,4,na);",
+          "raw_value": 0.00139,
+          "raw_unit": "tkm",
+          "per": "per kg clay product packed",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "The report's line gives the unspecified 'transport, freight, rail', which this RER dataset is; the CH candidates all fix the traction (electricity or diesel) and the shunting, which the report does not state.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 0.00139,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "standard distance, lorry 28t over 50 km, for pallets and plastic foil to the plant",
+        "derivation": {
+          "evidence": "report-p178-179.txt",
+          "quote": "and plastic foil to plant Î                                                                                                                     transport systems road               No     CH                                        1.39E-03 tkm                                1     2.46   (5,na,na,na,4,na);",
+          "raw_value": 0.00139,
+          "raw_unit": "tkm",
+          "per": "per kg clay product packed",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry 20-28t fleet average",
+          "mapping_reason": "A 20-28 t lorry falls inside the 16-32 t gross weight class, and the report's line is CH, so the CH fleet average of that class is the closest; 'xxx Operation, lorry 20-28t' matches the size exactly but is obsolete and is measured per kilometre rather than per tonne-kilometre.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "eb5552ed-63a8-374d-8fa4-296f644c37f8"
+      },
+      {
+        "name": "Transport, freight, lorry, 7.5t-16t gross weight, fleet average",
+        "amount": 6.15e-07,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "transport of the plastic foil to municipal incineration, 10 km by 16t lorry",
+        "derivation": {
+          "evidence": "report-p178-179.txt",
+          "quote": "foil to municipal        Î                                                                                                                      transport systems road               No     RER                                       6.15E-07 tkm                                1     1.78   (5,na,na,na,4,na);",
+          "raw_value": 6.15e-07,
+          "raw_unit": "tkm",
+          "per": "per kg clay product packed",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry 3.5-16t fleet average",
+          "mapping_reason": "The 7.5-16 t class is the one that overlaps the report's 3.5-16 t range, and the report gives RER for this line; the 16-32 t class would be too heavy and the 3.5 t dataset too light.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a4f7817d-ef76-3fb0-943c-12c43ed07da7"
+      },
+      {
+        "name": "Disposal, wood untreated, 20% water, to municipal incineration",
+        "amount": 0.00183,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "disposal of the pallets after use",
+        "derivation": {
+          "evidence": "report-p178-179.txt",
+          "quote": "                                                                          Î                                                                                                        No     CH                                        1.83E-03 kg      EMPA                       1     1.32   (1,4,1,2,3,5);",
+          "raw_value": 0.00183,
+          "raw_unit": "kg",
+          "per": "per kg clay product packed",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "disposal wood untreated municipal incineration",
+          "mapping_reason": "Exact name, water content and location; the chrome-preserved and board variants are treated or bonded wood, which the untreated pallets are not.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "c03df82a-e3d3-408f-8f7e-7c03e10bf8bf"
+      },
+      {
+        "name": "Disposal, polyethylene, 0.4% water, to municipal incineration",
+        "amount": 6.15e-05,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "disposal of the plastic foil after use; same mass as the foil input",
+        "derivation": {
+          "evidence": "report-p178-179.txt",
+          "quote": "                                                                          Î   municipal waste                                                                        No     CH                                        6.15E-05 kg                                 1     1.56   (4,na,na,na,4,na);",
+          "raw_value": 6.15e-05,
+          "raw_unit": "kg",
+          "per": "per kg clay product packed",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "disposal polyethylene municipal incineration",
+          "mapping_reason": "Exact name, water content and location; the PET and polyethylene/polypropylene mixtures are different polymers.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "418f911c-33e1-4fe6-a3d4-6c4b7974f139"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Waste Heat ",
+        "category": "air",
+        "amount": 0.0111,
+        "unit": "megajoule",
+        "note": "stated to be the same amount as the electricity used (3.09E-03 kWh = 1.11E-02 MJ)",
+        "derivation": {
+          "evidence": "report-p178-179.txt",
+          "quote": "                                                                          Î   waste heat         Same amount as electricity used                air               unspecified                      Heat, waste                        1.11E-02 MJ                                 1     1.57   (1,3,1,1,4,5);",
+          "raw_value": 0.0111,
+          "raw_unit": "MJ",
+          "per": "per kg clay product packed",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Waste heat to air in megajoules, matching the table's 'air / unspecified' category and its unit; the soil and water variants are the wrong compartment and 'Energy, waste heat, air' sits under resources in the residual database.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-9136-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": []
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "target": {
+    "code": "99a93e93-a8a8-34f3-88f3-6af0c21c4762",
+    "name": "Vinyl chloride, at plant",
+    "location": "RER"
+  },
+  "strategy": {
+    "code": "S3",
+    "label": "top-down model: the balanced VCM process, input list from the dataset's own process description, amounts from the reaction stoichiometry, energy calibrated",
+    "note": "NOT S1. The cited report prints no inventory (see the evidence block). The input list is the one the BAFU dataset itself states - 'The VCM production process, upstream processes like ethylene and chlorine production, electricity, and steam production as well as transportation of feedstock and waste treatment' - and the two material amounts follow from the balanced-process equations printed in Althaus 2007 sec. 34.5.3 with the yields of sec. 34.5.1. Electricity and steam are named by the dataset and quantified nowhere in the bundle, so they are fitted, unbounded. No direct process emissions are modelled: the only VCM emission factors in the bundle (Althaus Tab. 34.1) are for EDC, not for the cracking step."
+  },
+  "evidence": [
+    {
+      "source": "2025 - LCI plastics - Rajabihamedani.pdf (the dataset's own cited report)",
+      "where": "sec. 3.2, Tab. 1.1, sec. 6",
+      "note": "Prints no unit-process inventory for any of its 14 datasets: 'All datasets addressed for the updates are nowadays only available as system processes and therefore are modelled accordingly in this study' (sec. 3.2); Foreground data = 'Cumulative inventories of Plastics as provided by PlasticsEurope' (Tab. 1.1). Verified page by page, including every table that is embedded as an image. The full finding is in specs/evidence/<code>/response-0-locate.json. What the report does give and is used here: sec. 3.6 (infrastructure, 4.0E-10 p of Chemical plant, organics)."
+    },
+    {
+      "source": "bafu-2026 ecoSpold metadata of the target (includedProcesses / technology)",
+      "where": "includedProcesses / technology",
+      "note": "'The VCM production process, upstream processes like ethylene and chlorine production, electricity, and steam production as well as transportation of feedstock and waste treatment.' - this is the whole input list the dataset declares, and it is what the model contains."
+    },
+    {
+      "source": "2007 - LCI chemicals - Althaus.pdf",
+      "where": "sec. 34.5.3 Thermal cracking of EDC",
+      "note": "'C2H4 + Cl2 -> C2H4Cl2 (Chlorination of ethylene to EDC) / C2H4Cl -> CH2CHCl + HCl (Cracking of EDC to form VCM) / C2H4 + 1/2 O2 + 2HCl -> C2H4Cl2 + H2O (Oxychlorination route to EDC)'. 'Often all the HCl generated in the cracking section is reused in producing EDC by oxychlorination. Plants that exhibit this characteristic and also do not export EDC are called “balanced”. The balanced process is the common process used as a Best Available Technology benchmark.' Summing the three gives the balanced overall reaction 2 C2H4 + Cl2 + 1/2 O2 -> 2 C2H3Cl + H2O, in which the HCl cancels - which is why VCM is modelled here from ethylene and chlorine directly and not from 1.583 kg of EDC (that route would double-count the chlorine, because half of it comes back as HCl)."
+    },
+    {
+      "source": "2007 - LCI chemicals - Althaus.pdf",
+      "where": "sec. 34.5.1 EDC by direct chlorination of ethylene",
+      "note": "'Yield on ethylene 96-98% / on chlorine 98%' - the midpoint 97 % and the 98 % are applied to the stoichiometric amounts."
+    },
+    {
+      "source": "bafu-2026: Ethylene dichloride, at plant [RER]",
+      "where": "cross-check of the transport convention",
+      "note": "The one BAFU unit process for the same chemistry carries 0.6 tkm rail + 0.1 tkm lorry per kg, chlorine, liquid, production mix 0.735 kg and ethylene 0.295 kg - it reproduces Althaus Tab. 34.3 exactly, which is the check that this way of reading the report gives back the dataset it built."
+    }
+  ],
+  "node": {
+    "name": "Vinyl chloride, at plant, disaggregated",
+    "unit": "kilogram",
+    "location": "RER",
+    "comment": "Balanced EDC/VCM process, per kg of vinyl chloride monomer. The waste-treatment services that the BAFU dataset already carries as explicit exchanges (Tab. 3.1 of Rajabihamedani 2025 documents how they were re-linked, but prints no amounts) are deliberately NOT part of this model: they were never collapsed away, so reconstructing them adds nothing, and copying their amounts out of the target would be reading the answer. Adding the whole Tab. 3.1 candidate list as free inputs was tested on Ethylene glycol - the fit drove all eleven to ~1e-12 and the agreement did not move by a single flow - so they are left out. Consequence for the harness number: the target's cumulative vector gets its long tail of trace flows from those disposal chains, while this model gets a different tail from the ecoinvent-v2 chains of its own inputs; the two tails cannot agree, which caps the 'share of all flows within 10 %' far below what the main flows achieve. This model terminates on Ethylene, average, at plant [RER], which is itself an ecoSpold type=2 dataset - the harness flags that, correctly. It is linked to the BAFU dataset rather than to the sibling rebuild so that this spec's check measures only this spec's evidence; re-point it with the input's `sandbox` field to chain the rebuilds together.",
+    "inputs": [
+      {
+        "name": "Ethylene, average, at plant",
+        "amount": 0.4627612001109809,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "balanced reaction 2 C2H4 + Cl2 + 1/2 O2 -> 2 C2H3Cl + H2O: M(C2H4)/M(C2H3Cl) = 28.054/62.498 = 0.4489 kg, / 0.97 yield on ethylene (Althaus sec. 34.5.1) = 0.4628 kg",
+        "code": "298abdac-f564-358c-95a3-7a43418d2671"
+      },
+      {
+        "name": "Chlorine, liquid, production mix, at plant",
+        "amount": 0.5788430127723272,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "same reaction: 0.5*M(Cl2)/M(C2H3Cl) = 35.453/62.498 = 0.5672 kg, / 0.98 yield on chlorine (Althaus sec. 34.5.1) = 0.5788 kg; the dataset BAFU's own Ethylene dichloride unit process uses",
+        "code": "8d838be7-6796-3fc1-98f9-24789691ed97"
+      },
+      {
+        "name": "Electricity, medium voltage, production ENTSO-E, at grid",
+        "amount": 0.0,
+        "unit": "kilowatt hour",
+        "location": "ENTSO-E",
+        "free": true,
+        "note": "named by the dataset ('electricity ... production'), quantified nowhere in the bundle -> calibrated, unbounded",
+        "code": "648e3bb3-7b98-46f8-9da1-f45627c309ef"
+      },
+      {
+        "name": "Steam, for chemical processes, at plant",
+        "amount": 0.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "free": true,
+        "note": "named by the dataset ('steam production'), quantified nowhere in the bundle -> calibrated, unbounded; EDC cracking to VCM is strongly endothermic",
+        "code": "ca51da0f-d926-3dbe-bc07-e0449bb7dcab"
+      },
+      {
+        "name": "Chemical plant, organics",
+        "amount": 0.0,
+        "unit": "unit",
+        "location": "RER",
+        "free": true,
+        "bounds": [
+          0.0,
+          4e-10
+        ],
+        "note": "Rajabihamedani 2025 sec. 3.6: 'For the implementation, the dataset \"Chemical plant, organics {RER}U\" is used. The quantity is the standard amount for production of chemicals of 4.0E-10 p.' The target carries exactly that, which is why 4.0E-10 is the upper bound here. It is the upper bound and not the amount because ESU added one chemical plant per *dataset*, i.e. one for a whole cradle-to-gate chain, while this model links to a precursor dataset that already carries its own 4.0E-10 - so a second one is a double count against the target's own convention. That matters more than its size suggests: of the 1790 flows in the cumulative vector of every one of these 14 datasets, 1316 get more than 90 % of their value from this single exchange (see scripts/plasticseurope_infrastructure_diagnostic.py), so doubling it doubles three quarters of the vector. The amount is therefore fitted between 0 and the report's 4.0E-10.",
+        "code": "13ed4fe0-7ba5-3b60-82b6-a63918ee814d"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "The dataset's own text names 'transportation of feedstock' but no report in the bundle gives a distance for it, so the amount is calibrated. The starting value is the ecoinvent v2 standard distance for precursor materials (Althaus 2007 sec. 34.6.7: 'As there is no information about the transport amounts, standard distances and means according to Frischknecht et al. (2007) are used for the different raw materials') = 0.6 tkm rail + 0.1 tkm lorry per kg of precursor, the ratio BAFU's Ethylene dichloride, Ethylene oxide, Ethyl benzene and PET-amorphous unit processes all carry; precursor mass here 1.042 kg. It is left free rather than fixed because the PlasticsEurope eco-profile accounts for its feedstock transport as elementary flows only - it carries no vehicle or track infrastructure - so an ecoinvent transport dataset adds a background the target cannot have, and the fit is the right place to decide how much of it belongs.",
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "The dataset's own text names 'transportation of feedstock' but no report in the bundle gives a distance for it, so the amount is calibrated. The starting value is the ecoinvent v2 standard distance for precursor materials (Althaus 2007 sec. 34.6.7: 'As there is no information about the transport amounts, standard distances and means according to Frischknecht et al. (2007) are used for the different raw materials') = 0.6 tkm rail + 0.1 tkm lorry per kg of precursor, the ratio BAFU's Ethylene dichloride, Ethylene oxide, Ethyl benzene and PET-amorphous unit processes all carry; precursor mass here 1.042 kg. It is left free rather than fixed because the PlasticsEurope eco-profile accounts for its feedstock transport as elementary flows only - it carries no vehicle or track infrastructure - so an ecoinvent transport dataset adds a background the target cannot have, and the fit is the right place to decide how much of it belongs.",
+        "code": "99f8a4b0-99b5-3130-924c-5de4c10b62ef"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

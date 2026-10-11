@@ -1,0 +1,182 @@
+{
+  "target": {
+    "code": "dd8175b2-cdc5-38ed-83d8-c4bbc93f8b71",
+    "name": "Grain maize IP, at feed mill",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Chapter 12 'Feedstuffs': Tab. 12.2 for the production-process shares, Tab. 12.3 (Maize row) for the transport distances and section 12.2.3 for the processing energy (35 kWh electricity and 4 m3 natural gas per tonne of feedstuff). Per 1 kg of feedstuff at the feed mill.; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI agricultural prod. systems - Nemecek.pdf",
+      "where": "pages 117-120 -> report-p117-120.txt",
+      "note": "report sha256 d01758706ebea797…, text sha256 06a09ba1811e375b…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/dd8175b2-cdc5-38ed-83d8-c4bbc93f8b71/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "c20ca9ec973c90e0fc1694320dd105e6a31fbd9c24168f4815d6dc51f4ef57c7",
+      "at": "2026-09-22T21:27:22Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "5a3c35ceda55f680696ba8da8350c6e355237e2781a58fba87931353472e84b5",
+      "at": "2026-09-22T21:27:23Z"
+    },
+    "gaps_reported_by_model": [
+      "The report prints no single unit-process table for 'grain maize IP, at feed mill'; the dataset has to be assembled from three separate tables plus a text sentence, so all amounts are derived rather than read off.",
+      "The drying of the maize is documented in chapter 13 (Tab. 13.3, energy per kg of evaporated water) and chapter 14, outside this excerpt, so no drying input is included.",
+      "No feed-mill infrastructure and no water use (the flour-mill figures of Salzgeber and Lörcher are explicitly NOT the ones used).",
+      "Packaging is explicitly excluded: 'The packaging materials are not considered in the inventories.'",
+      "Transport from the feed mill to the regional storehouse or user is explicitly excluded because the inventories refer to 'at feed mill'.",
+      "No direct emissions at all.",
+      "The sentence stating how the 4 m3 of natural gas was converted into final energy is cut off by the page break, so the MJ value rests on a standard heating value."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T21:27:24Z"
+  },
+  "node": {
+    "name": "Grain maize IP, at feed mill, disaggregated",
+    "unit": "kg",
+    "location": "CH",
+    "comment": "drafted from 2007 - LCI agricultural prod. systems - Nemecek.pdf pp. 117-120",
+    "inputs": [
+      {
+        "name": "Grain maize IP, at farm",
+        "amount": 1.0,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "Tab. 12.2: grain maize IP is 10 % import and 90 % CH production, and of the CH production 100 % is IP; the 'values used in ecoinvent data' column is IP 100 / extensive 0 / organic 0. Imports are explicitly approximated by Swiss IP production ('Production abroad is therefore approximated by integrated production ... with location in Switzerland'), so the whole kilogram is drawn from the IP-at-farm module. The table gives shares, not an amount, so 1 kg per kg is the implied value with no processing loss stated.",
+        "derivation": {
+          "evidence": "report-p117-120.txt",
+          "quote": " grain maize, IP                       10             90       100           -           0         100          0      0",
+          "raw_value": 1.0,
+          "raw_unit": "kg",
+          "per": "per kg grain maize IP, at feed mill",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "grain maize IP at farm",
+          "mapping_reason": "Exact name match: integrated-production grain maize at farm in Switzerland; the organic, seed, silage and other-cereal entries are different products.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "5b6f0481-157a-3d40-b181-6ed3b3ab35db"
+      },
+      {
+        "name": "Electricity, low voltage, at grid",
+        "amount": 0.035,
+        "unit": "kilowatt hour",
+        "location": "CH",
+        "note": "'For ecoinvent the values from InfoMil (1996) were used, namely an average of 35 kWh electricity and 4 m3 natural gas per tonne of feedstuff.' - the milling, dosing, mixing and pelleting step.",
+        "derivation": {
+          "evidence": "report-p117-120.txt",
+          "quote": "electricity and 4 m3 natural gas per tonne of feedstuff. The natural gas was converted into final energy",
+          "raw_value": 35.0,
+          "raw_unit": "kWh/t",
+          "per": "per kg grain maize IP, at feed mill",
+          "factor": 0.001,
+          "factor_unit": "kWh",
+          "factor_source": "1 t = 1000 kg",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electricity low voltage at grid",
+          "mapping_reason": "The Swiss low-voltage supply mix, the generic grid draw for a Swiss feed mill; the import and production-CH variants are specific routes.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "c4a92617-9f99-3d7b-95c0-15fb110b80ad"
+      },
+      {
+        "name": "Natural gas, burned in industrial furnace 1MW",
+        "amount": 0.144,
+        "unit": "megajoule",
+        "location": "CH",
+        "note": "Same sentence: 4 m3 natural gas per tonne. The sentence that says how the gas was converted into final energy is cut off at the page break, so a standard lower heating value of 36 MJ/m3 is used: 4 m3/t x 36 MJ/m3 / 1000 kg = 0.144 MJ/kg.",
+        "derivation": {
+          "evidence": "report-p117-120.txt",
+          "quote": "electricity and 4 m3 natural gas per tonne of feedstuff. The natural gas was converted into final energy",
+          "raw_value": 4.0,
+          "raw_unit": "m3/t",
+          "per": "per kg grain maize IP, at feed mill",
+          "factor": 0.036,
+          "factor_unit": "MJ",
+          "factor_source": "4 m3/t x 36 MJ/m3 (LHV of natural gas) / 1000 kg/t = 0.144 MJ/kg",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "natural gas burned in industrial furnace",
+          "mapping_reason": "'Natural gas, burned in industrial furnace 1MW' at CH is the fuel-combustion service in megajoules that matches a feed mill's gas use; candidate 3 is the heat delivered rather than the fuel burned, candidate 5 is the furnace hardware and candidate 6 a low-NOx RER variant.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "045e458d-5776-3c92-82ff-274665aaa4fc"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 0.09,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "Tab. 12.3, Maize row: 90 km by lorry in Switzerland. 1 kg over 90 km = 0.001 t x 90 km.",
+        "derivation": {
+          "evidence": "report-p117-120.txt",
+          "quote": "                   Maize                                      90           100            0             0",
+          "raw_value": 90.0,
+          "raw_unit": "km",
+          "per": "per kg grain maize IP, at feed mill",
+          "factor": 0.001,
+          "factor_unit": "tkm",
+          "factor_source": "1 kg x 90 km = 0.09 tkm",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry 28t",
+          "mapping_reason": "'Transport, freight, lorry, fleet average' at CH is the generic ton-kilometre freight service; the 'Operation, lorry ...' candidates are vehicle-kilometres and the disposal/maintenance ones life-cycle stages of the vehicle. This line is the 90 km of Swiss lorry transport.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "cedd6b69-4829-358e-9ea2-f280e8ac03cb"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 0.1,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "Tab. 12.3, Maize row: 100 km by lorry in Europe for the 10 % imported share. Barge and overseas ship are 0 for maize.",
+        "derivation": {
+          "evidence": "report-p117-120.txt",
+          "quote": "                   Maize                                      90           100            0             0",
+          "raw_value": 100.0,
+          "raw_unit": "km",
+          "per": "per kg grain maize IP, at feed mill",
+          "factor": 0.001,
+          "factor_unit": "tkm",
+          "factor_source": "1 kg x 100 km = 0.10 tkm",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry 28t",
+          "mapping_reason": "Same dataset as the Swiss leg: no European lorry class is offered in the candidate list, so the CH fleet average is used for the 100 km European leg as well; the 'Operation, lorry ...' candidates are in vehicle-kilometres.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "cedd6b69-4829-358e-9ea2-f280e8ac03cb"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

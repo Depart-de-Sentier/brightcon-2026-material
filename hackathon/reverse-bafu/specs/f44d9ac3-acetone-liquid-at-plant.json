@@ -1,0 +1,106 @@
+{
+  "target": {
+    "code": "f44d9ac3-f0cb-311d-bdba-3fd3946b573c",
+    "name": "Acetone, liquid, at plant",
+    "location": "RER"
+  },
+  "strategy": {
+    "code": "S3",
+    "label": "transcribed cumene requirement, mass-allocated between acetone and its phenol co-product, utilities from the BAFU chemicals template and calibrated",
+    "note": "Labelled S3, not S1, although the cumene figure is a straight transcription - because the number that goes into the node is not the number the report prints, and that difference is the point of this spec. Chapter 3 of 2007 - LCI chemicals - Althaus.pdf, sec. 1.5.2, states: 'Wells (1999) indicates that 2300 kg of cumene are required to produce 1000 kg of acetone with a yield of 90%. The production of the co-product phenol is not included in this figure.' Those 2300 kg are the *unallocated* requirement - 120.19/58.08 = 2.07 kg of cumene per kg of acetone at full conversion, divided by the stated 90 % yield, is 2.30 kg exactly - so charging them all to the acetone gives the phenol a free ride, and the phenol is the heavier product of the two (1.62 kg per kg of acetone). This spec therefore applies mass allocation: Cumene cleavage: C6H5C(CH3)2OOH -> C6H5OH + CH3COCH3, i.e. one phenol (94.113) per acetone (58.080), so the printed 2.300 kg of cumene per kg of acetone produces 1.620 kg of phenol alongside it. Mass allocation between the two co-products gives acetone 58.080/(58.080+94.113) = 38.16 % of the cumene, i.e. 2.300 x 0.38162 = 0.87772 kg per kg of acetone. Both numbers in that product are printed: 2300 kg per 1000 kg is Wells (1999) as quoted by Althaus sec. 1.5.2, and the molar masses are standard. Molar masses from the IUPAC 2021 standard atomic weights: H 1.008, C 12.011, N 14.007, O 15.999, S 32.06, Cl 35.45, Na 22.990. A companion spec, specs/f44d9ac3-acetone-liquid-at-plant.draft.json, is the unallocated transcription produced by the LLM route, and the two are meant to be read together. Disclosure, because it matters for how much weight the agreement figures deserve: the unallocated spec was built and checked first, and its flow diff showed its cumulative fossil CO2 at 4.06 kg against the target's 1.79 kg, a factor 2.3 - which is what prompted writing the allocated variant. The allocation is a modelling decision argued from the reaction equation and stated here in full, not a bound tuned until the score improved; no amount in this spec is free except the utilities, which carry no allocation question. Known gaps: the sulphuric acid of the cleavage step, named by the chapter and never quantified; the oxygen/air of the oxidation; and the second route the chapter describes (dehydrogenation of isopropanol), which the chapter says the PlasticsEurope data does not include."
+  },
+  "evidence": [
+    {
+      "source": "BAFU-2026 ecoSpold metadata of the target",
+      "where": "processInformation/technology",
+      "note": "quoted in the strategy note; it is the structural evidence for the input list"
+    },
+    {
+      "source": "locate step of the reverse-bafu route",
+      "where": "specs/evidence/f44d9ac3-f0cb-311d-bdba-3fd3946b573c/response-0-locate.json",
+      "note": "specs/evidence/f44d9ac3-f0cb-311d-bdba-3fd3946b573c/response-0-locate.json - no report in the BAFU-2026 documentation bundle prints a unit-process inventory for this dataset. The cited report is only the 17-page front matter of ecoinvent report No. 11; all 114 bundled reports were converted with pdftotext and searched."
+    },
+    {
+      "source": "2007 - LCI chemicals - Althaus.pdf",
+      "where": "chapter 3, sec. 3.5.1 / 1.5.2 (pp. 98-99 of the PDF)",
+      "note": "'Wells (1999) indicates that 2300 kg of cumene are required to produce 1000 kg of acetone with a yield of 90%. The production of the co-product phenol is not included in this figure.'"
+    },
+    {
+      "source": "reaction stoichiometry",
+      "where": "the cleavage equation printed in the same section, with molar masses",
+      "note": "Cumene cleavage: C6H5C(CH3)2OOH -> C6H5OH + CH3COCH3, i.e. one phenol (94.113) per acetone (58.080), so the printed 2.300 kg of cumene per kg of acetone produces 1.620 kg of phenol alongside it. Mass allocation between the two co-products gives acetone 58.080/(58.080+94.113) = 38.16 % of the cumene, i.e. 2.300 x 0.38162 = 0.87772 kg per kg of acetone. Both numbers in that product are printed: 2300 kg per 1000 kg is Wells (1999) as quoted by Althaus sec. 1.5.2, and the molar masses are standard. Molar masses from the IUPAC 2021 standard atomic weights: H 1.008, C 12.011, N 14.007, O 15.999, S 32.06, Cl 35.45, Na 22.990."
+    },
+    {
+      "source": "BAFU-2026 itself, as a named template",
+      "where": "Cumene / Ethyl benzene / Phosgene / Aniline, at plant [RER]",
+      "note": "BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from."
+    }
+  ],
+  "node": {
+    "name": "Acetone, liquid, at plant, disaggregated",
+    "unit": "kilogram",
+    "location": "RER",
+    "comment": "Cumene oxidation and cleavage, per kg of acetone, with the cumene mass-allocated between acetone and phenol. The eight waste-treatment services that the BAFU dataset already carries as explicit exchanges are deliberately not part of this model - they were never collapsed away - following the committed PlasticsEurope specs. The consequence, measured in results/checks/, is that the target's cumulative vector gets a long tail of flows from those disposal chains that no model omitting them can reach.",
+    "inputs": [
+      {
+        "name": "Cumene, at plant",
+        "amount": 0.87772,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "Cumene cleavage: C6H5C(CH3)2OOH -> C6H5OH + CH3COCH3, i.e. one phenol (94.113) per acetone (58.080), so the printed 2.300 kg of cumene per kg of acetone produces 1.620 kg of phenol alongside it. Mass allocation between the two co-products gives acetone 58.080/(58.080+94.113) = 38.16 % of the cumene, i.e. 2.300 x 0.38162 = 0.87772 kg per kg of acetone. Both numbers in that product are printed: 2300 kg per 1000 kg is Wells (1999) as quoted by Althaus sec. 1.5.2, and the molar masses are standard. Molar masses from the IUPAC 2021 standard atomic weights: H 1.008, C 12.011, N 14.007, O 15.999, S 32.06, Cl 35.45, Na 22.990.",
+        "code": "01c79c63-f90e-3a8c-b052-7a915fd11ffe"
+      },
+      {
+        "name": "Electricity, medium voltage, production ENTSO-E, at grid",
+        "amount": 0.0,
+        "unit": "kilowatt hour",
+        "location": "ENTSO-E",
+        "free": true,
+        "note": "Starting value 0.333 kWh/kg from the BAFU chemicals template; free, because no report in the bundle prints an electricity figure for this process. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "648e3bb3-7b98-46f8-9da1-f45627c309ef"
+      },
+      {
+        "name": "Heat, natural gas, at industrial furnace 1MW",
+        "amount": 0.0,
+        "unit": "megajoule",
+        "location": "CH",
+        "free": true,
+        "note": "Starting value 2.0 MJ/kg from the BAFU chemicals template; free, because no report in the bundle prints a heat figure for this process. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "2fcda415-e506-38d9-9c3e-8ce2c2e7c8f2"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "0.6 tkm per kg of precursor x 0.8777 kg of precursor = the template's standard 600 km rail leg. Free: the PlasticsEurope eco-profile behind this dataset accounts for feedstock transport as elementary flows only and carries no vehicle or track infrastructure, so an ecoinvent transport dataset adds a background the target cannot have. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "0.1 tkm per kg of precursor x 0.8777 kg of precursor = the template's standard 100 km lorry leg. Free, same reason as the rail line. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "99f8a4b0-99b5-3130-924c-5de4c10b62ef"
+      },
+      {
+        "name": "Chemical plant, organics",
+        "amount": 0.0,
+        "unit": "unit",
+        "location": "RER",
+        "free": true,
+        "bounds": [
+          0.0,
+          4e-10
+        ],
+        "note": "Free between zero and the template value. 4.0E-10 units is what every ecoinvent-v2 organic chemical in BAFU carries and is the upper bound; zero is the lower bound because this target declares no infrastructure exchange at all - its entire technosphere is waste-treatment services - so an eco-profile that never counted a plant is a real possibility. Both bounds come from those two facts and were set before any score was computed. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "13ed4fe0-7ba5-3b60-82b6-a63918ee814d"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

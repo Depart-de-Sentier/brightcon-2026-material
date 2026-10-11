@@ -1,0 +1,181 @@
+You are locating the inventory table of one dataset inside a life-cycle-inventory report.
+
+Dataset: `Electronic components, washing machine, at plant` [CH], 1 p, BAFU category private consumption / household devices.
+Metadata: includedProcesses: This process describes the passive elements and printed wiring boards and integrated circuits of a washing machine. · technology: Electronic components for an actual washing machine for a household. · comment: Thie process is based on measurements of the surface of printed wiring boards as well as on the quantity of integrated circuits and on the measurements and amount of passive elements.;
+UUID: 01b38117-37b0-311d-8609-6f9286d87759
+
+Report: `2007 - LCI electric and electronic equipment - Hischier.pdf` (200 PDF pages). Below is every table and figure caption found in it, with the PDF page it appears on (not the printed page number). The report may be in German, French or English; the dataset name is English — match on meaning (e.g. "gebrannter Ölschiefer" = burnt shale, "Gipsfaserplatte" = gypsum fibre board).
+
+- p.5: Fig. 0.1 Overall integration of the electronics sector into the existing framework of ecoinvent (left), and detailed pro-
+- p.5: Fig. 0.1. The first of these three levels – “devices/use” – covers the datasets that present an added
+- p.13: Fig. 1.1 Various electronic components (picture from Wikipedia)
+- p.15: Fig. 2.1 The different parts of an electronic component plant
+- p.16: Tab. 2.1 ecoinvent meta information of the datasets of the electronic component production infrastructure (plant,
+- p.17: Tab. 2.1 (Cont.) ecoinvent meta information of the datasets of the electronic component production infrastructure
+- p.20: Tab. 2.2 Dataset “electronic component production plant”
+- p.21: Tab. 2.2 (Cont.) Dataset “electronic component production plant”
+- p.22: Fig. 2.2 WaferMark SigmaClean 300 FOUR (left), Drill-Star 800 (center) and WaferTrim M350 (right) – three examples
+- p.24: Tab. 2.3 Dataset “electronic component machinery, unspecified”
+- p.25: Tab. 2.3 (Cont.) Dataset “electronic component machinery, unspecified”
+- p.26: Fig. 2.3 1kV low voltage cable with copper wire sheath, type GKN (picture taken from Brugg Cables (1996))
+- p.27: Tab. 2.4 Dataset “cable, three-conductor cable, at plant”
+- p.28: Fig. 2.4 metallic cable (left) and metal-free glasfibre cable (right) (picture taken from Dätwyler (2006a) and Dätwyler
+- p.29: Tab. 2.5 Dataset “cable, data cable in infrastructure, at plant”
+- p.31: Tab. 3.1 Transistor count on a chip over the years – the Moore’s law (Source: Intel Corporation in van Zant (2004))
+- p.32: Fig. 3.1 Kurzweil’s expansion of Moore’s Law shows that due to paradigm shifts the underlying trends holds true
+- p.33: Fig. 3.2 Definition of DRAM Pitches (left) and Lithography DRAM half –pitch size (Source: SIA (2005) and van Zant
+- p.33: Tab. 3.2 Projection of wafer and chip parameters by SIA (Source: van Zant (2004))
+- p.34: Fig. 3.3 Wafer size life cycles (source: Future Fab International in van Zant (2004))
+- p.35: Fig. 3.4 Stages of semiconductor production (Source: van Zant (2004))
+- p.36: Fig. 3.5 Czochralski crystal-growing system (source: van Zant (2004))
+- p.37: Tab. 3.3 Typical 200-mm wafer specification (source: van Zant (2004))
+- p.38: Fig. 3.6 Basic wafer fabrication operations (source: van Zant (2004))
+- p.39: Fig. 3.7 The ten-step photomasking process (source: van Zant (2004))
+- p.40: Fig. 3.8 Modern chip structure (source: van Zant (2004))
+- p.42: Fig. 3.9 Die attach area of package (source: van Zant 2004)
+- p.44: Fig. 3.10 Logic circuit types (source: van Zant (2004))
+- p.45: Fig. 3.11 Memory circuit types (source: van Zant (2004))
+- p.48: Fig. 3.12 Manufacturing stages from raw material to packaged chip (source: Plepys (2004))
+- p.50: Fig. 3.13 shows the schematic setup of input and output flows regarding wafer fabrication processes.
+- p.50: Fig. 3.13 Input/output scheme of the wafer fabrication process (based on Williams et al. (2002) and Schischke et al.
+- p.50: Tab. 3.4 shows producer information for input process data and the chosen values applied to the
+- p.51: Tab. 3.4 Specific input data according to different sources and values taken for ecoinvent
+- p.51: Tab. 3.5. ecoinvent report No. 18 / part I - 39 -
+- p.52: Fig. 3.14 a+b Sustainability Performance Metrics Tables for AMD’s wafer fabrication site at Austin (USA) for the
+- p.52: Tab. 3.5 Calculations and ratios to derive values for emissions and other indicators in wafer fabrication
+- p.53: Tab. 3.6 Sources, values and calculations of emission data for the wafer fabrication dataset
+- p.54: Tab. 3.7 Composition of the waste water effluent for the process “Wafer fabrication” (Source: ST Microelectronics
+- p.55: Tab. 3.8 ecoinvent meta information of the wafer fabrication dataset
+- p.56: Tab. 3.9 Life cycle inventory for “wafer, fabricated, for integrated circuit” and their representation in the ecoinvent database (PART 1)
+- p.57: Tab. 3.9 Life cycle inventory for “wafer, fabricated, for integrated circuit” and their representation in the ecoinvent database (PART 2)
+- p.58: Tab. 3.9 Life cycle inventory for “wafer, fabricated, for integrated circuit” and their representation in the ecoinvent database (PART 3)
+- p.59: Tab. 3.9 Life cycle inventory for “wafer, fabricated, for integrated circuit” and their representation in the ecoinvent database (PART 4)
+- p.60: Tab. 3.9 Life cycle inventory for “wafer, fabricated, for integrated circuit” and their representation in the ecoinvent database (PART 5)
+- p.61: Tab. 3.9 Life cycle inventory for “wafer, fabricated, for integrated circuit” and their representation in the ecoinvent database (PART 6)
+- p.62: Tab. 3.10 shows, front-end and back-end chip manufacturing happens very often far away from each
+- p.63: Tab. 3.10 Front-end and back-end wafer fabrication sites of three major manufacturers in the world
+- p.64: Fig. 3.15 Chemical content of a Philips SOT514 Plastic Ball Grid Array Package - Microchip (source: Philips Semicon-
+- p.64: Fig. 3.16 Plastic Ball Grid Array Package PBGA256 of ST Microelectronics as another example for a logic type micro-
+- p.65: Tab. 3.11 Package component percentage shares of a logic type Integrated Circuit
+- p.66: Tab. 3.12 ecoinvent meta information for the “integrated circuit, logic type” dataset
+- p.67: Tab. 3.13 Flows for “integrated circuit, IC, logic type, at plant” and their representation in the ecoinvent database (PART 1)
+- p.68: Tab. 3.13 Flows for “integrated circuit, IC, logic type, at plant” and their representation in the ecoinvent database (PART 2)
+- p.69: Fig. 3.17 Cross section of a Plastic Leaded Chip Carrier (source: Schischke et al. (2002))
+- p.70: Fig. 3.18 Plastic Leaded Chip Carrier PLCC44 of ST Microelectronics as example for a memory type microchip
+- p.71: Tab. 3.14 ecoinvent meta information for the “integrated circuit, memory type,” dataset
+- p.72: Tab. 3.15 Flows for “integrated circuit, IC, memory type, at plant” and their representation in the ecoinvent database (PART 1)
+- p.73: Tab. 3.15 Flows for “integrated circuit, IC, memory type, at plant” and their representation in the ecoinvent database (PART 2)
+- p.75: Fig. 4.1 Different types of transistors (picture from http://www.xcvcorp.com/).
+- p.76: Fig. 4.2 Scheme of the representation of electronic components „Transistor” in the ecoinvent database
+- p.77: Tab. 4.1 ecoinvent meta information of the transistor’s datasets.
+- p.78: Tab. 4.1 (Cont.) ecoinvent meta information of the transistor’s datasets.
+- p.81: Tab. 4.2 Material specifications of SMD type transistors (data sources: see text)
+- p.83: Tab. 4.3 Material specifications of small size wired type transistors (data sources: see text)
+- p.84: Tab. 4.4 Material specifications of big size wired type transistors (data sources: see text)
+- p.85: Tab. 4.5 Unit process inventory of the dataset “Production efforts, transistors (GLO)”
+- p.86: Tab. 4.5 (Cont.) Unit process inventory of the dataset “Production efforts, transistors (GLO)”
+- p.87: Tab. 4.6 Unit process inventory of the dataset “transistor, SMD type, surface mounting, at plant (GLO)”
+- p.88: Tab. 4.7 Unit process inventory of the dataset “transistor, wired, small size, through-hole mounting, at plant (GLO)”
+- p.89: Tab. 4.8 Unit process inventory of the dataset “transistor, wired, big size, through-hole mounting, at plant (GLO)”
+- p.90: Tab. 4.8 (Cont.) Unit process inventory of the dataset “transistor, wired, big size, through-hole mounting, at plant (GLO)”
+- p.90: Tab. 4.9 Unit process inventory of the dataset “transistor, unspecified, at plant (GLO)”
+- p.91: Fig. 5.1 Different types of diodes (taken from Wikipedia)
+- p.92: Fig. 5.2 Scheme of the representation of electronic components „diodes” (incl. LED) in the ecoinvent database
+- p.93: Tab. 5.1 Ecoinvent meta information for the processes for diodes within the database.
+- p.94: Tab. 5.1 (Cont.) Ecoinvent meta information for the processes for diodes within the database.
+- p.96: Tab. 5.2 Auxiliary input into the production of diodes (incl. wafer production) per kg of diodes – according to
+- p.97: Tab. 5.3 emissions into air from the production of diodes (incl. wafer production) per kg of diodes – according to
+- p.97: Tab. 5.4 emissions into water from the production of diodes (incl. wafer production) per kg of diodes – according
+- p.99: Tab. 5.5 Material specifications of SMD type glass diodes (data sources: see text)
+- p.100: Tab. 5.6 Material specifications of through-hole mounted diodes (data sources: see text)
+- p.102: Tab. 5.7 Unit process inventory of the dataset “Production efforts, diodess (GLO)”
+- p.103: Tab. 5.7 (Cont.) Unit process inventory of the dataset “Production efforts, diodess (GLO)”
+- p.105: Tab. 5.8 Unit process inventory of the dataset “Diode, glass, SMD type, surface mounting, at plant (GLO)”
+- p.106: Tab. 5.9 Unit process inventory of the dataset “Diode, glass, through-hole mounting, at plant (GLO)”
+- p.107: Tab. 5.10 Unit process inventory of the dataset “light emitting diode, LED, at plant (GLO)”
+- p.108: Tab. 5.11 Unit process inventory of the dataset “Diode, unspecified, at plant (GLO)”
+- p.109: Fig. 6.1 Capacitors: SMD ceramic (top left); SMD tantalum (bottom left); through-hole tantalum (top right); through-
+- p.110: Fig. 6.2 Various types of capacitors (Picture taken from Wikipedia ).
+- p.111: Fig. 6.3 Scheme of the representation of the electronic components „Capacitors“ in the ecoinvent database
+- p.112: Tab. 6.1 ecoinvent meta information for the processes for capacitors within the database.
+- p.113: Tab. 6.1 (Cont.) ecoinvent meta information for the processes for capacitors within the database.
+- p.117: Tab. 6.2. In this table the respective ecoinvent datasets used are also shown.
+- p.118: Tab. 6.2 Material specifications of film-type capacitors (data sources: see text)
+- p.119: Tab. 6.3. In this table the respective ecoinvent datasets used are also shown.
+- p.119: Tab. 6.3 Material specifications of SMD capacitors (data sources: see text)
+- p.120: Tab. 6.4. In this table the respective ecoinvent datasets used are also shown.
+- p.121: Tab. 6.4 Material specifications of small and big electrolyt capacitors (data sources: see text)
+- p.122: Tab. 6.5 Material specifications of tantalum (ceramic) capacitors (data sources: see text)
+- p.124: Tab. 6.6 Unit process inventory of the dataset “Production efforts, capacitor (GLO)”
+- p.125: Tab. 6.6 (Cont.) Unit process inventory of the dataset “Production efforts, capacitor (GLO)”
+- p.126: Tab. 6.7 Unit process inventory of the dataset “Capacitor, film, through-hole mounting, at plant (GLO)”
+- p.127: Tab. 6.7 (Cont.) Unit process inventory of the dataset “Capacitor, SMD type, surface mounting, at plant (GLO)”
+- p.128: Tab. 6.8 Unit process inventory of the dataset “Capacitor, SMD type, surface mounting, at plant (GLO)”
+- p.129: Tab. 6.9 Unit process inventory of the dataset “Capacitor, electrolyte type, < 2 cm height, at plant (GLO)”
+- p.130: Tab. 6.9 (Cont.) Unit process inventory of the dataset “Capacitor, electrolyte type, < 2 cm height, at plant (GLO)”
+- p.131: Tab. 6.10 Unit process inventory of the dataset “Capacitor, electrolyte type, > 2 cm height, at plant (GLO)”
+- p.132: Tab. 6.10 (Cont.) Unit process inventory of the dataset “Capacitor, electrolyte type, > 2 cm height, at plant (GLO)”
+- p.133: Tab. 6.11 Unit process inventory of the dataset “Capacitor, Tantalum-, through-hole mounting, at plant (GLO)”
+- p.134: Tab. 6.12 Unit process inventory of the dataset “Capacitor, unspecified, at plant (GLO)”
+- p.135: Fig. 7.1 Some forms of Inductors (Picture taken from www.isomatic.co.uk).
+- p.136: Fig. 7.2 Scheme of the representation of the electronic components „Inductors“ in the ecoinvent database
+- p.137: Tab. 7.1 Ecoinvent meta information for the processes for inductors within the database.
+- p.138: Tab. 7.1 (Cont.) Ecoinvent meta information for the processes for inductors within the database.
+- p.141: Tab. 7.2. In this table the respective ecoinvent datasets used are also shown.
+- p.142: Tab. 7.2 Material specifications of ring core chokes resp. inductors (data sources: see text)
+- p.143: Tab. 7.3 Material specifications of miniature RF chip inductors, MRFI (data sources: see text)
+- p.144: Tab. 7.4 Material specifications of low value multilayer chip inductors, LMCI (data sources: see text)
+- p.145: Tab. 7.5 Unit process inventory of the dataset “Production efforts, inductor (GLO)”
+- p.146: Tab. 7.5 (Cont.) Unit process inventory of the dataset “Production efforts, inductor (GLO)”
+- p.147: Tab. 7.6 Unit process inventory of the dataset “Inductor, ring core choke type, at plant (GLO)”
+- p.148: Tab. 7.7 Unit process inventory of the dataset “inductor, miniature RF chip type, MRFI, at plant, at plant (GLO)”
+- p.149: Tab. 7.8 Unit process inventory of the dataset “inductor, low value multilayer chip type, LMCI, at plant (GLO)”
+- p.150: Tab. 7.9 Unit process inventory of the dataset “Inductor, unspecified, at plant (GLO)”
+- p.151: Fig. 8.1 Different types of resistors (left – picture taken from Germes Online (2007)) and typical potentiometers (right
+- p.153: Fig. 8.2 Scheme of the representation of electronic components „resistor” and “potentiometer” in the ecoinvent da-
+- p.154: Tab. 8.1 Ecoinvent meta information for the processes for resistors within the database.
+- p.155: Tab. 8.1 (Cont.) Ecoinvent meta information for the processes for resistors within the database.
+- p.158: Tab. 8.2. In this table the respective ecoinvent datasets used are also shown.
+- p.159: Tab. 8.2 Material specifications of SMD type resistors (data sources: see text)
+- p.160: Tab. 8.3 Material specifications of metal film type resistors (data sources: see text)
+- p.160: Tab. 8.8 (on page 156).
+- p.161: Tab. 8.4 Material specifications of wirewound type resistors (data sources: see text)
+- p.161: Tab. 8.9 (on page 158).
+- p.162: Tab. 8.5 Material specifications of potentiometers in this database (data sources: see text)
+- p.164: Tab. 8.6 Unit process inventory of the dataset “Production efforts, resistor (GLO)”
+- p.165: Tab. 8.6 (Cont.) Unit process inventory of the dataset “Production efforts, resistor (GLO)”
+- p.166: Tab. 8.7 Unit process inventory of the dataset “Resistor, SMD type, surface mounting, at plant (GLO)”
+- p.167: Tab. 8.7 (Cont.) Unit process inventory of the dataset “Resistor, SMD type, surface mounting, at plant (GLO)”
+- p.168: Tab. 8.8 Unit process inventory of the dataset “Resistor, metal film type, through-hole mounting, at plant (GLO)”
+- p.169: Tab. 8.8 (Cont.) Unit process inventory of the dataset “Resistor, metal film type, through-hole mounting, at plant (GLO)”
+- p.170: Tab. 8.9 Unit process inventory of the dataset “Resistor, wirewound, through-hole mounting, at plant (GLO)”
+- p.171: Tab. 8.10 Unit process inventory of the dataset “Potentiometer, unspecified, at plant (GLO)”
+- p.172: Tab. 8.11 Unit process inventory of the dataset “Resistor, unspecified, at plant (GLO)”
+- p.173: Fig. 9.1 Impression of the very different size (and forms) of current transformers (Picture from www.big-bit.com
+- p.174: Tab. 9.1 Ecoinvent meta information for the processes for transformers within the database.
+- p.175: Tab. 9.2 Material specifications of low volage use transformers in this database (data sources: see text)
+- p.176: Tab. 9.4 (on page 166).
+- p.176: Tab. 9.3 Material specifications of high volage use transformers in this database (data sources: see text)
+- p.178: Tab. 9.4 Unit process inventory of the dataset “Transformer, low voltage use, at plant (GLO)”
+- p.179: Tab. 9.5 Unit process inventory of the dataset “Transformer, high voltage use, at plant (GLO)”
+- p.181: Tab. 10.1 Ecoinvent meta information for the processes for transformers within the database.
+- p.182: Tab. 10.1 (Cont.) Ecoinvent meta information for the processes for transformers within the database.
+- p.187: Tab. 10.2 Unit process inventory of the dataset “Connector, clamp connection, at plant (GLO)”
+- p.188: Tab. 10.3 Unit process inventory of the dataset “connector, PCI bus, at plant (GLO)”
+- p.189: Tab. 10.4 Unit process inventory of the dataset “Connector, computer, peripherical type, at plant (GLO)”
+- p.190: Tab. 10.5 Unit process inventory of the dataset “Switch, toggle type, at plant (GLO)”
+- p.191: Tab. 11.1 Data used as starting point for the calculation of the unspecified datasets for electronic components
+- p.192: Tab. 11.2 Ecoinvent meta information for the processes for transformers within the database.
+- p.193: Tab. 11.3 Composition of the unspecified dataset for passive components (data represent average composition of
+- p.194: Tab. 11.4 Composition of the unspecified dataset for active components (data represent average composition of PWB
+- p.195: Tab. 11.5 Unit process inventory of the dataset “electronic component, passive, unspecified, at plant (GLO)”
+- p.196: Tab. 11.6 Unit process inventory of the dataset “electronic component, active, unspecified, at plant (GLO)”
+- p.196: Tab. 11.7 Unit process inventory of the dataset “electronic component, unspecified, at plant (GLO)”
+
+Rules:
+1. Choose the caption(s) that hold the unit-process inventory of this dataset — inputs, energy, emissions, transport — not impact results, not a diagram. Prefer "Sachbilanz" / "inventory" / "LCI" tables.
+2. Return the PDF page range that covers those tables plus the paragraph introducing them: `first_page`, `last_page` (at most 4 pages). Tables can run onto the next page.
+3. If no caption fits (the report does not document this dataset's inventory, or only as a result), return `found` = false and say why in `reason`.
+4. `reason` names the caption(s) you chose and why.
+
+Return only the JSON object described by the schema.

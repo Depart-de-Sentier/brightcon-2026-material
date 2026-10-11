@@ -1,0 +1,203 @@
+{
+  "target": {
+    "code": "7110ecd2-1a49-3478-ba36-5d8d063afab6",
+    "name": "Methane, 96 vol-%, from biogas, at purification",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Figure 12 'Unit process raw data of biogas purification processes', 4th value column 'methane, 96 vol-%, from biogas, at purification' [CH], per 1 Nm3; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2022 - LCI biogas and biomethane processes - Kaegi.pdf",
+      "where": "pages 19-21 -> report-p19-21.txt",
+      "note": "report sha256 a07e312d1f9643c4…, text sha256 bd95220f6c09aa75…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/7110ecd2-1a49-3478-ba36-5d8d063afab6/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "27dbfd948687490581387b2fde160b87ef4d7b4aaa5401e1add1027e93cdfb40",
+      "at": "2026-09-22T21:28:31Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "07dc2adb2c4bf5da1b4a51316ef7d25c1eae64d1033e790a834142a5e62b786c",
+      "at": "2026-09-22T21:28:32Z"
+    },
+    "gaps_reported_by_model": [
+      "This column is a MIX dataset: it has no energy, no chemicals and no direct emissions of its own - those sit in the three purification columns it draws on and in the three biogas datasets.",
+      "The column assignment had to be read from the numeric alignment because the table is wide and the header row is split; the purification shares summing to exactly 1.000 and the biogas shares to 1.67 Nm3/Nm3 support the reading.",
+      "No distribution or compression of the methane."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T21:28:33Z"
+  },
+  "node": {
+    "name": "Methane, 96 vol-%, from biogas, at purification, disaggregated",
+    "unit": "m3",
+    "location": "CH",
+    "comment": "drafted from 2022 - LCI biogas and biomethane processes - Kaegi.pdf pp. 19-21",
+    "inputs": [
+      {
+        "name": "Biogas, from sewage sludge, at storage",
+        "amount": 1.02,
+        "unit": "Nm3",
+        "location": "CH",
+        "note": "4th column of Fig. 12; the three biogas inputs sum to 1.67 Nm3 of raw biogas per Nm3 of methane",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "                                                             CH             0                    Nm3                                                                                                     1.02E+0               1            1.21                     (1,1,1,1,1,5,BU:1.05); ;",
+          "raw_value": 1.02,
+          "raw_unit": "Nm3",
+          "per": "per Nm3 methane, 96 vol-%, from biogas, at purification",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "biogas from sewage sludge at storage",
+          "mapping_reason": "The only candidate and an exact name and unit match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "48fcf676-a615-3322-92c3-446ec829a70c"
+      },
+      {
+        "name": "Biogas, mix, at agricultural co-fermentation, covered",
+        "amount": 0.0267,
+        "unit": "Nm3",
+        "location": "CH",
+        "note": "4th column",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "                                                             CH             0                    Nm3                                                                                                     2.67E-2               1            1.21                     (1,1,1,1,1,5,BU:1.05); ;",
+          "raw_value": 0.0267,
+          "raw_unit": "Nm3",
+          "per": "per Nm3 methane, 96 vol-%, from biogas, at purification",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "biogas mix agricultural co-fermentation covered",
+          "mapping_reason": "Exact name match; the slurry, biowaste and fat/oil entries are the single-substrate variants rather than the mix.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "695524cc-cb57-3a31-bef1-08a9b012decc"
+      },
+      {
+        "name": "Biogas, from biowaste, at storage",
+        "amount": 0.625,
+        "unit": "Nm3",
+        "location": "CH",
+        "note": "4th column",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "                biogas, from biowaste, at storage            CH             0                    Nm3                                                                                                     6.25E-1               1            1.21                     (1,1,1,1,1,5,BU:1.05); ;",
+          "raw_value": 0.625,
+          "raw_unit": "Nm3",
+          "per": "per Nm3 methane, 96 vol-%, from biogas, at purification",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "biogas from biowaste at storage",
+          "mapping_reason": "Exact name match; candidate 1 is the same product under economic allocation and the rest are other substrates.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "cc46cf85-395b-3c22-b795-f91b7643e2ba"
+      },
+      {
+        "name": "Biogas purification, to methane, 99 vol-%, membrane technology process",
+        "amount": 0.265,
+        "unit": "Nm3",
+        "location": "CH",
+        "note": "4th column; the three purification shares sum to exactly 1.000 Nm3",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "                                                             CH             0                    Nm3                                                                                                     2.65E-1               1            1.21                     (1,1,1,1,1,5,BU:1.05); ;",
+          "raw_value": 0.265,
+          "raw_unit": "Nm3",
+          "per": "per Nm3 methane, 96 vol-%, from biogas, at purification",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "biogas purification membrane technology",
+          "mapping_reason": "The only candidate and an exact name match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "e5565e65-b8bd-3f37-8db8-0aea66514e9d"
+      },
+      {
+        "name": "Biogas purification, to methane, 99 vol-%, amino washing process",
+        "amount": 0.578,
+        "unit": "Nm3",
+        "location": "CH",
+        "note": "4th column",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "                                                             CH             0                    Nm3                                                                                                     5.78E-1               1            1.21                     (1,1,1,1,1,5,BU:1.05); ;",
+          "raw_value": 0.578,
+          "raw_unit": "Nm3",
+          "per": "per Nm3 methane, 96 vol-%, from biogas, at purification",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "biogas purification amino washing",
+          "mapping_reason": "Exact name match; the glycol washing process reaches 97 vol-% and is a different technology.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a95731d9-5ad8-3f5c-aafa-e3f98a6f8b10"
+      },
+      {
+        "name": "Biogas purification, to methane, 96 vol-%, pressure swing adsorption",
+        "amount": 0.157,
+        "unit": "Nm3",
+        "location": "CH",
+        "note": "4th column",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "                                                             CH             0                    Nm3                                                                                                     1.57E-1               1            1.21                     (1,1,1,1,1,5,BU:1.05); ;",
+          "raw_value": 0.157,
+          "raw_unit": "Nm3",
+          "per": "per Nm3 methane, 96 vol-%, from biogas, at purification",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "biogas purification pressure swing adsorption",
+          "mapping_reason": "The only candidate and an exact name match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "3b436c80-d1b8-3deb-a396-3db92c790de5"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

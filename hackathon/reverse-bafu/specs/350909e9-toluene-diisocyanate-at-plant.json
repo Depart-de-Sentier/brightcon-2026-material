@@ -1,0 +1,125 @@
+{
+  "target": {
+    "code": "350909e9-9a74-33ff-a033-7d15c95e97dc",
+    "name": "Toluene diisocyanate, at plant",
+    "location": "RER"
+  },
+  "strategy": {
+    "code": "S3",
+    "label": "top-down model: the three reagents the dataset names plus the nitric acid the equation requires, amounts from the three reaction equations with molar masses, utilities calibrated",
+    "note": "NOT S1. No report in the bundle prints an inventory. The dataset's ecoSpold technology field names three reagents - 'production out of phosgene, toluene and hydrogen' - which is the toluene -> dinitrotoluene -> toluenediamine -> TDI route and nothing else; hydrogen is only ever used to reduce the nitro groups, so the field implies the nitration and therefore the nitric acid, which is added here for that reason and flagged. Three steps. Nitration: C7H8 (toluene, 92.141) + 2 HNO3 (126.024) -> C7H6N2O4 (dinitrotoluene, 182.135) + 2 H2O (36.030); 218.165 = 218.165. Hydrogenation: C7H6N2O4 + 6 H2 (12.096) -> C7H10N2 (toluenediamine, 122.171) + 4 H2O (72.060); 194.231 = 194.231. Phosgenation: C7H10N2 + 2 COCl2 (197.820) -> C9H6N2O2 (TDI, 174.159) + 4 HCl (145.832); 319.991 = 319.991. Per kg of TDI: 92.141/174.159 = 0.52906 kg toluene, 126.024/174.159 = 0.72361 kg HNO3, 12.096/174.159 = 0.06945 kg hydrogen, 197.820/174.159 = 1.13585 kg phosgene; co-products 0.83733 kg HCl and 0.62064 kg water. Mass balance: 2.45797 kg in, 2.45797 kg out. Molar masses from the IUPAC 2021 standard atomic weights: H 1.008, C 12.011, N 14.007, O 15.999, S 32.06, Cl 35.45, Na 22.990. Amounts are fixed, not fitted: the stoichiometric floor at 100 % conversion. One input is an aggregated dataset - 'Toluene, liquid, at plant', itself an unflagged PlasticsEurope eco-profile whose own rebuild is blocked by the BTX allocation (see its locate response) - so the structural check flags a dependency, correctly. The sulphuric acid of the mixed-acid nitration is regenerated and is a recorded gap; so are the 0.837 kg of HCl co-product per kg of TDI, for which nothing in the bundle states an allocation. BAFU's nitric-acid dataset is declared per kg of HNO3, not of the 50 % solution - checked against 'Adipic acid, at plant', which carries 0.431 kg of it against a stoichiometric 0.862 kg, i.e. exactly half, consistent with the NOx recovery that route runs on."
+  },
+  "evidence": [
+    {
+      "source": "BAFU-2026 ecoSpold metadata of the target",
+      "where": "processInformation/technology",
+      "note": "quoted in the strategy note; it is the structural evidence for the input list"
+    },
+    {
+      "source": "locate step of the reverse-bafu route",
+      "where": "specs/evidence/350909e9-9a74-33ff-a033-7d15c95e97dc/response-0-locate.json",
+      "note": "specs/evidence/350909e9-9a74-33ff-a033-7d15c95e97dc/response-0-locate.json - no report in the BAFU-2026 documentation bundle prints a unit-process inventory for this dataset. The cited report is only the 17-page front matter of ecoinvent report No. 11; all 114 bundled reports were converted with pdftotext and searched."
+    },
+    {
+      "source": "reaction stoichiometry",
+      "where": "the reaction equation named by the technology field, with molar masses",
+      "note": "Molar masses from the IUPAC 2021 standard atomic weights: H 1.008, C 12.011, N 14.007, O 15.999, S 32.06, Cl 35.45, Na 22.990."
+    },
+    {
+      "source": "BAFU-2026 itself, as a named template",
+      "where": "Cumene / Ethyl benzene / Phosgene / Aniline, at plant [RER]",
+      "note": "BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from."
+    }
+  ],
+  "node": {
+    "name": "Toluene diisocyanate, at plant, disaggregated",
+    "unit": "kilogram",
+    "location": "RER",
+    "comment": "Nitration, hydrogenation and phosgenation, per kg of toluene diisocyanate. The eight waste-treatment services that the BAFU dataset already carries as explicit exchanges are deliberately not part of this model - they were never collapsed away - following the committed PlasticsEurope specs. The consequence, measured in results/checks/, is that the target's cumulative vector gets a long tail of flows from those disposal chains that no model omitting them can reach.",
+    "inputs": [
+      {
+        "name": "Toluene, liquid, at plant",
+        "amount": 0.52906,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "Three steps. Nitration: C7H8 (toluene, 92.141) + 2 HNO3 (126.024) -> C7H6N2O4 (dinitrotoluene, 182.135) + 2 H2O (36.030); 218.165 = 218.165. Hydrogenation: C7H6N2O4 + 6 H2 (12.096) -> C7H10N2 (toluenediamine, 122.171) + 4 H2O (72.060); 194.231 = 194.231. Phosgenation: C7H10N2 + 2 COCl2 (197.820) -> C9H6N2O2 (TDI, 174.159) + 4 HCl (145.832); 319.991 = 319.991. Per kg of TDI: 92.141/174.159 = 0.52906 kg toluene, 126.024/174.159 = 0.72361 kg HNO3, 12.096/174.159 = 0.06945 kg hydrogen, 197.820/174.159 = 1.13585 kg phosgene; co-products 0.83733 kg HCl and 0.62064 kg water. Mass balance: 2.45797 kg in, 2.45797 kg out. Molar masses from the IUPAC 2021 standard atomic weights: H 1.008, C 12.011, N 14.007, O 15.999, S 32.06, Cl 35.45, Na 22.990.",
+        "code": "1f6091b0-b8fd-3f54-b98b-dbfa5490e46a"
+      },
+      {
+        "name": "Nitric acid, 50% in H2O, at plant",
+        "amount": 0.72361,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "Not named by the technology field but required by the nitration the field's 'toluene + hydrogen' implies; amount as HNO3 (100 %), which is this BAFU dataset's reference unit. Three steps. Nitration: C7H8 (toluene, 92.141) + 2 HNO3 (126.024) -> C7H6N2O4 (dinitrotoluene, 182.135) + 2 H2O (36.030); 218.165 = 218.165. Hydrogenation: C7H6N2O4 + 6 H2 (12.096) -> C7H10N2 (toluenediamine, 122.171) + 4 H2O (72.060); 194.231 = 194.231. Phosgenation: C7H10N2 + 2 COCl2 (197.820) -> C9H6N2O2 (TDI, 174.159) + 4 HCl (145.832); 319.991 = 319.991. Per kg of TDI: 92.141/174.159 = 0.52906 kg toluene, 126.024/174.159 = 0.72361 kg HNO3, 12.096/174.159 = 0.06945 kg hydrogen, 197.820/174.159 = 1.13585 kg phosgene; co-products 0.83733 kg HCl and 0.62064 kg water. Mass balance: 2.45797 kg in, 2.45797 kg out. Molar masses from the IUPAC 2021 standard atomic weights: H 1.008, C 12.011, N 14.007, O 15.999, S 32.06, Cl 35.45, Na 22.990.",
+        "code": "7a00c9c5-a12c-35bc-8f31-f557d19bb1d0"
+      },
+      {
+        "name": "Hydrogen, liquid, at plant",
+        "amount": 0.06945,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "Six H2 per dinitrotoluene. 'Hydrogen, liquid, at plant' is the dataset BAFU's own 'Aniline, at plant' uses for exactly the same nitro-group reduction. Three steps. Nitration: C7H8 (toluene, 92.141) + 2 HNO3 (126.024) -> C7H6N2O4 (dinitrotoluene, 182.135) + 2 H2O (36.030); 218.165 = 218.165. Hydrogenation: C7H6N2O4 + 6 H2 (12.096) -> C7H10N2 (toluenediamine, 122.171) + 4 H2O (72.060); 194.231 = 194.231. Phosgenation: C7H10N2 + 2 COCl2 (197.820) -> C9H6N2O2 (TDI, 174.159) + 4 HCl (145.832); 319.991 = 319.991. Per kg of TDI: 92.141/174.159 = 0.52906 kg toluene, 126.024/174.159 = 0.72361 kg HNO3, 12.096/174.159 = 0.06945 kg hydrogen, 197.820/174.159 = 1.13585 kg phosgene; co-products 0.83733 kg HCl and 0.62064 kg water. Mass balance: 2.45797 kg in, 2.45797 kg out. Molar masses from the IUPAC 2021 standard atomic weights: H 1.008, C 12.011, N 14.007, O 15.999, S 32.06, Cl 35.45, Na 22.990.",
+        "code": "5c8dc33f-bb23-3f2e-9628-c16695008af1"
+      },
+      {
+        "name": "Phosgene, liquid, at plant",
+        "amount": 1.13585,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "Three steps. Nitration: C7H8 (toluene, 92.141) + 2 HNO3 (126.024) -> C7H6N2O4 (dinitrotoluene, 182.135) + 2 H2O (36.030); 218.165 = 218.165. Hydrogenation: C7H6N2O4 + 6 H2 (12.096) -> C7H10N2 (toluenediamine, 122.171) + 4 H2O (72.060); 194.231 = 194.231. Phosgenation: C7H10N2 + 2 COCl2 (197.820) -> C9H6N2O2 (TDI, 174.159) + 4 HCl (145.832); 319.991 = 319.991. Per kg of TDI: 92.141/174.159 = 0.52906 kg toluene, 126.024/174.159 = 0.72361 kg HNO3, 12.096/174.159 = 0.06945 kg hydrogen, 197.820/174.159 = 1.13585 kg phosgene; co-products 0.83733 kg HCl and 0.62064 kg water. Mass balance: 2.45797 kg in, 2.45797 kg out. Molar masses from the IUPAC 2021 standard atomic weights: H 1.008, C 12.011, N 14.007, O 15.999, S 32.06, Cl 35.45, Na 22.990.",
+        "code": "448a623c-0145-3b9a-925f-33f9e560e585"
+      },
+      {
+        "name": "Electricity, medium voltage, production ENTSO-E, at grid",
+        "amount": 0.0,
+        "unit": "kilowatt hour",
+        "location": "ENTSO-E",
+        "free": true,
+        "note": "Starting value 0.333 kWh/kg from the BAFU chemicals template; free, because no report in the bundle prints an electricity figure for this process. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "648e3bb3-7b98-46f8-9da1-f45627c309ef"
+      },
+      {
+        "name": "Heat, natural gas, at industrial furnace 1MW",
+        "amount": 0.0,
+        "unit": "megajoule",
+        "location": "CH",
+        "free": true,
+        "note": "Starting value 2.0 MJ/kg from the BAFU chemicals template; free, because no report in the bundle prints a heat figure for this process. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "2fcda415-e506-38d9-9c3e-8ce2c2e7c8f2"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "0.6 tkm per kg of precursor x 2.458 kg of precursor = the template's standard 600 km rail leg. Free: the PlasticsEurope eco-profile behind this dataset accounts for feedstock transport as elementary flows only and carries no vehicle or track infrastructure, so an ecoinvent transport dataset adds a background the target cannot have. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "0.1 tkm per kg of precursor x 2.458 kg of precursor = the template's standard 100 km lorry leg. Free, same reason as the rail line. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "99f8a4b0-99b5-3130-924c-5de4c10b62ef"
+      },
+      {
+        "name": "Chemical plant, organics",
+        "amount": 0.0,
+        "unit": "unit",
+        "location": "RER",
+        "free": true,
+        "bounds": [
+          0.0,
+          4e-10
+        ],
+        "note": "Free between zero and the template value. 4.0E-10 units is what every ecoinvent-v2 organic chemical in BAFU carries and is the upper bound; zero is the lower bound because this target declares no infrastructure exchange at all - its entire technosphere is waste-treatment services - so an eco-profile that never counted a plant is a real possibility. Both bounds come from those two facts and were set before any score was computed. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "13ed4fe0-7ba5-3b60-82b6-a63918ee814d"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

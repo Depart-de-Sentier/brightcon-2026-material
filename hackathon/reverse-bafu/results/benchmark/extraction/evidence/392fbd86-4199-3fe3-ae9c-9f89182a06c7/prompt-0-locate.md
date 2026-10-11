@@ -1,0 +1,182 @@
+You are locating the inventory table of one dataset inside a life-cycle-inventory report.
+
+Dataset: `Green manure IP, until march` [CH], 1 ha, BAFU category agricultural / plant production.
+Metadata: includedProcesses: The inventory includes the processes of soil cultivation, sowing and mulching. Machine infrastructure and a shed for machine sheltering is included. Inputs of fertilisers, pesticides and seed as well as their transports to the farm are considered. The direct emissions on the field are also included. · technology: Integrated production · comment: Inventory refers to the production of 1 kg green manure IP, until march.;
+Synonyms: catch crop; 
+UUID: 392fbd86-4199-3fe3-ae9c-9f89182a06c7
+
+Report: `2007 - LCI agricultural prod. systems - Nemecek.pdf` (360 PDF pages). Below is every table and figure caption found in it, with the PDF page it appears on (not the printed page number). The report may be in German, French or English; the dataset name is English — match on meaning (e.g. "gebrannter Ölschiefer" = burnt shale, "Gipsfaserplatte" = gypsum fibre board).
+
+- p.20: Tab. 1.2 shows an overview of the modules defined in the different categories.
+- p.21: Tab. 1.1 Overview of the agricultural production branches covered by ecoinvent data.
+- p.21: Tab. 1.2 Overview of the available modules of agricultural production systems included in ecoinvent data.
+- p.25: Tab. 3.1 Agricultural land usage in the year 2004. Source: BLW (2006), completed from SBV (2006) for alpine
+- p.27: Fig. 4.1 Schematic representation of the processes considered in a life cycle inventory of an arable cropping system
+- p.27: Fig. 4.1 shows the process-related system boundaries for the modelling of arable cropping systems
+- p.28: Fig. 4.2 shows how roughage production systems were modelled in ecoinvent. Soil cultivation, seed
+- p.28: Fig. 4.2 Schematic representation of the processes considered in a life cycle inventory of a roughage production
+- p.28: Fig. 4.3 shows the recommended use of an animal production system. The only datasets of this
+- p.29: Fig. 4.3 Schematic representation of the processes considered in a life cycle inventory of an animal production
+- p.30: Fig. 4.4 Modelling of infrastructure and its operation in ecoinvent data.
+- p.33: Tab. 4.1 Saturation deficit (SD) in the different months. Values refer to the average values for the Swiss lowlands.
+- p.34: Tab. 4.2 NH3-emissions from mineral fertilisers (% N emitted in form of NH3).
+- p.35: Tab. 4.3 Nitrogen mineralisation potential (Nmin m, kg N per ha and month, from Richer et al. 2006) in soils with 15%
+- p.36: Tab. 4.4 Correction of nitrate mineralization against the clay and humus content of the soil.
+- p.36: Tab. 4.5 Nitrogen uptake by vegetation (Nupt m, kg N per ha and month, from Richer et al. 2006). Int = with intensive
+- p.37: Tab. 4.6 Risk of nitrogen leaching (fraction of potentially leachable nitrogen of the N applied through fertilisers in %,
+- p.38: Tab. 4.7 The correction of the potential nitrate leaching due to fertiliser application against the depth of the soil
+- p.38: Tab. 4.8 Accumulation of the monthly values of nitrate mineralisation, nitrate uptake by the plants and the nitrate
+- p.43: Tab. 4.9 Heavy metal leaching to groundwater according to Wolfensberger & Dinkel (1997).
+- p.43: Tab. 4.10 Heavy metal contents in mg per kg soil (from Keller & Desaules 2001).
+- p.44: Tab. 4.11 Heavy metal deposition (see Freiermuth 2006).
+- p.44: Tab. 4.12 CO2-binding and gross calorific value of the exported biomass (referring to the dry matter, DM). These flows
+- p.46: Tab. 5.1 lists the different farm types in Swiss agriculture in the year 2000 (Hausheer & Meier 2001).
+- p.46: Tab. 5.1 Share of selected farm types in Swiss agriculture 2000.
+- p.47: Tab. 5.2 Extract from the statistical data on animal husbandry (SBV 2001b) and calculated number of animals per
+- p.47: Tab. 5.3 The three phases of a building life cycle.
+- p.48: Fig. 5.1 The “element method” as used to calculate the material demand of buildings.
+- p.49: Fig. 5.2 Extract from the material calculations for the cattle tied housing system, 22 LU.
+- p.51: Fig. 5.3 System boundaries of the life cycle inventories of agricultural buildings.
+- p.53: Tab. 6.1 Classes of agricultural machinery (Zimmermann 2002).
+- p.53: Tab. 6.2 provides the approximate figures for the different representatives of agricultural machinery in
+- p.53: Tab. 6.2 1996 Federal farm census stock data on the different classes of agricultural machinery (SBV 2001b; rounded
+- p.54: Fig. 6.1 System boundaries of the life cycle inventories of agricultural machinery.
+- p.55: Fig. 6.2 Principal components of the different machinery classes (% of weight).
+- p.56: Tab. 6.3 Repair factors for different classes of agricultural machinery.
+- p.59: Tab. 6.4 Typical power, working capacity, weight and life-time of selected agricultural machinery.
+- p.62: Fig. 7.1. ecoinvent-report no. 15a Printed: 15.12.2007 57
+- p.63: Fig. 7.1 System boundaries of the inventories for field work processes.
+- p.65: Fig. 7.2 Graphical representation of the statistical function for engine-power- and engine-speed-dependent CO
+- p.66: Fig. 7.3 Load spectrum obtained by measuring a heavy road transport with tractor (for other examples see Rinaldi &
+- p.67: Fig. 7.4 Load spectrum obtained by measuring the work with a solid-manure spreader (for other examples see
+- p.67: Tab. 7.1 Emission factors for air emissions from fuel combustion (SAEFL 2000).
+- p.69: Tab. 7.2 Basic values for the calculation of heavy-metal emission from tyre abrasion; Frischknecht et al. (1996) and
+- p.71: Tab. 8.1 Essential elements required for plant growth (Ohio Agronomy Guide 2002).
+- p.72: Tab. 8.2 Key statistics related to fertilisers (Source: FAOSTAT Database, reference year 2000, FAO 2002). Values
+- p.73: Tab. 8.3 Overview of the mineral fertilisers included in the ecoinvent database. The reference function is 1 kg of the
+- p.77: Fig. 8.1 Schematic representation of the production routes of fertilisers elaborated from Davis & Haglund (1999),
+- p.80: Tab. 8.4 Inventories in ecoinvent data assigned to input specifications given in Davis & Haglund (1999).
+- p.81: Tab. 8.5 Transport distances used to calculate fertiliser transport from the manufacturer in RER to the regional
+- p.81: Tab. 8.6 Typical transport distances of fertilisers from the regional storehouse (RER) to the user in CH.
+- p.82: Tab. 8.7 Process emissions during manufacture of mineral P fertilisers (including P-containing multinutrient
+- p.83: Tab. 8.8 Allocation of energy requirements for the mineral fertiliser production process based on data in Patyk &
+- p.84: Tab. 8.9 Allocation of transport distances for multinutrient fertilisers based on the respective nutrient.
+- p.86: Tab. 8.10 Calculated composition of the salt residues from potash salt mining.
+- p.87: Tab. 8.11 Shares of different process-energy carriers for an average N fertiliser (28.6% N), as quoted in Patyk &
+- p.89: Tab. 8.12 Derivation of the inventories for mineral fertilisers of agricultural relevance in Switzerland included in ecoinvent data. (Abbr. = common a
+- p.90: Table 7. 6 ammonium sulphate, RER kgN 21% N Approximated inventory based on the Process emissions were taken from EPA (1995).
+- p.96: Tab. 9.1 Organic-matter and N-, P- and K-nutrient content of the organic fertilisers dealt with in this chapter.
+- p.96: Tab. 9.2 Selected organic fertilisers of agricultural importance in Switzerland.
+- p.98: Tab. 9.3 Compost-related inventories included in ecoinvent data.
+- p.99: Tab. 9.4 Items required for a compost plant as specified in Edelmann & Schleiss (1999), assignment to inventories in
+- p.100: Tab. 9.5 Inputs and outputs related to compost production as specified in Edelmann & Schleiss (1999), and
+- p.103: Tab. 10.1 Turnover of pesticides in Switzerland in 2005 (SBV 2006).
+- p.105: Tab. 10.2 Inventories in ecoinvent data assigned to the energy-carrier type required for pesticide production specified
+- p.107: Tab. 10.3 Classification of substances specified in Green (1987) and Bhat et al. (1994) according to Hartley & Kidd
+- p.110: Tab. 11.1 Production, import and total consumption of seed in Switzerland. Source: SBV (2001) and Eidgenössiche
+- p.113: Tab. 11.2 Modules of processed seed at the regional storehouse, and modules from agricultural production, which are
+- p.114: Tab. 11.3 should be included in the life cycle inventories as emissions into agricultural soil.
+- p.115: Tab. 11.3 Pesticide active ingredients and ecoinvent modules used in the seed modules.
+- p.116: Tab. 11.4 Transport distances from the processing centre to the regional storehouse.
+- p.116: Tab. 11.5 Uncertainty judgement for the data on agricultural seed production.
+- p.117: Tab. 12.1 Production, import and total consumption of feedstuff in Switzerland. Source: SBV (2000a) and Eidg.
+- p.119: Tab. 12.2 Feedstuff-ingredient production processes, based on statistics from the year 1999 (see Tab. 12.1).
+- p.119: Tab. 12.3 Values for cereals, maize and legumes used in the life cycle inventories for the average transport distance
+- p.122: Tab. 12.4 Uncertainty judgement for the feedstuff data.
+- p.123: Tab. 13.1 Quantity of dried products in VSTB-member plants (Schmid 2001, Christen 2002).
+- p.124: Tab.13.2 Surface area (average 1997-2000 ) and usable production (average 1997-99) of grain (including maize) and
+- p.127: Fig. 13.1 System boundaries of the inventories for the drying of agricultural products.
+- p.130: Tab.13.3 summarises the energy requirements for drying maize, grass and grain as described above.
+- p.130: Tab.13.3 Energy demand for evaporating 1 kg of water during the drying process of different wet stuffs.
+- p.132: Tab. 14.1 summarises the requirements for the different production methods.
+- p.133: Tab. 14.1 Categories of agricultural production inventories included in ecoinvent data and the standards with which
+- p.134: Tab. 14.2 Main characteristics of the inventories of arable crops in ecoinvent data. All modules refer to the location
+- p.135: Tab. 14.3 Data sources used to compile the arable-crop production inventories.
+- p.137: Tab. 14.4 Names of the modules for cereal grains and straw and standard allocation factors used for all inputs and
+- p.137: Tab. 14.5 Inputs of the different crops listed in Tab. 14.4 for which the standard allocation factors were not used.
+- p.139: Tab. 14.6 Proportion of different fertilisers for the nutrients N, P and K (from Rossier 2000, Appendix 1). The
+- p.139: Tab. 14.7. These modules for field-work processes are described in chapter 7.
+- p.140: Tab. 14.7 Machine-use inventories used to calculate the arable-crop production inventories.
+- p.142: Tab. 14.8 Supplementary transport considered for crop production.
+- p.143: Tab. 14.9 Green manure inventories used for spring-sown crops.
+- p.144: Tab. 14.10 Consideration of land requirements affiliated with crop production.
+- p.145: Tab. 14.11 Agricultural areas for wheat, barley and rye production in Switzerland in the year 2000 (BLW 2001, p. A4 &
+- p.145: Tab. 14.12 Uncertainty judgement for the data on arable crops.
+- p.146: Tab. 15.1 gives an overview of the agricultural land usage in the three considered countries France,
+- p.146: Tab. 15.1 Agricultural land usage in the year 2003 (FAOSTAT 2006) in the three investigated countries and in EU-25.
+- p.147: Tab. 15.2 Characteristics of the study regions and share of grain legumes in arable land.
+- p.147: Tab. 15.3 shows the considered crop rotations out of the GL-Pro concerted action and the crops that
+- p.147: Tab. 15.3 Overview of the crop rotations used in this database (Nemecek & Baumgartner 2006). OSR = oilseed rape, W
+- p.149: Tab. 15.4 Main characteristics of the inventories of rape seed, wheat, barley, peas and sunflowers in the three
+- p.150: Tab. 15.5 Average yields and yields used in the inventories (kg/ha fresh weight, with moisture at storage).
+- p.151: Tab. 15.6 Procedure for calculating the nutrients in the crop residues (example for the crop rotation with four crops).
+- p.152: Tab. 15.7 Quantity and type of fertilisers used in the inventories (in kg/ha of the respective nutrient, as specified by
+- p.153: Tab. 15.8 Machine-use inventories used to calculate the arable-crop production inventories (unit = number of passes)
+- p.154: Tab. 15.9 Pesticides used for the 12 crops (kg/ha).
+- p.157: Tab. 15.10 Supplementary transport considered for crop production
+- p.158: Tab. 15.11 Winter precipitations and nitrate leaching transformation factors for the different regions
+- p.158: Tab. 15.12 Uncertainty judgement for the data on arable crops
+- p.159: Tab. 16.1 Hay inventories included in ecoinvent data and their major characteristics. The net yield is the yield after
+- p.160: Tab. 16.2. As in the arable-crop inventories, the number of passes by vacuum tanker, manure spreader and fodder
+- p.161: Tab. 16.2 Machine-use inventories used to calculate the hay inventories.
+- p.162: Tab. 16.3 Land occupation and transformation taken into consideration for hay inventories.
+- p.321: Tab. 1.1 : Agricultural land usage in the year 2003 (FAO 2006)
+- p.321: Tab. 1.2 lists the major field crops with the value of production in the year 1997. Fehler! Verweis-
+- p.322: Tab. 1.2: Major Crops in the USA (NASS 2006)
+- p.322: Fig. 1.1: Climate zones of the USA
+- p.323: Fig. 1.2 gives an overview of the processes included in the agricultural system. The reference function
+- p.323: Fig. 1.2: Overview of the agricultural system
+- p.324: Tab. 1.3: Overview of the main characteristics of the inventories
+- p.324: Tab. 1.4: Data sources to compile the arable crop production inventories
+- p.325: Tab. 1.5: Field crop production in the USA (NASS 2006), averages for the years 2001-2006
+- p.326: Tab. 1.6: Fertiliser use for field crops in the USA (ARMS 2006, Livezey & Foremann 2004, NREL 2006)
+- p.326: Tab. 1.7: Fertiliser use by product type in the USA (IFA 2006). The share is referring to the main nutrient content.
+- p.326: Tab. 1.8: Calculated use of fertilisers in this study
+- p.327: Tab. 1.9: Statistical data on irrigation in the USA (USDA 2004a)
+- p.328: Tab. 1.10: Typical energy use of different pump systems for the average pumping depth of 48m (UofA 2007). 1 acre-inch
+- p.328: Tab. 1.11: Average amount of water used per planted area for the irrigation of the different crops (m /ha/year).
+- p.329: Tab. 1.12: Field operations for the cultivation of one hectare (number of trips per season, where not stated otherwise)
+- p.330: Tab. 1.13: Pesticides use in kg per hectare and year (NCFAP 1997)
+- p.331: Tab. 1.13: Pesticides use in kg per hectare and year (NCFAP 1997) (contd.)
+- p.334: Tab. 1.14: Amount of seeds used in this inventory
+- p.335: Tab. 1.15: Supplementary transports considered for 1 ha crop cultivation.
+- p.335: Tab. 1.16: Amounts of land transformation and occupation for the crop cultivation in the USA.
+- p.336: Tab. 1.17 Uptake of CO2 and biomass energy contained in the harvested product and co-products per hectare
+- p.336: Tab. 1.18: Heavy metal uptake of harvested products per kg dry matter
+- p.337: Tab. 2.17 shows direct emissions to air for the five crops.
+- p.337: Tab. 1.19: Emissions to air from crop cultivation
+- p.337: Tab. 2.18 lists all direct emissions to water for the five crops.
+- p.337: Tab. 1.20 Direct emissions to water per hectare and year.
+- p.338: Tab. 1.21: Heavy metal emissions to soil
+- p.339: Tab. 1.22: Uncertainty assessment for the data on U.S. arable crops
+- p.340: Tab. 2.1: Agricultural land usage in the year 2003 (FAO 2006)
+- p.340: Tab. 2.2: U.S. production of sheep wool and carcass in 2006 (NASS 2007)
+- p.340: Tab. 2.3: States with the highest sheep numbers according to ASI (2006)
+- p.341: Tab. 2.4: World sheep inventory according to ASI (2006)
+- p.341: Tab. 2.4: The top ten wool producing countries according to FAOSTAT (FAO 2006). The USA are number 24 in the list
+- p.341: Tab. 2.5 summarises the inventories described in this chapter and their main characteristics. The sys-
+- p.342: Fig. 2.1: Sheep and wool production system
+- p.342: Tab. 2.5: Main characteristics of the inventories
+- p.342: Tab. 2.6: Data sources to compile the arable crop production inventories
+- p.343: Tab. 2.7: Wool and meat production in the USA in the year 2006
+- p.344: Tab. 2.8: Calculation of the wool and meat sheep contingent of the total amount of sheep.
+- p.344: Tab. 2.9: Average fertilizer use in the USA per sheep and year (ARMS 2006, NREL 2006)
+- p.344: Tab. 2.10: Water usage for sheep production
+- p.345: Tab. 2.11: Average field operations on permanent pastureland per sheep and year
+- p.345: Tab. 2.12: Amount of concentrate feed used per sheep (NREL 2006)
+- p.346: Tab. 2.13: Transports considered for raw materials used per sheep and year
+- p.346: Tab. 2.14 lists the energy content of a sheep and the heat waste output as well as the CO2 content of a
+- p.346: Tab. 2.14: Biomass energy and CO2 in product
+- p.346: Tab. 2.15: Heavy metal uptake of wool and sheep (Freiermuth 2006, Özyol 1990)
+- p.347: Tab. 2.16. Tab. 2.16: Emissions to air from sheep production
+- p.348: Tab. 2.17: Emissions to water from sheep production
+- p.348: Tab. 2.18: Heavy metal input to soil based on own calculation with SALCA-heavy metal tool.
+- p.349: Tab. 2.19: Uncertainty judgement for the data on arable crops
+
+Rules:
+1. Choose the caption(s) that hold the unit-process inventory of this dataset — inputs, energy, emissions, transport — not impact results, not a diagram. Prefer "Sachbilanz" / "inventory" / "LCI" tables.
+2. Return the PDF page range that covers those tables plus the paragraph introducing them: `first_page`, `last_page` (at most 4 pages). Tables can run onto the next page.
+3. If no caption fits (the report does not document this dataset's inventory, or only as a result), return `found` = false and say why in `reason`.
+4. `reason` names the caption(s) you chose and why.
+
+Return only the JSON object described by the schema.

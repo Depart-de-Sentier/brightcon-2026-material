@@ -1,0 +1,85 @@
+{
+  "target": {
+    "code": "f44d9ac3-f0cb-311d-bdba-3fd3946b573c",
+    "name": "Acetone, liquid, at plant",
+    "location": "RER"
+  },
+  "variant": "draft",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: per 1000 kg of acetone, the basis of the only quantitative statement in the chapter (sec. 1.5.2, citing Wells 1999); allocation: None. Acetone and phenol are co-products of the cumene process - 'Acetone and phenol are co-products and their production and demand are intertwined' - and the excerpt states that the cumene figure excludes the phenol ('The production of the co-product phenol is not included in this figure'), i.e. 100 % of the cumene is charged to the acetone. No burden is shifted to phenol here either.; 1 of 1 inputs carry a printed amount, 0 a printed range, 0 no number in the report. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI chemicals - Althaus.pdf",
+      "where": "pages 98-99 -> report-p98-99.txt",
+      "note": "report sha256 68e0839ffea919f9…, text sha256 3d1e65fc1ab8cd34…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "specs/evidence/f44d9ac3-f0cb-311d-bdba-3fd3946b573c/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "a3e47069bb0e92aedf16686de7942370ecb9a237e3af698950ba367b9886739a",
+      "at": "2026-09-22T23:37:22Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "dfd01ea1ab3bb4028cc580042924dda36d0573b25a9a73f69ba823c44fa274c1",
+      "at": "2026-09-22T23:37:26Z"
+    },
+    "gaps_reported_by_model": [
+      "Sulphuric acid for the cleavage step: named in the excerpt, never quantified.",
+      "Electricity and process heat: the chapter gives reaction conditions (200-250 C and 15-35 bar for the alkylation, 300-450 C and 2-3 bar for the isopropanol route) but no energy figure at all.",
+      "Direct emissions: the chapter prints none for the unit process; Tab. 3.2 and Tab. 3.3 are the cumulated vector of the target itself and are deliberately outside the excerpt.",
+      "Catalyst, infrastructure and feedstock transport: not mentioned.",
+      "The distillation losses and the neutralisation of the residual acid are described qualitatively only.",
+      "The route split: the chapter names a second route (dehydrogenation of isopropyl alcohol, 90-95 % yield) and then says the PlasticsEurope data 'assumes that acetone stems from the oxidation of cumene, i.e. the isopropyl alcohol production route is not included in this inventory', so the cumene route is the right one - but no share is given for reality."
+    ],
+    "skipped_items": [
+      "Phenol: co-product — Stoichiometric co-product of the same cleavage: 94.11/58.08 = 1.62 kg of phenol per kg of acetone. Recorded for completeness only - the excerpt gives no allocation and explicitly excludes phenol from the cumene figure, so no credit is taken and the whole burden stays with the acetone. (kind = co-product, so it is skipped by the assembler.)",
+      "Sulphuric acid: ignore — Named by the excerpt as the cleavage catalyst but never quantified, so per rule 8 it cannot carry an amount; recorded as ignore and repeated in gaps.",
+      "Oxygen / air: ignore — Air oxidation; the excerpt gives the equation but no air or oxygen amount, and ecoinvent does not inventory air."
+    ],
+    "assembled_at": "2026-09-22T23:37:26Z"
+  },
+  "node": {
+    "name": "Acetone, liquid, at plant, disaggregated",
+    "unit": "kg",
+    "location": "RER",
+    "comment": "drafted from 2007 - LCI chemicals - Althaus.pdf pp. 98-99",
+    "inputs": [
+      {
+        "name": "Cumene, at plant",
+        "amount": 2.3000000000000003,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "The only number in the whole chapter that belongs to the unit process rather than to the cumulated vector. It is internally consistent: the cumene cleavage is C6H5C(CH3)2OOH -> C6H5OH + CH3COCH3, so 1 kg of acetone (M = 58.08 g/mol) carries 120.19/58.08 = 2.07 kg of cumene at full conversion, and 2.07/0.90 = 2.30 kg at the 90 % yield the sentence states - exactly the printed 2300 kg per 1000 kg. The figure therefore assigns the whole cumene input to the acetone and none of it to the phenol, which is what the second sentence says.",
+        "derivation": {
+          "evidence": "report-p98-99.txt",
+          "quote": "Wells (1999) indicates that 2300 kg of cumene are required to produce 1000 kg of acetone with a yield of 90%. The production of the co-product phenol is not included in this figure.",
+          "raw_value": 2300.0,
+          "raw_unit": "kg",
+          "per": "per 1000 kg of acetone",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 0.001,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "cumene at plant",
+          "mapping_reason": "The only candidate that is the substance at all - the other seven are a pulp plant, an anode plant, a silicone plant, soap, brick, latex and a magnesium plant, none of which is cumene. It is a 7-input unit process, not an aggregated dataset, so the chain terminates properly here; its own inputs (0.684 kg benzene + 0.369 kg propylene) are the alkylation the excerpt describes.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "01c79c63-f90e-3a8c-b052-7a915fd11ffe"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

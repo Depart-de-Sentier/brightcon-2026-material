@@ -1,0 +1,254 @@
+{
+  "target": {
+    "code": "9c0e2df6-7ee2-3b42-979d-55913ecb6ee9",
+    "name": "Electronic passive elements, washing machine, at plant",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 11.5 'Unit process inventory of the dataset \"electronic component, passive, unspecified, at plant (GLO)\"', per 1 kg; the shares come from Tab. 11.3 (average composition of the printed wiring boards of a television, a desktop computer and a laptop).; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI electric and electronic equipment - Hischier.pdf",
+      "where": "pages 193-196 -> report-p193-196.txt",
+      "note": "report sha256 1b20d658287bb37d…, text sha256 e8d0950d85bddf89…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/9c0e2df6-7ee2-3b42-979d-55913ecb6ee9/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "34d8a7ff9aa2d6db991a7390dde7e9d967bd9a6ebd75808fb04fc9d521c5669e",
+      "at": "2026-09-22T21:21:44Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "1f78a55d779afce540771378ed719bb3102711bb7df3438da773c810db62e632",
+      "at": "2026-09-22T21:21:47Z"
+    },
+    "gaps_reported_by_model": [
+      "The report has no washing-machine-specific passive-component dataset; this is the generic GLO mix, so the BAFU dataset's composition may differ.",
+      "The dataset is a pure assembly of component datasets: no energy, no transport, no infrastructure and no direct emissions of its own.",
+      "The eight shares sum to 1.0003 kg per kg, i.e. the table is normalised to 1 kg of components.",
+      "Uncertainty is explicitly 'rather high' (StDv95 = 2.29 on every line)."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T21:21:47Z"
+  },
+  "node": {
+    "name": "Electronic passive elements, washing machine, at plant, disaggregated",
+    "unit": "p",
+    "location": "CH",
+    "comment": "drafted from 2007 - LCI electric and electronic equipment - Hischier.pdf pp. 193-196",
+    "inputs": [
+      {
+        "name": "Connector, PCI bus, at plant",
+        "amount": 0.182,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "18.2 % per Tab. 11.3",
+        "derivation": {
+          "evidence": "report-p193-196.txt",
+          "quote": "                         H                                                                                        elect ronics   component     No        GLO    connector, PCI bus, at plant               1.82E-01 kg                                    1     2.29",
+          "raw_value": 0.182,
+          "raw_unit": "kg",
+          "per": "per kg of unspecified passive electronic components",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "connector PCI bus at plant",
+          "mapping_reason": "The only candidate and an exact name match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "45d53e81-d92c-3df7-9d1a-017baa1f5d29"
+      },
+      {
+        "name": "Connector, computer, peripherical type, at plant",
+        "amount": 0.103,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "10.3 %",
+        "derivation": {
+          "evidence": "report-p193-196.txt",
+          "quote": "                         H                                                                                        elect ronics   component     No        GLO                                               1.03E-01 kg                                    1     2.29",
+          "raw_value": 0.103,
+          "raw_unit": "kg",
+          "per": "per kg of unspecified passive electronic components",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "connector computer peripherical type at plant",
+          "mapping_reason": "The only candidate and an exact name match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a2425cb3-89fe-32ba-abe6-2e1a5b51e72c"
+      },
+      {
+        "name": "Capacitor, Tantalum-, through-hole mounting, at plant",
+        "amount": 0.0348,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "3.5 %",
+        "derivation": {
+          "evidence": "report-p193-196.txt",
+          "quote": "tant alum capacitor      H                                                                                        elect ronics   component     No        GLO                                              3.48E-02 kg                                     1     2.29",
+          "raw_value": 0.0348,
+          "raw_unit": "kg",
+          "per": "per kg of unspecified passive electronic components",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "capacitor tantalum through-hole mounting at plant",
+          "mapping_reason": "Exact name match; the film capacitor is a different dielectric.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a5367a2d-a9cb-3ea2-8a00-0b2fede0ebcb"
+      },
+      {
+        "name": "Capacitor, electrolyte type, < 2cm height, at plant",
+        "amount": 0.139,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "13.9 %",
+        "derivation": {
+          "evidence": "report-p193-196.txt",
+          "quote": "elect rolyt capacit or   H                                                                                        elect ronics   component     No        GLO                                               1.39E-01 kg                                    1     2.29",
+          "raw_value": 0.139,
+          "raw_unit": "kg",
+          "per": "per kg of unspecified passive electronic components",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "capacitor electrolyte type < 2cm height at plant",
+          "mapping_reason": "Exact name and height class match; candidate 1 is the taller class.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "7b1aff74-0f04-3fe3-9ede-8b410a1d8299"
+      },
+      {
+        "name": "Capacitor, SMD type, surface-mounting, at plant",
+        "amount": 0.0438,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "4.4 %",
+        "derivation": {
+          "evidence": "report-p193-196.txt",
+          "quote": "SM D t ype capacitor     H                                                                                        elect ronics   component     No        GLO                                              4.38E-02 kg                                     1     2.29",
+          "raw_value": 0.0438,
+          "raw_unit": "kg",
+          "per": "per kg of unspecified passive electronic components",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "capacitor SMD type surface mounting at plant",
+          "mapping_reason": "Exact name match; the other SMD candidates are resistors, transistors and diodes, i.e. different components.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "9ca934a0-d413-33ba-aedb-c0b2d4685783"
+      },
+      {
+        "name": "Capacitor, unspecified, at plant",
+        "amount": 0.105,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "10.5 %",
+        "derivation": {
+          "evidence": "report-p193-196.txt",
+          "quote": "                         H                                                                                        elect ronics   component     No        GLO                                               1.05E-01 kg                                    1     2.29",
+          "raw_value": 0.105,
+          "raw_unit": "kg",
+          "per": "per kg of unspecified passive electronic components",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "capacitor unspecified at plant",
+          "mapping_reason": "'Capacitor, unspecified, at plant' is the singular of the line item and the same component; every other candidate is an unrelated material that merely shares the word 'unspecified'.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "1f6e11ec-c669-309f-b0d5-97f71b7cfc5a"
+      },
+      {
+        "name": "Inductor, ring core choke type, at plant",
+        "amount": 0.336,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "33.6 %, 'coils & inductors'",
+        "derivation": {
+          "evidence": "report-p193-196.txt",
+          "quote": "coils & induct ors       H                                                                                        elect ronics   component     No        GLO                                               3.36E-01 kg                                    1     2.29",
+          "raw_value": 0.336,
+          "raw_unit": "kg",
+          "per": "per kg of unspecified passive electronic components",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "inductor ring core choke type at plant",
+          "mapping_reason": "The only candidate and an exact name match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "949ee0e9-1cc3-3e3b-9e81-5a933a285bb3"
+      },
+      {
+        "name": "Resistor, unspecified, at plant",
+        "amount": 0.0567,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "5.7 %",
+        "derivation": {
+          "evidence": "report-p193-196.txt",
+          "quote": "resistor mix             H                                                                                        elect ronics   component     No        GLO    resistor, unspecified, at plant            5.67E-02 kg                                    1     2.29",
+          "raw_value": 0.0567,
+          "raw_unit": "kg",
+          "per": "per kg of unspecified passive electronic components",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "resistor unspecified at plant",
+          "mapping_reason": "Exact name match; the other candidates are unrelated materials sharing 'unspecified'.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "07c77701-7469-3d22-9853-9ca6d1f1ec0b"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

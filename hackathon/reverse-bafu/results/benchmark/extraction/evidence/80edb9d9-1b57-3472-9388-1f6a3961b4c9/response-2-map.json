@@ -1,0 +1,92 @@
+{
+ "mappings": [
+  {
+   "item": "industrial machine, heavy, unspecified, at plant",
+   "chosen": "Industrial machine, heavy, unspecified, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The only candidate and an exact name and location match for the infrastructure line."
+  },
+  {
+   "item": "electricity, medium voltage, production UCTE, at grid",
+   "chosen": "xxx Electricity, medium voltage, production UCTE, at grid",
+   "location": "UCTE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The only UCTE production mix offered and an exact name match for the module the report cites; it carries the 'xxx' obsolete marker, but the alternatives are single-carrier UCTE mixes or Swiss grid mixes, which would change the geography."
+  },
+  {
+   "item": "EUR-flat pallet",
+   "chosen": "EUR-flat pallet",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The only candidate and an exact name and location match."
+  },
+  {
+   "item": "extrusion, plastic film",
+   "chosen": "Extrusion, plastic film",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name match for the film extrusion process; 'Extrusion, plastic pipes' is a different converting process."
+  },
+  {
+   "item": "polyethylene, HDPE, granulate, at plant",
+   "chosen": "Polyethylene, HDPE, granulate, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": true,
+   "reason": "The report names HDPE explicitly, so the HDPE granulate beats the LDPE, LLDPE and PET candidates; it is itself an aggregated dataset, so dependency is set."
+  },
+  {
+   "item": "transport, freight, rail",
+   "chosen": "Transport, freight, rail",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The report's line gives the unspecified 'transport, freight, rail', which this RER dataset is; the CH candidates all fix the traction (electricity or diesel) and the shunting, which the report does not state."
+  },
+  {
+   "item": "transport, lorry 20-28t, fleet average",
+   "chosen": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "A 20-28 t lorry falls inside the 16-32 t gross weight class, and the report's line is CH, so the CH fleet average of that class is the closest; 'xxx Operation, lorry 20-28t' matches the size exactly but is obsolete and is measured per kilometre rather than per tonne-kilometre."
+  },
+  {
+   "item": "transport, lorry 3.5-16t, fleet average",
+   "chosen": "Transport, freight, lorry, 7.5t-16t gross weight, fleet average",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The 7.5-16 t class is the one that overlaps the report's 3.5-16 t range, and the report gives RER for this line; the 16-32 t class would be too heavy and the 3.5 t dataset too light."
+  },
+  {
+   "item": "disposal, wood untreated, 20% water, to municipal incineration",
+   "chosen": "Disposal, wood untreated, 20% water, to municipal incineration",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name, water content and location; the chrome-preserved and board variants are treated or bonded wood, which the untreated pallets are not."
+  },
+  {
+   "item": "disposal, polyethylene, 0.4% water, to municipal incineration",
+   "chosen": "Disposal, polyethylene, 0.4% water, to municipal incineration",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name, water content and location; the PET and polyethylene/polypropylene mixtures are different polymers."
+  },
+  {
+   "item": "Heat, waste",
+   "chosen": "Waste Heat ",
+   "location": "",
+   "compartment": "air",
+   "dependency": false,
+   "reason": "Waste heat to air in megajoules, matching the table's 'air / unspecified' category and its unit; the soil and water variants are the wrong compartment and 'Energy, waste heat, air' sits under resources in the residual database."
+  }
+ ]
+}

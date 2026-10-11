@@ -1,0 +1,392 @@
+{
+  "target": {
+    "code": "efaba904-8105-36f4-960e-c01d962787eb",
+    "name": "Particle board, cement bonded, at plant",
+    "location": "RER"
+  },
+  "variant": "draft",
+  "strategy": {
+    "code": "S3",
+    "label": "top-down model drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: per 1 m3 of cement-bonded particle board; the product row reads 'particle board, cement bonded, at plant  1.00E+00 m3' (Duripanel, medium-high density 1'200 kg/m3, range 1000-1350 kg/m3); allocation: none stated; 9 of 11 inputs carry a printed amount, 1 a printed range, 1 no number in the report (xxx Electricity, medium voltage, production UCTE, at grid). Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI wood as fuel and const. mat. - Werner.pdf",
+      "where": "pages 118-119 -> report-p118-119.txt",
+      "note": "report sha256 1f2e06f8a69ca03e…, text sha256 8878f744111ef929…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "specs/evidence/efaba904-8105-36f4-960e-c01d962787eb/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5[1m]",
+      "prompt_sha256": "bf8c263889dc6eea3b94d61e69dfb02885f092c9c7cd546fbb84c782764cbdad",
+      "at": "2026-09-22T19:49:48Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5[1m]",
+      "prompt_sha256": "90a4d577f48e4702872868f7b3f14937cd268d1f7fea36c820ca4636e4ac44b4",
+      "at": "2026-09-22T19:49:50Z"
+    },
+    "gaps_reported_by_model": [
+      "Electricity and light-fuel-oil heat are 'confidential'; their amounts are determined by calibration. The bounds used (1-1000 kWh, 1-10000 MJ per m3) are wide search ranges chosen here, not report values.",
+      "No process emissions are documented; only the calculated waste heat.",
+      "No packaging, water emissions or production waste are given in the excerpt."
+    ],
+    "skipped_items": [
+      "particle board, cement bonded, at plant: product — Reference product; fixes the basis at 1 m3, matching the target unit."
+    ],
+    "assembled_at": "2026-09-22T19:49:51Z"
+  },
+  "node": {
+    "name": "Particle board, cement bonded, at plant, disaggregated",
+    "unit": "m3",
+    "location": "RER",
+    "comment": "drafted from 2007 - LCI wood as fuel and const. mat. - Werner.pdf pp. 118-119",
+    "inputs": [
+      {
+        "name": "xxx Industrial residue wood, mix, softwood, u=40%, at plant",
+        "amount": 0.233,
+        "unit": "cubic meter",
+        "location": "RER",
+        "note": "Printed value.",
+        "derivation": {
+          "evidence": "report-p118-119.txt",
+          "quote": "Industrial residual wood softwood (u=40%), at plant  Î  wooden materials extraction No RER  industrial residue wood, mix, softwood, u=40%, at plant  2.33E-01 m3",
+          "raw_value": 0.233,
+          "raw_unit": "m3",
+          "per": "per m3 cement-bonded particle board",
+          "factor": 1.0,
+          "factor_unit": "m3",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "industrial residue wood softwood",
+          "mapping_reason": "Exact name and moisture content (u=40%, mix) as printed; the other candidates are different moisture contents or different production routes.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "164f42c5-91e3-38f0-8a54-887917e27141"
+      },
+      {
+        "name": "xxx Industrial residue wood, mix, hardwood, u=40%, at plant",
+        "amount": 0.0231,
+        "unit": "cubic meter",
+        "location": "RER",
+        "note": "Printed value.",
+        "derivation": {
+          "evidence": "report-p118-119.txt",
+          "quote": "Industrial residual wood hardwood (u=40%), at plant  Î  Wood mix: 25% hardwood (beech), 75% softwood (pine and spruce)  wooden materials extraction No RER  industrial residue wood, mix, hardwood, u=40%, at plant  2.31E-02 m3",
+          "raw_value": 0.0231,
+          "raw_unit": "m3",
+          "per": "per m3 cement-bonded particle board",
+          "factor": 1.0,
+          "factor_unit": "m3",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "industrial residue wood hardwood",
+          "mapping_reason": "Exact name and moisture content as printed.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "cf50c749-3575-33d8-bf71-c6f3d3ac92cb"
+      },
+      {
+        "name": "xxx Industrial wood, hardwood, under bark, u=80%, at forest road",
+        "amount": 0.0374,
+        "unit": "cubic meter",
+        "location": "RER",
+        "note": "Printed value.",
+        "derivation": {
+          "evidence": "report-p118-119.txt",
+          "quote": "Industrial wood beech, at forest road (u=80%)  Î  sources: 70% industrial residual wood, 30 % industrial wood  wooden materials extraction No RER  industrial wood, hardwood, under bark, u=80%, at forest road  3.74E-02 m3",
+          "raw_value": 0.0374,
+          "raw_unit": "m3",
+          "per": "per m3 cement-bonded particle board",
+          "factor": 1.0,
+          "factor_unit": "m3",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "industrial wood hardwood under bark forest",
+          "mapping_reason": "Exact name as printed; the Scandinavian variant is NORDEL and 'Residual wood' is a different assortment.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "50a182a7-3772-3b50-8155-9465a171663c"
+      },
+      {
+        "name": "xxx Industrial wood, softwood, under bark, u=140%, at forest road",
+        "amount": 0.053,
+        "unit": "cubic meter",
+        "location": "RER",
+        "note": "Printed value.",
+        "derivation": {
+          "evidence": "report-p118-119.txt",
+          "quote": "Industrial wood spruce, at forest road (u=140%)  Î  wooden materials extraction No RER  industrial wood, softwood, under bark, u=140%, at forest road  5.30E-02 m3",
+          "raw_value": 0.053,
+          "raw_unit": "m3",
+          "per": "per m3 cement-bonded particle board",
+          "factor": 1.0,
+          "factor_unit": "m3",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "industrial wood softwood under bark forest",
+          "mapping_reason": "Exact name as printed at RER; the holzpur CH variant and the NORDEL copy are narrower.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "d6ec26b8-907a-345c-b4eb-fa5c9d24b337"
+      },
+      {
+        "name": "Cement, unspecified, at plant",
+        "amount": 800.0,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "Printed value.",
+        "derivation": {
+          "evidence": "report-p118-119.txt",
+          "quote": "Portland Cement  Î  construction materials binder No CH  cement, unspecified, at plant  8.00E+02 kg  Schniewind 1989, p. 197 ff.",
+          "raw_value": 800.0,
+          "raw_unit": "kg",
+          "per": "per m3 cement-bonded particle board",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "cement unspecified plant",
+          "mapping_reason": "The report names 'cement, unspecified, at plant' at CH; the only cement candidate, the rest are boards or unrelated 'unspecified' datasets.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "39f4c4a5-a5f8-3299-8841-9ab862d9e8fa"
+      },
+      {
+        "name": "Chemicals organic, at plant",
+        "amount": 45.0,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "Printed value.",
+        "derivation": {
+          "evidence": "report-p118-119.txt",
+          "quote": "Organic chemicals  Î  Additives  chemicals organics No GLO  chemicals organic, at plant  4.50E+01 kg  Schniewind 1989, p. 197 ff.",
+          "raw_value": 45.0,
+          "raw_unit": "kg",
+          "per": "per m3 cement-bonded particle board",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "chemicals organic plant",
+          "mapping_reason": "The report names 'chemicals organic, at plant (GLO)'; that exact dataset, beating the organic adhesive and the chemical-plant infrastructure.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "4d96ad56-9dd3-3fda-bff6-d24796d01043"
+      },
+      {
+        "name": "xxx Electricity, medium voltage, production UCTE, at grid",
+        "amount": 1.0,
+        "unit": "kilowatt hour",
+        "location": "UCTE",
+        "note": "The Mean value column reads 'confidential' for this row. The input is explicitly named, so it is kept with raw_value as a seed only (NOT a reported number) and a wide raw_min/raw_max range, making it a free parameter that the calibration step determines. The Source column does state '437 MJ of 1383 MJ Primary energy' for the chip-production share, but that is a primary-energy share, not this row's amount.",
+        "derivation": {
+          "evidence": "report-p118-119.txt",
+          "quote": "Electricity medium voltage - at grid UCTE  Î  Total consumption estimated: chipping according to Wegner and Frühwald; board production according to data on cement-bonded woodwool board production  electricity production mix No UCTE  confidential kWh",
+          "raw_value": 100.0,
+          "raw_unit": "kWh",
+          "per": "per m3 cement-bonded particle board",
+          "factor": 1.0,
+          "factor_unit": "kWh",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "electricity medium voltage UCTE",
+          "mapping_reason": "The report names 'electricity, medium voltage, production UCTE, at grid'; this candidate is that exact dataset at UCTE, beating the RER/CH grid mixes and the single-fuel UCTE variants.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "free": true,
+        "bounds": [
+          1.0,
+          1000.0
+        ],
+        "code": "d86e2374-784b-3fd9-910b-7583462ea81b"
+      },
+      {
+        "name": "Heat, light fuel oil, at industrial furnace 1MW",
+        "amount": 1.0,
+        "unit": "megajoule",
+        "location": "RER",
+        "note": "The Mean value column reads 'confidential' for this row. The input is explicitly named, so it is kept with raw_value as a seed only (NOT a reported number) and a wide raw_min/raw_max range, making it a free parameter that the calibration step determines.",
+        "derivation": {
+          "evidence": "report-p118-119.txt",
+          "quote": "Thermal heat from oil firing extra light  Î  Total consumption estimated based on data on cement-bonded wood wool board production  oil heating systems No RER  heat, light fuel oil, at industrial furnace 1MW  confidential MJ  CEWAG Düdingen, Herr Kurzo",
+          "raw_value": 500.0,
+          "raw_unit": "MJ",
+          "per": "per m3 cement-bonded particle board",
+          "factor": 1.0,
+          "factor_unit": "MJ",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "heat light fuel oil industrial furnace 1MW",
+          "mapping_reason": "The report names 'heat, light fuel oil, at industrial furnace 1MW' at RER; that exact dataset, beating the CH copy, heavy fuel oil and the 'burned in' variants.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "free": true,
+        "bounds": [
+          1.0,
+          10000.0
+        ],
+        "code": "5c9a8f03-0938-3057-a036-97ae8a6f2fb7"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 134.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "Printed value.",
+        "derivation": {
+          "evidence": "report-p118-119.txt",
+          "quote": "Transport rail  Î  Chemicals: 600 km, wood & cement: 100 km  transport systems train No RER  transport, freight, rail  1.34E+02 tkm  estimated",
+          "raw_value": 134.0,
+          "raw_unit": "tkm",
+          "per": "per m3 cement-bonded particle board",
+          "factor": 1.0,
+          "factor_unit": "tkm",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "The report names 'transport, freight, rail' without a traction specification, which is exactly this RER average; the electricity-only and CH shunting variants are narrower.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 98.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "Printed value.",
+        "derivation": {
+          "evidence": "report-p118-119.txt",
+          "quote": "Transport lorry  Î  Chemicals & cement: 100 km, wood: 50 km  transport systems road No RER  transport, lorry >16t, fleet average  9.80E+01 tkm  estimated",
+          "raw_value": 98.0,
+          "raw_unit": "tkm",
+          "per": "per m3 cement-bonded particle board",
+          "factor": 1.0,
+          "factor_unit": "tkm",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "transport lorry 16t fleet average",
+          "mapping_reason": "The report names 'transport, lorry >16t, fleet average'; the 16t-32t RER fleet average is that dataset at the process's own location, beating the CH copy and the other weight classes.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "85b3a5a6-2635-3546-b51b-4ccad397650b"
+      },
+      {
+        "name": "Wooden board manufacturing plant, cement bonded boards",
+        "amount": 4e-07,
+        "unit": "unit",
+        "location": "RER",
+        "note": "Infrastructure, printed value.",
+        "derivation": {
+          "evidence": "report-p118-119.txt",
+          "quote": "plant  Î  wooden materials extraction Yes RER  wooden board manufacturing plant, cement bonded boards  4.00E-07 unit  estimated",
+          "raw_value": 4e-07,
+          "raw_unit": "unit",
+          "per": "per m3 cement-bonded particle board",
+          "factor": 1.0,
+          "factor_unit": "unit",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "wooden board manufacturing plant cement bonded",
+          "mapping_reason": "The report names 'wooden board manufacturing plant, cement bonded boards'; the organic-bonded variant is the wrong binder.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "3d785591-507e-3c4a-8c69-f689c5bf5bc7"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Waste Heat",
+        "category": "air",
+        "amount": 87.7,
+        "unit": "megajoule",
+        "note": "Printed value, calculated by the authors.",
+        "derivation": {
+          "evidence": "report-p118-119.txt",
+          "quote": "Î  Waste heat into air  air unspecified  Heat, waste  8.77E+01 MJ  calculated",
+          "raw_value": 87.7,
+          "raw_unit": "MJ",
+          "per": "per m3 cement-bonded particle board",
+          "factor": 1.0,
+          "factor_unit": "MJ",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "mapping_reason": "'Heat, waste' to air unspecified; Waste Heat [air] in EF 3.1 is the substance and compartment, beating the soil/water copies and the residual-database groundwater flow.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "08a91e70-3ddc-11dd-9136-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Water To Cooling",
+        "category": "resources",
+        "amount": 0.3,
+        "unit": "cubic meter",
+        "note": "Printed value.",
+        "derivation": {
+          "evidence": "report-p118-119.txt",
+          "quote": "Process and cooling water  Î  evaporates partly during pressing and drying  resource in water  Water, cooling, unspecified natural origin  3.00E-01 m3  Schniewind 1989, p. 197 ff.",
+          "raw_value": 0.3,
+          "raw_unit": "m3",
+          "per": "per m3 cement-bonded particle board",
+          "factor": 1.0,
+          "factor_unit": "m3",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "mapping_reason": "'Water, cooling, unspecified natural origin' extracted from nature; Water To Cooling is the EF 3.1 resource-from-water flow in cubic metres, beating the emission-side 'Water from cooling' and the generic 'Water' resource.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "21868f36-62ab-4e8e-98ed-7106228c17be",
+        "database": "ef-3.1-biosphere"
+      }
+    ]
+  }
+}

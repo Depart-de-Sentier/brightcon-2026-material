@@ -1,0 +1,260 @@
+{
+  "target": {
+    "code": "96da7ab9-3f6d-3b4c-847a-113818353957",
+    "name": "Vermiculite, at mine",
+    "location": "ZA"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Fig. 6.1 'Flows for vermiculite, at mine and their representation in the ecoinvent database' [ZA], per 1 kg; allocation: The co-mined apatite/phosphate is explicitly neither a co-product nor a waste ('Since the apatite is dumped but afterwards used by other companies it is neither considered co-product nor waste'), so no allocation is applied and the phosphorus resource is booked in full on the vermiculite.. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI building products - Kellenberger.pdf",
+      "where": "pages 683-685 -> report-p683-685.txt",
+      "note": "report sha256 07faa39bab6942a9…, text sha256 1339dbe3216c6a93…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/96da7ab9-3f6d-3b4c-847a-113818353957/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "f30d1f7f5a9d0a22fcca52fab7b7ae71092ccb450ad3438a42bb4923d7ff5560",
+      "at": "2026-09-22T21:44:50Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "ba4f194c06be49a03a420beec8fabc196b952d570b4f1350e016676a891ec629",
+      "at": "2026-09-22T21:44:53Z"
+    },
+    "gaps_reported_by_model": [
+      "No dust emissions appear in Fig. 6.1 although the metadata says bauxite-mining dust is used as a proxy for them.",
+      "No recultivation input although the metadata says the module 'recultivation, limestone mine' is used as a proxy.",
+      "No transport within or out of the mine beyond the diesel for the machines.",
+      "No water use and no water emissions.",
+      "The metadata notes that no mining losses are taken into account as no data were available."
+    ],
+    "skipped_items": [
+      "Vermiculite, in ground: no flow chosen (None of the candidates is vermiculite: they are peat, spodumene and pyrolusite. Mapping the mined mineral to a different mineral would be wrong, so the line is reported as missing.)",
+      "Phosphorus, 18% in apatite, 12% in crude ore, in ground: no flow chosen (The keyword search returned no candidate at all for the apatite-bound phosphorus resource, so nothing can be chosen.)",
+      "Transformation, from unknown: no flow chosen (The keyword search returned no candidate at all for a transformation from unknown land, so nothing can be chosen.)"
+    ],
+    "assembled_at": "2026-09-22T21:44:53Z"
+  },
+  "node": {
+    "name": "Vermiculite, at mine, disaggregated",
+    "unit": "kg",
+    "location": "ZA",
+    "comment": "drafted from 2007 - LCI building products - Kellenberger.pdf pp. 683-685",
+    "inputs": [
+      {
+        "name": "Diesel, burned in building machine, average",
+        "amount": 0.00697,
+        "unit": "megajoule",
+        "location": "CH",
+        "note": "601'000 l/a for the whole mine",
+        "derivation": {
+          "evidence": "report-p683-685.txt",
+          "quote": "diesel (mine)           Î                                                                                                                           machinery            No     GLO                                           6.97E-03 MJ      Palabora Mining         1     1.24   (1,4,1,1,1,5);",
+          "raw_value": 0.00697,
+          "raw_unit": "MJ",
+          "per": "per kg vermiculite, at mine",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "diesel burned in building machine",
+          "mapping_reason": "'average' is the fleet mix the report's generic wording means; the with/without particle filter entries pick one abatement level.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "e4e7ddc0-f7d1-3fad-bd12-9d6981142800"
+      },
+      {
+        "name": "Light fuel oil, burned in industrial furnace 1MW, non-modulating",
+        "amount": 0.00532,
+        "unit": "megajoule",
+        "location": "RER",
+        "note": "paraffin heating fuel, light fuel oil used as proxy",
+        "derivation": {
+          "evidence": "report-p683-685.txt",
+          "quote": "heating - drying of                                                                                                                                                                    light fuel oil, burned in industrial",
+          "raw_value": 0.00532,
+          "raw_unit": "MJ",
+          "per": "per kg vermiculite, at mine",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "light fuel oil burned in industrial furnace 1MW",
+          "mapping_reason": "Exact name, size and modulation match at RER, the location the figure gives.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "82c07b68-8bf9-3537-9934-91924132e976"
+      },
+      {
+        "name": "xxx Electricity, medium voltage, production UCTE, at grid",
+        "amount": 0.000105,
+        "unit": "kilowatt hour",
+        "location": "UCTE",
+        "note": "crusher 0.1 kWh/t and winnowing machine 0.0045 kWh/t",
+        "derivation": {
+          "evidence": "report-p683-685.txt",
+          "quote": "electricity                                                                                                                                                                            electricity, medium voltage,",
+          "raw_value": 0.000105,
+          "raw_unit": "kWh",
+          "per": "per kg vermiculite, at mine",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electricity medium voltage production UCTE at grid",
+          "mapping_reason": "Exact name and geography match for the UCTE medium-voltage production mix; the single-technology entries are individual routes.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "d86e2374-784b-3fd9-910b-7583462ea81b"
+      },
+      {
+        "name": "Lubricating oil, at plant",
+        "amount": 8.06e-05,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "amount copied from bentonite mining",
+        "derivation": {
+          "evidence": "report-p683-685.txt",
+          "quote": "lubricating oil         Î                                                              amount copied from bentonite mining           chemicals      organics             No     RER    lubricating oil, at plant              8.06E-05 kg      Süd-Chemie (1999)       1     5.00   estimation",
+          "raw_value": 8.06e-05,
+          "raw_unit": "kg",
+          "per": "per kg vermiculite, at mine",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "lubricating oil at plant",
+          "mapping_reason": "Exact name match; soya oil and the oil power plant are unrelated.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "0b14288a-dbf3-3dac-a570-83d083f4b600"
+      },
+      {
+        "name": "Blasting",
+        "amount": 0.000166,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "HEF 100 explosive, 'Tovex' used as proxy",
+        "derivation": {
+          "evidence": "report-p683-685.txt",
+          "quote": "blasting                Î                                                                                                                           civil engineering    No     RER    blasting                               1.66E-04 kg      Palabora Mining         1     2.06   (1,4,1,1,5,5);",
+          "raw_value": 0.000166,
+          "raw_unit": "kg",
+          "per": "per kg vermiculite, at mine",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "blasting",
+          "mapping_reason": "The only candidate and an exact name and unit match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "f4afe0ed-9682-35b1-8c80-43a0d8bf3898"
+      },
+      {
+        "name": "Mine, vermiculite",
+        "amount": 6.45e-12,
+        "unit": "unit",
+        "location": "ZA",
+        "note": "3'100'000 t/a production, 50 a life time",
+        "derivation": {
+          "evidence": "report-p683-685.txt",
+          "quote": "vermiculite mine        Î                                                                                                                           additives            Yes    ZA     mine, vermiculite                      6.45E-12 unit    Palabora Mining         1     3.73   (1,4,1,1,5,5);",
+          "raw_value": 6.45e-12,
+          "raw_unit": "unit",
+          "per": "per kg vermiculite, at mine",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "mine vermiculite",
+          "mapping_reason": "Exact name and unit (unit, infrastructure) match at ZA; candidate 1 is the mined vermiculite itself and candidate 2 a gold mine.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "8fce413c-c15c-3bc8-a81f-e88f5061e5a0"
+      }
+    ],
+    "emissions": [],
+    "resources": [
+      {
+        "name": "Mineral Extraction Site",
+        "category": "land use",
+        "amount": 0.00065,
+        "unit": "m2a",
+        "note": "50 a occupation, 2000 kg/m3, 50 m depth",
+        "derivation": {
+          "evidence": "report-p683-685.txt",
+          "quote": "extraction site (mine) Î                                                                                                          resource          land                                                                      6.50E-04 m2a     estimation              1     1.58   (1,4,1,1,1,5);",
+          "raw_value": 0.00065,
+          "raw_unit": "m2a",
+          "per": "per kg vermiculite, at mine",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "'Mineral Extraction Site' in the Land use / Land occupation compartment, in square metre-years, matches the occupation line's meaning and unit; the To/From entries are transformations in square metres.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "b0744c5e-9859-470f-99dc-b117be5a32c5",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "To Mineral Extraction Site",
+        "category": "land use",
+        "amount": 1.3e-05,
+        "unit": "square meter",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p683-685.txt",
+          "quote": "to mineral extraction   Î                                                              density: 2'000 kg/m3 of mining material;      resource       land                                                                      1.30E-05 m2      estimation              1     2.06   (1,4,1,1,1,5);",
+          "raw_value": 1.3e-05,
+          "raw_unit": "m2",
+          "per": "per kg vermiculite, at mine",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "'To Mineral Extraction Site' in Land use / Land transformation, in square metres, matches both the direction and the unit; candidate 0 is the occupation in square metre-years and candidate 2 the opposite direction.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "68f57e2a-2909-423c-ad8e-6a695f59a48f",
+        "database": "ef-3.1-biosphere"
+      }
+    ]
+  }
+}

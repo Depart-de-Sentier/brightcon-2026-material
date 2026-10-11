@@ -1,0 +1,355 @@
+{
+  "target": {
+    "code": "ffb46227-8cee-3dfd-b9a4-fc5a0b38f7a3",
+    "name": "High pressure hydrogen Type IV storage tank production",
+    "location": "GLO"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Table 36 'Life cycle inventories to produce a high-pressure Type IV hydrogen tank. Storage capacity of 10 kg', column 'high pressure hydrogen storage tank/GLO U', per 1 p; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2024 - LCA power-to-X in residential sector - Sacchi.pdf",
+      "where": "pages 63-64 -> report-p63-64.txt",
+      "note": "report sha256 165eb1e3cb0728f7…, text sha256 121187c43fba8d55…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/ffb46227-8cee-3dfd-b9a4-fc5a0b38f7a3/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "29c4a695c4683b1acaa8250841113e3f72b21dc16a53aad955eec91234dde8e8",
+      "at": "2026-09-22T21:52:15Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "2bb588b53bd9c381265983822c4ef98447100c28e60282ca9a240b22b2b7afb7",
+      "at": "2026-09-22T21:52:17Z"
+    },
+    "gaps_reported_by_model": [
+      "No copper metal input is listed, only 'Sheet rolling, copper' - the copper itself appears to be missing from the table as printed (the aluminium, chromium steel and low-alloyed steel each have both a material and a rolling line).",
+      "No direct emissions of any kind.",
+      "No end-of-life / disposal of the tank.",
+      "No plant infrastructure for the tank factory.",
+      "The weaved carbon fibre is a linked dataset (Table 35, reproduced on p.63) rather than an elementary flow; its own energy, steam and emissions are inside it."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T21:52:18Z"
+  },
+  "node": {
+    "name": "High pressure hydrogen Type IV storage tank production, disaggregated",
+    "unit": "p",
+    "location": "GLO",
+    "comment": "drafted from 2024 - LCA power-to-X in residential sector - Sacchi.pdf pp. 63-64",
+    "inputs": [
+      {
+        "name": "Sheet rolling, aluminium",
+        "amount": 6.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p63-64.txt",
+          "quote": " Sheet rolling, aluminium/RER U                                        kg                                                  6.00e+00",
+          "raw_value": 6.0,
+          "raw_unit": "kg",
+          "per": "per 1 high-pressure Type IV hydrogen storage tank (10 kg capacity)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "sheet rolling aluminium",
+          "mapping_reason": "Exact name and material match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "6113497a-792f-38e7-a69a-420dff702898"
+      },
+      {
+        "name": "Aluminium alloy, AlMg3, at plant",
+        "amount": 6.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "the liner",
+        "derivation": {
+          "evidence": "report-p63-64.txt",
+          "quote": " Aluminium alloy, AlMg3, at plant/RER U                                kg                                                  6.00e+00",
+          "raw_value": 6.0,
+          "raw_unit": "kg",
+          "per": "per 1 high-pressure Type IV hydrogen storage tank (10 kg capacity)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "aluminium alloy AlMg3 at plant",
+          "mapping_reason": "Exact name and alloy match; the cast-alloy production mix is a different product.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "15e202fc-ad29-3de6-8ec0-a9ce3d9ff6fb"
+      },
+      {
+        "name": "Sheet rolling, chromium steel",
+        "amount": 9.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p63-64.txt",
+          "quote": " Sheet rolling, chromium steel/RER U                                   kg                                                  9.00e+00",
+          "raw_value": 9.0,
+          "raw_unit": "kg",
+          "per": "per 1 high-pressure Type IV hydrogen storage tank (10 kg capacity)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "sheet rolling chromium steel",
+          "mapping_reason": "Exact name and material match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "8f574699-0784-38ab-8f35-770310aaa795"
+      },
+      {
+        "name": "Chromium steel 18/8, at plant",
+        "amount": 9.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p63-64.txt",
+          "quote": " Chromium steel 18/8, at plant/RER U                                  kg                                        9.00e+00",
+          "raw_value": 9.0,
+          "raw_unit": "kg",
+          "per": "per 1 high-pressure Type IV hydrogen storage tank (10 kg capacity)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "chromium steel 18/8 at plant",
+          "mapping_reason": "Exact name match at RER; candidate 1 is the electric-arc sub-route.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "fc9385f8-fe2d-3399-b663-4b66e5062a3f"
+      },
+      {
+        "name": "Carbon fiber production, weaved, at factory",
+        "amount": 71.4,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "the filament winding of the Type IV tank",
+        "derivation": {
+          "evidence": "report-p63-64.txt",
+          "quote": " carbon fiber production, weaved, at factory/RER U                    kg                                        7.14e+01",
+          "raw_value": 71.4,
+          "raw_unit": "kg",
+          "per": "per 1 high-pressure Type IV hydrogen storage tank (10 kg capacity)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "carbon fibre weaved at factory",
+          "mapping_reason": "Exact name match including the word 'production', which is how the report names the linked process; candidate 0 is the fibre product itself.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "6fb00d85-2c93-3d8b-99ad-f322ebe77abb"
+      },
+      {
+        "name": "Epoxy resin, liquid, at plant",
+        "amount": 30.6,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "matrix of the composite",
+        "derivation": {
+          "evidence": "report-p63-64.txt",
+          "quote": " Epoxy resin, liquid, at plant/RER U                                  kg                                        3.06e+01",
+          "raw_value": 30.6,
+          "raw_unit": "kg",
+          "per": "per 1 high-pressure Type IV hydrogen storage tank (10 kg capacity)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "epoxy resin liquid at plant",
+          "mapping_reason": "Exact name match; candidate 1 is the disaggregated-data variant of the same resin.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "c80b8e9e-8a0d-36f6-a4a2-1509d03e42c2"
+      },
+      {
+        "name": "Sheet rolling, copper",
+        "amount": 9.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p63-64.txt",
+          "quote": " Sheet rolling, copper/RER U                                          kg                                        9.00e+00",
+          "raw_value": 9.0,
+          "raw_unit": "kg",
+          "per": "per 1 high-pressure Type IV hydrogen storage tank (10 kg capacity)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "sheet rolling copper",
+          "mapping_reason": "Exact name and material match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "cc7e838a-99f1-3477-a3ea-04d56ecb13c0"
+      },
+      {
+        "name": "Steel, low-alloyed, at plant",
+        "amount": 9.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p63-64.txt",
+          "quote": " Steel, low-alloyed, at plant/RER U                                   kg                                        9.00e+00",
+          "raw_value": 9.0,
+          "raw_unit": "kg",
+          "per": "per 1 high-pressure Type IV hydrogen storage tank (10 kg capacity)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "steel low-alloyed at plant",
+          "mapping_reason": "Exact name match at RER; candidate 1 is the converter sub-route.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "b9430f24-d0b9-3422-a5ad-f874acbbef18"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 23.2,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "19.3 kg over 1200 km, generic ecoinvent distances",
+        "derivation": {
+          "evidence": "report-p63-64.txt",
+          "quote": " transport, freight, rail/tkm/RER U                                   tkm                                       2.32e+01     Generic transport distances are",
+          "raw_value": 23.2,
+          "raw_unit": "tkm",
+          "per": "per 1 high-pressure Type IV hydrogen storage tank (10 kg capacity)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "Exact name match at RER, the geography the table gives.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 48.3,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "48.3 kg over 1000 km",
+        "derivation": {
+          "evidence": "report-p63-64.txt",
+          "quote": " transport, freight, lorry 16-32 metric ton, fleet average/RER U      tkm                                       4.83e+01     Generic transport distances are",
+          "raw_value": 48.3,
+          "raw_unit": "tkm",
+          "per": "per 1 high-pressure Type IV hydrogen storage tank (10 kg capacity)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight lorry 16-32t fleet average",
+          "mapping_reason": "Exact class and fleet-average match at RER.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "85b3a5a6-2635-3546-b51b-4ccad397650b"
+      },
+      {
+        "name": "Transport, barge tanker",
+        "amount": 7.14,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "71.4 kg over 100 km",
+        "derivation": {
+          "evidence": "report-p63-64.txt",
+          "quote": " transport, barge tanker/tkm/RER U                                    tkm                                       7.14e+00     Generic transport distances are",
+          "raw_value": 7.14,
+          "raw_unit": "tkm",
+          "per": "per 1 high-pressure Type IV hydrogen storage tank (10 kg capacity)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport barge tanker",
+          "mapping_reason": "Exact name and unit (ton kilometre) match; candidate 1 is the barge vessel itself.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "9ff39b71-5d21-3756-85b8-76a08a064a12"
+      },
+      {
+        "name": "xxx Electricity, low voltage, production ENTSO, at grid",
+        "amount": 4.5,
+        "unit": "kilowatt hour",
+        "location": "ENTSO-E",
+        "note": "assembly electricity",
+        "derivation": {
+          "evidence": "report-p63-64.txt",
+          "quote": " electricity, low voltage, production ENTSO, at grid/kWh/ENTSO U      kWh                                       4.50e+00",
+          "raw_value": 4.5,
+          "raw_unit": "kWh",
+          "per": "per 1 high-pressure Type IV hydrogen storage tank (10 kg capacity)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electricity low voltage production ENTSO at grid",
+          "mapping_reason": "Exact name match for the ENTSO low-voltage production mix; candidate 0 is the ENTSO-E spelling of the same mix but the 'xxx' entry carries the exact dataset name the table cites.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "86c24a85-ced7-3cbe-a491-989b2097c3c1"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

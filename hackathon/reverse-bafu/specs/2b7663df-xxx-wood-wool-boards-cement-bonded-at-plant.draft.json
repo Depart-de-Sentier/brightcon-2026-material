@@ -1,0 +1,332 @@
+{
+  "target": {
+    "code": "2b7663df-e40b-3aa9-b7ee-2ae098409a40",
+    "name": "xxx Wood wool boards, cement bonded, at plant",
+    "location": "RER"
+  },
+  "variant": "draft",
+  "strategy": {
+    "code": "S3",
+    "label": "top-down model drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: per 1 m3 of wood wool boards, cement bonded; the product row reads 'wood wool boards, cement bonded, at plant  1.00E+00 m3' (medium density 450 kg/m3, range 360-570 kg/m3); allocation: none stated for the board process itself; 3 of 8 inputs carry a printed amount, 4 a printed range, 1 no number in the report (xxx Electricity, medium voltage, production UCTE, at grid). Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI wood as fuel and const. mat. - Werner.pdf",
+      "where": "pages 97-99 -> report-p97-99.txt",
+      "note": "report sha256 1f2e06f8a69ca03e…, text sha256 e4722b9d949de48a…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "specs/evidence/2b7663df-e40b-3aa9-b7ee-2ae098409a40/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5[1m]",
+      "prompt_sha256": "7330ff91475edf8f6de16c4ece51d127b023720d305ab351f71b1746a602e4db",
+      "at": "2026-09-22T19:49:54Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5[1m]",
+      "prompt_sha256": "2ee505b4f0e1217f1a22e3b202419a8107481e1f03b5d37d52761b8e5b1fc45c",
+      "at": "2026-09-22T19:49:56Z"
+    },
+    "gaps_reported_by_model": [
+      "Electricity and light-fuel-oil heat are printed as 'confidential'; their amounts come from the calibration step, not from the report. The bounds used (1-500 kWh, 1-5000 MJ per m3) are wide search ranges chosen here, not report values.",
+      "No process emissions are documented ('No process emission data are available' in the BAFU metadata); only the calculated waste heat.",
+      "The excerpt gives no packaging, no water emissions and no solid waste for the board process."
+    ],
+    "skipped_items": [
+      "wood wool boards, cement bonded, at plant: product — Reference product; fixes the basis at 1 m3, matching the target unit."
+    ],
+    "assembled_at": "2026-09-22T19:49:56Z"
+  },
+  "node": {
+    "name": "xxx Wood wool boards, cement bonded, at plant, disaggregated",
+    "unit": "m3",
+    "location": "RER",
+    "comment": "drafted from 2007 - LCI wood as fuel and const. mat. - Werner.pdf pp. 97-99",
+    "inputs": [
+      {
+        "name": "xxx Wood wool, u=20%, at plant",
+        "amount": 120.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "Mean value 1.50E+02 kg printed; the Remarks column gives the range 120-180 kg, so it is entered as a bounded free input.",
+        "derivation": {
+          "evidence": "report-p97-99.txt",
+          "quote": "Wood wool, at plant (u=20%)  Î  120-180 kg  wooden materials extraction No RER  wood wool, u=20%, at plant  1.50E+02 kg  Schniewind 1989, p. 197 ff.",
+          "raw_value": 150.0,
+          "raw_unit": "kg",
+          "per": "per m3 wood wool board",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "wood wool u=20%",
+          "mapping_reason": "The report names 'wood wool, u=20%, at plant'; this is that dataset in kilograms (the row is in kg), beating the cubic-metre residue-wood variants and the plain 'Wood wool, at plant'.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "free": true,
+        "bounds": [
+          120.0,
+          180.0
+        ],
+        "code": "e6bceb53-883e-34b3-8b33-686bc80b5f5f"
+      },
+      {
+        "name": "Cement, unspecified, at plant",
+        "amount": 180.00000000000003,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "Mean value 2.15E+02 kg printed; Remarks give the range 180-250 kg.",
+        "derivation": {
+          "evidence": "report-p97-99.txt",
+          "quote": "Portland Cement  Î  180-250 kg  construction materials binder No CH  cement, unspecified, at plant  2.15E+02 kg  Schniewind 1989, p. 197 ff.",
+          "raw_value": 215.0,
+          "raw_unit": "kg",
+          "per": "per m3 wood wool board",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "cement unspecified plant",
+          "mapping_reason": "The report names 'cement, unspecified, at plant' at CH; the only cement candidate, the rest are boards or unrelated 'unspecified' datasets.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "free": true,
+        "bounds": [
+          180.0,
+          250.0
+        ],
+        "code": "39f4c4a5-a5f8-3299-8841-9ab862d9e8fa"
+      },
+      {
+        "name": "Chemicals organic, at plant",
+        "amount": 6.0,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "Mean value 7 kg printed; Remarks give 6-8 kg.",
+        "derivation": {
+          "evidence": "report-p97-99.txt",
+          "quote": "Organic chemicals  Î  Additives: 6-8 kg; sometimes, no organic chemicals but waterglas is used  chemicals organics No GLO  chemicals organic, at plant  7.00E+00 kg",
+          "raw_value": 7.0,
+          "raw_unit": "kg",
+          "per": "per m3 wood wool board",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "chemicals organic plant",
+          "mapping_reason": "The report names 'chemicals organic, at plant (GLO)'; that exact dataset, beating the organic adhesive and the chemical-plant infrastructure.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "free": true,
+        "bounds": [
+          6.0,
+          8.0
+        ],
+        "code": "4d96ad56-9dd3-3fda-bff6-d24796d01043"
+      },
+      {
+        "name": "xxx Electricity, medium voltage, production UCTE, at grid",
+        "amount": 0.9999999999999999,
+        "unit": "kilowatt hour",
+        "location": "UCTE",
+        "note": "The Mean value column reads 'confidential' for this row. The input is explicitly named, so it is kept with raw_value as a seed only (NOT a reported number) and a wide raw_min/raw_max range, making it a free parameter that the calibration step determines.",
+        "derivation": {
+          "evidence": "report-p97-99.txt",
+          "quote": "Electricity  Î  confidential  electricity production mix No UCTE  electricity, medium voltage, production UCTE, at grid  confidential kWh  CEWAG Düdingen, Herr Kurzo",
+          "raw_value": 30.0,
+          "raw_unit": "kWh",
+          "per": "per m3 wood wool board",
+          "factor": 1.0,
+          "factor_unit": "kWh",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "electricity medium voltage UCTE",
+          "mapping_reason": "The report names 'electricity, medium voltage, production UCTE, at grid'; this candidate is that exact dataset at UCTE, beating the RER/CH grid mixes and the single-fuel UCTE variants.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "free": true,
+        "bounds": [
+          1.0,
+          500.0
+        ],
+        "code": "d86e2374-784b-3fd9-910b-7583462ea81b"
+      },
+      {
+        "name": "Heat, light fuel oil, at industrial furnace 1MW",
+        "amount": 0.9999999999999999,
+        "unit": "megajoule",
+        "location": "RER",
+        "note": "The Mean value column reads 'confidential' for this row. The input is explicitly named, so it is kept with raw_value as a seed only (NOT a reported number) and a wide raw_min/raw_max range, making it a free parameter that the calibration step determines.",
+        "derivation": {
+          "evidence": "report-p97-99.txt",
+          "quote": "Thermal heat from oil firing extra light  Î  confidential  oil heating systems No RER  heat, light fuel oil, at industrial furnace 1MW  confidential MJ  CEWAG Düdingen, Herr Kurzo",
+          "raw_value": 200.0,
+          "raw_unit": "MJ",
+          "per": "per m3 wood wool board",
+          "factor": 1.0,
+          "factor_unit": "MJ",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "heat light fuel oil industrial furnace 1MW",
+          "mapping_reason": "The report names 'heat, light fuel oil, at industrial furnace 1MW' at RER; that exact dataset, beating the CH copy, heavy fuel oil and the 'burned in' variants.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "free": true,
+        "bounds": [
+          1.0,
+          5000.0
+        ],
+        "code": "5c9a8f03-0938-3057-a036-97ae8a6f2fb7"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 25.7,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "Printed value.",
+        "derivation": {
+          "evidence": "report-p97-99.txt",
+          "quote": "Transport rail  Î  Chemicals: 600 km, cement: 100 km, wood: 0 km  transport systems train No RER  transport, freight, rail  2.57E+01 tkm  estimated",
+          "raw_value": 25.7,
+          "raw_unit": "tkm",
+          "per": "per m3 wood wool board",
+          "factor": 1.0,
+          "factor_unit": "tkm",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "The report names 'transport, freight, rail' without a traction specification, which is exactly this RER average; the electricity-only and CH shunting variants are narrower.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 22.2,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "Printed value.",
+        "derivation": {
+          "evidence": "report-p97-99.txt",
+          "quote": "Transport lorry  Î  Chemicals & cement: 100 km, wood: 0 km  transport systems road No RER  transport, lorry >16t, fleet average  2.22E+01 tkm  estimated",
+          "raw_value": 22.2,
+          "raw_unit": "tkm",
+          "per": "per m3 wood wool board",
+          "factor": 1.0,
+          "factor_unit": "tkm",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "transport lorry 16t fleet average",
+          "mapping_reason": "The report names 'transport, lorry >16t, fleet average'; the 16t-32t RER fleet average is that dataset at the process's own location, beating the CH copy and the other weight classes.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "85b3a5a6-2635-3546-b51b-4ccad397650b"
+      },
+      {
+        "name": "Wooden board manufacturing plant, cement bonded boards",
+        "amount": 4e-07,
+        "unit": "unit",
+        "location": "RER",
+        "note": "Infrastructure, printed value.",
+        "derivation": {
+          "evidence": "report-p97-99.txt",
+          "quote": "plant  Î  wooden materials extraction Yes RER  wooden board manufacturing plant, cement bonded boards  4.00E-07 unit  estimated",
+          "raw_value": 4e-07,
+          "raw_unit": "unit",
+          "per": "per m3 wood wool board",
+          "factor": 1.0,
+          "factor_unit": "unit",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "wooden board manufacturing plant cement bonded",
+          "mapping_reason": "The report names 'wooden board manufacturing plant, cement bonded boards'; the organic-bonded variant is the wrong binder.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "3d785591-507e-3c4a-8c69-f689c5bf5bc7"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Waste Heat",
+        "category": "air",
+        "amount": 32.9,
+        "unit": "megajoule",
+        "note": "Printed value, calculated by the authors.",
+        "derivation": {
+          "evidence": "report-p97-99.txt",
+          "quote": "Î  Waste heat into air  air unspecified  Heat, waste  3.29E+01 MJ  calculated",
+          "raw_value": 32.9,
+          "raw_unit": "MJ",
+          "per": "per m3 wood wool board",
+          "factor": 1.0,
+          "factor_unit": "MJ",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "mapping_reason": "'Heat, waste' to air unspecified; Waste Heat [air] in EF 3.1 is the substance and compartment, beating the soil/water copies and the residual-database groundwater flow.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "08a91e70-3ddc-11dd-9136-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Water To Cooling",
+        "category": "resources",
+        "amount": 0.245,
+        "unit": "cubic meter",
+        "note": "Printed value. The Remarks range 200-290 kg refers to the water mass, consistent with 0.245 m3.",
+        "derivation": {
+          "evidence": "report-p97-99.txt",
+          "quote": "Process and cooling water  Î  200-290 kg; evaporates partly during drying  resource in water  Water, cooling, unspecified natural origin  2.45E-01 m3  Schniewind 1989, p. 197 ff.",
+          "raw_value": 0.245,
+          "raw_unit": "m3",
+          "per": "per m3 wood wool board",
+          "factor": 1.0,
+          "factor_unit": "m3",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "mapping_reason": "'Water, cooling, unspecified natural origin' extracted from nature; Water To Cooling is the EF 3.1 resource-from-water flow in cubic metres, beating the emission-side 'Water from cooling' and the generic 'Water' resource.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "21868f36-62ab-4e8e-98ed-7106228c17be",
+        "database": "ef-3.1-biosphere"
+      }
+    ]
+  }
+}

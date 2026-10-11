@@ -1,0 +1,38 @@
+[project]
+name = "bafu-reverse-engineering"
+version = "0.1.0"
+description = "Brightcon 2026 hackathon: dis-aggregate BAFU-2026 system processes into unit processes"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+dependencies = [
+    # installs BAFU-2026 v1 + EF 3.1 biosphere/methods into a Brightway project
+    "sentier-brightway",
+    # Brightway 2.5 (bw2data is only a testing extra of sentier-brightway, so we add it here)
+    "bw2data>=4.0",
+    "bw2calc>=2.0",
+    # disaggregation pipeline (src/reverse_bafu)
+    "numpy>=1.24",
+    "scipy>=1.10",
+    "jsonschema>=4",
+]
+
+[project.scripts]
+reverse-bafu = "reverse_bafu.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/reverse_bafu"]
+
+[project.optional-dependencies]
+# faster matrix solves for `sentier-brightway backtest`
+fast = ["pypardiso>=0.4"]
+# `reverse-bafu draft` calling Claude directly (otherwise use --dry-run / --from-response)
+llm = ["anthropic>=1.0"]
+
+[tool.uv.sources]
+sentier-brightway = { git = "https://github.com/sentier-dev/sentier-brightway", rev = "a9dba7533be312f4d11549dd088d14d173d8d1b1" }

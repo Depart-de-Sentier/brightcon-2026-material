@@ -18,6 +18,7 @@ repair and import tools, notebooks, and traceability documentation.
 │   └── intermediate/
 ├── hackathon/
 │   ├──lca-lineage/         # LCA data lineage project
+│   ├──reverse-bafu/        # Dis-aggregating BAFU system processes into unit processes (issue #38)
 │   ├──input-data/          # Input data for the hackathon
 ```
 

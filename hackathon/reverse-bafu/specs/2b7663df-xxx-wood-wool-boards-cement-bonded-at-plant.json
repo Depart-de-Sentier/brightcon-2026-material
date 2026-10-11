@@ -1,0 +1,171 @@
+{
+  "target": {
+    "code": "2b7663df-e40b-3aa9-b7ee-2ae098409a40",
+    "name": "xxx Wood wool boards, cement bonded, at plant",
+    "location": "RER"
+  },
+  "strategy": {
+    "code": "S2",
+    "label": "template transfer from a BAFU unit process of the same product; main amounts calibrated within 0.5-2x",
+    "note": "The obsolete xxx dataset is the aggregated form of BAFU's own 'Wood wool boards, cement bonded, at plant' [RER] unit process: same product, same reference unit (m3) and same location, so the structure transfers one to one. Six amounts left free within 0.5-2x."
+  },
+  "evidence": [
+    {
+      "source": "bafu-2026: Wood wool boards, cement bonded, at plant [RER] (unit process, 8 inputs)",
+      "where": "template transfer (S2)",
+      "note": "Same name, unit and location as the aggregated xxx dataset."
+    },
+    {
+      "source": "2007 - LCI wood as fuel and const. mat. - Werner.pdf",
+      "where": "wood wool boards",
+      "note": "The report prints the unit process table with 'confidential' in the electricity cell only."
+    }
+  ],
+  "node": {
+    "name": "Wood wool boards, cement bonded, at plant, RER, disaggregated",
+    "unit": "cubic meter",
+    "location": "RER",
+    "comment": "Structure taken from the template unit process; amounts calibrated against the aggregated vector within bounds.",
+    "inputs": [
+      {
+        "name": "Transport, freight, rail",
+        "amount": 25.7,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030",
+        "note": "template Transport, freight, rail [RER]"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 11.099999999999998,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "code": "99f8a4b0-99b5-3130-924c-5de4c10b62ef",
+        "note": "template Transport, freight, lorry, fleet average [RER]",
+        "free": true,
+        "bounds": [
+          11.1,
+          44.4
+        ]
+      },
+      {
+        "name": "Chemicals organic, at plant",
+        "amount": 3.5,
+        "unit": "kilogram",
+        "location": "GLO",
+        "code": "4d96ad56-9dd3-3fda-bff6-d24796d01043",
+        "note": "template Chemicals organic, at plant [GLO]",
+        "free": true,
+        "bounds": [
+          3.5,
+          14.0
+        ]
+      },
+      {
+        "name": "Cement, unspecified, at plant",
+        "amount": 107.50000000000001,
+        "unit": "kilogram",
+        "location": "CH",
+        "code": "39f4c4a5-a5f8-3299-8841-9ab862d9e8fa",
+        "note": "template Cement, unspecified, at plant [CH]",
+        "free": true,
+        "bounds": [
+          107.5,
+          430.0
+        ]
+      },
+      {
+        "name": "Heat, hardwood chips from industry, at furnace 300kW",
+        "amount": 36.65,
+        "unit": "megajoule",
+        "location": "CH",
+        "code": "3c7bfd5c-8c13-3393-86ae-305c8ff436df",
+        "note": "template Heat, hardwood chips from industry, at furnace 300kW [CH]",
+        "free": true,
+        "bounds": [
+          36.65,
+          146.6
+        ]
+      },
+      {
+        "name": "Electricity, medium voltage, production ENTSO-E, at grid",
+        "amount": 4.56,
+        "unit": "kilowatt hour",
+        "location": "ENTSO-E",
+        "code": "648e3bb3-7b98-46f8-9da1-f45627c309ef",
+        "note": "template Electricity, medium voltage, production ENTSO-E, at grid [ENTSO-E]",
+        "free": true,
+        "bounds": [
+          4.56,
+          18.24
+        ]
+      },
+      {
+        "name": "Wooden board manufacturing plant, cement bonded boards",
+        "amount": 2e-07,
+        "unit": "unit",
+        "location": "RER",
+        "code": "3d785591-507e-3c4a-8c69-f689c5bf5bc7",
+        "note": "template Wooden board manufacturing plant, cement bonded boards [RER]",
+        "free": true,
+        "bounds": [
+          2e-07,
+          8e-07
+        ]
+      },
+      {
+        "name": "Wood wool, at plant",
+        "amount": 75.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "code": "36c4bb40-13ca-3fdf-9440-5d28e360ccb7",
+        "note": "template Wood wool, at plant [RER]",
+        "free": true,
+        "bounds": [
+          75.0,
+          300.0
+        ]
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Water",
+        "category": "air",
+        "amount": 9.49e-05,
+        "unit": "cubic meter",
+        "code": "0342f5e5-b53e-4cec-9e67-fb197f24fff0",
+        "database": "ef-3.1-biosphere",
+        "note": "direct flow of the template unit process"
+      },
+      {
+        "name": "Water",
+        "category": "Emissions",
+        "amount": 0.23275,
+        "unit": "cubic meter",
+        "code": "a3876d9b-a3e8-4680-861a-4e08642f1392",
+        "database": "ef-3.1-biosphere",
+        "note": "direct flow of the template unit process"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Water",
+        "category": "Resources",
+        "amount": 0.1500625,
+        "unit": "cubic meter",
+        "code": "419682fe-60fb-4b43-be89-bf2824b51104",
+        "database": "ef-3.1-biosphere",
+        "note": "direct flow of the template unit process"
+      },
+      {
+        "name": "river water",
+        "category": "Resources",
+        "amount": 0.245,
+        "unit": "cubic meter",
+        "code": "805a7346-1664-4483-afe3-4b224be5e361",
+        "database": "ef-3.1-biosphere",
+        "note": "direct flow of the template unit process"
+      }
+    ]
+  }
+}

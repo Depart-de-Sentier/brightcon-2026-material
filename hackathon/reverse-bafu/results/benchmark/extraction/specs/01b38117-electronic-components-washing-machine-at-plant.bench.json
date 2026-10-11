@@ -1,0 +1,103 @@
+{
+  "target": {
+    "code": "01b38117-37b0-311d-8609-6f9286d87759",
+    "name": "Electronic components, washing machine, at plant",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 11.7 'Unit process inventory of the dataset \"electronic component, unspecified, at plant (GLO)\"', per 1 kg; the 67 % / 33 % split of passive and active components comes from Tab. 11.1 via section 11.3.; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI electric and electronic equipment - Hischier.pdf",
+      "where": "pages 194-196 -> report-p194-196.txt",
+      "note": "report sha256 1b20d658287bb37d…, text sha256 86d4c1633ed4649f…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/01b38117-37b0-311d-8609-6f9286d87759/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "bb2c0cef46d04d570c057f1f745f750d128d644c33ee8d6415b186bfa1de9124",
+      "at": "2026-09-22T21:54:47Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "64149fb6fc5c30735126e163324f8b89eefe27091833504fba48212d27696500",
+      "at": "2026-09-22T21:54:48Z"
+    },
+    "gaps_reported_by_model": [
+      "The report has no washing-machine-specific component dataset; this is the generic GLO mix from television, desktop-computer and laptop printed wiring boards, so the BAFU dataset's composition may differ.",
+      "The dataset is a pure two-line assembly: no energy, no transport, no infrastructure and no direct emissions of its own; everything sits in the passive and active sub-datasets (Tab. 11.5 and Tab. 11.6).",
+      "Uncertainty is explicitly 'rather high' (StDv95 = 2.29)."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T21:54:48Z"
+  },
+  "node": {
+    "name": "Electronic components, washing machine, at plant, disaggregated",
+    "unit": "p",
+    "location": "CH",
+    "comment": "drafted from 2007 - LCI electric and electronic equipment - Hischier.pdf pp. 194-196",
+    "inputs": [
+      {
+        "name": "Electronic component, passive, unspecified, at plant",
+        "amount": 0.67,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "67 % passive components per section 11.3",
+        "derivation": {
+          "evidence": "report-p194-196.txt",
+          "quote": "passive component     H                                                                                                                elect ronics   component     No        GLO                                            6.70E-01 kg                                     1     2.29",
+          "raw_value": 0.67,
+          "raw_unit": "kg",
+          "per": "per kg of unspecified electronic components",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electronic component passive unspecified at plant",
+          "mapping_reason": "Exact name match; candidate 1 is the combined dataset this one feeds and candidate 2 the active components.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "3bc3ee2f-7516-3efa-923c-20251484c334"
+      },
+      {
+        "name": "Electronic component, active, unspecified, at plant",
+        "amount": 0.33,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "33 % active components per section 11.3",
+        "derivation": {
+          "evidence": "report-p194-196.txt",
+          "quote": "active component      H                                                                                                                elect ronics   component     No        GLO                                            3.30E-01 kg                                     1     2.29",
+          "raw_value": 0.33,
+          "raw_unit": "kg",
+          "per": "per kg of unspecified electronic components",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electronic component active unspecified at plant",
+          "mapping_reason": "Exact name match; candidate 1 is the combined dataset and candidate 2 the passive components.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "da6d0b4c-54ad-3388-8d07-38caeda40d00"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

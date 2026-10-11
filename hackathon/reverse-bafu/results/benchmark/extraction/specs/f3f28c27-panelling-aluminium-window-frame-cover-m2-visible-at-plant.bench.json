@@ -1,0 +1,179 @@
+{
+  "target": {
+    "code": "f3f28c27-d1a8-3ac8-b40f-2c66bc92c83a",
+    "name": "Panelling, aluminium, window frame cover, m2 visible, at plant",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tabelle 10 'Sachbilanzdaten der Herstellung der Aluminiumbeplankung des Holz-Metallfensterrahmens pro m2 Rahmenflaeche im Licht, ab Werk', column 'panelling, aluminium, window casement and frame cover, m2 visible, at plant' [CH], per 1 m2; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2020 - LCA wooden windows and doors - Ramseier.pdf",
+      "where": "pages 25-27 -> report-p25-27.txt",
+      "note": "report sha256 f1b267004c921d2b…, text sha256 6ab63fb788d71d66…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/f3f28c27-d1a8-3ac8-b40f-2c66bc92c83a/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "0365ddb6bb5223c6c5bb3030963f70d61e53b745da9837476955df97ffcff0d6",
+      "at": "2026-09-22T22:04:19Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "8758c9de55b2e7421b6806f1c9f9b333b443527b01d6d71c8a57d16b32b9fc29",
+      "at": "2026-09-22T22:04:20Z"
+    },
+    "gaps_reported_by_model": [
+      "No production electricity or heat for cutting and assembling the panelling; only the profile, the two surface treatments and the transport.",
+      "No direct emissions.",
+      "No production waste or its disposal.",
+      "The aluminium profile line appears twice (17.5 kg + 13.8 kg = 31.3 kg per m2 of visible frame area), once for the anodised and once for the powder-coated variant, so the dataset appears to be a weighted mix of the two surface treatments rather than one product."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T22:04:20Z"
+  },
+  "node": {
+    "name": "Panelling, aluminium, window frame cover, m2 visible, at plant, disaggregated",
+    "unit": "m2",
+    "location": "CH",
+    "comment": "drafted from 2020 - LCA wooden windows and doors - Ramseier.pdf pp. 25-27",
+    "inputs": [
+      {
+        "name": "Aluminium profile, uncoated, SZFF 2014, recycling share 52%, at plant",
+        "amount": 17.5,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "the anodised share of the panelling",
+        "derivation": {
+          "evidence": "report-p25-27.txt",
+          "quote": "technosphere                                                                 CH            0                     kg          1.75E+1             1                1.16",
+          "raw_value": 17.5,
+          "raw_unit": "kg",
+          "per": "per m2 of visible frame area of aluminium window panelling",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "aluminium profile uncoated SZFF 2014 recycling share 52% at plant",
+          "mapping_reason": "Exact name match; candidate 1 uses the resource-correction accounting convention.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "c48b5f7a-ac68-3f26-89c1-9eece0e9e878"
+      },
+      {
+        "name": "Anodising, aluminium sheet",
+        "amount": 4.34,
+        "unit": "square meter",
+        "location": "RER",
+        "note": "surface treatment of the 17.5 kg profile",
+        "derivation": {
+          "evidence": "report-p25-27.txt",
+          "quote": "              anodising, aluminium sheet                                     RER           0                     m2          4.34E+0             1                1.16",
+          "raw_value": 4.34,
+          "raw_unit": "m2",
+          "per": "per m2 of visible frame area of aluminium window panelling",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "anodising aluminium sheet",
+          "mapping_reason": "Exact name and unit (square metre) match; candidate 1 is the sheet itself by mass.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "82eaafaf-cf02-3075-b837-503fc75c9dae"
+      },
+      {
+        "name": "Aluminium profile, uncoated, SZFF 2014, recycling share 52%, at plant",
+        "amount": 13.8,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "the powder-coated share of the panelling; the table lists the same dataset twice, once per surface treatment",
+        "derivation": {
+          "evidence": "report-p25-27.txt",
+          "quote": "                                                                             CH            0                     kg          1.38E+1             1                1.16",
+          "raw_value": 13.8,
+          "raw_unit": "kg",
+          "per": "per m2 of visible frame area of aluminium window panelling",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "aluminium profile uncoated SZFF 2014 recycling share 52% at plant",
+          "mapping_reason": "Same dataset as the anodised line; the table books the powder-coated share as the same aluminium profile.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "c48b5f7a-ac68-3f26-89c1-9eece0e9e878"
+      },
+      {
+        "name": "Powder coating, aluminium sheet",
+        "amount": 3.41,
+        "unit": "square meter",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p25-27.txt",
+          "quote": "              powder coating, aluminium sheet                                RER           0                     m2          3.41E+0             1                1.16",
+          "raw_value": 3.41,
+          "raw_unit": "m2",
+          "per": "per m2 of visible frame area of aluminium window panelling",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "powder coating aluminium sheet",
+          "mapping_reason": "Exact name, substrate and unit match; candidate 1 is a selective solar coating.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "b3bbff04-9f71-3acc-b827-19bd99e6f9b6"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 3.75,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p25-27.txt",
+          "quote": "              transport, freight, lorry, fleet average                       CH            0                     tkm         3.75E+0             1                2.03",
+          "raw_value": 3.75,
+          "raw_unit": "tkm",
+          "per": "per m2 of visible frame area of aluminium window panelling",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight lorry fleet average",
+          "mapping_reason": "Exact name match at CH, the location the table gives.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "cedd6b69-4829-358e-9ea2-f280e8ac03cb"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

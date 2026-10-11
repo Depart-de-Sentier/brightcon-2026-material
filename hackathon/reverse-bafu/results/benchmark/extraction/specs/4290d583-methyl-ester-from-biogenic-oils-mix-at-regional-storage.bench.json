@@ -1,0 +1,203 @@
+{
+  "target": {
+    "code": "4290d583-d2ec-3572-b130-a8708c33f8b6",
+    "name": "Methyl ester, from biogenic oils, mix, at regional storage",
+    "location": "RER"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 2.6, column 'methyl ester, from biogenic oils, mix, at regional storage' [RER], per 1 kg of that product; the column entries are mass shares in %; allocation: none stated; the table is a market mix, the shares are the 2016 biomass feedstock shares for Europe (column 'Shares biomass feedstock RER 2016'). Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2018 - LCI oil products distribution - Jungbluth.pdf",
+      "where": "pages 16-17 -> report-p16-17.txt",
+      "note": "report sha256 6e03c0d6b8333886…, text sha256 141202902e1820e5…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/4290d583-d2ec-3572-b130-a8708c33f8b6/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "a697bbfe7df71ece1c5b394108e24b0a935f4fe264b528716aac40a66c956793",
+      "at": "2026-09-22T12:19:26Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "17abef978b41906fbf7934f6cece0149f8fb62393f52c1b1c20a23de19e4632c",
+      "at": "2026-09-22T12:19:27Z"
+    },
+    "gaps_reported_by_model": [
+      "The six shares in the methyl ester column add up to 99 %, not 100 % — the excerpt gives no line for the missing 1 %.",
+      "All other rows of Tab. 2.6 (heat from natural gas, electricity, ethanol fermentation plant, sewage treatment, the ethanol feedstocks and the waste heat emission) carry a value only in the 'ethanol, 99.7% in H2O, from biomass, at distillation' column and a 0 in the methyl ester column, so no energy, infrastructure or direct emission is documented for this dataset.",
+      "No transport to the regional storage is given in the excerpt although the dataset name says 'at regional storage'."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T12:19:27Z"
+  },
+  "node": {
+    "name": "Methyl ester, from biogenic oils, mix, at regional storage, disaggregated",
+    "unit": "kg",
+    "location": "RER",
+    "comment": "drafted from 2018 - LCI oil products distribution - Jungbluth.pdf pp. 16-17",
+    "inputs": [
+      {
+        "name": "Rape methyl ester, at esterification plant",
+        "amount": 0.52,
+        "unit": "kg/%",
+        "location": "RER",
+        "note": "largest share of the mix; feedstock rape oil",
+        "derivation": {
+          "evidence": "report-p16-17.txt",
+          "quote": "rape methyl ester, at esterification plant                            RER             0           kg             0                52%            1   1.05     (1,1,1,1,1,1); Rape oil                                             52%",
+          "raw_value": 52,
+          "raw_unit": "%",
+          "per": "per kg methyl ester, from biogenic oils, mix, at regional storage",
+          "factor": 0.01,
+          "factor_unit": "kg/%",
+          "factor_source": "the column entries are mass shares of the 1 kg reference product, so % / 100 = kg per kg",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "rape methyl ester esterification",
+          "mapping_reason": "The report's line gives RER as the location, and this candidate matches name and location exactly, beating the otherwise identical [CH] variant and the glycerine co-product datasets.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "407893f6-6bb8-3cad-9b83-4c36478fafb2"
+      },
+      {
+        "name": "Vegetable oil methyl ester, at esterification plant",
+        "amount": 0.15,
+        "unit": "kg/%",
+        "location": "FR",
+        "note": "the same supplying dataset 'vegetable oil methyl ester, at esterification plant [FR]' is listed twice, once for UCO (15 %) and once for animal fat (8 %); if they resolve to one dataset the two lines add to 23 %",
+        "derivation": {
+          "evidence": "report-p16-17.txt",
+          "quote": "vegetable oil methyl ester, at esterification plant                    FR             0           kg             0                15%            1   1.05     (1,1,1,1,1,1); UCO (waste oils)                                     15%",
+          "raw_value": 15,
+          "raw_unit": "%",
+          "per": "per kg methyl ester, from biogenic oils, mix, at regional storage",
+          "factor": 0.01,
+          "factor_unit": "kg/%",
+          "factor_source": "the column entries are mass shares of the 1 kg reference product, so % / 100 = kg per kg",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "vegetable oil methyl ester esterification",
+          "mapping_reason": "The report's line names FR explicitly, so the [FR] variant beats the [CH] one; the 'at service station' candidate is a downstream distribution dataset, not the esterification plant.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "2109d35e-b8cb-37d4-90fe-fed74391ffa3"
+      },
+      {
+        "name": "Palm methyl ester, at esterification plant",
+        "amount": 0.13,
+        "unit": "kg/%",
+        "location": "MY",
+        "note": "feedstock palm oil, Malaysia",
+        "derivation": {
+          "evidence": "report-p16-17.txt",
+          "quote": "palm methyl ester, at esterification plant                             MY             0           kg             0                13%            1   1.05     (1,1,1,1,1,1); Palm oil                                             13%",
+          "raw_value": 13,
+          "raw_unit": "%",
+          "per": "per kg methyl ester, from biogenic oils, mix, at regional storage",
+          "factor": 0.01,
+          "factor_unit": "kg/%",
+          "factor_source": "the column entries are mass shares of the 1 kg reference product, so % / 100 = kg per kg",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "palm methyl ester esterification",
+          "mapping_reason": "Exact name and location match for the Malaysian palm methyl ester; the runner-up 'xx Palm methyl ester, production MY, at service station' is a service-station dataset and carries the 'xx' obsolete marker.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "fde2bfe9-f8e9-39f1-9224-c127b55e63c8"
+      },
+      {
+        "name": "Soybean methyl ester, at esterification plant",
+        "amount": 0.08,
+        "unit": "kg/%",
+        "location": "BR",
+        "note": "listed twice, once for soybean oil (8 %) and once as the proxy for sunflower (3 %); if they resolve to one dataset the two lines add to 11 %",
+        "derivation": {
+          "evidence": "report-p16-17.txt",
+          "quote": "soybean methyl ester, at esterification plant                         BR              0           kg             0                 8%            1   1.05     (1,1,1,1,1,1); Soybean oil                                           8%",
+          "raw_value": 8,
+          "raw_unit": "%",
+          "per": "per kg methyl ester, from biogenic oils, mix, at regional storage",
+          "factor": 0.01,
+          "factor_unit": "kg/%",
+          "factor_source": "the column entries are mass shares of the 1 kg reference product, so % / 100 = kg per kg",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "soybean methyl ester esterification",
+          "mapping_reason": "The report's line gives BR, so the Brazilian esterification plant beats the otherwise identical [US] dataset.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "6df0f8d8-e418-38d9-b852-e338fe16021a"
+      },
+      {
+        "name": "Vegetable oil methyl ester, at esterification plant",
+        "amount": 0.08,
+        "unit": "kg/%",
+        "location": "FR",
+        "note": "animal fat feedstock modelled with the vegetable oil methyl ester dataset (FR) as a proxy",
+        "derivation": {
+          "evidence": "report-p16-17.txt",
+          "quote": "vegetable oil methyl ester, at esterification plant                    FR             0           kg             0                 8%            1   1.05     (1,1,1,1,1,1); Animal fat                                            8%",
+          "raw_value": 8,
+          "raw_unit": "%",
+          "per": "per kg methyl ester, from biogenic oils, mix, at regional storage",
+          "factor": 0.01,
+          "factor_unit": "kg/%",
+          "factor_source": "the column entries are mass shares of the 1 kg reference product, so % / 100 = kg per kg",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "vegetable oil methyl ester esterification",
+          "mapping_reason": "Same dataset as the UCO line: the report models the animal-fat share with the FR vegetable oil methyl ester as a proxy, and gives FR as its location.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "2109d35e-b8cb-37d4-90fe-fed74391ffa3"
+      },
+      {
+        "name": "Soybean methyl ester, at esterification plant",
+        "amount": 0.03,
+        "unit": "kg/%",
+        "location": "BR",
+        "note": "sunflower feedstock modelled with the soybean methyl ester dataset (BR) as a proxy",
+        "derivation": {
+          "evidence": "report-p16-17.txt",
+          "quote": "soybean methyl ester, at esterification plant                         BR              0           kg             0                 3%            1   1.05     (1,1,1,1,1,1); Sunflower                                             3%",
+          "raw_value": 3,
+          "raw_unit": "%",
+          "per": "per kg methyl ester, from biogenic oils, mix, at regional storage",
+          "factor": 0.01,
+          "factor_unit": "kg/%",
+          "factor_source": "the column entries are mass shares of the 1 kg reference product, so % / 100 = kg per kg",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "soybean methyl ester esterification",
+          "mapping_reason": "Same dataset as the soybean-oil line: the report models the sunflower share with the BR soybean methyl ester as a proxy, and gives BR as its location.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "6df0f8d8-e418-38d9-b852-e338fe16021a"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

@@ -1,0 +1,116 @@
+{
+ "mappings": [
+  {
+   "item": "water",
+   "chosen": "Water, decarbonised, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Process water for a chemical synthesis; decarbonised water is the standard ecoinvent chemical-process water, less treated (and so less committal) than completely softened or deionised water."
+  },
+  {
+   "item": "anthracene",
+   "chosen": "Chemicals organic, at plant",
+   "location": "GLO",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The report itself states the anthracene input 'is shown in this study here as \"chemiacal organics, unspecified\"' because anthracene is not in the database; this is that proxy dataset."
+  },
+  {
+   "item": "sulphuric acid, 48%",
+   "chosen": "Sulphuric acid, liquid, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Purchased sulphuric acid at RER; the viscose by-product acid is a different source the report does not mention."
+  },
+  {
+   "item": "sodium dichromate, 20%",
+   "chosen": "Sodium dichromate, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact substance; every other candidate is a different sodium salt."
+  },
+  {
+   "item": "Electricity, UCTE medium voltage",
+   "chosen": "xxx Electricity, medium voltage, production UCTE, at grid",
+   "location": "UCTE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The report names 'electricity, medium voltage, production UCTE, at grid'; this candidate is that exact dataset at UCTE, beating the RER/CH grid mixes and the single-fuel UCTE variants."
+  },
+  {
+   "item": "Steam, for chemical processes",
+   "chosen": "Steam, for chemical processes, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The only candidate and the exact dataset the report names."
+  },
+  {
+   "item": "chemical plant, organics",
+   "chosen": "Chemical plant, organics",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The exact infrastructure module the report names."
+  },
+  {
+   "item": "Transport, freight, rail",
+   "chosen": "Transport, freight, rail",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The report names 'transport, freight, rail' without a traction specification, which is exactly this RER average; the electricity-only and CH shunting variants are narrower."
+  },
+  {
+   "item": "Transport, lorry >16t",
+   "chosen": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The report names 'transport, lorry >16t, fleet average'; the 16t-32t RER fleet average is that dataset at the process's own location, beating the CH copy and the other weight classes."
+  },
+  {
+   "item": "Sulphuric acid to water",
+   "chosen": "Sulfate Ion",
+   "location": "",
+   "compartment": "water",
+   "dependency": false,
+   "reason": "Sulphuric acid released into treated wastewater is dissociated sulfate; the EF 3.1 sulfate ion in water is the closest available flow, and no undissociated sulphuric-acid water flow exists in the candidate list."
+  },
+  {
+   "item": "Sodium to water",
+   "chosen": "Sodium ion",
+   "location": "",
+   "compartment": "water",
+   "dependency": false,
+   "reason": "The report says '1 mol of sodium' released in treated water, i.e. the dissolved ion; Sodium-24 is a radionuclide."
+  },
+  {
+   "item": "Chromium ions to water",
+   "chosen": "Chromium",
+   "location": "",
+   "compartment": "water",
+   "dependency": false,
+   "reason": "The report says 'chromium ions' without giving the oxidation state, so the unspecified chromium flow to water is correct; Chromium VI would assert a speciation the report does not state."
+  },
+  {
+   "item": "Sulphuric acid to air",
+   "chosen": null,
+   "location": "",
+   "compartment": "",
+   "dependency": false,
+   "reason": "No candidate is airborne sulphuric acid or a sulfate aerosol. Sulfur Dioxide would be a different substance with a different formation route, and mapping sulphuric acid mist onto SO2 would be a substitution the report does not make. Reported as missing instead."
+  },
+  {
+   "item": "Sodium dichromate to air",
+   "chosen": "Chromium(6+)",
+   "location": "",
+   "compartment": "air",
+   "dependency": false,
+   "reason": "Sodium dichromate is a Cr(VI) salt and the report's air emission is that dust; Chromium(6+) to air is the matching speciated flow, while plain 'Chromium' to air would lose the hexavalent state the substance actually has."
+  }
+ ]
+}

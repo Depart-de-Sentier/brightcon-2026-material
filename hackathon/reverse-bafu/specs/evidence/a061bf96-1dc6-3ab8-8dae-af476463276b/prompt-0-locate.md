@@ -1,0 +1,365 @@
+You are locating the inventory table of one dataset inside a life-cycle-inventory report.
+
+Dataset: `Gypsum fibre board, at plant` [DE], 1 m2, BAFU category construction materials / gypsum materials.
+Metadata: includedProcesses: <null> · technology: Technology as used in production by German Manufacturers · comment: Gipsfaserplatte Standard, Herstellung\n1m2 Platte, Flächengewicht 10 kg/m2, Stärke 12.5 mm, Rohdichte ca. 800 kg/m3\nTechnology: Technology as used in production by German Manufacturers\nVersion: 0.0\nEnergy values: Undefined\nLocal category: construction materials\nLocal subcategory: Gipswerkstoffe
+
+Report: `2016 - Renewal and expansion of LCA data in KBOB - Kasser.pdf` (436 PDF pages). Below is every table and figure caption found in it, with the PDF page it appears on (not the printed page number). The report may be in German, French or English; the dataset name is English — match on meaning (e.g. "gebrannter Ölschiefer" = burnt shale, "Gipsfaserplatte" = gypsum fibre board).
+
+- p.14: Tabelle 1: Teilberichte und bearbeitete Produkte
+- p.16: Tabelle 2: Datensätze für die Marktsituation ausgewählter Baustoffe (Herstellung und Entsor-
+- p.17: Tabelle 3: Datensätze für Tiefbauarbeiten bei Hochbauten (Herstellung und Entsorgung, nach
+- p.19: Tabelle 4: Datensätze Dämmbeton (Herstellung und Entsorgung, nach ecoinvent 2.2)
+- p.21: Tabelle 5: Datensätze für Gipswerkstoffe (Herstellung und Entsorgung, nach ecoinvent 2.2)
+- p.22: Tabelle 6: Datensätze für ausgehärtete Putze (Herstellung und Entsorgung, nach ecoinvent 2.2)
+- p.23: Tabelle 7: Datensätze für Unterlagsböden (Herstellung und Entsorgung, nach ecoinvent 2.2)
+- p.24: Tabelle 8: Datensätze für Verglasungen (Herstellung und Entsorgung, nach ecoinvent 2.2)
+- p.25: Tabelle 9: Datensätze für Fensterprofile (Herstellung und Entsorgung, nach ecoinvent 2.2)
+- p.26: Tabelle 10: Datensätze für Sonnenschutzsysteme (Herstellung und Entsorgung, nach ecoinvent
+- p.27: Tabelle 11: : Datensätze für Fassadenbekleidungen (Herstellung und Entsorgung, nach ecoin-
+- p.28: Tabelle 12: : Datensätze für Putzträgerplatten (Herstellung und Entsorgung, nach ecoinvent 2.2)
+- p.30: Tabelle 13: Datensatz für Aerogel-Vlies (Herstellung und Entsorgung, nach ecoinvent 2.2)
+- p.31: Tabelle 14: Datensätze für Kücheneinbauten und -möbel (Herstellung und Entsorgung, nach
+- p.43: Tabelle 1: Übersicht über die untersuchten Baustoffgruppen und die entsprechenden Materia-
+- p.46: Tabelle 2: Tonnagen an Kies und Sand, welche in der Schweiz durchschnittlich in den Jahren
+- p.46: Tabelle 3 zeigt die Ursprungsländer, aus welchen Sand und Kies in die Schweiz im-
+- p.46: Tabelle 3: Herkunftsland sowie prozentuale Anteile und Transportdistanz aus dem Herkunfts-
+- p.47: Tabelle 4 zeigt die Aufteilung der Transportmittel gemäss Aussenhandelsstatistik,
+- p.47: Tabelle 4: Transportmittel mit welchen Kies und Sand in die Schweiz importiert werden, gemäss
+- p.47: Tabelle 5: Sachbilanzdaten zur Bilanzierung von 1 kg der Baustoffe ‚Kies gebrochen‘, ‚Rund-
+- p.48: Tabelle 6: Umweltbelastungen pro kg Kies beziehungsweise Sand für den Schweizer Markt ge-
+- p.49: Tabelle 7 zeigt die in der Schweiz produzierte, importierte und konsumierte Güter-
+- p.50: Tabelle 7: Tonnagen an Natursteinen, welche in der Schweiz durchschnittlich in den Jahren
+- p.50: Tabelle 8 zeigt die wichtigsten Herkunftsländer auf, aus welchen die Natursteinplat-
+- p.51: Tabelle 8: Herkunftsland sowie prozentuale Importanteile und Transportdistanz aus dem Her-
+- p.51: Tabelle 10: Transportmittel mit welchen Natursteinplatten in die Schweiz importiert werden
+- p.52: Tabelle 11: Sachbilanzdaten zur Bilanzierung von 1 kg ‚Natursteinplatte geschnitten‘, ‚Natur-
+- p.53: Tabelle 12: Umweltbelastungen pro kg Natursteinplatten für den Schweizer Markt gemessen als
+- p.54: Tabelle 13: Tonnagen an Zement, welche in der Schweiz durchschnittlich in den Jahren 2000
+- p.55: Tabelle 14: Herkunftsland sowie prozentuale Anteile und Transportdistanz aus dem Herkunfts-
+- p.55: Tabelle 15: Transportmittel mit welchen Zement in die Schweiz importiert wird, gemäss Aus-
+- p.55: Tabelle 16: Sachbilanzdaten zur Bilanzierung von 1 kg Zement für den Schweizer Markt
+- p.56: Tabelle 17: Umweltbelastungen pro kg Zement für den Schweizer Markt gemessen als Gesamt-
+- p.58: Tabelle 18: Berechnung der durchschnittlichen, jährlichen Produktionsmenge von Ziegeln und
+- p.58: Tabelle 20: Tonnagen an Ziegeln und Backsteinen, welche in der Schweiz im Jahr 2012 produ-
+- p.59: Tabelle 21: Herkunftsland sowie prozentuale Anteile und Transportdistanz aus dem Herkunfts-
+- p.59: Tabelle 22: Herkunftsland sowie prozentuale Anteile und Transportdistanz aus dem Herkunfts-
+- p.59: Tabelle 23: Transportmittel mit welchen Dachziegel und Backsteine in die Schweiz importiert
+- p.60: Tabelle 24: Sachbilanzdaten zur Bilanzierung von 1 kg der Baustoffe ‚Backstein‘ und ‚Dachzie-
+- p.60: Tabelle 25: Umweltbelastungen pro kg Backstein beziehungsweise Dachziegel für den Schwei-
+- p.62: Tabelle 26: Tonnagen an Dämmstoffen, welche in der Schweiz im Jahr 2012 produziert, impor-
+- p.63: Tabelle 27: Herkunftsland sowie prozentuale Anteile und Transportdistanz aus dem Herkunfts-
+- p.63: Tabelle 28: Herkunftsland sowie prozentuale Anteile und Transportdistanz aus dem Herkunfts-
+- p.64: Tabelle 29: Transportmittel mit welchen die Dämmstoffe in die Schweiz importiert werden
+- p.64: Tabelle 30: Korrekturfaktoren der gefahrenen Kilometer für die unterdurchschnittliche LKW
+- p.65: Tabelle 31: Sachbilanzdaten zur Bilanzierung von 1 kg der Baustoffe ‚EPS‘, ‚XPS‘, und ‚Po-
+- p.65: Tabelle 32: Umweltbelastungen pro kg Dämmstoff für den Schweizer Markt gemessen als Ge-
+- p.79: Tabelle 1 zeigt die häufigsten Arten von Baugrubensicherungen mit den jeweiligen
+- p.80: Tabelle 1: Unterschiedliche Baugrubensicherungen und Voraussetzungen für ihre Anwendung
+- p.86: Tabelle 2: Übersicht und Beschrieb der bilanzierten Spundwände; L = Länge des Profils,
+- p.87: Tabelle 3 zeigt die Sachbilanzdaten zur Herstellung der bilanzierten Spundwände
+- p.87: Tabelle 3: Sachbilanzdaten zur Herstellung der bilanzierten Spundwänden inklusive Durch-
+- p.88: Tabelle 5 zeigt die Sachbilanzdaten für die bilanzierten Rühlwände.
+- p.89: Tabelle 4: Übersicht und Beschrieb der bilanzierten Rühlwände; d = Durchmesser der Bohrung,
+- p.90: Tabelle 5: Sachbilanzdaten zur Herstellung der bilanzierten Rühlwände inklusive Durchschnitt
+- p.91: Tabelle 6: Übersicht und Beschrieb der bilanzierten Bohrpfahlwände; d = Durchmesser der
+- p.92: Tabelle 7 zeigt die Sachbilanzdaten der beiden bilanzierten Bohrpfahlwände.
+- p.92: Tabelle 7: Sachbilanzdaten zur Herstellung der bilanzierten Bohrpfahlwände pro m Ansichts-
+- p.93: Tabelle 8: Übersicht und Beschrieb der bilanzierten Schlitzwände; L = Länge der Schlitzwand,
+- p.93: Tabelle 9 zeigt die Sachbilanzdaten der bilanzierten Schlitzwände mit einer Dicke
+- p.94: Tabelle 9: Sachbilanzdaten zur Herstellung der bilanzierten Schlitzwände pro m2 Ansichtsfläche
+- p.94: Tabelle 10: Übersicht und Beschrieb der bilanzierten Nagelwände; L = Länge der Nägel,
+- p.95: Tabelle 11 zeigt die Sachbilanzdaten der vier bilanzierten Nagelwände und deren
+- p.95: Tabelle 11: Sachbilanzdaten zur Herstellung der bilanzierten Nagelwände pro m Ansichtsfläche
+- p.96: Tabelle 12: Übersicht und Beschrieb der bilanzierten Rüttelstopfsäulen; AVG: Durchschnitt
+- p.96: Tabelle 13: Sachbilanzdaten zur Herstellung für das Rüttelstopfverfahren pro m Rüttelstopfsäu-
+- p.97: Tabelle 14: Übersicht und Beschrieb der bilanzierten Rüttelstopfsäulen; AVG: Durchschnitt
+- p.98: Tabelle 15: Sachbilanzdaten zur Herstellung für vorfabrizierte Betonpfähle pro m Pfahl
+- p.98: Tabelle 16: Übersicht und Beschrieb der bilanzierten Mikrobohrpfähle; AVG: Durchschnitt
+- p.99: Tabelle 17: Sachbilanzdaten zur Herstellung der bilanzierten Mikrobohrpfähle pro m Pfahl
+- p.100: Tabelle 18: Übersicht und Beschrieb der bilanzierten Ortbetonbohrpfähle; AVG: Durchschnitt
+- p.100: Tabelle 19 zeigt die Sachbilanzdaten der bilanzierten Ortbetonbohrpfähle pro m
+- p.101: Tabelle 19: Sachbilanzdaten zur Herstellung der bilanzierten Ortbetonbohrpfähle pro m Pfahl
+- p.102: Tabelle 20: Übersicht und Beschrieb der bilanzierten Ortbetonverdrängungspfähle;
+- p.102: Tabelle 21 zeigt die Sachbilanzdaten der bilanzierten Ortbetonverdrängungspfähle
+- p.103: Tabelle 21: Sachbilanzdaten zur Herstellung der bilanzierten Ortbetonverdrängungspfähle pro
+- p.103: Tabelle 22 zeigt eine Übersicht der bilanzierten Wasserhaltung mit den entspre-
+- p.103: Tabelle 22: Übersicht und Beschrieb der Wasserhaltung
+- p.104: Tabelle 23 zeigt die Sachbilanzdaten der bilanzierten Wasserhaltungen pro m3 ge-
+- p.104: Tabelle 23: Sachbilanzdaten zur Herstellung der bilanzierten Wasserhaltungen
+- p.105: Tabelle 24 zeigt die Liste der Sachbilanzdaten, die wir für die Aufnahme in die
+- p.106: Tabelle 24: Vorgeschlagene Datensätze zur Aufnahme in die KBOB Liste
+- p.124: Tabelle 1: Eigenschaften Dämmbeton
+- p.130: Tabelle 2: Verwendete Hintergrunddaten für die Bilanzierung von Misapor Schaumglasschotter
+- p.131: Tabelle 3: Verwendete Hintergrunddaten für die Bilanzierung von Misapor Dämmbeton
+- p.132: Tabelle 4 und Tabelle 5 zeigen die Ökobilanzdaten für die Herstellung und Entsor-
+- p.132: Tabelle 4: Ökobilanz Herstellung
+- p.132: Tabelle 5: Ökobilanz Entsorgung
+- p.139: Tabelle 1: Übersicht bilanzierter Gipswerkstoffe
+- p.139: Tabelle 2: Übersicht bilanzierter Vorprodukte in der Herstellung von Gipswerkstoffen
+- p.142: Tabelle 3 dokumentiert. Diese Angaben sind konsistent mit der Aussenhandelssta-
+- p.142: Tabelle 3: Abschätzung der Importmengen in die Schweiz
+- p.143: Tabelle 4: Durchschnittliche Transportdistanzen ins Regionallager Schweiz
+- p.143: Tabelle 5: Aktualität der Ecoinvent-Daten für Rohstoffe zur Gipsplatten-Herstellung
+- p.145: Tabelle 6: Sachbilanz Anhydrit aus REA-Gips, Herstellung – DE
+- p.146: Tabelle 7: Sachbilanz Gips α-Halbhydrat aus REA-Gips, Herstellung – DE
+- p.146: Tabelle 8: Sachbilanz Gips ß-Halbhydrat aus REA-Gips, Herstellung – DE
+- p.147: Tabelle 9: Sachbilanz Gips ß-Halbhydrat aus Naturgips, Herstellung – DE
+- p.148: Tabelle 10: Sachbilanz Anhydrit aus Flusssäuresynthese, Herstellung – DE
+- p.149: Tabelle 11: Sachbilanz Gipskarton-, Gipsfaserplatte, Verpackung – DE – Flächengew. 10 kg/m2
+- p.149: Tabelle 12: Sachbilanz Gips-Wandbauplatte / Vollgipsplatte Standard, Verpackung – DE – Flä-
+- p.149: Tabelle 13: Sachbilanz Gipskartonplatte Standard, Transport DE –> CH – RER – Flächengewicht
+- p.149: Tabelle 14: Sachbilanz Gipsfaserplatte Standard, Transport DE –> CH – RER – Flächengewicht
+- p.149: Tabelle 15: Sachbilanz Gipswandbau- / Vollgipsplatte Standard, Transport DE –> CH – RER –
+- p.150: Tabelle 16: Sachbilanz Gipskartonplatte Standard, Regionallager CH – Flächengewicht 10 kg/m2
+- p.150: Tabelle 17: Sachbilanz Gipsfaserplatte Standard, Regionallager CH – Flächengewicht 10 kg/m2
+- p.150: Tabelle 18: Sachbilanz Gipswandbau- / Vollgipsplatte Standard, Regionallager – CH – Flächen-
+- p.151: Tabelle 19: Sachbilanz Gipskartonplatte Standard, Entsorgung – 1 m2 Platte
+- p.151: Tabelle 20: Sachbilanz Gipsfaserplatte Standard, Entsorgung – 1 m2 Platte
+- p.151: Tabelle 21: Sachbilanz Gipswandbau- / Vollgipsplatte Standard, Entsorgung – 1 m2 Platte
+- p.152: Tabelle 22: Ökobilanzergebnisse Vorprodukte
+- p.153: Tabelle 23: Ökobilanzergebnisse Gipskartonplatten
+- p.154: Tabelle 24: Ökobilanzergebnisse Gipsfaserplatten
+- p.154: Tabelle 25: Ökobilanzergebnisse Gips-Wandbauplatten / Vollgipsplatten
+- p.155: Tabelle 26: Gipsplatten in KBOB-Empfehlung 2014, umgerechnet auf Flächenmasse
+- p.157: Tabelle 27: Primärenergiebedarf nach GaBi 5 und nach ecoinvent 2.2
+- p.157: Tabelle 28: Primärenergie gesamt aus Energieträgern
+- p.163: Tabelle 1: Übersicht bilanzierter Putze und Vorprodukte
+- p.164: Tabelle 2: Übersicht bilanzierter Vorprodukte und Verpackungen
+- p.165: Tabelle 3: Transportdistanzen in der Herstellungskette organischer Putze und Mörtel
+- p.167: Tabelle 4: Bilanzierte Verpackung nach Putzvarianten
+- p.167: Tabelle 5: Transportdistanzen in der Herstellungskette mineralischer Putze und Mörtel
+- p.170: Tabelle 6: Transportdistanzen für den Transport von Weisszement in die Schweiz
+- p.172: Tabelle 7: Anmachwasseranteile in Kalk-Zement-Putzen
+- p.173: Tabelle 8 werden die Referenzzeiträume für sämtliche Ecoinvent-Datensätze aufge-
+- p.173: Tabelle 8: Aktualität der Hintergrunddaten aus Ecoinvent zur Herstellung von Putzen
+- p.175: Tabelle 9: Aktualität der Hintergrunddaten aus Ecoinvent zur Weisszementherstellung
+- p.177: Tabelle 10: Vergleich der Ökobilanzindikatoren der ß-Halbhydrate nach Herkunft
+- p.180: Tabelle 11: Sachbilanzdaten Baukleber und Einbettmörtel organisch, Herstellung – CH
+- p.182: Tabelle 12: Sachbilanzdaten Herstellungsaufwand Frischmörtel, pro kg Mörtel – CH
+- p.182: Tabelle 13 weist die Sachbilanz für mineralische Einbettmörtel aus. Mineralische
+- p.183: Tabelle 4 wird verwendet, um die Verpackung mit dem Datensatz "Putzsack inkl.
+- p.183: Tabelle 13: Sachbilanzdaten Baukleber und Einbettmörtel mineralisch, Herstellung – CH
+- p.184: Tabelle 14: Trocknungsenergie für Sande pro kg Sand aus verschiedenen Datenquellen
+- p.185: Tabelle 15: Sachbilanzdaten Herstellungsaufwand Trockenmörtel, pro kg Mörtel – CH
+- p.186: Tabelle 16: Sachbilanz Baukleber und Einbettmörtel mineralisch mit Leichtzuschlag, Herstel-
+- p.187: Tabelle 3 berechnet.
+- p.187: Tabelle 17: Sachbilanz Kunststoffputz (Dispersionsputz), Herstellung – CH
+- p.188: Tabelle 18: Sachbilanz Dispersionssilikatputz (Silikatputz), Herstellung - CH
+- p.189: Tabelle 19: Sachbilanz Silikonharzputz, Herstellung - CH
+- p.190: Tabelle 20: Sachbilanz Kalk-Zement- & Zement-Kalk-Putze, Herstellung
+- p.191: Tabelle 21: Sachbilanz Zement-Putz, Herstellung – CH
+- p.192: Tabelle 22: Sachbilanz Weisszementputz, Herstellung – CH
+- p.193: Tabelle 23: Sachbilanz Leichtputz mineralisch, Herstellung – CH
+- p.194: Tabelle 24: Sachbilanz Wärmedämmputz EPS, Herstellung – CH
+- p.195: Tabelle 25: Sachbilanz Sumpfkalkputz, Herstellung – CH
+- p.196: Tabelle 26: Rohstoffinputs pro kg ausgehärtetem Putz
+- p.197: Tabelle 27: Sachbilanz Putz organisch und mineralisch ausgehärtet, Entsorgung – CH
+- p.197: Tabelle 28: Sachbilanz Gipsputz und Weissputz, Entsorgung – CH
+- p.198: Tabelle 29: Sachbilanz Gips-Kalk-Putz, Entsorgung – CH
+- p.199: Tabelle 30: Berechnung der Energiekennzahlen der Weisszementproduktion in Aalborg
+- p.200: Tabelle 31: Sachbilanzdaten für Weisszement, Herstellung – CH
+- p.203: Tabelle 32: Sachbilanz Kunststoff-Eimer 18l inkl. Transportverpackung, Herstellung – CH
+- p.204: Tabelle 33: Gewichtsbestimmung Papiersäcke für Putze
+- p.204: Tabelle 34: Sachbilanz Putzsack inkl. Transportverpackung, Herstellung – CH
+- p.205: Tabelle 35: Kunststoff-Eimer 18 l, Entsorgung – CH
+- p.206: Tabelle 36: Ökobilanzergebnisse Mörtel und Putze, Herstellung
+- p.207: Tabelle 37: Ökobilanzergebnisse Mörtel und Putze, ausgehärtet
+- p.207: Tabelle 38: Ökobilanzergebnisse Mörtel und Putze, Entsorgung
+- p.208: Tabelle 39: Ökobilanzergebnisse Weisszement, Herstellung
+- p.208: Tabelle 40: Ökobilanzergebnisse Verpackung
+- p.213: Tabelle 41: Vorgeschlagene Datensätze für die KBOB-Liste
+- p.214: Tabelle 42: Zuordnung der Datensätze zwischen dieser Arbeit und der KBOB-Empfehlung
+- p.214: Tabelle 43: Vergleich der bestehenden Putzdaten in der KBOB-Liste mit den neu erarbeiteten.
+- p.216: Tabelle 44: Vergleich der Ökobilanzindikatoren für weissen und grauen Zement
+- p.223: Tabelle 1: Funktionelle Einheit und Kennzahlen
+- p.224: Tabelle 2: Herleitung Wasseranteil Zement-UB
+- p.224: Tabelle 3: Herleitung Wasseranteil Anhydrit-UB
+- p.224: Tabelle 4: Herleitung Mittlere Dicken und Rohdichten Anhydrit-UB
+- p.225: Tabelle 5: Kennzahlen zur Berechnung der Ökobilanzen pro Quadratmeter UB
+- p.225: Tabelle 6: Kennzahlen der ausgehärteten Unterlagsböden
+- p.228: Tabelle 7: Bilanzierte Verpackung nach UB-Varianten
+- p.229: Tabelle 8: Zusammensetzung der Unterlagsböden gemessen am Trockengewicht
+- p.229: Tabelle 9: Transportwege Rohstoffe und Vorprodukte in Kilometern
+- p.230: Tabelle 10: Marktanteile der Zement-UB-Varianten
+- p.231: Tabelle 11: Aktualität der Ecoinvent-Daten zur Herstellung von Unterlagsböden
+- p.233: Tabelle 12: Sachbilanz Zementunterlagsboden, verarbeitungsfertig
+- p.234: Tabelle 13: Sachbilanz Zementunterlagsboden, pro m2
+- p.234: Tabelle 14: Sachbilanz Zementunterlagsboden, ausgehärtet
+- p.234: Tabelle 15: Sachbilanz Zementunterlagsboden, Entsorgung
+- p.235: Tabelle 16: Sachbilanz Zementunterlagsboden, Entsorgung, pro m2
+- p.235: Tabelle 17: Herstellungsenergie für die Frischmörtelproduktion, Baustellenmischung und Tro-
+- p.236: Tabelle 18: Sachbilanz Anhydritunterlagsboden, verarbeitungsfertig
+- p.237: Tabelle 19: Sachbilanz Anhydritunterlagsboden, pro m2
+- p.237: Tabelle 20: Sachbilanz Anhydritunterlagsboden, ausgehärtet
+- p.237: Tabelle 21: Sachbilanz Anhydritunterlagsboden, Entsorgung
+- p.237: Tabelle 22: Sachbilanz Anhydritunterlagsboden, Entsorgung, pro m2
+- p.238: Tabelle 23: Ökobilanzergebnisse Zement-UB
+- p.238: Tabelle 24: Ökobilanzergebnisse Anhydrit-UB
+- p.239: Tabelle 25: Ökobilanzdaten zur Aufnahme in die KBOB-Empfehlung
+- p.240: Tabelle 26: Kennzahlen der bestehenden Datensätze für UB in der KBOB-Empfehlung von 2014
+- p.247: Tabelle 1: Untersuchte Isoliergläser
+- p.249: Tabelle 2: Datenherkunft
+- p.249: Tabelle 3: Prozesse und funktionelle Einheiten
+- p.254: Tabelle 4: Sachbilanz Flachglas unbeschichtet [kg]
+- p.255: Tabelle 5 zeigt die Daten welche zur ESG Produktion bei Glas Trösch erhoben wur-
+- p.256: Tabelle 5: Betriebsbilanz ESG Herstellung im Werk Bützberg 2013
+- p.256: Tabelle 6 zeigt wie die Herstellung von ESG mit Datensätzen aus ecoinvent model-
+- p.256: Tabelle 6: Sachbilanz Härten von Flachglas [kg]
+- p.257: Tabelle 7: Betriebsbilanz Werk Wikon 2013
+- p.258: Tabelle 8 zeigt die Sachbilanz und die Modellierung in ecoinvent für 1 m2 Verbund-
+- p.260: Tabelle 8: Sachbilanz VSG, 2x4mm, 0.76mm PVB [m2]
+- p.260: Tabelle 9: Angaben Beschichtung Glas Trösch, Werk Bützberg, 2013
+- p.261: Tabelle 10 zeigt die Sachbilanzdaten pro m2 beschichtetem Flachglas sowie die
+- p.261: Tabelle 10: Sachbilanz Beschichtung Flachglas [kg]
+- p.263: Tabelle 11: Mittelwerte Zusammensetzung Verglasungen pro m2 (Glasfläche brutto)
+- p.263: Tabelle 12: Angaben Randverbund Flachglas Schweiz AG
+- p.264: Tabelle 13: Angaben Randverbund von Glas Trösch
+- p.264: Tabelle 14: Datenerhebung Isolierglasproduktion, Glas Trösch, Werk Bützberg, 2013
+- p.266: Tabelle 15: Daten zur Herstellung von Isolierglas: Mittelwerte pro m2 Glasfläche brutto
+- p.267: Tabelle 16: Herstellung 2-IV [m2], sichtbare Glasfläche
+- p.271: Tabelle 17: Herstellung 3-IV[m2], sichtbare Glasfläche (Teil 1)
+- p.274: Tabelle 18: Herstellung 3-IV [m2], sichtbare Glasfläche (Teil 2)
+- p.277: Tabelle 19: Entsorgung 2-IV [m2], sichtbare Glasfläche
+- p.277: Tabelle 20: Entsorgung 3-IV [m2], sichtbare Glasfläche (Teil 1)
+- p.278: Tabelle 21: Entsorgung 3-IV [m2], sichtbare Glasfläche (Teil 2)
+- p.278: Tabelle 22: Ökobilanzdaten Herstellung
+- p.279: Tabelle 23: Ökobilanzdaten Entsorgung
+- p.285: Tabelle 1: Hersteller und Produkte
+- p.286: Tabelle 2: Charakterisierung PVC-Profile
+- p.286: Tabelle 3: Eigenschaften Aluminiumprofile
+- p.289: Tabelle 4: Materialisierung, Angaben PVCH
+- p.289: Tabelle 5: Herstellungsorte und Transportdistanzen, Angaben PVCH
+- p.289: Tabelle 6 zeigt die Sachbilanz der Herstellung von PVC-Profilen sowie die Modellie-
+- p.290: Tabelle 6: Herstellung PVC-Profile, Angaben pro m2 Rahmenfläche
+- p.291: Tabelle 7: Entsorgung PVC-Profile, Angaben pro m2 Rahmenfläche
+- p.292: Tabelle 8: Materialisierung und Stromverbrauch Herstellung, Angaben SZFF
+- p.292: Tabelle 9 zeigt die Sachbilanz der Aluminium-Profile und deren Modellierung mit
+- p.292: Tabelle 9: Herstellung Aluminium-Profile, Angaben pro m2 Rahmenfläche
+- p.293: Tabelle 10 zeigt die Modellierung der Entsorgung. Hier wird beim Aluminium (Profile
+- p.294: Tabelle 10: Entsorgung Aluminium-Profile, Angaben pro m2 Rahmenfläche
+- p.294: Tabelle 11: Ökobilanzresultate PVC-Profile
+- p.296: Tabelle 12: Vergleich mit den Daten aus der KBOB-Liste 2014
+- p.296: Tabelle 13 zeigt die Ökobilanzresultate des untersuchten Aluminium-Profils. Wie
+- p.296: Tabelle 13: Ökobilanzresultate Aluminium-Profile
+- p.297: Tabelle 14: Vergleich mit den Daten aus der KBOB-Liste 2014
+- p.302: Tabelle 1: Sonnenschutzsysteme
+- p.306: Tabelle 2: Dimensionen als Grundlage für die Ökobilanz
+- p.307: Tabelle 3: ecoinvent Daten für Verarbeitungsprozesse
+- p.308: Tabelle 4 und Tabelle 5 zeigen die Sachbilanzen für die Herstellung und Entsorgung
+- p.308: Tabelle 4: Sachbilanz Lamellenstoren Herstellung pro m2
+- p.309: Tabelle 5: Sachbilanz Lamellenstoren Entsorgung pro m2
+- p.309: Tabelle 6: Sachbilanz Herstellung Ausstellstoren pro m2
+- p.310: Tabelle 7: Sachbilanz Entsorgung Ausstellstoren pro m2
+- p.310: Tabelle 8 und Tabelle 9 zeigen die Sachbilanzen der Herstellung und Entsorgung
+- p.310: Tabelle 8: Sachbilanz Herstellung Rollladen pro m2
+- p.311: Tabelle 9: Sachbilanz Entsorgung Rollladen pro m2
+- p.312: Tabelle 10: Ökobilanzdaten Herstellung pro m2
+- p.312: Tabelle 11: Ökobilanzdaten Entsorgung pro m2
+- p.318: Tabelle 1: Bilanzierte Produkte mit Datengrundlagen
+- p.320: Tabelle 2: Funktionelle Einheit und Kennzahlen Für mittlere Platten im Regionallager Schweiz
+- p.322: Tabelle 3: Berechnung des Marktanteils für flammgeschützte Alu-Verbundplatten
+- p.326: Tabelle 4: Aktualität der Ecoinvent-Daten zur Herstellung von Aluminium-Verbundplatten
+- p.327: Tabelle 5: Aktualität der Ecoinvent-Daten zur Herstellung von GFK-Platten
+- p.328: Tabelle 6: Aktualität der Ecoinvent-Daten zur Herstellung von HPL-Platten
+- p.330: Tabelle 7: Berechnung der Kernbestandteile flammgeschützte Alu-Verbundplatten
+- p.331: Tabelle 8: Sachbilanz Alu-Verbundplatte flammgeschützt, Produktion – RER – Flächengewicht
+- p.331: Tabelle 9 stellt die Sachbilanz der Alu-Verbundplatten mit reinem Polyethylen-Kern
+- p.331: Tabelle 9: Sachbilanz Alu-Verbundplatte, Produktion – RER – Flächengewicht 5.5 kg/m2
+- p.332: Tabelle 10: Sachbilanz Alu-Verbundplatte, Verpackung – RER – 1 m2 Alu-Verbundplatte
+- p.332: Tabelle 11: Alu-Verbund Fassadenplatte FR, Transport DE->CH – 1 m2 Alu-Verbundplatte
+- p.333: Tabelle 12: Alu-Verbund Fassadenplatte, Transport DE->CH – 1 m2 Alu-Verbundplatte
+- p.333: Tabelle 13: Alu-Verbund Fassadenplatte FR, Transport FR->CH – 1 m2 Alu-Verbundplatte
+- p.333: Tabelle 14: Alu-Verbund Fassadenplatte, Transport FR->CH – 1 m2 Alu-Verbundplatte
+- p.333: Tabelle 15: Alu-Verbund Fassadenplatte FR, Transport ES->CH – 1 m2 Alu-Verbundplatte
+- p.333: Tabelle 16: Alu-Verbund Fassadenplatte, Transport ES->CH – 1 m2 Alu-Verbundplatte
+- p.334: Tabelle 17: Sachbilanz Alu-Verbund Fassadenplatte, Regionallager CH – Flächengewicht
+- p.334: Tabelle 18: Sachbilanz Alu-Verbund Fassadenplatte, Entsorgung – 1 m2 Alu-Verbundplatte
+- p.335: Tabelle 19: Sachbilanz GFK-Platten, Produktion – TR – Flächengewicht 2.41 kg/m2
+- p.336: Tabelle 20: Sachbilanz GFK-Platten, Verpackung – RER – 1 m2 GFK-Platte
+- p.336: Tabelle 21: Sachbilanz GFK-Platten, Transport TR->CH – 1 m2 GFK-Platte
+- p.337: Tabelle 22: Sachbilanz GFK-Platte, Regionallager CH – Flächengewicht 2.41 kg/m2
+- p.337: Tabelle 23 ausgewiesen. Der Kunststoffanteil wird dabei um den Wasseranteil im
+- p.337: Tabelle 23: Sachbilanz GFK-Platte, Entsorgung – 1 m2 GFK-Platte
+- p.338: Tabelle 24: Sachbilanz HPL-Fassadenplatten, Produktion – AT – Flächengewicht 11.9 kg/m2
+- p.339: Tabelle 25: Sachbilanz HPL-Fassadenplatten, Produktion – NL – Flächengewicht 11.2 kg/m2
+- p.340: Tabelle 26: Sachbilanz HPL-Fassadenplatten, Verpackung – RER – 1 m2 HPL-Platte
+- p.340: Tabelle 27: Sachbilanz HPL-Fassadenplatten, Transport AT->CH – 1 m2 HPL-Platte
+- p.341: Tabelle 28: Sachbilanz HPL-Fassadenplatten, Transport NL->CH – 1 m2 HPL-Platte
+- p.341: Tabelle 29: Sachbilanz HPL-Fassadenplatten, Regionallager CH – Flächengewicht 11.6 kg/m2
+- p.341: Tabelle 30: Sachbilanz HPL-Fassadenplatten, Entsorgung – 1 m2 HPL-Platte
+- p.342: Tabelle 31: Ökobilanzergebnisse Aluminium-Verbundplatten
+- p.342: Tabelle 32: Ökobilanzergebnisse GFK-Platten
+- p.343: Tabelle 33: Ökobilanzergebnisse HPL-Platten
+- p.344: Tabelle 34: Ökobilanzergebnisse Herstellung Fassadenplatten, Regionallager Schweiz
+- p.345: Tabelle 35: Vergleich Ökobilanzergebnisse für Produktvarianten oder Produktionsstandorte
+- p.346: Tabelle 36: Glasfaserverstärkter Kunststoff, ecoinvent 2.2
+- p.355: Tabelle 2: Transportdistanzen ins Regionallager Schweiz
+- p.357: Tabelle 3: Aktualität der Ecoinvent-Daten zur kunstharzgebundenen Putzträgerplatte
+- p.359: Tabelle 4: Sachbilanz Putzträgerplatte kunstharzgebunden, Herstellung - DE
+- p.359: Tabelle 5: Transportdistanzen der Roh- und Ausgangsstoffe zur Putzträgerplattenproduktion
+- p.360: Tabelle 6: Sachbilanz Putzträgerplatte, Verpackung, pro m2 Putzträgerplatte - DE
+- p.360: Tabelle 7: Sachbilanz Putzträgerplatte kunstharzgebunden, Transport DE -> CH
+- p.360: Tabelle 8: Sachbilanz Putzträgerplatte kunstharzgebunden, Regionallager CH
+- p.361: Tabelle 9: Sachbilanz Putzträgerplatte kunstharzgebunden, Entsorgung - CH
+- p.361: Tabelle 10: Sachbilanz Putzträgerplatte mineralisch gebunden, Transport DE -> CH
+- p.362: Tabelle 11: Sachbilanz Putzträgerplatte mineralisch gebunden, Regionallager CH
+- p.362: Tabelle 12: Sachbilanz Putzträgerplatte mineralisch gebunden, Entsorgung - CH
+- p.363: Tabelle 13: Ökobilanzergebnisse Putzträgerplatte kunstharzgebunden
+- p.363: Tabelle 14: Ökobilanzergebnisse Putzträgerplatte mineralisch gebunden
+- p.364: Tabelle 15: Vergleich mit den EPD-Resultaten der kunstharzgebundenen Putzträgerplatten
+- p.365: Tabelle 16: Vergleich mit den EPD-Resultaten der mineralisch gebundenen Putzträgerplatten
+- p.371: Tabelle 1: Ökobilanzdaten von Aspen Aerogels Inc.
+- p.374: Tabelle 2: Aktualität der verwendeten Hintergrunddaten
+- p.375: Tabelle 3: Sachbilanz Herstellung 1kg TEOS
+- p.375: Tabelle 4: Sachbilanz Herstellung 1 kg Ammoniumhydroxid
+- p.375: Tabelle 5: Herstellung bei atmosphärischem Druck, Angaben pro kg Vlies
+- p.376: Tabelle 6: Herstellung durch überkritische Trocknung, Angaben pro kg Vlies
+- p.377: Tabelle 7: Entsorgung Aerogel-Vlies, Angaben pro kg Vlies
+- p.378: Tabelle 8: Ökobilanz Herstellung
+- p.378: Tabelle 9: Ökobilanz Entsorgung
+- p.388: Tabelle 1: Übersicht über die untersuchten Küchenelemente und Kücheneinbauten
+- p.389: Tabelle 1: Übersicht über die untersuchten Küchenelemente und Kücheneinbauten (Fortset-
+- p.394: Tabelle 2: Einbauten und Schranksysteme der in dieser Studie modellierten Standardküche
+- p.395: Tabelle 3: Volumina und Flächen der Grundbauten, welche als Korpusse für die Schrank- und
+- p.397: Tabelle 4: Kenngrössen der Modellierung von beidseitig melaminharzbeschichteten Spanplat-
+- p.399: Tabelle 5: Kenngrössen der Modellierung von beidseitig furnierten Spanplatten sowie der je-
+- p.400: Tabelle 6: Kenngrössen der Modellierung von farbbeschichteten Spanplatten sowie der jeweils
+- p.400: Tabelle 7: Kenngrössen der Modellierung für die Fronten aus Massivholz sowie der jeweils ver-
+- p.402: Tabelle 8: Kenngrössen der Modellierung der Stahlplatten mit Kartonfüllung sowie der jeweils
+- p.403: Tabelle 9: Kenngrössen der Modellierung der Tür- und Schubladengriffe aus beschichtetem
+- p.403: Tabelle 10: Kenngrössen der Modellierung der Topfbänder pro Küche sowie der jeweils ver-
+- p.404: Tabelle 11 zeigt die benötigten Materialien und Energieträger für die Herstellung der
+- p.404: Tabelle 11: Kenngrössen der Modellierung der Auszugsschienen sowie der jeweils verwendete
+- p.404: Tabelle 12: Kenngrössen der Modellierung des Schraubenbedarfs sowie der jeweils verwendete
+- p.405: Tabelle 13: Kenngrössen der Transportmodellierung des Metallbedarfs für die Auszüge, die
+- p.407: Tabelle 14: Kenngrössen der Modellierung der Herstellung der Küchenabdeckungen aus
+- p.408: Tabelle 15 zeigt die Modellierung auf. Nach Ablauf der Nutzungsdauer wird die
+- p.408: Tabelle 15: Kenngrössen der Modellierung der Arbeitsplatte aus Massivholz (Dreischichtplatte)
+- p.409: Tabelle 16: Kenngrössen der Modellierung der Arbeitsplatte aus Naturstein sowie der jeweils
+- p.410: Tabelle 17: Kenngrössen der Modellierung der Arbeitsplatte mit einer Melaminharzbeschich-
+- p.411: Tabelle 18: Kenngrössen der Modellierung der Herstellung von Kompositwerkstoff in den Pro-
+- p.412: Tabelle 19: Herkunftsländer und geschätzter Anteil der Kompositwerkstoffproduktion und
+- p.412: Tabelle 20: Kenngrössen der Modellierung der Bereitstellung von Kompositwerkstoff im Regio-
+- p.413: Tabelle 21: Kenngrössen der Modellierung der Arbeitsplatte aus Kompositwerkstoff sowie der
+- p.415: Tabelle 22: Kenngrössen der Modellierung der Chromstahl-Spüle sowie der jeweils verwendete
+- p.416: Tabelle 25 aufgeführt.
+- p.417: Tabelle 23: Kenngrössen der Modellierung des Abbaus von Granit sowie der jeweils verwendete
+- p.418: Tabelle 24: Kenngrössen der Modellierung des Brechens von Granit sowie der jeweils verwen-
+- p.418: Tabelle 25: Kenngrössen der Modellierung des Mahlens von Granit sowie der jeweils verwende-
+- p.420: Tabelle 26: Kenngrössen der Modellierung der Kompositwerkstoffspüle sowie der jeweils ver-
+- p.422: Tabelle 27: Kenngrössen der Modellierung des Dampfabzugs sowie der verwendete Datensatz
+- p.423: Tabelle 28: Kenngrössen der Modellierung des Abfalltrennsystems sowie der verwendete Da-
+- p.424: Tabelle 29: Übersicht über die untersuchten Küchenelemente und Kücheneinbauten
+- p.425: Tabelle 30: Übersicht über die Modellierung der Küchenschrankelemente
+- p.428: Tabelle 31: Umweltbelastungen der verschiedenen Küchen gemessen als Gesamtumweltbelas-
+- p.429: Tabelle 32: Umweltbelastungen der Spülen (Chromstahl und Kompositwerkstoff), des Dampfab-
+- p.431: Tabelle 33: Umweltbelastungen der Küchenarbeitsplatten pro Quadratmeter gemessen als Ge-
+- p.432: Tabelle 34: Umweltbelastungen pro m eines durchschnittlichen Küchenschrankelements, ge-
+
+Rules:
+1. Choose the caption(s) that hold the unit-process inventory of this dataset — inputs, energy, emissions, transport — not impact results, not a diagram. Prefer "Sachbilanz" / "inventory" / "LCI" tables.
+2. Return the PDF page range that covers those tables plus the paragraph introducing them: `first_page`, `last_page` (at most 4 pages). Tables can run onto the next page.
+3. If no caption fits (the report does not document this dataset's inventory, or only as a result), return `found` = false and say why in `reason`.
+4. `reason` names the caption(s) you chose and why.
+
+Return only the JSON object described by the schema.

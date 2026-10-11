@@ -1,0 +1,131 @@
+{
+  "target": {
+    "code": "bcd8ea60-8d17-34e2-8e4b-300c20eaa2f4",
+    "name": "Canning of legumes",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Figure 20 'Unit process raw data of canning of food', column 'Canning of legumes' [CH], per 1 kg; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2021 - LCA tomatoes and green beans production - Kaegi.pdf",
+      "where": "pages 49-50 -> report-p49-50.txt",
+      "note": "report sha256 f3715d5d00e21335…, text sha256 d93302ef1b62ab86…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/bcd8ea60-8d17-34e2-8e4b-300c20eaa2f4/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "1136cc62b6683b6d0ac17494a609f7b8080e1e82258d3bccded8fb7475141815",
+      "at": "2026-09-22T21:10:33Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "0d6b6601c35486422365b8daedabaee5eaccf8df98a98fe28810eb40849db935",
+      "at": "2026-09-22T21:10:33Z"
+    },
+    "gaps_reported_by_model": [
+      "The tin can itself is explicitly excluded: 'The inventory includes all processes from washing, blanching to filling, but without the tincan itself.'",
+      "No heat/steam input is listed even though blanching needs it - the whole energy demand is booked as electricity.",
+      "No waste water output and no direct emissions are given (unlike the neighbouring drying dataset, which books a Water emission).",
+      "No transport of the legumes to the cannery."
+    ],
+    "skipped_items": [
+      "Canning of legumes: product — reference product"
+    ],
+    "assembled_at": "2026-09-22T21:10:33Z"
+  },
+  "node": {
+    "name": "Canning of legumes, disaggregated",
+    "unit": "kg",
+    "location": "CH",
+    "comment": "drafted from 2021 - LCA tomatoes and green beans production - Kaegi.pdf pp. 49-50",
+    "inputs": [
+      {
+        "name": "Electricity, low voltage, at grid",
+        "amount": 0.708,
+        "unit": "kilowatt hour",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p49-50.txt",
+          "quote": "technosphere         electricity, low voltage, at grid      CH                        0                    kWh         7.08E-01        1.00E+00 1.25E+00 (2,3,3,2,1,5,BU:1.05); ;",
+          "raw_value": 0.708,
+          "raw_unit": "kWh",
+          "per": "per kg of legumes canned",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electricity low voltage at grid",
+          "mapping_reason": "The table gives 'electricity, low voltage, at grid' [CH] with no route, so the Swiss low-voltage supply mix is the exact match; the import and production-CH variants are specific routes.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "c4a92617-9f99-3d7b-95c0-15fb110b80ad"
+      },
+      {
+        "name": "Chemical plant, organics",
+        "amount": 1e-10,
+        "unit": "unit",
+        "location": "RER",
+        "note": "infrastructure proxy",
+        "derivation": {
+          "evidence": "report-p49-50.txt",
+          "quote": "                     chemical plant, organics              RER                        1                    unit        1.00E-10        1.00E+00 3.06E+00 (2,3,3,2,1,5,BU:3); ;",
+          "raw_value": 1e-10,
+          "raw_unit": "unit",
+          "per": "per kg of legumes canned",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "chemical plant organics",
+          "mapping_reason": "Exact name and unit (unit, infrastructure) match; the other candidates are a storage tank, a heat service and organic/inorganic chemicals by mass.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "13ed4fe0-7ba5-3b60-82b6-a63918ee814d"
+      },
+      {
+        "name": "Tap water, at user",
+        "amount": 1.2,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "washing and blanching water",
+        "derivation": {
+          "evidence": "report-p49-50.txt",
+          "quote": "                     tap water, at user                     CH                        0                    kg         1.20E+00         1.00E+00 1.25E+00 (2,3,3,2,1,5,BU:1.05); ;",
+          "raw_value": 1.2,
+          "raw_unit": "kg",
+          "per": "per kg of legumes canned",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "tap water at user",
+          "mapping_reason": "Exact name at CH, the location the table gives; the RER entries are the wrong geography and the 'unspecified natural origin' and 'MoeK 2013 water balance' variants are different water-accounting conventions.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "1a2f0384-d903-4f9d-8757-1e78d84366ab"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

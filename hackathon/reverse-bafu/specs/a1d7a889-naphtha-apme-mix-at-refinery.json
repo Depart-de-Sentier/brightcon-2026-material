@@ -1,0 +1,47 @@
+{
+  "target": {
+    "code": "a1d7a889-ea1b-3f62-b741-f16ed300f920",
+    "name": "Naphtha, APME mix, at refinery",
+    "location": "RER"
+  },
+  "strategy": {
+    "code": "S2",
+    "label": "template transfer: BAFU's own refinery unit process for the same product, at the same location",
+    "note": "S2, not S1: no report in the bundle prints an inventory for the APME mix (the locate response records the search). What makes this one reachable anyway is that BAFU-2026 already contains a unit process of the same product at the same location - 'Naphtha, at refinery' [RER], 33 technosphere inputs and 126 elementary flows, the ecoinvent refinery model documented in 2007 - Crude oil - Jungbluth.pdf. The two datasets differ in provenance, not in product: the target is PlasticsEurope's own cumulated refinery figure for the naphtha its members buy ('product out of refining process of oil and gas', ecoSpold technology field), the sibling is ecoinvent's model of the same European refinery slate. Substituting one for the other is exactly the template transfer S2 describes, and it is a 1:1 substitution because both are 1 kg of naphtha at the refinery gate - there is no region, scale or vintage to adapt, so nothing is calibrated and there is no free amount in this spec at all. What the check then measures is a real question about the database: how far apart are PlasticsEurope's and ecoinvent's naphtha? Caveat: the target is the APME *mix*, which may be sourced differently from the ecoinvent RER slate, and nothing in the bundle says how.\n\nAFTER THE CHECK. The question this spec was written to answer - how far apart are PlasticsEurope's and ecoinvent's naphtha? - has an answer, and it is: far. Fossil CO2 agrees to -16 %, but every other headline flow of the APME profile is far higher than the ecoinvent refinery model produces: methane -98.9 %, NMVOC -98.3 %, nitrogen oxides -84.8 %, carbon monoxide -82.3 %, sulfur dioxide -74.7 %. In other words the APME naphtha carries roughly 50-100x the methane and NMVOC of ecoinvent's, at comparable CO2. Overall: 0 of the 50 largest kilogram flows within +-10 %, 4 of 1668 determined flows. The two datasets are not interchangeable, and this spec's value is that it says so with numbers rather than leaving the substitution to be made silently downstream."
+  },
+  "evidence": [
+    {
+      "source": "BAFU-2026 ecoSpold metadata of the target",
+      "where": "processInformation/technology",
+      "note": "quoted in the strategy note; it is the structural evidence for the input list"
+    },
+    {
+      "source": "locate step of the reverse-bafu route",
+      "where": "specs/evidence/a1d7a889-ea1b-3f62-b741-f16ed300f920/response-0-locate.json",
+      "note": "specs/evidence/a1d7a889-ea1b-3f62-b741-f16ed300f920/response-0-locate.json - no report in the BAFU-2026 documentation bundle prints a unit-process inventory for this dataset. The cited report is only the 17-page front matter of ecoinvent report No. 11; all 114 bundled reports were converted with pdftotext and searched."
+    },
+    {
+      "source": "BAFU-2026 itself",
+      "where": "'Naphtha, at refinery' [RER], code f4ac3b21, 33 inputs / 126 elementary flows",
+      "note": "The unit process this spec transfers; documented in 2007 - Crude oil - Jungbluth.pdf (ecoinvent report No. 4)."
+    }
+  ],
+  "node": {
+    "name": "Naphtha, APME mix, at refinery, disaggregated",
+    "unit": "kilogram",
+    "location": "RER",
+    "comment": "Template transfer, per kg of naphtha. The eight waste-treatment services that the BAFU dataset already carries as explicit exchanges are deliberately not part of this model - they were never collapsed away - following the committed PlasticsEurope specs. The consequence, measured in results/checks/, is that the target's cumulative vector gets a long tail of flows from those disposal chains that no model omitting them can reach.",
+    "inputs": [
+      {
+        "name": "Naphtha, at refinery",
+        "amount": 1.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "1 kg for 1 kg: both datasets are 1 kg of naphtha at the refinery gate. Fixed - there is nothing to fit.",
+        "code": "f4ac3b21-f5f3-3c8c-a5a5-316af4e38d18"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

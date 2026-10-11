@@ -1,0 +1,69 @@
+{
+  "target": {
+    "code": "a66b5e9d-fce8-3d9d-afc4-8c422a9b9410",
+    "name": "xx Packaging glass, brown, at regional storage",
+    "location": "CH"
+  },
+  "strategy": {
+    "code": "S3",
+    "label": "structural model: the rebuilt 'at plant' node plus distribution transport, distances calibrated",
+    "note": "An 'at regional storage' dataset is its 'at plant' product plus the transport to the regional store - the shape every non-aggregated 'at regional storage' unit process in BAFU has. One kilogram of the rebuilt brown packaging glass node is taken as the input and the two transport distances are fitted against the aggregated vector."
+  },
+  "evidence": [
+    {
+      "source": "reverse-bafu: rebuilt 'xx Packaging glass, brown, at plant' [CH] node",
+      "where": "dependency on a rebuilt node",
+      "note": "The at-plant spec in this same run supplies the product."
+    },
+    {
+      "source": "bafu-2026: e.g. 'Polyvinylchloride, at regional storage' [RER] (unit process)",
+      "where": "structural template",
+      "note": "Regional-storage unit processes carry the product plus lorry and rail tonne-kilometres and nothing else."
+    }
+  ],
+  "node": {
+    "name": "Packaging glass, brown, at regional storage, CH, disaggregated",
+    "unit": "kilogram",
+    "location": "CH",
+    "comment": "Product from the rebuilt at-plant node; the two transport amounts are the only free parameters.",
+    "inputs": [
+      {
+        "name": "Packaging glass, brown, at plant",
+        "sandbox": "ddefdbda-3a45-39fc-84ad-17c4c7bdc3f9-disagg",
+        "amount": 1.0,
+        "unit": "kilogram",
+        "location": "",
+        "code": "ddefdbda-3a45-39fc-84ad-17c4c7bdc3f9-disagg",
+        "note": "1 kg of the rebuilt at-plant node"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "code": "99f8a4b0-99b5-3130-924c-5de4c10b62ef",
+        "free": true,
+        "bounds": [
+          0.0,
+          1.0
+        ],
+        "note": "distribution to the regional store; distance fitted"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030",
+        "free": true,
+        "bounds": [
+          0.0,
+          2.0
+        ],
+        "note": "distribution to the regional store; distance fitted"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

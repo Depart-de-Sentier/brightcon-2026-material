@@ -1,0 +1,80 @@
+<title>Rebuilt BAFU Inventories</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f7f8f5;--bg2:#eceee8;--ink:#171a1c;--ink2:#555d68;--rule:#d5d9d0;--pos:#2a78d6;--neg:#eb6834;--good:#008300;--bad:#c0392b;--warn:#a86f00;--band:#e6ebe0;--card:#ffffff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#171a1c;--bg2:#1f2326;--ink:#f1f2ee;--ink2:#b7bec5;--rule:#353b40;--pos:#3987e5;--neg:#d95926;--good:#4fbf4f;--bad:#e66767;--warn:#e0a83a;--band:#22282a;--card:#1c2023}}
+:root[data-theme="dark"]{--bg:#171a1c;--bg2:#1f2326;--ink:#f1f2ee;--ink2:#b7bec5;--rule:#353b40;--pos:#3987e5;--neg:#d95926;--good:#4fbf4f;--bad:#e66767;--warn:#e0a83a;--band:#22282a;--card:#1c2023}
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:15px;line-height:1.5;padding-inline:16px;padding-block:8px 48px}
+main{max-width:940px;margin:0 auto}
+h1,h2,h3{font-family:Spectral,Georgia,serif;font-weight:500;text-wrap:balance;line-height:1.15;margin:0}
+h1{font-size:2.1rem;margin-top:24px} h2{font-size:1.45rem;margin-top:40px;padding-top:14px;border-top:1px solid var(--rule)} h3{font-size:1.1rem;margin-top:28px} h3 .muted{font-family:"IBM Plex Sans",sans-serif;font-size:.8rem;font-weight:400}
+p{max-width:68ch;margin:10px 0} .muted{color:var(--ink2)} .small{font-size:.85rem} .lede{font-size:1.08rem;color:var(--ink2);max-width:66ch}
+.eyebrow{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink2);font-weight:500}
+.num,td.num{font-family:"IBM Plex Mono",ui-monospace,monospace;font-variant-numeric:tabular-nums}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-top:22px;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);padding-block:8px;z-index:2;border-bottom:1px solid var(--rule)}
+.tab{font:inherit;font-size:.9rem;font-weight:500;color:var(--ink2);background:var(--bg2);border:1px solid var(--rule);border-radius:6px;padding:7px 12px;cursor:pointer} .tab[aria-selected="true"]{color:var(--ink);border-color:var(--pos);box-shadow:inset 0 -3px 0 var(--pos)} .tab:focus-visible{outline:2px solid var(--pos);outline-offset:2px}
+.flow{display:grid;grid-template-columns:1fr auto 1fr auto 1fr;gap:10px;align-items:stretch;margin-top:22px}
+.box{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:14px 16px;min-width:0} .box .eyebrow{margin-bottom:6px} .box .big{font-family:Spectral,serif;font-size:1.7rem;line-height:1.05;margin:2px 0 4px}
+.box.orig{border-color:var(--neg)} .box.new{border-color:var(--pos)} .box ul{list-style:none;padding:0;margin:8px 0 0;font-size:.78rem;color:var(--ink2)} .box li{display:flex;gap:6px;flex-wrap:wrap;padding:2px 0;border-top:1px dashed var(--rule)}
+.arrow{align-self:center;color:var(--ink2);font-size:1.4rem}
+.tbl{overflow-x:auto;margin-top:10px} table{border-collapse:collapse;width:100%;font-size:.88rem} th{text-align:left;font-weight:500;color:var(--ink2);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;padding:6px 8px;border-bottom:1px solid var(--rule)}
+td{padding:7px 8px;border-bottom:1px solid var(--rule);vertical-align:top} td.num{text-align:right;white-space:nowrap} td.u{color:var(--ink2);white-space:nowrap} td.n{min-width:230px} .note{font-size:.76rem;color:var(--ink2);margin-top:2px}
+.loc{display:inline-block;margin-left:6px;font-family:"IBM Plex Mono",monospace;font-size:.72rem;color:var(--ink2);background:var(--bg2);padding:0 5px;border-radius:3px}
+.tag{display:inline-block;margin-left:6px;font-size:.7rem;color:var(--warn);border:1px solid var(--warn);padding:0 5px;border-radius:3px;vertical-align:1px} .tag.blue{color:var(--pos);border-color:var(--pos)} .tag.warn{color:var(--bad);border-color:var(--bad)}
+td.bar{position:relative;min-width:140px} td.bar .fill{position:absolute;left:8px;top:9px;height:14px;background:var(--pos);border-radius:0 3px 3px 0;opacity:.85} td.bar .v{position:relative;font-family:"IBM Plex Mono",monospace;font-size:.78rem;margin-left:4px}
+figure{margin:0} .chart{overflow-x:auto;margin-top:10px} svg text{font-family:"IBM Plex Sans",system-ui,sans-serif;fill:var(--ink)} svg .ax{fill:var(--ink2);font-size:11px} svg .cat{font-size:12px} svg .val{font-family:"IBM Plex Mono",monospace;font-size:11px;fill:var(--ink2)}
+svg .grid{stroke:var(--rule)} svg .zero{stroke:var(--ink2);stroke-width:1.5} svg .band{fill:var(--band)} svg .pos{fill:var(--pos)} svg .neg{fill:var(--neg)} svg .row:hover rect.b{opacity:.75}
+#tip{position:fixed;pointer-events:none;background:var(--card);border:1px solid var(--rule);border-radius:5px;padding:8px 10px;font-size:.8rem;line-height:1.4;box-shadow:0 4px 14px rgba(0,0,0,.12);max-width:280px}
+.checks{list-style:none;padding:0;margin:10px 0 0;display:grid;gap:6px} .checks li{display:grid;grid-template-columns:22px 1fr;gap:8px;font-size:.9rem} .checks .ok{color:var(--good);font-weight:600} .checks .bad{color:var(--bad);font-weight:600}
+.ev{padding-left:18px} .ev li{margin-bottom:8px;font-size:.9rem}
+.legend{display:flex;gap:18px;font-size:.8rem;color:var(--ink2);margin-top:6px} .legend i{display:inline-block;width:10px;height:10px;margin-right:6px;vertical-align:-1px;border-radius:2px}
+@media (max-width:640px){.flow{grid-template-columns:1fr} .arrow{transform:rotate(90deg);justify-self:center} h1{font-size:1.7rem}}
+</style>
+<main>
+<div class="eyebrow">reverse‑bafu · {{D}} of the {{T}} aggregated system processes we found, rebuilt · {{N}} specs</div>
+<h1>Rebuilt BAFU inventories</h1>
+<p class="lede">Aggregated BAFU‑2026 datasets rebuilt as unit processes with links into the existing database, each by a different route. Every rebuild is one JSON spec, run through resolve → calibrate → build → check; the pages below are those specs and check reports rendered.</p>
+
+<h2>Overview</h2>
+<div class="tbl"><table><thead><tr><th>Dataset · strategy</th><th style="text-align:right">Inputs<br><span class="muted">orig → rebuilt</span></th><th style="text-align:right">Elementary flows<br><span class="muted">orig → direct</span></th><th style="text-align:right">Calibrated amounts</th><th style="text-align:right">50 largest kg flows<br><span class="muted">within ±10 %</span></th><th style="text-align:right">kg mass<br><span class="muted">within ±10 %</span></th><th style="text-align:right">All flows<br><span class="muted">within ±10 %</span></th><th style="text-align:right">Residual<br><span class="muted">negative / total</span></th><th>Flags</th></tr></thead><tbody>{{OVERVIEW}}</tbody></table></div>
+<p class="muted small">Agreement is measured on the cumulative inventory itself — flow by flow, no impact assessment, so the verdict does not depend on a characterisation method. Three views of the same comparison: the 50 largest kilogram flows, the share of the original’s total kilogram mass that the rebuilt process reproduces within ±10 %, and every flow counted alike (which the long tail of small background flows dominates). The hybrid node of each equals the original flow for flow by construction. "Calibrated amounts" were fitted by bounded least squares with the input list fixed; inputs at a bound signal the report's range disagrees with the original vector.</p>
+
+<div class="tabs" role="tablist">{{TABS}}</div>
+{{PANELS}}
+</main>
+<div id="tip" hidden></div>
+<script>
+const INV = {{DATA}};
+const short = c => c.length > 34 ? c.slice(0, 33) + '…' : c;
+const sl = x => Math.sign(x) * Math.log10(1 + Math.abs(x));
+const ticks = [-100,-10,0,10,100,1000];
+function draw(el, S) {
+  const W = 880, L = 250, R = 70, rowH = 20, T = 24, B = 30, H = T + S.length*rowH + B;
+  const x0 = L, x1 = W - R, dmin = sl(-100), dmax = sl(1000);
+  const X = v => x0 + (sl(Math.max(-100, Math.min(1000, v))) - dmin)/(dmax-dmin)*(x1-x0);
+  const rows = [...S].sort((a,b) => Math.abs(a.delta) - Math.abs(b.delta));
+  let s = `<svg viewBox="0 0 ${W} ${H}" width="100%" style="min-width:640px;display:block" role="img" aria-label="Deviation of the explicit model from the original, per elementary flow">`;
+  s += `<rect class="band" x="${X(-10)}" y="${T-8}" width="${X(10)-X(-10)}" height="${rows.length*rowH+8}"/>`;
+  for (const t of ticks) s += `<line class="${t===0?'zero':'grid'}" x1="${X(t)}" x2="${X(t)}" y1="${T-8}" y2="${T+rows.length*rowH}"/><text class="ax" x="${X(t)}" y="${T+rows.length*rowH+16}" text-anchor="middle">${t>0?'+':''}${t.toLocaleString()}%</text>`;
+  rows.forEach((r, i) => {
+    const y = T + i*rowH + 3, h = rowH - 6, a = X(0), b = X(r.delta);
+    s += `<g class="row" data-i="${i}"><rect x="0" y="${y-3}" width="${W}" height="${rowH}" fill="transparent"/>`;
+    s += `<text class="cat" x="${L-10}" y="${y+h-3}" text-anchor="end">${short(r.cat)}</text>`;
+    s += `<rect class="b ${r.delta>=0?'pos':'neg'}" x="${Math.min(a,b)}" y="${y}" width="${Math.max(1, Math.abs(b-a))}" height="${h}" rx="2"/>`;
+    s += `<text class="val" x="${x1+8}" y="${y+h-3}">${r.delta>0?'+':''}${r.delta.toFixed(1)}%</text></g>`;
+  });
+  el.innerHTML = s + '</svg>';
+  const tip = document.getElementById('tip');
+  el.querySelectorAll('.row').forEach(g => {
+    g.addEventListener('mousemove', e => { const r = rows[+g.dataset.i];
+      tip.innerHTML = `<b>${r.cat}</b><br><span class="muted">${r.where||''}</span><br>original ${r.target.toPrecision(3)} ${r.unit}<br>explicit ${r.explicit.toPrecision(3)} (${r.delta>0?'+':''}${r.delta.toFixed(1)}%)`;
+      tip.hidden = false; tip.style.left = Math.min(e.clientX+14, window.innerWidth-300)+'px'; tip.style.top = (e.clientY+14)+'px'; });
+    g.addEventListener('mouseleave', () => tip.hidden = true);
+  });
+}
+document.querySelectorAll('.chart').forEach(el => draw(el, INV[el.dataset.k]));
+const tabs = [...document.querySelectorAll('.tab')];
+function show(k) { tabs.forEach(t => t.setAttribute('aria-selected', t.dataset.k === k)); document.querySelectorAll('.panel').forEach(p => p.hidden = p.id !== 'panel-' + k); try { localStorage.setItem('rb-tab', k); } catch(e) {} }
+tabs.forEach(t => t.addEventListener('click', () => show(t.dataset.k)));
+try { const k = localStorage.getItem('rb-tab'); if (k && document.getElementById('panel-'+k)) show(k); } catch(e) {}
+</script>

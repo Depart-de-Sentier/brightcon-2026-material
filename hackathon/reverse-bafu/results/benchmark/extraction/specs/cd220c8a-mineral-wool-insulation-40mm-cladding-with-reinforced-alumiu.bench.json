@@ -1,0 +1,254 @@
+{
+  "target": {
+    "code": "cd220c8a-bb77-3f4d-a445-53bc47d98e02",
+    "name": "Mineral wool insulation 40mm, cladding with reinforced alumium foil",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tabelle 109 'Bilanzierung Herstellung Dämmung Mineralwolle mit Alufolie gitterverstärkt Umhüllung', column 'Dämmstärke 40mm [m2]', per 1 m2; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2014 - LCA data ventilation and heating systems - Klingler.pdf",
+      "where": "pages 171-173 -> report-p171-173.txt",
+      "note": "report sha256 f4692d86e964f922…, text sha256 e9813dad82d8d48e…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/cd220c8a-bb77-3f4d-a445-53bc47d98e02/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "005d65d4c32ae18eb62db599312d552a90ca814b286c7737cb43b5ac1d94d931",
+      "at": "2026-09-22T21:41:02Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "b0ee703b782e6a4ab50524cd73a3eaa5774c9f5240012ee8bc4f5dde64d418a1",
+      "at": "2026-09-22T21:41:04Z"
+    },
+    "gaps_reported_by_model": [
+      "No production electricity or heat for assembling the insulation shell.",
+      "No direct emissions.",
+      "No infrastructure of the producing plant.",
+      "Tabelle 110 (disposal of the same product) is a separate dataset and is not folded in here."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T21:41:04Z"
+  },
+  "node": {
+    "name": "Mineral wool insulation 40mm, cladding with reinforced alumium foil, disaggregated",
+    "unit": "m2",
+    "location": "CH",
+    "comment": "drafted from 2014 - LCA data ventilation and heating systems - Klingler.pdf pp. 171-173",
+    "inputs": [
+      {
+        "name": "Rock wool, at plant",
+        "amount": 1.53,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "40 mm column (1st of the five thickness columns 40/50/60/80/100 mm)",
+        "derivation": {
+          "evidence": "report-p171-173.txt",
+          "quote": "           rock wool, at         1.530E+00          1.913E+00         2.295E+00          3.060E+00         3.825E+00",
+          "raw_value": 1.53,
+          "raw_unit": "kg",
+          "per": "per m2 of 40 mm mineral wool pipe insulation with grid-reinforced aluminium foil cladding",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "rock wool at plant",
+          "mapping_reason": "Exact name and unit (kilogram) match; candidate 0 is the rock wool PLANT infrastructure in units.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "894a305f-4c36-3f08-88b9-7d680d276941"
+      },
+      {
+        "name": "Glass wool mat, at plant",
+        "amount": 1.53,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "40 mm column; the table books rock wool AND glass wool mat at the same amount, reproduced as printed",
+        "derivation": {
+          "evidence": "report-p171-173.txt",
+          "quote": "           glass wool mat,       1.530E+00          1.913E+00         2.295E+00          3.060E+00         3.825E+00",
+          "raw_value": 1.53,
+          "raw_unit": "kg",
+          "per": "per m2 of 40 mm mineral wool pipe insulation with grid-reinforced aluminium foil cladding",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "glass wool mat at plant",
+          "mapping_reason": "Exact name match; candidate 1 is a brand- and binder-specific aggregated variant.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "3ae98d80-01bb-3de0-9021-a303378d8a99"
+      },
+      {
+        "name": "Aluminium, production mix, at plant",
+        "amount": 0.108,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "the aluminium foil, identical for all thicknesses",
+        "derivation": {
+          "evidence": "report-p171-173.txt",
+          "quote": "           aluminium,            1.080E-01          1.080E-01         1.080E-01          1.080E-01         1.080E-01",
+          "raw_value": 0.108,
+          "raw_unit": "kg",
+          "per": "per m2 of 40 mm mineral wool pipe insulation with grid-reinforced aluminium foil cladding",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "aluminium production mix at plant",
+          "mapping_reason": "Exact name and unit match at RER; candidate 0 is an acrylic glass, candidate 1 a Swiss profile-specific mix and candidates 3-4 the cast and wrought sub-mixes.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "ede45db2-bc7b-386a-b3e3-eafcf2dac420"
+      },
+      {
+        "name": "Sheet rolling, aluminium",
+        "amount": 0.108,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "forming of the aluminium foil",
+        "derivation": {
+          "evidence": "report-p171-173.txt",
+          "quote": "           sheet rolling,        1.080E-01          1.080E-01         1.080E-01          1.080E-01         1.080E-01",
+          "raw_value": 0.108,
+          "raw_unit": "kg",
+          "per": "per m2 of 40 mm mineral wool pipe insulation with grid-reinforced aluminium foil cladding",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "sheet rolling aluminium",
+          "mapping_reason": "Exact name and material match; candidate 1 is the aluminium sheet itself.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "6113497a-792f-38e7-a69a-420dff702898"
+      },
+      {
+        "name": "Polyethylene, LDPE, granulate, at plant",
+        "amount": 0.05433,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "the grid reinforcement",
+        "derivation": {
+          "evidence": "report-p171-173.txt",
+          "quote": "           polyethylene,         5.433E-02          5.433E-02         5.433E-02          5.433E-02         5.433E-02",
+          "raw_value": 0.05433,
+          "raw_unit": "kg",
+          "per": "per m2 of 40 mm mineral wool pipe insulation with grid-reinforced aluminium foil cladding",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "polyethylene LDPE granulate at plant",
+          "mapping_reason": "Exact name match; HDPE is a different polymer. The dataset is aggregated, so it is linked as a dependency.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "c4dbbb99-22d0-37c1-8cc7-fc5a8c64329b"
+      },
+      {
+        "name": "Injection moulding",
+        "amount": 0.05433,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "forming of the LDPE",
+        "derivation": {
+          "evidence": "report-p171-173.txt",
+          "quote": "           injection moul-       5.433E-02          5.433E-02         5.433E-02          5.433E-02         5.433E-02",
+          "raw_value": 0.05433,
+          "raw_unit": "kg",
+          "per": "per m2 of 40 mm mineral wool pipe insulation with grid-reinforced aluminium foil cladding",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "injection moulding",
+          "mapping_reason": "Exact name and unit match; candidate 1 is a glass-fibre reinforced polyamide part.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "f7ce1c49-0916-320e-9585-666388269b3d"
+      },
+      {
+        "name": "Transport, freight, rail, electricity with shunting",
+        "amount": 0.3385,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "40 mm column",
+        "derivation": {
+          "evidence": "report-p171-173.txt",
+          "quote": "           transport, freight,   3.385E-01          4.150E-01         4.915E-01          6.445E-01         7.975E-01",
+          "raw_value": 0.3385,
+          "raw_unit": "tkm",
+          "per": "per m2 of 40 mm mineral wool pipe insulation with grid-reinforced aluminium foil cladding",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "'electricity with shunting' is the standard Swiss rail freight dataset.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a169f230-3e05-33d0-a12d-f9d6d4d6abf1"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 0.06932,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "40 mm column",
+        "derivation": {
+          "evidence": "report-p171-173.txt",
+          "quote": "           transport, lorry      6.932E-02          8.462E-02         9.992E-02          1.305E-01         1.611E-01",
+          "raw_value": 0.06932,
+          "raw_unit": "tkm",
+          "per": "per m2 of 40 mm mineral wool pipe insulation with grid-reinforced aluminium foil cladding",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry 20-28t fleet average",
+          "mapping_reason": "'Transport, freight, lorry, fleet average' at CH is the generic ton-kilometre freight service; the 'Operation, lorry ...' candidates are in vehicle-kilometres.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "cedd6b69-4829-358e-9ea2-f280e8ac03cb"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

@@ -1,0 +1,44 @@
+{
+ "mappings": [
+  {
+   "item": "polyurethane, rigid foam, at plant",
+   "chosen": "Polyurethane, rigid foam, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name match at plant, the stage the table books; the CH market mix adds a market step and the flexible foam is a different product."
+  },
+  {
+   "item": "polyvinylchloride, at regional storage",
+   "chosen": "Polyvinylchloride, at regional storage",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name match; every other candidate is a different substance that merely shares 'at regional storage'."
+  },
+  {
+   "item": "extrusion, plastic film",
+   "chosen": "Extrusion, plastic film",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name match; 'extrusion, plastic pipes' is the other forming process."
+  },
+  {
+   "item": "transport, freight, rail",
+   "chosen": "Transport, freight, rail, electricity with shunting",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The table gives CH rail freight, and 'electricity with shunting' is the standard Swiss rail freight dataset; the Betrieb/Fahrzeug/Infrastruktur entries are its sub-processes and the RER entry the wrong geography."
+  },
+  {
+   "item": "transport, lorry 20-28t, fleet average",
+   "chosen": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "No 20-28 t class exists in the database; the 16t-32t gross-weight fleet average at CH is the class that contains 20-28 t and is a freight service in ton-kilometres like the line item. The 'Operation, lorry 20-28t' candidates are in vehicle-kilometres, not ton-kilometres."
+  }
+ ]
+}

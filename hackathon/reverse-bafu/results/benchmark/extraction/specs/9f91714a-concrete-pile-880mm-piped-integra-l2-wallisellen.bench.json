@@ -1,0 +1,156 @@
+{
+  "target": {
+    "code": "9f91714a-a155-3ca7-b229-296798d84083",
+    "name": "Concrete pile, 880mm, piped, Integra L2 Wallisellen",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 6.18 'Sachbilanzdaten zur Herstellung der bilanzierten Ortbetonbohrpfähle pro m Pfahl', 4th value column 'concrete pile, 880mm, piped, Integra L2 Wallisellen' [CH], per 1 m; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2014 - LCA civil eng. works in building const. - Frischknecht.pdf",
+      "where": "pages 37-39 -> report-p37-39.txt",
+      "note": "report sha256 7541ef12bc8448e9…, text sha256 cb275e41d48bac34…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/9f91714a-a155-3ca7-b229-296798d84083/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "070bde7e07d58cb8f57e2c161a64f37dd3214a5e0a23dc7264bcd77fcaf90217",
+      "at": "2026-09-22T21:36:29Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "2cf1e199c3abc0c302aec38cb2546e4c05bb2108b94994774a2594c120df8fc7",
+      "at": "2026-09-22T21:36:31Z"
+    },
+    "gaps_reported_by_model": [
+      "No direct emissions of any kind (no dust from drilling, no diesel exhaust beyond what the diesel dataset carries).",
+      "No excavated material / drilling spoil disposal is booked.",
+      "No casing ('verrohrt'/piped) steel is inventoried separately, although the pile is named as cased.",
+      "No land use or water use."
+    ],
+    "skipped_items": [
+      "concrete, concrete for drilled piles, average cement Switzerland, at plant: no dataset chosen (The keyword search returned no candidate at all for drilled-pile concrete, so nothing can be chosen; the line is reported as missing.)"
+    ],
+    "assembled_at": "2026-09-22T21:36:31Z"
+  },
+  "node": {
+    "name": "Concrete pile, 880mm, piped, Integra L2 Wallisellen, disaggregated",
+    "unit": "m",
+    "location": "CH",
+    "comment": "drafted from 2014 - LCA civil eng. works in building const. - Frischknecht.pdf pp. 37-39",
+    "inputs": [
+      {
+        "name": "Steel, low alloyed, secondary production (100% Rec.)",
+        "amount": 21.0,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "4th column (concrete pile, 880mm, piped, Integra L2 Wallisellen); 27 kg/m3 reinforcement per Tab. 6.17",
+        "derivation": {
+          "evidence": "report-p37-39.txt",
+          "quote": "                                                                  CH                          0                    kg          2.90E+1             4.50E+1           2.10E+1             2.10E+1            1                                 1.16                      APT Ingenieure 2014, pers.",
+          "raw_value": 21.0,
+          "raw_unit": "kg",
+          "per": "per m of 880 mm cast-in-place cased concrete pile, Integra L2 Wallisellen",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "reinforcing steel secondary production",
+          "mapping_reason": "No 'reinforcing steel, secondary production (100% Rec.)' exists: candidate 0 is the PRIMARY (0 % recycled) reinforcing steel and candidate 1 'Steel, low alloyed, secondary production (100% Rec.)' is the same 100 %-recycled secondary route in the same recycled-content accounting family. The recycled content is the property the line item names, so the secondary low-alloyed steel is preferred over primary reinforcing steel.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "5733cb9a-b0b6-36f7-b445-60d6739da152"
+      },
+      {
+        "name": "Diesel, burned in building machine, average",
+        "amount": 213.0,
+        "unit": "megajoule",
+        "location": "CH",
+        "note": "drilling fuel, estimated from the bored-pile-wall figures of sections 6.2.3/6.2.4",
+        "derivation": {
+          "evidence": "report-p37-39.txt",
+          "quote": "            diesel, burned in building machine                  GLO                           0                    MJ          2.43E+2             2.13E+2           2.43E+2             2.13E+2            1                                 1.16                      Marti AG, 2014, pers. communication",
+          "raw_value": 213.0,
+          "raw_unit": "MJ",
+          "per": "per m of 880 mm cast-in-place cased concrete pile, Integra L2 Wallisellen",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "diesel burned in building machine",
+          "mapping_reason": "'average' is the fleet mix the report's generic wording means; the with/without particle filter entries pick one abatement level.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "e4e7ddc0-f7d1-3fad-bd12-9d6981142800"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 37.5,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p37-39.txt",
+          "quote": "            transport, lorry >28t, fleet average                  CH                          0                   tkm          2.55E+1             3.83E+1           2.51E+1             3.75E+1            1                                 2.03                      concrete, 50 km for steel; standard",
+          "raw_value": 37.5,
+          "raw_unit": "tkm",
+          "per": "per m of 880 mm cast-in-place cased concrete pile, Integra L2 Wallisellen",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry >28t fleet average",
+          "mapping_reason": "'Transport, freight, lorry, fleet average' at CH is the generic ton-kilometre freight service; the 'Operation, lorry ...' candidates are in vehicle-kilometres, not ton-kilometres.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "cedd6b69-4829-358e-9ea2-f280e8ac03cb"
+      },
+      {
+        "name": "Transport, freight, rail, electricity with shunting",
+        "amount": 12.6,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p37-39.txt",
+          "quote": "            transport, freight, rail                              CH                          0                   tkm          1.74E+1             2.70E+1           1.26E+1             1.26E+1            1                                 2.03",
+          "raw_value": 12.6,
+          "raw_unit": "tkm",
+          "per": "per m of 880 mm cast-in-place cased concrete pile, Integra L2 Wallisellen",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "'electricity with shunting' is the standard Swiss rail freight dataset.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a169f230-3e05-33d0-a12d-f9d6d4d6abf1"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

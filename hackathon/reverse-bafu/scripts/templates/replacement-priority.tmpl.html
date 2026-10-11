@@ -1,0 +1,221 @@
+<title>Replacement Priorities</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap">
+<style>
+:root{
+  --paper:#f0e9e1; --surface:#ffffff; --ink:#2b2b2b; --ink-2:#555b57; --muted:#7e857f; --line:#dcd3c7;
+  --forest:#3c5343; --sage:#84ae99; --bar:#3c5343; --bar-bg:#e6ded3; --hover:#f7f3ee; --focus:#3c5343;
+  --c-adopt-bg:#3c5343; --c-adopt-ink:#f0e9e1; --c-rev-bg:#dce8e1; --c-rev-ink:#2b2b2b; --c-rev-bd:#84ae99;
+  --c-alg-bg:#ffffff; --c-alg-ink:#2b2b2b; --c-alg-bd:#3c5343; --c-exp-bg:#e6ded3; --c-exp-ink:#555b57;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#1b221e; --surface:#232c27; --ink:#eee9e2; --ink-2:#c6cfc9; --muted:#97a19a; --line:#34403a;
+    --forest:#a9c9b7; --sage:#84ae99; --bar:#84ae99; --bar-bg:#34403a; --hover:#29332d; --focus:#a9c9b7;
+    --c-adopt-bg:#84ae99; --c-adopt-ink:#1b221e; --c-rev-bg:#2f3d35; --c-rev-ink:#eee9e2; --c-rev-bd:#84ae99;
+    --c-alg-bg:#232c27; --c-alg-ink:#eee9e2; --c-alg-bd:#a9c9b7; --c-exp-bg:#34403a; --c-exp-ink:#c6cfc9;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#1b221e; --surface:#232c27; --ink:#eee9e2; --ink-2:#c6cfc9; --muted:#97a19a; --line:#34403a;
+  --forest:#a9c9b7; --sage:#84ae99; --bar:#84ae99; --bar-bg:#34403a; --hover:#29332d; --focus:#a9c9b7;
+  --c-adopt-bg:#84ae99; --c-adopt-ink:#1b221e; --c-rev-bg:#2f3d35; --c-rev-ink:#eee9e2; --c-rev-bd:#84ae99;
+  --c-alg-bg:#232c27; --c-alg-ink:#eee9e2; --c-alg-bd:#a9c9b7; --c-exp-bg:#34403a; --c-exp-ink:#c6cfc9;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:500 15px/1.55 "Quicksand",system-ui,-apple-system,"Segoe UI",sans-serif;padding-inline:16px;padding-block:28px 64px}
+main{max-width:1180px;margin:0 auto;display:flex;flex-direction:column;gap:40px}
+h1,h2{font-weight:500;line-height:1.1;margin:0;text-wrap:balance}
+h1{font-size:clamp(2.1rem,4.6vw,3rem)}
+h2{font-size:1.6rem}
+h3{font-size:1rem;font-weight:700;margin:0}
+p{margin:0;max-width:72ch}
+.eyebrow{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--forest);font-weight:700}
+.lede{color:var(--ink-2);font-size:1.07rem}
+.muted{color:var(--muted)} .small{font-size:.86rem}
+header,section{display:flex;flex-direction:column;gap:14px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px;margin-top:8px}
+.fact{border-top:3px solid var(--forest);padding-top:10px;display:flex;flex-direction:column;gap:4px}
+.fact b{font-size:1.7rem;font-weight:700;letter-spacing:-.01em}
+.fact span{color:var(--ink-2);font-size:.9rem;line-height:1.4}
+.controls{display:flex;flex-wrap:wrap;gap:10px 22px;align-items:center}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:4px;overflow:hidden;background:var(--surface)}
+.seg button{font:inherit;font-size:.85rem;border:0;background:transparent;color:var(--ink-2);padding:6px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--forest);color:var(--paper)}
+.lbl{font-size:.8rem;color:var(--muted);margin-right:6px}
+button:focus-visible,input:focus-visible,tr:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.chip{display:inline-block;white-space:nowrap;border-radius:3px;padding:2px 8px;font-size:.78rem;font-weight:600;border:1px solid transparent}
+.r-adopt{background:var(--c-adopt-bg);color:var(--c-adopt-ink)}
+.r-rev{background:var(--c-rev-bg);color:var(--c-rev-ink);border-color:var(--c-rev-bd)}
+.r-alg{background:var(--c-alg-bg);color:var(--c-alg-ink);border-color:var(--c-alg-bd)}
+.r-exp{background:var(--c-exp-bg);color:var(--c-exp-ink)}
+.fchip{cursor:pointer;opacity:.55}
+.fchip[aria-pressed="true"]{opacity:1}
+.tbl-wrap{overflow-x:auto;background:var(--surface);border:1px solid var(--line);border-radius:4px}
+table{border-collapse:collapse;width:100%;font-size:.88rem;min-width:900px}
+th,td{padding:8px 10px;text-align:left;border-bottom:1px solid var(--line);vertical-align:middle}
+th{font-size:.74rem;color:var(--muted);font-weight:700;text-transform:uppercase;letter-spacing:.06em;position:sticky;top:0;background:var(--surface)}
+td.num,th.num{text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
+tbody tr.row{cursor:pointer}
+tbody tr.row:hover{background:var(--hover)}
+.nm{font-weight:600}
+.sub{color:var(--muted);font-size:.78rem}
+.barcell{width:210px}
+.bar{display:flex;align-items:center;gap:8px}
+.bar i{display:block;height:10px;border-radius:0 3px 3px 0;background:var(--bar);min-width:1px}
+.bar .track{flex:1;background:var(--bar-bg);height:10px;border-radius:0 3px 3px 0;overflow:hidden}
+.bar b{font-variant-numeric:tabular-nums;min-width:40px;text-align:right;font-weight:700}
+tr.detail td{background:var(--hover);padding:14px 16px 18px}
+.dgrid{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,1fr);gap:24px}
+@media (max-width:760px){.dgrid{grid-template-columns:1fr}}
+.cats{display:grid;grid-template-columns:auto 1fr auto;gap:3px 10px;font-size:.8rem;align-items:center}
+.cats i{display:block;height:7px;background:var(--sage);border-radius:0 2px 2px 0}
+.cats span.v{font-variant-numeric:tabular-nums;text-align:right;color:var(--ink-2)}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.84rem}
+.kv dt{color:var(--muted)} .kv dd{margin:0}
+.more{font:inherit;font-size:.9rem;background:var(--surface);border:1px solid var(--line);border-radius:4px;padding:8px 14px;color:var(--ink);cursor:pointer;align-self:flex-start}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.notes div{display:flex;flex-direction:column;gap:6px}
+.notes p{color:var(--ink-2);font-size:.92rem}
+code{font-family:ui-monospace,Menlo,monospace;font-size:.84em;color:var(--ink-2)}
+.formula{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--sage);border-radius:0 4px 4px 0;padding:14px 18px;font-size:.95rem;max-width:none}
+</style>
+
+<main>
+  <header>
+    <div class="eyebrow">reverse-bafu · BAFU-2026 · 138 system processes investigated</div>
+    <h1>Replacement Priorities</h1>
+    <p class="lede">Which of the aggregated system processes we investigated are most worth replacing with transparent unit processes, and where they stand: rebuilt by our algorithm, or left to a domain expert because we found too little information. A system process ranks high when much of the rest of BAFU depends on it.</p>
+    <div class="facts" id="facts"></div>
+  </header>
+
+  <section aria-labelledby="h-rank">
+    <h2 id="h-rank">The ranking</h2>
+    <div class="controls">
+      <div><span class="lbl">Rank by</span><span class="seg" role="group" aria-label="Rank by">
+        <button data-key="importance" aria-pressed="true">All EF categories (mean)</button>
+        <button data-key="importance_median" aria-pressed="false">Median</button>
+        <button data-key="importance_climate" aria-pressed="false">Climate only</button></span></div>
+      <div id="filters" role="group" aria-label="Show recommendations" style="display:flex;gap:6px;flex-wrap:wrap"></div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th class="num">#</th><th>System process</th><th id="h-score">Importance</th><th class="num">Climate</th><th class="num">Breadth</th><th>Driven by</th><th class="num">Blocks our rebuilds</th><th>Recommendation</th></tr></thead>
+        <tbody id="tb"></tbody>
+      </table>
+    </div>
+    <button class="more" id="more">Show all</button>
+    <p class="muted small">Importance in dataset-equivalents: 10 means the system process carries ten BAFU datasets' worth of impact. Breadth: in how many of the 16 EF categories it carries at least one. "Driven by" appears when one category accounts for more than half. Click a row for the per-category breakdown.</p>
+  </section>
+
+  <section aria-labelledby="h-method">
+    <h2 id="h-method">How the score is built</h2>
+    <p class="formula">importance of <i>s</i> in category <i>c</i> = the sum, over every other dataset <i>a</i> in BAFU, of the share of <i>a</i>'s impact that passes through <i>s</i> anywhere in its supply chain</p>
+    <div class="notes">
+      <div><h3>Why a sum of shares</h3><p>A count of consumers treats a dataset that is 90 % driven by the system process like one where it contributes 0.1 %. Summing the shares weighs each dependant by how much of its result actually passes through. The ranking score is the mean over the 16 headline EF 3.1 categories, so climate is not weighted against toxicity. Checked against ordinary LCA runs: the pipe that the ranking says is 90 % HDPE comes out at 89.9 %.</p></div>
+      <div><h3>How stable it is</h3><p id="stab"></p></div>
+      <div><h3>What it does not see</h3><p>Every dataset counts once; how often each is used in real studies is not known here. The score measures how much of the rest of BAFU a system process sits inside, so a final product that nothing else consumes scores zero, even if practitioners select it directly. The 138 are the system processes we found and investigated, not necessarily all of BAFU's.</p></div>
+      <div><h3>The recommendations</h3><p><span class="chip r-adopt">Review &amp; adopt</span> we rebuilt it and its fossil CO₂ is within ±25 % of the original. <span class="chip r-rev">Expert revision</span> we rebuilt it but it is further off. <span class="chip r-alg">Expert, with report</span> not rebuilt: its report is in the bundle but prints no inventory we could use. <span class="chip r-exp">Expert, no report</span> no report at all.</p></div>
+    </div>
+    <p class="muted small">Computed by <code>scripts/replacement_priority.py</code> (one factorisation of the 11,947-dataset matrix, 24 s) into <code>results/replacement_priority.csv</code>. The recommendation uses the fossil-CO₂ comparison in <code>results/flow_comparison.json</code>.</p>
+  </section>
+</main>
+
+<script id="data" type="application/json">/*DATA*/</script>
+<script>
+(() => {
+const D = JSON.parse(document.getElementById('data').textContent);
+const R = D.rows, CATS = D.categories;
+const REC = {
+  'rebuilt: review and adopt': ['Review & adopt', 'r-adopt'],
+  'rebuilt: expert revision': ['Expert revision', 'r-rev'],
+  'expert, with report': ['Expert, with report', 'r-alg'],
+  'expert, no report': ['Expert, no report', 'r-exp'],
+};
+const KEYLBL = {importance: 'Importance', importance_median: 'Importance (median)', importance_climate: 'Importance (climate)'};
+let key = 'importance', showAll = false, open = null;
+const on = new Set(Object.keys(REC));
+const fmt = v => v >= 100 ? v.toFixed(0) : v >= 1 ? v.toFixed(1) : v.toFixed(2);
+const el = (tag, attrs = {}, ...kids) => { const e = document.createElement(tag); for (const [k, v] of Object.entries(attrs)) { if (k === 'class') e.className = v; else if (k === 'style') e.style.cssText = v; else e.setAttribute(k, v); } for (const c of kids) e.append(c); return e; };
+
+// facts, computed from the data
+(function facts() {
+  const tot = R.reduce((a, r) => a + r.importance, 0);
+  const sorted = R.slice().sort((a, b) => b.importance - a.importance);
+  let cum = 0, n80 = 0; for (const r of sorted) { cum += r.importance; n80++; if (cum >= 0.8 * tot) break; }
+  const share = k => R.filter(r => r.recommendation === k).reduce((a, r) => a + r.importance, 0) / tot;
+  const cnt = k => R.filter(r => r.recommendation === k).length;
+  const rebuilt = share('rebuilt: review and adopt') + share('rebuilt: expert revision');
+  const lead = sorted.find(r => r.recommendation === 'expert, with report');
+  const items = [
+    [`${n80} of ${R.length}`, 'carry 80 % of the importance: the ranking is steep'],
+    [`${Math.round(rebuilt * 100)} %`, `of it sits in the ${cnt('rebuilt: review and adopt') + cnt('rebuilt: expert revision')} system processes we already rebuilt`],
+    [`${Math.round(share('expert, with report') * 100)} %`, `in ${cnt('expert, with report')} not rebuilt whose report prints no usable inventory, led by ${lead ? lead.name.replace(/, at plant$/, '') : '—'}`],
+    [`${(share('expert, no report') * 100).toFixed(1)} %`, `in the ${cnt('expert, no report')} without any report`],
+  ];
+  document.getElementById('facts').replaceChildren(...items.map(([v, t]) => el('div', {class: 'fact'}, el('b', {}, v), el('span', {}, t))));
+  const top = k => new Set(R.slice().sort((a, b) => b[k] - a[k]).slice(0, 15).map(r => r.code));
+  const t0 = top('importance'), both = k => [...top(k)].filter(c => t0.has(c)).length;
+  document.getElementById('stab').textContent = `Ranked by the median over categories instead of the mean, ${both('importance_median')} of the top 15 stay in the top 15; ranked by climate alone, ${both('importance_climate')}. The two that leave the top 15, tetrachloroethylene and dichloromethane, have almost all of their importance in one category: ozone depletion.`;
+})();
+
+// filters
+const fbox = document.getElementById('filters');
+for (const [k, [label, cls]] of Object.entries(REC)) {
+  const n = R.filter(r => r.recommendation === k).length;
+  const b = el('button', {class: `chip fchip ${cls}`, 'aria-pressed': 'true'}, `${label} · ${n}`);
+  b.addEventListener('click', () => { on.has(k) ? on.delete(k) : on.add(k); if (!on.size) on.add(k); b.setAttribute('aria-pressed', on.has(k)); render(); });
+  fbox.append(b);
+}
+document.querySelectorAll('.seg button').forEach(b => b.addEventListener('click', () => {
+  key = b.dataset.key; document.querySelectorAll('.seg button').forEach(x => x.setAttribute('aria-pressed', x === b)); render();
+}));
+document.getElementById('more').addEventListener('click', () => { showAll = !showAll; render(); });
+
+function detail(r) {
+  const vals = CATS.map((c, i) => [c, r.cats[i]]), mx = Math.max(...vals.map(v => v[1]), 1e-9);
+  const cats = el('div', {class: 'cats'});
+  for (const [c, v] of vals.sort((a, b) => b[1] - a[1])) {
+    cats.append(el('span', {}, c), el('span', {}, el('i', {style: `width:${Math.max(1, v / mx * 100)}%`})), el('span', {class: 'v'}, fmt(v)));
+  }
+  const kv = el('dl', {class: 'kv'});
+  const add = (k, v) => { kv.append(el('dt', {}, k), el('dd', {}, v)); };
+  add('Found by', r.detected_by === 'structure' ? 'structure (no production input)' : 'the ecoSpold type=2 flag');
+  add('Direct consumers in BAFU', String(r.direct_consumers));
+  add('Datasets it drives (climate ≥ 10 %)', String(r.datasets_driven_climate));
+  add('Evidence', {'no-pdf': 'no report in the bundle', 'pages-not-found': 'report cited, no inventory table found', 'drafted': 'inventory drafted from the report'}[r.evidence] || r.evidence || '—');
+  add('Our rebuild', r.rebuilt_route ? `${r.rebuilt_route}, fossil CO₂ ×${r.rebuilt_co2_ratio} of the original` : 'none yet');
+  add('Most dependent datasets (climate)', r.top_climate_dependants || '—');
+  return el('div', {class: 'dgrid'}, el('div', {}, el('h3', {style: 'margin-bottom:8px'}, 'Dataset-equivalents per EF category'), cats), kv);
+}
+
+function render() {
+  document.getElementById('h-score').textContent = KEYLBL[key];
+  const rows = R.slice().sort((a, b) => b[key] - a[key]).map((r, i) => ({r, rank: i + 1})).filter(x => on.has(x.r.recommendation));
+  const mx = Math.max(...R.map(r => r[key]), 1e-9);
+  const shown = showAll ? rows : rows.slice(0, 30);
+  const tb = document.getElementById('tb'); tb.replaceChildren();
+  for (const {r, rank} of shown) {
+    const [label, cls] = REC[r.recommendation];
+    const name = el('td', {}, el('div', {class: 'nm'}, r.name), el('div', {class: 'sub'}, `${r.location}${r.detected_by === 'structure' ? ' · found by structure' : ''}`));
+    const bar = el('td', {class: 'barcell'}, el('div', {class: 'bar'}, el('span', {class: 'track'}, el('i', {style: `width:${r[key] / mx * 100}%`})), el('b', {}, fmt(r[key]))));
+    const driven = el('td', {class: 'sub'}, r.dominant_share > 0.5 ? `${r.dominant_category} (${Math.round(r.dominant_share * 100)} %)` : '');
+    const tr = el('tr', {class: 'row', tabindex: '0', 'aria-expanded': String(open === r.code)},
+      el('td', {class: 'num'}, String(rank)), name, bar, el('td', {class: 'num'}, fmt(r.importance_climate)),
+      el('td', {class: 'num'}, `${r.breadth}/16`), driven, el('td', {class: 'num'}, r.blocks_our_rebuilds ? String(r.blocks_our_rebuilds) : ''),
+      el('td', {}, el('span', {class: `chip ${cls}`}, label)));
+    const toggle = () => { open = open === r.code ? null : r.code; render(); };
+    tr.addEventListener('click', toggle);
+    tr.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggle(); } });
+    tb.append(tr);
+    if (open === r.code) tb.append(el('tr', {class: 'detail'}, el('td', {colspan: '8'}, detail(r))));
+  }
+  const more = document.getElementById('more');
+  more.hidden = rows.length <= 30;
+  more.textContent = showAll ? 'Show the top 30' : `Show all ${rows.length}`;
+}
+render();
+})();
+</script>

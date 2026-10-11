@@ -1,0 +1,123 @@
+{
+  "target": {
+    "code": "05a10e4b-a919-33b6-b017-7c0bf7f7a7f9",
+    "name": "Polystyrene, expandable, at plant",
+    "location": "RER"
+  },
+  "strategy": {
+    "code": "S3",
+    "label": "top-down model from the dataset's own process description: styrene by mass balance, blowing agent and utilities calibrated",
+    "note": "NOT S1. The cited report prints no inventory; what it says about EPS is an error correction (sec. 3.8, the rejected 28.5 kg of natural gas per kg). The input list here comes from the dataset's own ecoSpold technology field, which for EPS is unusually explicit and names, in order: styrene monomer, organic peroxide initiators, an aqueous phase, flame retardant and elemental carbon, suspension stabilisers, chain transfer agents, expanding aids, nucleating agents, plasticisers, pentane as the blowing agent, heating to 80-150 C, a centrifuge, drying and sieving, and a coating step. Amounts for none of them are printed anywhere in the bundle, so styrene is fixed by mass balance and everything else is fitted. The flame retardant and the elemental carbon of grey EPS are left out on purpose: no dataset is named for either and proposing one would be guessing - see gaps in the comment."
+  },
+  "evidence": [
+    {
+      "source": "2025 - LCI plastics - Rajabihamedani.pdf (the dataset's own cited report)",
+      "where": "sec. 3.2, Tab. 1.1, sec. 6",
+      "note": "Prints no unit-process inventory for any of its 14 datasets: 'All datasets addressed for the updates are nowadays only available as system processes and therefore are modelled accordingly in this study' (sec. 3.2); Foreground data = 'Cumulative inventories of Plastics as provided by PlasticsEurope' (Tab. 1.1). Verified page by page, including every table that is embedded as an image. The full finding is in specs/evidence/<code>/response-0-locate.json. What the report does give and is used here: sec. 3.6 (infrastructure, 4.0E-10 p of Chemical plant, organics)."
+    },
+    {
+      "source": "bafu-2026 ecoSpold metadata of the target (technology)",
+      "where": "technology",
+      "note": "'Expandable Polystyrene (EPS) is produced by polymerisation of styrene monomer, a chain-growth reaction which is mostly initiated by free radical organic initiators. ... Styrene charged with organic peroxide initiators is added to an aqueous phase and forms a suspension upon stirring. Flame retardant and elemental carbon, as well as auxiliaries such as suspension stabilisers, chain transfer agents, expanding aids, nucleating agents and plasticisers can also be added. The styrene droplets polymerise to polystyrene during heating of the reactor between 80 and 150 C. Blowing agent, typically pentane, is added to the reactor during polymerisation and dissolves in the polymer, producing the Expandable Polystyrene bead. After the reactor is cooled, the polymer is separated from the water phase using a centrifuge. The EPS beads are dried and sieved into the required size fractions before being coated with additive'"
+    },
+    {
+      "source": "2025 - LCI plastics - Rajabihamedani.pdf",
+      "where": "sec. 3.8 Obvious errors corrected in PE data",
+      "note": "'According to the latest PlasticsEurope data, methane emissions were first estimated for Polystyrene expandable seven times higher (0.226 kg vs. 0.031 kg) than previously estimated in UVEK 2025. This discrepancy is largely due to the significant consumption of natural gas - 28.5 kg - required to produce just 1 kg of polystyrene. Since such a high input is unrealistic a correction has been made.' A rejected figure, so it cannot be used as an amount; it is recorded because it is the only process-energy number the report ever prints for this dataset, and because it means the published vector for EPS carries a hand-made correction of unstated size."
+    }
+  ],
+  "node": {
+    "name": "Polystyrene, expandable, at plant, disaggregated",
+    "unit": "kilogram",
+    "location": "RER",
+    "comment": "Suspension polymerisation of styrene with a pentane blowing agent, per kg of EPS beads. Gaps: the flame retardant, the elemental carbon of grey EPS (4 of the 14 plants behind the eco-profile), the peroxide initiator and the bead coating are named by the dataset and modelled only through the generic 'Chemicals organic, at plant'. Note also that the target carries 1.435 kg of 'Disposal, salt tailings potash mining, 0% water, to residual material landfill {CH}' per kg of EPS. Tab. 3.1 of the cited report (p. 11 of the PDF, the continuation page that pdftotext returns empty because the table is an image) shows where that comes from: 'tailings (deposited)', 'Overburden (deposited)' and 'Waste salt from KCl-production (wfr)' are all mapped to that one potash-tailings *treatment* dataset. Mining overburden routed through a waste-treatment chain is what gives the EPS target its three largest kilogram flows - 30.6 kg of waste water to river, 18.3 kg of air and 1.44 kg of basalt per kg of polystyrene - and it is why this dataset's kg-mass and top-50 scores cannot be met by any model of the polymerisation. Nothing in this model reproduces it, and nothing should. The waste-treatment services that the BAFU dataset already carries as explicit exchanges (Tab. 3.1 of Rajabihamedani 2025 documents how they were re-linked, but prints no amounts) are deliberately NOT part of this model: they were never collapsed away, so reconstructing them adds nothing, and copying their amounts out of the target would be reading the answer. Adding the whole Tab. 3.1 candidate list as free inputs was tested on Ethylene glycol - the fit drove all eleven to ~1e-12 and the agreement did not move by a single flow - so they are left out. Consequence for the harness number: the target's cumulative vector gets its long tail of trace flows from those disposal chains, while this model gets a different tail from the ecoinvent-v2 chains of its own inputs; the two tails cannot agree, which caps the 'share of all flows within 10 %' far below what the main flows achieve.",
+    "inputs": [
+      {
+        "name": "Styrene, at plant",
+        "amount": 1.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "mass balance of chain-growth polymerisation. EPS also contains the dissolved pentane, so the true styrene content is a few per cent below 1 kg; no percentage is printed anywhere in the bundle, so 1.000 kg is kept and the model is knowingly a little heavy on styrene",
+        "code": "76aac688-8d44-3337-ac3e-9cac4cdafd8b"
+      },
+      {
+        "name": "Pentane, at plant",
+        "amount": 0.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "free": true,
+        "note": "'Blowing agent, typically pentane, is added to the reactor during polymerisation and dissolves in the polymer' - named, never quantified -> calibrated, unbounded",
+        "code": "2b89ce00-c1f2-3e3e-b822-550b42aa88c2"
+      },
+      {
+        "name": "Tap water, at user",
+        "amount": 0.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "free": true,
+        "note": "'added to an aqueous phase and forms a suspension upon stirring' - named, never quantified -> calibrated, unbounded",
+        "code": "6556440f-cd03-3975-9615-023309701fe2"
+      },
+      {
+        "name": "Chemicals organic, at plant",
+        "amount": 0.0,
+        "unit": "kilogram",
+        "location": "GLO",
+        "free": true,
+        "note": "stands for the named auxiliaries as a group (peroxide initiators, suspension stabilisers, chain transfer agents, expanding aids, nucleating agents, plasticisers, bead coating); none is quantified -> calibrated, unbounded",
+        "code": "4d96ad56-9dd3-3fda-bff6-d24796d01043"
+      },
+      {
+        "name": "Electricity, medium voltage, production ENTSO-E, at grid",
+        "amount": 0.0,
+        "unit": "kilowatt hour",
+        "location": "ENTSO-E",
+        "free": true,
+        "note": "stirring, centrifuge, sieving, conveying; never quantified -> calibrated, unbounded",
+        "code": "648e3bb3-7b98-46f8-9da1-f45627c309ef"
+      },
+      {
+        "name": "Steam, for chemical processes, at plant",
+        "amount": 0.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "free": true,
+        "note": "'heating of the reactor between 80 and 150 C' and the drying step; never quantified -> calibrated, unbounded",
+        "code": "ca51da0f-d926-3dbe-bc07-e0449bb7dcab"
+      },
+      {
+        "name": "Chemical plant, organics",
+        "amount": 2.535883558472248e-11,
+        "unit": "unit",
+        "location": "RER",
+        "free": true,
+        "bounds": [
+          0.0,
+          4e-10
+        ],
+        "note": "Rajabihamedani 2025 sec. 3.6: 'For the implementation, the dataset \"Chemical plant, organics {RER}U\" is used. The quantity is the standard amount for production of chemicals of 4.0E-10 p.' The target carries exactly that, which is why 4.0E-10 is the upper bound here. It is the upper bound and not the amount because ESU added one chemical plant per *dataset*, i.e. one for a whole cradle-to-gate chain, while this model links to a precursor dataset that already carries its own 4.0E-10 - so a second one is a double count against the target's own convention. That matters more than its size suggests: of the 1790 flows in the cumulative vector of every one of these 14 datasets, 1316 get more than 90 % of their value from this single exchange (see scripts/plasticseurope_infrastructure_diagnostic.py), so doubling it doubles three quarters of the vector. The amount is therefore fitted between 0 and the report's 4.0E-10.",
+        "code": "13ed4fe0-7ba5-3b60-82b6-a63918ee814d"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "The dataset's own text names 'transportation of feedstock' but no report in the bundle gives a distance for it, so the amount is calibrated. The starting value is the ecoinvent v2 standard distance for precursor materials (Althaus 2007 sec. 34.6.7: 'As there is no information about the transport amounts, standard distances and means according to Frischknecht et al. (2007) are used for the different raw materials') = 0.6 tkm rail + 0.1 tkm lorry per kg of precursor, the ratio BAFU's Ethylene dichloride, Ethylene oxide, Ethyl benzene and PET-amorphous unit processes all carry; precursor mass here 1 kg. It is left free rather than fixed because the PlasticsEurope eco-profile accounts for its feedstock transport as elementary flows only - it carries no vehicle or track infrastructure - so an ecoinvent transport dataset adds a background the target cannot have, and the fit is the right place to decide how much of it belongs.",
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "The dataset's own text names 'transportation of feedstock' but no report in the bundle gives a distance for it, so the amount is calibrated. The starting value is the ecoinvent v2 standard distance for precursor materials (Althaus 2007 sec. 34.6.7: 'As there is no information about the transport amounts, standard distances and means according to Frischknecht et al. (2007) are used for the different raw materials') = 0.6 tkm rail + 0.1 tkm lorry per kg of precursor, the ratio BAFU's Ethylene dichloride, Ethylene oxide, Ethyl benzene and PET-amorphous unit processes all carry; precursor mass here 1 kg. It is left free rather than fixed because the PlasticsEurope eco-profile accounts for its feedstock transport as elementary flows only - it carries no vehicle or track infrastructure - so an ecoinvent transport dataset adds a background the target cannot have, and the fit is the right place to decide how much of it belongs.",
+        "code": "99f8a4b0-99b5-3130-924c-5de4c10b62ef"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

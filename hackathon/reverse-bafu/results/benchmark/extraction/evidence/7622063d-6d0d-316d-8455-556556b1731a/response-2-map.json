@@ -1,0 +1,212 @@
+{
+ "mappings": [
+  {
+   "item": "diesel, burned in building machine",
+   "chosen": "Diesel, burned in building machine, average",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The report names the plain 'diesel, burned in building machine' with no filter technology, so the 'average' dataset beats the with/without particle filter variants; only CH and a GLO with-filter variant exist, and CH ranks above GLO in the location preference."
+  },
+  {
+   "item": "electricity, medium voltage, production ENTSO, at grid",
+   "chosen": "Electricity, medium voltage, production ENTSO-E, at grid",
+   "location": "ENTSO-E",
+   "compartment": "",
+   "dependency": false,
+   "reason": "This is the same ENTSO production mix the report cites, while the identically named 'xxx Electricity, medium voltage, production ENTSO, at grid' carries the obsolete 'xxx' marker and 'import ENTSO' is the Swiss import mix rather than the production mix."
+  },
+  {
+   "item": "light fuel oil, at regional storage",
+   "chosen": "Light fuel oil, at regional storage",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name and the RER location the report gives; heavy fuel oil is a different product."
+  },
+  {
+   "item": "lubricating oil, at plant",
+   "chosen": "Lubricating oil, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name and location match; the other candidates are vegetable oils and oil-fired power plants, not lubricant."
+  },
+  {
+   "item": "natural gas, high pressure, at consumer",
+   "chosen": "Natural gas, high pressure, at consumer",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The report gives RER, and the RER consumer mix beats the country-specific and GLO variants under the location preference."
+  },
+  {
+   "item": "air filter, central unit, 600 m3/h, at plant",
+   "chosen": "Air filter, central unit, 600 m3/h, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name, size and location; the decentralized 180-250 m3/h units and the disposal datasets are different processes."
+  },
+  {
+   "item": "cement plant",
+   "chosen": "Cement plant",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The only infrastructure dataset named 'cement plant' with unit 'unit'; the other candidates are cement products or cement-bonded boards, and the report's line is CH with unit 'unit'."
+  },
+  {
+   "item": "solvents, organic, unspecified, at plant",
+   "chosen": "Solvents, organic, unspecified, at plant",
+   "location": "GLO",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The only candidate, and an exact name and location match."
+  },
+  {
+   "item": "ethylene glycol, at plant",
+   "chosen": "Ethylene glycol, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": true,
+   "reason": "The right chemical at the right location; it is itself an aggregated (system-terminated) dataset, so dependency is set - the ethers and ethylene oxide are different chemicals and must not be substituted."
+  },
+  {
+   "item": "steel, low-alloyed, at plant",
+   "chosen": "Steel, low-alloyed, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name and location; the converter and electric route datasets are specific production routes, while the report names the unspecified market steel."
+  },
+  {
+   "item": "disposal, inert waste, 5% water, to inert material landfill",
+   "chosen": "Disposal, inert waste, 5% water, to construction waste landfill",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Same waste type and water content (inert waste, 5 % water); no 'to inert material landfill' dataset exists in the candidate list, and the construction waste landfill is the closer match than 'inert material, 0% water, to sanitary landfill', which differs in both water content and landfill class."
+  },
+  {
+   "item": "treatment, concrete production effluent, to wastewater treatment, class 3",
+   "chosen": "Treatment, concrete production effluent, to wastewater treatment, class 3",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name, class and location; the other effluent treatments are for fibreboard, glass, lorry and PV cell production."
+  },
+  {
+   "item": "transport, lorry 16-32t, EURO4",
+   "chosen": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "It matches the 16-32 t gross weight class the report names, which drives the tkm burden; the EURO-IV candidates are all 32 t long-haul or urban-delivery datasets, so they would change the weight class to match the emission standard."
+  },
+  {
+   "item": "transport, freight, rail",
+   "chosen": "Transport, freight, rail",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name and the RER location the report gives; the CH electricity/diesel variants are country- and traction-specific."
+  },
+  {
+   "item": "Carbon dioxide, fossil",
+   "chosen": "Carbon Dioxide (fossil) ",
+   "location": "",
+   "compartment": "Emissions / Emissions to air",
+   "dependency": false,
+   "reason": "Fossil CO2 released to air; the identically named candidate under 'Resources / Resources from air' is an uptake flow and the biogenic and land-use-change variants are different carbon origins."
+  },
+  {
+   "item": "Carbon monoxide, fossil",
+   "chosen": "Carbon Monoxide (fossil) ",
+   "location": "",
+   "compartment": "Emissions / Emissions to air",
+   "dependency": false,
+   "reason": "Fossil carbon monoxide to air, matching the report's origin label; the biogenic and land-use-change variants differ in origin and the soil/water entries in compartment."
+  },
+  {
+   "item": "Hydrogen sulfide",
+   "chosen": "Hydrogen Sulfide ",
+   "location": "",
+   "compartment": "Emissions / Emissions to air",
+   "dependency": false,
+   "reason": "Same substance in the air compartment stated by the table; the soil and water entries are the wrong compartment and 'Sulfide ion' is a different species."
+  },
+  {
+   "item": "Methane, fossil",
+   "chosen": "Methane (fossil) ",
+   "location": "",
+   "compartment": "Emissions / Emissions to air",
+   "dependency": false,
+   "reason": "Fossil methane to air; the biogenic variant is the wrong origin and methanethiol / methanesulfonic acid are different substances."
+  },
+  {
+   "item": "Nitrogen oxides",
+   "chosen": "Nitrogen Oxides ",
+   "location": "",
+   "compartment": "Emissions / Emissions to air",
+   "dependency": false,
+   "reason": "The aggregate NOx flow the report's 'Nitrogen oxides' means, rather than the single species 'Nitrogen Dioxide' or the unrelated sulfur oxides."
+  },
+  {
+   "item": "NMVOC, non-methane volatile organic compounds, unspecified origin",
+   "chosen": "Non-methane Volatile Organic Compounds ",
+   "location": "",
+   "compartment": "Emissions / Emissions to air",
+   "dependency": false,
+   "reason": "Same substance group in the air compartment; the other entries differ only in compartment (soil, water)."
+  },
+  {
+   "item": "Particulates, > 2.5 um, and < 10um",
+   "chosen": null,
+   "location": "",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The keyword search returned no candidate at all for this flow, so nothing can be chosen; the PM2.5-10 size fraction has to be found under a different EF 3.1 name (the coarse particulate matter flow) and is reported as missing."
+  },
+  {
+   "item": "Sulfur dioxide",
+   "chosen": "Sulfur Dioxide ",
+   "location": "",
+   "compartment": "Emissions / Emissions to air",
+   "dependency": false,
+   "reason": "Exact substance in the air compartment; 'Sulfur Oxides' is the aggregate group and 'Lead Dioxide' a different substance. Chosen over the bare '[air]' duplicate because the 'Emissions / Emissions to air' hierarchy is the fully qualified compartment used by the other air emissions here."
+  },
+  {
+   "item": "Water (emission to air)",
+   "chosen": "Water Vapour ",
+   "location": "",
+   "compartment": "air",
+   "dependency": false,
+   "reason": "The table's 'Water' to air is evaporated quench water, i.e. water vapour, and this candidate is the only air-compartment water flow whose unit is kilogram, matching the table's 1.38E-1 kg; 'Water [air]' is in cubic metres and would be off by a factor 1000."
+  },
+  {
+   "item": "Water (emission to water)",
+   "chosen": "Water ",
+   "location": "",
+   "compartment": "Emissions / Emissions to water",
+   "dependency": false,
+   "reason": "The right substance and compartment for the discharged process water. Note the unit mismatch: this flow is in cubic metres while the table gives 4.29E-1 kg, so the amount needs a 1 m3 = 1000 kg conversion that no candidate in kilogram offers ('Sea Water' is the wrong water body)."
+  },
+  {
+   "item": "Heat, waste",
+   "chosen": "Waste Heat ",
+   "location": "",
+   "compartment": "air",
+   "dependency": false,
+   "reason": "Waste heat released to air in megajoules, matching the table's unit; the soil and water variants are the wrong compartment and 'Energy, waste heat, air' sits in the residual database under resources."
+  },
+  {
+   "item": "Water, unspecified, Europe",
+   "chosen": "Water ",
+   "location": "",
+   "compartment": "Resources / Resources from water",
+   "dependency": false,
+   "reason": "Unspecified water withdrawn from nature, in cubic metres, matching the table's 9.19E-4 m3; lake, river, ground and cooling water are specific sub-types the report does not name."
+  }
+ ]
+}

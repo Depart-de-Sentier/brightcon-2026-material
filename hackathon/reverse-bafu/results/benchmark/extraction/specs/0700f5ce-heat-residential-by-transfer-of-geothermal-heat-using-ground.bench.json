@@ -1,0 +1,107 @@
+{
+  "target": {
+    "code": "0700f5ce-f370-3cd5-9297-71b217c0de7e",
+    "name": "Heat, residential, by transfer of geothermal heat using ground source heat pump using electricity from grid",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: No inventory table for this dataset exists in the excerpt; Tab. 83 'Main specifications for the reference technologies for heating' (p.131) is a specification table for OTHER technologies. Basis taken as 1 MJ of heat delivered.; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2024 - LCA power-to-X in residential sector - Sacchi.pdf",
+      "where": "pages 131-132 -> report-p131-132.txt",
+      "note": "report sha256 165eb1e3cb0728f7…, text sha256 c1ddf27731b3daeb…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/0700f5ce-f370-3cd5-9297-71b217c0de7e/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "726be3c2984bac422ad3bc4a24a83f64fe23647527b1e384aa38bc9338cfa4b0",
+      "at": "2026-09-22T21:09:36Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "d12b7258c886b0acbe287fac7a0a224cb1e7f21c79def613aafa032300679b45",
+      "at": "2026-09-22T21:09:37Z"
+    },
+    "gaps_reported_by_model": [
+      "The excerpt documents no ground-source heat pump: Tab. 83's heat-pump rows are air-water units at 440 % (CoP ~4.4), not a ground-source unit at 390 %.",
+      "No heat pump infrastructure (the 10 kW unit, 20 a lifetime, 2100 h/a stated in the metadata) can be read from the excerpt.",
+      "No borehole heat exchanger / ground loop input.",
+      "No refrigerant charge and no refrigerant leakage emission.",
+      "No grid loss handling beyond the 0.06 % stated in metadata.",
+      "The excerpt gives only impact-result figures (Figure 60, Figure 61) for the Power-to-X chains, which are results, not inventory."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T21:09:37Z"
+  },
+  "node": {
+    "name": "Heat, residential, by transfer of geothermal heat using ground source heat pump using electricity from grid, disaggregated",
+    "unit": "MJ",
+    "location": "CH",
+    "comment": "drafted from 2024 - LCA power-to-X in residential sector - Sacchi.pdf pp. 131-132",
+    "inputs": [
+      {
+        "name": "Electricity, low voltage, at grid",
+        "amount": 0.2564,
+        "unit": "megajoule",
+        "location": "CH",
+        "note": "The report excerpt does NOT document this dataset. Table 83 lists only reference heating technologies - an AIR-water heat pump at 440 % (CoP ~4.4), a wood-chip furnace, a biomethane boiler and a natural gas boiler - none of them a ground-source heat pump. The electricity draw is therefore derived from the 390 % efficiency stated in the dataset's own metadata, not read out of the report.",
+        "derivation": {
+          "evidence": "report-p131-132.txt",
+          "quote": "- generalComment: This dataset represents the supply of 1 megajoule of heat in a residence, by transfer of geothermal heat in a ground source heat pump.  The electricity is from grid. Heat conversion efficiency [% LHV input]: 390%.",
+          "raw_value": 0.2564,
+          "raw_unit": "MJ",
+          "per": "per MJ heat delivered",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "1 / 3.90 = 0.2564 MJ electricity per MJ heat, from the stated heat conversion efficiency of 390 %",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electricity low voltage at grid",
+          "mapping_reason": "The dataset says 'The electricity is from grid' without naming an import route, so the Swiss low-voltage supply mix is the right draw; the import-XX and production-CH variants are specific routes.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "c4a92617-9f99-3d7b-95c0-15fb110b80ad"
+      }
+    ],
+    "emissions": [],
+    "resources": [
+      {
+        "name": "Energy, Geothermal, Converted",
+        "category": "natural resource",
+        "amount": 1.0,
+        "unit": "megajoule",
+        "note": "Taken from the 'direct resource flows visible in the aggregated vector' block of this prompt, not from the report excerpt: the excerpt contains no ground-source heat pump inventory at all.",
+        "derivation": {
+          "evidence": "report-p131-132.txt",
+          "quote": "- Energy, Geothermal, Converted: 1 megajoule (natural resource)",
+          "raw_value": 1.0,
+          "raw_unit": "MJ",
+          "per": "per MJ heat delivered",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Exact substance and compartment match for converted geothermal energy; solar, wind and hydropower potential are the other renewable energy resources and none of them is the ground heat a ground-source heat pump lifts.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "c0060563-96ea-4322-8305-61c39f2ad3cd",
+        "database": "ef-3.1-biosphere"
+      }
+    ]
+  }
+}

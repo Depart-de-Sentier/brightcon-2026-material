@@ -1,0 +1,173 @@
+# Check: Crude oil, at production onshore (bc79974a-2fb3-3681-ab62-9e53feb84fef)
+
+target `bafu-2026` vs explicit model `bc79974a-2fb3-3681-ab62-9e53feb84fef-bench-disagg` and hybrid `bc79974a-2fb3-3681-ab62-9e53feb84fef-bench-hybrid`
+
+**Strategy:** S1 — transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft). basis: Tab. 12.2 'Unit process raw data, example for crude oil and natural gas production in CA'. Only part 4 of the table is machine-readable and it is expressed per YEAR of combined production, so no per-kg amount can be derived from it; the two items below come from the aggregated-vector block of this prompt.; allocation: Combined gas and oil production is allocated 63.8 % to crude oil and 36.2 % to natural gas (the only numbers the readable part of the table carries).. Review every derivation; unreviewed entries have reviewed_by = null.
+**Calibrated inputs:** none
+**Links to rebuilt nodes:** none
+
+## Flow agreement (explicit vs target, per elementary flow)
+
+- the 50 largest kilogram flows: 0/50 within ±10 %, median |Δ| 100.0%
+- kilogram mass covered within ±10 %: 0.0% of the target's total kg mass
+- of the 1786 flows of the target, 1667 are determined by the solve (119 are round-off and are not scored; see lci.determined_flows)
+- 1 of those 1667 within ±10 % (0%), median |Δ| 100.0%, 1664 missing from the model, 0 extra
+- hybrid vs target: identical on every flow
+
+| \|Δ\| bucket | flows | share of target flows |
+|---|---|---|
+| ≤ 10 % | 1 | 0% |
+| 10–20 % | 1 | 0% |
+| 20–50 % | 0 | 0% |
+| 50–100 % | 1784 | 100% |
+| > 100 % | 0 | 0% |
+| missing (0 in model) | 1664 | 93% |
+
+## Largest target flows (by amount, per unit) and their agreement
+
+### kilogram (1471 flows)
+
+| flow | target | explicit | Δ | residual |
+|---|---|---|---|---|
+| Carbon Dioxide (fossil) [Emissions/Emissions to air] (kilogram) | 0.247 | 0 | -100.0% | +0.247 |
+| Chemically polluted water [emissions to water/river] (kilogram) | 0.178 | 0 | -100.0% | +0.178 |
+| Carbon Dioxide (fossil) [Emissions/Emissions to air] (kilogram) | 0.11 | 0 | -100.0% | +0.11 |
+| Methane (fossil) [Emissions/Emissions to air] (kilogram) | 0.0273 | 0 | -100.0% | +0.0273 |
+| Gravel [soil] (kilogram) | 0.0192 | 0 | -100.0% | +0.0192 |
+| Chloride [Emissions/Emissions to water] (kilogram) | 0.0184 | 0 | -100.0% | +0.0184 |
+| Carbon Dioxide (fossil) [Emissions/Emissions to air] (kilogram) | 0.0131 | 0 | -100.0% | +0.0131 |
+| Non-methane Volatile Organic Compounds [Emissions/Emissions to air] (kilogram) | 0.0127 | 0 | -100.0% | +0.0127 |
+| Sodium [water] (kilogram) | 0.00896 | 0 | -100.0% | +0.00896 |
+| Iron [Resources/Resources from ground] (kilogram) | 0.00383 | 0 | -100.0% | +0.00383 |
+| Calcite [resources/in ground] (kilogram) | 0.00282 | 0 | -100.0% | +0.00282 |
+| carbon dioxide (biogenic) [Resources/Resources from air] (kilogram) | 0.00277 | 0 | -100.0% | +0.00277 |
+| Carbon Dioxide (biogenic) [Emissions/Emissions to air] (kilogram) | 0.00225 | 0 | -100.0% | +0.00225 |
+| Calcium [Emissions/Emissions to water] (kilogram) | 0.00219 | 0 | -100.0% | +0.00219 |
+| Platinum [air] (kilogram) | 0.00178 | 0 | -100.0% | +0.00178 |
+| Waste mass, total, placed in landfill [resources/in ground] (kilogram) | 0.0013 | 0 | -100.0% | +0.0013 |
+| Barite [resources/in ground] (kilogram) | 0.00121 | 0 | -100.0% | +0.00121 |
+| Sulfate [emissions to water/groundwater, long-term] (kilogram) | 0.000844 | 0 | -100.0% | +0.000844 |
+| Total Organic Carbon [water] (kilogram) | 0.000802 | 0 | -100.0% | +0.000802 |
+| Dolomite [soil] (kilogram) | 0.000562 | 0 | -100.0% | +0.000562 |
+
+### kilo Becquerel (171 flows)
+
+| flow | target | explicit | Δ | residual |
+|---|---|---|---|---|
+| Radon-222 [Emissions/Emissions to air] (kilo Becquerel) | 8.3 | 0 | -100.0% | +8.3 |
+| Noble Gases, Radioactive, Unspecified [air] (kilo Becquerel) | 2.77 | 0 | -100.0% | +2.77 |
+| Radon-222 [Emissions/Emissions to air] (kilo Becquerel) | 0.127 | 0 | -100.0% | +0.127 |
+| Hydrogen-3 [Emissions/Emissions to water] (kilo Becquerel) | 0.112 | 0 | -100.0% | +0.112 |
+| Radium-226 [Emissions/Emissions to water] (kilo Becquerel) | 0.0785 | 0 | -100.0% | +0.0785 |
+
+### square meter (50 flows)
+
+| flow | target | explicit | Δ | residual |
+|---|---|---|---|---|
+| To Arable, Non-irrigated, Intensive [Land use/Land transformation] (square meter) | 0.000755 | 0 | -100.0% | +0.000755 |
+| From Forest [Land use/Land transformation] (square meter) | 0.000582 | 0 | -100.0% | +0.000582 |
+| To Mineral Extraction Site [Land use/Land transformation] (square meter) | 0.000539 | 0 | -100.0% | +0.000539 |
+| From Arable, Non-irrigated, Intensive [Land use/Land transformation] (square meter) | 0.000536 | 0 | -100.0% | +0.000536 |
+| To Arable, Non-irrigated [Land use/Land transformation] (square meter) | 0.000287 | 0 | -100.0% | +0.000287 |
+
+### megajoule (27 flows)
+
+| flow | target | explicit | Δ | residual |
+|---|---|---|---|---|
+| Crude Oil [Resources/Resources from ground] (megajoule) | 43.8 | 43.4 | -0.9% | +0.387 |
+| Natural Gas [Resources/Resources from ground] (megajoule) | 6.57 | 0 | -100.0% | +6.57 |
+| Waste Heat [air] (megajoule) | 3.47 | 0 | -100.0% | +3.47 |
+| Waste Heat [air] (megajoule) | 0.682 | 0 | -100.0% | +0.682 |
+| Waste Heat [water] (megajoule) | 0.159 | 0 | -100.0% | +0.159 |
+
+### square meter-year (27 flows)
+
+| flow | target | explicit | Δ | residual |
+|---|---|---|---|---|
+| Industrial Area [Land use/Land occupation] (square meter-year) | 0.0108 | 0 | -100.0% | +0.0108 |
+| Forest, Intensive [Land use/Land occupation] (square meter-year) | 0.00171 | 0 | -100.0% | +0.00171 |
+| Arable, Non-irrigated, Intensive [Land use/Land occupation] (square meter-year) | 0.000692 | 0 | -100.0% | +0.000692 |
+| Forest [Land use/Land occupation] (square meter-year) | 0.000207 | 0 | -100.0% | +0.000207 |
+| Arable, Non-irrigated [Land use/Land occupation] (square meter-year) | 0.000145 | 0 | -100.0% | +0.000145 |
+
+### cubic meter (23 flows)
+
+| flow | target | explicit | Δ | residual |
+|---|---|---|---|---|
+| Water [Emissions/Emissions to water] (cubic meter) | 0.202 | 0 | -100.0% | +0.202 |
+| Water to turbine [Resources/Resources from water] (cubic meter) | 0.201 | 0 | -100.0% | +0.201 |
+| Water, salt, ocean [resources/in water] (cubic meter) | 0.00752 | 0 | -100.0% | +0.00752 |
+| Water [water] (cubic meter) | 0.00751 | 0 | -100.0% | +0.00751 |
+| Water To Cooling [Resources/Resources from water] (cubic meter) | 0.000532 | 0 | -100.0% | +0.000532 |
+
+### Becquerel (9 flows)
+
+| flow | target | explicit | Δ | residual |
+|---|---|---|---|---|
+| Uranium alpha [emissions to water/river] (Becquerel) | 2.71e-20 | 0 | -100.0% | +2.71e-20 |
+| Uranium alpha [emissions to water/lake] (Becquerel) | 1.27e-20 | 0 | -100.0% | +1.27e-20 |
+| Uranium alpha [emissions to air/low. pop.] (Becquerel) | 2.31e-21 | 0 | -100.0% | +2.31e-21 |
+| Thorium-232 [emissions to water/river] (Becquerel) | 2.74e-23 | 0 | -100.0% | +2.74e-23 |
+| Thorium-232 [emissions to air/low. pop.] (Becquerel) | 8.1e-24 | 0 | -100.0% | +8.1e-24 |
+
+### kilometer (2 flows)
+
+| flow | target | explicit | Δ | residual |
+|---|---|---|---|---|
+| Noise, road, lorry, average [non material emissions/unspecified] (kilometer) | 0.00706 | 0 | -100.0% | +0.00706 |
+| Noise, road, passenger car, average [non material emissions/unspecified] (kilometer) | 8.26e-06 | 0 | -100.0% | +8.26e-06 |
+
+### ton kilometer (2 flows)
+
+| flow | target | explicit | Δ | residual |
+|---|---|---|---|---|
+| Noise, rail, freight train [non material emissions/unspecified] (ton kilometer) | 0.0258 | 0 | -100.0% | +0.0258 |
+| Noise, aircraft, freight [non material emissions/unspecified] (ton kilometer) | 5.78e-08 | 0 | -100.0% | +5.78e-08 |
+
+### meter (2 flows)
+
+| flow | target | explicit | Δ | residual |
+|---|---|---|---|---|
+| Noise, road, lorry, average [non material emissions/unspecified] (meter) | 6.59e-19 | 0 | -100.0% | +6.59e-19 |
+| Noise, road, passenger car, average [non material emissions/unspecified] (meter) | 2.56e-21 | 0 | -100.0% | +2.56e-21 |
+
+### cubic meter-year (1 flows)
+
+| flow | target | explicit | Δ | residual |
+|---|---|---|---|---|
+| Volume Occupied, Reservoir [land use] (cubic meter-year) | 0.00107 | 0 | -100.0% | +0.00107 |
+
+### person kilometer (1 flows)
+
+| flow | target | explicit | Δ | residual |
+|---|---|---|---|---|
+| Noise, aircraft, passenger [non material emissions/unspecified] (person kilometer) | 1.66e-06 | 0 | -100.0% | +1.66e-06 |
+
+## Worst deviations among the 50 largest kilogram flows
+
+| flow | target | explicit | Δ |
+|---|---|---|---|
+| Carbon Dioxide (fossil) [Emissions/Emissions to air] (kilogram) | 0.247 | 0 | -100.0% |
+| Chemically polluted water [emissions to water/river] (kilogram) | 0.178 | 0 | -100.0% |
+| Carbon Dioxide (fossil) [Emissions/Emissions to air] (kilogram) | 0.11 | 0 | -100.0% |
+| Methane (fossil) [Emissions/Emissions to air] (kilogram) | 0.0273 | 0 | -100.0% |
+| Gravel [soil] (kilogram) | 0.0192 | 0 | -100.0% |
+| Chloride [Emissions/Emissions to water] (kilogram) | 0.0184 | 0 | -100.0% |
+| Carbon Dioxide (fossil) [Emissions/Emissions to air] (kilogram) | 0.0131 | 0 | -100.0% |
+| Non-methane Volatile Organic Compounds [Emissions/Emissions to air] (kilogram) | 0.0127 | 0 | -100.0% |
+| Sodium [water] (kilogram) | 0.00896 | 0 | -100.0% |
+| Iron [Resources/Resources from ground] (kilogram) | 0.00383 | 0 | -100.0% |
+
+## Structural checks
+
+- ✓ 0 explicit input(s) over 1 node(s)
+- ✓ no decomposed grid mixes
+- ✓ no dependency on another system process
+- ✓ mass in: 0 kg technosphere + 0 kg resources per 1 kg product (informational)
+- ✓ all inputs resolved
+
+residual: 1749 flows under-explained, 37 over-explained (negative residual)
+
+## Evidence
+
+- 2025 - LCI crude oil and natural gas extraction - Meili.pdf — pages 76-79 -> report-p76-79.txt report sha256 570b02878a339cf8…, text sha256 9eee17db8fd5b308…

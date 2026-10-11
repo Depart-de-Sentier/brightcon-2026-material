@@ -1,0 +1,180 @@
+{
+  "target": {
+    "code": "69f7cbef-0a6c-3b3e-9226-5f33b9726e92",
+    "name": "Diesel-electric generating set production 10MW",
+    "location": "RER"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 9.6 'Life cycle inventory data for a 10MW diesel-electric generating set', column 'diesel-electric generating set production 10MW' [RER], per 1 unit; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2021 - LCI crude oil and natural gas extraction - Meili.pdf",
+      "where": "pages 46-47 -> report-p46-47.txt",
+      "note": "report sha256 09e4a1b62a929797…, text sha256 55d3c1abc5d622a1…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/69f7cbef-0a6c-3b3e-9226-5f33b9726e92/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "62cb16651a612633c977444b57292a0c10294d9573f7e33fcd62add2ce1adeb6",
+      "at": "2026-09-22T21:14:39Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "bb31c0391349d189b6f4b3df58e215c8b27f76f698ec1ce3616c7dc93a20a50d",
+      "at": "2026-09-22T21:14:40Z"
+    },
+    "gaps_reported_by_model": [
+      "No manufacturing energy: the dataset's own includedProcesses says 'Materials of the generator. Not including manufacturing', and the table indeed lists only materials and transports.",
+      "No infrastructure of the producing plant and no disposal of the set at end of life.",
+      "No direct emissions - Tab. 9.7 (the diesel burned in the set) is the operation dataset, a different process."
+    ],
+    "skipped_items": [
+      "diesel-electric generating set production 10MW: product — reference product"
+    ],
+    "assembled_at": "2026-09-22T21:14:40Z"
+  },
+  "node": {
+    "name": "Diesel-electric generating set production 10MW, disaggregated",
+    "unit": "p",
+    "location": "RER",
+    "comment": "drafted from 2021 - LCI crude oil and natural gas extraction - Meili.pdf pp. 46-47",
+    "inputs": [
+      {
+        "name": "Copper, at regional storage",
+        "amount": 18000.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "10 % copper assumed on top of the steel",
+        "derivation": {
+          "evidence": "report-p46-47.txt",
+          "quote": "technosphere copper, at regional storage                         RER        kg         1.80E+4             1                3.05 (na,5,na,1,na,BU:1.05); Estimation",
+          "raw_value": 18000.0,
+          "raw_unit": "kg",
+          "per": "per unit diesel-electric generating set 10MW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "copper at regional storage",
+          "mapping_reason": "Exact name match; every other candidate is a different metal or fuel at regional storage.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "3972eb0c-d60e-3537-9ad1-fd6b7bbafce8"
+      },
+      {
+        "name": "Chromium steel 18/8, at plant",
+        "amount": 9000.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "5 % high-alloy steel share",
+        "derivation": {
+          "evidence": "report-p46-47.txt",
+          "quote": "             chromium steel 18/8, at plant                       RER        kg         9.00E+3             1                3.05 (na,5,na,1,na,BU:1.05); Estimation",
+          "raw_value": 9000.0,
+          "raw_unit": "kg",
+          "per": "per unit diesel-electric generating set 10MW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "chromium steel 18/8 at plant",
+          "mapping_reason": "Exact name and unit match at RER; candidates 1-2 are the electric-arc and converter sub-routes of the same steel and the rest are finished products.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "fc9385f8-fe2d-3399-b663-4b66e5062a3f"
+      },
+      {
+        "name": "Steel, low-alloyed, at plant",
+        "amount": 180000.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "12 t/MW for 10 MW, raised by 50 % to account for the generator",
+        "derivation": {
+          "evidence": "report-p46-47.txt",
+          "quote": "             steel, low-alloyed, at plant                        RER        kg         1.80E+5             1                3.05 (na,5,na,1,na,BU:1.05); Estimation",
+          "raw_value": 180000.0,
+          "raw_unit": "kg",
+          "per": "per unit diesel-electric generating set 10MW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "steel low-alloyed at plant",
+          "mapping_reason": "Exact name and unit match at RER, the location the table gives; the converter and electric variants are sub-routes and the reinforcing-steel imports are a different product.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "b9430f24-d0b9-3422-a5ad-f874acbbef18"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 20700.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "standard distance 100 km",
+        "derivation": {
+          "evidence": "report-p46-47.txt",
+          "quote": "             transport, freight, lorry 16-32 metric ton, fleet                                                                   (5,5,na,na,na,BU:2); Standard distance",
+          "raw_value": 20700.0,
+          "raw_unit": "tkm",
+          "per": "per unit diesel-electric generating set 10MW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight lorry 16-32t fleet average",
+          "mapping_reason": "Exact class and fleet-average match at RER, the location the table gives.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "85b3a5a6-2635-3546-b51b-4ccad397650b"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 124000.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "standard distance 600 km",
+        "derivation": {
+          "evidence": "report-p46-47.txt",
+          "quote": "               transport, freight, rail                          RER        tkm        1.24E+5             1                3.95",
+          "raw_value": 124000.0,
+          "raw_unit": "tkm",
+          "per": "per unit diesel-electric generating set 10MW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "The only candidate and an exact name match at RER.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

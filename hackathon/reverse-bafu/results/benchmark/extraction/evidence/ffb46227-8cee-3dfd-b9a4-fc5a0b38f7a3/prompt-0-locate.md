@@ -1,0 +1,192 @@
+You are locating the inventory table of one dataset inside a life-cycle-inventory report.
+
+Dataset: `High pressure hydrogen Type IV storage tank production` [GLO], 1 p, BAFU category pipeline / infrastructure.
+Metadata: includedProcesses: — · technology: — · comment: Inventory for a high pressure storage Type IV tank, with a capacity of 10 kg of hydrogen at 700 bar (Boureima et al., 2011; Das, 2011). Assumed lifetime of 20 years. Source: C. Wulf et al. / Journal of Cleaner Production 199 (2018) 431-443
+
+ UUID: ffb46227-8cee-3dfd-b9a4-fc5a0b38f7a3
+
+Report: `2024 - LCA power-to-X in residential sector - Sacchi.pdf` (165 PDF pages). Below is every table and figure caption found in it, with the PDF page it appears on (not the printed page number). The report may be in German, French or English; the dataset name is English — match on meaning (e.g. "gebrannter Ölschiefer" = burnt shale, "Gipsfaserplatte" = gypsum fibre board).
+
+- p.4: Figure 1 Schematic overview of investigated product systems and Power-to-X chains for residential heat and
+- p.7: Figure 2 Life-cycle Global Warming Potential impacts for the supply of one megajoule of heat, in kg CO 2-eq./MJ
+- p.8: Figure 3 Life-cycle Cumulative Non-renewable Energy Demand, for the supply of one MJ of heat, in MJ of non-
+- p.8: Figure 4 Life-cycle Cumulative Energy Demand (renewable and non-renewable), for the supply of one MJ of heat,
+- p.9: Figure 5 Life-cycle environmental impacts according to the Ecological Scarcity method for the supply of one MJ of
+- p.10: Figure 6 Life-cycle Global Warming Potential impacts of jointly producing heat and electricity from co-generation
+- p.10: Figure 7 Life-cycle non-renewable Primary energy (PE) demand of jointly producing heat and electricity from co-
+- p.11: Figure 8 Life-cycle Cumulative Primary energy (PE) demand (renewable and non-renewable) of jointly producing
+- p.11: Figure 9 Life-cycle environmental impacts according to the Ecological Scarcity method of jointly producing heat
+- p.19: Table 1 Overview of LCI to be compiled to produce energy carriers. DAC: Direct Air Capture; MSWI: Municipal
+- p.19: Table 2 Overview of storage and transport options to be included in the analysis.
+- p.20: Table 3 Overview of end-use options for hydrogen, SNG, and methanol to generate heat (and electricity) in the
+- p.22: Figure 10 System boundary.
+- p.23: Table 4 Overview of data sources.
+- p.23: Table 5 lists some of this study's most critical assumptions or limitations.
+- p.24: Table 5 Summary of potentially critical model limitations or data quality issues.
+- p.25: Table 6 Fuels characteristics.
+- p.26: Table 7 Loss rates for the different steps in the hydrogen supply chain. The rates refer to the hydrogen mass.
+- p.28: Figure 11 System boundaries definition according to CO2 allocation approaches. 100:0 approach on top, where the
+- p.30: Table 8 Average statistics based on manufacturers’ data (see Annex A). SOEC electrolyzers can be operated with
+- p.30: Table 9 Specifications of electrolyzer units as modeled here.
+- p.31: Table 10 Life-cycle inventories for hydrogen production using PEM electrolysis with different electricity sources.
+- p.33: Figure 12 Schematic mass and energy balance for hydrogen production using PEM electrolysis. Red numbers
+- p.34: Table 11. 34
+- p.35: Figure 13 Location considered for the autonomous hybrid hydrogen plant.
+- p.35: Figure 14 Seasonal and mean capacity factor for a 2-MW wind turbine at location Lat: 21.6093, Lon: -16.6012.
+- p.36: Figure 15 Seasonal and mean capacity factor for a 570-kWp open ground solar PV installation, at location Lat:
+- p.36: Table 11 Parameters for modeling an autonomous hydrogen production plant in Morocco.
+- p.37: Figure 16 Schematic mass and energy balance for hydrogen production using PEM electrolysis in an autonomous
+- p.37: Table 12 Life-cycle inventories for hydrogen production using PEM electrolysis in an autonomous plant in Morocco.
+- p.39: Table 13 Life-cycle inventories to produce hydrogen using AEC electrolysis with Swiss grid electricity.
+- p.39: Table 4.2 of the
+- p.40: Figure 17 Schematic mass and energy balance for hydrogen production using AEC electrolysis. Red numbers
+- p.40: Figure 18 Schematic mass and energy balance for hydrogen production using SOC electrolysis. Red numbers
+- p.40: Table 14 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.41: Table 15 Specifications for a 300 MW SMR hydrogen plant, with and without CCS.
+- p.42: Table 16 Life-cycle inventories to produce hydrogen using SMR natural gas and liquefied natural gas.
+- p.44: Figure 19 Schematic mass and energy balance for natural gas-based SMR hydrogen production. Red numbers
+- p.45: Figure 20 Schematic mass and energy balance for natural gas-based SMR hydrogen production with CCS. Red
+- p.45: Table 17 Uncertainty factors used for uncertainty estimations. Note that the scores apply to all data points of the
+- p.46: Table 18 Specifications for a 300 MW ATR hydrogen plant, with and without CCS (Antonini et al. 2020).
+- p.47: Table 19 and Figure 21 and Figure 22 are modeled. Note that the ATR process co-delivers a
+- p.47: Figure 21 Schematic mass and energy balance for natural gas-based ATR hydrogen production. Red numbers
+- p.47: Table 19 Life-cycle inventories for hydrogen production using ATR with natural gas.
+- p.48: Figure 22 Schematic mass and energy balance for natural gas-based ATR hydrogen production with CCS. Red
+- p.48: Table 20 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.49: Table 21 Specifications for a methane pyrolysis-based hydrogen plant
+- p.49: Table 22 Life-cycle inventories to produce hydrogen using pyrolysis of natural and liquefied natural gas.
+- p.50: Figure 23 Schematic mass and energy balance for hydrogen production via methane pyrolysis. Red numbers
+- p.51: Table 23 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.51: Table 24 Distances assumed for transmission and distribution of hydrogen.
+- p.52: Table 25 Electric compression effort at the H2 plant gate to 100 bar for pipeline injection. The formula for
+- p.52: Table 28. On this basis, we derive the specifications described in Table 26 for the transmission pipeline,
+- p.52: Table 26 Pipeline and compression specifications for hydrogen transmission.
+- p.53: Table 27 Life-cycle inventories to manufacture, install and use transmission and distribution hydrogen pipeline.
+- p.54: Table 28 Life-cycle inventories to manufacture a 32MW compressor for hydrogen transmission pipeline, based on
+- p.54: Table 4.2 of the ecoinvent v.2 Methodology report.
+- p.55: Table 29 Life cycle inventories for hydrogen storage in a geological cavity.
+- p.57: Table 30 Pipeline specifications for hydrogen distribution.
+- p.57: Table 31 Life-cycle inventories to supply hydrogen via pipeline to the consumer.
+- p.58: Figure 24 Schematic mass and energy balance for storing and distributing gaseous hydrogen via pipeline. Red
+- p.59: Table 32 Life-cycle inventories to supply hydrogen via truck to the consumer.
+- p.60: Figure 25 Schematic mass and energy balance for storing and distributing gaseous hydrogen via truck or train.
+- p.60: Table 33. Table 33 Compressed hydrogen tank types.
+- p.61: Table 34 Life cycle inventories to produce a high-pressure Type I hydrogen tank. Storage capacity of 35 kg.
+- p.61: Table 35 Life-cycle inventories to produce carbon fiber, weaved.
+- p.63: Table 36 Life cycle inventories to produce a high-pressure Type IV hydrogen tank. Storage capacity of 10 kg.
+- p.64: Table 37. We can infer the number of high-pressure hydrogen tanks needed on site.
+- p.64: Table 37 Hydrogen storage specifications, for Type I and IV storage tanks.
+- p.65: Table 37 that, because of the low volumetric density of compressed hydrogen, distribution by
+- p.66: Table 38 Specifications for a 16.6-kW hydrogen-ready home boiler.
+- p.66: Table 39 Life-cycle inventories for the combustion of grid-based electrolytic hydrogen in a boiler, supplied by
+- p.68: Figure 26 Schematic mass and energy balance for the combustion of hydrogen in a boiler. Red numbers represent
+- p.69: Table 40 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.69: Table 41 Electrical and thermal efficiencies for hydrogen-fed CHP units from 2G Energy AG Agenitor models.
+- p.69: Table 42 Heat exergy factor for hydrogen-fed CHP unit.
+- p.70: Table 43 Heat and electricity allocation keys for hydrogen-fed CHP unit.
+- p.70: Table 44 Specifications for a 160 kW-el hydrogen-fed CHP unit.
+- p.71: Table 45. The modelling is similar across the ten heat and electricity supply options and is
+- p.71: Table 45 Life-cycle inventories for the heat supply via the combustion of grid-based electrolytic hydrogen in a CHP
+- p.73: Table 46 Life-cycle inventories for the electricity supply via the combustion of grid-based electrolytic hydrogen in a
+- p.75: Figure 27 Schematic mass and energy balance for the heat supply via hydrogen combustion in a CHP unit. Red
+- p.76: Figure 28 Schematic mass and energy balance for the electricity supply via hydrogen combustion in a CHP unit.
+- p.76: Table 47 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.77: Table 48 Specifications for a 1-kWel PEM fuel cell system.
+- p.78: Table 49 Life-cycle inventories for the assembly of a 1kWe PEM fuel cell system, designed for a 20,000-hour lifetime
+- p.79: Table 50 Heat exergy factor for hydrogen-fed PEM fuel cell system.
+- p.79: Table 51 Heat and electricity allocation keys for hydrogen-fed PEM fuel cell system.
+- p.80: Table 52 Life-cycle inventories for the heat supply via hydrogen conversion in a PEM fuel cell system.
+- p.81: Table 53 Life-cycle inventories for the supply of electricity via the conversion of hydrogen in a PEM fuel cell system.
+- p.83: Figure 29 Schematic mass and energy balance for the heat supply via hydrogen conversion in a PEM fuel cell
+- p.84: Figure 30 Schematic mass and energy balance for the electricity supply via hydrogen conversion in a PEM fuel cell
+- p.84: Table 54 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.84: Table 55 Specifications for a 125-kWel SOFC fuel cell system.
+- p.85: Figure 31 Schematic mass and energy balance for the heat supply via hydrogen conversion in a PEM fuel cell
+- p.86: Figure 32 Schematic mass and energy balance for the electricity supply via hydrogen conversion in a SOFC fuel
+- p.86: Table 56 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.87: Table 57 Share of biogenic CO2 in the different sources considered.
+- p.88: Table 58 describes the parameters considered to model the capture of CO2 via Direct Air
+- p.88: Table 58 Operational parameters for the different CO2 capture options considered.
+- p.88: Table 59 Life-cycle inventories of the different carbon dioxide capture systems.
+- p.91: Figure 33 Schematic mass and energy balance for carbon dioxide capture using a sorbent-based direct air capture
+- p.91: Table 60 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.92: Figure 34 Schematic mass and energy balance for carbon dioxide capture from a cement plant using a sorbent-
+- p.92: Table 61 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.93: Figure 35 Schematic mass and energy balance for carbon dioxide capture from an MSWI plant using a sorbent-
+- p.93: Table 62 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.95: Table 63 Life-cycle inventories for the supply of synthetic natural gas via catalytic methanation.
+- p.96: Figure 36 Schematic mass and energy balance to produce synthetic natural gas via catalytic methanation. Red
+- p.96: Table 64 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.97: Table 65 Life-cycle inventory of the supply of synthetic natural gas via biological methanation.
+- p.98: Figure 37 Schematic mass and energy balance to produce synthetic natural gas via biological methanation. Red
+- p.98: Table 66 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.99: Table 67 Life-cycle inventory of the supply of synthetic natural gas via pipeline to the consumer.
+- p.99: Figure 38 Schematic mass and energy balance for the storage and distribution of synthetic natural gas via pipeline.
+- p.100: Table 68 Specifications for a 16.4-kW natural gas boiler using synthetic natural gas.
+- p.100: Figure 39. Table 69 Life-cycle inventories for the heat supply via the combustion of synthetic natural gas in a boiler produced
+- p.103: Figure 39 Schematic mass and energy balance for the heat supply via the combustion of synthetic natural gas in
+- p.103: Table 70 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.106: Table 71 Review of carbon dioxide and hydrogen requirements per kilogram of methanol.
+- p.106: Table 72 Life-cycle inventories for the synthesis and distillation of methanol, produced with electrolytic hydrogen
+- p.107: Figure 40 Schematic mass and energy balance to produce methanol. Red numbers represent material, energy, or
+- p.108: Table 73 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.108: Table 74. Table 74 Life-cycle inventories to supply methanol via truck to the consumer.
+- p.109: Figure 41 Schematic mass and energy balance for the storage and distribution of methanol via truck. Red numbers
+- p.109: Table 75 Specifications for a 9-kW methanol boiler, adapted from a light fuel oil boiler.
+- p.110: Table 76 Life-cycle inventories for the heat supply via the combustion of methanol produced with CO2 from DAC
+- p.111: Figure 42 Schematic mass and energy balance for the combustion of methanol in a boiler. Red numbers represent
+- p.111: Table 77 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.112: Table 78 Specifications for a 1-kWel DMFC fuel cell system.
+- p.112: Table 79 Heat exergy factor for a DMFC fuel cell system.
+- p.112: Table 80 Heat and electricity allocation keys for methanol fed DMFC fuel cell system.
+- p.113: Table 81 Life-cycle inventories for the supply, heat, and electricity via the conversion of methanol in a direct
+- p.114: Figure 43 Schematic mass and energy balance for the heat supply via the conversion of methanol in a direct
+- p.114: Figure 44 Schematic mass and energy balance for the electricity supply via the conversion of methanol in a direct
+- p.114: Table 82 Uncertainty factors used for uncertainty estimation. Note that the scores apply to all data points of the
+- p.118: Figure 45 Life-cycle Global Warming Potential impacts per kilogram of hydrogen produced. Note that the outlet
+- p.118: Figure 46 and Figure 47. The electricity supply is the most contributing aspect of electrolytic
+- p.119: Figure 46 Life-cycle Cumulative Non-renewable Energy Demand per kilogram of hydrogen produced. “Crack.” =
+- p.119: Figure 47 Life-cycle Cumulative Primary Energy (PE) Demand (renewable and non-renewable) per kilogram of
+- p.120: Figure 48 Life-cycle environmental impacts according to the Ecological Scarcity method (version 2021) per
+- p.121: Figure 50 to Figure 51 indicate that most of the primary energy to capture CO2 are the fossil
+- p.121: Figure 49 Life-cycle Global Warming Potential impacts per kilogram of CO2 captured. Note that steam is here
+- p.122: Figure 50 Life-cycle Cumulative Non-renewable Energy Demand per kilogram of CO2 captured Note that steam is
+- p.122: Figure 51 Life-cycle Cumulative Primary Energy (PE) Demand (renewable and non-renewable) per kilogram of
+- p.123: Figure 52 Life-cycle overall environmental impacts per kg of CO2 captured according to the ecological scarcity
+- p.123: Figure 54 to Figure 55 indicate that the sourcing of hydrogen is a significant source of
+- p.124: Figure 53 Life-cycle Global Warming Potential impacts per kilogram of synthetic natural gas produced. “NG” =
+- p.125: Figure 54 Life-cycle Cumulative Non-renewable Energy Demand per kilogram of synthetic natural gas produced.
+- p.126: Figure 55 Life-cycle Cumulative Primary Energy (PE) Demand (renewable and non-renewable) per kilogram of
+- p.127: Figure 56 Life-cycle overall environmental impacts per kilogram of synthetic natural gas produced according to the
+- p.128: Figure 57 Life-cycle Global Warming Potential impacts per kilogram of methanol produced. “Biomass” = methanol
+- p.129: Figure 58 Life-cycle Cumulative Non-renewable Energy Demand per kilogram of methanol produced. “Biomass” =
+- p.130: Figure 59 Life-cycle Cumulative Primary Energy (PE) Demand (renewable and non-renewable) per kilogram of
+- p.131: Figure 60 Life-cycle overall environmental impacts per kilogram of methanol produced according to the ecological
+- p.131: Table 83 Main specifications for the reference technologies for heating
+- p.132: Figure 61 shows the life-cycle Global Warming Potential impacts of heat supply options using
+- p.133: Figure 61 Life-cycle Global Warming Potential impacts per megajoule of heat supplied. “HP” = air-water heat pump.
+- p.133: Figure 63 indicates that using SMR-based hydrogen in a boiler requires about 1.6 megajoules
+- p.134: Figure 62 Life-cycle Cumulative Non-renewable Energy Demand per megajoule of heat supplied. “HP” = air-water
+- p.134: Figure 63 Life-cycle Cumulative Primary Energy (PE) Demand (renewable and non-renewable) per megajoule of
+- p.135: Figure 64 Life-cycle overall environmental impacts according to the ecological scarcity method per megajoule of
+- p.135: Table 84 Main specifications for the reference technologies for electricity supply
+- p.135: Figure 65 shows the life-cycle Global Warming Potential impacts for the electricity production
+- p.136: Figure 65 Life-cycle Global Warming Potential impacts per kilowatt hour of electricity supplied. “grid” = Swiss grid
+- p.137: Figure 66 Life-cycle Cumulative Non-renewable Energy Demand per kilowatt hour of electricity supplied. “grid” =
+- p.137: Figure 67 Life-cycle Cumulative Primary Energy (PE) Demand (renewable and non-renewable) per kilowatt hour
+- p.138: Figure 68 Life-cycle overall environmental impacts according to the ecological scarcity method per kilowatt hour of
+- p.140: Figure 69 Life-cycle Global Warming Potential impacts per MJ of heat supplied for all boiler-based options, in
+- p.140: Table 85 Main specifications for the reference technologies for heating
+- p.140: Figure 70 shows the life-cycle Global Warming Potential impacts of jointly producing heat and
+- p.141: Figure 70 Life-cycle Global Warming Potential impacts of jointly producing heat and electricity from co-generation
+- p.142: Figure 71 Life-cycle non-renewable Primary Energy (PE) Demand of jointly producing heat and electricity from co-
+- p.142: Figure 72 Life-cycle Cumulative Primary Energy (PE) Demand (renewable and non-renewable) of jointly producing
+- p.143: Figure 73 Life-cycle environmental impacts according to the Ecological Scarcity method of jointly producing heat
+
+Rules:
+1. Choose the caption(s) that hold the unit-process inventory of this dataset — inputs, energy, emissions, transport — not impact results, not a diagram. Prefer "Sachbilanz" / "inventory" / "LCI" tables.
+2. Return the PDF page range that covers those tables plus the paragraph introducing them: `first_page`, `last_page` (at most 4 pages). Tables can run onto the next page.
+3. If no caption fits (the report does not document this dataset's inventory, or only as a result), return `found` = false and say why in `reason`.
+4. `reason` names the caption(s) you chose and why.
+
+Return only the JSON object described by the schema.

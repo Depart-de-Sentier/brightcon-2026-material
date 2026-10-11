@@ -1,0 +1,52 @@
+{
+  "target": {
+    "code": "c80b8e9e-8a0d-36f6-a4a2-1509d03e42c2",
+    "name": "Epoxy resin, liquid, at plant",
+    "location": "RER"
+  },
+  "strategy": {
+    "code": "S2",
+    "label": "template transfer: BAFU-2026 ships the disaggregated version of this very dataset",
+    "note": "The one case in the whole set where the answer is already inside the database. Chapter 31 of 2007 - LCI chemicals - Althaus.pdf prints two inventories of liquid epoxy resin side by side: Tab. 31.1, 'Life cycle inventory ... based on cumulative data', which is the target, and Tab. 31.2, 'Disaggregated life cycle inventory for the production of liquid epoxy resin (modified from Boustead 1999)', which is the same product as a unit process - 9 technosphere exchanges plus its own resources and direct emissions. BAFU-2026 carries both: the target, and 'Epoxy resin, liquid, disaggregated data, at plant' [RER] (code 6ac7f2be, 9 inputs, 63 elementary flows), whose exchanges reproduce Tab. 31.2 line for line - checked one by one: 2.19 kWh electricity, 11.0 MJ heavy fuel oil, 57.7 MJ natural-gas furnace, 13.0 kg tap water, 0.298 and 0.0058 kg of the two disposal services, 4.0E-10 chemical plant, 1.74 tkm rail, 60.6 tkm lorry. So this spec links that node 1:1 and calibrates nothing. A parallel spec, specs/c80b8e9e-epoxy-resin-liquid-at-plant.draft.json, transcribes Tab. 31.2 through the LLM route instead; the two should agree, and where they do not the difference is transcription or flow mapping, which is worth knowing. What the check measures here is not how good this project's method is - it is how far BAFU's own disaggregated dataset lands from BAFU's own aggregated one for the same product, which is the cleanest available answer to 'what does disaggregation cost?'. One thing to expect: the two BAFU datasets put their air emissions in different sub-compartments - the aggregated one in 'Emissions to urban air close to ground', the disaggregated one in 'Emissions to air, unspecified' - so a substance total that is exactly right can still score as two large deviations.\n\nAFTER THE CHECK. The result is the most useful number this batch produced, because it is a control with no modelling in it at all: BAFU's own disaggregated epoxy resin against BAFU's own aggregated epoxy resin, 1 kg for 1 kg. On the substances that carry the dataset it is close - fossil CO2 +1.5 %, rock salt +3.6 %, chloride to water +11.2 %, sodium to water +11.8 %, suspended solids -13.7 %, calcium +18.4 %, calcite +53.2 % - and it covers 75 % of the target's kilogram mass. On the project's headline metric it scores 6 of 1669 determined flows within +-10 %, i.e. 0 %. Both numbers are correct and they measure different things: the second is dominated by ~1500 trace flows that exist only because the two datasets reach different backgrounds, and by the sub-compartment split between them (the aggregated dataset puts its air emissions in 'Emissions to urban air close to ground', the disaggregated one in 'Emissions to air, unspecified', so a substance total that is exactly right scores as two large deviations). Anyone reading a low 'share of flows within 10 %' for this family should compare it with this row first."
+  },
+  "evidence": [
+    {
+      "source": "BAFU-2026 ecoSpold metadata of the target",
+      "where": "processInformation/technology",
+      "note": "quoted in the strategy note; it is the structural evidence for the input list"
+    },
+    {
+      "source": "locate step of the reverse-bafu route",
+      "where": "specs/evidence/c80b8e9e-8a0d-36f6-a4a2-1509d03e42c2/response-0-locate.json",
+      "note": "specs/evidence/c80b8e9e-8a0d-36f6-a4a2-1509d03e42c2/response-0-locate.json - no report in the BAFU-2026 documentation bundle prints a unit-process inventory for this dataset. The cited report is only the 17-page front matter of ecoinvent report No. 11; all 114 bundled reports were converted with pdftotext and searched."
+    },
+    {
+      "source": "2007 - LCI chemicals - Althaus.pdf",
+      "where": "Tab. 31.2 (p.358 of the PDF)",
+      "note": "'Disaggregated life cycle inventory for the production of liquid epoxy resin (modified from Boustead 1999).'"
+    },
+    {
+      "source": "BAFU-2026 itself",
+      "where": "'Epoxy resin, liquid, disaggregated data, at plant' [RER], code 6ac7f2be",
+      "note": "Its nine technosphere exchanges equal Tab. 31.2 line for line."
+    }
+  ],
+  "node": {
+    "name": "Epoxy resin, liquid, at plant, disaggregated",
+    "unit": "kilogram",
+    "location": "RER",
+    "comment": "Template transfer, per kg of liquid epoxy resin. The eight waste-treatment services that the BAFU dataset already carries as explicit exchanges are deliberately not part of this model - they were never collapsed away - following the committed PlasticsEurope specs. The consequence, measured in results/checks/, is that the target's cumulative vector gets a long tail of flows from those disposal chains that no model omitting them can reach.",
+    "inputs": [
+      {
+        "name": "Epoxy resin, liquid, disaggregated data, at plant",
+        "amount": 1.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "1 kg for 1 kg; both datasets are 1 kg of liquid epoxy resin at plant. Fixed - there is nothing to fit.",
+        "code": "6ac7f2be-a7fc-3bc4-b1ed-3f25e296b817"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

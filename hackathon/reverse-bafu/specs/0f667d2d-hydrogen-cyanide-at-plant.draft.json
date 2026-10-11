@@ -1,0 +1,293 @@
+{
+  "target": {
+    "code": "0f667d2d-2007-3185-8aeb-0b8e6fbdfb5c",
+    "name": "Hydrogen cyanide, at plant",
+    "location": "RER"
+  },
+  "variant": "draft",
+  "strategy": {
+    "code": "S3",
+    "label": "top-down model drafted from the report excerpt by the LLM pipeline (reverse-bafu draft); the report's tables are literature data, the dataset itself is a cumulated inventory",
+    "note": "basis: per kg of hydrogen cyanide, Tab. 43.2 / 43.3 / 43.4 of chapter 43 of ecoinvent report No. 8 (Althaus et al. 2007), all printed per kg or per kg in grams; allocation: None stated. The chapter reports three co-products per kg HCN - 0.23 kg hydrogen (BMA route, if not burnt), 0.34 kg ammonium sulfate sold as fertiliser and 0.02 kg sodium cyanide - but gives no allocation factor, so every burden below stays with the HCN.; 3 of 4 inputs carry a printed amount, 1 a printed range, 0 no number in the report. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI chemicals - Althaus.pdf",
+      "where": "pages 436-438 -> report-p436-438.txt",
+      "note": "report sha256 68e0839ffea919f9…, text sha256 f7af81ba5953b5ff…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "specs/evidence/0f667d2d-2007-3185-8aeb-0b8e6fbdfb5c/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "142676f502b3766c908dfc4ce5921e44c3e542aeb71c32d107b1dec2db8e3e2f",
+      "at": "2026-09-22T23:37:33Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "35d17361f90e4198659149fe468a732c36cca17ac5cf8670a9ee921211da6d3a",
+      "at": "2026-09-22T23:37:34Z"
+    },
+    "gaps_reported_by_model": [
+      "Electricity: not mentioned anywhere in the excerpt, although the Andrussow reactor, the ammonia absorber and the HCN stripper all need it.",
+      "Process water and cooling water: not given ('Wastewater / Liquid wastes: No values available.').",
+      "Water emissions: the excerpt states outright that no values are available, yet the aggregated dataset carries water emissions; those necessarily come from the upstream chain in the cumulated original.",
+      "Infrastructure (chemical plant) and feedstock transport: not mentioned; ecoinvent's own convention for this family (4.0E-10 units of 'chemical plant, organics', 0.6 tkm rail + 0.1 tkm lorry per kg of precursor) is a BAFU template, not something this excerpt prints.",
+      "The Andrussow/BMA split: the excerpt says only 'BMA accounts for 15 % of the total European production', and Tab. 43.2/43.3/43.4 do not say which route each column belongs to except for Tab. 43.4 (BMA).",
+      "Oxygen / air for the Andrussow route (equation 1) is not quantified.",
+      "The catalyst (platinum gauze) is described qualitatively and never quantified."
+    ],
+    "skipped_items": [
+      "Total process energy: ignore — Cross-check only, not a separate input: 31 MJ is the same energy as the natural-gas lines above (0.68 kg x 45.4 MJ/kg = 30.9 MJ). Counting it again would double the fuel.",
+      "Hydrogen: co-product — Co-product of the BMA route only, and only when not burnt in the process. The point estimate chosen for the fuel line above is the combustion route, in which this hydrogen is consumed internally, so it is recorded as a co-product but not credited.",
+      "Ammonium sulfate: co-product — Sold as fertiliser, so an economic co-product; the report gives no allocation factor, and none is applied here (all burdens stay with HCN). Note the report's own formula slip: ammonium sulfate is (NH4)2SO4, not Na2SO4.",
+      "Sodium cyanide: co-product — Listed under solid wastes; no allocation given."
+    ],
+    "assembled_at": "2026-09-22T23:37:34Z"
+  },
+  "node": {
+    "name": "Hydrogen cyanide, at plant, disaggregated",
+    "unit": "kg",
+    "location": "RER",
+    "comment": "drafted from 2007 - LCI chemicals - Althaus.pdf pp. 436-438",
+    "inputs": [
+      {
+        "name": "Ammonia, liquid, at regional storehouse",
+        "amount": 0.76,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "Tab. 43.2 'Resource consumption for the production of HCN (kg/kg)'; the feedstock of both the Andrussow and the BMA route (2 NH3 + 2 CH4 + 3 O2 -> 2 HCN + 6 H2O).",
+        "derivation": {
+          "evidence": "report-p436-438.txt",
+          "quote": "Ammonia                                                        0.76",
+          "raw_value": 0.76,
+          "raw_unit": "kg",
+          "per": "per kg HCN",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "ammonia liquid",
+          "mapping_reason": "The excerpt lists ammonia as a purchased precursor, not as something made on site, so the delivered form ('at regional storehouse') beats the two production routes ('steam reforming' / 'partial oxidation'), which would also force an arbitrary choice between them; this is also what BAFU's own 'Acrylonitrile from Sohio process, at plant' consumes (0.38774 kg of exactly this dataset).",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "461aa0e0-5253-3cda-b22f-4c075152cdb5"
+      },
+      {
+        "name": "Natural gas, high pressure, at consumer",
+        "amount": 30.872,
+        "unit": "megajoule",
+        "location": "RER",
+        "note": "Tab. 43.2, the methane fed to the reactor (2 NH3 + 2 CH4 + 3 O2 -> 2 HCN + 6 H2O). Printed in kg; every natural-gas supply dataset in BAFU is in MJ, so the printed kg is converted with the standard heating value.",
+        "derivation": {
+          "evidence": "report-p436-438.txt",
+          "quote": "Natural gas                                                    0.68",
+          "raw_value": 0.68,
+          "raw_unit": "kg",
+          "per": "per kg HCN",
+          "factor": 45.4,
+          "factor_unit": "MJ",
+          "factor_source": "lower heating value of natural gas 45.4 MJ/kg (ecoinvent v2 convention); cross-checked against the same chapter's 'A total of 31 MJ is required per kg of HCN', which is 0.68 kg x 45.4 MJ/kg = 30.9 MJ",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "natural gas high pressure consumer",
+          "mapping_reason": "The reactor feed is gas as delivered, not gas burnt, so the supply dataset is right rather than a furnace; RER beats CH and GLO because the target is a European average.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "52167408-1c86-310c-ab50-a92f15e84379"
+      },
+      {
+        "name": "Sulphuric acid, liquid, at plant",
+        "amount": 0.26,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "Tab. 43.2. Used to scrub the unreacted ammonia; consistent with the solid-waste line '0.34 kg of ammonium sulfate ... are produced per kg of HCN'.",
+        "derivation": {
+          "evidence": "report-p436-438.txt",
+          "quote": "Sulfuric acid (conc.)                                          0.26",
+          "raw_value": 0.26,
+          "raw_unit": "kg",
+          "per": "per kg HCN",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "sulphuric acid liquid",
+          "mapping_reason": "Generic concentrated sulphuric acid; the runner-up, 'Sulphuric acid from viscose production', is a by-product route from one specific industry and would import a viscose background the excerpt does not mention.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "e6037d3e-db63-3537-b5fa-73c72c806426"
+      },
+      {
+        "name": "Heat, natural gas, at industrial furnace 1MW",
+        "amount": 23.154000000000003,
+        "unit": "megajoule",
+        "location": "CH",
+        "note": "Tab. 43.3 'Energy consumption for the production of HCN (kg/kg)' gives two columns, 'Hydrogen export route' 0.78 and 'Hydrogen combustion route' 0.51. The point estimate is the combustion route because Tab. 43.4's air emissions are stated to belong to it: 'These figures ... are calculated values based on the combustion of hydrogen gas in the process as a fuel that replaces part of the natural gas burned as a fuel.' The two columns are the printed range, so the amount is calibratable between them. Mapped to a heat-from-natural-gas dataset because BAFU has no 'natural gas burned' dataset in kg; the MJ of gas is charged as MJ of heat, which understates the gas by the furnace efficiency (~10 %). Flagged medium.",
+        "derivation": {
+          "evidence": "report-p436-438.txt",
+          "quote": "Natural gas                       0.78                0.51",
+          "raw_value": 0.51,
+          "raw_unit": "kg",
+          "per": "per kg HCN",
+          "factor": 45.4,
+          "factor_unit": "MJ",
+          "factor_source": "lower heating value of natural gas 45.4 MJ/kg (ecoinvent v2 convention; cross-check with the same chapter's 'A total of 31 MJ is required per kg of HCN', which equals 0.68 kg x 45.4 MJ/kg)",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "heat natural gas industrial furnace",
+          "mapping_reason": "Tab. 43.3 is gas burnt as process fuel, so a combustion dataset is needed. 'Heat, natural gas, at industrial furnace 1MW' is the dataset every ecoinvent-v2 organic-chemical unit process in BAFU uses for exactly this (2.0 MJ of it appears in Cumene, Ethyl benzene, Bisphenol A, Phosgene and Aniline), which beats the near-identical 'Natural gas, burned in industrial furnace 1MW' on consistency with the family; 'xxx Heat ... low-NOx' is an xx-marked legacy dataset and 'District heat, at consumer' is the wrong delivery form.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "free": true,
+        "bounds": [
+          23.154,
+          35.412
+        ],
+        "code": "2fcda415-e506-38d9-9c3e-8ce2c2e7c8f2"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Particles (PM10)",
+        "category": "air",
+        "amount": 0.00101,
+        "unit": "kilogram",
+        "note": "Tab. 43.4 'Air emissions from the production of HCN (g/kg)', BMA process.",
+        "derivation": {
+          "evidence": "report-p436-438.txt",
+          "quote": "Dust (SPM)                                    1.01",
+          "raw_value": 1.01,
+          "raw_unit": "g",
+          "per": "per kg HCN",
+          "factor": 0.001,
+          "factor_unit": "kg",
+          "factor_source": "1 g = 0.001 kg",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "'Dust (SPM)' is a single unspeciated particulate figure; of the candidates only the particle flows are the right substance, and PM10 is the ecoinvent/EF convention for an unspeciated dust figure - it beats 'Particles (PM0.2)', which would claim a fineness the report does not state, and 'Particulates, unspecified' in bafu-2026-residual, which has no EF counterpart and would add a flow the target does not carry.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-91be-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Sulfur Dioxide",
+        "category": "air",
+        "amount": 0.01882,
+        "unit": "kilogram",
+        "note": "Tab. 43.4. Printed as SOx; mapped to sulfur dioxide, the ecoinvent/EF convention for SOx reported as a single figure.",
+        "derivation": {
+          "evidence": "report-p436-438.txt",
+          "quote": "SOx                                           18.82",
+          "raw_value": 18.82,
+          "raw_unit": "g",
+          "per": "per kg HCN",
+          "factor": 0.001,
+          "factor_unit": "kg",
+          "factor_source": "1 g = 0.001 kg",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "SOx reported as one figure is inventoried as SO2 in ecoinvent and EF 3.1, and the target's own vector carries Sulfur Dioxide, not Sulfur Oxides; the emissions-to-air compartment beats the soil and water entries of the same flow.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "fe0acd60-3ddc-11dd-ac48-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Methane (fossil)",
+        "category": "air",
+        "amount": 0.00098,
+        "unit": "kilogram",
+        "note": "Tab. 43.4.",
+        "derivation": {
+          "evidence": "report-p436-438.txt",
+          "quote": "CH4                                           0.98",
+          "raw_value": 0.98,
+          "raw_unit": "g",
+          "per": "per kg HCN",
+          "factor": 0.001,
+          "factor_unit": "kg",
+          "factor_source": "1 g = 0.001 kg",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "The methane comes from natural gas, so the fossil flow, not the biogenic one; 'Methanethiol' and 'Methanesulfonic Acid' are different substances that only match the search string.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-9610-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Nitrogen Oxides",
+        "category": "air",
+        "amount": 0.009300000000000001,
+        "unit": "kilogram",
+        "note": "Tab. 43.4.",
+        "derivation": {
+          "evidence": "report-p436-438.txt",
+          "quote": "NOx                                           9.30",
+          "raw_value": 9.3,
+          "raw_unit": "g",
+          "per": "per kg HCN",
+          "factor": 0.001,
+          "factor_unit": "kg",
+          "factor_source": "1 g = 0.001 kg",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "NOx as a sum is the 'Nitrogen Oxides' flow; 'Nitrogen Dioxide' would claim a speciation the report does not give and 'Nitrogen' is the element.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Carbon Dioxide (fossil)",
+        "category": "air",
+        "amount": 2.47352,
+        "unit": "kilogram",
+        "note": "Tab. 43.4 = 2.474 kg CO2 per kg HCN, against 4.69 kg in the cumulated vector of the same chapter, so about half the dataset's CO2 is direct - a plausible split for a fired reactor.",
+        "derivation": {
+          "evidence": "report-p436-438.txt",
+          "quote": "CO2                                           2473.52",
+          "raw_value": 2473.52,
+          "raw_unit": "g",
+          "per": "per kg HCN",
+          "factor": 0.001,
+          "factor_unit": "kg",
+          "factor_source": "1 g = 0.001 kg",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Fossil carbon from natural gas; the biogenic and land-use-change variants are the wrong origin, and the 'Resources from air' entries are uptake, not release.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-923d-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": []
+  }
+}

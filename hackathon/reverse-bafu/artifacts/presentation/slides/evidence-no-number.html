@@ -1,0 +1,31 @@
+<section id="evidence-no-number" data-section="Backup: three more example reports" data-transition="fade" style="background:#F0E9E1; color:#2B2B2B; font-family:'Quicksand', Arial, sans-serif; padding:112px 128px 150px; display:flex; flex-direction:column; gap:36px; font-weight:500">
+
+  <div style="display:flex; flex-direction:column; gap:14px">
+    <p style="font-size:28px; letter-spacing:2px; text-transform:uppercase; color:#3C5343">Backup · Example Report for System Process · Anthraquinone, at plant</p>
+    <h2 style="font-family:'Quicksand', Arial, sans-serif; font-size:72px; font-weight:400; line-height:1.08">Named, but never given a number</h2>
+  </div>
+
+  <div style="display:flex; gap:40px; align-items:flex-start">
+    <div style="display:flex; flex-direction:column; gap:16px; padding:24px; background:#FFFFFF; border:1px solid #DCD3C7; border-radius:4px">
+      <img src="/_blob/7a96e0109c9ab247526c1c7f75d5a030" alt="Tab. 44.3: inputs for four anthraquinone synthesis routes; only the chromic acid column has amounts, the naphthalene column is marked x" style="width:820px; height:420px; object-fit:contain">
+      <img src="/_blob/20793df789a0bdc6fb3035f694742c2c" alt="The report's energy paragraph: no information about energy is given; an average European electricity mix and a steam dataset are used, with no amounts" style="width:820px; height:131px; object-fit:contain">
+    </div>
+    <div style="flex:1; display:flex; flex-direction:column; gap:22px">
+      <div style="display:flex; flex-direction:column; gap:8px">
+        <h3 style="font-size:28px; font-weight:600">What the page gives</h3>
+        <p style="font-size:26px; line-height:1.4; color:#555B57">Four chemicals, for one of four routes. Below the table, electricity, steam, plant and transport are named in prose, with no amount.</p>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:8px">
+        <h3 style="font-size:28px; font-weight:600">What the fit did</h3>
+        <p style="font-size:26px; line-height:1.4; color:#555B57">Five inputs were left to it. It pushed four to their lower bound: steam, plant, rail and lorry are effectively zero.</p>
+      </div>
+      <div style="background:#E1EBE5; border-left:6px solid #84AE99; padding:16px 32px; border-radius:0px 4px 4px 0px">
+        <p style="font-size:27px; line-height:1.4; color:#2B2B2B"><b style="color:#2B2B2B">S3</b> · the report names the inputs, the optimiser sets the input amounts</p>
+      </div>
+    </div>
+  </div>
+
+  <p style="position:absolute; left:128px; bottom:58px; width:1664px; font-size:24px; color:#7E857F">Althaus et al. (2007), ecoinvent report No. 8, p. 365 (PDF p. 446), Tab. 44.3 · specs/e6293140-anthraquinone-at-plant.draft.json</p>
+
+  <aside>Anthraquinone is the case that exposed our labelling problem. The table is not the dataset's inventory. It is a literature table from Vogel 2000 covering four synthesis routes, and only the chromic acid column has numbers. BAFU's dataset is an eighty-twenty average of that route and confidential EMPA data that is not printed, so even the chemicals cover only eighty percent of the story. Then the energy paragraph underneath: the report names an electricity mix, a steam dataset, a chemical plant and standard transport distances, and gives an amount for none of them. Those became free parameters, and the fit pushed four of the five to their lower bound, so in the rebuilt process steam, infrastructure and transport are effectively zero. The input list is the report's. The amounts are the optimiser's. That is S3, and until this week our pipeline stamped it S1.</aside>
+</section>

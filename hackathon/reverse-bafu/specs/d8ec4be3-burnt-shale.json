@@ -1,0 +1,190 @@
+{
+  "target": {
+    "code": "d8ec4be3-c410-3806-98f5-a2ec5a284fee",
+    "name": "Burnt shale, at plant",
+    "location": "DE"
+  },
+  "strategy": {
+    "code": "S1",
+    "label": "transcription from the report table, one amount calibrated with the input list fixed",
+    "note": "Tab. 3.9/3.10 give every input; grid electricity was left free because the plant co-generates 183.8 kWh/t and the report does not say whether consumption is gross or net. The fit (fixed-list NNLS) put it at 2.5 kWh/t instead of the table's 68.6, i.e. the original nets its own generation. Hybrid node built on top."
+  },
+  "evidence": [
+    {
+      "source": "2020 - LCA selected types of concrete - Tschuemperlin.pdf",
+      "where": "section 3.6, Tab. 3.9 (inventory per t, 71.3 % economic allocation column) and Tab. 3.10 (transport distances)",
+      "note": "Werner (2013) inventory, allocation electricity 28.7 % / burnt shale 71.3 % per Werner (2018). 1 t burnt shale co-produces 183.8 kWh electricity. Diesel and heating oil converted from litres at 36 MJ/l; per-t values divided by 1000."
+    },
+    {
+      "source": "target dataset cumulative vector",
+      "where": "direct resource flows unique to this process",
+      "note": "raw shale (0.9626 kg/kg = ~1.35 kg raw shale x 71.3 %) and the shale's energy content booked as crude-oil resource (3.658 MJ/kg), which no upstream node emits"
+    }
+  ],
+  "node": {
+    "name": "Burnt shale, at plant, disaggregated",
+    "unit": "kilogram",
+    "location": "DE",
+    "comment": "Quarrying (blasting, diesel), crushing/conveying/comminution (electricity), fluidised-bed burning with electricity co-generation, milling, flue-gas treatment chemicals; economic allocation 71.3 % to burnt shale.",
+    "inputs": [
+      {
+        "name": "Blasting",
+        "amount": 6.74e-05,
+        "unit": "kilogram",
+        "note": "explosives 0.0674 kg/t",
+        "code": "f4afe0ed-9682-35b1-8c80-43a0d8bf3898",
+        "location": "RER"
+      },
+      {
+        "name": "Diesel, burned in building machine, average",
+        "amount": 0.01386,
+        "unit": "megajoule",
+        "note": "0.385 l/t x 36 MJ/l",
+        "code": "e4e7ddc0-f7d1-3fad-bd12-9d6981142800",
+        "location": "CH"
+      },
+      {
+        "name": "Electricity, medium voltage, at grid",
+        "location": "DE",
+        "amount": 0.0014880853231786309,
+        "unit": "kilowatt hour",
+        "free": true,
+        "note": "crusher 1.16 + conveyors 0.501 + comminution 3.47 + burnt-shale production 30.7 + power generation own use 11.4 + milling 21.4 kWh/t",
+        "code": "76a85da2-7e4e-3e7e-a3df-f3df5951c9ec"
+      },
+      {
+        "name": "Light fuel oil, burned in industrial furnace 1MW, non-modulating",
+        "amount": 0.00512,
+        "unit": "megajoule",
+        "note": "heating oil EL, mill: 0.143 l/t x 35.8 MJ/l",
+        "code": "82c07b68-8bf9-3537-9934-91924132e976",
+        "location": "RER"
+      },
+      {
+        "name": "Tap water, at user",
+        "amount": 0.499,
+        "unit": "kilogram",
+        "note": "0.499 m3/t",
+        "code": "6556440f-cd03-3975-9615-023309701fe2",
+        "location": "RER"
+      },
+      {
+        "name": "Hydrochloric acid, 30% in H2O, at plant",
+        "amount": 7.13e-05,
+        "unit": "kilogram",
+        "code": "2f8b5baa-5930-3460-bca9-ad90d49c1d36",
+        "location": "RER"
+      },
+      {
+        "name": "Sodium hydroxide, 50% in H2O, production mix, at plant",
+        "amount": 7.13e-05,
+        "unit": "kilogram",
+        "code": "ce8a12aa-ecaa-37d9-8355-5cb7da9ce6c0",
+        "location": "RER"
+      },
+      {
+        "name": "Sodium hypochlorite, 15% in H2O, at plant",
+        "amount": 7.13e-05,
+        "unit": "kilogram",
+        "note": "Chlorbleichlauge",
+        "code": "cb94ab60-7f4d-3b40-90df-bc7a9332af65",
+        "location": "RER"
+      },
+      {
+        "name": "Chemicals organic, at plant",
+        "amount": 5.7e-05,
+        "unit": "kilogram",
+        "code": "4d96ad56-9dd3-3fda-bff6-d24796d01043",
+        "location": "GLO"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "location": "DE",
+        "amount": 0.000172,
+        "unit": "ton kilometer",
+        "note": "Tab. 3.10: heating oil 600 km, HCl 200 km, NaOH 600 km, hypochlorite 600 km",
+        "code": "83f61965-0dfe-3b0b-bc52-91350642debb"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 2.14e-05,
+        "unit": "ton kilometer",
+        "note": "Tab. 3.10: HCl, NaOH, hypochlorite 100 km each",
+        "code": "85b3a5a6-2635-3546-b51b-4ccad397650b",
+        "location": "RER"
+      },
+      {
+        "name": "Treatment, sewage, unpolluted, to wastewater treatment, class 3",
+        "amount": 0.000107,
+        "unit": "cubic meter",
+        "note": "Abwasser, unbelastet 0.107 m3/t",
+        "code": "f2814ced-c83a-4b71-8506-3ba89d599de6",
+        "location": "CH"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Particles (PM10)",
+        "category": "air",
+        "amount": 9.48e-07,
+        "unit": "kilogram",
+        "note": "Staub",
+        "code": "08a91e70-3ddc-11dd-91be-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Nitrogen Oxides",
+        "category": "air",
+        "amount": 0.000519,
+        "unit": "kilogram",
+        "code": "f79d0f8f-2b0e-49cb-bed0-b1ea0fbd8625",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Sulfur Dioxide",
+        "category": "air",
+        "amount": 0.000454,
+        "unit": "kilogram",
+        "code": "fe0acd60-3ddc-11dd-ac48-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Carbon Dioxide (fossil)",
+        "category": "air",
+        "amount": 0.422,
+        "unit": "kilogram",
+        "note": "0.256 fossil + 0.166 geogenic (carbonate); both fossil in EF 3.1",
+        "code": "08a91e70-3ddc-11dd-923d-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Carbon Monoxide (fossil)",
+        "category": "air",
+        "amount": 0.000409,
+        "unit": "kilogram",
+        "code": "08a91e70-3ddc-11dd-924e-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Shale",
+        "category": "soil",
+        "amount": 0.9626,
+        "unit": "kilogram",
+        "note": "from target vector; ~1.35 kg raw shale x 71.3 %",
+        "code": "172a8bdd-6556-11dd-ad8b-0800200c9a66",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Crude Oil",
+        "category": "resources",
+        "amount": 3.658,
+        "unit": "megajoule",
+        "note": "energy content of the shale burned, ecoinvent convention; from target vector",
+        "code": "fe0acd60-3ddc-11dd-a6f8-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ]
+  }
+}

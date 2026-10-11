@@ -1,0 +1,84 @@
+{
+ "mappings": [
+  {
+   "item": "Aluminium, Produktionsmix, ab Werk",
+   "chosen": "Aluminium, production mix, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name and unit match at RER; candidate 0 is an acrylic glass, candidate 1 a Swiss profile-specific mix and candidates 3-4 the cast and wrought sub-mixes."
+  },
+  {
+   "item": "Polystyrol schlagfest",
+   "chosen": "Polystyrene, high impact, HIPS, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The only candidate and an exact match for high-impact polystyrene."
+  },
+  {
+   "item": "Polyethylen (LD)",
+   "chosen": "Polyethylene, LDPE, granulate, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": true,
+   "reason": "Exact match for LDPE granulate; HDPE is the other polyethylene. The dataset is aggregated, so it is linked as a dependency."
+  },
+  {
+   "item": "Zement",
+   "chosen": "Cement, unspecified, at plant",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "'Cement, unspecified, at plant' is the generic cement the table means; candidate 1 is the cement plant infrastructure."
+  },
+  {
+   "item": "Sand für Bau",
+   "chosen": "Silica sand, at plant",
+   "location": "DE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "'Silica sand, at plant' is the only sand by mass in the list; the others are sandstone by volume, cements, plasters or disposals. The report means construction sand, so this is the closest available."
+  },
+  {
+   "item": "Wasser",
+   "chosen": "Water",
+   "location": "",
+   "compartment": "Resources / Resources from water",
+   "dependency": false,
+   "reason": "The generic 'Water' resource from water, the 'Ressourcen: Wasser' line of the table; lake water is a narrower source."
+  },
+  {
+   "item": "Transport Schiene",
+   "chosen": "Transport, freight, rail, electricity with shunting",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "'electricity with shunting' is the standard Swiss rail freight dataset."
+  },
+  {
+   "item": "Transport LKW 28 t",
+   "chosen": null,
+   "location": "",
+   "compartment": "",
+   "dependency": false,
+   "reason": "No lorry FREIGHT service is offered: the candidates are the disposal and the maintenance of a 28 t lorry in units and vehicle-kilometre operation datasets, none of which is a ton-kilometre transport."
+  },
+  {
+   "item": "Abfall in Inertstoffdeponie",
+   "chosen": "Disposal, concrete, 5% water, to inert material landfill",
+   "location": "GLO",
+   "compartment": "",
+   "dependency": false,
+   "reason": "'Disposal, concrete, 5% water, to inert material landfill' is the inert-material-landfill service the table names; candidate 0 is a sanitary landfill."
+  },
+  {
+   "item": "Kunststoff in Verbrennungsanlage",
+   "chosen": "Disposal, plastics, mixture, 15.3% water, to municipal incineration",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "'Disposal, plastics, mixture, 15.3% water, to municipal incineration' is the generic mixed-plastics incineration the table means; candidate 1 is construction-waste plastics specifically."
+  }
+ ]
+}

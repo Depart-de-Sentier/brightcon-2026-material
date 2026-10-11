@@ -1,0 +1,179 @@
+{
+  "target": {
+    "code": "8fbb543c-4f07-3a5c-944c-1313990c05ba",
+    "name": "PIR insulation with PVC cladding, insulation thickness 40mm",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tabelle 111 'Bilanzierung Herstellung Dämmung PIR mit PVC Umhüllung', column 'Dämmstärke 40mm [m2]', per 1 m2; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2014 - LCA data ventilation and heating systems - Klingler.pdf",
+      "where": "pages 172-174 -> report-p172-174.txt",
+      "note": "report sha256 f4692d86e964f922…, text sha256 b8bb22e607dc1384…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/8fbb543c-4f07-3a5c-944c-1313990c05ba/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "158b3717168df7fbbcc99a65ca5e43caef07436f227a27304305a4e8eef0195c",
+      "at": "2026-09-22T21:13:44Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "f90fd157956e6a6bdbfcd726060f473a54159886a7942eec40ca311c6254c9c5",
+      "at": "2026-09-22T21:13:46Z"
+    },
+    "gaps_reported_by_model": [
+      "No production electricity or heat for assembling the insulation shell; only raw materials, two forming processes and transports.",
+      "No direct emissions.",
+      "No infrastructure of the producing plant.",
+      "Tabelle 112 (disposal of the same product) is a separate dataset and is not folded in here."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T21:13:46Z"
+  },
+  "node": {
+    "name": "PIR insulation with PVC cladding, insulation thickness 40mm, disaggregated",
+    "unit": "m2",
+    "location": "CH",
+    "comment": "drafted from 2014 - LCA data ventilation and heating systems - Klingler.pdf pp. 172-174",
+    "inputs": [
+      {
+        "name": "Polyurethane, rigid foam, at plant",
+        "amount": 1.2,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "40 mm column (2nd of the five thickness columns 30/40/50/60/80 mm)",
+        "derivation": {
+          "evidence": "report-p172-174.txt",
+          "quote": "           polyurethane,         9.000E-01          1.200E+00        1.500E+00       1.800E+00         2.400E+00",
+          "raw_value": 1.2,
+          "raw_unit": "kg",
+          "per": "per m2 of 40 mm PIR pipe insulation with PVC cladding",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "polyurethane rigid foam at plant",
+          "mapping_reason": "Exact name match at plant, the stage the table books; the CH market mix adds a market step and the flexible foam is a different product.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a7c19342-01d0-37f6-86bf-7ecf91a7d206"
+      },
+      {
+        "name": "Polyvinylchloride, at regional storage",
+        "amount": 0.4273,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "the PVC cladding, identical for all thicknesses",
+        "derivation": {
+          "evidence": "report-p172-174.txt",
+          "quote": "           polyvinylchloride,    4.273E-01          4.273E-01        4.273E-01       4.273E-01         4.273E-01",
+          "raw_value": 0.4273,
+          "raw_unit": "kg",
+          "per": "per m2 of 40 mm PIR pipe insulation with PVC cladding",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "polyvinylchloride at regional storage",
+          "mapping_reason": "Exact name match; every other candidate is a different substance that merely shares 'at regional storage'.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "36f2eccd-a31b-330a-b685-b87163460c36"
+      },
+      {
+        "name": "Extrusion, plastic film",
+        "amount": 0.4273,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "forming of the PVC cladding",
+        "derivation": {
+          "evidence": "report-p172-174.txt",
+          "quote": "           extrusion, plastic    4.273E-01          4.273E-01        4.273E-01       4.273E-01         4.273E-01",
+          "raw_value": 0.4273,
+          "raw_unit": "kg",
+          "per": "per m2 of 40 mm PIR pipe insulation with PVC cladding",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "extrusion plastic film",
+          "mapping_reason": "Exact name match; 'extrusion, plastic pipes' is the other forming process.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "c06a8970-8ec4-359e-887a-0bbf51d9ee6f"
+      },
+      {
+        "name": "Transport, freight, rail, electricity with shunting",
+        "amount": 0.3255,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "40 mm column",
+        "derivation": {
+          "evidence": "report-p172-174.txt",
+          "quote": "           transport, freight,   2.655E-01          3.255E-01        3.855E-01       4.455E-01         5.655E-01",
+          "raw_value": 0.3255,
+          "raw_unit": "tkm",
+          "per": "per m2 of 40 mm PIR pipe insulation with PVC cladding",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "The table gives CH rail freight, and 'electricity with shunting' is the standard Swiss rail freight dataset; the Betrieb/Fahrzeug/Infrastruktur entries are its sub-processes and the RER entry the wrong geography.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a169f230-3e05-33d0-a12d-f9d6d4d6abf1"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 0.08136,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "40 mm column",
+        "derivation": {
+          "evidence": "report-p172-174.txt",
+          "quote": "           transport, lorry      6.636E-02          8.136E-02        9.636E-02       1.114E-01         1.414E-01",
+          "raw_value": 0.08136,
+          "raw_unit": "tkm",
+          "per": "per m2 of 40 mm PIR pipe insulation with PVC cladding",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry 20-28t fleet average",
+          "mapping_reason": "No 20-28 t class exists in the database; the 16t-32t gross-weight fleet average at CH is the class that contains 20-28 t and is a freight service in ton-kilometres like the line item. The 'Operation, lorry 20-28t' candidates are in vehicle-kilometres, not ton-kilometres.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "eb5552ed-63a8-374d-8fa4-296f644c37f8"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

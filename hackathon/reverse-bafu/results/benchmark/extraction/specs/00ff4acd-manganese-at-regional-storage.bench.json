@@ -1,0 +1,184 @@
+{
+  "target": {
+    "code": "00ff4acd-7e82-3d59-abc6-768375eba3ba",
+    "name": "Manganese, at regional storage",
+    "location": "RER"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Fig. 5.6 'Flows for Manganese, pure metal, at regional storage'. The text says the functional unit of the process is one tonne of manganese consumed in Europe, but the figure caption states explicitly 'Values correspond to the functional unit of 1 kg manganese metal', so the basis is 1 kg.; allocation: none stated; an electrothermal/electrolysis production split of 75/25 is assumed, and 75 % of the Mn in the electrothermal raw material is taken from ore, the rest from burden-free slag.. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2009 - LCI metals - Classen.pdf",
+      "where": "pages 405-407 -> report-p405-407.txt",
+      "note": "report sha256 21b5b36302a484f1…, text sha256 a65356fb60402ea8…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/00ff4acd-7e82-3d59-abc6-768375eba3ba/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "451b965a3ed2c97f289521b8cbfd8380354166a81022932a2a73fcbde5569a75",
+      "at": "2026-09-22T21:43:33Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "e068807d391e2cbb1f6b0facbb13177105fd354b5ce9a7ac1c5cef5525085dac",
+      "at": "2026-09-22T21:43:35Z"
+    },
+    "gaps_reported_by_model": [
+      "No process-specific emissions at all: 'The process specific emissions could be considerable but due to lack of data none are considered.'",
+      "No chemicals for reduction and leaching in the electrolytic route - 'Considerable amounts of chemicals ought to be used ... but no detailed information is available.'",
+      "No transport is inventoried in this module at all; the report admits this is 'obviously not correct'.",
+      "No refining step after the electrothermal reduction.",
+      "The report states the overall quality of this module is poor and it should only be used where manganese plays a minor role."
+    ],
+    "skipped_items": [
+      "manganese, at regional storage: product — reference product, global average",
+      "high silica slag: ignore — the table marks this line 'not inventoried' - the slag fraction of the electrothermal raw material is treated as burden free."
+    ],
+    "assembled_at": "2026-09-22T21:43:35Z"
+  },
+  "node": {
+    "name": "Manganese, at regional storage, disaggregated",
+    "unit": "kg",
+    "location": "RER",
+    "comment": "drafted from 2009 - LCI metals - Classen.pdf pp. 405-407",
+    "inputs": [
+      {
+        "name": "Ferromanganese, high-coal, 74.5% Mn, at regional storage",
+        "amount": 1.21,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "electrothermal route, 75 % share; its transport intensity already covers the import to Europe",
+        "derivation": {
+          "evidence": "report-p405-407.txt",
+          "quote": "f erromanganes                                                                                                                                                                                                                                    (5,5,1,1,1,5,4);",
+          "raw_value": 1.21,
+          "raw_unit": "kg",
+          "per": "per kg manganese, pure metal, at regional storage",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "ferromanganese high-coal 74.5% Mn at regional storage",
+          "mapping_reason": "The only candidate and an exact name match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "e9d3e6de-15d4-379c-99d8-40155ad01fca"
+      },
+      {
+        "name": "Manganese concentrate, at beneficiation",
+        "amount": 0.983,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "electrolytic route, 25 % share, 60 % yield roughly estimated",
+        "derivation": {
+          "evidence": "report-p405-407.txt",
+          "quote": "concentrate f or                                                                                      metals               extraction        No         GLO         concentrate, at        9.83E-01   kg     Calculation       1     1.62",
+          "raw_value": 0.983,
+          "raw_unit": "kg",
+          "per": "per kg manganese, pure metal, at regional storage",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "manganese concentrate at beneficiation",
+          "mapping_reason": "Exact substance and stage match; copper and lead concentrates are different metals.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "f2604d57-9474-36dc-9219-c04eedc6f657"
+      },
+      {
+        "name": "xxx Electricity, medium voltage, production UCTE, at grid",
+        "amount": 2.63,
+        "unit": "kilowatt hour",
+        "location": "UCTE",
+        "note": "electrolysis 9-12 kWh/kg Mn plus 20 kWh/t ore grinding, weighted by the 25 % electrolytic share",
+        "derivation": {
+          "evidence": "report-p405-407.txt",
+          "quote": "Energy f or",
+          "raw_value": 2.63,
+          "raw_unit": "kWh",
+          "per": "per kg manganese, pure metal, at regional storage",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electricity medium voltage production UCTE at grid",
+          "mapping_reason": "Exact name and geography match for the UCTE medium-voltage production mix; the single-technology entries are individual routes.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "d86e2374-784b-3fd9-910b-7583462ea81b"
+      },
+      {
+        "name": "Non-ferrous metal smelter",
+        "amount": 1.06e-14,
+        "unit": "unit",
+        "location": "GLO",
+        "note": "infrastructure, rough estimate",
+        "derivation": {
+          "evidence": "report-p405-407.txt",
+          "quote": "Inf rastructure,                                                                                                                                                     non-f errous metal,",
+          "raw_value": 1.06e-14,
+          "raw_unit": "unit",
+          "per": "per kg manganese, pure metal, at regional storage",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "non-ferrous metal smelter",
+          "mapping_reason": "Exact name and unit (unit, infrastructure) match; candidate 1 is a waste treatment and candidate 2 a mine.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "5fb9a181-182d-3a35-9710-691b4979f74e"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Waste Heat",
+        "category": "air",
+        "amount": 9.47,
+        "unit": "megajoule",
+        "note": "low population density",
+        "derivation": {
+          "evidence": "report-p405-407.txt",
+          "quote": "                                               w aste heat                                            air                                                           Heat, w aste           9.47E+00   MJ                       1     1.16 (3,2,3,1,1,2,13)",
+          "raw_value": 9.47,
+          "raw_unit": "MJ",
+          "per": "per kg manganese, pure metal, at regional storage",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Waste heat released to air, the compartment the figure gives ('air, low population density').",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-9136-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": []
+  }
+}

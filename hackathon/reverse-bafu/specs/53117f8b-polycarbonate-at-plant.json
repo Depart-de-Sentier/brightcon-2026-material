@@ -1,0 +1,117 @@
+{
+  "target": {
+    "code": "53117f8b-9311-37b3-bf5b-6e14b2ae711c",
+    "name": "Polycarbonate, at plant",
+    "location": "RER"
+  },
+  "strategy": {
+    "code": "S3",
+    "label": "top-down model: the two monomers the dataset names, amounts from the polycondensation equation with molar masses, utilities calibrated",
+    "note": "NOT S1. No report in the bundle prints an inventory. The dataset's own ecoSpold technology field is unusually specific - 'production by interfacial polycondesation out of phosgene and bisphenol A' - and names both reagents and the process variant, and BAFU carries a real unit process for each ('Bisphenol A, powder, at plant', 7 inputs; 'Phosgene, liquid, at plant', 7 inputs), so this model terminates on the database with no aggregated dependency at all. Amounts are the polycondensation stoichiometry: C15H16O2 (bisphenol A, 228.291) + COCl2 (phosgene, 98.910) -> -[C16H14O3]- (carbonate repeat unit, 254.285) + 2 HCl (72.916); mass balance 327.201 = 327.201. Per kg of polycarbonate: 228.291/254.285 = 0.89777 kg of bisphenol A and 98.910/254.285 = 0.38897 kg of phosgene, releasing 0.28675 kg of HCl. In the interfacial process the HCl is taken up by caustic soda, 2 NaOH per repeat unit = 2 x 39.997 / 254.285 = 0.31459 kg. Molar masses from the IUPAC 2021 standard atomic weights: H 1.008, C 12.011, N 14.007, O 15.999, S 32.06, Cl 35.45, Na 22.990. The caustic soda is not named by the technology field; it is included because the field says *interfacial* polycondensation, which by definition runs the bisphenol as its disodium salt in an aqueous phase against phosgene in dichloromethane, and the HCl released must be neutralised. Two named-but-unquantified pieces are left out and recorded as gaps: the dichloromethane solvent (recycled, so its net consumption is a make-up rate nothing prints) and the chain terminator/catalyst. All three amounts are fixed, not fitted: they are the stoichiometric floor at 100 % conversion, so the true values can only be higher."
+  },
+  "evidence": [
+    {
+      "source": "BAFU-2026 ecoSpold metadata of the target",
+      "where": "processInformation/technology",
+      "note": "quoted in the strategy note; it is the structural evidence for the input list"
+    },
+    {
+      "source": "locate step of the reverse-bafu route",
+      "where": "specs/evidence/53117f8b-9311-37b3-bf5b-6e14b2ae711c/response-0-locate.json",
+      "note": "specs/evidence/53117f8b-9311-37b3-bf5b-6e14b2ae711c/response-0-locate.json - no report in the BAFU-2026 documentation bundle prints a unit-process inventory for this dataset. The cited report is only the 17-page front matter of ecoinvent report No. 11; all 114 bundled reports were converted with pdftotext and searched."
+    },
+    {
+      "source": "reaction stoichiometry",
+      "where": "the reaction equation named by the technology field, with molar masses",
+      "note": "Molar masses from the IUPAC 2021 standard atomic weights: H 1.008, C 12.011, N 14.007, O 15.999, S 32.06, Cl 35.45, Na 22.990."
+    },
+    {
+      "source": "BAFU-2026 itself, as a named template",
+      "where": "Cumene / Ethyl benzene / Phosgene / Aniline, at plant [RER]",
+      "note": "BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from."
+    }
+  ],
+  "node": {
+    "name": "Polycarbonate, at plant, disaggregated",
+    "unit": "kilogram",
+    "location": "RER",
+    "comment": "Interfacial polycondensation step, per kg of polycarbonate granulate. The eight waste-treatment services that the BAFU dataset already carries as explicit exchanges are deliberately not part of this model - they were never collapsed away - following the committed PlasticsEurope specs. The consequence, measured in results/checks/, is that the target's cumulative vector gets a long tail of flows from those disposal chains that no model omitting them can reach.",
+    "inputs": [
+      {
+        "name": "Bisphenol A, powder, at plant",
+        "amount": 0.89777,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "C15H16O2 (bisphenol A, 228.291) + COCl2 (phosgene, 98.910) -> -[C16H14O3]- (carbonate repeat unit, 254.285) + 2 HCl (72.916); mass balance 327.201 = 327.201. Per kg of polycarbonate: 228.291/254.285 = 0.89777 kg of bisphenol A and 98.910/254.285 = 0.38897 kg of phosgene, releasing 0.28675 kg of HCl. In the interfacial process the HCl is taken up by caustic soda, 2 NaOH per repeat unit = 2 x 39.997 / 254.285 = 0.31459 kg. Molar masses from the IUPAC 2021 standard atomic weights: H 1.008, C 12.011, N 14.007, O 15.999, S 32.06, Cl 35.45, Na 22.990.",
+        "code": "4ef9c067-e357-33f0-837a-659b928864e5"
+      },
+      {
+        "name": "Phosgene, liquid, at plant",
+        "amount": 0.38897,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "C15H16O2 (bisphenol A, 228.291) + COCl2 (phosgene, 98.910) -> -[C16H14O3]- (carbonate repeat unit, 254.285) + 2 HCl (72.916); mass balance 327.201 = 327.201. Per kg of polycarbonate: 228.291/254.285 = 0.89777 kg of bisphenol A and 98.910/254.285 = 0.38897 kg of phosgene, releasing 0.28675 kg of HCl. In the interfacial process the HCl is taken up by caustic soda, 2 NaOH per repeat unit = 2 x 39.997 / 254.285 = 0.31459 kg. Molar masses from the IUPAC 2021 standard atomic weights: H 1.008, C 12.011, N 14.007, O 15.999, S 32.06, Cl 35.45, Na 22.990.",
+        "code": "448a623c-0145-3b9a-925f-33f9e560e585"
+      },
+      {
+        "name": "Sodium hydroxide, 50% in H2O, production mix, at plant",
+        "amount": 0.31459,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "2 NaOH per repeat unit, to neutralise the 2 HCl released: 2 x 39.997 / 254.285 = 0.31459 kg of NaOH (100 %) per kg of polycarbonate. The BAFU dataset's reference unit is 1 kg of NaOH, not of the 50 % solution - checked against 'Propylene oxide, liquid, at plant', which carries 1.38 kg of it against the chlorohydrin route's stoichiometric 2 x 39.997/58.08 = 1.377 kg. Molar masses from the IUPAC 2021 standard atomic weights: H 1.008, C 12.011, N 14.007, O 15.999, S 32.06, Cl 35.45, Na 22.990.",
+        "code": "ce8a12aa-ecaa-37d9-8355-5cb7da9ce6c0"
+      },
+      {
+        "name": "Electricity, medium voltage, production ENTSO-E, at grid",
+        "amount": 0.0,
+        "unit": "kilowatt hour",
+        "location": "ENTSO-E",
+        "free": true,
+        "note": "Starting value 0.333 kWh/kg from the BAFU chemicals template; free, because no report in the bundle prints an electricity figure for this process. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "648e3bb3-7b98-46f8-9da1-f45627c309ef"
+      },
+      {
+        "name": "Heat, natural gas, at industrial furnace 1MW",
+        "amount": 0.0,
+        "unit": "megajoule",
+        "location": "CH",
+        "free": true,
+        "note": "Starting value 2.0 MJ/kg from the BAFU chemicals template; free, because no report in the bundle prints a heat figure for this process. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "2fcda415-e506-38d9-9c3e-8ce2c2e7c8f2"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "0.6 tkm per kg of precursor x 1.601 kg of precursor = the template's standard 600 km rail leg. Free: the PlasticsEurope eco-profile behind this dataset accounts for feedstock transport as elementary flows only and carries no vehicle or track infrastructure, so an ecoinvent transport dataset adds a background the target cannot have. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "0.1 tkm per kg of precursor x 1.601 kg of precursor = the template's standard 100 km lorry leg. Free, same reason as the rail line. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "99f8a4b0-99b5-3130-924c-5de4c10b62ef"
+      },
+      {
+        "name": "Chemical plant, organics",
+        "amount": 0.0,
+        "unit": "unit",
+        "location": "RER",
+        "free": true,
+        "bounds": [
+          0.0,
+          4e-10
+        ],
+        "note": "Free between zero and the template value. 4.0E-10 units is what every ecoinvent-v2 organic chemical in BAFU carries and is the upper bound; zero is the lower bound because this target declares no infrastructure exchange at all - its entire technosphere is waste-treatment services - so an eco-profile that never counted a plant is a real possibility. Both bounds come from those two facts and were set before any score was computed. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "13ed4fe0-7ba5-3b60-82b6-a63918ee814d"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

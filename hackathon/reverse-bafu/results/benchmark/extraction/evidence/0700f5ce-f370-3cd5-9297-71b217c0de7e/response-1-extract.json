@@ -1,0 +1,50 @@
+{
+ "basis": "No inventory table for this dataset exists in the excerpt; Tab. 83 'Main specifications for the reference technologies for heating' (p.131) is a specification table for OTHER technologies. Basis taken as 1 MJ of heat delivered.",
+ "basis_amount": 1,
+ "allocation": "none stated",
+ "mass_sum": null,
+ "items": [
+  {
+   "name": "Energy, Geothermal, Converted",
+   "kind": "resource",
+   "quote": "- Energy, Geothermal, Converted: 1 megajoule (natural resource)",
+   "raw_value": 1.0,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "MJ",
+   "per": "per MJ heat delivered",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "energy geothermal converted",
+   "compartment": "resources",
+   "confidence": "medium",
+   "note": "Taken from the 'direct resource flows visible in the aggregated vector' block of this prompt, not from the report excerpt: the excerpt contains no ground-source heat pump inventory at all."
+  },
+  {
+   "name": "electricity, low voltage, at grid",
+   "kind": "input",
+   "quote": "- generalComment: This dataset represents the supply of 1 megajoule of heat in a residence, by transfer of geothermal heat in a ground source heat pump.  The electricity is from grid. Heat conversion efficiency [% LHV input]: 390%.",
+   "raw_value": 0.2564,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "MJ",
+   "per": "per MJ heat delivered",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "1 / 3.90 = 0.2564 MJ electricity per MJ heat, from the stated heat conversion efficiency of 390 %",
+   "search": "electricity low voltage at grid",
+   "compartment": "",
+   "confidence": "low",
+   "note": "The report excerpt does NOT document this dataset. Table 83 lists only reference heating technologies - an AIR-water heat pump at 440 % (CoP ~4.4), a wood-chip furnace, a biomethane boiler and a natural gas boiler - none of them a ground-source heat pump. The electricity draw is therefore derived from the 390 % efficiency stated in the dataset's own metadata, not read out of the report."
+  }
+ ],
+ "gaps": [
+  "The excerpt documents no ground-source heat pump: Tab. 83's heat-pump rows are air-water units at 440 % (CoP ~4.4), not a ground-source unit at 390 %.",
+  "No heat pump infrastructure (the 10 kW unit, 20 a lifetime, 2100 h/a stated in the metadata) can be read from the excerpt.",
+  "No borehole heat exchanger / ground loop input.",
+  "No refrigerant charge and no refrigerant leakage emission.",
+  "No grid loss handling beyond the 0.06 % stated in metadata.",
+  "The excerpt gives only impact-result figures (Figure 60, Figure 61) for the Power-to-X chains, which are results, not inventory."
+ ]
+}

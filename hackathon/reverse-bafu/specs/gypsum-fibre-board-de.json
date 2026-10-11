@@ -1,0 +1,172 @@
+{
+  "target": {
+    "code": "a061bf96-1dc6-3ab8-8dae-af476463276b",
+    "name": "Gypsum fibre board, at plant",
+    "location": "DE"
+  },
+  "strategy": {
+    "code": "S2",
+    "label": "template transfer from the CH unit process of the same product, main amounts calibrated within 0.5-2x",
+    "note": "The DE board inventory sits in a confidential annex of the KBOB 2016 report, so the structure of BAFU's own CH unit process (10 inputs) is reused, scaled to 10 kg/m2, with the grid switched to DE. Six main amounts are fitted within bounds; three land on the 2x ceiling, i.e. the German plant is more energy-intensive than the template allows. Hybrid node built on top."
+  },
+  "evidence": [
+    {
+      "source": "bafu-2026: Gypsum fibre board, at plant [CH] (unit process, 10 inputs)",
+      "where": "template transfer (S2)",
+      "note": "Same product, Swiss unit process. The DE dataset (treeze/QualiBOB 2016, 'data from German manufacturers') keeps its board-production inventory in a confidential annex, so the CH structure is reused; grid electricity switched to DE; the six main amounts may move within 0.25-4x of the CH value. The DE dataset is per m2; the CH template (per kg) is scaled by 10 kg/m2 (Kasser 2016, D: 10 kg/m2, 12.5 mm). Free amounts bounded to 0.5-2x the scaled template."
+    },
+    {
+      "source": "2016 - Renewal and expansion of LCA data in KBOB - Kasser.pdf",
+      "where": "Teilbericht D Gipswerkstoffe, D.2",
+      "note": "10 kg/m2, 12.5 mm; board inventory confidential (Anhang Z); binder and transport inventories printed."
+    }
+  ],
+  "node": {
+    "name": "Gypsum fibre board, at plant, DE, disaggregated",
+    "unit": "square meter",
+    "location": "DE",
+    "comment": "Structure of the CH unit process; German grid; amounts calibrated to the DE aggregated vector within bounds.",
+    "inputs": [
+      {
+        "name": "Alkylbenzene sulfonate, linear, petrochemical, at plant",
+        "amount": 9.680000000000001e-05,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "CH template x 10 kg/m2 = 9.68e-05",
+        "code": "1d16937e-2188-321b-a8ad-907afe767502"
+      },
+      {
+        "name": "Potato starch, at plant",
+        "amount": 0.028999999999999998,
+        "unit": "kilogram",
+        "location": "DE",
+        "note": "CH template x 10 kg/m2 = 0.029",
+        "code": "4cabab9c-da5b-32e6-b114-02a06c1deccb"
+      },
+      {
+        "name": "Silicone product, at plant",
+        "amount": 0.00129,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "CH template x 10 kg/m2 = 0.00129",
+        "code": "2af6f466-f68e-3e06-bd94-34152d38b326"
+      },
+      {
+        "name": "Wooden board manufacturing plant, organic bonded boards",
+        "amount": 1.6700000000000002e-10,
+        "unit": "unit",
+        "location": "RER",
+        "note": "CH template x 10 kg/m2 = 1.67e-10",
+        "code": "90039d7f-2872-3c9f-b721-544860a8d3fa"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 1.5,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "CH template x 10 kg/m2 = 3",
+        "free": true,
+        "bounds": [
+          1.5,
+          6.0
+        ],
+        "code": "eb5552ed-63a8-374d-8fa4-296f644c37f8"
+      },
+      {
+        "name": "Light fuel oil, burned in industrial furnace 1MW, non-modulating",
+        "amount": 7.912058470696621,
+        "unit": "megajoule",
+        "location": "RER",
+        "note": "CH template x 10 kg/m2 = 11.9",
+        "free": true,
+        "bounds": [
+          5.949999999999999,
+          23.799999999999997
+        ],
+        "code": "82c07b68-8bf9-3537-9934-91924132e976"
+      },
+      {
+        "name": "Tap water, at user",
+        "amount": 6.36,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "CH template x 10 kg/m2 = 3.18",
+        "free": true,
+        "bounds": [
+          1.59,
+          6.36
+        ],
+        "code": "6556440f-cd03-3975-9615-023309701fe2"
+      },
+      {
+        "name": "Stucco, at plant",
+        "amount": 3.5499999999999994,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "CH template x 10 kg/m2 = 7.1",
+        "free": true,
+        "bounds": [
+          3.55,
+          14.2
+        ],
+        "code": "08c050ee-36ba-3999-9fee-24321d6a6787"
+      },
+      {
+        "name": "Electricity, medium voltage, at grid",
+        "amount": 1.1434759143505249,
+        "unit": "kilowatt hour",
+        "location": "DE",
+        "note": "CH template x 10 kg/m2 = 0.865; grid switched to DE",
+        "free": true,
+        "bounds": [
+          0.4325,
+          1.73
+        ],
+        "code": "76a85da2-7e4e-3e7e-a3df-f3df5951c9ec"
+      },
+      {
+        "name": "Waste paper, sorted, for further treatment",
+        "amount": 0.75,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "CH template x 10 kg/m2 = 1.5",
+        "free": true,
+        "bounds": [
+          0.75,
+          3.0
+        ],
+        "code": "f14e2b43-687c-3d4d-9f3d-8ec12f3ffb2a"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Water",
+        "category": "resources",
+        "amount": 0.0015899999999999998,
+        "unit": "cubic meter",
+        "note": "CH template",
+        "code": "419682fe-60fb-4b43-be89-bf2824b51104",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Waste Heat",
+        "category": "air",
+        "amount": 3.11,
+        "unit": "megajoule",
+        "note": "CH template",
+        "code": "08a91e70-3ddc-11dd-9136-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Water",
+        "category": "emissions",
+        "amount": 0.0015105,
+        "unit": "cubic meter",
+        "note": "CH template",
+        "code": "a3876d9b-a3e8-4680-861a-4e08642f1392",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": []
+  }
+}

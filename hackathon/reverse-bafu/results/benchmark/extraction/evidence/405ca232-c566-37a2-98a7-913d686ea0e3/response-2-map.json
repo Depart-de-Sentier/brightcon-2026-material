@@ -1,0 +1,36 @@
+{
+ "mappings": [
+  {
+   "item": "hydrogen supply, by pipeline",
+   "chosen": "Hydrogen, gaseous, 25 bar, from electrolysis",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The dataset is fed by PEM electrolysis hydrogen delivered by pipeline, and 'Hydrogen, gaseous, 25 bar, from electrolysis' is the only electrolytic, non-fuelling-station, non-SOEC/AEC-specific candidate; the Moroccan solar+wind feedstock variant does not appear in the list, so this is the closest electrolytic hydrogen at pipeline pressure. The pyrolysis and SMR candidates are the wrong production route and the 700 bar fuelling-station ones the wrong delivery."
+  },
+  {
+   "item": "fuel cell production, stack solid oxide, 125kW electrical, future",
+   "chosen": null,
+   "location": "",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The keyword search returned no candidate at all for a solid-oxide fuel cell stack, so nothing can be chosen and the line is reported as missing."
+  },
+  {
+   "item": "maintenance, solid oxide fuel cell 125kW electrical, future",
+   "chosen": null,
+   "location": "",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The keyword search returned no candidate at all for the maintenance of a solid-oxide fuel cell, so nothing can be chosen."
+  },
+  {
+   "item": "Water",
+   "chosen": "Water",
+   "location": "",
+   "compartment": "air",
+   "dependency": false,
+   "reason": "'Water' to air in cubic metres is the generic water-vapour release; the line item is water vapour formed from the hydrogen, not sea water, green water or an evapotranspiration flux, and the two long chemical names are unrelated substances."
+  }
+ ]
+}

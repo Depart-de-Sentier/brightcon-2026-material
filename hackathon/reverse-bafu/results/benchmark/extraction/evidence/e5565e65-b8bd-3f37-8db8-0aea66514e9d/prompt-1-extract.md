@@ -1,0 +1,293 @@
+You are helping rebuild an aggregated life-cycle-inventory dataset as a unit process.
+
+The dataset `Biogas purification, to methane, 99 vol-%, membrane technology process` [CH], reference unit 1 m3, is shipped in the BAFU-2026 database as a "system terminated" inventory: it has no technosphere inputs, only ~12 cumulative elementary flows. A public report documents the underlying process. Your job is to read the report excerpt and produce the *unit process* as line items — what the process consumes from other datasets and what it emits directly — each traceable to the excerpt.
+
+## What the database says about the dataset
+
+- BAFU category: biomass / fuels
+- includedProcesses: Emissions due to leakage and purification of biogas. Input of energy and auxiliary materials. Biogas input excluded from the dataset.
+- technology: Industry data.
+- generalComment: Inventory refers to 1 m3 of methane. Electricity consumption and emissions represent the raw gas compression, H2S removal, gas conditioning and methane enrichment of biogas.  Infrastructure expenditures are included employing generic data for facilities of a chemical plant as approximation.;
+UUID: e5565e65-b8bd-3f37-8db8-0aea66514e9d
+- source cited in the metadata: Kaegi T. | 2022 | 2022 - LCI biogas and biomethane processes - Kaegi
+- time period: 2019-01-2019-12
+
+## Direct resource flows visible in the aggregated vector
+
+These flows appear in the aggregated inventory with amounts that no upstream dataset would plausibly emit on this dataset's behalf; they are candidates for the process's own direct resource flows (per 1 m3):
+- none
+
+## Report excerpt
+
+Source file: `report-p19-21.txt` (SHA-256 bd95220f6c09aa751ae550516c9354157fab25e5449e6f1af1baf0149e65f68b), pages 19-21 of `2022 - LCI biogas and biomethane processes - Kaegi.pdf`.
+
+```
+biogas purification, to methane,     biogas purification, to methane,
+                                                   biogas purification, to methane, 99                                                                                   methane, 96 vol-%, from
+ ReferenceFunction    Name                                                                  99 vol-%, amino washing              96 vol-%, pressure swing
+                                                  vol-%, membrane technology process                                                                                      biogas, at purification
+                                                                                                      process                            adsorption
+ Geography            Location                                     CH                                     CH                                   CH                                   CH
+ ReferenceFunction    InfrastructureProcess                         0                                      0                                    0                                    0
+ ReferenceFunction    Unit                                         Nm3                                    Nm3                                  Nm3                                  Nm3
+ DataSetInformation   Type                        1                                      1                                    1                                    1
+                      Version                     1.0                                    1.0                                  1.0                                  1.0
+                      energyValues                0                                      0                                    0                                    0
+                      LanguageCode                en                                     en                                   en                                   en
+                      LocalLanguageCode           de                                     de                                   de                                   de
+ DataEntryBy          Person                      101                                    101                                  101                                  101
+                      QualityNetwork              1                                      1                                    1                                    1
+ ReferenceFunction    DataSetRelatesToProduct     1                                      1                                    1                                    1
+                                                  Emissions due to leakage and           Emissions due to leakage and         Emissions due to leakage and
+                                                  purification of biogas. Input of       purification of biogas. Input of     purification of biogas. Input of
+                                                                                                                                                                   mix of purification processes
+                      IncludedProcesses           energy and auxiliary materials.        energy and auxiliary materials.      energy and auxiliary materials.
+                                                                                                                                                                   and mix of biogas production
+                                                  Biogas input excluded from the         Biogas input excluded from the       Biogas input excluded from the
+                                                  dataset.                               dataset.                             dataset.
+                      Amount                      1                                      1                                    1                                    1
+                                                                                                                              Biogas-Aufbereitung, zu
+                                                  Biogas-Aufbereitung, zu Methan, 99     Biogas-Aufbereitung, zu                                                   Methan, 96 Vol.-%, aus Biogas,
+                      LocalName                                                                                               Methan, 96 Vol.%,
+                                                  Vol.%, Membrantechnologie              Methan, 99 Vol.%, Aminwäsche                                              ab Aufbereitung
+                                                                                                                              Druckwechseladsorption
+                      Synonyms
+
+                                                                                         Inventory refers to 1 m3 of          Inventory refers to 1 m3 of
+                                                  Inventory refers to 1 m3 of methane.   methane. Electricity                 methane. Electricity
+                                                  Electricity consumption and            consumption and emissions            consumption and emissions
+                                                  emissions represent the raw gas        represent the raw gas                represent the raw gas                Inventory refers to 1 m3 of
+                                                  compression, H2S removal, gas          compression, H2S removal, gas        compression, H2S removal, gas        methane, at plant. Average mix
+                      GeneralComment              conditioning and methane enrichment    conditioning and methane             conditioning and methane             of purification processes and
+                                                  of biogas. Infrastructure              enrichment of biogas.                enrichment of biogas.                average mix of biogas
+                                                  expenditures are included employing    Infrastructure expenditures are      Infrastructure expenditures are      production
+                                                  generic data for facilities of a       included employing generic data      included employing generic data
+                                                  chemical plant as approximation.       for facilities of a chemical plant   for facilities of a chemical plant
+                                                                                         as approximation.                    as approximation.
+                      InfrastructureIncluded      1                                      1                                    1                                    1
+                      Category                    biomass                                biomass                              biomass                              biomass
+                      SubCategory                 fuels                                  fuels                                fuels                                fuels
+                      LocalCategory               Biomasse                               Biomasse                             Biomasse                             Biomasse
+                      LocalSubCategory            Brenn- und Treibstoffe                 Brenn- und Treibstoffe               Brenn- und Treibstoffe               Brenn- und Treibstoffe
+                      Formula
+                      StatisticalClassification
+                      CASNumber
+ TimePeriod           StartDate                   2019                                   2019                                 2019                                 2019
+                      EndDate                     2019                                   2019                                 2019                                 2019
+                      DataValidForEntirePeriod    1                                      1                                    1                                    1
+                      OtherPeriodText
+                                                                                         Data apply to the supply in          Data apply to the supply in          Data apply to the supply in
+                                                  Data represents conditions of biogas
+ Geography            Text                                                               Switzerland. Production occurs       Switzerland. Production occurs       Switzerland. Production occurs
+                                                  purification plants in Switzerland
+                                                                                         at Viessmann in Berlin (DE).         at Viessmann in Berlin (DE).         at Viessmann in Berlin (DE).
+ Technology         Text                          Industry data.                         Industry data.                       Industry data.                       Industry data.
+ Representativeness Percent
+                    ProductionVolume
+                    SamplingProcedure             Data provided by factories             Data provided by factories           Data provided by factories           Data provided by factories
+                      Extrapolations              none                                   none                                 none                                 none
+                      UncertaintyAdjustments      none                                   none                                 none                                 none
+
+
+
+
+Figure 11: Metadata of biogas purification processes
+
+
+
+
+Life Cycle Inventories for Biogas and Biomethane Processes; December 2021                                                                                                      Page 19 of 22
+                                                                                                                                                                                                                                            Standard Deviation 95%
+                                                                        Infrastructure Process
+
+
+
+
+                                                                                                                                                                                                                         Uncertainty Type
+                                                                                                                                                     biogas purification,    biogas purification,
+
+
+
+
+                                                             Location
+                                                                                                                                                                                                    methane, 96 vol-%,
+                                                                                                        biogas purification, to methane, 99 vol-%,   to methane, 99 vol-     to methane, 96 vol-
+
+
+
+
+                                                                                                 Unit
+                                  Name                                                                                                                                                               from biogas, at                                                 General Comment
+                                                                                                              membrane technology process            %, amino washing        %, pressure swing
+                                                                                                                                                                                                        purification
+                                                                                                                                                          process                adsorption
+
+
+
+
+                                 Location                                                                                   CH                               CH                      CH                    CH
+
+                        Infrastructure Process                                                                              0                                0                       0                      0
+                                  Unit                                                                                     Nm3                              Nm3                     Nm3                    Nm3
+
+
+                biogas purification, to methane, 99
+product                                                      CH             0                    Nm3                         1                                0                       0                     0
+                vol-%, membrane technology process
+
+
+                biogas purification, to methane, 99
+                                                             CH             0                    Nm3                         0                                1                       0                     0
+                vol-%, amino washing process
+                biogas purification, to methane, 96
+                                                             CH             0                    Nm3                         0                                0                       1                     0
+                vol-%, pressure swing adsorption
+             methane, 96 vol-%, from biogas, at
+                                                             CH             0                    Nm3                         0                                0                       0                     1                  0
+             purification
+technosphere electricity, low voltage, at grid               CH             0                    kWh                                        0.575          1.16E-1                        0.186                                1            1.23                     (2,3,2,3,1,5,BU:1.05); ;
+                charcoal, at plant                           GLO            0                    kg                                      0.00214           6.97E-4                    0.000208                                 1            1.32                     (1,4,1,3,3,5,BU:1.05); ;
+                lubricating oil, at plant                    RER            0                    kg                                     0.000114                                       0.00015                                 1            1.32                     (1,4,1,3,3,5,BU:1.05); ;
+                potassium hydroxide, at regional
+                                                             RER            0                    kg                                                                                                                            1            1.40                     (4,5,1,5,1,5,BU:1.05); ;
+                storage                                                                                                                                                             3.9753E-06
+                chemical plant, organics                     RER            1                    unit                                     5.4E-11                 5.53E-11             5.40E-11                                1            3.31                     (3,4,3,3,4,5,BU:3); ;
+                transport, freight, lorry 7.5-16 metric
+                                                             CH             0                    tkm                                                       9.76E-6                                                             1            2.15                     (4,5,1,5,1,5,BU:2); ;
+                ton, fleet average                                                                                                               0                                              0
+                transport, freight, lorry 16-32 metric
+                                                             CH             0                    tkm                                                       1.95E-4                                                             1            2.15                     (4,5,1,5,1,5,BU:2); ;
+                ton, fleet average                                                                                                      0.000023                                  0.000018099
+                transport, freight, rail, electricity with
+                                                             CH             0                    tkm                         0                                                                                                 1            2.15                     (4,5,1,5,1,5,BU:2); ;
+                shunting                                                                                                                                                           0.00021719
+                chromium steel 18/8, at plant                RER            0                    kg                      1.04E-4                                                                                               1            1.23                     (2,3,2,1,1,5,BU:1.05); ;
+                natural gas, burned in boiler
+                                                             CH             0                    MJ                                                       3.85E+0                                                              1            1.26                     (3,4,2,1,1,5,BU:1.05); ;
+                condensing modulating 300kW
+                tap water, at user                           CH             0                    kg                                                         0.0000758                                                          1            1.61                     (3,4,3,3,4,5,BU:1.05); ;
+                monoethanolamine, at plant                   RER            0                    kg                                                           0.000123                                                         1            1.61                     (3,4,3,3,4,5,BU:1.05); ;
+                silicone product, at plant                   RER            0                    kg                                                           0.000364                                                         1            1.61                     (3,4,3,3,4,5,BU:1.05); ;
+                chemicals organic, at plant                  GLO            0                    kg                                                         0.0000264                                                          1            1.61                     (3,4,3,3,4,5,BU:1.05); ;
+                sodium chloride, powder, at plant            RER            0                    kg                                                         0.0000925                                                          1            1.61                     (3,4,3,3,4,5,BU:1.05); ;
+                light fuel oil, at regional storage          CH             0                    kg                                                        0.00000279                                                          1            1.61                     (3,4,3,3,4,5,BU:1.05); ;
+                treatment, sewage, unpolluted, to
+                                                             CH             0                    m3                                                                                                                            1            1.24                     (1,4,1,3,1,5,BU:1.05); ;
+                wastewater treatment, class 3                                                                                                               2.0833E-06
+                disposal, hazardous waste, 25%
+                water, to hazardous waste                    CH             0                    kg                                                                                                                            1            1.30                     (4,2,1,3,1,5,BU:1.05); ;
+                incineration                                                                                                                                      0.00208
+                biogas, from sewage sludge, at
+                                                             CH             0                    Nm3                                                                                                     1.02E+0               1            1.21                     (1,1,1,1,1,5,BU:1.05); ;
+                storage
+                biogas, mix, at agricultural co-
+                                                             CH             0                    Nm3                                                                                                     2.67E-2               1            1.21                     (1,1,1,1,1,5,BU:1.05); ;
+                fermentation, covered
+                biogas, from biowaste, at storage            CH             0                    Nm3                                                                                                     6.25E-1               1            1.21                     (1,1,1,1,1,5,BU:1.05); ;
+
+                biogas purification, to methane, 99
+                                                             CH             0                    Nm3                                                                                                     2.65E-1               1            1.21                     (1,1,1,1,1,5,BU:1.05); ;
+                vol-%, membrane technology process
+
+                biogas purification, to methane, 99
+                                                             CH             0                    Nm3                                                                                                     5.78E-1               1            1.21                     (1,1,1,1,1,5,BU:1.05); ;
+                vol-%, amino washing process
+                biogas purification, to methane, 96
+                                                             CH             0                    Nm3                                                                                                     1.57E-1               1            1.21                     (1,1,1,1,1,5,BU:1.05); ;
+                vol-%, pressure swing adsorption
+emission air,
+high            Heat, waste                                    -               -                 MJ                                                                                                                            1            1.14                     (2,3,2,3,1,4,BU:1.05); ;
+population                                                                                                                                 1.2775                    4.15                  1.2775
+                Carbon dioxide, biogenic                       -               -                 kg                                                                                                                            1            1.31                     (4,3,1,1,1,5,BU:1.05); ;
+                                                                                                                                         0.46896                  0.49866                 0.46896
+                Methane, biogenic                              -               -                 kg                                                                                                                            1            1.56                     (1,1,1,1,1,5,BU:1.5); ;
+                                                                                                                                         0.00461              0.000432                     0.0101
+                Hydrogen sulfide                               -               -                 kg                                                                                                                            1            1.62                     (4,3,1,1,1,5,BU:1.5); ;
+                                                                                                                                     0.00000231                   3.49E-06          2.3107E-06
+                Sulfur dioxide                                 -               -                 kg                                                                                                                            1            1.24                     (1,4,1,1,1,5,BU:1.05); ;
+                                                                                                                                   0.000006599                    5.52E-04          6.5993E-06
+
+Figure 12: Unit process raw data of biogas purification processes
+
+
+
+
+3.1 Biogas purification by Pressure Swing Adsorption
+    (PSA)
+Pressure swing adsorption (PSA) is a physical process for the separation of gas mixtures under pressure by
+means of adsorption. The gas is introduced under increased pressure (usually 6 bar to 10 bar) into a fixed-
+bed reactor which is filled with the adsorbent so that it flows through it. One or more components of the
+mixture (these are called "heavy components") are now adsorbed. At the exit of the bed, the so-called "light
+component" can be removed in concentrated form. After a while, the adsorber bed is largely saturated and a
+part of the heavy component also exits. At this moment, the process is switched over via valves so that the
+outlet for the light component is closed and an outlet for the heavy component is opened. This is accompanied
+by a drop in pressure. At the low pressure, the adsorbed gas is desorbed again and can be recovered at the
+outlet. Two alternately loaded and unloaded adsorbers allow continuous operation. In order to expel the
+
+
+Life Cycle Inventories for Biogas and Biomethane Processes; December 2021                                                                                                                                                                                            Page 20 of 22
+excess of desorbed heavy components from the adsorber bed, a portion of the desired product is rinsed in
+order to avoid impurities.
+
+The inventory is based on data from the BfE report about biogas production (Stucki et al., 2011). Data for
+methane emissions during the purification process were updated based on on-site measurements of TISG
+(Hafner, 2019). He reports mass balanced methane emissions of 1.25% which leads to 0.0101 kg methane
+per m3 of purified biomethane. Data for energy use was updated by Hauser (2017). She reported 0.186 kWh
+of electricity used per m3 of purified biomethane. All other inputs and outputs were not further updated.
+
+
+
+3.2 Biogas purification by Amino Washing
+A typical amine gas treating process includes an absorber unit and a regenerator unit. In the absorber, the
+downflowing amine solution absorbs H2S and CO2 from the upflowing sour gas to produce a gas stream free
+of hydrogen sulphide and carbon dioxide as a product and an amine solution rich in the absorbed acid gases.
+The resultant "rich" amine is then routed into the regenerator (a stripper with a reboiler) to produce regener-
+ated or "lean" amine that is recycled for reuse in the absorber. The stripped overhead gas from the regenerator
+is concentrated H2S and CO2.
+
+The inventory is based on data from a LCA of a Swiss purification plant using amino washing (Zah & Del Duce,
+2014). Data for methane emissions during the purification process were updated based on on-site measure-
+ments of TISG (Hafner, 2019). He reports mass balanced methane emissions of 0.06% which leads to 0.43 g
+methane per m3 of purified biomethane.
+
+
+
+3.3 Biogas purification by Membrane Technology
+Membrane-based biogas upgrading systems utilize the diﬀerent permeabilities of gases through a membrane
+fibre. As biogas passes through a dense polymeric membrane, CO2 is prevented from through-flow and re-
+moved, while CH4 passes through. Membrane-based gas permeation systems consume only electrical power,
+but do not require any chemicals or water. In order to achieve higher methane contents (up to 99% methane)
+in the final gas, the gas passes through serial groups of membranes. Since membranes are sensitive to water
+and other impurities in biogas, gas permeation/membrane systems require eﬃcient pre-treatment (especially
+H2S and water removal).
+
+The inventory is based on data from a LCA of a Swiss purification plant using membrane technology (Willi,
+2019). Data for methane emissions during the purification process were updated based on on-site measure-
+ments of TISG (Hafner, 2019). He reports mass balanced methane emissions of 0.64% which leads to 4.6 g
+methane per m3 of purified biomethane.
+
+
+
+3.4 Purified biogas
+The process “methane, >96% by volume, from biogas, at purification (CH)” was used as a basis. The propor-
+tions per processing technology were adjusted according to Hafner (2019): In terms of purification technolo-
+gies, the most biogas was treated with amine washing in 2018 (203 GWh), followed by membrane technology
+(93 GWh) and PSA technology (55 GWh). 14 GWh are processed otherwise.
+
+
+
+Life Cycle Inventories for Biogas and Biomethane Processes; December 2021                         Page 21 of 22
+```
+
+## Rules
+
+1. Every line item must quote the exact line of the excerpt it comes from (`quote`), with the raw value and raw unit as printed. Never invent a value. If the excerpt gives a range, report the range as `raw_min`/`raw_max` and put your point estimate in `raw_value`.
+2. Report values per the excerpt's own basis (`per`, e.g. "per t burnt shale", "per m2 board"); do not convert. State the reference basis you found in `basis` so the code can scale to 1 m3.
+3. If a value needs a physical conversion (litres of diesel to MJ, m3 of water to kg), give `factor`, `factor_unit` and `factor_source` (a standard value with its source, e.g. "diesel 0.84 kg/l × 42.8 MJ/kg = 36 MJ/l, ecoinvent convention"). Leave `factor` at 1 otherwise.
+4. Classify each line: `kind` = "input" (a product or service from another dataset), "emission" (a direct release to air/water/soil), "resource" (a direct extraction from nature), "product" (the reference product), "co-product" or "ignore" (with a reason).
+5. Propose a `search` phrase (2–4 words) that a name search in a life-cycle database would use: for inputs the supplying dataset in ecoinvent-2 naming style ("diesel burned building machine", "sodium hydroxide production mix"); for emissions and resources the substance in EF 3.1 / ecoinvent nomenclature ("particles PM10" for dust, "nitrogen oxides", "carbon dioxide fossil", "crude oil", "water"). Do not guess the exact name; the search is resolved by code afterwards.
+6. If the excerpt describes allocation (e.g. an economic allocation between co-products), record it in `allocation` and use the allocated column when the table has one. If it states that the composition items add up to a mass ("adds up to 1.00 kg"), put that mass per basis in `mass_sum`, else null.
+7. Mark anything you are unsure about with `confidence` = "low" and say why in `note`. Do not omit uncertain items; the reviewer decides.
+8. Do not add inputs the excerpt does not mention, even if you know the process needs them. Missing items are reported in `gaps` instead.
+
+Return only the JSON object described by the schema.

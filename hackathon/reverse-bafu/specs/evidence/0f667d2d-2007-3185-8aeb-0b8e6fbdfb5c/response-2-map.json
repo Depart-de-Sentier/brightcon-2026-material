@@ -1,0 +1,76 @@
+{
+ "mappings": [
+  {
+   "item": "Ammonia",
+   "chosen": "Ammonia, liquid, at regional storehouse",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The excerpt lists ammonia as a purchased precursor, not as something made on site, so the delivered form ('at regional storehouse') beats the two production routes ('steam reforming' / 'partial oxidation'), which would also force an arbitrary choice between them; this is also what BAFU's own 'Acrylonitrile from Sohio process, at plant' consumes (0.38774 kg of exactly this dataset)."
+  },
+  {
+   "item": "Natural gas, feedstock",
+   "chosen": "Natural gas, high pressure, at consumer",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The reactor feed is gas as delivered, not gas burnt, so the supply dataset is right rather than a furnace; RER beats CH and GLO because the target is a European average."
+  },
+  {
+   "item": "Sulfuric acid (conc.)",
+   "chosen": "Sulphuric acid, liquid, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Generic concentrated sulphuric acid; the runner-up, 'Sulphuric acid from viscose production', is a by-product route from one specific industry and would import a viscose background the excerpt does not mention."
+  },
+  {
+   "item": "Natural gas, process fuel",
+   "chosen": "Heat, natural gas, at industrial furnace 1MW",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Tab. 43.3 is gas burnt as process fuel, so a combustion dataset is needed. 'Heat, natural gas, at industrial furnace 1MW' is the dataset every ecoinvent-v2 organic-chemical unit process in BAFU uses for exactly this (2.0 MJ of it appears in Cumene, Ethyl benzene, Bisphenol A, Phosgene and Aniline), which beats the near-identical 'Natural gas, burned in industrial furnace 1MW' on consistency with the family; 'xxx Heat ... low-NOx' is an xx-marked legacy dataset and 'District heat, at consumer' is the wrong delivery form."
+  },
+  {
+   "item": "Dust (SPM)",
+   "chosen": "Particles (PM10)",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "'Dust (SPM)' is a single unspeciated particulate figure; of the candidates only the particle flows are the right substance, and PM10 is the ecoinvent/EF convention for an unspeciated dust figure - it beats 'Particles (PM0.2)', which would claim a fineness the report does not state, and 'Particulates, unspecified' in bafu-2026-residual, which has no EF counterpart and would add a flow the target does not carry."
+  },
+  {
+   "item": "SOx",
+   "chosen": "Sulfur Dioxide",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "SOx reported as one figure is inventoried as SO2 in ecoinvent and EF 3.1, and the target's own vector carries Sulfur Dioxide, not Sulfur Oxides; the emissions-to-air compartment beats the soil and water entries of the same flow."
+  },
+  {
+   "item": "CH4",
+   "chosen": "Methane (fossil)",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "The methane comes from natural gas, so the fossil flow, not the biogenic one; 'Methanethiol' and 'Methanesulfonic Acid' are different substances that only match the search string."
+  },
+  {
+   "item": "NOx",
+   "chosen": "Nitrogen Oxides",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "NOx as a sum is the 'Nitrogen Oxides' flow; 'Nitrogen Dioxide' would claim a speciation the report does not give and 'Nitrogen' is the element."
+  },
+  {
+   "item": "CO2",
+   "chosen": "Carbon Dioxide (fossil)",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "Fossil carbon from natural gas; the biogenic and land-use-change variants are the wrong origin, and the 'Resources from air' entries are uptake, not release."
+  }
+ ]
+}

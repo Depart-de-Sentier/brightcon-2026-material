@@ -1,0 +1,48 @@
+<section id="community" data-transition="fade" style="background:#f0e9e1">
+  <p id="e1-17snhwu" style="position:absolute; bottom:40px; left:128px; width:1664px; font-family:Quicksand, Arial, sans-serif; font-size:24px; font-weight:500; line-height:1.4; color:#7e857f">¹ src/reverse_bafu/ &nbsp;·&nbsp; ² exports/disaggregated_bafu2026.json, scripts/import_disaggregated.py &nbsp;·&nbsp; ³ results/benchmark/flow-n100-seed7.csv</p>
+  <h2 id="af4ac8e9" style="position:absolute; top:112px; left:128px; width:1664px; font-family:Quicksand, Arial, sans-serif; font-size:72px; font-weight:400; line-height:1.08; color:#2b2b2b">What works, what's next</h2>
+  <div id="4ecddc94" style="position:absolute; top:226px; left:128px; width:1664px; height:492px; display:flex; flex-direction:row; gap:40px">
+    <div style="display:flex; flex-direction:column; gap:24px; flex:1; padding:40px; background:#ffffff; border:1px solid #dcd3c7; border-radius:4px">
+      <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:30px; font-weight:700; color:#3c5343">Working today</h3>
+      <div style="display:flex; flex-direction:row; gap:18px">
+        <div style="display:flex; flex-direction:column; flex:0 0 12px; padding:14px 0 0">
+          <div style="width:12px; height:12px; display:flex; flex-direction:column; background:#3c5343">
+          </div>
+        </div>
+        <p style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:500; line-height:1.4; color:#2b2b2b"><b>End-to-end pipeline:</b> system process + extra information (report table, free text, a same-product unit process) → a linked, traceable unit process<span style="color:#5e8a74">¹</span></p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:18px">
+        <div style="display:flex; flex-direction:column; flex:0 0 12px; padding:14px 0 0">
+          <div style="width:12px; height:12px; display:flex; flex-direction:column; background:#3c5343">
+          </div>
+        </div>
+        <p style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:500; line-height:1.4; color:#2b2b2b"><b>51 system processes rebuilt</b> and importable into any Brightway BAFU‑2026 project<span style="color:#5e8a74">²</span></p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:18px">
+        <div style="display:flex; flex-direction:column; flex:0 0 12px; padding:14px 0 0">
+          <div style="width:12px; height:12px; display:flex; flex-direction:column; background:#3c5343">
+          </div>
+        </div>
+        <p style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:500; line-height:1.4; color:#2b2b2b"><b>Benchmarked</b> on 100 processes we aggregated ourselves: right input list → 772 / 786 input amounts recovered<span style="color:#5e8a74">³</span></p>
+      </div>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:24px; flex:1; padding:40px; background:#3c5343; border-radius:4px">
+      <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:30px; font-weight:700; color:#f0e9e1">Next steps</h3>
+      <div style="display:flex; flex-direction:row; gap:18px">
+        <div style="display:flex; flex-direction:column; flex:0 0 12px; padding:14px 0 0">
+          <div style="width:12px; height:12px; display:flex; flex-direction:column; background:#84ae99">
+          </div>
+        </div>
+        <p style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:500; line-height:1.4; color:#d9e3dc"><b>Real-world challenges</b> (e.g. system processes that declare only part of their flows)</p>
+      </div>
+      <div style="display:flex; flex-direction:row; gap:18px">
+        <div style="display:flex; flex-direction:column; flex:0 0 12px; padding:14px 0 0">
+          <div style="width:12px; height:12px; display:flex; flex-direction:column; background:#84ae99">
+          </div>
+        </div>
+        <p style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:500; line-height:1.4; color:#d9e3dc"><b>Little or no information → system experts:</b> peer-reviewed, transparent models for whole classes of similar products</p>
+      </div>
+    </div>
+  </div>
+  <aside>Three things work today. First, an end-to-end pipeline: give it an aggregated system process and whatever extra information exists, an input table in the cited report, a free-text process description, or a unit process of the same product elsewhere in the database, and it produces a unit process whose inputs link into the database, with every amount pointing to the sentence it came from and a residual block so that no result changes. Second, we applied it to BAFU-2026: 51 of the 138 system processes we investigated are rebuilt and exported, with an importer that writes them into any Brightway project that holds BAFU-2026. Third, we benchmarked it on a hundred unit processes that we aggregated ourselves, so the right answer is known. Given the right input list, 772 of 786 input amounts come back within twenty percent, and a few wrong candidates on the list are set to zero; with no list at all and every dataset in the database on offer, the fit matches the elementary flows, a median of one hundred percent within ten percent, with a process of its own making, so a good match of the elementary flows does not prove the inputs. The reading step on its own, run end to end on a hundred reports, found the right pages for 58 and extracted input lists with 56 percent recall and 71 percent precision. Next steps. First, the real world is harder than the benchmark: some originals declare only part of their elementary flows, like the twelve APME eco-profiles with about a hundred and forty substances of their own and the rest as waste-link traces, so a rebuild with a full background overshoots on everything they never measured; the originals were computed on older background data; nineteen rebuilds still link to system processes we could not resolve; inputs whose inventories are nearly identical cannot be told apart by any fit; and some emissions end up in another sub-compartment than the original books them in. Then, quality needs domain experts: without a known answer we can only compare elementary flows, and on the real datasets they match loosely. Twenty-three percent of the elementary flows both sides have are within ten percent, and on climate change (EF 3.1) 11 of the 51 are within ten percent, 26 within twenty-five percent. Likely reasons: the originals were computed on older background data, and even BAFU's own dis-aggregated epoxy misses its aggregate's climate change score by a factor of 2.7; amounts the reports name but never give, which the fit pushes to a bound, as eight in ten of the amounts with printed bounds are; and modelling choices such as allocation or the compartment an emission is booked to. Where there is little or no information, the algorithm has nothing to work from, and that is work for people with system knowledge. The best outcome would be peer-reviewed, transparent models that rebuild a whole class of similar products at once, one polymerisation model for the plastics eco-profiles, one composition model for the cement blends, rather than one dataset at a time.</aside>
+</section>

@@ -1,0 +1,170 @@
+{
+  "target": {
+    "code": "582ad303-7f18-3110-83c2-bccca0dc995f",
+    "name": "Ethylene glycol, at plant",
+    "location": "RER"
+  },
+  "strategy": {
+    "code": "S2",
+    "label": "vintage transfer: the ecoinvent v2 unit process of the same product, transcribed from its report table and verified against the two co-products BAFU still carries",
+    "note": "The cited report (Rajabihamedani 2025) prints no unit process - it documents only the post-processing of a PlasticsEurope system process (see specs/evidence/582ad303-.../response-0-locate.json). The inventory here is transcribed from Althaus 2007, ecoinvent report No. 8, Tab. 35.3, which documents the multi-output process 'ethylene oxide, in ethylene glycol plant' that ecoinvent v2 used for this same dataset name, and allocated to MEG with the report's own 85 % price-times-mass factor over its 0.825 kg of MEG. The transcription is verified, not assumed: applying the same table with the DEG factor (7 %/0.1 kg) and the TEG factor (8 %/0.04 kg) reproduces BAFU's own 'Diethylene glycol, at plant' and 'Triethylene glycol, at plant' unit processes on all eleven exchanges the table covers - exactly on nine of them (ethylene oxide 0.4921 kg, electricity 0.2639 kWh, chemical plant 2.8E-10, waste heat 0.945 MJ, acetaldehyde 9.8E-07, ethylene 4.2E-06, water 0.0042 m3, and the TEG column 1.406 / 0.754 / 8E-10) and to 0.15 % on the two four-digit ones (COD/BOD 2.013E-04 against 2.016E-04, TOC/DOC 5.248E-05 against 5.250E-05). The twelfth exchange, the waterborne water emission, is not in Tab. 35.3 at all and is taken from the co-products' own 0.95 ratio. This is S2 and not S1 because the BAFU dataset being rebuilt is the PlasticsEurope 2019 eco-profile (reference year 2023), a different data generation from the 1997-2000 ecoinvent v2 inventory transcribed here; the structure is the same product's, the vintage is not. Steam is calibrated because Tab. 35.3 omits it and sec. 35.6.2 says so explicitly, and the infrastructure is calibrated between 0 and the transcribed 4.1212E-10 because the ethylene-oxide precursor already carries one chemical plant of its own."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI chemicals - Althaus.pdf",
+      "where": "Tab. 35.3 (printed p. 307, PDF p. 388), ch. 35 Ethylene Glycol",
+      "note": "Multi-output process 'ethylene oxide, in ethylene glycol plant' [RER], per 1 kg: ethylene oxide, at plant 7.03E-1 kg; electricity, medium voltage, production UCTE, at grid 3.77E-1 kWh; chemical plant, organics 4.00E-10 unit; Water, unspecified natural origin 6.00E-03 m3; Heat, waste 1.35E+00 MJ; Acetaldehyde 1.40E-06 kg; Ethene 6.00E-06 kg; BOD5 2.88E-04 kg; COD 2.88E-01 kg (see note below); DOC 7.50E-05 kg; TOC 7.50E-05 kg. Outputs diethylene glycol 0.1 kg, ethylene glycol 0.825 kg, triethylene glycol 0.04 kg, with the allocation row 7 / 85 / 8 %. Every amount below is that column times 0.85/0.825 = 1.030303."
+    },
+    {
+      "source": "2007 - LCI chemicals - Althaus.pdf",
+      "where": "Tab. 35.2 and sec. 35.6.1",
+      "note": "'It is assumed that an average 82.5% of the glycols consists of MEG. This report assumes that a further 10% is DEG, the remainder being TEG and heavy glycols.' Tab. 35.2 gives Input: Ethylene oxide 703, Output: MEG 825, DEG 100, TEG 40, Heavy glycols 35 (kg), with price x mass allocation factors 85 / 7 / 8 %. Sec. 35.5 notes the wider IPPC range: 'the glycol products typically consists of 70 - 95% w/w of MEG' - the 82.5 % split is one point in it."
+    },
+    {
+      "source": "2007 - LCI chemicals - Althaus.pdf",
+      "where": "sec. 35.6.2 Energy usage",
+      "note": "'It must be assumed that some steam is utilized for glycol distillation. No figures are given. Electrical energy consumption is given as 0.377 kWh / kg in (BUWAL 232).' The steam input is therefore in the model but calibrated, unbounded - the report names it and refuses to quantify it."
+    },
+    {
+      "source": "bafu-2026: Diethylene glycol, at plant [RER] and Triethylene glycol, at plant [RER]",
+      "where": "cross-check of the transcription",
+      "note": "Both are 3-input unit processes still in BAFU-2026 and are the co-products of the very table transcribed here. Tab. 35.3 x 0.07/0.1 gives ethylene oxide 0.4921 kg, electricity 0.2639 kWh, chemical plant 2.80E-10 unit, water 0.0042 m3, waste heat 0.945 MJ, acetaldehyde 9.8E-07, ethylene 4.2E-06, BOD 2.016E-04, COD 2.016E-04, DOC/TOC 5.25E-05 - which is exactly what BAFU's DEG carries (0.4921 / 0.2639 / 2.8E-10 / 0.0042 / 0.945 / 9.8E-07 / 4.2E-06 / 2.013E-04 / 2.013E-04 / 5.248E-05). Same for TEG at 0.08/0.04 (EO 1.406, electricity 0.754, plant 8E-10). Two consequences: the transcription is verified, and the report's COD of 2.88E-01 kg is a typo for 2.88E-04 (the co-products carry BOD = COD), which is what is used here. The co-products also fix the water balance, 0.00399/0.0042 = 0.95 of the water input leaving as a waterborne emission; Tab. 35.3 gives only the input."
+    },
+    {
+      "source": "2025 - LCI plastics - Rajabihamedani.pdf",
+      "where": "sec. 3.6 Infrastructure",
+      "note": "'For all datasets, the inventory regarding infrastructure contributions was checked and supplemented. For the implementation, the dataset \"Chemical plant, organics {RER}U\" is used. The quantity is the standard amount for production of chemicals of 4.0E-10 p.' The BAFU target indeed carries 4.0E-10 p, and Tab. 35.3 gives the same 4.00E-10 unit - the two vintages agree on this one input."
+    }
+  ],
+  "node": {
+    "name": "Ethylene glycol, at plant, disaggregated",
+    "unit": "kilogram",
+    "location": "RER",
+    "comment": "Unit process of the glycol section of an integrated EO/EG plant, per kg of MEG. Althaus 2007 Tab. 35.3 x 0.85/0.825. Steam calibrated (the report names it and gives no figure). The waste-treatment services and the infrastructure that BAFU's own aggregated dataset already carries explicitly are deliberately NOT copied into this model except for the infrastructure the report states; the point of the rebuild is the production chain, which is the part that was collapsed away.",
+    "inputs": [
+      {
+        "name": "Ethylene oxide, at plant",
+        "amount": 0.7243030303030302,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "Tab. 35.3 'ethylene oxide, at plant' 7.03E-01 kg x 0.85/0.825; precursor, reaction (2) C2H4O + H2O -> HO-C2H4-OH",
+        "code": "6ab29660-cc4e-30a3-aaa1-f175fa54dd61"
+      },
+      {
+        "name": "Electricity, medium voltage, production ENTSO-E, at grid",
+        "amount": 0.3884242424242424,
+        "unit": "kilowatt hour",
+        "location": "ENTSO-E",
+        "note": "Tab. 35.3 'electricity, medium voltage, production UCTE, at grid' 3.77E-01 kWh x 0.85/0.825 (BUWAL 232); UCTE -> the ENTSO-E successor dataset BAFU carries",
+        "code": "648e3bb3-7b98-46f8-9da1-f45627c309ef"
+      },
+      {
+        "name": "Chemical plant, organics",
+        "amount": 0.0,
+        "unit": "unit",
+        "location": "RER",
+        "note": "Tab. 35.3 4.00E-10 unit x 0.85/0.825 = 4.1212E-10, and Rajabihamedani sec. 3.6 gives the same 4.0E-10 p for the target - both vintages agree on it, which is why that is the upper bound. It is a bound and not the amount because 'Ethylene oxide, at plant' already carries its own 4.0E-10, and this one exchange is where 1316 of the target's 1790 cumulative flows get more than 90 % of their value from, so stacking two doubles three quarters of the vector; the fit decides how much of it belongs here (see scripts/plasticseurope_infrastructure_diagnostic.py).",
+        "code": "13ed4fe0-7ba5-3b60-82b6-a63918ee814d",
+        "free": true,
+        "bounds": [
+          0.0,
+          4.121212121212121e-10
+        ]
+      },
+      {
+        "name": "Steam, for chemical processes, at plant",
+        "amount": 0.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "free": true,
+        "note": "sec. 35.6.2: 'It must be assumed that some steam is utilized for glycol distillation. No figures are given.' Named by the report, not quantified -> calibrated, unbounded. The 0.5 start value is arbitrary and is overwritten by the fit.",
+        "code": "ca51da0f-d926-3dbe-bc07-e0449bb7dcab"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Waste Heat",
+        "category": "air",
+        "amount": 1.3909090909090909,
+        "unit": "megajoule",
+        "note": "Tab. 35.3 'Heat, waste' 1.35E+00 MJ x 0.85/0.825",
+        "code": "08a91e70-3ddc-11dd-9136-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Acetaldehyde",
+        "category": "air",
+        "amount": 1.4424242424242424e-06,
+        "unit": "kilogram",
+        "note": "Tab. 35.3 1.40E-06 kg x 0.85/0.825 (IPPC Chemicals 2002, table 9.9 point sources)",
+        "code": "fe0acd60-3ddc-11dd-a7a5-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Ethylene",
+        "category": "air",
+        "amount": 6.181818181818182e-06,
+        "unit": "kilogram",
+        "note": "Tab. 35.3 'Ethene' 6.00E-06 kg x 0.85/0.825",
+        "code": "fe0acd60-3ddc-11dd-a47d-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Biological Oxygen Demand",
+        "category": "water",
+        "amount": 0.0002967272727272727,
+        "unit": "kilogram",
+        "note": "Tab. 35.3 'BOD5' 2.88E-04 kg x 0.85/0.825",
+        "code": "08a91e70-3ddc-11dd-97de-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Chemical Oxygen Demand",
+        "category": "water",
+        "amount": 0.0002967272727272727,
+        "unit": "kilogram",
+        "note": "Tab. 35.3 prints 'COD' 2.88E-01 kg; BAFU's DEG/TEG co-products carry COD = BOD, so the printed exponent is a typo for 2.88E-04. x 0.85/0.825",
+        "code": "08a91e70-3ddc-11dd-97ed-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "DOC, Dissolved Organic Carbon",
+        "category": "water",
+        "amount": 7.727272727272726e-05,
+        "unit": "kilogram",
+        "note": "Tab. 35.3 7.50E-05 kg x 0.85/0.825",
+        "code": "21291e2b-f570-4264-a430-1522a6d67805",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Total Organic Carbon",
+        "category": "water",
+        "amount": 7.727272727272726e-05,
+        "unit": "kilogram",
+        "note": "Tab. 35.3 7.50E-05 kg x 0.85/0.825",
+        "code": "4d9a8790-3ddd-11dd-8e7d-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Water",
+        "category": "water",
+        "amount": 0.0058727272727272725,
+        "unit": "cubic meter",
+        "note": "not in Tab. 35.3; the ecoinvent v2 water balance, 0.00399/0.0042 = 0.95 of the water input, read off BAFU's DEG and TEG co-products",
+        "code": "a3876d9b-a3e8-4680-861a-4e08642f1392",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": [
+      {
+        "name": "Water",
+        "category": "resources",
+        "amount": 0.0061818181818181816,
+        "unit": "cubic meter",
+        "note": "Tab. 35.3 'Water, unspecified natural origin' 6.00E-03 m3 x 0.85/0.825",
+        "code": "419682fe-60fb-4b43-be89-bf2824b51104",
+        "database": "ef-3.1-biosphere"
+      }
+    ]
+  }
+}

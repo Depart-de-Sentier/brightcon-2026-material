@@ -1,0 +1,367 @@
+{
+  "target": {
+    "code": "1b7a81dc-1797-3c93-ae60-f239501da3c3",
+    "name": "Wood preservative, organic salt, Cr-free, at plant",
+    "location": "RER"
+  },
+  "variant": "draft",
+  "strategy": {
+    "code": "S3",
+    "label": "top-down model drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: per 1 kg of wood preservative; the table's product row reads 'wood preservative, organic salt, Cr-free, at plant  1.00E+00 kg'; allocation: none stated; single-product process; 3 of 10 inputs carry a printed amount, 6 a printed range, 1 no number in the report (xxx Electricity, medium voltage, production UCTE, at grid). Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI wood as fuel and const. mat. - Werner.pdf",
+      "where": "pages 142-143 -> report-p142-143.txt",
+      "note": "report sha256 1f2e06f8a69ca03e…, text sha256 d524eed8723d014c…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "specs/evidence/1b7a81dc-1797-3c93-ae60-f239501da3c3/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5[1m]",
+      "prompt_sha256": "1cedc9d3840126d6ecc83ae06fd4fcb471be9d216c01c9e68bf3a365378907f4",
+      "at": "2026-09-22T19:49:56Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5[1m]",
+      "prompt_sha256": "ffaa6150f15cb2d0ee00566fbd5736faf269028d4d09ddff1243c0fff511c5a4",
+      "at": "2026-09-22T19:49:58Z"
+    },
+    "gaps_reported_by_model": [
+      "Every material amount except the Copper-HDO total (0.061 kg) is printed as 'confidential'; they are free parameters for calibration, not report numbers.",
+      "The split of the 0.061 kg Copper-HDO between triethanolamine and copper oxide is not given.",
+      "No process emissions are documented; only the calculated waste heat.",
+      "The bounds on the confidential rows are wide search ranges chosen here, not values from the report."
+    ],
+    "skipped_items": [
+      "wood preservative, organic salt, Cr-free, at plant: product — Reference product; fixes the basis at 1 kg."
+    ],
+    "assembled_at": "2026-09-22T19:49:58Z"
+  },
+  "node": {
+    "name": "Wood preservative, organic salt, Cr-free, at plant, disaggregated",
+    "unit": "kg",
+    "location": "RER",
+    "comment": "drafted from 2007 - LCI wood as fuel and const. mat. - Werner.pdf pp. 142-143",
+    "inputs": [
+      {
+        "name": "Boric acid, anhydrous, powder, at plant",
+        "amount": 0.001,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "The report prints 'confidential' in the Mean value column for this row. The input itself is explicitly listed, so it is kept with raw_value as a seed only (NOT a reported number) and a wide raw_min/raw_max range, which makes it a free parameter the calibration step determines.",
+        "derivation": {
+          "evidence": "report-p142-143.txt",
+          "quote": "Boric acid (H3BO3) Î chemicals inorganics No RER boric acid, anhydrous, powder, at plant confidential kg Künniger et al. 2000",
+          "raw_value": 0.1,
+          "raw_unit": "kg",
+          "per": "per kg wood preservative",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "boric acid anhydrous powder",
+          "mapping_reason": "The only candidate and the exact dataset the report names.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "free": true,
+        "bounds": [
+          0.001,
+          1.0
+        ],
+        "code": "03b94c73-7c4c-35b9-bc43-a9e013f10a75"
+      },
+      {
+        "name": "Ethylenediamine, at plant",
+        "amount": 0.001,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "The report prints 'confidential' in the Mean value column for this row. The input itself is explicitly listed, so it is kept with raw_value as a seed only (NOT a reported number) and a wide raw_min/raw_max range, which makes it a free parameter the calibration step determines.",
+        "derivation": {
+          "evidence": "report-p142-143.txt",
+          "quote": "Ethylenediamine Î chemicals organics No RER ethylenediamine, at plant confidential kg Künniger et al. 2000",
+          "raw_value": 0.1,
+          "raw_unit": "kg",
+          "per": "per kg wood preservative",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "ethylenediamine plant",
+          "mapping_reason": "Exact substance; EDTA is a different, larger molecule.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "free": true,
+        "bounds": [
+          0.001,
+          1.0
+        ],
+        "code": "8db934a5-1264-328d-84c4-fd595209fe6f"
+      },
+      {
+        "name": "Copper carbonate, at plant",
+        "amount": 0.001,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "The report prints 'confidential' in the Mean value column for this row. The input itself is explicitly listed, so it is kept with raw_value as a seed only (NOT a reported number) and a wide raw_min/raw_max range, which makes it a free parameter the calibration step determines.",
+        "derivation": {
+          "evidence": "report-p142-143.txt",
+          "quote": "Copper (II) carbonate Î chemicals inorganics No RER copper carbonate, at plant confidential kg Künniger et al. 2000",
+          "raw_value": 0.1,
+          "raw_unit": "kg",
+          "per": "per kg wood preservative",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "copper carbonate plant",
+          "mapping_reason": "Exact substance; copper oxide is the other, separately listed copper input.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "free": true,
+        "bounds": [
+          0.001,
+          1.0
+        ],
+        "code": "90492efb-9541-3939-9aff-b9ca938b17d5"
+      },
+      {
+        "name": "Triethanolamine, at plant",
+        "amount": 0.00010000000000000002,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "The report prints 'confidential' in the Mean value column for this row. The input itself is explicitly listed, so it is kept with raw_value as a seed only (NOT a reported number) and a wide raw_min/raw_max range, which makes it a free parameter the calibration step determines. The remark column does print a total: 'Total Copper-HDO 0.061 kg. Balanced as ethanolmanine and copperoxide'. The split between the two rows is not given, so raw_max is that stated total (0.061 kg) for each of the two rows.",
+        "derivation": {
+          "evidence": "report-p142-143.txt",
+          "quote": "Total Copper-HDO 0.061 kg. Balanced as ethanolmanine and copperoxide / Copper-HDO Î chemicals organics No RER triethanolamine, at plant confidential kg",
+          "raw_value": 0.03,
+          "raw_unit": "kg",
+          "per": "per kg wood preservative",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "triethanolamine plant",
+          "mapping_reason": "The report models the organic half of Copper-HDO as triethanolamine; this is that dataset.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "free": true,
+        "bounds": [
+          0.0001,
+          0.061
+        ],
+        "code": "f9a82b94-96af-328c-aa75-bef4103d4a6c"
+      },
+      {
+        "name": "Copper oxide, at plant",
+        "amount": 0.00010000000000000002,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "The report prints 'confidential' in the Mean value column for this row. The input itself is explicitly listed, so it is kept with raw_value as a seed only (NOT a reported number) and a wide raw_min/raw_max range, which makes it a free parameter the calibration step determines. Second half of the 0.061 kg Copper-HDO stated in the remark column.",
+        "derivation": {
+          "evidence": "report-p142-143.txt",
+          "quote": "Total Copper-HDO 0.061 kg. Balanced as ethanolmanine and copperoxide / Copper-HDO Î chemicals inorganics No RER copper oxide, at plant confidential kg",
+          "raw_value": 0.03,
+          "raw_unit": "kg",
+          "per": "per kg wood preservative",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "copper oxide plant",
+          "mapping_reason": "The report models the inorganic half of Copper-HDO as copper oxide; exact substance match.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "free": true,
+        "bounds": [
+          0.0001,
+          0.061
+        ],
+        "code": "87f791bb-fc12-31eb-ae1e-387398762a32"
+      },
+      {
+        "name": "xxx Electricity, medium voltage, production UCTE, at grid",
+        "amount": 0.25819394627730424,
+        "unit": "kilowatt hour",
+        "location": "UCTE",
+        "note": "The report prints 'confidential' in the Mean value column for this row. The input itself is explicitly listed, so it is kept with raw_value as a seed only (NOT a reported number) and a wide raw_min/raw_max range, which makes it a free parameter the calibration step determines.",
+        "derivation": {
+          "evidence": "report-p142-143.txt",
+          "quote": "Electricity medium voltage - at grid UCTE Î electricity production mix No UCTE electricity, medium voltage, production UCTE, at grid confidential kWh",
+          "raw_value": 0.03,
+          "raw_unit": "kWh",
+          "per": "per kg wood preservative",
+          "factor": 1.0,
+          "factor_unit": "kWh",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "electricity medium voltage UCTE",
+          "mapping_reason": "The report names 'electricity, medium voltage, production UCTE, at grid'; this candidate is that exact dataset at UCTE, beating the RER/CH grid mixes and the single-fuel UCTE variants.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "free": true,
+        "bounds": [
+          0.0001,
+          5.0
+        ],
+        "code": "d86e2374-784b-3fd9-910b-7583462ea81b"
+      },
+      {
+        "name": "Tap water, at user",
+        "amount": 0.54440548462518,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "The report prints 'confidential' in the Mean value column for this row. The input itself is explicitly listed, so it is kept with raw_value as a seed only (NOT a reported number) and a wide raw_min/raw_max range, which makes it a free parameter the calibration step determines.",
+        "derivation": {
+          "evidence": "report-p142-143.txt",
+          "quote": "Tap water Î water supply production No RER tap water, at user confidential kg Künniger et al. 2000",
+          "raw_value": 1.0,
+          "raw_unit": "kg",
+          "per": "per kg wood preservative",
+          "factor": 1.0,
+          "factor_unit": "kg",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "tap water user",
+          "mapping_reason": "The report names 'tap water, at user'; the plain RER dataset matches name and location, beating the CH/DE copies and the MoeK-2013 water-balance variants.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "free": true,
+        "bounds": [
+          0.001,
+          100.0
+        ],
+        "code": "6556440f-cd03-3975-9615-023309701fe2"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.384,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "Printed value.",
+        "derivation": {
+          "evidence": "report-p142-143.txt",
+          "quote": "Transport rail Î Chemicals: 600 km transport systems train No RER transport, freight, rail 3.84E-01 tkm estimated",
+          "raw_value": 0.384,
+          "raw_unit": "tkm",
+          "per": "per kg wood preservative",
+          "factor": 1.0,
+          "factor_unit": "tkm",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "The report names 'transport, freight, rail' without a traction specification, which is exactly this RER average; the electricity-only and CH shunting variants are narrower.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 0.0639,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "Printed value.",
+        "derivation": {
+          "evidence": "report-p142-143.txt",
+          "quote": "Transport lorry Chemicals: 100 km transport systems road No RER transport, lorry >16t, fleet average 6.39E-02 tkm estimated",
+          "raw_value": 0.0639,
+          "raw_unit": "tkm",
+          "per": "per kg wood preservative",
+          "factor": 1.0,
+          "factor_unit": "tkm",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "transport lorry 16t fleet average",
+          "mapping_reason": "The report names 'transport, lorry >16t, fleet average'; the 16t-32t RER fleet average is that dataset at the process's own location, beating the CH copy and the other weight classes.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "85b3a5a6-2635-3546-b51b-4ccad397650b"
+      },
+      {
+        "name": "Chemical plant, organics",
+        "amount": 4e-10,
+        "unit": "unit",
+        "location": "RER",
+        "note": "Infrastructure proxy, printed value.",
+        "derivation": {
+          "evidence": "report-p142-143.txt",
+          "quote": "plant Î organic plant as proxy chemicals organics Yes RER chemical plant, organics 4.00E-10 unit estimated",
+          "raw_value": 4e-10,
+          "raw_unit": "unit",
+          "per": "per kg wood preservative",
+          "factor": 1.0,
+          "factor_unit": "unit",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "search": "chemical plant organics",
+          "mapping_reason": "The exact infrastructure module the report names.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "13ed4fe0-7ba5-3b60-82b6-a63918ee814d"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Waste Heat",
+        "category": "air",
+        "amount": 0.072,
+        "unit": "megajoule",
+        "note": "Printed value.",
+        "derivation": {
+          "evidence": "report-p142-143.txt",
+          "quote": "Waste heat into air Î air unspecified Heat, waste 7.20E-02 MJ calculated",
+          "raw_value": 0.072,
+          "raw_unit": "MJ",
+          "per": "per kg wood preservative",
+          "factor": 1.0,
+          "factor_unit": "MJ",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5[1m]",
+          "reviewed_by": null,
+          "mapping_reason": "'Heat, waste' to air unspecified; Waste Heat [air] in EF 3.1 is the substance and compartment, beating the soil/water copies and the residual-database groundwater flow.",
+          "mapping_by": "claude-code:claude-opus-5[1m]"
+        },
+        "code": "08a91e70-3ddc-11dd-9136-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": []
+  }
+}

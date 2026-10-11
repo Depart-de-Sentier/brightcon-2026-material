@@ -1,0 +1,115 @@
+{
+  "target": {
+    "code": "405ca232-c566-37a2-98a7-913d686ea0e3",
+    "name": "Heat, residential, by conversion of hydrogen using fuel cell, SOFC, allocated by exergy, distributed by pipeline, produced by Electrolysis, PEM using electricity from Solar PV + Wind (MA)",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Figure 31 'Schematic mass and energy balance for the heat supply via hydrogen conversion in a fuel cell system' (p.85, the SOFC block) together with Tab. 55 'Specifications for a 125-kWel SOFC fuel cell system' (p.84); per 1 MJ of heat; allocation: Allocated by exergy between heat and electricity, as the dataset name says; the numerical exergy allocation factor is NOT given in this excerpt.. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2024 - LCA power-to-X in residential sector - Sacchi.pdf",
+      "where": "pages 84-86 -> report-p84-86.txt",
+      "note": "report sha256 165eb1e3cb0728f7…, text sha256 102f9702f0c8e923…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/405ca232-c566-37a2-98a7-913d686ea0e3/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "f899d2df1783151c039d444576484589b10e22095796e99531a07d30acd8f6a2",
+      "at": "2026-09-22T21:12:30Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "79b56e6f7de8dfb8cc41934c8ef00765fae221a0b309d4d9c7f0e2edbaf38b87",
+      "at": "2026-09-22T21:12:31Z"
+    },
+    "gaps_reported_by_model": [
+      "The exergy allocation factor between heat and electricity is not in the excerpt - only the PEM counterpart (Tab. 50/51) exists, on pages outside this range. Every allocated amount is therefore a range, not a value.",
+      "The hydrogen storage and use LOSSES - Figure 31's second hydrogen line '((1+storage loss)*(1+use loss)-1)*hydrogen input' - cannot be quantified: the loss rates are in Tab. 7 (p.26), outside this excerpt.",
+      "The 'Hydrogen (to air)' emission is labelled only 'losses', with no number.",
+      "The high-pressure hydrogen storage tank (2.08e-4 unit per kg of hydrogen) applies only 'If delivery by truck'; this dataset is distributed by PIPELINE, so it is deliberately left out.",
+      "Which hydrogen supply dataset to draw (PEM electrolysis with Moroccan solar+wind electricity) is named in the dataset title but the excerpt gives no inventory for it.",
+      "'others' in Figure 31 is an unlabelled input box with no content."
+    ],
+    "skipped_items": [
+      "fuel cell production, stack solid oxide, 125kW electrical, future: no dataset chosen (The keyword search returned no candidate at all for a solid-oxide fuel cell stack, so nothing can be chosen and the line is reported as missing.)",
+      "maintenance, solid oxide fuel cell 125kW electrical, future: no dataset chosen (The keyword search returned no candidate at all for the maintenance of a solid-oxide fuel cell, so nothing can be chosen.)"
+    ],
+    "assembled_at": "2026-09-22T21:12:31Z"
+  },
+  "node": {
+    "name": "Heat, residential, by conversion of hydrogen using fuel cell, SOFC, allocated by exergy, distributed by pipeline, produced by Electrolysis, PEM using electricity from Solar PV + Wind (MA), disaggregated",
+    "unit": "MJ",
+    "location": "CH",
+    "comment": "drafted from 2024 - LCA power-to-X in residential sector - Sacchi.pdf pp. 84-86",
+    "inputs": [
+      {
+        "name": "Hydrogen, gaseous, 25 bar, from electrolysis",
+        "amount": 0.0012599999999999998,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "Figure 31: the hydrogen input is '1 MJ / 120 MJ/kg / thermal eff. * allocation factor'. With the 33.0 % heat conversion efficiency of Tab. 55 the unallocated need is 1/120/0.33 = 2.525E-2 kg H2 per MJ heat. The EXERGY ALLOCATION FACTOR is not in this excerpt (the SOFC counterpart of Tab. 50 is missing), so the point estimate assumes a heat share of about 10 % (33 % thermal against 47 % electrical efficiency, low-grade residential heat) and the bounds span a heat share of 5 % to 100 %.",
+        "derivation": {
+          "evidence": "report-p84-86.txt",
+          "quote": "    1 MJ/120 MJ/kg/thermal or electric",
+          "raw_value": 0.00253,
+          "raw_unit": "kg",
+          "per": "per MJ of residential heat from the SOFC",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "hydrogen gaseous at consumer",
+          "mapping_reason": "The dataset is fed by PEM electrolysis hydrogen delivered by pipeline, and 'Hydrogen, gaseous, 25 bar, from electrolysis' is the only electrolytic, non-fuelling-station, non-SOEC/AEC-specific candidate; the Moroccan solar+wind feedstock variant does not appear in the list, so this is the closest electrolytic hydrogen at pipeline pressure. The pyrolysis and SMR candidates are the wrong production route and the 700 bar fuelling-station ones the wrong delivery.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "free": true,
+        "bounds": [
+          0.00126,
+          0.02525
+        ],
+        "code": "9a8f07bb-a411-382d-b5a6-0c7f422000d4"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Water",
+        "category": "air",
+        "amount": 0.2273,
+        "unit": "kilogram",
+        "note": "Figure 31, blue (biosphere) number: '1 MJ/120 MJ/thermal eff. * 9 kg' = 2.525E-2 kg H2 x 9 kg water per kg H2 = 0.227 kg water vapour to air. The figure prints no allocation factor on this flow although the hydrogen input carries one, so this value may be inconsistent with the allocated hydrogen input above.",
+        "derivation": {
+          "evidence": "report-p84-86.txt",
+          "quote": "                                                      using fuel cell SOFC,                        1 MJ/120 MJ/thermal eff. * 9 kg",
+          "raw_value": 0.2273,
+          "raw_unit": "kg",
+          "per": "per MJ of residential heat from the SOFC",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "'Water' to air in cubic metres is the generic water-vapour release; the line item is water vapour formed from the hydrogen, not sea water, green water or an evapotranspiration flux, and the two long chemical names are unrelated substances.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "0342f5e5-b53e-4cec-9e67-fb197f24fff0",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": []
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "target": {
+    "code": "61383306-1d5d-3a54-8ef2-bc147f1af68b",
+    "name": "Styrene-acrylonitrile copolymer, SAN, at plant",
+    "location": "RER"
+  },
+  "strategy": {
+    "code": "S3",
+    "label": "top-down model: the two monomers named by the product, split fitted under a 1 kg mass constraint, utilities calibrated",
+    "note": "NOT S1. No report in the bundle prints an inventory. The dataset's ecoSpold technology field says 'production by different polymerization processes out of its different monomers' - it asserts that the monomers are the input list but does not name them; the product name does: styrene-acrylonitrile copolymer. Both monomers exist in BAFU, acrylonitrile as a real 9-input unit process ('Acrylonitrile from Sohio process, at plant'), styrene only as an unflagged eco-profile. Addition copolymerisation loses no mass, so the two add up to 1.000 kg, which is imposed with mass_sum; the split is nowhere quantified in the bundle and is therefore fitted, not measured - flagged low confidence. The same caveat as HIPS applies: a good inventory fit here would not prove the split is right.\n\nAFTER THE FIT - READ THIS BEFORE USING THE AMOUNTS. The calibration was run and its result is structurally wrong, which is worth more than the spec was: the fit drove acrylonitrile to 1.2E-10 kg, i.e. zero, and put the whole kilogram on styrene - a styrene-acrylonitrile copolymer modelled as pure polystyrene. The inventory agreement it buys is poor anyway: 3 of 1668 determined flows within +-10 %, median |delta| 133 %. This is the identifiability trap the project's own calibration benchmark predicts (README sec. 6: 'a better inventory fit with the wrong structure'), caught here on real data rather than on a synthetic case. The mechanism is specific and repeatable: under a mass constraint, when one candidate monomer is another dataset of the same APME eco-profile family and another is an ecoinvent unit process, the fit will empty the ecoinvent one, because it drags in a full background of ~1670 elementary flows that the target's ~145-substance eco-profile simply does not have, and every one of them counts against the fit. And among same-family candidates the fit follows the waste-treatment exchanges, not the chemistry - which is why it prefers polybutadiene to styrene: 'Styrene, at plant' declares 0.5615 kg of hazardous waste to incineration per kg, 80x what its own polymer GPPS declares (0.0070 kg) and 250x its own feedstock benzene (0.0022 kg), so any node that links styrene inherits a waste chain the target does not have. Conclusion for a user: the node's *inventory* is a fair reconstruction of the target's flows, its *composition* is not a statement about the product, and the split must not be quoted. The amounts are left exactly as the fit produced them - no bound was moved after the score was seen."
+  },
+  "evidence": [
+    {
+      "source": "BAFU-2026 ecoSpold metadata of the target",
+      "where": "processInformation/technology",
+      "note": "quoted in the strategy note; it is the structural evidence for the input list"
+    },
+    {
+      "source": "locate step of the reverse-bafu route",
+      "where": "specs/evidence/61383306-1d5d-3a54-8ef2-bc147f1af68b/response-0-locate.json",
+      "note": "specs/evidence/61383306-1d5d-3a54-8ef2-bc147f1af68b/response-0-locate.json - no report in the BAFU-2026 documentation bundle prints a unit-process inventory for this dataset. The cited report is only the 17-page front matter of ecoinvent report No. 11; all 114 bundled reports were converted with pdftotext and searched."
+    },
+    {
+      "source": "reaction stoichiometry",
+      "where": "the reaction equation named by the technology field, with molar masses",
+      "note": "Molar masses from the IUPAC 2021 standard atomic weights: H 1.008, C 12.011, N 14.007, O 15.999, S 32.06, Cl 35.45, Na 22.990."
+    },
+    {
+      "source": "BAFU-2026 itself, as a named template",
+      "where": "Cumene / Ethyl benzene / Phosgene / Aniline, at plant [RER]",
+      "note": "BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from."
+    }
+  ],
+  "node": {
+    "name": "Styrene-acrylonitrile copolymer, SAN, at plant, disaggregated",
+    "unit": "kilogram",
+    "location": "RER",
+    "comment": "Copolymerisation step, per kg of SAN granulate. The eight waste-treatment services that the BAFU dataset already carries as explicit exchanges are deliberately not part of this model - they were never collapsed away - following the committed PlasticsEurope specs. The consequence, measured in results/checks/, is that the target's cumulative vector gets a long tail of flows from those disposal chains that no model omitting them can reach.",
+    "inputs": [
+      {
+        "name": "Styrene, at plant",
+        "amount": 0.9999977002715382,
+        "unit": "kilogram",
+        "location": "RER",
+        "free": true,
+        "note": "Free under the 1 kg mass constraint; the starting value is not evidence. Itself an unflagged eco-profile.",
+        "code": "76aac688-8d44-3337-ac3e-9cac4cdafd8b"
+      },
+      {
+        "name": "Acrylonitrile from Sohio process, at plant",
+        "amount": 0.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "free": true,
+        "note": "Free under the 1 kg mass constraint. The only acrylonitrile production dataset in BAFU-2026; it is a real unit process (propylene + ammonia + sulphuric acid + water + heat), so the chain terminates properly here.",
+        "code": "3d976da0-0b98-3eaf-b39d-0297fbe70066"
+      },
+      {
+        "name": "Electricity, medium voltage, production ENTSO-E, at grid",
+        "amount": 0.0,
+        "unit": "kilowatt hour",
+        "location": "ENTSO-E",
+        "free": true,
+        "note": "Starting value 0.333 kWh/kg from the BAFU chemicals template; free, because no report in the bundle prints an electricity figure for this process. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "648e3bb3-7b98-46f8-9da1-f45627c309ef"
+      },
+      {
+        "name": "Heat, natural gas, at industrial furnace 1MW",
+        "amount": 0.0,
+        "unit": "megajoule",
+        "location": "CH",
+        "free": true,
+        "note": "Starting value 2.0 MJ/kg from the BAFU chemicals template; free, because no report in the bundle prints a heat figure for this process. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "2fcda415-e506-38d9-9c3e-8ce2c2e7c8f2"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "0.6 tkm per kg of precursor x 1 kg of precursor = the template's standard 600 km rail leg. Free: the PlasticsEurope eco-profile behind this dataset accounts for feedstock transport as elementary flows only and carries no vehicle or track infrastructure, so an ecoinvent transport dataset adds a background the target cannot have. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 0.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "free": true,
+        "note": "0.1 tkm per kg of precursor x 1 kg of precursor = the template's standard 100 km lorry leg. Free, same reason as the rail line. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "99f8a4b0-99b5-3130-924c-5de4c10b62ef"
+      },
+      {
+        "name": "Chemical plant, organics",
+        "amount": 0.0,
+        "unit": "unit",
+        "location": "RER",
+        "free": true,
+        "bounds": [
+          0.0,
+          4e-10
+        ],
+        "note": "Free between zero and the template value. 4.0E-10 units is what every ecoinvent-v2 organic chemical in BAFU carries and is the upper bound; zero is the lower bound because this target declares no infrastructure exchange at all - its entire technosphere is waste-treatment services - so an eco-profile that never counted a plant is a real possibility. Both bounds come from those two facts and were set before any score was computed. BAFU template, not a report figure. Every ecoinvent-v2 organic-chemical unit process in BAFU-2026 carries the same five-line utility block: 0.333 kWh of 'Electricity, medium voltage, production ENTSO-E, at grid', 2.0 MJ of 'Heat, natural gas, at industrial furnace 1MW' [CH], 4.0E-10 units of 'Chemical plant, organics', and transport at 0.6 tkm rail + 0.1 tkm lorry per kilogram of precursor. Verified exchange by exchange on Cumene, at plant (0.684 kg benzene + 0.369 kg propylene = 1.053 kg of precursor -> 0.632 tkm rail, 0.105 tkm lorry), Ethyl benzene, at plant (1.030 -> 0.619 / 0.103), Phosgene, liquid, at plant (1.040 -> 0.624 / 0.104) and Aniline, at plant (1.352 -> 0.814 / 0.136). That is the named template this amount comes from.",
+        "code": "13ed4fe0-7ba5-3b60-82b6-a63918ee814d"
+      }
+    ],
+    "emissions": [],
+    "resources": [],
+    "mass_sum": 1.0
+  }
+}

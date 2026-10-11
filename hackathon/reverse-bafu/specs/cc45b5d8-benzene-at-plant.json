@@ -1,0 +1,52 @@
+{
+  "target": {
+    "code": "cc45b5d8-b51c-3511-9138-6328a672d020",
+    "name": "Benzene, at plant",
+    "location": "RER"
+  },
+  "strategy": {
+    "code": "S2",
+    "label": "template transfer: BAFU's own refinery unit process for the same product, at another location",
+    "note": "S2, not S1 and not S3. The locate response records why no report route exists: Althaus Tab. 1.1 lists 'benzene, at plant RER' as 'Reported in: Part II' and the 957-page report has no benzene chapter, and what it does print about benzene - chapter 86, Tab. 86.1, 'Production (tons) per ton of feedstock: Benzene 0.12 - 0.24, Toluene 0 - 0.3' - is a multi-product BTX plant with no allocation stated. Stoichiometry does not help either: catalytic reforming is not one reaction. What does exist is a unit process of the same product elsewhere in BAFU-2026: 'Benzene, at refinery' [CH], code d0a00133, 32 technosphere inputs and 74 elementary flows - ecoinvent's refinery model, documented in 2007 - Crude oil - Jungbluth.pdf, in which benzene is a co-product of the refinery slate whose allocation ecoinvent resolved its own way. Transferring it 1:1 does not solve the allocation problem of the APME benzene; it replaces it with ecoinvent's, which at least is documented. Two caveats a user must carry: the template is CH, not RER (there is no RER variant, and a Swiss refinery is not a European average), and the two datasets are different vintages of a different industry survey. Nothing is calibrated - there is no free amount in this spec at all - so the check measures exactly one thing: how far apart PlasticsEurope's benzene and ecoinvent's benzene are. That matters beyond this row, because benzene is the feedstock of BAFU's 'Ethyl benzene, at plant' and 'Cumene, at plant', i.e. of the styrene and acetone chains rebuilt in the same batch, and they terminate on it.\n\nAFTER THE CHECK - and this is the number the spec was written to get. PlasticsEurope's benzene and ecoinvent's refinery benzene are not close: per kg of benzene the target carries 1.46 kg of fossil CO2 and the template 0.222 kg (-84.8 %), 0.0131 kg of methane against 5.7E-5 (-99.6 %), 0.0042 kg of SO2 against 1.2E-4 (-97.2 %), 0.0028 kg of NOx against 1.1E-4 (-95.9 %). A factor 6.6 on CO2 and two orders of magnitude on methane. Overall 1 of 1670 determined flows within +-10 %, 0 of the 50 largest kilogram flows. The two are different answers to the same allocation question - ecoinvent spreads the refinery's burden over the whole product slate, the APME profile charges the aromatics extraction and reforming to the aromatics - and the gap between them is roughly the size of that decision. Practical consequence: this node is a legitimate disaggregation but it is NOT a drop-in replacement, and any chain that terminates on it (ethylbenzene, cumene, and through them the styrene and acetone rebuilds of this same batch) inherits the difference. That is worth more than the score: it says the remaining gap in the BTX family is an allocation decision, not missing data."
+  },
+  "evidence": [
+    {
+      "source": "BAFU-2026 ecoSpold metadata of the target",
+      "where": "processInformation/technology",
+      "note": "quoted in the strategy note; it is the structural evidence for the input list"
+    },
+    {
+      "source": "locate step of the reverse-bafu route",
+      "where": "specs/evidence/cc45b5d8-b51c-3511-9138-6328a672d020/response-0-locate.json",
+      "note": "specs/evidence/cc45b5d8-b51c-3511-9138-6328a672d020/response-0-locate.json - no report in the BAFU-2026 documentation bundle prints a unit-process inventory for this dataset. The cited report is only the 17-page front matter of ecoinvent report No. 11; all 114 bundled reports were converted with pdftotext and searched."
+    },
+    {
+      "source": "BAFU-2026 itself",
+      "where": "'Benzene, at refinery' [CH], code d0a00133, 32 inputs / 74 elementary flows",
+      "note": "The unit process this spec transfers; documented in 2007 - Crude oil - Jungbluth.pdf (ecoinvent report No. 4)."
+    },
+    {
+      "source": "2007 - LCI chemicals - Althaus.pdf",
+      "where": "Tab. 86.1 and sec. 86.5.3",
+      "note": "Why the report route is closed: 'Production (tons) per ton of feedstock ... Toluene 0 - 0.3' and 'Little is given on toluene production alone as most information pertains to benzene or BTX production plants.'"
+    }
+  ],
+  "node": {
+    "name": "Benzene, at plant, disaggregated",
+    "unit": "kilogram",
+    "location": "RER",
+    "comment": "Template transfer, per kg of benzene. The eight waste-treatment services that the BAFU dataset already carries as explicit exchanges are deliberately not part of this model - they were never collapsed away - following the committed PlasticsEurope specs. The consequence, measured in results/checks/, is that the target's cumulative vector gets a long tail of flows from those disposal chains that no model omitting them can reach.",
+    "inputs": [
+      {
+        "name": "Benzene, at refinery",
+        "amount": 1.0,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "1 kg for 1 kg: both datasets are 1 kg of benzene at the plant/refinery gate. Fixed - there is nothing to fit.",
+        "code": "d0a00133-7274-305b-9af8-7bbf3f2489f6"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

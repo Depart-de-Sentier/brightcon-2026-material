@@ -1,0 +1,548 @@
+{
+ "mappings": [
+  {
+   "item": "Calcite, in ground",
+   "chosen": "Calcite",
+   "location": "",
+   "compartment": "Resources",
+   "dependency": false,
+   "reason": "The only candidate and an exact name match, in the 'resources / in ground' compartment the item states."
+  },
+  {
+   "item": "Gas, natural, in ground",
+   "chosen": "Natural Gas",
+   "location": "",
+   "compartment": "Resources",
+   "dependency": false,
+   "reason": "The only energy-resource candidate; the 'Gasoline, Natural' entries are a different substance (natural gasoline) in emission compartments."
+  },
+  {
+   "item": "Oil, crude, in ground",
+   "chosen": "Crude Oil",
+   "location": "",
+   "compartment": "Resources",
+   "dependency": false,
+   "reason": "Exact substance in the non-renewable energy resources compartment; the other candidates are tall-oil soap and crude-oil distillate emissions."
+  },
+  {
+   "item": "Sand, unspecified, in ground",
+   "chosen": "Sand",
+   "location": "",
+   "compartment": "Resources",
+   "dependency": false,
+   "reason": "'Sand' is the plain material flow; 'Sand, resource correction' is a bookkeeping flow of the BAFU residual database and the oil-sand entries are bitumen carriers. (BAFU's own 'Epoxy resin, liquid, disaggregated data, at plant' carries this same flow with the same 1200 kg.)"
+  },
+  {
+   "item": "Sodium chloride, in ground",
+   "chosen": "Sodium chloride",
+   "location": "",
+   "compartment": "Resources",
+   "dependency": false,
+   "reason": "Rock salt extracted from the ground - the 'in ground' variant, not 'in water' (solution mining), because the table says 'in ground'."
+  },
+  {
+   "item": "sylvite, 25 % in sylvinite, in ground",
+   "chosen": "Potassium chloride",
+   "location": "",
+   "compartment": "Resources",
+   "dependency": false,
+   "reason": "Sylvite is KCl; the BAFU resource flow for it is 'Potassium chloride, in ground', and the EF 'Potassium Chloride' entries are emission compartments, not extraction."
+  },
+  {
+   "item": "Water, well, in ground",
+   "chosen": "Ground Water",
+   "location": "",
+   "compartment": "Resources",
+   "dependency": false,
+   "reason": "Well water is groundwater; 'Water' and 'lake/river water' are the other origins listed separately in the same table."
+  },
+  {
+   "item": "Water, river",
+   "chosen": "river water",
+   "location": "",
+   "compartment": "Resources",
+   "dependency": false,
+   "reason": "The table distinguishes river, well, ocean and unspecified origin, so the river-specific flow is the match rather than generic 'Water'."
+  },
+  {
+   "item": "Water, salt, ocean",
+   "chosen": "Water, salt, ocean",
+   "location": "",
+   "compartment": "Resources",
+   "dependency": false,
+   "reason": "Exact name match in the BAFU residual resource list; 'Water, salt, sole' is brine, a different origin."
+  },
+  {
+   "item": "Water, cooling, unspecified natural origin",
+   "chosen": "Water To Cooling",
+   "location": "",
+   "compartment": "Resources",
+   "dependency": false,
+   "reason": "'Water To Cooling' is the EF 3.1 name for cooling water withdrawn from nature; 'Water from cooling' is the return flow (an emission) and 'Water Cooling Sea' fixes the origin, which the item leaves unspecified."
+  },
+  {
+   "item": "Water, unspecified natural origin",
+   "chosen": null,
+   "location": "",
+   "compartment": "Resources",
+   "dependency": false,
+   "reason": "The deterministic keyword search returned no candidate at all for this phrase (every word of it is a stop-word-like token in the flow index), so there is nothing to choose from. The intended flow is EF 3.1 'Water' in 'Renewable material resources from water' - it is visible in the candidate list of the sibling item 'Water, river' - but the rules forbid picking a candidate that was not offered for this item, so it is recorded as missing. 6.10E-3 m3 per kg is lost."
+  },
+  {
+   "item": "electricity, medium voltage, production UCTE, at grid",
+   "chosen": "Electricity, medium voltage, production RER, at grid",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "UCTE is the former continental-European grid; among the candidates only the RER mix is a European average - the rest are Swiss, or single technologies (oil, biogas, hard coal, CHP wood) that would replace a mix with one power plant, which the structural check explicitly flags."
+  },
+  {
+   "item": "heavy fuel oil, burned in power plant",
+   "chosen": "Heavy fuel oil, burned in power plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name match; RER is chosen over the twelve national variants because the dataset is a European average (the target's location is RER)."
+  },
+  {
+   "item": "natural gas, burned in industrial furnace >100kW",
+   "chosen": "Natural gas, burned in industrial furnace 1MW",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact process match, and the 1MW furnace is the successor of the '>100kW' class; the 'for asphalt production' variant is a different application, 'Industrial furnace, 1MW' is the infrastructure unit, and the 'Heat, ...' datasets deliver heat rather than burn the gas the table meters. Only CH exists for this dataset."
+  },
+  {
+   "item": "tap water, at user",
+   "chosen": "Tap water, at user",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Plain tap water; the 'unspecified natural origin' and 'water balance according to MoeK 2013' variants are water-footprint bookkeeping versions that would add a different water accounting."
+  },
+  {
+   "item": "disposal, municipal solid waste, 22.9% water, to sanitary landfill",
+   "chosen": "Disposal, municipal solid waste, 22.9% water, to sanitary landfill",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Sole candidate, exact name and water content."
+  },
+  {
+   "item": "disposal, municipal solid waste, 22.9% water, to municipal incineration",
+   "chosen": "Disposal, municipal solid waste, 22.9% water, to municipal incineration",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name match; the runner-up is a wood-waste incineration service."
+  },
+  {
+   "item": "chemical plant, organics",
+   "chosen": "Chemical plant, organics",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name match and the right kind of object (a 'unit' of infrastructure); 'Liquid storage tank' is a part of it, and the 'Chemicals organic, at plant' entries are a generic chemical, not the plant."
+  },
+  {
+   "item": "transport, freight, rail",
+   "chosen": "Transport, freight, rail",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name match at the target's location; the CH variants fix the traction and the shunting regime, which the table does not."
+  },
+  {
+   "item": "transport, lorry 32t",
+   "chosen": "Transport, freight, lorry, fleet average",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "BAFU-2026 has no 'lorry 32t' dataset; of the size classes offered, '16t-32t gross weight' and '32t-40t' bracket the 32-tonner, and the fleet average is the dataset BAFU's other ecoinvent-v2 chemical unit processes use for exactly this line (Cumene, Ethyl benzene, Phosgene, Aniline all carry 'Transport, freight, lorry, fleet average'), so it beats either bracket on consistency."
+  },
+  {
+   "item": "Acetaldehyde",
+   "chosen": "Acetaldehyde",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "exact substance; the runners-up are acetaldehyde-ammonia and an oxime, different compounds."
+  },
+  {
+   "item": "Ammonia",
+   "chosen": "Ammonia",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "exact substance in the air compartment; the soil and water entries are the wrong compartment."
+  },
+  {
+   "item": "Carbon dioxide, fossil",
+   "chosen": "Carbon Dioxide (fossil)",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "fossil origin as printed; the biogenic and land-use-change variants are the wrong origin and the 'Resources from air' entries are uptake."
+  },
+  {
+   "item": "Carbon monoxide, fossil",
+   "chosen": "Carbon Monoxide (fossil)",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "fossil origin as printed."
+  },
+  {
+   "item": "Halogenated hydrocarbons, chlorinated",
+   "chosen": "Hydrocarbons, Chlorinated",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "the only chlorinated-hydrocarbon group flow; 'Hydrocarbons, C3/C4/C5' are aliphatic groups without chlorine."
+  },
+  {
+   "item": "Hydrocarbons, aromatic",
+   "chosen": "Hydrocarbons, Aromatic",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "exact group name; 'Polycyclic Aromatic Hydrocarbons' is a narrower class the table does not name."
+  },
+  {
+   "item": "Hydrogen chloride",
+   "chosen": "Hydrogen Chloride",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "exact substance in the air compartment."
+  },
+  {
+   "item": "Hydrogen fluoride",
+   "chosen": null,
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "none of the offered candidates is hydrogen fluoride in an air compartment: the list holds hydrogen fluoride only to soil and to water (long-term), plus hydrogen, tritium and fluoride ion. Rather than release 5E-7 kg of HF into the wrong compartment or map it to a different substance, it is left unmapped."
+  },
+  {
+   "item": "Hydrogen sulfide",
+   "chosen": "Hydrogen Sulfide",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "exact substance; the agricultural-soil and fresh-water entries are the wrong compartment."
+  },
+  {
+   "item": "Lead",
+   "chosen": "Lead",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "the element; 'Lead(2+)' is the aqueous ion, 'Lead-210' a radionuclide and 'Lead oxide'/'Lead Dioxide'/'Lead nitrate' are compounds."
+  },
+  {
+   "item": "Mercury",
+   "chosen": "Mercury",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "the element to air; the agricultural-soil, fresh-water and resource entries are other compartments and 'Mercury(2+)' is the ion."
+  },
+  {
+   "item": "Methane, fossil",
+   "chosen": "Methane (fossil)",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "fossil origin as printed; 'Methanethiol' and 'Methanesulfonic Acid' only match the search string."
+  },
+  {
+   "item": "Methane, chlorotrifluoro-, CFC-13",
+   "chosen": null,
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "the deterministic search returned no candidate at all for this name, so there is nothing to choose; 8E-6 kg of CFC-13 per kg of resin is lost, which matters more than its mass suggests because it is a very high-GWP halocarbon."
+  },
+  {
+   "item": "Nitrogen oxides",
+   "chosen": "Nitrogen Oxides",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "NOx as a sum; 'Nitrogen Dioxide' would claim a speciation the table does not give."
+  },
+  {
+   "item": "Particulates, > 2.5 um, and < 10um",
+   "chosen": "Particles (PM10)",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "the EF 3.1 name for the 2.5-10 um fraction is PM10; 'Particles (> PM10)' is the coarse fraction above it and 'Particles (PM2.5 - PM10)' is not offered in an emissions-to-air compartment."
+  },
+  {
+   "item": "Sulfur dioxide",
+   "chosen": "Sulfur Dioxide",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "exact substance in the air compartment."
+  },
+  {
+   "item": "NMVOC, non-methane volatile organic compounds, unspecified origin",
+   "chosen": "Non-methane Volatile Organic Compounds",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "exact group name."
+  },
+  {
+   "item": "Heat, waste",
+   "chosen": "Waste Heat",
+   "location": "",
+   "compartment": "Emissions to air",
+   "dependency": false,
+   "reason": "the EF 3.1 waste-heat flow to air; 'Energy, waste heat, air' is the BAFU residual duplicate and the soil/water entries are other compartments."
+  },
+  {
+   "item": "Ammonium, ion (to water)",
+   "chosen": "Ammonium",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "the ammonium ion to water; the long-term variant is the landfill-horizon flow, not a process emission."
+  },
+  {
+   "item": "Arsenic, ion (to water)",
+   "chosen": "Arsenic",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "the element to fresh water; 'Arsenic (v)' fixes an oxidation state the table does not give."
+  },
+  {
+   "item": "BOD5, Biological Oxygen Demand (to water)",
+   "chosen": "Biological Oxygen Demand",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "exact indicator; COD is the other indicator, listed separately in the same table."
+  },
+  {
+   "item": "Calcium, ion (to water)",
+   "chosen": "Calcium",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "the element to fresh water; the oxide, bromide and sulfate are compounds."
+  },
+  {
+   "item": "Carboxylic acids, unspecified (to water)",
+   "chosen": "Carboxylic Acids, Unspecified",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "exact group name; 'carboxylic acids, di-, c4-6' is a narrower class."
+  },
+  {
+   "item": "Chloride (to water)",
+   "chosen": "Chloride",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "exact substance to fresh water; the chloride salts listed are compounds."
+  },
+  {
+   "item": "Chlorinated solvents, unspecified (to water)",
+   "chosen": "Chlorinated Solvents, Unspecified",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "exact group name, water compartment rather than the air duplicate."
+  },
+  {
+   "item": "Chromium VI (to water)",
+   "chosen": "Chromium",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "of the candidates only the generic 'Chromium' is in a normal fresh-water compartment - the two hexavalent entries are 'groundwater, long-term' and 'water, unspecified (long-term)', i.e. the landfill horizon, which a process emission must not be put into. Flagged: this loses the hexavalent speciation of 5E-7 kg."
+  },
+  {
+   "item": "COD, Chemical Oxygen Demand (to water)",
+   "chosen": "Chemical Oxygen Demand",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "exact indicator; the bafu-2026-residual entry is the long-term duplicate."
+  },
+  {
+   "item": "Copper, ion (to water)",
+   "chosen": "Copper",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "the element to fresh water; 'Copper(2+)' fixes a speciation the table does not give and 'Oxine-copper' is a pesticide."
+  },
+  {
+   "item": "Cyanide (to water)",
+   "chosen": "Cyanide",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "exact substance; 'Sodium Cyanide' and 'Hydrogen cyanide' are compounds."
+  },
+  {
+   "item": "DOC, Dissolved Organic Carbon (to water)",
+   "chosen": "DOC, Dissolved Organic Carbon",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "exact indicator in the water compartment; TOC is the other indicator."
+  },
+  {
+   "item": "Fluoride (to water)",
+   "chosen": "Fluoride Ion",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "the fresh-water fluoride ion; the plain 'fluoride' entry offered is the long-term horizon and the rest are organofluorine compounds."
+  },
+  {
+   "item": "Oils, unspecified (to water)",
+   "chosen": "Oils, Unspecified",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "exact group name in the fresh-water compartment."
+  },
+  {
+   "item": "Hydrocarbons, unspecified (to water)",
+   "chosen": "Hydrocarbons (unspecified)",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "exact group name; the aliphatic-alkanes entry is narrower."
+  },
+  {
+   "item": "Iron, ion (to water)",
+   "chosen": "Iron",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "the element to fresh water; 'Iron-59' is a radionuclide and the (2+)/(3+) entries fix a speciation the table does not give."
+  },
+  {
+   "item": "Magnesium (to water)",
+   "chosen": "Magnesium",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "the element to fresh water; nitrate and chloride are compounds."
+  },
+  {
+   "item": "Mercury (to water)",
+   "chosen": "Mercury",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "the element to fresh water - the air entry of the same name is the separate air line of this table."
+  },
+  {
+   "item": "Nickel, ion (to water)",
+   "chosen": "Nickel",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "the element to fresh water; 'Nickel-63' is a radionuclide."
+  },
+  {
+   "item": "Nitrate (to water)",
+   "chosen": "Nitrate",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "exact substance to fresh water; the metal nitrates are compounds."
+  },
+  {
+   "item": "Nitrogen (to water)",
+   "chosen": "Nitrogen",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "total nitrogen to water; 'Nitrogen Dioxide' and the oxides are different substances."
+  },
+  {
+   "item": "Phenol (to water)",
+   "chosen": "Phenol",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "exact substance to fresh water."
+  },
+  {
+   "item": "Phosphate (to water)",
+   "chosen": "Phosphate",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "exact substance to fresh water; butyl and urea phosphate are compounds."
+  },
+  {
+   "item": "Potassium, ion (to water)",
+   "chosen": "Potassium",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "the element to water; the bafu-2026-residual entry is the long-term horizon, 'Potassium-40' a radionuclide."
+  },
+  {
+   "item": "Sodium, ion (to water)",
+   "chosen": "Sodium",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "the element to water; the bafu-2026-residual entry is the long-term horizon and 'Sodium-24' a radionuclide."
+  },
+  {
+   "item": "Sulfate (to water)",
+   "chosen": "Sulfate Ion",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "the sulfate ion in the water compartment; the air and soil entries of the same flow are other compartments."
+  },
+  {
+   "item": "Sulfide (to water)",
+   "chosen": "Sulfide ion",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "exact substance; the metal and alkyl sulfides are compounds."
+  },
+  {
+   "item": "Suspended solids, unspecified (to water)",
+   "chosen": "Suspended Solids, Unspecified",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "sole candidate, exact name."
+  },
+  {
+   "item": "VOC, volatile organic compounds, unspecified origin (to water)",
+   "chosen": "Non-methane Volatile Organic Compounds",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "the EF 3.1 list has no 'VOC, unspecified' water flow; NMVOC to fresh water is the closest and is the flow ecoinvent maps this line to."
+  },
+  {
+   "item": "Zinc, ion (to water)",
+   "chosen": "Zinc",
+   "location": "",
+   "compartment": "Emissions to water",
+   "dependency": false,
+   "reason": "the element to fresh water; 'Zinc-65' is a radionuclide and 'Zinc(2+)' fixes a speciation the table does not give."
+  }
+ ]
+}

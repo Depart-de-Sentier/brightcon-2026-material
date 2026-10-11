@@ -1,0 +1,650 @@
+<title>Elementary Flow Parity</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+:root{
+  --paper:#f5f4ef; --surface:#fcfbf8; --ink:#14212b; --ink-2:#4e5b66; --muted:#7a8792;
+  --grid:#e4e1d8; --axis:#c9c5ba; --line:#dcd8cd; --accent:#b8741f; --focus:#2a78d6;
+  --pt:rgba(78,91,102,.38); --pt-hi:#14212b; --band:rgba(20,33,43,.06); --band-2:rgba(20,33,43,.035);
+  --u3:#1c5cab; --u2:#5598e7; --u1:#b7d3f6; --n0:#e3e0d6; --o1:#f5c6bf; --o2:#e27a6e; --o3:#b23a30;
+  --t-u3:#ffffff; --t-u2:#0b1a2a; --t-u1:#14212b; --t-n0:#14212b; --t-o1:#14212b; --t-o2:#1a0d0b; --t-o3:#ffffff;
+  --tip-bg:#14212b; --tip-ink:#f5f4ef; --tip-2:#bfcbd4; --mark:#c8842a;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --paper:#0f171d; --surface:#151f27; --ink:#eeece6; --ink-2:#b9c4cc; --muted:#8a97a1;
+    --grid:#24303a; --axis:#3a4753; --line:#2a3640; --accent:#d9a55f; --focus:#6da7ec;
+    --pt:rgba(185,196,204,.30); --pt-hi:#f5f4ef; --band:rgba(238,236,230,.07); --band-2:rgba(238,236,230,.035);
+    --u3:#86b6ef; --u2:#3f7fcc; --u1:#2b5486; --n0:#3a3a37; --o1:#7d3b31; --o2:#c0584c; --o3:#f0978c;
+    --t-u3:#0b1a2a; --t-u2:#ffffff; --t-u1:#eeece6; --t-n0:#eeece6; --t-o1:#eeece6; --t-o2:#ffffff; --t-o3:#1a0d0b;
+    --tip-bg:#eeece6; --tip-ink:#14212b; --tip-2:#4e5b66; --mark:#e0a55a;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --paper:#0f171d; --surface:#151f27; --ink:#eeece6; --ink-2:#b9c4cc; --muted:#8a97a1;
+  --grid:#24303a; --axis:#3a4753; --line:#2a3640; --accent:#d9a55f; --focus:#6da7ec;
+  --pt:rgba(185,196,204,.30); --pt-hi:#f5f4ef; --band:rgba(238,236,230,.07); --band-2:rgba(238,236,230,.035);
+  --u3:#86b6ef; --u2:#3f7fcc; --u1:#2b5486; --n0:#3a3a37; --o1:#7d3b31; --o2:#c0584c; --o3:#f0978c;
+  --t-u3:#0b1a2a; --t-u2:#ffffff; --t-u1:#eeece6; --t-n0:#eeece6; --t-o1:#eeece6; --t-o2:#ffffff; --t-o3:#1a0d0b;
+  --tip-bg:#eeece6; --tip-ink:#14212b; --tip-2:#4e5b66; --mark:#e0a55a;
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font:15px/1.55 "IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;padding-inline:16px;padding-block:28px 64px}
+main{max-width:1120px;margin:0 auto;display:flex;flex-direction:column;gap:44px}
+h1,h2{font-family:"EB Garamond",Georgia,serif;font-weight:500;line-height:1.1;margin:0;text-wrap:balance}
+h1{font-size:clamp(2.1rem,4.6vw,3.1rem)}
+h2{font-size:1.75rem}
+h3{font-size:.95rem;font-weight:600;margin:0}
+p{margin:0;max-width:70ch}
+.eyebrow{font-size:.74rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:500}
+.lede{color:var(--ink-2);font-size:1.06rem}
+.muted{color:var(--muted)}
+.small{font-size:.84rem}
+header{display:flex;flex-direction:column;gap:14px}
+section{display:flex;flex-direction:column;gap:16px}
+.sec-head{display:flex;flex-direction:column;gap:6px}
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin-top:6px}
+.fact{border-top:2px solid var(--ink);padding-top:10px;display:flex;flex-direction:column;gap:4px}
+.fact b{font-size:1.65rem;font-weight:600;letter-spacing:-.01em}
+.fact span{color:var(--ink-2);font-size:.88rem;line-height:1.4}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:10px;padding:18px}
+.controls{display:flex;flex-wrap:wrap;gap:10px 18px;align-items:center}
+label.ctl{display:flex;gap:8px;align-items:center;font-size:.86rem;color:var(--ink-2)}
+select,button.tg{font:inherit;font-size:.88rem;color:var(--ink);background:var(--surface);border:1px solid var(--axis);border-radius:6px;padding:6px 10px}
+select{max-width:min(460px,78vw)}
+.seg{display:inline-flex;border:1px solid var(--axis);border-radius:6px;overflow:hidden}
+.seg button{font:inherit;font-size:.86rem;border:0;background:transparent;color:var(--ink-2);padding:6px 12px;cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+button:focus-visible,select:focus-visible,.cell:focus-visible,.rowlabel:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+/* legend */
+.legend{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;font-size:.8rem;color:var(--ink-2)}
+.ramp{display:inline-flex;gap:2px;align-items:stretch}
+.ramp i{display:block;width:62px;height:14px;border-radius:2px}
+.ramp-labels{display:inline-flex;gap:2px}
+.ramp-labels span{width:62px;white-space:nowrap;text-align:center;font-size:.7rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.leg-group{display:flex;flex-direction:column;gap:3px}
+.sw{display:inline-block;width:12px;height:12px;border-radius:2px;vertical-align:-2px;margin-right:6px}
+/* heatmap */
+.hm-wrap{overflow-x:auto;padding-bottom:4px}
+.hm{display:grid;grid-template-columns:minmax(230px,300px) repeat(8,72px);gap:2px;min-width:max-content;font-size:.82rem}
+.hm .colh{font-size:.74rem;color:var(--ink-2);text-align:center;align-self:end;padding:0 2px 6px;line-height:1.25;font-weight:500}
+.hm .grouph{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;padding:16px 0 6px;border-bottom:1px solid var(--line);margin-bottom:4px}
+.hm .grouph b{font-family:"EB Garamond",Georgia,serif;font-size:1.2rem;font-weight:600}
+.hm .grouph span{color:var(--muted);font-size:.8rem}
+.rowlabel{all:unset;cursor:pointer;display:flex;flex-direction:column;justify-content:center;padding:3px 10px 3px 0;min-height:28px;line-height:1.25;color:var(--ink)}
+.rowlabel:hover .nm{text-decoration:underline;text-decoration-color:var(--axis)}
+.rowlabel .loc{color:var(--muted);font-size:.72rem}
+.rowlabel.sel .nm{font-weight:600}
+.cell{border:0;border-radius:2px;min-height:28px;font:inherit;font-size:.72rem;font-variant-numeric:tabular-nums;cursor:pointer;padding:0;color:transparent}
+.shownums .cell{color:var(--cell-ink)}
+.cell:hover{filter:brightness(1.06) saturate(1.1);box-shadow:inset 0 0 0 2px var(--ink)}
+.cell.none{background:transparent;box-shadow:inset 0 0 0 1px var(--line);cursor:default}
+.hm .sumlab{padding:10px 10px 0 0;color:var(--ink-2);font-size:.78rem;align-self:start}
+.hm .sum{padding-top:10px;text-align:center;font-size:.78rem;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.hm .sum b{color:var(--ink);font-weight:600}
+/* parity */
+.pgrid{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(250px,1fr);gap:22px;align-items:start}
+@media (max-width:820px){.pgrid{grid-template-columns:1fr}}
+.plot svg{display:block;width:100%;height:auto;touch-action:none}
+.plot .axis text{fill:var(--muted);font-size:11px;font-family:"IBM Plex Sans",system-ui,sans-serif}
+.stats{display:flex;flex-direction:column;gap:12px}
+.chip{display:inline-block;border:1px solid var(--axis);border-radius:999px;padding:1px 9px;font-size:.76rem;color:var(--ink-2)}
+.kv{display:grid;grid-template-columns:auto 1fr;gap:3px 12px;font-size:.86rem;font-variant-numeric:tabular-nums}
+.kv dt{color:var(--ink-2)} .kv dd{margin:0;text-align:right;font-weight:500}
+table{border-collapse:collapse;width:100%;font-size:.84rem}
+th,td{padding:5px 8px;text-align:right;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums;white-space:nowrap}
+th{font-weight:500;color:var(--ink-2);font-size:.76rem}
+th:first-child,td:first-child{text-align:left;white-space:normal}
+tbody tr.hl{background:var(--band)}
+.tbl-wrap{overflow-x:auto}
+.dev{display:inline-flex;align-items:center;gap:6px;justify-content:flex-end}
+.dev i{width:10px;height:10px;border-radius:2px;display:inline-block}
+/* pooled */
+.pool{display:grid;grid-template-columns:minmax(0,1.8fr) minmax(250px,1fr);gap:22px;align-items:start}
+@media (max-width:820px){.pool{grid-template-columns:1fr}}
+.cv{position:relative;width:100%}
+.cv canvas{display:block;width:100%;touch-action:none}
+.dens{display:inline-flex;gap:2px;align-items:center}
+.dens i{display:block;width:26px;height:12px;border-radius:2px}
+.mk{display:inline-block;width:9px;height:9px;transform:rotate(45deg);background:var(--mark);margin:0 6px 0 2px;vertical-align:0}
+.finding{font-family:"EB Garamond",Georgia,serif;font-size:1.25rem;line-height:1.25}
+/* tooltip */
+.tip{position:fixed;z-index:10;pointer-events:none;background:var(--tip-bg);color:var(--tip-ink);border-radius:8px;padding:9px 11px;font-size:.8rem;line-height:1.4;max-width:320px;box-shadow:0 6px 24px rgba(0,0,0,.18)}
+.tip .v{font-weight:600;font-size:.92rem}
+.tip .s{color:var(--tip-2)}
+.notes{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+.notes div{display:flex;flex-direction:column;gap:6px}
+.notes p{color:var(--ink-2);font-size:.9rem}
+code{font-family:"IBM Plex Mono",ui-monospace,Menlo,monospace;font-size:.84em;color:var(--ink-2)}
+@media (prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
+</style>
+
+<main>
+  <header>
+    <div class="eyebrow">reverse-bafu · BAFU-2026 · 51 system processes</div>
+    <h1>Elementary Flow Parity</h1>
+    <p class="lede">How close does each rebuilt unit process come to the system process it replaces? Both sides are cumulative inventories in today's BAFU-2026 background. The rebuild is compared <b>without</b> its residual block, which would make it match exactly by construction.</p>
+    <div class="facts" id="facts"></div>
+  </header>
+
+  <section aria-labelledby="h-pool">
+    <div class="sec-head">
+      <h2 id="h-pool">All flows, all 51 datasets</h2>
+      <p class="muted small">Every elementary flow of every rebuilt dataset in one plot. Each cell is shaded by how many flows fall into it; <span class="mk"></span>marks each dataset's fossil-CO₂ total. Amounts are in each flow's own unit, so the distance from the diagonal compares across all of them. The grey strip on the left holds flows only the rebuild has; the one along the bottom, flows it is missing. Hover a cell to see what sits there; click a marker to open that dataset below.</p>
+    </div>
+    <div class="controls">
+      <label class="ctl" for="p-route">Route <select id="p-route"><option value="">All routes</option><option value="S1">S1 · Transcription</option><option value="S2">S2 · Template transfer</option><option value="S3">S3 · Top-down model</option></select></label>
+      <label class="ctl" for="p-unit">Unit <select id="p-unit"></select></label>
+      <div class="seg" role="group" aria-label="View">
+        <button id="p-par" aria-pressed="true">Rebuilt vs original</button>
+        <button id="p-rat" aria-pressed="false">Ratio</button>
+      </div>
+      <div class="legend"><span>flows per cell</span><span class="dens" id="p-dens"></span></div>
+    </div>
+    <div class="pool">
+      <div class="card"><div class="cv" id="p-cv"><canvas id="p-canvas" aria-label="Density of all elementary flows, rebuilt against original"></canvas></div></div>
+      <div class="stats">
+        <p class="finding" id="p-finding"></p>
+        <dl class="kv" id="p-kv"></dl>
+        <div class="tbl-wrap"><table id="p-size"><thead><tr><th>Size within its dataset</th><th>flows</th><th>±10 %</th><th>within ×2</th></tr></thead><tbody></tbody></table></div>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="h-heat">
+    <div class="sec-head">
+      <h2 id="h-heat">Headline emissions, every dataset</h2>
+      <p class="muted small">Each substance summed over every compartment it appears in. A single row can mislead: the original and the rebuild often book the same kilogram in different air sub-compartments. Click a dataset to see all of its flows below.</p>
+    </div>
+    <div class="controls">
+      <div class="legend" aria-label="Colour key: rebuilt divided by original">
+        <div class="leg-group">
+          <div class="ramp" id="ramp"></div>
+          <div class="ramp-labels"><span>&lt; ×0.5</span><span>×0.5–0.8</span><span>×0.8–0.9</span><span>±10 %</span><span>×1.1–1.25</span><span>×1.25–2</span><span>&gt; ×2</span></div>
+        </div>
+        <span><span class="sw" style="box-shadow:inset 0 0 0 1px var(--line)"></span>neither side has it</span>
+      </div>
+      <button class="tg" id="nums" aria-pressed="false">Show numbers</button>
+    </div>
+    <div class="hm-wrap"><div class="hm" id="hm" aria-label="Rebuilt versus original, headline emissions"></div></div>
+  </section>
+
+  <section aria-labelledby="h-par" id="parity">
+    <div class="sec-head">
+      <h2 id="h-par">Every flow of one dataset</h2>
+      <p class="muted small">Grey dots are individual elementary flows (per compartment); ink diamonds are the eight headline totals. Flows the matrix solve only produces as round-off are left out.</p>
+    </div>
+    <div class="controls">
+      <label class="ctl" for="ds">Dataset <select id="ds"></select></label>
+      <label class="ctl" for="unit">Unit <select id="unit"></select></label>
+      <div class="seg" role="group" aria-label="View">
+        <button id="v-par" aria-pressed="true">Rebuilt vs original</button>
+        <button id="v-rat" aria-pressed="false">Ratio</button>
+      </div>
+    </div>
+    <div class="pgrid">
+      <div class="card plot" id="plot"></div>
+      <div class="stats">
+        <div id="meta"></div>
+        <dl class="kv" id="kv"></dl>
+        <div class="tbl-wrap">
+          <table id="headtbl"><thead><tr><th>Headline, summed</th><th>Original</th><th>Rebuilt</th><th>Rebuilt ÷ orig.</th></tr></thead><tbody></tbody></table>
+        </div>
+      </div>
+    </div>
+    <details>
+      <summary class="small">The 25 largest flows of this dataset, as a table</summary>
+      <div class="tbl-wrap" style="margin-top:10px"><table id="toptbl"><thead><tr><th>Flow</th><th>Compartment</th><th>Original</th><th>Rebuilt</th><th>Rebuilt ÷ orig.</th></tr></thead><tbody></tbody></table></div>
+    </details>
+  </section>
+
+  <section aria-labelledby="h-notes">
+    <h2 id="h-notes">Reading this honestly</h2>
+    <div class="notes">
+      <div><h3>The originals were built on older data</h3><p>Every rebuild links to today's BAFU-2026 unit processes; the system processes were computed with the background of their time. Even BAFU's own dis-aggregated epoxy, swapped in one for one, emits <b id="epoxy-x">2.7×</b> the fossil CO₂ of the epoxy system process. A mismatch here is therefore not only an error in our rebuild.</p></div>
+      <div><h3>Rebuilds tend to run low</h3><p>Where the evidence names an input without an amount, the fit often pushes it to the bottom of its range; missing utilities then show up as missing emissions. That is the blue side of the grid, and it is strongest for the S3 top-down models.</p></div>
+      <div><h3>Where the data comes from</h3><p><code>scripts/flow_comparison.py</code> computes every number on this page into <code>results/flow_comparison.json</code>: one matrix factorisation over every spec in <code>specs/</code>, round-off flows excluded via <code>lci.determined_flows</code>.</p></div>
+    </div>
+  </section>
+</main>
+<div class="tip" id="tip" hidden></div>
+
+<script id="data" type="application/json">/*DATA*/</script>
+<script>
+(() => {
+const D = JSON.parse(document.getElementById('data').textContent);
+const H = D.headline, F = D.flows, S = D.specs;
+const COUNTED = S.filter(s => s.counted);
+const ROUTE = {S1: 'Transcription', S2: 'Template transfer', S3: 'Top-down model'};
+const BINS = ['u3','u2','u1','n0','o1','o2','o3'];
+
+// ---------- formatting ----------
+const SUP = {'-':'⁻','0':'⁰','1':'¹','2':'²','3':'³','4':'⁴','5':'⁵','6':'⁶','7':'⁷','8':'⁸','9':'⁹'};
+const sup = n => String(n).split('').map(c => SUP[c] || c).join('');
+function num(x) {
+  if (x === 0) return '0';
+  const a = Math.abs(x);
+  if (a >= 0.01 && a < 1e5) return x.toLocaleString('en-US', {maximumSignificantDigits: 3});
+  const e = Math.floor(Math.log10(a)), m = x / 10 ** e;
+  return `${m.toFixed(2)} × 10${sup(e)}`;
+}
+function ratioText(o, m) {
+  if (!o && !m) return '—';
+  if (!o) return 'only in rebuild';
+  if (!m) return 'missing in rebuild';
+  const r = m / o;
+  if (r >= 2 || r <= 0.5) return `×${r.toLocaleString('en-US', {maximumSignificantDigits: 2})}`;
+  const p = Math.round((r - 1) * 100);
+  return (p > 0 ? '+' : p < 0 ? '−' : '±') + Math.abs(p) + ' %';
+}
+function bin(o, m) {           // index into BINS, or -1 when neither side has the flow
+  if (!o && !m) return -1;
+  if (!o) return 6;
+  const r = m / o;
+  if (r >= 0.9 && r <= 1.1) return 3;
+  if (r > 1.1) return r <= 1.25 ? 4 : r <= 2 ? 5 : 6;
+  return r >= 0.8 ? 2 : r >= 0.5 ? 1 : 0;
+}
+const esc = t => { const d = document.createElement('div'); d.textContent = t; return d.innerHTML; };
+
+// ---------- tooltip ----------
+const tip = document.getElementById('tip');
+function showTip(nodes, x, y) {
+  tip.replaceChildren(...nodes); tip.hidden = false;
+  const w = tip.offsetWidth, h = tip.offsetHeight;
+  let lx = x + 14, ly = y + 14;
+  if (lx + w > innerWidth - 8) lx = x - w - 14;
+  if (ly + h > innerHeight - 8) ly = y - h - 14;
+  tip.style.left = Math.max(8, lx) + 'px'; tip.style.top = Math.max(8, ly) + 'px';
+}
+function line(text, cls) { const d = document.createElement('div'); if (cls) d.className = cls; d.textContent = text; return d; }
+const hideTip = () => { tip.hidden = true; };
+
+// ---------- facts ----------
+(function facts() {
+  const co2 = COUNTED.filter(s => s.headline.co2[0]).map(s => s.headline.co2[1] / s.headline.co2[0]);
+  const w10 = co2.filter(r => r >= 0.9 && r <= 1.1).length, w25 = co2.filter(r => r >= 0.75 && r <= 1.25).length;
+  const med = co2.slice().sort((a, b) => a - b)[Math.floor(co2.length / 2)];
+  const ep = S.find(s => s.spec.endsWith('c80b8e9e-epoxy-resin-liquid-at-plant.json'));
+  const epx = ep ? ep.headline.co2[1] / ep.headline.co2[0] : null;
+  if (epx) document.getElementById('epoxy-x').textContent = `${epx.toFixed(1)}×`;
+  const items = [
+    [`${w10} of ${co2.length}`, 'rebuilds reproduce fossil CO₂ within ±10\u00a0%'],
+    [`${w25} of ${co2.length}`, 'within ±25\u00a0% — the rest are further off'],
+    [`${Math.round((med - 1) * 100)} %`.replace('-', '−'), 'median fossil-CO₂ deviation: rebuilds run low'],
+    [epx ? `${epx.toFixed(1)}×` : '—', "fossil CO₂ of BAFU's own dis-aggregated epoxy vs its aggregate"],
+  ];
+  document.getElementById('facts').replaceChildren(...items.map(([v, t]) => {
+    const d = document.createElement('div'); d.className = 'fact';
+    const b = document.createElement('b'); b.textContent = v;
+    const s = document.createElement('span'); s.textContent = t;
+    d.append(b, s); return d;
+  }));
+})();
+
+// ---------- heatmap ----------
+document.getElementById('ramp').innerHTML = BINS.map(b => `<i style="background:var(--${b})"></i>`).join('');
+const hm = document.getElementById('hm');
+function buildHeat() {
+  const frag = [];
+  frag.push('<div></div>' + H.map(h => `<div class="colh">${esc(h.label)}</div>`).join(''));
+  for (const route of ['S1', 'S2', 'S3']) {
+    const rows = COUNTED.filter(s => s.strategy === route);
+    if (!rows.length) continue;
+    const lr = s => s.headline.co2[0] && s.headline.co2[1] ? Math.log(s.headline.co2[1] / s.headline.co2[0]) : -99;
+    rows.sort((a, b) => lr(a) - lr(b));
+    const co2 = rows.filter(s => s.headline.co2[0]).map(s => s.headline.co2[1] / s.headline.co2[0]).sort((a, b) => a - b);
+    const med = co2.length ? co2[Math.floor(co2.length / 2)] : null;
+    frag.push(`<div class="grouph"><b>${route} · ${ROUTE[route]}</b><span>${rows.length} dataset${rows.length > 1 ? 's' : ''}` +
+      (med ? ` · median fossil CO₂ ${esc(ratioText(1, med))}` : '') + `</span></div>`);
+    for (const s of rows) {
+      const i = S.indexOf(s);
+      frag.push(`<button class="rowlabel" data-i="${i}"><span class="nm">${esc(s.name)}</span><span class="loc">${esc(s.location)}${s.detected_by === 'structure' ? ' · found by structure' : ''}</span></button>`);
+      for (const h of H) {
+        const [o, m] = s.headline[h.key], b = bin(o, m);
+        if (b < 0) { frag.push(`<div class="cell none" aria-label="${esc(h.label)}: neither side"></div>`); continue; }
+        frag.push(`<button class="cell" data-i="${i}" data-k="${h.key}" style="background:var(--${BINS[b]});--cell-ink:var(--t-${BINS[b]})" aria-label="${esc(s.name)}, ${esc(h.label)}: ${esc(ratioText(o, m))}">${esc(ratioText(o, m).replace(' in rebuild', ''))}</button>`);
+      }
+    }
+  }
+  // column summary
+  frag.push(`<div class="sumlab">within ±10 %</div>` + H.map(h => {
+    const v = COUNTED.filter(s => s.headline[h.key][0]).map(s => s.headline[h.key][1] / s.headline[h.key][0]);
+    return `<div class="sum"><b>${v.filter(r => r >= 0.9 && r <= 1.1).length}</b> / ${v.length}</div>`;
+  }).join(''));
+  hm.innerHTML = frag.join('');
+}
+buildHeat();
+hm.addEventListener('pointermove', e => {
+  const c = e.target.closest('.cell[data-k]');
+  if (!c) return hideTip();
+  const s = S[+c.dataset.i], h = H.find(x => x.key === c.dataset.k), [o, m] = s.headline[h.key];
+  showTip([line(ratioText(o, m), 'v'), line(`${h.label} · ${s.name}`), line(`original ${num(o)} kg · rebuilt ${num(m)} kg`, 's')], e.clientX, e.clientY);
+});
+hm.addEventListener('pointerleave', hideTip);
+hm.addEventListener('focusin', e => {
+  const c = e.target.closest('.cell[data-k]'); if (!c) return;
+  const r = c.getBoundingClientRect(), s = S[+c.dataset.i], h = H.find(x => x.key === c.dataset.k), [o, m] = s.headline[h.key];
+  showTip([line(ratioText(o, m), 'v'), line(`${h.label} · ${s.name}`), line(`original ${num(o)} kg · rebuilt ${num(m)} kg`, 's')], r.right, r.bottom);
+});
+hm.addEventListener('focusout', hideTip);
+hm.addEventListener('click', e => {
+  const b = e.target.closest('[data-i]'); if (!b) return;
+  select(+b.dataset.i, true);
+});
+const numsBtn = document.getElementById('nums');
+numsBtn.addEventListener('click', () => {
+  const on = numsBtn.getAttribute('aria-pressed') !== 'true';
+  numsBtn.setAttribute('aria-pressed', on); numsBtn.textContent = on ? 'Hide numbers' : 'Show numbers';
+  hm.classList.toggle('shownums', on);
+});
+
+// ---------- parity ----------
+const ds = document.getElementById('ds'), unitSel = document.getElementById('unit');
+const vPar = document.getElementById('v-par'), vRat = document.getElementById('v-rat');
+let cur = S.findIndex(s => s.counted && s.name.startsWith('Burnt shale')), mode = 'par', pts = [];
+if (cur < 0) cur = 0;
+(function fillSelect() {
+  for (const route of ['S1', 'S2', 'S3']) {
+    const g = document.createElement('optgroup'); g.label = `${route} · ${ROUTE[route]}`;
+    S.map((s, i) => [s, i]).filter(([s]) => s.strategy === route)
+      .sort((a, b) => a[0].name.localeCompare(b[0].name))
+      .forEach(([s, i]) => {
+        const o = document.createElement('option'); o.value = i;
+        o.textContent = s.name + (s.variant ? ` (${s.variant})` : '') + (s.counted ? '' : ' — not counted');
+        g.append(o);
+      });
+    ds.append(g);
+  }
+})();
+ds.addEventListener('change', () => select(+ds.value, false));
+unitSel.addEventListener('change', draw);
+vPar.addEventListener('click', () => { mode = 'par'; vPar.setAttribute('aria-pressed', 'true'); vRat.setAttribute('aria-pressed', 'false'); draw(); });
+vRat.addEventListener('click', () => { mode = 'rat'; vRat.setAttribute('aria-pressed', 'true'); vPar.setAttribute('aria-pressed', 'false'); draw(); });
+
+function select(i, scroll) {
+  cur = i; ds.value = i;
+  document.querySelectorAll('.rowlabel').forEach(b => b.classList.toggle('sel', +b.dataset.i === i));
+  const units = [...new Set(S[i].flows.map(f => F[f[0]][2]))].sort((a, b) => (b === 'kilogram') - (a === 'kilogram') || a.localeCompare(b));
+  const prev = unitSel.value;
+  unitSel.replaceChildren(...units.map(u => { const o = document.createElement('option'); o.value = u; o.textContent = u; return o; }));
+  unitSel.value = units.includes(prev) ? prev : units[0];
+  draw();
+  if (scroll) document.getElementById('parity').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth', block: 'start'});
+}
+
+const W = 660, HH = 540, M = {l: 70, r: 18, t: 16, b: 58}, BAND = 16;
+function draw() {
+  const s = S[cur], unit = unitSel.value;
+  const fl = s.flows.filter(f => F[f[0]][2] === unit);
+  const X0 = M.l + BAND + 6, X1 = W - M.r, Y0 = M.t, Y1 = HH - M.b - BAND - 6;
+  const vals = [];
+  for (const [, o, m] of fl) { if (o > 0) vals.push(o); if (m > 0 && mode === 'par') vals.push(m); }
+  const heads = unit === 'kilogram' ? H.map(h => ({h, o: s.headline[h.key][0], m: s.headline[h.key][1]})).filter(x => x.o > 0 || x.m > 0) : [];
+  const vmax = vals.length ? Math.max(...vals) : 1, vmin = vals.length ? Math.min(...vals) : 0.1;
+  const hi = Math.ceil(Math.log10(vmax) + 0.05), lo = Math.max(Math.floor(Math.log10(vmin)), hi - 16);
+  const sx = v => X0 + (Math.log10(v) - lo) / (hi - lo) * (X1 - X0);
+  const rlo = -3, rhi = 3;
+  const sy = mode === 'par' ? v => Y1 - (Math.log10(v) - lo) / (hi - lo) * (Y1 - Y0)
+                            : r => Y1 - (Math.max(rlo, Math.min(rhi, Math.log10(r))) - rlo) / (rhi - rlo) * (Y1 - Y0);
+  const clampX = v => Math.max(X0, sx(Math.max(v, 10 ** lo)));
+  const out = [];
+  // grid + ticks
+  const span = hi - lo, step = span > 12 ? 3 : span > 7 ? 2 : 1;
+  out.push('<g class="axis">');
+  for (let d = Math.ceil(lo / step) * step; d <= hi; d += step) {
+    const x = sx(10 ** d);
+    out.push(`<line x1="${x}" x2="${x}" y1="${Y0}" y2="${Y1}" stroke="var(--grid)" stroke-width="1"/>`,
+             `<text x="${x}" y="${HH - M.b + 16}" text-anchor="middle">10${sup(d)}</text>`);
+  }
+  if (mode === 'par') {
+    for (let d = Math.ceil(lo / step) * step; d <= hi; d += step) {
+      const y = sy(10 ** d);
+      out.push(`<line x1="${X0}" x2="${X1}" y1="${y}" y2="${y}" stroke="var(--grid)" stroke-width="1"/>`,
+               `<text x="${M.l - 8}" y="${y + 4}" text-anchor="end">10${sup(d)}</text>`);
+    }
+  } else {
+    for (let d = rlo; d <= rhi; d++) {
+      const y = sy(10 ** d);
+      out.push(`<line x1="${X0}" x2="${X1}" y1="${y}" y2="${y}" stroke="var(--grid)" stroke-width="1"/>`,
+               `<text x="${M.l - 8}" y="${y + 4}" text-anchor="end">×${d < 0 ? '1/' + 10 ** -d : 10 ** d}</text>`);
+    }
+  }
+  out.push(`<text x="${(X0 + X1) / 2}" y="${HH - 10}" text-anchor="middle">original (${esc(unit)} per ${esc(s.unit)})</text>`,
+           `<text transform="translate(16 ${(Y0 + Y1) / 2}) rotate(-90)" text-anchor="middle">${mode === 'par' ? `rebuilt (${esc(unit)})` : 'rebuilt ÷ original'}</text>`,
+           '</g>');
+  // reference bands
+  if (mode === 'par') {
+    const a = 10 ** lo, b = 10 ** hi;
+    const poly = (f1, f2, fill) => `<polygon points="${sx(a)},${sy(a * f1)} ${sx(b / f1)},${sy(b)} ${sx(b)},${sy(b)} ${sx(b)},${sy(b / f2)} ${sx(a * f2)},${sy(a)} ${sx(a)},${sy(a)}" fill="${fill}"/>`;
+    out.push(poly(2, 2, 'var(--band-2)'), poly(1.1, 1.1, 'var(--band)'),
+             `<line x1="${sx(a)}" y1="${sy(a)}" x2="${sx(b)}" y2="${sy(b)}" stroke="var(--axis)" stroke-width="1"/>`);
+  } else {
+    out.push(`<rect x="${X0}" y="${sy(2)}" width="${X1 - X0}" height="${sy(0.5) - sy(2)}" fill="var(--band-2)"/>`,
+             `<rect x="${X0}" y="${sy(1.1)}" width="${X1 - X0}" height="${sy(0.9) - sy(1.1)}" fill="var(--band)"/>`,
+             `<line x1="${X0}" x2="${X1}" y1="${sy(1)}" y2="${sy(1)}" stroke="var(--axis)" stroke-width="1"/>`);
+  }
+  // edge bands for flows one side does not have
+  out.push(`<rect x="${X0}" y="${Y1 + 6}" width="${X1 - X0}" height="${BAND}" fill="var(--band-2)"/>`,
+           `<text class="axis" x="${X1 - 4}" y="${Y1 + 6 + BAND - 4}" text-anchor="end" style="fill:var(--muted);font-size:10px">missing in rebuild</text>`);
+  if (mode === 'par') out.push(`<rect x="${M.l}" y="${Y0}" width="${BAND}" height="${Y1 - Y0}" fill="var(--band-2)"/>`,
+    `<text x="${M.l + 11}" y="${Y0 + 4}" transform="rotate(90 ${M.l + 11} ${Y0 + 4})" style="fill:var(--muted);font-size:10px">only in rebuild</text>`);
+  // points
+  pts = []; let within = 0, missing = 0, only = 0;
+  for (const [r, o, m] of fl) {
+    let x, y;
+    if (o > 0 && m > 0) {
+      x = clampX(o); y = mode === 'par' ? Math.min(Y1, sy(Math.max(m, 10 ** lo))) : sy(m / o);
+      const q = m / o; if (q >= 0.9 && q <= 1.1) within++;
+    } else if (o > 0) { x = clampX(o); y = Y1 + 6 + BAND / 2; missing++; }
+    else if (m > 0) { only++; if (mode === 'rat') continue; x = M.l + BAND / 2; y = sy(Math.max(m, 10 ** lo)); }
+    else continue;
+    pts.push({x, y, r, o, m});
+  }
+  out.push('<g>' + pts.map(p => `<circle cx="${p.x.toFixed(1)}" cy="${p.y.toFixed(1)}" r="2.6" fill="var(--pt)"/>`).join('') + '</g>');
+  // headline diamonds
+  for (const {h, o, m} of heads) {
+    if (!(o > 0 && m > 0)) continue;
+    const x = clampX(o), y = mode === 'par' ? sy(Math.max(m, 10 ** lo)) : sy(m / o);
+    out.push(`<path data-head="${h.key}" d="M${x} ${y - 6} L${x + 6} ${y} L${x} ${y + 6} L${x - 6} ${y} Z" fill="var(--pt-hi)" stroke="var(--surface)" stroke-width="2"/>`);
+    pts.push({x, y, head: h, o, m});
+    if (h.key === 'co2') out.push(`<text x="${x + 10}" y="${y - 8}" style="fill:var(--ink);font-size:12px;font-weight:600">fossil CO₂</text>`);
+  }
+  out.push(`<circle id="hl" r="7" fill="none" stroke="var(--ink)" stroke-width="2" visibility="hidden"/>`);
+  const plot = document.getElementById('plot');
+  plot.innerHTML = `<svg viewBox="0 0 ${W} ${HH}" role="img" aria-label="${esc(s.name)}: ${fl.length} ${esc(unit)} flows, rebuilt against original">${out.join('')}</svg>`;
+
+  // side panel
+  const meta = document.getElementById('meta');
+  meta.innerHTML = `<h3>${esc(s.name)}</h3><div style="display:flex;gap:6px;flex-wrap:wrap;margin-top:6px">` +
+    `<span class="chip">${esc(s.strategy)} · ${esc(ROUTE[s.strategy] || '')}</span>` +
+    (s.variant ? `<span class="chip">${esc(s.variant)}</span>` : '') + `<span class="chip">${esc(s.location)}</span></div>`;
+  const kv = [['flows compared', fl.length], ['within ±10 %', `${within} (${fl.length ? Math.round(within / fl.length * 100) : 0} %)`],
+              ['missing in rebuild', missing], ['only in rebuild', only]];
+  document.getElementById('kv').innerHTML = kv.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('');
+  const hb = document.querySelector('#headtbl tbody');
+  hb.innerHTML = unit !== 'kilogram' ? `<tr><td colspan="4" class="muted">headline totals are in kilogram</td></tr>` :
+    H.map(h => {
+      const [o, m] = s.headline[h.key], b = bin(o, m);
+      return `<tr data-head="${h.key}"><td>${esc(h.label)}</td><td>${esc(num(o))}</td><td>${esc(num(m))}</td><td><span class="dev">${esc(ratioText(o, m))}${b >= 0 ? `<i style="background:var(--${BINS[b]})"></i>` : ''}</span></td></tr>`;
+    }).join('');
+  const top = fl.filter(f => f[1] > 0).sort((a, b) => b[1] - a[1]).slice(0, 25);
+  document.querySelector('#toptbl tbody').innerHTML = top.map(([r, o, m]) =>
+    `<tr><td>${esc(F[r][0])}</td><td style="text-align:left;white-space:normal">${esc(F[r][1])}</td><td>${esc(num(o))}</td><td>${esc(num(m))}</td><td>${esc(ratioText(o, m))}</td></tr>`).join('');
+}
+
+// hover on the plot: nearest point within reach
+const plotEl = document.getElementById('plot');
+plotEl.addEventListener('pointermove', e => {
+  const svg = plotEl.querySelector('svg'); if (!svg) return;
+  const b = svg.getBoundingClientRect(), k = W / b.width;
+  const px = (e.clientX - b.left) * k, py = (e.clientY - b.top) * k;
+  let best = null, bd = (16 * k) ** 2;
+  for (const p of pts) { const d = (p.x - px) ** 2 + (p.y - py) ** 2; if (d < bd || (p.head && d < bd * 1.8)) { bd = d; best = p; } }
+  const hl = svg.getElementById('hl');
+  if (!best) { hl.setAttribute('visibility', 'hidden'); return hideTip(); }
+  hl.setAttribute('cx', best.x); hl.setAttribute('cy', best.y); hl.setAttribute('visibility', 'visible');
+  const unit = unitSel.value;
+  if (best.head) showTip([line(ratioText(best.o, best.m), 'v'), line(`${best.head.label}, summed over all compartments`), line(`original ${num(best.o)} · rebuilt ${num(best.m)} kg`, 's')], e.clientX, e.clientY);
+  else { const f = F[best.r]; showTip([line(ratioText(best.o, best.m), 'v'), line(f[0]), line(f[1], 's'), line(`original ${num(best.o)} · rebuilt ${num(best.m)} ${unit}`, 's')], e.clientX, e.clientY); }
+  document.querySelectorAll('#headtbl tr').forEach(tr => tr.classList.toggle('hl', best.head && tr.dataset.head === best.head.key));
+});
+plotEl.addEventListener('pointerleave', () => { hideTip(); const hl = plotEl.querySelector('#hl'); if (hl) hl.setAttribute('visibility', 'hidden'); document.querySelectorAll('#headtbl tr').forEach(tr => tr.classList.remove('hl')); });
+
+// ---------- pooled density ----------
+(function pooled() {
+  const cv = document.getElementById('p-canvas'), box = document.getElementById('p-cv');
+  const rSel = document.getElementById('p-route'), uSel = document.getElementById('p-unit');
+  const bPar = document.getElementById('p-par'), bRat = document.getElementById('p-rat');
+  let pmode = 'par', cells = null, geo = null, marks = [];
+  const units = {};
+  COUNTED.forEach(s => s.flows.forEach(f => { const u = F[f[0]][2]; units[u] = (units[u] || 0) + 1; }));
+  uSel.append(...[['', 'All units'], ...Object.entries(units).sort((a, b) => b[1] - a[1]).map(([u, n]) => [u, `${u} (${n.toLocaleString('en-US')})`])]
+    .map(([v, t]) => { const o = document.createElement('option'); o.value = v; o.textContent = t; return o; }));
+  const SPAN = 24, NX = 150;
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+  function rgb(hex) { const h = hex.replace('#', ''); return [0, 2, 4].map(i => parseInt(h.slice(i, i + 2), 16)); }
+  const alpha = (c, max) => 0.10 + 0.90 * Math.log(1 + c) / Math.log(1 + max);
+
+  function draw() {
+    const route = rSel.value, unit = uSel.value;
+    const ds = COUNTED.filter(s => !route || s.strategy === route);
+    const W = box.clientWidth, H = Math.round(Math.min(W * (pmode === 'par' ? 0.9 : 0.7), 640));
+    const dpr = window.devicePixelRatio || 1;
+    cv.width = W * dpr; cv.height = H * dpr; cv.style.height = H + 'px';
+    const g = cv.getContext('2d'); g.setTransform(dpr, 0, 0, dpr, 0, 0); g.clearRect(0, 0, W, H);
+    const M = {l: 58, r: 10, t: 10, b: 46}, B = 12;
+    const X0 = M.l + B + 4, X1 = W - M.r, Y0 = M.t, Y1 = H - M.b - B - 4;
+    // gather
+    const P = []; let neg = 0, only = 0, miss = 0, both = 0, w10 = 0, w2 = 0, vmax = 0;
+    const sizes = [[0.1, 'over 10 %'], [0.01, '1–10 %'], [1e-3, '0.1–1 %'], [1e-5, '0.001–0.1 %'], [0, 'below 0.001 %']].map(([lo, lab]) => ({lo, lab, n: 0, a: 0, b: 0}));
+    for (const s of ds) {
+      const tot = {};
+      for (const [r, o] of s.flows) if (o > 0) { const u = F[r][2]; tot[u] = (tot[u] || 0) + o; }
+      for (const [r, o, m] of s.flows) {
+        if (unit && F[r][2] !== unit) continue;
+        if (o < 0 || m < 0) { neg++; continue; }
+        if (o > 0 && m > 0) {
+          both++; const q = m / o; const in10 = q >= 0.9 && q <= 1.1, in2 = q >= 0.5 && q <= 2; w10 += in10; w2 += in2;
+          const sh = o / tot[F[r][2]], z = sizes.find(z => sh >= z.lo); z.n++; z.a += in10; z.b += in2;
+          vmax = Math.max(vmax, o, pmode === 'par' ? m : 0);
+        } else if (o > 0) { miss++; const sh = o / tot[F[r][2]], z = sizes.find(z => sh >= z.lo); z.n++; vmax = Math.max(vmax, o); }
+        else if (m > 0) { only++; if (pmode === 'par') vmax = Math.max(vmax, m); }
+        P.push([r, o, m, s]);
+      }
+    }
+    const hi = Math.ceil(Math.log10(vmax || 1) + 0.05), lo = hi - SPAN;
+    const NY = pmode === 'par' ? NX : Math.round(NX * 0.6), RLO = -4, RHI = 4;
+    const fx = v => (Math.log10(v) - lo) / SPAN, fr = q => (Math.max(RLO, Math.min(RHI, Math.log10(q))) - RLO) / (RHI - RLO);
+    const cx = v => Math.min(NX - 1, Math.max(0, Math.floor(fx(v) * NX)));
+    const cy = v => Math.min(NY - 1, Math.max(0, Math.floor((pmode === 'par' ? fx(v) : fr(v)) * NY)));
+    cells = new Map(); const strip = {left: new Map(), bottom: new Map()}; let below = 0;
+    const add = (map, k, p) => { let c = map.get(k); if (!c) map.set(k, c = []); c.push(p); };
+    for (const p of P) {
+      const [, o, m] = p;
+      if (o > 0 && m > 0) {
+        if (o < 10 ** lo || (pmode === 'par' && m < 10 ** lo)) below++;
+        add(cells, cx(o) + NX * cy(pmode === 'par' ? m : m / o), p);
+      } else if (o > 0) add(strip.bottom, cx(o), p);
+      else if (m > 0 && pmode === 'par') add(strip.left, cy(m), p);
+    }
+    let cmax = 1; cells.forEach(c => { cmax = Math.max(cmax, c.length); });
+    const ink = rgb(css('--ink')), cw = (X1 - X0) / NX, ch = (Y1 - Y0) / NY;
+    geo = {X0, X1, Y0, Y1, NX, NY, cw, ch, B, M, lo, hi, strip};
+    // grid + ticks
+    g.font = `11px "IBM Plex Sans", system-ui, sans-serif`; g.fillStyle = css('--muted'); g.strokeStyle = css('--grid'); g.lineWidth = 1;
+    const sx = v => X0 + fx(v) * (X1 - X0), syP = v => Y1 - fx(v) * (Y1 - Y0), syR = q => Y1 - fr(q) * (Y1 - Y0);
+    for (let d = Math.ceil(lo / 4) * 4; d <= hi; d += 4) {
+      const x = sx(10 ** d); g.beginPath(); g.moveTo(x + .5, Y0); g.lineTo(x + .5, Y1); g.stroke();
+      g.textAlign = 'center'; g.fillText(`10${sup(d)}`, x, H - M.b + 14);
+      if (pmode === 'par') { const y = syP(10 ** d); g.beginPath(); g.moveTo(X0, y + .5); g.lineTo(X1, y + .5); g.stroke(); g.textAlign = 'right'; g.fillText(`10${sup(d)}`, M.l - 6, y + 4); }
+    }
+    if (pmode === 'rat') for (let d = RLO; d <= RHI; d += 1) {
+      const y = syR(10 ** d); g.beginPath(); g.moveTo(X0, y + .5); g.lineTo(X1, y + .5); g.stroke();
+      g.textAlign = 'right'; g.fillText(d === 0 ? '×1' : d < 0 ? `×1/${(10 ** -d).toLocaleString('en-US')}` : `×${(10 ** d).toLocaleString('en-US')}`, M.l - 6, y + 4);
+    }
+    g.textAlign = 'center'; g.fillText(`original amount, in each flow's own unit${unit ? ` (${unit})` : ''}`, (X0 + X1) / 2, H - 8);
+    g.save(); g.translate(13, (Y0 + Y1) / 2); g.rotate(-Math.PI / 2); g.fillText(pmode === 'par' ? 'rebuilt amount' : 'rebuilt ÷ original', 0, 0); g.restore();
+    // bands
+    g.fillStyle = css('--band-2');
+    if (pmode === 'par') {
+      const band = f => { g.beginPath(); g.moveTo(sx(10 ** lo), syP(10 ** lo * f)); g.lineTo(sx(10 ** hi / f), syP(10 ** hi)); g.lineTo(sx(10 ** hi), syP(10 ** hi)); g.lineTo(sx(10 ** hi), syP(10 ** hi / f)); g.lineTo(sx(10 ** lo * f), syP(10 ** lo)); g.lineTo(sx(10 ** lo), syP(10 ** lo)); g.closePath(); g.fill(); };
+      band(2); g.fillStyle = css('--band'); band(1.1);
+    } else {
+      g.fillRect(X0, syR(2), X1 - X0, syR(0.5) - syR(2)); g.fillStyle = css('--band'); g.fillRect(X0, syR(1.1), X1 - X0, syR(0.9) - syR(1.1));
+    }
+    g.fillStyle = css('--band-2'); g.fillRect(X0, Y1 + 4, X1 - X0, B); if (pmode === 'par') g.fillRect(M.l, Y0, B, Y1 - Y0);
+    // density
+    cells.forEach((c, k) => { const i = k % NX, j = Math.floor(k / NX); g.fillStyle = `rgba(${ink},${alpha(c.length, cmax)})`; g.fillRect(X0 + i * cw, Y1 - (j + 1) * ch, Math.ceil(cw), Math.ceil(ch)); });
+    strip.bottom.forEach((c, i) => { g.fillStyle = `rgba(${ink},${alpha(c.length, cmax)})`; g.fillRect(X0 + i * cw, Y1 + 4, Math.ceil(cw), B); });
+    strip.left.forEach((c, j) => { g.fillStyle = `rgba(${ink},${alpha(c.length, cmax)})`; g.fillRect(M.l, Y1 - (j + 1) * ch, B, Math.ceil(ch)); });
+    // diagonal / unity
+    g.strokeStyle = css('--axis'); g.beginPath();
+    if (pmode === 'par') { g.moveTo(sx(10 ** lo), syP(10 ** lo)); g.lineTo(sx(10 ** hi), syP(10 ** hi)); } else { g.moveTo(X0, syR(1)); g.lineTo(X1, syR(1)); }
+    g.stroke();
+    // fossil-CO2 markers
+    marks = [];
+    if (!unit || unit === 'kilogram') {
+      const mk = css('--mark'), ring = css('--surface');
+      for (const s of ds) {
+        const [o, m] = s.headline.co2; if (!(o > 0 && m > 0)) continue;
+        const x = sx(o), y = pmode === 'par' ? syP(m) : syR(m / o);
+        g.beginPath(); g.moveTo(x, y - 5); g.lineTo(x + 5, y); g.lineTo(x, y + 5); g.lineTo(x - 5, y); g.closePath();
+        g.fillStyle = mk; g.strokeStyle = ring; g.lineWidth = 1.5; g.fill(); g.stroke();
+        marks.push({x, y, s, o, m});
+      }
+    }
+    // legend ramp
+    document.getElementById('p-dens').innerHTML = [1, 10, 100, 1000].filter(v => v <= cmax).concat(cmax > 1000 ? [cmax] : [])
+      .map(v => `<span style="display:inline-flex;flex-direction:column;align-items:center;gap:2px;width:30px"><i style="background:rgba(${ink},${alpha(v, cmax)})"></i><span style="font-size:.66rem">${v >= 1000 ? (v / 1000).toLocaleString('en-US', {maximumFractionDigits: 1}) + 'k' : v}</span></span>`).join('');
+    // side panel
+    const pct = (a, n) => n ? Math.round(a / n * 100) + ' %' : '—';
+    document.getElementById('p-finding').textContent = `Of the flows both sides have, ${pct(w10, both)} match within ±10\u00a0% and ${pct(w2, both)} within a factor of 2.`;
+    const kv = [['datasets', ds.length], ['flows', P.length.toLocaleString('en-US')], ['on both sides', both.toLocaleString('en-US')],
+                ['only in the rebuild', only.toLocaleString('en-US')], ['missing from the rebuild', miss.toLocaleString('en-US')],
+                ['negative, left out', neg], [`below 10${sup(lo)}, drawn at the edge`, below.toLocaleString('en-US')]];
+    document.getElementById('p-kv').innerHTML = kv.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('');
+    document.querySelector('#p-size tbody').innerHTML = sizes.map(z => `<tr><td>${z.lab}</td><td>${z.n.toLocaleString('en-US')}</td><td>${pct(z.a, z.n)}</td><td>${pct(z.b, z.n)}</td></tr>`).join('') +
+      `<tr><td colspan="4" class="muted" style="white-space:normal;text-align:left;border-bottom:0">Size = the flow's share of its dataset's total in that unit. Bigger flows do not match noticeably better.</td></tr>`;
+  }
+
+  function cellAt(px, py) {
+    const {X0, X1, Y0, Y1, NX, NY, cw, ch, B, M, strip} = geo;
+    if (px >= X0 && px <= X1 && py >= Y0 && py <= Y1) { const i = Math.floor((px - X0) / cw), j = Math.floor((Y1 - py) / ch); return cells.get(i + NX * j); }
+    if (px >= X0 && px <= X1 && py > Y1 + 4 && py <= Y1 + 4 + B) return strip.bottom.get(Math.floor((px - X0) / cw));
+    if (pmode === 'par' && px >= M.l && px <= M.l + B && py >= Y0 && py <= Y1) return strip.left.get(Math.floor((Y1 - py) / ch));
+  }
+  function top(list, key, n) {
+    const c = new Map(); list.forEach(p => { const k = key(p); c.set(k, (c.get(k) || 0) + 1); });
+    return [...c.entries()].sort((a, b) => b[1] - a[1]).slice(0, n).map(([k, v]) => `${k} ×${v}`).join(' · ');
+  }
+  function mark(px, py) { let best = null, bd = 64; for (const m of marks) { const d = (m.x - px) ** 2 + (m.y - py) ** 2; if (d < bd) { bd = d; best = m; } } return best; }
+  cv.addEventListener('pointermove', e => {
+    if (!geo) return;
+    const b = cv.getBoundingClientRect(), px = e.clientX - b.left, py = e.clientY - b.top;
+    const mk = mark(px, py);
+    if (mk) { cv.style.cursor = 'pointer'; return showTip([line(ratioText(mk.o, mk.m), 'v'), line(`fossil CO₂ · ${mk.s.name}`), line(`original ${num(mk.o)} · rebuilt ${num(mk.m)} kg · click to open`, 's')], e.clientX, e.clientY); }
+    cv.style.cursor = '';
+    const c = cellAt(px, py); if (!c) return hideTip();
+    showTip([line(`${c.length.toLocaleString('en-US')} flow${c.length > 1 ? 's' : ''}`, 'v'),
+             line(top(c, p => F[p[0]][0], 3)), line(top(c, p => p[3].name, 2), 's')], e.clientX, e.clientY);
+  });
+  cv.addEventListener('pointerleave', hideTip);
+  cv.addEventListener('click', e => {
+    if (!geo) return; const b = cv.getBoundingClientRect(), mk = mark(e.clientX - b.left, e.clientY - b.top);
+    if (mk) select(S.indexOf(mk.s), true);
+  });
+  rSel.addEventListener('change', draw); uSel.addEventListener('change', draw);
+  bPar.addEventListener('click', () => { pmode = 'par'; bPar.setAttribute('aria-pressed', 'true'); bRat.setAttribute('aria-pressed', 'false'); draw(); });
+  bRat.addEventListener('click', () => { pmode = 'rat'; bRat.setAttribute('aria-pressed', 'true'); bPar.setAttribute('aria-pressed', 'false'); draw(); });
+  let t; new ResizeObserver(() => { clearTimeout(t); t = setTimeout(draw, 60); }).observe(box);
+  matchMedia('(prefers-color-scheme: dark)').addEventListener('change', draw);
+  new MutationObserver(draw).observe(document.documentElement, {attributes: true, attributeFilter: ['data-theme']});
+  draw();
+})();
+
+select(cur, false);
+})();
+</script>

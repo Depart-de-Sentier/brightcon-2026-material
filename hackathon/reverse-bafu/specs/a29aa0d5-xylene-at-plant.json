@@ -1,0 +1,195 @@
+{
+  "target": {
+    "code": "a29aa0d5-9e37-34d7-8868-8a4fff95350a",
+    "name": "Xylene, at plant",
+    "location": "RER"
+  },
+  "strategy": {
+    "code": "S3",
+    "label": "top-down model: BREF ranges for a reformate xylene plant, feedstock split from the dataset's own text, every free amount bounded by a printed range",
+    "note": "NOT S1. The cited report prints no inventory. Althaus 2007 ch. 96 is about this very dataset name, but its inventory tables 96.5-96.7 are the *cumulative* vector of the PlasticsEurope module - the report says so: 'Due to the fact that this dataset is cumulated it was not possible to use the other processes modelled in ecoinvent to obtain a transparent process chain' - so they are the aggregate this project is trying to open, not a unit process. What ch. 96 does print, from the EU BREF (European Commission 2002), is a gate-to-gate picture of a reformate xylene plant as ranges: Tab. 96.1 consumptions and yields, Tab. 96.2 air emissions, Tab. 96.3 wastewater, Tab. 96.4 solid wastes. That is what is modelled here. Every free amount carries bounds taken straight from those printed ranges - none of them was chosen to make the agreement look better, and the feedstock bounds in particular are very wide (1.37-4.35 kg per kg) because the printed yield range is. Same caveat as Althaus's own: 'Within the module assessed here there are only the resources and emissions considered which are given in the data source. Therefore no land use could be included and no direct soil emissions within the process chain are stated.'"
+  },
+  "evidence": [
+    {
+      "source": "2025 - LCI plastics - Rajabihamedani.pdf (the dataset's own cited report)",
+      "where": "sec. 3.2, Tab. 1.1, sec. 6",
+      "note": "Prints no unit-process inventory for any of its 14 datasets: 'All datasets addressed for the updates are nowadays only available as system processes and therefore are modelled accordingly in this study' (sec. 3.2); Foreground data = 'Cumulative inventories of Plastics as provided by PlasticsEurope' (Tab. 1.1). Verified page by page, including every table that is embedded as an image. The full finding is in specs/evidence/<code>/response-0-locate.json. What the report does give and is used here: sec. 3.6 (infrastructure, 4.0E-10 p of Chemical plant, organics)."
+    },
+    {
+      "source": "bafu-2026 ecoSpold metadata of the target (technology)",
+      "where": "technology",
+      "note": "'Xylenes are commercially produced based on two different feedstocks: - Pyrolysis gasoline, a side product of thermal cracking (steam cracking) of hydrocarbons (e.g. naphtha, gas oil, ethane, propane, butanes, natural gas liquids) - Reformate, a product of catalytic reforming of naphtha. ... In Europe (EU27) xylenes are mainly produced via pyrolysis gasoline (14 %) and reformate (86 %).' The 14/86 split is the only quantitative statement about this dataset anywhere, and it fixes the feedstock mix."
+    },
+    {
+      "source": "2007 - LCI chemicals - Althaus.pdf",
+      "where": "Tab. 96.1 (printed p. 854, PDF p. 935)",
+      "note": "'Energy usage for and precursor materials for xylene production (European Commission (2002))', column 'Reformate plant', per ton of feedstock: Fuel gas 3 - 10 kg; Steam (tons) 0.5 - 1.5; Electricity (MWh) <0.07. Production (tons) per ton of feedstock: p-xylene 0.23 - 0.48; o-xylene 0 - 0.25. Summing the two product ranges gives 0.23 - 0.73 t of xylenes per t of feedstock, i.e. 1.370 - 4.348 kg of feedstock per kg of product, and every consumption range is multiplied by that to get a per-kg-of-product range."
+    },
+    {
+      "source": "2007 - LCI chemicals - Althaus.pdf",
+      "where": "Tab. 96.2 and Tab. 96.3 (same page), row 'BTX from aromatic mixture (source: a single plant)'",
+      "note": "Air, kg/ton product: Methane 0.086; SO2 0.53; Particulates 0.008 kg/ton *feedstock*; VOC 0.03 toluene and 0.2 NMVOCtot. Water, kg/ton product: Benzene 0.003; Toluene 0.001; COD 0.087; N-Kjeldahl 0.0009. Two rows are not used: the particulates, because they are per ton of feedstock and the feedstock amount here is itself calibrated, and the second 'Methane' column (0.09), because the table has two columns with that same header and the report gives no way to tell what the second one is. The caption reads 'Air emissions for toluene production' inside the xylenes chapter, which is a copy-paste slip in the report; the rows are the BTX plant the chapter is about."
+    },
+    {
+      "source": "2007 - LCI chemicals - Althaus.pdf",
+      "where": "Tab. 96.4 and sec. 96.5 Solid wastes",
+      "note": "kg/ton product: Catalysts 0.05 'recycled via supplier'; Clay, desiccant material, inert balls 0.006 'reused after regeneration'; Activated carbon 0.01 'incinerated'; Filter cloth etc. 0.0009 'incinerated'. The first two leave the system as recovered material and are skipped; the two incinerated streams are modelled together, since 'The wastes are usually recycled, landfilled or incinerated in a hazardous waste incinerator.'"
+    }
+  ],
+  "node": {
+    "name": "Xylene, at plant, disaggregated",
+    "unit": "kilogram",
+    "location": "RER",
+    "comment": "Separation of mixed xylenes from reformate (86 %) and pyrolysis gasoline (14 %), per kg. Gaps: no reformate dataset exists in BAFU, so naphtha - the feed of the catalytic reformer - stands in for it and the reforming step itself is missing from the chain; particulate emissions are per ton of feedstock and cannot be fixed while the feedstock is calibrated; the isomer separation described in sec. 96.5.1 is not quantified anywhere. The waste-treatment services that the BAFU dataset already carries as explicit exchanges (Tab. 3.1 of Rajabihamedani 2025 documents how they were re-linked, but prints no amounts) are deliberately NOT part of this model: they were never collapsed away, so reconstructing them adds nothing, and copying their amounts out of the target would be reading the answer. Adding the whole Tab. 3.1 candidate list as free inputs was tested on Ethylene glycol - the fit drove all eleven to ~1e-12 and the agreement did not move by a single flow - so they are left out. Consequence for the harness number: the target's cumulative vector gets its long tail of trace flows from those disposal chains, while this model gets a different tail from the ecoinvent-v2 chains of its own inputs; the two tails cannot agree, which caps the 'share of all flows within 10 %' far below what the main flows achieve. This model terminates on Pyrolysis gasoline, production mix, at plant [RER], itself one of the 101 and the one dataset of this family that could not be rebuilt at all, which is itself an ecoSpold type=2 dataset - the harness flags that, correctly. It is linked to the BAFU dataset rather than to the sibling rebuild so that this spec's check measures only this spec's evidence; re-point it with the input's `sandbox` field to chain the rebuilds together.",
+    "inputs": [
+      {
+        "name": "Naphtha, at refinery",
+        "amount": 1.1780821917808217,
+        "unit": "kilogram",
+        "location": "RER",
+        "free": true,
+        "note": "reformate route, 86% of EU27 xylene (dataset text) x the feedstock range of Tab. 96.1 (1.370-4.348 kg feedstock per kg product) = 1.1781-3.7391 kg; naphtha stands in for reformate, which BAFU does not have",
+        "bounds": [
+          1.1780821917808217,
+          3.7391304347826084
+        ],
+        "code": "f4ac3b21-f5f3-3c8c-a5a5-316af4e38d18"
+      },
+      {
+        "name": "Pyrolysis gasoline, production mix, at plant",
+        "amount": 0.19178082191780826,
+        "unit": "kilogram",
+        "location": "RER",
+        "free": true,
+        "note": "pygas route, 14% of EU27 xylene (dataset text) x the same feedstock range = 0.1918-0.6087 kg",
+        "bounds": [
+          0.19178082191780824,
+          0.6086956521739131
+        ],
+        "code": "dab0fa22-ba8d-34a9-b594-c980886b0b14"
+      },
+      {
+        "name": "Steam, for chemical processes, at plant",
+        "amount": 0.684931506849315,
+        "unit": "kilogram",
+        "location": "RER",
+        "free": true,
+        "note": "Tab. 96.1 'Steam (tons) 0.5 - 1.5' per ton of feedstock x the feedstock range = 0.6849-6.5217 kg per kg of product",
+        "bounds": [
+          0.684931506849315,
+          6.521739130434782
+        ],
+        "code": "ca51da0f-d926-3dbe-bc07-e0449bb7dcab"
+      },
+      {
+        "name": "Electricity, medium voltage, production ENTSO-E, at grid",
+        "amount": 0.0,
+        "unit": "kilowatt hour",
+        "location": "ENTSO-E",
+        "free": true,
+        "note": "Tab. 96.1 'Electricity (MWh) <0.07' per ton of feedstock = <0.07 kWh/kg feedstock x the feedstock range = 0-0.3043 kWh per kg of product",
+        "bounds": [
+          0.0,
+          0.30434782608695654
+        ],
+        "code": "648e3bb3-7b98-46f8-9da1-f45627c309ef"
+      },
+      {
+        "name": "Refinery gas, burned in furnace",
+        "amount": 0.0,
+        "unit": "megajoule",
+        "location": "RER",
+        "free": true,
+        "note": "Tab. 96.1 'Fuel gas 3 - 10 kg' per ton of feedstock = 0.0041-0.0435 kg per kg of product. No heating value for refinery fuel gas is printed in any report of the bundle, so the mass range cannot be converted to the megajoules this dataset is measured in; rather than invent a heating value the amount is calibrated, unbounded, and the printed mass range is recorded here instead",
+        "code": "5c81d3c9-cad0-3a6d-9b29-82c7b0a6aba8"
+      },
+      {
+        "name": "Disposal, hazardous waste, 25% water, to hazardous waste incineration",
+        "amount": 1.09e-05,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "Tab. 96.4: activated carbon 0.01 kg/ton product + filter cloth etc. 0.0009 kg/ton product, both marked 'incinerated' = 1.09E-05 kg/kg; catalysts (0.05, recycled via supplier) and clay/desiccant (0.006, reused after regeneration) are not disposal and are skipped",
+        "code": "2e9b12dd-3611-491a-bc92-a33b5874aa73"
+      },
+      {
+        "name": "Chemical plant, organics",
+        "amount": 0.0,
+        "unit": "unit",
+        "location": "RER",
+        "free": true,
+        "bounds": [
+          0.0,
+          4e-10
+        ],
+        "note": "Rajabihamedani 2025 sec. 3.6: 'For the implementation, the dataset \"Chemical plant, organics {RER}U\" is used. The quantity is the standard amount for production of chemicals of 4.0E-10 p.' The target carries exactly that, which is why 4.0E-10 is the upper bound here. It is the upper bound and not the amount because ESU added one chemical plant per *dataset*, i.e. one for a whole cradle-to-gate chain, while this model links to a precursor dataset that already carries its own 4.0E-10 - so a second one is a double count against the target's own convention. That matters more than its size suggests: of the 1790 flows in the cumulative vector of every one of these 14 datasets, 1316 get more than 90 % of their value from this single exchange (see scripts/plasticseurope_infrastructure_diagnostic.py), so doubling it doubles three quarters of the vector. The amount is therefore fitted between 0 and the report's 4.0E-10.",
+        "code": "13ed4fe0-7ba5-3b60-82b6-a63918ee814d"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Methane (fossil)",
+        "category": "air",
+        "amount": 8.6e-05,
+        "unit": "kilogram",
+        "note": "Tab. 96.2 'Methane' 0.086 kg/ton product",
+        "code": "08a91e70-3ddc-11dd-9610-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Sulfur Dioxide",
+        "category": "air",
+        "amount": 0.00053,
+        "unit": "kilogram",
+        "note": "Tab. 96.2 'SO2' 0.53 kg/ton product",
+        "code": "fe0acd60-3ddc-11dd-ac48-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Toluene",
+        "category": "air",
+        "amount": 3e-05,
+        "unit": "kilogram",
+        "note": "Tab. 96.2 'VOC * 0.03 toluene' kg/ton product; * = 'tanks and various fugitive sources'",
+        "code": "4d9a8790-3ddd-11dd-9bb5-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Non-methane Volatile Organic Compounds",
+        "category": "air",
+        "amount": 0.0002,
+        "unit": "kilogram",
+        "note": "Tab. 96.2 'VOC * 0.2 NMVOCtot*' kg/ton product",
+        "code": "08a91e70-3ddc-11dd-a302-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Benzene",
+        "category": "water",
+        "amount": 3e-06,
+        "unit": "kilogram",
+        "note": "Tab. 96.3 'Benzene' 0.003 kg/ton product",
+        "code": "4d9a8790-3ddd-11dd-9cc9-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Toluene",
+        "category": "water",
+        "amount": 1e-06,
+        "unit": "kilogram",
+        "note": "Tab. 96.3 'Toluene' 0.001 kg/ton product",
+        "code": "08a91e70-3ddc-11dd-998a-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Chemical Oxygen Demand",
+        "category": "water",
+        "amount": 8.7e-05,
+        "unit": "kilogram",
+        "note": "Tab. 96.3 'COD' 0.087 kg/ton product",
+        "code": "08a91e70-3ddc-11dd-97ed-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": []
+  }
+}

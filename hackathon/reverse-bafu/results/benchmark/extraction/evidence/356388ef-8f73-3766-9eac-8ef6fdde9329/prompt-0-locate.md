@@ -1,0 +1,730 @@
+You are locating the inventory table of one dataset inside a life-cycle-inventory report.
+
+Dataset: `Ceramic plant` [CH], 1 p, BAFU category ceramics / infrastructure.
+Metadata: includedProcesses: Includes land use and materials used in buildings and machinery as well as their disposal · technology: large scale production plant in Europe. · comment: Life time of 50 years for buildings and of 25 years for machines is assumed. Dataset refers to a factory with yearly output of 5'000 t of ceramic products.;
+UUID: 356388ef-8f73-3766-9eac-8ef6fdde9329
+
+Report: `2007 - LCI building products - Kellenberger.pdf` (914 PDF pages). Below is every table and figure caption found in it, with the PDF page it appears on (not the printed page number). The report may be in German, French or English; the dataset name is English — match on meaning (e.g. "gebrannter Ölschiefer" = burnt shale, "Gipsfaserplatte" = gypsum fibre board).
+
+- p.11: Tab. 3.1 Harmful components in gravel and sand, depending on type of use
+- p.12: Tab. 3.2 Characterisation of gravel and sand by grain form and size
+- p.13: Fig. 5.1 describes the mining process in form of a flow scheme and Fig. 5.2 shows the system bound-
+- p.13: Fig. 5.1 Flow scheme of sand and gravel production (Kündig et al. (1997))
+- p.14: Fig. 5.2 System boundaries of the sand and gravel production for this study
+- p.15: Fig. 6.1 Systems boundary for estimation of the different infrastructures (Kündig et al. (1997))
+- p.16: Fig. 6.2 Swiss production share of gravel round, gravel crushed and sand for the year 1997
+- p.17: Tab. 6.1 Ecoinvent database meta information for the product “mine, gravel/sand”
+- p.18: Fig. 6.3 Flow for “mine gravel/sand” and their representation in the ecoinvent database
+- p.20: Tab. 6.2 Ecoinvent database meta information for “mining of gravel/sand”
+- p.21: Fig. 6.4 Flows for “mining of gravel/sand” and their representation in the ecoinvent database
+- p.22: Fig. 6.4 Flows for “mining of gravel/sand” and their representation in the ecoinvent database (cont)
+- p.24: Tab. 6.3 Ecoinvent database meta information for the product “gravel, crushed, at mine”
+- p.25: Fig. 6.5 Flows for “gravel, crushed, at mine” and their representation in the ecoinvent database
+- p.26: Fig. 6.5 Flows for “gravel, crushed, at mine” and their representation in the ecoinvent database (cont.)
+- p.27: Tab. 6.4 Ecoinvent database meta information for the product “gravel, unspecified, at mine”
+- p.28: Tab. 6.5 Ecoinvent meta information for the product “silica sand, at mine”
+- p.29: Fig. 6.6 Flows for “gravel, unspecified, at mine” and their representation in the ecoinvent database
+- p.29: Fig. 6.7 Flows for “silica sand, at mine” and their representation in the ecoinvent database
+- p.39: Tab. 3.1 Required mineralogical components of clinker (Kündig et al. (1997))
+- p.40: Tab. 3.2 Representative chemical composition of clinker (Kündig et al. (1997))
+- p.41: Tab. 3.3 Main types of cement under SIA standard 215.002
+- p.41: Tab. 3.5 shows a list of cement types and quantities sold by the Swiss cement industry in the late nine-
+- p.42: Tab. 3.4 Strength classes under SIA standard 215.002
+- p.42: Tab. 3.5 Cement types and quantities sold by the Swiss cement industry in the late nineties
+- p.42: Tab. 3.6 Cement types and their ingredients per kg cement
+- p.43: Tab. 3.7 Chemical composition of the raw materials for hydraulic lime (Kündig et al. (1997))
+- p.46: Fig. 5.1 Flow scheme of Portland cement production (Kündig et al. (1997))
+- p.52: Fig 5.2 System boundary for Portland cement production (Künniger et al. (2001))
+- p.53: Tab. 6.1 Cement types (with Swiss abbreviations) and the Swiss production share3
+- p.54: Tab. 6.2 Ecoinvent database meta information for the product “clinker, at plant”
+- p.54: Fig 6.1 shows the process “clinker production” with its output-module “clinker, at plant”. It shows all
+- p.55: Fig 6.1 Flows for “clinker, at plant " and their representation in the ecoinvent database
+- p.56: Fig 6.1 Flows for “clinker, at plant " and their representation in the ecoinvent database (cont.)
+- p.62: Tab. 6.3 Share of secondary fuel for the clinker production in the year 1997 und 2001
+- p.63: Tab. 6.4 Thermal values and CO2-emissions for different primary and secondary fuels (Künniger et al. (2001))
+- p.63: Tab. 6.5 Shares of secondary raw materials for clinker production in Switzerland in 1997
+- p.65: Tab. 6.6 Ecoinvent database meta information for the product “lime, hydraulic, at plant”
+- p.65: Fig. 6.2 shows the module “lime, hydraulic, at plant”. It shows all in- and output flows, the allocation
+- p.66: Fig. 6.2 Flows for “lime hydraulic, at plant" and their representation in the ecoinvent database
+- p.67: Fig. 6.2 Flows for “lime hydraulic, at plant" and their representation in the ecoinvent database (cont.)
+- p.71: Tab. 6.7 Thermal value and weight of fuel for the calcination process of hydraulic lime
+- p.72: Tab. 6.8 Ecoinvent database meta information for the product “calcareous marl, at plant”
+- p.72: Fig. 6.3 shows the module “calcareous marl, at plant”. It shows all in- and output flows, the allocation
+- p.73: Fig. 6.3 Flows for “calcareous marl, at plant” and their representation in the ecoinvent database
+- p.74: Tab. 6.9 Ecoinvent database meta information for the product “mine, gravel/sand”
+- p.74: Fig. 6.4 shows the module “cement plant”. It shows all in- and output flows, the allocation to the mod-
+- p.75: Fig. 6.4 Flow for “cement plant” and their representation in the ecoinvent database
+- p.77: Tab. 6.10 Ecoinvent database meta information for the product “blast furnace slag cement, at plant”
+- p.77: Fig. 6.5 shows the module “blast furnace slag cement, at plant”. It shows all in- and output flows, the
+- p.78: Fig. 6.5 Flows for "blast furnace slag cement" and their representation in the ecoinvent database
+- p.79: Tab. 6.11 Ecoinvent database meta information for the product “portland calcareous cement, at plant”
+- p.79: Fig. 6.6 shows the module “ portland calcareous cement, at plant”. It shows all in- and output flows,
+- p.80: Fig. 6.6 Flows for "portland calcareous cement, at plant" and their representation in the ecoinvent database
+- p.81: Tab. 6.12 Ecoinvent database meta information for the product “portland cement, strength class Z 42.5, at plant”
+- p.81: Fig. 6.7 shows the module “portland cement, strength class Z 42.5, at plant”. It shows all in- and out-
+- p.82: Fig. 6.7 Flows for "portland cement, strength class Z 42.5, at plant" and their representation in the ecoinvent database
+- p.83: Tab. 6.13 Ecoinvent database meta information for the product “portland cement, strength class Z 52.5, at plant”
+- p.83: Fig. 6.8 shows the module “portland cement, strength class Z 52.5, at plant”. It shows all in- and out-
+- p.84: Fig. 6.8 Flows for "portland cement, strength class Z 52.5, at plant" and their representation in the ecoinvent database
+- p.85: Tab. 6.14 Ecoinvent database meta information for the product “portland slag sand cement, at plant”
+- p.85: Fig. 6.9 shows the module “portland slag sand cement, at plant”. It shows all in- and output flows, the
+- p.86: Fig. 6.9 Flows for "portland slag sand cement, at plant" and their representation in the ecoinvent database
+- p.87: Tab. 6.15 Ecoinvent database meta information for the product “cement, unspecified, at plant”
+- p.87: Fig. 6.10 shows the module “cement, unspecified, at plant”. It shows all in- and output flows, the allo-
+- p.88: Fig. 6.10 Flows for "cement, unspecified, at plant" and their representation in the ecoinvent database
+- p.89: Tab. 6.16 Ecoinvent database meta information for the product “cement cast plaster floor, at plant”
+- p.89: Fig. 6.11 shows the module “cement cast plaster floor, at plant”. It shows all in- and output flows, the
+- p.90: Fig. 6.11 Flows for "packing, cement" and their representation in the ecoinvent database
+- p.91: Tab. 6.17 Ecoinvent database meta information for the product “packing, cement”
+- p.91: Fig. 6.12 shows the module “packing, cement”. It shows all in- and output flows, the allocation to the
+- p.92: Fig. 6.12 Flows for "packing, cement" and their representation in the ecoinvent database
+- p.101: Fig. 1.1 Composition of concrete
+- p.110: Fig. 3.1 Typical stress-strain relationship for concretes of different strength
+- p.112: Fig. 3.2 Thermal conductivity of concrete as a function of concrete density (Routschka & Granitzki (1997))
+- p.118: Tab. 3.1 Most important types of concrete on the Swiss market
+- p.118: Tab. 3.2 (Classification based on Standard SIA 162):
+- p.118: Tab. 3.2 Composition of the different concrete types studied in Ecoinvent (based on Swiss nomenclature)
+- p.121: Fig. 5.1 Relationship between water to cement ratio and compressive strength for concrete cylinders
+- p.121: Fig. 5.2 Min. compressive strength βc of concrete cubes for cements with different standard compressive strengths
+- p.122: Fig. 5.3 Approximate water content of fresh concrete
+- p.122: Fig. 5.4 Water content of fresh concrete as function of the compaction factor for different water requirement factors
+- p.123: Fig. 5.5 gives an overview of a ready-mix concrete plant.
+- p.123: Fig. 5.5 Ready-mixed Concrete Plant (Künniger et al. (2001))
+- p.124: Tab. 5.1 Amount of waste water as function of concrete density
+- p.124: Tab. 5.2 Typical waste water composition from concrete production (Künniger et al. (2001))
+- p.125: Fig. 5.2 System boundaries of Ready-mixed Concrete manufacturing (Künniger et al. (2001))
+- p.126: Fig. 6.1 shows all in- and output flows of the product “poor concrete, at plant”, the allocation to the
+- p.126: Tab. 6.1 Ecoinvent database meta information for the product “poor concrete, at plant”
+- p.127: Fig. 6.1 Flows for “poor concrete, at plant” and their representation in the ecoinvent database
+- p.128: Tab. 6.2 Ecoinvent database meta information for the product “concrete, normal, at plant”
+- p.128: Fig. 6.2 shows all in- and output flows of the product “concrete, normal, at plant”, the allocation to the
+- p.129: Fig. 6.2 Flows for “concrete, normal, at plant” and their representation in the ecoinvent database
+- p.130: Tab. 6.3 Ecoinvent database meta information for the product “concrete, sole plate and foundation, at plant”
+- p.130: Fig. 6.3 shows all in- and output flows of the product “concrete, sole plate and foundation, at plant”,
+- p.131: Fig. 6.3 Flows for “Concrete, sole plate and foundation, at plant“ and their representation in the ecoinvent database
+- p.132: Tab. 6.4 Ecoinvent database meta information for the product “concrete, exacting, with de-icing salt contact, at
+- p.132: Fig. 6.4 shows all in- and output flows of the product “concrete, exacting, with de-icing salt contact, at
+- p.133: Fig. 6.4 Flows for “concrete, exacting, with de-icing contact at plant“ and their representation in the ecoinvent database
+- p.134: Fig. 6.4 Flows for “concrete, exacting, with de-icing contact at plant“ and their representation in the ecoinvent database (cont.)
+- p.135: Tab. 6.5 Ecoinvent database meta information for the product “concrete, exacting, at plant”
+- p.135: Fig. 6.5 shows all in- and output flows of the product “concrete, exacting, at plant”, the allocation to
+- p.135: Fig. 6.5. To reduce the amount of energy-expensive cement and to save natural resources by recycling
+- p.136: Fig. 6.5 Flows for “ concrete, exacting, at plant” and their representation in the ecoinvent database
+- p.137: Fig. 6.5 Flows for “ concrete, exacting, at plant” and their representation in the ecoinvent database (cont.)
+- p.138: Tab. 6.6 Ecoinvent database meta information for the product “concrete plant”
+- p.138: Fig. 6.6 shows the module “concrete plant”. It shows all in- and output flows, the allocation to the
+- p.139: Fig. 6.6 Flows for “concrete mixing plant” and their representation in the ecoinvent database
+- p.140: Fig. 6.7 shows the module “concrete block, at plant”. It shows all in- and output flows, the allocation
+- p.140: Tab. 6.7 Ecoinvent database meta information for the product “concrete block, at plant”
+- p.141: Fig. 6.7 Flows for “concrete block, at plant” and their representation in the ecoinvent database
+- p.142: Tab. 6.8 Ecoinvent database meta information for the product “concrete block, at plant”
+- p.142: Fig. 6.7 shows the module “concrete roof tile, at plant”. It shows all in- and output flows, the alloca-
+- p.143: Fig. 6.8 Flows for “concrete roof tile, at plant” and their representation in the ecoinvent database
+- p.144: Tab. 6.9 Ecoinvent database meta information for the product “quarry tile, at plant”
+- p.144: Fig. 6.7 shows the module “quarry tile, at plant”. It shows all in- and output flows, the allocation to the
+- p.145: Fig. 6.9 Flows for “quarry tile, at plant” and their representation in the ecoinvent database
+- p.154: Tab. 1.1 Categories of data published in Hauck et al. (1997)
+- p.159: Fig. 6.1 Flow scheme of brick and roof tile manufacture (on the left: additional information to each production step)
+- p.160: Tab. 7.1 Ecoinvent database meta information for the product “mine, clay”
+- p.160: Fig. 7.1 shows the system boundary of the module “mine, clay”. It shows all in- and output flows, the
+- p.161: Fig. 7.1 Flows for “mine, clay" and their representation in the ecoinvent database
+- p.162: Tab. 7.2 Ecoinvent database meta information for the product “clay, at mine”
+- p.162: Fig. 7.2 shows the system boundary of the module “clay, at mine”. It shows all in- and output flows,
+- p.164: Fig. 7.2 Flows for “clay, at mine" and their representation in the ecoinvent database
+- p.165: Tab. 7.3 Ecoinvent database meta information for the product “brick, at plant”
+- p.165: Fig. 7.3 shows the system boundary of the module “brick, at plant”. It shows all in- and output flows,
+- p.166: Fig. 7.3 Flows for “brick, at plant” and their representation in the ecoinvent database
+- p.167: Fig. 7.3 Flows for “brick, at plant” and their representation in the ecoinvent database (cont.)
+- p.170: Tab. 7.4 Adapted energy consumption data for the brick production from (Bruck (1996)) with remarks
+- p.170: Tab. 7.5 Air-entraining additives in the brick production (Bruck (1996))
+- p.171: Tab. 7.6 Adapted data for the raw and process materials and the additives in the brick production from Bruck (1996)
+- p.171: Tab. 7.7 Adapted data for the emissions in the brick production from Bruck (1996) with remarks
+- p.172: Tab. 7.8 Adapted data for the transports in the brick production from Bruck (1996) with remarks
+- p.173: Tab. 7.9 Ecoinvent database meta information for the product “roof tile, at plant”
+- p.173: Fig. 7.4 shows the system boundary of the module “roof tile, at plant”. It shows all in- and output
+- p.174: Fig. 7.4 Flows for “roof tile, at plant" and their representation in the ecoinvent database
+- p.175: Fig. 7.4 Flows for “roof tile, at plant" and their representation in the ecoinvent database (cont.)
+- p.178: Tab. 7.10 Ecoinvent meta information for the product “packing, clay products”
+- p.178: Fig. 7.5 shows the module “packing, clay products”. It shows all in- and output flows, the allocation to
+- p.179: Fig. 7.5 Flows for “packing, clay products" and their representation in the ecoinvent database
+- p.191: Tab. 5.1 Ecoinvent database meta information for the product “refractory, fireclay, packed, at plant”
+- p.191: Fig. 5.1 shows the module “refractory, fireclay, packed, at plant”. It shows all in- and output flows, the
+- p.192: Fig. 5.1 Flows for the module “refractory, fireclay, packed, at plant” and their representation in the ecoinvent database
+- p.193: Tab. 5.2 Ecoinvent database meta information for the product “refractory, high aluminium oxide, packed, at plant”
+- p.193: Fig. 5.1 shows the module “refractory, high aluminium oxide, packed, at plant”. It shows all in- and
+- p.194: Fig. 5.2 Flows for “refractory, high aluminium oxide, packed, at plant” and their representation in the ecoinvent database
+- p.195: Tab. 5.3 Ecoinvent database meta information for the product “refractory, basic, packed, at plant”
+- p.195: Fig. 5.3 shows the system boundary of the module “refractory, basic, packed, at plant”. It shows all in-
+- p.196: Fig. 5.3 Flows for “refractory, basic, packed, at plant” and their representation in the ecoinvent database
+- p.205: Tab. 4.1 Waste water composition (after internal treatment) of sanitary ceramic production in Gmunden (ÖSPAG
+- p.206: Tab. 4.2 Estimation on infrastructure
+- p.207: Tab. 4.3 ecoinvent meta information for the ceramic production processes
+- p.208: Fig. 4.1 Flows for "sanitary ceramics, at regional storage" and its representation in the ecoinvent database
+- p.209: Fig. 4.1 Flows for "sanitary ceramics, at regional storage" and its representation in the ecoinvent database (cont.)
+- p.211: Fig. 4.2 Flows for "ceramic tiles, at regional storage" and its representation in the ecoinvent database
+- p.212: Fig. 4.2 Flows for "ceramic tiles, at regional storage" and its representation in the ecoinvent database (cont.)
+- p.214: Fig. 4.3 Flows for "ceramic plant" and its representation in the ecoinvent database
+- p.223: Tab. 3.1 Chemical composition of ground (milled) limestone in KFN
+- p.224: Tab. 3.2 Amount of residue after sieving of ground (milled) limestone
+- p.225: Tab. 3.3 Chemical composition of lump and ground quicklime
+- p.227: Tab. 3.4 Chemical composition of fine- and very fine-grained hydrated lime
+- p.228: Tab. 3.5 Amount of residue after sieving of fine- and very fine-grained hydrated lime
+- p.229: Tab. 4.1 Market share of lime products (quicklime and hydrated lime) in Switzerland 1992 (Kündig et al. (1997))
+- p.229: Tab. 4.2 Application of quicklime and hydrated lime in Switzerland
+- p.231: Fig. 5.1 Flow diagram: manufacturing of lime products
+- p.232: Fig. 5.2 Flow scheme of parallel-flow regenerative (or Maerz) kiln
+- p.233: Fig. 5.3 Flow scheme of double-inclined shaft kiln
+- p.235: Tab. 6.17 and Fig. 6.9
+- p.236: Tab. 6.1 Allocation of the total heating energy to the different modules
+- p.237: Tab. 6.2 Ecoinvent database meta information for the product “limestone, at plant”
+- p.238: Fig. 6.1 Flows for “limestone, at plant" and their representation in the ecoinvent database
+- p.239: Tab. 6.3 Ecoinvent database meta information for the infrastructure “mine, limestone”
+- p.240: Fig. 6.2 Flows for “mine, limestone" and their representation in the ecoinvent database
+- p.241: Tab. 6.4 Ecoinvent database meta information for the infrastructure “recultivation, mine limestone”
+- p.242: Fig. 6.3 Flows for “recultivation, mine limestone" and their representation in the ecoinvent database
+- p.243: Tab. 6.5 Summary of average emission factors for dust from crushing, screening, transporting in the lime manufac-
+- p.243: Tab. 6.6 Dust emissions used in study for “limestone crushed, washed” and “limestone, crushed, for mill”
+- p.245: Tab. 6.7 Ecoinvent database meta information for the product "limestone crushed, washed"
+- p.246: Tab. 6.8 Ecoinvent database meta information for the product "limestone, crushed for mill"
+- p.247: Tab. 6.9 Ecoinvent database meta information for the product "limestone, milled, loose, at plant"
+- p.248: Fig. 6.4 Flows for "limestone crushed, washed" and their representation in the ecoinvent database
+- p.249: Fig. 6.5 Flows for "limestone, crushed for mill" and their representation in the ecoinvent database
+- p.250: Fig. 6.6 Flows for "limestone, milled, loose, at plant" and their representation in the ecoinvent database
+- p.251: Fig. 6.8 shows all in- and output flows of the product "quicklime, milled, loose, at plant". Additionally
+- p.251: Tab. 6.10 Comparison of the energy consumption for the two heavy-oil burned kilns „Fiedler“ and „Maerz“ at the lime
+- p.252: Tab. 6.11 Overview of the emissions for the two heavy-oil burned kilns „Fiedler“ and „Maerz“ and the installation of
+- p.252: Tab. 6.12 Overview of the emissions for the calcination process in general
+- p.253: Tab. 6.13 Overview of the emissions from the CEPMEIP-database (Berdowski et al. (1995))
+- p.253: Tab. 6.14 Heat and electricity consumption of the two kilns (SOM and SOFi) at KFN for 2001
+- p.254: Tab. 6.15 Ecoinvent database meta information for the product "quicklime, in pieces, loose, at plant"
+- p.255: Tab. 6.16 Ecoinvent database meta information for the product "quicklime, milled, loose, at plant"
+- p.256: Fig. 6.7 Flows for "quicklime, in pieces, loose, at plant" and their representation in the ecoinvent database
+- p.257: Fig. 6.7 Flows for "quicklime, in pieces, loose, at plant" and their representation in the ecoinvent database (cont)
+- p.258: Fig. 6.8 Flows for "quicklime, milled, loose, at plant" and their representation in the ecoinvent database
+- p.259: Tab. 6.17 Ecoinvent database meta information for the product “lime hydrated, loose, at plant"
+- p.260: Fig. 6.9 Flows for “lime hydrated, loose, at plant" and their representation in the ecoinvent database
+- p.261: Tab. 6.18 Ecoinvent database meta information for the process “packing, lime products"
+- p.262: Tab. 6.19 Ecoinvent database meta information for the product "limestone, milled, packed, at plant"
+- p.262: Tab. 6.20 Ecoinvent database meta information for the product "quicklime, milled, packed, at plant"
+- p.263: Tab. 6.21 Ecoinvent database meta information for the product "lime, hydrated, packed, at plant"
+- p.263: Fig. 6.11 shows all in- and output flows of the process "limestone, milled, packed, at plant", the allo-
+- p.263: Fig. 6.12 shows all in- and output flows of the process "quicklime, milled, packed, at plant", the allo-
+- p.263: Fig. 6.13 shows all in- and output flows of the process "Lime, hydrated, packed, at plant", the alloca-
+- p.264: Fig. 6.10 Flows for “packing, lime products" and their representation in the ecoinvent database
+- p.265: Fig. 6.11 Flows for "limestone, milled, packed, at plant" and their representation in the ecoinvent database
+- p.265: Fig. 6.12 Flows for "quicklime, milled, packed, at plant" and their representation in the ecoinvent database
+- p.266: Fig. 6.13 Flows for "lime, hydrated, packed, at plant" and their representation in the ecoinvent database
+- p.273: Fig. 1.1 gives an overview of the different gypsum products and their connections. Anhydrite plaster is
+- p.274: Fig. 1.1 Overview of gypsum products and processes
+- p.276: Tab. 3.1 Phases and physical properties in the CaSO4-H2O system (Wirsching (1997))
+- p.278: Tab. 5.1 Examples of production data for different gypsum products (Coutalides (1998))
+- p.278: Fig. 5.1 gives an overview of the gypsum products as they are modelled in this study. Tab. 5.2 shows
+- p.279: Fig. 5.1 Unit processes of gypsum production.
+- p.279: Tab. 5.2 Module names for gypsum products and processes in ecoinvent and how they can be applied
+- p.281: Tab. 5.3 Ecoinvent meta information for gypsum production
+- p.282: Tab. 5.3 Ecoinvent meta information for gypsum production (cont.)
+- p.283: Fig. 5.2 Flows for “mining, gypsum” and their representation in the ecoinvent database
+- p.284: Fig. 5.2 Flows for “mining, gypsum” and their representation in the ecoinvent database (cont)
+- p.285: Fig. 5.3 Flows for “stucco, at plant” and their representation in the ecoinvent database
+- p.286: Fig. 5.4 Flows for “anhydrite, burned, at plant” and their representation in the ecoinvent database
+- p.287: Fig. 5.5 Flows for “anhydrite, at plant” and their representation in the ecoinvent database
+- p.288: Fig. 5.6 Flows for “gypsum plaster board, at plant” and their representation in the ecoinvent database
+- p.289: Fig. 5.7 Flows for “gypsum fibre board, at plant” and their representation in the ecoinvent database
+- p.297: Tab. 4.1 Technical specification of the studied products (SIA) , Starzner & Wurmer-Weiss (2000) and Weibel & Stritz
+- p.297: Tab. 5.1 Composition of the studied products
+- p.298: Fig. 5.1 shows the production process of fibre cement slabs.
+- p.299: Fig. 5.1 Production process for fibre cement building slabs (Starzner & Wurmer-Weiss (2000))
+- p.300: Tab. 5.2 shows the share of electric and thermal energy consumption.
+- p.300: Tab. 5.2 Share of electrical and thermal energy consumption (based on (Weibel & Stritz (1995))
+- p.300: Tab. 5.3 Transport distances (Weibel & Stritz (1995))
+- p.302: Tab. 6.1 Ecoinvent meta information for the product “fibre cement roof slate, at plant”
+- p.303: Fig. 6.1 Flows for “fibre cement roof slate, at plant” and their representation in the ecoinvent database
+- p.304: Fig. 6.1 Flows for “fibre cement roof slate, at plant” and their representation in the ecoinvent database (cont)
+- p.305: Tab. 6.2 Ecoinvent meta information for the product “fibre cement corrugated slab, at plant”
+- p.306: Fig. 6.2 Flows for “fibre cement corrugated slab, at plant” and their representation in the ecoinvent database
+- p.307: Fig. 6.2 Flows for “fibre cement corrugated slab, at plant” and their representation in the ecoinvent database (cont)
+- p.308: Tab. 6.3 Ecoinvent meta information for the product “fibre cement facing tile, at plant”
+- p.309: Fig. 6.3 Flows for “fibre cement facing tile, at plant” and their representation in the ecoinvent database
+- p.310: Fig. 6.3 Flows for “fibre cement facing tile, at plant” and their representation in the ecoinvent database (cont)
+- p.311: Tab. 6.4 Ecoinvent meta information for the product “packing fibre cement products”
+- p.312: Fig. 6.4 Flows for “packing fibre cement products” and their representation in the ecoinvent database
+- p.313: Fig. 6.4 Flows for “packing fibre cement products” and their representation in the ecoinvent database (cont)
+- p.321: Tab. 4.1 Technical specification of some sand-lime brick products
+- p.322: Tab. 5.1 Composition of sand-lime brick (Starzner & Wurmer-Weiss (2000) and Cordes et al. (1996))
+- p.323: Fig. 5.1 Steps of sand-lime brick production (Cordes et al. (1996))
+- p.323: Tab. 5.2 Share of energy consumption for the sand-lime brick production process (Starzner & Wurmer-Weiss (2000))
+- p.323: Tab. 5.3 Fuel consumption (Cordes et al. (1996))
+- p.324: Tab. 5.4 Wastewater emissions (Cordes et al. (1996))
+- p.325: Fig. 5.2 Production process of sand-lime brick (Starzner & Wurmer-Weiss (2000); Cordes et al. (1996))
+- p.326: Tab. 6.1 Ecoinvent meta information for the product “sand-lime brick, at plant”
+- p.326: Fig. 6.1 shows the system of the module “sand-lime brick, at plant”. It shows all in- and output flows,
+- p.327: Fig. 6.1 Flows for “sand-lime brick, at plant” and their representation in the ecoinvent database
+- p.335: Tab. 1.1 Approximate sector based breakdown of production in the glass industry (IPPC (2001))
+- p.335: Fig. 1.1 Total glass production 1986 to 1996 (IPPC (2001)) (*excluding frits and ceramic fibres)
+- p.336: Tab. 2.1 Locations of float tanks in the EU in 1997 (IPPC (2001))
+- p.337: Tab. 2.2 Number of float tanks in EU Member States in 1997 (IPPC (2001))
+- p.337: Tab. 2.3 Distribution of float tanks according to plant capacity in 1997 (IPPC (2001))
+- p.339: Fig. 4.1 The Float Glass Process IPPC (2001)
+- p.345: Tab. 5.1 Composition of flat glass (IPPC (2001))
+- p.345: Tab. 5.2 Input raw materials for flat glass production (IPPC (2001))
+- p.347: Tab. 5.3 Ecoinvent database meta information for the product “flat glass, uncoated, at plant”
+- p.348: Fig. 5.1 Flows for “flat glass, uncoated, at plant” and their representation in the ecoinvent database
+- p.349: Fig. 5.1 Flows for “flat glass, uncoated, at plant” and their representation in the ecoinvent database (cont)
+- p.352: Tab. 5.4 Portray of German plant
+- p.353: Tab. 5.5 Ecoinvent database meta information for the product “flat glass, coated, at plant”
+- p.354: Fig. 5.2 Flows for “flat glass, coated, at plant” and their representation in the ecoinvent database
+- p.355: Fig. 5.3 Flows for “flat glass, coated, at plant” and their representation in the ecoinvent database (cont)
+- p.356: Fig. 5.4 Flows for “flat glass, coated, at plant” and their representation in the ecoinvent database (cont)
+- p.357: Fig. 5.5 Flows for “flat glass, coated, at plant” and their representation in the ecoinvent database (cont)
+- p.358: Tab. 5.6 Ecoinvent database meta information for the product “flat glass plant”
+- p.359: Fig. 5.6 Flows for “flat glass plant” and their representation in the ecoinvent database
+- p.369: Fig. 3.1 Glass evacuated tube for solar collectors
+- p.369: Tab. 3.1 Example for basic specifications of an evacuated collector tube
+- p.370: Tab. 4.1 Unit process raw data and data quality indicators for the low-iron glass
+- p.370: Tab. 4.2 Composition of borosilicate glass (Starzner & Wurmer-Weiß 2000).
+- p.371: Fig. 4.1 The process for the production of casting glass (IPPC 2000) which is also used for structured glass
+- p.372: Tab. 4.3 Unit process raw data and data quality indicators for the tempering of glass
+- p.373: Tab. 4.4 Unit process raw data and data quality indicators for the AR-glass etching with fluorosilicic acid
+- p.374: Tab. 4.5 Unit process raw data and data quality indicators for the glass etching plant
+- p.374: Fig. 4.2 Stages of sol-gel coating process by means of the dipping technique (Glässer 2000:176)
+- p.375: Fig. 4.3 Course of production of sol-gel coating (Glässer 2000:176)
+- p.375: Fig. 4.4 Diagram of a modern in-line flat glass sputtering plant with magnetron cathodes (Glässer 2000:119)
+- p.376: Tab. 4.6. The intermediate product is a tube made out of borosilicate glass, but there are also lime-
+- p.377: Tab. 4.6 Unit process raw data and data quality indicators for the production of borosilicate glass tubes
+- p.378: Tab. 4.7 Unit process raw data and data quality indicators for manufacturing collector tubes with a silver mirror
+- p.378: Tab. 4.8 Unit process raw data and data quality indicators for the glass tube production plant
+- p.391: Tab. 3.1 Materials and its producers for glass fibre reinforced plastics.
+- p.393: Fig. 4.1 Glass reinforcement market by application (Saint-Gobain 2002c).
+- p.394: Tab. 5.1 Composition of E Glass for glass fibres.
+- p.395: Fig. 5.1 Glass strand fabrication (Saint-Gobain 2002a)
+- p.395: Tab. 5.2 Comparison of different types of fibres used for reinforced plastics (IPPC 2000).
+- p.397: Fig. 5.2 Hand lay-up moulding.
+- p.398: Fig. 5.3 Injection moulding
+- p.400: Tab. 6.1 Emission levels of water pollutants in the effluents of the glass industry IPPC 2001
+- p.401: Tab. 6.2 Unit process raw data and data quality indicators for the continuous filament glass fibre
+- p.401: Tab. 6.3 shows the unit process raw data and data quality indicators for hand lay-up moulded glass
+- p.402: Tab. 6.3 Unit process raw data and data quality indicators for hand lay-up moulded glass fibre reinforced plastic
+- p.402: Tab. 6.4 shows the unit process raw data and data quality indicators for injection moulded glass fibre.
+- p.402: Tab. 6.4 Unit process raw data and data quality indicators for injection moulded glass fibre reinforced plastic
+- p.417: Tab. 2.1 Base materials, fuel and transport distances (production of rock wool by Flumroc AG (Flumroc (2002)))
+- p.419: Tab. 3.1 Chemical composition of basalt (Kündig et al. (1997))
+- p.420: Tab. 3.2 Chemical composition of basalt in weight percentage (Kündig et al. (1997))
+- p.421: Tab. 3.3 Most important products of Flumroc (CH) with their production volume in the year 2001 and main technical
+- p.422: Tab. 3.4 Material properties of extruded polystyrene
+- p.425: Tab. 4.1 Input of raw materials for 1 kg of typical glass wool mat in this study (Richter et al. (1995))
+- p.425: Fig. 4.1 shows schematically the overall manufacturing process. The binder resins are cured at tem-
+- p.426: Fig. 4.1 Production process of mineral-fibre insulation (Rotary process is used to form fibres) (Fitzer et al. (1997))
+- p.427: Tab. 4.2 Comparison of raw materials, binders and energy per kg glass wool product between a German (Hutter et al.
+- p.428: Tab. 4.3 ecoinvent meta information for the product “glass wool mat, at plant”
+- p.429: Fig. 4.2 Flows for "glass wool mat, at plant" and their representation in the ecoinvent database
+- p.430: Fig. 4.2 Flows for "glass wool mat, at plant" and their representation in the ecoinvent database (cont.)
+- p.434: Tab. 4.4 Transformation of data taken from the environmental report of one German quarry (Anonymous (1997)) to
+- p.435: Tab. 4.5 ecoinvent meta information for the product “basalt, at plant”
+- p.436: Fig. 4.3 Flows for “basalt, at plant” and their representation in the ecoinvent database
+- p.438: Fig. 4.4 Rock wool production process by Flumroc in Switzerland
+- p.439: Fig. 4.5 shows a detailed flow scheme for the manufacture of rock wool:
+- p.440: Fig. 4.5 Flow scheme of rock wool production process
+- p.441: Tab. 4.6 Energy balance for Flumroc for the year 2001 (Flumroc (2002))
+- p.442: Tab. 4.7 Rough mass balance for rock wool production by Flumroc for the year 2001 (Flumroc (2002))
+- p.443: Tab. 4.8 ecoinvent meta information for the product “rock wool, at plant”
+- p.444: Fig. 4.6 Flows for "rock wool, at plant" and their representation in the ecoinvent database
+- p.445: Fig. 4.6 Flows for "rock wool, at plant" and their representation in the ecoinvent database (cont)
+- p.446: Fig. 4.6 Flows for "rock wool, at plant" and their representation in the ecoinvent database (cont.)
+- p.450: Tab. 4.9 ecoinvent meta information for the product “rock wool, packed, at plant”
+- p.451: Fig. 4.7 Flows for “rock wool, packed, at plant” and their representation in the ecoinvent database
+- p.453: Tab. 4.10 ecoinvent meta information for the product “rock wool plant”
+- p.454: Fig. 4.8 Flows for “rock wool plant” and their representation in the ecoinvent database
+- p.455: Tab. 4.11 Comparison between different existing data and the data under study
+- p.456: Tab. 4.12 Input of raw materials and energy input for 1kg of a FOAMGLAS® product
+- p.457: Fig. 4.9 System boundaries considered of the FOAMGLAS production process
+- p.458: Fig. 4.10: Production process of FOAMGLAS insulation material
+- p.459: Tab. 4.13: Electricity use for the production of 650 kg FOAMGLAS T4WDS
+- p.460: Fig. 4.11: Common and separated production steps for all countries at the production facility in Tessenderlo
+- p.461: Tab. 4.14: Overview of transport distances
+- p.461: Tab. 4.15: Packing materials used for one ready for delivery pallet of FOAMGLAS T4 WDS measured by weight
+- p.462: Tab. 4.16: Air and water use for the production of 650 kg FOAMGLAS T4WDS
+- p.462: Tab. 4.17 shows data on maximum particulate matter emissions calculated from filter efficiency, re-
+- p.463: Tab. 4.17: Calculated particulate matter
+- p.464: Tab. 4.18 ecoinvent meta information for the foamglas production
+- p.465: Tab. 4.19 ecoinvent meta information for the foamglas production
+- p.466: Fig. 4.12 Flows for "foamglas, at plant" (RER) and their representation in the ecoinvent database
+- p.467: Fig. 4.12 Flows for "foamglas, at plant" (RER) and their representation in the ecoinvent database (cont.)
+- p.469: Fig. 4.13 Flows for "foamglas, at regional storage" (CH) and their representation in the ecoinvent database
+- p.470: Fig. 4.13 Flows for "foamglas, at regional storage" (CH) and their representation in the ecoinvent database (cont.)
+- p.471: Fig. 4.14 Flows for "foamglas, at regional storage" (AT) and their representation in the ecoinvent database
+- p.472: Fig. 4.14 Flows for "foamglas, at regional storage" (AT) and their representation in the ecoinvent database (cont.)
+- p.473: Fig. 4.15 Flows for "foamglas plant" and their representation in the ecoinvent database
+- p.475: Tab. 4.20 ecoinvent meta information for the polystyrene foam slab production
+- p.476: Fig. 4.16 Flows for "polystyrene foam slab, at plant" and their representation in the ecoinvent database
+- p.477: Fig. 4.17 Production process of extruded polystyrene
+- p.478: Tab. 4.21 Blowing agents and emission data during XPS production (source: IPCC 2007 and assumptions)
+- p.479: Fig. 4.18 shows the system of the dataset “polystyrene, extruded (XPS), at plant”. It shows all in- and
+- p.479: Tab. 4.22 ecoinvent database meta information of the product “polystyrene, extruded (XPS), at plant”
+- p.480: Fig. 4.18 Flows for “polystyrene, extruded (XPS), at plant" and their representation in the ecoinvent database
+- p.482: Tab. 4.23 ecoinvent meta information for the cellulose fibre production and application
+- p.483: Fig. 4.19 Flows for "cellulose fibre, inclusive blowing in, at plant" and their representation in the ecoinvent database
+- p.485: Tab. 4.24 ecoinvent meta information for the UF foam production
+- p.486: Fig. 4.20 Flows for "urea formaldehyde foam, in situ foaming, at plant" and their representation in the ecoinvent database
+- p.487: Fig. 4.21 Flows for “urea formaldehyde foam slab, hard, at plant" and their representation in the ecoinvent database
+- p.497: Tab. 3.1 Description of elastomere tube insulation materials from different companies
+- p.498: Fig. 4.1 Production process for tube insulation material.
+- p.499: Tab. 5.1 Calculation of the total production volume for the production plant in Münster
+- p.500: Tab. 5.2 Assessment of production volumes in Münster and Zeulenroda
+- p.500: Tab. 5.3 Unit process raw data and data quality indicators for the production plant for tube insulation. References
+- p.501: Tab. 5.4 Unit process raw data and data quality indicators for the production of tube insulation. References and assumptions for the inventory are pr
+- p.502: Tab. 5.4 shows the data quality indicators for the inventory of tube insulation materials. The simplified
+- p.502: Tab. 5.3 shows the data quality indicators for the inventory of a tube insulation plant. The simplified
+- p.511: Fig. 4.1 and Fig. 4.2 respectively.
+- p.513: Tab. 4.1 ecoinvent meta information for the cork production processes
+- p.514: Fig. 4.1 Flows for "cork, harvesting / thinning / final cutting, under bark" and their representation in the ecoinvent database
+- p.515: Fig. 4.2 Flows for "cork slab, at plant" and their representation in the ecoinvent database
+- p.523: Tab. 3.1 Field of application / specification of studied mortar and plasters (Kasser & Pöll (1998), )
+- p.523: Tab. 4.1 Technical specification of cement mortar
+- p.524: Tab. 4.2 Technical specification of anhydrite floor (Starzner and Wurmer-Weiss 2000)
+- p.524: Tab. 5.1 Composition of cement mortar (Wendehorst & Vollenschaar (1998))
+- p.526: Tab. 5.2 Raw materials of the studied mortar and plasters including the minimum amount of water needed for ready-
+- p.527: Tab. 6.1 Ecoinvent meta information for the product “cement mortar, at plant”
+- p.527: Fig. 6.1 shows the module “cement mortar, at plant”. It shows all in- and output flows, the allocation
+- p.528: Fig. 6.1 Flows for “cement mortar, at plant” and their representation in the ecoinvent database
+- p.529: Tab. 6.2 Ecoinvent meta information for the product “lime mortar, at plant”
+- p.529: Fig. 6.2 shows the module “lime mortar, at plant”. It shows all in- and output flows, the allocation to
+- p.530: Fig. 6.2 Flows for “lime mortar, at plant” and their representation in the ecoinvent database
+- p.531: Tab. 6.3 Ecoinvent meta information for the product “light mortar, at plant”
+- p.531: Fig. 6.3 shows the module “light mortar, at plant”. It shows all in- and output flows, the allocation to
+- p.532: Fig. 6.3 Flows for “light mortar, at plant” and their representation in the ecoinvent database
+- p.533: Tab. 6.4 Ecoinvent meta information for the product “base plaster, at plant”
+- p.533: Fig. 6.4 shows the module “base plaster, at plant”. It shows all in- and output flows, the allocation to
+- p.534: Fig. 6.4 Flows for “base plaster, at plant” and their representation in the ecoinvent database
+- p.535: Tab. 6.5 Ecoinvent meta information for the product “cover coat, organic, at plant”
+- p.535: Fig. 6.5 shows the module “cover coat, organic, at plant”. It shows all in- and output flows, the alloca-
+- p.536: Fig. 6.5 Flows for “cover coat, organic, at plant” and their representation in the ecoinvent database
+- p.537: Tab. 6.6 Ecoinvent meta information for the product “cover coat, mineral, at plant”
+- p.537: Fig. 6.6 shows the module “cover coat, mineral, at plant”. It shows all in- and output flows, the alloca-
+- p.538: Fig. 6.6 Flows for “cover coat, mineral, at plant” and their representation in the ecoinvent database
+- p.539: Tab. 6.7 Ecoinvent meta information for the product “thermal plaster, at plant”
+- p.539: Fig. 6.7 shows the module “thermal plaster, at plant”. It shows all in- and output flows, the allocation
+- p.540: Fig. 6.7 Flows for “thermal plaster, at plant” and their representation in the ecoinvent database
+- p.541: Tab. 6.8 Ecoinvent meta information for the product “clay plaster, at plant”
+- p.541: Fig. 6.8 shows the module “clay plaster, at plant”. It shows all in- and output flows, the allocation to
+- p.542: Fig. 6.8 Flows for “clay plaster, at plant” and their representation in the ecoinvent database
+- p.543: Tab. 6.9 gives the meta information and Fig. 6.9 shows the data inventoried for the acrylic filler.
+- p.543: Tab. 6.9 Ecoinvent meta information for the product “acrylic filler, at plant”
+- p.544: Fig. 6.9 Flows for “acrylic filler, at plant” and their representation in the ecoinvent database
+- p.545: Tab. 6.10 Ecoinvent meta information for the product “plaster mixing”
+- p.545: Fig. 6.10 shows the module “plaster mixing”. It shows all in- and output flows, the allocation to the
+- p.546: Fig. 6.10 Flows for “plaster mixing” and their representation in the ecoinvent database
+- p.547: Tab. 6.11 Ecoinvent meta information for the product “anhyhdrite floor, at plant”
+- p.547: Fig. 6.10 shows the module “anhyhdrite floor, at plant”. It shows all in- and output flows, the alloca-
+- p.548: Fig. 6.11 Flows for “anhyhdrite floor, at plant” and their representation in the ecoinvent database
+- p.549: Tab. 6.12 Ecoinvent meta information for the product “adhesive mortar, at plant”
+- p.549: Fig. 6.10 shows the module “adhesive mortar, at plant”. It shows all in- and output flows, the alloca-
+- p.550: Fig. 6.12 Flows for “adhesive mortar, at plant” and their representation in the ecoinvent database
+- p.558: Tab. 2.1 Types of building machines in ecoinvent after (Frischknecht et al. (1996))
+- p.560: Tab. 2.2 Characteristic data of different types of building machines (BUWAL (2000b))
+- p.561: Tab. 2.3 Ecoinvent database meta information for the product “building machine” and the process “diesel, burned in
+- p.562: Fig. 2.1 and Fig. 2.2 show all in- and output flows of the infrastructure “building machine“ and the process “diesel, burned in building machine”, th
+- p.562: Fig. 2.1 Flows for “building machine” and their representation in the ecoinvent database
+- p.563: Fig. 2.2 Flows for “diesel, burned in building machine” and their representation in the ecoinvent database
+- p.564: Fig. 2.2 Flows for “diesel, burned in building machine” and their representation in the ecoinvent database (cont.)
+- p.565: Tab. 2.4 Ecoinvent database meta information for the product “hydraulic digger” and the process “excavation, hy-
+- p.566: Fig. 2.3 and Fig. 2.4 show all in- and output flows of the infrastructure “hydraulic digger“, and the process “excavation, hydraulic digger”, the all
+- p.566: Fig. 2.3 Flows for “hydraulic digger” and their representation in the ecoinvent database
+- p.567: Fig. 2.4 Flows for “excavation, hydraulic digger” and their representation in the ecoinvent database
+- p.568: Fig. 2.4 Flows for “excavation, hydraulic digger” and their representation in the ecoinvent database (cont.)
+- p.569: Tab. 2.5 Ecoinvent database meta information for the product skid-steer loader”
+- p.569: Fig. 2.5 shows all in- and output flows of the process “excavation, skid-steer loader”, the allocation to
+- p.570: Fig. 2.5 Flows for “excavation, skid-steer loader” and their representation in the ecoinvent database
+- p.571: Fig. 2.5 Flows for “excavation, skid-steer loader” and their representation in the ecoinvent database (cont.)
+- p.572: Tab. 2.6 HP400 SX rock crusher materials (Landfield & Karra (2000))
+- p.573: Tab. 2.7 Ecoinvent database meta information for the product “industrial machine, heavy, unspecified, at plant”
+- p.573: Fig. 2.6 shows all in- and output flows of the product “industrial machine, heavy, unspecified, at
+- p.574: Fig. 2.6 Flows for “industrial machine, heavy, unspecified, at plant” and their representation in the ecoinvent database
+- p.575: Fig. 2.7 Nordberg NW400-IOC portable crushing plant incorporates an HP400 SX cone together with 1067 mm rear
+- p.576: Tab. 2.8 Characteristic of the Nordberg HP400 SX (Landfield & Karra (2000))
+- p.577: Tab. 2.9 Ecoinvent database meta information for the product “crushing, rock”
+- p.577: Fig. 2.8 shows all in- and output flows of the process rock crushing, their allocation to modules in
+- p.578: Fig. 2.8 Flows for “crushing, rock” and their representation in the ecoinvent database
+- p.580: Fig. 2.9 shows all in- and output flows of the product “power saw, without catalytic converter”, the al-
+- p.581: Tab. 2.10 Ecoinvent database meta information for the power saw and sawing modules without catalytic converter
+- p.582: Fig. 2.9 Flows for “power saw, without catalytic converter” and their representation in the ecoinvent database
+- p.583: Fig. 2.10 shows all in- and output flows of the product “power sawing, without catalytic converter”, the allocation to the modules in ecoinvent databa
+- p.583: Fig. 2.10 Flows for “power sawing, without catalytic converter” and their representation in the ecoinvent database
+- p.584: Fig. 2.10 Flows for “power sawing, without catalytic converter” and their representation in the ecoinvent database (cont.)
+- p.585: Tab. 2.11 Ecoinvent database meta information for the power saw and sawing modules with catalytic converter
+- p.586: Fig. 2.11 shows all in- and output flows of the product “power saw, with catalytic converter”, the allocation to the modules in ecoinvent database, th
+- p.586: Fig. 2.11 Flows for “power saw, with catalytic converter” and their representation in the ecoinvent database
+- p.587: Fig. 2.12 shows all in- and output flows of the product “power sawing, with catalytic converter”, the allocation to the modules in ecoinvent database,
+- p.587: Fig. 2.12 Flows for “power sawing, with catalytic converter” and their representation in the ecoinvent database
+- p.588: Fig. 2.12 Flows for “power sawing, with catalytic converter” and their representation in the ecoinvent database (cont.)
+- p.589: Tab. 2.12 Characteristic data of conveyor belt used as basis
+- p.590: Tab. 2.13 Ecoinvent database meta information for the product “conveyor belt, at plant”
+- p.590: Fig. 2.13 shows all in- and output flows of the product “conveyor belt, at plant”, the allocation to the
+- p.591: Fig. 2.13 Flows for “conveyor belt, at plant” and their representation in the ecoinvent database
+- p.592: Tab. 3.1 Characteristic material composition of a multi-storey building (Mauch et al. (1995))
+- p.592: Tab. 3.2. The estimation/calculation of the primary energy demand is partitioned in construction (excavation),
+- p.593: Tab. 3.2 End of life waste composition and destination of a multi-storey building (Mauch et al. (1995))
+- p.594: Tab. 3.1 Geometry of building used as basis in this study
+- p.594: Tab. 3.2 Material for the reference steel construction hall
+- p.595: Tab. 3.2 Material for the reference steel construction hall (cont)
+- p.596: Tab. 3.3 Materials for the reference wooden construction hall
+- p.598: Tab. 3.4 Ecoinvent database meta information for “building, multi-storey”
+- p.598: Fig. 3.1 shows all in- and output flows of the product “building, multi-storey”, the allocation to the
+- p.599: Fig. 3.1 Flows for “building, multi-storey” and their representation in the ecoinvent database
+- p.600: Fig. 3.1 Flows for “building, multi-storey” and their representation in the ecoinvent database (cont.)
+- p.601: Tab. 3.5 Ecoinvent database meta information for “building hall, steel construction”
+- p.601: Fig. 3.2 shows all in- and output flows of the product “building, hall, steel construction”, the allocation
+- p.602: Fig. 3.2 Flows for “building, hall, steel construction” and their representation in the ecoinvent database
+- p.603: Fig. 3.2 Flows for “building, hall, steel construction” and their representation in the ecoinvent database (cont.)
+- p.604: Tab. 3.6 Ecoinvent database meta information for “building hall, wood construction”
+- p.604: Fig. 3.3 shows all in- and output flows of the product “building, hall, wood construction”, the alloca-
+- p.605: Fig. 3.3 Flows for “building, hall, wood construction” and their representation in the ecoinvent database
+- p.606: Fig. 3.3 Flows for “building, hall, wood construction” and their representation in the ecoinvent database (cont.)
+- p.607: Tab. 3.7 Ecoinvent database meta information for “building, hall”
+- p.607: Fig. 3.4 shows all in- and output flows of the product “building hall”, the allocation to the modules in
+- p.608: Fig. 3.4 Flows for “building hall” and their representation in the ecoinvent database
+- p.609: Tab. 4.1 shows the composition and some characteristics of “Tovex”. Further characterisation as cal-
+- p.610: Tab. 4.1 Composition of the explosive “Tovex”
+- p.610: Tab. 4.2 Possible Input materials and corresponding emissions from blasting with Tovex
+- p.611: Tab. 4.3 Ecoinvent database meta information for “Explosives, Tovex, at plant”
+- p.611: Fig. 4.1 shows all in- and output flows of the product “explosives, tovex, at plant”, the allocation to
+- p.612: Fig. 4.1 Flows for “explosives, tovex, at plant” and their representation in the ecoinvent database
+- p.613: Fig. 4.1 Flows for “explosives, tovex, at plant” and their representation in the ecoinvent database (cont.)
+- p.615: Tab. 4.4 Ecoinvent database meta information for a explosive production plant
+- p.615: Fig. 4.2 shows all in- and output flows of the product “explosive production plant”, the allocation to
+- p.616: Fig. 4.2 Flows for “explosive production plant” and their representation in the ecoinvent database
+- p.617: Tab. 4.5 Ecoinvent database meta information for blasting
+- p.617: Fig. 4.3 shows all in- and output flows of the product “blasting”, the allocation to the modules in
+- p.618: Fig. 4.3 Flows for “blasting” and their representation in the ecoinvent database
+- p.619: Fig. 5.1 Definition of a EUR-flat pallet
+- p.620: Tab. 5.1 Ecoinvent database meta information for the product “EUR-flat pallet”
+- p.620: Fig. 5.2 shows all in- and output flows of the product “EUR-flat pallet”, the allocation to the modules
+- p.621: Fig. 5.2 Flows for “EUR-flat pallet" and its representation in the ecoinvent database
+- p.624: Fig. 9.1 Emission factors coefficient of correction for Diesel engines from 1990 to 2030 based on capacity class
+- p.625: Fig. 9.1 Emission factors coefficient of correction for Diesel engines from 1990 to 2030 based on capacity class (cont.)
+- p.632: Tab. 2.1 Bentonite production by country in 1998 (Stockwell et al. (2000))
+- p.634: Fig. 4.1 Production process of alkaline activated bentonite (Süd-Chemie (1997))
+- p.634: Fig. 4.2 shows the production process of acid activated bentonite.
+- p.635: Fig. 4.2 Production process of acid activated bentonite (Süd-Chemie (1997))
+- p.636: Tab. 4.1 Estimation of the infrastructure of the bentonite plant of Süd-Chemie AG (based on Classen et al. (2007))
+- p.637: Fig. 5.1 shows the system of the infrastructure module “mine, bentonite”. It shows all in- and output
+- p.638: Tab. 5.1 Ecoinvent database meta information for the product “mine, bentonite”
+- p.639: Fig. 5.1 Flows for “mine, bentonite" and their representation in the ecoinvent database
+- p.640: Fig. 5.1 Flows for “mine, bentonite" and their representation in the ecoinvent database (cont.)
+- p.641: Tab. 5.2 Ecoinvent database meta information for the product “bentonite, at mine”
+- p.641: Fig. 5.2 shows the system of the module “bentonite, at mine”. It shows all in- and output flows, the al-
+- p.642: Fig. 5.2 Flows for “bentonite, at mine" and their representation in the ecoinvent database
+- p.643: Fig. 5.2 Flows for “bentonite, at mine" and their representation in the ecoinvent database (cont)
+- p.644: Tab. 5.3 gives an overview of the amounts of mined bentonite and overburden material. The basis year
+- p.644: Tab. 5.3 Composition of weight, volume and mining area of bentonite and overburden material at Süd-Chemie AG
+- p.644: Fig. 5.3 shows the system of the module “recultivation, bentonite mine”. It shows all in- and output
+- p.645: Tab. 5.4 Ecoinvent database meta information for the product “recultivation, bentonite mine”
+- p.646: Fig. 5.3 Flows for “recultivation, bentonite mine" and their representation in the ecoinvent database
+- p.647: Fig. 5.4 shows the system boundary of the module “bentonite, at processing”. It shows all in- and out-
+- p.648: Tab. 5.5 Ecoinvent database meta information for the product “bentonite, at processing”
+- p.649: Fig. 5.4 Flows for “bentonite, at processing" and their representation in the ecoinvent database
+- p.650: Fig. 5.4 Flows for “bentonite, at processing" and their representation in the ecoinvent database (cont.)
+- p.658: Tab. 3.1 Group designation of rubber according to the chemical structure Obrecht et al. (1997)
+- p.660: Tab. 3.2 Abbreviations for the different types of rubber according to DIN/ISO 1629 (Obrecht et al. (1997))
+- p.661: Tab. 3.3 Application of synthetic rubber
+- p.662: Tab. 3.4 Applications of EPM and EPDM Obrecht et al. (1997)
+- p.663: Tab. 4.1 Production of synthetic rubber in terms of chemical mechanisms and process features Obrecht et al. (1997)
+- p.665: Tab. 4.2 Possible mixture of EPDM elastomer (Richter et al. (1996))
+- p.666: Tab. 4.3 Ecoinvent meta information for the EPDM elastomer production processes
+- p.667: Fig. 4.1 Flows for "synthetic rubber, at plant" and their representation in the ecoinvent database
+- p.681: Tab. 5.1 (raw materials needed for the production of autoclaved aerated concrete blocks) shows the
+- p.681: Tab. 5.1 Example of raw material mixtures for a block density of 500 kg/m (Hutter et al. (1999))
+- p.683: Tab. 6.1 Ecoinvent database meta information for the product “vermiculite, at mine”
+- p.683: Fig. 6.1 shows the system of the module “vermiculite, at mine”. It shows all in- and output flows, the
+- p.685: Fig. 6.1 Flows for “vermiculate, at mine” and their representation in the ecoinvent database
+- p.686: Fig. 6.1 Flows for “vermiculate, at mine” and their representation in the ecoinvent database (cont)
+- p.687: Tab. 6.2 Ecoinvent database meta information for the product “perlite, at mine”
+- p.687: Fig. 6.2 shows the system of the module “perlite, at mine”. It shows all in- and output flows, the allo-
+- p.688: Fig. 6.2 Flows for “perlite, at mine” and their representation in the ecoinvent database
+- p.689: Fig. 6.2 Flows for “perlite, at mine” and their representation in the ecoinvent database (cont)
+- p.690: Tab. 6.3 Ecoinvent database meta information for the product “pumice, at mine”
+- p.690: Fig. 6.3 shows the system of the module “pumice, at mine”. It shows all in- and output flows, the allo-
+- p.691: Fig. 6.3 Flows for “pumice, at mine” and their representation in the ecoinvent database
+- p.692: Fig. 6.3 Flows for “pumice, at mine” and their representation in the ecoinvent database (cont)
+- p.693: Tab. 6.4 Ecoinvent database meta information for the product “vermiculite mining plant”
+- p.693: Fig. 6.4 shows the system of the module “vermiculite mining plant”. It shows all in- and output flows,
+- p.694: Fig. 6.4 Flows for “vermiculite mining plant” and their representation in the ecoinvent database
+- p.695: Tab. 6.5 Ecoinvent database meta information for the product “expanded vermiculite, at plant”
+- p.695: Fig. 6.5 shows the system of the module “expanded vermiculite, at plant”. It shows all in- and output
+- p.696: Fig. 6.5 Flows for “expanded vermiculite, at plant” and their representation in the ecoinvent database
+- p.697: Fig. 6.5 Flows for “expanded vermiculite, at plant” and their representation in the ecoinvent database (cont)
+- p.698: Tab. 6.6 Ecoinvent database meta information for the product “expanded perlite, at plant”
+- p.698: Fig. 6.6 shows the system of the module “expanded perlite, at plant”. It shows all in- and output flows,
+- p.699: Fig. 6.6 Flows for “expanded perlite, at plant” and their representation in the ecoinvent database
+- p.700: Tab. 6.7 Ecoinvent database meta information for the product “expanded clay, at plant”
+- p.700: Fig. 6.7 shows the system of the module “expanded clay, at plant”. It shows all in- and output flows,
+- p.701: Fig. 6.7 Flows for “expanded clay, at plant” and their representation in the ecoinvent database
+- p.702: Fig. 6.7 Flows for “expanded clay, at plant” and their representation in the ecoinvent database (cont)
+- p.703: Tab. 6.8 Ecoinvent database meta information for the product “lightweight concrete block, expanded vermiculite, at
+- p.703: Fig. 6.8 shows the system of the module “lightweight concrete block, expanded vermiculite, at plant”.
+- p.704: Fig. 6.8 Flows for “lightweight concrete block, expanded vermiculite, at plant” and their representation in the ecoinvent database
+- p.705: Tab. 6.9 Ecoinvent database meta information for the product “lightweight concrete block, expanded perlite, at
+- p.705: Fig. 6.9 shows the system of the module “lightweight concrete block, expanded perlite, at plant”. It
+- p.706: Fig. 6.9 Flows for “lightweight concrete block, expanded perlite, at plant” and their representation in the ecoinvent database
+- p.707: Tab. 6.10 Ecoinvent database meta information for the product “lightweight concrete block, expanded clay, at plant”
+- p.707: Fig. 6.10 shows the system of the module “lightweight concrete block, expanded clay, at plant”. It
+- p.708: Fig. 6.10 Flows for “lightweight concrete block, expanded clay, at plant” and their representation in the ecoinvent database
+- p.709: Tab. 6.11 Ecoinvent database meta information for the product “lightweight concrete block, pumice, at plant”
+- p.709: Fig. 6.11 shows the system of the module “lightweight concrete block, pumice, at plant”. It shows all
+- p.710: Fig. 6.11 Flows for “lightweight concrete block, pumice, at plant” and their representation in the ecoinvent database
+- p.711: Tab. 6.12 Ecoinvent database meta information for the product “lightweight concrete block, polystyrene, at plant”
+- p.711: Fig. 6.12 shows the system of the module “lightweight concrete block, polystyrene, at plant”. It shows
+- p.712: Fig. 6.12 Flows for “lightweight concrete block, polystyrene, at plant” and their representation in the ecoinvent database
+- p.713: Tab. 6.13 Ecoinvent database meta information for the product “autoclaved aerated concrete block, at plant”
+- p.713: Fig. 6.13 shows the system of the module “autoclaved aerated concrete block, at plant”. It shows all
+- p.714: Fig. 6.13 Flows for “autoclaved aerated concrete block, at plant” and their representation in the ecoinvent database
+- p.715: Tab. 6.14 Ecoinvent database meta information for the product “light clay brick, at plant”
+- p.715: Fig. 6.14 shows the system of the module “light clay brick, at plant”. It shows all in- and output flows,
+- p.716: Fig. 6.14 Flows for “light clay brick, at plant” and their representation in the ecoinvent database
+- p.717: Tab. 6.15 Ecoinvent database meta information for the product “cobwork, at plant”
+- p.717: Fig. 6.15 shows the system of the module “cobwork, at plant”. It shows all in- and output flows, the
+- p.718: Fig. 6.15 Flows for “cobwork, at plant” and their representation in the ecoinvent database
+- p.727: Tab. 3.1 Important applications of natural stone
+- p.729: Tab. 5.1 Scheme of natural stone processing (Kündig et al. (1997))
+- p.730: Fig. 5.1 Production process of natural stone plates
+- p.734: Fig. 5.2 Geometry of diamond fitted pearl
+- p.736: Tab. 6.1 ecoinvent meta information of the product “natural stone, cut, at regional storage”
+- p.737: Fig. 6.1 Flows for “natural stone, cut, at regional storage” and their representation in the ecoinvent database
+- p.738: Tab. 6.2 ecoinvent meta information of the product “natural stone, ground, at regional
+- p.739: Fig. 6.2 Flows for “natural stone, ground, at regional storage” and their representation in the ecoinvent database
+- p.740: Tab. 6.3 ecoinvent meta information of the product “natural stone, polished, at regional
+- p.741: Fig. 6.3 Flows for “natural stone, polished, at regional storage” and their representation in the ecoinvent database
+- p.751: Tab. 2.1 Material composition of bitumen sealing V60 (Starzner & Wurmer-Weiss 2000)
+- p.752: Tab. 3.1 Application of different bitumen types in civil engineering (Starzner & Wurmer-Weiss
+- p.756: Tab. 5.1 Raw materials for the mastic asphalt production (Vogel et al. 2003)
+- p.758: Tab. 5.2 Emissions to air from bitumen sealing production (BUWAL 2000)
+- p.758: Tab. 5.3 PaB emissions of bitumen sealing and hot bitumen adhesive production
+- p.761: Tab. 6.1 ecoinvent meta information of the product “bitumen sealing V60, at plant”
+- p.762: Fig. 6.1 Flows for “Bitumen sealing V60, at plant” and their representation in the ecoinvent database
+- p.763: Tab. 6.2 ecoinvent meta information of the product “Bitumen sealing Alu80, at plant”
+- p.764: Fig. 6.2 Flows for “Bitumen sealing Alu80, at plant” and their representation in the ecoinvent database
+- p.765: Fig. 6.3 shows all in- and output flows of the product “Bitumen sealing VA4, at plant”, the
+- p.765: Tab. 6.3 ecoinvent meta information of the product “Bitumen sealing VA4, at plant”
+- p.766: Fig. 6.3 Flows for “Bitumen sealing VA4, at plant” and their representation in the ecoinvent database
+- p.767: Fig. 6.3 Flows for “Bitumen sealing VA4, at plant” and their representation in the ecoinvent database (cont)
+- p.768: Tab. 6.4 ecoinvent meta information of the product “Bitumen sealing, polymer EP4 flam, at
+- p.769: Fig. 6.4 Flows for “Bitumen sealing, polymer EP4 flam, at plant” and their representation in the ecoinvent database
+- p.770: Tab. 6.5 ecoinvent meta information of the product “Bitumen adhesive compound, cold, at
+- p.771: Fig. 6.5 Flows for “bitumen adhesive compound, cold, at plant” and their representation in the ecoinvent database
+- p.772: Tab. 6.6 ecoinvent meta information of the product “bitumen adhesive compound, hot, at
+- p.773: Fig. 6.6 Flows for “bitumen adhesive compound, hot, at plant” and their representation in the ecoinvent database
+- p.774: Tab. 6.7 ecoinvent meta information of the product “mastic asphalt, at plant”
+- p.775: Fig. 6.7 Flows for “mastic asphalt, at plant” and their representation in the ecoinvent database
+- p.784: Tab. 3.1 Basic material composition of titanium zinc (Rheinzink (2005))
+- p.784: Tab. 3.2 Material properties of titanium zinc (Rheinzink (2005))
+- p.784: Tab. 3.3 Material weight and thickness of titanium zinc metal sheet 1
+- p.787: Tab. 5.1 Calculation of energy demand for pre-alloying and melting
+- p.788: Fig. 6.1 shows the system of the dataset “titanium zinc plate, without pre-weathering, at
+- p.789: Tab. 6.1 ecoinvent meta information of the product “titanium zinc plate, without pre-
+- p.790: Fig. 6.1 Flows for “titanium zinc plate, without pre-weathering, at plant" and their representation in the ecoinvent database
+- p.798: Tab. 2.1 Material properties of tin (applied as coating to e.g. chromium steel)
+- p.801: Fig. 4.1 Process description of tin plating of chromium steel (after Collini (2005); personal
+- p.804: Tab. 5.1 ecoinvent database meta information of the product “tin plating, pieces”
+- p.805: Fig. 5.1 Flows for “tin plating, pieces" and their representation in the ecoinvent database
+- p.806: Fig. 5.1 Flows for “tin plating, pieces" and their representation in the ecoinvent database (cont.)
+- p.808: Fig. 5.1 Flows for “tin plating, pieces" and their representation in the ecoinvent database (cont)
+- p.809: Tab. 5.2 ecoinvent database meta information for the product “tin plated chromium steel
+- p.810: Fig. 5.2 Flows for “tin plated chromium steel sheet" and their representation in the ecoinvent database
+- p.820: Tab. 4.1 Characteristics of the glazing
+- p.821: Fig. 4.1 shows a typical configuration of a double glazing, taken from Richter et al. 1996.
+- p.821: Fig. 4.1 Configuration of a typical double-glazing described in ecoinvent
+- p.823: Tab. 4.2 Main material components of the four window frames (in kg per m2 of visible frame
+- p.823: Tab. 4.3 Characteristics of the reported plastic window frame
+- p.826: Fig. 4.2 New aluminium cladding at school-house in Zurich (inventoried for ecoinvent) 2
+- p.828: Tab. 4.4 Main material components of the four door types (kg per m2 of door including door
+- p.833: Tab. 5.1 ecoinvent meta information of the product “Glazing, double (2-IV), U<1.1 W/m2K, at
+- p.833: Fig. 5.1 shows all in- and output flows of the product “Glazing, double (2-IV), U<1.1
+- p.834: Fig. 5.1 Flows for “Glazing, double (2-IV), U<1.1 W/m2K, at plant” and their representation in the ecoinvent database
+- p.835: Tab. 5.2 ecoinvent meta information of the product “Glazing, double (2-IV), U<1.1 W/m2K,
+- p.835: Fig. 5.2 shows all in- and output flows of the product “Glazing, double (2-IV), U<1.1
+- p.836: Fig. 5.2 Flows for “Glazing, double (2-IV), U<1.1 W/m2K, laminated safety glass, at plant” and their representation in the ecoinvent database
+- p.837: Tab. 5.3 ecoinvent meta information of the product “Glazing, triple (3-IV), U<0.5 W/m2K, at
+- p.837: Fig. 5.3 shows all in- and output flows of the product “Glazing, triple (3-IV), U<0.5 W/m2K,
+- p.838: Fig. 5.3 Flows for “Glazing, triple (3-IV), U<0.5 W/m2K, at plant” and their representation in the ecoinvent database
+- p.839: Tab. 5.4 ecoinvent meta information of the product “Disposal, glazing 2-IV, U<1.1W/m2K, in
+- p.839: Fig. 5.4 shows all in- and output flows of the product “Disposal, glazing 2-IV, U<1.1W/m2K,
+- p.840: Fig. 5.4 Flows for “Disposal, glazing 2-IV, U<1.1W/m2K, in municipal incineration” and their representation in the ecoinvent database
+- p.841: Tab. 5.5 ecoinvent meta information of the product “Disposal, glazing 2-IV, U<1.1W/m2K, LSG,
+- p.841: Fig. 5.5 shows all in- and output flows of the product “Disposal, glazing 2-IV, U<1.1W/m2K,
+- p.842: Fig. 5.5 Flows for “Disposal, glazing 2-IV, U<1.1W/m2K, LSG, in municipal incineration” and their representation in the ecoinvent database
+- p.843: Tab. 5.6 ecoinvent meta information of the product “Disposal, glazing 3-IV, U<0.5W/m2K, in
+- p.843: Fig. 5.6 shows all in- and output flows of the product “Disposal, glazing 3-IV, U<0.5W/m2K,
+- p.844: Fig. 5.6 Flows for “Disposal, glazing 3-IV, U<0.5W/m2K, in municipal incineration” and their representation in the ecoinvent database
+- p.845: Tab. 5.7 ecoinvent meta information of the product “Window frame, wood, U=1.5 W/m2K, at
+- p.845: Fig. 5.7 shows all in- and output flows of the product “Window frame, wood, U=1.5
+- p.846: Fig. 5.7 Flows for “Window frame, wood, U=1.5 W/m2K, at plant” (Part 1) and their representation in the ecoinvent database
+- p.847: Fig. 5.7 Flows for “Window frame, wood, U=1.5 W/m2K, at plant” (Part 1) and their representation in the ecoinvent database (cont)
+- p.849: Tab. 5.8 ecoinvent meta information of the product “Window frame, wood-metal, U=1.6
+- p.849: Fig. 5.8 shows all in- and output flows of the product “Window frame, wood-metal, U=1.6
+- p.850: Fig. 5.8 Flows for “Window frame, wood-metal, U=1.6 W/m2K, at plant” (Part 1) and their representation in the ecoinvent database
+- p.851: Fig. 5.8 Flows for “Window frame, wood-metal, U=1.6 W/m2K, at plant” (Part 1) and their representation in the ecoinvent database (cont)
+- p.853: Tab. 5.9 ecoinvent meta information of the product “Window frame, plastic (PVC), U=1.6
+- p.853: Fig. 5.9 shows all in- and output flows of the product “Window frame, plastic (PVC), U=1.6
+- p.854: Fig. 5.9 Flows for “Window frame, plastic (PVC), U=1.6 W/m2K, at plant” (Part 1) and their representation in the ecoinvent database
+- p.855: Fig. 5.9 Flows for “Window frame, plastic (PVC), U=1.6 W/m2K, at plant” (Part 1) and their representation in the ecoinvent database (cont)
+- p.857: Tab. 5.10 ecoinvent meta information of the product “Window frame, aluminium, U=1.6
+- p.857: Fig. 5.10 shows all in- and output flows of the product “Window frame, aluminium, U=1.6
+- p.858: Fig. 5.10 Flows for “Window frame, aluminium, U=1.6 W/m2K, at plant” (Part 1) and their representation in the ecoinvent database
+- p.859: Fig. 5.10 Flows for “Window frame, aluminium, U=1.6 W/m2K, at plant” (Part 1) and their representation in the ecoinvent database (cont)
+- p.860: Tab. 5.11 ecoinvent meta information of the product “Disposal, window frame, wood, in
+- p.860: Fig. 5.11 shows all in- and output flows of the product “Disposal, window frame, wood, in
+- p.861: Fig. 5.11 Flows for “Disposal, window frame, wood, in municipal incineration” and their representation in the ecoinvent database
+- p.862: Tab. 5.12 ecoinvent meta information of the product “Disposal, window frame, wood-
+- p.862: Fig. 5.12 shows all in- and output flows of the product “Disposal, window frame, wood-
+- p.863: Fig. 5.12 Flows for “Disposal, window frame, wood-metal, in municipal incineration” and their representation in the ecoinvent database
+- p.864: Tab. 5.13 ecoinvent meta information of the product “Disposal, window frame, plastic, in
+- p.864: Fig. 5.13 shows all in- and output flows of the product “Disposal, window frame, plastic, in
+- p.865: Fig. 5.13 Flows for “Disposal, window frame, plastic, in municipal incineration” and their representation in the ecoinvent database
+- p.866: Tab. 5.14 ecoinvent meta information of the product “Cladding, crossbar-pole, aluminium,
+- p.866: Fig. 5.14 shows all in- and output flows of the product “Cladding, crossbar-pole,
+- p.867: Fig. 5.14 Flows for “Cladding, crossbar-pole, aluminium, at plant” (Part 1) and their representation in the ecoinvent database
+- p.868: Fig. 5.14 Flows for “Cladding, crossbar-pole, aluminium, at plant” (Part 1) and their representation in the ecoinvent database (cont)
+- p.871: Tab. 5.15 ecoinvent meta information of the product “Door, outer, wood-aluminium, at
+- p.871: Fig. 5.15 shows all in- and output flows of the product “Door, outer, wood-aluminium, at
+- p.872: Fig. 5.15 Flows for “Door, outer, wood-aluminium, at plant” and their representation in the ecoinvent database
+- p.873: Fig. 5.15 Flows for “Door, outer, wood-aluminium, at plant” and their representation in the ecoinvent database (cont)
+- p.876: Tab. 5.16 ecoinvent meta information of the product “Door, outer, wood-glass, at plant”
+- p.876: Fig. 5.16 shows all in- and output flows of the product “Door, outer, wood-glass, at plant”,
+- p.877: Fig. 5.16 Flows for “Door, outer, wood-glass, at plant” and their representation in the ecoinvent database
+- p.878: Fig. 5.16 Flows for “Door, outer, wood-glass, at plant” and their representation in the ecoinvent database (cont)
+- p.881: Tab. 5.17 ecoinvent meta information of the product “Door, inner, wood, at plant”
+- p.881: Fig. 5.17 shows all in- and output flows of the product “Door, inner, wood, at plant”, the
+- p.882: Fig. 5.17 Flows for “Door, inner, wood, at plant” and their representation in the ecoinvent database
+- p.883: Fig. 5.17 Flows for “Door, inner, wood, at plant” and their representation in the ecoinvent database (cont)
+- p.889: Tab. 5.18 ecoinvent meta information of the product “Door, inner, glass-wood, at plant”
+- p.889: Fig. 5.18 shows all in- and output flows of the product “Door, inner, glass-wood, at plant”,
+- p.890: Fig. 5.18 Flows for “Door, inner, glass-wood, at plant” and their representation in the ecoinvent database
+- p.891: Fig. 5.18 Flows for “Door, inner, glass-wood, at plant” and their representation in the ecoinvent database (cont)
+- p.898: Tab. 5.19 ecoinvent meta information of the product “Disposal, door, outer, wood-
+- p.898: Fig. 5.19 shows all in- and output flows of the product “Disposal, door, outer, wood-
+- p.899: Fig. 5.19 Flows for “Disposal, door, outer, wood-aluminium, in municipal incineration” and their representation in the ecoinvent database
+- p.900: Tab. 5.20 ecoinvent meta information of the product “Disposal, door, outer, wood-glass, in
+- p.900: Fig. 5.20 shows all in- and output flows of the product “Disposal, door, outer, wood-glass,
+- p.901: Fig. 5.20 Flows for “Disposal, door, outer, wood-glass, in municipal incineration” and their representation in the ecoinvent database
+- p.902: Tab. 5.21 ecoinvent meta information of the product “Disposal, door, inner, wood, in
+- p.902: Fig. 5.21 shows all in- and output flows of the product “Disposal, door, inner, wood, in
+- p.903: Fig. 5.21 Flows for “Disposal, door, inner, wood, in municipal incineration” and their representation in the ecoinvent database
+- p.904: Tab. 5.22 ecoinvent meta information of the product “Disposal, door, inner, glass-wood, in
+- p.904: Fig. 5.22 shows all in- and output flows of the product “Disposal, door, inner, glass-wood,
+- p.905: Fig. 5.22 Flows for “Disposal, door, inner, glass-wood, in municipal incineration” and their representation in the ecoinvent database
+- p.906: Tab. 5.23 ecoinvent meta information of the product “Polysulphide, sealing compound, at
+- p.906: Fig. 5.23 shows all in- and output flows of the product “Polysulphide, sealing compound, at
+- p.907: Fig. 5.23 Flows for “Polysulphide, sealing compound, at plant” and their representation in the ecoinvent database
+- p.908: Tab. 5.24 ecoinvent meta information of the product “natural rubber based sealing, at
+- p.908: Fig. 5.24 shows all in- and output flows of the product “Sealing compound, rubber-based
+- p.909: Fig. 5.24 Flows for “Sealing compound, rubber-based (caoutchouc)” and their representation in the ecoinvent database
+- p.910: Tab. 5.25 ecoinvent meta information of the product “Metal adhesive compound”
+- p.910: Fig. 5.25 shows all in- and output flows of the product “adhesive for metals”, the
+- p.911: Fig. 5.25 Flows for “Metal adhesive compound” and their representation in the ecoinvent database
+
+Rules:
+1. Choose the caption(s) that hold the unit-process inventory of this dataset — inputs, energy, emissions, transport — not impact results, not a diagram. Prefer "Sachbilanz" / "inventory" / "LCI" tables.
+2. Return the PDF page range that covers those tables plus the paragraph introducing them: `first_page`, `last_page` (at most 4 pages). Tables can run onto the next page.
+3. If no caption fits (the report does not document this dataset's inventory, or only as a result), return `found` = false and say why in `reason`.
+4. `reason` names the caption(s) you chose and why.
+
+Return only the JSON object described by the schema.

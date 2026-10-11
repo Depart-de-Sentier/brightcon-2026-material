@@ -1,0 +1,233 @@
+{
+  "target": {
+    "code": "22054091-22ea-3b0e-9b20-ef284f4dce61",
+    "name": "Bored pile wall, overlapped, strutted apart, Alterssiedlung Seefeldstrasse Zürich",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 6.6 'Sachbilanzdaten zur Herstellung der bilanzierten Bohrpfahlwände pro m2 Ansichtsfläche', first value column 'bored pile wall, overlapped, strutted apart, Alterssiedlung Seefeldstrasse Zürich' [CH], per 1 m2; allocation: none stated. A resource correction of 90 % of the gravel and sand content of the concrete is applied because the pile concrete is disposed of and recycled.. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2014 - LCA civil eng. works in building const. - Frischknecht.pdf",
+      "where": "pages 29-30 -> report-p29-30.txt",
+      "note": "report sha256 7541ef12bc8448e9…, text sha256 9c8ce0c904c02ff5…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/22054091-22ea-3b0e-9b20-ef284f4dce61/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "61895ffee09395226e1b15b25282cb089b9c35949fa31fee3443dae6d1da826a",
+      "at": "2026-09-22T12:23:51Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "bb2c588c65c517ef102736d0fe58127d355549b0be9111a44b93534790650df6",
+      "at": "2026-09-22T12:23:52Z"
+    },
+    "gaps_reported_by_model": [
+      "No direct air emissions (dust, combustion emissions) are inventoried for the process itself; the diesel combustion is carried by the 'diesel, burned in building machine' dataset.",
+      "No disposal of the wall at end of life appears in the table, only the resource correction.",
+      "The two resource corrections in the table (-2.12E+3 kg gravel, -1.30E+3 kg sand) are about 11 and 19 % larger in magnitude than the ones visible in the aggregated vector (-1903 and -1070 kg), so the shipped dataset may use a slightly different concrete composition than this column."
+    ],
+    "skipped_items": [
+      "concrete, concrete for underground construction, average cement Switzerland, at plant: ignore — 0 in this column: the low-cement underground-construction concrete is used only for the anchored wall (Stadtspital Triemli). The strutted wall uses the drilled-pile concrete instead.",
+      "concrete, concrete for drilled piles, average cement Switzerland, at plant: no dataset chosen (The keyword search returned no candidate at all for the drilled-pile concrete with average Swiss cement, so nothing can be chosen. This is the largest input of the process (4.92E+3 kg per m2) and is reported as missing.)",
+      "bored pile wall, overlapped, strutted apart, Alterssiedlung Seefeldstrasse Zürich: product — the reference product, 1 m2 of face area"
+    ],
+    "assembled_at": "2026-09-22T12:23:52Z"
+  },
+  "node": {
+    "name": "Bored pile wall, overlapped, strutted apart, Alterssiedlung Seefeldstrasse Zürich, disaggregated",
+    "unit": "m2",
+    "location": "CH",
+    "comment": "drafted from 2014 - LCA civil eng. works in building const. - Frischknecht.pdf pp. 29-30",
+    "inputs": [
+      {
+        "name": "Rolled steel, at regional storage",
+        "amount": 53.3,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "the strutting ('Spriessung', diverse profiles); the non-anchored variant has 0 for this line because it needs no strutting",
+        "derivation": {
+          "evidence": "report-p29-30.txt",
+          "quote": "technosphere       rolled steel, at regional storage                      CH            0                    kg        5.33E+1            2.13E+1              0                1               1.16                data; APT Ingenieure 2014, pers.",
+          "raw_value": 53.3,
+          "raw_unit": "kg",
+          "per": "per m2 Ansichtsflaeche (face area) of bored pile wall",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "rolled steel regional storage",
+          "mapping_reason": "Exact name and location; the 'with resource correction' variant is the same product plus a correction flow, which the report's table books separately, and reinforcing steel is the other line of this table.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "0a28f083-19b6-3e03-afa5-453dd38eb4c2"
+      },
+      {
+        "name": "Steel, low alloyed, secondary production (100% Rec.)",
+        "amount": 64.0,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "every second pile is reinforced, per the database comment",
+        "derivation": {
+          "evidence": "report-p29-30.txt",
+          "quote": "                   reinforcing steel, secondary production, (100% Rec.)   CH            0                    kg        6.40E+1            1.13E+2           6.40E+1             1               1.16                data; APT Ingenieure 2014, pers.",
+          "raw_value": 64.0,
+          "raw_unit": "kg",
+          "per": "per m2 Ansichtsflaeche (face area) of bored pile wall",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "reinforcing steel secondary production",
+          "mapping_reason": "The report states the 100 % recycled (secondary) route explicitly, which this candidate matches, whereas 'Reinforcing steel, primary production (0% Rec.)' is the opposite route; no 'reinforcing steel, secondary production' dataset appears among the candidates, so the product form (bar rather than unspecified low-alloyed steel) is the compromise.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "5733cb9a-b0b6-36f7-b445-60d6739da152"
+      },
+      {
+        "name": "Diesel, burned in building machine, average",
+        "amount": 1810.0,
+        "unit": "megajoule",
+        "location": "CH",
+        "note": "the text gives 6 to 7 litres of diesel per metre of drilling depending on the bore diameter, and 6.5 l/m was used",
+        "derivation": {
+          "evidence": "report-p29-30.txt",
+          "quote": "                   diesel, burned in building machine                     GLO           0                    MJ        1.81E+3            7.44E+2           1.81E+3             1               1.16                data; Marti AG, 2014, pers.",
+          "raw_value": 1810.0,
+          "raw_unit": "MJ",
+          "per": "per m2 Ansichtsflaeche (face area) of bored pile wall",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "diesel burned building machine",
+          "mapping_reason": "The report names the plain 'diesel, burned in building machine' with no filter technology, so the 'average' dataset beats the with/without particle filter variants; the agricultural machine and concrete crusher datasets are different machinery and are measured per kilogram.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "e4e7ddc0-f7d1-3fad-bd12-9d6981142800"
+      },
+      {
+        "name": "Transport, freight, lorry, 32t-40t gross weight, fleet average",
+        "amount": 104.0,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "standard distances ecoinvent v2.2: 20 km for concrete, 50 km for steel",
+        "derivation": {
+          "evidence": "report-p29-30.txt",
+          "quote": "                   transport, lorry >28t, fleet average                   CH            0                    tkm       1.04E+2            7.11E+1           1.02E+2             1               2.03                concrete, 50 km for steel; standard",
+          "raw_value": 104.0,
+          "raw_unit": "tkm",
+          "per": "per m2 Ansichtsflaeche (face area) of bored pile wall",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry 28t fleet average",
+          "mapping_reason": "'>28t' is the heavy class, whose equivalent in the newer gross-weight naming is 32-40 t; the 16-32 t class sits below the stated threshold, and 'xxx Operation, lorry >28t' matches the label but is obsolete and measured per kilometre rather than per tonne-kilometre.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "984d5f03-2208-366d-bceb-69003ae01594"
+      },
+      {
+        "name": "Transport, freight, rail, electricity with shunting",
+        "amount": 70.4,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "standard distances ecoinvent v2.2: 600 km for steel",
+        "derivation": {
+          "evidence": "report-p29-30.txt",
+          "quote": "                   transport, freight, rail                               CH            0                    tkm       7.04E+1            8.08E+1           3.84E+1             1               2.03",
+          "raw_value": 70.4,
+          "raw_unit": "tkm",
+          "per": "per m2 Ansichtsflaeche (face area) of bored pile wall",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "The report's line is CH, and electric traction with shunting is the standard Swiss freight rail service; the 'Betrieb', 'Fahrzeug' and 'Infrastruktur' entries are the sub-components of that same dataset and the RER one would change the geography.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a169f230-3e05-33d0-a12d-f9d6d4d6abf1"
+      }
+    ],
+    "emissions": [],
+    "resources": [
+      {
+        "name": "Gravel, resource correction ",
+        "category": "resources",
+        "amount": -2120.0,
+        "unit": "kilogram",
+        "note": "negative resource flow: the pile concrete is disposed of and recycled, so a resource correction of 90 % of the gravel and sand content of the concrete is credited. The aggregated vector shows -1903 kg rather than -2120 kg, so the shipped dataset is not exactly this column.",
+        "derivation": {
+          "evidence": "report-p29-30.txt",
+          "quote": "                   Gravel, resource correction                              -             -                  kg        -2.12E+3          -1.49E+3           -2.12E+3            1               1.16",
+          "raw_value": -2120.0,
+          "raw_unit": "kg",
+          "per": "per m2 Ansichtsflaeche (face area) of bored pile wall",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "An exact name match for the negative resource correction the report applies; 'Gravel [soil]' is an emission to soil, not a resource credit.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a5e783a6-6a14-5ec9-84c8-ab1a1cfc85e4",
+        "database": "bafu-2026-residual"
+      },
+      {
+        "name": "Sand, resource correction ",
+        "category": "resources",
+        "amount": -1300.0,
+        "unit": "kilogram",
+        "note": "same resource correction as for gravel; the aggregated vector shows -1070 kg rather than -1300 kg",
+        "derivation": {
+          "evidence": "report-p29-30.txt",
+          "quote": "                   Sand, resource correction                                -             -                  kg        -1.30E+3          -8.41E+2           -1.30E+3            1               1.16",
+          "raw_value": -1300.0,
+          "raw_unit": "kg",
+          "per": "per m2 Ansichtsflaeche (face area) of bored pile wall",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "An exact name match for the negative resource correction; 'Sand [soil]' is an emission compartment and the oil sands are a different material.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "1e1f21cc-8fdf-5298-8373-2ace1a5000a4",
+        "database": "bafu-2026-residual"
+      }
+    ]
+  }
+}

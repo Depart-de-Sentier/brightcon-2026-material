@@ -1,0 +1,777 @@
+You are locating the inventory table of one dataset inside a life-cycle-inventory report.
+
+Dataset: `Sweet sorghum stem, at farm` [CN], 1 kg, BAFU category agricultural / plant production.
+Metadata: includedProcesses: Cultivation of sweet sorghum in China including use of diesel, machines, fertilizers, and pesticides. · technology: High yield production. · comment: The multioutput-process "sweet sorghum, CN"  delivers the co-products sorghum grains and sorghum stem. The functional unit is 1 ha cultivated with sweet sorghum. Yield: 1. 3860 kg sorghum grains/ha (fresh mass with a water content of 9.1 %, carbon content: 0.369 kg/kg fresh mass, biomass energy cont
+
+Report: `2007 - LCI bioenergy - Jungbluth.pdf` (755 PDF pages). Below is every table and figure caption found in it, with the PDF page it appears on (not the printed page number). The report may be in German, French or English; the dataset name is English — match on meaning (e.g. "gebrannter Ölschiefer" = burnt shale, "Gipsfaserplatte" = gypsum fibre board).
+
+- p.6: Fig. 1.1 provides a systematic overview for the different types of bioenergy that are of interest. In gen-
+- p.6: Fig. 1.1 Overview for the most important bioenergy products and their possible uses
+- p.30: Fig. 1.1 provides a systematic overview for the different types of bioenergy that are of interest. In
+- p.32: Tab. 1.1 Key figures of the climate in Switzerland (average 1961-1990).
+- p.33: Tab. 1.2 Cereal production in Switzerland (Hersener & Meier 1999)
+- p.36: Tab. 1.3 Possible bioenergy products that might be imported to Switzerland and their origin country
+- p.39: Tab. 2.1 Prices of several products used for economic allocation in this study
+- p.40: Tab. 2.2 Life cycle inventory data of fuel distribution in this project based on ecoinvent data v1.2
+- p.43: Fig. 2.1 Example for estimating a correct carbon balance for by-products with no economic value coming from a life
+- p.43: Tab. 2.3 shows a fictive example for the calculation of a correct carbon balance in a unit process with
+- p.44: Tab. 2.3 Fictive example for the calculation of a correct carbon balance in a normal unit process
+- p.44: Tab. 2.4 Fictive example for the calculation of a correct carbon balance in a multi-output process
+- p.46: Tab. 2.5 New elementary flow for resources used for this project
+- p.47: Tab. 2.6 New elementary flow for emissions to agricultural soil used for this project
+- p.48: Tab. 2.7 New elementary flow for emissions to air used for this project
+- p.57: Tab. 2.1 Characteristics of grassland systems
+- p.58: Tab. 2.2 Soil cultivation and input goods for different grassland systems
+- p.60: Tab. 2.3 provides general data on chemical and physical properties about the grass obtained from ex-
+- p.61: Tab. 2.3 Grass and straw data (per kg dry matter)
+- p.61: Tab. 2.4 summarizes the cultivated area and harvest potential of different grass cultivation systems
+- p.62: Tab. 2.4 Grassland areas and production potentials
+- p.63: Tab. 2.5 Unit process raw data of grass from meadow intensive, organic, at field
+- p.64: Tab. 2.6 Unit process raw data of grass from meadow intensive IP, at field
+- p.66: Tab. 2.7 Unit process raw data of grass from a natural meadow intensive organic, at field
+- p.67: Tab. 2.8 Unit process raw data of grass from a natural meadow intensive IP, at field
+- p.68: Tab. 2.1 and Tab. 2.2). The inventories include the cultivation of grass on a permanent extensive
+- p.68: Tab. 2.9 Unit process raw data of grass from a natural meadow extensive IP, at field
+- p.69: Tab. 2.10 Unit process raw data of grass from a natural meadow extensive organic, at field
+- p.70: Tab. 2.11 Unit process raw data of straw, from straw areas, at field
+- p.70: Tab. 2.1 and Tab. 2.2). The inventories include the production of grass for silage from 65% natural
+- p.71: Tab. 2.12 Unit process raw data of grass silage, IP, at farm
+- p.73: Tab. 2.13 Unit process raw data of grass silage organic, at farm
+- p.74: Tab. 2.5 to Tab. 2.13 show quality indicators for the inventories of grassland production systems. The
+- p.74: Tab. 2.14 shows selected LCI results and the cumulative energy demand for the production of grass.
+- p.75: Tab. 2.14 Selected LCI results and the cumulative energy demand for the grass production sytems
+- p.82: Tab. 3.1 Characteristics of rape seed, organic production
+- p.83: Tab. 3.2 Soil cultivation and input goods for the production of organic rape seed
+- p.84: Tab. 3.3 provides general data about the rape seed obtained from intensive cultivated organic produc-
+- p.84: Tab. 3.3 Organic rape seed, physical and chemical properties (per kg rape seed with 6% moisture)
+- p.86: Tab. 3.4 Unit process of rape seed, organic, at farm
+- p.87: Tab. 3.5 Unit process of rape seed, organic, at storehouse
+- p.87: Tab. 3.4 and Tab. 3.5 show data quality indicators for the inventory of rape seed production systems.
+- p.91: Tab. 4.1 Properties of wood, primary forest, standing
+- p.92: Tab. 4.2 Wood density in tropical rainforests by region (Brown 1997)
+- p.92: Tab. 4.3. Tab. 4.3 Biomass and wood per ha in tropical rainforests by region
+- p.93: Tab. 4.4 Meta Information describing the datasets for clear cutting of primary forest
+- p.93: Tab. 4.5 shows the unit process raw data and data quality indicators for the inventory of clear cutting
+- p.95: Tab. 4.5 Unit process raw data for clear cutting of primary forest
+- p.96: Tab. 4.6 shows selected LCI results and the cumulative energy demand for the clear cutting of primary
+- p.96: Tab. 4.6 Selected LCI results and the cumulative energy demand for the clear cutting of primary forests and the pro-
+- p.98: Tab. 5.1 Properties of corn grains (Nemecek et al. 2004)
+- p.98: Tab. 5.2 Corn production in the USA in 2005 (NASS 2005)
+- p.99: Fig. 5.1 Process flow chart for the cultivation of corn in the USA
+- p.99: Tab. 5.3 Fertilizer use in the corn cultivation in the USA (IFA 2006)
+- p.100: Tab. 5.4 Fertilizer use by product in the USA (IFA 2006)
+- p.100: Tab. 5.5 Use of fertilizers in the cultivation of corn in this study
+- p.101: Tab. 5.6 Pesticides use in the corn cultivation (USDA 2004)
+- p.102: Tab. 5.7 Use of pesticides in the cultivation of corn in this study
+- p.102: Tab. 5.8 Diesel consumption in the corn cultivation
+- p.103: Tab. 5.9 Machine use in the corn cultivation
+- p.103: Tab. 5.10 Transports in the corn cultivation in the USA
+- p.103: Tab. 5.11 Transport service requirements per kg corn
+- p.104: Tab. 5.12 Amounts of land use for the cultivation of corn
+- p.104: Tab. 5.13 Uptake of CO2 and biomass energy
+- p.104: Tab. 5.14 Emissions to air from corn cultivation
+- p.105: Tab. 5.15 Emissions to water from corn cultivation
+- p.106: Tab. 5.16 Emissions to soil from corn cultivation
+- p.107: Tab. 5.17 shows the life cycle inventory and the data quality indicators for the cultivation of corn. The
+- p.107: Tab. 5.17 Unit process raw data for the cultivation of corn
+- p.108: Tab. 5.18 shows selected LCI results and the cumulative energy demand for the cultivation of corn and
+- p.109: Tab. 5.18 Selected LCI results and the cumulative energy demand for the cultivation of corn
+- p.109: Tab. 5.19 shows values for CED, non-renewable, fossil for the two datasets and one value, which was
+- p.109: Tab. 5.19 Comparison of CED, CO2 emissions
+- p.112: Tab. 6.1 Properties of palm fruit bunches (Corley 2003)
+- p.113: Tab. 6.2 Oil palm cultivation in Malaysia (FAOSTAT 2006)
+- p.113: Fig. 6.1 Process flow chart for the cultivation of oil palms in Malaysia
+- p.114: Tab. 6.3 Fertilizer use in Oil Palm cultivation in Malaysia (IFA 2006)
+- p.114: Tab. 6.4 Fertilizer use by product in Malaysian Oil Palm cultivation (IFA 2006)
+- p.114: Tab. 6.5 Use of fertilizers in Oil Palm cultivation in this study
+- p.115: Tab. 6.6 Pesticides use in the Oil Palm cultivation (Tenaganita 2002)
+- p.115: Tab. 6.7 Use of pesticides in the cultivation of Oil Palms in this study
+- p.115: Tab. 6.8 Machine use in the Oil Palm cultivation
+- p.116: Tab. 6.9 Transports distances in the Oil Palm cultivation
+- p.116: Tab. 6.10 Total transport services for the Oil Palm cultivation
+- p.116: Tab. 6.11 Amounts of land use for the cultivation of Oil Palms in Malaysia
+- p.117: Tab. 6.12 Uptake of CO2 and biomass energy
+- p.117: Tab. 6.13 Consumption of carbon in soil
+- p.117: Tab. 6.14 Emissions to air from Oil Palm cultivation
+- p.118: Tab. 6.15 Emissions to water from Oil Palm cultivation
+- p.118: Tab. 6.16 Emissions to soil from Oil Palm cultivation
+- p.118: Tab. 6.17 shows the life cycle inventory and the data quality indicators for the cultivation of Oil
+- p.119: Tab. 6.17 Unit process raw data for the cultivation of Oil Palms
+- p.120: Tab. 6.18 shows selected LCI results and the cumulative energy demand for the cultivation of Oil
+- p.120: Tab. 6.18 Selected LCI results and the cumulative energy demand for the cultivation of Oil Palms
+- p.120: Tab. 6.19 shows a comparision of the CED with values found in literature from three companies in
+- p.121: Tab. 6.19 Comparison of some results
+- p.124: Tab. 7.1 Properties of rape (Nemecek et al. 2004)
+- p.124: Tab. 7.2 Area with rape cultivation in the years 2001 – 2005 in Germany (ha) (FAOSTAT 2006)
+- p.125: Fig. 7.1 Process flow chart for the cultivation of rape in Germany
+- p.125: Tab. 7.3. For the neutralization of the pH value in the soil KTBL (2004) reports an amount of 1000 kg lime used
+- p.125: Tab. 7.3 Fertilizer use in the rape cultivation in Germany (KTBL 2004)
+- p.126: Tab. 7.4 Fertilizer use by product in Germany
+- p.126: Tab. 7.5 Use of fertilizers in the cultivation of rape in this study
+- p.127: Tab. 7.6 Pesticides use in the rape cultivation (Roßberg et al. 2003)
+- p.127: Tab. 7.7 Use of pesticides in the cultivation of rape in this study
+- p.128: Tab. 7.8 Machine use in the rape cultivation
+- p.128: Tab. 7.9 Transports distances in the rape cultivation
+- p.129: Tab. 7.10 Total transport services for the rape cultivation in Germany
+- p.129: Tab. 7.11 Amounts of land use for the cultivation of rape in Germany
+- p.129: Tab. 7.12 Uptake of CO2 and biomass energy
+- p.130: Tab. 7.13 Emissions to air from rape cultivation
+- p.130: Tab. 7.14 Emissions to water from rape cultivation
+- p.131: Tab. 7.15 Emissions to soil from rape cultivation
+- p.131: Tab. 7.16 shows the life cycle inventory and the data quality indicators for the cultivation of rape. The
+- p.132: Tab. 7.16 Unit process raw data for the cultivation of rape
+- p.133: Tab. 7.17 shows selected LCI results and the cumulative energy demand for the cultivation of rape in
+- p.133: Tab. 7.17 Selected LCI results and the cumulative energy demand for the cultivation of rape
+- p.136: Tab. 8.1 Properties of rye grains (Nemecek et al. 2004)
+- p.136: Tab. 8.2 Properties of rye straw (Nemecek et al. 2004)
+- p.137: Tab. 8.3 Rye (grains) production in the European Union (Ollier 2006)
+- p.137: Fig. 8.1 Process flow chart for the cultivation of rye in Europe
+- p.138: Tab. 8.4 Fertilizer use in the rye cultivation (KTBL 2004)
+- p.138: Tab. 8.5 Fertilizer use by product in Germany (Kaltschmidt et al. 1997)
+- p.139: Tab. 8.6 Use of fertilizers in the cultivation of rye in this study (KTBL 2004)
+- p.140: Tab. 8.7 Pesticides use in the rye cultivation (Roßberg et al. 2003)
+- p.141: Tab. 8.8 Use of pesticides in the cultivation of rye in this study
+- p.142: Tab. 8.9 Machine use and diesel consumption in the rye cultivation
+- p.142: Tab. 8.10 Other machine usage in the rye cultivation (Nemecek et al. 2004)
+- p.142: Tab. 8.11 Transports distances in the rye cultivation
+- p.143: Tab. 8.12 Transport services caused by supply of raw materials and auxiliaries
+- p.143: Tab. 8.13 Amounts of land use for the cultivation of rye
+- p.143: Tab. 8.14 Uptake of CO2 and biomass energy
+- p.144: Tab. 8.15 Emissions to air from rye cultivation
+- p.144: Tab. 8.16 Emissions to water from rye cultivation
+- p.145: Tab. 8.17 Emissions to soil from rye cultivation
+- p.146: Tab. 8.18 Possible allocation parameters of the co-products from rye cultivation (Nemecek et al. 2004)
+- p.147: Tab. 8.19 Allocation factors for the co-products from rye cultivation
+- p.147: Tab. 8.20 shows life cycle inventory and the data quality indicators for the cultivation of rye. The sim-
+- p.148: Tab. 8.20 Unit process raw data for the cultivation of rye
+- p.149: Tab. 8.21 shows selected LCI results and the cumulative energy demand for the cultivation of rye and
+- p.150: Tab. 8.21 Selected LCI results and the cumulative energy demand for the cultivation of rye
+- p.153: Tab. 9.1 Properties of soybeans (Nemecek et al. 2004)
+- p.154: Fig. 9.1 Process flow chart for the cultivation of soybeans
+- p.154: Tab. 9.2 Soybean cultivation in the USA and Brazil (FAOSTAT 2006)
+- p.155: Tab. 9.3 Fertilizer use in the soybean cultivation
+- p.155: Tab. 9.4 Fertilizer use by product (IFA 2006)
+- p.155: Tab. 9.5 Use of fertilizers in the cultivation of soybean
+- p.156: Tab. 9.6 Pesticides use in the soybean cultivation (USDA 2004a, Cederberg 2001)
+- p.156: Tab. 9.7 Use of pesticides in the cultivation of soybean in this study
+- p.157: Tab. 9.8 Machine use and diesel consumption in the soybean cultivation in the USA
+- p.157: Tab. 9.9 Machine use and diesel consumption in the soybean cultivation in Brazil
+- p.157: Tab. 9.10 Machine use in the soybean cultivation
+- p.158: Tab. 9.11 Transports distances in the soybean cultivation in Brazil
+- p.158: Tab. 9.12 Transports in the soybean cultivation in the USA
+- p.158: Tab. 9.13 Transport service requirements of raw materials and auxiliaries per kg soybean
+- p.159: Tab. 9.14 Land use for the cultivation of soybeans in Brazil per year (calculated with data from USDA 2004b, Bickel
+- p.159: Tab. 9.15 Amounts of land use for the cultivation of soybeans
+- p.160: Tab. 9.16 Uptake of CO2 and biomass energy
+- p.160: Tab. 9.17 Consumption of carbon in soil
+- p.161: Tab. 9.18 Emissions to air from soybean cultivation
+- p.161: Tab. 9.19 Emissions to water from soybean cultivation
+- p.162: Tab. 9.20 Emissions to soil from soybean cultivation
+- p.162: Tab. 9.21 shows the life cycle inventory and the data quality indicators for the cultivation of soybean
+- p.163: Tab. 9.21 Unit process raw data for the cultivation of soybeans in the USA
+- p.163: Tab. 9.22 shows the life cycle inventory and the data quality indicators for the cultivation of soybean
+- p.164: Tab. 9.22 Unit process raw data for the cultivation of soybeans in Brazil
+- p.165: Tab. 9.23 shows selected LCI results and the cumulative energy demand for the cultivation of soy-
+- p.165: Tab. 9.23 Selected LCI results and the cumulative energy demand for the cultivation of soybeans
+- p.169: Tab. 10.1 Contents of sugar cane (Copersucar 2006, Tuchschmid 2005)
+- p.170: Tab. 10.2 Types of harvesting (Macedo 1998, Paiva 2005)
+- p.170: Tab. 10.3 Yields of the sugar cane cultivation
+- p.170: Tab. 10.4 Yields of the sugar cane cultivation over the years after the planting (Macedo 2004)
+- p.171: Fig. 10.1 Process flow chart for the cultivation of sugar cane in Brazil
+- p.172: Tab. 10.5 Fertilizer use in the sugar cane cultivation in Brazil (FAO 2004)
+- p.172: Tab. 10.6 Fertilizer use by product in Brazil (FAO 2004)
+- p.173: Tab. 10.7 Use of fertilizers in the cultivation of sugar cane in this study (FAO 2004)
+- p.173: Tab. 10.8 Composition of the ash from bagasse burning (Bichara 1990)
+- p.174: Tab. 10.9 Properties of the stillage from sugar cane processing (reported in Bichara 1990)
+- p.175: Tab. 10.10 Pesticides use in three farms in Brazil (CETESB 1988)
+- p.175: Tab. 10.11 Use of pesticides in the cultivation of sugar cane in this study
+- p.176: Tab. 10.12 Calculation of the yield with the use of cuttings included
+- p.176: Tab. 10.13 Machine use and diesel consumption in the sugar cane cultivation (Macedo 1996)
+- p.177: Tab. 10.14 Machine use in the sugar cane cultivation (Macedo 1996)
+- p.177: Tab. 10.15 Machine use and diesel consumption for the harvest of sugar cane (Macedo 1996)
+- p.177: Tab. 10.16 Machine use for the harvest of sugar cane in Brazil
+- p.177: Tab. 10.17 Transports amounts of raw materials and auxiliaries per kg sugar cane (Macedo 1996)
+- p.178: Tab. 10.18 Transports of the stillage (Macedo 1996)
+- p.178: Tab. 10.19 Transport amounts for the distribution of the stillage in Brazil
+- p.179: Tab. 10.20 Amounts of land use for the cultivation of sugar cane in Brazil
+- p.179: Tab. 10.21 Uptake of CO2 and biomass energy
+- p.179: Tab. 10.22 Emissions to air from the sugar cane cultivation
+- p.180: Tab. 10.23 Emissions to water from the sugar cane cultivation
+- p.180: Tab. 10.24 Emissions to soil from the sugar cane cultivation
+- p.181: Tab. 10.25 shows life cycle inventory and the data quality indicators for the cultivation of sugar cane.
+- p.182: Tab. 10.25 Unit process raw data for the cultivation of sugar cane
+- p.183: Tab. 10.26 shows selected LCI results and the cumulative energy demand for the cultivation of sugar
+- p.184: Tab. 10.26 Selected LCI results and the cumulative energy demand for the cultivation of sugar cane
+- p.184: Tab. 10.27 shows values for CED, non-renewable, for sugar cane, at farm, BR and values, which has
+- p.184: Tab. 10.27 Comparison of CED
+- p.190: Tab. 11.1 Properties of sweet sorghum grains (Smith et al. 2000)
+- p.190: Tab. 11.2 Properties of sweet sorghum stems (Dauriat 2000)
+- p.191: Tab. 11.3 data for the sorghum cultivation in China are given. The data are based on official statistics.
+- p.191: Tab. 11.3 Sorghum cultivation in China
+- p.192: Fig. 11.1 Process flow chart for the cultivation of sweet sorghum in China
+- p.192: Tab. 11.4 Fertilizer use in the sorghum cultivation in China (IFA 2006)
+- p.192: Tab. 11.5 Fertilizer use by product (IFA 2006)
+- p.193: Tab. 11.6 Use of fertilizers in the cultivation of sorghum in this study
+- p.193: Tab. 11.7 Pesticides use in the sorghum cultivation (USDA 2004)
+- p.194: Tab. 11.8 Use of pesticides in the cultivation of sorghum in this study
+- p.194: Tab. 11.9 Calculation of the yield with the use of seeds included
+- p.194: Tab. 11.10 Machine use in the sorghum cultivation
+- p.195: Tab. 11.11 Transports distances in sorghum cultivation
+- p.195: Tab. 11.12 Transport service requirements of raw materials and auxiliaries in sorghum cultivation
+- p.195: Tab. 11.13 Amounts of land use for the cultivation of sorghum
+- p.196: Tab. 11.14 Uptake of CO2 and biomass energy
+- p.196: Tab. 11.15 Emissions to air from sorghum cultivation
+- p.196: Tab. 11.16 Emissions to water from sorghum cultivation
+- p.197: Tab. 11.17 Emissions to soil from sorghum cultivation
+- p.197: Tab. 11.18 Possible allocation parameters of the co-products from sorghum cultivation
+- p.198: Tab. 11.19 Allocation factors for the co-products from sorghum cultivation
+- p.198: Tab. 11.20 shows the life cycle inventory and the data quality indicators for the cultivation of sweet
+- p.199: Tab. 11.20 Unit process raw data of the cultivation of sweet sorghum
+- p.200: Tab. 11.21 shows selected LCI results and the cumulative energy demand for the cultivation of sweet
+- p.200: Tab. 11.21 Selected LCI results and the cumulative energy demand of the cultivation of sweet sorghum
+- p.200: Tab. 11.22 shows values for CED, non-renewable, for the two datasets and values, which have been
+- p.201: Tab. 11.22 Comparison of CED
+- p.207: Tab. 12.1 Biogas production in Switzerland and the use of biogas (figures representing the situation in the year 2002,
+- p.208: Tab. 12.2 Elementary Composition of Biowaste
+- p.208: Tab. 12.3 Volumetric composition, density and heating values of biogas generated from biowaste
+- p.209: Tab. 12.4 Densities and heating values for gas components
+- p.209: Tab. 12.5 Composition of biogas from sewage sludge and referring heating values. (Data of composition are derived
+- p.209: Tab. 12.6 Composition and heating values of biogas derived from the digestion of grass juice. (Data of composition
+- p.210: Tab. 12.7 Composition and heating values of biogas from digestion of whey. (Data of composition are based on addi-
+- p.210: Tab. 12.8 Summary of main properties of biogas from various substrates as used in this project
+- p.211: Tab. 12.9 Production and use of biogas products from 1992 – 2002 (BFE 2003)
+- p.211: Tab. 12.10 Production figures of biogas in agriculture plants from 1992 – 2002 (BFE 2003)
+- p.212: Fig. 12.1 Schematic process flow sheet for anaerobic digestion of biowaste
+- p.213: Tab. 12.11 Characteristics of the biowaste composition and parameters of the digestion process
+- p.213: Tab. 12.12 Unit process raw data of biowaste fermentation plant.
+- p.215: Tab. 12.13 Energy Consumption for biowaste fermentation (thermophile dry fermentation)
+- p.216: Tab. 12.14 CO2- and CH4-emissions and the underlying assumption
+- p.217: Tab. 12.15 Allocation figures for biowaste treatment (excluding the application of digested matter and presswater in
+- p.218: Tab. 12.16 Unit process raw data of anaerobic digestion of bio waste
+- p.219: Tab. 12.17 Technical Characteristics for digestion tank and gasholder
+- p.220: Tab. 12.18 Unit process raw data of raw sludge fermentation facilities on waste water treatments plants
+- p.221: Tab. 12.19 Carbon dioxide and methane emissions from sewage sludge fermentation
+- p.222: Tab. 12.20 Unit process raw data of anaerobic digestion of raw sludge at a WWTP
+- p.222: Fig. 12.2 Schematic process flow sheet for the life cycle of biogas generation from liquid manure
+- p.223: Tab. 12.21 Unit process raw data of the anaerobic digestion plant, agricultural bio waste
+- p.224: Fig. 12.3 Schematic process flow sheet for co-fermentation in a covered biogas plant
+- p.225: Tab. 12.22 Unit process raw data of the anaerobic, covered digestion plant, agricultural bio waste
+- p.226: Tab. 12.23 Unit process raw data of the anaerobic, covered digestion plant, agricultural bio waste
+- p.227: Tab. 12.24 Characteristics of input substances of the digestion process taken from Edelmann (2001).
+- p.228: Tab. 12.25 Energy consumption for manure fermentation (figures are obtained via oral communication with Konrad
+- p.228: Tab. 12.26 Additional airborne emissions that occur from the storage and application of digested manure and which
+- p.229: Tab. 12.27 Unit process raw data of manure fermentation, not covered
+- p.229: Tab. 12.28 Unit process raw data of the anaerobic co-fermentation of manure and co-substrate, not covered
+- p.229: Tab. 12.29. All these plants are equipped with a co-generation power plant to produce electricity. The
+- p.230: Tab. 12.29 Characteristics of the evaluated plants, only the plants with covered stock have been taken into account. Data source: naturemade, VUE Verei
+- p.232: Tab. 12.30 Input used in the evaluated biogas plants
+- p.233: Fig. 12.4 Processes to model the biogas from agricultural co-fermentation
+- p.234: Tab. 12.31 Methane emissions from agricultural biogas plants
+- p.235: Tab. 12.32 Unit process raw data of the anaerobic co-fermentation of liquid manure with a covered stock to avoid
+- p.236: Tab. 12.33 Meta information of the anaerobic co-fermentation of liquid manure with a covered stock to avoid methane
+- p.238: Tab. 12.34 Allocation factors according to the economic revenues
+- p.239: Tab. 12.35 Unit process raw data of fat & oil in agricultural co-fermentation, covered
+- p.240: Tab. 12.36 Unit process raw data of fat & oil in agricultural co-fermentation, covered, meta information
+- p.241: Tab. 12.37 Unit process raw data of bio waste in agricultural co-fermentation, covered
+- p.242: Tab. 12.38 Unit process raw data of bio waste in agricultural co-fermentation, covered, meta information
+- p.243: Tab. 12.39 Input used in the evaluated covered biogas plants using trail hose for spreading the digested matter
+- p.243: Tab. 12.40 Unit process raw data of biogas mix at agricultural co-fermentation, covered
+- p.244: Tab. 12.41 Unit process raw data of biogas mix at agricultural co-fermentation, covered, meta information
+- p.246: Fig. 12.5 Schematic process flow sheet for a grass-refinery as modelled in this project. In the white box on the left the
+- p.247: Tab. 12.42 Possible yields of products generated in a grass-refinery
+- p.248: Tab. 12.43 Carbon content of products and allocation factors grass input
+- p.249: Tab. 12.44 Heating consumption for drying processes of products (fibres and proteins).
+- p.250: Tab. 12.45 Wastewater quantities for a grass-refinery
+- p.250: Tab. 12.46 Allocation factors for co-products from the grass-refinery
+- p.250: Tab. 12.47 Allocation factors for heating expenditures
+- p.251: Tab. 12.48 Unit process raw data of a grass-refinery
+- p.252: Tab. 12.49 Characteristics of the whey composition
+- p.252: Tab. 12.50 Life cycle data for whey, at dairy
+- p.253: Tab. 12.51 Composition of whey digestion wastewater
+- p.253: Tab. 12.52 Life cycle data of the digestion of whey
+- p.254: Tab. 12.53 Summary of key parameters for various digestion processes
+- p.255: Tab. 12.54 Selected LCI results and the cumulative energy demand for biogas plant infrastructure
+- p.256: Tab. 12.55 Selected LCI results and the cumulative energy demand for various digestion processes
+- p.257: Tab. 12.56 Selected LCI results and the cumulative energy demand for biogas from covered plants
+- p.258: Tab. 12.57 Selected LCI results and the cumulative energy demand for disposal of biowaste and fat & oil into agricul-
+- p.272: Tab. 13.1 Summary of main properties of Swiss biogas production mix and produced methane
+- p.273: Tab. 13.2 Unit process raw data of the Swiss biogas production mix
+- p.274: Fig. 13.1 Process scheme of a biogas upgrading plant using pressure swing adsorption (PSA) (RÜTGERS 2004)
+- p.275: Fig. 13.2 Process flow chart of a biogas upgrading plant using pressure swing adsorption (PSA) (modified from
+- p.276: Tab. 13.3 Properties of product gas
+- p.276: Tab. 13.4 Process Efficiency
+- p.277: Tab. 13.5 Electricity consumption for biogas purification
+- p.277: Tab. 13.6 Properties of waste gas
+- p.277: Tab. 13.7 Emissions to air from waste gas
+- p.278: Tab. 13.8 Unit process raw data of biogas purification and methane enrichment
+- p.279: Tab. 13.9 Gains and losses of electricity and heat for a co-generation unit of 160 kWhel
+- p.280: Tab 13.1 is further corrected taken into account carbon emitted in form of CO and CH4. Emission data
+- p.280: Tab. 13.10 CO2-emissions and underlying assumptions
+- p.280: Tab. 13.11 Allocation factors, exergy values and rate of capacity utilisation
+- p.281: Tab. 13.12 Unit process raw data of biogas gas, burned in cogen with gas engine
+- p.282: Tab. 13.13 Gains and losses of electricity and heat for a co-generation unit with gas ignition engine
+- p.282: Tab. 13.14 CO2-emissions and underlying assumptions
+- p.283: Tab. 13.15 Airborne emissions of agricultural co-generation.
+- p.283: Tab. 13.16 Allocation factors, exergy values and rate of capacity utilisation
+- p.284: Tab. 13.17 Unit process raw data of co-generation at agricultural manure fermentation plants
+- p.285: Tab. 13.18 Electricity production from biogas in Switzerland in the year 2006, based on data from naturmade and Kon-
+- p.286: Tab. 13.19 Energy use and allocation factors for the agricultural biogas plants in Switzerland in the year 2006
+- p.287: Tab. 13.20 Unit process raw data of the co-generation with a biogas engine
+- p.288: Tab. 13.21 Meta information of the co-generation with a biogas engine
+- p.289: Tab. 13.22 Unit process raw data of the co-generation with an ignition biogas engine
+- p.290: Tab. 13.23 Meta information of the co-generation with an ignition biogas engine
+- p.291: Tab. 13.24 Unit process raw data of the process: Heat, at cogen, biogas agricultural mix, allocation exergy
+- p.292: Tab. 13.25 Meta information of the process: Heat, at cogen, biogas agricultural mix, allocation exergy
+- p.293: Tab. 13.26 Unit process raw data of the process: Electricity, at cogen, biogas agricultural mix, allocation exergy
+- p.294: Tab. 13.27 Meta information of the process: Electricity, at cogen, biogas agricultural mix, allocation exergy
+- p.295: Tab. 13.28 Selected LCI results and the cumulative energy demand for modelled biogas-mix and biogas upgrading
+- p.296: Tab. 13.29 Selected LCI results and the cumulative energy demand for electricity from co-generation with biogas
+- p.296: Tab. 13.30 Selected LCI results and the cumulative energy demand for heat from co-generation with biogas
+- p.303: Tab. 14.1 Chemical and physical properties of ethanol
+- p.303: Tab. 14.2 shows the production volumes and the feedstocks of the world production of bioethanol in
+- p.304: Tab. 14.2 World bioethanol production in 2003
+- p.306: Fig. 14.1 Production of ethanol from sugar beets, fermentation process (taken from Fromentin 2000, Fig. 3.2)
+- p.307: Fig. 14.2 Process flow chart for the production of ethanol from sugar beets
+- p.307: Tab. 14.3 shows the values for the use of raw materials and auxiliaries, which are taken from ENERS
+- p.308: Tab. 14.3 Consumption of raw materials and auxiliaries required for the production of ethanol from sugar beets
+- p.308: Tab. 14.4 Energy consumption for the production of ethanol from sugar beets (ENERS 2005, Kaltschmidt 1997)
+- p.308: Tab. 14.5 Total transport services required for the production of 1 kg ethanol
+- p.309: Tab. 14.6 Process emissions to air from the production of 1 kg ethanol from sugar beets
+- p.309: Tab. 14.7 Possible allocation parameters of the co-products from the ethanol production from sugar beets
+- p.310: Tab. 14.8 Allocation factors for the products of the ethanol production from sugar beets
+- p.310: Tab. 14.9 shows the data quality indicators for the inventory of the fermentation of sugar beets. The
+- p.311: Tab. 14.9 Unit process raw data for the fermentation of sugar beets
+- p.314: Fig. 14.3 Process chart of the production of ethanol from grass (taken from Fromentin 2000, Fig. 3.5)
+- p.315: Fig. 14.4 Process flow chart for the grass fermentation
+- p.315: Tab. 14.10 Consumption of raw materials and auxiliaries for the grass fermentation (Fromentin 2000)
+- p.315: Tab. 14.11. Tab. 14.11 Grass mix, Switzerland (Source: Oettli 2004)
+- p.316: Tab. 14.12 Energy consumption for the grass fermentation
+- p.316: Tab. 14.13 Total transport amounts for the grass fermentation
+- p.316: Tab. 14.14 Process emissions to air from the grass fermentation
+- p.317: Tab. 14.15 Yields of the co-products from the grass fermentation (Fromentin 2000)
+- p.317: Tab. 14.16 Economic values of the co-products from grass fermentation (Fromentin 2000)
+- p.317: Tab. 14.17 Allocation factors for the products of the grass fermentation
+- p.317: Tab. 14.18 shows the data quality indicators of the inventory of the fermentation of grass. The simpli-
+- p.318: Tab. 14.18 Unit process raw data for the fermentation of grass
+- p.321: Fig. 14.5 Production of ethanol from whey (taken from Fromentin 2000, Fig. 3.10)
+- p.322: Fig. 14.6 Process flow chart for the production of ethanol from whey
+- p.323: Tab. 14.19 Consumption of raw materials and auxiliaries for the production of ethanol from whey
+- p.323: Tab. 14.20 Energy consumption for the production of 1 kg ethanol
+- p.323: Tab. 14.21 Total transport services required for the production of 1 kg ethanol
+- p.324: Tab. 14.22 Process emissions to air from the production of 1 kg ethanol from whey
+- p.324: Tab. 14.23 Process emissions to water from the production of ethanol from whey
+- p.325: Tab. 14.26 the calculated allocation factors for the whole process route are given.
+- p.325: Tab. 14.24 Yields of the co-products from the ethanol production from whey (ENERS 2005)
+- p.325: Tab. 14.25 Possible allocation parameters of the co-products from the ethanol production from whey (Fromentin 2000,
+- p.326: Tab. 14.26 Allocation factors for the products of the ethanol production from whey
+- p.326: Tab. 14.27 shows the data quality indicators for the inventory of the fermentation of whey. The simpli-
+- p.327: Tab. 14.27 Unit process raw data for the fermentation of whey
+- p.329: Tab. 14.28 shows the selected LCI results and the cumulative energy demand for ethanol production
+- p.329: Tab. 14.28 Selected LCI results and the cumulative energy demand for the production of ethanol from sugar beets
+- p.329: Tab. 14.29 shows the selected LCI results and the cumulative energy demand for ethanol production
+- p.330: Tab. 14.29 Selected LCI results and the cumulative energy demand for the production of ethanol from grass
+- p.330: Tab. 14.30 shows the selected LCI results and the cumulative energy demand for ethanol production
+- p.331: Tab. 14.30 Selected LCI results and the cumulative energy demand for the production of ethanol from whey
+- p.331: Tab. 14.31 shows selected LCI results and the cumulative energy demand for the production of etha-
+- p.332: Tab. 14.31 Selected LCI results and the cumulative energy demand for the production of ethanol from biomass
+- p.332: Tab. 14.32 Comparison of energy balances of the ethanol production from sugar beets
+- p.333: Tab. 14.33 Potentials for ethanol production in Switzerland and factors for the ethanol mix
+- p.334: Fig. 14.7 Process flow chart for the production of ethanol, 99.7% in H2O, from biomass, at distillation, CH
+- p.334: Tab. 14.34 shows the values for the inputs of “ethanol, 99.7% in H2O, from biomass, at distillation,
+- p.334: Tab. 14.34 Ethanol, 99.7%, from biomass, at distillation, CH: Inputs per kg ethanol
+- p.334: Tab. 14.35 shows the data quality indicators for supply of ethanol, 99.7% in H2O, from biomass, at
+- p.335: Tab. 14.35: Unit process raw data for the supply of ethanol, 99.7% in H2O, from biomass, at distillation
+- p.336: Tab. 14.36 shows selected LCI results and the cumulative energy demand for the supply of ethanol,
+- p.337: Tab. 14.36 Selected LCI results and the cumulative energy demand for the supply of ethanol, 99.7% in H2O, from bio-
+- p.339: Fig. 14.8 Process flow chart for the production of ethanol from biomass, at service station fermentation, CH
+- p.340: Tab. 14.37 Ethanol, 99.7% in H2O, from biomass, at service station, CH: inputs
+- p.340: Tab. 14.38 Ethanol, 99.7% in H2O, from biomass, at service station, CH: Outputs
+- p.340: Tab. 14.39 shows the data quality indicators for supply of ethanol, 99.7% in H2O, from biomass, at
+- p.341: Tab. 14.39 Unit process raw data for the supply of ethanol, 99.7% in H2O, from biomass, at service station, CH
+- p.342: Tab. 14.40 shows selected LCI results and the cumulative energy demand for the supply of ethanol,
+- p.343: Tab. 14.40 Selected LCI results and the cumulative energy demand for the supply of ethanol, 99.7% in H2O, from bio-
+- p.345: Fig. 14.9 Process flow chart for the ethanol plant infrastructure
+- p.347: Tab. 14.41 Ethanol plant, inputs and outputs
+- p.347: Tab. 14.42 shows the data quality indicators for the inventory of an ethanol plant. The simplified ap-
+- p.348: Tab. 14.42 Unit process raw data of the construction of an ethanol plant
+- p.349: Tab. 14.43 shows selected LCI results and the cumulative energy demand for the construction of an
+- p.350: Tab. 14.43 Selected LCI results and the cumulative energy demand for the construction of an ethanol plant
+- p.355: Tab. 15.1 Raw materials, auxiliaries, and products of the ethanol production from sugar cane
+- p.356: Tab. 15.2 Energy output from the ethanol production from sugar cane (Macedo 2004)
+- p.357: Tab. 15.3 Characteristics and properties of pressed sugarcane bagasse, compared with wood chips (u=40%).
+- p.358: Tab. 15.4 Inputs and outputs for the burning of bagasse from the fermentation of 1 kg sugar cane
+- p.359: Tab. 15.5 Total transport services required for the production of ethanol from sugar cane
+- p.359: Tab. 15.6 Uptake of CO2
+- p.360: Tab. 15.7 Process emissions to air from the fermentation of 1 kg sugar cane
+- p.360: Tab. 15.8 Waste water from the ethanol production from sugar cane (Bichara 1990)
+- p.360: Tab. 15.9 Properties of the vinasse from sugar cane processing (Bichara 1990)
+- p.360: Tab. 15.10 Composition of the ash from bagasse burning (Bichara 1990)
+- p.361: Tab. 15.11 Possible allocation parameters of the co-products from the ethanol production from sugar cane
+- p.361: Tab. 15.12 Allocation factors for the co-products of the ethanol production from sugar beets
+- p.361: Tab. 15.13 shows the life cycle inventory and the data quality indicators of the production of ethanol
+- p.362: Tab. 15.13 Unit process raw data for the production of ethanol from sugar cane
+- p.363: Tab. 15.14 shows selected LCI results and the cumulative energy demand for the production of etha-
+- p.363: Tab. 15.14 Selected LCI results and the cumulative energy demand for the fermentation of sugar cane
+- p.365: Fig. 15.1 Process flow chart of the production of ethanol, 99.7% in H2O, from biomass, at distillation, CH
+- p.365: Tab. 15.15 Energy inputs and waste heat output of the dehydration of ethanol
+- p.366: Tab. 15.16 shows the life cycle inventory and the data quality indicators of the supply of ethanol,
+- p.367: Tab. 15.16 Unit process raw data for the supply of ethanol, 99.7% in H2O, from sugar cane, at distillation
+- p.368: Tab. 15.17 shows selected LCI results and the cumulative energy demand for the supply of ethanol,
+- p.368: Tab. 15.17 Selected LCI results and the cumulative energy demand for the supply of ethanol, 99.7% in H2O, from sugar
+- p.369: Tab. 15.18 shows values for CED, non-renewable, fossil for ethanol, 99.7 % in H2O, from sugar cane
+- p.369: Tab. 15.18 Comparison of CED
+- p.370: Tab. 15.19 Total transport services required for the supply of ethanol 99.7% in H2O from sugar cane BR, at service sta-
+- p.371: Fig. 15.2 Process flow chart of the production of ethanol from biomass, at service station, CH
+- p.371: Tab. 15.20 shows life cycle inventory and the data quality indicators of the supply of ethanol, 99.7%
+- p.372: Tab. 15.20 Unit process raw data for the supply of ethanol, 99.7% in H2O, from biomass, production BR, at service station, CH
+- p.373: Tab. 15.21 shows selected LCI results and the cumulative energy demand for the supply of ethanol,
+- p.374: Tab. 15.21 Selected LCI results and the cumulative energy demand for the supply of ethanol, 99.7% in H2O, from sugar
+- p.379: Tab. 16.1 Overview of the 'ethanol-based biofuels' datasets covered within the ecoinvent database.
+- p.380: Tab. 16.2 World sugar production for the period 1990-2000 and projections for 2006 and 2010 (Koizumi 2003).
+- p.381: Fig. 16.1 2010
+- p.382: Tab. 16.3 World ethanol production for the period 1990-2000 (Koizumi 2003).
+- p.383: Tab. 16.4 Main characteristics of ethanol-based biofuels as described in this study.
+- p.385: Fig. 16.2 Ethanol from sugar beet molasses, CH: system definition and boundaries.
+- p.386: Fig. 16.3 Schematic representation of the production sugar from beets (adapted from Irish Sugars 2006).
+- p.387: Tab. 16.5 Allocation factors in the production of sugar from sugar beets (CH).
+- p.388: Fig. 16.4 Production stages for the processing or sugar beet molasses to hydrated ethanol and stillage syrup.
+- p.388: Tab. 16.6 Allocation factors in the production of ethanol from sugar beet molasses (CH).
+- p.389: Tab. 16.7 Unit process raw data of the dataset ‘sugar refinery’, GLO.
+- p.389: Tab. 16.8 Literature review sugar yields from sugar beet.
+- p.391: Tab. 16.9 Unit process raw data of the dataset ‘sugar beet, in sugar refinery’, CH.
+- p.391: Tab. 16.10 Literature review ethanol yields from sugar beet molasses.
+- p.392: Tab. 16.11. Tab. 16.11 Unit process raw data of the dataset ‘sugar beet molasses, in distillery’, CH.
+- p.393: Fig. 16.5 Ethanol from potatoes, CH: system definition and boundaries.
+- p.394: Fig. 16.6 Production stages for the processing or potatoes to hydrated ethanol and DDGS.
+- p.395: Tab. 16.12 Allocation factors in the production of ethanol from potatoes (CH).
+- p.395: Tab. 16.13 Literature review ethanol yields from potatoes.
+- p.396: Tab. 16.14 Unit process raw data of the dataset ‘potatoes, in distillery’, CH.
+- p.397: Fig. 16.7 Ethanol from wood, CH: system definition and boundaries.
+- p.397: Fig. 16.8 Process design of the conversion of wood chips to ethanol.
+- p.398: Tab. 16.15 Allocation factors in the production of ethanol from wood chips (CH).
+- p.399: Tab. 16.16 Literature review ethanol yields from wood (lignocellulosic biomass).
+- p.400: Fig. 16.9 Characteristics of wood chips (hardwood, U=80%).
+- p.401: Tab. 16.17 Characteristics and properties of unconverted solids, compared with wood chips (u=40%).
+- p.402: Tab. 16.18 Unit process raw data of the dataset ‘wood, in distillery’, CH.
+- p.403: Fig. 16.10 Ethanol from rye, RER: system definition and boundaries.
+- p.403: Tab. 16.19 Allocation factors in the production of ethanol from rye grains (RER).
+- p.404: Tab. 16.20 Literature review ethanol yields from rye (cereals).
+- p.406: Tab. 16.21 Unit process raw data of the dataset ‘rye, in distillery’, RER.
+- p.406: Fig. 16.11 Ethanol from sugarcane molasses, BR: system definition and boundaries.
+- p.407: Fig. 16.12 Schematic representation of the juice extraction process (milling technique). Adapted from (Cundiff 1993).
+- p.409: Tab. 16.22 Allocation factors in the combined production of sugar and ethanol from sugarcane (BR).
+- p.409: Tab. 16.23 Literature review sugar and ethanol yields from sugarcane.
+- p.410: Tab. 16.24 Characteristics and properties of pressed sugarcane bagasse, compared with wood chips (u=40%).
+- p.412: Tab. 16.25 Unit process raw data of the dataset ‘sugarcane, in sugar refinery’, BR.
+- p.413: Fig. 16.13 Ethanol from corn, US: system definition and boundaries.
+- p.414: Tab. 16.26 Allocation factors in the production of ethanol from corn grains (US).
+- p.415: Tab. 16.27 Literature review ethanol yields from corn.
+- p.417: Tab. 16.28 Unit process raw data of the dataset ‘corn, in distillery’, US.
+- p.417: Fig. 16.14 Ethanol from sweet sorghum, CN: system definition and boundaries.
+- p.419: Tab. 16.29 Allocation factors in the production of ethanol from sweet sorghum (CN).
+- p.419: Tab. 16.30 Literature review ethanol yields from sweet sorghum.
+- p.420: Tab. 16.31 Characteristics and properties of pressed sorghum bagasse, compared with wood chips (u=40%).
+- p.422: Tab. 16.32 Unit process raw data of the dataset ‘sweet sorghum, in distillery’, CN.
+- p.423: Fig. 16.15 Ethyl tert-butyl ether (ETBE), RER: system definition and boundaries.
+- p.424: Tab. 16.33. The values used in this inventory correesponds to the average of the various values quoted
+- p.424: Tab. 16.33 Energy and water inputs of ETBE production from various literature references.
+- p.424: Fig. 16.16 Petrol, 4% vol. ETBE, RER: system definition and boundaries.
+- p.425: Fig. 16.17 Petrol, 15% vol. ETBE, RER: system definition and boundaries.
+- p.425: Tab. 16.34 Unit process raw data of datasets relating to ETBE.
+- p.426: Tab. 16.35 Summary of the tranport distances involved in the distribution of ethanol-based biofuels.
+- p.427: Fig. 16.18 Location of ethanol plants in the US (adapted from Renewable Fuels Association, 2006).
+- p.428: Tab. 16.36 Unit process raw data of datasets relating to imported ethanol, CH.
+- p.428: Fig. 16.19 E5 (5% vol. ethanol mixed with 95% vol. gasoline): system definition and boundaries.
+- p.429: Fig. 16.20 E85 (85% vol. ethanol mixed with 15% vol. gasoline): system definition and boundaries.
+- p.430: Tab. 16.37 Unit process raw data of the datasets relating to the distribution of ethanol-based fuel blends, CH.
+- p.431: Tab. 16.38 Summary table of the various ethanol production pathways (per kg of ethanol 95% wt.).
+- p.431: Tab. 16.39 shows selected LCI results (including greenhouse gas emissions) and the cumulative en-
+- p.432: Tab. 16.39 Selected LCI results and the cumulative energy demand of ethanol 95% in H2O
+- p.433: Tab. 16.40 Comparison of cumulative (non renewable) energy demand and CO2 emissions of ethanol 95% (as de-
+- p.434: Fig. 16.21 Comparison of CED (non renewable) results with literature data.
+- p.434: Fig. 16.21 show that the CED obtained for the datasets in this study is a little lower than the average
+- p.435: Fig. 16.22 Comparison of CO2 emissions with literature data.
+- p.462: Tab. 17.1 Overview of the 'oil-based biofuels' unit processes covered within the ecoinvent database.
+- p.463: Fig. 17.1 World production of rape seeds (in million tons) for the period 1990-2005 (source: FAO/FAOSTAT 2006).
+- p.464: Fig. 17.2 World production of palm fruits (in million tons) for the period 1990-2005 (source: FAO/FAOSTAT 2006).
+- p.464: Fig. 17.3 World production of soybeans (in million tons) for the period 1990-2005 (source: FAO/FAOSTAT 2006).
+- p.465: Tab. 17.2 World biodiesel for the period 2000-2005 (EBB 2006; EurObserv’ER 2005; UFOP 2006; O’Connor 2004a).
+- p.465: Fig. 17.4 World production of biodiesel (in kt/yr) for the period 1990-2005 (EBB 2006; UFOP 2006; O’Connor 2004a).
+- p.466: Tab. 17.3 Biodiesel production potential in CH from existing cultivated areas (Swiss Granum 2003).
+- p.467: Tab. 17.4 Main characteristics of vegetable oils and methyl esters.
+- p.467: Tab. 17.5 European standard for biodiesel, EN 14214.
+- p.471: Fig. 17.5 The transesterification reaction.
+- p.472: Fig. 17.6 Layout of the biodiesel plant iof EcoEnergie Etoy (VD Switzerland). Adapted from (Rinaldi & Hergé 1998).
+- p.474: Tab. 17.6 Unit process raw data of the datasets ‘oil mill’ and ‘esterification plant’.
+- p.474: Fig. 17.7 Oil and methyl ester from rape seeds, CH: system definition and boundaries.
+- p.475: Fig. 17.8 Schematic representation of the biodiesel plant of EcoEnergie Etoy. Adapted from (Rinaldi & Hergé 1998).
+- p.476: Fig. 17.9 Calculation of the allocation factors for the production of rape oil and methyl ester (CH).
+- p.477: Tab. 17.7 Allcoation factors for the datasets relating to the production of rape methyl ester (CH).
+- p.478: Tab. 17.8 Unit process raw data of the dataset ‘rape seeds, in oil mill’, CH.
+- p.479: Tab. 17.9 Unit process raw data of the dataset ‘rape oil, in esterification plant’, CH.
+- p.480: Fig. 17.10 Oil and methyl ester from rape seeds, RER: system definition and boundaries.
+- p.481: Fig. 17.11 Schematic diagram of the transesterification process.
+- p.481: Fig. 17.12 illustrates the arrangement of the various process units in the esterification plant. The flows
+- p.481: Fig. 17.12 Process units in the esterification plant. Adapted from (Zhang 2003a) © Elsevier 2003.
+- p.482: Fig. 17.13 Calculation of the allocation factors for the production of rape oil and methyl ester (CH).
+- p.483: Tab. 17.10 Allcoation factors for the datasets relating to the production of rape methyl ester (RER).
+- p.483: Tab. 17.11 Literature review of mass and energy balance of oil extraction from rape seeds.
+- p.484: Tab. 17.12 Unit process raw data of the dataset ‘rape seeds, in oil mill’, RER.
+- p.485: Tab. 17.13 Literature review of mass and energy balance of vegetable oil esterification to methyl ester.
+- p.486: Tab. 17.14 Unit process raw data of the dataset ‘rape oil, in esterification plant’, RER.
+- p.486: Fig. 17.14 Oil and methyl ester from palm fruit, MY: system definition and boundaries.
+- p.487: Fig. 17.15 Structure of palm fruit bunches and definition of the vocabulary. (Sources: see references on the image)
+- p.488: Tab. 17.15 Composition of palm fruit bunches (Henson 1997).
+- p.488: Fig. 17.16 Process stages in a palm oil and palm kernel oil mill (wet milling technique).
+- p.489: Tab. 17.16 Allcoation factors for the datasets relating to the production of palm methyl ester (MY).
+- p.490: Tab. 17.17 Literature review of mass and energy balance of palm oil and palm kernel oil extraction.
+- p.491: Tab. 17.18 Characteristics and properties of palm fruit residues, compared with wood chips (u=40%).
+- p.492: Tab. 17.19 Unit process raw data of the dataset ‘palm fruit bunches, in oil mill’, MY.
+- p.493: Tab. 17.20 Unit process raw data of the dataset ‘palm oil, in esterifiction plant’, MY.
+- p.494: Fig. 17.17 Oil and methyl ester from soybeans, US: system definition and boundaries.
+- p.494: Tab. 17.21 Composition of soybeans (adapted from Sheehan et al. 1998a).
+- p.495: Fig. 17.18 Process stages in a soybean oil mill (solvent extraction technique).
+- p.496: Tab. 17.22 Allcoation factors for the datasets relating to the production of soybean methyl ester (US).
+- p.497: Tab. 17.23 Literature review of mass and energy balance of soybean oil extraction.
+- p.498: Tab. 17.24 Unit process raw data of the dataset ‘soybeans, in oil mill’, US.
+- p.499: Tab. 17.25 Unit process raw data of the dataset ‘soybean oil, in esterifiction plant’, US.
+- p.499: Fig. 17.19 Oil and methyl ester from soybeans, BR: system definition and boundaries.
+- p.500: Tab. 17.26 Allcoation factors for the datasets relating to the production of soybean methyl ester (BR).
+- p.501: Tab. 17.27 Unit process raw data of the dataset ‘soybeans, in oil mill’, BR.
+- p.502: Tab. 17.28 Unit process raw data of the dataset ‘soybean oil, in esterification plant’, BR.
+- p.503: Fig. 17.20 Vegetable oil from waste cooking oil, CH: system definition and boundaries.
+- p.504: Tab. 17.29 Unit process raw data of the dataset ‘vegetable oil, from waste cooking oil, at plant’, CH.
+- p.504: Fig. 17.21 Oil and methyl ester from waste cooking oil, FR: system definition and boundaries.
+- p.505: Tab. 17.30 Allcoation factors for the datasets relating to the production of vegetable oil methyl ester (FR).
+- p.505: Tab. 17.31 Unit process raw data of the dataset ‘vegetable oil, from waste cooking oil, at plant’, FR.
+- p.506: Tab. 17.32 Unit process raw data of the dataset ‘vegetable oil, from waste cooking oil, in esterification plant’, FR.
+- p.507: Tab. 17.33 Summary of the tranport distances involved in the distribution of oil-based biofuels.
+- p.508: Tab. 17.34 Unit process raw data of the datasets relating to the distribution of rape oil and methyl ester, CH.
+- p.509: Fig. 17.22 Location of soybean producing States in the US (adapted from USDA NASS, 2006).
+- p.510: Fig. 17.23 Location of esterification plants in FR (adapted from Partenaires Diester, 2005).
+- p.511: Tab. 17.35 Unit process raw data of the datasets relating to methyl ester imports (CH).
+- p.512: Tab. 17.36 Selected LCI results and the cumulative energy demand of vegetable oil methyl ester datasets.
+- p.513: Tab. 17.37 Comparison of cumulative (non renewable) energy demand and CO2 emissions of methyl esters (as de-
+- p.514: Fig. 17.24 Comparison of CED (non renewable) results with literature data.
+- p.515: Fig. 17.25 Comparison of CO2 emissions with literature data.
+- p.534: Tab. 18.1 Overview of the synthetic biofuels' unit processes covered in the ecoinvent database.
+- p.535: Tab. 18.2 Consumption and potential of wood and other biomass as energy sources. Adapted from (Bühler 2004).
+- p.535: Tab. 18.3. Tab. 18.3 Potential of syngas and methanol production from forest and waste wood.
+- p.536: Fig. 18.1 The world gasification picture (NETL 2004).
+- p.537: Tab. 18.4 Main characteristics and properties of hard, soft and mixed forest and waste wood.
+- p.538: Fig. 18.2 Production of waste wood chips from demolition wood and supply of wood chips to gasification plant.
+- p.539: Tab. 18.5 Unit process raw data of the datasets ‘waste wood chips, from industry, u=40%, at plant’.
+- p.540: Fig. 18.3 Limits of the gasification process.
+- p.541: Tab. 18.6 Composition of syngas from biomass, through fixed bed and fluidized bed gasifiers.
+- p.542: Fig. 18.4 Schematic diagram of synthetic fuels and chemicals production from syngas (NREL 2003).
+- p.545: Fig. 18.5 Limits of the gasification processes covered in this chapter.
+- p.546: Fig. 18.6 Alternative designs for biomass gasification in fluidized bed reactors.
+- p.547: Fig. 18.7 Ranges of typical feed capacity of various types of gasifiers.
+- p.548: Fig. 18.8 Conventional low temperature wet cleaning and advanced high temperature dry cleaning (Hamelinck 2003).
+- p.549: Tab. 18.7 Biomass gasification process designs in the ecoinvent database.
+- p.551: Tab. 18.8 Summary of the performance of wood gasification to syngas and methanol synthesis (fixed bed, BCL and pressurized fluidized bed gasifiers).
+- p.552: Tab. 18.9 Summary of the performance of wood gasification to syngas and methanol synthesis (atmospheric fluidized bed gasifiers).
+- p.553: Tab. 18.10 Unit process raw data of the datasets ‘synthetic gas plant’.
+- p.554: Fig. 18.9 Yield of synthetic gas in fixed bed gasification of wood chips.
+- p.555: Tab. 18.11 Typical raw syngas impurities from the gasification of wood (Boerrigter 2002).
+- p.556: Tab. 18.12 Summary of heat and electricity use in the dataset ‘synthetic gas, from wood, at fixed bed gasifier’.
+- p.556: Fig. 18.10 Heat-from-wood vs. heat-from-syngas in fixed bed gasification.
+- p.557: Tab. 18.13 Unit process data of the dataset ‘synthetic gas, from wood, at fixed bed gasifier’.
+- p.558: Fig. 18.11 Yield of synthetic gas in fluidized bed gasification of wood chips.
+- p.559: Tab. 18.14 Summary of heat and electricity use in the dataset ‘synthetic gas, from wood, at fluidized bed gasifier’.
+- p.559: Fig. 18.12 Heat-from-wood vs. heat-from-syngas in fluidised bed gasification.
+- p.560: Tab. 18.15 Unit process data of the dataset ‘synthetic gas, from wood, at fluidized bed gasifier’.
+- p.561: Tab. 18.16 Unit process data of the dataset ‘synthetic gas, production mix, at plant’.
+- p.561: Tab. 18.17 Main characteristics of biomethanol.
+- p.562: Fig. 18.13 Definition of the system of biomethanol synthesis as described in this chapter.
+- p.565: Fig. 18.14 Gas phase (a, b) and liquid phase (c) methanol reactors. Adapted from (Hamelinck 2001).
+- p.566: Tab. 18.18 Methanol yield from syngas according to various literature sources.
+- p.566: Tab. 18.19 Emissions to water per kg of methanol produced (Althaus 2004).
+- p.568: Tab. 18.20 Unit process data of the datasets ‘methanol, from synthetic gas, at plant’.
+- p.569: Tab. 18.21 Unit process data of the dataset ‘methanol, from biomass, at regional storage’.
+- p.569: Tab. 18.22 Main characteristics of methane (96% vol.) from syngas.
+- p.571: Fig. 18.15 Limits of the gasification processes covered in this chapter.
+- p.572: Fig. 18.16 Schematic representation of FICFB types of gasifiers (left: adapted from www.ficfb.at).
+- p.572: Tab. 18.23 Main characteristics of syngas at the gasification plant in Güssing (Felder 2004).
+- p.574: Fig. 18.17 Energy balance and efficiency of the overall process of methane production from wood chips.
+- p.574: Fig. 18.18 Net yield of methane through FICFB gasification of wood chips and methanation of syngas.
+- p.576: Tab. 18.24 Summary of heat and electricity use in the dataset ‘methane, 96 vol.-%, from synthetic gas, wood, at plant’.
+- p.577: Tab. 18.25 Summary of material inputs and outputs of ‘methane, 96 vol.-%, from synthetic gas, wood, at plant’.
+- p.577: Tab. 18.26 Summary of emissions occurring in the gasification zone of the gasifier (Felder 2004).
+- p.578: Tab. 18.27 Unit process data of the datasets ‘methane, 96 vol.-%, from synthetic gas, wood, at plant’.
+- p.579: Tab. 18.28 shows selected LCI results and the cumulative energy demand for the various unit proc-
+- p.579: Tab. 18.28 Selected LCI results and the cumulative energy demand.
+- p.580: Tab. 18.29 Comparison of cumulative (non renewable) energy demand and CO2 emissions with literature data.
+- p.580: Fig. 18.19 Comparison of CED (non renewable) results with literature data.
+- p.596: Tab. 19.1 Characterisation of gaseous fuels at service station
+- p.597: Tab. 19.2: Unit process raw data and data quality indicators of “methane, 96 vol-%, from biogas, high pressure, at
+- p.597: Tab. 19.3: Unit process raw data and data quality indicators of “methane, 96 vol-%, from biogas, low pressure, at con-
+- p.598: Tab. 19.4: EcoSpold Meta Information of “methane, 96 vol-%, from biogas, high pressure, at consumer” and “methane,
+- p.599: Tab. 19.5: Data of the infrastructure of a small natural gas service station
+- p.599: Tab. 19.6: Unit process raw data and data quality indicators for “natural gas service station”.
+- p.600: Tab. 19.7: Ecospold Meta Information for “natural gas service station”.
+- p.601: Tab. 19.8 Share of gas delivered in service stationsin Switzerland.
+- p.602: Tab. 19.9 Electricity use of service stations with high, medium and low initial pressure. Values are calculated with a
+- p.602: Tab. 19.10: Leckages at the service station by fuelling with natural gas resp. biogas.
+- p.603: Tab. 19.11: Unit process raw data and data quality indicators of “natural gas, … , at service station”.
+- p.603: Tab. 19.12: Unit process raw data and data quality indicators of “biogas, … , at service station”.
+- p.604: Tab. 19.13: EcoSpold Meta Information of “natural gas, … , at service station”.
+- p.604: Tab. 19.14: EcoSpold Meta Information of “biogas, … , at service station”.
+- p.606: Tab. 19.15 shows selected LCI results and the cumulative energy demand for the data sets “natural
+- p.607: Tab. 19.15 Selected LCI results and the cumulative energy demand for the data sets “methane, 96 vol-%, from biogas,
+- p.611: Tab. 20.1 Characterisation of vehicles
+- p.613: Tab. 20.2 Fuel consumption derived from CO2-, CO- and CH4-tail pipe emission measurements and fuel consumption
+- p.614: Tab. 20.3 Tail pipe emission factors.
+- p.615: Tab. 20.4 Non-exhaust emission factors due to tyre abrasion, break wear and road abrasion in [kg/km].
+- p.615: Tab. 20.5 Non-exhaust emission factors due to evaporation in [kg/km].
+- p.616: Tab. 20.6 gives an overview of the environmental interventions due to vehicle operation using alterna-
+- p.616: Tab. 20.6 Life cycle inventory input data of the operation of passenger cars and a 28-t lorry in Switzerland (emission
+- p.617: Tab. 20.7 Life cycle inventory input data of transport processes of passenger cars and a 28-t lorry in Switzerland.
+- p.618: Tab. 20.8 Uncertainty information on life cycle inventory input data of the operation of vehicles. * denotes uncertainty
+- p.619: Tab. 20.9 Uncertainty information on life cycle inventory input data of transport processes (uncertainty type and 95%-
+- p.620: Tab. 20.10 shows selected LCI results and the cumulative energy demand for the operation of passen-
+- p.620: Tab. 20.10 LCI results for transport processes (operation).
+- p.620: Tab. 20.11 shows selected LCI results and the cumulative energy demand for demand for the transport
+- p.621: Tab. 20.11 LCI results for transport processes (transport).
+- p.622: Tab. 20.12 Eco Spold Meta information of CNG (passenger car).
+- p.623: Tab. 20.13 Eco Spold Meta information of methane, 96 vol-%, from biogas (passenger car).
+- p.624: Tab. 20.14 Eco Spold Meta information of ethanol, 5% (passenger car).
+- p.625: Tab. 20.15 Eco Spold Meta information of methanol (passenger car).
+- p.626: Tab. 20.16 Eco Spold Meta information of rape seed methyl ester, 5% (passenger car).
+- p.627: Tab. 20.17 Eco Spold Meta information of rape seed methyl ester (lorry 28t).
+- p.632: Tab. 21.1: Modal Split with respect to time for an average Swiss traveller per day (Spielmann et al. 2006)
+- p.633: Tab. 21.2: Reference years for passenger car datasets and corresponding fuel consumption. For instance, let us con-
+- p.634: Tab. 21.3 Fuel Consumption of diesel and petrol powered engines in the time period from 2005 to 2010. The presented
+- p.634: Tab. 21.4 CO2-emissions and SO2-emissions from diesel and petrol powered engines in the time period from 2005 to
+- p.635: Tab. 21.5: Reduction Factors (RF) for the change from Euro3 to Euro4 passenger cars (derived from de Haan (2004))
+- p.635: Tab. 21.6: Emission factors of Euro-regulated exhaust emissions and CO2-emissions for petrol powered passenger
+- p.636: Tab. 21.7: Emission factors of Euro-regulated exhaust emissions and CO2-emissions for diesel powered passenger
+- p.636: Tab. 21.8: Specific hydrocarbon exhaust emissions and applied profiles for either concept. The last two columns pre-
+- p.636: Tab. 21.9: Non-exhaust emission factors due to evaporation
+- p.637: Tab. 21.10: Particle exhaust emissions and applied mixes.
+- p.637: Tab. 21.11: Non-exhaust particle emissions of passenger cars due to tyre abrasion, break wear and road abrasion
+- p.637: Tab. 21.12: N2O and NH3 emission factors.
+- p.638: Tab. 21.13: Airborne heavy metal emissions (Note correct unit g HM/vkm)
+- p.639: Tab. 21.14: Fuel demand and underlying assumptions for Petrol/ETBE 15 passenger cars
+- p.640: Tab. 21.15: Biogenic and fossil emissions of carbon monoxide, carbon dioxide and methane for a 15 Vol.% and 4 Vol.%
+- p.642: Tab. 21.17: Unit process raw data of the operation of petrol passenger cars.
+- p.643: Tab. 21.18: Unit process raw data of the operation of a petrol/ETBE15 passenger car.
+- p.644: Tab. 21.19: Unit process raw data of transport processes of passenger cars.
+- p.645: Tab. 21.20 Selected LCI results and cumulative energy demand for passenger car operation
+- p.646: Tab. 21.21 Selected LCI results and cumulative energy demand for passenger car Transport
+- p.656: Tab. 22.1 Overview of processes in this chapter.
+- p.658: Tab. 22.2 Initial compositions of biomass wastes.
+- p.659: Tab. 22.3 Swiss amounts of treated biowaste in 2000.
+- p.659: Tab. 22.4 Disposal of WWT sludge in Switzerland 2000 (BUWAL 2001a)
+- p.659: Tab. 22.2 on page 630). Sewage sludge is assumed to be dewatered before incineration. The functional
+- p.660: Tab. 22.5 Weight changes resulting from digestion and/or water removal for 1000 kg wet raw sludge.
+- p.661: Fig. 22.1 Scheme of a typical Swiss municipal solid waste incinerator.
+- p.663: Fig. 22.2 System boundaries of biowaste incineration in municipal waste incinerator
+- p.663: Tab. 22.6 Datasets derived from the multi-output process 'biowaste, to municipal incineration'
+- p.663: Tab. 22.7 Energy generated from one kilogram of biowaste in (current) municipal waste incinerator
+- p.664: Tab. 22.8 Revenues generated from one kilogram of biowaste in (current) municipal waste incinerator
+- p.665: Tab. 22.9 Unit process raw data of 'biowaste, to municipal incineration'
+- p.666: Fig. 22.3 System boundaries of biowaste incineration in future municipal waste incinerator
+- p.666: Tab. 22.10 Datasets derived from the multi-output process 'biowaste, to municipal incineration, future'
+- p.667: Fig. 22.4 Current gross energy efficiencies of the 28 Swiss municipal waste incinerators in 2000 and prospective effi-
+- p.668: Tab. 22.11 Energy generated from one kilogram of biowaste in (future) municipal waste incinerator
+- p.669: Tab. 22.12 Revenues generated from one kilogram of biowaste in (future) municipal waste incinerator
+- p.670: Tab. 22.13 Unit process raw data of 'biowaste, to municipal incineration, future'
+- p.671: Fig. 22.5 System boundaries of digested sludge incineration in municipal waste incinerator
+- p.671: Tab. 22.14 Specific input of flocculation agents for dewatering process
+- p.672: Tab. 22.15 Composition of dewatering liquid
+- p.673: Tab. 22.16 Energy generated from dewatered digested sludge in municipal waste incinerator
+- p.673: Tab. 22.17 Uncertainty estimates for exchanges of the sludge dewatering process
+- p.674: Tab. 22.18 Unit process raw data of 'disposal, digester sludge, to municipal incineration'
+- p.675: Fig. 22.6 System boundaries of digested sludge incineration in future municipal waste incinerator
+- p.675: Tab. 22.19 Datasets derived from the multi-output process 'digester sludge, to municipal incineration, future'
+- p.676: Tab. 22.20 Energy generated from dewatered digested sludge in future municipal waste incinerator
+- p.676: Tab. 22.21. The revenues for heat and electricity production in Swiss municipal incinerators are taken
+- p.676: Tab. 22.21 Disposal fees for sewage sludge in municipal incinerator
+- p.677: Tab. 22.22 Revenues generated from one kilogram of digested sewage sludge in future municipal waste incinerator
+- p.677: Tab. 22.23 Unit process raw data of 'digester sludge, to municipal incineration, future'
+- p.678: Fig. 22.7 System boundaries of raw sewage sludge incineration in municipal waste incinerator
+- p.679: Tab. 22.24 Energy generated from dewatered raw sludge in (current) municipal waste incinerator
+- p.680: Tab. 22.25 Unit process raw data of 'disposal, raw sewage sludge, to municipal incineration'
+- p.682: Tab. 22.26 Selected LCI results and the cumulative energy demand for the generation of heat from the disposal of bio-
+- p.683: Tab. 22.27 Selected LCI results and the cumulative energy demand for the generation of electricity from the disposal of
+- p.683: Tab. 22.28 Selected LCI results and the cumulative energy demand for the disposal of biomass waste
+- p.690: Tab. 22.29 Alternative internal energy energy demand for incineration of one kilogram of biowaste in future municipal
+- p.690: Tab. 22.30 Alternative date for energy generated from one kilogram of biowaste in future municipal waste incinerator
+- p.691: Tab. 22.31 Alternative set of revenues generated from one kilogram of biowaste in (future) municipal waste incinerator
+- p.694: Tab. 23.1 Initial composition of raw sewage sludge.
+- p.695: Tab. 23.2. The functional unit of the datasets is 1 kg of wet raw sludge (i.e. with 95% water). Tab.
+- p.695: Tab. 23.2 Weight changes resulting from water removal for 1000 kg wet raw sludge.
+- p.696: Fig. 23.1 Scheme of a typical Swiss cement kiln ('dry process')
+- p.698: Fig. 23.2 System boundaries of raw sewage sludge incineration in cement kiln
+- p.699: Tab. 23.3 Datasets derived from the multi-output process ' raw sewage sludge, in cement plant '
+- p.699: Tab. 23.4 Specific input of flocculation agents for dewatering process
+- p.699: Tab. 23.5 Composition of dewatering liquid
+- p.700: Tab. 23.6 Energy consumption in sludge drying
+- p.701: Tab. 23.7 Calculation of the national fraction of sewage sludge incinerated in Siggenthal cement plant.
+- p.702: Tab. 23.8 Transfer coefficients to air for cement kiln
+- p.704: Tab. 23.9 Revenues generated from one kilogram of wet raw sewage sludge in cement kiln
+- p.704: Tab. 23.10 Uncertainty estimates for exchanges of the sludge drying process and additional air emissions from cement
+- p.705: Tab. 23.11 Unit process raw data of 'raw sewage sludge, in cement plant. Not included in ecoinvent data v2.0
+- p.706: Tab. 23.12 Selected LCI results and the cumulative energy demand for the unit processes generated from the multi-
+- p.714: Tab. 24.1 Chemical and physical properties of allyl chloride, hydrochloric acid und 1,3-dichloropropene
+- p.715: Fig. 24.1 Process chain for the production of allylic chloride (Fig.1 out of [Krähling et al., 2000] – showing liquid pro-
+- p.715: Tab. 24.2 Consumption of raw materials for the production of 1 metric ton allyl chloride
+- p.716: Tab. 24.3 Energy consumption for the production of 1 kg allyl chloride
+- p.716: Tab. 24.4 Process emissions to air from the production of 1 kg allyl chloride
+- p.716: Tab. 24.5 Process emissions to water from the production of 1 kg allyl chloride
+- p.717: Tab. 24.6 Allocation of allyl chloride and co-products
+- p.717: Tab. 24.7 Overview of input/output data and quality considerations for the manufacture of allyl chloride, di-
+- p.718: Tab. 24.8 shows selected LCI results and the cumulative energy demand for the production of allylic
+- p.718: Tab. 24.8 Selected LCI results and the cumulative energy demand for the production of allylic chloride and copro-
+- p.718: Tab. 24.9 shows selected LCI results and the cumulative energy demand for the production of hydro-
+- p.719: Tab. 24.9 Selected LCI results and the cumulative energy demand for hydrochloric acid, 36%, as a coproduct of allylic
+- p.723: Tab. 25.1 Chemical and physical properties of epichlorohydrin, calcium chloride and trichloropropane
+- p.724: Tab. 25.2 Consumption of raw materials per metric ton epichlorohydrin
+- p.724: Tab. 25.3 Energy consumption per kg epichlorohydrin
+- p.724: Tab. 25.4 Process emissions to air per kg epichlorohydrin
+- p.725: Tab. 25.5 Process emissions to water per kg epichlorohydrin
+- p.725: Tab. 25.6 Allocation of epichlorohydrin and co-products
+- p.726: Tab. 25.7 Overview of input/output data and quality considerations for the manufacture of epichlorohydrin, calcium
+- p.726: Tab. 25.8 shows selected LCI results and the cumulative energy demand for the production of
+- p.727: Tab. 25.8 Selected LCI results and the cumulative energy demand for the production of epichlorohydrin and its
+- p.730: Tab. 26.1 Chemical and physical properties of caustic potash (according to www.chemexper.com)
+- p.731: Tab. 26.2 Main uses of potassium hydroxide
+- p.731: Tab. 26.3 Raw materials for caustic potash production
+- p.732: Tab. 26.4 Emissions from KOH production
+- p.732: Tab. 26.5 Overview of input/output data and quality considerations for the manufacture of caustic potash
+- p.733: Tab. 26.6 shows selected LCI results and the cumulative energy demand for the production of potas-
+- p.733: Tab. 26.6 Selected LCI results and the cumulative energy demand for the production of potassium hydroxide
+- p.736: Tab. 27.1 Chemical and physical properties of synthetic glycerine
+- p.737: Tab. 27.2 Raw materials for glycerine production
+- p.738: Tab. 27.3 emissions from glycerine production
+- p.738: Tab. 27.4 Unit process raw data of synthetic glycerine
+- p.739: Tab. 27.5 shows selected LCI results and the cumulative energy demand for the production of syn-
+- p.739: Tab. 27.5 Selected LCI results and the cumulative energy demand for the production of synthetic glycerine
+- p.742: Tab. 28.1 Chemical and physical properties of n-hexane (Bhattacharjee 2005, Ullmann 2005)
+- p.743: Tab. 28.2 Chemical and physical properties of n-heptane (Ullmann 2005)
+- p.743: Tab. 28.3 Chemical and physical properties of 2,3-dimethylbutane (Ullmann 2005)
+- p.743: Tab. 28.4 Chemical and physical properties of 2-methylpentane (Ullmann 2005)
+- p.744: Tab. 28.5 Chemical and physical properties of 2-methylpentane (Ullmann 2005)
+- p.744: Tab. 28.6 Chemical and physical properties of methylcyclohexane (Ullmann 2005)
+- p.745: Fig. 28.1 The Sorbex process (taken from Ruthven 2004, Figure 14)
+- p.745: Tab. 28.7 Specification of different types of zeolith 5A (Zhengshou 2004)
+- p.746: Fig. 28.2 Process chain for the molecular sieve separation of naphtha
+- p.747: Tab. 28.8 Consumption of raw materials for the molecular sieve separation of naphtha (Overcash 1998-2004)
+- p.747: Tab. 28.9 Energy consumption for the molecular sieve separation of naphtha (Overcash 1998-2004)
+- p.747: Tab. 28.10 Total transport amounts for the molecular sieve separation of naphtha (Overcash 1998-2004)
+- p.748: Tab. 28.11 Process emissions to air from the molecular sieve separation of naphtha
+- p.748: Tab. 28.12 Process emissions to water from the molecular sieve separation of naphtha
+- p.749: Tab. 28.13 Allocation of n-hexane and the co-products from molecular sieve separation of naphtha
+- p.749: Tab. 28.14 shows the data quality indicators of the inventory of the molecular sieve separation of
+- p.750: Tab. 28.14 Unit process raw data for the molecular sieve separation of naphtha, RER
+- p.751: Tab. 28.15 shows selected LCI results and the cumulative energy demand for the molecular sieve
+- p.752: Tab. 28.15 Selected LCI results and the cumulative energy demand for the products of the molecular sieve separation of naphtha
+
+Rules:
+1. Choose the caption(s) that hold the unit-process inventory of this dataset — inputs, energy, emissions, transport — not impact results, not a diagram. Prefer "Sachbilanz" / "inventory" / "LCI" tables.
+2. Return the PDF page range that covers those tables plus the paragraph introducing them: `first_page`, `last_page` (at most 4 pages). Tables can run onto the next page.
+3. If no caption fits (the report does not document this dataset's inventory, or only as a result), return `found` = false and say why in `reason`.
+4. `reason` names the caption(s) you chose and why.
+
+Return only the JSON object described by the schema.

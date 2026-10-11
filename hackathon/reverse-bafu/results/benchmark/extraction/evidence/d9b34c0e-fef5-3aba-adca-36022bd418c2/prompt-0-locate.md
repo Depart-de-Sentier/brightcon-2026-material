@@ -1,0 +1,374 @@
+You are locating the inventory table of one dataset inside a life-cycle-inventory report.
+
+Dataset: `SOx retained, in hard coal flue gas desulphurisation` [RER], 1 kg, BAFU category power plants / unspecified.
+Metadata: includedProcesses: The module describes the operation of a wet scrubber. It includes material input, transport of this material, waste water and solid waste. · technology: Average installed technology in the 1990s. · comment: The efficiency of the desulphurisation is 90 %. All environmental burdens associated with the operation of the scrubber are allocated to the SO2 retained and hence to the power plant. Therefore the produced gypsum is assumed to be burden free, and not explicitly included in the module. The considere
+
+Report: `2007 - Coal - Dones.pdf` (346 PDF pages). Below is every table and figure caption found in it, with the PDF page it appears on (not the printed page number). The report may be in German, French or English; the dataset name is English — match on meaning (e.g. "gebrannter Ölschiefer" = burnt shale, "Gipsfaserplatte" = gypsum fibre board).
+
+- p.13: Tab. 1.1: Kohlenstoffgehalt einiger fossiler fester Brennstoffe (wf) als Kennzeichen für den Inkohlungsgrad und das Alter
+- p.14: Tab. 2.1 und Tab. 2.2 unterstreichen die Aussagen zur regionalen Verteilung der Kohlevorkommen. Beim
+- p.14: Tab. 2.1 Weltweite Ressourcen und Reserven in EJ nach den Kenntnissen von 1998 (BGR 1998).
+- p.14: Tab. 2.2: Sichere Kohlereserven am Ende des Jahres 2001 gemäss (BP 2002).
+- p.16: Tab. 3.1: Eigenschaften fester, natürlicher Brennstoffe (Dubbel 1987).
+- p.17: Tab. 3.2: Eigenschaften künstlicher fester Brennstoffe (Dubbel 1987).
+- p.18: Tab. 3.3: Spurenelementgehalte typischer Steinkohlen und Durchschnittwerte für die Erdrinde, fettgedruckte Elemente
+- p.19: Tab. 3.4: Natürliche und anthropogene Emissionen einiger Stoffe mit zusätzlicher Angabe des Interferenzfaktors (Division
+- p.21: Fig. 4.1: Kohleverbrauch in den letzten 60 Jahren absolut [in PJ] und relativ zum jeweiligen Bruttoverbrauch [%],
+- p.21: Tab. 4.1: Aufschlüsselung der Verwendung von Kohle in der Schweiz Ende der neunziger Jahre im Vergleich zu 1990
+- p.21: Tab. 4.1 zeigt die Verwendung von Kohle in den letzten Jahren im Vergleich zu 1990. Die Zementindustrie
+- p.22: Tab. 4.2: Kohleimporte in die Schweiz 1996 bis 2000 nach Herkunftsländern (Jahresstatistik 1996-2000).
+- p.22: Tab. 4.3: Kohleimporte in die Schweiz 1996 bis 2000 nach Kohlequalitäten (Jahresstatistik 1996-2000).
+- p.23: Fig. 4.2: Herkunftsländer der in die Schweiz importierten bituminösen Steinkohle 1996 bis 2000 gemäss (Jahresstatistik
+- p.24: Tab. 4.4: Stromerzeugung nach Energieträgern für verschiedene Gebietskörperschaften.
+- p.25: Fig. 5.1: Hauptprozessschritte der Kohlekette in diesem Projekt.
+- p.26: Fig. 5.2: Vereinfachte Prozesskette des Braunkohle-Systems, wie es in diesem Projekt modelliert wird und in der Datenbank
+- p.27: Fig. 5.3: Vereinfachte Prozesskette des Steinkohle-Systems, wie es in diesem Projekt modelliert wird und in der Datenbank
+- p.31: Tab. 6.2 für die einzelnen UCTE-Länder dargestellt.
+- p.31: Tab. 6.1: Verbrauch und Eigenförderung von Braun- und Steinkohlen für die UCTE-Länder (ohne das ehemalige
+- p.31: Tab. 6.2: Steinkohleimporte in die UCTE-Länder (ohne das ehemalige Jugoslawien) nach Förderregionen im Jahr 1999 nach
+- p.32: Fig. 6.1: Förderanteile am totalen Steinkohlenverbrauch der UCTE-Länder für das Jahr 1999 in Gewichts-Prozent der
+- p.33: Fig. 6.2: Förderanteile am totalen Braunkohlenverbrauch der UCTE-Länder für das Jahr 1999 in Gewichts-Prozent der
+- p.34: Tab. 6.3 Angaben zum oberen Heizwert der in den untersuchten Regionen geförderten Steinkohlen nach (Hinrichs et al. 1999).
+- p.35: Tab. 6.4 Berechnungsgrundlagen und Eingabedaten für die je kg Produktkohle entnommene Rohkohle.
+- p.37: Tab. 6.5: Abschätzung des Material- und Energieaufwandes für Bau- und Betrieb von Kohlebergwerken in resp. für Europa.
+- p.37: Tab. 6.5 beibehalten. Die Daten von (Levin 1993) wurden für die Abschätzung der Unsicherheiten
+- p.39: Tab. 6.6: Gewichteter Flächenbedarf für den Steinkohlen-Tagbau für den Kohleverbrauch in den UCTE-Ländern, Daten
+- p.40: Tab. 6.7: Gewichteter Flächenbedarf für den Braunkohle-Tagbau für den Kohleverbrauch in den UCTE-Ländern, Daten
+- p.42: Tab. 6.8: Abschätzung der Flächenbeanspruchung durch den Kohlebergbau pro t Rohkohle.
+- p.43: Tab. 6.9 Flächenumwandlung beim Steinkohlebergbau, bilanziert in dieser Studie.
+- p.43: Tab. 6.10 Flächennutzung durch Kohleminen in den untersuchten Förderregionen, Annahmen für diese Studie.
+- p.45: Tab. 6.11: Durchschnittlicher Energieverbrauch für den Braunkohle-Abbau gemäss Energiestatistiken (UN 1992), (CI 1992)
+- p.46: Tab. 6.12: Zusammenstellung von Energieverbrauchsdaten für verschiedene Länder aus verschiedenen Quellen
+- p.46: Tab. 6.13: Energieverbrauch des Braunkohle-Tagbaus in verschiedenen Ländern und für den UCTE-Durchschnitt.
+- p.49: Tab. 6.14: Berechnung der durchschnittlichen Methanemissionen des Braunkohlebergbaus in den UCTE-Ländern (ohne
+- p.50: Tab. 6.15: Grobe Abschätzungen zu den Emissionen ins Wasser des Braunkohle-Tagbaus
+- p.53: Tab. 6.16: Menge, Schwefelgehalt und Heizwert für den durchschnittlichen Bergeanfall aus der Steinkohleaufbereitung in
+- p.53: Tab. 6.17: Durchschnittlicher Stromverbrauch des Steinkohlebergbaus gemäss Energiestatistiken (UN 1992), (CI 1992)
+- p.54: Tab. 6.18: Zusammenstellung von Energieverbrauchsdaten des Steinkohle-Untertagbaus für verschiedene Länder aus
+- p.54: Tab. 6.19: Zusammenstellung von Energieverbrauchsdaten des Steinkohle-Tagbaus für verschiedene Länder aus
+- p.55: Tab. 6.20 enthält auch die Zuordnung der einzelnen Förderregionen, die hier unterschieden werden, zu den
+- p.56: Tab. 6.20: Energieverbrauch, Materialeinsatz und Bergeanfall in den verschiedenen Förderregionen für Steinkohle gemäss
+- p.59: Tab. 6.21: Emissionsfaktoren für Methanausgasung aus Kohle gemäss verschiedener Quellen.
+- p.60: Tab. 6.22: Emissionsfaktoren für den Steinkohlen-Untertagbau der Kohle fördernden Regionen für den Verbrauch in den
+- p.60: Tab. 6.23: Resultierende Emissionsfaktoren und Methanentnahmen für die verschiedenen Förderregionen.
+- p.61: Tab. 6.24: Grobe Abschätzungen zu den Emissionen in Binnengewässer des Steinkohle-Bergbaus
+- p.62: Tab. 6.25: Emissionen ins Wasser für Steinkohle-Aufbereitungsanlagen des Tag-und Untertagbaus.
+- p.63: Tab. 6.26: Abgeschätzte Emissionen aus Haldenbränden in den USA für 1968 nach (DOE 1988).
+- p.63: Tab. 6.27 fasst die Daten für die Infrastruktur der Bergwerke zusammen. Die Daten für das Torfbergwerk
+- p.64: Tab. 6.27: Eingabedaten der Infrastrukturdatensätze für die Förderung von Braunkohle (Tagbau) und Steinkohle (Tag- und
+- p.65: Tab. 6.28 Eingabedaten für Braunkohle ab Braunkohlebergbau.
+- p.66: Tab. 6.29 Eingabedaten für Steinkohle ab Bergbau in den Förderregionen Australien, Ostasien, Russland und Südafrika.
+- p.67: Tab. 6.30 Eingabedaten für Steinkohle ab Bergbau in den Förderregionen Osteuropa, Westeuropa, Nord- und Südamerika.
+- p.69: Tab. 6.31 Steinkohlebergbau in der UCTE
+- p.70: Tab. 6.32 Verhältnis Tag-/Untertagbau in den bilanzierten 8 Förderregionen der Steinkohle.
+- p.72: Tab. 7.1: Anhaltswerte für Elementkonzentrationen von Braun- und Steinkohlen.
+- p.74: Tab. 7.2: Abschätzungen für den Bauaufwand von Kokereien und Brikett/Staub-Fabriken
+- p.76: Fig. 7.1: Aufbereitung des Steinkohlenhochtemperaturteers nach Franck und Collin (Schmidt et al. 1981)
+- p.77: Tab. 7.3: Energiebilanz der Kokereien in den alten Bundesländern für das Jahr 1990 (AGEB 1991).
+- p.77: Tab. 7.4: Energiebilanz einer virtuellen Kokerei mit reiner Koksofenbeheizung bei einem insgesamt identischen Energie-
+- p.78: Tab. 7.5: Schadstoffemission einer Kokerei in die Luft.
+- p.80: Tab. 7.6: Aufwendungen in der Abwasserreinigung und Emissionen ins Wasser für Kokereien.
+- p.83: Tab. 7.7: Emissionsfaktoren der Koksproduktion in den USA aus (AP-42 2002), im Vergleich zur Herstellung in Deutschland.
+- p.84: Tab. 7.8 fasst die Daten zur Steinkohlenbrikettproduktion zusammen.
+- p.84: Tab. 7.8: Bilanzdaten für die Steinkohlenbrikettproduktion (bitumengebunden)
+- p.86: Tab. 7.9: Bilanzdaten für die Braunkohlen-Brikett- und -Staubproduktion, Annahmen im Text, Allokation bereits
+- p.86: Tab. 7.10: Staubemissionen in die Luft für die Braunkohlen-Brikett- und -Staubproduktion
+- p.87: Tab. 7.11: Flächenbeanspruchung durch Anlagen zur Herstellung verschiedener Kohleprodukte.
+- p.88: Tab. 7.12: Infrastruktur zur Produktion von Steinkohlekoks und -briketts bzw. Braunkohlebriketts
+- p.89: Tab. 7.13: Eingabedaten für Steinkohlekoks, Koksofengas, Teer und Benzol (DE/RER).
+- p.90: Tab. 7.14 Eingabedaten für Steinkohlekoks, Koksofengas, Teer und Benzol (GLO).
+- p.91: Tab. 7.15: Eingabedaten für die Braunkohlebriketts und –staub sowie Steinkohlebriketts
+- p.94: Tab. 8.1 Steinkohleverbrauch und –eigenförderung im UCTE-Raum im Jahr 1999
+- p.95: Tab. 8.2: Durch den Steinkohleexport nach Europa (UCTE-Länder) benötigte Transportleistung in den Exportländern
+- p.95: Tab. 8.3: Durch den Steinkohleexport nach Europa (UCTE-Länder) benötigte Transportleistung in den Exportländern nach
+- p.96: Tab. 8.4: Durchschnittliche Transportdistanzen des Hochseeschifftransportes von Steinkohle für die UCTE-Länder
+- p.97: Tab. 8.5: Steinkohletransport zu Kraftwerken innerhalb der bilanzierten Länder für Steinkohle aus Eigenförderung und
+- p.97: Tab. 8.6: Steinkohletransport zu Kraftwerken innerhalb der bilanzierten Länder, zusammengefasste Daten
+- p.99: Tab. 8.7: Eluate aus Kohlelagern zusammengestellt aus verschiedenen Quellen
+- p.101: Tab. 8.8: Eingabedaten für Steinkohletransport -umschlag und -lagerung in den Förderländern
+- p.102: Tab. 8.9 Eingabedaten für Steinkohletransport -umschlag und -lagerung in den Förderländern
+- p.103: Tab. 8.10: Eingabedaten für die in Kraftwerken in AT, BE, CZ und DE verfeuerte Steinkohle.
+- p.104: Tab. 8.11: Eingabedaten für die in Kraftwerken in ES, FR und HR verfeuerte Steinkohle.
+- p.105: Tab. 8.12: Eingabedaten für die in Kraftwerken in IT, NL und PL verfeuerte Steinkohle.
+- p.106: Tab. 8.13 Eingabedaten für die in Kraftwerken in PT, SK und der UCTE durchschnittlich verfeuerte Steinkohle.
+- p.108: Tab. 9.1: Übersicht über die Nettostromerzeugung in Kohlekraftwerken in den UCTE und CENTREL-Ländern im Jahre 2000
+- p.111: Tab. 9.2 Obere Heizwerte (Ho) der hier verwendeten länderspezifischen Steinkohle-Versorgungsmixe und der in den
+- p.112: Tab. 9.3: Materialaufwendungen für Kohlekraftwerke verschiedener Leistungsklassen und Ausbaumerkmale
+- p.112: Tab. 9.4: Materialaufwendungen für die in dieser Studie betrachteten Kohlekraftwerke (100 resp. 500 MW). Vollaststunden
+- p.113: Tab. 9.5: Flächenbedarf zweier exemplarischer Steinkohlekraftwerke in Deutschland und gewählte Werte in dieser Studie
+- p.114: Tab. 9.6: Flächenbeanspruchung durch die Kraftwerke in dieser Studie.
+- p.115: Tab. 9.7: Heutige und zukünftige Kohlekraftwerkskonzepte und Nettowirkungsgrade aus verschiedenen Quellen.
+- p.116: Tab. 9.8: Länderspezifische Nettowirkungsgrade η von Steinkohle- und Braunkohlekraftwerken, angenommen für diese
+- p.116: Tab. 9.9: Energiebilanz für vier Modellkraftwerke nach verschiedenen Quellen
+- p.118: Fig. 9.1: Braunkohleverbrauch für die Bereitstellung von Strom und Wärme in den UCTE-Ländern im Jahre 1999, bezogen
+- p.118: Fig. 9.2: Steinkohleverbrauch für die Bereitstellung von Strom und Wärme in den UCTE-Ländern im Jahre 1999 nach
+- p.119: Fig. 9.3: Herkunft der in den UCTE-Kraftwerken verfeuerten Steinkohle für das Jahr 1999 nach (CI 2001), Anteile in Gew.-%.
+- p.121: Tab. 9.10: Emissionsfaktoren 2000 für die Kraftwerke in Österreich; gewählt für diese Studie.
+- p.122: Tab. 9.11: Emissionsfaktoren 2000 für die Kraftwerke in Bosnien-Herzegowina; gewählt für diese Studie.
+- p.122: Tab. 9.12: Emissionsfaktoren für das Jahr 2000 für die Kraftwerke in Belgien; gewählt für diese Studie.
+- p.122: Table 9.13 shows key calculated factors (per unit of input energy). Compared to the edition 2004 of this
+- p.123: Tab. 9.13: Average LHV and selected emission factors 2005 for the Czech coal power plants, used for ecoinvent v2.0.
+- p.124: Tab. 9.14: Emissionsfaktoren für das Jahr 2000 für die Kraftwerke in Deutschland gewählt für diese Studie.
+- p.125: Tab. 9.15: Emissionsfaktoren 2000 für die Kraftwerke in Spanien; gewählt für diese Studie.
+- p.125: Tab. 9.16: Emissionsfaktoren 2000 für die Kraftwerke in Frankreich; gewählt für diese Studie.
+- p.126: Tab. 9.17: Emissionsfaktoren 2000 für die Kraftwerke in Griechenland, gewählt für diese Studie.
+- p.126: Tab. 9.18: Emissionsfaktoren für das Jahr 2000 für die Kraftwerke in Kroatien; gewählt für diese Studie.
+- p.127: Table 9.19 shows key calculated factors, per unit of inputted mass or energy. Compared to the edition 2004
+- p.127: Tab. 9.19: Average LHV and selected emission factors 2005 for the Hungarian coal power plants, used used for ecoinvent
+- p.127: Tab. 9.20: Emissionsfaktoren 2000 für die Kraftwerke in Italien; gewählt für diese Studie.
+- p.128: Tab. 9.21: Emissionsfaktoren 2000 für die Kraftwerke in Mazedonien; gewählt für diese Studie.
+- p.128: Tab. 9.22: Emissionsfaktoren 2000 für die Kraftwerke in den Niederlanden; gewählt für diese Studie.
+- p.129: Tab. 9.23: Average LHV and selected emission factors 2005 for the Polish coal power plants, used used for ecoinvent v2.0.
+- p.129: Tab. 9.24: Emissionsfaktoren 2000 für die Kraftwerke in Portugal; gewählt für diese Studie.
+- p.130: Tab. 9.25: Emissionsfaktoren 2000 für die Kraftwerke in Slowenien; gewählt für diese Studie.
+- p.130: Table 9.26 shows key calculated factors (per unit of input energy). From the performed survey, it appears
+- p.131: Tab. 9.26: Average LHV and selected emission factors 2005 for the Slovak coal power plants, used used for ecoinvent v2.0.
+- p.131: Tab. 9.27: Emissionsfaktoren 2000 für die Kraftwerke in Jugoslawien; gewählt für diese Studie.
+- p.132: Tab. 9.28: Emissionsfaktoren 2000 für die Kraftwerke in Finnland, gewählt für diese Studie für die NORDEL-Länder.
+- p.134: Tab. 9.29: Verteilung der Aschen in Kraftwerken (ohne Filter)
+- p.134: Tab. 9.30: Typische Rohgasemissionen einiger Schadstoffe für Kohlekraftwerke (WEC 1988) und (Fritsche et al. 1992).
+- p.136: Tab. 9.31: Grobbilanz für die grössten Stoffflüsse in einer REA, bei 1% Schwefelgehalt und 85% Entschwefelung für
+- p.136: Tab. 9.32: Verschiedene REA-Bilanzen aus diversen Quellen
+- p.136: Tab. 9.32 abgeschätzt (siehe Tab. 9.33). Für die Braunkohlekraftwerke in den alten Bundesländern
+- p.137: Tab. 9.33: REA-Massenbilanz pro kg reduziertes SO2, REA-Nass nach Tab.9.33, REA-Nass Brk-D (Nass-Entschwefelung der
+- p.138: Tab. 9.34: Konzentrationen von Ionen des REA-Abwassers vor und nach Reinigung mit ARA und für dieses Projekt gewählte
+- p.139: Tab. 9.35: Radioaktive Elemente im REA-Abwasser und REA-Schlamm eines Steinkohlekraftwerkes (Hövelmann 1987)
+- p.139: Tab. 9.36: Phasenzusammensetzung von entwässertem und getrocknetem Kalksteinwäsche- und Kondensationswäscher-
+- p.140: Tab. 9.37: Auslegegrössen für eine SCR-Anlage bei Kohlefeuerungen (IIP 1990)
+- p.141: Tab. 9.38: Bilanzierungsdaten für die Umwandlung von 1 kg NOx in N2
+- p.142: Tab. 9.39: Grössenverteilung der verbrennungsbedingten Staubemissionen in Kohlekraftwerken
+- p.143: Tab. 9.40: Verflüchtigungsgrad und Abscheidegrad für verschiedene Halogene, wie sie in diesem Projekt verwendet werden
+- p.144: Tab. 9.41 Halogengehalte verschiedener Kohle nach verschiedenen Messungen in Gew.-%, teilweise lftr (Dale 1995) oder wf.
+- p.145: Tab. 9.42: Halogengehalte verschiedener Kohlen aus verschiedenen Ländern [ppm wf] (Swaine 1990), (Swaine 1995).
+- p.145: Tab. 9.43: Halogengehalte der Kohlen aus verschiedenen Förderländern gemäss verschiedener Quellen [ppm wf].
+- p.145: Tab. 9.44: Typische Halogengehalte für Steinkohle, welche in den UCTE-Ländern verbrannt w
+- p.147: Tab. 9.45: Typische Halogengehalte für Braunkohle, welche in den UCTE-Ländern verbrannt wird, Anteil der
+- p.148: Tab. 9.46: CO-Emissionen für Braun- und Steinkohlekraftwerke nach diversen Quellen und für dieses Projekt
+- p.149: Tab. 9.47: VOC, CH4 und NMVOC-Emissionen für Braun- und Steinkohlekraftwerke nach diversen Quellen und für dieses
+- p.150: Tab. 9.48: Aufgeschlüsselte NMVOC-Emissionen für Kohlekraftwerke
+- p.150: Tab. 9.49: B(a)P und PAH-Emissionen für Braun- und Steinkohlekraftwerke nach diversen Quellen und für dieses Projekt.
+- p.151: Tab. 9.50: Dioxin/Furan-Emissionen für Kohlekraftwerke nach verschiedenen Quellen und gewählter Anhaltswert für dieses
+- p.152: Tab. 9.51: N2O-Emissionen für Braun- und Steinkohlekraftwerke nach diversen Quellen und für dieses Projekt
+- p.152: Tab. 9.52: Länderspezifische N2O-Emissionsfaktoren für Steinkohlekraftwerke.
+- p.152: Tab. 9.53: Länderspezifische N2O-Emissionsfaktoren für Braunkohlekraftwerke.
+- p.153: Tab. 9.54 zeigt die Elementgehalte der in den Kraftwerken eingesetzten Steinkohlen für die einzelnen
+- p.156: Tab. 9.55: Elementgehalte einiger Haupt- und Spurenelemente in Braunkohlen, welche in Europa verbrannt werden
+- p.159: Tab. 9.56: Anreicherungs-, Transfer- und Abreicherungskoeffizienten für Elemente in Steinkohlekraftwerken.
+- p.160: Tab. 9.57: Anreicherungs-, Transfer- und Abreicherungskoeffizienten für Elemente in Braunkohlekraftwerken.
+- p.163: Tab. 9.59: Emissionsfaktoren Spurenelemente plus Hauptelemente aus Braunkohlekraftwerken für die UCTE-Länder
+- p.166: Tab. 9.60: Verhältnisse der Aktivitäten der Isotope in verschiedenen Zerfallsreichen, Anhaltswerte nach (UNSCEAR 1993).
+- p.167: Tab. 9.61: Radioaktive Emissionen aus Steinkohlekraftwerken in die Luft
+- p.168: Tab. 9.62 Radioaktive Emissionen aus Steinkohlekraftwerken in die Luft
+- p.169: Tab. 9.63: Radioaktive Emissionen aus Braunkohlekraftwerken in die Luft
+- p.170: Tab. 9.64 Radioaktive Emissionen aus Braunkohlekraftwerken in die Luft
+- p.172: Tab. 9.65: Wasserbedarf von Kohlekraftwerken in m /TJin (ohne REA) aus verschiedenen Literaturquellen
+- p.173: Tab. 9.66: Wasserbedarf der Braun- und Steinkohlekraftwerke im UCTE-Raum.
+- p.174: Tab. 9.67: Abwärmeemissionen der bilanzierten Kraftwerke.
+- p.177: Tab. 9.69: Ascherückstände pro TJin für jedes Land und Verwertungsanteil mit resultierender Deponiemenge.
+- p.178: Tab. 9.70: Rückstände aus der (Ab)wasseraufbereitung von Kohlekraftwerken nach (VGB 1992)
+- p.179: Tab. 9.71 zeigt die Eingabedaten für das bilanzierte Stein- bzw. Braunkohlekraftwerk.
+- p.180: Tab. 9.71 Eingabedaten für das Stein- und Braunkohlekraftwerk.
+- p.180: Tab. 9.72 bis Tab. 9.85 fassen die Eingabedaten für die Verbrennung von Braunkohle bzw. Torf zur
+- p.181: Tab. 9.72 Eingabedaten für die Verbrennung von Braunkohle zur Stromerzeugung in Österreich.
+- p.182: Tab. 9.73 Eingabedaten für die Verbrennung von Braunkohle zur Stromerzeugung in Bosnien-Herzegowina.
+- p.183: Tab. 9.74 Eingabedaten für die Verbrennung von Braunkohle zur Stromerzeugung in Tschechien.
+- p.184: Tab. 9.75 Eingabedaten für die Verbrennung von Braunkohle zur Stromerzeugung in Deutschland.
+- p.185: Tab. 9.76 Eingabedaten für die Verbrennung von Braunkohle zur Stromerzeugung in Spanien.
+- p.186: Tab. 9.77 Eingabedaten für die Verbrennung von Braunkohle zur Stromerzeugung in Frankreich.
+- p.187: Tab. 9.78 Eingabedaten für die Verbrennung von Braunkohle zur Stromerzeugung in Griechenland.
+- p.188: Tab. 9.79 Eingabedaten für die Verbrennung von Braunkohle zur Stromerzeugung in Ungarn.
+- p.189: Tab. 9.80 Eingabedaten für die Verbrennung von Braunkohle zur Stromerzeugung in Mazedonien.
+- p.190: Tab. 9.81 Eingabedaten für die Verbrennung von Braunkohle zur Stromerzeugung in Polen.
+- p.191: Tab. 9.82 Eingabedaten für die Verbrennung von Braunkohle zur Stromerzeugung in Slowenien.
+- p.192: Tab. 9.83 Eingabedaten für die Verbrennung von Braunkohle zur Stromerzeugung in der Slowakei.
+- p.193: Tab. 9.84 Eingabedaten für die Verbrennung von Braunkohle zur Stromerzeugung in Serbien-Montenegro.
+- p.194: Tab. 9.85 Eingabedaten für die Verbrennung von Torf zur Stromerzeugung in NORDEL-Staaten.
+- p.195: Tab. 9.86 Eingabedaten für die Verbrennung von Steinkohle zur Stromerzeugung in Österreich.
+- p.196: Tab. 9.87 Eingabedaten für die Verbrennung von Steinkohle zur Stromerzeugung in Belgien.
+- p.197: Tab. 9.88 Eingabedaten für die Verbrennung von Steinkohle zur Stromerzeugung in Tschechien.
+- p.198: Tab. 9.89 Eingabedaten für die Verbrennung von Steinkohle zur Stromerzeugung in Deutschland.
+- p.199: Tab. 9.90 Eingabedaten für die Verbrennung von Steinkohle zur Stromerzeugung in Spanien.
+- p.200: Tab. 9.91 Eingabedaten für die Verbrennung von Steinkohle zur Stromerzeugung in Frankreich.
+- p.201: Tab. 9.92 Eingabedaten für die Verbrennung von Steinkohle zur Stromerzeugung in Kroatien.
+- p.202: Tab. 9.93 Eingabedaten für die Verbrennung von Steinkohle zur Stromerzeugung in Italien.
+- p.203: Tab. 9.94 Eingabedaten für die Verbrennung von Steinkohle zur Stromerzeugung in den Niederlanden.
+- p.204: Tab. 9.95 Eingabedaten für die Verbrennung von Steinkohle zur Stromerzeugung in Polen.
+- p.205: Tab. 9.96 Eingabedaten für die Verbrennung von Steinkohle zur Stromerzeugung in Portugal.
+- p.206: Tab. 9.97 Eingabedaten für die Verbrennung von Steinkohle zur Stromerzeugung in der Sloawkei.
+- p.207: Tab. 9.98 Eingabedaten für die Verbrennung von Steinkohle zur Stromerzeugung in den NORDEL-Staaten.
+- p.210: Tab. 10.1 sind die Materialaufwendungen für die Infrastruktur einiger Feuerungssysteme nach verschiedenen
+- p.210: Tab. 10.1: Abschätzung des Bau-/Infrastrukturaufwandes aus verschiedenen Quellen.
+- p.210: Tab. 10.2 fasst die in dieser Studie verwendeten Daten für die Infrastruktur zur Wärmeerzeugung zusammen.
+- p.211: Tab. 10.2: Abschätzung des Bau-/Infrastrukturaufwandes für die untersuchten Feuerungen in dieser Studie
+- p.212: Tab. 10.3: Angaben zur Zusammensetzung der eingesetzten Kohlensorten in den untersuchten Feuerungen.
+- p.213: Tab. 10.3: Fortsetzung
+- p.214: Tab. 10.4: Anhaltswerte für Spurenelementkonzentrationen von Braun- und Steinkohlen bei 10% Aschegehalt.
+- p.214: Tab. 10.5: Resultierender Kohleverbrauch, Transportleistung, Umwandlungswirkungsgrad End- zu Nutzenergie und
+- p.215: Tab. 10.6 sind die Angaben dazu aus (LfU 1998) angegeben. Hier kann ein durchschnittlicher
+- p.216: Tab. 10.6 Daten zu verschiedenen Braunkohlebriketts nach (LfU 1998).
+- p.216: Tab. 10.7: Aufteilung der NMVOC-Emissionen nach gesättigten, ungesättigten und aromatischen Kohlenwasserstoffen
+- p.217: Tab. 10.8: Auswurf in % des Inventars in der Kohle (eigene Abschätzungen).
+- p.217: Tab. 10.9: Dioxin- und Furanemissionen aus zwei Festbrennstoffkesseln mit unterem Abbrand (28 resp. 35 kW)
+- p.218: Tab. 10.10: Zusammenfassung der Emissionsfaktoren Luft für die untersuchten Feuerungen.
+- p.219: Tab. 10.11 Absolute Partikelemissionen und Grössenverteilungen verschiedener Kohlefeuerungen (AP-42 2002)
+- p.219: Tab. 10.12: Grössenverteilung der Partikelemissionen in dieser Studie, geschätzt nach (AP-42 2002).
+- p.219: Tab. 10.13: Emissionsfaktoren von Schwermetallen aus Industriefeuerungen (Pacyna 1986b)
+- p.220: Tab. 10.14 Transferkoeffizienten (TK) für Spurenelementemissionen aus Kohlefeuerungen zur Wärmeproduktion in %
+- p.221: Tab. 10.15 Aktivitäten der bei der Kohleverbrennung emittierten radioaktiven Elemente
+- p.222: Tab. 10.16: Abtransport von Asche und Ascheanfall
+- p.223: Tab. 10.17: Spezifische Flächenbeanspruchung für die verschiedenen Feuerungen.
+- p.224: Tab. 10.18 Zusammenstellung der Eingabedaten für die Infrastruktur der Kohlefeuerungen
+- p.225: Tab. 10.19: Eingabedaten für die Bereitstellung von Wärme mittels Braunkohlebriketts in einem Einzelofen.
+- p.226: Tab. 10.20 Eingabedaten für die Bereitstellung von Wärme mittels Steinkohlebriketts in einem Einzelofen.
+- p.227: Tab. 10.21 Eingabedaten für die Bereitstellung von Wärme mittels Anthrazit im Einzelofen.
+- p.228: Tab. 10.22 Eingabedaten für die Bereitstellung von Wärme mittels Koks im Einzelofen.
+- p.229: Tab. 10.23 Eingabedaten für die Bereitstellung von Wärme mit einer Steinkohle-Industriefeuerung.
+- p.231: Tab. 11.1 und Tab. 11.2 zeigen ausgewählte Ergebnisse der Sachbilanz und den kumulierten
+- p.231: Tab. 11.1 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für die Steinkohleförderung in den
+- p.232: Tab. 11.2 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für die Steinkohleförderung in den
+- p.232: Tab. 11.3 zeigt ausgewählte Ergebnisse der Sachbilanz und den kumulierten Energieaufwand für die
+- p.232: Tab. 11.3 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Benzol und Koksofengas (ecoinvent
+- p.233: Tab. 11.4 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Teer und Koks (ecoinvent data v1.01
+- p.233: Tab. 11.5 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Steinkohle-Versorgungsmix in AT,
+- p.234: Tab. 11.6 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Steinkohle-Versorgungsmix in NL,
+- p.234: Tab. 11.7 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Steinkohle ab Regionallager in den
+- p.235: Tab. 11.8 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Steinkohle ab Regionallager in den
+- p.235: Tab. 11.9 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Steinkohlebriketts und Steinkohlemix
+- p.235: Tab. 11.10 zeigt ausgewählte Ergebnisse der Sachbilanz und den kumulierten Energieaufwand für Wärme ab
+- p.236: Tab. 11.10 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Wärme ab Industriefeuerung und
+- p.236: Tab. 11.11 bis Tab. 11.14 fassen ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand
+- p.236: Tab. 11.11 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Strom ab Steinkohlekraftwerk in AT,
+- p.237: Tab. 11.12 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Strom ab Steinkohlekraftwerk in IT,
+- p.237: Tab. 11.13 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Strom ab Steinkohlekraftwerk in CZ,
+- p.238: Tab. 11.14 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Strom ab Steinkohlekraftwerk in SK
+- p.238: Tab. 11.15 zeigt ausgewählte Ergebnisse der Sachbilanz und den kumulierten Energieaufwand für
+- p.239: Tab. 11.15 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Braunkohle ab Bergwerk (ecoinvent
+- p.239: Tab. 11.16 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Braunkohlebriketts und –staub
+- p.239: Tab. 11.17 zeigt ausgewählte Ergebnisse der Sachbilanz und den kumulierten Energieaufwand für die
+- p.240: Tab. 11.17 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Wärme ab Braunkohlebrikettofen
+- p.240: Tab. 11.18 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Strom ab Braunkohlekraftwerk in AT,
+- p.241: Tab. 11.19 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Strom ab Braunkohlekraftwerk in GR,
+- p.241: Tab. 11.20 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für Strom ab Braunkohlekraftwerk in HU,
+- p.242: Tab. 11.21 Ausgewählte Ergebnisse der Sachbilanz und kumulierter Energieaufwand für
+- p.242: Fig. 11.1 zeigt die kumulierten länderspezifischen CO2-Emissionen aus der Stromerzeugung mit Braunkohle,
+- p.243: Fig. 11.1 Durchschnittliche CO2-Emissionen aus der Stromerzeugung in länderspezifischen Braunkohlekraftwerken
+- p.243: Fig. 11.2 zeigt die kumulierten länderspezifischen CH4-Emissionen aus der Stromerzeugung mit Braunkohle,
+- p.243: Fig. 11.2 Durchschnittliche CH4-Emissionen aus der Stromerzeugung in länderspezifischen Braunkohlekraftwerken
+- p.244: Fig. 11.3 zeigt die kumulierten länderspezifischen SO2-Emissionen aus der Stromerzeugung mit Braunkohle,
+- p.244: Fig. 11.3 Durchschnittliche SO2-Emissionen aus der Stromerzeugung in länderspezifischen Braunkohlekraftwerken.
+- p.244: Fig. 11.4 zeigt die kumulierten länderspezifischen NOx-Emissionen aus der Stromerzeugung mit
+- p.245: Fig. 11.4 Durchschnittliche NOx-Emissionen aus der Stromerzeugung in länderspezifischen Braunkohlekraftwerken.
+- p.245: Fig. 11.5 zeigt die kumulierten länderspezifischen PM2.5-Emissionen aus der Stromerzeugung mit
+- p.246: Fig. 11.5 Durchschnittliche PM2.5-Emissionen aus der Stromerzeugung in länderspezifischen Braunkohlekraftwerken.
+- p.246: Fig. 11.6 zeigt die kumulierten länderspezifischen PM10-Emissionen aus der Stromerzeugung mit
+- p.247: Fig. 11.6 Durchschnittliche PM10-Emissionen aus der Stromerzeugung in länderspezifischen Braunkohlekraftwerken.
+- p.247: Fig. 11.7 zeigt noch einmal die kumulierten länderspezifischen PM10-Emissionen aus der Stromerzeugung
+- p.248: Fig. 11.7 Durchschnittliche PM10-Emissionen aus der Stromerzeugung in länderspezifischen Braunkohlekraftwerken.
+- p.248: Fig. 11.8 zeigt die Anteile der verschiedenen Förderregionen am durchschnittlichen Steinkohle-
+- p.249: Fig. 11.8 Importanteile aus den verschiedenen Förderregionen zur durchschnittlichen Kraftwerkskohle der UCTE und
+- p.249: Fig. 11.9 zeigt die länderspezifischen CO2-Emissionen aus der Stromerzeugung in Steinkohlekraftwerken,
+- p.250: Fig. 11.9 Durchschnittliche CO2-Emissionen aus der Stromerzeugung in länderspezifischen Steinkohlekraftwerken.
+- p.250: Fig. 11.10 zeigt die länderspezifischen Methan-Emissionen aus der Stromerzeugung in
+- p.251: Fig. 11.10 Durchschnittliche CH4-Emissionen aus der Stromerzeugung in länderspezifischen Steinkohlekraftwerken.
+- p.251: Fig. 11.11 zeigt die länderspezifischen NOx-Emissionen aus der Stromerzeugung in Steinkohlekraftwerken,
+- p.252: Fig. 11.11 Durchschnittliche NOx-Emissionen aus der Stromerzeugung in länderspezifischen Steinkohlekraftwerken.
+- p.252: Fig. 11.12 zeigt die länderspezifischen SO2-Emissionen aus der Stromerzeugung in Steinkohlekraftwerken,
+- p.253: Fig. 11.12 Durchschnittliche SO2-Emissionen aus der Stromerzeugung in länderspezifischen Steinkohlekraftwerken.
+- p.253: Fig. 11.13 zeigt die länderspezifischen Partikel-Emissionen <2.5 µm aus der Stromerzeugung in
+- p.254: Fig. 11.13 Durchschnittliche PM2.5-Emissionen aus der Stromerzeugung in länderspezifischen Steinkohlekraftwerken.
+- p.254: Fig. 11.14 zeigt die länderspezifischen Partikel-Emissionen <10 µm aus der Stromerzeugung in
+- p.255: Fig. 11.14 Durchschnittliche PM10-Emissionen aus der Stromerzeugung in länderspezifischen Steinkohlekraftwerken.
+- p.255: Fig. 11.15 zeigt nochmals die länderspezifischen PM10-Emissionen aus der Stromerzeugung in
+- p.256: Fig. 11.15 Durchschnittliche PM10-Emissionen aus der Stromerzeugung in länderspezifischen Steinkohlekraftwerken.
+- p.256: Fig. 11.16 zeigt die kumulierten CO2-Emissionen aus der Wärmeproduktion mit den untersuchten
+- p.257: Fig. 11.16 Kumulierte CO2-Emissionen aus der Wärmeproduktion der untersuchten Kohleheizungen. (ecoinvent data v1.01
+- p.257: Fig. 11.17 zeigt die kumulierten SO2-Emissionen aus der Wärmeproduktion mit den untersuchten
+- p.258: Fig. 11.17 Kumulierte SO2-Emissionen aus der Wärmeproduktion der untersuchten Kohleheizungen. (ecoinvent data v1.01
+- p.258: Fig. 11.18 zeigt die kumulierten NOx-Emissionen aus der Wärmeproduktion mit den untersuchten
+- p.259: Fig. 11.18 Kumulierte NOx-Emissionen aus der Wärmeproduktion der untersuchten Kohleheizungen. (ecoinvent data v1.01
+- p.259: Fig. 11.19 zeigt die kumulierten PM10-Emissionen aus der Wärmeproduktion mit den untersuchten
+- p.259: Fig. 11.19 Kumulierte PM10-Emissionen aus der Wärmeproduktion der untersuchten Kohleheizungen. (ecoinvent data v1.01
+- p.262: Tab. 13.1 Materialaufwand im Kohlebergbau, Tagbau.
+- p.263: Tab. 13.2 Materialaufwand im Kohlebergbau, Untertagebau.
+- p.263: Tab. 13.3 und Tab. 13.4 zeigen Zusammensetzungen von Kohlebergen.
+- p.264: Tab. 13.3 Zusammensetzung verschiedener Berge.
+- p.264: Tab. 13.4 Zusammensetzung verschiedener Berge.
+- p.264: Tab. 13.5 und Tab. 13.6 zeigen Kokerei Emissionsdaten.
+- p.265: Tab. 13.5 Kokerei-Emissionen.
+- p.265: Tab. 13.6 Kokerei-Emissionen.
+- p.266: Tab. 13.7 Hochseetransport von Importkohle.
+- p.267: Tab. 13.8 Ausgewählte Daten zu Kohlekraftwerken in Österreich.
+- p.267: Tab. 13.9 Ausgewählte Daten zu Kohlekraftwerken in Belgien.
+- p.268: Tab. 13.10 Selected data for coal power plants in the Czech Republic (2005).
+- p.269: Tab. 13.11 Ausgewählte Daten zu Steinkohlekraftwerken in Deutschland.
+- p.270: Tab. 13.12 Ausgewählte Daten zu Steinkohlekraftwerken in Deutschland.
+- p.271: Tab. 13.13 Ausgewählte Daten zu Braunkohlekraftwerken in Deutschland.
+- p.272: Tab. 13.14 Ausgewählte Daten zu Kohlekraftwerken in Spanien.
+- p.273: Tab. 13.15 Ausgewählte Daten zu Kohlekraftwerken in Frankreich.
+- p.273: Tab. 13.16 Ausgewählte Daten zu Kohlekraftwerken in Griechenland.
+- p.274: Tab. 13.17 Selected data for lignite power plants in Hungary (2005).
+- p.274: Tab. 13.18 Ausgewählte Daten zu Kohlekraftwerken in Italien.
+- p.274: Tab. 13.19 Ausgewählte Daten zu Kohlekraftwerken in den Niederlanden.
+- p.275: Tab. 13.20 Selected data for hard coal power plants in Poland (2005).
+- p.276: Tab. 13.21 Selected data for hard coal power plants in Poland (2005).
+- p.277: Tab. 13.22 Selected data for hard coal power plants in Poland (2005).
+- p.277: Tab. 13.23 Selected data for lignite power plants in Poland (2005).
+- p.278: Tab. 13.24 Ausgewählte Daten zu Kohlekraftwerken in Portugal.
+- p.278: Tab. 13.25 Selected data for coal power plants in the Slovak republic (2005).
+- p.278: Tab. 13.26 Ausgewählte Daten zu Kohlekraftwerken in Slowenien.
+- p.278: Tab. 13.27 Ausgewählte Daten zu Kohlekraftwerken in Mazedonien.
+- p.279: Tab. 13.28 Ausgewählte Daten zu Kohlekraftwerken in Bosnien-Herzegowina.
+- p.279: Tab. 13.29 Ausgewählte Daten zu Kohlekraftwerken in Kroatien.
+- p.279: Tab. 13.30 Ausgewählte Daten zu Kohlekraftwerken in Serbien-Monenegro.
+- p.280: Tab. 13.31 Einzelofen - Emissionen (UBA 1987).
+- p.281: Tab. 13.32 Industriefeuerungs-Emissionen (UBA 1987).
+- p.282: Tab. 13.33 Industriefeuerungs-Emissionen (UBA 1987).
+- p.283: Tab. 13.34 Feuerungsemissionen (Braun et al. 1991).
+- p.284: Tab. 13.35 Emissionsdaten von Durchbrandöfen mit Anthrazit.
+- p.285: Tab. 13.36 Emissionsdaten von Durchbrandöfen mit Steinkohlenkoks.
+- p.286: Tab. 13.37 Emissionsdaten von Durchbrandöfen mit Steinkohlenbriketts.
+- p.287: Tab. 13.38 Emissionsdaten von Durchbrandöfen mit Braunkohlenbriketts.
+- p.288: Tab. 13.39 Emissionsdaten von Universaldauerbrennern mit Braunkohlenbriketts
+- p.289: Tab. 13.40 Emissionsdaten von Steinkohle-Industriefeuerungen.
+- p.292: Figure 15.1 Schematic of the modelled coal chain for China in ecoinvent data v2.0.
+- p.293: Table 15.1 Dataset “underground mine, hard coal (CN)” in ecoinvent data v2.0.
+- p.294: Table 15.2 Dataset “hard coal, at mine (CN)” in ecoinvent data v2.0.
+- p.294: Table 15.3 shows the dataset “hard coal supply mix (CN)”, describing the transport requirements from mines
+- p.295: Table 15.3 Dataset “hard coal supply mix (CN)” in ecoinvent data v2.0.
+- p.296: Table 15.4 through Table 15.7 show the four datasets named above. In Table 15.4 and Table 15.5 all
+- p.297: Table 15.4 Dataset “hard coal, burned in coal mine power plant (CN)” in ecoinvent data v2.0.
+- p.298: Table 15.5 Dataset “hard coal, burned in power plant (CN)” in ecoinvent data v2.0.
+- p.298: Table 15.6 Dataset “electricity, hard coal, at coal mine power plant (CN)” in ecoinvent data v2.0.
+- p.299: Table 15.7 Dataset “electricity, hard coal, at power plant (CN)” in ecoinvent data v2.0.
+- p.300: Figure 16.2 shows a diagram of the adopted model of the US hard coal chain. There is one main difference
+- p.301: Figure 16.1 Regional Reliability Councils of the NERC ; (ERCOT=Electric Reliability Council of Texas; FRCC=Florida Reliability
+- p.301: Figure 16.2 Schematic figure of the US hard coal chain, modelled in ecoinvent 2.0.
+- p.302: Table 16.1 Inventory data for US hard coal production (Röder et al. 2004).
+- p.303: Table 16.2 Emission to groundwater from hard coal mining: comparison of the data from (NREL 2006) with the corresponding
+- p.303: Table 16.3 shows the original values for means and distances of hard coal transport according to (NREL
+- p.303: Table 16.3 US average hard coal transport, distances and means of transport (NREL 2006) (left), and corresponding ecoinvent
+- p.304: Table 16.4 Inventory data for freight transport by diesel train in the US.
+- p.304: Table 16.5 Inventory data for US coal supply mix at regional storage.
+- p.305: Table 16.6 Average capacity of US hard coal power plants for the eight modelled NERC region (weighted with electricity
+- p.306: Table 16.7 Inventory data of the two power plant infrastructure datasets, used for the US coal chain.
+- p.306: Table 16.8 Characterization of different US hard coal qualities (Hinrichs et al. 1999, MIT 2007) , used for the modeling the
+- p.307: Figure 16.3 Distribution of coal reserves by type in the U.S. (MIT 2007).
+- p.308: Table 16.9 Key characteristics and air emission factors for criteria pollutants per NERC region in year 2004 after (eGRID 2006).
+- p.309: Table 16.10 and Table 16.11 show the inventory data for the eight NERC region-specific datasets for hard
+- p.310: Table 16.10 Inventory data for the operation of hard coal power plants in the NERC regions ERCOT, FRCC, MRO, and
+- p.311: Table 16.11 Inventory data for the operation of hard coal power plants in the NERC regions RFC, SERC, SPP, and
+- p.312: Table 16.12 shows the average net efficiencies of hard coal power plants in each NERC region, the
+- p.312: Table 16.13 and Table 16.14 show the inventory data for the datasets for electricity at busbar.
+- p.312: Table 16.12 Net efficiencies of hard coal power plants in NERC regions and resulting key emission rates per kWh net
+- p.312: Table 16.13 Inventory data for electricity production at hard coal power plant in the NERC regions ERCOT, FRCC, MRO,
+- p.312: Table 16.14 Inventory data for electricity production at hard coal power plant in the NERC regions RFC, SERC, SPP, and
+- p.312: Table 16.15 shows the inventory data of the datasets for electricity, at hard coal power plant, in the US. The
+- p.313: Table 16.15 Inventory data for electricity production at hard coal power plant in the US.
+
+Rules:
+1. Choose the caption(s) that hold the unit-process inventory of this dataset — inputs, energy, emissions, transport — not impact results, not a diagram. Prefer "Sachbilanz" / "inventory" / "LCI" tables.
+2. Return the PDF page range that covers those tables plus the paragraph introducing them: `first_page`, `last_page` (at most 4 pages). Tables can run onto the next page.
+3. If no caption fits (the report does not document this dataset's inventory, or only as a result), return `found` = false and say why in `reason`.
+4. `reason` names the caption(s) you chose and why.
+
+Return only the JSON object described by the schema.

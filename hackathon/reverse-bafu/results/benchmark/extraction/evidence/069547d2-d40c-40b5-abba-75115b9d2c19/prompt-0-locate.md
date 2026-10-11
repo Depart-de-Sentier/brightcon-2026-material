@@ -1,0 +1,475 @@
+You are locating the inventory table of one dataset inside a life-cycle-inventory report.
+
+Dataset: `Nuclear spent fuel, in conditioning, at plant` [CH], 1 kg, BAFU category nuclear waste / unspecified.
+Metadata: includedProcesses: It includes transport of spent fuel elements and steel for canister, requirement of steel for canisters, steel welding, electricity consumption, and infrastructure requirement. · technology: Estimation of current technologies · comment: Complying with the current Swiss project for repository of high active waste, a distance of 70 km for transport of spent fuel elements from the intermediate repository (or power plant) to the conditioning plant is assumed. This plant is hypothesized at the same site of the repository, although the f
+
+Report: `2009 - Nuclear energy - Dones.pdf` (480 PDF pages). Below is every table and figure caption found in it, with the PDF page it appears on (not the printed page number). The report may be in German, French or English; the dataset name is English — match on meaning (e.g. "gebrannter Ölschiefer" = burnt shale, "Gipsfaserplatte" = gypsum fibre board).
+
+- p.27: Tab. 1.1 zeigt eine Übersicht der vorhandenen Mengen an verschieden Ressourcenkategorien nach
+- p.28: Tab. 1.1 Weltweite konventionelle Uranressourcen in 1000 t U (NEA/OECD 2002).
+- p.29: Fig. 1.1 Historische Uranproduktion und KKW-Bedarf in ausgewählten Ländern von 1965 bis 2001 und weltweit
+- p.30: Tab. 2.1 Schweizerische Kernkraftwerke (Jahr 2002) nach (HSK 2003).
+- p.30: Tab. 2.2 Installierte Netto-Leistungen der DWR und SWR in den UCTE-Ländern, Stand Ende 1999 (Van der Stricht &
+- p.32: Tab. 2.3 Herkunft der Dienstleistungen im Brennstoffkreislauf für die KKW-CH (Patak 1996; SBK 1992). Aus der
+- p.35: Fig. 3.1 Verknüpfung der nuklearen Brennstoffkreislauf-Schritte.
+- p.37: Fig. 3.2 Informationsstand der nuklearen Brennstoffkreislauf-Schritte für diese Studie.
+- p.40: Tab. 4.1 Uranproduktion in der Welt (NEA/OECD 2002).
+- p.41: Tab. 4.2 zeigt die zuvor beschriebene Situation, wiedergegeben bis Mitte der 90er Jahre. Aufgrund des
+- p.41: Tab. 4.2 Herkunft der Uranerzabbau- und Erzaufbereitungsdienste für die schweizerischen KKW (SBK 1992).
+- p.42: Tab. 4.3 beschreibt den hier bilanzierten Durchschnittsdatensatz, für welchen die Anteile von Tagebau
+- p.43: Tab. 4.3 Förderanteile für den Datensatz “Uran in Uranerz”.
+- p.43: Tab. 4.4 Qualitätsgrenzen der abgebauten Materials.
+- p.45: Tab. 4.5 Zusammenstellung der Referenzen für die Uranerzminen.
+- p.46: Tab. 4.6 Charakteristische Daten der ORNL-Referenz-Minen.
+- p.47: Tab. 4.7 Materialbedarf der Minen (DOE 1983) und (El-Bassioni et al. 1980).
+- p.48: Tab. 4.8 Gepumpte Wassermengen der Tagebau-Minen (Young et al. 1982; DOE 1983; DOE 1981; Wymer et al. 1981;
+- p.48: Tab. 4.9 Gepumpte Wassermengen der Tiefbau-Minen (Schneider 1982; DOE 1983; El-Bassioni et al. 1980.
+- p.49: Tab. 4.10 Energiebedarf der Tagebau-Minen (Young et al. 1982; DOE 1983; Oszusky 1976).
+- p.49: Tab. 4.12 zeigt die verfügbaren Informationen. Beim Tiefbau entsteht wenig taubes Gestein, welches
+- p.50: Tab. 4.11 Energiebedarf der Tiefbau-Minen (Schneider 1982; DOE 1983).
+- p.51: Tab. 4.12 Radonemissionen beim Uranerzabbau der Key Lake Mine (Pink et al. 1984).
+- p.51: Tab. 4.13 Radioaktive Luftemissionen beim Betrieb von Tagebau-Minen (Pink et al. 1984; El-Bassioni et al. 1980;
+- p.52: Tab. 4.14 Radioaktive Luftemissionen beim Betrieb von Tiefbau-Minen (Hohn et al. 1992; Schneider 1982;
+- p.53: Tab. 4.15 Nicht-radioaktive Luftemissionen beim Betrieb von Tiefbau-Minen (Schneider 1982; DOE 1983).
+- p.54: Tab. 4.16 Radioaktivitäten im Wasser von drei US-Tagebau-Minen (Schneider 1982).
+- p.54: Tab. 4.17 Radioaktive Wasseremissionen und Konzentrationen im Wasser beim Betrieb von Tagebau-Minen
+- p.54: Tab. 4.18 Konzentrationen nicht-radioaktiver Stoffe im Wasser einiger US-Tagebau-Minen (Schneider 1982).
+- p.55: Tab. 4.19 Nicht-radioaktive Wasseremissionen und Konzentrationen im Wasser beim Betrieb von Tagebau-Minen
+- p.55: Tab. 4.20 zeigt normierte Mengen- und Aktivitäts-Werte radioaktiver Wasseremissionen beim Betrieb
+- p.56: Tab. 4.20 Radioaktive Wasseremissionen beim Betrieb von Tiefbau-Minen (Schneider 1982) und
+- p.56: Tab. 4.21 Nicht-rad. Wasseremissionen beim Tiefbau-Minen-Betrieb (Schneider 1982) und (El-Bassioni et al. 1980).
+- p.59: Tab. 4.22 Flächeninanspruchnahme der Tagebau-Minen (Young et al. 1982; DOE 1983; DOE 1981).
+- p.59: Tab. 4.23 Flächeninanspruchnahme der Tiefbau-Minen (Schneider 1983; DOE 1983).
+- p.60: Tab. 4.24 bis Tab. 4.26 fassen die Eingabedaten für dieses Kapitel zusammen.
+- p.60: Tab. 4.24 Zusammenstellung der Eingabedaten für die Datensätze der Infrastruktur "Uranerzabbau, Tagebau" und
+- p.61: Tab. 4.25 Zusammenstellung der Eingabedaten für den Datensatz "Uran, in Uranerz, aus Untertagebaumine".
+- p.62: Tab. 4.26 Zusammenstellung der Eingabedaten für den Datensatz "Uran, in Uranerz, aus Tagebaumine".
+- p.66: Tab. 5.1 Uranerzaufbereitungsdaten in t/Jahr (NEI 2001).
+- p.71: Tab. 5.2 Materialbedarf für den Bau der DOE-Referenz-Aufbereitungsanlage (DOE 1983).
+- p.71: Tab. 5.3 Energieverbrauch für den Bau der ORNL-Referenz-Aufbereitungsanlage (El-Bassioni et al. 1980).
+- p.73: Tab. 5.4 Chemikalienbedarf der Aufbereitungsanlagen mit saurer Laugung (DOE 1983; Young et al. 1982;
+- p.73: Tab. 5.5 Wasserbedarf der Aufbereitungsanlagen (Moffett et al. 1991; DOE 1983; Schneider 1982; DOE 1981).
+- p.74: Tab. 5.6 Energiebedarf für den Betrieb der Aufbereitungsanlagen (Pink et al. 1984; El-Bassioni et al. 1980;
+- p.74: Tab. 5.7 zeigt für diese Anlage die Radonfreisetzung bei den verschiedenen Arbeitsgängen. Neben der
+- p.75: Tab. 5.7 Radonfreisetzung bei der Uranerzaufbereitung in der Key Lake Anlage (Pink et al. 1984).
+- p.75: Tab. 5.8 Radioaktive Emissionen im Staub bei der Key Lake Aufbereitungsanlage (Pink et al. 1984).
+- p.76: Tab. 5.9 Radioaktive Luftemissionen beim Betrieb der Aufbereitungsanlagen (UNSCEAR 1993; UNSCEAR 1988;
+- p.76: Tab. 5.10 Nicht-radioaktive Prozess-Luftemissionen beim Betrieb der Aufbereitungsanlagen (Schneider 1982;
+- p.77: Tab. 5.11 Radioaktive Wasseremissionen beim Betrieb (und nach Betrieb) der Aufbereitungsanlagen (UI 1995;
+- p.79: Tab. 5.12 Radioaktive feste Rückstände beim Betrieb der Aufbereitungsanlagen (El-Bassioni et al. 1980; DOE 1983).
+- p.80: Tab. 5.13 Ausgewählte Hintergrundkonzentrationen von Radon in der Aussenluft ((UMTSP 1986) nach versch.
+- p.85: Tab. 5.14 Zusammenfassung der Aufbereitungsanlagen für verschiedene Klimazonen nach (Senes 1998; EPA 1983).
+- p.85: Tab. 5.15 Zusammenfassung des erwarteten durchschnittlichen Radon-Fluxes von Schlammteichen für verschiedene
+- p.86: Tab. 5.16 Sensitivitätsanalyse für Radon-Langzeitemissionen von Schlammteichen.
+- p.89: Tab. 5.17 Flächeninanspruchnahme einiger Aufbereitungsanlagen (Young et al. 1982; Schneider 1982;
+- p.90: Tab. 5.18 bis Tab. 5.22 zeigen die gesamten Eingabedaten der Datensätze zur Modellierung der
+- p.90: Tab. 5.18 Zusammenstellung der Eingabedaten für den Datensatz "Uranerzaufbereitung".
+- p.91: Tab. 5.19 Zusammenstellung der Eingabedaten für den Datensatz "Uran natürlich, in Urankonzentrat".
+- p.92: Tab. 5.20 Zusammenstellung der Eingabedaten für den Datensatz "Schlammteich, aus Uranauferzaufbereitung".
+- p.93: Tab. 5.21 Zusammenstellung der Eingabedaten für den Datensatz " Entsorgung, Schlämme aus Uranerzaufbereitung,
+- p.94: Tab. 5.22 Zusammenstellung der Eingabedaten für den Datensatz " Entsorgung, Schlämme aus Uranerzaufbereitung,
+- p.97: Tab. 6.1 Konversionskapazitäten der westlichen Welt (NEI 2001; FCR 1991).
+- p.97: Tab. 6.2 Herkunft der Konversionsdienste für die schweizerischen Kernkraftwerke (SBK 1992).
+- p.98: Fig. 6.1 Produktionsschritte der verschiedenen Konversionsverfahren (Pickert et al. 1981).
+- p.100: Tab. 6.3 ersichtlich. Für die Normierung der Metropolis, resp. Sequoyah-Anlage-Daten wurden die
+- p.100: Tab. 6.3 Kapazitäten der Konversionsanlagen (Schneider 1982), (Perkins 1982), (El-Bassioni et al. 1980) und
+- p.101: Tab. 6.4 Materialbedarf für den Bau der Konversionsanlagen (El-Bassioni et al. 1980; DOE 1983).
+- p.101: Tab. 6.5 Gesamtenergieverbrauch für den Bau der ORNL-Referenz-Anlage (El-Bassioni et al. 1980).
+- p.101: Tab. 6.6 Uranbilanz der Sequoyah-Anlage (Schneider 1982; Perkins 1982).
+- p.102: Tab. 6.7 Betriebsmaterial-Verbrauchswerte der Metropolis-Produktions-Anlage (Perkins 1982).
+- p.103: Tab. 6.8 Betriebsmaterial-Verbrauchswerte der Sequoyah-Produktions-Anlage (Schneider 1982).
+- p.103: Tab. 6.9 Wasserbedarf für den Betrieb der Anlagen (Perkins 1982; DOE 1983).
+- p.104: Tab. 6.10 Energiebedarf für den Betrieb der Referenz-Anlagen (El-Bassioni et al. 1980; DOE 1983).
+- p.105: Tab. 6.11 Radioaktive Luftemissionen beim Betrieb der Konversions-Anlagen (Perkins 1982), (Schneider 1982),
+- p.105: Tab. 6.12 Luftemissionen der kanadischen Konversionsanlagen (UNSCEAR 1988).
+- p.106: Tab. 6.13 Gesamte Aktivitätsabgaben in die Luft der Springfiels-Anlage (NEI 2001).
+- p.106: Tab. 6.14 zeigt eine Zusammenstellung der nicht-radioaktiven Luftemissionen der Konversionsanlage.
+- p.106: Tab. 6.14 Nicht-radioaktiven Luftemissionen beim Betrieb der Konversionsanlagen (Perkins 1982), (Schneider 1982),
+- p.107: Tab. 6.15 Werte der radioaktiven Wasseremissionen beim Betrieb der Anlagen (Perkins 1982; Schneider 1982;
+- p.107: Tab. 6.16 Radioaktive Wasseremissionen der kanadischen Konversionsanlagen (UNSCEAR 1988).
+- p.108: Tab. 6.17 Gesamte Aktivitätsabgaben ins Wasser der Springfields-Anlage (NEI 2001).
+- p.109: Tab. 6.18 Werte der nicht-radioaktiven Wasseremissionen beim Betrieb der Anlagen (Perkins 1982; Schneider 1982;
+- p.110: Tab. 6.19 Radionuklide in der Fluorierungs-Asche der Metropolis-Anlage (Perkins 1982).
+- p.110: Tab. 6.20 Radionuklide in der Fluorierungs-Asche der Metropolis-Anlage (Schneider 1982).
+- p.111: Tab. 6.21 eingetragenen normierten Werte berechnet. Der eingetragene Wert für Uran ist etwas kleiner
+- p.111: Tab. 6.21 Radionuklide im Nass-"raffinate" Schlamm der Sequoyah-Anlage (Perkins 1982).
+- p.113: Tab. 6.22 Feste Abfälle beim Betrieb der Anlagen (Perkins 1982), (Schneider 1982), (El-Bassioni et al. 1980) und
+- p.116: Tab. 6.23 Flächeninanspruchnahme von Konversions-Anlagen (DOE 1983; Perkins 1982; Schneider 1982).
+- p.117: Tab. 6.24 und Tab. 6.25 fassen die Eingabedaten für die beiden Datensätze dieses Kapitels zusammen.
+- p.117: Tab. 6.24 Zusammenstellung der Eingabedaten für den Datensatz: 'Uran Konversion'.
+- p.118: Tab. 6.25 Zusammenstellung der Eingabedaten für den Datensatz: 'Uran natürlich in Uranhexafluorid'.
+- p.121: Tab. 7.1 Übersicht über die kommerziellen Anreicherungsanlagen (NEI 2001; FCR 1991).
+- p.122: Tab. 7.2 Durchsätze und Betriebsdauer der Referenz-Anreicherungsanlagen der Studien (El-Bassioni et al. 1980;
+- p.125: Tab. 7.3 Herkunft der Anreicherungsdienste für die schweizerischen Kernkraftwerke Mitte 90er Jahre (Patak 1996;
+- p.127: Tab. 7.4 In dieser Studie angenommene Anreicherungs-Versorgungsmixe.
+- p.127: Tab. 7.5 Anreicherung, Trennarbeit und Uranbedarf für die angenommenen Ketten für die schweizerischen und
+- p.128: Tab. 7.6 Energiebedarf während des Betriebs der ORNL- und DOE-Referenz-Anreicherungsanlagen (DOE 1983;
+- p.131: Tab. 7.7 Materialbedarf für den Bau der Modell-Anreicherungsanlagen (El-Bassioni et al. 1980; DOE 1983).
+- p.132: Tab. 7.8 Energiebedarf für den Bau der ORNL-Referenz-Anreicherungsanlagen (El-Bassioni et al. 1980).
+- p.133: Tab. 7.9 Betriebsmaterialverbrauch der ORNL-Zentrifugen-Referenz-Anlage (El-Bassioni et al. 1980).
+- p.134: Tab. 7.10 Chemikalien- und Energiebedarf für eine Urenco Zentrifugen-Anreicherungsanlage; nach (Urenco 1993) und
+- p.136: Tab. 7.11 Energiebedarf für den Abbruch der ORNL-Referenz-Anreicherungsanlagen (El-Bassioni et al. 1980).
+- p.136: Tab. 7.12 Radioaktive Betriebs-Luftemissionswerte ab Diffusions-Referenz-Anlagen (El-Bassioni et al. 1980;
+- p.137: Tab. 7.13 Radioaktive Betriebs-Luftemissionswerte der Zentrifugenanlagen (Urenco 2000, 1994; El-Bassioni
+- p.138: Tab. 7.14 Nicht-radioaktive Luftemissionen beim Betrieb der Diffusionsanlagen (El-Bassioni et al. 1980; DOE 1983).
+- p.139: Tab. 7.15 Nicht-radioaktive Luftemissionen während dem Betrieb von Zentrifugenanlagen (Urenco 2000, 1994;
+- p.139: Tab. 7.16 zeigt die radioaktiven Wasseremissionen der ORNL- und DOE-Diffusions-Referenz-
+- p.140: Tab. 7.16 Radioaktive Wasseremissionen beim Betrieb der Diffusions-Anreicherungsanlagen (El-Bassioni et al. 1980;
+- p.140: Tab. 7.17 Radioaktive Wasseremissionen beim Betrieb der Zentrifugen-Anreicherungsanlagen (Urenco 2000, 1994;
+- p.141: Tab. 7.18 Radioaktive Wasseremissionen der Capenhurst Anlagen (Urenco 1994; MAFF 1993, 1992).
+- p.141: Tab. 7.19 enthält normierte, nicht-radioaktive Emissionswerte der ORNL- und DOE-Diffusions-
+- p.142: Tab. 7.19 Nicht-radioaktive Wasseremissionen beim Betrieb der Diffusions-Anreicherungsanlagen (DOE 1983;
+- p.142: Tab. 7.20 Nicht-radioaktive Emissionen von Zentrifugenanlagen (Urenco 1994; DOE 1983; El-Bassioni et al. 1980).
+- p.143: Tab. 7.21 Feste schwachaktive Betriebs-Abfallmengen der ORNL-Zentrifugen-Referenz-Anlage; nach
+- p.143: Tab. 7.22 Feste Abfälle durch den Betrieb von europäischen Zentrifugenanlagen; nach (Urenco 2000, 1994, 1993).
+- p.144: Tab. 7.23 Schwachaktiver Abbruch-Abfall der ORNL-Referenz-Anlagen (El-Bassioni et al. 1980).
+- p.146: Tab. 7.24 zeigt eine Zusammenstellung des spezifischen Flächenbedarfs der Georges Besse- und der in
+- p.146: Tab. 7.24 Flächeninanspruchnahme von Diffusions- und Zentrifugenanlagen.
+- p.147: Tab. 7.25 bis Tab. 7.50 fassen die Eingabedaten für die Datensätze dieses Kapitels zusammen.
+- p.147: Tab. 7.25 Infrastruktur-Datensatz „Anreicherung Zentrifuge“.
+- p.148: Tab. 7.26 Infrastruktur-Datensatz „Anreicherung Diffusion“.
+- p.149: Tab. 7.27 Eingabedaten für „Uran, angereichert 3.8% URENCO“.
+- p.150: Tab. 7.28 Eingabedaten für „Uran, angereichert 3.8% TENEX“.
+- p.151: Tab. 7.29 Eingabedaten für „Uran, angereichert 3.8% EURODIF“.
+- p.151: Tab. 7.30 Eingabedaten für „Uran, angereichert 3.8% USEC“.
+- p.152: Tab. 7.31 Eingabedaten für „Uran, angereichert 3.9% Urenco“.
+- p.153: Tab. 7.32 Eingabedaten für „Uran, angereichert 3.9% TENEX“.
+- p.154: Tab. 7.33 Eingabedaten für „Uran, angereichert 3.9% EURODIF“.
+- p.154: Tab. 7.34 Eingabedaten für „Uran, angereichert 3.9% USEC“. Uncertainty Type
+- p.155: Tab. 7.35 Eingabedaten für „Uran, angereichert 4.0% URENCO“.
+- p.156: Tab. 7.36 Eingabedaten für „Uran, angereichert 4.0% TENEX“.
+- p.157: Tab. 7.37 Eingabedaten für „Uran, angereichert 4.0% EURODIF“.
+- p.157: Tab. 7.38 Eingabedaten für „Uran, angereichert 4.0% USEC“.
+- p.158: Tab. 7.39 Eingabedaten für „Uran, angereichert 4.2% URENCO“.
+- p.159: Tab. 7.40 Eingabedaten für „Uran, angereichert 4.2% TENEX“.
+- p.160: Tab. 7.41 Eingabedaten für „Uran, angereichert 4.2% EURODIF“.
+- p.160: Tab. 7.42 Eingabedaten für „Uran, angereichert 4.2% USEC“.
+- p.161: Tab. 7.43 Eingabedaten für „Uran, angereichert 4.2%, für Druckwasserreaktor“, CH.
+- p.161: Tab. 7.44 Eingabedaten für „Uran, angereichert 4.2%, Zentrifuge, für Druckwasserreaktor“, CH.
+- p.161: Tab. 7.45 Eingabedaten für „Uran, angereichert 4.0%, für Druckwasserreaktor“, DE.
+- p.161: Tab. 7.46 Eingabedaten für „Uran, angereichert 3.8%, für Druckwasserreaktor“, FR.
+- p.162: Tab. 7.47 Eingabedaten für „Uran, angereichert 3.9%, für Druckwasserreaktor“, UCTE.
+- p.162: Tab. 7.48 Eingabedaten für „Uran, angereichert 3.8%, für Siedewasserreaktor“, CH.
+- p.162: Tab. 7.49 Eingabedaten für „Uran, angereichert 4.0%, für Siedewasserreaktor“, DE. Uncerta
+- p.162: Tab. 7.50 Eingabedaten für „Uran, angereichert 4.0%, für Siedewasserreaktor“, UCTE.
+- p.165: Tab. 8.1 gibt einen Überblick über die kommerziellen westeuropäischen und nordamerikanischen
+- p.165: Tab. 8.1 Übersicht über die kommerziellen nuklearen Brennelement-Fabriken (NEI 2001).
+- p.166: Tab. 8.2 gibt einen Überblick über Herkunft der in den schweizerischen Kernkraftwerken eingesetzten
+- p.166: Tab. 8.2 Herkunft der Dienstleistungen für die Brennelementherstellung für die schweizerischen Kernkraftwerke
+- p.167: Tab. 8.3 Brennstoff und Brennelementdaten des KKG und KKL (Meier 1991; BBC et al. 1980; KWU 1981).
+- p.168: Tab. 8.4 Durchsätze der Referenz-Brennelementfabrikationsanlagen aus der ersten Auflage dieser Studie.
+- p.168: Tab. 8.5 Materialbedarf für den Bau der BE-Herstellungsanlagen (DOE 1983; El-Bassioni et al. 1980).
+- p.169: Tab. 8.6 Spezifischer Trennarbeitsbedarf der frischen Urandioxid-Brennelemente (ohne MOX) und angenommener
+- p.170: Tab. 8.7 Energiebedarf während des Betriebs der BE-Fabrikationsanlagen (Pink et al. 1984; DOE 1983;
+- p.171: Tab. 8.8 zeigt die einzigen verfügbaren Daten über radioactive Luftemissionen aus der UO2-
+- p.171: Tab. 8.10 gezeigt sind. Für diese Studie wird ein Wert von 1E-4 kBq/kgU als U-alpha Emission
+- p.171: Tab. 8.8 Aktivitätsabgaben über Alpha-Aerosole des ANF, Lingen (DE) an die Abluft (BMU 1999-2002).
+- p.171: Tab. 8.9 Aktivitätsabgaben über Alpha-Aerosole des SIEMENS Werks Hanau (DE) an die Abluft (BMU 1995, 1996).
+- p.172: Tab. 8.10 Radioaktive Luftemissionen der Brennelement-Fertigungsanlagen aus älteren Referenzen (Pink et al. 1984;
+- p.172: Tab. 8.11 Nicht radioaktive Luftemissionen der Hanau-Anlage (vor 1984) (Pink et al. 1984).
+- p.172: Tab. 8.12 Nicht-radioaktive Prozess-Luftemissionen der Brennelement-Fertigungsanlagen aus älteren Quellen
+- p.173: Tab. 8.13 Abgaben von Alpha-Aktivität des SIEMENS Werks Hanau (DE) an die Abluft (BMU 1995-1996).
+- p.173: Tab. 8.14 zeigt die verfügbaren Daten aus den älteren Quellen. Der behördliche Grenzwert für
+- p.173: Tab. 8.14 Radioaktive Wasseremissionen der Brennelement-Fertigungsanlagen (Pink et al. 1984; Perkins 1983;
+- p.174: Tab. 8.15 Nicht radioaktive Wasseremissionen der Brennelementfertigungs-Referenz-Anlagen (DOE 1983),
+- p.174: Tab. 8.16 Betriebsdaten der nicht radioaktiven Wasserabgaben der Columbia-Anlage bei einem jährlichen Durchsatz
+- p.175: Tab. 8.17 Feste Betriebsabfälle der Brennelementfertigungs-Anlagen (Pink et al. 1984; DOE 1983; El-Bassioni
+- p.177: Tab. 8.18 Flächeninanspruchnahme der Columbia-Anlage und der DOE-Referenz-Anlage.
+- p.178: Tab. 8.19 Zusammenstellung der Eingabedaten den Infrastrukturdatensatz der Brennelementherstellungsanlage.
+- p.179: Tab. 8.20 Zusammenstellung der Eingabedaten für den Datensatz „Uran angereichert 4.2%, in Brennelement für
+- p.180: Tab. 8.21 Zusammenstellung der Eingabedaten für den Datensatz „Uran angereichert 4.2%, Anreicherung Zentrifuge,
+- p.181: Tab. 8.22 Zusammenstellung der Eingabedaten für den Datensatz „Uran angereichert 4.0%, in Brennelement für
+- p.182: Tab. 8.23 Zusammenstellung der Eingabedaten für den Datensatz „Uran angereichert 3.8%, in Brennelement für
+- p.183: Tab. 8.24 Zusammenstellung der Eingabedaten für den Datensatz „Uran angereichert 3.9%, in Brennelement für
+- p.184: Tab. 8.25 Zusammenstellung der Eingabedaten für den Datensatz „Uran angereichert 4.0%, in Brennelement für
+- p.185: Tab. 8.26 Zusammenstellung der Eingabedaten für den Datensatz „Uran angereichert 3.8%, in Brennelement für
+- p.186: Tab. 8.27 Zusammenstellung der Eingabedaten für den Datensatz „MOX Brennelement, ab Brennelementherstellung;
+- p.186: Tab. 8.28 Zusammenstellung der Eingabedaten für den Datensatz „Brennelement DWR, UO2 4.2% & MOX, ab
+- p.187: Tab. 8.29 Zusammenstellung der Eingabedaten für den Datensatz „Brennelement DWR, UO2 4.2% & MOX,
+- p.187: Tab. 8.30 Zusammenstellung der Eingabedaten für den Datensatz „Brennelement DWR, UO2 4.0% & MOX, ab
+- p.187: Tab. 8.31 Zusammenstellung der Eingabedaten für den Datensatz „Brennelement DWR, UO2 3.8% & MOX, ab
+- p.187: Tab. 8.32 Zusammenstellung der Eingabedaten für den Datensatz „Brennelement DWR, UO2 3.9% & MOX, ab
+- p.188: Tab. 8.33 Zusammenstellung der Eingabedaten für den Datensatz „Brennelement SWR, UO2 4.2% & MOX, ab
+- p.188: Tab. 8.34 Zusammenstellung der Eingabedaten für den Datensatz „Brennelement SWR, UO2 4.0% & MOX, ab
+- p.191: Tab. 9.1 Nettostromerzeugung der schweizerischen Kernkraftwerke in den Jahren 1995 – 2002 (HSK 1996 – 2003)
+- p.191: Tab. 9.3 zeigt die wichtigsten Betriebsdaten der hier modellierten KKG und KKL.
+- p.192: Tab. 9.2 Produktionsdaten des KKG und KKL im Kalenderjahr 1991 und 1992 (HSK 1992a, 1993; KKL 1992b, 1993;
+- p.192: Tab. 9.3 Betriebsdaten des KKG und KKL.
+- p.194: Fig. 9.1 Situationsplan des KKG.
+- p.195: Tab. 9.4 ersichtlich.
+- p.196: Fig. 9.2 Reaktorgebäude: Grundriss und Querschnitt.
+- p.199: Fig. 9.3 Situationsplan des KKL.
+- p.202: Tab. 9.4 Hauptdaten der KKW- Gösgen und- Leibstadt (SVA 1992c; Meier 1991; BBC et al. 1980; KWU 1981;
+- p.205: Tab. 9.5 Elektrischer Energiebedarf während der Bauphase des KKL (Strickler 1983).
+- p.206: Tab. 9.6 Zusammenstellung der Volumina und Massen der Materialien für den Bau der KKG und KKL (nach
+- p.208: Tab. 9.7 Material- und Dienstleistungsbedarf für das KKL und KKG.
+- p.209: Tab. 2.2 zeigt die installierte Netto-Leistungen der DWR und SWR in den UCTE-Ländern,
+- p.209: Tab. 9.8 Installierte Netto-Leistungen der DWR und SWR in den UCTE-Ländern, Stand Ende 1999 (Van der Stricht &
+- p.209: Tab. 9.10 zeigt die Kapazitätsfaktoren im Zeitraum von 1997 bis 2001. Diese Zeitspanne wurde
+- p.210: Tab. 9.9 Aufteilung der Stromproduktion der einzelnen Staaten nach Druck- und Siedewasserreaktoren bzw. nach
+- p.210: Tab. 9.10 Durchschnittliche Kapazitätsfaktoren der Kernkraftwerke in den analysierten Ländern von 1997 bis 2001.
+- p.211: Tab. 9.11 Bezugsfaktoren für die Infrastruktur der Kernkraftwerke bei der Stromerzeugung.
+- p.214: Tab. 9.12 Mittlere Abbrandwerte der entladenen Brennelemente im KKG am Ende der Zyklen 21-23 der Jahre
+- p.216: Tab. 9.13 zeigt die für diese Studie angenommenen Werte für die durchschnittlichen Anreicherungen
+- p.216: Tab. 9.13 Spezifischer Uranbedarf, mittlerer Abbrand und Anreicherung der KKW CH, DE, FR und UCTE.
+- p.218: Tab. 9.14 Charakteristika und Aufladungsstrategien der französischen DWR (CEA 2002).
+- p.220: Tab. 9.15 Zusammenstellung der allgemeinen Betriebsstoffe für das KKL*.
+- p.221: Tab. 9.16 Jährlicher durchschnittlicher Betriebsstoffbedarfs des KKG (Direkte Information).
+- p.222: Tab. 9.17 Übersicht über die Teilströme der gesamten Meer- oder Flusswasserentnahmemenge (Vogt 1982; KKL
+- p.222: Tab. 9.18 sind die KKL durchschnittlichen Chemikalienverbrauchswerte zur Kühlturmwasser-
+- p.223: Tab. 9.18 Chemikalienverbrauch für die Kühturmwasseraufbereitung des KKG und KKL.
+- p.223: Tab. 9.19 Zusammenstellung des Gasbedarfs des KKL (direkte Information).
+- p.225: Tab. 9.20 Annahmen zu den Dimensionen des Betoncontainers für die Endkonditionierung der Stillegungsabfälle.
+- p.225: Tab. 9.21 Schätzung für den Materialbedarf für die Stillegungscontainer, nach (Nagra 1985 b).
+- p.227: Tab. 9.22 zeigt die radioaktiven Luftemissionen der schweizerischen KKW gemittelt über die Jahre
+- p.228: Tab. 9.22 Mit der Nettostromproduktion gewichtete radioaktive Luftemissionen der schweizerischen KKW,
+- p.229: Tab. 9.23 Rad. Luft-Abgaben bezogen auf die entsprechenden Abgabelimiten im Jahr 2002 (BAG 2003).
+- p.229: Tab. 9.24 zeigt die Luftemissionen für die französischen KKW gemäss (Van der Stricht & Janssens
+- p.229: Tab. 9.25 zeigt die bilanzierten Daten für die französischen DWR.
+- p.229: Tab. 9.24 Mit der Nettostromproduktion gewichtete radioaktive Luftemissionen aus den französischen KKW nach
+- p.230: Tab. 9.25 Mit der Nettostromproduktion gewichtete und in dieser Studie bilanzierte radioaktive Luftemissionen aus
+- p.230: Tab. 9.26 und Tab. 9.27 zeigen die radioaktiven Luftemissionen der deutschen DWR und SWR für die
+- p.230: Tab. 9.28 zeigt die durchschnittlichen radioaktiven Luftemissionen für die DWR und SWR der UCTE.
+- p.230: Tab. 9.26 Mit der Nettostromproduktion gewichtete radioaktive Edelgase-Luftemissionen der deutschen SWR und
+- p.231: Tab. 9.27 Mit der Nettostromproduktion gewichtete radioaktive Luftemissionen der deutschen SWR und DWR nach
+- p.232: Tab. 9.28 Mit der Nettostromproduktion gewichtete radioaktive Luftemissionen für SWR und DWR der UCTE nach
+- p.233: Tab. 9.29 Mit der Nettostromproduktion gewichtete radioaktive Wasseremissionen der schweizerischen KKW
+- p.233: Tab. 9.30 Radioaktive Wasseremissionen der KKG und KKL im Jahr 2002 (BAG 2003).
+- p.234: Tab. 9.31 zeigt die Werte der radioaktiven Wasseremissionen französischer DWR gemittelt über die
+- p.234: Tab. 9.31 Mit der Nettostromproduktion gewichtete radioaktive Wasseremissionen der französischen DWR nach (Van
+- p.234: Tab. 9.32 zeigt die Werte der radioaktiven Wasseremissionen deutscher DWR und SWR gemittelt
+- p.235: Tab. 9.32 Mit der Nettostromproduktion gewichtete radioaktive Wasseremissionen der deutschen SWR und DWR
+- p.235: Tab. 9.33 Mit der Nettostromproduktion gewichtete radioaktive Wasseremissionen der SWR und DWR der UCTE nach
+- p.236: Tab. 9.34 zeigt eine Zusammenfassung der mittleren radioaktiven Luft- und Wasseremissionen der
+- p.236: Tab. 9.34 Zusammenfassung der durchschnittlichen mit der Nettostromproduktion gewichteten radioaktiven Luft- und
+- p.237: Tab. 9.35 Nicht-radioaktive Wasseremissionen des KKG und KKL.
+- p.238: Fig. 9.4 Vereinfachtes Fliessbild der radioaktiven Rückstände des KKW-Leibstadt (Anfang 1990er-Jahre).
+- p.238: Fig. 9.5 Vereinfachtes Fliessbild der Rückstände des KKW-Gösgen (Anfang 1990er-Jahre).
+- p.240: Tab. 9.36 (unüberarbeitet übernommen aus der 1. Auflage dieser Studie) zeigt die Zusammenstellung
+- p.240: Tab. 9.36 Nicht endkonditionierte rad. Rückstände beim KKG und KKL per Ende 1992 (KKG 1993; KKL 1993).
+- p.240: Tab. 9.37 (unüberarbeitet übernommen aus der 1. Auflage dieser Studie) gibt eine Übersicht über die
+- p.241: Tab. 9.37 Endkonditionierte radioaktive Rückstände beim KKG und KKL per Ende 1992 (KKL 1993; KKG 1993).
+- p.242: Tab. 9.38 Zusammenfassung der festen radioaktiven Abfälle während des Betriebs des KKG und KKL.
+- p.243: Tab. 9.39 (überarbeitet übernommen aus der 1. Auflage dieser Studie) zeigt eine Zusammenstellung
+- p.243: Tab. 9.39 Zusammenstellung der Sondermüllmengen des KKL (direkte Information vom KKL).
+- p.244: Tab. 9.40 Aktivitätsinventar des KKG nach 40 Betriebsjahren und 1 Jahr Abklingzeit (Nagra 1985 b).
+- p.244: Tab. 9.41 Zu entsorgende Materialmengen bei der Stillegung des KKG (Nagra-1985 b).
+- p.245: Tab. 9.42 Kategorisierung der Abfallsorten bei der Stilllegung der KKW (Nagra 1985 b).
+- p.246: Tab. 9.43 Abfallsorten der Stillegungsabfälle des KKG und KKL (Nagra 1985 b).
+- p.246: Tab. 9.44 Im Endlager SMA einzulagernde Stillegungs-Abfallvolumen der KKG und KKL.
+- p.247: Tab. 9.45 Übersicht über die Transporte von Baumaterialien (Infrastruktur) zum KKL.
+- p.247: Tab. 9.46 zeigt den Transportbedarf für den Bau des KKG. Die Werte wurden vom Materialbedarf in
+- p.247: Tab. 9.6 abgeleitet. Der Abtransport des Aushubmaterials kann in erster Näherung nochmals mit einer
+- p.247: Tab. 9.46 Übersicht über die Transporte von Baumaterialien (Infrastruktur) zum KKG.
+- p.248: Tab. 9.47 Transportdaten frischer Brennelemente des KKG und KKL.
+- p.249: Tab. 9.48 Landverbrauch der schweizerischen Kernkraftwerke
+- p.250: Tab. 9.49 Zusammenstellung der Eingabedaten für „Druckwasserreaktor, CH“.
+- p.251: Tab. 9.50 Zusammenstellung der Eingabedaten für „Druckwasserreaktor, DE“.
+- p.251: Tab. 9.51 Zusammenstellung der Eingabedaten für „Druckwasserreaktor, FR“.
+- p.252: Tab. 9.52 Zusammenstellung der Eingabedaten für „Druckwasserreaktor, UCTE“.
+- p.252: Tab. 9.53 Zusammenstellung der Eingabedaten für „Siedewasserreaktor, CH“.
+- p.253: Tab. 9.54 Zusammenstellung der Eingabedaten für „Siedewasserreaktor, DE“.
+- p.253: Tab. 9.55 Zusammenstellung der Eingabedaten für „Siedewasserreaktor, UCTE“.
+- p.254: Tab. 9.56 Zusammenstellung der Eingabedaten für „Strom, ab Druckwasserreaktor, CH“.
+- p.254: Tab. 9.57 Tellurium-132 Zusammenstellung der Eingabedaten für „Strom, ab Druckwasserreaktor, Zentrifugen-Anreicherung, CH“. kBq
+- p.255: Tab. 9.58 Zusammenstellung der Eingabedaten für „Strom, ab Druckwasserreaktor, DE“.
+- p.256: Tab. 9.59 Zusammenstellung der Eingabedaten für „Strom, ab Druckwasserreaktor, FR“.
+- p.257: Tab. 9.60 Zusammenstellung der Eingabedaten für „Strom, ab Druckwasserreaktor, UCTE“.
+- p.258: Tab. 9.61 Zusammenstellung der Eingabedaten für „Strom, ab Siedewasserreaktor, CH“.
+- p.259: Tab. 9.62 Zusammenstellung der Eingabedaten für „Strom, ab Siedewasserreaktor, DE“.
+- p.260: Tab. 9.63 Zusammenstellung der Eingabedaten für „Strom, ab Siedewasserreaktor, UCTE“.
+- p.261: Tab. 9.64 Zusammenstellung der Eingabedaten für „Strom, ab Kernkraftwerk, CH“.
+- p.261: Tab. 9.65 Zusammenstellung der Eingabedaten für „Strom, ab Kernkraftwerk, DE“.
+- p.261: Tab. 9.66 Zusammenstellung der Eingabedaten für „Strom, ab Kernkraftwerk, UCTE“.
+- p.265: Tab. 10.1 Daten westeuropäischer und japanischer kommerzieller Wiederaufarbeitungsanlagen nach (NEI 2001).
+- p.269: Tab. 10.2 Hauptdaten der Referenz-Wiederaufarbeitungsanlagen (Bullock 1992; DOE 1979c; DWK 1988).
+- p.270: Tab. 10.4 zeigt die extrapolierten Daten für den Energieverbrauch während der Errichtung der
+- p.271: Tab. 10.3 Materialien bei der Infrastruktur (Bau und Abbruch) der Wiederaufarbeitungsanlage.
+- p.271: Tab. 10.4 Angenommene Brennstoff- und Energieaufwendungen für den Bau der Wiederaufarbeitungsanlage nach
+- p.272: Tab. 10.5 Chemikalienbedarf während der Betriebsphase der UP3 Anlage (Dreicer et al. 1995).
+- p.273: Tab. 10.6 Chemikalienbedarf der Anlagen in La Hague während der Betriebsphase (Cogema 1998).
+- p.273: Tab. 10.7 zeigt nur zur Dokumentation, da diese Anlagen nur geplant/modelliert waren und nicht
+- p.273: Tab. 10.7 Wasserbedarf und Abwassermenge während der Betriebsphase (DOE 1979c; DWK 1988).
+- p.273: Tab. 10.8 zeigt den aktuellen Gesamtenergiebedarf der Anlagen in La Hague während des Betriebs.
+- p.274: Tab. 10.8 Energiebedarf während der Betriebsphase (Cogema 1998).
+- p.274: Tab. 10.9 zeigt nur zur Dokumentation den Energiebedarf der DOE-Referenz- und Wackersdorf-
+- p.274: Tab. 10.9 Energiebedarf während der Betriebsphase (DOE 1979c), (DWK 1988). Nur zur Dokumentation, da diese
+- p.274: Tab. 10.10 Materialbedarf während der Abbruchphase (DOE 1979c).
+- p.275: Tab. 10.11 Nicht radioaktive Luftemissionen während des Baus der Wiederaufarbeitungs-anlage (DOE 1979c).
+- p.276: Tab. 10.12 Radioaktive Luftemissionen der Wiederdaufarbeitungsanlagen (Dreicer et al. 1995; BNFL 1995, 1993, 1992a;
+- p.277: Tab. 10.13 zeigt die radioaktiven Luftemissionen der Anlage in La Hague aus den Jahren 1996 und
+- p.277: Tab. 10.13 Radioaktive Luftemissionen der Jahre 1996 und 1997 aus La Hague (Cogema 1998).
+- p.277: Tab. 10.14 Radioaktive Luftemissionen des Jahres 2002 aus La Hague (Cogema 2003).
+- p.278: Tab. 10.15 Nicht-radioaktiven Luftemissionen der Referenz-Wiederaufarbeitungsanlagen während der Betriebsphase
+- p.279: Tab. 10.16 Nicht-radioaktive Luftemissionen der Aufarbeitungsanlage während der Betriebsphase (Cogema 1998).
+- p.279: Tab. 10.17 Wärmeabfuhr während der Betriebsphase der Wiederaufbereitungsanlage.
+- p.280: Tab. 10.18 Radioaktive Wasseremissionen der Aufarbeitungsanlagen (Dreicer et al. 1995; BNFL 1995, 1993, 1992b;
+- p.280: Tab. 10.19 zeigt die radioaktiven Emissionen der Anlage in La Hague ins Meer in den Jahren 1996
+- p.281: Tab. 10.19 Radioaktive Wassermissionen der Jahre 1996 und 1997 aus La Hague (Cogema 1998).
+- p.281: Tab. 10.20 Radioaktive Wassermissionen im Jahr 2002 aus La Hague (Cogema 2003).
+- p.282: Tab. 10.21 Nicht-radioaktive Wasseremissionen der Aufarbeitungsanlage während der Betriebsphase (DOE 1979c;
+- p.282: Tab. 10.22 Nicht-radioaktive Wasseremissionen der Aufarbeitungsanlage während der Betriebsphase (Cogema 1998).
+- p.283: Tab. 10.23 Nicht-radioaktive Luftemissionen während des Abbruchs der Wiederaufarbeitungsanlage (DOE 1979c).
+- p.284: Fig. 10.1 Schema der Entstehung der Abfallsorten in der Wiederaufarbeitung (Nagra 1985b).
+- p.287: Tab. 10.24 Zuteilung der Abfallsorten aus den Wiederaufarbeitungsanlagen auf die Endlager SMA und BE/HAA/LMA.
+- p.287: Tab. 10.25 zeigt die nach (Cogema 1998) kategorisierten nicht radioaktiven Abfälle, mit
+- p.288: Tab. 10.25 Nicht nukleare Abfälle (Cogema 1998).
+- p.289: Tab. 10.26 Transportbedarf für die Infrastruktur.
+- p.290: Tab. 10.27 Transporte der abgebrannten Brennelemente zu den Wiederaufarbeitungsanlagen La Hague und THORP.
+- p.291: Tab. 10.28 Flächeninanspruchnahme der Wiederaufarbeitungsanlagen (DOE 1979c; DWK 1988).
+- p.294: Tab. 10.29 Zusammenstellung der Eingabedaten für die Infrastruktur der Wiederaufbereitungsanlage.
+- p.295: Tab. 10.30 Zusammenstellung der Eingabedaten für die Wiederaufbereitungsanlage.
+- p.296: Tab. 10.31 Zusammenstellung der Eingabedaten für die Infrastruktur und den Betrieb der Konditionierungsanlage.
+- p.302: Tab. 11.1 Material- und Energiebedarf für die Infrastruktur des Zwilag.
+- p.304: Tab. 11.2 Nicht radioaktive Luftemissionen der Verbrennungsanlage (Zwilag 1993a).
+- p.304: Tab. 11.3 Radioaktive Luft-Emissionen des Zwilags (Zwilag 1993a, 1993b).
+- p.305: Tab. 11.4 Garantierte Qualitätswerte im Abwasser des Zwilags (Zwilag 1993a).
+- p.307: Tab. 11.5 Zusammenstellung des Transportbedarfs für die radioaktiven Abfälle zum Zwilag.
+- p.307: Tab. 11.6 Zusammenstellung der spezifischen Flächeninanspruchnahme des Zwischenlagers.
+- p.308: Tab. 11.7 Zusammenstellung der Eingabedaten für die Infrastruktur des Zwischenlagers für schwach- und mittelaktive
+- p.308: Tab. 11.8 Zusammenstellung der Eingabedaten für die Infrastruktur des Zwischenlagers für hoch- und mittelaktive
+- p.308: Tab. 11.9 Zusammenstellung der Eingabedaten für den Betrieb des Zwischenlagers für schwach- und mittelaktive
+- p.309: Tab. 11.10 Zusammenstellung der Eingabedaten für für den Betrieb des Zwischenlagers für hoch- und mittelaktive
+- p.309: Tab. 11.11 Zusammenstellung der Eingabedaten für die Konditionierung radioaktiver Abfälle im Zwischenlager.
+- p.313: Fig. 12.1 Entwicklung des Entsorgungskonzeptes für radioaktive Abfälle in der Schweiz seit Ende der siebziger Jahre
+- p.316: Fig. 12.2 Schematischer Überblick über die „Quellen radioaktiver Abfälle in der Schweiz“ und das vorgesehene
+- p.316: Tab. 12.2 gezeigt. Tab. 12.3 zeigt einen Vergleich zwischen den alten und neuen Konzepten der
+- p.316: Tab. 12.1 Kategorisierung der radioaktiven Abfälle nach Oberflächendosisleistung und Aktivitätskonzentration
+- p.317: Tab. 12.2 Kategorisierung der radioaktiven Abfälle nach allgemeinen Eigenschaften (Nagra 1985b).
+- p.317: Tab. 12.3 Vergleichsdaten der beiden Konzepte für die Endlagerung der radioaktiven Abfälle in der Schweiz.
+- p.319: Fig. 12.3 zeigt eine schematische Darstellung des vorgeschlagenen Endlagers, Fig. 12.4 eine
+- p.320: Fig. 12.3 Schematische Darstellung des vorgeschlagenen BE/HAA/LMA Endlagers (NTB 02-02).
+- p.320: Fig. 12.4 Übersicht über die untertägigen Anlagen eines geologischen Tiefenlagers BE/HAA/LMA – Auslegungsbasis
+- p.321: Fig. 12.5 Abfallgebinde für BE und HAA (NTB 02-02).
+- p.321: Fig. 12.6 Abfallgebinde für LMA (NTB 02-02)
+- p.322: Tab. 12.4 zeigt die Abfallzusammensetzung der in das Tiefenlager BE/HAA/MAA einzulagernden
+- p.322: Tab. 12.4 In das Tiefenlager BE/HAA/LMA einzulagernde Abfälle für das Referenz-Szenario 192 GWa (NTB 02-02).
+- p.323: Tab. 12.5 Abfallmengen in Endlager B (jetzt SMA) für das Projekt Gewähr (Nagra 1985b).
+- p.324: Tab. 1.6 zeigt die Definition der Bauetappen nach (NTB 02-02). Die Phasen 1&2 entsprechen dem
+- p.324: Tab. 12.6 Übersicht über die geplanten Bauetappen für das geologische Endlager BE/HAA/LMA (NTB 02-02).
+- p.326: Tab. 12.7 Ausbruchvolumen beim Bau des geologischen Endlagers nach (NTB 02-02).
+- p.326: Tab. 12.8 zeigt eine Übersicht über die Materialien, die für die Verfüllung und Versiegelung des
+- p.327: Tab. 12.8 Übersicht über die Materialien zur Verfüllung und Versiegelung des geologischen Endlagers nach
+- p.328: Tab. 12.9 Abschätzung der beim Bau verwendeten Maschinen und deren Massen.
+- p.330: Tab. 12.10 zeigt eine Übersicht über den Energiebedarf der Endlager.
+- p.330: Tab. 12.10 Energiebedarf für die Endlager SMA und BE/HAA/LMA.
+- p.335: Fig. 12.7 Gesamtaktivität der Abfälle im Endlager C (240 GWa Szenario) (Nagra 1985 b).
+- p.337: Fig. 12.8 Gesamtaktivität der Abfälle im Endlager B (240 GWa Szenario) (Nagra 1985 b).
+- p.338: Tab. 12.11 Tranportdistanzen für die Materialien der Endlager SMA und BE/HAA/LMA.
+- p.339: Tab. 12.12 Transportbedarf für die Endlager B und C.
+- p.341: Tab. 12.13 Zusammenstellung der Eingabedaten für die Infrastruktur des geologischen Endlagers für kurzlebige,
+- p.342: Tab. 12.14 Zusammenstellung der Eingabedaten für die Infrastruktur des geologischen Endlagers für hoch und
+- p.342: Tab. 12.15 Zusammenstellung der Eingabedaten für die Endlagerung kurzlebiger, schwach- und mittelaktiver Abfälle
+- p.343: Tab. 12.16 Zusammenstellung der Eingabedaten für die Endlagerung hoch und mittelaktiver Abfälle (BE/HAA/LMA).
+- p.343: Tab. 12.17 Zusammenstellung der Eingabedaten für die Entsorgung des schwach radioaktiver Abfalls.
+- p.346: Tab. 13.2 für die DWR (CH, DE, FR, UCTE) und Tab. 13.3 für SWR (CH, DE, UCTE).
+- p.347: Fig. 13.1 bis Fig. 13.20 zeigen Resultate ausgewählter radioaktiver und nicht radioaktiver Emissionen
+- p.349: Fig. 13.1 und Fig. 13.2 zeigen die Resultate für die Schritte der nuklearen Energiekette für
+- p.350: Fig. 13.3 und Fig. 13.4 zeigen die gleiche Resultate für die schweizerischen DWR bzw. SWR, und
+- p.350: Fig. 13.7 und Fig. 13.8 zeigen die NOx-, SOx-, und NMVOC-Emissionen aus den einzelnen Schritten
+- p.351: Fig. 13.11 und Fig. 13.12 zeigen die radioaktiven Luftemissionen der Kette für DWR-CH, Fig. 13.13
+- p.352: Tab. 13.1 bis Tab. 13.3 zeigen die totalen Wasserabgaben für drei augewählte Stoffe: Chloride, Sulfate
+- p.353: Fig. 13.15 und Fig. 13.16 zeigen die radioaktiven Wasseremissionen der Kette für DWR-CH, Fig.
+- p.353: Fig. 13.19 und Fig. 13.20 zeigen die Volumina pro kWh von den vier Kategorien der radioaktiven
+- p.355: Tab. 13.1 Ausgewählte Resultate der Sachbilanz für den KKW-Mix der Schweiz, Deutschlands und der UCTE
+- p.356: Tab. 13.2 Ausgewählte Resultate der Sachbilanz für die DWR der Schweiz, Deutschlands, Frankreichs und der UCTE
+- p.357: Tab. 13.3 Ausgewählte Resultate der Sachbilanz für die SWR-Mix der Schweiz, Deutschlands und der UCTE
+- p.358: Fig. 13.1 Beiträge der Einzelsubstanzen zu den CO2-Äquiv.-Emissionen in den einzelnen Schritten des Brennstoff-
+- p.358: Fig. 13.2 Beiträge der Einzelsubstanzen zu den CO2-Äquiv.-Emissionen in den einzelnen Schritten des Brennstoff-
+- p.359: Fig. 13.3 Prozentuelle Anteile der Einzelsubstanzen zu den CO2-Äquiv.-Emissionen in den einzelnen Schritten des
+- p.359: Fig. 13.4 Prozentuelle Anteile der Einzelsubstanzen zu den CO2-Äquiv.-Emissionen in den einzelnen Schritten des
+- p.360: Fig. 13.5 CO2-Äquiv.-Emissionen aus der vorgelagerten Kette, dem DWR-CH und der nachgelagerten Kette des
+- p.360: Fig. 13.6 CO2-Äquiv.-Emissionen aus der vorgelagerten Kette, dem SWR-CH und der nachgelagerten Kette des
+- p.361: Fig. 13.7 NOx- SOx- und NMVOC-Luftemissionen aus den einzelnen Schritten des Brennstoffkreislaufs für das
+- p.361: Fig. 13.8 NOx- SOx- und NMVOC-Luftemissionen aus der vorgelagerten Kette, dem DWR-CH und der nachgelagerten
+- p.362: Fig. 13.9 NOx- SOx- und NMVOC-Luftemissionen aus den einzelnen Schritten des Brennstoffkreislaufs für das
+- p.362: Fig. 13.10 NOx- SOx- und NMVOC-Luftemissionen aus der vorgelagerten Kette, dem SWR-CH und der nachgelagerten
+- p.363: Fig. 13.11 Radioaktive Luftemissionen in den einzelnen Schritten des Brennstoffkreislaufs pro kWh ab DWR-CH
+- p.363: Fig. 13.12 Radioaktive Luftemissionen aus der vorgelagerten Kette, dem DWR-CH und der nachgelagerte Kette des
+- p.364: Fig. 13.13 Radioaktive Luftemissionen aus den einzelnen Schritten des Brennstoffkreislaufs pro kWh ab SWR-CH
+- p.364: Fig. 13.14 Radioaktive Luftemissionen aus der vorgelagerten Kette, dem SWR-CH und der nachgelagerten Kette des
+- p.365: Fig. 13.15 Radioaktive Wasseremissionen aus den einzelnen Schritten des Brennstoffkreislaufs pro kWh ab DWR-CH
+- p.365: Fig. 13.16 Radioaktive Wasseremissionen aus der vorgelagerten Kette, dem DWR-CH und der nachgelagerten Kette
+- p.366: Fig. 13.17 Radioaktive Wasseremissionen aus den einzelnen Schritten des Brennstoffkreislauf pro kWh ab SWR-CH
+- p.366: Fig. 13.18 Radioaktive Wasseremissionen aus der vorgelagerten Kette, dem SWR-CH und der nachgelagerten Kette
+- p.367: Fig. 13.19 Feste radioaktive Abfälle pro kWh aus der DWR-CH Energiekette (ecoinvent data v1.01 results).
+- p.367: Fig. 13.20 Feste radioaktive Abfälle pro kWh aus der SWR-CH Energiekette (ecoinvent data v1.01 results).
+- p.396: Fig. 16.1 Schematic of the modelled nuclear energy chain for China in ecoinvent data v2.0.
+- p.396: Tab. 16.1 and Tab. 16.2 show the infrastructure and operation datasets.
+- p.397: Tab. 16.1: Dataset “uranium conversion plant (CN)” in ecoinvent data v2.0.
+- p.398: Tab. 16.2: Dataset “uranium natural, in uranium hexafluoride, at conversion plant (CN)” in ecoinvent data v2.0.
+- p.399: Tab. 16.3 and Tab. 16.4 show the infrastructure and operation datasets, where CNNC stays for China
+- p.400: Tab. 16.3: Dataset “uranium enrichment centrifuge plant (CN)” in ecoinvent data v2.0.
+- p.400: Tab. 16.4: Datasets “uranium, enriched 3.8%/3.0%, at CNNC centrifuge enrichment plant (CN)” in ecoinvent data v2.0.
+- p.401: Tab. 16.5 and Tab. 16.6 show the infrastructure and operation datasets.
+- p.401: Tab. 16.5: Dataset “nuclear fuel fabrication plant (CN)” in ecoinvent data v2.0.
+- p.402: Tab. 16.6: Dataset “U enriched 3.8%, in fuel element for LWR, at nuclear fuel fabrication plant (CN)” in ecoinvent data
+- p.403: Tab. 16.7: Dataset “nuclear power plant, pressure water reactor 1000MW (CN)” in ecoinvent data v2.0.
+- p.404: Tab. 16.8 shows the dataset.
+- p.404: Tab. 16.8: Dataset “electricity, nuclear, at power plant pressure water reactor (CN)” in ecoinvent data v2.0.
+- p.404: Tab. 16.9 and Tab. 16.10 show the infrastructure and operation datasets.
+- p.405: Tab. 16.9: Dataset “nuclear spent fuel conditioning plant (CN)” in ecoinvent data v2.0.
+- p.405: Tab. 16.10: Dataset “nuclear spent fuel, in conditioning, at plant (CN)” in ecoinvent data v2.0.
+- p.407: Tab. 17.1: Uranium Purchased by Owners and Operators of U.S. Civilian Nuclear Power Reactors by Origin Country
+- p.407: Tab. 17.2: Uranium in Fuel Assemblies Loaded into U.S. Civilian Nuclear Power Reactors by Year, 2002-2006. After:
+- p.407: Fig. 17.1 shows the history of enrichment services to US nuclear power plants for the period 1994-
+- p.408: Fig. 17.1 Uranium Enrichment Services Purchased by Owners and Operators of U.S. Civilian Nuclear Power Reactors,
+- p.409: Tab. 17.3: Purchases of Enrichment Services by Owners and Operators of U.S. Civilian Nuclear Power Reactors by
+- p.409: Tab. 17.4: Purchases of Enrichment Services by U.S. Nuclear Power Plants by Supplier, average in the years 2003-
+- p.411: Fig. 17.2 Schematic of the modelled nuclear energy chain for the USA in ecoinvent data v2.0.
+- p.412: Tab. 17.5: Enrichment Separative Work Unit and uranium requirements for the assumed chains for US BWR and PWR
+- p.412: Tab. 17.6 and Tab. 17.7 show the updated USEC datasets for the diffusion plant.
+- p.413: Tab. 17.6: Electricity mix supply to the diffusion enrichment USEC plant Paducah in 2006, assumed for ecoinvent data
+- p.413: Tab. 17.7: Datasets “uranium enrichment diffusion plant (US)” in ecoinvent data v2.0.
+- p.413: Tab. 17.8 shows the datasets “uranium, enriched 3.8% for pressure water reactor (US)” and “uranium,
+- p.414: Tab. 17.8: Datasets “uranium, enriched X.X%, at USEC enrichment plant” in ecoinvent data v2.0.
+- p.415: Tab. 17.9: Datasets “uranium, enriched 3.8% for pressure water reactor (US)” and “uranium, enriched 3.0% for boiling water reactor (US)” in ecoinvent d
+- p.416: Tab. 17.10 and Tab. 17.11 show the infrastructure and operation datasets.128
+- p.416: Tab. 17.10: Dataset “nuclear fuel fabrication plant (US)” in ecoinvent data v2.0.
+- p.417: Tab. 17.11: Datasets “U enriched 3.0%, in fuel element for LWR, at nuclear fuel fabrication plant (US)” and “U
+- p.418: Tab. 17.12: General data for US LWR as of the beginning of 2007, after (NEI 2007), and general assumptions for the
+- p.418: Tab. 17.13 shows the infrastructure datasets for US PWR and BWR.
+- p.419: Tab. 17.13: Datasets “nuclear power plant, pressure water reactor 1000MW (US)” and “nuclear power plant,
+- p.419: Tab. 17.14 shows the key characteristics of the average BWR and PWR in the USA, derived from the
+- p.419: Tab. 17.14: Average fuel consumption rate, burnup and enrichment for US LWR in year 2006, after (NEI 2007).
+- p.421: Tab. 17.15: Annual average radioactive emissions from US PWRs (2000 - 2005), after (Harris and Miller 2007).
+- p.422: Tab. 17.16: Annual average radioactive emissions from US BWRs (2000 - 2005), after (Harris and Miller 2007).
+- p.422: Tab. 17.17 summarizes the average emissions classes of US PWRs and BWRs per kWh electricity
+- p.423: Tab. 17.17: Average radioactive emissions of US PWR and BWR to air and water, calculated from annual averages in
+- p.424: Tab. 17.18 and Tab. 17.19 show the datasets for PWR and BWR operation, respectively.
+- p.425: Tab. 17.18: Dataset “electricity, nuclear, at power plant pressure water reactor (US)” in ecoinvent data v2.0.
+- p.425: Tab. 17.19: Dataset “electricity, nuclear, at power plant boiling water reactor (US)” in ecoinvent data v2.0.
+- p.426: Tab. 17.20: Dataset “electricity, nuclear, at power plant (US)” in ecoinvent v2.0.
+- p.427: Tab. 18.1: Russian centrifuge generations (Bukharin 2004 a).
+- p.428: Tab. 18.2: Dataset “uranium enrichment centrifuge plant (RU)” in ecoinvent data v2.0.
+- p.428: Tab. 18.4 and Tab. 18.5 show the infrastructure and operation datasets. The infrastructure is based on
+- p.429: Tab. 18.3: Composition of the Russian electricity generation in 2004 after IEA
+- p.429: Tab. 18.4: Dataset “uranium enrichment centrifuge plant (RU)” in ecoinvent data v2.0.
+- p.430: Tab. 18.5: Datasets “uranium, enriched X.X%, at TENEX centrifuge enrichment plant (RU)” in ecoinvent data v2.0.
+- p.431: Fig. 19.1 Schematic representation of an underground mine indicating different materials (redrawn from IPPC 2004)
+- p.432: Fig. 19.2 Generation of tailings within the mining & beneficiation process.
+- p.432: Fig. 19.3 The Australian Ranger uranium mine with a tailings pond in the foreground. Ranger is one of the world's
+- p.437: Tab. 19.1 Generic average composition of uranium tailings and porewater concentrations from uranium tailings
+- p.439: Tab. 19.2 Uranium and tailings production in the world. Calculation of generic annual leachate volumes in tailings
+- p.440: Fig. 19.4 Conceptual differences in emissions from tailings sties in wet climate and in dry climate.
+- p.440: Fig. 19.5 As an illustration: evaporites forming on tailings from copper mining at Bahia de Ite, Peru. Photo taken from
+- p.443: Fig. 19.6 The area of the Australian Olympic Dam copper-uranium underground mine with several large operational
+- p.443: Fig. 19.7 A surface close-up of an operational tailings impoundment of the Olympic Dam copper-uranium mine in July
+- p.444: Fig. 19.8 Simplified acid-base accounting of tailings compositions found in literature.
+- p.444: Tab. 19.3 Parameters for calcium washout at an average wet site for the best, average and worst case.
+- p.445: Fig. 19.9 Approximate probability distribution for a generic uranium tailing leachate turning acidic (wet site). Please
+- p.446: Fig. 19.10 Schematic representation of changes in leachate volume and concentration and its effects on transfer
+- p.447: Tab. 19.4 Elemental transfer coefficients of a tailings impoundment and emissions to groundwater per kilogram
+- p.450: Tab. 19.5 Elemental transfer coefficients of a tailings impoundment and emissions to air per kilogram tailings for an
+- p.452: Tab. 19.6 Emissions to groundwater and to air per cubic metre tailings for a generic mixture of uranium tailings sites
+- p.453: Fig. 19.11. This plot reveals that for many elements the concentrations in tailings is much larger than
+- p.453: Fig. 19.11 Average mean composition of uranium tailings relative to the average global crustal abundance, sorted by
+- p.454: Fig. 19.12 Comparison of short-term transfer coefficients (100a) for residual material landfill (x axis) and a wet site
+
+Rules:
+1. Choose the caption(s) that hold the unit-process inventory of this dataset — inputs, energy, emissions, transport — not impact results, not a diagram. Prefer "Sachbilanz" / "inventory" / "LCI" tables.
+2. Return the PDF page range that covers those tables plus the paragraph introducing them: `first_page`, `last_page` (at most 4 pages). Tables can run onto the next page.
+3. If no caption fits (the report does not document this dataset's inventory, or only as a result), return `found` = false and say why in `reason`.
+4. `reason` names the caption(s) you chose and why.
+
+Return only the JSON object described by the schema.

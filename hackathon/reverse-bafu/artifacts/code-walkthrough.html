@@ -1,0 +1,345 @@
+<title>Reverse-BAFU Internals</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap">
+<style>
+:root{--bg:#f7f8f5;--bg2:#eceee8;--ink:#171a1c;--ink2:#555d68;--rule:#d5d9d0;--blue:#2a78d6;--orange:#eb6834;--good:#008300;--bad:#c0392b;--warn:#a86f00;--card:#ffffff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--bg:#171a1c;--bg2:#1f2326;--ink:#f1f2ee;--ink2:#b7bec5;--rule:#353b40;--blue:#3987e5;--orange:#d95926;--good:#4fbf4f;--bad:#e66767;--warn:#e0a83a;--card:#1c2023}}
+:root[data-theme="dark"]{--bg:#171a1c;--bg2:#1f2326;--ink:#f1f2ee;--ink2:#b7bec5;--rule:#353b40;--blue:#3987e5;--orange:#d95926;--good:#4fbf4f;--bad:#e66767;--warn:#e0a83a;--card:#1c2023}
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans",system-ui,sans-serif;font-size:15px;line-height:1.55;padding-inline:16px;padding-block:8px 56px}
+main{max-width:900px;margin:0 auto}
+h1,h2,h3{font-family:Spectral,Georgia,serif;font-weight:500;text-wrap:balance;line-height:1.15;margin:0}
+h1{font-size:2.2rem;margin-top:28px} h2{font-size:1.5rem;margin-top:52px;padding-top:16px;border-top:1px solid var(--rule)} h3{font-size:1.1rem;margin-top:26px}
+p{max-width:70ch;margin:10px 0} .muted{color:var(--ink2)} .lede{font-size:1.08rem;color:var(--ink2);max-width:64ch}
+.eyebrow{font-size:.72rem;letter-spacing:.09em;text-transform:uppercase;color:var(--ink2);font-weight:500}
+code,.mono{font-family:"IBM Plex Mono",ui-monospace,monospace;font-size:.86em} code{background:var(--bg2);padding:0 4px;border-radius:3px}
+pre{font-family:"IBM Plex Mono",monospace;font-size:.8rem;line-height:1.5;background:var(--bg2);padding:14px 16px;border-radius:6px;overflow-x:auto;margin:12px 0} pre .c{color:var(--ink2)} pre .k{color:var(--blue);font-weight:600} pre .s{color:var(--orange)}
+.tree{font-family:"IBM Plex Mono",monospace;font-size:.8rem;line-height:1.5;background:var(--bg2);padding:14px 16px;border-radius:6px;overflow-x:auto;white-space:pre;margin:12px 0} .tree b{color:var(--blue);font-weight:600} .tree i{color:var(--ink2);font-style:normal}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:12px}
+.mod{background:var(--card);border:1px solid var(--rule);border-radius:6px;padding:12px 14px} .mod h3{margin-top:0;font-size:1rem;font-family:"IBM Plex Mono",monospace;font-weight:600} .mod p{font-size:.88rem;margin:6px 0} .mod .io{font-size:.78rem;color:var(--ink2)} .mod .io b{color:var(--ink);font-weight:500}
+.ladder{list-style:none;padding:0;margin:12px 0 0;border:1px solid var(--rule);border-radius:6px;overflow:hidden}
+.ladder li{display:grid;grid-template-columns:minmax(200px,2fr) minmax(200px,3fr);gap:0;border-top:1px solid var(--rule)} .ladder li:first-child{border-top:0}
+.ladder .if{padding:9px 12px;background:var(--bg2);font-family:"IBM Plex Mono",monospace;font-size:.78rem;line-height:1.5} .ladder .then{padding:9px 12px;font-size:.88rem}
+.ladder .then b{font-weight:600} .ladder .then .state{display:inline-block;font-family:"IBM Plex Mono",monospace;font-size:.74rem;padding:0 6px;border-radius:3px;border:1px solid var(--rule);margin-right:6px}
+.state.ok{border-color:var(--good);color:var(--good)} .state.warn{border-color:var(--warn);color:var(--warn)} .state.bad{border-color:var(--bad);color:var(--bad)} .state.info{border-color:var(--blue);color:var(--blue)}
+.ladder li.head{background:transparent} .ladder li.head .if,.ladder li.head .then{font-family:"IBM Plex Sans",sans-serif;font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;color:var(--ink2);background:transparent;padding:6px 12px}
+.tbl{overflow-x:auto;margin-top:10px} table{border-collapse:collapse;width:100%;font-size:.86rem} th{text-align:left;font-weight:500;color:var(--ink2);font-size:.72rem;letter-spacing:.06em;text-transform:uppercase;padding:6px 8px;border-bottom:1px solid var(--rule);vertical-align:bottom} td{padding:7px 8px;border-bottom:1px solid var(--rule);vertical-align:top} td.mono{white-space:nowrap}
+.math{background:var(--bg2);border:1px solid var(--rule);border-radius:6px;padding:14px 16px;margin:14px 0}
+.math .eq{font-family:Spectral,Georgia,serif;font-size:1.06rem;line-height:1.9;overflow-x:auto;white-space:nowrap;padding-bottom:2px}
+.math .eq.c{text-align:center} .math .eq .lbl{float:right;color:var(--ink2);font-family:"IBM Plex Sans",sans-serif;font-size:.74rem;font-style:normal}
+.math .where{font-size:.84rem;color:var(--ink2);margin:10px 0 0;line-height:1.65;max-width:none}
+.math .where b{color:var(--ink);font-weight:500}
+var,.v{font-family:Spectral,Georgia,serif;font-style:italic;font-size:1.04em}
+.sym{list-style:none;padding:0;margin:12px 0 0;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:2px 18px;font-size:.86rem}
+.sym li{display:grid;grid-template-columns:62px 1fr;gap:8px;padding:3px 0;border-bottom:1px solid var(--rule)}
+.sym li span:first-child{font-family:Spectral,Georgia,serif;font-style:italic;font-size:1.02rem;text-align:right;color:var(--ink)}
+.sym li span:last-child{color:var(--ink2);font-size:.84rem;line-height:1.45}
+.note{border-left:3px solid var(--blue);padding:4px 14px;background:var(--bg2);border-radius:0 6px 6px 0;margin:14px 0;font-size:.9rem}
+.diagram{overflow-x:auto} svg{display:block;max-width:100%} svg text{font-family:"IBM Plex Sans",system-ui,sans-serif;fill:var(--ink);font-size:12px} svg .small{font-size:10.5px;fill:var(--ink2)} svg .mono{font-family:"IBM Plex Mono",monospace;font-size:10.5px}
+svg .box{fill:var(--card);stroke:var(--rule);stroke-width:1.2} svg .box.b{stroke:var(--blue);stroke-width:1.6} svg .box.o{stroke:var(--orange);stroke-width:1.6} svg .box.g{fill:var(--bg2)} svg .box.db{fill:var(--bg2);stroke:var(--ink2);stroke-dasharray:4 3}
+svg .link{stroke:var(--ink2);stroke-width:1.3;fill:none} svg .link.b{stroke:var(--blue)} svg .arrow{fill:var(--ink2)}
+@media (max-width:640px){h1{font-size:1.7rem} .ladder li{grid-template-columns:1fr} .ladder .if{border-bottom:1px dashed var(--rule)}}
+</style>
+<main>
+<div class="eyebrow">reverse‑bafu · developer walkthrough</div>
+<h1>How the code is organised and where it decides things</h1>
+<p class="lede">The concept page says <em>what</em> the pipeline does. This one says where each decision is made in the code, under exactly which condition, with which constants — so you can change a threshold, add a strategy, or debug a spec without reading every module first.</p>
+
+<h2>1 · Repository map</h2>
+<div class="tree"><b>src/reverse_bafu/</b>            the pipeline (a uv‑installed package, entry point <i>reverse-bafu</i>)
+  cli.py          argparse → dispatch; <i>run</i> = resolve → calibrate → build → check
+  spec.py         the JSON spec → dataclasses (Spec / Node / Input / Flow); load(), save(), walk()
+  db.py           Brightway access: names, constants, name → dataset resolution, the sandbox
+  lci.py          System: one factorised technosphere; cumulative inventories; CF matrix; row weights
+  resolve.py      step 1 · terminate on the database
+  calibrate.py    step 2 · bounded least squares for the free amounts
+  build.py        step 3 · explicit + hybrid nodes into the sandbox
+  check.py        step 4 · harness → results/checks/&lt;code&gt;.md
+  runall.py       run-all: every specs/*.json in dependency order → results/rebuild_status.csv
+  benchmark.py    synthetic system processes with known answers → results/benchmark/
+  draft.py        locate → evidence → extract → map → assemble: a spec from a report, with provenance;
+                  the template and metadata routes when no report prints the inventory
+<b>prompts/</b>                  locate_pages.md, draft_spec.md (extraction), map_inputs.md (mapping), draft_from_template.md,
+                          draft_from_metadata.md — the fixed LLM prompt templates
+<b>specs/</b>                    one JSON per rebuilt dataset (the unit of work); specs/evidence/&lt;code&gt;/ = drafting records
+<b>scripts/</b>
+  list_system_terminated.py   the 101 flagged: ecoSpold type=2 from the XML, joined with Brightway usage
+  find_system_processes.py    the 37 the flag misses, found by structure → all 138
+  list_sources.py             source citations, DOIs, report PDFs of the documentation bundle
+  render_pages.py             specs + sandbox + check reports → artifacts/rebuilt-inventories.html (template in templates/)
+  flow_comparison.py          original vs rebuilt elementary flows → results/flow_comparison.json → build_flow_parity.py
+  replacement_priority.py     the 138 ranked by what depends on them → build_replacement_page.py
+  export_ / import_disaggregated.py   share the rebuilds with another Brightway project
+  slide_*.py                  the deck's plots and PDF
+<b>results/</b>
+  system_terminated.csv       the 101 flagged, with family, sibling, people, representativeness
+  system_terminated_extended.csv   all 138, with how each was found
+  sources.csv · dois.csv      the bibliography behind the database
+  drafting_status.csv · rebuild_status.csv   where each dataset / spec stands after draft-all / run-all
+  checks/&lt;code&gt;.md            one harness report per spec
+  benchmark/&lt;name&gt;.{csv,md}  per case × scenario rows, and the summary
+<b>artifacts/</b>                the documentation pages (method explainer, system processes, rebuilt inventories, flow parity,
+                          calibration benchmark, replacement priority, this page) and the presentation
+<b>.claude/commands/</b>          /draft-all (the batch), /draft-spec (one dataset) — the drafting chain inside a Claude Code session
+<i>data/, BAFU-2026 v1_Documentation/   gitignored: the ecoSpold XML and the report PDFs</i></div>
+
+<h2>2 · Data flow</h2>
+<figure><div class="diagram">
+<svg viewBox="0 0 900 300" width="900" height="300" role="img" aria-label="Data flow between files, modules and Brightway databases">
+ <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 L10 5 L0 10 z" class="arrow"/></marker></defs>
+ <rect class="box g" x="10" y="20" width="150" height="54" rx="5"/><text x="85" y="42" text-anchor="middle" font-weight="500">specs/&lt;x&gt;.json</text><text x="85" y="58" text-anchor="middle" class="small">read by all; written back by 2 steps</text>
+ <rect class="box db" x="10" y="120" width="150" height="54" rx="5"/><text x="85" y="142" text-anchor="middle" font-weight="500">bafu-2026</text><text x="85" y="158" text-anchor="middle" class="small">+ two biospheres · read only</text>
+ <rect class="box db" x="10" y="220" width="150" height="54" rx="5"/><text x="85" y="242" text-anchor="middle" font-weight="500">reverse-bafu-sandbox</text><text x="85" y="258" text-anchor="middle" class="small">-disagg · -hybrid nodes</text>
+ <rect class="box b" x="250" y="20" width="110" height="44" rx="5"/><text x="305" y="47" text-anchor="middle" font-weight="500">resolve</text>
+ <rect class="box b" x="250" y="90" width="110" height="44" rx="5"/><text x="305" y="117" text-anchor="middle" font-weight="500">calibrate</text>
+ <rect class="box b" x="250" y="160" width="110" height="44" rx="5"/><text x="305" y="187" text-anchor="middle" font-weight="500">build</text>
+ <rect class="box b" x="250" y="230" width="110" height="44" rx="5"/><text x="305" y="257" text-anchor="middle" font-weight="500">check</text>
+ <rect class="box" x="450" y="90" width="130" height="114" rx="5"/><text x="515" y="112" text-anchor="middle" font-weight="500">lci.System</text><text x="515" y="130" text-anchor="middle" class="small">A = technosphere (LU)</text><text x="515" y="145" text-anchor="middle" class="small">B = biosphere</text><text x="515" y="160" text-anchor="middle" class="small">cumulative(ids) = B·A⁻¹·e</text><text x="515" y="175" text-anchor="middle" class="small">relative_weights(target)</text><text x="515" y="190" text-anchor="middle" class="small">flow_agreement(t, model)</text>
+ <rect class="box g" x="680" y="230" width="200" height="44" rx="5"/><text x="780" y="250" text-anchor="middle" font-weight="500">results/checks/&lt;code&gt;.md</text><text x="780" y="265" text-anchor="middle" class="small">flow agreement · residual · checks</text>
+ <rect class="box g" x="680" y="20" width="200" height="44" rx="5"/><text x="780" y="40" text-anchor="middle" font-weight="500">system_terminated_extended.csv</text><text x="780" y="55" text-anchor="middle" class="small">codes of the 138 → "aggregated" state</text>
+ <g class="link"><path d="M160 42 L 248 42" marker-end="url(#ah)"/><path d="M160 147 C 200 147, 200 42, 248 42" marker-end="url(#ah)"/><path d="M680 42 C 620 42, 420 42, 362 42" marker-end="url(#ah)" stroke-dasharray="4 3"/></g>
+ <g class="link"><path d="M360 42 C 400 42, 400 20, 240 20 C 190 20, 190 30, 162 30" marker-end="url(#ah)" stroke-dasharray="4 3"/></g>
+ <g class="link"><path d="M160 112 L 248 112" marker-end="url(#ah)"/><path d="M360 112 L 448 112" marker-end="url(#ah)"/><path d="M360 100 C 400 100, 400 60, 162 60" marker-end="url(#ah)" stroke-dasharray="4 3"/></g>
+ <g class="link"><path d="M160 60 C 200 60, 200 182, 248 182" marker-end="url(#ah)"/><path d="M360 182 C 420 182, 420 247, 162 247" marker-end="url(#ah)"/><path d="M360 170 L 448 170" marker-end="url(#ah)"/></g>
+ <g class="link"><path d="M160 252 L 248 252" marker-end="url(#ah)"/><path d="M360 252 L 678 252" marker-end="url(#ah)"/><path d="M360 240 C 400 240, 400 200, 448 200" marker-end="url(#ah)"/></g>
+ <text x="305" y="292" text-anchor="middle" class="small">dashed = writes back · solid = reads</text>
+</svg></div>
+<figcaption class="muted" style="font-size:.82rem">The original dataset is never modified: <code>bafu-2026</code> is read, the sandbox database is written. <code>lci.System</code> factorises the technosphere once per invocation (<code>scipy.sparse.linalg.splu</code>) and every cumulative inventory is one triangular solve.</figcaption></figure>
+
+<h2>3 · The spec, field by field</h2>
+<pre>{
+  <span class="k">"target"</span>:   {"code": "…", "name": "…", "location": "…"},      <span class="c">the system process in bafu-2026</span>
+  <span class="k">"strategy"</span>: {"code": "S1", "label": "…", "note": "…"},      <span class="c">printed in the check report</span>
+  <span class="k">"evidence"</span>: [{"source": "…pdf", "where": "Tab. 3.9", "note": "…"}],
+  <span class="k">"node"</span>: {
+    "name", "unit", "location", "comment",
+    <span class="k">"mass_sum"</span>: 1.0,                                 <span class="c">optional · free kg inputs must add up to this</span>
+    <span class="k">"inputs"</span>: [
+      {"name", "amount", "unit", "location",        <span class="c">location optional → resolver's preference order</span>
+       <span class="s">"code"</span>: "…",                                 <span class="c">written back by resolve</span>
+       <span class="s">"free"</span>: true, <span class="s">"bounds"</span>: [lo, hi],           <span class="c">calibrate may move this amount, within bounds</span>
+       <span class="s">"sandbox"</span>: "&lt;code&gt;-disagg",                 <span class="c">link a node rebuilt by an earlier spec</span>
+       <span class="s">"node"</span>: { …a nested node… },                 <span class="c">a new intermediate process; built first</span>
+       "note": "…"}
+    ],
+    <span class="k">"emissions"</span>: [{"name", "category": "air|water|soil", "amount", "unit", <span class="s">"database"</span>, <span class="s">"code"</span>}],
+    <span class="k">"resources"</span>: [{"name", "category": "resources|soil", "amount", "unit", <span class="s">"database"</span>, <span class="s">"code"</span>}]
+  }
+}</pre>
+<p class="muted" style="font-size:.88rem">Orange fields are written by the pipeline (<code>spec.save()</code> keeps everything else untouched, so notes and evidence survive). <code>walk(node)</code> yields nested nodes children‑first — that is the build order and the reason a nested node never needs its parent to exist.</p>
+
+<h2>4 · Step 1 — resolve <span class="muted mono">resolve.py · db.py</span></h2>
+<p>For each input of each node (children first). Names are compared after lower‑casing and whitespace collapsing (<code>db._norm</code>); the index is built once from <code>bd.Database("bafu-2026").load()</code>.</p>
+<ul class="ladder">
+ <li class="head"><div class="if">condition</div><div class="then">outcome</div></li>
+ <li><div class="if">input has "node"</div><div class="then"><span class="state info">NEW NODE</span>recurse into it first; its own inputs go through this ladder; it will be built before the parent</div></li>
+ <li><div class="if">input has "sandbox"</div><div class="then"><span class="state ok">SANDBOX</span>if <code>bd.get_node(reverse-bafu-sandbox, sandbox)</code> exists → <code>code = sandbox</code>; else <span class="state bad">✗</span> "not built yet" → resolve fails (build that spec first)</div></li>
+ <li><div class="if">no exact normalised name match in bafu-2026</div><div class="then"><span class="state bad">MISSING</span>up to 5 <code>difflib.get_close_matches(cutoff=0.6)</code> suggestions printed; resolve returns False → <code>run</code> exits 2</div></li>
+ <li><div class="if">match, and input.location given<br>and a candidate has that location</div><div class="then">that candidate</div></li>
+ <li><div class="if">match, otherwise</div><div class="then">first candidate whose location is, in order: the node's location, then <code>RER, CH, DE, GLO, Europe</code>; else the first match</div></li>
+ <li><div class="if">chosen candidate's code ∈ the 138 (results/system_terminated_extended.csv)</div><div class="then"><span class="state warn">system process!</span>linked anyway, flagged; check will list it as a dependency to rebuild first</div></li>
+ <li><div class="if">not db_unit.startswith(spec_unit[:4])</div><div class="then"><span class="state warn">UNIT MISMATCH</span>printed, not fatal (this caught kg vs m² on the gypsum board)</div></li>
+</ul>
+<h3>Elementary flows (emissions, resources)</h3>
+<ul class="ladder">
+ <li><div class="if">no exact normalised name in ef-3.1-biosphere ∪ bafu-2026-residual</div><div class="then"><span class="state bad">MISSING</span>5 close names suggested; resolve fails</div></li>
+ <li><div class="if">several flows share the name<br>(EF 3.1 has one per sub‑compartment)</div><div class="then">best by tuple (category hint ⊂ categories, "unspecified" ∈ categories and not "long-term", database is ef-3.1-biosphere) — i.e. prefer the hinted compartment, then the unspecified sub‑compartment, then EF over the residual database</div></li>
+</ul>
+<p class="muted" style="font-size:.88rem">Resolve writes <code>code</code>/<code>location</code> (inputs) and <code>database</code>/<code>code</code> (flows) back into the spec, so later steps never search by name again.</p>
+
+<h2>5 · Step 2 — calibrate <span class="muted mono">calibrate.py · lci.py</span></h2>
+<p>Only the top node is calibrated; nested nodes keep their spec amounts. This step is a <b>bounded, weighted, linear least-squares problem</b> in the amounts of the inputs marked <code>free</code>, solved twice. The structure — which inputs exist at all — is never a variable here, and §5.7 derives why.</p>
+
+<h3>5.1 · Notation</h3>
+<p>Everything lives in flow space: <var>n</var> = 1,927 elementary-flow rows of the EF 3.1 biosphere, no characterisation anywhere. <code>lci.System.cumulative</code> returns <var>B</var><var>A</var><sup>−1</sup><var>e</var><sub>j</sub> — the cumulative inventory of one activity — as a column.</p>
+<ul class="sym">
+<li><span>b</span><span>cumulative inventory of the target, the system process being rebuilt</span></li>
+<li><span>M<sup>f</sup></span><span><var>n</var>×<var>q</var>; columns are the cumulative inventories of the <var>q</var> <b>free</b> inputs</span></li>
+<li><span>M<sup>x</sup></span><span><var>n</var>×<var>p</var>; the same for the <b>fixed</b> inputs, held at their spec amounts <var>a</var><sup>x</sup></span></li>
+<li><span>d</span><span>the node's own direct elementary flows, as a vector</span></li>
+<li><span>a</span><span>the unknown: amounts of the free inputs, bounded by <var>lo</var> ≤ <var>a</var> ≤ <var>hi</var></span></li>
+<li><span>m(a)</span><span>the model inventory <var>M</var><sup>x</sup><var>a</var><sup>x</sup> + <var>d</var> + <var>M</var><sup>f</sup><var>a</var></span></li>
+<li><span>r</span><span>the <b>residual target</b> — what the free inputs have to explain</span></li>
+<li><span>w, W</span><span>row weights and <var>W</var> = diag(<var>w</var>); <var>R</var> = { <var>i</var> : <var>w</var><sub>i</sub> &gt; 0 }</span></li>
+<li><span>κ, μ</span><span>indicator of free inputs measured in kilograms; the node's <code>mass_sum</code></span></li>
+<li><span>Λ</span><span>diag of column norms, used to precondition the solve</span></li>
+</ul>
+
+<h3>5.2 · The residual least-squares problem</h3>
+<p>We want the model inventory to match the target, <var>m</var>(<var>a</var>) ≈ <var>b</var>. Everything that is not a free amount is known, so move it to the right-hand side — that subtraction is the whole of <code>residual_target</code>:</p>
+<div class="math">
+<div class="eq c"><var>r</var> &nbsp;=&nbsp; <var>b</var> &nbsp;−&nbsp; <var>M</var><sup>x</sup><var>a</var><sup>x</sup> &nbsp;−&nbsp; <var>d</var> <span class="lbl">residual target</span></div>
+<div class="eq c" style="margin-top:14px"><var>â</var> &nbsp;=&nbsp; arg min<sub>&thinsp;<var>lo</var> ≤ <var>a</var> ≤ <var>hi</var></sub> &nbsp; ‖&thinsp;<var>W</var>&thinsp;(<var>M</var><sup>f</sup><var>a</var> − <var>r</var>)&thinsp;‖<sub>2</sub><sup>2</sup> &nbsp;+&nbsp; 10<sup>6</sup>‖<var>y</var>‖<sup>2</sup> (<var>κ</var><sup>⊤</sup><var>a</var> − <var>μ</var>)<sup>2</sup></div>
+<p class="where">Written out over the rows that carry weight, with <var>y</var> = <var>W</var><var>r</var> restricted to <var>R</var>:</p>
+<div class="eq"><span style="padding-left:1.5em">Σ<sub><var>i</var>∈<var>R</var></sub> &nbsp; <var>w</var><sub>i</sub><sup>2</sup> &thinsp;[&thinsp;<var>m</var>(<var>a</var>)<sub>i</sub> − <var>b</var><sub>i</sub>&thinsp;]<sup>2</sup> &nbsp;+&nbsp; 10<sup>6</sup>‖<var>y</var>‖<sup>2</sup> (<var>κ</var><sup>⊤</sup><var>a</var> − <var>μ</var>)<sup>2</sup></span></div>
+<p class="where">because (<var>M</var><sup>f</sup><var>a</var> − <var>r</var>)<sub>i</sub> = <var>m</var>(<var>a</var>)<sub>i</sub> − <var>b</var><sub>i</sub> identically. <b>The residual of the fit is the flow-by-flow error of the rebuilt process against the original.</b> The mass term is dropped when <code>mass_sum</code> is <code>null</code>; the weights enter <b>squared</b>, since the code scales the rows of both <var>M</var><sup>f</sup> and <var>r</var> by <var>w</var> and hands the result to a plain least-squares solver.</p>
+</div>
+<p>This is a convex quadratic on a box — a unique minimum in <var>M</var><sup>f</sup><var>a</var>, though not necessarily in <var>a</var>: if two free inputs have near-parallel cumulative inventories, many <var>a</var> give the same fit. That degeneracy is the subject of §5.7.</p>
+
+<h3>5.3 · Why those weights</h3>
+<p><code>lci.relative_weights</code> then <code>lci.System.fit_weights</code> build <var>w</var> in two moves. First, per flow, against a <em>frozen</em> model <var>m̃</var> from the previous pass:</p>
+<div class="math">
+<div class="eq c">base<sub>i</sub> &nbsp;=&nbsp; 1 / max(&thinsp;|<var>b</var><sub>i</sub>|, |<var>m̃</var><sub>i</sub>|&thinsp;) &nbsp;&nbsp;&nbsp; (0 if both are 0)</div>
+<p class="where">The point of the <code>max</code> is asymmetry-avoidance: dividing by |<var>b</var><sub>i</sub>| alone would be a division by zero for any flow the model invents that the target does not have, so such a flow would be free. Here it counts by its own size. Substituting into §5.2, each term becomes a <b>squared relative deviation</b> — a kilogram of CO₂ and a microgram of a dioxin are the same equation, and no characterisation factor is involved.</p>
+<div class="eq c" style="margin-top:14px"><var>w</var><sub>i</sub> &nbsp;=&nbsp; base<sub>i</sub> &nbsp;/&nbsp; √<var>n</var><sub><var>g</var>(<var>i</var>)</sub> &nbsp;&nbsp;&nbsp;&nbsp; so the objective is &nbsp; Σ<sub><var>g</var></sub> (1/<var>n</var><sub><var>g</var></sub>) Σ<sub><var>i</var>∈<var>g</var></sub> (relative deviation<sub>i</sub>)<sup>2</sup></div>
+<p class="where">Second: the 29 groups <var>g</var> are the (unit, top-level compartment) pairs — kilogram/air (77 flows), square metre/land use (57), kilo Becquerel/water (51) — and <var>n</var><sub><var>g</var></sub> is the number of weighted flows in a group. Each group contributes its <b>mean</b> squared relative deviation, so the 1,294 flows of kilogram/emissions do not outvote the 57 of square metre/land use. The flip side is that a group of one flow — cubic metre-year/land use is exactly that — speaks as loudly as the entire emissions block. Flows that the sparse solve only produces as round-off (<code>lci.determined_flows</code>) get weight 0: their relative deviation is noise.</p>
+<p class="where"><b>What this replaced.</b> Until 2026-09-23 the second move divided by Σ<sub><var>j</var>∈<var>g</var></sub> base<sub>j</sub>, to make Σ<var>w</var> = 1 per group. But that sum is dominated by the group's <em>smallest</em> flow, so each group's relative deviations were scaled by roughly its smallest amount. On a typical target, kilogram/emissions (CO₂ and ~1,200 others) weighed 10<sup>−58</sup> of the single land-use flow, and the fit effectively saw about 20 of ~1,670 flows. On the calibration benchmark the change moves the complete-list row from 767 to 787 of 803 material amounts within ±20 %, and the no-list row from 64 % to 98 % of flows within ±10 %.</p>
+</div>
+
+<h3>5.4 · The mass-sum row, and why 10<sup>6</sup></h3>
+<p>When a spec sets <code>mass_sum</code> — the composition must add to 1 kg of product — one row is appended to the already-weighted system, with coefficient <var>κ</var><sub>j</sub> = 1 for free inputs whose unit starts with <code>kilo</code> and weight 10<sup>3</sup>‖<var>y</var>‖:</p>
+<div class="math">
+<div class="eq c">cost of missing the mass balance by <var>Δ</var> &nbsp;=&nbsp; 10<sup>6</sup>‖<var>y</var>‖<sup>2</sup><var>Δ</var><sup>2</sup> &nbsp;&nbsp;vs.&nbsp;&nbsp; whole flow-fit objective ≲ ‖<var>y</var>‖<sup>2</sup></div>
+<p class="where">Taking <var>a</var> = 0 gives objective exactly ‖<var>y</var>‖<sup>2</sup>, so the optimum is no worse than that. Any <var>Δ</var> ≳ 10<sup>−3</sup> therefore costs more than the entire rest of the fit is worth: the balance holds to about a part in 10<sup>3</sup> of <var>μ</var>. A penalty, not a hard constraint — but tight enough to act as one, and it keeps the problem a plain box-constrained least squares that NNLS or BVLS can take.</p>
+</div>
+
+<h3>5.5 · Column scaling is an exact reparametrisation, not a fudge</h3>
+<p>The columns of the weighted design matrix <var>A</var> differ by ten orders of magnitude, because a <em>unit</em> of manufacturing plant and a kilogram of tap water are both legitimate inputs. Measured on the CH gypsum fibre board template's ten inputs, ‖<var>c</var>‖ runs from 1.05×10<sup>10</sup> (wooden board manufacturing plant, <em>unit</em>) down to 0.12 (tap water, <em>kilogram</em>) — a spread of <b>8.7×10<sup>10</sup></b>. Left alone, a solver stalls. Scaling the columns is not enough for <code>lsq_linear</code>'s default trust-region method either: it tests an <em>absolute</em> tolerance, and on the benchmark it stopped early in 14 of 100 complete-list cases, at an objective 10<sup>2</sup>–10<sup>13</sup> above that of the true amounts. So <code>lci.solve_weighted</code> scales the right-hand side too and uses an active-set method — NNLS when the only bound is <var>a</var> ≥ 0, BVLS otherwise. With <var>Λ</var> = diag(‖<var>A</var><var>e</var><sub>j</sub>‖<sub>2</sub>):</p>
+<div class="math">
+<div class="eq c">(<var>A</var><var>Λ</var><sup>−1</sup>)(<var>Λ</var><var>a</var>) &nbsp;=&nbsp; <var>A</var><var>a</var> &nbsp;&nbsp;&nbsp;and&nbsp;&nbsp;&nbsp; <var>lo</var> ≤ <var>a</var> ≤ <var>hi</var> &nbsp;⟺&nbsp; <var>Λ</var><var>lo</var> ≤ <var>Λ</var><var>a</var> ≤ <var>Λ</var><var>hi</var></div>
+<p class="where">Since every <var>Λ</var><sub>jj</sub> &gt; 0, the substitution <var>z</var> = <var>Λ</var><var>a</var> is a bijection of the feasible box that leaves the objective value unchanged. The solved problem is therefore <b>the same problem</b>, not an approximation of it — only the conditioning differs, every column of <var>A</var><var>Λ</var><sup>−1</sup> now having unit norm. That is why rescaling the solution at the end is exact rather than a correction.</p>
+</div>
+
+<h3>5.6 · Two passes: truncated IRLS</h3>
+<p>The weights depend on the model, and the model depends on the amounts — so the honest problem, min <sub><var>a</var></sub> ‖<var>W</var>(<var>m</var>(<var>a</var>))(<var>M</var><sup>f</sup><var>a</var> − <var>r</var>)‖<sup>2</sup>, is <b>not</b> linear. The code runs iteratively reweighted least squares and stops at two:</p>
+<div class="math">
+<div class="eq"><span style="padding-left:1.5em"><var>a</var><sup>0</sup> = the spec's amounts &nbsp;&nbsp;→&nbsp;&nbsp; <var>a</var><sup>1</sup> = solve with <var>W</var>(<var>m</var>(<var>a</var><sup>0</sup>)) &nbsp;&nbsp;→&nbsp;&nbsp; <var>a</var><sup>2</sup> = solve with <var>W</var>(<var>m</var>(<var>a</var><sup>1</sup>)) &nbsp;&nbsp;→&nbsp;&nbsp; return <var>a</var><sup>2</sup></span></div>
+<p class="where">Two is a truncation chosen empirically, not a convergence result — there is no fixed-point test in the code, and the dependence on a draft's starting amounts is <b>attenuated rather than removed</b>: <var>a</var><sup>0</sup> still reaches the answer through <var>W</var>(<var>m</var>(<var>a</var><sup>1</sup>)). It is weak because the weight saturates: base<sub>i</sub> = 1/max(|<var>b</var><sub>i</sub>|, |<var>m̃</var><sub>i</sub>|) is <em>flat</em> in <var>m̃</var> wherever the model is below the target, so every flow the draft did not wildly overshoot contributes the identical weight in both passes.</p>
+</div>
+
+<h3>5.7 · Why the input list is never a variable</h3>
+<p>This is the mathematical core of the whole method, and it follows from one identity. Scale production to 1 on the diagonal and write <var>A</var> = <var>I</var> − <var>T</var>, with <var>T</var><sub>kj</sub> ≥ 0 the amount of <var>k</var> consumed per unit of <var>j</var>. Since (<var>I</var>−<var>T</var>)<sup>−1</sup> = <var>I</var> + <var>T</var> + <var>T</var><sup>2</sup> + …, the cumulative inventory <var>c</var><sub>j</sub> = <var>B</var><var>A</var><sup>−1</sup><var>e</var><sub>j</sub> of <em>every</em> activity satisfies</p>
+<div class="math">
+<div class="eq c"><var>c</var><sub>j</sub> &nbsp;=&nbsp; <var>d</var><sub>j</sub> &nbsp;+&nbsp; Σ<sub>k</sub> <var>T</var><sub>kj</sub> <var>c</var><sub>k</sub> <span class="lbl">Leontief</span></div>
+<p class="where">where <var>d</var><sub>j</sub> = <var>B</var><var>e</var><sub>j</sub> is the activity's <b>direct</b> flows alone. In words: <b>every candidate column is exactly a non-negative combination of its own suppliers' columns, plus its direct flows.</b> Checked numerically on 60 random bafu-2026 activities — maximum relative error 1.1×10<sup>−8</sup>, median 3.6×10<sup>−11</sup>, which is LU round-off. It is an identity, not an approximation.</p>
+</div>
+<p>Now the damage. <var>d</var><sub>j</sub> is <em>small</em>: over those 60 activities the median ‖<var>d</var><sub>j</sub>‖/‖<var>c</var><sub>j</sub>‖ is 1×10<sup>−4</sup>, and 80 % sit below 10<sup>−2</sup> — most of a product's burden comes from upstream, not from its own gate. So each candidate column lies within a relative distance ‖<var>d</var><sub>j</sub>‖/‖<var>c</var><sub>j</sub>‖ of the cone spanned by other candidates. When the input list is free and the candidate set is drawn from one database, those suppliers <em>are</em> in the set, and the objective of §5.2 has directions along which it changes by almost nothing. The minimiser is then picked by round-off and by which columns happen to be present — not by evidence.</p>
+<div class="math">
+<div class="eq"><span style="padding-left:1.5em">Stucco, at plant [CH]: &nbsp; ‖<var>d</var>‖/‖<var>c</var>‖ = 6.6×10<sup>−3</sup></span></div>
+<p class="where">So 99.3 % of stucco's cumulative inventory is reproduced exactly by 1.16 kg gypsum (at mine) + 0.70 MJ natural-gas heat + 0.175 MJ heavy-fuel-oil heat + 0.027 kWh electricity + 1.4×10<sup>−4</sup> industrial machine. That is the arithmetic behind the failure reported in §2 of the concept page: given a free structure, the solver reproduced a known process's whole cumulative inventory while choosing <b>116 inputs, of which 2 had the right amount</b>, and turned 0.71 kg of stucco into 4.7 kg of lime plus 0.8 kg of anhydrite. It did not malfunction — it walked down a flat direction that the supply chain guarantees exists.</p>
+</div>
+<p><b>Fixing the list removes the cone.</b> With <var>q</var> ≈ 10 named columns chosen from evidence rather than 2,965 drawn from a database, the substitutions above are no longer available, and the amounts come back to ~10 %. Bounds narrow what is left. This is why §5 fits amounts and never names, and why the benchmark's no‑list rows are the numbers that matter: offered every dataset in the database and no list (<em>blind‑all</em>), the fit reproduces 100 % of the flows within ±10 % with a process of ~71 wrong inputs.</p>
+
+<h3>5.8 · Amounts that land on a bound</h3>
+<p>At the optimum the KKT conditions on the box read, with gradient <var>∇</var> = 2(<var>M</var><sup>f</sup>)<sup>⊤</sup><var>W</var><sup>2</sup>(<var>M</var><sup>f</sup><var>â</var> − <var>r</var>):</p>
+<div class="math">
+<div class="eq"><span style="padding-left:1.5em"><var>lo</var><sub>j</sub> &lt; <var>â</var><sub>j</sub> &lt; <var>hi</var><sub>j</sub> ⟹ <var>∇</var><sub>j</sub> = 0 &nbsp;&nbsp;·&nbsp;&nbsp; <var>â</var><sub>j</sub> = <var>lo</var><sub>j</sub> ⟹ <var>∇</var><sub>j</sub> ≥ 0 &nbsp;&nbsp;·&nbsp;&nbsp; <var>â</var><sub>j</sub> = <var>hi</var><sub>j</sub> ⟹ <var>∇</var><sub>j</sub> ≤ 0</span></div>
+<p class="where">An amount pinned at a bound means the unconstrained best fit lies <em>outside</em> the range the report gives — the gradient is still pushing outward when it hits the wall. That is a substantive finding, not a numerical artefact: <b>the report and the original dataset disagree</b>. The harness prints these, and the inventories page tags them "calibrated · at upper bound". Three of gypsum fibre board's six fitted amounts sit on the 2× ceiling, which is the honest statement that the Swiss template does not describe the German plant.</p>
+</div>
+
+<h3>5.9 · Three different things are called "residual"</h3>
+<div class="tbl"><table><thead><tr><th>Name</th><th>Definition</th><th>Where</th></tr></thead><tbody>
+<tr><td><b>residual target</b></td><td class="mono"><var>r</var> = <var>b</var> − <var>M</var><sup>x</sup><var>a</var><sup>x</sup> − <var>d</var></td><td>§5.2 — what the free inputs must explain; the RHS of the fit</td></tr>
+<tr><td><b>fit residual</b></td><td class="mono"><var>M</var><sup>f</sup><var>â</var> − <var>r</var> = <var>m</var>(<var>â</var>) − <var>b</var></td><td>§5.2 — what the fit could not explain; its weighted norm is the <code>residual norm</code> printed by <code>calibrate</code></td></tr>
+<tr><td><b>build residual</b></td><td class="mono">cum(target) − cum(explicit)</td><td>§6 — carried as direct biosphere flows on the <code>-hybrid</code> node</td></tr>
+</tbody></table></div>
+<p>The last two are the same quantity with opposite sign. After <code>calibrate --apply</code>, the explicit node <em>is</em> the model, cum(explicit) = <var>m</var>(<var>â</var>), so the build residual equals −(fit residual) exactly — for a flat spec. With nested nodes the two part company, because calibrate only ever touches the top node's free inputs while build walks the whole tree.</p>
+
+<h3>5.10 · The same thing, as the code reads it</h3>
+<ul class="ladder">
+ <li><div class="if">no input has free: true</div><div class="then">print "nothing to calibrate", return (this is S1 with a complete table)</div></li>
+ <li><div class="if">any input has "sandbox"</div><div class="then">the LCA system is built with demand on that sandbox node so the matrices include the sandbox; otherwise demand on the target</div></li>
+ <li><div class="if">always</div><div class="then">residual target <em>r = b − Mˣ·aˣ − d</em>; one row per elementary flow, weighted <em>1/max(|target|, |model|)</em> — relative error, no characterisation</div></li>
+ <li><div class="if">row weights</div><div class="then"><em>wᵢ = 1 / max(|bᵢ|, |mᵢ|)</em>, where <em>m</em> is the model: every flow present in either inventory is one equation in <b>relative</b> error, so a kilogram of CO₂ and a microgram of a dioxin count alike and a flow the model invents counts by its own size. Then divided by √(flows in its <b>(unit, compartment) group</b>) — kilogram/air, square metre/land use, kilo Becquerel/water, 29 of them — so every group contributes its mean squared relative error and the 1,294 flows of kilogram/emissions do not outvote the rest; round-off flows (<code>lci.determined_flows</code>) get weight 0. No characterisation factors anywhere</div></li>
+ <li><div class="if">input.bounds given</div><div class="then">lo, hi from the spec; else lo = 0, hi = ∞</div></li>
+ <li><div class="if">node.mass_sum is not None</div><div class="then">one extra row appended: Σ (free inputs whose unit starts with "kilo") = mass_sum, weighted <em>10³ · ‖y‖</em> so it acts as a near‑hard constraint</div></li>
+ <li><div class="if">always</div><div class="then">columns and right-hand side scaled to unit norm, bounds scaled with them — an exact reparametrisation, §5.5; <code>lci.solve_weighted</code>: <code>scipy.optimize.nnls</code> when every bound is [0, ∞), else <code>lsq_linear(method="bvls", max_iter=20000)</code>; results rescaled</div></li>
+ <li><div class="if">always</div><div class="then">the solve runs <b>twice</b> — truncated IRLS, §5.6. Pass 1 weights against the spec's own amounts, pass 2 against the fit of pass 1, so the result barely depends on the amounts a draft happened to start from</div></li>
+ <li><div class="if">--apply (or run --apply)</div><div class="then">fitted amounts written into the spec; otherwise only printed as spec / fitted / ratio</div></li>
+</ul>
+<div class="note">Why the list is never changed here: with a free structure the same solver reproduced a known process's whole cumulative inventory while choosing 116 wrong inputs — §5.7 derives why that is guaranteed rather than unlucky. The benchmark's no‑list rows measure it: with no list, 97–100 % of the flows match within ±10 % and the median case uses 71–96 inputs the real process does not have.</div>
+
+<h2>6 · Step 3 — build <span class="muted mono">build.py</span></h2>
+<ul class="ladder">
+ <li><div class="if">sandbox database absent</div><div class="then">registered with <code>depends = [bafu-2026, ef-3.1-biosphere, bafu-2026-residual]</code></div></li>
+ <li><div class="if">for node in walk(spec.node) — children first</div><div class="then">code = <code>&lt;target&gt;-disagg</code> for the top node, <code>&lt;target&gt;-&lt;slug(name)&gt;</code> for nested ones; exchanges: production 1.0, technosphere per input (key → sandbox for nested/sandbox inputs, else bafu-2026), biosphere per flow</div></li>
+ <li><div class="if">writing</div><div class="then">merge into the existing sandbox: <code>load()</code>, update ours, <code>write()</code> — other specs' nodes are kept. (bw2data's <code>write()</code> consumes the exchange lists it is given; the hybrid is rebuilt from the spec, not copied.)</div></li>
+ <li><div class="if">not --no-hybrid</div><div class="then">residual <em>r = cum(target) − cum(explicit)</em>, computed on a System with demand on the explicit node; every row with |r| &gt; 10⁻¹⁵ becomes a biosphere exchange on <code>&lt;target&gt;-hybrid</code> (amount r, comment "residual"); count of negative entries printed</div></li>
+</ul>
+
+<h2>7 · Step 4 — check <span class="muted mono">check.py</span></h2>
+<p>Inputs: target, explicit node, hybrid node if present. One System with demand on the explicit node; three cumulative inventories in one solve.</p>
+<ul class="ladder">
+ <li><div class="if">flow agreement</div><div class="then">per elementary flow of the target: Δ = explicit/target − 1, bucketed (≤ 10 %, 10–20 %, 20–50 %, 50–100 %, &gt; 100 %, missing); three headline numbers — the 50 largest kilogram flows within ±10 %, the share of the target's kilogram mass within ±10 %, and all flows within ±10 %</div></li>
+ <li><div class="if">largest flows</div><div class="then">per unit (kg, MJ, kBq, m³ …) the largest flows of the target with their explicit value, Δ and residual; then the 10 worst deviations among the 50 largest kilogram flows — the diagnostic that turns "radon is −51 %" into "the grid electricity is too low"</div></li>
+ <li><div class="if">hybrid present</div><div class="then">flows where |hybrid − target| &gt; 1e‑6·|target| + 1e‑9·max|target| are counted; the number must be 0 — the hybrid equals the original flow for flow by construction</div></li>
+ <li><div class="if">structural check 1</div><div class="then">✓ if total explicit inputs over all nodes ≤ 30</div></li>
+ <li><div class="if">structural check 2</div><div class="then">✓ if no input name matches <code>/at power plant|power plant$|at run-of-river|at reservoir/i</code> (a decomposed grid mix)</div></li>
+ <li><div class="if">structural check 3</div><div class="then">✓ if no input code ∈ the 138 (else lists them: "rebuild those first")</div></li>
+ <li><div class="if">structural check 4</div><div class="then">informational: Σ kg inputs excluding names starting with "disposal"/"transport", plus Σ kg direct resources, per unit of product</div></li>
+ <li><div class="if">structural check 5</div><div class="then">✓ if every input has a code or a nested node</div></li>
+ <li><div class="if">output</div><div class="then"><code>results/checks/&lt;code&gt;.md</code> with the strategy block from the spec, calibrated inputs and their bounds, links to rebuilt nodes; console: median |Δ|, worst category, residual share median, the five checks</div></li>
+</ul>
+
+<h2>8 · Benchmark <span class="muted mono">benchmark.py</span></h2>
+<ul class="ladder">
+ <li><div class="if">case selection · pick_cases(n, seed)</div><div class="then">unit processes with 3 ≤ technosphere inputs ≤ 30, not among the 101 flagged (<code>db.aggregated_codes</code>, kept flag‑only so the published numbers stay fixed), name not starting with "xx"; grouped by BAFU top‑level category, each group sorted by code then shuffled with <code>Random(seed)</code>; round‑robin over categories until n</div></li>
+ <li><div class="if">target</div><div class="then">the case's cumulative inventory (what a type=2 export of it would contain); truth = its technosphere inputs and amounts; direct flows known except in the two blind scenarios</div></li>
+ <li><div class="if">scenario oracle</div><div class="then">candidates = true input keys; lo 0, hi ∞</div></li>
+ <li><div class="if">scenario bounded</div><div class="then">candidates = true keys; lo = 0.5·true, hi = 2·true</div></li>
+ <li><div class="if">scenario partial</div><div class="then">candidates = the true keys ranked by how many of the target's flows they supply ≥ 1 % of, keeping the top round(0.7·n) (at least 1)</div></li>
+ <li><div class="if">scenario distractors</div><div class="then">true keys + 10 sampled (shared <code>Random(seed)</code>) from the pool of processes used ≥ 30 times, excluding truth and the case</div></li>
+ <li><div class="if">scenario blind</div><div class="then">the whole pool (~675), no direct flows; run on the same 100 cases (<code>blind-n100-seed7</code>)</div></li>
+ <li><div class="if">scenario blind-all</div><div class="then">every dataset in the database (~12,000), no direct flows (<code>blind-all-n100-seed7</code>); above <code>lci.WIDE</code> = 2,000 columns the NNLS runs on a working set (<code>lci.nnls_working_set</code>), ~30 s per case</div></li>
+ <li><div class="if">solver</div><div class="then">first weights against an unweighted NNLS fit, then the same two weighted passes and the same <code>lci.solve_weighted</code> as <code>calibrate</code></div></li>
+ <li><div class="if">metrics · "material"</div><div class="then">an input is material when its true contribution reaches 1 % of the target amount of some determined flow (round-off flows are left out, as in the flow score); a candidate is "chosen" when its fitted contribution does. TP/FP/FN, amounts within ±20 % over material inputs, flows within ±10 %, median flow deviation</div></li>
+ <li><div class="if">output</div><div class="then"><code>results/benchmark/&lt;name&gt;.csv</code> (one row per case × scenario) and <code>.md</code> (medians per scenario)</div></li>
+</ul>
+
+<h2>8b · Drafting a spec <span class="muted mono">draft.py · prompts/</span></h2>
+<p>The specs are the evidence step, so their provenance matters most. <code>draft-all</code> runs the layers below for every row of <code>results/system_terminated_extended.csv</code> (all 138; report from <code>sources.csv</code>, no arguments typed by hand) and records per dataset how far it got in <code>results/drafting_status.csv</code>: <code>drafted</code> (with the <code>route</code> that made it), <code>no-usable-evidence</code>, <code>pages-not-found</code> / <code>no-pdf</code> (with <code>--no-fallback</code>), <code>prompt-N-written</code> (dry run), <code>error</code>. Each layer leaves files under <code>specs/evidence/&lt;code&gt;/</code>:</p>
+<ul class="ladder">
+ <li class="head"><div class="if">layer · condition</div><div class="then">outcome</div></li>
+ <li><div class="if">locate CODE --report PDF (layer 0)</div><div class="then"><span class="state ok">deterministic</span>every caption matching <code>Tab./Table/Tabelle/Tableau/Fig./Figure/Abb. N…</code> with its PDF page → <code>captions-0-locate.json</code>; then <span class="state info">one prompt</span> (<code>prompts/locate_pages.md</code>): the model names the inventory table(s) and returns <code>first_page</code>–<code>last_page</code> (≤ 4 pages) or <code>found: false</code> with a reason. A model step because the reports are German/French and the names English</div></li>
+ <li><div class="if">evidence &lt;code&gt; --report PDF --pages a-b</div><div class="then"><span class="state ok">deterministic</span><code>pdftotext -layout</code> of those PDF pages → <code>report-p&lt;a&gt;-&lt;b&gt;.txt</code>; the target's ecoSpold metadata + the resource flows of its aggregated vector → <code>target.json</code>; SHA‑256 of the PDF, the text and the XML, and the pdftotext version → <code>manifest.json</code></div></li>
+ <li><div class="if">draft: pass 1 (extraction)</div><div class="then">prompt = <code>prompts/draft_spec.md</code> with the metadata, the resource candidates and the excerpt filled in → <code>prompt-1-extract.md</code>; structured output against <code>schema-1-extract.json</code>: line items with a verbatim <code>quote</code>, raw value / unit / basis, an optional conversion <code>factor</code> with its source, a <code>search</code> phrase, <code>kind</code>, <code>confidence</code>; plus <code>basis_amount</code>, <code>allocation</code>, <code>gaps</code>. Rule 8 of the prompt: no inputs the excerpt does not mention</div></li>
+ <li><div class="if">draft: candidates for pass 2</div><div class="then"><span class="state ok">deterministic</span>for each input: words of the search phrase matched at word starts in the BAFU name index (all words, or all but one), ranked by matched words → target location, RER, CH, DE, GLO → name length, top 8; for each emission / resource: the same over the two biosphere databases, hinted compartment and "unspecified" first → <code>candidates-2-map.json</code></div></li>
+ <li><div class="if">draft: pass 2 (mapping)</div><div class="then">prompt = <code>prompts/map_inputs.md</code> with the items and their candidates → <code>prompt-2-map.md</code>; output against <code>schema-2-map.json</code>: <code>chosen</code> (one of the candidates or null), <code>location</code>, <code>compartment</code>, <code>dependency</code>, <code>reason</code></div></li>
+ <li><div class="if">model call</div><div class="then"><code>claude-opus-5</code>, adaptive thinking, effort <code>high</code>, streaming, <code>output_config.format = json_schema</code>; provenance = model, message id, tokens, prompt SHA‑256, time, <code>by</code>. Needs the <code>anthropic</code> SDK (<code>uv sync --extra llm</code>) and an API key or <code>ant auth login</code> profile — a claude.ai subscription is not an API key</div></li>
+ <li><div class="if">--dry-run</div><div class="then">writes the prompts and schemas only, stops. For any other model, or a person</div></li>
+ <li><div class="if">--from-response extract=F / map=F / by=who</div><div class="then">ingests a response obtained elsewhere; <span class="state warn">validated</span> with jsonschema against the same schema (rejected with the failing path); provenance records <code>model: manual</code> and <code>by</code>. <code>/draft-spec</code> in Claude Code runs this whole loop with the session as the model</div></li>
+ <li><div class="if">assemble</div><div class="then"><span class="state ok">deterministic</span>amount = raw_value × factor × (1 / basis_amount); unit names normalised; an aggregated dependency is linked to its rebuilt sandbox node when one exists (<code>&lt;code&gt;-disagg</code> or <code>-draft-disagg</code>); <code>mass_sum</code> carried over when the excerpt states one; inputs mapped to <code>chosen</code>, emissions / resources to the chosen flow and compartment; a range (<code>raw_min ≠ raw_max</code>) becomes <code>free</code> + <code>bounds</code>; every entry gets a <code>derivation</code> (quote, raw value, factor with source, search, mapping reason, author, <code>reviewed_by: null</code>); the spec gets <code>variant: "draft"</code> (sandbox nodes <code>&lt;code&gt;-draft-…</code>) and a <code>provenance</code> block with both passes, the model's <code>gaps</code> and the skipped items → <code>specs/&lt;code&gt;-&lt;slug&gt;.draft.json</code></div></li>
+ <li><div class="if">no report prints the inventory · template route</div><div class="then"><span class="state ok">deterministic</span>unit processes whose name starts with the same product → <code>candidates-3-template.json</code>; <span class="state info">one prompt</span> (<code>prompts/draft_from_template.md</code>): pick one or none, the inputs whose amounts may differ, the grid to switch to; <code>assemble_template</code> copies the template's inputs and direct flows and frees the named inputs within 0.5–2×</div></li>
+ <li><div class="if">no template · metadata route</div><div class="then"><span class="state info">two prompts</span> (<code>prompts/draft_from_metadata.md</code>, then the mapping prompt): inputs the metadata names, each with one amount basis (stoichiometry, mass balance, composition split, named only, implied); <code>assemble_metadata</code> adds the ecoinvent‑v2 utility block for chemicals as free inputs</div></li>
+</ul>
+<p class="muted" style="font-size:.88rem">Reproducible means: evidence and candidates regenerate bit‑for‑bit, prompt and model are pinned, every number is auditable to a quoted line — not that the model returns identical JSON. First run on burnt shale (the session answering its own prompts, labelled so): identical to the interactive spec on all 12 inputs and 6 emissions; electricity left at the table's gross value (flagged), the raw‑shale flows reported as gaps.</p>
+
+<h2>9 · CLI</h2>
+<div class="tbl"><table><thead><tr><th>Command</th><th>Does</th><th>Exit / side effects</th></tr></thead><tbody>
+<tr><td class="mono">reverse-bafu resolve SPEC</td><td>ladder §4; prints the resolution table</td><td>exit 2 if anything MISSING; writes codes into SPEC</td></tr>
+<tr><td class="mono">reverse-bafu calibrate SPEC [--apply]</td><td>ladder §5</td><td>prints spec / fitted / ratio; <code>--apply</code> writes amounts into SPEC</td></tr>
+<tr><td class="mono">reverse-bafu build SPEC [--no-hybrid]</td><td>ladder §6</td><td>writes nodes into reverse-bafu-sandbox</td></tr>
+<tr><td class="mono">reverse-bafu check SPEC</td><td>ladder §7</td><td>writes results/checks/&lt;code&gt;.md</td></tr>
+<tr><td class="mono">reverse-bafu run SPEC [--apply]</td><td>resolve → calibrate → build → check</td><td>stops after resolve on MISSING; calibrated amounts applied only with <code>--apply</code></td></tr>
+<tr><td class="mono">reverse-bafu run-all [--apply]</td><td>the same for every specs/*.json, ordered so that a spec with a <code>sandbox</code> link runs after the spec building that node; an unresolved spec is recorded and skipped</td><td>writes results/rebuild_status.csv (status, the 50 largest kg flows within ±10 %, kg mass covered, all flows within ±10 %, median deviation, report)</td></tr>
+<tr><td class="mono">reverse-bafu benchmark --n 100 --seed 7 [--scenarios …] [--name …] [--mode extraction]</td><td>§8</td><td>writes results/benchmark/&lt;name&gt;.{csv,md}</td></tr>
+<tr><td class="mono">reverse-bafu draft-all [--dry-run] [--only CODES] [--by WHO] [--no-fallback]</td><td>§8b, for every row of results/system_terminated_extended.csv: report from sources.csv, locate → evidence → draft → assemble, then the template and metadata routes; incremental</td><td>writes results/drafting_status.csv and specs/*.draft.json</td></tr>
+<tr><td class="mono">reverse-bafu locate CODE --report PDF [--dry-run | --from-response locate=F]</td><td>§8b layer 0: caption index (deterministic, cached in .cache/pdftext/) + one prompt → page range or found=false</td><td>writes prompt-0-locate.md, captions-0-locate.json, response-0-locate.json</td></tr>
+<tr><td class="mono">reverse-bafu evidence CODE --report PDF --pages a-b</td><td>§8b layer 1</td><td>writes specs/evidence/CODE/</td></tr>
+<tr><td class="mono">reverse-bafu draft CODE [--dry-run | --from-response …]</td><td>§8b layers 2–3</td><td>prompts, responses, provenance; assembles when both passes are in</td></tr>
+<tr><td class="mono">reverse-bafu assemble CODE</td><td>§8b layer 3</td><td>writes specs/CODE-slug.draft.json</td></tr>
+<tr><td class="mono">--project</td><td colspan="2">Brightway project, default <code>bafu-2026</code></td></tr>
+</tbody></table></div>
+
+<h2>10 · Constants you may want to change</h2>
+<div class="tbl"><table><thead><tr><th>Where</th><th>Constant</th><th>Value</th><th>Effect</th></tr></thead><tbody>
+<tr><td class="mono">db.py</td><td class="mono">LOCATION_PREFERENCE</td><td class="mono">RER, CH, DE, GLO, Europe</td><td>tie‑break when a name exists in several locations and the spec gives none</td></tr>
+<tr><td class="mono">db.py</td><td class="mono">get_close_matches cutoff</td><td class="mono">0.6</td><td>how loose the "close names" suggestions are (suggestions only, never auto‑linked — chemical names are too similar)</td></tr>
+<tr><td class="mono">calibrate.py</td><td class="mono">mass row weight</td><td class="mono">1e3 · ‖y‖</td><td>how hard the mass_sum constraint is</td></tr>
+<tr><td class="mono">lci.py</td><td class="mono">solve_weighted iterations</td><td class="mono">BVLS 20000; NNLS 50·n + 1000</td><td>—</td></tr>
+<tr><td class="mono">lci.py</td><td class="mono">WIDE</td><td class="mono">2000</td><td>above this many candidate columns, NNLS runs on a working set (blind-all)</td></tr>
+<tr><td class="mono">lci.py</td><td class="mono">row weight</td><td class="mono">1 / max(|target|, |model|) / √(flows in the group); round-off flows 0</td><td>every flow counts by relative error, every (unit, compartment) group of flows equally</td></tr>
+<tr><td class="mono">check.py</td><td class="mono">large‑flow headline</td><td class="mono">50 largest kg flows</td><td>the flows a report can name, separated from the background tail</td></tr>
+<tr><td class="mono">build.py</td><td class="mono">RESIDUAL_MIN</td><td class="mono">1e-15</td><td>residual entries below this are dropped as noise</td></tr>
+<tr><td class="mono">check.py</td><td class="mono">input count limit</td><td class="mono">30</td><td>structural check 1</td></tr>
+<tr><td class="mono">check.py</td><td class="mono">POWER_PLANT regex</td><td class="mono">at power plant|power plant$|at run-of-river|at reservoir</td><td>structural check 2</td></tr>
+<tr><td class="mono">check.py</td><td class="mono">flow diff depth</td><td class="mono">5 categories × 8 flows</td><td>report length</td></tr>
+<tr><td class="mono">benchmark.py</td><td class="mono">min/max inputs, pool threshold, partial share, distractors, material share</td><td class="mono">3 / 30, used ≥ 30, 0.7, 10, 1 %</td><td>test‑set shape and metrics</td></tr>
+</tbody></table></div>
+
+<h2>11 · Adding things</h2>
+<p><strong>A new dataset:</strong> write <code>specs/&lt;code&gt;-&lt;slug&gt;.json</code> from the evidence, run <code>reverse-bafu run</code>, read <code>results/checks/&lt;code&gt;.md</code>, edit, repeat; then <code>uv run python scripts/render_pages.py</code> to refresh the browser page.<br>
+<strong>A multi‑node rebuild:</strong> nest <code>"node": {…}</code> under the input that BAFU lacks; resolve recurses, build writes children first, check counts inputs across all nodes. Calibration only touches the top node — nested amounts must come from evidence.<br>
+<strong>A dependency chain:</strong> rebuild the upstream dataset first, then reference it with <code>"sandbox": "&lt;code&gt;-disagg"</code>.<br>
+<strong>A new structural check:</strong> append a <code>(bool, message)</code> to the <code>checks</code> list in <code>check.run</code>.<br>
+<strong>A new benchmark scenario:</strong> add a branch in <code>Bench.run_case</code> that sets <code>cand</code>, <code>lo</code>, <code>hi</code> and whether <code>direct</code> is given; add its name to <code>SCENARIOS</code>.</p>
+<p class="muted" style="font-size:.85rem">Source: Life Cycle Inventory database of the Swiss Federal Administration, BAFU:2026.</p>
+</main>

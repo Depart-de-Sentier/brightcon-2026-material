@@ -1,0 +1,415 @@
+You are locating the inventory table of one dataset inside a life-cycle-inventory report.
+
+Dataset: `Boric oxide, at plant` [GLO], 1 kg, BAFU category chemicals / inorganic.
+Metadata: includedProcesses: Production of boric oxide including materials, energy uses, infrastructure and emissions. · technology: Fusion of boric oxide · comment: The process "boric oxide, at plant, GLO" is modelled for the production of  boric oxide from boric acid in the world.  Raw materials are modelled with a stoechiometric calculation, Energy consumptions and emissions are estimated. Infrastructure and transports are calculated with standard values.;
+CA
+
+Report: `2007 - LCI highly pure chemicals - Sutter.pdf` (326 PDF pages). Below is every table and figure caption found in it, with the PDF page it appears on (not the printed page number). The report may be in German, French or English; the dataset name is English — match on meaning (e.g. "gebrannter Ölschiefer" = burnt shale, "Gipsfaserplatte" = gypsum fibre board).
+
+- p.10: Tab. 0.1 Datasets of highly pure chemicals.
+- p.27: Tab. 1.1 Chemical and physical properties of ammonium thiocyanate (Ullmann 2004)
+- p.29: Tab. 1.2 Consumption of raw materials and auxilliaries for the ammonium thiocyanate production
+- p.30: Tab. 1.3 Energy consumption for the ammonium thiocyanate production
+- p.30: Tab. 1.4 Total transport amounts for the ammonium thiocyanate production
+- p.30: Tab. 1.5 Process emissions to air from the ammonium thiocyanate production
+- p.31: Tab. 1.6 Process emissions to water from the ammonium thiocyanate production
+- p.31: Tab. 1.7 shows the life cycle inventory and the data quality indicators for the ammonium thiocyanate
+- p.32: Tab. 1.7 Unit process raw data for the ammonium thiocyanate production
+- p.33: Tab. 1.8 shows selected LCI results and the cumulative energy demand for the ammonium thiocyanate
+- p.33: Tab. 1.8 Selected LCI results and the cumulative energy demand for the ammonium thiocyanate production
+- p.36: Tab. 2.1 Chemical and physical properties of arsine (Ullmanns 2005)
+- p.37: Tab. 2.2 Consumption of raw materials and auxilliaries for the arsine production
+- p.37: Tab. 2.3 Energy consumption for the arsine production
+- p.38: Tab. 2.4 Total transport amounts for the arsine production
+- p.38: Tab. 2.5 Process emissions to air from the arsine production
+- p.38: Tab. 2.6 Process emissions to water from the arsine production
+- p.39: Tab. 2.7 Wastes from the arsine production
+- p.39: Tab. 2.8 shows the life cycle inventory and the data quality indicators for the arsine production. The
+- p.40: Tab. 2.8 Unit process raw data for the arsine production
+- p.41: Tab. 2.9 shows selected LCI results and the cumulative energy demand for the arsine production.
+- p.41: Tab. 2.9 Selected LCI results and the cumulative energy demand for the arsine production
+- p.44: Tab. 3.1 Chemical and physical properties of boric oxide (Ullmanns 2004)
+- p.44: Tab. 3.2 Estimated world borate reserves and mine production (as B2O3) in 1982 (Ullmanns 2004)
+- p.45: Tab. 3.3 Consumption of raw materials and auxilliaries for the boric oxide production
+- p.46: Tab. 3.4 Energy consumption for the boric oxide production
+- p.46: Tab. 3.5 Total transport amounts for the boric oxide production
+- p.46: Tab. 3.6 Process emissions to air from the boric oxide production
+- p.47: Tab. 3.7 Process emissions to water from the boric oxide production
+- p.47: Tab. 3.8 shows the life cycle inventory and the data quality indicators for the boric oxide production.
+- p.48: Tab. 3.8 Unit process raw data for the boric oxide production
+- p.49: Tab. 3.9 shows selected LCI results and the cumulative energy demand for the boric oxide production.
+- p.49: Tab. 3.9 Selected LCI results and the cumulative energy demand for the boric oxide production
+- p.52: Tab. 4.1 Chemical and physical properties of boron carbide (Ullmann 2005)
+- p.56: Tab. 4.2 Consumption of raw materials and auxilliaries for the boron carbide production
+- p.56: Tab. 4.3 Energy consumption for the boron carbide production
+- p.57: Tab. 4.4 Total transport amounts for the boron carbide production
+- p.57: Tab. 4.5 Process emissions to air from the boron carbide production
+- p.57: Tab. 4.6 Wastes from the boron carbide production
+- p.57: Tab. 4.7 shows the life cycle inventory and the data quality indicators for the boron carbide produc-
+- p.58: Tab. 4.7 Unit process raw data for the boron carbide production
+- p.59: Tab. 4.8 shows selected LCI results and the cumulative energy demand for the boron carbide produc-
+- p.59: Tab. 4.8 Selected LCI results and the cumulative energy demand for the boron carbide production
+- p.62: Tab. 5.1 Chemical and physical properties of trifluoroborane (Ullmann 2005)
+- p.63: Tab. 5.2 Consumption of raw materials and auxilliaries for the boron trifluoride production
+- p.64: Tab. 5.3 Energy consumption for the boron trifluoride production
+- p.64: Tab. 5.4 Total transport amounts for the boron trifluoride production
+- p.64: Tab. 5.5 Process emissions to air from the boron trifluoride production
+- p.65: Tab. 5.6 Process emissions to water from the boron trifluoride production
+- p.65: Tab. 5.7 shows the life cycle inventory and the data quality indicators for the trifluoroborane produc-
+- p.66: Tab. 5.7 Unit process raw data for the boron trifluoride production
+- p.67: Tab. 5.8 shows selected LCI results and the cumulative energy demand for the boron trifluoride pro-
+- p.67: Tab. 5.8 Selected LCI results and the cumulative energy demand for the boron trifluoride production
+- p.71: Tab. 6.1 Chemical and physical properties of sodium borohydride (Ullmanns 2004)
+- p.71: Tab. 6.2 shows values for the use of raw materials for the Brown-Schlesinger process. As there was no
+- p.71: Tab. 6.2 Consumption of raw materials and auxilliaries for the Brown-Schlesinger process
+- p.72: Tab. 6.3 Energy consumption for the chlorosilane amination
+- p.72: Tab. 6.4 Total transport amounts for the Brown-Schlesinger process
+- p.72: Tab. 6.5 Process emissions to air from the Brown-Schlesinger process
+- p.73: Tab. 6.6 Process emissions to water from the Brown-Schlesinger process
+- p.73: Tab. 6.7 Allocation of sodium tetrahydroborate and sodium methoxide from the Brown-Schlesinger process
+- p.73: Tab. 6.8 shows the life cycle inventory and the data quality indicators for the Brown-Schlesinger proc-
+- p.74: Tab. 6.8 Unit process raw data for the Brown-Schlesinger process
+- p.75: Tab. 6.9 shows selected LCI results and the cumulative energy demand for the Brown-Schlesinger
+- p.75: Tab. 6.9 Selected LCI results and the cumulative energy demand for the Brown-Schlesinger process
+- p.78: Tab. 7.1 Chemical and physical properties of carbon disulfide (Ullmanns 2004)
+- p.78: Tab. 7.2 World production of CS2 in 1984 in 10 tons (Ullmanns 2004)
+- p.79: Tab. 7.3 World production of CS2 in 1991 in 10 tons (Ullmanns 2004)
+- p.81: Figure 1 shows a typical methane process flow sheet. Purified natural gas containing over 95 % meth-
+- p.81: Fig. 7.1 Methane process for CS2 production
+- p.82: Tab. 7.4 Consumption of raw materials and auxilliaries for the carbon disulfide production
+- p.83: Tab. 7.5 Energy consumption for the carbon disulfide production
+- p.83: Tab. 7.6 Total transport amounts for the carbon disulfide production
+- p.83: Tab. 7.7 Process emissions to air from the carbon disulfide production
+- p.84: Tab. 7.8 Wastes from the carbon disulfide production
+- p.84: Tab. 7.9 shows the life cycle inventory and the data quality indicators for the carbon disulfide produc-
+- p.85: Tab. 7.9 Unit process raw data for the carbon disulfide production
+- p.86: Tab. 7.10 shows selected LCI results and the cumulative energy demand for the carbon disulfide pro-
+- p.86: Tab. 7.10 Selected LCI results and the cumulative energy demand for the carbon disulfide production
+- p.90: Tab. 8.1 Chemical and physical properties of hexamethyldisilazane (Ullmanns 2004)
+- p.90: Tab. 8.2 shows values for the use of raw materials for the chlorosilane amination. The chlorosilane in-
+- p.90: Tab. 8.2 Consumption of raw materials and auxilliaries for the chlorosilane amination
+- p.91: Tab. 8.3 Energy consumption for the chlorosilane amination
+- p.91: Tab. 8.4 Total transport amounts for the chlorosilane amination
+- p.91: Tab. 8.5 Process emissions to air from the chlorosilane amination
+- p.92: Tab. 8.6 Process emissions to water from the chlorosilane amination
+- p.92: Tab. 8.7 Allocation of ammonium chloride and hexamethyldisilazane from the chlorosilane amination
+- p.92: Tab. 8.8 shows the life cycle inventory and the data quality indicators for the chlorosilane amination.
+- p.93: Tab. 8.8 Unit process raw data for the chlorosilane amination
+- p.94: Tab. 8.9 shows selected LCI results and the cumulative energy demand for the chlorosilane amination.
+- p.94: Tab. 8.9 Selected LCI results and the cumulative energy demand for the chlorosilane amination
+- p.97: Tab. 9.1 Chemical and physical properties of Dimethylacetamide (Ullmanns 2004)
+- p.98: Tab. 9.2 Consumption of raw materials and auxilliaries for the dimethylacetamide production
+- p.98: Tab. 9.3 Energy consumption for the dimethylacetamide production
+- p.99: Tab. 9.4 Total transport amounts for the dimethylacetamide production
+- p.99: Tab. 9.5 Process emissions to air from the production of 1 kg dimethylacetamide
+- p.99: Tab. 9.6 Process emissions to water from the production 1 kg dimethylacetamide
+- p.100: Tab. 9.7 shows the life cycle inventory and the data quality indicators for the dimethylacetamide pro-
+- p.101: Tab. 9.7 Unit process raw data for the dimethylacetamide production
+- p.102: Tab. 9.8 shows selected LCI results and the cumulative energy demand for the dimethylacetamide
+- p.102: Tab. 9.8 Selected LCI results and the cumulative energy demand for dimethylacetamide production
+- p.105: Tab. 10.1 Chemical and physical properties of dimethylamine borane (Ullmanns 2004)
+- p.106: Tab. 10.2 Consumption of raw materials and auxilliaries for the dimethylamine borane production
+- p.107: Tab. 10.3 Energy consumption for the dimethylamine borane production
+- p.107: Tab. 10.4 Total transport amounts for the dimethylamine borane production
+- p.107: Tab. 10.5 Process emissions to air from the production of 1 kg dimethylamine borane
+- p.108: Tab. 10.6 Process emissions to water from the production 1 kg dimethylamine borane
+- p.108: Tab. 10.7 shows the life cycle inventory and the data quality indicators for the dimethylamine borane
+- p.109: Tab. 10.7 Unit process raw data for the dimethylamine borane production
+- p.110: Tab. 10.8 shows selected LCI results and the cumulative energy demand for the dimethylamine borane
+- p.110: Tab. 10.8 Selected LCI results and the cumulative energy demand for dimethylamine borane production
+- p.113: Tab. 11.1 Chemical and physical properties of dipropylene glycol monomethyl ether (Ullmanns 2004)
+- p.114: Tab. 11.2 Consumption of raw materials and auxilliaries for the dipropylene glycol monomethyl ether production
+- p.114: Tab. 11.3 Energy consumption for the dipropylene glycol monomethyl ether production
+- p.114: Tab. 11.4 Total transport amounts for the dipropylene glycol monomethyl ether production
+- p.115: Tab. 11.5 Process emissions to air from the production of 1 kg dipropylene glycol monomethyl ether
+- p.115: Tab. 11.6 Process emissions to water from the production 1 kg dipropylene glycol monomethyl ether
+- p.115: Tab. 11.7 shows the life cycle inventory and the data quality indicators for the dipropylene glycol
+- p.116: Tab. 11.7 Unit process raw data for the production of dipropylene glycol monomethyl ether
+- p.117: Tab. 11.8 shows selected LCI results and the cumulative energy demand for the production of dipro-
+- p.117: Tab. 11.8 Selected LCI results and the cumulative energy demand for the dipropylene glycol monomethyl ether pro-
+- p.120: Tab. 12.1 Limitsa for impurities (Ullmanns 2004)
+- p.121: Tab. 12.2 Chemical and physical properties of monochloropentafluoroethane (Ullmanns 2004)
+- p.121: Tab. 12.3 Chemical and physical properties of hexafluoroethane (Ullmanns 2004)
+- p.122: Tab. 12.4 shows values for the use of raw materials of the chlorofluorination of ethylene. As there was
+- p.122: Tab. 12.4 Consumption of raw materials and auxilliaries for the chlorofluorination of ethylene
+- p.122: Tab. 12.5 Energy consumption for the chlorofluorination of ethylene
+- p.123: Tab. 12.6 Total transport amounts for the chlorofluorination of ethylene
+- p.123: Tab. 12.7 Process emissions to air from the chlorofluorination of ethylene
+- p.123: Tab. 12.8 Process emissions to water from the chlorofluorination of ethylene
+- p.124: Tab. 12.9 Allocation of monochloropentafluoroethane and hexafluoroethane from the chlorofluorination of ethylene
+- p.124: Tab. 12.10 shows the life cycle inventory and the data quality indicators for the chlorofluorination of
+- p.125: Tab. 12.10 Unit process raw data for the chlorofluorination of ethylene
+- p.126: Tab. 12.11 shows selected LCI results and the cumulative energy demand for the chlorofluorination of
+- p.126: Tab. 12.11 Selected LCI results and the cumulative energy demand for the chlorofluorination of ethylene
+- p.130: Tab. 13.1 shows values for the use of raw materials of the Imperial smelting furnace.
+- p.130: Tab. 13.1 Consumption of raw materials and auxilliaries for the Imperial smelting furnace
+- p.130: Tab. 13.2 Energy consumption for the Imperial smelting furnace
+- p.131: Tab. 13.3 Total transport amounts for the Imperial smelting furnace
+- p.131: Tab. 13.4 Process emissions to air from the Imperial smelting furnace
+- p.132: Tab. 13.5 Process emissions to water from the Imperial smelting furnace
+- p.132: Tab. 13.6 Wastes from the Imperial smelting furnace
+- p.132: Tab. 13.7 Allocation of zinc and sodium arsenide from the Imperial smelting furnace
+- p.133: Tab. 13.8 shows the life cycle inventory and the data quality indicators for the Imperial smelting fur-
+- p.134: Tab. 13.8 Unit process raw data for the production of ethanol from ethylene
+- p.135: Tab. 13.9 shows selected LCI results and the cumulative energy demand for the Imperial smelting fur-
+- p.135: Tab. 13.9 Selected LCI results and the cumulative energy demand for the Imperial smelting furnace
+- p.139: Tab. 14.1 Chemical and physical properties of Lithium hydroxide (Ullmanns 2004)
+- p.139: Tab. 14.2 shows values for the use of raw materials of the lithium carbonate hydration. This study is
+- p.139: Tab. 14.2 Consumption of raw materials and auxilliaries for the lithium carbonate hydration
+- p.140: Tab. 14.3 Energy consumption for the lithium carbonate hydration
+- p.140: Tab. 14.4 Total transport amounts for the lithium carbonate hydration
+- p.140: Tab. 14.5 Process emissions to air from the lithium carbonate hydration
+- p.141: Tab. 14.6 Process emissions to water from the lithium carbonate hydration
+- p.141: Tab. 14.7 Allocation of lithium hydroxide and calcium carbonate from the lithium carbonate hydration
+- p.141: Tab. 14.8 shows the life cycle inventory and the data quality indicators for the lithium carbonate hy-
+- p.142: Tab. 14.8 Unit process raw data for the lithium carbonate hydration
+- p.143: Tab. 14.9 shows selected LCI results and the cumulative energy demand for the lithium carbonate hy-
+- p.143: Tab. 14.9 Selected LCI results and the cumulative energy demand for the lithium carbonate hydration
+- p.146: Tab. 15.1 Chemical and physical properties of Lithium chloride (Ullmanns 2004)
+- p.147: Tab. 15.2 shows values for the use of raw materials of the production of lithium chloride. As there was
+- p.147: Tab. 15.2 Consumption of raw materials and auxilliaries for the lithium chloride production
+- p.147: Tab. 15.3 Energy consumption for the lithium chloride production (Kim 2003)
+- p.147: Tab. 15.4 Total transport amounts for the lithium chloride production
+- p.148: Tab. 15.5 Process emissions to air from the lithium chloride production
+- p.148: Tab. 15.6 Process emissions to water from the lithium chloride production
+- p.148: Tab. 15.7 shows the life cycle inventory and the data quality indicators for the lithium chloride pro-
+- p.149: Tab. 15.7 Unit process raw data for the lithium chloride production
+- p.150: Tab. 15.8 shows selected LCI results and the cumulative energy demand for the lithium chloride pro-
+- p.150: Tab. 15.8 Selected LCI results and the cumulative energy demand for the lithium chloride production
+- p.153: Fig. 16.1 Schematic of an electrolytic cell for the production of lithium
+- p.154: Fig. 16.2 Schematic of an American lithium electrolysis cell
+- p.154: Fig. 16.3 Schematic of a special electrolytic cell for production of lithium
+- p.156: Tab. 16.1 Chemical and physical properties of Lithium (Ullmanns 2004)
+- p.157: Tab. 16.2 shows values for the use of raw materials for the lithium chloride electrolysis. The values for
+- p.157: Tab. 16.2 Consumption of raw materials and auxilliaries for the lithium chloride electrolysis
+- p.157: Tab. 16.3 Energy consumption for the lithium chloride electrolysis
+- p.157: Tab. 16.4 Total transport amounts for the lithium chloride electrolysis
+- p.158: Tab. 16.5 Process emissions to air from the lithium chloride electrolysis
+- p.158: Tab. 16.6 Process emissions to water from the lithium chloride electrolysis
+- p.158: Tab. 16.7 Allocation of ammonium chloride and sodium carbonate from the lithium chloride electrolysis
+- p.158: Tab. 16.8 shows the life cycle inventory and the data quality indicators for the lithium chloride elec-
+- p.159: Tab. 16.8 Unit process raw data for the production of lithium chloride electrolysis
+- p.160: Tab. 16.9 shows selected LCI results and the cumulative energy demand for the lithium chloride elec-
+- p.160: Tab. 16.9 Selected LCI results and the cumulative energy demand for the lithium chloride electrolysis
+- p.163: Tab. 17.1 Chemical and physical properties of lithium manganes oxide (Ullmanns 2004)
+- p.164: Tab. 17.2 Consumption of raw materials and auxilliaries for the lithium manganese oxide production
+- p.164: Tab. 17.3 Energy consumption for the lithium manganese oxide production
+- p.164: Tab. 17.4 Total transport amounts for the lithium manganese oxide production
+- p.165: Tab. 17.5 Process emissions to air from the lithium manganese oxide production
+- p.165: Tab. 17.6 Wastes from the boron carbide production
+- p.165: Tab. 17.7 shows the life cycle inventory and the data quality indicators for the lithium manganese ox-
+- p.166: Tab. 17.7 Unit process raw data for the lithium manganese oxide production
+- p.167: Tab. 17.8 shows selected LCI results and the cumulative energy demand for the lithium manganese
+- p.167: Tab. 17.8 Selected LCI results and the cumulative energy demand for the lithium manganese oxide production
+- p.170: Tab. 18.1 Chemical and physical properties of methyl-3-methoxypropionate (Green 1988)
+- p.170: Tab. 18.2 shows values for the use of raw materials of the production of methyl-3-methoxypropionate.
+- p.171: Tab. 18.2 Consumption of raw materials and auxilliaries for the methyl-3-methoxypropionate production
+- p.171: Tab. 18.3 Energy consumption for the methyl-3-methoxypropionate production
+- p.171: Tab. 18.4 Total transport amounts for the methyl-3-methoxypropionate production
+- p.172: Tab. 18.5 Process emissions to air from the methyl-3-methoxypropionate production
+- p.172: Tab. 18.6 Process emissions to water from the methyl-3-methoxypropionate production
+- p.172: Tab. 18.7 shows the life cycle inventory and the data quality indicators for the methyl-3-
+- p.173: Tab. 18.7 Unit process raw data for the methyl-3-methoxypropionate production
+- p.174: Tab. 18.8 shows selected LCI results and the cumulative energy demand for the methyl-3-
+- p.174: Tab. 18.8 Selected LCI results and the cumulative energy demand for the methyl-3-methoxypropionate production
+- p.177: Tab. 19.1 Chemical and physical properties of methyl acrylate (Ullmanns 2004)
+- p.177: Tab. 19.2 World production of acrlic acid esters 1993 (Ullmanns 2004)
+- p.179: Tab. 19.3 shows values for the use of raw materials of the production of methyl acrylate. This study is
+- p.179: Tab. 19.3 Consumption of raw materials and auxilliaries for the methyl acrylate production
+- p.179: Tab. 19.4 Energy consumption for the production of 1 kg methyl acrylate
+- p.180: Tab. 19.5 Total transport amounts for the methyl acrylate production
+- p.180: Tab. 19.6 Process emissions to air from the methyl acrylate production
+- p.181: Tab. 19.7 Process emissions to water from the methyl acrylate production
+- p.181: Tab. 19.8 shows the life cycle inventory and the data quality indicators for the methyl acrylate produc-
+- p.182: Tab. 19.8 Unit process raw data for the methyl acrylate production
+- p.183: Tab. 19.9 shows selected LCI results and the cumulative energy demand for the production methyl
+- p.183: Tab. 19.9 Selected LCI results and the cumulative energy demand for the methyl acrylate production
+- p.187: Fig. 20.1 Ammonium chloride – soda ash process
+- p.188: Fig. 20.2 Ammonium chloride co-production process
+- p.190: Tab. 20.1 Chemical and physical properties of ammonium chloride (Ullmanns 2004)
+- p.191: Tab. 20.2 shows values for the use of raw materials for the modified Solvay process. As there was no
+- p.191: Tab. 20.2 Consumption of raw materials and auxilliaries for the modified Solvay process
+- p.191: Tab. 20.3 Energy consumption for the modified Solvay process
+- p.191: Tab. 20.4 Total transport amounts for the modified Solvay process
+- p.192: Tab. 20.5 Process emissions to air from the modified Solvay process
+- p.192: Tab. 20.6 Process emissions to water from the modified Solvay process
+- p.193: Tab. 20.7 Allocation of ammonium chloride and sodium carbonate from the modified Solvay process
+- p.193: Tab. 20.8 shows the life cycle inventory and the data quality indicators for the modified Solvay proc-
+- p.194: Tab. 20.8 Unit process raw data for the modified Solvay process
+- p.195: Tab. 20.9 shows selected LCI results and the cumulative energy demand for the modified Solvay
+- p.195: Tab. 20.9 Selected LCI results and the cumulative energy demand for the modified Solvay process
+- p.199: Fig. 21.1 Nitrogen rejection and crude helium recovery from natural gas (taken from Ullmanns 2005, Figure 21)
+- p.200: Tab. 21.1 Composition of the feed gas and products (Ullmann 2005)
+- p.200: Fig. 21.2 Schematic of a plant for recovery of helium from natural gas, with integrated separation of nitrogen, meth-
+- p.201: Fig. 21.3 shows a schematic of a helium concentration process. In this case the two stages of the membrane system
+- p.201: Tab. 21.2 gives some operating figures of the first stage of a membrane helium recovery system for
+- p.202: Fig. 21.3 Helium concentration process (taken from Ullmanns 2004, Figure 23)
+- p.202: Tab. 21.2 Operating figures of the first stage of a membrane helium-recovery unit (taken from Ullmanns 2005, Tab. 19
+- p.203: Fig. 21.4 Cryogenic – membrane hybrid process (taken from Ullmanns 2005, Figure 24)
+- p.204: Fig. 21.5 Schematic of a typical four-adsorber PSA unit (taken from Ullmanns 2005, Figure 25)
+- p.205: Fig. 21.6 Plant for the extraction of pure helium from Groningen natural gas (Alfortville) (taken from Ullmanns 2005,
+- p.207: Tab. 21.3 Chemical and physical properties of Helium (Ullmann 2005)
+- p.207: Tab. 21.4 World helium resources in 1996 (Ullmann 2005)
+- p.208: Tab. 21.5 European helium consumption in 1997 (Ullmann 2005)
+- p.208: Tab. 21.6 shows values for the use of raw materials and auxilliaries of the helium extraction.
+- p.208: Tab. 21.6 Consumption of raw materials and auxilliaries for the helium extraction (Ullmanns 2005)
+- p.209: Tab. 21.7 Total transport amounts for the helium extraction
+- p.209: Tab. 21.8 Process emissions to air from the helium extraction
+- p.210: Tab. 21.9 Allocation of co-products from the helium extraction
+- p.210: Tab. 21.10 shows the life cycle inventory and the data quality indicators for the helium extraction. The
+- p.211: Tab. 21.10 Unit process raw data for the helium extraction
+- p.212: Tab. 21.11 shows selected LCI results and the cumulative energy demand for the helium extraction.
+- p.212: Tab. 21.11 Selected LCI results and the cumulative energy demand for the helium extraction
+- p.214: Tab. 22.1 Chemical and physical properties of phosphane (Ullmanns 2004)
+- p.215: Tab. 22.2 shows values for the use of raw materials of the production of phosphane. As there was no
+- p.215: Tab. 22.2 Consumption of raw materials and auxilliaries for the phosphane production
+- p.216: Tab. 22.3 Energy consumption for the phosphane production
+- p.216: Tab. 22.4 Total transport amounts for the phosphane production
+- p.216: Tab. 22.5 Process emissions to air from the phosphane production
+- p.217: Tab. 22.6 Process emissions to water from the phosphane production
+- p.217: Tab. 22.7 Wastes from the phosphane production
+- p.217: Tab. 22.8 shows the life cycle inventory and the data quality indicators for the phosphane production.
+- p.218: Tab. 22.8 Unit process raw data for the phosphane production
+- p.219: Tab. 22.9 shows selected LCI results and the cumulative energy demand for the phosphane produc-
+- p.219: Tab. 22.9 Selected LCI results and the cumulative energy demand for the phosphane production
+- p.222: Tab. 23.1 Chemical and physical properties of phosphoryl chloride (Ullmanns 2004)
+- p.223: Tab. 23.2 Consumption of raw materials and auxilliaries for the phosphoryl chloride production
+- p.223: Tab. 23.3 Energy consumption for the phosphoryl chloride
+- p.223: Tab. 23.4 Total transport amounts for the phosphoryl chloride production
+- p.224: Tab. 23.5 Process emissions to air from the phosphoryl chloride production
+- p.224: Tab. 23.6 Process emissions to water from the phosphoryl chloride production
+- p.224: Tab. 23.7 shows the life cycle inventory and the data quality indicators for the phosphoryl chloride
+- p.225: Tab. 23.7 Unit process raw data for the production of phosphoryl chloride
+- p.226: Tab. 23.8 shows selected LCI results and the cumulative energy demand for the production of phos-
+- p.226: Tab. 23.8 Selected LCI results and the cumulative energy demand for the phosphoryl chloride production
+- p.229: Tab. 24.1 Chemical and physical properties of potassium carbonate (Ullmanns 2004)
+- p.230: Fig. 24.1 Preparation of potassium carbonate with continuous crystallization
+- p.231: Fig. 24.2 Production of potassium carbonate by the fluidized-bed process
+- p.233: Tab. 24.2 Consumption of raw materials and auxilliaries for the potassium carbonate production
+- p.234: Tab. 24.3 Energy consumption for the potassium carbonate production
+- p.234: Tab. 24.4 Total transport amounts for the potassium carbonate production
+- p.234: Tab. 24.5 Process emissions to air from the potassium carbonate production
+- p.235: Tab. 24.6 Process emissions to water from the potassium carbonate production
+- p.235: Tab. 24.7 shows the life cycle inventory and the data quality indicators for the potassium carbonate
+- p.236: Tab. 24.7 Unit process raw data for the potassium carbonate production
+- p.237: Tab. 24.8 shows selected LCI results and the cumulative energy demand for the potassium carbonate
+- p.237: Tab. 24.8 Selected LCI results and the cumulative energy demand for the potassium carbonate production
+- p.240: Tab. 25.1 Chemical and physical properties of potassium perchlorate (Ullmanns 2004)
+- p.242: Tab. 25.2 Consumption of raw materials and auxilliaries for the potassium perchlorate production
+- p.242: Tab. 25.3 Energy consumption for the potassium perchlorate production
+- p.242: Tab. 25.4 Total transport amounts for the potassium perchlorate production
+- p.243: Tab. 25.5 Process emissions to air from the potassium perchlorate production
+- p.243: Tab. 25.6 Process emissions to water from the potassium perchlorate production
+- p.243: Tab. 25.7 shows the life cycle inventory and the data quality indicators for the potassium perchlorate
+- p.244: Tab. 25.7 Unit process raw data for the potassium perchlorate production
+- p.245: Tab. 25.8 shows selected LCI results and the cumulative energy demand for the potassium perchlorate
+- p.245: Tab. 25.8 Selected LCI results and the cumulative energy demand for the potassium perchlorate production
+- p.249: Tab. 26.1 shows values for the use of raw materials of the silicon hydrochloration. This study is based
+- p.249: Tab. 26.1 Consumption of raw materials and auxilliaries for the silicon hydrochloration process
+- p.249: Tab. 26.2 Energy consumption for the silicon hydrochloration process
+- p.250: Tab. 26.3 Total transport amounts for the silicon hydrochloration process
+- p.250: Tab. 26.4 Process emissions to air from the silicon hydrochloration process
+- p.250: Tab. 26.5 Process emissions to water from the silicon hydrochloration process
+- p.251: Tab. 26.6 Allocation of silicon tetrahydride and tetrachlorosilane from the silicon hydrochloration
+- p.251: Tab. 26.7 Chemical and physical properties of silicon tetrahydride (Ullmann 2005)
+- p.251: Tab. 26.8 shows the life cycle inventory and the data quality indicators for the silicon hydrochloration
+- p.252: Tab. 26.8 Unit process raw data for the production of silicon hydrochloration process
+- p.253: Tab. 26.9 shows selected LCI results and the cumulative energy demand for the silicon hydrochlora-
+- p.253: Tab. 26.9 Selected LCI results and the cumulative energy demand for the silicon hydrochloration process
+- p.256: Tab. 27.1 Chemical and physical properties of sodium perchlorate (Ullmann 2005)
+- p.257: Fig. 27.1 shows some typical cell models. In the Bitterfeld cell, each anode, made from platinum foil,
+- p.258: Fig. 27.1 Some typical models of perchlorate cells
+- p.259: Tab. 27.2 Consumption of raw materials and auxilliaries for the sodium perchlorate production
+- p.259: Tab. 27.3 Energy consumption for the sodium perchlorate production
+- p.260: Tab. 27.4 Total transport amounts for the sodium perchlorate production
+- p.260: Tab. 27.5 Process emissions to air from the sodium perchlorate production
+- p.260: Tab. 27.6 Process emissions to water from the sodium perchlorate production
+- p.260: Tab. 27.7 shows the life cycle inventory and the data quality indicators for the sodium perchlorate
+- p.261: Tab. 27.7 Unit process raw data for the sodium perchlorate production
+- p.262: Tab. 27.8 shows selected LCI results and the cumulative energy demand for the sodium perchlorate
+- p.262: Tab. 27.8 Selected LCI results and the cumulative energy demand for the sodium perchlorate production
+- p.265: Tab. 28.1 Chemical and physical properties of sodium persulfate (Ullmanns 2004)
+- p.266: Tab. 28.2 Consumption of raw materials and auxilliaries for the sodium persulfate production
+- p.266: Tab. 28.3 Energy consumption for the sodium persulfate production
+- p.267: Tab. 28.4 Total transport amounts for the sodium persulfate production
+- p.267: Tab. 28.5 Process emissions to air from the sodium persulfate production
+- p.267: Tab. 28.6 Process emissions to water from the sodium persulfate production
+- p.268: Tab. 28.7 shows the life cycle inventory and the data quality indicators for the sodium persulfate pro-
+- p.269: Tab. 28.7 Unit process raw data for the sodium persulfate production
+- p.270: Tab. 28.8 shows selected LCI results and the cumulative energy demand for the sodium persulfate
+- p.270: Tab. 28.8 Selected LCI results and the cumulative energy demand for the sodium persulfate production
+- p.274: Tab. 29.1 Chemical and physical properties of diborane (Ullmanns 2004)
+- p.274: Tab. 29.2 Consumption of raw materials and auxilliaries for the sodium tetrahydroborate fluorination
+- p.275: Tab. 29.3 Energy consumption for the sodium tetrahydroborate fluorination
+- p.275: Tab. 29.4 Total transport amounts for the sodium tetrahydroborate fluorination
+- p.276: Tab. 29.5 Process emissions to air from the sodium tetrahydroborate fluorination
+- p.276: Tab. 29.6 Process emissions to water from the sodium tetrahydroborate fluorination
+- p.276: Tab. 29.7 Allocation of ammonium chloride and sodium carbonate from the sodium tetrahydroborate fluorination
+- p.276: Tab. 29.8 shows the life cycle inventory and the data quality indicators for the sodium tetrahydrobo-
+- p.277: Tab. 29.8 Unit process raw data for the sodium tetrahydroborate fluorination
+- p.278: Tab. 29.9 shows selected LCI results and the cumulative energy demand for the sodium tetrahydrobo-
+- p.278: Tab. 29.9 Selected LCI results and the cumulative energy demand for the sodium tetrahydroborate fluorination
+- p.282: Fig. 30.1 Flow sheet for lithium carbonate production from spodumene
+- p.283: Tab. 30.1 Chemical and physical properties of Lithium carbonate (Ullmanns 2004)
+- p.284: Tab. 30.2 shows values for the use of raw materials for the sulfuric acid digestion of spodumene. The
+- p.284: Tab. 30.2 Consumption of raw materials and auxilliaries for the sulfuric acid digestion of spodumene
+- p.284: Tab. 30.3 Energy consumption for the sulfuric acid digestion of spodumene (Kim 2003)
+- p.284: Tab. 30.4 Total transport amounts for the sulfuric acid digestion of spodumene
+- p.285: Tab. 30.5 Process emissions to air from the sulfuric acid digestion of spodumene
+- p.285: Tab. 30.6 Process emissions to water from the sulfuric acid digestion of spodumene
+- p.285: Tab. 30.7 Waste from the sulfuric acid digestion of spodumene
+- p.286: Tab. 30.8 Allocation of lithium carbonate and sodium sulfate from the sulfuric acid digestion of spodumene
+- p.286: Tab. 30.9 shows the life cycle inventory and the data quality indicators for the sulfuric acid digestion
+- p.287: Tab. 30.9 Unit process raw data for the sulfuric acid digestion of spodumene
+- p.288: Tab. 30.10 shows selected LCI results and the cumulative energy demand for the sulfuric acid diges-
+- p.288: Tab. 30.10 Selected LCI results and the cumulative energy demand for the sulfuric acid digestion of spodumene
+- p.291: Tab. 31.1 Chemical and physical properties of trichloroborane (Ullmanns 2004)
+- p.293: Tab. 31.2 Consumption of raw materials and auxilliaries for the trichloroborane production
+- p.293: Tab. 31.3 Energy consumption for the trichloroborane production
+- p.293: Tab. 31.4 Total transport amounts for the trichloroborane production
+- p.294: Tab. 31.5 Process emissions to air from the trichloroborane production
+- p.294: Tab. 31.6 Process emissions to water from the trichloroborane production
+- p.294: Tab. 31.7 Wastes from the trichloroborane production
+- p.294: Tab. 31.8 shows the life cycle inventory and the data quality indicators for the trichloroborane produc-
+- p.295: Tab. 31.8 Unit process raw data for the trichloroborane production
+- p.296: Tab. 31.9 shows selected LCI results and the cumulative energy demand for the trichloroborane pro-
+- p.296: Tab. 31.9 Selected LCI results and the cumulative energy demand for the trichloroborane production
+- p.299: Tab. 32.1 Chemical and physical properties of trifuoromethane (Gasencyclopedia 2007)
+- p.300: Tab. 32.2 Consumption of raw materials and auxilliaries for the trifluoromethane production
+- p.300: Tab. 32.3 Energy consumption for the trifluoromethane production
+- p.300: Tab. 32.4 Total transport amounts for the trifluoromethane production
+- p.301: Tab. 32.5 Process emissions to air from the trifluoromethane production
+- p.301: Tab. 32.6 Process emissions to water from the trifluoromethane production
+- p.301: Tab. 32.7 shows the life cycle inventory and the data quality indicators for the trifluoromethane pro-
+- p.303: Tab. 32.7 Unit process raw data for the trifluoromethane production
+- p.304: Tab. 32.8 shows selected LCI results and the cumulative energy demand for the trifluoromethane pro-
+- p.304: Tab. 32.8 Selected LCI results and the cumulative energy demand for the trifluoromethane production
+- p.307: Tab. 33.1 Chemical and physical properties of trimethyl borate (Ullmanns 2004)
+- p.308: Tab. 33.2 shows values for the use of raw materials of the production of trimethyl borate. As there was
+- p.309: Tab. 33.2 Consumption of raw materials and auxilliaries for the trimethyl borate production
+- p.309: Tab. 33.3 Energy consumption for the production of 1 kg trimethyl borate
+- p.309: Tab. 33.4 Total transport amounts for the trimethyl borate production
+- p.310: Tab. 33.5 Process emissions to air from the trimethyl borate production
+- p.310: Tab. 33.6 Process emissions to water from the trimethyl borate production
+- p.310: Tab. 33.7 shows the life cycle inventory and the data quality indicators for the trimethyl borate pro-
+- p.311: Tab. 33.7 Unit process raw data for the production of trimethyl borate production
+- p.312: Tab. 33.8 shows selected LCI results and the cumulative energy demand for the trimethyl borate pro-
+- p.312: Tab. 33.8 Selected LCI results and the cumulative energy demand for the trimethyl borate production
+- p.315: Tab. 34.1 Properties of ultrapure water and tap water
+- p.321: Tab. 34.2 shows values for the use of raw materials of the ultrapure water production process. As in
+- p.321: Tab. 34.2 Consumption of raw materials for the ultrapure water production
+- p.321: Tab. 34.3 Energy consumption for the ultrapure water production
+- p.321: Tab. 34.4 Process emissions to air from the ultrapure water production
+- p.322: Tab. 34.5 Process emissions to air from the ultrapure water production
+- p.322: Tab. 34.6 shows the life cycle inventory and the data quality indicators for the ultrapure water produc-
+- p.323: Tab. 34.6 Unit process raw data for the ultrapure water production
+- p.324: Tab. 34.7 shows selected LCI results and the cumulative energy demand for the ultrapure water pro-
+- p.324: Tab. 34.7 Selected LCI results and the cumulative energy demand for the ultrapure water production
+
+Rules:
+1. Choose the caption(s) that hold the unit-process inventory of this dataset — inputs, energy, emissions, transport — not impact results, not a diagram. Prefer "Sachbilanz" / "inventory" / "LCI" tables.
+2. Return the PDF page range that covers those tables plus the paragraph introducing them: `first_page`, `last_page` (at most 4 pages). Tables can run onto the next page.
+3. If no caption fits (the report does not document this dataset's inventory, or only as a result), return `found` = false and say why in `reason`.
+4. `reason` names the caption(s) you chose and why.
+
+Return only the JSON object described by the schema.

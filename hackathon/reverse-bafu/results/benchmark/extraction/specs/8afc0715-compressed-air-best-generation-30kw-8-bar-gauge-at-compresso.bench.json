@@ -1,0 +1,231 @@
+{
+  "target": {
+    "code": "8afc0715-04a0-3089-8522-1515885eaeaf",
+    "name": "Compressed air, best generation, >30kW, 8 bar gauge, at compressor",
+    "location": "RER"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 10.18 'Unit process raw data of the datasets “compressed air, best generation, >30kW, at compressor”', third value column 'compressed air, best generation, >30kW, 8 bar gauge, at compressor' [RER], per 1 m3; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI metal proc. and comp. air supply - Steiner.pdf",
+      "where": "pages 88-90 -> report-p88-90.txt",
+      "note": "report sha256 ff1c92da6068a0e3…, text sha256 f63b09c007cb424c…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/8afc0715-04a0-3089-8522-1515885eaeaf/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "cfc6729b6d3c664c6b1eade708efcbe2014bb5d42f86afc409b11f968ccf5ba4",
+      "at": "2026-09-22T12:22:21Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "d7c1bf30a3562894886b0a70ad88a5663064ff20220581ce9819b96bfadf5ade",
+      "at": "2026-09-22T12:22:22Z"
+    },
+    "gaps_reported_by_model": [
+      "The 'best generation' variant is the optimised installation; the excerpt's Tab. 10.9 gives the electricity consumption and leakage rate assumptions for >30kW installations, but the leakage itself is carried by the 'at supply network' datasets (Tab. 10.19-10.23), not by this 'at compressor' dataset.",
+      "The installation of the compressor at the site is excluded per the dataset's includedProcesses; no line for it appears in the table.",
+      "No direct emissions other than waste heat are inventoried (no oil mist, no noise-related flows)."
+    ],
+    "skipped_items": [
+      "compressed air, best generation, >30kW, 8 bar gauge, at compressor: product — the reference product"
+    ],
+    "assembled_at": "2026-09-22T12:22:22Z"
+  },
+  "node": {
+    "name": "Compressed air, best generation, >30kW, 8 bar gauge, at compressor, disaggregated",
+    "unit": "m3",
+    "location": "RER",
+    "comment": "drafted from 2007 - LCI metal proc. and comp. air supply - Steiner.pdf pp. 88-90",
+    "inputs": [
+      {
+        "name": "Air compressor, screw-type compressor, 300 kW, at plant",
+        "amount": 8.1e-08,
+        "unit": "unit",
+        "location": "RER",
+        "note": "infrastructure; identical across the 6, 7 and 8 bar columns. Manufacturer value.",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "technosphere          air compressor, screw-type compressor, 300 kW, at plant                              RER                         1              unit         8.10E-8           8.10E-8          8.10E-8                          1              3.06",
+          "raw_value": 8.1e-08,
+          "raw_unit": "unit",
+          "per": "per m3 compressed air, best generation, >30kW, 8 bar gauge, at compressor",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "air compressor screw-type compressor",
+          "mapping_reason": "Exact name, size and location; the 4 kW compressor is the <30kW dataset, while this inventory is the >30kW one.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "68cd88ca-b2b0-3bc4-8da7-96f9a6ddb4cf"
+      },
+      {
+        "name": "Lubricating oil, at plant",
+        "amount": 2.08e-06,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "the operating material named in the dataset's includedProcesses; identical across all three pressure columns",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "                      lubricating oil, at plant                                                            RER                         0              kg           2.08E-6           2.08E-6          2.08E-6                          1              1.24",
+          "raw_value": 2.08e-06,
+          "raw_unit": "kg",
+          "per": "per m3 compressed air, best generation, >30kW, 8 bar gauge, at compressor",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "lubricating oil plant",
+          "mapping_reason": "Exact name and location; every other candidate is a vegetable oil, a fatty alcohol or an oil-fired power plant.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "0b14288a-dbf3-3dac-a570-83d083f4b600"
+      },
+      {
+        "name": "Disposal, used mineral oil, 10% water, to hazardous waste incineration",
+        "amount": 2.08e-06,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "disposal of the same mass of lubricating oil",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "                      disposal, used mineral oil, 10% water, to hazardous waste incineration               CH                          0              kg           2.08E-6           2.08E-6          2.08E-6                          1              1.24",
+          "raw_value": 2.08e-06,
+          "raw_unit": "kg",
+          "per": "per m3 compressed air, best generation, >30kW, 8 bar gauge, at compressor",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "disposal used mineral oil hazardous",
+          "mapping_reason": "The only candidate and an exact name, water content and location match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "be69d35d-4a8e-4e4c-88c0-c5df0c7db472"
+      },
+      {
+        "name": "xxx Electricity, low voltage, production UCTE, at grid",
+        "amount": 0.104,
+        "unit": "kilowatt hour",
+        "location": "UCTE",
+        "note": "the only line that differs between pressures: 9.10E-2 at 6 bar, 9.74E-2 at 7 bar, 1.04E-1 at 8 bar. The 8 bar column is the target.",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "                      electricity, low voltage, production UCTE, at grid                                   UCTE                        0              kWh          9.10E-2           9.74E-2          1.04E-1                          1              1.13              (1,3,2,1,1,4); average value",
+          "raw_value": 0.104,
+          "raw_unit": "kWh",
+          "per": "per m3 compressed air, best generation, >30kW, 8 bar gauge, at compressor",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electricity low voltage UCTE",
+          "mapping_reason": "The only UCTE low-voltage production mix offered and an exact name match for what the table cites; it carries the 'xxx' obsolete marker, but the alternatives are single-carrier UCTE mixes or the RER/CH grid, which would change the geography.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "5a18ad1e-ddf4-306d-8604-0a58350df06c"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 3.73e-05,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "assuming 100 km lorry and 200 km train for transport of compressor and lubricating oil",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "                      transport, lorry >16t, fleet average                                                 RER                         0              tkm          3.73E-5           3.73E-5          3.73E-5                          1              2.14",
+          "raw_value": 3.73e-05,
+          "raw_unit": "tkm",
+          "per": "per m3 compressed air, best generation, >30kW, 8 bar gauge, at compressor",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry 16t fleet average",
+          "mapping_reason": "'>16t' is the 16-32 t gross weight class in the newer naming, and the report's line is RER; the 7.5-16 t class is below the stated threshold and the 32-40 t class above it.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "85b3a5a6-2635-3546-b51b-4ccad397650b"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 7.46e-05,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "same assumption, 200 km by train",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "                      transport, freight, rail                                                             RER                         0              tkm          7.46E-5           7.46E-5          7.46E-5                          1              2.14",
+          "raw_value": 7.46e-05,
+          "raw_unit": "tkm",
+          "per": "per m3 compressed air, best generation, >30kW, 8 bar gauge, at compressor",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "Exact name and the RER location the table gives; the other candidates fix the traction (electricity only, diesel) or the country.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Waste Heat ",
+        "category": "air",
+        "amount": 0.375,
+        "unit": "megajoule",
+        "note": "labelled 'emission air, high population density'; calculated from the electricity input (1.04E-1 kWh = 3.75E-1 MJ), so it follows the pressure column",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "                      Heat, waste                                                                               -                       -             MJ           3.28E-1           3.51E-1          3.75E-1                          1              1.13              (1,3,2,1,1,4); from electricity",
+          "raw_value": 0.375,
+          "raw_unit": "MJ",
+          "per": "per m3 compressed air, best generation, >30kW, 8 bar gauge, at compressor",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Waste heat released to air in megajoules, matching the table's 'emission air, high population density' label and its unit; the soil and water variants are the wrong compartment.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-9136-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": []
+  }
+}

@@ -1,0 +1,230 @@
+{
+  "target": {
+    "code": "f629fb08-0ad6-387e-a846-cb9bb1af25a9",
+    "name": "Compressed air, average generation, <30kW, 10 bar gauge, at compressor",
+    "location": "RER"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 10.14 'Unit process raw data of the datasets \"compressed air, average generation, <30kW, at compressor\"', 10 bar gauge column [RER], per 1 m3; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI metal proc. and comp. air supply - Steiner.pdf",
+      "where": "pages 88-90 -> report-p88-90.txt",
+      "note": "report sha256 ff1c92da6068a0e3…, text sha256 f63b09c007cb424c…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/f629fb08-0ad6-387e-a846-cb9bb1af25a9/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "b65e4c7cab24a21c900ec6dd616397d86426c6d82ed8ce5f94e402c89991b8d4",
+      "at": "2026-09-22T21:32:53Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "7be5c965dedaedccb6802c1eb9d6fb63eb6e6da98a91878cc580c8db24f6c712",
+      "at": "2026-09-22T21:32:54Z"
+    },
+    "gaps_reported_by_model": [
+      "The leakage of compressed air is inside the electricity figure (Tab. 10.12 gives consumption and leakage rate together); it is not a separate flow.",
+      "No cooling water and no direct air emission other than waste heat.",
+      "No compressor room / building infrastructure beyond the compressor unit itself.",
+      "Tab. 10.15 is the OPTIMISED generation variant, a different dataset."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T21:32:54Z"
+  },
+  "node": {
+    "name": "Compressed air, average generation, <30kW, 10 bar gauge, at compressor, disaggregated",
+    "unit": "m3",
+    "location": "RER",
+    "comment": "drafted from 2007 - LCI metal proc. and comp. air supply - Steiner.pdf pp. 88-90",
+    "inputs": [
+      {
+        "name": "Air compressor, screw-type compressor, 4 kW, at plant",
+        "amount": 8.26e-05,
+        "unit": "unit",
+        "location": "RER",
+        "note": "identical for all three pressure levels",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "technosphere         air compressor, screw-type compressor, 4 kW, at plant                      RER                    1              unit                8.26E-5         8.26E-5         8.26E-5             1                  3.06                  (2,4,2,1,1,5); manufacturer value",
+          "raw_value": 8.26e-05,
+          "raw_unit": "unit",
+          "per": "per m3 of compressed air, average generation, <30kW, 10 bar gauge",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "air compressor screw-type 4kW at plant",
+          "mapping_reason": "Exact name and size match; the 300 kW compressor belongs to the >30 kW installations.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "5a5ebe87-0770-3b65-bcbf-d24facf49034"
+      },
+      {
+        "name": "Lubricating oil, at plant",
+        "amount": 1e-05,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "                     lubricating oil, at plant                                                  RER                    0               kg                 1.00E-5         1.00E-5         1.00E-5             1                  1.24                  (1,4,1,1,1,5); manufacturer value",
+          "raw_value": 1e-05,
+          "raw_unit": "kg",
+          "per": "per m3 of compressed air, average generation, <30kW, 10 bar gauge",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "lubricating oil at plant",
+          "mapping_reason": "Exact name match; every other candidate is a different oil or an oil-fired power plant.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "0b14288a-dbf3-3dac-a570-83d083f4b600"
+      },
+      {
+        "name": "Disposal, used mineral oil, 10% water, to hazardous waste incineration",
+        "amount": 1e-05,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "                     disposal, used mineral oil, 10% water, to hazardous waste incineration      CH                    0               kg                 1.00E-5         1.00E-5         1.00E-5             1                  1.24                  (1,4,1,1,1,5); manufacturer value",
+          "raw_value": 1e-05,
+          "raw_unit": "kg",
+          "per": "per m3 of compressed air, average generation, <30kW, 10 bar gauge",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "disposal used mineral oil hazardous waste incineration",
+          "mapping_reason": "The only candidate and an exact name match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "be69d35d-4a8e-4e4c-88c0-c5df0c7db472"
+      },
+      {
+        "name": "xxx Electricity, low voltage, production UCTE, at grid",
+        "amount": 0.181,
+        "unit": "kilowatt hour",
+        "location": "UCTE",
+        "note": "10 bar gauge column (8 bar = 1.57E-1, 12 bar = 2.07E-1)",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "                     electricity, low voltage, production UCTE, at grid                         UCTE                   0              kWh                 1.57E-1         1.81E-1         2.07E-1             1                  1.13                  (1,3,2,1,1,4); average value",
+          "raw_value": 0.181,
+          "raw_unit": "kWh",
+          "per": "per m3 of compressed air, average generation, <30kW, 10 bar gauge",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electricity low voltage production UCTE at grid",
+          "mapping_reason": "Exact name and geography match for the UCTE low-voltage production mix; the 'production from oil / hard coal / natural gas' entries are single-technology routes and the RER/CH ones other regions.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "5a18ad1e-ddf4-306d-8604-0a58350df06c"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 0.00116,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "                     transport, lorry >16t, fleet average                                       RER                    0              tkm                 1.16E-3         1.16E-3         1.16E-3             1                  2.14                  200km train for transport of",
+          "raw_value": 0.00116,
+          "raw_unit": "tkm",
+          "per": "per m3 of compressed air, average generation, <30kW, 10 bar gauge",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry >16t fleet average",
+          "mapping_reason": "The 16t-32t gross-weight fleet average at RER is the '>16t' class the table means; 32t-40t is the next larger class and 7.5t-16t below the threshold.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "85b3a5a6-2635-3546-b51b-4ccad397650b"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.00231,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "                     transport, freight, rail                                                   RER                    0              tkm                 2.31E-3         2.31E-3         2.31E-3             1                  2.14                  200km train for transport of",
+          "raw_value": 0.00231,
+          "raw_unit": "tkm",
+          "per": "per m3 of compressed air, average generation, <30kW, 10 bar gauge",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "Exact name match at RER, the geography the table gives.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Waste Heat",
+        "category": "air",
+        "amount": 0.652,
+        "unit": "megajoule",
+        "note": "high population density; 10 bar gauge column, equal to the electricity input converted to MJ",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "                     Heat, waste                                                                   -                    -                 MJ              5.64E-1         6.52E-1         7.46E-1             1                  1.13                  (1,3,2,1,1,4);",
+          "raw_value": 0.652,
+          "raw_unit": "MJ",
+          "per": "per m3 of compressed air, average generation, <30kW, 10 bar gauge",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "The table books the waste heat under 'emission air, high population density', so the air compartment of Waste Heat is required.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-9136-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": []
+  }
+}

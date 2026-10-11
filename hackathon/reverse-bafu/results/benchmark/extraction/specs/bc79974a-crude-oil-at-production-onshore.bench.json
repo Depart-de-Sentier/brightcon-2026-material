@@ -1,0 +1,130 @@
+{
+  "target": {
+    "code": "bc79974a-2fb3-3681-ab62-9e53feb84fef",
+    "name": "Crude oil, at production onshore",
+    "location": "LY"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 12.2 'Unit process raw data, example for crude oil and natural gas production in CA'. Only part 4 of the table is machine-readable and it is expressed per YEAR of combined production, so no per-kg amount can be derived from it; the two items below come from the aggregated-vector block of this prompt.; allocation: Combined gas and oil production is allocated 63.8 % to crude oil and 36.2 % to natural gas (the only numbers the readable part of the table carries).. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2025 - LCI crude oil and natural gas extraction - Meili.pdf",
+      "where": "pages 76-79 -> report-p76-79.txt",
+      "note": "report sha256 570b02878a339cf8…, text sha256 9eee17db8fd5b308…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/bc79974a-2fb3-3681-ab62-9e53feb84fef/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "7b3d0148e0948f916463fb6c5034133adaac49f7051eb26c05ba12da643b4e3d",
+      "at": "2026-09-22T21:49:14Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "eedaea1c02e271bf9c176caae20e9a3ce19155da4b7aaf1ebf9c7fb43c5f2aa1",
+      "at": "2026-09-22T21:49:14Z"
+    },
+    "gaps_reported_by_model": [
+      "Tab. 12.2 parts 1-3 (pages 76-78) are images in the PDF: the text extraction returned only the page headers, so the technosphere inputs, resources and air emissions of the unit process are simply not readable.",
+      "Part 4, the only readable page, is printed PER YEAR of combined oil-and-gas production ('Unit' = a) with the country-specific allocation keys 63.8 % (oil) / 36.2 % (gas) shown in place of amounts in the per-kg and per-Nm3 columns. Without the annual production volume - which the excerpt does not give - none of those absolute annual figures can be turned into a per-kg or per-Nm3 amount.",
+      "The example is for CANADA; this dataset is a different country, and the report states that only the parameters (energy demand, flaring, methane, produced water, spills) are country-specific, not the exchange structure.",
+      "Readable but unusable annual emission rows: oils/BOD5/COD/DOC/TOC/AOX/nitrogen/sulfur to river and to ocean, oils to soil, SO2 and NOx to air, Halon 1301 and HFC-23 to air.",
+      "No energy inputs, no drilling or production-plant infrastructure, no flaring, no methane venting could be read."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T21:49:14Z"
+  },
+  "node": {
+    "name": "Crude oil, at production onshore, disaggregated",
+    "unit": "kg",
+    "location": "LY",
+    "comment": "drafted from 2025 - LCI crude oil and natural gas extraction - Meili.pdf pp. 76-79",
+    "inputs": [],
+    "emissions": [],
+    "resources": [
+      {
+        "name": "Crude Oil",
+        "category": "resources",
+        "amount": 43.4,
+        "unit": "megajoule",
+        "note": "Taken from the 'direct resource flows visible in the aggregated vector' block of this prompt, because the report excerpt itself is unreadable for this dataset. 43.4 MJ/kg is the net calorific value of the extracted crude oil.",
+        "derivation": {
+          "evidence": "report-p76-79.txt",
+          "quote": "- Crude Oil: 43.4 megajoule (Resources Resources from ground)",
+          "raw_value": 43.4,
+          "raw_unit": "MJ",
+          "per": "per kg crude oil at production",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "The resource-from-ground crude oil in megajoules; every other candidate is an emission of a crude-oil derivative, not the extracted resource.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "fe0acd60-3ddc-11dd-a6f8-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Ground Water",
+        "category": "resources",
+        "amount": 0.0001767,
+        "unit": "cubic meter",
+        "note": "Taken from the 'direct resource flows visible in the aggregated vector' block of this prompt, because the report excerpt itself is unreadable for this dataset.",
+        "derivation": {
+          "evidence": "report-p76-79.txt",
+          "quote": "- Ground Water: 0.0001767 cubic meter (Resources Resources from water)",
+          "raw_value": 0.0001767,
+          "raw_unit": "m3",
+          "per": "per kg crude oil at production",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Exact name and compartment match for groundwater withdrawal; 'Water' is the generic surface/unspecified withdrawal used by the other line, and lake/river/cooling/turbine water are different sources or uses.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "4f462198-40cd-4184-8733-86648a20dc3f",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Water",
+        "category": "resources",
+        "amount": 7.526e-05,
+        "unit": "cubic meter",
+        "note": "Taken from the 'direct resource flows visible in the aggregated vector' block of this prompt, because the report excerpt itself is unreadable for this dataset.",
+        "derivation": {
+          "evidence": "report-p76-79.txt",
+          "quote": "- Water: 7.526e-05 cubic meter (Resources Resources from water)",
+          "raw_value": 7.526e-05,
+          "raw_unit": "m3",
+          "per": "per kg crude oil at production",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "medium",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "The generic 'Water' resource from water, as the aggregated vector names it; 'Ground Water' is the separate groundwater line and the lake/river/cooling/turbine entries are narrower.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "419682fe-60fb-4b43-be89-bf2824b51104",
+        "database": "ef-3.1-biosphere"
+      }
+    ]
+  }
+}

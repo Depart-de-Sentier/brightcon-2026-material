@@ -1,0 +1,262 @@
+{
+  "target": {
+    "code": "b24f5c8b-3e65-3ef3-bcf1-3e044421022e",
+    "name": "Nuclear spent fuel conditioning plant",
+    "location": "CN"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 16.9 'Dataset \"nuclear spent fuel conditioning plant (CN)\" in ecoinvent data v2.0', per 1 unit; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2009 - Nuclear energy - Dones.pdf",
+      "where": "pages 404-406 -> report-p404-406.txt",
+      "note": "report sha256 c1200c317884e348…, text sha256 e39f4fe4b083d8a9…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/b24f5c8b-3e65-3ef3-bcf1-3e044421022e/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "145b6d0fccdb552861a4e380640d5fca2c08ae06595e9dba83c5afce58384654",
+      "at": "2026-09-22T21:58:55Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "aed3d11be748d0ad10ab74926c5bd8e9ac64dc281b1a156da1b5a297a5f6f3b8",
+      "at": "2026-09-22T21:58:58Z"
+    },
+    "gaps_reported_by_model": [
+      "No construction electricity or diesel for building the plant.",
+      "No direct emissions of any kind.",
+      "No disposal of the steel or of the machinery.",
+      "Every line is marked 'own estimation' or 'own assumption'; the Chinese plant is modelled as the Swiss one (Tab. 10.31) with adjusted transports."
+    ],
+    "skipped_items": [
+      "Transformation, from unknown: no flow chosen (The keyword search returned no candidate at all for this land-use flow, so nothing can be chosen; EF 3.1 carries land transformation and occupation under differently worded names.)",
+      "Transformation, to industrial area, built up: no flow chosen (The keyword search returned no candidate at all for this land-use flow, so nothing can be chosen; EF 3.1 carries land transformation and occupation under differently worded names.)",
+      "Transformation, to industrial area, vegetation: no flow chosen (The keyword search returned no candidate at all for this land-use flow, so nothing can be chosen; EF 3.1 carries land transformation and occupation under differently worded names.)",
+      "Transformation, to unknown: no flow chosen (The keyword search returned no candidate at all for this land-use flow, so nothing can be chosen; EF 3.1 carries land transformation and occupation under differently worded names.)",
+      "Occupation, industrial area, built up: no flow chosen (The keyword search returned no candidate at all for this land-use flow, so nothing can be chosen; EF 3.1 carries land transformation and occupation under differently worded names.)",
+      "Occupation, industrial area, vegetation: no flow chosen (The keyword search returned no candidate at all for this land-use flow, so nothing can be chosen; EF 3.1 carries land transformation and occupation under differently worded names.)"
+    ],
+    "assembled_at": "2026-09-22T21:58:58Z"
+  },
+  "node": {
+    "name": "Nuclear spent fuel conditioning plant, disaggregated",
+    "unit": "p",
+    "location": "CN",
+    "comment": "drafted from 2009 - Nuclear energy - Dones.pdf pp. 404-406",
+    "inputs": [
+      {
+        "name": "Building, multi-storey",
+        "amount": 130000.0,
+        "unit": "cubic meter",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p404-406.txt",
+          "quote": "building, multi-storey                                                      RER construction processesbuildings                                          1                             m3                                  1.30E+05                        1            2 own assumption",
+          "raw_value": 130000.0,
+          "raw_unit": "m3",
+          "per": "per unit of nuclear spent fuel conditioning plant (CN)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "building multi-storey",
+          "mapping_reason": "Exact name and unit (cubic metre) match; candidate 1 is a photovoltaic facade installation.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "552ee3f6-4f6a-3b85-a72c-5707a3b0f9c7"
+      },
+      {
+        "name": "Industrial machine, heavy, unspecified, at plant",
+        "amount": 50000.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "cranes and other machines",
+        "derivation": {
+          "evidence": "report-p404-406.txt",
+          "quote": "industrial machine, heavy, unspecified, at plant                            RER construction processesmachinery                                           1                            kg                                  5.00E+04                        1            3 own assumption",
+          "raw_value": 50000.0,
+          "raw_unit": "kg",
+          "per": "per unit of nuclear spent fuel conditioning plant (CN)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "industrial machine heavy unspecified at plant",
+          "mapping_reason": "The only candidate and an exact name and unit match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "5906ff1f-2cd1-3951-9bfc-abd0cdbf8c75"
+      },
+      {
+        "name": "Chromium steel 18/8, at plant",
+        "amount": 5000.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "lining of the shielding",
+        "derivation": {
+          "evidence": "report-p404-406.txt",
+          "quote": "chromium steel 18/8, at plant                                               RER metals                extraction                                         0                              kg                                     5000                        1            3 own assumption",
+          "raw_value": 5000.0,
+          "raw_unit": "kg",
+          "per": "per unit of nuclear spent fuel conditioning plant (CN)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "chromium steel 18/8 at plant",
+          "mapping_reason": "Exact name match at RER; candidate 1 is the electric-arc sub-route.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "fc9385f8-fe2d-3399-b663-4b66e5062a3f"
+      },
+      {
+        "name": "Concrete, normal, at plant",
+        "amount": 250.0,
+        "unit": "cubic meter",
+        "location": "CH",
+        "note": "shielding concrete",
+        "derivation": {
+          "evidence": "report-p404-406.txt",
+          "quote": "concrete, normal, at plant                                                  CH construction materialsconcrete                                            0                             m3                                       250                        1            3 own assumption",
+          "raw_value": 250.0,
+          "raw_unit": "m3",
+          "per": "per unit of nuclear spent fuel conditioning plant (CN)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "concrete normal at plant",
+          "mapping_reason": "Exact name and unit match; the 'with resource correction' variant uses a different accounting convention.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "9dc7ef6a-1dcc-3968-b7ac-675141e0f5fa"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 39300.0,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p404-406.txt",
+          "quote": "transport, lorry >16t, fleet average                                        RER transport systems                                                        0                             tkm                                 3.93E+04                        1            3 own assumption",
+          "raw_value": 39300.0,
+          "raw_unit": "tkm",
+          "per": "per unit of nuclear spent fuel conditioning plant (CN)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry >16t fleet average",
+          "mapping_reason": "The 16t-32t gross-weight fleet average at RER is the '>16t' class the table names.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "85b3a5a6-2635-3546-b51b-4ccad397650b"
+      },
+      {
+        "name": "Transport, coal freight, rail",
+        "amount": 5570.0,
+        "unit": "ton kilometer",
+        "location": "CN",
+        "note": "Chinese rail freight dataset",
+        "derivation": {
+          "evidence": "report-p404-406.txt",
+          "quote": "transport, coal freight, rail                                               CN transport systems      train                                              0                             tkm                                 5.57E+03                        1            3 own assumption",
+          "raw_value": 5570.0,
+          "raw_unit": "tkm",
+          "per": "per unit of nuclear spent fuel conditioning plant (CN)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport coal freight rail",
+          "mapping_reason": "Exact name match at CN, the geography of this Chinese dataset; candidate 1 is European generic rail freight.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "82abe50c-cd9c-362b-82e4-6b5c3395677d"
+      },
+      {
+        "name": "Disposal, building, concrete, not reinforced, to final disposal",
+        "amount": 600000.0,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "disposal of the shielding concrete; the disposal of the building itself is booked in the using module",
+        "derivation": {
+          "evidence": "report-p404-406.txt",
+          "quote": "disposal, building, concrete, not reinforced, to final disposal             CH                                                                           0                             kg                                  6.00E+05                        1            3 own assumption",
+          "raw_value": 600000.0,
+          "raw_unit": "kg",
+          "per": "per unit of nuclear spent fuel conditioning plant (CN)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "disposal building concrete not reinforced final disposal",
+          "mapping_reason": "Exact name match; candidate 1 is reinforced concrete.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "d5cf31d7-6ed4-4ba6-a283-85bfca5dbbf7"
+      }
+    ],
+    "emissions": [],
+    "resources": [
+      {
+        "name": "From Industrial Area",
+        "category": "land use",
+        "amount": 22500.0,
+        "unit": "square meter",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p404-406.txt",
+          "quote": "Transformation, from unknown                                                    resource              land                                                                             m2                                     22500                        1            2 own estimation",
+          "raw_value": 22500.0,
+          "raw_unit": "m2",
+          "per": "per unit of nuclear spent fuel conditioning plant (CN)",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "'From Industrial Area' in Land use / Land transformation, in square metres, matches the direction, the land class and the unit.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "2abdec35-e00d-4760-842c-e63403507b1d",
+        "database": "ef-3.1-biosphere"
+      }
+    ]
+  }
+}

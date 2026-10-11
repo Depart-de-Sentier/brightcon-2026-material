@@ -1,0 +1,148 @@
+{
+  "target": {
+    "code": "3653b40f-90e6-3e41-a90f-9a8a6a7f1728",
+    "name": "Process specific emissions and resources, from uranium milling, at mill plant",
+    "location": "GLO"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 12 'Direkter Energieverbrauch zur Uranfoerderung und -aufbereitung' (country rows, production-weighted to a world average) together with footnote 42, which states how the thermal and electric demand is booked, and Tab. 13 for the tailings. Per 1 kg of natural uranium.; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2012 - LCA electricity generation in Switzerland - Uster.pdf",
+      "where": "pages 38-41 -> report-p38-41.txt",
+      "note": "report sha256 43c7173802272c9f…, text sha256 0ca58a443d07a259…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/3653b40f-90e6-3e41-a90f-9a8a6a7f1728/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "49d5cd1275640b8ac0ccba24ee4afb4ad0207c5b4a0e91244a49d6e20f6b9c17",
+      "at": "2026-09-22T21:15:34Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "cee5368133ff55193433dc0558a3be2bfa8af2fe2d59a6ec91c65b73fd18a383",
+      "at": "2026-09-22T21:15:35Z"
+    },
+    "gaps_reported_by_model": [
+      "The report gives the direct energy for URANIUM MINING AND MILLING TOGETHER ('Foerderung und -aufbereitung'). This dataset is the milling step alone, so the energy above is an upper bound for it; the excerpt offers no split.",
+      "Tab. 12 has no 'world' row - the world average had to be computed from the country rows and the 2009 production volumes.",
+      "None of the ~67 elementary flows this dataset actually carries can be read: the report says explicitly 'Anlagen- oder laenderspezifische Angaben zu Emissionsparametern, Landverbrauch, Betriebsmitteln sowie Bedarf an Transporten und Infrastruktur sind ... nicht vorhanden' and falls back on Dones et al. (2009), which is not in this excerpt.",
+      "No radioactive emissions to air or water (radon-222, uranium, radium, thorium), which are the dominant flows of a uranium milling dataset.",
+      "No chemicals for leaching, no land occupation for the tailings pond, no transport and no infrastructure.",
+      "No water use, although the dataset's includedProcesses mentions mining water."
+    ],
+    "skipped_items": [
+      "tailings: ignore — Tab. 13, world row: 0.56 m3 of tailings per kg Unat, at a tailings density of 1800 kg/m3 (footnote 46) that is about 1'008 kg of tailings per kg of natural uranium. The dataset's includedProcesses says its land use is 'mostly tailings', but the excerpt gives no area or occupation time, so this quantity cannot be turned into an Occupation or Transformation flow and is reported here rather than invented."
+    ],
+    "assembled_at": "2026-09-22T21:15:35Z"
+  },
+  "node": {
+    "name": "Process specific emissions and resources, from uranium milling, at mill plant, disaggregated",
+    "unit": "kg",
+    "location": "GLO",
+    "comment": "drafted from 2012 - LCA electricity generation in Switzerland - Uster.pdf pp. 38-41",
+    "inputs": [
+      {
+        "name": "Diesel, burned in diesel-electric generating set",
+        "amount": 700.0,
+        "unit": "megajoule",
+        "location": "GLO",
+        "note": "Production-weighted world average computed from the country rows of Tab. 12 with the 2009 production volumes (AU 7424, CA 10174, MW 670, NA 4625, NE 3242, RU 3004, UA 850, BR 345 t Unat; total 30'334 t Unat, matching the TOTAL row of Tab. 13): thermal 417 MJ/kg Unat, electric 59.6 kWh/kg Unat. Footnote 42: 'wird der elektrische Energiebedarf umgerechnet in Dieselverbrauch als \"Diesel, burned in diesel-electric generating set\" (Wirkungsgrad: 36 %) bilanziert, der Verbrauch an fossilen Energietraegern fuer thermische und Prozessenergie je zur Haelfte als \"Heavy fuel oil, burned in industrial furnace 1MW, non-modulating\" und \"diesel, burned in building machine\".' 59.56 kWh x 3.6 MJ/kWh / 0.36 = 595.6 MJ of diesel input. Bounds span the country range (Brazil 7 kWh to Russia 120 kWh per kg Unat).",
+        "derivation": {
+          "evidence": "report-p38-41.txt",
+          "quote": "                                          electric generating set“ (Wirkungsgrad: 36 %) bilanziert, der Verbrauch an fossilen Energieträgern für ther-",
+          "raw_value": 59.56,
+          "raw_unit": "kWh/kg Unat",
+          "per": "per kg of natural uranium produced (mining plus milling)",
+          "factor": 10.0,
+          "factor_unit": "MJ",
+          "factor_source": "3.6 MJ/kWh divided by the 36 % generator efficiency = 10 MJ of diesel per kWh",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "diesel burned in diesel-electric generating set",
+          "mapping_reason": "Exact name match in megajoules; candidate 1 is the at-extraction-site variant of a different study and candidate 2 is the generating set equipment.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "free": true,
+        "bounds": [
+          700.0,
+          12000.0
+        ],
+        "code": "32865dd1-13be-378f-a2cb-8da075b9e203"
+      },
+      {
+        "name": "Heavy fuel oil, burned in industrial furnace 1MW, non-modulating",
+        "amount": 374.5,
+        "unit": "megajoule",
+        "location": "RER",
+        "note": "Production-weighted world average computed from the country rows of Tab. 12 with the 2009 production volumes (AU 7424, CA 10174, MW 670, NA 4625, NE 3242, RU 3004, UA 850, BR 345 t Unat; total 30'334 t Unat, matching the TOTAL row of Tab. 13): thermal 417 MJ/kg Unat, electric 59.6 kWh/kg Unat. Footnote 42: 'wird der elektrische Energiebedarf umgerechnet in Dieselverbrauch als \"Diesel, burned in diesel-electric generating set\" (Wirkungsgrad: 36 %) bilanziert, der Verbrauch an fossilen Energietraegern fuer thermische und Prozessenergie je zur Haelfte als \"Heavy fuel oil, burned in industrial furnace 1MW, non-modulating\" und \"diesel, burned in building machine\".' Half of the thermal demand: 417.3 / 2 = 208.7 MJ. Bounds span the country range (Brazil 131 to Russia 1498 MJ/kg Unat thermal).",
+        "derivation": {
+          "evidence": "report-p38-41.txt",
+          "quote": "                                          electric generating set“ (Wirkungsgrad: 36 %) bilanziert, der Verbrauch an fossilen Energieträgern für ther-",
+          "raw_value": 417.3,
+          "raw_unit": "MJ/kg Unat",
+          "per": "per kg of natural uranium produced (mining plus milling)",
+          "factor": 0.5,
+          "factor_unit": "MJ",
+          "factor_source": "half of the thermal energy demand",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "heavy fuel oil burned in industrial furnace 1MW non-modulating",
+          "mapping_reason": "Exact name match; RER is preferred over CH because uranium milling is modelled globally, and the light-fuel-oil candidates are a different fuel.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "free": true,
+        "bounds": [
+          32.75,
+          374.5
+        ],
+        "code": "236c0236-e00a-3ac4-acdc-cbcbfcee85a2"
+      },
+      {
+        "name": "Diesel, burned in building machine, average",
+        "amount": 32.75,
+        "unit": "megajoule",
+        "location": "CH",
+        "note": "Production-weighted world average computed from the country rows of Tab. 12 with the 2009 production volumes (AU 7424, CA 10174, MW 670, NA 4625, NE 3242, RU 3004, UA 850, BR 345 t Unat; total 30'334 t Unat, matching the TOTAL row of Tab. 13): thermal 417 MJ/kg Unat, electric 59.6 kWh/kg Unat. Footnote 42: 'wird der elektrische Energiebedarf umgerechnet in Dieselverbrauch als \"Diesel, burned in diesel-electric generating set\" (Wirkungsgrad: 36 %) bilanziert, der Verbrauch an fossilen Energietraegern fuer thermische und Prozessenergie je zur Haelfte als \"Heavy fuel oil, burned in industrial furnace 1MW, non-modulating\" und \"diesel, burned in building machine\".' The other half of the thermal demand: 208.7 MJ.",
+        "derivation": {
+          "evidence": "report-p38-41.txt",
+          "quote": "                                          electric generating set“ (Wirkungsgrad: 36 %) bilanziert, der Verbrauch an fossilen Energieträgern für ther-",
+          "raw_value": 417.3,
+          "raw_unit": "MJ/kg Unat",
+          "per": "per kg of natural uranium produced (mining plus milling)",
+          "factor": 0.5,
+          "factor_unit": "MJ",
+          "factor_source": "half of the thermal energy demand",
+          "scale_to_unit": 1.0,
+          "confidence": "low",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "diesel burned in building machine",
+          "mapping_reason": "'Diesel, burned in building machine, average' is the fleet average the report's generic 'diesel, burned in building machine' means; the with/without particle filter variants pick one abatement level, the 'without building machine' ones drop the machine infrastructure and the agricultural machine is a different application.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "free": true,
+        "bounds": [
+          32.75,
+          374.5
+        ],
+        "code": "e4e7ddc0-f7d1-3fad-bd12-9d6981142800"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

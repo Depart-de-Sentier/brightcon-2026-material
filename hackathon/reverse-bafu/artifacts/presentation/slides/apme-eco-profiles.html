@@ -1,0 +1,32 @@
+<section id="apme-eco-profiles" data-transition="fade" style="background:#F0E9E1; color:#2B2B2B; font-family:'Quicksand', Arial, sans-serif; padding:112px 128px 150px; display:flex; flex-direction:column; gap:34px; font-weight:500">
+
+  <div style="display:flex; flex-direction:column; gap:14px">
+    <p style="font-size:28px; letter-spacing:2px; text-transform:uppercase; color:#3C5343">Results · the worst-matching rebuilds</p>
+    <h2 style="font-family:'Quicksand', Arial, sans-serif; font-size:72px; font-weight:400; line-height:1.08">The 12 worst matches: APME eco-profiles</h2>
+  </div>
+
+  <div style="display:flex; flex-direction:row; gap:36px; align-items:flex-start">
+
+    <div style="flex:1; display:flex; flex-direction:column; gap:18px">
+      <table style="font-family:'Quicksand', Arial, sans-serif; font-size:25px; color:#2B2B2B">
+        <tr style="background:#3C5343">
+          <th style="width:52%; color:#F0E9E1; text-align:left; font-size:24px">Elementary flows</th>
+          <th style="width:20%; color:#F0E9E1; text-align:left; font-size:24px">per dataset</th>
+          <th style="width:28%; color:#F0E9E1; text-align:left; font-size:24px">rebuilt ÷ original</th>
+        </tr>
+        <tr style="background:#FFFFFF"><td><span style="color:#3C5343">●</span> declared by the eco-profile</td><td>~130</td><td><b>×2.5</b></td></tr>
+        <tr style="background:#F7F3EE"><td><span style="color:#A8603F">■</span> only via its waste links</td><td>~1,530</td><td><b>×150</b></td></tr>
+      </table>
+      <p style="font-size:24px; line-height:1.4; color:#7E857F">Epoxy resin · MDI · naphtha · polycarbonate · TDI · nylon 66 · acetone · hydrogen cyanide · benzene · polyols · GPPS · methyl methacrylate</p>
+    </div>
+
+    <div style="display:flex; flex-direction:column; gap:10px; padding:18px; background:#FFFFFF; border:1px solid #DCD3C7; border-radius:4px">
+      <img src="/_blob/43fa9eac0507ff6ce7758d01941bef9a" alt="Rebuilt against original elementary flow for the 12 APME eco-profile rebuilds on log scales: about 1,500 declared flows as dark dots scattered around and somewhat above the one-to-one line, and about 18,400 flows that reach the original only through its waste-treatment links as a brown band running about two decades above the line" style="width:571px; height:530px; object-fit:contain">
+      <p style="width:571px; font-size:24px; line-height:1.35; color:#555B57">Median, rebuilt ÷ original: ×2.5 declared, ×150 via the waste links (99 % above the line)</p>
+    </div>
+  </div>
+
+  <p style="position:absolute; left:128px; bottom:58px; width:1664px; font-size:24px; color:#7E857F">results/flow_comparison.json · scripts/slide_apme_parity.py · results/ecoprofile_agreement.csv</p>
+
+  <aside>The twelve rebuilds that match worst are all APME eco-profiles: the plastics industry's own cradle-to-gate inventories, compiled by Boustead for the Association of Plastics Manufacturers in Europe, today PlasticsEurope, and only ever published as totals. That is why BAFU carries them as system processes without inputs. Each original declares about a hundred and forty substances itself, the ones the industry survey recorded. On top of that, ecoinvent attached eight waste-treatment links, and those bring in all the other elementary flows of the comparison, about fifteen hundred per dataset, as traces around ten to the minus fifteen. The plot splits every flow of the twelve rebuilds by that. The dark dots are the flows the eco-profile declares: they scatter around the line and somewhat above it, a factor of two and a half in the median. The brown band is the flows that reach the original only through its waste links: ninety-nine percent of them sit above the line, a factor of about a hundred and fifty in the median. The reason is the inputs. A rebuild runs on ecoinvent chemicals such as bisphenol A, adipic acid or phosgene, each with its full supply chain behind it, so the flows the original only has as waste-link traces come out at full supply-chain scale. No fit can change that: scaling the inputs moves the declared flows and the traces together. So this is not evidence that the twelve rebuilds are wrong; the gap sits in flows the originals never measured. Other eco-profiles of the same family, ABS, PMMA or glass-filled nylon 6, sit on the line, because their main input is itself an eco-profile with the same eight waste links. The one exception among the declared flows is naphtha, about fifty times high even there. Without the twelve, thirty-one percent of the remaining flows match within ten percent instead of twenty-three, and fifty-seven percent within a factor of two instead of forty-three.</aside>
+</section>

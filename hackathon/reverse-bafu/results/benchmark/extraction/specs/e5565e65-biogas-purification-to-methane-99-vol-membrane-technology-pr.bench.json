@@ -1,0 +1,330 @@
+{
+  "target": {
+    "code": "e5565e65-b8bd-3f37-8db8-0aea66514e9d",
+    "name": "Biogas purification, to methane, 99 vol-%, membrane technology process",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Figure 12 'Unit process raw data of biogas purification processes', 1st value column 'biogas purification, to methane, 99 vol-%, membrane technology process' [CH], per 1 Nm3; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2022 - LCI biogas and biomethane processes - Kaegi.pdf",
+      "where": "pages 19-21 -> report-p19-21.txt",
+      "note": "report sha256 a07e312d1f9643c4…, text sha256 bd95220f6c09aa75…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/e5565e65-b8bd-3f37-8db8-0aea66514e9d/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "9e34a70308a63c9727181053e79b632671c747c1901aab5697a3c0ddca542db5",
+      "at": "2026-09-22T22:02:57Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "caca64d6952e69b2199c98ebea0dbf86f37425880b5ef31f29e62c16a4e643ed",
+      "at": "2026-09-22T22:02:59Z"
+    },
+    "gaps_reported_by_model": [
+      "The raw biogas itself is NOT an input of this dataset: the purification columns carry only the purification effort; the biogas is drawn by the downstream mix dataset ('methane, 96 vol-%, from biogas, at purification').",
+      "The transport, freight, lorry 7.5-16 t and transport, freight, rail rows are zero for this column.",
+      "No waste water and no spent activated carbon disposal for this column (the amino washing column has both).",
+      "The dataset name in the BAFU database says 99 vol-%, matching the first column."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T22:03:00Z"
+  },
+  "node": {
+    "name": "Biogas purification, to methane, 99 vol-%, membrane technology process, disaggregated",
+    "unit": "m3",
+    "location": "CH",
+    "comment": "drafted from 2022 - LCI biogas and biomethane processes - Kaegi.pdf pp. 19-21",
+    "inputs": [
+      {
+        "name": "Electricity, low voltage, at grid",
+        "amount": 0.575,
+        "unit": "kilowatt hour",
+        "location": "CH",
+        "note": "1st column (membrane technology process)",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "technosphere electricity, low voltage, at grid               CH             0                    kWh                                        0.575          1.16E-1                        0.186                                1            1.23                     (2,3,2,3,1,5,BU:1.05); ;",
+          "raw_value": 0.575,
+          "raw_unit": "kWh",
+          "per": "per Nm3 methane from the membrane purification process",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electricity low voltage at grid",
+          "mapping_reason": "The Swiss low-voltage supply mix; SBB is the railway grid.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "c4a92617-9f99-3d7b-95c0-15fb110b80ad"
+      },
+      {
+        "name": "Charcoal, at plant",
+        "amount": 0.00214,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "activated carbon for the pre-treatment",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "                charcoal, at plant                           GLO            0                    kg                                      0.00214           6.97E-4                    0.000208                                 1            1.32                     (1,4,1,3,3,5,BU:1.05); ;",
+          "raw_value": 0.00214,
+          "raw_unit": "kg",
+          "per": "per Nm3 methane from the membrane purification process",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "charcoal at plant",
+          "mapping_reason": "Exact name match for the activated carbon; 'Planting' is unrelated.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "d08c6edb-5245-368f-bc5d-28a6d4dd865f"
+      },
+      {
+        "name": "Lubricating oil, at plant",
+        "amount": 0.000114,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "                lubricating oil, at plant                    RER            0                    kg                                     0.000114                                       0.00015                                 1            1.32                     (1,4,1,3,3,5,BU:1.05); ;",
+          "raw_value": 0.000114,
+          "raw_unit": "kg",
+          "per": "per Nm3 methane from the membrane purification process",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "lubricating oil at plant",
+          "mapping_reason": "Exact name match; the esterification plant is unrelated.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "0b14288a-dbf3-3dac-a570-83d083f4b600"
+      },
+      {
+        "name": "Chemical plant, organics",
+        "amount": 5.4e-11,
+        "unit": "unit",
+        "location": "RER",
+        "note": "infrastructure proxy",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "                chemical plant, organics                     RER            1                    unit                                     5.4E-11                 5.53E-11             5.40E-11                                1            3.31                     (3,4,3,3,4,5,BU:3); ;",
+          "raw_value": 5.4e-11,
+          "raw_unit": "unit",
+          "per": "per Nm3 methane from the membrane purification process",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "chemical plant organics",
+          "mapping_reason": "Exact name and unit (unit, infrastructure) match; candidate 1 is a storage tank.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "13ed4fe0-7ba5-3b60-82b6-a63918ee814d"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 2.3e-05,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "                ton, fleet average                                                                                                      0.000023                                  0.000018099",
+          "raw_value": 2.3e-05,
+          "raw_unit": "tkm",
+          "per": "per Nm3 methane from the membrane purification process",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight lorry 16-32t fleet average",
+          "mapping_reason": "Exact class and fleet-average match at CH.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "eb5552ed-63a8-374d-8fa4-296f644c37f8"
+      },
+      {
+        "name": "Chromium steel 18/8, at plant",
+        "amount": 0.000104,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "the membrane module hardware",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "                chromium steel 18/8, at plant                RER            0                    kg                      1.04E-4                                                                                               1            1.23                     (2,3,2,1,1,5,BU:1.05); ;",
+          "raw_value": 0.000104,
+          "raw_unit": "kg",
+          "per": "per Nm3 methane from the membrane purification process",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "chromium steel 18/8 at plant",
+          "mapping_reason": "Exact name and unit (kilogram) match at RER; candidates 0-3 are finished products in units or square metres and 5-6 the electric and converter sub-routes.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "fc9385f8-fe2d-3399-b663-4b66e5062a3f"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Waste Heat",
+        "category": "air",
+        "amount": 1.2775,
+        "unit": "megajoule",
+        "note": "high population density; 1st and 3rd columns carry the same value",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "population                                                                                                                                 1.2775                    4.15                  1.2775",
+          "raw_value": 1.2775,
+          "raw_unit": "MJ",
+          "per": "per Nm3 methane from the membrane purification process",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Waste heat released to air, the compartment the table gives ('emission air, high population').",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-9136-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Carbon Dioxide (biogenic)",
+        "category": "emissions",
+        "amount": 0.46896,
+        "unit": "kilogram",
+        "note": "the CO2 separated from the raw biogas",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "                                                                                                                                         0.46896                  0.49866                 0.46896",
+          "raw_value": 0.46896,
+          "raw_unit": "kg",
+          "per": "per Nm3 methane from the membrane purification process",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Biogenic CO2 to air - the CO2 separated from the raw biogas; candidate 1 is an uptake from air.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-9c15-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Methane (biogenic)",
+        "category": "emissions",
+        "amount": 0.00461,
+        "unit": "kilogram",
+        "note": "methane slip; the text gives 0.64 % mass-balanced losses = 4.6 g for this process",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "                                                                                                                                         0.00461              0.000432                     0.0101",
+          "raw_value": 0.00461,
+          "raw_unit": "kg",
+          "per": "per Nm3 methane from the membrane purification process",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Biogenic methane to air - the methane slip; candidate 1 is a timing correction flow.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "fe0acd60-3ddc-11dd-a8e8-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Hydrogen Sulfide",
+        "category": "emissions",
+        "amount": 2.31e-06,
+        "unit": "kilogram",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "                                                                                                                                     0.00000231                   3.49E-06          2.3107E-06",
+          "raw_value": 2.31e-06,
+          "raw_unit": "kg",
+          "per": "per Nm3 methane from the membrane purification process",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "H2S to air, the compartment the table gives.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-94a9-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Sulfur Dioxide",
+        "category": "emissions",
+        "amount": 6.599e-06,
+        "unit": "kilogram",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p19-21.txt",
+          "quote": "                                                                                                                                   0.000006599                    5.52E-04          6.5993E-06",
+          "raw_value": 6.599e-06,
+          "raw_unit": "kg",
+          "per": "per Nm3 methane from the membrane purification process",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "SO2 to air; candidate 1 is the same substance in the newer compartment naming.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "fe0acd60-3ddc-11dd-ac48-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": []
+  }
+}

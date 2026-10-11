@@ -1,0 +1,435 @@
+You are helping rebuild an aggregated life-cycle-inventory dataset as a unit process.
+
+The dataset `Ventilation equipment, Avent E 97, at plant` [RER], reference unit 1 p, is shipped in the BAFU-2026 database as a "system terminated" inventory: it has no technosphere inputs, only ~20 cumulative elementary flows. A public report documents the underlying process. Your job is to read the report excerpt and produce the *unit process* as line items — what the process consumes from other datasets and what it emits directly — each traceable to the excerpt.
+
+## What the database says about the dataset
+
+- BAFU category: construction / ventilation\components
+- includedProcesses: Materials used for the production. Estimation of electricity use for the different production steps. Energy use for heating of the production building. Transport of raw materials to the plant. Estimation for the Infrastructure of the Production site included.
+- technology: Ventilation unit for decentral ventilation systems with 120 m3/h average air flow. Housing made of galvanised steel insulated with rock wool. Heat recovery element made of aluminium. Total weight of component 35 kg
+- generalComment: Production of a typical component used for a decentral ventilation system in a multi family house. The house considered in the investigation includes 6 flats with 130 m2 floor area each and a ventilation rate of 120 m3/h.;
+UUID: 5588b496-afb7-387c-9c2c-c754792872c3
+- source cited in the metadata: Haessig W. | 2007 | 2007 - LCI comfort ventilation in dwellings - Haessig
+- time period: 2003-01-2003-12
+
+## Direct resource flows visible in the aggregated vector
+
+These flows appear in the aggregated inventory with amounts that no upstream dataset would plausibly emit on this dataset's behalf; they are candidates for the process's own direct resource flows (per 1 p):
+- none
+
+## Report excerpt
+
+Source file: `report-p93-95.txt` (SHA-256 34baa0a83796f6e18b3c5adb1b15822ac31e1062fd4afa56a7807f3ad3a92507), pages 93-95 of `2007 - LCI comfort ventilation in dwellings - Haessig.pdf`.
+
+```
+Ökologische Aspekte der Komfortlüftungen im Wohnbereich – Schlussbericht
+
+
+
+
+                                        Abfallsortierung in einer Sortieranlage ausgegangen. Für die Luftfilter wird eine
+                                        Entsorgung in der Kehrichtverbrennungsanlage angenommen.
+
+
+Tabelle 10.18                  Herstellung, Schalldämpfer und Luftfilter, ab Werk
+
+
+
+
+                                                                                                                                                                                                                                 zentral, 600 m3/h, ab
+                                                                                                                                                                                                   Abluftventil, ab Werk
+                                                                                                                                       dezentral, 250 m3/h,
+
+
+
+
+                                                                                                                                                                    dezentral, 180-250
+                                                                                           Stahl, DN 315, 50
+
+
+
+
+                                                                                                                 Stahl, DN 125, ab
+                                                                                           Schalldämpfer,
+
+
+
+
+                                                                                                                 Schalldämpfer,
+
+
+
+
+                                                                                                                                                                    m3/h, ab Werk
+                                                                                                                                       Zu- Abluftfilter,
+
+
+
+
+                                                                                                                                                                    Zu- Abluftfilter,
+
+
+
+
+                                                                                                                                                                                                                                 Zu- Abluftfilter,
+                                                                                           mm, ab Werk
+
+
+
+
+                                                                                                                                                                                                   Abluftfilter, in
+                                                                                                                                       ab Werk
+                                                                                                                 Werk
+
+
+
+
+                                                                                                                                                                                                                                 Werk
+                                                                            Name
+                                                                            Location CH               CH           RER          RER          RER          RER
+                                                                            Infrastr. *) -            -            -            -            -            -
+Input von Technosphäre                                    Location     I *) Einheit      unit         unit         unit         unit         unit         unit
+Erdgas, in Industriefeuerung >100kW                       RER            - MJ                 4.20E+1      1.74E+1      7.25E-2      3.19E-1      5.80E-2      5.80E-1
+Heizöl EL, in Industriefeuerung 1MW, nicht-modulierend    RER            - MJ                 4.20E+1      1.74E+1      7.25E-2      3.19E-1      5.80E-2      5.80E-1
+Strom, Mittelspannung, Produktion UCTE, ab Netz           UCTE           - kWh                      -            -      5.50E-3      2.42E-2      4.40E-3      2.03E-1
+Strom, Mittelspannung, ab Netz                            CH             - kWh                4.68E+0      2.38E+0            -            -            -            -
+Elektrostahl, un- und niedriglegiert, ab Werk             RER            - kg                 6.92E+0      2.73E+0            -            -            -      1.42E-1
+Blasstahl, unlegiert, ab Werk                             RER            - kg                 1.18E+1      4.64E+0            -            -            -      2.43E-1
+Polyethylenterephthalat-Granulat, amorph, ab Werk         RER            - kg                       -            -      3.15E-2      1.26E-1      4.20E-2      5.25E-2
+Glaswolleplatte, ab Werk                                  CH             - kg                 3.30E+0      1.76E+0            -            -            -            -
+Zellstoffkarton, ungebleicht, SUB, ab Werk                RER            - kg                       -            -      2.04E-2      1.02E-1            -            -
+Blech walzen, Stahl                                       RER            - kg                 1.87E+1      7.37E+0            -            -            -      3.85E-1
+Schweissen, Lichtbogen, Stahl                             RER            - m                  2.00E+0            -            -            -            -            -
+Bandverzinkung                                            RER            - m2                 1.46E+0      1.40E+0            -            -            -      1.00E-1
+Vliesherstellung, Polyethylenterephthalat                 RER            - kg                       -            -      3.15E-2      1.26E-1      4.20E-2      5.25E-2
+Entsorgung, Polyethylenterephtalat, 0.2% Wasser, in
+                                                          CH         - kg                     -             -     1.50E-3      6.00E-3                                                                 2.00E-3                         2.50E-3
+Kehrichtverbrennung
+Entsorgung, Inertstoff, 5% Wasser, in Inertstoffdeponie   CH         - kg              3.00E-1      1.60E-1              -              -                                                                                  -                              -
+Entsorgung, Verpackungskarton, 19.6% Wasser, in
+                                                          CH         - kg                     -             -     4.00E-4      2.00E-3                                                                                     -                              -
+Kehrichtverbrennung
+Transport, Fracht, Schiene                                RER        - tkm            1.19E+1       4.77E+0       1.04E-2      4.56E-2                                                              8.40E-3                          8.75E-2
+Transport, Lkw 32t                                        RER        - tkm                    -             -     5.21E-3      2.29E-2                                                              4.22E-3                          4.38E-2
+Transport, Lkw 28t                                        CH         - tkm            1.10E+0       4.59E-1              -              -                                                                 -                                -
+Lüftungskomponentenfabrik                                 RER        1 unit            8.00E-8      3.32E-8              -              -                                                                 -                                -
+Kunststoffverarbeitungsfabrik                             RER        1 unit                   -             -    3.70E-11     1.63E-10                                                             2.96E-11                         2.96E-10
+*) Infrastrukturprozess (1= ja, - = nein)
+Location: Geographischer Bezug für Prozess (RER = Europa; CH = Schweiz, UCTE = Union for the Co-ordination of Transmission of Electricity)
+
+
+
+Tabelle 10.19                  Entsorgung, Schalldämpfer und Luftfilter
+                                                                                                                                       Abluftfilter, dezentral,
+
+
+
+
+                                                                                                                                                                    Abluftfilter, dezentral,
+
+
+
+
+                                                                                                                                                                                                                                 Abluftfilter, zentral,
+                                                                                         Stahl, DN 315, 50
+
+
+
+
+                                                                                                                                       Entsorgung, Zu-
+
+
+
+
+                                                                                                                                                                    Entsorgung, Zu-
+
+
+
+
+                                                                                                                                                                                                                                 Entsorgung, Zu-
+                                                                                         Schalldämpfer,
+
+
+
+
+                                                                                                                 Schalldämpfer,
+                                                                                                                 Stahl, DN 125
+
+
+
+
+                                                                                                                                                                    180-250 m3/h
+
+
+
+                                                                                                                                                                                                 Abluftfilter, in
+                                                                                         Entsorgung,
+
+
+
+
+                                                                                                                 Entsorgung,
+
+
+
+
+                                                                                                                                                                                                 Entsorgung,
+
+                                                                                                                                                                                                 Abluftventil
+                                                                                                                                       250 m3/h
+
+
+
+
+                                                                                                                                                                                                                                 600 m3/h
+                                                                                         mm
+
+
+
+
+                                                                            Name
+                                                                            Location CH                        CH                    CH                           CH                           CH                              CH
+                                                                            Infrastr. *) -                     -                     -                            -                            -                               -
+Input von Technosphäre                                    Location     I *) Einheit      unit                  unit                  unit                         unit                         unit                            unit
+Entsorgung, Gebäude, Massiveisen ohne Armierungseisen, in
+                                                          CH         - kg             1.70E+1       6.70E+0              -              -                                                                                  -           3.50E-1
+Sortieranlage
+Entsorgung, Gebäude, Mineralwolle, in Sortieranlage       CH         - kg             3.00E+0       1.60E+0              -              -                                                                                  -                              -
+Entsorgung, Polyethylenterephtalat, 0.2% Wasser, in
+                                                          CH         - kg                     -             -     3.00E-2      1.20E-1                                                                 4.00E-2                         5.00E-2
+Kehrichtverbrennung
+Entsorgung, Verpackungskarton, 19.6% Wasser, in
+                                                          CH         - kg                     -             -     2.00E-2      1.00E-1                                                                                     -                              -
+Kehrichtverbrennung
+Transport, Lkw 28t                                        CH         - tkm                    -             -     5.00E-4      2.20E-3                                                                 4.00E-4                         5.00E-4
+*) Infrastrukturprozess (1= ja, - = nein)
+Location: Geographischer Bezug für Prozess (RER = Europa; CH = Schweiz, UCTE = Union for the Co-ordination of Transmission of Electricity)
+
+
+
+                                        10.3.5 Lüftungsgeräte, dezentral
+                                        In Tabelle 10.20 sind die Sachbilanzdaten für die Herstellung von vier
+                                        verschiedenen Lüftungsgeräten mit einer Luftmenge von bis zu 250 m3/h
+                                        dargestellt. Im weiteren wird ein Prozess dargestellt, der dem Mittelwert der
+                                        erhobenen Daten entspricht. Diese Sachbilanzen beziehen sich ab Werk. In
+                                        Tabelle 10.21 sind die Sachbilanzdaten für die Entsorgung dieser Lüftungsgeräte
+                                        dargestellt. Diese Sachbilanzen beziehen sich auf eine Entsorgung bei einer
+
+                                        ecoinvent-report No. 25                                     76
+                                     Ökologische Aspekte der Komfortlüftungen im Wohnbereich – Schlussbericht
+
+
+
+
+                                         Gebäuderenovation über den Baustellenabfall. Es wird von einer sachgemässen
+                                         Abfallsortierung  in  einer   Sortieranlage   ausgegangen.     Gemäss   den
+                                         Herstellerangaben werden die Komponenten nicht zurückgenommen und so direkt
+                                         dem Recycling zugeführt.
+
+
+Tabelle 10.20                  Herstellung, Lüftungsgeräte, dezentral, ab Werk
+
+
+
+
+                                                                                                                                           Lüftungsgerät, Avent
+                                                                                                                  Lüftungsgerät, KWL
+
+
+
+
+                                                                                                                                                                                                                      dezentral, ab Werk
+                                                                                         dezentral, 180-250
+
+
+
+
+                                                                                                                                                                                              Lüftungsgerät, GE
+                                                                                                                                                                                              250 RE, ab Werk
+                                                                                                                                                                      Storkair G 90, ab
+                                                                                         m3/h, ab Werk
+                                                                                         Lüftungsgerät,
+
+
+
+
+                                                                                                                                                                      Lüftungsgerät,
+                                                                                                                                           E 97, ab Werk
+                                                                                                                  250, ab Werk
+
+
+
+
+                                                                                                                                                                                                                      Verkablung,
+                                                                                                                                                                                                                      Steuerung,
+                                                                                                                                                                      Werk
+                                                                            Name
+                                                                            Location RER              RER          RER          RER          CH           RER
+                                                                            Infrastr. *) -            -            -            -            -            -
+Input von Technosphäre                                      Location   I *) Einheit      unit         unit         unit         unit         unit         unit
+Erdgas, in Industriefeuerung >100kW                         RER          - MJ                 9.06E+1      8.40E+1      7.35E+1      6.86E+1      1.37E+2      3.16E+0
+Heizöl EL, in Industriefeuerung 1MW, nicht-modulierend      RER          - MJ                 9.06E+1      8.40E+1      7.35E+1      6.86E+1      1.37E+2      3.16E+0
+Strom, Mittelspannung, Produktion UCTE, ab Netz             UCTE         - kWh                2.18E+1      2.24E+1      2.92E+1      1.20E+1            -      2.40E-1
+Strom, Mittelspannung, ab Netz                              CH           - kWh                      -            -            -            -      3.71E+1            -
+Elektrostahl, un- und niedriglegiert, ab Werk               RER          - kg                 8.88E+0      1.20E+1      4.64E+0      8.22E+0      1.36E+1            -
+Blasstahl, unlegiert, ab Werk                               RER          - kg                 1.64E+1      2.17E+1      8.78E+0      1.54E+1      2.46E+1            -
+Chromstahl 18/8, ab Werk                                    RER          - kg                 8.98E-1            -            -      1.98E-1      4.07E+0            -
+Aluminium, Produktionsmix, Knetlegierung, ab Werk           RER          - kg                 7.69E+0      7.59E+0      2.29E+1      8.80E-1      2.29E+1            -
+Kupfer, ab Regionallager                                    RER          - kg                 6.21E-1      6.60E-1      4.40E-1      7.15E-1      7.15E-1      6.60E-1
+Polyvinylchlorid, ab Regionallager                          RER          - kg                       -            -            -            -            -      1.03E+0
+Polystyrol, schlagfest, HIPS, ab Werk                       RER          - kg                 7.26E+0            -            -      7.26E+0            -            -
+Gummi EPDM, ab Werk                                         RER          - kg                 1.82E-1      1.58E-1            -            -      2.10E-1            -
+Polystyrolplatte expandiert, ab Werk                        RER          - kg                 2.86E+0            -            -      2.86E+0            -            -
+Steinwolle, verpackt, ab Werk                               CH           - kg                 2.42E+0      1.76E+0      1.60E+0            -      5.06E+0            -
+Elektronik für technische Anlagen                           RER          - kg                 2.29E-1      1.50E-1      1.50E-1      3.50E-1      3.50E-1      6.00E-1
+Pulverbeschichten, Stahl                                    RER          - m2                 1.78E+0      1.60E+0      1.40E+0      1.50E+0      3.00E+0            -
+Blech walzen, Aluminium                                     RER          - kg                 7.69E+0      7.59E+0      2.29E+1      8.80E-1      2.29E+1            -
+Blech walzen, Chromstahl                                    RER          - kg                 8.98E-1            -            -      1.98E-1      4.07E+0            -
+Blech walzen, Stahl                                         RER          - kg                 2.53E+1      3.37E+1      1.34E+1      2.37E+1      3.82E+1            -
+Draht ziehen, Kupfer                                        RER          - kg                 6.21E-1      6.60E-1      4.40E-1      7.15E-1      7.15E-1      6.60E-1
+Bandverzinkung                                              RER          - m2                 4.24E+0      7.20E+0      3.00E+0      1.70E+0      8.80E+0            -
+Extrudieren, Kunststoffrohre                                RER          - kg                       -            -            -            -            -      1.03E+0
+Spritzgiessen                                               RER          - kg                 7.44E+0      1.58E-1            -      7.26E+0      2.10E-1            -
+Entsorgung, Polyvinylchlorid, 0.2% Wasser, in
+                                                            CH          -   kg                                -                        -                          -                       -                       -        4.90E-2
+Kehrichtverbrennung
+Entsorgung, Polystyrol, 0.2% Wasser, in Kehrichtverbrennung CH          -   kg                6.60E-1                                  -                          -        6.60E-1                                -                        -
+Entsorgung, Gummi, unspezifisch, 0% Wasser, in
+                                                          CH         - kg              8.66E-3      7.50E-3              -              -                                                        1.00E-2                                   -
+Kehrichtverbrennung
+Entsorgung, expandiertes Polystyrol, 5% Wasser, in
+                                                          CH         - kg              2.60E-1              -            -     2.60E-1                                                                            -                        -
+Kehrichtverbrennung
+Entsorgung, Inertstoff, 5% Wasser, in Inertstoffdeponie   CH         - kg              2.20E-1      1.60E-1       1.45E-1               -                                                      4.60E-1                           -
+Transport, Fracht, Schiene                                RER        - tkm            9.49E+0       8.80E+0       7.70E+0      7.18E+0                                                         3.15E+1                     4.58E-1
+Transport, Lkw 32t                                        RER        - tkm            4.76E+0       4.40E+0       3.85E+0      3.60E+0                                                               -                     2.29E-1
+Transport, Lkw 28t                                        CH         - tkm                    -             -            -              -                                                      3.58E+0                           -
+Lüftungskomponentenfabrik                                 RER        1 unit            1.73E-7      1.60E-7       1.40E-7      1.31E-7                                                         2.60E-7                           -
+Kunststoffverarbeitungsfabrik                             RER        1 unit                   -             -            -              -                                                            -                     1.61E-9
+*) Infrastrukturprozess (1= ja, - = nein)
+Location: Geographischer Bezug für Prozess (RER = Europa; CH = Schweiz, UCTE = Union for the Co-ordination of Transmission of Electricity)
+
+
+
+
+                                         ecoinvent-report No. 25                                  77
+                                  Ökologische Aspekte der Komfortlüftungen im Wohnbereich – Schlussbericht
+
+
+
+
+Tabelle 10.21                 Entsorgung, Lüftungsgeräte, dezentral
+
+
+
+
+                                                                                                                                           Lüftungsgerät, Avent
+                                                                                                                Lüftungsgerät, KWL
+                                                                                     dezentral, 180-250
+
+
+
+
+                                                                                                                                                                                               Lüftungsgerät, GE
+                                                                                     Lüftungsgerät,
+
+
+
+
+                                                                                                                                                                        Lüftungsgerät,
+                                                                                                                                                                        Storkair G 90
+                                                                                     Entsorgung,
+
+
+
+
+                                                                                                                Entsorgung,
+
+
+
+
+                                                                                                                                           Entsorgung,
+
+
+
+
+                                                                                                                                                                        Entsorgung,
+
+
+
+
+                                                                                                                                                                                               Entsorgung,
+
+
+
+
+                                                                                                                                                                                                                       Entsorgung,
+
+                                                                                                                                                                                                                       Verkablung,
+                                                                                                                                                                                                                       Steuerung,
+
+                                                                                                                                                                                                                       dezentral
+                                                                                                                                                                                               250 RE
+                                                                                     m3/h
+
+
+
+
+                                                                                                                                           E 97
+                                                                                                                250
+                                                                        Name
+                                                                        Location CH                           CH                         CH                           CH                     CH                        CH
+                                                                        Infrastr. *) -                        -                          -                            -                      -                         -
+Input von Technosphäre                                    Location I *) Einheit      unit                     unit                       unit                         unit                   unit                      unit
+Entsorgung, Gebäude, Massiveisen ohne Armierungseisen, in
+                                                           CH         - kg                  3.13E+1                  3.81E+1                    3.34E+1                      2.31E+1                5.99E+1                         -
+Sortieranlage
+Entsorgung, Gebäude, Mineralwolle, in Sortieranlage        CH         - kg                  2.20E+0                  1.60E+0                    1.45E+0                                  -          4.60E+0                         -
+Entsorgung, Gebäude, EPS-Isolation flammgeschützt, in
+                                                           CH         - kg                  2.60E+0                                  -                            -          2.60E+0                               -                -
+Beseitigung
+Entsorgung, Gebäude, Anstrich auf Metall, in Sortieranlage CH         - kg                  1.62E-1                  1.46E-1                    1.27E-1                      1.37E-1                2.73E-1                         -
+Entsorgung, Kabel-Kunststoff, 3.55% Wasser, in
+                                                           CH         - kg                                -                          -                            -                      -                         -          1.01E+0
+Kehrichtverbrennung
+Entsorgung, Elektronik für Steuerung                       RER        - kg                  2.29E-1                  1.50E-1                    1.50E-1                      3.50E-1                3.50E-1                   6.00E-1
+Entsorgung, Polystyrol, 0.2% Wasser, in Kehrichtverbrennung CH        - kg                  6.60E+0                                  -                            -          6.60E+0                               -                -
+Entsorgung, Gummi, unspezifisch, 0% Wasser, in
+                                                          CH        - kg                    1.73E-1                  1.50E-1                                      -                      -          2.00E-1                         -
+Kehrichtverbrennung
+Transport, Lkw 28t                                        CH        - tkm                   6.77E-2                  1.50E-3                                      -          6.60E-2                2.00E-3                   1.01E-2
+*) Infrastrukturprozess (1= ja, - = nein)
+Location: Geographischer Bezug für Prozess (RER = Europa; CH = Schweiz)
+
+
+
+                                       10.3.6 Lüftungsgeräte, zentral
+                                       In Tabelle 10.22 sind die Sachbilanzdaten für die Herstellung von zwei
+                                       unterschiedlichen Lüftungsgeräten mit einer Luftmenge von bis zu 1200 m3/h
+                                       dargestellt. Im weiteren wird ein Prozess dargestellt, der dem Mittelwert der
+                                       erhobenen Daten entspricht. Diese Sachbilanzen beziehen sich ab Werk. In
+                                       Tabelle 10.23 sind die Sachbilanzdaten für die Entsorgung dieser Lüftungsgeräte
+                                       dargestellt. Diese Sachbilanzen beziehen sich auf eine Entsorgung bei einer
+                                       Gebäuderenovation über den Baustellenabfall. Es wird von einer sachgemässen
+                                       Abfallsortierung in einer Sortieranlage ausgegangen. Gemäss den Hersteller-
+                                       angaben werden die Komponenten nicht zurückgenommen und so direkt dem
+                                       Recycling zugeführt.
+
+
+
+
+                                       ecoinvent-report No. 25                                78
+```
+
+## Rules
+
+1. Every line item must quote the exact line of the excerpt it comes from (`quote`), with the raw value and raw unit as printed. Never invent a value. If the excerpt gives a range, report the range as `raw_min`/`raw_max` and put your point estimate in `raw_value`.
+2. Report values per the excerpt's own basis (`per`, e.g. "per t burnt shale", "per m2 board"); do not convert. State the reference basis you found in `basis` so the code can scale to 1 p.
+3. If a value needs a physical conversion (litres of diesel to MJ, m3 of water to kg), give `factor`, `factor_unit` and `factor_source` (a standard value with its source, e.g. "diesel 0.84 kg/l × 42.8 MJ/kg = 36 MJ/l, ecoinvent convention"). Leave `factor` at 1 otherwise.
+4. Classify each line: `kind` = "input" (a product or service from another dataset), "emission" (a direct release to air/water/soil), "resource" (a direct extraction from nature), "product" (the reference product), "co-product" or "ignore" (with a reason).
+5. Propose a `search` phrase (2–4 words) that a name search in a life-cycle database would use: for inputs the supplying dataset in ecoinvent-2 naming style ("diesel burned building machine", "sodium hydroxide production mix"); for emissions and resources the substance in EF 3.1 / ecoinvent nomenclature ("particles PM10" for dust, "nitrogen oxides", "carbon dioxide fossil", "crude oil", "water"). Do not guess the exact name; the search is resolved by code afterwards.
+6. If the excerpt describes allocation (e.g. an economic allocation between co-products), record it in `allocation` and use the allocated column when the table has one. If it states that the composition items add up to a mass ("adds up to 1.00 kg"), put that mass per basis in `mass_sum`, else null.
+7. Mark anything you are unsure about with `confidence` = "low" and say why in `note`. Do not omit uncertain items; the reviewer decides.
+8. Do not add inputs the excerpt does not mention, even if you know the process needs them. Missing items are reported in `gaps` instead.
+
+Return only the JSON object described by the schema.

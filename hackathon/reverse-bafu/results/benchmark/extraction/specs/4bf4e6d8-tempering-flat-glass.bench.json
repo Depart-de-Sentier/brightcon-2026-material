@@ -1,0 +1,156 @@
+{
+  "target": {
+    "code": "4bf4e6d8-2c49-3042-956a-5778edad98c8",
+    "name": "Tempering, flat glass",
+    "location": "RER"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 4.3 'Unit process raw data ... for the tempering of glass', column 'tempering, flat glass', per 1 kg (RER); allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI building products - Kellenberger.pdf",
+      "where": "pages 371-372 -> report-p371-372.txt",
+      "note": "report sha256 07faa39bab6942a9…, text sha256 4660b6139f9ef36c…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/4bf4e6d8-2c49-3042-956a-5778edad98c8/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "339837c910912fda93ba8acf5866f491a1b81d8a85bb130e4101cb7904f6e3d4",
+      "at": "2026-09-22T21:11:31Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "531591fa4c0fbbfab3e93d5eba59d118d92dc9ec44942efea8a05eb9ef46784c",
+      "at": "2026-09-22T21:11:32Z"
+    },
+    "gaps_reported_by_model": [
+      "No infrastructure: 'Data for the infrastructure were not available.'",
+      "No direct emissions at all are given; the dataset metadata itself says the gate-to-gate inventory excludes infrastructure and emissions, and the excerpt gives none.",
+      "Electricity is named in the text ('using gas or electricity mainly for the heating, but also for cooling') but Tab. 4.3 books the whole energy demand as natural gas, so no electricity line is added.",
+      "The raw glass throughput (1 kg of flat glass being tempered) is deliberately NOT part of this dataset: 'It includes ... but not the throughput of raw glass'. Only the 12 % production loss appears."
+    ],
+    "skipped_items": [
+      "tempering, flat glass: product — reference product"
+    ],
+    "assembled_at": "2026-09-22T21:11:32Z"
+  },
+  "node": {
+    "name": "Tempering, flat glass, disaggregated",
+    "unit": "kg",
+    "location": "RER",
+    "comment": "drafted from 2007 - LCI building products - Kellenberger.pdf pp. 371-372",
+    "inputs": [
+      {
+        "name": "xxx Heat, natural gas, at industrial furnace low-NOx >100kW",
+        "amount": 1.33,
+        "unit": "megajoule",
+        "location": "RER",
+        "note": "'Estimation 20% of melting energy' (melting 5.5-8.0 MJ/kg per IPPC 2000)",
+        "derivation": {
+          "evidence": "report-p371-372.txt",
+          "quote": "technosphere natural gas, burned in industrial furnace low-NOx >100kW RER        0             MJ        1.33E+0        1   1.50     (5,na,1,1,1,na); Estimation 20% of melting energy",
+          "raw_value": 1.33,
+          "raw_unit": "MJ",
+          "per": "per kg tempered flat glass",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "natural gas burned industrial furnace low-NOx",
+          "mapping_reason": "The only candidate and an exact name match for the low-NOx >100 kW industrial furnace burning natural gas, in megajoules like the line item.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "72d574ad-634c-33e3-a037-41c027e813f0"
+      },
+      {
+        "name": "Flat glass, uncoated, at plant",
+        "amount": 0.12,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "only the 12 % cutting loss; the text says explicitly that the throughput of raw glass is NOT included in this dataset and has to be added separately",
+        "derivation": {
+          "evidence": "report-p371-372.txt",
+          "quote": "             flat glass, uncoated, at plant                           RER        0             kg        1.20E-1        1   1.12     (3,3,1,1,1,na); Estimation 12% glass losses",
+          "raw_value": 0.12,
+          "raw_unit": "kg",
+          "per": "per kg tempered flat glass",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "flat glass uncoated at plant",
+          "mapping_reason": "Exact name and unit match; 'Flat glass plant' is the factory infrastructure and 'coated' is a different product.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "e33d282a-b69e-320e-825a-ddb5e7264ad5"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 0.112,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "standard distance 100 km for the 1.12 kg glass throughput including losses",
+        "derivation": {
+          "evidence": "report-p371-372.txt",
+          "quote": "             transport, lorry 32t                                   RER           0            tkm       1.12E-1        1   2.09",
+          "raw_value": 0.112,
+          "raw_unit": "tkm",
+          "per": "per kg tempered flat glass",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry 32t",
+          "mapping_reason": "The fleet-average 16t-32t lorry is the ecoinvent-2 'lorry 32t' successor and covers the gross weight named in the table; the EURO-class single-vehicle datasets describe one emission standard rather than the fleet, and 32t-40t is the next larger class.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "85b3a5a6-2635-3546-b51b-4ccad397650b"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.224,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "standard distance 200 km for the glass throughput including losses",
+        "derivation": {
+          "evidence": "report-p371-372.txt",
+          "quote": "             transport, freight, rail                               RER          0             tkm       2.24E-1        1   2.09",
+          "raw_value": 0.224,
+          "raw_unit": "tkm",
+          "per": "per kg tempered flat glass",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "Exact name match at RER, the geography the table gives; the CH variants and the electricity-only/shunting splits are narrower than the generic rail freight the report cites.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

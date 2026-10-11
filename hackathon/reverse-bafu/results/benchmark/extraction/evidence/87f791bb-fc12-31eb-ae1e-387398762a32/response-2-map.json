@@ -1,0 +1,108 @@
+{
+ "mappings": [
+  {
+   "item": "Water, cooling, unspecified natural origin",
+   "chosen": "Water To Cooling ",
+   "location": "",
+   "compartment": "Resources / Resources from water",
+   "dependency": false,
+   "reason": "The only cooling-water resource flow in cubic metres, matching the table's 2.40E-02 m3; 'Water Cooling Sea' is sea water in kilograms and 'Water from cooling' is a discharge, not a withdrawal."
+  },
+  {
+   "item": "Water, unspecified natural origin",
+   "chosen": "Water ",
+   "location": "",
+   "compartment": "Resources / Resources from water",
+   "dependency": false,
+   "reason": "Unspecified water withdrawn from nature in cubic metres, matching the table's 6.00E-03 m3; lake, river, ground and cooling water are specific sub-types the report does not name."
+  },
+  {
+   "item": "ammonia, liquid, at regional storehouse",
+   "chosen": "Ammonia, liquid, at regional storehouse",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name match, and the report gives RER, which also ranks above CH in the location preference."
+  },
+  {
+   "item": "copper, at regional storage",
+   "chosen": "Copper, at regional storage",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name and location; every other candidate is a different metal or fuel at regional storage."
+  },
+  {
+   "item": "ammonium carbonate, at plant",
+   "chosen": "Ammonium carbonate, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact chemical, name and location; ammonium bicarbonate and the other carbonates are different chemicals and must not be substituted."
+  },
+  {
+   "item": "electricity, medium voltage, production UCTE, at grid",
+   "chosen": "xxx Electricity, medium voltage, production UCTE, at grid",
+   "location": "UCTE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The only UCTE production mix in the list and an exact name match for what the report cites; it carries the 'xxx' obsolete marker, but the alternatives are either single-carrier UCTE mixes (oil, hard coal, natural gas) or the RER mix, which would change the geography the report states."
+  },
+  {
+   "item": "heat, natural gas, at industrial furnace >100kW",
+   "chosen": "Heat, natural gas, at industrial furnace 1MW",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The same product - heat delivered from natural gas burned in an industrial furnace, in megajoules - and the only non-obsolete candidate of that kind; the >100kW variant exists only as the 'xxx' low-NOx dataset, so the furnace size class differs from the report's '>100kW'."
+  },
+  {
+   "item": "chemical plant, organics",
+   "chosen": "Chemical plant, organics",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name and location for the infrastructure unit the report used as an approximation; the other candidates are heat, steam, storage tanks or bulk chemicals."
+  },
+  {
+   "item": "transport, freight, rail",
+   "chosen": "Transport, freight, rail",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name and the RER location the report gives; the CH variants fix the traction and shunting."
+  },
+  {
+   "item": "transport, lorry 32t",
+   "chosen": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "A 32 t gross-weight lorry falls in the 16-32 t class, and 'fleet average' matches the report's unspecified 'lorry 32t'; the EURO-numbered candidates would additionally fix an emission standard and a long-haul or urban-delivery duty cycle the report does not state."
+  },
+  {
+   "item": "Heat, waste",
+   "chosen": "Waste Heat ",
+   "location": "",
+   "compartment": "air",
+   "dependency": false,
+   "reason": "Waste heat released to air in megajoules, matching the table's unit and its 'Air emission' label; the soil and water variants are the wrong compartment."
+  },
+  {
+   "item": "Ammonia",
+   "chosen": "Ammonia ",
+   "location": "",
+   "compartment": "Emissions / Emissions to air",
+   "dependency": false,
+   "reason": "Exact substance in the air compartment the table states; the soil and water entries are the wrong compartment and acetaldehyde--ammonia is a different compound."
+  },
+  {
+   "item": "Ammonium carbonate",
+   "chosen": null,
+   "location": "",
+   "compartment": "",
+   "dependency": false,
+   "reason": "No ammonium carbonate flow exists among the candidates. Every offered flow is a different ammonium salt (acetate, bromide, nitrate, oxalate, sulfate, chloride, fluoride) or the bare ammonium ion, and mapping a carbonate onto one of those would be a different chemical, so the line is reported as missing."
+  }
+ ]
+}

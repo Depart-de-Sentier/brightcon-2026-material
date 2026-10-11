@@ -1,0 +1,326 @@
+You are helping rebuild an aggregated life-cycle-inventory dataset as a unit process.
+
+The dataset `Process specific emissions and resources, from uranium milling, at mill plant` [GLO], reference unit 1 kg, is shipped in the BAFU-2026 database as a "system terminated" inventory: it has no technosphere inputs, only ~67 cumulative elementary flows. A public report documents the underlying process. Your job is to read the report excerpt and produce the *unit process* as line items — what the process consumes from other datasets and what it emits directly — each traceable to the excerpt.
+
+## What the database says about the dataset
+
+- BAFU category: minerals / new uranium ds
+- includedProcesses: The module includes: the land use for the operation (mostly tailings); diesel generators and  industrial boilers burning light oil; transport of the chemicals and fuels; radioactive and non-radioactive emissions to air and water during operation; water use (mining water, but attributed to "unspecified natural origin").
+- technology: Average conditions.
+- generalComment: PSI data (BFE project 407, Christian Bauer, April 2012).;
+UUID: 3653b40f-90e6-3e41-a90f-9a8a6a7f1728
+- source cited in the metadata: Bauer C. | 2012 | 2012 - LCA electricity generation in Switzerland - Uster
+- time period: 2011-01-2011-12
+
+## Direct resource flows visible in the aggregated vector
+
+These flows appear in the aggregated inventory with amounts that no upstream dataset would plausibly emit on this dataset's behalf; they are candidates for the process's own direct resource flows (per 1 kg):
+- Water: 1 cubic meter (Resources Resources from water Renewable material resources from water)
+
+## Report excerpt
+
+Source file: `report-p38-41.txt` (SHA-256 0ca58a443d07a259f558685c13bbc9e64b918a316c4041a40225e6a9d9cce0a7), pages 38-41 of `2012 - LCA electricity generation in Switzerland - Uster.pdf`.
+
+```
+4. Sachbilanzinformationen
+
+Tabelle 11                                                  Direkter Energieverbrauch zur Uranförderung und -aufbereitung für verschiedene
+                                                            Anlagen.41
+
+Mine/Deposit
+conventional mining                                                                   thermal                                    electric                                      total
+                                                                   mining type % Unat [MJ/kg Unat]                               [kWh/kg Unat]                                 [MJ/kg Unat]        source
+Australia
+  Olympic Dam                                                      underground           0.05                327                                                        224                1133 Mudd & Diesendorf 2010
+  Ranger                                                           open pit              0.27                145                                                         26                 238 Mudd & Diesendorf 2010
+Canada
+  McArthur River                                                   underground           3.31                184                                                         33                    304 Mudd & Diesendorf 2010
+  Rabbit Lake                                                      underground           0.66                394                                                         67                    636 Mudd & Diesendorf 2010
+  McClean Lake                                                     open pit              0.88                489                                                         25                    579 Mudd & Diesendorf 2010
+Namibia
+  Rössing                                                          open pit              0.03                450                                                         75                    720 Mudd & Diesendorf 2010
+Niger
+Niger total                                                                              0.23                147                                                        26                     241 Mudd & Diesendorf 2008
+Russia
+  Priargunsky                                                      underground           0.18                1498                                                       120                1930 Axpo 2011
+Brazil
+  Caetité                                                          open pit              0.25                131                                                           7                   155 personal communication
+
+
+
+
+Basierend auf diesen Daten kann eine Korrelation zwischen Uranerzgehalt und dem direkten
+Energieverbrauch (Prozesswärme und Strom gesamt) für Förderung und Aufbereitung be-
+rechnet werden, welche in Abbildung 5 dargestellt ist. Gewichtet mit den Uranproduktions-
+mengen beträgt die Aufteilung zwischen thermischer und elektrischer Energie im Durch-
+schnitt 61/39 %.42
+                                          2000                                                                                                                2000
+                                                                                                                                                                                                          Olympic Dam
+                                                                                                                    total direct energy demand [MJ/kg Unat]
+total direct energy demand [MJ/kg Unat]
+
+
+
+
+                                          1750                                                                                                                1750                                        Priargunsky
+                                                                                                                                                                                                          Ranger
+                                          1500                                                                                                                1500
+                                                                                                                                                                                                          Niger total
+                                          1250                                                                                                                1250                                        Caetité
+                                                                                                                                                                                                          Rabbit Lake
+                                          1000                                                                                                                1000                                        McClean Lake
+                                                                                 y = 372.55x-0.2086                                                                                                       McArthur River
+                                           750                                                                                                                750
+                                                                                                                                                                                                          Rössing
+                                                                                    R2 = 0.1286
+                                           500                                                                                                                500
+
+                                           250                                                                                                                250
+
+                                             0                                                                                                                  0
+                                              0.00   0.50   1.00    1.50      2.00    2.50    3.00    3.50   4.00                                                0.00   0.50     1.00   1.50     2.00     2.50   3.00      3.50   4.00
+                                                                    ore grade [% Unat]                                                                                                  ore grade [% Unat]
+
+
+Abbildung 5                                                 Gegenüberstellung von direktem Energieverbrauch zur Uranförderung und -
+                                                            aufbereitung sowie die zugehörige Extrapolationsformel.
+
+Mit dieser Korrelation wird der direkte Energieverbrauch für jene Anlagen berechnet, für die
+keine spezifischen Daten vorhanden sind (vgl. Tabelle 10 und Tabelle 11). Die länderspezifi-
+schen Werte werden, sofern Daten einzelner Anlagen vorhanden sind, aus diesen berechnet;
+als Durchschnittswerte gewichtet mit den Produktionsmengen der einzelnen Anlagen in den
+
+41
+                                          Angaben in kursiv berechnet aus Energieverbrauch insgesamt mit der durchschnittlichen Aufteilung 61 %
+                                          thermisch, 39 % elektrisch. Die Urankonzentrationen hier stimmen nicht vollständig mit jenen in Tabelle 10
+                                          überein, da die Werte in Tabelle 10 für das Jahr 2009 gelten und der Energieverbrauch in Mudd & Diesen-
+                                          dorf (2010) teilweise als Durchschnitt mehrerer Jahre mit einer dementsprechenden Uranerzkonzentration be-
+                                          rechnet wurde.
+42
+                                          Sofern keine spezifischen Informationen zu den Energiequellen zur Verfügung stehen, wird in den Inventar-
+                                          datensätzen wird der elektrische Energiebedarf umgerechnet in Dieselverbrauch als „Diesel, burned in diesel-
+                                          electric generating set“ (Wirkungsgrad: 36 %) bilanziert, der Verbrauch an fossilen Energieträgern für ther-
+                                          mische und Prozessenergie je zur Hälfte als „Heavy fuel oil, burned in industrial furnace 1MW, non-
+                                          modulating“ und „diesel, burned in building machine“.
+
+
+
+ESU-services GmbH                                                                                            - 25 -                                                                                     Paul Scherrer Institut
+                                            4. Sachbilanzinformationen
+
+jeweiligen Ländern. Für die Uranproduktion in Malawi und der Ukraine wird der direkte
+Energieverbrauch mit der Extrapolationsformel in Abbildung 5 berechnet. Somit ergeben sich
+die in Tabelle 12 dargestellten Werte für die verschiedenen Länder. Jene Werte, die auf Ext-
+rapolation beruhen, sollten jedoch mit besonderer Vorsicht interpretiert werden, da das ver-
+fügbare Datensample für die Extrapolation klein ist, die vorhandenen anlagenspezifischen
+Werte an sich weit streuen und schon mit relativ grosser Unsicherheit verbunden sind und
+wahrscheinlich auch anlagenspezifische Faktoren eine Rolle spielen, die hier nicht berück-
+sichtigt werden konnten; etwa Unterschiede zwischen Tag- und Untertagbau, geologisch-
+chemische Faktoren, klimatische Verhältnisse, das Verhältnis von Abraum zu Erz, etc. Insbe-
+sondere zur Abschätzung des Energiebedarfs bei der Uranproduktion aus Erzen mit sehr ge-
+ringen Urangehalten, die in Zukunft vermehrt eine Rolle spielen könnten, ist die ermittelte
+Korrelationsformel möglicherweise nicht geeignet. Hier ist weiterer Forschungsbedarf gege-
+ben.
+Tabelle 12            Direkter Energieverbrauch zur Uranförderung und -aufbereitung für verschiedene
+                      Anlagen sowie Durchschnittswerte für die einzelnen Länder.43
+
+Mine/Deposit
+conventional mining                t Unat per           thermal          electric            total
+                       mining type year (2009)   % Unat [MJ/kg Unat]     [kWh/kg Unat]       [MJ/kg Unat]       source
+Australia
+  Olympic Dam          underground        2981     0.05           327               224                1133 Mudd & Diesendorf 2010
+  Ranger               open pit           4443     0.27           145                26                 238 Mudd & Diesendorf 2010
+Australia total                           7424                    364                65                 597 weighted average
+Canada
+  McArthur River       underground        7339     3.31           184                33                 304 Mudd & Diesendorf 2010
+  Rabbit Lake          underground        1447     0.66           394                67                 636 Mudd & Diesendorf 2010
+  McClean Lake         open pit           1388     0.88           489                25                 579 Mudd & Diesendorf 2010
+Canada total                             10174                    237                42                 388 weighted average
+Malawi
+  Kayelekera (2010)    open pit            670     0.11           360                64                 590 based on extrapolation
+Malawi total                               670                    360                64                 590
+Namibia
+  Rössing              open pit           3519     0.03           450                75                 720 Mudd & Diesendorf 2010
+  Langer Heinrich      open pit           1106                    385                68                 631 based on extrapolation
+Namibia total                             4625                    426                76                 699 weighted average
+Niger
+  Somair               open pit           1807                    n.s.              n.s.                    n.s.
+  Cominak              underground        1435                    n.s.              n.s.                    n.s.
+Niger total                               3242     0.23           147                26                     241 Mudd & Diesendorf 2008
+Russia
+  Priargunsky          underground        3004     0.18          1498               120                1930 Axpo 2011
+Russia total                              3004                   1498               120                1930
+Ukraine
+  VostGOK              underground         850     0.10           367                65                 602 based on extrapolation
+Ukraine total                              850                    367                65                 602
+Brazil
+  Caetité              open pit            345     0.25           131                    7              155 personal communication
+Brazil total                               345                    131                    7              155
+
+
+
+
+Mit der Uranerzkonzentration korrelieren sollte auch die Ausbeute der Uranförderung
+und -aufbereitung.44 In Abbildung 6 sind die bekannten Werte der einzelnen Anlagen und die
+berechnete Korrelationsformel dargestellt. Wie schon beim Zusammenhang zwischen Ener-
+gieverbrauch und Uranerzkonzentration ist das Ergebnis auch hier mit Vorsicht zu Interpretie-
+ren und die Unsicherheit hoch, da das Datensample klein ist und die Ausbeute der Aufberei-
+tung neben der Uranerzkonzentration sicher auch von anderen Faktoren abhängt. Für die An-
+
+43
+     Angaben in kursiv berechnet aus Energieverbrauch insgesamt mit der durchschnittlichen Aufteilung 61 %
+     thermisch, 39 % elektrisch. Länderspezifische Werte berechnet als mit der Jahresproduktion gewichtete
+     Durchschnitte aus den Angaben zu den einzelnen Anlagen in den jeweiligen Ländern.
+44
+     Persönliche Information, Gabor Doka, Doka Ökobilanzen (Dezember 2011).
+
+
+
+ESU-services GmbH                                           - 26 -                                             Paul Scherrer Institut
+                                                                    4. Sachbilanzinformationen
+
+lagen, für welche keine spezifischen Daten verfügbar sind (Malawi, Niger, Ukraine, siehe
+Tabelle 10), sollte die Extrapolationsformel jedoch brauchbare Werte ergeben, da sich die
+Uranerzkonzentrationen im mittleren Bereich bewegen.
+Somit beträgt die berechnete Ausbeute in Malawi und in der Ukraine 0.85, in Niger 0.88.
+                      1.0                                                                                          1.0
+
+                      0.9                                                                                          0.9
+                                                                                                                                                     y = 0.043Ln(x) + 0.9448
+                      0.8                                       Rössing                                            0.8
+                                                                Olympic Dam
+                                                                                                                                                           R2 = 0.5944
+recovery factor [%]
+
+
+
+
+                                                                                             recovery factor [%]
+                      0.7                                                                                          0.7
+                                                                Priargunsky
+                      0.6                                       Ranger                                             0.6
+
+                      0.5                                       Caetité                                            0.5
+                                                                Rabbit Lake
+                      0.4                                                                                          0.4
+                                                                McClean Lake
+                      0.3                                       McArthur River                                     0.3
+
+                      0.2                                       Langer Heinrich                                    0.2
+
+                      0.1                                                                                          0.1
+
+                      0.0                                                                                          0.0
+                            0   0.5   1   1.5      2       2.5            3       3.5    4                               0   0.5   1   1.5     2       2.5    3      3.5       4
+                                           ore grade [% Unat]                                                                          ore grade [% Unat]
+
+
+Abbildung 6                           Ausbeute der Uranproduktion in Abhängigkeit von der Uranerzkonzentration: Daten
+                                      einzelner Produktionsanlagen (links) und entsprechende Extrapolationsformel
+                                      (rechts).
+
+Die länderspezifischen Mengen an Tailings aus der Uranerzaufbereitung können mit den Da-
+ten in Tabelle 10 (Menge an gefördertem Erz und extrahiertem U3O8 für 2009; die Menge an
+Tailings entspricht in erster Näherung der Differenz dieser beiden Werte45) und den berechne-
+ten Uranausbeuten für Malawi, die Ukraine und Niger bestimmt werden. Die Abhängigkeit
+der Menge an Rückständen von der Uranerzkonzentration ist deutlich zu erkennen.46
+
+
+
+
+45
+                      Die Menge an Tailings kann demgegenüber zunehmen durch a) nicht stattfindende Aufbereitung von Erz mit
+                      zu geringer Urankonzentration, falls es nicht in der Statistik erfasst wird; b) durch Verdünnung von Erz sehr
+                      hoher Urankonzentration mit Taubgestein. Persönliche Information Gabor Doka, Doka Ökobilanzen (Januar
+                      2012).
+46
+                      Die Dichte der Tailings beträgt nach Doka (2009) 1800 kg/m3.
+
+
+
+ESU-services GmbH                                                                       - 27 -                                                     Paul Scherrer Institut
+                                                 4. Sachbilanzinformationen
+
+Tabelle 13           Anlagen- und länderspezifische Werte der Menge an Tailings aus der Uranerzaufbe-
+                     reitung. „n.s.“: nicht spezifiziert.47
+Mine/Deposit
+conventional mining                                                                                     tailings        tailings
+                                                                                                                           3
+(production in year 2009)   mining type Mt ore      %U3O8      t U3O8     % Unat         t Unat         [t/a]           [m /kg Unat] recovery factor
+Australia
+  Olympic Dam               underground     8105       0.056       3515        0.05           2981        8'101'485            1.51             0.77
+  Ranger                    open pit        2268        0.26       5240        0.22           4443        2'262'760            0.28             0.89
+Australia total                            10373        0.18       8755        0.15           7424       10'364'245            0.78             0.84
+Canada
+  McArthur River            underground      187       4.68        8655        3.97           7339          178'345           0.014             0.99
+  Rabbit Lake               underground      216       0.82        1706        0.70           1447          214'294           0.082             0.96
+  McClean Lake              open pit         172         1.0       1637        0.85           1388          170'363           0.068             0.95
+Canada total                                 575       3.63       11998        3.08          10174          563'002           0.031             0.98
+Malawi
+  Kayelekera (2010)         open pit         n.s.      0.13         790        0.11               670            n.s.           n.s.             n.s.
+Malawi total                                 717       0.13         790        0.11               670       715'883            0.59             0.85
+Namibia
+  Rössing                   open pit       12633      0.039        4150         0.03          3519       12'628'850            1.99             0.84
+  Langer Heinrich           open pit        1727      0.096        1304         0.08          1106        1'725'696            0.87             0.79
+Namibia total                              14360      0.053        5454       0.045           4625       14'354'546            1.72             0.83
+Niger
+  Somair                    open pit         n.s.     0.172        2131         0.15          1807               n.s.           n.s.             n.s.
+  Cominak                   underground      n.s.        0.4       1692         0.34          1435               n.s.           n.s.             n.s.
+Niger total                                 1589      0.273        3823       0.231           3242        1'585'135            0.27             0.88
+Russia
+  Priargunsky               underground     1749       0.21        3543        0.18           3004        1'745'457            0.32             0.96
+Russia total                                1749       0.21        3543        0.18           3004        1'745'457            0.32             0.96
+Ukraine
+  VostGOK                   underground      n.s.      0.12        1002            0.1            850            n.s.           n.s.             n.s.
+Ukraine total                               1000       0.12        1002            0.1            850       998'998            0.65             0.85
+Brazil
+  Caetité                   open pit          170      0.30         407        0.25            345          169'593            0.27             0.80
+Brazil total                                  170      0.30         407        0.25            345          169'593            0.27             0.80
+TOTAL (="world")                           30'533      0.14      35'772        0.12         30'334       30'496'859            0.56             0.85
+
+
+
+
+Somit können der direkte Energieverbrauch zur Uranförderung und -aufbereitung, die Aus-
+beute und die Menge der anfallenden Rückstände (Tailings) für die verschiedenen Länder in
+Abhängigkeit von der jeweiligen Uranerzkonzentration bilanziert werden.
+Anlagen- oder länderspezifische Angaben zu Emissionsparametern, Landverbrauch, Be-
+triebsmitteln sowie Bedarf an Transporten und Infrastruktur sind abgesehen von den in
+Kap. 4.4.1.1 beschriebenen Informationen nicht vorhanden. Sofern keine neueren Daten ver-
+fügbar sind, werden in erster Näherung die Werte aus Dones et al (2009) übernommen und je
+nach Anteil Tag- und Untertagbau bilanziert. Die resultierenden Sachbilanzen für die Uran-
+produktion in Australien, Kanada, Malawi, Namibia, Niger, Russland, die Ukraine und Brasi-
+lien sollten deswegen als erste Näherungen angesehen werden, die allerdings die wichtigsten
+Einflussfaktoren auf die Umweltbilanz der Uranproduktion relativ belastbar abbilden.
+Mit den Sachbilanzdaten der konventionellen Uranproduktion im Bergbau und der Uranpro-
+duktion per In-Situ-Leaching (ISL) (Kap. 4.4.1.3) wird ein globaler Uranmix erstellt; die An-
+teile der verschiedenen Länder bzw. ISL werden anhand der Produktionsmengen der einzel-
+nen Länder bzw. per ISL aus dem Jahr 2009 bestimmt (Tabelle 9), um bestmögliche Konsis-
+tenz zu den verwendeten Werten für Uranerzgehalte, Tailingmengen und Energieverbrauch zu
+gewährleisten, die sich meist auch auf das Jahr 2009 beziehen. Die Anteile sind in Tabelle 14
+dargestellt. Dieser Uranproduktionsmix wird als Referenz in der Kernenergiekette dieser Stu-
+
+
+47
+     Für Malawi, Niger, Ukraine: Mengen an Erz berechnet Uranproduktion, Uranerzkonzentration und extrapo-
+     liertem recovery factor (Ausbeute; Abbildung 6). Ausbeute „world“ ebenfalls auf Extrapolation basierend.
+     Länderdurchschnittswerte für Australien, Kanada und Namibia aus direkt verfügbaren anlagenspezifischen
+     Werten berechnet.
+
+
+
+ESU-services GmbH                                                - 28 -                                                  Paul Scherrer Institut
+```
+
+## Rules
+
+1. Every line item must quote the exact line of the excerpt it comes from (`quote`), with the raw value and raw unit as printed. Never invent a value. If the excerpt gives a range, report the range as `raw_min`/`raw_max` and put your point estimate in `raw_value`.
+2. Report values per the excerpt's own basis (`per`, e.g. "per t burnt shale", "per m2 board"); do not convert. State the reference basis you found in `basis` so the code can scale to 1 kg.
+3. If a value needs a physical conversion (litres of diesel to MJ, m3 of water to kg), give `factor`, `factor_unit` and `factor_source` (a standard value with its source, e.g. "diesel 0.84 kg/l × 42.8 MJ/kg = 36 MJ/l, ecoinvent convention"). Leave `factor` at 1 otherwise.
+4. Classify each line: `kind` = "input" (a product or service from another dataset), "emission" (a direct release to air/water/soil), "resource" (a direct extraction from nature), "product" (the reference product), "co-product" or "ignore" (with a reason).
+5. Propose a `search` phrase (2–4 words) that a name search in a life-cycle database would use: for inputs the supplying dataset in ecoinvent-2 naming style ("diesel burned building machine", "sodium hydroxide production mix"); for emissions and resources the substance in EF 3.1 / ecoinvent nomenclature ("particles PM10" for dust, "nitrogen oxides", "carbon dioxide fossil", "crude oil", "water"). Do not guess the exact name; the search is resolved by code afterwards.
+6. If the excerpt describes allocation (e.g. an economic allocation between co-products), record it in `allocation` and use the allocated column when the table has one. If it states that the composition items add up to a mass ("adds up to 1.00 kg"), put that mass per basis in `mass_sum`, else null.
+7. Mark anything you are unsure about with `confidence` = "low" and say why in `note`. Do not omit uncertain items; the reviewer decides.
+8. Do not add inputs the excerpt does not mention, even if you know the process needs them. Missing items are reported in `gaps` instead.
+
+Return only the JSON object described by the schema.

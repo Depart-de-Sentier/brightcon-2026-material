@@ -1,0 +1,135 @@
+{
+ "type": "object",
+ "properties": {
+  "basis": {
+   "type": "string",
+   "description": "the excerpt's reference basis, e.g. 'per t burnt shale, 71.3 % allocation column'"
+  },
+  "basis_amount": {
+   "type": "number",
+   "description": "how many target units one basis corresponds to, e.g. 1000 for per-t values of a per-kg target"
+  },
+  "allocation": {
+   "type": "string"
+  },
+  "mass_sum": {
+   "type": [
+    "number",
+    "null"
+   ],
+   "description": "if the excerpt states that the composition items add up to a mass per basis (e.g. 'adds up to 1.00 kg'), that mass; else null"
+  },
+  "items": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "name": {
+      "type": "string"
+     },
+     "kind": {
+      "type": "string",
+      "enum": [
+       "input",
+       "emission",
+       "resource",
+       "product",
+       "co-product",
+       "ignore"
+      ]
+     },
+     "quote": {
+      "type": "string"
+     },
+     "raw_value": {
+      "type": "number"
+     },
+     "raw_min": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "raw_max": {
+      "type": [
+       "number",
+       "null"
+      ]
+     },
+     "raw_unit": {
+      "type": "string"
+     },
+     "per": {
+      "type": "string"
+     },
+     "factor": {
+      "type": "number"
+     },
+     "factor_unit": {
+      "type": "string"
+     },
+     "factor_source": {
+      "type": "string"
+     },
+     "search": {
+      "type": "string"
+     },
+     "compartment": {
+      "type": "string",
+      "enum": [
+       "air",
+       "water",
+       "soil",
+       "resources",
+       ""
+      ]
+     },
+     "confidence": {
+      "type": "string",
+      "enum": [
+       "high",
+       "medium",
+       "low"
+      ]
+     },
+     "note": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "name",
+     "kind",
+     "quote",
+     "raw_value",
+     "raw_min",
+     "raw_max",
+     "raw_unit",
+     "per",
+     "factor",
+     "factor_unit",
+     "factor_source",
+     "search",
+     "compartment",
+     "confidence",
+     "note"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "gaps": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  }
+ },
+ "required": [
+  "basis",
+  "basis_amount",
+  "allocation",
+  "mass_sum",
+  "items",
+  "gaps"
+ ],
+ "additionalProperties": false
+}

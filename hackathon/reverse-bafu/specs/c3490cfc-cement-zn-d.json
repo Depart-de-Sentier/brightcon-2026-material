@@ -1,0 +1,166 @@
+{
+  "target": {
+    "code": "c3490cfc-bcf2-38a2-a8c1-2d50ba65c83e",
+    "name": "Cement ZN, D, at plant",
+    "location": "CH"
+  },
+  "strategy": {
+    "code": "S3",
+    "label": "top-down model: the report's input list; energies, grinding aid, infrastructure, steel and transport as printed, the composition calibrated within the report's ranges",
+    "note": "Energies, grinding aid, infrastructure, steel and transport are exact in Tab. 3.14; the six composition shares are given as ranges, so they are fitted by bounded least squares with a 1 kg mass constraint. The burnt-shale input links to the node rebuilt by specs/d8ec4be3-burnt-shale.json (dependency chain). Hybrid node built on top."
+  },
+  "evidence": [
+    {
+      "source": "2020 - LCA selected types of concrete - Tschuemperlin.pdf",
+      "where": "section 3.10, Tab. 3.14 (inventory per kg cement, Werner 2018)",
+      "note": "Energy, grinding aid, infrastructure, steel and transport are exact; the composition is given as ranges (clinker 40-70 %, mineral gypsum <10 %, mixed granulate 15-30 %, burnt shale 15-30 %, iron-II sulphate <1 %, filter dust/limestone <10 %) summing to 1 kg, so those six amounts are calibrated with the list fixed."
+    },
+    {
+      "source": "specs/d8ec4be3-burnt-shale.json",
+      "where": "sandbox node",
+      "note": "burnt shale links to the node rebuilt in the previous spec, not to the aggregated BAFU dataset"
+    }
+  ],
+  "node": {
+    "name": "Cement ZN, D, at plant, disaggregated",
+    "unit": "kilogram",
+    "location": "CH",
+    "comment": "Blended cement (Zement ZN/D) from clinker, mixed recycled granulate and burnt oil shale; grinding with heavy fuel oil heat and electricity.",
+    "inputs": [
+      {
+        "name": "Clinker, at plant",
+        "amount": 0.6702063190555884,
+        "unit": "kilogram",
+        "free": true,
+        "note": "40-70 %",
+        "code": "137152eb-d111-382a-9eae-3e592047418d",
+        "location": "CH",
+        "bounds": [
+          0.4,
+          0.7
+        ]
+      },
+      {
+        "name": "Gypsum, mineral, at mine",
+        "amount": -6.938896565119426e-18,
+        "unit": "kilogram",
+        "free": true,
+        "note": "< 10 %",
+        "code": "23d4e39c-14e5-3290-a4e2-931581ecbc7a",
+        "location": "CH",
+        "bounds": [
+          0.0,
+          0.1
+        ]
+      },
+      {
+        "name": "Recycling aggregate from mixed demolition, dry, at plant",
+        "amount": 0.1778137452753508,
+        "unit": "kilogram",
+        "free": true,
+        "note": "Mischgranulat 15-30 %",
+        "code": "730bdb86-26fa-3ada-bd05-ff4bc719b7b6",
+        "location": "CH",
+        "bounds": [
+          0.15,
+          0.3
+        ]
+      },
+      {
+        "name": "Burnt shale, at plant",
+        "sandbox": "d8ec4be3-c410-3806-98f5-a2ec5a284fee-disagg",
+        "amount": 0.15,
+        "unit": "kilogram",
+        "free": true,
+        "note": "15-30 %; rebuilt node",
+        "code": "d8ec4be3-c410-3806-98f5-a2ec5a284fee-disagg",
+        "location": "",
+        "bounds": [
+          0.15,
+          0.3
+        ]
+      },
+      {
+        "name": "Iron sulphate, at plant",
+        "amount": 0.0,
+        "unit": "kilogram",
+        "free": true,
+        "note": "< 1 %",
+        "code": "1b541649-c28b-369b-a574-066c98648887",
+        "location": "RER",
+        "bounds": [
+          0.0,
+          0.01
+        ]
+      },
+      {
+        "name": "Limestone, milled, loose, at plant",
+        "amount": 0.0019799357590367253,
+        "unit": "kilogram",
+        "free": true,
+        "note": "filter dust / limestone < 10 %",
+        "code": "f8e122b3-92fb-37d6-aade-43ee2f2de640",
+        "location": "CH",
+        "bounds": [
+          0.0,
+          0.1
+        ]
+      },
+      {
+        "name": "Ethylene glycol, at plant",
+        "amount": 0.00055,
+        "unit": "kilogram",
+        "note": "grinding aid; BAFU dataset is itself aggregated (PlasticsEurope)",
+        "code": "582ad303-7f18-3110-83c2-bccca0dc995f",
+        "location": "RER"
+      },
+      {
+        "name": "Electricity, medium voltage, at grid",
+        "location": "CH",
+        "amount": 0.0497,
+        "unit": "kilowatt hour",
+        "code": "df605f09-34c5-3b3f-94ea-227f7a3c06a7"
+      },
+      {
+        "name": "Heavy fuel oil, burned in industrial furnace 1MW, non-modulating",
+        "location": "CH",
+        "amount": 0.162,
+        "unit": "megajoule",
+        "code": "8da866f1-f25d-305f-81ab-fa95dd2d25de"
+      },
+      {
+        "name": "Cement plant",
+        "amount": 5.36e-11,
+        "unit": "unit",
+        "code": "30df91c3-fac6-3ccf-835b-71863079263a",
+        "location": "CH"
+      },
+      {
+        "name": "Steel, low-alloyed, at plant",
+        "amount": 0.00011,
+        "unit": "kilogram",
+        "note": "grinding media",
+        "code": "b9430f24-d0b9-3422-a5ad-f874acbbef18",
+        "location": "RER"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 0.00837,
+        "unit": "ton kilometer",
+        "note": "report: lorry 20-28t",
+        "code": "eb5552ed-63a8-374d-8fa4-296f644c37f8",
+        "location": "CH"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "location": "RER",
+        "amount": 0.0428,
+        "unit": "ton kilometer",
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      }
+    ],
+    "emissions": [],
+    "resources": [],
+    "mass_sum": 1.0
+  }
+}

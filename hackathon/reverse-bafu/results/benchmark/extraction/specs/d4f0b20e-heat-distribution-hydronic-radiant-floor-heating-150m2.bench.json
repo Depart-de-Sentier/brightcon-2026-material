@@ -1,0 +1,282 @@
+{
+  "target": {
+    "code": "d4f0b20e-20b9-322f-a0a8-71083885972b",
+    "name": "Heat distribution, hydronic radiant floor heating, 150m2",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 5.3 'Eingabedaten des Moduls \"Wärmeverteilung, Fussbodenheizung, 150 m2\"', per 1 Stk; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - Heat pumps - Heck.pdf",
+      "where": "pages 27-29 -> report-p27-29.txt",
+      "note": "report sha256 6271f95e1e4f3465…, text sha256 e389669a5dbb4e80…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/d4f0b20e-20b9-322f-a0a8-71083885972b/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "266f25b5ed3ec22edc2ea19fb1d29a74dcfaf877737ecbb3decf67a218844529",
+      "at": "2026-09-22T21:38:48Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "02fdd8d89cbe43dcb97dae52be2a4723dd333456e520cb9d7536ff648f9689f9",
+      "at": "2026-09-22T21:38:50Z"
+    },
+    "gaps_reported_by_model": [
+      "No construction energy (electricity or diesel) for laying the floor heating is listed - Tab. 5.2 has 'Diesel in Baumaschine' but that is the borehole heat exchanger, a different module.",
+      "No direct emissions at all.",
+      "No infrastructure of the producing plants.",
+      "The lifetime (20 a, section 5.2.3) is given but this dataset is the whole system per unit, so no amortisation is applied here."
+    ],
+    "skipped_items": [
+      "Transport LKW 28 t: no dataset chosen (No lorry FREIGHT service is offered: the candidates are the disposal and the maintenance of a 28 t lorry in units and vehicle-kilometre operation datasets, none of which is a ton-kilometre transport.)"
+    ],
+    "assembled_at": "2026-09-22T21:38:50Z"
+  },
+  "node": {
+    "name": "Heat distribution, hydronic radiant floor heating, 150m2, disaggregated",
+    "unit": "p",
+    "location": "CH",
+    "comment": "drafted from 2007 - Heat pumps - Heck.pdf pp. 27-29",
+    "inputs": [
+      {
+        "name": "Aluminium, production mix, at plant",
+        "amount": 126.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "heat-conducting lamellae",
+        "derivation": {
+          "evidence": "report-p27-29.txt",
+          "quote": "                  Aluminium, Produktionsmix, ab Werk          126         kg",
+          "raw_value": 126.0,
+          "raw_unit": "kg",
+          "per": "per 1 unit (Stk) of floor-heating heat distribution system for 150 m2",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "aluminium production mix at plant",
+          "mapping_reason": "Exact name and unit match at RER; candidate 0 is an acrylic glass, candidate 1 a Swiss profile-specific mix and candidates 3-4 the cast and wrought sub-mixes.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "ede45db2-bc7b-386a-b3e3-eafcf2dac420"
+      },
+      {
+        "name": "Polystyrene, high impact, HIPS, at plant",
+        "amount": 66.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "2 cm insulation under the screed",
+        "derivation": {
+          "evidence": "report-p27-29.txt",
+          "quote": "                  Polystyrol schlagfest                        66         kg",
+          "raw_value": 66.0,
+          "raw_unit": "kg",
+          "per": "per 1 unit (Stk) of floor-heating heat distribution system for 150 m2",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "polystyrene high impact at plant",
+          "mapping_reason": "The only candidate and an exact match for high-impact polystyrene.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "b2ddf286-46b3-3a00-8b8a-c38b11ced364"
+      },
+      {
+        "name": "Polyethylene, LDPE, granulate, at plant",
+        "amount": 101.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "VPE heating pipes plus the 0.2 mm building foil",
+        "derivation": {
+          "evidence": "report-p27-29.txt",
+          "quote": "                  Polyethylen (LD)                            101         kg",
+          "raw_value": 101.0,
+          "raw_unit": "kg",
+          "per": "per 1 unit (Stk) of floor-heating heat distribution system for 150 m2",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "polyethylene LDPE granulate at plant",
+          "mapping_reason": "Exact match for LDPE granulate; HDPE is the other polyethylene. The dataset is aggregated, so it is linked as a dependency.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "c4dbbb99-22d0-37c1-8cc7-fc5a8c64329b"
+      },
+      {
+        "name": "Cement, unspecified, at plant",
+        "amount": 900.0,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "cement screed, only the difference to an ordinary 6 cm floor is booked",
+        "derivation": {
+          "evidence": "report-p27-29.txt",
+          "quote": "                  Zement                                      900         kg",
+          "raw_value": 900.0,
+          "raw_unit": "kg",
+          "per": "per 1 unit (Stk) of floor-heating heat distribution system for 150 m2",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "cement unspecified at plant",
+          "mapping_reason": "'Cement, unspecified, at plant' is the generic cement the table means; candidate 1 is the cement plant infrastructure.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "39f4c4a5-a5f8-3299-8841-9ab862d9e8fa"
+      },
+      {
+        "name": "Silica sand, at plant",
+        "amount": 4650.0,
+        "unit": "kilogram",
+        "location": "DE",
+        "note": "sand of the cement screed",
+        "derivation": {
+          "evidence": "report-p27-29.txt",
+          "quote": "                  Sand für Bau                              4'650         kg",
+          "raw_value": 4650.0,
+          "raw_unit": "kg",
+          "per": "per 1 unit (Stk) of floor-heating heat distribution system for 150 m2",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "silica sand at plant",
+          "mapping_reason": "'Silica sand, at plant' is the only sand by mass in the list; the others are sandstone by volume, cements, plasters or disposals. The report means construction sand, so this is the closest available.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a7511c34-4efb-316c-9d45-3fe6cf13a799"
+      },
+      {
+        "name": "Transport, freight, rail, electricity with shunting",
+        "amount": 160.0,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "standard distance for the 5900 kg of transported material",
+        "derivation": {
+          "evidence": "report-p27-29.txt",
+          "quote": "                  Transport Schiene                           160         tkm",
+          "raw_value": 160.0,
+          "raw_unit": "tkm",
+          "per": "per 1 unit (Stk) of floor-heating heat distribution system for 150 m2",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "'electricity with shunting' is the standard Swiss rail freight dataset.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a169f230-3e05-33d0-a12d-f9d6d4d6abf1"
+      },
+      {
+        "name": "Disposal, concrete, 5% water, to inert material landfill",
+        "amount": 5730.0,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "demolition of the distribution system: most of the material to an inert-material landfill",
+        "derivation": {
+          "evidence": "report-p27-29.txt",
+          "quote": "                  Abfall in Inertstoffdeponie               5'730         kg",
+          "raw_value": 5730.0,
+          "raw_unit": "kg",
+          "per": "per 1 unit (Stk) of floor-heating heat distribution system for 150 m2",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "disposal inert material landfill",
+          "mapping_reason": "'Disposal, concrete, 5% water, to inert material landfill' is the inert-material-landfill service the table names; candidate 0 is a sanitary landfill.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "09984ab6-a49a-46a6-801a-ddcbc3b881bc"
+      },
+      {
+        "name": "Disposal, plastics, mixture, 15.3% water, to municipal incineration",
+        "amount": 167.0,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "the plastics fraction is assumed to be incinerated",
+        "derivation": {
+          "evidence": "report-p27-29.txt",
+          "quote": "                  Kunststoff in Verbrennungsanlage            167         kg",
+          "raw_value": 167.0,
+          "raw_unit": "kg",
+          "per": "per 1 unit (Stk) of floor-heating heat distribution system for 150 m2",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "disposal plastics municipal incineration",
+          "mapping_reason": "'Disposal, plastics, mixture, 15.3% water, to municipal incineration' is the generic mixed-plastics incineration the table means; candidate 1 is construction-waste plastics specifically.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "3cef9fc0-0cf8-42ba-88f5-0ff65ef6169f"
+      }
+    ],
+    "emissions": [],
+    "resources": [
+      {
+        "name": "Water",
+        "category": "resources",
+        "amount": 0.45,
+        "unit": "cubic meter",
+        "note": "listed under 'Ressourcen' in the table and confirmed by the aggregated vector (Water: 0.45 cubic meter)",
+        "derivation": {
+          "evidence": "report-p27-29.txt",
+          "quote": "                  Wasser                                        0.45      m3",
+          "raw_value": 0.45,
+          "raw_unit": "m3",
+          "per": "per 1 unit (Stk) of floor-heating heat distribution system for 150 m2",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "The generic 'Water' resource from water, the 'Ressourcen: Wasser' line of the table; lake water is a narrower source.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "419682fe-60fb-4b43-be89-bf2824b51104",
+        "database": "ef-3.1-biosphere"
+      }
+    ]
+  }
+}

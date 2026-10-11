@@ -1,0 +1,108 @@
+{
+ "mappings": [
+  {
+   "item": "aluminium, production mix, wrought alloy, at plant",
+   "chosen": "Aluminium, production mix, wrought alloy, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name match; the cast alloy is the other forming route."
+  },
+  {
+   "item": "corrugated board, mixed fibre, single wall, at plant",
+   "chosen": "Corrugated board, mixed fibre, single wall, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name match at RER, the location the table gives; the 'Packaging, ...' entries are the converted box and the fresh/recycling fibre ones are single-fibre grades."
+  },
+  {
+   "item": "polyethylene, HDPE, granulate, at plant",
+   "chosen": "Polyethylene, HDPE, granulate, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": true,
+   "reason": "Exact name match; LDPE, LLDPE and PET are different polymers. The dataset is aggregated, so it is linked as a dependency."
+  },
+  {
+   "item": "polystyrene, high impact, HIPS, at plant",
+   "chosen": "Polystyrene, high impact, HIPS, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The only candidate and an exact name match."
+  },
+  {
+   "item": "steel, low-alloyed, at plant",
+   "chosen": "Steel, low-alloyed, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name match at RER; the converter and electric entries are sub-routes and the reinforcing-steel imports a different product."
+  },
+  {
+   "item": "section bar extrusion, aluminium",
+   "chosen": "Section bar extrusion, aluminium",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The only candidate and an exact name match."
+  },
+  {
+   "item": "sheet rolling, steel",
+   "chosen": "Sheet rolling, steel",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name and material match; the chromium, electric-steel, copper and aluminium variants are other materials and hot rolling / section bar rolling other forming processes."
+  },
+  {
+   "item": "transport, lorry >16t, fleet average",
+   "chosen": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The 16t-32t gross-weight fleet average at RER is the '>16t' class the table means; 32t-40t is the next larger class and 7.5t-16t below the threshold."
+  },
+  {
+   "item": "transport, freight, rail",
+   "chosen": "Transport, freight, rail",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name match at RER, the geography the table gives."
+  },
+  {
+   "item": "transport, van <3.5t",
+   "chosen": null,
+   "location": "",
+   "compartment": "",
+   "dependency": false,
+   "reason": "No freight service for a van under 3.5 t is offered: candidate 0 is the vehicle itself (unit) and candidate 2 its maintenance, while the remaining candidates are barge, rail and aircraft freight. Mapping a van transport to a barge or a train would be the wrong mode, so the line is reported as missing."
+  },
+  {
+   "item": "disposal, packaging cardboard, 19.6% water, to municipal incineration",
+   "chosen": "Disposal, packaging cardboard, 19.6% water, to municipal incineration",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Exact name and water-content match; candidate 1 is packaging paper at 13.7 % water."
+  },
+  {
+   "item": "disposal, building, polyethylene/polypropylene products, to final disposal",
+   "chosen": "Disposal, building, polyethylene/polypropylene products, to final disposal",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The only candidate and an exact name match."
+  },
+  {
+   "item": "disposal, building, polystyrene isolation, flame-retardant, to final disposal",
+   "chosen": "Disposal, building, polystyrene isolation, flame-retardant, to final disposal",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The only candidate and an exact name match."
+  }
+ ]
+}

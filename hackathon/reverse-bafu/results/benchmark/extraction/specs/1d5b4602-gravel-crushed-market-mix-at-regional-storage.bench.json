@@ -1,0 +1,155 @@
+{
+  "target": {
+    "code": "1d5b4602-52cb-388e-87df-703f4eb37e6f",
+    "name": "Gravel, crushed, market mix, at regional storage",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tabelle 5 'Sachbilanzdaten zur Bilanzierung von 1 kg der Baustoffe ...', column 'gravel, crushed, market mix, at regional storage' [CH], per 1 kg; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2016 - Renewal and expansion of LCA data in KBOB - Kasser.pdf",
+      "where": "pages 46-48 -> report-p46-48.txt",
+      "note": "report sha256 950e5a280e8a5b99…, text sha256 0f5a06cb1eab8475…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/1d5b4602-52cb-388e-87df-703f4eb37e6f/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "955c739910999fa70391f4f8d0d91bdc9fa7df88ae3e56fb42442bcad0abfbea",
+      "at": "2026-09-22T21:35:18Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "52b8d0f182e126e39cd01b74b1606c0c04591bc6b993533efd53ca6f8cdb92c2",
+      "at": "2026-09-22T21:35:19Z"
+    },
+    "gaps_reported_by_model": [
+      "No direct emissions and no resources - the dataset is purely a market/transport step on top of 'gravel, crushed, at mine'.",
+      "No storage infrastructure (the regional storage itself) is inventoried.",
+      "The 19 % import share is not visible as a separate foreign gravel input; it is folded into the single CH 'gravel, crushed, at mine' input plus the import transports."
+    ],
+    "skipped_items": [
+      "gravel, crushed, market mix, at regional storage: product — reference product, column 1 of Tabelle 5"
+    ],
+    "assembled_at": "2026-09-22T21:35:19Z"
+  },
+  "node": {
+    "name": "Gravel, crushed, market mix, at regional storage, disaggregated",
+    "unit": "kg",
+    "location": "CH",
+    "comment": "drafted from 2016 - Renewal and expansion of LCA data in KBOB - Kasser.pdf pp. 46-48",
+    "inputs": [
+      {
+        "name": "Gravel, crushed, at mine",
+        "amount": 1.0,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "1 kg of crushed gravel from the mine, no loss",
+        "derivation": {
+          "evidence": "report-p46-48.txt",
+          "quote": "            technosphere gravel, crushed, at mine                            CH            0                    kg         1.00E+0                                                1 1.05 (1,1,1,1,1,1,BU:1.05); 1 kg Kies;",
+          "raw_value": 1.0,
+          "raw_unit": "kg",
+          "per": "per kg gravel, crushed, market mix, at regional storage",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "gravel crushed at mine",
+          "mapping_reason": "Exact name and unit match at CH; candidate 1 is the mine infrastructure and candidate 2 round gravel.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "3c80d851-fbd4-3d3d-a1bc-ec4348b57b23"
+      },
+      {
+        "name": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+        "amount": 0.00302,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "78 % road share of a weighted average distance of 20 km",
+        "derivation": {
+          "evidence": "report-p46-48.txt",
+          "quote": "                          transport, lorry >16t, fleet average               RER           0                    tkm        3.02E-3          3.02E-3           3.02E-3             1 2.09",
+          "raw_value": 0.00302,
+          "raw_unit": "tkm",
+          "per": "per kg gravel, crushed, market mix, at regional storage",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry >16t fleet average",
+          "mapping_reason": "The 16t-32t gross-weight fleet average at CH is the '>16t' class the table names, at the Swiss location the table gives.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "eb5552ed-63a8-374d-8fa4-296f644c37f8"
+      },
+      {
+        "name": "Transport, freight, rail, electricity with shunting",
+        "amount": 0.000505,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "1 % rail plus the 12 % 'pipeline' share modelled as rail, over 20 km",
+        "derivation": {
+          "evidence": "report-p46-48.txt",
+          "quote": "                          transport, freight, rail                           RER           0                    tkm        5.05E-4          5.05E-4           5.05E-4             1 2.09",
+          "raw_value": 0.000505,
+          "raw_unit": "tkm",
+          "per": "per kg gravel, crushed, market mix, at regional storage",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "'electricity with shunting' is the standard Swiss rail freight dataset.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a169f230-3e05-33d0-a12d-f9d6d4d6abf1"
+      },
+      {
+        "name": "Transport, barge",
+        "amount": 0.000323,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "8 % ship share over 20 km",
+        "derivation": {
+          "evidence": "report-p46-48.txt",
+          "quote": "                          transport, barge                                   RER           0                    tkm        3.23E-4          3.23E-4           3.23E-4             1 2.09",
+          "raw_value": 0.000323,
+          "raw_unit": "tkm",
+          "per": "per kg gravel, crushed, market mix, at regional storage",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport barge",
+          "mapping_reason": "Exact name match; the barge tanker carries liquids and the Betrieb entry is a sub-process.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "2e1b341b-71fa-337b-8343-f406a400b09b"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

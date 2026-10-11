@@ -1,0 +1,155 @@
+{
+  "target": {
+    "code": "025cc8eb-e486-3f4e-b220-74bb3fa6e9d1",
+    "name": "Door, inner, room, glass-wood, steel frame, at plant",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tabelle 20 'Sachbilanzdaten fuer die Herstellung von 1 m2 Holz-Innentuere oder Aussentuere ab Werk in der Schweiz', 5th product column 'door, inner, room, glass-wood, steel frame, at plant' [CH], per 1 m2; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2020 - LCA wooden windows and doors - Ramseier.pdf",
+      "where": "pages 31-34 -> report-p31-34.txt",
+      "note": "report sha256 f1b267004c921d2b…, text sha256 87b3eb83cb0c0b32…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/025cc8eb-e486-3f4e-b220-74bb3fa6e9d1/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "19a67a15fe9b0c2054fa130d51bf07b54ba73d70bb865c923fb2370a2f95035e",
+      "at": "2026-09-22T21:29:35Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "3266adec4fef1acac399c724b15845f91e667992b99833cebbb470a7cea6f984",
+      "at": "2026-09-22T21:29:36Z"
+    },
+    "gaps_reported_by_model": [
+      "The dataset is a pure assembly of three sub-datasets (leaf, frame, surface treatment) plus a resource correction; the materials, energy, packaging and transports the metadata mentions all sit inside Tabelle 16 (leaf), Tabelle 17 (frame) and Tabelle 18 (surface treatment).",
+      "The Aluminium resource correction is 0 for this column (it applies only to the wood-aluminium outer door).",
+      "No direct emissions.",
+      "No disposal - that is Tabelle 21, a separate dataset."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T21:29:36Z"
+  },
+  "node": {
+    "name": "Door, inner, room, glass-wood, steel frame, at plant, disaggregated",
+    "unit": "m2",
+    "location": "CH",
+    "comment": "drafted from 2020 - LCA wooden windows and doors - Ramseier.pdf pp. 31-34",
+    "inputs": [
+      {
+        "name": "Door leaf, room, inner, wood-glass, at plant",
+        "amount": 1.0,
+        "unit": "square meter",
+        "location": "CH",
+        "note": "5th product column of Tabelle 20 ('door, inner, room, glass-wood, steel frame, at plant').",
+        "derivation": {
+          "evidence": "report-p31-34.txt",
+          "quote": "              door leaf, room, inner, wood-glass, at plant                      CH            0                     m2            0             0              1              0              0",
+          "raw_value": 1.0,
+          "raw_unit": "m2",
+          "per": "per m2 of inner room door, glass-wood, with steel frame",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "door leaf room inner wood-glass at plant",
+          "mapping_reason": "Exact name and unit match for the leaf; candidates 2-3 are the finished doors this dataset itself produces and candidate 4 is its disposal.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "904295fc-cc1c-3e70-ad9d-442d2c1bd03b"
+      },
+      {
+        "name": "Door frame, inner, steel, at plant",
+        "amount": 1.0,
+        "unit": "square meter",
+        "location": "CH",
+        "note": "5th product column of Tabelle 20 ('door, inner, room, glass-wood, steel frame, at plant').",
+        "derivation": {
+          "evidence": "report-p31-34.txt",
+          "quote": "              door frame, inner, steel, at plant                       CH            0                     m2          0              1               0",
+          "raw_value": 1.0,
+          "raw_unit": "m2",
+          "per": "per m2 of inner room door, glass-wood, with steel frame",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "door frame inner steel at plant",
+          "mapping_reason": "Exact name match for the inner steel frame; the other candidates are whole doors or the wooden frame.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "abe7515a-1847-3bfa-8070-9ff014dae409"
+      },
+      {
+        "name": "Surface treatment, inner door, opaquely painted, at plant",
+        "amount": 0.596,
+        "unit": "square meter",
+        "location": "CH",
+        "note": "5th product column of Tabelle 20 ('door, inner, room, glass-wood, steel frame, at plant'). Only 0.596 m2 of the 1 m2 leaf area is painted because the glass part is not.",
+        "derivation": {
+          "evidence": "report-p31-34.txt",
+          "quote": "                                                                       CH            0                     m2      1.00E+0          5.96E-1                             1.00E+0       1.00E+0       5.96E-1   1.00E+0                                             0          0          0         1                1.16",
+          "raw_value": 0.596,
+          "raw_unit": "m2",
+          "per": "per m2 of inner room door, glass-wood, with steel frame",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "surface treatment inner door opaquely painted at plant",
+          "mapping_reason": "Exact name match; candidate 1 is the outer-door treatment and candidate 2 its disposal.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "818fc822-9812-341b-b784-6777192b5716"
+      }
+    ],
+    "emissions": [],
+    "resources": [
+      {
+        "name": "Energy, gross calorific value, in biomass, resource correction",
+        "category": "resources",
+        "amount": -80.8,
+        "unit": "megajoule",
+        "note": "5th product column of Tabelle 20 ('door, inner, room, glass-wood, steel frame, at plant'). A NEGATIVE resource correction that removes the biomass energy double-counted through the wood inputs.",
+        "derivation": {
+          "evidence": "report-p31-34.txt",
+          "quote": "                                                                         -               -                 MJ      -1.50E+2       -1.50E+2                              -2.26E+2      -8.07E+1     -8.08E+1   -1.57E+2                  -2.71E+2                          -2.25E+2   -2.71E+2     1                1.16",
+          "raw_value": -80.8,
+          "raw_unit": "MJ",
+          "per": "per m2 of inner room door, glass-wood, with steel frame",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "The line is explicitly a RESOURCE CORRECTION, so the flow named '... resource correction' is required rather than the plain biomass energy resource; the 'resources / unspecified' sub-compartment is preferred over the 'biotic' duplicate, and 'Primary Forest' is a different, forest-specific flow.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "afd7683a-d353-5706-9706-28410e18d6ae",
+        "database": "bafu-2026-residual"
+      }
+    ]
+  }
+}

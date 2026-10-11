@@ -1,0 +1,82 @@
+{
+ "basis": "Tabelle 10.5 'Produktionsprozess, Laminieren von Folien', column 'Laminieren, Folie, mit Acrylat-Bindemittel' [RER], per 1 m2",
+ "basis_amount": 1,
+ "allocation": "none stated",
+ "mass_sum": null,
+ "items": [
+  {
+   "name": "Strom, Mittelspannung, Produktion UCTE, ab Netz",
+   "kind": "input",
+   "quote": "Strom, Mittelspannung, Produktion UCTE, ab Netz                                                 UCTE           - kWh                          1.83E-02",
+   "raw_value": 0.0183,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "kWh",
+   "per": "per m2 of laminated foil",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "electricity medium voltage production UCTE at grid",
+   "compartment": "",
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "name": "Acrylat-Bindemittel, 54% in H2O, ab Werk",
+   "kind": "input",
+   "quote": "Acrylat-Bindemittel, 54% in H2O, ab Werk                                                         RER           - kg                           1.40E-03",
+   "raw_value": 0.0014,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "kg",
+   "per": "per m2 of laminated foil",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "acrylic binder 54% in H2O at plant",
+   "compartment": "",
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "name": "Entsorgung, Anstrichstoff Reste, 0% Wasser, in Sonderabfallverbrennung",
+   "kind": "input",
+   "quote": "Entsorgung, Anstrichstoff Reste, 0% Wasser, in Sonderabfallverbrennung                            CH           - kg                           2.00E-04",
+   "raw_value": 0.0002,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "kg",
+   "per": "per m2 of laminated foil",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "disposal paint remains hazardous waste incineration",
+   "compartment": "",
+   "confidence": "high",
+   "note": ""
+  },
+  {
+   "name": "Abwärme",
+   "kind": "emission",
+   "quote": "Abwärme                                                                                          Stadt        -   MJ                         6.59E-02",
+   "raw_value": 0.0659,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "MJ",
+   "per": "per m2 of laminated foil",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "heat waste",
+   "compartment": "air",
+   "confidence": "high",
+   "note": "emitted in an urban ('Stadt', high population density) compartment"
+  }
+ ],
+ "gaps": [
+  "The foil itself (113 g/m2) is not an input of this dataset: the process covers only 'Laminieren verkleben und Zuschneiden einer Folie mit 113 g/m2'.",
+  "No infrastructure (the table marks Infrastr. '-').",
+  "No solvent emission to air, unlike the neighbouring powder-coating process.",
+  "No transport of the binder."
+ ]
+}

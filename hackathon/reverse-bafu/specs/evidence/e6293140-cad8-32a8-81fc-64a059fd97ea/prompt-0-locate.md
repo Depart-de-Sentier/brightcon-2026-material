@@ -1,0 +1,745 @@
+You are locating the inventory table of one dataset inside a life-cycle-inventory report.
+
+Dataset: `Anthraquinone, at plant` [RER], 1 kg, BAFU category chemicals / organic.
+Metadata: includedProcesses: This module contains material and energy input, production of waste and emissions for the production of anthrachinone. Transport and infrastructure have been estimated. The input of air is not reported in the data according to the methodology of the study. · technology: Average technology, representing a mix of 80% chromic acid process and the remaining 20% the synthesis out of phthalic anhydride and benzene. · comment: data based on information from two producers and theoretical information from Ullmann's Enzyclopaedy;
+CAS number: 000084-65-1; 
+Formula: C14H8O2; 
+UUID: e6293140-cad8-32a8-81fc-64a059fd97ea
+
+Report: `2007 - LCI chemicals - Althaus.pdf` (957 PDF pages). Below is every table and figure caption found in it, with the PDF page it appears on (not the printed page number). The report may be in German, French or English; the dataset name is English — match on meaning (e.g. "gebrannter Ölschiefer" = burnt shale, "Gipsfaserplatte" = gypsum fibre board).
+
+- p.8: Tab. 1.1 Overview of chemicals inventoried in ecoinvent v1.0
+- p.23: Tab. 2.1 Modules for use in infrastructure processes for the production of chemicals
+- p.23: Tab. 2.2 Different infrastructure processes for the production / storage of chemicals established within this study
+- p.24: Fig. 2.1 Example of inventoring the infrastructure for the production of 1 kg of a chemical
+- p.25: Tab. 2.3 Weight of unit operation installations (including storage facilities and pipes)
+- p.25: Tab. 2.4 material composition and production efforts of the different parts of a chemical facility
+- p.26: Tab. 2.5 In- / Outputs and uncertainty information for the dataset “facilities, chemical production”
+- p.27: Tab. 2.6 Ecoinvent meta information for the datasets of the power supply unit for Desktop PC within the database.
+- p.27: Tab. 2.7 Material specification of the dataset “electronics for control unit” (data sources: see text)
+- p.28: Tab. 2.8 In-/outputs and uncertainty information for the dataset „electronics for control units“ Stand
+- p.30: Tab. 2.9 In-/outputs and uncertainty information for the dataset „disposal, electronics for control units“
+- p.31: Tab. 2.10 In-/outputs and uncertainty information for the dataset „disposal, facilities, chemical production“
+- p.33: Tab. 2.11 Land use and used processes for liquid storage tank, chemicals, organics.
+- p.33: Tab. 2.12 shows the data quality indicators for the inventory of the regional storage infrastructure for
+- p.34: Tab. 2.12 In- / Outputs for the module “liquid storage tank, chemicals, organics”, location CH
+- p.35: Tab. 2.13 Land use and used processes for storage building, chemicals, solid.
+- p.35: Tab. 2.14 shows the data quality indicators for the inventory of the regional storage infrastructure for
+- p.35: Tab. 2.14 In- / outputs for the module “storage building, chemicals, solid”, location CH
+- p.36: Fig. 2.2 Process chain for the infrastructure of a chemical plant
+- p.36: Tab. 2.15 summarises the data used and the result achieved.
+- p.37: Tab. 2.15 land use of a chemical plant (data from BASF 2001; Gendorf 2000)
+- p.38: Tab. 2.16 Input data and uncertainty values for the dataset „chemical plant, organics“
+- p.39: Tab. 3.1 Gross energy in MJ required for producing on-site steam. (Boustead 1999)
+- p.40: Tab. 3.2 Meta data of unspecific heat production process
+- p.41: Fig. 3.1 In- and Output flows of "heat, unspecific, in chemical plant" and their representation in ecoinvent
+- p.82: Tab. 1.1 Chemical and physical properties of acetaldehyde (Taken from Chemfinder (2003)).
+- p.82: Fig. 1.1 shows the one-stage process. Ethylene and oxygen are charged into the lower part of the reac-
+- p.83: Fig. 1.1 Production of acetaldehyde by means of the direct oxidation of ethylene. One-stage process. (Taken from
+- p.83: Fig. 1.2 shows the two-stage process. Tubular reactors (a), (d) are used for both “reaction” and “oxida-
+- p.84: Fig. 1.2 Production of acetaldehyde by means of the direct oxidation of ethylene. Two-stage process. (Taken from
+- p.86: Tab. 1.2 Energy consumption for the production of acetaldehyde by means of direct oxidation of ethylene (Taken
+- p.86: Tab. 1.3 Total transport amounts for the production of acetaldehyde by means of direct oxidation of ethylene.
+- p.87: Tab. 1.4 Process emissions to air and water from the production process of acetaldehyde by means of direct oxida-
+- p.87: Tab. 1.5 summarises the input and output data as well as the uncertainties used for the production of
+- p.88: Tab. 1.5 Input- / Output-data for the production of acetaldehyde (expressed per kg acetadehyde produced)
+- p.91: Tab. 2.1 Chemical and physical properties of acetic acid
+- p.92: Fig. 2.1 shows the production process.
+- p.92: Fig. 2.1 Simplified process of acetic acid production in the Monsanto process. (Agulió (1997))
+- p.92: Fig. 2.2 gives an overview of the in- and output flows and
+- p.92: Tab. 2.2 shows the ecoinvent meta data of the process.
+- p.94: Tab. 2.2 Meta data of acetic acid production process
+- p.95: Fig. 2.2 In- and Output flows of the acetic acid production process
+- p.100: Tab. 3.1 to Tab. 3.3 summarize the resulting data of the acetone production in Europe. According to
+- p.100: Tab. 3.1 Input data and functional unit outflow of the dataset for acetone production in Europe (colours according to
+- p.101: Tab. 3.2 Emission to air data for acetone production in Europe (colours according to explanations in Hischier (2007))
+- p.102: Tab. 3.3 Emission to water data for acetone production in Europe (colours according to explanations in Hischier
+- p.106: Tab. 4.1 Chemical and physical properties of acetylene (Pässler et al. (1997), Bach et al. (1999))
+- p.106: Fig. 6.2 gives an overview of the in- and output flows and
+- p.106: Tab. 6.2 shows the meta data of the process.
+- p.108: Tab. 4.2 Meta data of "acetylene, at regional storehouse"
+- p.109: Fig. 4.1 In- and Output flows of "acetylene, at regional storehouse" process
+- p.111: Tab. 5.1 Chemical and physical properties of acrylic acid Chemfinder (2002).
+- p.112: Fig. 5.1. propylene
+- p.112: Fig. 5.1 Process flow diagram for acrylic acid production.
+- p.116: Tab. 5.2 Energy demand, resource demand and emissions for the production of acrylic acid
+- p.116: Tab. 5.3 shows the data quality indicators for the inventory of the acrylic acid production (Location
+- p.117: Tab. 5.3 Input / Output and uncertainty values for the process “acrylic acid, at plant (RER)”
+- p.120: Tab. 6.1 Chemical and physical properties of adipic acid
+- p.121: Fig. 6.1 shows the production process.
+- p.121: Fig. 6.1 Simplified process of nitric acid oxidation of cyclohexanone -cyclohexanol. (Davis (1997))
+- p.123: Tab. 6.2 Meta data of adipic acid production process
+- p.124: Fig. 6.2 In- and Output flows of the adipic acid production process
+- p.126: Tab. 7.1 Physical properties of dry air, oxygen, nitrogen, argon, krypton and xenon
+- p.128: Fig. 7.1 Process chain for the production of liquid oxygen, liquid nitrogen and liquid argon
+- p.129: Fig. 7.2 Simplified process of cryogenic air separation
+- p.132: Tab. 7.2 Energy demand, Resource demand and emissions for cryogenic air separation.
+- p.133: Tab. 7.3 Calculated allocation factors for liquid air production. Allocation to liquid O2, N2 and crude Ar
+- p.134: Fig. 7.3 Simplified purification process of crude argon
+- p.135: Tab. 7.4 Resources and emissions for argon purification
+- p.135: Fig. 7.4 Process chain for the infrastructure of an air separation plant
+- p.136: Tab. 7.5 Land use and infrastructure of the air separation plant.
+- p.137: Tab. 7.6 shows the data quality indicators for the inventory of liquefied gas production in Europe
+- p.137: Tab. 7.7. The cooling water demand is based on assumptions concerning the operation of the cooling circuit and
+- p.137: Tab. 7.6 In- / Outputs for the module “air separation, cryogenic, at plant”, location RER
+- p.137: Tab. 7.7 Allocation factors used for products “oxygen, liquid”, “nitrogen, liquid”, “argon, crude, liquid”
+- p.138: Tab. 7.8 In- / Outputs for the module “argon, liquid, at plant”, location RER
+- p.138: Tab. 7.9 In- / Outputs for the module “ air separation plant”, location RER
+- p.140: Tab. 8.1 Definition of alkyd resins (Jones (1997))
+- p.140: Tab. 8.2: „Oil length classification of alkyd resins according to (Jones (1997))
+- p.141: Fig. 8.2 gives an overview of the in- and output flows and Tab. 8.4 shows the meta data of the process.
+- p.142: Fig. 8.1 Reactor and overhead for alkyd resin production (Jones (1997))
+- p.143: Tab. 8.3: Inputs and products for a typical long oil alkyd resin in white spirit (70% resin w/w)
+- p.144: Tab. 8.4 Meta data of the production process of long oil alkyd resin in white spirit (70% w/w)
+- p.145: Fig. 8.2 In- and Output flows of the production process of long oil alkyd resin in white spirit (70% w/w)
+- p.146: Tab. 8.5 Input of raw materials for solvent-born paint production
+- p.146: Fig. 8.3 gives an overview of the in- and output flows and Tab. 8.6 shows the ecoinvent meta data of
+- p.147: Tab. 8.6 Meta data of the production process of alkyd paint, white, 60% in solvent, at plant
+- p.148: Fig. 8.3 In- and Output flows of the production process of alkyd paint, white, 60% in solvent, at plant
+- p.149: Fig. 8.4 Production of water-reducible alkyd resins (mass part in parenthesis) (Jones (1997))
+- p.150: Tab. 8.7 material inputs for the production of water-reducible alkyd paint
+- p.150: Fig. 8.5 gives an overview of the in- and output flows and Tab. 8.8 shows the ecoinvent meta data of
+- p.152: Tab. 8.8 Meta data of the production process of alkyd paint, white, 60% in solvent, at plant
+- p.153: Fig. 8.5 In- and Output flows of the production process of alkyd paint, white, 60% in solvent, at plant
+- p.155: Tab. 9.1 Chemical and physical properties of allylic chloride (according to Krähling et al. (2000))
+- p.156: Fig. 9.1 Process chain for the production of allylic chloride (Fig.1 out of Krähling et al. (2000) – showing liquid pro-
+- p.159: Tab. 9.2 Energy demand, Resource demand and emissions for the production of allylic chloride.
+- p.159: Tab. 9.3 shows the data quality indicators for the inventory of allylic chloride production (Location
+- p.160: Tab. 9.3 Input / Output and uncertainty for the process “allylic chloride, at plant (RER)”
+- p.164: Fig. 10.1 Process chain for the production of aluminium fluoride (Fig.5 out of Mollard (2000) – showing H2SiF6 stor-
+- p.166: Tab. 10.1 Energy demand, Resource demand and emissions for the production of aluminium fluoride.
+- p.167: Tab. 10.2 shows the data quality indicators for the inventory of aluminium fluoride production (Loca-
+- p.167: Tab. 10.2 Input / Output and uncertainty for the process “aluminium fluoride, at plant (RER)”
+- p.169: Tab. 10.3 Energy demand, Resource demand and emissions for the production of cryolite
+- p.169: Tab. 10.4 shows the data quality indicators for the inventory of cryolite production (Location RER).
+- p.170: Tab. 10.4 Input / Output and uncertainty for the process “ cryolite, at plant (RER)”
+- p.173: Tab. 11.1 Chemical and physical properties of ammonia (Chemfinder 2002).
+- p.176: Fig. 11.1 Ammonia production with conventional steam reforming. (Taken from Fig. 1, EFMA (2000))
+- p.177: Fig. 11.2 Ammonia production with partial oxidation. (Taken from Fig. 2, EFMA (2000))
+- p.179: Fig. 11.3 Relationship between the four modules in Ecoinvent in regard to the production and storage of ammonia
+- p.181: Tab. 11.2 gives an overview of the information about the consumption of water and air in the different
+- p.181: Tab. 11.2 Water and air consumption for the production of ammonia by means of steam reforming.
+- p.182: Tab. 11.3 Energy inputs and outputs for the production of ammonia by means of steam reforming.
+- p.183: Tab. 11.4 summarises the total transport amounts for the production of 1 kg of ammonia by means of
+- p.183: Tab. 11.4 Total transport amounts for the production of ammonia by means of steam reforming.
+- p.185: Tab. 11.5 Emissions to air and water of the production of ammonia by means of steam reforming.
+- p.186: Tab. 11.6 Additional air emissions from the fuel mix used for ammonia from steam reforming process
+- p.187: Tab. 11.7 Energy inputs and outputs for the production of ammonia by means of partial oxidation.
+- p.188: Tab. 11.8 Total transport amounts for the production of ammonia by means of partial oxidation.
+- p.189: Tab. 11.9 Emissions to air and water of the production of ammonia by means of partial oxidation.
+- p.190: Tab. 11.10 Additional air emissions from the fuel mix used for ammonia from partical oxidation process
+- p.191: Tab. 11.11 and Tab. 11.12 summarise the input and output data as well as the uncertainties used for
+- p.191: Tab. 11.13 and Tab. 11.14 show the inputs and outputs data as well as the uncertainties related to the
+- p.192: Tab. 11.11 Input- / Output-data for the ammonia production by means of steam reforming (expressed per kg ammonia
+- p.193: Tab. 11.12 Input- / Output-data for the ammonia production by means of partial oxidation (expressed per kg ammonia
+- p.193: Tab. 11.13 Input- / Output-data for liquid ammonia at regional storehouse, Europe . (expressed per kg ammonia pro-
+- p.194: Tab. 11.14 Input- / Output-data for liquid ammonia at regional storehouse, Switzerland . (expressed per kg ammonia
+- p.197: Tab. 12.1 Chemical and physical properties of ammonium bicarbonate
+- p.198: Fig. 12.1 Production of ammonium bicarbonate (Taken from Wostbrock (2000): Fig. 15)
+- p.200: Tab. 12.2 summarises the input and output data as well as the uncertainties used for the production of
+- p.200: Tab. 12.2 Input- / Output-data for the production of ammonium bicarbonate (expressed per kg ammonium bicarbonate
+- p.203: Tab. 13.1 Chemical and physical properties of ammonium carbonate (according to Weston (2000))
+- p.206: Tab. 13.2 Energy demand, Resource demand and emissions for the production of ammonium carbonate.
+- p.206: Tab. 13.3 shows the data quality indicators for the inventory of ammonium carbonate production (Lo-
+- p.207: Tab. 13.3 Input / Output and uncertainty for the process “ammonium carbonate, at plant (RER)”
+- p.211: Tab. 14.1 Input and output data for the production of 1 kg of asbestos (crysotile type)
+- p.212: Tab. 14.2 Input / Output and uncertainty for the process “asbestos, crysotile type, at plant (GLO)”
+- p.215: Tab. 15.1 Chemical and physical properties of bitumen sealing (according to information in Weibel & Stritz (1995))
+- p.216: Fig. 15.1 Process chain for the production of bitumen sealing (according to Fig. 9.1 in Weibel & Stritz (1995))
+- p.217: Tab. 15.2 raw material and chemicals consumption for the production of 1 kg bitumen sealing (data from Weibel &
+- p.217: Tab. 15.3 energy consumption for the production of 1 kg bitumen sealing (data from Weibel & Stritz (1995))
+- p.218: Tab. 15.4 transport efforts for the production of 1 kg bitumen sealing (data from Weibel & Stritz (1995))
+- p.218: Tab. 15.5 waste amount of the production of 1 kg bitumen sealing (data from Weibel & Stritz (1995))
+- p.218: Tab. 15.6 shows the data quality indicators for the inventory of bitumen sealing production (Location
+- p.219: Tab. 15.6 Input / Output and uncertainty for the process “bitumen sealing, at plant (RER)”
+- p.222: Tab. 16.1 Chemical and physical properties of orthoboric acid (according to Chemfinder (2002))
+- p.223: Fig. 16.1 The system of boron processes within this study
+- p.224: Tab. 16.2 Input and Output data for the production of 1 kg of sodium borates
+- p.225: Tab. 16.3 Input data and uncertainty values for the dataset „sodium borates, at plant (US)"
+- p.226: Tab. 16.4 Input and Output data for the production of 1 kg of calcium borates
+- p.226: Tab. 16.5 Input data and uncertainty values for the dataset „calcium borates, at plant (TR)"
+- p.227: Tab. 16.6 Input and Output data for the production of 1 kg of anhydrous borax
+- p.228: Tab. 16.7 Input data and uncertainty values for the dataset „borax, anhydrous, at plant (RER)"
+- p.230: Tab. 16.8 Energy demand, Resource demand and emissions for the production of boric acid.
+- p.230: Tab. 16.9 shows the data quality indicators for the inventory of boric acid production (Location RER).
+- p.231: Tab. 16.9 Input / Output and uncertainty for the process “boric acid, at plant (RER)”
+- p.234: Tab. 17.1 Chemical and physical properties of 1-butanol (Taken from Chemfinder 2003)
+- p.236: Tab. 17.2 Consumption of energy in the production of 1-butanol (Taken from von Däniken et al. (1995))
+- p.236: Tab. 17.3 summarises the total transport amounts for the production of 1 kg of 100% 1-butanol.
+- p.237: Tab. 17.3 Total transport amounts and means for the production of 1-butanol.
+- p.237: Tab. 17.4 Process emissions to air and water from the production process of 1-butanol by means of the oxo-synthesis
+- p.238: Tab. 17.5 summarises the input and output data as well as the uncertainties used for the production of
+- p.238: Tab. 17.5 Input- / Output-data for the production of 1-butanol (expressed per kg 100% 1-butanol produced)
+- p.241: Tab. 18.1 Chemical and physical properties of butyl acrylate (Taken from Chemfinder 2003)
+- p.242: Tab. 18.2 Consumption of energy in the production of butyl acrylate (Taken from von Däniken et al. (1995))
+- p.243: Tab. 18.3 summarises the total transport amounts for the production of 1 kg of 100% butyl acrylate.
+- p.243: Tab. 18.3 Total transport amounts and means for the production of butyl acrylate.
+- p.243: Tab. 18.4 Process emissions to air and water from the production process of 1-butanol by means of the oxo-synthesis
+- p.244: Tab. 18.5 summarises the input and output data as well as the uncertainties used for the production of
+- p.244: Tab. 18.5 Input- / Output-data for the production of butyl acrylate (expressed per kg 100% butyl acrylate)
+- p.247: Tab. 19.1 Chemical and physical properties of calcium carbide (according to Langhammer (2000))
+- p.250: Tab. 19.2 Energy demand, Resource demand and emissions for the production of calcium carbide.
+- p.250: Tab. 19.3 shows the data quality indicators for the inventory of calcium carbide production (Location
+- p.250: Tab. 19.3 Input / Output and uncertainty for the process “calcium carbide, at plant (RER)”
+- p.254: Fig. 20.1 Overview of oil-furnace production process for black carbon (Fig. 56 out of Voll & Kleinschmit (2002) – with
+- p.255: Tab. 20.1 shows the reported input and output values from the different sources (Dannenberg &
+- p.255: Tab. 20.1 Input and output data for the production of 1 kg of carbon black
+- p.257: Tab. 20.2 Input / Output and uncertainty for the process “carbon black, powder, at plant (RER)”
+- p.260: Tab. 21.1 Chemical and physical properties of liquid carbon dioxide (according to BOC Gases (1994))
+- p.262: Tab. 21.2 Input and output values for the production of liquid carbon dioxide (data from Frischknecht (1999))
+- p.263: Tab. 21.3 Energy demand, material demand and emissions of the production of 1 kg of liquid carbon dioxide (data ac-
+- p.264: Tab. 21.4 Input / Output and uncertainty for the process “carbon dioxide liquid, at plant (RER)”
+- p.268: Tab. 22.1 precursors per kg carbon monoxide (ChevronTexaco Press Release)
+- p.269: Tab. 22.2 energy production / consumption per kg CO
+- p.269: Tab. 22.3 air emissions per kg CO
+- p.269: Tab. 22.4 wastewater emissions per kg CO
+- p.269: Tab. 22.5 solid wastes per kg CO
+- p.270: Tab. 22.6 Input / output data and data quality for carbon monoxide production
+- p.272: Tab. 23.1 Chemical and physical properties of Chlorine (Bentor (2002) / Schmittinger et al. (1993)).
+- p.272: Tab. 23.2 Chemical and physical properties of Sodium hydroxide (Chemfinder (2002)).
+- p.273: Fig. 23.1 Simplified scheme of chlorine electrolysis cells (Figure 2.2 from European Commission (2000))
+- p.275: Fig. 23.2 Main applications of chlorine in Europe in 2001 (figure from Euro Chlor (2002b))
+- p.276: Fig. 23.3 Main applications of sodium hydroxide (caustic soda) in Europe in 2001 (figure from Euro Chlor (2002a))
+- p.276: Fig. 23.4 System in database Ecoinvent for production of chlorine (Cl2) and sodium hydroxide (NaOH)
+- p.277: Tab. 23.3 Salt consumption for the production of chlorine in the different electrolysis processes
+- p.278: Tab. 23.4 Water consumption for the production of chlorine in the different electrolysis processes
+- p.278: Tab. 23.5 Auxillary materials consumption for the production of chlorine in the different electrolysis processes
+- p.279: Tab. 23.6 Input values in this study for auxillaries consumption in the production of chlorine
+- p.279: Tab. 23.7 Energy consumption for the production of chlorine in the different electrolysis processes
+- p.280: Tab. 23.8 Total transport distances and means for the production of chlorine in the different processes
+- p.281: Tab. 23.9 Emissions to air and water of the production of chlorine in the different electrolysis processes
+- p.282: Tab. 23.10 Waste in chlorine production
+- p.282: Tab. 23.11 summarizes the amounts of these other products in the different sources examined within
+- p.282: Tab. 23.11 Co-products from the production of chlorine in the different electrolysis processes
+- p.283: Tab. 23.12 Data that can be assigned to one of the products and don't need an allocation procedure
+- p.284: Tab. 23.13 to Tab. 23.15 summarize the input and output data as well as the uncertainties used for the
+- p.284: Tab. 23.13 Input- / Output-data for the chlorine, sodium hydroxide and hydrogen production with the mercury electroly-
+- p.285: Tab. 23.14 Input- / Output-data for the chlorine, sodium hydroxide and hydrogen production with the diaphragm elec-
+- p.285: Tab. 23.15 Input- / Output-data for the chlorine, sodium hydroxide and hydrogen production with the membrane elec-
+- p.286: Tab. 23.16 and Tab. 23.17 summarize the resulting input data as well as the uncertainty values for the
+- p.286: Tab. 23.16 Input data for average chlorine production in Europe
+- p.286: Tab. 23.17 Input data for average sodium hydroxide production in Europe
+- p.287: Tab. 23.18 Input data for average hydrogen production from electrolysis cells in Europe
+- p.292: Tab. 24.1 Physical properties of methyl chloride dichloromethane, trichloroethylene, and tetrachloroethylene (Wells
+- p.295: Fig. 24.1 Process chain for the production of methyl chloride, dichloromethane, trichloroethylene, and tetrachloro-
+- p.296: Fig. 24.2 Process chain for the process “methyl chloride, at regional storage”
+- p.296: Fig. 24.3 Process chain for the process “tetrachloroethylene, at regional storage”
+- p.297: Fig. 24.4 Simplified process of methyl chloride production by methane chlorination
+- p.297: Fig. 24.5 Simplified process of methyl chloride production by methanol hydrochlorination
+- p.300: Fig. 24.6 Simplified process of tetrachloroethylene production by oxychlorination
+- p.300: Fig. 24.7 Simplified process of tetrachloroethylene production by chlorinolysis
+- p.301: Tab. 24.2 In- / Outputs for the modules “methyl chloride, at plant”, “dichloromethane, at plant”, “trichloroethylene, at
+- p.302: Tab. 24.3 In- / Outputs for the modules “methyl chloride, at plant”, “dichloromethane, at plant”, “trichloroethylene, at
+- p.303: Tab. 24.4 Average needed transportation for distribution of 1 kg methyl chloride or tetrachloroethylene to regional
+- p.304: Tab. 24.5 In- / Outputs for the module “methyl chloride, at regional storage”, location CH
+- p.304: Tab. 24.6 In- / Outputs for the module tetrachloroethylene, at regional storage”, location CH
+- p.306: Tab. 25.1 Chemical and physical properties of chloromethyl methyl ether
+- p.307: Fig. 25.1 Process chain for the production of chloromethyl methyl ether
+- p.308: Fig. 25.2 Simplified process for the production of chloromethyl methyl ether
+- p.310: Tab. 25.2 Energy demand, resource demand and emissions for the production of chloromethyl methyl ether.
+- p.311: Tab. 25.3 shows the data quality indicators for the inventory of chloromethyl methyl ether production
+- p.311: Tab. 25.3 In- / outputs for the module “chloromethyl methyl ether, at plant”, location GLO
+- p.316: Tab. 26.1 Energy demand, Resource demand and emissions for the production of chromium oxide.
+- p.316: Tab. 26.2 shows the data quality indicators for the inventory of chromium oxide production (Location
+- p.317: Tab. 26.2 Input / Output and uncertainty for the process “chromium oxide, at plant (RER)”
+- p.320: Tab. 27.1 Chemical and physical properties of copper(II)carbonate (malachite) and copper(II)oxide (according to
+- p.321: Fig. 27.1 Process chain for the production of copper(II)oxide by hydrometallurgy (Fig.1 out of Richardson (2000a) –
+- p.324: Tab. 27.2 Energy demand, Resource demand and emissions for the production of copper carbonate.
+- p.324: Tab. 27.3 shows the data quality indicators for the inventory of copper carbonate production (Location
+- p.325: Tab. 27.3 Input / Output and uncertainty for the process “copper carbonate, at plant (RER)”
+- p.327: Tab. 27.4 Energy demand, Resource demand and emissions for the production of copper(II)oxide.
+- p.328: Tab. 27.5 Input / Output and uncertainty for the process “copper oxide, at plant (RER)”
+- p.331: Tab. 28.1 Chemical and physical properties of cyclohexanol (according to Musser (2000))
+- p.332: Fig. 28.1 Process chain for the production of cyclohexanol by hydrogenation of phenol (Fig.1 out of Musser (2000) –
+- p.333: Fig. 28.2 Process chain for the production of cyclohexanol by partial hydrogenation of benzene (Fig.4 out of Musser
+- p.335: Tab. 28.2 Energy demand, Resource demand and emissions for the production of cyclohexanol.
+- p.336: Tab. 28.3 Input / Output and uncertainty for the process “cyclohexanol, at plant (RER)”
+- p.339: Tab. 29.1 Chemical and physical properties of dimethyl ether (data from Müller & Hübsch (2000))
+- p.340: Fig. 29.1 flow scheme for the production of dimethyl ether by dehydration of methanol, with a) vaporizer, b) reactor,
+- p.342: Tab. 29.2 Energy demand, resource demand and emissions for the production of dimethyl ether
+- p.343: Tab. 29.3 Input / Output and uncertainty values for the process “dimethyl ether, at plant (RER)”
+- p.346: Tab. 30.1 Chemical and physical properties of dimethyl sulphate (data from Weisenberger & Sandler (2000))
+- p.347: Tab. 30.2. Raw materials and Chemicals
+- p.349: Tab. 30.2 Energy demand, resource demand and emissions for the production of dimethyl sulphate
+- p.350: Tab. 30.3 Input / Output and uncertainty values for the process “dimethyl sulphate, at plant (RER)”
+- p.353: Fig. 31.1 shows the life cycle of liquid epoxy resins as it was modelled by Boustead (1999). The left
+- p.354: Fig. 31.1 Outline sequence of operations required to produce liquid epoxy resins from raw resources (left hand side)
+- p.355: Tab. 31.1 Life cycle inventory for the production of liquid epoxy resin based on cumulative data for the life cycle
+- p.358: Tab. 31.2 Disaggregated life cycle inventory for the production of liquid epoxy resin (modified from Boustead 1999).
+- p.359: Fig. 32.31.2 Picture of a cast resin
+- p.359: Tab. 31.3 Inventory for the production of cast resin insulators from liquid epoxy
+- p.362: Tab. 32.1 Chemical and physical properties of the different types of ethanolamines
+- p.363: Fig. 32.1 Product distribution of the three different forms of ethanolamines ( a= mono, b= di, c= tri) in function of the
+- p.364: Fig. 32.2 Flow sheet for the production of ethanolamines: a) Aqueous ammonia tank; b) Tubular reactor; c) Ammonia
+- p.366: Tab. 32.2 Energy demand, resource demand and emissions for the production of ethanolamines
+- p.367: Tab. 32.3 Input / Output, allocation factors and uncertainty values for the process “ethanolamines, at plant (RER)”
+- p.371: Tab. 33.1 Chemical and physical properties of ethylenediamine (according to Eller & Henkes (2000))
+- p.374: Tab. 33.2 Energy demand, Resource demand and emissions for the production of ethylenediamine.
+- p.375: Tab. 33.3 Input / Output and uncertainty for the process “ethylenediamine, at plant (RER)”
+- p.381: Tab. 34.1 Air emission factors for EDC production (g/kg)
+- p.382: Tab. 34.2 Wastewater (values after treatment) (IPPC Chemicals, 2002)
+- p.383: Tab. 34.3 Input / output data and data quality for EDC production in Europe
+- p.386: Tab. 35.1 Processes and outputs associated with formaldehyde production
+- p.387: Tab. 35.2 Raw materials for EG production
+- p.388: Tab. 35.3 Input / output data and data quality for ethylene glycols production in Europe
+- p.391: Tab. 36.1 Raw materials for EO production (IPPC Chemicals, 2002)
+- p.392: Tab. 36.2 VOC emissions from ethylene oxide production (IPPC Chemicals, 2002)
+- p.393: Tab. 36.3 Input / output data and data quality for EO production in Europe
+- p.396: Tab. 37.1 raw material and chemicals consumption for the production of 1 kg Fleece (data from Weibel & Stritz (1995))
+- p.396: Tab. 37.2 energy consumption for the production of 1 kg Fleece (data from Weibel & Stritz (1995))
+- p.396: Tab. 37.3 transport efforts for the production of 1 kg Fleece (data from Weibel & Stritz (1995))
+- p.397: Tab. 37.4 shows the data quality indicators for the inventory of Fleece production (Location RER).
+- p.398: Tab. 37.4 Input / Output and uncertainty for the process “Fleece, PE, at plant (RER)”
+- p.402: Tab. 38.1 Unit process raw data and data quality indicators for fluorine production.
+- p.404: Tab. 39.1 Chemical and physical properties of formaldehyde
+- p.406: Tab. 39.2 Processes and outputs associated with formaldehyde production
+- p.406: Tab. 39.3 resource consumption and energy balance for formaldehyde production
+- p.407: Tab. 39.4 Air emission factors for formaldehyde (100%) production (g/kg)
+- p.408: Tab. 39.5 Solid waste from formaldehyde plants (g/kg)
+- p.408: Tab. 39.6 Input / output data and data quality for formaldehyde production in Europe
+- p.410: Tab. 40.1 Physical properties of helium
+- p.411: Fig. 40.1 Share of worldwide demand for helium in 2002 (Source: Smith et al., 2005)
+- p.412: Fig. 40.2 System outline for the production of helium, gaseous, at plant
+- p.414: Tab. 40.2 Average transportation needed for European helium supply, per kg helium to helium cylinder-filling centre
+- p.414: Tab. 40.3 shows the unit process raw data and data-quality indicators of the inventory of helium, gase-
+- p.415: Tab. 40.3 Unit process raw data of helium, gaseous, at plant
+- p.416: Tab. 40.4 Selected LCI results and the cumulative energy demand for helium, gaseous, at plant
+- p.417: Tab. 40.5 EcoSpold Meta Information of helium, gaseous, at plant
+- p.420: Tab. 41.1 1995 values for HCl supply in Western Europe (Euro Chlor 1997)
+- p.421: Tab. 41.2 1995 values for HCl demand in Western Europe (Euro Chlor 1997)
+- p.421: Tab. 41.1 and Tab. 41.2 indicate that most of the produced HCl directly enters into other processes,
+- p.422: Tab. 41.3 1999/2000 prices for HCl, TDI, MDI (Chemical Profiles)
+- p.423: Tab. 41.4 precursors per kg 100% HCl (estimated from molar weights)
+- p.425: Tab. 41.5 Input / output data and data quality for hydrochloric acid (direct HCl production)
+- p.425: Tab. 41.6 Input / output data and data quality for production mix of hydrochloric acid
+- p.429: Tab. 42.1 and Tab. 42.3 summarize the resulting data of the hydrogen production in Europe. Accord-
+- p.429: Tab. 42.1 Input data and functional unit outflow of the dataset for hydrogen production in Europe (colours according
+- p.430: Tab. 42.2 Emission to air data for hydrogen production in Europe (colours according to explanations in Hischier
+- p.431: Tab. 42.3 Emission to water data for hydrogen production in Europe (colours according to explanations in Hischier
+- p.432: Tab. 42.4 Input / output data and data quality for hydrogen in Europe (production mix from fossil fuels and salt brine
+- p.435: Tab. 43.1 1998 US HCN production and uses (US-EPA (2000))
+- p.436: Tab. 43.2 Resource consumption for the production of HCN (kg/kg)
+- p.437: Tab. 43.3 Energy consumption for the production of HCN (kg/kg)
+- p.437: Tab. 43.4 Air emissions from the production of HCN (g/kg)
+- p.438: Tab. 43.5 and Tab. 43.7 summarize the resulting data of the HCN production in Europe. According to
+- p.439: Tab. 43.5 Input data and functional unit outflow of the dataset for HCN production in Europe (colours according to
+- p.440: Tab. 43.6 Emission to air data for HCN production in Europe (colours according to explanations in Hischier (2007))
+- p.441: Tab. 43.7 Emission to water data for HCN production in Europe (colours according to explanations in Hischier (2007))
+- p.444: Tab. 44.1 Chemical and physical properties of hydrogen peroxide (Chemfinder (2002)).
+- p.445: Fig. 44.1 Reaction scheme from the production of hydrogen peroxide by the anthraquinone process (from Boustead
+- p.445: Tab. 44.2 Chemical and physical properties of anthraquinone (Vogel (2000)).
+- p.446: Tab. 44.3 Input and output data for the production of anthraquinone (information from Vogel (2000))
+- p.448: Tab. 44.4 Input and output data for hydrogen peroxide production (average value based on producer information)
+- p.449: Tab. 44.5 In-/Outputs and uncertainty informations for the dataset "hydrogen peroxide, 50% in H2O, at plant"
+- p.453: Tab. 45.1 Chemical and physical properties of iron(III) chloride (Ullmann 2001)
+- p.454: Fig. 45.1 Process chain for the production of Iron(III) chloride
+- p.455: Fig. 45.2 Simplified process of iron(III) chloride production
+- p.457: Tab. 45.2 Iron(III) chloride production. Energy and resource demands.
+- p.458: Tab. 45.3 Iron(III) chloride production. Emissions to air.
+- p.458: Tab. 45.4 Iron(III) chloride production. Emissions to water.
+- p.459: Tab. 45.5 Iron(III) chloride production. Composition of waste sludge
+- p.460: Tab. 45.6 Iron(III) chloride production. Infrastructure and transport processes
+- p.460: Tab. 45.7 In- / Outputs for the module “Iron (III) chloride, 40% in H2O, at plant”, location CH
+- p.462: Tab. 46.1 shows the principal composition of various iron-nickel-chromium alloys similar to the one
+- p.462: Tab. 46.1 Composition used in the inventory and iron-nickel-chromium alloys with similar composition
+- p.463: Tab. 46.2 Metal input for 18/8 chromium steel and iron-nickel-chromium alloy production in an electric arc furnace
+- p.463: Tab. 46.3 shows the unit process raw data and data-quality indicators of the inventory of iron-nickel-
+- p.464: Tab. 46.3 Unit process raw data of iron-nickel-chromium alloy, at plant
+- p.465: Tab. 46.4 Selected LCI results and the cumulative energy demand for iron-nickel-chromium alloy, at plant
+- p.466: Tab. 46.5 EcoSpold Meta Information of iron-nickel-chromium alloy, at plant
+- p.468: Tab. 47.1 Chemical and physical properties of anhydrous isopropanol
+- p.469: Fig. 47.1 Flow sheet for the production of isopropanol by indirect, weak-acid process: a) absorbers; b) strippers; c)
+- p.472: Tab. 47.2 Energy demand, resource demand and emissions for the production of isopropanol
+- p.473: Tab. 47.3 Input / Output and uncertainty values for the process “isopropanol, at plant (RER)”
+- p.477: Fig. 48.1 Flow diagram for the production of LAB with aluminium chloride as catalyst (Fig.3 out of Berna et al. (1995))
+- p.477: Fig. 48.2 Flow diagram for the production of LAB with hydrofluoric acid as catalyst (Fig.2 out of Berna et al. (1995))
+- p.478: Tab. 48.1 summarizes the resulting input and output data for the production of 1 kg LAB that can be
+- p.478: Tab. 48.1 Input data for the production of 1 kg of linear alkylbenzene, LAB (data from Berna et al. (1995), transformed
+- p.480: Tab. 48.2 Input / Output and uncertainty for the process “linear alkylbenzene, at plant (RER)”
+- p.484: Fig. 49.1 typical yields of the different cuts from a conventional lubricating oil refining process (Figure 14 out of
+- p.486: Tab. 49.1 Input / Output and uncertainty for the process “lubricants, at plant (RER)”
+- p.489: Tab. 50.1 Chemical and physical properties of maleic anhydride
+- p.491: Tab. 50.2 Processes and outputs associated with maleic anhydride production
+- p.491: Tab. 50.3 Resource consumption and energy balance for maleic anhydride production
+- p.492: Tab. 50.4 Air emission factors for maleic anhydride (g/kg) (Austrian UBA, 2001), Tables 34, 36
+- p.492: Tab. 50.5 Wastewater emission factors for maleic anhydride production (g/kg)
+- p.493: Tab. 50.6 Input / output data for maleic anhydride production by catalytic oxidation of benzene
+- p.493: Tab. 50.7 Input / output data for maleic anhydride production by direct oxidation of butanes
+- p.493: Tab. 50.8 Input / output data for maleic anhydride production in Europe
+- p.496: Tab. 51.1 Chemical and physical properties of melamine (according to Crews & Ripperger (2001))
+- p.496: Tab. 51.2 Melamine applications, in percent, by region (according to Crews & Ripperger (2001))
+- p.497: Fig. 51.1 Process chain for the production of melamine by BASF process (Fig.1 out of Crews & Ripperger (2001) –
+- p.498: Fig. 51.2 Process chain for the production of melamine by Montedison process (Fig.4 out of Crews & Ripperger
+- p.500: Tab. 51.3 Energy demand, Resource demand and emissions for the production of melamine.
+- p.500: Tab. 51.4 shows the data quality indicators for the inventory of melamine production (Location RER).
+- p.501: Tab. 51.4 Input / Output and uncertainty for the process “melamine, at plant (RER)”
+- p.506: Tab. 52.1 Input and output data for the production of 1 kg of liquid mercury
+- p.507: Tab. 52.2 Input / Output and uncertainty for the process “mercury, liquid, at plant (GLO)”
+- p.510: Tab. 53.1 Chemical and physical properties of methanol
+- p.511: Fig. 53.1 Process chain for the production of methanol
+- p.512: Fig. 53.2 Process chain for the process “regional methanol, at storage”
+- p.513: Fig. 53.3 Process chain for the methanol plant infrastructure
+- p.514: Fig. 53.4 Simplified process of methanol production with steam reforming
+- p.515: Tab. 53.2 Natural gas demand for methanol production with steam reforming. Detailed plant data.
+- p.515: Tab. 53.3 Natural gas demand for methanol production with combined reforming. Detailed plant data.
+- p.516: Tab. 53.4 Natural gas demand for methanol production with autothermal reforming. Detailed plant data.
+- p.516: Tab. 53.5 Natural gas demand for methanol production. Overview of the plant consumption for feed and fuel.
+- p.517: Tab. 53.6 Process inputs for converted feed and burned feed and fuel. Values used in this Inventory
+- p.518: Tab. 53.7 Boiler feed water and cooling water demand for methanol production plants
+- p.519: Tab. 53.8 Water demand for methanol production. Selected values for this inventory
+- p.519: Tab. 53.9 Electricity demand for methanol production. Selected values for this inventory
+- p.521: Tab. 53.10 Emissions to the air for methanol production per kg methanol produced.
+- p.522: Tab. 53.11 Emission to the water for methanol production per kg methanol produced.
+- p.524: Tab. 53.12 Average needed transportation for distribution of 1 kg methanol to regional storage in Switzerland
+- p.525: Tab. 53.13. 53.7.3 Infrastructure
+- p.526: Tab. 53.13 Methanol plant, infrastructure demand and land use
+- p.527: Tab. 53.14 shows the data quality indicators for the inventory of methanol production (location GLO).
+- p.527: Tab. 53.14 In- / outputs for the module “methanol, at plant”, location GLO
+- p.528: Tab. 53.15 In- / outputs for the module “methanol, at regional storage”, location CH
+- p.528: Tab. 53.16 In- / outputs for the module “methanol plant”, location GLO
+- p.531: Tab. 54.1 Chemical and physical properties of methyl ethyl ketone (according to Neier & Strehlke (2000))
+- p.532: Fig. 54.1 Process chain for the production of methyl ethyl ketone by gas-phase dehydrogenation of sec-butyl alcohol
+- p.534: Tab. 54.2 Energy demand, Resource demand and emissions for the production of methyl ethyl ketone.
+- p.535: Tab. 54.3 Input / Output and uncertainty for the process “methyl ethyl ketone, at plant (RER)”
+- p.539: Tab. 55.1 precursors per kg MCA (industry sources)
+- p.539: Tab. 55.2 air emissions per kg MCA (assumption)
+- p.540: Tab. 55.3 Input / output data and data quality for MCA production
+- p.542: Tab. 56.1 Chemical and physical properties of nitric acid (EFMA 2000).
+- p.545: Fig. 56.1 Weak nitric acid production. Single pressure plant. The additional steps corresponding to the Double Pres-
+- p.547: Fig. 56.2 Relationship between production of ammonia and weak nitric acid in ecoinvent
+- p.548: Tab. 56.2 gives an overview of the information about the ammonia consumption in the different sour-
+- p.549: Tab. 56.2 Liquid ammonia consumption for the production of weak nitric acid.
+- p.549: Tab. 56.3 Water consumption for the production of weak nitric acid.
+- p.550: Tab. 56.4 Energy inputs and outputs for the production of weak nitric acid.
+- p.550: Tab. 56.5 summarises the total transport amounts for the production of 1 kg of 100% nitric acid.
+- p.551: Tab. 56.5 Total transport distances and means for the production of weak nitric acid.
+- p.552: Tab. 56.6 Emissions to air and water of the production of weak nitric acid.
+- p.554: Tab. 56.7 Input- / Output-data for the weak nitric acid production (expressed per kg 100% nitric acid produced)
+- p.558: Tab. 57.1 Raw material requirements per tonne of nitrobenzene (Wells, 1999)
+- p.559: Tab. 57.2 Input / output data and data quality for nitrobenzene production in Europe
+- p.563: Fig. 58.1 system boundaries and flow diagramm of the production of n-paraffins out of petrochemical resources
+- p.563: Tab. 58.1 Determination of thermal and electrical final energy consumption of n-paraffins (as example for the trans-
+- p.564: Tab. 58.2 gives an overview of how and with what conversion factors, the parameters from ECOSOL
+- p.565: Tab. 58.2 Arrangments of parameters from ECOSOL for this study
+- p.566: Tab. 58.3 Input and Output data for the production of 1 kg n-paraffins (data from Franke et al. (1995), transformed ac-
+- p.567: Tab. 58.4 In-/Outputs and uncertainty informations for the dataset "n-paraffins, at plant"
+- p.570: Tab. 59.1 Penta consumption in Europe in 2002 (personal communication)
+- p.572: Tab. 59.2 Transport of precursors (industry sources)
+- p.572: Tab. 59.3 Input / output data and data quality for penta production in Europe
+- p.574: Tab. 60.1 Chemical and physical properties of phenol (according to Jordan et al. (2000))
+- p.575: Fig. 60.1 Process chain for the production of phenol from cumene (Fig.3 out of jordan2000 – showing cumene oxida-
+- p.576: Tab. 60.2. Water use
+- p.578: Tab. 60.2 Energy demand, Resource demand and emissions for the production of phenol.
+- p.579: Tab. 60.3 Input / Output and uncertainty for the process “phenol, at plant (RER)”
+- p.583: Fig. 61.1 Process chain for the production of phenolic resin (Fig.1 out of Hesse (2000) – showing outlet tap [a], heat-
+- p.585: Tab. 61.1 Energy demand, Resource demand and emissions for the production of phenolic resin.
+- p.586: Tab. 61.2 Input / Output and uncertainty for the process “phenolic resin, at plant (RER)”
+- p.589: Tab. 62.1 Chemical properties of beneficiated phosphate rock
+- p.590: Tab. 62.2 Phosphate rock world production (marketable rock). Only countries with more than 5 Mt a (gross weight)
+- p.591: Fig. 62.1 Process chain for the production of phosphate rock
+- p.592: Fig. 62.2 Simplified process of phosphate rock production in Morocco
+- p.592: Fig. 62.3 Simplified process of phosphate rock production in Florida
+- p.593: Tab. 62.3 Phosphate Rock Production of the United States (Jasinski & Lindsay 2001)
+- p.597: Tab. 62.4 Phosphate rock production. Resource demands for Moroccan and U.S. (Florida) ore
+- p.599: Tab. 62.5 Phosphate rock production. Emissions to air for Moroccan and U.S. (Florida) ore
+- p.601: Tab. 62.6 Phosphate rock production. Emissions to water for Moroccan and U.S. (Florida) ore
+- p.602: Tab. 62.7 Phosphate rock production. Emissions to soil for Moroccan and U.S. (Florida) ore
+- p.603: Tab. 62.8 Phosphate rock production. Land use for Moroccan and U.S. (Florida) ore
+- p.604: Tab. 62.9 Phosphate rock production. Transport processes and infrastructure for Moroccan and U.S. (Florida) ore
+- p.605: Tab. 62.10 Infrastructure for 5 Mt a production plant of Moroccan and U.S. (Florida) phosphate rock.
+- p.606: Tab. 62.11 shows the data quality indicators for the inventory of wet phosphate rock production in
+- p.606: Tab. 62.11 In- / outputs for the module “phosphate rock, as P2O5, beneficiated, wet, at plant ”, location US
+- p.607: Tab. 62.12 In- / outputs for the module “phosphate rock, as P2O5, beneficiated, dry, at plant ”, location MA
+- p.607: Tab. 62.13 In- / outputs for the module “phosphate rock mine”, location US
+- p.608: Tab. 62.14 In- / outputs for the module “phosphate rock mine”, location MA
+- p.611: Tab. 63.1 Chemical properties of phosphoric acid (Ullmann 2001b)
+- p.612: Tab. 63.2 World-wide phosphoric acid capacity in 1997 and forecast for 2002 (IFA as cited in Maene 1999)
+- p.613: Fig.63.1 Process chain for the production of phosphoric acid (fertiliser grade) in the U.S. (Florida)
+- p.614: Fig.63.2 Process chain for the production of phosphoric acid, fertiliser grade in Morocco
+- p.615: Fig.63.3 Process chain for the production phosphoric acid, industrial grade in Europe
+- p.615: Fig.63.4 Process chain for the dihydratephosphoric acid plant (location US)
+- p.616: Tab. 63.3. Most of the wet phosphoric acid produced world-wide is produced with the dihydrate process
+- p.616: Tab. 63.3 Characteristics of the different wet phosphoric acid production processes (Becker 1989)
+- p.617: Fig. 63.5 Simplified process of phosphoric acid production, dihydrate process
+- p.619: Tab. 63.4 Resources for phosphoric acid production. Selected values for this inventory
+- p.619: Tab. 63.5. As value used in this inventory, the average of the values for the dihydrate process was
+- p.620: Tab. 63.5 Energy resources for phosphoric acid production. Selected values for this inventory
+- p.621: Tab. 63.6 Typical fluorine distribution for the phosphoric acid dihydrate process (Ullmann 2001b)
+- p.623: Tab. 63.7 Phosphoric acid production. Emissions to air for Moroccan and U.S. (Florida) production
+- p.624: Tab. 63.8 Phosphoric acid production. Radioactive emissions to air and water.
+- p.626: Tab. 63.9 Phosphoric acid production. Phosphogypsum composition.
+- p.628: Tab. 63.10 Phosphoric acid production. Land use for U.S. (Florida) plant operation.
+- p.629: Tab. 63.11 Phosphoric acid production. Transport processes and infrastructure.
+- p.630: Tab. 63.12. -1
+- p.630: Tab. 63.12 Infrastructure for 47 kt a P2O5 phosphoric acid production plant of (crude acid).
+- p.631: Tab. 63.13 Allocation of phosphoric acid product and fluosilic acid co-product from phosphoric acid production.
+- p.632: Tab. 63.14 Phosphoric acid, fertiliser grade, 70% in H2O, at plant. Processes used in the global supply mix (GLO).
+- p.633: Tab. 63.15 Fluosilic acid, 22% in H2O, at plant. Processes used in supply mix for Europe (RER).
+- p.634: Fig. 63.6 Simplified process of phosphoric acid purification
+- p.636: Tab. 63.16 Phosphoric acid purification. Values used for the inventory.
+- p.637: Tab. 63.17 Phosphoric acid purification waste. Elemental composition.
+- p.637: Tab. 63.18 and Tab. 63.19 show the data quality indicators for the inventory of wet phosphoric acid
+- p.638: Tab. 63.18 In- / outputs for the module “phosphoric acid production, dihydrate process” and the allocated products
+- p.639: Tab. 62.18 (Continuation) In- / outputs for the module “phosphoric acid production, dihydrate process” and the allo-
+- p.639: Tab. 63.19 In- / outputs for the module “phosphoric acid plant, fertiliser grade”, location US
+- p.640: Tab. 63.20 In- / outputs for the module “phosphoric acid production, dihydrate process” and the allocated products
+- p.640: Tab. 63.21 In- / outputs for the supply mix “phosphoric acid, fertiliser grade, at plant”, location GLO
+- p.640: Tab. 63.22 In- / outputs for the supply mix “fluosilic acid, 22% in H2O, at plant”, location RER
+- p.641: Tab. 63.23 In- / outputs for the module “phosphoric acid, industrial grade, 85% in H2O, at plant”, location RER
+- p.645: Tab. 64.1 Chemical and physical properties of phosphorus trichloride (according to Riess (2000))
+- p.647: Tab. 64.2 Energy demand, Resource demand and emissions for the production of phosphorus trichloride.
+- p.648: Tab. 64.3 Input / Output and uncertainty for the process “phosphorus trichloride, at plant (RER)”
+- p.651: Tab. 65.1 Chemical and physical properties of methyl ethyl ketone (according to Lorz et al. (2000))
+- p.653: Tab. 65.2 Emission and waste information for the production of phthalic anhydride
+- p.654: Tab. 65.3 Input- / Output data and uncertainties for the dataset “phthalic anhydride, at plant (RER)”
+- p.658: Tab. 66.1 Emission and waste information for the production of polyester resin, unsaturated
+- p.658: Tab. 66.2 summarizes the uncertainty scores established according to the method used in the ecoinvent
+- p.659: Tab. 66.2 Input- / Output data and uncertainties for the dataset “polyester resin, unsaturated, at plant (RER)”
+- p.663: Fig. 67.1 shows a flow chart for the production of fluorochemicals and PTFE. The following chemical
+- p.664: Fig. 67.1 Flow chart for the production of fluoro chemicals and PTFE (Asahi 2002)
+- p.665: Tab. 67.3. It is produced as a clear colourless liquid with a pleasant, sweet odour. The chemical is an
+- p.665: Tab. 67.1 Unit process raw data and data quality indicators for production of trichloromethane.
+- p.666: Tab. 67.2 Unit process raw data and data quality indicators for production of chlorodifluoromethane.
+- p.666: Tab. 67.3 Unit process raw data and data quality indicators for production of PTFE.
+- p.667: Tab. 67.4 Unit process raw data and data quality indicators for adhesion of PTFE on glass.
+- p.672: Tab. 68.1 Chemical and physical properties of propylene glycol
+- p.673: Fig. 68.1 Process chain for the production of propylene glycol (Fig. 5 out of Sullivan (2000) - showing reactor [a],
+- p.675: Tab. 68.2 Energy demand, Resource demand and emissions for the production of propylene glycol.
+- p.676: Tab. 68.3 Input / Output and uncertainty for the process “propylene glycol, at plant (RER)”
+- p.679: Tab. 69.1 Chemical and physical properties of propylene oxide
+- p.680: Fig. 69.1 typical arrangement for the production of propylene oxide (Fig. 4 out of Kahlich et al. (2000))
+- p.681: Fig. 69.2 Unit ratios of the propylene oxide production within the chlorohydrin process (Fig. 5 out of Kahlich et al.
+- p.683: Tab. 69.2 Energy demand, resource demand and emissions for the production of propylene oxide.
+- p.684: Tab. 69.3 In- / Outputs and uncertainty information for the module “propylene oxide, at plant”
+- p.687: Tab. 70.1 Properties of rare earth oxides and rare earth elements
+- p.687: Tab. 70.2 shows the composition of the rare earth ore concentrates and oxides investigated in this in-
+- p.688: Tab. 70.2 Composition of rare earth oxides investigated in this inventory
+- p.688: Tab. 70.3 Composition of various ore concentrates of rare earth oxides
+- p.689: Tab. 70.4 Rare earth oxide composition of various ores
+- p.690: Tab. 70.5 Production and resources of rare earth oxides and elements
+- p.690: Fig. 70.1 shows the share of rare earth oxide demand (2005) for the most important applications. The
+- p.690: Fig. 70.1 Rare earth demand by applications in 2005 (Sinton, 2006)
+- p.691: Fig. 70.2 shows the share of individual rare earth oxides in total demand in 2005. A strong rise in de-
+- p.691: Fig. 70.2 Rare earth oxide demand in 2005 (Sinton, 2006)
+- p.692: Fig. 70.3 System outline of rare earth oxide production from bastnasite
+- p.693: Fig. 70.4 Simplified process flowchart of rare earth concentrate production from bastnasite
+- p.695: Tab. 70.6 Treatment chemicals for mining and beneficiation of rare earth concentrate
+- p.696: Tab. 70.7 shows the unit process raw data and data-quality indicators of the inventory of rare earth
+- p.697: Tab. 70.7 Unit process raw data of rare earth concentrate from bastnasite, at mine
+- p.698: Fig. 70.5 Simplified process flowchart for rare earth oxide production from bastnasite
+- p.700: Tab. 70.8 Energy and auxiliaries use in rare earth oxide production from bastnasite
+- p.702: Tab. 70.9 Allocation factors applied to rare earth oxide production from bastnasite
+- p.702: Tab. 70.10 shows the multi-output process raw data and data-quality indicators of the inventory of rare
+- p.703: Tab. 70.10 Multi-output process raw data of rare earth oxide production from bastnasite
+- p.704: Tab. 3.10 Multi-output process raw data of rare earth oxide production from bastnasite (2. Part)
+- p.705: Tab. 70.11 shows selected LCI results and cumulative energy demands for the mining process “rare
+- p.705: Tab. 70.11 shows selected LCI results and cumulative energy demands for the multi-output process
+- p.706: Tab. 70.11 Selected LCI results and the cumulative energy demand for rare earth oxide production from bastnasite
+- p.707: Tab. 70.12 EcoSpold Meta Information for rare earth oxide production from bastnasite
+- p.712: Fig. 71.1 Chemical structure of silane and silicone (Wacker 1999)
+- p.713: Fig. 71.2 shows the schematic diagram of silicone manufacturing. The basic liquid methyl chlorosi-
+- p.714: Fig. 71.2 Schematic diagram of silicone manufacture at (Wacker 1999)
+- p.716: Tab. 71.1 Basic silicone formulations of varying modules (Amstock 2001:13.24)
+- p.719: Tab. 71.2 Data (total and per kg) of the years 1999 and 2001 from environmental reports for two production plants
+- p.720: Tab. 71.3 Unit process raw data and data quality indicators for silicone products. Average of data for two production
+- p.721: Tab. 71.4 Unit process raw data and data quality indicators for the silicone manufacturing plant with a production ca-
+- p.725: Tab. 72.1 Chemical and physical properties of soda (Chemfinder (2002)).
+- p.727: Tab. 72.2 Chemical and physical properties of calcium chloride (Ullmann 2001)
+- p.729: Fig. 72.1 Soda production by means of the Solvay technique (taken from Fig.1 UBA (2001))
+- p.731: Fig. 72.2 Soda by-products generated by means of the Solvay technique (taken from Fig.11, Woode (1995))
+- p.733: Tab. 72.3 gives an overview of the information about consumption of raw materials and auxiliaries in
+- p.733: Tab. 72.3 Consumption of raw materials and auxiliaries in the Solvay process in the different sources used
+- p.733: Tab. 72.4 Consumption of energy in the Solvay process in the different sources used.
+- p.734: Tab. 72.5 Total transport amounts and means for the Solvay process.
+- p.735: Tab. 72.6 Emissions to air (only process emissions) and emissions to water of the Solvay process in the different
+- p.736: Tab. 72.7 summarizes the input and output data as well as the uncertainties used for the production of
+- p.737: Tab. 72.7 Input- / Output-data for the soda production by means of the Solvay process (expressed per kg 100% soda
+- p.737: Fig. 72.3 Process chain for the regional storage process of calcium chloride
+- p.738: Tab. 72.8 shows the data quality indicators for the inventory of the process for regional storage of cal-
+- p.738: Tab. 72.8 In- / Outputs for the module “calcium chloride, CaCl2, at regional storage”, location CH
+- p.741: Tab. 73.1 Chemical and physical properties of sodium chlorate (Chemfinder 2002).
+- p.742: Fig. 73.1 Simplified schema of sodium chlorate production. (Taken from Fig. 1 in Eka (2000))
+- p.744: Tab. 73.2 gives an overview of the information about the consumption of raw materials and auxiliaries
+- p.745: Tab. 73.2 Consumption of raw materials and auxiliaries for the production of sodium chlorate.
+- p.746: Tab. 73.3 Water consumption for the production of sodium chlorate. Values extracted from Fawer (2002).
+- p.746: Tab. 73.4 Energy consumption for the production of sodium chlorate.
+- p.746: Tab. 73.5 summarises the total transport amounts for the production of 1 kg of 100% sodium chlorate.
+- p.747: Tab. 73.5 Total transport distances and means for the production of sodium chlorate.
+- p.748: Tab. 73.6 Emissions to air and water of the production of sodium chlorate. Values taken from Fawer 2002
+- p.749: Tab. 73.7 Input- / Output-data for the sodium chlorate production (expressed per kg 100% sodium chlorate produced)
+- p.752: Tab. 74.1 Chemical and physical properties of Sodium Chloride (Salt Institute (2002a)).
+- p.752: Tab. 74.2 World sodium chloride production (in million metric tons, including salt in brine) from Salt Institute (2002c).
+- p.753: Fig. 74.1 schematic overview of the solution mining principle (graph from Schweizer Rheinsalinen (2002))
+- p.755: Tab. 74.3 Production data of salt production (European producer: solution mining; K+S: solution mining and under-
+- p.756: Tab. 74.4 In-/Outputs and uncertainty informations for the dataset "sodium chloride, powder, at plant"
+- p.757: Tab. 74.5 Production data of salt brine production (European producer: solution mining with evaporation; Landbank:
+- p.758: Tab. 74.6 In-/Outputs and uncertainty informations for the dataset "sodium chloride, brine solution, at plant"
+- p.761: Tab. 75.1 Physical characteristics of sodium dichromate (Elementis Chromium)
+- p.761: Tab. 75.2 1997 uses of sodium dichromate (EPA Dichromate, 2000)
+- p.763: Tab. 75.3 precursors for dichromate production (Chromium, 1998)
+- p.763: Tab. 75.4 Allocation factors for dichromate production (Chromium, 1998)
+- p.763: Tab. 75.5 Energy usage for dichromate production (Chromium, 1998)
+- p.764: Tab. 75.6 Main components of reduced chromium treatment residues (EPA Dichromate, 2000: Table 3.3)
+- p.765: Tab. 75.7 Input / output data and data quality for dichromate production in Europe
+- p.769: Tab. 76.1 precursors per kg 100% NaOCl (industry sources)
+- p.769: Tab. 76.2 energy consumption per kg NaOCl (industry sources)
+- p.770: Tab. 76.3 Input / output data and data quality for production of 1 kg hypochlorite (100%)
+- p.773: Tab. 77.1 Energy usage for sodium sulfite production (industry sources)
+- p.774: Tab. 77.2 Input / output data and data quality for sulfite production in Europe
+- p.776: Tab. 78.1 Chemical and physical properties of sodium sulphate (according to von Plessen (1993))
+- p.778: Tab. 78.2 Energy demand, Resource demand and emissions for the production of sodium sulphate out of naturally
+- p.780: Tab. 78.3 Energy demand, Resource demand and emissions for the Mannheim process
+- p.780: Tab. 78.4 Allocation factors used in the ecoinvent project for the Multi-Output process “Sodium sulphate, Mannheim
+- p.781: Tab. 78.5 Energy and material demand for the production mix of sodium sulphate
+- p.781: Tab. 78.6 Input / Output and uncertainty for the process “sodium sulphate, from natural sources, at plant (RER)”
+- p.782: Tab. 78.7 Input / Output and uncertainty for the process “sodium sulphate, Mannheim process, at plant (RER)”
+- p.782: Tab. 78.8 Input / Output and uncertainty for the process “sodium sulphate, powder, production mix, at plant (RER)”
+- p.785: Tab. 79.1 shows the fatty acid profile of soya oil.
+- p.785: Tab. 79.1 Fatty acid profile of soya oil. (Based on ASA 2003)
+- p.786: Fig. 79.1 shows the main steps in the manufacturing process of soya oil and soya scrap by means of
+- p.789: Fig. 79.1 Production of soya oil and soya scrap with solvent extraction. (Taken from Reusser 1994, Fig. 3.1)
+- p.792: Tab. 79.2 Energy consumption for the production of soya oil.
+- p.792: Tab. 79.3 summarises the total transport amounts for the production of 1 kg soya oil based on beans
+- p.793: Tab. 79.3 Total transport amounts and means for the production of soya oil based on imported soya beans from over-
+- p.794: Tab. 79.4 Emissions to air and water of the production of soya oil.
+- p.795: Tab. 79.5 summarises the input and output data as well as the uncertainties used for the production of
+- p.795: Tab. 79.5 Input- / Output-data for the soya oil production (all values are referred to the production of 1 kg soya oil and
+- p.798: Tab. 80.1 Uses of liquid sulfur dioxide (Chemical Profiles, 2000)
+- p.802: Tab. 80.2 Input / output data and data quality for SO2 production in Europe
+- p.805: Tab. 81.1 Unit process raw data and data quality indicators for sulphur hexafluoride production. References and as-
+- p.805: Tab. 81.1 shows the data quality indicators for the inventory of SF6 production. The simplified ap-
+- p.808: Tab. 82.1 Chemical and physical properties of sulphur trioxide (data from Müller (2000))
+- p.809: Fig. 82.1 flow scheme for the production of sulphur trioxide by distillation of oleum: a) evaporator, b) heat exchanger
+- p.811: Tab. 82.2 Energy demand, resource demand and emissions for the production of sulphur trioxide
+- p.811: Tab. 82.3 Input / Output and uncertainty values for the process “sulphur trioxide, at plant (RER)”
+- p.815: Tab. 83.1 Chemical and physical properties of Sulphuric acid (ESA-EFMA 2000).
+- p.816: Fig. 83.1 General diagram of sulphuric acid production (Figure 1 from ESA-EFMA 2000)
+- p.823: Tab. 83.2 Sulphur containing raw materials consumption for the production of sulphuric acid
+- p.824: Tab. 83.3 gives an overview of the energy balance in the different sources available. Since steam pro-
+- p.824: Tab. 83.3 Energy balance for the production of sulphuric acid in the different processes.
+- p.825: Tab. 83.4 summarizes the total transport amounts for the production of 1 kg of 100% sulphuric acid.
+- p.826: Tab. 83.4 Total transport distances and means for the production of weak nitric acid.
+- p.829: Tab. 83.5 Emissions to air and water of the production of sulphuric acid.
+- p.833: Tab. 83.6 summarizes the input and output data as well as the uncertainties used for the production of
+- p.833: Tab. 83.6 Input- / Output-data for the sulphuric acid production (expressed per kg 100% sulphuric acid produced)
+- p.836: Tab. 84.1 Chemical and physical properties of tetrachloromethane (according to Holbrook (2000))
+- p.837: Tab. 84.2 and Tab. 84.3 summarize the resulting data of the average pentane production in Europe.
+- p.838: Tab. 84.2 Input data of the dataset "tetrachloromethane, at plant (RER)"
+- p.839: Tab. 84.3 Output data of the dataset "tetrachloromethane, at plant (RER)"
+- p.842: Tab. 85.1 Physical properties of titanium dioxide
+- p.843: Tab. 85.2 2001 uses of titanium dioxide (industry sources)
+- p.845: Tab. 85.3 precursors for TiO2 production
+- p.846: Tab. 85.4 energy consumption for TiO2 production (sulfate process) (UBA BAT Notes, 2001)
+- p.846: Tab. 85.5 energy consumption for TiO2 production (chloride process) (UBA BAT Notes, 2001)
+- p.846: Tab. 85.6 direct air emissions for TiO2 production (sulfate process) (UBA BAT Notes, 2001)
+- p.847: Tab. 85.7 direct air emissions for TiO2 production (chloride process) (UBA BAT Notes, 2001)
+- p.847: Tab. 85.8 wastewater emissions for TiO2 production (sulfate process) (UBA BAT Notes, 2001)
+- p.847: Tab. 85.9 wastewater emissions for TiO2 production (chloride process) (UBA BAT Notes, 2001)
+- p.850: Tab. 86.1 Energy usage for toluene production (European Commission (2002))
+- p.850: Tab. 86.2 Air emissions for toluene production (European Commission (2002))
+- p.850: Tab. 86.3 Wastewater from toluene production (European Commission (2002))
+- p.851: Tab. 1.4 Solid wastes from BTX production (European Commission (2002))
+- p.851: Tab. 86.4 and Tab. 86.6 summarize the resulting data of the toluene production in Europe. According to the
+- p.852: Tab. 86.4 Input data and functional unit outflow of the dataset for toluene production in Europe (colours according to expla-
+- p.853: Tab. 86.5 Emission to air data for toluene production in Europe (colours according to explanations in Hischier (2007))
+- p.854: Tab. 86.6 Emission to air data for toluene production in Europe (colours according to explanations in Hischier (2007))
+- p.858: Tab. 87.1 Chemical and physical properties of trimethylamine
+- p.859: Fig. 87.1 Process chain for the production of trimethylamine
+- p.860: Fig. 87.2 Simplified process for the production of trimethylamine
+- p.862: Tab. 87.2 Energy demand, resource demand and emissions for the production of trimethylamine.
+- p.863: Tab. 87.3 In- / outputs for the module “trimethylamine, at plant”, location GLO
+- p.864: Fig. 88.1 Percentages of European chemical output in 2001 (from CEFIC (2002))
+- p.865: Tab. 88.1 The top organic and inorganic chemicals by weight (from Chenier (1992))
+- p.866: Fig. 88.2 System boundaries of the two unspecific chemicals modules
+- p.867: Tab. 88.2 In-/Outputs an uncertainty informations for the dataset „chemicals organic, at plant“
+- p.867: Tab. 88.3 In-/Outputs an uncertainty informations for the dataset „chemicals inorganic, at plant“
+- p.871: Fig. 89.1 shows the manufacturing processes from urea-formaldehyde and melamine-formaldehyde resins.
+- p.874: Fig. 89.1 Urea–formaldehyde and melamine–formaldehyde resin manufacture. (Taken from Williams (2002): Fig. 2)
+- p.875: Tab. 89.1 Uses for amino resins (Taken from Diem 2002. Table 6)
+- p.877: Tab. 89.2 Consumption of energy in the production of amino resin (Basing on data for alkyd resin in von Däniken et al.
+- p.877: Tab. 89.3 Total transport amounts and means for the production of urea-formaldehyde resin.
+- p.877: Tab. 89.4 Total transport amounts and means for the production of melamine-formaldehyde resin.
+- p.879: Tab. 89.5 and Tab. 89.6 summarise the input and output data as well as the uncertainties used for the
+- p.879: Tab. 89.5 Input- / Output-data for the production of urea formaldehyde resin (expressed per kg 100% resin)
+- p.879: Tab. 89.6 Input- / Output-data for the production of melamine formaldehyde resin (expressed per kg 100% resin)
+- p.882: Tab. 90.1. ecoinvent report No. 8 - 801 -
+- p.883: Tab. 90.1 Consumption of energy in the production of acrylic binder
+- p.883: Tab. 90.2 Total transport amounts and means for the production of acrylic binder.
+- p.884: Tab. 90.3 Process emissions to air and water from the production process of acrylic binder (Taken from von Däniken
+- p.884: Tab. 90.4 summarises the input and output data as well as the uncertainties used for the production of
+- p.885: Tab. 90.4 Input- / Output-data for the production of acrylic binder (expressed per kg 100% acrylic binder produced)
+- p.886: Tab. 90.5 shows the consumption of raw materials in the production of the different bases for acrylic
+- p.886: Tab. 90.5 Consumption of raw materials in the production of different bases for acrylic dispersion.
+- p.886: Tab. 90.6 Total transport amounts and means for the production of acrylic dispersion.
+- p.887: Tab. 90.7 summarises the input and output data as well as the uncertainties used for the production of
+- p.888: Tab. 90.7 Input- / Output-data for the production of acrylic dispersion (expressed per kg 100% acrylic dsipersion pro-
+- p.889: Tab. 90.8 Total transport amounts and means for the production of acrylic varnish.
+- p.889: Tab. 90.9 summarises the input and output data as well as the uncertainties used for the production of
+- p.890: Tab. 90.9 Input- / Output-data for the production of acrylic varnish (expressed per kg 100% acrylic varnish produced)
+- p.894: Tab. 92.1 shows the unit process data for the infrastructure. Most of the data have been directly taken
+- p.895: Tab. 92.1 Unit process raw data and data quality indicators for drinking water infrastructure in Switzerland (Crettaz et
+- p.895: Tab. 92.2 shows the unit process raw data for the treatment of drinking water. The data have been in-
+- p.896: Tab. 92.2 Unit process raw data and data quality indicators for drinking water in Switzerland and Europe (Crettaz et al.
+- p.899: Tab. 93.1 Chemical properties of drinking water in Zurich and Basel. Average raw water composition used.
+- p.901: Fig. 93.1 Process chain for the production of deionised water.
+- p.901: Fig. 93.2 Process chain for the infrastructure of the deionised water production.
+- p.901: Fig. 93.3 Process chain for the production of strong cationic ion exchange resin.
+- p.902: Fig. 93.4 Process chain for the production of strong anionic ion exchange resin.
+- p.902: Fig. 93.5 Simplified process of deionisation of water
+- p.905: Tab. 93.2 Energy demand, resource demand and emissions for the production of deionised water.
+- p.906: Tab. 93.3 Calculated elemental composition of strong anion resin and strong cation resin sent to the incineration
+- p.907: Tab. 93.4 Land use and used processes for a water treatment plant for deionisation
+- p.907: Tab. 93.5 Chemical and physical properties of a strong acidic cation exchanger resin
+- p.908: Fig. 93.6 Simplified process for the production of strong acidic cation exchanger resin
+- p.910: Tab. 93.6 Energy demand, resource demand, and emissions for the cation exchanger resin production.
+- p.911: Tab. 93.7 Chemical and physical properties of a strong base anion exchanger resin
+- p.911: Fig. 93.7 Simplified process for the production of strong base anion exchanger resin
+- p.914: Tab. 93.8 Energy demand, resource demand, and emissions for the anion exchanger resin production.
+- p.914: Tab. 93.9 shows the data quality indicators for the inventory of the deionised water production from
+- p.915: Tab. 93.9 In- / outputs for the module “water, deionised, at plant”, location CH
+- p.915: Tab. 93.10 In- / outputs for the allocated products “water treatment plant, deionisation”, location CH
+- p.915: Tab. 93.11 In- / outputs for the module “cationic resin, at plant”, location CH
+- p.916: Tab. 93.12 In- / outputs for the module “anionic resin, at plant”, location CH
+- p.918: Tab. 94.1 The different types and grades of white spirit (according to IPCS (1996))
+- p.920: Tab. 94.2 Input / Output and uncertainty for the process “white spirit, at plant (RER)”
+- p.923: Tab. 95.1 Physical properties of dry air, krypton and xenon
+- p.924: Fig. 95.1 Process chain for the production of liquid oxygen, liquid nitrogen and liquid argon
+- p.925: Fig. 95.2 Simplified process of the xenon krypton purification process
+- p.927: Tab. 95.2 Energy demand, resource demand and emissions for production of xenon- / krypton.
+- p.928: Tab. 95.3 Calculated allocation factors for xenon-krypton production. Allocation to gaseous xenon and krypton.
+- p.929: Tab. 95.4 Resources for regional storage of gaseous xenon and krypton
+- p.930: Tab. 95.5 shows the data quality indicators for the inventory of the xenon krypton purification process.
+- p.930: Tab. 95.5 In- / outputs for the module “ xenon krypton purification process”, location RER
+- p.930: Tab. 95.6 Allocation factors for the products “xenon, gaseous, at plant” and “krypton, gaseous, at plant”,
+- p.931: Tab. 95.7 In- / outputs for the module “xenon, gaseous, at regional storage”, location CH
+- p.931: Tab. 95.8 In- / outputs for the module “krypton, gaseous, at regional storage ”, location CH
+- p.935: Tab. 96.1 Energy usage for and precursor materials for xylene production (European Commission (2002))
+- p.935: Tab. 96.2 Air emissions for toluene production (European Commission (2002))
+- p.935: Tab. 96.3 Wastewater from BTX production (European Commission (2002))
+- p.936: Tab. 96.4 Solid wastes from BTX production (European Commission (2002))
+- p.936: Tab. 96.5 to Tab. 96.7 summarize the resulting data of the xylenes production in Europe. According to
+- p.937: Tab. 96.5 Input data and functional unit outflow of the dataset for xylene production in Europe (colours according to
+- p.938: Tab. 96.6 Emission to air data for xylene production in Europe (colours according to explanations in Hischier (2007))
+- p.939: Tab. 96.7 Emission to water data for xylene production in Europe (colours according to explanations in Hischier
+- p.942: Tab. 97.1 Physical properties of zirconia, zircon, rutile and ilmenite
+- p.943: Fig. 97.1 Distribution of world production of zircon, rutile and ilmenite (Gambogi, 2006a, Gambogi, 2006b)
+- p.944: Fig. 97.2 System outline for zircon and zircon oxide production from mineral sands
+- p.945: Fig. 97.3 Simplified process flowchart of zircon production from mineral sands
+- p.948: Tab. 97.2 Allocation factors applied to zircon production from mineral sands
+- p.948: Tab. 97.3 shows the multi-output process raw data and data-quality indicators of the inventory of zir-
+- p.949: Tab. 97.3 Multi-output process raw data of zircon production from mineral sands
+- p.950: Tab. 97.4 Energy use and auxiliaries for zirconium oxide production from zircon with caustic fusion
+- p.951: Tab. 97.5 shows the unit process raw data and data-quality indicators of the inventory of zirconium
+- p.952: Tab. 97.5 Unit process raw data of zirconium oxide, at plant
+- p.953: Tab. 97.6 shows selected LCI results and cumulative energy demands for the multi-output process
+- p.953: Tab. 97.6 shows selected LCI results and cumulative energy demands for the process “zirconium ox-
+- p.954: Tab. 97.6 Selected LCI results and the cumulative energy demand for zirconium oxide production from mineral sands
+- p.955: Tab. 97.7 EcoSpold Meta Information of zirconium oxide production from mineral sands
+
+Rules:
+1. Choose the caption(s) that hold the unit-process inventory of this dataset — inputs, energy, emissions, transport — not impact results, not a diagram. Prefer "Sachbilanz" / "inventory" / "LCI" tables.
+2. Return the PDF page range that covers those tables plus the paragraph introducing them: `first_page`, `last_page` (at most 4 pages). Tables can run onto the next page.
+3. If no caption fits (the report does not document this dataset's inventory, or only as a result), return `found` = false and say why in `reason`.
+4. `reason` names the caption(s) you chose and why.
+
+Return only the JSON object described by the schema.

@@ -1,0 +1,202 @@
+You are locating the inventory table of one dataset inside a life-cycle-inventory report.
+
+Dataset: `Electricity, low voltage, production from hard coal, at grid` [CH], 1 kWh, BAFU category energy supply, kbob recommendation / electricity, delivered via network.
+Metadata: includedProcesses: Included are the electricity production in 0, the transmission network as well as direct SF6-emissions to air. Electricity losses during low-voltage transmission and transformation from medium-voltage are accounted for. · technology: Average technology used to distribute electricity. Includes underground and overhead lines, as well as air- and SF6-insulated medium-to-low voltage switching stations. Electricity production according · comment: This dataset describes the transformation from medium to low voltage as well as the distribution of electricity at low voltage.;
+UUID: 02fd8be4-a33b-3cb5-a1ca-40bcbddb251a
+
+Report: `2007 - Electricy mix and grid - Frischknecht.pdf` (143 PDF pages). Below is every table and figure caption found in it, with the PDF page it appears on (not the printed page number). The report may be in German, French or English; the dataset name is English — match on meaning (e.g. "gebrannter Ölschiefer" = burnt shale, "Gipsfaserplatte" = gypsum fibre board).
+
+- p.12: Tab. 2.1: Strommodelle in Ökobilanzen; in Ménard et al. (1998) diskutierte Strommodelle
+- p.13: Fig. 2.1: Strommodelle in Ökobilanzen; die Graphiken repräsentieren Jahresdurchschnittswerte, in Anlehnung an
+- p.18: Tab. 3.1: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.19: Tab. 3.2: Erzeugungsmix Österreich 2004, ab Klemme Kraftwerk
+- p.20: Tab. 3.3: Versorgungsmix Österreich 2004, ab Klemme Kraftwerk
+- p.20: Tab. 3.4: Stromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungsmix in Bosnien
+- p.21: Tab. 3.5: Erzeugungsmix Bosnien Herzegowina 2004, ab Klemme Kraftwerk
+- p.21: Tab. 3.6: Versorgungsmix Bosnien Herzegowina 2004, ab Klemme Kraftwerk
+- p.22: Tab. 3.7: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.23: Tab. 3.8: Erzeugungsmix Belgien 2004, ab Klemme Kraftwerk
+- p.23: Tab. 3.9: Versorgungsmix Belgien 2004, ab Klemme Kraftwerk St
+- p.24: Tab. 3.10: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.24: Tab. 3.8 und Tab. 3.9 gezeigt. Bulgarische Kernkraftwerke werden mangels spezifischer Daten als
+- p.25: Tab. 3.11: Erzeugungsmix Bulgarien 2004, ab Klemme Kraftwerk
+- p.25: Tab. 3.12: Versorgungsmix Bulgarien 2004, ab Klemme Kraftwerk
+- p.26: Tab. 3.13 Übersicht des in der Schweiz produzierten, zertifzierten und gehandelten Stromes, Quellen: angegeben
+- p.27: Tab. 3.14: Nettostromproduktion sowie zertifzierte Stromverkäufe und Importe in der Schweiz im Jahre 2004; daraus
+- p.28: Tab. 3.15: Erzeugungsmix Schweiz 2004, ab Klemme Kraftwerk
+- p.28: Tab. 3.16: Versorgungsmix Schweiz 2004, ab Klemme Kraftwerk
+- p.29: Tab. 3.17: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.29: Tab. 3.18: Erzeugungsmix Serbien und Montenegro 2004, ab Klemme Kraftwerk
+- p.30: Tab. 3.19: Versorgungsmix Serbien und Montenegro 2004, ab Klemme Kraftwerk
+- p.31: Tab. 3.20: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.31: Tab. 3.21: Erzeugungsmix Tschechien 2005, ab Klemme Kraftwerk
+- p.32: Tab. 3.22: Versorgungsmix Tschechien 2005, ab Klemme Kraftwerk
+- p.33: Tab. 3.23: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.33: Tab. 3.24 und Tab. 3.25 gezeigt. Die Stromproduktion aus Heizöl S und EL, sowie aus Kokerei und
+- p.34: Tab. 3.24: Erzeugungsmix Deutschland 2004, ab Klemme Kraftwerk
+- p.34: Tab. 3.25: Versorgungsmix Deutschland 2004, ab Klemme Kraftwerk Uncertainty
+- p.35: Tab. 3.26: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.36: Tab. 3.27: Erzeugungsmix Spanien 2004, ab Klemme Kraftwerk
+- p.36: Tab. 3.28: Versorgungsmix Spanien 2004, ab Klemme Kraftwerk
+- p.37: Tab. 3.29: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.37: Tab. 3.30 und Tab. 3.31 gezeigt.
+- p.38: Tab. 3.30: Erzeugungsmix Frankreich 2004, ab Klemme Kraftwerk
+- p.38: Tab. 3.31: Versorgungsmix Frankreich 2004, ab Klemme Kraftwerk
+- p.39: Tab. 3.32: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.39: Tab. 3.33 und Tab. 3.34 gezeigt.
+- p.39: Tab. 3.33: Erzeugungsmix Griechenland 2004, ab Klemme Kraftwerk
+- p.40: Tab. 3.34: Versorgungsmix Griechenland 2000, ab Klemme Kraftwerk
+- p.41: Tab. 3.35: Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungsmix in Kroa-
+- p.41: Tab. 3.36 und Tab. 3.37 gezeigt.
+- p.41: Tab. 3.36: Erzeugungsmix Kroatien 2004, ab Klemme Kraftwerk
+- p.42: Tab. 3.37: Versorgungsmix Kroatien 2004, ab Klemme Kraftwerk
+- p.43: Tab. 3.38: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.44: Tab. 3.39: Erzeugungsmix Ungarn 2004, ab Klemme Kraftwerk
+- p.44: Tab. 3.40: Versorgungsmix Ungarn 2004, ab Klemme Kraftwerk
+- p.45: Tab. 3.41: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.46: Tab. 3.42: Erzeugungsmix Italien 2004, ab Klemme Kraftwerk
+- p.46: Tab. 3.43: Versorgungsmix Italien 2004, ab Klemme Kraftwerk
+- p.47: Tab. 3.44: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.47: Tab. 3.45 und Tab. 3.46 gezeigt.
+- p.48: Tab. 3.45: Erzeugungsmix Luxemburg 2004, ab Klemme Kraftwerk
+- p.48: Tab. 3.46: Versorgungsmix Luxemburg 2004, ab Klemme Kraftwerk
+- p.49: Tab. 3.47: Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungsmix in Maze-
+- p.49: Tab. 3.48 und Tab. 3.49 gezeigt.
+- p.49: Tab. 3.48: Erzeugungsmix Mazedonien 2004, ab Klemme Kraftwerk
+- p.49: Tab. 3.49: Versorgungsmix Mazedonien 2004, ab Klemme Kraftwerk
+- p.50: Tab. 3.50: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.50: Tab. 3.51 und Tab. 3.52 gezeigt.
+- p.51: Tab. 3.51: Erzeugungsmix Niederlanden 2004, ab Klemme Kraftwerk
+- p.51: Tab. 3.52: Versorgungsmix Niederlanden 2004, ab Klemme Kraftwerk
+- p.52: Tab. 3.53: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.53: Tab. 3.54: Erzeugungsmix Polen 2004, ab Klemme Kraftwerk
+- p.53: Tab. 3.55: Versorgungsmix Polen 2004, ab Klemme Kraftwerk Uncertainty
+- p.54: Tab. 3.56: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.55: Tab. 3.57: Erzeugungsmix Portugal 2004, ab Klemme Kraftwerk
+- p.55: Tab. 3.58: Versorgungsmix Portugal 2004, ab Klemme Kraftwerk
+- p.56: Tab. 3.59: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.56: Tab. 3.63 und Tab. 3.64 gezeigt.
+- p.56: Tab. 3.60: Erzeugungsmix Rumänien 2004, ab Klemme Kraftwerk
+- p.57: Tab. 3.61: Versorgungsmix Rumänien 2004, ab Klemme Kraftwerk
+- p.58: Tab. 3.62: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.58: Tab. 3.63: Erzeugungsmix Slowenien 2004, ab Klemme Kraftwerk
+- p.59: Tab. 3.64: Versorgungsmix Slowenien 2004, ab Klemme Kraftwerk
+- p.60: Tab. 3.65: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.61: Tab. 3.66: Erzeugungsmix Slowakei 2004, ab Klemme Kraftwerk
+- p.61: Tab. 3.67: Versorgungsmix Slowakei 2004, ab Klemme Kraftwerk Uncertainty
+- p.62: Tab. 3.68: Nettostrom-Produktionsmix im Stromverbund UCTE (Union pour la Coordination du Transport de l'Electrici-
+- p.63: Tab. 3.69: Nettostromproduktion nach verschiedenen Energieträgern im Stromverbund UCTE, basierend auf den in
+- p.64: Tab. 3.70: Erzeugungsmix UCTE 2004, ab Klemme Kraftwerk
+- p.65: Tab. 3.71: Nettostromproduktion und Strom-Produktionsmix im Stromverbund CENTREL 2004, basierend auf den in
+- p.65: Tab. 3.72 Nettostromproduktion nach verschiedenen Energieträgern im ehemaligen Stromverbund CENTREL, basie-
+- p.66: Tab. 3.73: Erzeugungsmix CENTREL 2004, ab Klemme Kraftwerk
+- p.67: Tab. 3.74: Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungsmix in Dä-
+- p.67: Tab. 3.75: Erzeugungsmix Dänemark 2004, ab Klemme Kraftwerk
+- p.68: Tab. 3.76: Versorgungsmix Dänemark 2004, ab Klemme Kraftwerk
+- p.69: Tab. 3.77: Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungsmix in Finn-
+- p.69: Tab. 3.78: Erzeugungsmix Finnland 2004, ab Klemme Kraftwerk
+- p.70: Tab. 3.79: Versorgungsmix Finnland 2004, ab Klemme Kraftwerk
+- p.71: Tab. 3.80: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.72: Tab. 3.81: Erzeugungsmix Norwegen 2004, ab Klemme Kraftwerk
+- p.72: Tab. 3.82: Versorgungsmix Norwegen 2004, ab Klemme Kraftwerk
+- p.73: Tab. 3.83: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.74: Tab. 3.84: Erzeugungsmix Schweden 2004, ab Klemme Kraftwerk
+- p.74: Tab. 3.85: Versorgungsmix Schweden 2004, ab Klemme Kraftwerk
+- p.75: Tab. 3.86: Nettostromproduktion und Strom-Produktionsmix im Stromverbund NORDEL 2004, basierend auf den in
+- p.75: Tab. 3.87 zeigt die gesamte Stromproduktionsmenge der NORDEL-Länder, aufgeschlüsselt nach E-
+- p.75: Tab. 3.87: Nettostromproduktion nach einzelnen Energieträgern im Stromverbund NORDEL 2004, basierend auf den in
+- p.76: Tab. 3.88: Erzeugungsmix NORDEL 2004, ab Klemme Kraftwerk
+- p.77: Tab. 3.89: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.77: Tab. 3.90 und Tab. 3.91 gezeigt.
+- p.77: Tab. 3.90: Erzeugungsmix Grossbritannien 2004, ab Klemme Kraftwerk
+- p.78: Tab. 3.91: Versorgungsmix Grossbritannien 2004, ab Klemme Kraftwerk
+- p.79: Tab. 3.92: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.79: Tab. 3.93: Erzeugungsmix Irland 2004, ab Klemme Kraftwerk
+- p.80: Tab. 3.94: Versorgungsmix Irland 2000, ab Klemme Kraftwerk
+- p.81: Tab. 3.95: Stromproduktion nach einzelnen Energieträgern in Europa, ab Klemme Kraftwerk;
+- p.82: Tab. 3.96: Stromproduktionmix und Anteile der jeweiligen Länden am europäischen Mix 2004
+- p.82: Tab. 3.97 ist die entsprechende Zusammenstellung des Datensatzes dokumentiert.
+- p.83: Tab. 3.97: Versorgungsmix in Europa, ab Klemme Kraftwerk
+- p.85: Tab. 3.98 Gross electricity generation in China 2005
+- p.85: Tab. 3.99 Electricity production and supply mix China 2005, at busbar, in ecoinvent data v2.0
+- p.86: Tab. 3.100: Nettostromproduktion, daraus abgeleiteter Nettoerzeugungs- und –versorgungsmix in Japan 2004,
+- p.87: Tab. 3.101: Versorgungs- und Erzeugungsmix Japan 2004, ab Klemme Kraftwerk
+- p.87: Tab. 3.102: Nach Brasilien exportierende Länder und deren Stromproduktion (OECD/IEA 2006)
+- p.88: Tab. 3.103: Brutto- und Nettostromproduktion sowie Importe; daraus abgeleiteter Nettoerzeugungs- und –versorgungs-
+- p.88: Tab. 3.104: Erzeugungsmix Brasilien 2005, ab Klemme Kraftwerk
+- p.89: Tab. 3.105: Versorgungsmix Brasilien 2005, ab Klemme Kraftwerk
+- p.90: Tab. 3.106: Produktions- und Versorgungsmix USA 2004, ab Klemme Kraftwerk.
+- p.90: Tab. 3.107: Produktionsmix Kanada und Mexiko 2004, ab Klemme Kraftwerk.
+- p.91: Tab. 3.108: Produktionsmix USA 2004, ab Klemme Kraftwerk.
+- p.91: Tab. 3.109: Versorgungsmix USA 2004, ab Klemme Kraftwerk.
+- p.92: Tab. 3.110 zeigt den Strommix für die Schweizerischen Bundesbahnen. Der im ecoinvent Datenbe-
+- p.93: Tab. 3.110: Nettostromproduktion und Zukauf von zertifiziertem Strom durch die SBB im Jahr 2005, Quelle siehe Text
+- p.93: Tab. 3.111: Versorgungsmix Schweizerische Bundesbahnen 2005, ab Klemme Kraftwerk
+- p.94: Tab. 3.112: Erzeugungsmix Aluminiumindustrie 2002, ab Klemme Kraftwerk (EAA 2005)
+- p.96: Tab. 4.1 Modell des schweizerischen Elektrizitätsbezugs auf verschiedenen Spannungsstufen, fett: Werte in ecoin-
+- p.96: Tab. 4.2 Übertragungs- und Verteilverluste im Schweizer Verteilnetz 2004
+- p.97: Fig. 4.1 Modell der Stromverteilung in der Schweiz. Angaben in TWh/a (Landes-Bruttoverbrauch sowie Verluste ent-
+- p.97: Tab. 4.3 Angabe spezifischer Übertragungs- und Verteilverluste für die drei Bezügerkategorien
+- p.98: Tab. 4.4 Durchschnittliche Betriebsdauer für Anlagen des Stromnetzes (Erfahrungswerte)
+- p.98: Tab. 4.5 Installierte Stranglängen gemäss Leitungsstatistik der Schweiz <VSE 1988>. Werte für dieses Projekt sind
+- p.99: Tab. 4.6 Spezifischer Materialverbrauch pro Kabelstrang im Schweizer Verteilnetz, <Brugg 1993> und eigene An-
+- p.99: Tab. 4.7 Materialverbrauch pro Leiter für Freileitungen im Schweizer Verteilnetz <Flossdorf et al. 1982>
+- p.100: Tab. 4.8 Freileitungsmasten (Trag- und Abspannmasten) im Schweizer Verteilnetz. Lebensdauer 40 Jahre, Stahl-
+- p.101: Tab. 4.9 Materialverbrauch für installierte Transformatoren in der Schweiz; fett: für den ecoinvent Datenbestand
+- p.101: Tab. 4.10 gezeigt.
+- p.102: Tab. 4.10 Lagermenge und Emissionen bei der Herstellung und Entsorgung der SF6-Gasisolierten Stromanlagen
+- p.102: Tab. 4.11 Verschiedene Räumlichkeiten für Unterwerke, Transformator-, Verteil- und Schaltstationen. Quelle: <VSE
+- p.103: Tab. 4.12 Materialeinsatz und Verluste für die Verteilung der elektrischen Energie in den Gebäuden der Kleinver-
+- p.103: Tab. 4.14 zusammengefasst. Rund 80 % der Kabel werden ausgegraben und deponiert. Für diese muss
+- p.103: Tab. 4.13 Aushubvolumen beim Bau der installierten Kabelleitungen
+- p.104: Tab. 4.14 Annahmen in Bezug auf die Entsorgung (Recycling und Beseitigung) des eingesetzten Materials (normiert
+- p.105: Tab. 4.15 Flächenbeanspruchung verschiedener Komponenten im schweizerischen Stromnetz; eigene Schätzungen
+- p.106: Tab. 4.16 Materialvektoren der Netze für 30 Jahre (Netzinfrastruktur mit einer längeren bzw. kürzeren Lebensdauer (s.
+- p.106: Tab. 4.17 bis Tab. 4.19 beschreiben die Material-, Flächen- und Energieaufwendungen der Netzinfra-
+- p.107: Tab. 4.17 Sachbilanzdaten für den Datensatz „Übertragungsnetz, Strom, Hochspannung“
+- p.108: Tab. 4.18 Sachbilanzdaten für den Datensatz „Übertragungsnetz, Strom, Mittelspannung“
+- p.109: Tab. 4.19 Sachbilanzdaten für den Datensatz „Übertragungsnetz, Strom, Niederspannung“
+- p.109: Tab. 4.20 zeigt Angaben zum Materialeinsatz und zu den Verlusten für den Ferntransport mit Hoch-
+- p.109: Tab. 4.21 sind eigene Annahmen für den europäischen Ferntransport von Strom zusammengefasst.
+- p.110: Tab. 4.20 Materialverbrauch und Stromverluste für den Ferntransport von Strom mit Hochspannungs-Freileitungen
+- p.111: Tab. 4.21 UCTE Ferntransport von Strom mit Hoch- und Höchstspannungs-Freileitungen: Grundlagedaten für den Da-
+- p.111: Tab. 4.22 beschreibt die Infrastruktur zum Strom-Ferntransport in Europa pro km. Die Daten basieren
+- p.111: Tab. 4.22 Sachbilanzdaten für den Datensatz "Ferntransport-Übertragungsnetz, Strom (UCTE)"
+- p.113: Tab. 4.23 Füllmenge, Emissionen und Emissionsfaktoren des Betriebs in Hoch- und Mittelspannungs-Schaltanlagen,
+- p.114: Tab. 4.24 Zusammenfassung der Eingabedaten für die Datensätze "Strom, Niederspannung, ab Netz", "Strom, Mittel-
+- p.115: Tab. 4.25 Sachbilanzdaten für das Modul " Strom, Hochspannung / Mittelspannung / Niederspannung, ab Netz (CH)"
+- p.116: Tab. 4.26 Bezugsmodell für IEA-Länder von Europa (OECD/IEA 2006, p.107)
+- p.117: Tab. 4.27 Netzverluste europäischer Länder, total und berechnete Verluste für die drei Spannungsebenen
+- p.118: Tab. 4.29 to Tab. 4.31 show the datasets for the three voltage levels in China. The infrastructure re-
+- p.118: Tab. 4.28 Assumptions and calculation of electrficity losses at various voltage levels in China
+- p.118: Tab. 4.29 Electricity high voltage at grid, China 2005, in ecoinvent v2.0
+- p.119: Tab. 4.30 Electricity medium voltage at grid, China 2005, in ecoinvent v2.0.
+- p.119: Tab. 4.31 Electricity low voltage at grid, China 2005, in ecoinvent v2.0.
+- p.120: Tab. 4.32 Verkaufszahlen 2005 der 10 Stromunternehmen aufgeteilt auf die Sektoren (JEPIC 2006) und Abschätzung
+- p.120: Tab. 4.33 Verteilung der Verluste auf die Spannungsebenen im japanischen Stromnetz
+- p.121: Tab. 4.34 Emissionsraten für SF6, Quelle: Ministry of the Environment (2006), Werte für diese Projekt sind fett ge-
+- p.122: Tab. 4.35 Sachbilanzdaten „Stromverteilung in Japan“
+- p.123: Tab. 4.36: Verkaufszahlen 2004 aufgeteilt auf die Sektoren (EPE & MME 2005) und Abschätzung der Aufteilung in
+- p.123: Tab. 4.37 Verteilung der Verluste auf die Spannungsebenen im brasilianischen Stromnetz
+- p.124: Tab. 4.38 Emissionsraten von Hochspannungsschaltanlagen für SF6 in Brasilien
+- p.125: Tab. 4.39 Sachbilanzdaten „Stromverteilung in Brasilien“ für den Versorgungsmix, die Daten für den Produktionsmix
+- p.126: Tab. 4.40 Endverbrauch an Elektrizität auf Hoch-, Mittel- und Niederspannungsniveau im Jahr 2004; Aufteilung auf
+- p.126: Tab. 4.41: Berechnete Verteilung der Verluste auf die Spannungsebenen im US Stromnetz.
+- p.127: Tab. 4.42 Sachbilanzdaten für den Datensatz "Strom, Hochspannung, ab Netz (US).
+- p.127: Tab. 4.43 Sachbilanzdaten für den Datensatz "Strom, Mittelspannung, ab Netz (US).
+- p.127: Tab. 4.44 Sachbilanzdaten für den Datensatz "Strom, Niederspannung, ab Netz (US).
+- p.130: Tab. 5.1 Ausgewählte Resultate der kumulierten Sachbilanz und kumulierter Energieaufwand für die Strombereitstel-
+- p.131: Tab. 5.2 Ausgewählte Resultate der kumulierten Sachbilanz und kumulierter Energieaufwand für die Strombereitstel-
+- p.132: Tab. 5.3 Ausgewählte Resultate der kumulierten Sachbilanz und kumulierter Energieaufwand für die Strombereitstel-
+- p.134: Tab. 5.4 Vergleich ausgewählter Schadstoffe der kumulierten Emissionen des europäischen Stromverbundes UCTE
+- p.134: Tab. 5.5 Ausgewählte Resultate der kumulierten Sachbilanz und kumulierter Energieaufwand für die Strombereitstel-
+- p.134: Tab. 5.6 Ausgewählte Resultate der kumulierten Sachbilanz und kumulierter Energieaufwand für die Strombereitstel-
+- p.135: Tab. 5.7 Ausgewählte Resultate der kumulierten Sachbilanz und kumulierter Energieaufwand für die Strombereitstel-
+
+Rules:
+1. Choose the caption(s) that hold the unit-process inventory of this dataset — inputs, energy, emissions, transport — not impact results, not a diagram. Prefer "Sachbilanz" / "inventory" / "LCI" tables.
+2. Return the PDF page range that covers those tables plus the paragraph introducing them: `first_page`, `last_page` (at most 4 pages). Tables can run onto the next page.
+3. If no caption fits (the report does not document this dataset's inventory, or only as a result), return `found` = false and say why in `reason`.
+4. `reason` names the caption(s) you chose and why.
+
+Return only the JSON object described by the schema.

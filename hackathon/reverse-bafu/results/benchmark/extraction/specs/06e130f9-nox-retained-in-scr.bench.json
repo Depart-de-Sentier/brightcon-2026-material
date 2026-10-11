@@ -1,0 +1,180 @@
+{
+  "target": {
+    "code": "06e130f9-c6ff-366e-901c-418667fb6f46",
+    "name": "NOx retained, in SCR",
+    "location": "GLO"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 9.38 'Bilanzierungsdaten für die Umwandlung von 1 kg NOx in N2', column 'SCR-Abscheidung', per 1 kg NOx; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - Coal - Dones.pdf",
+      "where": "pages 140-141 -> report-p140-141.txt",
+      "note": "report sha256 bf34696094afe13c…, text sha256 86d5928bc5c8ff99…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/06e130f9-c6ff-366e-901c-418667fb6f46/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "f4ce1a1e12adeb7931f736ca78763d141646e714009b7475e76aa22f4d60d3ad",
+      "at": "2026-09-22T21:53:32Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "ef9764fde079d3855a8b39507e0c1ee90df7b1eb94fde2778e7817bbbb95a2c7",
+      "at": "2026-09-22T21:53:33Z"
+    },
+    "gaps_reported_by_model": [
+      "The extra electricity consumption caused by the pressure drop over the catalyst (about 0.35 % of net output) is explicitly booked on the power plant's net efficiency, not on this module.",
+      "The building effort for storage tanks is explicitly booked with the power plant construction, so no infrastructure appears here.",
+      "The production of the catalyst coating is explicitly not inventoried ('Die Produktion der Katalysatorbeschichtung wird nicht weiter bilanziert').",
+      "No N2 or water output is booked, and no N2O side-product."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T21:53:33Z"
+  },
+  "node": {
+    "name": "NOx retained, in SCR, disaggregated",
+    "unit": "kg",
+    "location": "GLO",
+    "comment": "drafted from 2007 - Coal - Dones.pdf pp. 140-141",
+    "inputs": [
+      {
+        "name": "Ammonia, liquid, at regional storehouse",
+        "amount": 0.3,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "0.3 kg NH3 per kg NO2 at a NH3/NO mole ratio of 0.8",
+        "derivation": {
+          "evidence": "report-p140-141.txt",
+          "quote": "                             Ammoniak                       kg/kg NOx                 0.3",
+          "raw_value": 0.3,
+          "raw_unit": "kg",
+          "per": "per kg NOx retained in the SCR",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "ammonia liquid at regional storehouse",
+          "mapping_reason": "Ammonia, liquid, at regional storehouse at RER; the process is a European coal power plant, so RER is preferred over the CH variant.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "461aa0e0-5253-3cda-b22f-4c075152cdb5"
+      },
+      {
+        "name": "Titanium dioxide, production mix, at plant",
+        "amount": 0.025,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "the whole catalyst mass is booked as TiO2 because the other constituents (V2O5, WO3) are not in the database; 25 kg per t NOx",
+        "derivation": {
+          "evidence": "report-p140-141.txt",
+          "quote": "                             TiO2                           kg/kg NOx                0.025",
+          "raw_value": 0.025,
+          "raw_unit": "kg",
+          "per": "per kg NOx retained in the SCR",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "titanium dioxide production mix at plant",
+          "mapping_reason": "The only candidate and the right substance: the report books the whole catalyst mass as TiO2.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "3cfb89cf-7f5e-349d-a0b2-9cae06915f41"
+      },
+      {
+        "name": "Transport, freight, rail",
+        "amount": 0.06,
+        "unit": "ton kilometer",
+        "location": "RER",
+        "note": "200 km rail for the ammonia",
+        "derivation": {
+          "evidence": "report-p140-141.txt",
+          "quote": "                             Transport Bahn                tkm/kg NOx                 0.06",
+          "raw_value": 0.06,
+          "raw_unit": "tkm",
+          "per": "per kg NOx retained in the SCR",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "Generic rail freight at RER in ton-kilometres; the 'electricity only' and CH shunting variants are narrower or the wrong geography.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "aacc6120-0e68-3835-8303-5ae37d62c030"
+      },
+      {
+        "name": "Disposal, hazardous waste, 0% water, to underground deposit",
+        "amount": 0.025,
+        "unit": "kilogram",
+        "location": "DE",
+        "note": "spent catalyst, treated as hazardous waste to landfill",
+        "derivation": {
+          "evidence": "report-p140-141.txt",
+          "quote": "                             Sonderabfall in Deponie*       kg/kg NOx                0.025",
+          "raw_value": 0.025,
+          "raw_unit": "kg",
+          "per": "per kg NOx retained in the SCR",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "disposal hazardous waste underground deposit",
+          "mapping_reason": "'Disposal, hazardous waste, 0% water, to underground deposit' is the hazardous-waste landfill the report means for the spent catalyst; candidate 1 is a silicon-wafer-specific waste.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "6f8566eb-457a-4589-b974-75b0846cb086"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Ammonia",
+        "category": "emissions",
+        "amount": 0.003,
+        "unit": "kilogram",
+        "note": "NH3 slip, about 1 kg/TJ at a NH3/NOx mole ratio of 0.8",
+        "derivation": {
+          "evidence": "report-p140-141.txt",
+          "quote": "                             NH3 p (in Luft)                kg/kg NOx                0.003",
+          "raw_value": 0.003,
+          "raw_unit": "kg",
+          "per": "per kg NOx retained in the SCR",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Ammonia released to air - the NH3 slip; candidate 1 is an acetaldehyde adduct and candidate 2 the soil compartment.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-a2a9-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": []
+  }
+}

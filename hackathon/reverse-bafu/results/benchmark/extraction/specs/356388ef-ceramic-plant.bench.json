@@ -1,0 +1,187 @@
+{
+  "target": {
+    "code": "356388ef-8f73-3766-9eac-8ef6fdde9329",
+    "name": "Ceramic plant",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Fig. 4.3 'Flows for \"ceramic plant\"', per 1 unit of ceramic plant (life time 50 a, production volume 5'000'000 kg/a); allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI building products - Kellenberger.pdf",
+      "where": "pages 213-214 -> report-p213-214.txt",
+      "note": "report sha256 07faa39bab6942a9…, text sha256 0d31bb2f67a79b10…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/356388ef-8f73-3766-9eac-8ef6fdde9329/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "ec8a5d6ae2f52398cb04b1ce4ea2e4efa476c258ab3a443ea0505e837afec8ed",
+      "at": "2026-09-22T12:20:51Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "97b40a031052fc7537f66198f535196dcf3ae4e4dafe81e125d02a95f374f35f",
+      "at": "2026-09-22T12:20:52Z"
+    },
+    "gaps_reported_by_model": [
+      "The excerpt's first page is Fig. 4.2 (cont.), the flows of 'ceramic tiles, at regional storage' - a different dataset - so none of its waste water, waste, dust or waste heat lines belong to the plant.",
+      "No disposal of the buildings is inventoried, only the machines going to recycling, and that line carries no ecoinvent module.",
+      "The database comment says a life time of 50 years for buildings and 25 years for machines and an output of 5'000 t/a; the figure only states 50 a and 5'000'000 kg/a."
+    ],
+    "skipped_items": [
+      "Transformation, from unknown: no flow chosen (The keyword search returned no candidate at all for this flow, so nothing can be chosen; EF 3.1 carries land use under differently worded names, and the line is reported as missing.)",
+      "Transformation, to industrial area, vegetation: no flow chosen (The keyword search returned no candidate at all for this flow, so nothing can be chosen; EF 3.1 carries land use under differently worded names, and the line is reported as missing.)",
+      "Transformation, to industrial area, built up: no flow chosen (The keyword search returned no candidate at all for this flow, so nothing can be chosen; EF 3.1 carries land use under differently worded names, and the line is reported as missing.)",
+      "Occupation, industrial area, vegetation: no flow chosen (The keyword search returned no candidate at all for this flow, so nothing can be chosen; EF 3.1 carries land use under differently worded names, and the line is reported as missing.)",
+      "Occupation, industrial area, built up: no flow chosen (The keyword search returned no candidate at all for this flow, so nothing can be chosen; EF 3.1 carries land use under differently worded names, and the line is reported as missing.)",
+      "machines to recycling: ignore — an output of the same 1.68E+05 kg of machines going to recycling; no ecoinvent module name is given in the 'Modul name in ecoinvent' column, so the report does not inventory it",
+      "ceramic plant: product — the reference product; life time 50 a, production volume 5'000'000 kg/a"
+    ],
+    "assembled_at": "2026-09-22T12:20:52Z"
+  },
+  "node": {
+    "name": "Ceramic plant, disaggregated",
+    "unit": "p",
+    "location": "CH",
+    "comment": "drafted from 2007 - LCI building products - Kellenberger.pdf pp. 213-214",
+    "inputs": [
+      {
+        "name": "Building, hall",
+        "amount": 29500.0,
+        "unit": "square meter",
+        "location": "CH",
+        "note": "value 2.95E+04 m2 printed on the same table row, location CH, infrastructure Yes; assumption based on ÖSPAG (2002)",
+        "derivation": {
+          "evidence": "report-p213-214.txt",
+          "quote": "      building hall     Î                                                                                        construction                                                                                    assumption, based",
+          "raw_value": 29500.0,
+          "raw_unit": "m2",
+          "per": "per unit ceramic plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "building hall",
+          "mapping_reason": "The plain 'Building, hall' matches the report's unspecified 'building hall'; the wood and steel construction variants fix a construction type the excerpt does not state.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "949cba80-fd0f-3f96-9d04-0835f9b93dbd"
+      },
+      {
+        "name": "Building, multi-storey",
+        "amount": 26300.0,
+        "unit": "cubic meter",
+        "location": "RER",
+        "note": "assumption based on ÖSPAG (2002)",
+        "derivation": {
+          "evidence": "report-p213-214.txt",
+          "quote": "                        Î                                                                                                        buildings        Yes    RER    building, multi-storey          2.63E+04   m3                          1     3.03   (3,3,1,3,1,4,9)",
+          "raw_value": 26300.0,
+          "raw_unit": "m3",
+          "per": "per unit ceramic plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "building multi-storey",
+          "mapping_reason": "Exact name, location and unit (cubic metre) match; every other candidate is a photovoltaic facade installation.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "552ee3f6-4f6a-3b85-a72c-5707a3b0f9c7"
+      },
+      {
+        "name": "Industrial machine, heavy, unspecified, at plant",
+        "amount": 168000.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "machine weight of the plant, an assumption",
+        "derivation": {
+          "evidence": "report-p213-214.txt",
+          "quote": "      machines          Î                                                                                                        machinery        Yes    RER                                    1.68E+05   kg     assumption           1     3.23",
+          "raw_value": 168000.0,
+          "raw_unit": "kg",
+          "per": "per unit ceramic plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "industrial machine heavy unspecified",
+          "mapping_reason": "The only candidate and an exact name and location match for the machinery of the plant.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "5906ff1f-2cd1-3951-9bfc-abd0cdbf8c75"
+      }
+    ],
+    "emissions": [],
+    "resources": [
+      {
+        "name": "To Traffic Area, Road Network ",
+        "category": "land use",
+        "amount": 8200.0,
+        "unit": "square meter",
+        "note": "paved parking lot",
+        "derivation": {
+          "evidence": "report-p213-214.txt",
+          "quote": "      paved parking     Î                                                                                        resource       land                                                           8.20E+03   m2     ÖSPAG (2002)         1     2.03   (3,3,1,3,1,4,8)",
+          "raw_value": 8200.0,
+          "raw_unit": "m2",
+          "per": "per unit ceramic plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "A transformation TO traffic area, road network in square metres, matching both the direction and the unit of the table's 8.20E+03 m2; 'From Traffic Area' is the opposite direction, the occupation flow is in square metre-years, and the rail/road embankment is a different land class.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "4a227586-270a-4b07-9f15-79da640bec83",
+        "database": "ef-3.1-biosphere"
+      },
+      {
+        "name": "Traffic Area, Road Network ",
+        "category": "land use",
+        "amount": 410000.0,
+        "unit": "m2a",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p213-214.txt",
+          "quote": "      paved parking     Î                                                                                        resource       land                                                           4.10E+05   m2a    ÖSPAG (2002)         1     1.54   (3,3,1,3,1,4,7)",
+          "raw_value": 410000.0,
+          "raw_unit": "m2a",
+          "per": "per unit ceramic plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "The occupation flow in square metre-years, matching the table's 4.10E+05 m2a; the 'To'/'From' entries are transformations in square metres and the rail/road embankment is a different land class.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "92f1554f-121d-4f07-a1bb-b07cd2f7c2f5",
+        "database": "ef-3.1-biosphere"
+      }
+    ]
+  }
+}

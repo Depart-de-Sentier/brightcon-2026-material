@@ -1,0 +1,732 @@
+You are locating the inventory table of one dataset inside a life-cycle-inventory report.
+
+Dataset: `Manganese, at regional storage` [RER], 1 kg, BAFU category metals / non ferro.
+Metadata: includedProcesses: The module production by electrolysis from ore and by electrothermic process from ferromanganese and slag. Transportation to Europe is only partially considered. · technology: The metal is won by electrolysis (assumption: 25%) and electrothermic processes (assumption: 75%). No detailed information available, mainly based on rough estimates. · comment: The module describes the consumption of manganese metal in Europe in 1994. It is designed solely for the use of the metal in special applications like sputtering or as alloying element. This module is explicitly not to be used as alloying element in bulk iron or steel industry. It does not consider 
+
+Report: `2009 - LCI metals - Classen.pdf` (926 PDF pages). Below is every table and figure caption found in it, with the PDF page it appears on (not the printed page number). The report may be in German, French or English; the dataset name is English — match on meaning (e.g. "gebrannter Ölschiefer" = burnt shale, "Gipsfaserplatte" = gypsum fibre board).
+
+- p.10: Fig. 1.1 Simplified overview of the processes for the aluminium production
+- p.12: Tab. 2.1 World wide bauxite and aluminium oxide production (Mori & Adelhardt (1998), p. 20)
+- p.12: Tab. 2.2 Electricity distributed by energy source for the production of primary aluminium for the European market
+- p.14: Tab. 3.1 Product Specification for aluminium hydroxide
+- p.15: Tab. 3.2 Product Specification for aluminium oxide
+- p.15: Tab. 3.3 Physical properties of Aluminium
+- p.16: Tab. 4.1 Uses of aluminium precursors other than aluminium production
+- p.16: Fig. 4.1 Markets for aluminium products in Europe (Estimation EAA)
+- p.16: Fig. 4.2 Market for recycled aluminium in Europe in 2000 (estimation EAA)
+- p.19: Tab. 5.1 Meta information for the bauxite mining processes
+- p.20: Fig. 5.1 Flows for "bauxite, at mine" and their representation in the ecoinvent database: The percentages given in the resource name are valid for th
+- p.21: Fig. 5.1 Flows for "bauxite, at mine" and their representation in the ecoinvent database (cont.)
+- p.22: Fig. 5.2 Flows for "mine, bauxite" and their representation in the ecoinvent database
+- p.23: Fig. 5.3 Flows for "recultivation bauxite mine" and their representation in the ecoinvent database
+- p.25: Fig. 5.4 Bayer process: Extraction of aluminium hydroxide from bauxite and calcination to aluminium oxide (alu-
+- p.25: Fig. 5.5 Aerial view of the Aluminium Oxid Stade GmbH (AOS) alumina refinery
+- p.28: Tab. 5.2 Composition of red mud in this project
+- p.28: Tab. 5.3 Estimated infrastructure for aluminium hydroxide plant
+- p.29: Tab. 5.4 Estimated infrastructure for aluminium oxide plant
+- p.30: Tab. 5.5 Meta information for the aluminium hydroxide and aluminium oxide processes
+- p.31: Tab. 5.5 Meta information for the aluminium hydroxide and aluminium oxide processes (cont.)
+- p.32: Fig. 5.6 Flows for "aluminium hydroxide, at plant" and their representation in the ecoinvent database
+- p.33: Fig. 5.6 Flows for "aluminium hydroxide, at plant" and their representation in the ecoinvent database (cont.)
+- p.35: Fig. 5.7 Flows for "aluminium hydroxide, plant" and their representation in the ecoinvent database
+- p.36: Fig. 5.7 Flows for "aluminium hydroxide, plant" and their representation in the ecoinvent database (cont.)
+- p.37: Fig. 5.8 Flows for "aluminium oxide, at plant" and their representation in the ecoinvent database
+- p.38: Fig. 5.9 Flows for "aluminium oxide, plant" and their representation in the ecoinvent database
+- p.40: Fig. 5.10 Hall-Héroult cell with prebaked anode: a) carbon anode b) electrolyte, c) insulation, d) carbon lining, e) cur-
+- p.41: Tab. 5.6 Infrastructure data for a medium sized electrolysis plant with cast house (Soral)
+- p.42: Tab. 5.8 stems from the environment agency of the UK 12 . Disposal in a residual material landfill is as-
+- p.42: Tab. 5.7 Composition of spent pot liner
+- p.42: Tab. 5.8 Composition of dross
+- p.43: Tab. 5.9 Composition of filter dust
+- p.43: Tab. 5.10 Estimated infrastructure for anode plant
+- p.43: Tab. 5.11 Estimated infrastructure for aluminium electrolysis plant
+- p.44: Tab. 5.12 Estimated infrastructure for aluminium casting plant
+- p.45: Tab. 5.13 Meta information for the aluminium electrolysis and casting processes
+- p.46: Tab. 5.13 Meta information for the aluminium electrolysis and casting processes (cont.)
+- p.47: Fig. 5.11 Flows for "anode, aluminium electrolysis" and their representation in the ecoinvent database
+- p.48: Fig. 5.11 Flows for "anode, aluminium electrolysis" and their representation in the ecoinvent database (cont.)
+- p.50: Fig. 5.12 Flows for "anode, plant" and their representation in the ecoinvent database
+- p.51: Fig. 5.13 Flows for "cathode, aluminium electrolysis" and their representation in the ecoinvent database
+- p.52: Fig. 5.13 Flows for "cathode, aluminium electrolysis" and their representation in the ecoinvent database (cont.)
+- p.54: Fig. 5.14 Flows for " aluminium, primary, liquid, at plant" and their representation in the ecoinvent database
+- p.55: Fig. 5.14 Flows for " aluminium, primary, liquid, at plant" and their representation in the ecoinvent database (cont.)
+- p.57: Fig. 5.15 Flows for "aluminium electrolysis, plant" and their representation in the ecoinvent database
+- p.58: Fig. 5.16 Flows for "aluminium, primary, at plant" and their representation in the ecoinvent database
+- p.59: Fig. 5.16 Flows for "aluminium, primary, at plant" and their representation in the ecoinvent database (cont.)
+- p.60: Fig. 5.17 Flows for "aluminium casting, plant" and their representation in the ecoinvent database
+- p.62: Tab. 5.14 Estimated infrastructure for aluminium melting furnace
+- p.62: Tab. 5.15 Estimated infrastructure for scrap preparation plant
+- p.63: Tab. 5.16 Meta information for the secondary aluminium production processes
+- p.64: Tab. 5.16 Meta information for the secondary aluminium production processes (cont.)
+- p.65: Fig. 5.18 Flows for "aluminium scrap, new, at plant" and their representation in the ecoinvent database
+- p.65: Fig. 5.19 Flows for "aluminium, secondary, from new scrap, at plant" and their representation in the ecoinvent database
+- p.66: Fig. 5.19 Flows for "aluminium, secondary, from new scrap, at plant" and their representation in the ecoinvent database (cont.)
+- p.67: Fig. 5.20 Flows for "aluminium melting furnace" and their representation in the ecoinvent database
+- p.68: Fig. 5.21 Flows for "aluminium scrap, old, at plant" and their representation in the ecoinvent database
+- p.69: Fig. 5.21 Flows for "aluminium scrap, old, at plant" and their representation in the ecoinvent database (cont.)
+- p.70: Fig. 5.22 Flows for "aluminium, secondary, from old scrap, at plant" and their representation in the ecoinvent database
+- p.71: Fig. 5.22 Flows for "aluminium, secondary, from old scrap, at plant" and their representation in the ecoinvent database (cont.)
+- p.72: Fig. 5.23 Flows for "scrap preparation plant" and their representation in the ecoinvent database
+- p.73: Tab. 5.17 Production mix of "average" aluminium alloys
+- p.74: Tab. 5.18 Meta information for the aluminium production mixes
+- p.75: Fig. 5.24 Flows for "aluminium, production mix, cast alloy, at plant" and their representation in the ecoinvent database
+- p.75: Fig. 5.25 Flows for "aluminium, production mix, wrought alloy, at plant" and their representation in the ecoinvent database
+- p.76: Fig. 5.26 Flows for "aluminium, production mix, at plant" and their representation in the ecoinvent database
+- p.86: Fig. 1.1 Overview of cast iron and steel production (The grey materials and processes are of minor relevance and
+- p.87: Tab. 2.1 World wide iron ore production in 1996 (Roth et al. (1999), appendix 2 & 4)
+- p.89: Tab. 3.1 Limiting concentration of elements in unalloyed steel according to EN 10 020 Kalla & Kalwa (1997)
+- p.90: Tab. 3.2 Composition of low-alloyed steel
+- p.92: Fig. 5.1 Overview of cast iron and steel production (The grey materials and processes are of minor relevance and
+- p.94: Tab. 5.1 Meta information for the iron ore mining and beneficiation processes
+- p.95: Fig. 5.2 Flows for "iron ore, 46% Fe, at mine" and its representation in the ecoinvent database
+- p.96: Fig. 5.3 Flows for "mine, iron" and its representation in the ecoinvent database
+- p.97: Fig. 5.4 Flows for "recultivation iron mine" and its representation in the ecoinvent database
+- p.98: Fig. 5.5 Flows for "iron ore, 65% Fe, at beneficiation" and its representation in the ecoinvent database
+- p.99: Fig. 5.5 Flows for "iron ore, 65% Fe, at beneficiation" and its representation in the ecoinvent database (cont.)
+- p.102: Tab. 5.2 Transport masses and distances for iron ore and pellets
+- p.103: Tab. 5.3 Meta information for the iron ore agglomeration processes
+- p.104: Fig. 5.6 Flows for "sinter, iron, at plant" and its representation in the ecoinvent database
+- p.105: Fig. 5.6 Flows for "sinter, iron, at plant" and its representation in the ecoinvent database (cont.)
+- p.106: Fig. 5.7 Flows for "pellets, iron, at plant" and its representation in the ecoinvent database
+- p.107: Fig. 5.7 Flows for "pellets, iron, at plant" and its representation in the ecoinvent database (cont.)
+- p.108: Fig. 5.8 Simplified scheme of a blast furnace (IPPC (2000))
+- p.109: Tab. 5.4 Assumptions for infrastructure of blast furnaces
+- p.109: Tab. 5.5 Infrastructure of the blast furnace
+- p.110: Tab. 5.6 C-balance of blast furnace process
+- p.111: Tab. 5.7 Typical composition in [% (w/w)] of sludge from BF gas treatment (IPPC (2000), Tab. 7.6)
+- p.111: Tab. 5.8 Waste water composition from pig iron production (IPPC (2000), Tab 7.8)
+- p.112: Tab. 5.9 Meta information for the blast furnace processes
+- p.113: Fig. 5.9 Flows for "pig iron, at plant" and its representation in the ecoinvent database
+- p.115: Fig. 5.9 Flows for "pig iron, at plant" and its representation in the ecoinvent database (cont.)
+- p.115: Fig. 5.10 Flows for "blast furnace" and its representation in the ecoinvent database
+- p.116: Fig. 5.10 Flows for "blast furnace" and its representation in the ecoinvent database (cont.)
+- p.118: Tab. 5.10 Meta information for the iron scrap collection and sorting processes
+- p.119: Fig. 5.11 Flows for "iron scrap" and its representation in the ecoinvent database
+- p.120: Fig. 5.12 Individual steps in BOF steel making (IPPC (2000))
+- p.121: Tab. 5.11 Assumptions for infrastructure of BOF converters
+- p.122: Tab. 5.12 Infrastructure of BOF converters
+- p.123: Tab. 5.13 Chemical composition of slag from pig iron desulphurisation [% (w/w)] (IPPC (2000), Tab.8.3)
+- p.123: Tab. 5.14 Chemical composition of BOF slag [% (w/w)] (IPPC (2000), Tab.8.8)
+- p.124: Tab. 5.15 Chemical composition of the BOF dust fraction that is landfilled [% (w/w)]. Data not used in this project (cf
+- p.124: Tab. 5.16. ecoinvent v2.1 report No. 10 - 39 -
+- p.125: Tab. 5.16 Chemical composition of the average BOF slag to landfill [% (w/w)]
+- p.126: Tab. 5.17 Meta information for the BOF steel production processes
+- p.127: Fig. 5.13 Flows for "steel, converter, unalloyed, at plant" and its representation in the ecoinvent database
+- p.128: Fig. 5.13 Flows for "steel, converter, unalloyed, at plant" and its representation in the ecoinvent database (cont.)
+- p.130: Fig. 5.14 Flows for "steel, converter, low-alloyed, at plant" and its representation in the ecoinvent database
+- p.131: Fig. 5.14 Flows for "steel, converter, low-alloyed, at plant" and its representation in the ecoinvent database (cont.)
+- p.133: Fig. 5.15 Flows for "steel, converter, chromium steel 18/8, at plant" and its representation in the ecoinvent database
+- p.134: Fig. 5.15 Flows for "steel, converter, chromium steel 18/8, at plant" and its representation in the ecoinvent database (cont.)
+- p.136: Fig. 5.16 Flows for "blast oxygen furnace converter" and its representation in the ecoinvent database
+- p.138: Tab. 5.18 Assumptions for infrastructure of EAF converters
+- p.138: Tab. 5.19 Infrastructure of EAF converters
+- p.139: Tab. 5.20 Chemical composition of slag from EAF steel making [% (w/w)]
+- p.140: Tab. 5.21 Chemical composition of dust from EAF steel making [% (w/w)]
+- p.141: Tab. 5.22 Meta information for the EAF steel production processes
+- p.142: Fig. 5.17 Flows for "steel, electric, and- and low-alloyed, at plant" and its representation in the ecoinvent database
+- p.143: Fig. 5.17 Flows for "steel, electric, and- and low-alloyed, at plant" and its representation in the ecoinvent database (cont.)
+- p.145: Fig. 5.18 Flows for "steel, electric, chromium steel 18/8, at plant" and its representation in the ecoinvent database
+- p.146: Fig. 5.18 Flows for "steel, electric, chromium steel 18/8, at plant" and its representation in the ecoinvent database (cont.)
+- p.148: Fig. 5.19 Flows for "electric arc furnace converter" and its representation in the ecoinvent database
+- p.150: Tab. 5.23 Meta information for the cast iron production processes
+- p.151: Fig. 5.20 Flows for "cast iron, at plant" and its representation in the ecoinvent database
+- p.152: Fig. 5.20 Flows for "cast iron, at plant" and its representation in the ecoinvent database (cont.)
+- p.155: Tab. 5.24 Meta information for the consumer steels
+- p.156: Fig. 5.21 Flows for "reinforcing steel, at plant" and its representation in the ecoinvent database
+- p.156: Fig. 5.22 Flows for "steel, low-alloyed, at plant" and its representation in the ecoinvent database
+- p.157: Fig. 5.23 Flows for "chromium steel 18/8, at plant" and its representation in the ecoinvent database
+- p.168: Fig. 2.1 Development of copper ore grade in U. S. since 1880 (Ayres et al. (2002)).
+- p.169: Tab. 2.1 Resources. The most important copper minerals (Fabian (1997)).
+- p.170: Tab. 2.2 Occurrence. Typical copper contents of natural materials (Fabian (1997)).
+- p.170: Tab. 2.3 Mine production and reserves of copper in 2001. “Reserves” is referred to as “the part of the reserve base
+- p.171: Tab. 2.4 World production of copper, silver and tellurium in tonnes per year, tpa. Data compiled after USGS (2003)
+- p.171: Fig. 2.2 History of copper production in logarithmic scale (Ayres et al. (2002)).
+- p.173: Tab. 2.5 Global reserves of molybdenum. Total recoverable reserves from primary production and as by-product
+- p.173: Tab. 2.6 Sources of copper waste for Europe in 1994 (Bertram et al. (2002)).
+- p.176: Tab. 3.1 Properties of molybdenum trioxide and dioxide and molybdenum disulphide (Sebenik et al. (1997))
+- p.177: Fig. 4.1 Copper “semis” production. An illustration of the transformation of copper from pure metal fabrication
+- p.178: Tab. 4.1 Principal end-uses of copper in 1990. RT is the average residence time of copper in the respective use; S/W
+- p.178: Fig. 4.2 Copper foundry production, imports, exports & apparent consumption in Germany, 1913 - 1998 (3 year mov-
+- p.179: Tab. 4.2 Uses of molybdenum and molybdenum alloys (Sebenik et al. (1997)).
+- p.180: Fig. 5.1 Schematic representation of the coupled production of copper and molybdenite in ecoinvent. RNA, RLA,
+- p.181: Fig. 5.2 Schematic representation of the consumer mix of copper in RER in ecoinvent. As a proxy for Europe, the
+- p.182: Tab. 5.1 Ecoinvent meta information for the processes for the production of primary copper and primary molybde-
+- p.189: Tab. 5.2 Assumptions for the infrastructure used in underground mining exploitation. As lifetime ten years are esti-
+- p.192: Tab. 5.3 Composition of effluents from mining activities; values are taken from total emissions to water from base
+- p.192: Tab. 5.4 Consumption of reagents in base metal mineral processing plants. Data taken from (IPPC (2002)).
+- p.193: Tab. 5.5 Emissions and input due to chemical use in beneficiation in g per tonne treated ore. The values are the ones
+- p.193: Tab. 5.6 Emissions to air resulting from mining and beneficiation. Values for total dust emission are taken from NPI
+- p.194: Fig. 5.3 Flows for “Mining of copper-ore, GLO – part mining” and its representation in the ecoinvent database. Values correspond to the functional un
+- p.195: Fig. 5.4 Flows for “Mining of copper-ore, GLO – part mining” and its representation in the ecoinvent database. Values correspond to the functional un
+- p.196: Tab. 5.7 Overview of the shares of different production processes in different regions, in million tonnes, and the
+- p.200: Tab. 5.8 Pyrometallurgy of copper. Background data per tonne of copper produced for the different regions covered
+- p.201: Tab. 5.9 Metal emission factors to air for primary copper production (EEA (1999)). Chosen value is the average of the
+- p.201: Tab. 5.10 Emissions to air per tonne copper. Data was taken from similar processes in nickel (A) and copper (B) met-
+- p.202: Tab. 5.11 Composition of different wastewater effluents after treatment. A simple average is chosen. Data from Euro-
+- p.203: Fig. 5.5 Flows for “copper, primary, at refinery, GLO – part pre-treatment” and its representation in the ecoinvent database. Values correspond to th
+- p.204: Fig. 5.6 Flows for “copper, primary, at refinery, GLO – part reduction” and its representation in the ecoinvent database. Values correspond to the fu
+- p.205: Fig. 5.7 Flows for “copper, primary, at refinery, GLO – part refining” and its representation in the ecoinvent database. Values correspond to the fun
+- p.209: Fig. 5.8 Flows for “copper, SX-EW, at refinery – part mining” and its representation in the ecoinvent database. Values correspond to the functional u
+- p.210: Fig. 5.9 Flows for “copper, SX-EW, at refinery – part metallurgy” and its representation in the ecoinvent database. Values correspond to the function
+- p.213: Fig. 5.10 Secondary copper production. Process scheme after Rentz et al. (1999). Scheme relates to the plant “Hüt-
+- p.213: Tab. 5.12 Secondary copper production. Emissions to air from two different sources (EEA (1999) and Rentz et al.
+- p.214: Tab. 5.13 Secondary copper production. Emissions to water according to Rentz et al. (1999) for one big plant (Hüt-
+- p.215: Fig. 5.11 Flows for “copper, secondary, at refinery” (inputs) and its representation in the ecoinvent database. Values correspond to the functional un
+- p.216: Fig. 5.12 Flows for “copper, secondary, at refinery” (outputs) and its representation in the ecoinvent database. Values correspond to the functional u
+- p.217: Tab. 5.14 Import of copper concentrate to Germany in 1994. In the last column values for transport service in tonnes
+- p.218: Tab. 5.15 Import of primary copper (=56% in “copper, at regional storage”) to Germany in 1994. In the last column val-
+- p.218: Tab. 5.16 Copper supply in the European region and the resulting fractions in the supply dataset “copper, at regional
+- p.218: Tab. 5.17 Concentrate imported for the production of primary copper within Europe (Germany being reference region).
+- p.219: Fig. 5.13 Flows for “copper, at regional storage” and its representation in the ecoinvent database. Values correspond to the functional unit of 1 kg c
+- p.221: Tab. 5.18 Calculation of energy consumption for brass and bronze production
+- p.222: Tab. 5.19 Meta information for the production processes of the modelled copper alloys
+- p.223: Tab. 5.19 Meta information for the production processes (cont.)
+- p.224: Fig. 5.14 Flows for "brass, at plant" and its representation in the ecoinvent database
+- p.225: Fig. 5.15 Flows for "bronze, at plant" and its representation in the ecoinvent database
+- p.226: Fig. 5.16 Flows for "brazing solder, cadmium free, at plant" and its representation in the ecoinvent database
+- p.227: Fig. 5.17 Flows for "casting, brass" and its representation in the ecoinvent database
+- p.228: Fig. 5.18 Flows for "casting, bronze" and its representation in the ecoinvent database
+- p.229: Tab. 5.20 Characterisation of different anode slimes. Numbers are in %wt; span relates to reported minimal – maximal
+- p.229: Fig. 5.19 Process layout of the anode slime generation and its relation to other processes in ecoinvent.
+- p.230: Tab. 5.21 Meta information for the dataset anode slime generation, primary copper production.
+- p.231: Tab. 5.22 Production factors for the by-products silver and tellurium from copper production, three years average
+- p.232: Tab. 5.23 Average market price for copper (LME), silver and tellurium in $ per tonne. Data compiled after USGS (2003)
+- p.233: Fig. 5.20 Flows for “anode slime generation, primary copper production” and its representation in the ecoinvent database. Values correspond to the fun
+- p.235: Tab. 5.1 (page 17 ff).
+- p.236: Fig. 5.21 Flows for “molybdenite, at plant” and “molybdenum, at regional storage” and their representation in ecoinvent.
+- p.246: Tab. 2.1 Principal nickel minerals (Kerfoot (1997)).
+- p.247: Tab. 2.2 Composition of some nickel ores after (IPPC (2001)).
+- p.247: Tab. 2.3 Mine production and reserves of nickel in 2001. “Reserves” is referred to as “the part of the reserve base
+- p.249: Tab. 3.1 Some physical properties of pure nickel (Kerfoot (1997)).
+- p.249: Tab. 3.2 Commercial forms of nickel (Kerfoot (1997)).
+- p.250: Tab. 4.1 Production of different nickel products (USGS (2003)).
+- p.250: Fig. 4.1 Uses of nickel in different industries. Source: NiDI , 1996
+- p.251: Fig. 4.2 Application of nickel Source: NiDI , 1996
+- p.252: Tab. 4.2 Some of the more common nickel alloys.
+- p.253: Fig. 5.1 Winning of nickel from ore to application. Two main process chains can be identified, the sulphidic path
+- p.254: Tab. 5.1 Ecoinvent meta information for the processes for the production of Class I nickel and ferronickel.
+- p.255: Tab. 5.1 Ecoinvent meta information for the processes for the production of Class I nickel and ferronickel. (cont.)
+- p.256: Fig. 5.2 Overview over some process possibilities for nickel winning. The chosen process depends on the composi-
+- p.257: Tab. 5.2 Overview over the major process routes in the nickel winning from sulphidic ores. After (Hilbrans & Hinrichs
+- p.260: Tab. 5.3 Infrastructure in underground mining, assumptions used. A lifetime of ten years are estimated, and 5000
+- p.261: Tab. 5.4 Mining & Beneficiation, emissions to water. Composition of effluents from mining activities, values are
+- p.262: Tab. 5.5 Consumption of reagents in base metal mineral processing plants. Data taken from IPPC (2002).
+- p.262: Tab. 5.6 Emissions and input due to chemical use in beneficiation in g per tonne treated ore. The values are the ones
+- p.263: Tab. 5.7 Dust emissions from typical coal strip-mining operations (Anonymous (1998b)). After this table underground
+- p.264: Tab. 5.8 Emissions to air resulting from mining activities per tonne mined ore. Values for total dust emission are
+- p.266: Tab. 5.9 Emissions to air per tonne produced metal. Data was taken from similar processes in nickel (A) and copper
+- p.266: Tab. 5.10 Composition of different wastewater effluents after treatment. A simple average from different reported val-
+- p.268: Fig. 5.3 Flows for the multi-output process “Nickel production” (part mining) and its representation in the ecoinvent database. Values correspond to
+- p.269: Fig. 5.4 Flows for the multi-output process “Nickel production” (part beneficiation) and its representation in the ecoinvent database. Values corresp
+- p.270: Fig. 5.5 Flows for the multi-output process “Nickel production” (part drying/roasting) and its representation in the ecoinvent database. Values corre
+- p.271: Fig. 5.6 Flows for the multi-output process “Nickel production” (part smelting/converting) and its representation in the ecoinvent database. Values c
+- p.272: Fig. 5.7 Flows for the multi-output process “Nickel production” (part sulphuric acid / copper separation) and its representation in the ecoinvent dat
+- p.273: Fig. 5.8 Flows for the multi-output process “Nickel production” (part nickel reduction / purification step) and its representation in the ecoinvent d
+- p.274: Fig. 5.9 Flows for the multi-output process “Nickel production” (part carbonyl and refining) and its representation in the ecoinvent database. Values
+- p.276: Fig. 5.11 and Fig. 5.12. The following paragraphs describe calculations, sources and assumptions cho-
+- p.278: Tab. 5.11 Emissions to air per tonne produced ferronickel. Data was taken as proxy from similar processes in ferro-
+- p.279: Fig. 5.10 Flows for “Ferronickel, part mining” and its representation in the ecoinvent database. The values correspond to the functional unit of the p
+- p.280: Fig. 5.11 Flows for “Ferronickel, part drying, roasting and melting” and its representation in the ecoinvent database. The values correspond to the fu
+- p.281: Fig. 5.12 Flows for “Ferronickel, parts others/transports and refining” and its representation in the ecoinvent database. The values correspond to the
+- p.290: Tab. 2.1 Characteristic metal concentrations in the most important PGM-mining sites. Data from Hochfeld (1997)
+- p.290: Fig. 2.1 PGM-reserves by region. Reserves are defined as at the present time profitably workable deposits. The
+- p.291: Fig. 2.2 Platinum production by country. Bold line represents total supply in tonnes. Grey areas indicate the coun-
+- p.291: Fig. 2.3 Palladium production by country. Bold line represents total supply in tonnes. Grey areas indicate the coun-
+- p.291: Fig. 2.4 Rhodium production by country. Bold line represents total supply in tonnes. Grey areas indicate the coun-
+- p.294: Tab. 3.1 Physical and chemical properties of the platinum group metals.
+- p.295: Tab. 4.1 resumes the use of different PGMs, Fig. 4.1, Fig. 4.2 and Fig. 4.3 show the PGM demand by
+- p.295: Tab. 4.1 Main applications of PGMs. Table taken from Johnson Matthey
+- p.296: Fig. 4.1 Platinum, demand by application in 2001. Values in ounces (1000 troy ounces correspond to 31 kg), data
+- p.296: Fig. 4.2 Palladium, demand by application in 2001. Values in ounces (1000 troy ounces correspond to 31 kg), data
+- p.296: Fig. 4.3 Rhodium, demand by application in 2001. Values in ounces (1000 troy ounces correspond to 31 kg), data
+- p.298: Fig. 5.1 Scheme of the PGM production in ecoinvent.
+- p.299: Tab. 5.1 gives a summary of the values chosen to calculate the allocation factors in the primary pro-
+- p.300: Fig. 5.2 Price development of platinum and palladium in the past ten years. Values in US$ per troy ounce.
+- p.300: Fig. 5.3 Price development of rhodium in the past ten years. Values in US$ per troy ounce.
+- p.301: Fig. 5.4 Price development of nickel in the past ten years. Values in US$ per tonne.
+- p.301: Fig. 5.5 Price development of copper in the past ten years. Values in US$ per tonne.
+- p.301: Tab. 5.1 Assumptions made for allocation in the primary production. Details in the text above.
+- p.302: Tab. 5.2 Resulting factors for allocation based on values shown in Tab. 5.1. These factors allocate the ecological
+- p.302: Fig. 5.8 and Fig. 5.9. An overview over the module’s general information and metadata is given in
+- p.302: Tab. 5.3 Russia (RU) Platinum group Platinum group Europe (RER)
+- p.302: Fig. 5.6 Scheme of the PGM, at regional storage, in ecoinvent.
+- p.303: Tab. 5.3 Ecoinvent meta information for the modules of consumption of platinum, palladium and rhodium.
+- p.304: Tab. 5.4 Demand of secondary and primary PGM. Assessment of the share of the secondary production in the world
+- p.304: Tab. 5.5 Production of primary metal in South Africa and the Russian Federation. Ten year averages chosen from
+- p.305: Fig. 5.7 Flows for “Platinum, at regional storage” and its representation in the ecoinvent database
+- p.306: Fig. 5.8 Flows for “Palladium, at regional storage” and its representation in the ecoinvent database
+- p.307: Fig. 5.9 Flows for “Rhodium, at regional storage” and its representation in the ecoinvent database
+- p.312: Fig. 5.10 Scheme of the multi-output process “platinum group metal production, primary” in Ecoinvent. Its jointly
+- p.313: Tab. 5.6 Ecoinvent meta information for the multi-output processes in the primary production of PGM in Russia and
+- p.316: Tab. 5.9. In Ecoinvent, for particulates differential classes are used adding up to the total dust emis-
+- p.316: Tab. 5.7 Mineral born dust composition depending on rock. Data taken from (NPI (2001)). Values for earth’s crust are
+- p.317: Tab. 5.8 Dust emissions from typical coal strip-mining operations (Anonymous (1998b)). After this table underground
+- p.317: Tab. 5.9 Emissions to air resulting from mining and beneficiation activities per tonne mined ore.
+- p.318: Tab. 5.10 Composition of effluents from mining activities, values are taken from total emissions to water from differ-
+- p.318: Tab. 5.11 Consumption of reagents in base metal mineral processing plants. Data taken from (IPPC (2002)).
+- p.319: Tab. 5.12 Emissions and input due to chemical use in beneficiation in g per tonne treated ore. The values are the ones
+- p.320: Tab. 5.13 Emissions to air per tonne produced metal. Data was taken from similar processes in nickel (A) and copper
+- p.321: Tab. 5.14 Composition of different wastewater effluents after treatment. A simple average from different reported val-
+- p.322: Tab. 5.15 Reported emissions to air and water from 5 large refinery processes. Data taken from IPPC (2001). Annual
+- p.323: Fig. 5.11 Flows for “PGM-Production, primary – Part mining” and their representation in the ecoinvent database. Values in column “Mean value RUS” corr
+- p.324: Tab. 5.10 (4,2,2,3,4,4,33);
+- p.324: Fig. 5.12 Flows for “PGM-Production, primary – Part beneficiation” and their representation in the ecoinvent database. Values in column “Mean value RU
+- p.325: Fig. 5.13 Flows for “PGM-Production, primary – Part metallurgy” and their representation in the ecoinvent database. Values in column “Mean value RU” c
+- p.326: Fig. 5.14 Flows for “PGM-Production, primary – Part separation” and their representation in the ecoinvent database. Values in column “Mean value RU” c
+- p.327: Fig. 5.15 Flows for “PGM-Production, primary – Part refining” and their representation in the ecoinvent database. Values in column “Mean value RU” cor
+- p.330: Tab. 5.16 Ecoinvent meta information for the multi-output processes in the secondary production of PGM in Europe
+- p.331: Fig. 5.16 Flows for “PGM-production, secondary, RER ” and its representation in the ecoinvent database
+- p.340: Tab. 2.1 Mine production and reserves of chromium in 2001. “Reserves” is referred to as “the part of the reserve
+- p.342: Tab. 3.1 Analyses of some chromite ores, metallurgical grade (Downing et al. (1997))
+- p.343: Tab. 3.2 Some physical properties of chromium (Downing et al. (1997)).
+- p.343: Tab. 3.3 Some physical properties of ferrochromium and ferrosilicochromium (Downing et al. (1997)).
+- p.344: Fig. 4.1 The chromium life cycle process from mining to commercial, scheme taken from ICRA’s homepage at
+- p.347: Tab. 4.1 Uses of chromium compounds (Anger et al. (1997))
+- p.348: Fig. 4.2 Annual chromite ore production in 2001.
+- p.348: Fig. 4.3 Annual ferrochromium production in 2001.
+- p.348: Fig. 4.4 Annual production of stainless steel in 2001, the main demand in ferrochromium.
+- p.349: Fig. 5.1 Scheme of the chromium production system considered. The study focuses on the production of high-
+- p.350: Tab. 5.1 Ecoinvent meta information for the processes for the production of chromite and ferrochromium.
+- p.351: Tab. 5.1 Ecoinvent meta information for the processes for the production of chromite and ferrochromium. (cont.)
+- p.353: Tab. 5.2 Assumptions for infrastructure used in underground mining exploration. As lifetime ten years are estimated,
+- p.355: Tab. 5.3 Effluent levels to be achieved during operation and after mine closure according to Anonymous (1998b)
+- p.355: Tab. 5.4 Emissions to air resulting from mining activities per tonne mined ore. Values for total dust emission are
+- p.356: Fig. 5.2 Flows for “chromite, at beneficiation – part mining” and their representation in the ecoinvent database. Values correspond to the functional
+- p.357: Fig. 5.3 Flows for “chromite, at beneficiation – part beneficiation” and their representation in the ecoinvent database. Values correspond to the fun
+- p.359: Fig. 5.4 Example of a High-carbon ferrochrome production process using a closed submerged electric arc furnace
+- p.360: Tab. 5.6. Water use and emissions: Water use for European ferrochrome production is reported in IPPC
+- p.361: Tab. 5.5 Production of ferrochrome. In- and outputs for the production of 1 t ferrochrome.
+- p.362: Tab. 5.6 Emissions to air in the production of 1 tonne ferrochrome. Values are form different sources: BREF (IPPC
+- p.362: Tab. 5.7 Emissions to water in the production of 1 tonne ferrochromium. The reported values are before final waste-
+- p.363: Fig. 5.5 Flows for “ferrochromium – inputs” and their representation in the ecoinvent database. Values correspond to the functional unit of 1 kg ferr
+- p.364: Fig. 5.6 Flows for “ferrochromium – outputs” and their representation in the ecoinvent database. Values correspond to the functional unit of 1 kg fer
+- p.365: Tab. 5.8 Chromite transports to Germany for low-carbon ferrochrome production in 1994. Mass, distance and result-
+- p.365: Tab. 5.9 Ferrochromium transports to Germany in 1994. Mass, distance and resulting transport intensity. Data from
+- p.366: Fig. 5.7 Flows for “Ferrochromium, at regional storage” and its representation in the ecoinvent database. Values correspond to the functional unit of
+- p.370: Fig. 5.8 Flows for “Chromium, at regional storage” and its representation in the ecoinvent database. Values correspond to the functional unit of 1 kg
+- p.379: Tab. 2.1 Manganese minerals of economic importance (Wellbeloved et al. (1997))
+- p.379: Tab. 2.2 Mine production and reserves of manganese in 2001. “Reserves” is referred to as “the part of the reserve
+- p.381: Tab. 3.1 Analyses of some manganese ores, metallurgical grade (Wellbeloved et al. (1997))
+- p.381: Tab. 3.2 Typical compositions of some important battery grade manganese ores (chemical content on % dry basis,
+- p.382: Tab. 3.3 Some physical properties of metallic manganese (Wellbeloved et al. (1997)).
+- p.382: Tab. 3.4 Types of ferromanganese and their general compositions (Wellbeloved et al. (1997)).¨
+- p.384: Fig. 4.1 Summary of manganese products and their process routes (Wellbeloved et al. (1997)).
+- p.384: Fig. 4.2 Simplified diagram for the production of key manganese chemicals (Jones (1994)).
+- p.385: Tab. 4.1 Manganese in alloys. Composition of typical alloys containing manganese (Wellbeloved et al. (1997)).
+- p.385: Tab. 4.2 End uses of ferromanganese, silicomanganese and manganese metal in the U.S in 2001 (USGS (1998)).
+- p.386: Fig. 5.1 Scheme of the manganese production system considered and applications of its products after Adelhardt &
+- p.387: Tab. 5.1 Ecoinvent meta information for the processes for the production of ferromanganese and manganese metal.
+- p.392: Tab. 5.3 Effluent levels to be achieved during operation and after mine closure according to World Bank Group,
+- p.394: Fig. 5.2 Flows for “manganese concentrate, at beneficiation – part mining” and its representation in the ecoinvent database. Values correspond to the
+- p.395: Fig. 5.3 “manganese concentrate, at beneficiation – part beneficiation” and its representation in the ecoinvent database. Values correspond to the fu
+- p.399: Tab. 5.5 Production of ferromanganese and silicomanganese. In- and outputs for the production of ferromanganese
+- p.400: Tab. 5.6 Emissions to air in the production of 1 tonne ferromanganese. Values are form different sources: BREF
+- p.400: Tab. 5.7 Emissions to water in the production of 1 tonne ferromanganese. The values are reported values for ferro-
+- p.401: Tab. 5.8 Manganese import pattern for Germany in 1995 (Adelhardt & Saiger (1999)).
+- p.401: Tab. 5.9 Import of manganese into Germany for different products and resulting transport intensity in [tkm]. Mix is
+- p.402: Fig. 5.4 Flows for “ferromanganese – inputs” and its representation in the ecoinvent database. Values correspond to the functional unit of 1 kg ferro
+- p.403: Tab. 5.7 treatment, class 3
+- p.403: Fig. 5.5 Flows for “ferromanganese – outputs” and its representation in the ecoinvent database. Values correspond to the functional unit of 1 kg ferr
+- p.406: Fig. 5.6 Flows for “Manganese, pure metal, at regional storage” and its representation in the ecoinvent database. Values correspond to the functional
+- p.414: Fig. 1.1 The metal wheel displaying combination of jointly occurring metals in ore deposits (Reuter et al., 2004)
+- p.415: Tab. 2.1 Mine production and reserves of lead in 2005. “Reserves” is referred to as “the part of the reserve base
+- p.416: Fig. 2.1 Value of lead (adopted from DiFrancesco et al., 2006).
+- p.417: Tab. 2.2 Lead production and consumption worldwide. Statistics taken from ILZSG (2007) and USGS (2006b).
+- p.418: Tab. 2.3 Mine production and reserves of zinc in 2006. “Reserves” is referred to as “the part of the reserve base
+- p.419: Fig. 2.2 Distribution of ore grade and reserve for different indium bearing deposits (Schwarz-Schampera & Herzig,
+- p.420: Fig. 2.3 Indium prices with comments (Teckcominco, 2005; Metal Bulletin, 2006).
+- p.421: Fig. 2.4 Supply of Indium in 2004. Recycling of prompt scrap (ITO targets and the like) plays a vital role in the indium
+- p.421: Fig. 2.5 Estimated sources of Indium. Assumption that all potentials for indium recovery are seized and that the de-
+- p.422: Tab. 3.1. Namely the cadmium metal is almost exclusively from Zinc ores. Today approximately 80% of world
+- p.422: Tab. 3.1 World production in metric tonnes per year compiled from Kelly & Matos (2007) through 2004, for 2005 and
+- p.423: Tab. 4.1 Some physical properties of lead (Sutherland et al., 1997).
+- p.423: Tab. 4.2 Composition of different zinc grades in Europe, data provided by IZA .
+- p.424: Tab. 4.3 Some physical properties of zinc, data provided by IZA .
+- p.424: Tab. 4.4 Properties of cadmium .
+- p.425: Tab. 4.5 Some properties of the element indium (Wikipedia Contributors, 2007; Felix, 1996).
+- p.426: Fig. 5.1 Applications of lead in 2001 (LME website5)
+- p.427: Fig. 5.2 Zinc consumption in 2000: first-use and end-use.
+- p.428: Tab. 5.1 Properties, first- and end-use of zinc, data provided by IZA .
+- p.428: Fig. 5.3 Uses of Cadmium in different applications (reference year 2003 )
+- p.430: Fig. 5.4 In 2002, the semiconductor industry accounted for 15% of indium consumption, equivalent to around 50,000
+- p.430: Fig. 5.5 In 2004 already almost 80% of the indium went into ITO coatings (Teckcominco, 2005).
+- p.433: Fig. 6.1 Graphic representation of the modules and flows resulting from the mining of zinc-lead deposits.
+- p.434: Tab. 6.1 Meta information for the mining of zinc and lead bearing ore.
+- p.435: Tab. 6.2 Meta information for the lead production.
+- p.436: Tab. 6.3 Meta information for the zinc production process
+- p.437: Tab. 6.4 Meta information for the production of primary cadmium, at regional storage.
+- p.438: Tab. 6.5 Meta-information for the dataset “indium, at regional storage”
+- p.440: Fig. 6.2 gives an overview of the general assumptions made in the mass flows of this module. It is as-
+- p.440: Fig. 6.2 Basic assumptions for the mining process of zinc- and lead ore from sulphidic deposits. Values relate to the
+- p.441: Tab. 6.6 Infrastructure in underground mining, assumptions used. A lifetime of ten years and 5000 working hours
+- p.442: Tab. 6.7 specific input and effluent values used and their corresponding value per t concentrate established in this
+- p.443: Tab. 6.8 Emissions to water from mining and beneficiation. Composition of effluents from mining activities, values
+- p.443: Tab. 6.9 Consumption of reagents in base metal mineral processing plants. Data taken from (IPPC, 2002).
+- p.444: Tab. 6.10 Emissions and input due to chemical use in beneficiation in g per tonne treated ore. The values are the ones
+- p.444: Tab. 6.11 Emissions to air resulting from mining activities per tonne mined ore. Approximated values derived from
+- p.445: Tab. 6.12 Overview over the relevant parameters to determine the allocation split: composition of the by-products and
+- p.446: Fig. 6.3 Flows for "exploitation, zinc-lead deposit" (GLO) (part mining) and its representation in the ecoinvent database
+- p.447: Fig. 6.4 Flows for "exploitation, zinc-lead deposit" (part beneficiation) and its representation in the ecoinvent database
+- p.449: Tab. 6.2. The smelting process is modelled as a combination of the two predominant processes
+- p.450: Tab. 6.13 Lead production: Sinter oxidation / blast furnace reduction. Input / output and energy demand reported from
+- p.451: Tab. 6.14 Lead production: Direct smelting. Input / output and energy demand per tonne lead reported in IPPC (2001).
+- p.451: Tab. 6.15 Lead: Emissions to air per tonne lead produced – limited control. Values are collected from various
+- p.452: Tab. 6.16 Lead: Emissions to air per tonne lead produced – improved control. Values are collected from various
+- p.452: Tab. 6.17 Emission factors per tonne lead produced used in this inventory. Combination of limited and improved
+- p.452: Tab. 6.18 Emission to air: solid particles. Values taken from CEPMEIP-Database (SNAP 030304). Values might be
+- p.453: Tab. 6.19 Emissions to water. Due to lack of data the values for a Chinese zinc smelter reported in Xiao et al. (2003)
+- p.454: Tab. 6.20 By-products of primary lead production: Composition, flows and value to derive the revenue-based alloca-
+- p.454: Tab. 6.21 Individual correction factors to of the respective by-products in the lead production.
+- p.455: Fig. 6.5 Flows for "Smelting, primary lead production" (inputs) and its representation in the ecoinvent database
+- p.456: Fig. 6.6 Flows for "Smelting, primary lead production " (outputs) and its representation in the ecoinvent database
+- p.458: Tab. 6.22 Unit process data for “lead, secondary, at plant” as given in Fisher et al. (2006).
+- p.459: Fig. 6.7 Unit process inventories of the data set “Lead, secondary, at plant (inputs)”.
+- p.460: Fig. 6.7 (Continued) Unit process inventories of the data set “Lead, secondary, at plant (outputs)”.
+- p.461: Tab. 6.23 Transport of primary and secondary lead to Europe. Assumptions.
+- p.462: Fig. 6.8 Unit process inventories of the data set Lead, at regional storage.
+- p.463: Fig. 6.9 General scheme of zinc production (Dove & Boustead, 1998). The pyrometallurgical and hydrometallurgical
+- p.464: Fig. 6.10 Process scheme, part of the pyrometallurgical process route (rectification). The residues of the first stage
+- p.467: Tab. 6.24 Zinc production: input and output according to different sources. The values chosen in this study reflect the
+- p.467: Tab. 6.25 Zinc: solid particulates released to air. Values taken from CEPMEIP-Database . Values
+- p.468: Tab. 6.26 Zinc: Emissions to water and air, except particulates & emissions from fuel combustion. Values correspond
+- p.470: Fig. 6.11 Quotient of worldwide indium refinery production and zinc mine production as base for the assessment of
+- p.470: Tab. 6.27 By-products of primary zinc production: Composition, flows and value to derive the value-based allocation
+- p.471: Tab. 6.28 Individual correction factors to allocate the resource depletion to the respective by-products in order to bal-
+- p.472: Fig. 6.12 Flows for "Zinc for coating, at regional storage" (inputs) and its representation in the ecoinvent
+- p.473: Fig. 6.13 Flows for "zinc for coating, at regional storage" (outputs) and its representation in the ecoinvent database
+- p.474: Fig. 6.14 Sources and process routes for cadmium production. The most common production path is the electrolysis
+- p.475: Fig. 6.15. The following paragraphs describe calculations, sources and assumptions chosen in this
+- p.476: Fig. 6.15 Input and output flows for "cadmium, primary production, at regional storage"
+- p.478: Fig. 6.16 Process scheme of Falconbridge’s Kidd Creek refinery
+- p.479: Fig. 6.17 Study set-up of a semi industrial extraction facility by Power Porto (1990) that reflects an up-to-date solvent
+- p.482: Fig. 6.18 Flows for "Indium, at regional storage" and their representation in the ecoinvent database
+- p.496: Tab. 2.1: Annual share of gold mine production .
+- p.497: Tab. 2.2: Shares of the countries in mine production and the respective share in data set „gold primary, at refinery“
+- p.497: Fig. 1 Value of gold (adapted from George (2006)).
+- p.499: Tab. 2.3 Silver supply differentiated into sources.
+- p.499: Tab. 2.4 Shares of the countries in the data set „silver mix, from combined gold / silver production, at regional stor-
+- p.500: Tab. 2.5: Price of gold, silver, copper, lead and zinc 1996, 2001, 2005 and the average prices 2004-2006, used in this
+- p.501: Tab. 3.1 Some physical properties of gold (Renner et al., 2002a).
+- p.501: Tab. 3.2 Some physical properties of silver (Renner et al., 2002b).
+- p.502: Tab. 4.1 World Gold demand in different application fields (World Gold Council ).
+- p.502: Fig. 4.1 World silver demand in different application fields (Silver Institute ).
+- p.503: Fig. 5.1 General overview of Silver and Gold production.
+- p.504: Fig. 5.2 System lay-out in ecoinvent data v2.0. Boxes with rounded edges indicate reference flows from multi-output
+- p.506: Tab. 5.1: Quantity of machinery as well as surface and volume of buildings for a “non-ferrous metal mine, surface”,
+- p.507: Tab. 5.2 Land use of the Aitik, Boliden Area and Garpenberg Mines in 2005 (Boliden, 2006d)
+- p.507: Tab. 5.3 Unit process raw data of the polymetallic mines in Sweden
+- p.508: Tab 5.4: Production (quantity of metals) in year 2005 of the mines Aitik, Bolden and Garpenberg mines (Boliden,
+- p.508: Table 5.5: Calculated turnover (prices 2005) and derived allocation factors for the Swedish mines
+- p.509: Table 5.6: Total energy, material requirements, and emissions of the Swedish multi-metal mines in 2005 (Boliden,
+- p.510: Tab. 5.7: Unit process raw data of the metal mining in Sweden
+- p.511: Tab. 5.8: Allocation factors applied on mining data of the different metals. Material requirements were calculated on
+- p.512: Tab. 5.9 Metal production volume 2005 from primary material (Boliden, 2006b)
+- p.512: Tab. 5.10: Metal production volume in 2005, calculated turnover and shares in turnover of the different products in the
+- p.513: Tab. 5.11 Annual energy consumption, material requirements and emissions of the Rönnskär smelter (Boliden, 2004;
+- p.514: Tab. 5.12: Unit Raw data for “refining, copper-zinc-lead-gold-silver in smelter”
+- p.515: Tab. 5.13 Allocation factors of the data set “refining, copper-zinc-lead-gold-silver in smelter” (Boliden, 2004; Boliden,
+- p.516: Tab. 5.14 Ecospold Meta information of metal production in Sweden
+- p.517: Tab. 5.15 shows the production volume in 2000/2006, calculated turnover and shares in turnover of
+- p.517: Tab. 5.15: Production volume 2000 / 2006, calculated turnover and shares in turnover of the different products of the
+- p.517: Tab. 2.5 Production Misima Porgera Papua New
+- p.518: Tab. 5.16: Land use of the Misima and Porgera Mines in 2002 (Placer Dome Inc., 2002a)
+- p.518: Tab. 5.17: Unit process raw data of the gold and silver mine in Papua New Guinea
+- p.519: Tab. 5.18: Material and energy requirements of the Misima Mine in 2000 (Placer Dome Inc., 2001) and the Porgera Mine
+- p.521: Tab. 5.19: Unit process raw data of gold and silver mining and refining in Papua New Guinea
+- p.522: Tab. 5.20 Allocation factors of the data set “mining and refining, gold-silver deposit”
+- p.523: Tab. 5.21 Ecospold Meta information of gold and silver production in Papua New Guinea
+- p.524: Tab. 5.22: Production volume 2002, calculated turnover and shares in turnover of the different products of the La
+- p.524: Tab. 5.23: Land use of the La Coipa Mine in 2002 (Placer Dome Inc., 2004).
+- p.525: Tab. 5.24: Unit process raw data for the gold and silver mine in Chile.
+- p.526: Table 5.25: Energy and material requirements of the La Coipa Mine in 2002 (Placer Dome Inc., 2002b).
+- p.527: Tab. 5.26: Unit process raw data of gold and silver mining and refining in Chile
+- p.528: Tab. 5.27 Allocation factors of the data set “mining and refining, gold-silver deposit”
+- p.529: Tab. 5.28 Ecospold Meta information of metal production in Chile
+- p.530: Tab. 5.29 Production, Allocation and Recovery rate of the various metals produced in 2005 by the Yanacocha-Mines
+- p.530: Tab. 5.30: Land use of the Yanacocha-Mine in 2005 (Newmont, 2005a)
+- p.531: Tab. 5.31: Unit process raw data of the gold and silver mine in Peru.
+- p.531: Table 5.25 displays the total energy and material requirements of the Yanagocha-Mines in 2005.
+- p.532: Tab. 5.32: Energy and material requirements of the Yanacocha-Mines in 2005 (Newmont, 2005a)
+- p.534: Tab. 5.33: Unit process raw data of gold and silver mining and refining in Peru
+- p.535: Tab. 5.34 Allocation factors of the data set “mining, gold-silver deposit”
+- p.537: Tab. 5.36: Production volume in 2002 of the Campbell, Musselwhite and Porcupine Mines (Placer Dome Inc., 2003a).
+- p.537: Tab. 5.37: Land use of the Campbell, Musselwhite and Porcupine Mines in 2002 (Placer Dome Inc., 2002b).
+- p.538: Tab. 5.38: Unit process raw data for the gold and silver mine in Canada.
+- p.539: Tab. 5.39: Annual requirements and emissions of the Campbell, Musselwhite and Porcupine Mines in 2002 (Placer
+- p.541: Tab. 5.40: Unit process raw data of gold mining and refining in Canada.
+- p.542: Tab. 5.41 Ecospold Meta information of gold production in Canada
+- p.544: Tab. 5.42 Production volume 2005 of the Golden Giant, Nevada, Bald Mountain, Cortez, Golden Sunlight, Goldstrike, and Round Mountain mines (Barrick, 2
+- p.544: Tab. 5.43 Land use of the Golden Giant, Nevada, Bald Mountain, Cortez, Golden Sunlight, Goldstrike and Round Mountain mines (Barrick, 2006b; Newmont,
+- p.545: Tab. 5.44: Unit process raw data for the gold and silver mine in the USA.
+- p.547: Tab. 5.45 Annual requirements of or attributed to the Golden Giant, Nevada, Bald Mountain, Cortez, Golden Sunlight, Goldstrike and Round Mountain mine
+- p.548: Tab. 5.46 Annual emissions of or attributed to the Golden Giant, Nevada, Bald Mountain, Cortez, Golden Sunlight, Goldstrike and Round Mountain mines a
+- p.549: Tab. 5.47: Unit process raw data of gold mining and refining in USA.
+- p.550: Tab. 5.48 Ecospold Meta information of gold production in United States
+- p.551: Tab. 5.49: Production volume of the South Deep Mine in 2005 (Western Areas Limited, 2006).
+- p.551: Tab. 5.50: Land use of the South Deep Mine in 2002 (Placer Dome Inc., 2002b)
+- p.552: Tab. 5.51: Unit process raw data of the gold mine in South Africa.
+- p.553: Tab. 5.52: Requirements and emissions of the South Deep Mine in 2002 (Placer Dome Inc., 2002b).
+- p.554: Tab. 5.53: Unit process raw data of gold mining and refining in South Africa
+- p.555: Tab. 5.54 Ecospold Meta information of gold production in South Africa
+- p.556: Tab 5.55 shows the production volume in 2005 of the considered Australian mines. The recovery rate
+- p.556: Tab 5.55: Production volume 2005 of the Kalgoorlie, Jundee, Tanami and Pajingo Mines (Newmont, 2005b).
+- p.556: Tab. 5.56: Land use of the Kalgoorlie, Jundee, Tanami and Pajingo Mines (Newmont, 2005b)
+- p.557: Tab. 5.57: Unit process raw data of the gold mine in Australia
+- p.557: Tab. 5.58: Production of gold / silver and material requirement in gold / silver mining in the year 1999 (Stewart, 1999)
+- p.558: Tab. 5.59: Energy and material requirements of the Kalgoorlie, Jundee, Tanami and Pajingo Mines (Newmont, 2005b)
+- p.559: Tab. 5.60 Emissions of the Kalgoorlie, Jundee, Tanami and Pajingo Mines (Newmont, 2005b)
+- p.560: Tab. 5.61: Unit process raw data of gold mining and refining in Australia.
+- p.561: Tab. 5.62 Ecospold Meta information of gold production in Australia
+- p.562: Tab 5.63: Production volume in 2004 of the North Mara Mine (Placer Dome Inc., 2005).
+- p.563: Tab. 5.65: Unit process raw data of the gold mine in Tanzania.
+- p.564: Tab. 5.66: Requirements and emissions of the North Mara Mine in 2005 (Placer Dome Inc., 2005).
+- p.565: Tab. 5.67: Unit process raw data of gold mining and refining in Tanzania
+- p.566: Tab. 5.68 Ecospold Meta information of gold production in Tanzania
+- p.567: Tab. 5.69: Unit process raw data for „gold, primary, at refinery“, Source: Tab. 2.2
+- p.567: Tab. 5.70: Unit process raw data for „silver, from combined gold-silver production, at refinery”, Source: Tab. 2.4.
+- p.568: Tab. 5.71 Ecospold Meta information of gold & and silver mixes in ecoinvent v2.0
+- p.569: Fig. 5.3 Concept of the Rönnskär (Boliden) process. The processing steps relevant to the dataset are those the elec-
+- p.570: Fig. 5.4 Detail of a converter unit (adopted from Davenport et al., 2002).
+- p.570: Fig. 5.5 Sketch of a twin-wheel anode caster (adopted from Outokumpu, 2004) and the key infrastructure materials.
+- p.571: Fig. 5.6 Sketch of an electrolytic cell (adopted from Corrosion Technology International, 2006) and the key infra-
+- p.572: Fig. 5.7 Diagram of pyro- and hydrometallurgical process routes for anode slime treatment (Pesl & Anzinger, 2002).
+- p.572: Fig. 5.8 Sketch of the anode slimes treatment and precious metal recovery approach applied at Rönnskär
+- p.574: Fig. 5.9 Mass Balance of the tree consecutive multi-output processes for Gold / Silver, secondary from electronic
+- p.574: Tab. 5.72 Constituents of the intermediate reference flows in the system model (Fig. 5.9).
+- p.575: Tab. 5.73 Allocation of the burdens to the coupled multi-output reference flows according to their values depending
+- p.576: Tab. 5.74 Meta information for the modelled production processes for secondary gold from electric scrap.
+- p.577: Fig. 5.10 Unit process presentation of the converter step within the secondary copper plant. This multi-output proc-
+- p.578: Tab. 5.75 Emssions to air and and water during the converter step. Respective Data for Kaldo plant taken from
+- p.579: Fig. 5.11 Unit process representation of the electro refining step within the secondary copper plant. This multi-output
+- p.579: Tab. 5.76 Emissions to air and water during the refining of the copper anode. Respective data taken from
+- p.580: Fig. 5.12 Unit process representation of the precious metal refinery within the secondary copper plant. This multi-
+- p.582: Fig. 5.13 Flows for the multi-output process "secondary copper conversion" and its representation in the ecoinvent database (part I, continued on next
+- p.583: Fig. 5. Flows for the multi-output process "secondary copper conversion" and its representation in the ecoinvent database (part II, continued from p
+- p.584: Fig. 5.14 Flows for the multi-output process "secondary copper refining" and its representation in the ecoinvent database
+- p.585: Fig. 5.15 Flows for the multi-output process "secondary copper, precious metal refinery" and its representation in the ecoinvent database
+- p.586: Tab. 5.77 Meta information for the infrastructure in the production of secondary gold from electric waste.
+- p.587: Tab. 5.78 Calculations for the infrastructure of the converter; 50 years service lifetime, 250’000 t production of total
+- p.587: Tab. 5.79 Calculations for infrastructure of the anode refinery. 30 years service lifetime, 230’000 t copper per year.
+- p.588: Tab. 5.80 Calculations for equipment of the precious metal plant. 25 years service lifetime, 243 t PM per year.
+- p.589: Fig. 5.16 Flows for "facilities copper conversion" and its representation in the ecoinvent database.
+- p.590: Fig. 5.17 Flows for "facilities anode refinery" and its representation in the ecoinvent database.
+- p.591: Fig. 5.18 Flows for "facilities precious metal refinery" and its representation in the ecoinvent database.
+- p.593: Tab. 5.81 Meta information for the production processes of silver from lead production.
+- p.594: Tab. 5.82 Emissions to air from parkes crust processing. Approximation from BAT processes in German Zinc industry
+- p.595: Fig. 5.19 Flows for "silver, from lead production, at plant" and its representation in the ecoinvent database
+- p.596: Fig. 5.20 Processing of anode slimes to retract silver and tellurium at Naoshima refinery, Mitsubishi Materials Corp.
+- p.597: Fig. 5.21 Model overview and interrelation of silver production with copper extraction. For detailed information see
+- p.597: Tab. 5.83 Meta information for the production processes of silver from copper production.
+- p.599: Tab. 5.84 Allocation factors for copper telluride and silver using economic criteria.
+- p.600: Fig. 5.22 Flows for "Silver, from copper production, at plant" and its representation in the ecoinvent database
+- p.601: Fig. 5.23 World mine production (Data: GFMS).
+- p.602: Tab. 5.85 Silver mine production in 2005, country share on total of 20’000 t and distance to Europe .
+- p.603: Fig. 5.24 Flows for "Silver, at regional storage" and its representation in the ecoinvent database.
+- p.603: Fig. 5.25 Flows for "Gold, at regional storage" and its representation in the ecoinvent database.
+- p.610: Tab. 1 Corrected values of cadmium emissions ( to air/high population density) of the “cadmium, semiconductor
+- p.614: Tab. 2.1 Reserves and resources of tellurium (t), Source: Guilinger (1999d))
+- p.615: Tab. 2.2 Chemical Characterisation of tellurium, Source: Knockaert (2002)
+- p.615: Tab. 2.3 Market share of tellurium (data for United States), Source: Georg (2004)
+- p.616: Tab. 2.4 Composition of several copper anode slimes, Source: Knockaert (2002)
+- p.617: Fig. 2.1 Example flow sheet for anode slime treatment, Source: IPPC (2001)
+- p.618: Fig. 2.2 Production process of tellurium
+- p.619: Tab. 2.5 Demands in Materials and Energy / Emissions, according to literature
+- p.620: Tab. 2.6 Unit process raw data for tellurium
+- p.621: Tab. 2.7 Ecospold Meta information of "tellurium, semi-conductor-grade, at plant, GLO”
+- p.622: Tab. 3.1 Production capacity and production in 2005, Source: Guilinger (1999c)
+- p.623: Tab. 3.2 Physical properties of gallium, Source: Greber (2005) and Moskalyk (2003)
+- p.623: Tab. 3.3 Market share of gallium in United States, Source: Kramer (2005)
+- p.624: Tab. 3.4. Composition of Bayer liquor, according to Selvi et al. (2004)
+- p.624: Fig. 3.1 Flow diagram showing gallium extraction by Rhõne-Poulenc-Process, Source: Greber (2005)
+- p.626: Tab. 3.5 Key-figures of solvent extraction
+- p.626: Tab. 3.6 Consumption of solvent and acid, Source: Selvi et al. (2004)
+- p.627: Tab. 3.7 Standard distances for transports of solvents and acid
+- p.627: Tab. 3.8 Physical properties of gallium to calculate the process of purification
+- p.627: Tab. 3.9 Standard distances for transports of solvents and acid
+- p.629: Tab. 3.10 Unit process raw data for gallium, in Bayer liquor from aluminium production, at plant
+- p.629: Tab. 3.11 Unit process raw data for gallium, semiconductor-grade, at plant
+- p.630: Tab. 3.12 Unit process raw data for gallium, semiconductor-grade, at regional storage
+- p.631: Tab. 3.13 EcoSpold Meta Information of gallium production
+- p.632: Fig. 4.1 shows an overview of the inventoried cadmium compounds for solar industry, including the
+- p.632: Fig. 4.1 Overview of the inventoried cadmium compounds
+- p.633: Tab. 4.1 Physical properties of Cadmium compounds, Source: ESPI Metals (2007) and Schulte-Schrepping & Pisca-
+- p.635: Tab. 4.2 Standard distances for transports
+- p.635: Tab. 4.3 Unit process raw data for cadmium, semi-conductor grade, semi-conductor grade
+- p.637: Tab. 4.4 Unit process raw data for cadmium telluride, semi-conductor grade
+- p.638: Tab. 4.5 Unit process raw data for cadmium chloride
+- p.639: Tab. 4.6 Unit process raw data for cadmium sulphide
+- p.640: Tab. 4.7 EcoSpold Meta Information of cadmium purification and cadmium compounds
+- p.650: Tab. 3.1 Composition of important tantalum-containing minerals (Andersson et al., 1996).
+- p.652: Tab. 3.2 Compilation of Production, supply and demand of tantalum. Data has been drawn from different sources indicated
+- p.652: Fig. 3.1 Compilation of data on production and demand of tantalum. Different sources are used (see Tab. 3.2).
+- p.653: Fig. 4.1 Applications of tantalum in 2003 (Sons of Gwalia, 2006).
+- p.653: Fig. 4.2 Application of tantalum in capacitors (H.C. Starck, 2006).
+- p.654: Fig. 5.1 General overview of the production of tantalum products from different feeds (Andersson et al., 1996) and
+- p.655: Fig. 5.2 Tantalum powder production processes according to the application fields (H.C. Starck, 2006).
+- p.656: Tab. 5.1 Ecoinvent meta information for the processes for the production of 1 kg tantalum powder for capacitors.
+- p.657: Tab. 5.2 Specific values for infrastructure employed for mining and of tantalite concentrate
+- p.657: Tab. 5.3 Process data of mining and beneficiation per 1 t Ta2O5 contained in the resulting tantalite concentrate.
+- p.658: Fig. 5.3 Hydrometallurgical Processing of Niobium and Tantalum (Eckert et al., 2001)
+- p.659: Tab. 5.4 Assumptions Extraction of tantalum oxide form Tantalite concentrate
+- p.659: Tab. 5.5 Extraction of tantalum oxide form Tantalite concentrate
+- p.659: Tab. 5.3 HF kg 2 Polyakov & Polyakova (2003)
+- p.660: Tab. 5.6 Specific values and assumptions used for calculation in the reduction step.
+- p.661: Tab. 5.7 Process data for the reduction of 1 kg tantalumpentoxide with magnesium vapour.
+- p.661: Tab. 5.8 Inventory and calculations for transport and infrastructure.
+- p.662: Fig. 5.4 Flows for "tantalum, powder, capacitor-grade, at regional storage" and their representation in the ecoinvent database.
+- p.663: Fig. 5.4 (cont.) Flows for "tantalum, powder, capacitor-grade, at regional storage" and their representation in the ecoinvent database
+- p.672: Tab. 2.1 Western World Tin Production by Country (tonnes)
+- p.673: Tab. 3.1 Physical properties of - and -tin (Graf (1997))
+- p.675: Fig. 5.1 Overview of tin production
+- p.676: Tab. 5.2 are calculated with the values given in Tab. 5.1.
+- p.676: Tab. 5.1 Values used for calculation of in- and output flows of the thermal beneficiation step.
+- p.677: Tab. 5.2 In- and outputs for underground mining and beneficiation of tin ore per kg of tin
+- p.678: Tab. 5.3 In- and outputs for smelting per kg pure tin (based on Richter et al. (1996))
+- p.680: Tab. 5.4 Meta information for the tin production processes
+- p.681: Fig. 5.2 Flows for "tin, at regional storage" and its representation in the ecoinvent database
+- p.682: Fig. 5.2 Flows for "tin, at regional storage" and its representation in the ecoinvent database (cont.)
+- p.691: Tab. 4.1 Magnesium production and consumption in 1996-97 (Aroule (1998))
+- p.692: Fig. 4.1 Consumption of magnesium in Western world in 1997 (total 333’700 tonnes). Amount used for magnesium
+- p.693: Fig. 5.1 Block diagram of the dolomite and seawater process for magnesium production in Porsgrunn, NO
+- p.694: Tab. 5.1 Energy requirement of magnesium production as investigated in different studies. It has to be noted that
+- p.695: Tab. 5.2 Cumulative energy consumption, direct emissions and waste data for the production of 1kg magnesium and
+- p.696: Tab. 5.3 Unit process raw data and data quality indicators for the production of magnesium. References and as-
+- p.697: Tab. 5.4 Unit process raw data and data quality indicators for the magnesium production plant and data quality con-
+- p.697: Tab. 5.5 Unit process raw data and data quality indicators for the production of magnesium alloy AZ91. References
+- p.698: Tab. 5.6 Unit process raw data and data quality indicators for the production of magnesium aluminium alloy AlMg3.
+- p.699: Tab. 5.7 Unit process raw data and data quality indicators for magnesium die-casting. References and assumptions
+- p.708: Fig. 2.1 gives an overview over these impacts discussed in this chapter and the modules in ecoinvent
+- p.709: Fig. 2.1 Overview over infrastructure, land use and rehabilitation of the mineral extraction site. Rehabilitation of
+- p.710: Tab. 2.1 Specific land use by facilities in open cut and underground mining. These figures comprise Beneficiation
+- p.710: Tab. 2.2 Land use through direct exploration of the mine. A lifetime of 30 years was assumed. The lowering of the
+- p.711: Tab. 2.3 Assumptions and calculations regarding land use and eventual rehabilitation from tailings. Duration of mine
+- p.712: Tab. 2.4 Process-steps involved in the non-ferrous metal modules.
+- p.713: Tab. 2.4 the metallurgical steps usually consist of a sintering / roasting step followed either by a
+- p.714: Fig. 2.2 Picture of a flotation mill with crusher, concentrator, thickener and several flotation cells. The output of the
+- p.715: Tab. 2.5 Infrastructure mine, underground. Assumptions made and inventory chosen.
+- p.715: Tab. 2.6 Infrastructure mine, surface. Assumptions made and inventory chosen.
+- p.717: Fig. 2.3 Scheme of the infrastructure modules building up the metallurgical step. The modules are scaled to a
+- p.717: Fig. 2.4 Example of a pyrometallurgical process step in the copper industry 3 . Off-gas is captured in the sulphuric
+- p.718: Tab. 2.7 Ecoinvent meta information for non-ferrous-metal mines and smelters.
+- p.719: Fig. 2.5 Flows for “non-ferrous metal mine, underground” and its representation in the ecoinvent database.
+- p.720: Fig. 2.6 Flows for “non-ferrous metal mine, surface” and its representation in the ecoinvent database.
+- p.721: Fig. 2.7 Flows for “non-ferrous metal smelter” and its representation in the ecoinvent database.
+- p.724: Fig. 2.8 Wind blown tailings in Clayton mine, Idaho, USA Fig. 2.9 Nickel Tailings in Sudbury Ontario, Canada
+- p.725: Fig. 2.10 Comparison of short-term transfer coefficients for residual material landfill (x axis) and tailings deposit (y
+- p.726: Tab. 2.8 Average sulfidic tailings composition from Tab. 2.9 Modelled short- and long-term transfer
+- p.728: Tab. 2.10 Inventoried exchanges for the disposal of sulfidic tailings.
+- p.730: Tab. 2.11 Ecoinvent meta information for disposal processes in PGM winning operations (to be completed).
+- p.731: Fig. 2.11 Flows for “disposal, sulphidic tailings, offsite” and its representation in the ecoinvent
+- p.732: Fig. 2.12 Flows for “disposal, non-sulphidic tailings, offsite” and its representation in the ecoinvent database. The two tailings disposal modules ar
+- p.732: Fig. 2.13 Flows for “disposal, non-sulphidic overburden, offsite” and its representation in the ecoinvent database.
+- p.746: Fig. 2.1 Overview of Hot Rolled Products (IPPC (2001a)).
+- p.749: Tab. 2.1 Composition of purified waste water and of the arising sludge
+- p.750: Tab. 2.2 Ecoinvent meta information for "hot rolling, steel"
+- p.751: Fig. 2.2 Flows for "hot rolling, steel" and their representation in the ecoinvent database
+- p.752: Fig. 2.2 Flows for "hot rolling, steel" and their representation in the ecoinvent database (cont.)
+- p.762: Tab. 2.3 Ecoinvent meta information for "sheet rolling, steel"
+- p.763: Fig. 2.3 Flows for "sheet rolling, steel" and their representation in the ecoinvent database
+- p.764: Fig. 2.3 Flows for "sheet rolling, steel" and their representation in the ecoinvent database (cont.)
+- p.777: Tab. 2.4 Ecoinvent meta information for "sheet rolling, chromium steel"
+- p.778: Fig. 2.4 Flows for "sheet rolling, chromium steel" and their representation in the ecoinvent database
+- p.779: Fig. 2.4 Flows for "sheet rolling, chromium steel" and their representation in the ecoinvent database (cont.)
+- p.788: Tab. 2.5 Ecoinvent meta information for "wire drawing, steel"
+- p.789: Fig. 2.5 Flows for "wire drawing, steel" and their representation in the ecoinvent database
+- p.790: Fig. 2.5 Flows for "wire drawing, steel" and their representation in the ecoinvent database (cont.)
+- p.798: Tab. 2.6 Ecoinvent meta information for "drawing of pipes, steel" and "section bar rolling, steel"
+- p.799: Fig. 2.6 Flows for "drawing of pipes, steel" and their representation in the ecoinvent database
+- p.799: Fig. 2.7 Flows for "section bar rolling, steel" and their representation in the ecoinvent database
+- p.801: Tab. 2.7 Ecoinvent meta information for the "rolling mill"
+- p.802: Fig. 2.8 Flows for "rolling mill" and their representation in the ecoinvent database
+- p.804: Fig. 3.1 Aluminium sheet rolling process; values are aluminium flows (modified from EAA (2000))
+- p.805: Tab. 3.1 Ecoinvent meta information for "sheet rolling, aluminium"
+- p.806: Fig. 3.2 Flows for "sheet rolling, aluminium" and their representation in the ecoinvent database
+- p.807: Fig. 3.2 Flows for "sheet rolling, aluminium" and their representation in the ecoinvent database (cont.)
+- p.809: Fig. 3.3 Aluminium profile extrusion process; values are aluminium flows (modified from EAA (2000))
+- p.810: Tab. 3.2 Ecoinvent meta information for "section bar extrusion, aluminium"
+- p.811: Fig. 3.4 Flows for "section bar extrusion, aluminium" and their representation in the ecoinvent database
+- p.812: Fig. 3.4 Flows for "section bar extrusion, aluminium" and their representation in the ecoinvent database (cont.)
+- p.814: Fig. 4.1 Copper sheet rolling process; values are copper flows
+- p.815: Tab. 4.1 Ecoinvent meta information for "sheet rolling, copper"
+- p.816: Fig. 4.2 Flows for "sheet rolling, copper" and their representation in the ecoinvent database
+- p.817: Fig. 4.2 Flows for "sheet rolling, copper" and their representation in the ecoinvent database (cont.)
+- p.819: Tab. 4.2 Ecoinvent meta information for "wire drawing, copper"
+- p.820: Fig. 4.3 Flows for "wire drawing, copper" and their representation in the ecoinvent database
+- p.821: Fig. 4.3 Flows for "wire drawing, copper" and their representation in the ecoinvent database (cont.)
+- p.823: Tab. 4.3 Annual loads discharged to water from a copper semis production plant (IPPC (2001b))
+- p.823: Tab. 4.4 Ecoinvent meta information for contouring of brass and bronze
+- p.824: Fig. 4.4 Flows for "contour, brass" and their representation in the ecoinvent database
+- p.825: Fig. 4.4 Flows for "contour, brass" and their representation in the ecoinvent database (cont.)
+- p.826: Fig. 4.5 Flows for “contour, bronze" and their representation in the ecoinvent database
+- p.827: Fig. 4.5 Flows for “contour, bronze" and their representation in the ecoinvent database (cont.)
+- p.829: Fig. 5.1 Production share for different hot dip coatings IPPC (2001a)
+- p.833: Tab. 5.1 Ecoinvent meta information for "zinc coating, coils"
+- p.834: Fig. 5.2 Flows for "zinc coating, coils" and their representation in the ecoinvent database
+- p.835: Fig. 5.2 Flows for "zinc coating, coils" and their representation in the ecoinvent database (cont.)
+- p.842: Tab. 5.2 Ecoinvent meta information for "zinc coating, pieces"
+- p.843: Fig. 5.3 Flows for "zinc coating, pieces" and their representation in the ecoinvent database
+- p.844: Fig. 5.3 Flows for "zinc coating, pieces" and their representation in the ecoinvent database (cont.)
+- p.849: Tab. 5.3 Ecoinvent meta information for "zinc coating, pieces, adjustment per um"
+- p.850: Fig. 5.4 Flows for "zinc coating, pieces, adjustment per m" and their representation in the ecoinvent database
+- p.852: Fig. 6.1 Fusion welding processes (Brandt & Weiler (1997)).
+- p.853: Fig. 6.2 Temperature profile along the flame axis when burning acetylene and propane Brandt & Weiler (1997).
+- p.854: Tab. 6.1 Ecoinvent meta information for "welding, gas, steel"
+- p.855: Fig. 6.3 Flows for "welding, gas, steel" and their representation in the ecoinvent database
+- p.860: Tab. 6.2 Ecoinvent meta information for "welding, arc, steel"
+- p.861: Fig. 6.4 Flows for "welding, arc, steel" and their representation in the ecoinvent database
+- p.863: Tab. 6.3 Ecoinvent meta information for "welding, arc, aluminium"
+- p.864: Fig. 6.5 Flows for "welding, arc, aluminium" and their representation in the ecoinvent database
+- p.866: Fig. 7.1 shows a typical layout of a modern powder enamelling plant for hot water tanks. This plant
+- p.866: Fig. 7.1 Layout of a powder enamelling plant for hot water tanks (Ditmer (2002)).
+- p.867: Fig. 7.2 Picture of an enamelling plant for hot water tanks (Ditmer (2002)).
+- p.867: Tab. 7.1 shows the unit process raw data and the data investigated by Lowitz (1998). The major inter-
+- p.869: Tab. 7.1 Unit process raw data and data quality indicators for the enamelling process (Lowitz (1998)
+- p.870: Tab. 7.1 shows the data quality indicators for the inventory of the enamelling process. The simplified
+- p.873: Tab. 8.1 Characterisation of processes to make selective coatings
+- p.876: Tab. 8.2 Unit process raw data and data quality indicators for selective coatings made by sputtering
+- p.877: Fig. 8.1 TINOX batch reactive evaporation process. An electron beam gun is installed in a chamber. Oxygen and ni-
+- p.877: Tab. 8.3 Unit process raw data and data quality indicators for selective coatings made by physical vapour deposition
+- p.878: Tab. 8.4 Unit process raw data and data quality indicators for aluminium oxide-based layer pigmented with colloidal
+- p.879: Tab. 8.5 Concentration of water pollutants in the effluents from the MTI black chrome coating process
+- p.880: Tab. 8.6 Unit process raw data and data quality indicators for selective coatings made by black chrome coating of
+- p.881: Tab. 8.7 Unit process raw data and data quality indicators for selective coatings made by black chrome coating of
+- p.881: Tab. 8.8 shows the properties of the tin-nickel plating solution. The alloy contains about 65% tin and
+- p.882: Tab. 8.8 Properties of tin-nickel alloy plating solution.
+- p.883: Tab. 8.9 Unit process raw data and data quality indicators for selective coatings made by Black Majic coating of
+- p.883: Tab. 8.10 Unit process raw data and data quality indicators for selective coatings manufacturing plant.
+- p.884: Tab. 8.11 shows selected LCI results and the cumulative energy demand for selective coatings on
+- p.884: Tab. 8.11 Minimum, maximum and mean LCI results and the cumulative energy demand for selective coatings on
+- p.885: Fig. 8.2 Share of selective coating in comparison to other aspects for a flat plate collector with a black chrome coat-
+- p.889: Fig. 9.1 Typical flow sheet for solder manufacturing (HMIP (1994))
+- p.890: Fig. 9.2 The difference of total energy consumption of PWB. Use of 400kg solder in one reflow line (Hamano et al.
+- p.891: Tab. 9.1 Maximum releases of the process to the air HMIP (1994)
+- p.891: Tab. 7.1 shows all unit process raw data for the production of soft solders. The metal use has been cal-
+- p.891: Tab. 9.2 The energy data of one reflow line Hamano et al. (2001). Type of energy use not specified
+- p.891: Fig. 9.3 shows the manufacturing of a solar collector with copper pipes (Soltop (2002)).
+- p.892: Fig. 9.3 Soldering of solar collectors
+- p.893: Tab. 9.3 Unit process raw data and data quality indicators for the production and use of soft solders and the solder production plant. References are
+- p.894: Tab. 7.1 shows the data quality indicators for the inventory of production and use of soft solders. The
+- p.897: Tab. 10.1 Ecoinvent meta information for "coating powder, at plant"
+- p.898: Fig. 10.1 Flows for "coating powder, at plant" and their representation in the ecoinvent database
+- p.899: Tab. 10.2 Ecoinvent meta information for "powder coating, steel"
+- p.900: Fig. 10.2 Flows for "powder coating, steel" and their representation in the ecoinvent database
+- p.901: Fig. 10.2 Flows for "powder coating, steel" and their representation in the ecoinvent database (cont.)
+- p.902: Tab. 10.3 Ecoinvent meta information for "powder coating, aluminium sheet"
+- p.903: Fig. 10.3 Flows for "powder coating, aluminium sheet" and their representation in the ecoinvent database
+- p.904: Fig. 10.3 Flows for "powder coating, aluminium sheet" and their representation in the ecoinvent database (cont.)
+- p.906: Tab. 11.1 Ecoinvent meta information for "anodising, aluminium sheet"
+- p.907: Fig. 11.1 Flows for "anodising, aluminium sheet" and their representation in the ecoinvent database
+- p.908: Fig. 11.1 Flows for "anodising, aluminium sheet" and their representation in the ecoinvent database (cont.)
+- p.920: Tab. 3.1 Some physical properties of antimony.
+- p.922: Tab. 5.1 gives the meta information to the processes while Fig. 5.1 and Fig. 5.2 show the LCI flow-
+- p.923: Tab. 5.1 Meta information for the mining of antimony bearing ore and the smelting of antimony.
+- p.924: Fig. 5.1 Flows for " stibnite ore, 70% stibnite, at mine " (CN) in the ecoinvent database
+- p.925: Fig. 5.2 Flows for "antimony, at refinery" in the ecoinvent database
+
+Rules:
+1. Choose the caption(s) that hold the unit-process inventory of this dataset — inputs, energy, emissions, transport — not impact results, not a diagram. Prefer "Sachbilanz" / "inventory" / "LCI" tables.
+2. Return the PDF page range that covers those tables plus the paragraph introducing them: `first_page`, `last_page` (at most 4 pages). Tables can run onto the next page.
+3. If no caption fits (the report does not document this dataset's inventory, or only as a result), return `found` = false and say why in `reason`.
+4. `reason` names the caption(s) you chose and why.
+
+Return only the JSON object described by the schema.

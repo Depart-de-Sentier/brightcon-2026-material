@@ -1,0 +1,66 @@
+{
+ "basis": "Tab. 12.2 'Unit process raw data, example for crude oil and natural gas production in CA'. Only part 4 of the table is machine-readable and it is expressed per YEAR of combined production, so no per-Nm3 amount can be derived from it; the two items below come from the aggregated-vector block of this prompt.",
+ "basis_amount": 1,
+ "allocation": "Combined gas and oil production is allocated 63.8 % to crude oil and 36.2 % to natural gas (the only numbers the readable part of the table carries).",
+ "mass_sum": null,
+ "items": [
+  {
+   "name": "Natural Gas",
+   "kind": "resource",
+   "quote": "- Natural Gas: 35.98 megajoule (Resources Resources from ground)",
+   "raw_value": 35.98,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "MJ",
+   "per": "per Nm3 natural gas at production",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "natural gas",
+   "compartment": "resources",
+   "confidence": "medium",
+   "note": "Taken from the 'direct resource flows visible in the aggregated vector' block of this prompt, because the report excerpt itself is unreadable for this dataset. 35.98 MJ/Nm3 is the calorific content of the extracted gas."
+  },
+  {
+   "name": "Ground Water",
+   "kind": "resource",
+   "quote": "- Ground Water: 0.0002558 cubic meter (Resources Resources from water)",
+   "raw_value": 0.0002558,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "m3",
+   "per": "per Nm3 natural gas at production",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "ground water",
+   "compartment": "resources",
+   "confidence": "medium",
+   "note": "Taken from the 'direct resource flows visible in the aggregated vector' block of this prompt, because the report excerpt itself is unreadable for this dataset."
+  },
+  {
+   "name": "Water",
+   "kind": "resource",
+   "quote": "- Water: 3.023e-05 cubic meter (Resources Resources from water)",
+   "raw_value": 3.023e-05,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "m3",
+   "per": "per Nm3 natural gas at production",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "water",
+   "compartment": "resources",
+   "confidence": "medium",
+   "note": "Taken from the 'direct resource flows visible in the aggregated vector' block of this prompt, because the report excerpt itself is unreadable for this dataset."
+  }
+ ],
+ "gaps": [
+  "Tab. 12.2 parts 1-3 (pages 76-78) are images in the PDF: the text extraction returned only the page headers, so the technosphere inputs, resources and air emissions of the unit process are simply not readable.",
+  "Part 4, the only readable page, is printed PER YEAR of combined oil-and-gas production ('Unit' = a) with the country-specific allocation keys 63.8 % (oil) / 36.2 % (gas) shown in place of amounts in the per-kg and per-Nm3 columns. Without the annual production volume - which the excerpt does not give - none of those absolute annual figures can be turned into a per-kg or per-Nm3 amount.",
+  "The example is for CANADA; this dataset is a different country, and the report states that only the parameters (energy demand, flaring, methane, produced water, spills) are country-specific, not the exchange structure.",
+  "Readable but unusable annual emission rows: oils/BOD5/COD/DOC/TOC/AOX/nitrogen/sulfur to river and to ocean, oils to soil, SO2 and NOx to air, Halon 1301 and HFC-23 to air.",
+  "No energy inputs, no drilling or production-plant infrastructure, no flaring, no methane venting could be read."
+ ]
+}

@@ -1,0 +1,49 @@
+{
+ "type": "object",
+ "properties": {
+  "chosen_code": {
+   "type": [
+    "string",
+    "null"
+   ],
+   "description": "the full code of the chosen candidate, or null"
+  },
+  "reason": {
+   "type": "string"
+  },
+  "differences": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  },
+  "free_inputs": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   },
+   "description": "template input names, exactly as listed"
+  },
+  "electricity_location": {
+   "type": [
+    "string",
+    "null"
+   ]
+  },
+  "gaps": {
+   "type": "array",
+   "items": {
+    "type": "string"
+   }
+  }
+ },
+ "required": [
+  "chosen_code",
+  "reason",
+  "differences",
+  "free_inputs",
+  "electricity_location",
+  "gaps"
+ ],
+ "additionalProperties": false
+}

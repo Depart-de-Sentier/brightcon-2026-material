@@ -1,0 +1,228 @@
+{
+ "mappings": [
+  {
+   "item": "Explosives",
+   "chosen": "Blasting",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "'Blasting' models the use of explosives in quarrying including the blast emissions; 'Explosives, tovex, at plant' is only the manufacture."
+  },
+  {
+   "item": "Diesel, excavation machinery",
+   "chosen": "Diesel, burned in building machine, average",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "excavation machinery is a building machine; 'average' over the particle-filter variants since the report does not specify; only CH exists."
+  },
+  {
+   "item": "Electricity, crusher",
+   "chosen": "Electricity, medium voltage, at grid",
+   "location": "DE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "plain grid supply at medium voltage in the process's own country; the DB variant is the railway supply."
+  },
+  {
+   "item": "Electricity, conveyor belts",
+   "chosen": "Electricity, medium voltage, at grid",
+   "location": "DE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "as above."
+  },
+  {
+   "item": "Electricity, comminution",
+   "chosen": "Electricity, medium voltage, at grid",
+   "location": "DE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "as above."
+  },
+  {
+   "item": "Heating oil EL, mill",
+   "chosen": "Light fuel oil, burned in industrial furnace 1MW, non-modulating",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "heating oil EL burned on site for the mill: the industrial-furnace dataset (combustion included), RER over CH for a German plant."
+  },
+  {
+   "item": "Electricity, burnt shale production",
+   "chosen": "Electricity, medium voltage, at grid",
+   "location": "DE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "as above; the report does not distinguish grid from self-supply, flagged low confidence in extraction."
+  },
+  {
+   "item": "Electricity, power generation own use",
+   "chosen": "Electricity, medium voltage, at grid",
+   "location": "DE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "as above."
+  },
+  {
+   "item": "Water",
+   "chosen": "Tap water, at user",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "generic tap water; the DE 'water balance according to MoeK 2013' variant is a specific water-balance model not warranted by the excerpt."
+  },
+  {
+   "item": "Hydrochloric acid",
+   "chosen": "Hydrochloric acid, 30% in H2O, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "the generic purchased 30 % solution; the process-specific and 'xx' obsolete variants are not indicated."
+  },
+  {
+   "item": "Sodium hydroxide",
+   "chosen": "Sodium hydroxide, 50% in H2O, production mix, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "only candidate; the production mix is right for unspecified caustic soda."
+  },
+  {
+   "item": "Sodium hypochlorite (chlorine bleach)",
+   "chosen": "Sodium hypochlorite, 15% in H2O, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "only candidate."
+  },
+  {
+   "item": "Organic chemicals",
+   "chosen": "Chemicals organic, at plant",
+   "location": "GLO",
+   "compartment": "",
+   "dependency": false,
+   "reason": "the generic organic-chemicals proxy; 'inorganic' is the wrong class."
+  },
+  {
+   "item": "Electricity, milling",
+   "chosen": "Electricity, medium voltage, at grid",
+   "location": "DE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "as above."
+  },
+  {
+   "item": "Dust",
+   "chosen": "Particles (PM10)",
+   "location": "",
+   "compartment": "Emissions / Emissions to air",
+   "dependency": false,
+   "reason": "dust from quarrying and milling: coarse particulate; PM10 in air, the unspecified sub-compartment."
+  },
+  {
+   "item": "Nitrogen oxides",
+   "chosen": "Nitrogen Oxides",
+   "location": "",
+   "compartment": "Emissions / Emissions to air",
+   "dependency": false,
+   "reason": "the NOx flow to air, unspecified sub-compartment."
+  },
+  {
+   "item": "Sulfur dioxide",
+   "chosen": "Sulfur Dioxide",
+   "location": "",
+   "compartment": "Emissions / Emissions to air",
+   "dependency": false,
+   "reason": "SO2 to air, unspecified sub-compartment."
+  },
+  {
+   "item": "Carbon dioxide, fossil",
+   "chosen": "Carbon Dioxide (fossil)",
+   "location": "",
+   "compartment": "Emissions / Emissions to air",
+   "dependency": false,
+   "reason": "fossil CO2 emitted to air — the 'Resources from air' candidate is an uptake, wrong direction."
+  },
+  {
+   "item": "Carbon dioxide, geogenic (carbonate)",
+   "chosen": "Carbon Dioxide (fossil)",
+   "location": "",
+   "compartment": "Emissions / Emissions to air",
+   "dependency": false,
+   "reason": "carbonate CO2 is characterised as fossil in EF 3.1; emission to air."
+  },
+  {
+   "item": "Carbon monoxide",
+   "chosen": "Carbon Monoxide (fossil)",
+   "location": "",
+   "compartment": "Emissions / Emissions to air",
+   "dependency": false,
+   "reason": "CO from fuel combustion, fossil, to air; the plain 'Carbon Monoxide' candidates are water/soil flows."
+  },
+  {
+   "item": "Wastewater, unpolluted",
+   "chosen": "Treatment, sewage, unpolluted, to wastewater treatment, class 3",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "unpolluted wastewater to a treatment plant; the 'from residence' variant is domestic; only CH exists."
+  },
+  {
+   "item": "Transport, heating oil by rail",
+   "chosen": "Transport, freight, rail",
+   "location": "DE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "generic rail freight in the process's country."
+  },
+  {
+   "item": "Transport, hydrochloric acid by rail",
+   "chosen": "Transport, freight, rail",
+   "location": "DE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "as above."
+  },
+  {
+   "item": "Transport, hydrochloric acid by lorry",
+   "chosen": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "standard lorry class for chemical deliveries; RER since no DE dataset."
+  },
+  {
+   "item": "Transport, sodium hydroxide by rail",
+   "chosen": "Transport, freight, rail",
+   "location": "DE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "as above."
+  },
+  {
+   "item": "Transport, sodium hydroxide by lorry",
+   "chosen": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "as above."
+  },
+  {
+   "item": "Transport, hypochlorite by rail",
+   "chosen": "Transport, freight, rail",
+   "location": "DE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "as above."
+  },
+  {
+   "item": "Transport, hypochlorite by lorry",
+   "chosen": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "as above."
+  }
+ ]
+}

@@ -1,0 +1,132 @@
+{
+ "mappings": [
+  {
+   "item": "Sulphuric acid",
+   "chosen": "Sulphuric acid, liquid, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Purchased sulphuric acid at RER; the viscose-production by-product acid is a different, allocated source the report does not mention."
+  },
+  {
+   "item": "Rutile, ilmenite",
+   "chosen": "xx Ilmenite, 54% titanium dioxide, at plant",
+   "location": "AU",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The report states 'the sulfate process titanium dioxide has been manufactured from ilmenite'; the ilmenite dataset therefore beats the higher-grade rutile concentrate."
+  },
+  {
+   "item": "Electric energy",
+   "chosen": "xxx Electricity, medium voltage, production UCTE, at grid",
+   "location": "UCTE",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The report says the plant uses 'electricity from the UCTE grid'; this is the UCTE production mix."
+  },
+  {
+   "item": "Steam",
+   "chosen": "Heat, natural gas, at industrial furnace 1MW",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Delivered heat in MJ, matching the MJ/kg basis of Tab. 85.4; the report says steam comes from a CHP plant or a sulphuric acid plant but gives no dataset, so generic industrial heat is the least-committal fit."
+  },
+  {
+   "item": "Gas",
+   "chosen": "Natural gas, burned in industrial furnace 1MW",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The separate 'Gas' row is gas burned on site, as opposed to the gas that makes the steam."
+  },
+  {
+   "item": "Coal",
+   "chosen": "Hard coal, burned in industrial furnace 1-10MW",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Coal burned on site in MJ; the 'Heat, at hard coal industrial furnace' variant is the delivered-heat form of the same process and either fits, but the combustion dataset is the direct reading of a fuel row."
+  },
+  {
+   "item": "Particles (air)",
+   "chosen": "Particulates, unspecified",
+   "location": "",
+   "compartment": "air",
+   "dependency": false,
+   "reason": "The report states no size fraction for TiO2 dust, so the unspecified particulate flow beats assuming PM2.5."
+  },
+  {
+   "item": "NOx (air)",
+   "chosen": "Nitrogen Oxides",
+   "location": "",
+   "compartment": "air",
+   "dependency": false,
+   "reason": "'NOx' is the aggregate nitrogen oxides flow, not nitrogen dioxide alone."
+  },
+  {
+   "item": "SO2 (air)",
+   "chosen": "Sulfur Dioxide",
+   "location": "",
+   "compartment": "air",
+   "dependency": false,
+   "reason": "Exact substance and compartment; 'Sulfur Oxides' is the aggregate."
+  },
+  {
+   "item": "H2S (air)",
+   "chosen": "Hydrogen Sulfide",
+   "location": "",
+   "compartment": "air",
+   "dependency": false,
+   "reason": "Exact substance in the stated air compartment."
+  },
+  {
+   "item": "Sulfate (water)",
+   "chosen": "Sulfate Ion",
+   "location": "",
+   "compartment": "water",
+   "dependency": false,
+   "reason": "Dissolved sulfate in wastewater; the EF 3.1 sulfate ion in the water compartment, beating the named metal sulfates and the residual-database long-term groundwater flow."
+  },
+  {
+   "item": "Sulfate from spent acid (water)",
+   "chosen": "Sulfate Ion",
+   "location": "",
+   "compartment": "water",
+   "dependency": false,
+   "reason": "Same substance and compartment as the Tab. 85.8 sulfate row."
+  },
+  {
+   "item": "Iron (water)",
+   "chosen": "Iron",
+   "location": "",
+   "compartment": "water",
+   "dependency": false,
+   "reason": "The report gives no oxidation state, so the unspecified iron flow is correct."
+  },
+  {
+   "item": "Cadmium (water)",
+   "chosen": "Cadmium",
+   "location": "",
+   "compartment": "water",
+   "dependency": false,
+   "reason": "Exact substance and compartment."
+  },
+  {
+   "item": "Mercury (water)",
+   "chosen": "Mercury",
+   "location": "",
+   "compartment": "water",
+   "dependency": false,
+   "reason": "Exact substance and compartment."
+  },
+  {
+   "item": "Ore digestion residues, solidified in cement and landfilled",
+   "chosen": "xx Disposal, residue from TiO2 prod. SO4, 30% water, to residual material landfill",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "The disposal dataset made for exactly this residue stream of the sulfate route, beating the Cl variant and the generic residue landfills."
+  }
+ ]
+}

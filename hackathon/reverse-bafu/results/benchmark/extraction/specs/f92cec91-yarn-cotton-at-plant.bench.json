@@ -1,0 +1,155 @@
+{
+  "target": {
+    "code": "f92cec91-c777-3762-a6d6-6be6706f42a5",
+    "name": "Yarn, cotton, at plant",
+    "location": "GLO"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 2.5 'Unit process of yarn, cotton, at plant' [GLO], per 1 kg; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2007 - LCI renewable materials - Althaus.pdf",
+      "where": "pages 88-90 -> report-p88-90.txt",
+      "note": "report sha256 e88da63d91aed267…, text sha256 20572eb7d4ee2817…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/f92cec91-c777-3762-a6d6-6be6706f42a5/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "109bd4cfeb8e691d197773409e40f72831f130f90d7a2a999746fd8a410873c9",
+      "at": "2026-09-22T21:22:45Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "1f2cf33c35eaf9a2d00349dae745806605eeb82507f8a7985b360aa8b13f3899",
+      "at": "2026-09-22T21:22:46Z"
+    },
+    "gaps_reported_by_model": [
+      "This dataset is a pure assembly: the electricity (5.1 kWh CN + 3.4 kWh US), the waste heat (30.6 MJ), the lorry transport and the packaging-plant infrastructure are all inside the linked 'yarn production, cotton fibres' dataset of Tab. 2.2, not repeated here.",
+      "No direct emissions at all in Tab. 2.5.",
+      "No packaging of the yarn and no storage."
+    ],
+    "skipped_items": [
+      "yarn, cotton, at plant: product — reference product"
+    ],
+    "assembled_at": "2026-09-22T21:22:47Z"
+  },
+  "node": {
+    "name": "Yarn, cotton, at plant, disaggregated",
+    "unit": "kg",
+    "location": "GLO",
+    "comment": "drafted from 2007 - LCI renewable materials - Althaus.pdf pp. 88-90",
+    "inputs": [
+      {
+        "name": "Cotton fibres, ginned, at farm",
+        "amount": 0.66,
+        "unit": "kilogram",
+        "location": "CN",
+        "note": "Chinese share, 10 % fibre loss assumed",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "technosphere                  cotton fibres, ginned, at farm                                CN               kg            6.60E-1                            1                           1.16                 Datendokumentation (Wiegmann K., 2002),",
+          "raw_value": 0.66,
+          "raw_unit": "kg",
+          "per": "per kg yarn, cotton, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "cotton fibres ginned at farm",
+          "mapping_reason": "Exact name match at CN, the location the table gives for the Chinese share.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "4e1dc5c9-832f-3030-8410-143fd7488787"
+      },
+      {
+        "name": "Cotton fibres, at farm",
+        "amount": 0.44,
+        "unit": "kilogram",
+        "location": "US",
+        "note": "US share, 10 % fibre loss assumed",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "technosphere                  cotton fibres, at farm                                         US              kg            4.40E-1                            1                           1.16                 Datendokumentation (Wiegmann K., 2002),",
+          "raw_value": 0.44,
+          "raw_unit": "kg",
+          "per": "per kg yarn, cotton, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "cotton fibres at farm",
+          "mapping_reason": "Exact name match at US, the location the table gives for the American share; candidate 1 is the Chinese ginned fibre already used by the other line.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "1a105ad6-27a0-3257-a28a-457b1fa2ddda"
+      },
+      {
+        "name": "Yarn production, cotton fibres",
+        "amount": 1.0,
+        "unit": "kilogram",
+        "location": "GLO",
+        "note": "the spinning step, itself carrying the electricity, transport and infrastructure of Tab. 2.2",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "technosphere                  yarn production, cotton fibres                               GLO               kg            1.00E+0                            1                           1.17                 Datendokumentation (Wiegmann K., 2002),",
+          "raw_value": 1.0,
+          "raw_unit": "kg",
+          "per": "per kg yarn, cotton, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "yarn production cotton fibres",
+          "mapping_reason": "Exact name match; 'bast fibres' is the jute/kenaf spinning process.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "37b6099c-6662-3634-8c61-878b0d3c3b8d"
+      },
+      {
+        "name": "Disposal, paper, 11.2% water, to sanitary landfill",
+        "amount": 0.1,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "fibre residues to landfill",
+        "derivation": {
+          "evidence": "report-p88-90.txt",
+          "quote": "                              disposal, paper, 11.2% water, to sanitary",
+          "raw_value": 0.1,
+          "raw_unit": "kg",
+          "per": "per kg yarn, cotton, at plant",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "disposal paper sanitary landfill",
+          "mapping_reason": "Exact name and water-content match; the other candidates are packaging paper at 13.7 % water, pulp sludge, and unrelated materials.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "73157ac3-d1d9-4c9e-8a75-98328242167c"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

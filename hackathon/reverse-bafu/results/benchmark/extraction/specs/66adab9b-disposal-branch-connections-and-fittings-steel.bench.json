@@ -1,0 +1,128 @@
+{
+  "target": {
+    "code": "66adab9b-dd8d-4549-8f70-6a66eee46467",
+    "name": "Disposal, branch connections and fittings, steel",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tabelle 89 'Bilanzierung Entsorgung Abzweigungen und Formstücke aus Stahl', column 'Abzweigungen und Formstücke Stahl, grundiert [kg]', per 1 kg; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2014 - LCA data ventilation and heating systems - Klingler.pdf",
+      "where": "pages 161-163 -> report-p161-163.txt",
+      "note": "report sha256 f4692d86e964f922…, text sha256 d32efcf6d6b09196…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/66adab9b-dd8d-4549-8f70-6a66eee46467/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "c5bb080785cd66f7ad3b0c39f9df591684214ca057b74cc7c831ca35fe3b5672",
+      "at": "2026-09-22T21:26:20Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "d7602d95353f423066eb75ca9d569c4e658fb82f0a26f3e16372f56b3d631bb6",
+      "at": "2026-09-22T21:26:21Z"
+    },
+    "gaps_reported_by_model": [
+      "No transport to the disposal site is given in the Entsorgung table (the 0.5999 tkm rail and 0.05 tkm lorry in Tabelle 88 belong to the PRODUCTION dataset).",
+      "No direct emissions of any kind.",
+      "The steel mass balance is 0.9906 kg iron + 2 x 0.009361 kg paint = 1.0093 kg per kg of fitting, i.e. the paint is counted twice (sorting plant and final disposal); the table is reproduced as printed."
+    ],
+    "skipped_items": [],
+    "assembled_at": "2026-09-22T21:26:22Z"
+  },
+  "node": {
+    "name": "Disposal, branch connections and fittings, steel, disaggregated",
+    "unit": "kg",
+    "location": "CH",
+    "comment": "drafted from 2014 - LCA data ventilation and heating systems - Klingler.pdf pp. 161-163",
+    "inputs": [
+      {
+        "name": "Disposal, building, bulk iron (excluding reinforcement), to sorting plant",
+        "amount": 0.9906,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "the steel body of the fittings, 'Entsorgung Metall'",
+        "derivation": {
+          "evidence": "report-p161-163.txt",
+          "quote": "           disposal, building, bulk         9.906E-01                 1.126                   Entsorgung Metall",
+          "raw_value": 0.9906,
+          "raw_unit": "kg",
+          "per": "per kg steel branch connections and fittings disposed",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "disposal building bulk iron sorting plant",
+          "mapping_reason": "The only candidate and an exact name match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "807e417b-a8dc-470f-8fb3-7e275d144b47"
+      },
+      {
+        "name": "Disposal, building, paint on metal, to sorting plant",
+        "amount": 0.009361,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "the zinc-dust primer, 'Entsorgung Zinkstaubfarbe'",
+        "derivation": {
+          "evidence": "report-p161-163.txt",
+          "quote": "           on metal, to sorting plant,                                1.05 (2,2,3,2,3,4)      be",
+          "raw_value": 0.009361,
+          "raw_unit": "kg",
+          "per": "per kg steel branch connections and fittings disposed",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "disposal building paint on metal sorting plant",
+          "mapping_reason": "Exact name match; 'paint on walls' and 'emulsion paint on walls' are the same service for a different substrate.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "d5dae353-9d60-4989-9432-42e36d1f2d81"
+      },
+      {
+        "name": "Disposal, building, paint on metal, to final disposal",
+        "amount": 0.009361,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "the zinc-dust primer, 'Entsorgung Zinkstaubfarbe'",
+        "derivation": {
+          "evidence": "report-p161-163.txt",
+          "quote": "           on metal, to final disposal,                               1.05 (2,2,3,2,3,4)      be",
+          "raw_value": 0.009361,
+          "raw_unit": "kg",
+          "per": "per kg steel branch connections and fittings disposed",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "disposal building paint on metal final disposal",
+          "mapping_reason": "Exact name match; candidate 4 is the sorting-plant step (already a separate line), candidates 1-3 are whole window frames per m2 and candidates 5-7 are paint on wood, paint remains and paint on walls.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a626600e-92d7-4e1e-b1d7-3f32a5232b5f"
+      }
+    ],
+    "emissions": [],
+    "resources": []
+  }
+}

@@ -1,0 +1,23 @@
+<section id="the-101" data-transition="fade" style="background:#f0e9e1">
+  <p style="position:absolute; bottom:40px; left:128px; font-family:Quicksand, Arial, sans-serif; font-size:24px; font-weight:500; color:#7e857f">results/system_terminated_extended.csv · results/usable_information.csv · scripts/find_system_processes.py</p>
+  <div style="position:absolute; top:112px; left:128px; width:1664px; display:flex; flex-direction:column; gap:16px">
+    <p style="font-family:Quicksand, Arial, sans-serif; font-size:28px; font-weight:500; letter-spacing:2px; text-transform:uppercase; color:#3c5343">BAFU‑2026 · where we started</p>
+    <h2 style="font-family:Quicksand, Arial, sans-serif; font-size:76px; font-weight:400; line-height:1.08; color:#2b2b2b">The system processes we looked at</h2>
+  </div>
+  <div style="position:absolute; top:304px; left:128px; width:1664px; height:330px; display:flex; flex-direction:row; gap:32px">
+    <div style="display:flex; flex-direction:column; gap:18px; flex:1; padding:40px 44px; background:#ffffff; border:1px solid #dcd3c7; border-radius:4px">
+      <p style="font-family:Quicksand, Arial, sans-serif; font-size:96px; font-weight:600; line-height:1; color:#3c5343">101</p>
+      <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:34px; font-weight:600; line-height:1.2; color:#2b2b2b">carry the ecoSpold type=2 flag</h3>
+      <p style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:500; line-height:1.45; color:#555b57">The export says so outright. ecoinvent confidential chemicals, KBOB manufacturer data, French bio-based materials.</p>
+    </div>
+    <div style="display:flex; flex-direction:column; gap:18px; flex:1; padding:40px 44px; background:#3c5343; border-radius:4px">
+      <p style="font-family:Quicksand, Arial, sans-serif; font-size:96px; font-weight:600; line-height:1; color:#c9d8cf">+37</p>
+      <h3 style="font-family:Quicksand, Arial, sans-serif; font-size:34px; font-weight:600; line-height:1.2; color:#f0e9e1">carry no flag. We found them by structure.</h3>
+      <p style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:500; line-height:1.45; color:#d9e3dc"><b>No production input at all</b> — only waste-treatment services and a plant unit. Styrene, benzene, the nylons, ABS, polycarbonate, MDI/TDI: the APME era eco-profiles.</p>
+    </div>
+  </div>
+  <div style="position:absolute; top:674px; left:128px; width:1664px; display:flex; flex-direction:column; background:#E1EBE5; border-left:6px solid #84AE99; padding:16px 32px; border-radius:0px 4px 4px 0px">
+    <p style="font-family:Quicksand, Arial, sans-serif; font-size:27px; font-weight:500; line-height:1.4; color:#2b2b2b">For <b>51</b> out of the 138 we found additional information in the reports that we could use for the dis-aggregation.</p>
+  </div>
+  <aside>The first job was deciding what to work on, and that started with counting. The ecoSpold export marks 101 datasets as system processes, and we started there. That flag turns out to be incomplete. If you ignore the flag and ask a structural question instead — does this dataset consume anything that is actually a production input, or only waste-treatment services and a plant unit — you find 37 more. Those are the old APME and PlasticsEurope eco-profiles: styrene, benzene, butadiene, the nylons, ABS, polycarbonate, the isocyanates. They confirm it in their own metadata, which the test never reads: their includedProcesses field says aggregated data from raw material extraction until delivery at plant. So we found 138, not 101, and there may be more: the structural test only catches datasets with no production input at all, so a partly aggregated dataset would still slip through. The box at the bottom is the honest summary. For each of the 138 we asked whether anything names its inputs well enough to work from: a table or text in the cited report, the dataset's own process description, or a unit process of the same product elsewhere in BAFU. For fifty-one it does, and those are the fifty-one we dis-aggregated. For the other eighty-seven there is either nothing, no report and metadata that is empty, generic or confidential, or only a partial hint: a feedstock named without an allocation, a supply mix, a list of field operations. Only twelve of the fifty-one print their inventory as a table we can transcribe, so a method that only reads tables would have finished with twelve. The classification per dataset, with the sentence it rests on, is in results/usable_information.csv.</aside>
+</section>

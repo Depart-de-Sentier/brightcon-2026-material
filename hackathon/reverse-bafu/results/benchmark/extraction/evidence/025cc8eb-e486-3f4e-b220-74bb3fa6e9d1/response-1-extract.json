@@ -1,0 +1,82 @@
+{
+ "basis": "Tabelle 20 'Sachbilanzdaten fuer die Herstellung von 1 m2 Holz-Innentuere oder Aussentuere ab Werk in der Schweiz', 5th product column 'door, inner, room, glass-wood, steel frame, at plant' [CH], per 1 m2",
+ "basis_amount": 1,
+ "allocation": "none stated",
+ "mass_sum": null,
+ "items": [
+  {
+   "name": "door leaf, room, inner, wood-glass, at plant",
+   "kind": "input",
+   "quote": "              door leaf, room, inner, wood-glass, at plant                      CH            0                     m2            0             0              1              0              0",
+   "raw_value": 1.0,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "m2",
+   "per": "per m2 of inner room door, glass-wood, with steel frame",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "door leaf room inner wood-glass at plant",
+   "compartment": "",
+   "confidence": "high",
+   "note": "5th product column of Tabelle 20 ('door, inner, room, glass-wood, steel frame, at plant')."
+  },
+  {
+   "name": "door frame, inner, steel, at plant",
+   "kind": "input",
+   "quote": "              door frame, inner, steel, at plant                       CH            0                     m2          0              1               0",
+   "raw_value": 1.0,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "m2",
+   "per": "per m2 of inner room door, glass-wood, with steel frame",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "door frame inner steel at plant",
+   "compartment": "",
+   "confidence": "high",
+   "note": "5th product column of Tabelle 20 ('door, inner, room, glass-wood, steel frame, at plant')."
+  },
+  {
+   "name": "surface treatment, inner door, opaquely painted, at plant",
+   "kind": "input",
+   "quote": "                                                                       CH            0                     m2      1.00E+0          5.96E-1                             1.00E+0       1.00E+0       5.96E-1   1.00E+0                                             0          0          0         1                1.16",
+   "raw_value": 0.596,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "m2",
+   "per": "per m2 of inner room door, glass-wood, with steel frame",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "surface treatment inner door opaquely painted at plant",
+   "compartment": "",
+   "confidence": "high",
+   "note": "5th product column of Tabelle 20 ('door, inner, room, glass-wood, steel frame, at plant'). Only 0.596 m2 of the 1 m2 leaf area is painted because the glass part is not."
+  },
+  {
+   "name": "Energy, gross calorific value, in biomass, resource correction",
+   "kind": "resource",
+   "quote": "                                                                         -               -                 MJ      -1.50E+2       -1.50E+2                              -2.26E+2      -8.07E+1     -8.08E+1   -1.57E+2                  -2.71E+2                          -2.25E+2   -2.71E+2     1                1.16",
+   "raw_value": -80.8,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "MJ",
+   "per": "per m2 of inner room door, glass-wood, with steel frame",
+   "factor": 1,
+   "factor_unit": "",
+   "factor_source": "",
+   "search": "energy gross calorific value in biomass",
+   "compartment": "resources",
+   "confidence": "high",
+   "note": "5th product column of Tabelle 20 ('door, inner, room, glass-wood, steel frame, at plant'). A NEGATIVE resource correction that removes the biomass energy double-counted through the wood inputs."
+  }
+ ],
+ "gaps": [
+  "The dataset is a pure assembly of three sub-datasets (leaf, frame, surface treatment) plus a resource correction; the materials, energy, packaging and transports the metadata mentions all sit inside Tabelle 16 (leaf), Tabelle 17 (frame) and Tabelle 18 (surface treatment).",
+  "The Aluminium resource correction is 0 for this column (it applies only to the wood-aluminium outer door).",
+  "No direct emissions.",
+  "No disposal - that is Tabelle 21, a separate dataset."
+ ]
+}

@@ -1,0 +1,108 @@
+{
+ "mappings": [
+  {
+   "item": "Clinker",
+   "chosen": "Clinker, at plant",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "the only clinker dataset; the others are unrelated word-start matches (Planting, Cement plant)."
+  },
+  {
+   "item": "Gypsum, mineral",
+   "chosen": "Gypsum, mineral, at mine",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "mineral gypsum as mined, the cement-industry input; only candidate of that substance."
+  },
+  {
+   "item": "Mixed recycled granulate (Mischgranulat)",
+   "chosen": "Recycling aggregate from mixed demolition, dry, at plant",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Mischgranulat is the mixed-demolition recycling aggregate; the concrete-demolition variant is Betongranulat."
+  },
+  {
+   "item": "Burnt shale",
+   "chosen": "Burnt shale, at plant",
+   "location": "DE",
+   "compartment": "",
+   "dependency": true,
+   "reason": "the only candidate; it is itself an aggregated dataset — flagged as a dependency so a rebuilt node is used where one exists."
+  },
+  {
+   "item": "Iron(II) sulphate",
+   "chosen": "Iron sulphate, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "only candidate."
+  },
+  {
+   "item": "Filter dust / limestone",
+   "chosen": "Limestone, milled, loose, at plant",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "the table pairs filter dust with limestone; milled loose limestone is the generic filler, quicklime is burnt and wrong."
+  },
+  {
+   "item": "Ethylene glycol (grinding aid)",
+   "chosen": "Ethylene glycol, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": true,
+   "reason": "the substance itself; aggregated in BAFU, flagged."
+  },
+  {
+   "item": "Electricity, medium voltage",
+   "chosen": "Electricity, medium voltage, at grid",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "Swiss grid, medium voltage, as the table says; the process's own country."
+  },
+  {
+   "item": "Heavy fuel oil for heat",
+   "chosen": "Heavy fuel oil, burned in industrial furnace 1MW, non-modulating",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "heavy oil burned on site for heat: the industrial-furnace dataset; CH matches the plant location."
+  },
+  {
+   "item": "Cement plant, infrastructure",
+   "chosen": "Cement plant",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "the infrastructure unit; the cement product datasets are not infrastructure."
+  },
+  {
+   "item": "Steel for the mill, low-alloyed",
+   "chosen": "Steel, low-alloyed, at plant",
+   "location": "RER",
+   "compartment": "",
+   "dependency": false,
+   "reason": "only low-alloyed steel candidate."
+  },
+  {
+   "item": "Transport, lorry",
+   "chosen": "Transport, freight, lorry, 16t-32t gross weight, fleet average",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "the fleet-average mid class, CH; the table gives no lorry size."
+  },
+  {
+   "item": "Transport, rail",
+   "chosen": "Transport, freight, rail",
+   "location": "CH",
+   "compartment": "",
+   "dependency": false,
+   "reason": "generic rail freight in the process's country."
+  }
+ ]
+}

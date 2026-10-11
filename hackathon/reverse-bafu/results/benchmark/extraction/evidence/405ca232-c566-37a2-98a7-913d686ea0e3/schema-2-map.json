@@ -1,0 +1,48 @@
+{
+ "type": "object",
+ "properties": {
+  "mappings": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "item": {
+      "type": "string"
+     },
+     "chosen": {
+      "type": [
+       "string",
+       "null"
+      ]
+     },
+     "location": {
+      "type": "string"
+     },
+     "compartment": {
+      "type": "string",
+      "description": "for emissions/resources: the chosen flow's compartment as listed"
+     },
+     "dependency": {
+      "type": "boolean"
+     },
+     "reason": {
+      "type": "string"
+     }
+    },
+    "required": [
+     "item",
+     "chosen",
+     "location",
+     "compartment",
+     "dependency",
+     "reason"
+    ],
+    "additionalProperties": false
+   }
+  }
+ },
+ "required": [
+  "mappings"
+ ],
+ "additionalProperties": false
+}

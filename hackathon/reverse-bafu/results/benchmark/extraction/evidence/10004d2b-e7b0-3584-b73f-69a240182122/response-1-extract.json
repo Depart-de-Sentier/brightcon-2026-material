@@ -1,0 +1,66 @@
+{
+ "basis": "Tab. 4.1 'Energy and material need split for processing steps in jute mill', whole-mill figures split by the step shares; the yarn steps (opening/batching 20 %, carding 40 %, combing/flyer 10 %, spinning 10 %) are 80 % of the total. Per 1 kg of yarn.",
+ "basis_amount": 1,
+ "allocation": "none stated",
+ "mass_sum": null,
+ "items": [
+  {
+   "name": "electricity, low voltage, at grid",
+   "kind": "input",
+   "quote": " Hessian for textile       18 %        ∅ 1250 MJ/t                  9.4 kg/t batching oil    Transport 250 km local",
+   "raw_value": 1250.0,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "MJ/t",
+   "per": "per kg of yarn produced from bast fibres",
+   "factor": 0.00022222222222222223,
+   "factor_unit": "kWh",
+   "factor_source": "80 % of 1250 MJ per tonne, 1 t = 1000 kg, 1 kWh = 3.6 MJ -> 0.278 kWh/kg",
+   "search": "electricity low voltage at grid",
+   "compartment": "",
+   "confidence": "medium",
+   "note": "The dataset's includedProcesses names exactly the steps opening, batching, carding, spinning, which Tab. 4.1 splits as 20 % + 40 % + 10 % + 10 % = 80 % of the mill's energy; the remaining 20 % is weaving, a separate dataset. The energy is 'electricity mainly'."
+  },
+  {
+   "name": "batching oil",
+   "kind": "input",
+   "quote": " Hessian for textile       18 %        ∅ 1250 MJ/t                  9.4 kg/t batching oil    Transport 250 km local",
+   "raw_value": 9.4,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "kg/t",
+   "per": "per kg of yarn produced from bast fibres",
+   "factor": 0.001,
+   "factor_unit": "kg",
+   "factor_source": "1 t = 1000 kg",
+   "search": "vegetable oil at plant",
+   "compartment": "",
+   "confidence": "medium",
+   "note": "'9.4 kg/t batching oil (petroleum based or vegetable oil as for example rice bran oil)' - the batching step belongs to yarn production, so the whole amount is allocated here."
+  },
+  {
+   "name": "transport, lorry",
+   "kind": "input",
+   "quote": " Hessian for textile       18 %        ∅ 1250 MJ/t                  9.4 kg/t batching oil    Transport 250 km local",
+   "raw_value": 250.0,
+   "raw_min": null,
+   "raw_max": null,
+   "raw_unit": "km",
+   "per": "per kg of yarn produced from bast fibres",
+   "factor": 0.001,
+   "factor_unit": "tkm",
+   "factor_source": "1 kg x 250 km = 0.001 t x 250 km = 0.25 tkm",
+   "search": "transport lorry",
+   "compartment": "",
+   "confidence": "medium",
+   "note": "'Transport 250 km local trader to bast fibres mill (lorry)'; 1 kg over 250 km."
+  }
+ ],
+ "gaps": [
+  "The report prints NO table for 'yarn production, bast fibres' itself; it appears only as a 1.16 kg input inside Tab. 4.2 (jute) and Tab. 4.3 (kenaf). Everything above is derived from Tab. 4.1 plus the step shares, so the amounts are indicative rather than read off.",
+  "Infrastructure is mentioned qualitatively - 'Infrastructure similar size and equipment than packaging plant', i.e. the 'packaging box production unit' module - but the excerpt gives no quantity for it, so no line is added.",
+  "No direct emissions: section 4.1.2 says explicitly 'No direct emissions were considered in the processing'.",
+  "Water, salt and auxiliary products are mentioned in 4.1.1 as inputs from the technosphere but no amounts are given for the yarn step.",
+  "The split between electricity and other energy carriers is not given; 'electricity mainly' is all that is stated."
+ ]
+}

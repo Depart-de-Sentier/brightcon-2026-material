@@ -1,0 +1,338 @@
+{
+  "target": {
+    "code": "0a5b5999-d064-3e3f-b0b6-bf9903a75c35",
+    "name": "Final repository for nuclear waste SF, HLW, and ILW",
+    "location": "CH"
+  },
+  "variant": "bench",
+  "strategy": {
+    "code": "S1",
+    "label": "transcription drafted from the report excerpt by the LLM pipeline (reverse-bafu draft)",
+    "note": "basis: Tab. 12.14 'Zusammenstellung der Eingabedaten fuer die Infrastruktur des geologischen Endlagers fuer hoch und mittelaktive Abfaelle (BE/HAA/LMA)', column 'final repository for nuclear waste SF, HLW, and ILW' [CH], per 1 unit; allocation: none stated. Review every derivation; unreviewed entries have reviewed_by = null."
+  },
+  "evidence": [
+    {
+      "source": "2009 - Nuclear energy - Dones.pdf",
+      "where": "pages 341-343 -> report-p341-343.txt",
+      "note": "report sha256 c1200c317884e348…, text sha256 bf9bccf1272bc4f7…"
+    }
+  ],
+  "provenance": {
+    "pipeline": "reverse-bafu draft",
+    "evidence_manifest": "results/benchmark/extraction/evidence/0a5b5999-d064-3e3f-b0b6-bf9903a75c35/manifest.json",
+    "extraction": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "dc5bdb980c779eed9a26bea8a17dca49fa7b6f325ee0f37f28f70b62b4fe62aa",
+      "at": "2026-09-22T21:25:14Z"
+    },
+    "mapping": {
+      "model": "manual",
+      "by": "claude-code:claude-opus-5",
+      "prompt_sha256": "1e1598a93614996f489f34f4608ea7df706064ccfa8b6f2e31f3c374d8c7f3c8",
+      "at": "2026-09-22T21:25:17Z"
+    },
+    "gaps_reported_by_model": [
+      "No bentonite or other backfill/sealing material appears although Tab. 12.8 (outside this excerpt) is an overview of the filling and sealing materials of the repository.",
+      "No radioactive emissions of any kind.",
+      "No monitoring or post-closure effort.",
+      "Every line is marked 'own assumption' or 'estimation' on preliminary project data."
+    ],
+    "skipped_items": [
+      "Transformation, from unknown: no flow chosen (The keyword search returned no candidate at all for this land-use flow, so nothing can be chosen; EF 3.1 carries land transformation and occupation under differently worded names and the line is reported as missing.)",
+      "Transformation, to industrial area, built up: no flow chosen (The keyword search returned no candidate at all for this land-use flow, so nothing can be chosen; EF 3.1 carries land transformation and occupation under differently worded names and the line is reported as missing.)",
+      "Transformation, to industrial area, vegetation: no flow chosen (The keyword search returned no candidate at all for this land-use flow, so nothing can be chosen; EF 3.1 carries land transformation and occupation under differently worded names and the line is reported as missing.)",
+      "Transformation, to unknown: no flow chosen (The keyword search returned no candidate at all for this land-use flow, so nothing can be chosen; EF 3.1 carries land transformation and occupation under differently worded names and the line is reported as missing.)",
+      "Occupation, industrial area, built up: no flow chosen (The keyword search returned no candidate at all for this land-use flow, so nothing can be chosen; EF 3.1 carries land transformation and occupation under differently worded names and the line is reported as missing.)",
+      "Occupation, industrial area, vegetation: no flow chosen (The keyword search returned no candidate at all for this land-use flow, so nothing can be chosen; EF 3.1 carries land transformation and occupation under differently worded names and the line is reported as missing.)"
+    ],
+    "assembled_at": "2026-09-22T21:25:18Z"
+  },
+  "node": {
+    "name": "Final repository for nuclear waste SF, HLW, and ILW, disaggregated",
+    "unit": "p",
+    "location": "CH",
+    "comment": "drafted from 2009 - Nuclear energy - Dones.pdf pp. 341-343",
+    "inputs": [
+      {
+        "name": "Building, multi-storey",
+        "amount": 130000.0,
+        "unit": "cubic meter",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p341-343.txt",
+          "quote": "     building, multi-storey                                               RER m3                  1.30E+05            1     2    own assumption",
+          "raw_value": 130000.0,
+          "raw_unit": "m3",
+          "per": "per unit of final repository for nuclear waste SF, HLW and ILW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "building multi-storey",
+          "mapping_reason": "Exact name and unit (cubic metre) match; the other candidates are photovoltaic facade installations that merely contain the word 'building'.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "552ee3f6-4f6a-3b85-a72c-5707a3b0f9c7"
+      },
+      {
+        "name": "Industrial machine, heavy, unspecified, at plant",
+        "amount": 4200000.0,
+        "unit": "kilogram",
+        "location": "RER",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p341-343.txt",
+          "quote": "      Industrial machine, heavy, unspecified, at plant                   RER kg                   4.20E+06                  1   1.5 own assumption",
+          "raw_value": 4200000.0,
+          "raw_unit": "kg",
+          "per": "per unit of final repository for nuclear waste SF, HLW and ILW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "industrial machine heavy unspecified at plant",
+          "mapping_reason": "The only candidate and an exact name and unit match.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "5906ff1f-2cd1-3951-9bfc-abd0cdbf8c75"
+      },
+      {
+        "name": "Electricity, medium voltage, at grid",
+        "amount": 64700000.0,
+        "unit": "kilowatt hour",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p341-343.txt",
+          "quote": "      electricity, medium voltage, at grid                               CH kWh                   6.47E+07                  1   1.3 own assumption",
+          "raw_value": 64700000.0,
+          "raw_unit": "kWh",
+          "per": "per unit of final repository for nuclear waste SF, HLW and ILW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "electricity medium voltage at grid",
+          "mapping_reason": "Exact name match at CH, the location the table gives; the import and production-CH variants are specific routes.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "df605f09-34c5-3b3f-94ea-227f7a3c06a7"
+      },
+      {
+        "name": "Diesel, burned in building machine, average",
+        "amount": 5200000.0,
+        "unit": "megajoule",
+        "location": "CH",
+        "note": "excavation of shafts and tunnels",
+        "derivation": {
+          "evidence": "report-p341-343.txt",
+          "quote": "      diesel, burned in building machine                                 GLO MJ                   5.20E+06                  1     2 own assumption",
+          "raw_value": 5200000.0,
+          "raw_unit": "MJ",
+          "per": "per unit of final repository for nuclear waste SF, HLW and ILW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "diesel burned in building machine",
+          "mapping_reason": "'average' is the fleet mix the report's generic wording means; the with/without particle filter entries pick one abatement level and the 'without building machine' ones drop the machine infrastructure.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "e4e7ddc0-f7d1-3fad-bd12-9d6981142800"
+      },
+      {
+        "name": "Reinforcing steel, at plant",
+        "amount": 29400000.0,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p341-343.txt",
+          "quote": "      reinforcing steel, at plant                                        RER kg                   2.94E+07                  1   1.5 own assumption",
+          "raw_value": 29400000.0,
+          "raw_unit": "kg",
+          "per": "per unit of final repository for nuclear waste SF, HLW and ILW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "reinforcing steel at plant",
+          "mapping_reason": "Exact name match at CH, the location the table gives; the RER, electric, converter and import variants are sub-routes or other geographies.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "c217cc53-bf2e-37a2-b51b-ed7e4aec9411"
+      },
+      {
+        "name": "Concrete, normal, at plant",
+        "amount": 153000.0,
+        "unit": "cubic meter",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p341-343.txt",
+          "quote": "      concrete, normal, at plant                                         CH m3                    1.53E+05                  1   1.3 estimation",
+          "raw_value": 153000.0,
+          "raw_unit": "m3",
+          "per": "per unit of final repository for nuclear waste SF, HLW and ILW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "concrete normal at plant",
+          "mapping_reason": "Exact name and unit (cubic metre) match; the 'with resource correction' and C20/25 variants use a different accounting convention, and poor/exacting concrete are other qualities.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "9dc7ef6a-1dcc-3968-b7ac-675141e0f5fa"
+      },
+      {
+        "name": "Transport, freight, lorry, fleet average",
+        "amount": 14700000.0,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p341-343.txt",
+          "quote": "      transport, lorry 28t                                               CH tkm                   1.47E+07                  1   2.1 standard",
+          "raw_value": 14700000.0,
+          "raw_unit": "tkm",
+          "per": "per unit of final repository for nuclear waste SF, HLW and ILW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport lorry 28t",
+          "mapping_reason": "'Transport, freight, lorry, fleet average' at CH is the generic ton-kilometre freight service that replaces the retired 28 t class; the 'Operation, lorry ...' candidates are in vehicle-kilometres.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "cedd6b69-4829-358e-9ea2-f280e8ac03cb"
+      },
+      {
+        "name": "Transport, freight, rail, electricity with shunting",
+        "amount": 18500000.0,
+        "unit": "ton kilometer",
+        "location": "CH",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p341-343.txt",
+          "quote": "      transport, freight, rail                                           RER tkm                  1.85E+07                  1   2.1 standard",
+          "raw_value": 18500000.0,
+          "raw_unit": "tkm",
+          "per": "per unit of final repository for nuclear waste SF, HLW and ILW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "transport freight rail",
+          "mapping_reason": "'electricity with shunting' is the standard Swiss rail freight dataset; the sub-process entries (Betrieb, Fahrzeug, Infrastruktur) and the RER entry are narrower or the wrong geography.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "a169f230-3e05-33d0-a12d-f9d6d4d6abf1"
+      },
+      {
+        "name": "Disposal, inert waste, 5% water, to construction waste landfill",
+        "amount": 1130000000.0,
+        "unit": "kilogram",
+        "location": "CH",
+        "note": "the excavated rock",
+        "derivation": {
+          "evidence": "report-p341-343.txt",
+          "quote": "      disposal, inert waste, 5% water, to inert material landfill        CH kg                    1.13E+09                  1   1.5 own assumption",
+          "raw_value": 1130000000.0,
+          "raw_unit": "kg",
+          "per": "per unit of final repository for nuclear waste SF, HLW and ILW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "search": "disposal inert waste inert material landfill",
+          "mapping_reason": "'Disposal, inert waste, 5% water, to construction waste landfill' is the same waste at the same water content; no 'inert material landfill' variant of it exists in the list, and candidate 0 is a different waste (inert material at 0 % water) while candidate 2 is concrete specifically.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "2be08541-6444-47e0-9d93-5fc9f7e3e9c8"
+      }
+    ],
+    "emissions": [
+      {
+        "name": "Waste Heat",
+        "category": "air",
+        "amount": 233000000.0,
+        "unit": "megajoule",
+        "note": "'same as electricity'",
+        "derivation": {
+          "evidence": "report-p341-343.txt",
+          "quote": "      Heat, waste                                                             MJ                  2.33E+08                  1   1.3 same as electricity",
+          "raw_value": 233000000.0,
+          "raw_unit": "MJ",
+          "per": "per unit of final repository for nuclear waste SF, HLW and ILW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "Waste heat released to air, the compartment the table implies for an industrial site; the soil and water variants and the long-term groundwater flow are different compartments.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "08a91e70-3ddc-11dd-9136-0050c2490048",
+        "database": "ef-3.1-biosphere"
+      }
+    ],
+    "resources": [
+      {
+        "name": "From Industrial Area",
+        "category": "land use",
+        "amount": 32500.0,
+        "unit": "square meter",
+        "note": "",
+        "derivation": {
+          "evidence": "report-p341-343.txt",
+          "quote": "     Transformation, from industrial area                                     m2                  3.25E+04            1     2    own assumption",
+          "raw_value": 32500.0,
+          "raw_unit": "m2",
+          "per": "per unit of final repository for nuclear waste SF, HLW and ILW",
+          "factor": 1,
+          "factor_unit": "",
+          "factor_source": "",
+          "scale_to_unit": 1.0,
+          "confidence": "high",
+          "by": "claude-code:claude-opus-5",
+          "reviewed_by": null,
+          "mapping_reason": "'From Industrial Area' in the Land use / Land transformation compartment, in square metres, is the same direction, the same land class and the same unit as the line item.",
+          "mapping_by": "claude-code:claude-opus-5"
+        },
+        "code": "2abdec35-e00d-4760-842c-e63403507b1d",
+        "database": "ef-3.1-biosphere"
+      }
+    ]
+  }
+}
