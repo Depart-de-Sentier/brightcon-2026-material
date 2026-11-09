@@ -2,8 +2,10 @@
 
 This repository holds the material used during brightcon 2026.
 
-The [LCA data lineage hackathon](hackathon/lca-lineage/README.md) includes the BAFU data,
-repair and import tools, notebooks, and traceability documentation.
+The [LCA data lineage hackathon](hackathon/lca-lineage/README.md) includes BAFU repair
+and import tools, notebooks, and traceability documentation. Download the BAFU source
+files separately from [openLCA Nexus](https://nexus.openlca.org/database/BAFU), accept
+their terms of use, and follow the hackathon README to reproduce the EcoSpold 2 files locally.
 
 ## Repository structure
 

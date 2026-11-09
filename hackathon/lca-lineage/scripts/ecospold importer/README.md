@@ -1,5 +1,35 @@
 # Ecospold 2 with structured metadata
 
+## Start here: download, repair, and reproduce the export
+
+Database files are not included in the current repository tree. Download
+**BAFU:2026 version 1 in EcoSpold 1 format** from
+[openLCA Nexus](https://nexus.openlca.org/database/BAFU), accepting the applicable
+terms before downloading or using the data. Put the 11,947 original XML files
+directly in `data/raw/ecoSpold files/`; see the [raw-data layout](../../data/raw/README.md).
+
+Follow the [environment setup](../../README.md#2-prepare-the-python-environment)
+to create `bw` with the recorded package versions. From `hackathon/lca-lineage/`,
+run these commands in order:
+
+```bash
+conda run --no-capture-output -n bw python "scripts/ecospold importer/repair_all.py"
+conda run --no-capture-output -n bw python "scripts/ecospold importer/import_export_ecospold2.py"
+```
+
+The first command repairs copies and validates every XML file against its source
+inventory. The second applies approved mappings, downloads the biosphere 3.10
+project on first use, and generates `data/processed/ecospold2-biosphere310/` with
+the `.spold` files, metadata, audit records, and verification manifest. No separate
+baseline import is needed. See the [export documentation](../../docs/bafu-2026-ecospold2-export.md)
+for the 2,991 biosphere exclusions, expected counts, checks, and rerun options.
+Downloads and generated database payloads stay local and are ignored by Git.
+
+The remaining sections document the individual repair stages and earlier import
+diagnostics; they are not extra steps required after the two commands above.
+
+## Metadata extraction
+
 The ``ecospold2_export.py`` file uses regular expressions (regex) to extract source-related information about the processes and exchanges that do not have structured metadata (everything is in an unformatted comment).
 
 The functions used to extract the structured metadata are in ``metadata_extractors.py`` and use the regular expressions that are detailed in ``regex.py``.

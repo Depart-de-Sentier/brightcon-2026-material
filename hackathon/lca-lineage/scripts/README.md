@@ -1,6 +1,11 @@
 # Scripts
 
-Add extraction, transformation, validation, and analysis scripts here.
+Before running these scripts or notebooks, download BAFU:2026 version 1 in EcoSpold 1
+format from [openLCA Nexus](https://nexus.openlca.org/database/BAFU), accept its terms,
+and follow the [numbered setup and reproduction steps](../README.md#1-download-the-bafu-source-files-and-accept-the-terms).
+The original and exported database files are not included in the current repository
+tree. Run `repair_all.py` followed by `import_export_ecospold2.py` to generate the
+EcoSpold 2 files before opening the EcoSpold 2 import notebook.
 
 - [Import exported EcoSpold 2 files (notebook)](import_ecospold2.ipynb): use the `bw` kernel to create a separate project with biosphere 3.10, import the mapped `.spold` files with uncertainty preserved, check links, and write the database. All import logic is included in the notebook; no local Python helper is needed.
 

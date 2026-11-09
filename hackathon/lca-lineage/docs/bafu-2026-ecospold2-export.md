@@ -1,10 +1,21 @@
 # Mapped BAFU:2026 database and EcoSpold 2 export
 
-Run from `hackathon/lca-lineage/` in the `bw` environment, after repairing the raw files:
+The database inputs and generated export are not included in the current repository
+tree. Download **BAFU:2026 version 1 in EcoSpold 1 format** from
+[openLCA Nexus](https://nexus.openlca.org/database/BAFU), read and accept the applicable
+terms there, and put the original XML files directly in `data/raw/ecoSpold files/`.
+See the [raw-data layout](../data/raw/README.md) and
+[environment setup](../README.md#2-prepare-the-python-environment) for prerequisites.
+
+Run from `hackathon/lca-lineage/` in the prepared `bw` environment, in this order:
 
 ```bash
+conda run --no-capture-output -n bw python "scripts/ecospold importer/repair_all.py"
 conda run --no-capture-output -n bw python "scripts/ecospold importer/import_export_ecospold2.py"
 ```
+
+The repair runner creates and validates `data/processed/ecospold1-schema-fixed/`.
+No separate baseline Brightway import is required before the export command.
 
 The script uses project `bafu-2026-biosphere-310` under `artifacts/brightway/`, creates
 **`BAFU:2026-mapped`**, and exports to **`data/processed/ecospold2-biosphere310/`**.
@@ -33,7 +44,7 @@ Brightway also displays its database-write progress.
 | --- | --- |
 | `datasets/*.spold` | One schema-valid EcoSpold 2 XML file per BAFU dataset |
 | `audit/excluded-exchanges.jsonl` | Every excluded occurrence, full exchange dictionary, source dataset, zero-based source-row index, source XML exchange and file checksum |
-| `audit/retained-inventory.jsonl` (stored as `.jsonl.gz` in Git) | Full retained Brightway records, including original labels, conversion assumptions, comments and uncertainty |
+| `audit/retained-inventory.jsonl` | Full retained Brightway records, including original labels, conversion assumptions, comments and uncertainty |
 | `audit/source-metadata.jsonl` | Source XML metadata, including schema-repair comments, contacts and references |
 | `audit/mapping-files/` | Exact migration JSON files used |
 | `audit/migrations/` | Linking report after each biosphere stage |
@@ -41,32 +52,32 @@ Brightway also displays its database-write progress.
 | `ecospold2_reimport.py` | Portable Brightway re-import helper preserving the exported uncertainty |
 
 JSONL has one JSON record per line. Duplicate exchanges remain separate occurrences.
-The complete bundle, including the audit files, should accompany shared exports.
-The verified `data/processed/ecospold2-biosphere310/` bundle is tracked in Git;
-intermediate repair copies and other generated data remain ignored.
+The complete bundle, including the audit files and the mapping/repair documentation,
+should accompany exports whenever sharing is permitted by the applicable BAFU terms.
+Identify it as modified data and cite “Life Cycle Inventory database of the Swiss
+Federal Administration, BAFU:2026”. The original downloads, repaired copies, and
+entire generated export stay local and are ignored by Git. Do not force-add them.
 
-## Git storage
+## Local storage and optional compression
 
-The export script produces uncompressed JSONL audits. For the committed bundle,
-`audit/retained-inventory.jsonl` is stored as a lossless gzip archive because the
-original exceeds GitHub's 100 MiB file limit. All `.spold` files remain unchanged
-and can be imported directly. To restore the original audit from `hackathon/lca-lineage/`:
+The export script produces uncompressed JSONL audits; no decompression step is
+needed for a freshly generated export. If desired, compress the retained inventory
+locally while preserving the original:
+
+```bash
+gzip -nk data/processed/ecospold2-biosphere310/audit/retained-inventory.jsonl
+```
+
+The manifest's checksum and XML audit references refer to the original uncompressed
+file. Keep it alongside the export, or restore it from a local `.gz` copy using:
 
 ```bash
 gzip -dk data/processed/ecospold2-biosphere310/audit/retained-inventory.jsonl.gz
 ```
 
-This keeps the archive and refuses to overwrite an existing decompressed file.
-The original `manifest.json` remains unchanged: its retained-inventory checksum
-refers to the decompressed bytes. `compression-manifest.json` records both the
-archive checksum and the original checksum and sizes. The XML's audit references
-use the original filename, restored by the command above. The local uncompressed
-copy is ignored by Git. A reader can also stream the archive with Python's
-`gzip.open(path, "rt", encoding="utf-8")`.
-
-For a freshly generated bundle, `gzip -nk PATH/audit/retained-inventory.jsonl`
-creates a reproducible archive while preserving the original. Compression is a
-packaging step; it does not rerun repairs or change inventory values.
+Restoration refuses to overwrite an existing decompressed file. Compression does
+not rerun repairs or change inventory values. Neither the archive nor the generated
+database files belong in Git.
 
 ## EcoSpold 2 conventions
 
@@ -156,3 +167,9 @@ with their original targets, amounts and uncertainty. Database readback also
 matches. The six regression tests pass. The export retains 493 negative lognormal
 exchanges and 324 lognormal scales that the default importer would otherwise cap;
 255 activity names require display aliases.
+
+These counts describe the documented BAFU:2026 v1 source and approved mappings.
+The recorded verified export used `bw2data 4.7`, `bw2io 0.9.17`, `pyecospold 4.0.1`,
+and `lxml 4.9.3`. Preserve your generated manifest and repair reports to record input
+checksums, package versions, and checks for your run. Manifest timestamps and local
+paths vary, so reproduction does not imply a byte-identical output directory.
